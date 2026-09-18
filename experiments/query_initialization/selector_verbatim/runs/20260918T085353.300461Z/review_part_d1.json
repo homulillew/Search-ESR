@@ -1,0 +1,232 @@
+{
+  "method": "Post-run agent-assisted semantic and utility review, not human review or extra API judge. Arm labels/ranks hidden in supplied cards but may be inferred; partial context from root communicated before review. Every returned window read; full sources70422/100172/27679 read; targeted source scan244/45383. No gold answers. Conditional follow-up usefulness is not counted as independent bootstrap success.",
+  "qids": [
+    "124",
+    "978"
+  ],
+  "semantic": [
+    {
+      "card_id": "128151970ff2",
+      "qid": "978",
+      "coherent": true,
+      "context_sufficient": true,
+      "acceptable": true,
+      "issues": [],
+      "reason": "选中条目围绕同一漫画及其作者，保留助手关系、被代理作品、许可公司及个人康复项目关联；省略后续编辑/家庭/情节整条条件不会改写保留关系。"
+    },
+    {
+      "card_id": "35cfa7520873",
+      "qid": "124",
+      "coherent": true,
+      "context_sufficient": true,
+      "acceptable": true,
+      "issues": [],
+      "reason": "艾美获奖文章作者→其童书→另一位KW作者的2020文章，代词和跨作者关系完整。可省去末尾问书名句而保留可检索入口。"
+    },
+    {
+      "card_id": "3cba720bd076",
+      "qid": "124",
+      "coherent": true,
+      "context_sufficient": true,
+      "acceptable": true,
+      "issues": [],
+      "reason": "艾美获奖文章作者→其童书→另一位KW作者的2020文章，代词和跨作者关系完整。可省去末尾问书名句而保留可检索入口。"
+    },
+    {
+      "card_id": "6dca1e2145f3",
+      "qid": "124",
+      "coherent": true,
+      "context_sufficient": true,
+      "acceptable": true,
+      "issues": [],
+      "reason": "艾美获奖文章作者→其童书→另一位KW作者的2020文章，代词和跨作者关系完整。可省去末尾问书名句而保留可检索入口。"
+    },
+    {
+      "card_id": "c765ee69d56c",
+      "qid": "978",
+      "coherent": true,
+      "context_sufficient": true,
+      "acceptable": true,
+      "issues": [],
+      "reason": "选中条目围绕同一漫画及其作者，保留助手关系、被代理作品、许可公司及个人康复项目关联；省略后续编辑/家庭/情节整条条件不会改写保留关系。"
+    },
+    {
+      "card_id": "fafee8888b64",
+      "qid": "978",
+      "coherent": true,
+      "context_sufficient": true,
+      "acceptable": true,
+      "issues": [],
+      "reason": "选中条目围绕同一漫画及其作者，保留助手关系、被代理作品、许可公司及个人康复项目关联；省略后续编辑/家庭/情节整条条件不会改写保留关系。"
+    }
+  ],
+  "annotations": [
+    {
+      "qid": "978",
+      "docid": "70422",
+      "kind": "entry_source",
+      "packet_alignment": "question_aligned",
+      "document_sha256": "d8d975bc3d6bf3f05266fad2cc7c462481524f1fc75fd4da0e184499b20576ef",
+      "url": "https://gamerant.com/the-successful-assistants-of-tatsuki-fujimoto-and-their-manga/",
+      "rationale": "同一段明确连接Endo、Spy X Family、此前任Blue Exorcist等助手及2019漫画/2022动画，构成原题漫画作者的具体候选入口。尚未证实personal rehabilitation、第三次编辑合作、家庭及第十arc条件。只有Endo窗口包含本证明；另一Yuji Kaku窗口不能借用文档其他位置。",
+      "next_action": "以Endo和Spy X Family为待验证候选，阅读或检索personal rehabilitation及编辑第三次合作，再定位第十故事篇；不要直接提交角色答案。",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Tatsuya Endo is perhaps the most well-known on the list as he is the author of the massively successful Spy X Family. He initially worked as an assistant for Blue Exorcist, Attack on Titan, and Fire Punch.",
+            "source_spans": [
+              [
+                1464,
+                1669
+              ]
+            ]
+          },
+          {
+            "quote": "Spy X Family would go on to become one of the most successful manga of 2019 and one of the most successful anime of 2022 with its stellar anime adaptation by Studio Wit.",
+            "source_spans": [
+              [
+                2170,
+                2339
+              ]
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "source_review": [
+    {
+      "qid": "124",
+      "docid": "97858",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "Auster New York Trilogy图像小说介绍，未建立题目文章作者和童书链。 未审阅位置不判负。"
+    },
+    {
+      "qid": "124",
+      "docid": "45383",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_and_targeted_source_scan",
+      "reason": "窗口是Andrews/Lane/Peters童书。离线额外检查全文开头明确Caitlin Moynihan、Apr 2 2020，不是KW；尚无其他相关作者链。 未审阅位置不判负。"
+    },
+    {
+      "qid": "124",
+      "docid": "87641",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "Ticket to Ride儿童小说推荐，未见艾美作者2018文章及KW引用。 未审阅位置不判负。"
+    },
+    {
+      "qid": "124",
+      "docid": "49061",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "儿童电视艾美奖名单，题目要求的童书系列与纸牌文章作者未连接。 未审阅位置不判负。"
+    },
+    {
+      "qid": "124",
+      "docid": "81322",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "Martin博客2018奖学金及作者新闻，没有纸牌起源文章和童书引用链。 未审阅位置不判负。"
+    },
+    {
+      "qid": "124",
+      "docid": "67590",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "文学问答杂项，窗口没有艾美作者/纸牌起源/2020 KW关系。 未审阅位置不判负。"
+    },
+    {
+      "qid": "124",
+      "docid": "90470",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "美国桌游纸牌历史展示，没有署名作者艾美及童书系列关系。 未审阅位置不判负。"
+    },
+    {
+      "qid": "124",
+      "docid": "77707",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "个人纸牌文化、Rummy/Spades体验，未见题目跨作者链。 未审阅位置不判负。"
+    },
+    {
+      "qid": "124",
+      "docid": "26981",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "Bridge名人爱好及Schulz漫画，未连接2018艾美作者文章与2020 KW童书系列文章。 未审阅位置不判负。"
+    },
+    {
+      "qid": "124",
+      "docid": "94687",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "Katy Lederer访谈谈扑克写作，既非KW署名链，也未建立童书和2018文章关系。 未审阅位置不判负。"
+    },
+    {
+      "qid": "124",
+      "docid": "27219",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "Rummikub历史与规则起源，未见艾美作者及2020 KW书系连接。 未审阅位置不判负。"
+    },
+    {
+      "qid": "978",
+      "docid": "100172",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_and_full_source",
+      "reason": "全文列举Watsuki、Takei、Matsumoto、Ikemoto等助手经历，但没有Endo；尚无同时符合题目2010年代作品与rehabilitation等约束的具体入口。 未审阅位置不判负。"
+    },
+    {
+      "qid": "978",
+      "docid": "50767",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "多部2010年代漫画销售/剧情摘要，没有匹配题目作者的特异关系。 未审阅位置不判负。"
+    },
+    {
+      "qid": "978",
+      "docid": "639",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "Motoyuki医学中风康复及早期助手经历，不能把医学康复等同题目个人康复创作项目。 未审阅位置不判负。"
+    },
+    {
+      "qid": "978",
+      "docid": "70422",
+      "status": "positive",
+      "review_scope": "all_returned_windows_and_full_source",
+      "reason": "具体候选入口已建立，证明与后续核验边界见 annotations。"
+    },
+    {
+      "qid": "978",
+      "docid": "25747",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "Higashimura自己作为单亲妈妈聘助手，与题目作者成长于单亲家庭及曾任助手的关系不同。 未审阅位置不判负。"
+    },
+    {
+      "qid": "978",
+      "docid": "27679",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_and_full_source",
+      "reason": "全文确有Endo曾为Fujimoto助手且创作Spy X Family，但本页未给2000年代受助系列、许可公司、rehabilitation或第三次编辑合作等辨识信息；作为已获Endo候选后的辅助来源记录，不凭普遍助手→作者模式单独判初始入口成功。返回一个窗口出现Endo，另一窗口没有，不能跨窗口借证。 未审阅位置不判负。"
+    },
+    {
+      "qid": "978",
+      "docid": "244",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_and_targeted_source_scan",
+      "reason": "返回窗口仅Viz公司及A开头目录。离线定向扫描全文发现Blue Exorcist(manga)和SPY×FAMILY(manga)在许可列表，分别位于3723、30845附近，均不在窗口；只在先识别Endo候选后有核验价值，未作为独立入口positive。 未审阅位置不判负。"
+    },
+    {
+      "qid": "978",
+      "docid": "18085",
+      "status": "visible_no_established_usefulness",
+      "review_scope": "all_returned_windows_only",
+      "reason": "漫画动画化榜单，包括Demon Slayer与Attack on Titan，未建立目标作者助手/rehabilitation链。 未审阅位置不判负。"
+    }
+  ]
+}

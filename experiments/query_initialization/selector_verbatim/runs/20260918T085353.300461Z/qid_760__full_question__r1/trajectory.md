@@ -1,0 +1,269 @@
+# 完整 rollout 轨迹
+
+API 请求是 SDK 调用参数；响应是 SDK 解析结果。未记录密钥或 HTTP 头。
+仅记录 API 实际返回的内容，不推断未返回的内部推理。
+
+## 1. control_query · 2026-09-18T08:56:47.409924+00:00
+
+```json
+{
+  "seq": 1,
+  "time": "2026-09-18T08:56:47.409924+00:00",
+  "kind": "control_query",
+  "query": "I'm looking for the full name of this person who was born in the 1930s in a country in Africa.\n\nThis person was divorced from their spouse in the 1960s. This person's mother was a stage actress.\n\nThis person studied drama in a city where they eventually passed away between 2016 and 2023.\n\nThis person starred in a movie in the 1950s that was directed by a director who got the NSFC award between 1974 and 1982."
+}
+```
+
+## 2. query_finalized · 2026-09-18T08:56:47.411185+00:00
+
+```json
+{
+  "seq": 2,
+  "time": "2026-09-18T08:56:47.411185+00:00",
+  "kind": "query_finalized",
+  "plan": {
+    "status": "valid",
+    "selected_units": [
+      "q1",
+      "q2",
+      "q3",
+      "q4"
+    ],
+    "selector_input_refs": [],
+    "packet": {
+      "schema_version": "basis_packet_v1",
+      "packet_id": "f9d6c743-4612-4659-af8c-37d3cdfa634c",
+      "source_version": "8d1eadb321ea3a7ee73b42bdc146c55d3ba58e61a107c45b239e7b65069d492d",
+      "selected_refs": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "context_refs": [],
+      "input_refs": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "segments": [
+        {
+          "ref": "q1",
+          "start": 0,
+          "end": 95,
+          "text": "I'm looking for the full name of this person who was born in the 1930s in a country in Africa. ",
+          "role": "selected"
+        },
+        {
+          "ref": "q2",
+          "start": 95,
+          "end": 194,
+          "text": "This person was divorced from their spouse in the 1960s. This person's mother was a stage actress. ",
+          "role": "selected"
+        },
+        {
+          "ref": "q3",
+          "start": 194,
+          "end": 287,
+          "text": "This person studied drama in a city where they eventually passed away between 2016 and 2023. ",
+          "role": "selected"
+        },
+        {
+          "ref": "q4",
+          "start": 287,
+          "end": 408,
+          "text": "This person starred in a movie in the 1950s that was directed by a director who got the NSFC award between 1974 and 1982.",
+          "role": "selected"
+        }
+      ],
+      "normalization_version": "whitespace_per_segment_v1",
+      "compiler_input_sha256": "26fb37c0c6a0630f9ab67643ac48555bee21dd3277e0f9476ceb52b12bdec72c"
+    },
+    "query": "I'm looking for the full name of this person who was born in the 1930s in a country in Africa.\n\nThis person was divorced from their spouse in the 1960s. This person's mother was a stage actress.\n\nThis person studied drama in a city where they eventually passed away between 2016 and 2023.\n\nThis person starred in a movie in the 1950s that was directed by a director who got the NSFC award between 1974 and 1982.",
+    "input_refs": [
+      "q1",
+      "q2",
+      "q3",
+      "q4"
+    ],
+    "query_tokens": 135,
+    "initial_valid": true,
+    "repairs": 0,
+    "initial_errors": [],
+    "errors": [],
+    "origin": "full_question_verbatim"
+  }
+}
+```
+
+## 3. search_start · 2026-09-18T08:56:47.413002+00:00
+
+```json
+{
+  "seq": 3,
+  "time": "2026-09-18T08:56:47.413002+00:00",
+  "kind": "search_start",
+  "arguments": {
+    "query": "I'm looking for the full name of this person who was born in the 1930s in a country in Africa.\n\nThis person was divorced from their spouse in the 1960s. This person's mother was a stage actress.\n\nThis person studied drama in a city where they eventually passed away between 2016 and 2023.\n\nThis person starred in a movie in the 1950s that was directed by a director who got the NSFC award between 1974 and 1982.",
+    "k": 6
+  }
+}
+```
+
+## 4. retrieval_worker · 2026-09-18T08:56:47.551092+00:00
+
+```json
+{
+  "seq": 4,
+  "time": "2026-09-18T08:56:47.551092+00:00",
+  "kind": "retrieval_worker",
+  "pid": 1055296,
+  "started_at": "2026-09-18T08:56:47.414613+00:00",
+  "finished_at": "2026-09-18T08:56:47.549655+00:00",
+  "elapsed_seconds": 0.13507076166570187,
+  "worker_index": 0
+}
+```
+
+## 5. search_result · 2026-09-18T08:56:49.088683+00:00
+
+```json
+{
+  "seq": 5,
+  "time": "2026-09-18T08:56:49.088683+00:00",
+  "kind": "search_result",
+  "arguments": {
+    "query": "I'm looking for the full name of this person who was born in the 1930s in a country in Africa.\n\nThis person was divorced from their spouse in the 1960s. This person's mother was a stage actress.\n\nThis person studied drama in a city where they eventually passed away between 2016 and 2023.\n\nThis person starred in a movie in the 1950s that was directed by a director who got the NSFC award between 1974 and 1982.",
+    "k": 6
+  },
+  "result": [
+    {
+      "docid": "85097",
+      "url": "https://www.imdb.com/list/ls053688430/",
+      "title": "MY FAVORITE ACTRESSES FROM THE 1950s AND 1960s",
+      "title_span": [
+        11,
+        57
+      ],
+      "document_sha256": "9621b6c8b08ecec840418171c3df0bf704a8d5d2bc2bb6c4949bd1032ba604a6",
+      "window_ref": "w_14bf0313889656fefdfe0885",
+      "text": "However, she did win the Golden Globe Award and the Laurel Award for\n\nMarjorie Morningstar (1958). She followed this with\n\nan impressive appearance in\n\nKing Creole (1958), generally regarded as\n\nElvis Presley's best film. She then gave arguably her best performance ever in\n\nCareer (1959), but the film was not\n\ncommercially successful. She played a serious role in this, leaving the kooky role she might have played to\n\nShirley MacLaine.\n\nAs Aaron's career soared, the marriage started to fail. They separated in October 1963 and amicably divorced in August 1965, with Carolyn asking for no alimony. They remained friends. She worked at various roles including two episodes of\n\nBurke's Law (1963) for which she received a Golden Globe nomination. Soon, she got the part for which she will best be remembered, that of Morticia Addams in\n\nThe Addams Family (1964). She spent two years in this role. Her costume was designed to copy the\n\ncartoon drawings and no doubt inspired such imitators as\n\nCassandra Peterson (Elvira, Mistress\n\nof the Dark). The show went head-to-head with\n\nThe Munsters (1964) and\n\nBewitched (1964).\n\nThe show was a hit and she received all the fame she had craved. However, the network decided to cancel the show, despite its success,\n\nafter only two years. Typecast as Morticia but without the income that a few more years would have provided, she found life difficult and\n\nroles few. While acting on the road, she married her voice coach,\n",
+      "offset": 3380,
+      "end_char": 4844,
+      "text_tokens": 362,
+      "title_tokens": 22,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5367944836616516
+    },
+    {
+      "docid": "19085",
+      "url": "https://www.jennykarezi.com/biography.html",
+      "title": "My Biography",
+      "title_span": [
+        11,
+        23
+      ],
+      "document_sha256": "b5d13fa6111c8e97ef7a230cd6ad8809069c31069f437f883d2e49dbe7717af6",
+      "window_ref": "w_0ad100aa0cf31d39f6b01737",
+      "text": "Many great parts were to follow, next to Alexis Minotis, Katina Paxinou (Ophelia in Hamlet, Kordelia in King Lear, Adela in the House of Bernanda Alba of Lorka, etc.)\n\nSimultaneously in 1955, she had her cinema dιbut, in Bardy-Gardy, Poverty and Ethos, written by Alekos Sakellarios, to have more than 30 films to follow, such as the Miss's Dupe (1960), the Bride run away (1962), The Red Lights (1963), Miss Director (1964), A Funny Funny Family (1965), Jenny-Jenny (1966) A Knight for Vasoula (1968), A Woman in the Resistance (1970).\n\nShe remained in the National Theater till 1959, taking parts in plays of Tolstoi, Adreyef, Ugo Bet and Aristophanes, with Mary Aroni. After 1960, she created her own personal theater companies and cooperated with brilliant comedians, such as Labros Konstantaras, Dinos Iliopoulos, Mimis Fotopoulos and Dionisis Papayiannopoulos.\n\nFrom 1968 till her death she played with Costas Kazakos, plays of Kambanellis, Alby, Ibsen, Tsehof, Anagnostakis, while in 1985 she played for the first time ancient drama, with Midia, directed by Volanakis. This was a performance which met great success in Epidaurus. Her last theatrical performance was Diamonds and Blues of Loula Anagnostaki.\n\nIn her personal life she got married twice. ",
+      "offset": 1176,
+      "end_char": 2435,
+      "text_tokens": 372,
+      "title_tokens": 2,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5283371210098267
+    },
+    {
+      "docid": "47035",
+      "url": "https://www.imdb.com/list/ls058625938/",
+      "title": "Broadway Stars",
+      "title_span": [
+        11,
+        25
+      ],
+      "document_sha256": "9e745fb7948936ce0c5c01678ec9b5d028ad5dc7aa493f4c86141c09900165c1",
+      "window_ref": "w_db19b33cbed560bb0dbf9552",
+      "text": "It gained Lansbury renewed fame, at a difficult point of her career.\n\nLansbury gained critical praise for a sympathetic role in the drama film \"The Dark at the Top of the Stairs\" (1960), and the role of a manipulative mother in the drama film \"All Fall Down\" (1962). Based on her success in \"All Fall Down\", she was cast in a similar role in the Cold War-themed thriller \"The Manchurian Candidate\" (1962). She was cast as Eleanor Iselin, the mother of her co-star Laurence Harvey (1928-1973), who was only 3 years younger than she. This turned out to be one of the most memorable roles in her career. She received critical acclaim and was nominated for a third time for the Academy Award for Best Supporting Actress. The award was instead won by Patty Duke (1946-2016).\n\nLansbury made a comeback in the starring role of Mame Dennis in the musical \"Mame\" (1966), by Jerome Lawrence (1915-2004) and Robert Edwin Lee (1918-1994). The play was an adaptation of the novel \"Auntie Mame: An Irreverent Escapade\" (1955) by Patrick Dennis (1921-1976), and focused on the life and ideas of eccentric bohemian Mame Dennis. The musical received critical and popular praise, and Lansbury won her first Tony Award for Best Leading Actress in a Musical. Lansbury gained significant fame from her success, becoming a \"superstar\".\n\nHer newfound fame led to other high-profile appearances by Lansbury. She starred in a musical performance at the 1968 Academy Awards ceremony, and co-hosted the 1968 Tony Awards. ",
+      "offset": 7324,
+      "end_char": 8818,
+      "text_tokens": 397,
+      "title_tokens": 3,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5273814797401428
+    },
+    {
+      "docid": "88548",
+      "url": "https://www.theshot.com/actors/greatest-actors-1960s",
+      "title": "Greatest Actors of the 1960s",
+      "title_span": [
+        11,
+        39
+      ],
+      "document_sha256": "eed863ce5117a46fc481b8536be6bdfe716f9647fb2f19a424aa3a8f56635a85",
+      "window_ref": "w_12052da3d4414bc71e2bf6dd",
+      "text": "Her career has continued into her 80s, though throat surgery put a pause on her singing.\n\nJulie Christie\n\nNow in her 80s, this British actress first caught the public eye in Billy Liar (1963), then scored worldwide recognition (and an Oscar) for Darling (1965). She starred in the huge block-office success Dr Zhivago the same year. She had frequent roles in the 1970s, before turning to more occasional appearances, including in New York, I Love You (2008) and The Company You Keep (2012).\n\nKirk Douglas\n\nAmerican actor Douglas became a major box-office star in the 1950s, and both produced and starred in two early films directed by Stanley Kubrick, Paths Of Glory (1957) and the blockbuster Spartacus (1960). He starred with Burt Lancaster in the western Lonely Are The Brave (1962) and the political thriller Seven Days In May (1964), with his last role acting in a 2008 mockumentary Empire State Building Murders. He passed on at the age of 103 in 2020.\n\nLaurence Olivier\n\nEnglish titan of stage and screen, Olivier enjoyed Hollywood success starting with Wuthering Heights (1939), Rebecca (1940), and Pride And Prejudice (1940). In the 1960s, his films included Spartacus (1960) and Oh! What A Lovely War (1969), and film versions of two stage productions, Chekhov's Uncle Vanya and Shakespeare's Othello. He disliked method acting, preferring instead to work \"from the outside in\". ",
+      "offset": 9508,
+      "end_char": 10897,
+      "text_tokens": 375,
+      "title_tokens": 11,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.525333046913147
+    },
+    {
+      "docid": "42527",
+      "url": "https://www.hbstudio.org/about-hb-studio/uta-hagen/",
+      "title": "Uta Hagen: Master Teacher",
+      "title_span": [
+        11,
+        36
+      ],
+      "document_sha256": "04f3926dbfa0d33af22584b23516470f21b97721a691e11d3f423f51ebd192c7",
+      "window_ref": "w_0ef56ba25e908c35041e09b5",
+      "text": "Hagen originated the role of Georgie Elgin in Clifford Odets' THE COUNTRY GIRL, winning her first Tony Award in 1951. Hagen also played George Bernard Shaw's SAINT JOAN on Broadway that same year.\n\nShe married Herbert Berghof in 1957 and played opposite him in the New York City Center production of TOVARICH. Through the 50s and 60s, they toured together in THE LADY'S NOT FOR BURNING, THE AFFAIRS OF ANATOL, and CYPRIENNE (DIVORÇONS) by Sardou. She was famous for originating the role of Martha in the 1962 Broadway premiere of WHO'S AFRAID OF VIRGINIA WOOLF?, in which she earned her second Tony Award and won the London Critics Award for her role in the English production.\n\nThroughout her career, Hagen made several television appearances, including PLAYHOUSE 90, KRAFT THEATRE PLAY OF THE WEEK, CBS specials, guest appearances on THE LONG HOT SUMMER, LOU GRANT, THE TWILIGHT ZONE, and THE HOME on PBS's AMERICAN PLAYHOUSE. She received Daytime Emmy Award nominations for her television appearances in ONE LIFE TO LIVE (1986) and ABC AFTERSCHOOL SPECIALS – SEASONAL DIFFERENCES (1987). Hagen also appeared in the films REVERSAL OF FORTUNE (1990) and THE BOYS FROM BRAZIL (1978), for which she was nominated for an Academy Award for Best Supporting Actress.\n\nUta Hagen was a transcendent actor, life-changing teacher, and blazingly honest advocate for the relevance and power of theater. Her integrity was legendary; she defiantly told truth to power and took personal and professional risks for the sake of great art. ",
+      "offset": 1959,
+      "end_char": 3482,
+      "text_tokens": 393,
+      "title_tokens": 7,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5205650925636292
+    },
+    {
+      "docid": "55798",
+      "url": "https://en.wikipedia.org/wiki/Cicely_Tyson",
+      "title": "Cicely Tyson - Wikipedia",
+      "title_span": [
+        11,
+        35
+      ],
+      "document_sha256": "db7d876fc2acfd62e05ab04621aaf2400917030bb5576a7857a0d06f213b1b71",
+      "window_ref": "w_3cf37b09b916f41f9c681afb",
+      "text": "That same year, she played Constantine Jefferson, a maid in Jackson, Mississippi, in the critically acclaimed period drama The Help. Set in the backdrop of the Civil Rights Movement, the film won the Broadcast Film Critics Association Award for Best Acting Ensemble and the Screen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture.\n\nAt the 67th Tony Awards, on June 9, 2013, Tyson won the Tony Award for Best Actress in a Play for her performance as Miss Carrie Watts in the Broadway revival of the Horton Foote play The Trip to Bountiful. Upon winning, the 88-year-old actress became the oldest recipient of the Best Actress Tony Award. She also won the Drama Desk Award for Outstanding Actress in a Play and the Outer Critics Circle Award for Outstanding Actress in a Play for the role.\n\nIn 2013, Tyson played a supporting role in the horror film The Haunting in Connecticut 2: Ghosts of Georgia. Beginning in 2014, Tyson guest-starred on How to Get Away with Murder as Ophelia Harkness, the mother of main character Annalise Keating (Viola Davis); for this role, she was nominated for a Primetime Emmy Award for Outstanding Guest Actress in a Drama Series in 2015, 2017, 2018, 2019, and 2020. In 2020, she starred in the popular movie A Fall From Grace which was featured on Netflix.\n\nPersonal life\n\nMarriages and relationships\n\nAt the age of 18, Tyson married Kenneth Franklin on December 27, 1942. They had a daughter two months later, in February 1943. According to her divorce decree, her husband abandoned her on June 18, 1944. ",
+      "offset": 11620,
+      "end_char": 13183,
+      "text_tokens": 389,
+      "title_tokens": 6,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5201054811477661
+    }
+  ]
+}
+```

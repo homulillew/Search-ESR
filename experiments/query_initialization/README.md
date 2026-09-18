@@ -56,3 +56,9 @@ python -m pytest -q tests experiments/structural_boundary/test_candidate.py expe
 ```
 
 人工标注为离线附件，没有回流到在线提示词。新版本继续优化时，本批题目应转为开发材料。
+
+## Selector 原文选材的新题对照
+
+[实现与配置](selector_verbatim/README.md) · [60 次完整轨迹](selector_verbatim/runs/20260918T085353.300461Z/README.md) · [结果与根因分析](../../全链路排查报告/Selector原文选材与整题检索对照实验.md)
+
+本轮 20 题比较整题原文与 Selector 选材后直接检索，不使用 Compiler。40 次 API、60 次 Search 完成，机械审计及账本恢复 Open 通过。代理辅助审阅下，来源命中 45%→47.5%，可见依据 45%→45%；重复改善与退化并存，未默认启用 Selector。审阅方法及预注册表述差异见报告，不称人工金标或完整召回率。

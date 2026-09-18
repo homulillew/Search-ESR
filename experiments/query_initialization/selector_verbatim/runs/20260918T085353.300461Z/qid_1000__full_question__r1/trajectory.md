@@ -1,0 +1,291 @@
+# 完整 rollout 轨迹
+
+API 请求是 SDK 调用参数；响应是 SDK 解析结果。未记录密钥或 HTTP 头。
+仅记录 API 实际返回的内容，不推断未返回的内部推理。
+
+## 1. control_query · 2026-09-18T08:56:35.254740+00:00
+
+```json
+{
+  "seq": 1,
+  "time": "2026-09-18T08:56:35.254740+00:00",
+  "kind": "control_query",
+  "query": "A Ghanaian doctor sailed on the Belgian ship Copacabana during the Second World War to study medicine at a University in Scotland.\n\nAfter graduating, he returned to Ghana and established a clinic the year after Ghana gained independence.\n\nIn a leap year at the end of the 20th century, he was recognized by being profiled in a book.\n\nThis book was authored by an international organization which was formed in 1952.\n\nThe doctor passed away in the early 21st century.\n\nWhat was his name?"
+}
+```
+
+## 2. query_finalized · 2026-09-18T08:56:35.255768+00:00
+
+```json
+{
+  "seq": 2,
+  "time": "2026-09-18T08:56:35.255768+00:00",
+  "kind": "query_finalized",
+  "plan": {
+    "status": "valid",
+    "selected_units": [
+      "q1",
+      "q2",
+      "q3",
+      "q4",
+      "q5",
+      "q6"
+    ],
+    "selector_input_refs": [],
+    "packet": {
+      "schema_version": "basis_packet_v1",
+      "packet_id": "45164011-d8e2-4035-bf0c-7f2e99ad2389",
+      "source_version": "85d1e5945452227d0fae9251885edc6fbb3984920f52d41328514d0f34dbe16f",
+      "selected_refs": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "context_refs": [],
+      "input_refs": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6"
+      ],
+      "segments": [
+        {
+          "ref": "q1",
+          "start": 0,
+          "end": 131,
+          "text": "A Ghanaian doctor sailed on the Belgian ship Copacabana during the Second World War to study medicine at a University in Scotland. ",
+          "role": "selected"
+        },
+        {
+          "ref": "q2",
+          "start": 131,
+          "end": 237,
+          "text": "After graduating, he returned to Ghana and established a clinic the year after Ghana gained independence. ",
+          "role": "selected"
+        },
+        {
+          "ref": "q3",
+          "start": 237,
+          "end": 331,
+          "text": "In a leap year at the end of the 20th century, he was recognized by being profiled in a book. ",
+          "role": "selected"
+        },
+        {
+          "ref": "q4",
+          "start": 331,
+          "end": 413,
+          "text": "This book was authored by an international organization which was formed in 1952. ",
+          "role": "selected"
+        },
+        {
+          "ref": "q5",
+          "start": 413,
+          "end": 463,
+          "text": "The doctor passed away in the early 21st century. ",
+          "role": "selected"
+        },
+        {
+          "ref": "q6",
+          "start": 463,
+          "end": 481,
+          "text": "What was his name?",
+          "role": "selected"
+        }
+      ],
+      "normalization_version": "whitespace_per_segment_v1",
+      "compiler_input_sha256": "05625bb1f14fe4e22758cfeb46cba90860a98eec67fc1e8ac620e4f0e28b363a"
+    },
+    "query": "A Ghanaian doctor sailed on the Belgian ship Copacabana during the Second World War to study medicine at a University in Scotland.\n\nAfter graduating, he returned to Ghana and established a clinic the year after Ghana gained independence.\n\nIn a leap year at the end of the 20th century, he was recognized by being profiled in a book.\n\nThis book was authored by an international organization which was formed in 1952.\n\nThe doctor passed away in the early 21st century.\n\nWhat was his name?",
+    "input_refs": [
+      "q1",
+      "q2",
+      "q3",
+      "q4",
+      "q5",
+      "q6"
+    ],
+    "query_tokens": 126,
+    "initial_valid": true,
+    "repairs": 0,
+    "initial_errors": [],
+    "errors": [],
+    "origin": "full_question_verbatim"
+  }
+}
+```
+
+## 3. search_start · 2026-09-18T08:56:35.257513+00:00
+
+```json
+{
+  "seq": 3,
+  "time": "2026-09-18T08:56:35.257513+00:00",
+  "kind": "search_start",
+  "arguments": {
+    "query": "A Ghanaian doctor sailed on the Belgian ship Copacabana during the Second World War to study medicine at a University in Scotland.\n\nAfter graduating, he returned to Ghana and established a clinic the year after Ghana gained independence.\n\nIn a leap year at the end of the 20th century, he was recognized by being profiled in a book.\n\nThis book was authored by an international organization which was formed in 1952.\n\nThe doctor passed away in the early 21st century.\n\nWhat was his name?",
+    "k": 6
+  }
+}
+```
+
+## 4. retrieval_worker · 2026-09-18T08:56:35.563620+00:00
+
+```json
+{
+  "seq": 4,
+  "time": "2026-09-18T08:56:35.563620+00:00",
+  "kind": "retrieval_worker",
+  "pid": 1055296,
+  "started_at": "2026-09-18T08:56:35.258984+00:00",
+  "finished_at": "2026-09-18T08:56:35.562518+00:00",
+  "elapsed_seconds": 0.3035723604261875,
+  "worker_index": 0
+}
+```
+
+## 5. search_result · 2026-09-18T08:56:36.425885+00:00
+
+```json
+{
+  "seq": 5,
+  "time": "2026-09-18T08:56:36.425885+00:00",
+  "kind": "search_result",
+  "arguments": {
+    "query": "A Ghanaian doctor sailed on the Belgian ship Copacabana during the Second World War to study medicine at a University in Scotland.\n\nAfter graduating, he returned to Ghana and established a clinic the year after Ghana gained independence.\n\nIn a leap year at the end of the 20th century, he was recognized by being profiled in a book.\n\nThis book was authored by an international organization which was formed in 1952.\n\nThe doctor passed away in the early 21st century.\n\nWhat was his name?",
+    "k": 6
+  },
+  "result": [
+    {
+      "docid": "33294",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1289340/",
+      "title": "Matthew Arnum Barnor",
+      "title_span": [
+        11,
+        31
+      ],
+      "document_sha256": "41378018bf931c1633726abc88d8f76feb61d4396db6ceedabbc2ba5f5d8580b",
+      "window_ref": "w_457cea2a81365bc284dca399",
+      "text": "E Evans\nE Evans\nFind articles by E Evans\n\nCopyright and License information\n\nCopyright © 2005, BMJ Publishing Group Ltd.\nPMC Copyright notice\nPMCID: PMC1289340\nShort abstract\nPhysician who played a leading role in the development of Ghana's health service\n\nMatthew Arnum Barnor was one of the most influential figures in Ghana's medical profession, and had a leading role in the development of the country's health service after independence. He founded a hospital, was a former president of the Ghana Medical Association, and helped set up the Planned Parenthood Association of Ghana.\nFigure 1.\n\nOpen in a new tab\nBorn in Accra, in the then Gold Coast, in 1917, he won a British government scholarship to study medicine and left for Edinburgh University on the Belgian ship Copacabana during the second world war. It was one of seven ships travelling in a convoy over the Atlantic and it had several west African students on board. One of the other boats in the convoy was torpedoed, and the Copacabana's captain drafted the students into \"submarine watch.\"\nAfter qualifying and house jobs at the Western Infirmary, Edinburgh, Dr Barnor worked in Sunderland during the early years of the NHS before moving to London to study for the diploma in tropical medicine and hygiene.\nIn 1950 he joined the Gold Coast Colonial Medical Service. In those days Africans who successfully completed their medical training were posted to deprived areas of the country. After being employed as medical officers, they were put on probation for three years. All senior servants, including Africans, were on equal salaries if they occupied identical positions. The difference was that the Europeans received an expatriate allowance and worked in the European Hospital. The crown employed the first Ghanaian doctor in 1887. The next Ghanaian doctor was not appointed until 1926. ",
+      "offset": 1256,
+      "end_char": 3115,
+      "text_tokens": 394,
+      "title_tokens": 5,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.6905152797698975
+    },
+    {
+      "docid": "69192",
+      "url": "https://nwmf.org.uk/black-history-month-stories-raphael-armattoe-the-ghanaian-doctor-who-made-his-home-in-derry/",
+      "title": "BLACK HISTORY MONTH STORIES: Raphael Armattoe – The Ghanaian doctor who made his home in Derry",
+      "title_span": [
+        11,
+        105
+      ],
+      "document_sha256": "a9f643179fffe6a44b3e12a7f9a4061b70b6ddea37d8b6ec78b4c23b6444d261",
+      "window_ref": "w_ebbebb70dfb649199d040af4",
+      "text": "He received his early education in Togoland before completing his primary education in Denu, Ghana, before attending secondary school along the country's Cape Coast.\n\nAs Togoland changed from German to British and French hands, Armattoe ended up being fluent in German, French and English whilst also having a strong grasp of Spanish and Portuguese.\n\nHe left for Germany in 1930 for further studies but apparently departed there for France amid the rise in Nazism. He continued his studies in anthropology, literature and medicine at the Sorbonne.\n\nArmattoe later moved to Edinburgh where he qualified to practice medicine before accepting a locum job in Belfast.\n\nFollowing that he worked at the Civil Defence first-aid post in Brooke Park, Derry, between 1939 and 1945. After the Second World War he opened a medical practice at his home on Northland Road in Derry. He later established and became the director of the Lomeshie Research Centre, named after his mother.\n\nIn 1947, Armattoe attended the Nobel Prize laureation ceremonies with his friend Erwin Schrödinger who won the Nobel Prize in Physics in 1933, him being the only African amongst the thousand intellectuals invited to attend the event in Stockholm\n\nSchrödinger later wrote the foreword for Armattoe's book The Golden Age of West African Civilization.\n\nIn 1948 he returned to West Africa, where he conducted more research. After about half a year of field research, he returned to Derry to write up his reports.\n\nArmattoe wrote of studying the ancient herbal medicines of County Donegal and collected many African plants to study for medicinal applications. ",
+      "offset": 210,
+      "end_char": 1836,
+      "text_tokens": 356,
+      "title_tokens": 23,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.6524327993392944
+    },
+    {
+      "docid": "2289",
+      "url": "https://www.buru.org.uk/contributor/oku-ampofo",
+      "title": "Ben Uri Research Unit",
+      "title_span": [
+        11,
+        32
+      ],
+      "document_sha256": "9e0c322c8e37627c4bc64421a14fc6d0e17454badb79cbb6004c8fc93a9f57fb",
+      "window_ref": "w_3f8a1398af00e6aecce338da",
+      "text": "In 1932 he won the Gold Coast Government Medical Scholarship, making him the first Ghanaian to ever win a government medical scholarship.\n\nAmpofo subsequently moved to Edinburgh, Scotland in 1933 and studied medicine at both the University of Edinburgh and the medical Royal Colleges of Edinburgh and Glasgow. At the same time he took night classes in sculpture at Edinburgh School of Art under sculptor Norman Forest, producing pieces depicting cultural and socio-religious aspects of the Ghanaian way of life, combining themes associated with traditional African life with a Western-derived abstraction. While living in the UK, Ampofo was able to tour European museums with major African art collections. He later commented: 'It was as though the African had to go all the way to Europe to discover himself'(as cited in Ruwona 2021). Ampofo was in Sweden at the outbreak of the Second World War, where he carved a Death Mask (1939, Oku Ampofo Foundation) reflecting the frightening effects of the war on him.\n\nIn 1940 Ampofo returned to Ghana and established both an art studio and a medical clinic. He worked as a physician from 1940 until 1961, when he decided to dedicate his time to researching plant medicine as well as working on his art. As a sculptor, Ampofo worked with painted wood as well as with cement and terrazzo. He described his work as 'a step in the direction of a further development of a typical African identity' (as cited in MacClancy 1997, p. 37). Ampofo was an ardent supporter of the Pan-African movement and advocated for traditional styles as opposed to those influenced by Western art. He recruited artists practicing in different mediums throughout Ghana, which would later come to be known as the Akuapim Six. ",
+      "offset": 839,
+      "end_char": 2582,
+      "text_tokens": 390,
+      "title_tokens": 4,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.6216989159584045
+    },
+    {
+      "docid": "21525",
+      "url": "https://kentakepage.com/dr-raphael-armattoe/",
+      "title": "Dr. Raphael Armattoe: Renowned Ghanaian doctor who discovered the Abochi drug",
+      "title_span": [
+        11,
+        88
+      ],
+      "document_sha256": "7f7b60595c6858c64fd4e155135da0f2e51e5e7a8491be22cd1c14c3e2b12c7b",
+      "window_ref": "w_bc2e0ae8d803cc46d8d148b0",
+      "text": "---\ntitle: Dr. Raphael Armattoe: Renowned Ghanaian doctor who discovered the Abochi drug\nauthor: Meserette Kentake\ndate: 2025-06-15\n---\nRaphael Ernest Grail Armattoe was a renowned Ghanaian doctor, anthropologist, author, poet, and politician. His research into the use of the abochi drug against human parasites led to his nomination for the Nobel Prize in Physiology or Medicine in 1948.\n\nArmattoe was born in August 1913 to a prominent family of the Ewe people in Togoland. After the First World War, the country which had been invaded by the Germans was annexed into two mandates, one under French rule and the other British. Thus young Armattoe grew up speaking three European languages as well as his native Ewe, and was later to write and publish works in French, German and English. After receiving basic education at mission schools, in 1930 Armattoe left home to study in Germany. It is thought that the rise of the Nazis in Germany prompted the move to further studies in France. While studying in Europe, Armattoe met a woman from Switzerland, Leonie (later known as 'Marina') Schwartz, whom he married.\n\nHaving studied anthropology, literature, and medicine in mainland Europe, Armattoe moved with his wife to Edinburgh, where he qualified to practice medicine in the British Isles. In Northern Ireland, he secured a position as a locum in Belfast and then was appointed to the Civil Defence First Aid Post in Brooke Park, Derry where he worked from 1939-45. ",
+      "offset": 0,
+      "end_char": 1472,
+      "text_tokens": 354,
+      "title_tokens": 20,
+      "has_more_before": false,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.6203344464302063
+    },
+    {
+      "docid": "27481",
+      "url": "https://kbnf.org/faq/who-was-sir-frederick-gordon-guggisberg/",
+      "title": "Who was Sir Frederick Gordon Guggisberg?",
+      "title_span": [
+        11,
+        51
+      ],
+      "document_sha256": "c4597f60d07c21021cfcf25cf99ae909032bd44f2ba5faeed0ab67071de6bfa3",
+      "window_ref": "w_b1bddb4eb4875f5cf39b015f",
+      "text": "As a surveyor, Guggisberg bequeathed the country and the world with an accurate map of Ghana. This arduous and treacherous assignment required extensive travel throughout the length and breadth of the country bringing him in close contact with the chiefs and indigenous people and therefore to the culture of the African.\n\nReturning to Ghana as Governor 11 years later, Guggisberg focused upon building an infrastructure that would promote growth of the economy and give Ghana a competitive advantage in the world market especially in the area of the cocoa trade. He consequently invested resources in the building of a seaport, in the construction of extensive networks of roads and railways, in the strengthening of education, in improving the health of the people and in the advancement of the African people, through a 10—year development plan. In 1925, he was privileged to welcome, also for the first time to the Gold Coast, an heir to the throne of Great Britain, the Prince of Wales, sharing his vision for this colony.\n\nIn retrospect, as the country developed economically, the focus of government power gradually shifted from the hands of the Governor and his officials into those of Ghanaians. This transition resulted from the gradual development of a strong spirit of nationalism and was to result eventually in this the first African nation to gain independence.\n\nMajor A. H. Selormey, Commissioner for Health in 1973, recalls that at a time when few Europeans would recognize the worth of the African, reducing the African to the worst of servitude, denying him the basic things of life and showing him as incapable of looking after himself, Sir Guggisberg created conditions for the African to acquire some confidence in himself. He was considered a rare breed of colonialists who, even though essentially serving the interests of Britain, operated in such a way as to bestow benefit upon the people of the region. ",
+      "offset": 1601,
+      "end_char": 3532,
+      "text_tokens": 388,
+      "title_tokens": 10,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.6199392080307007
+    },
+    {
+      "docid": "44464",
+      "url": "http://curiousedinburgh.org/2020/10/19/1-roseneath-terrace/",
+      "title": "1 Roseneath Terrace",
+      "title_span": [
+        11,
+        30
+      ],
+      "document_sha256": "8e6de14a0bf7a567068ba5ca1e13e4c0e1eb200c56ce4420470af7725387bd09",
+      "window_ref": "w_ac9973c3198276e3d73bfbd6",
+      "text": "---\ntitle: 1 Roseneath Terrace\nauthor: Kate Bowell\ndate: 2020-10-19\n---\n1 Roseneath Terrace, Edinburgh EH9 1JS\n\nThe sixth floor of 1 Roseneath Terrace was home to Eustace Akwei while he studied medicine at Edinburgh during the 1940s. Coincidentally, another Ghanaian medical student, Emmanuel Evans-Anfom, would later move into the very same room. The landlady was therefore \"familiar with the ways of students from the Gold Coast\" and remarked that Eustace Akwei was \"a courteous and cultured gentleman\". Eustace Akwei trained to become a doctor in Edinburgh at a time when it was official policy to exclude indigenous African from practicing medicine in West Africa. From the beginning of the twentieth century to the end of 1945, the medical services in British West Africa were amalgamated and in 1902 the West African Medical Staff (WAMS) was formed. The WAMS formally rejected any physician not of \"European parentage\" from its ranks and was the only department in the British empire to do so. In 1955, more than half a century after this racist policy was first enacted and a decade after it was repealed, Eustace Akwei became the first Ghanaian to be appointed Chief Medical Officer in the Gold Coast. In 1958, he was one of the prominent doctors present at the inauguration of the Ghana Medical Association.\n\nSorry, the comment form is closed at this time.",
+      "offset": 0,
+      "end_char": 1365,
+      "text_tokens": 328,
+      "title_tokens": 5,
+      "has_more_before": false,
+      "has_more_after": false,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.6043347716331482
+    }
+  ]
+}
+```

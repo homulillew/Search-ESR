@@ -1,0 +1,63 @@
+{
+  "version": "selector_verbatim_v001",
+  "phase": "locally_unused_questions",
+  "source_sha256": {
+    "experiments/query_initialization/selector_verbatim/run.py": "d7bfc2da7d6814e7d14bcead1b1ec7d56c63ba0e23d971aa809e53fe210fe59b",
+    "experiments/query_initialization/selector_verbatim/prepare.py": "4c7f41d3f20b5c6ce87f894cf8a9e1b74be44e297cdafa3b30a80af8dcd83f1e",
+    "experiments/query_initialization/selector_verbatim/selector.py": "da05877d46f0e4cc5c859e4561c9427c0befba81bc7d11835296ab3ce4605c23",
+    "experiments/query_initialization/selector_verbatim/review_cards.py": "7acd4d7d691fb0ca779c0ab63cc7552a29e5c8f10e8807989be1eeba9fcc8c9b",
+    "experiments/query_initialization/selector_verbatim/audit.py": "354df761eae0fd1aed2c37ddbec4d0ccef5464de95bd4f3b0de278a53d558eb3",
+    "experiments/query_initialization/selector_verbatim/REVIEW_PROTOCOL.md": "f682b85716068be79dad8b197d4da20dcaf098de25268db2bf5b3639b7c41198",
+    "experiments/query_initialization/selector_verbatim/SELECTOR_PROMPT.txt": "6428f63a03a0ee5efaa0492f9fd1a86d57773c8b24d8add5d44046c373d6837e",
+    "experiments/query_initialization/selector_verbatim/tasks.json": "4bbc04f061fcf8d7274fb8a5904aee61a11b97a7300b8be96adef609e8b10923",
+    "experiments/query_initialization/selector_verbatim/selection_lock.json": "8a098f17121fafe57cd6299e868a61873a2a9c08f1a4c8922f144b83b811e02d",
+    "experiments/query_initialization/selector_verbatim/test_selector.py": "c85779fb8beae6db7fa0863e07d289c92ef6db12291830bb7212b36ddec3c6a8",
+    "experiments/query_initialization/selector_verbatim/README.md": "ae38d88b6d818abb1da6d3e3c0221c5d92240c1fd17f969b53a4997c976bd6a4",
+    "experiments/query_initialization/selector_verbatim/parallel_search.py": "ecca8db2161c94667bf92a3d109a82156159ce0e560754765f1bf9a9fab394e2",
+    "experiments/query_initialization/basis_packet/packet.py": "a52bc7d9a986ebe22f347dcbfb2db321de7f5fae689a79a75605cd37923d28f2",
+    "experiments/query_initialization/single_entry/source_units.py": "2420815746e5bddf5e6f8a7be74e5035825dfe37b5be820936c9640d48f1c43c",
+    "experiments/query_initialization/single_entry/initializer.py": "c541c38e5b48e68df779e00f5846f60730ed654ba0f620705e056693ca968c63",
+    "experiments/query_initialization/initializer.py": "72168211358931efe7920a7af9590262e87269b996179d4fbefc415f8e329538",
+    "experiments/run_rollout.py": "da5e6ac648b349c18f72b5065bebf726ee72546722fe9013a3b4ed5a5cb94368",
+    "llm_chat/client.py": "f47d0d82dcf9b1e83d4ed4484a0fb8df9f9008d933f2b2f6552b5641092c8e66",
+    "llm_chat/agent.py": "abb241830af9d2e7531ff7dd103bc5731e956a8ef8ace54ece857b1d2efb3fa6",
+    "llm_chat/observed_agent.py": "3382351f0b38b927cffb4d4a085777cc9d7dcec5b7f69c5a4313439f3bc44b5e",
+    "llm_chat/observations.py": "858bcb25ec347e21060d5dc9074cd09d64acecf0b987900475043407fe6cedde",
+    "llm_chat/raw_windows.py": "c20c0ec11bc2c9fbc3110bcf674d7603d7d0bbe4f6076bd63697c9e8af8beaed",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "llm_chat/window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2",
+    "BCPlus/scripts/search_bcplus.py": "5b13d6ad0faf6055887ff7e642e64f14737a4b51c7768953e9df02ddc87e40fd",
+    "BCPlus/indexes/bcplus-qwen3-8b/metadata.json": "a89540baa2736475f104bab5202f50e87a4bc63cf3b726070e31a074190d0c7f"
+  },
+  "dataset_sha256": "44b80cc9fcd9dd5a44aa09292c2165364b0c0e9df26c9cd6c11846165a0916b7",
+  "tasks_sha256": "4bbc04f061fcf8d7274fb8a5904aee61a11b97a7300b8be96adef609e8b10923",
+  "selection_lock_sha256": "8a098f17121fafe57cd6299e868a61873a2a9c08f1a4c8922f144b83b811e02d",
+  "arms": [
+    "full_question",
+    "selector"
+  ],
+  "model_repeats": 2,
+  "control_repeats": 1,
+  "model": "qwen3.7-flash",
+  "base_url": "https://llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "request_options": {
+    "extra_body": {
+      "enable_thinking": false
+    }
+  },
+  "max_tokens": 1536,
+  "query_max_tokens": 1024,
+  "query_prefix": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+  "timeout": 120,
+  "sdk_retries": 0,
+  "repair_limit": 1,
+  "workers": 8,
+  "retrieval_workers": 2,
+  "schedule_seed": 20260924,
+  "window": "baseline",
+  "k": 6,
+  "window_tokens": 400,
+  "total_window_budget": 2400,
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+  "note": "No Compiler. Selector chooses refs; Harness executes exact source text. Full-question baseline uses all original units and identical separators. All failures retained. New locally unused tasks, not model-pretraining holdout. Offline relevance labels are post-run; no gold in requests."
+}

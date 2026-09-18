@@ -1,0 +1,29 @@
+{
+  "stage": "post_run_review",
+  "frozen_run_sources_verified": 26,
+  "sessions_verified": 60,
+  "required_session_files": [
+    "input.json",
+    "events.jsonl",
+    "result.json",
+    "trajectory.md",
+    "packet.json",
+    "observations.sqlite",
+    "handoff.json"
+  ],
+  "method": "Coding-agent qualitative review, partly unblinded. No additional API judge. Not independent human gold; strict preregistered no-LLM-judge wording was not met.",
+  "independent_scoring_review": "A separate coding agent recomputed all 60 attempts using per-character visible interval coverage; all matched. No API calls.",
+  "tests": "Selector implementation: 15 tests passed before run. Actual payload/budget integration checked for all 20 locked questions. Post-run quote spans, source hashes and review coverage assertions passed.",
+  "default_agent_changed": false,
+  "selector_promoted": false,
+  "files_sha256": {
+    "review_summary.json": "631a9c3bc636965f291fdafde78fa766f842c2703179c2e1281efe096a857e04",
+    "review_source/summarize_review.py": "b8d7d474750c636aaef4069cacdb81a568df71ded2239b516c7707526eb24eec",
+    "README.md": "2583963107eed1de7120e4cd4fcc3839a59d37ae229ad286c5556abbc175b952",
+    "review_part_d1.json": "ce2134105667e769dafc3afebfcf6fcdb5bc54e4476d9a9422a1508fd819f0fa",
+    "review_part_d2.json": "c0a22d757f788c06b6d51ed55362b5d04edd75c402ca31661be1061e4fe463cf",
+    "review_part_b.json": "934453feabf429cd8534a6b40c0495e2898d279aa2a4767efca781d830b66a0a",
+    "review_part_a.json": "5f6cc32e77c02c47325f749f508c9b99049b121e2072b5dc49951d6891bb143c",
+    "review_part_c.json": "57103915a6e69f08e723dbab6c340eed03ad3584058dca4e8fcc06d942f586ad"
+  }
+}
