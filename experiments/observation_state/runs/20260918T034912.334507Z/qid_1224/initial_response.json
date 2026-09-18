@@ -1,0 +1,45 @@
+{
+  "id": "chatcmpl-f02f2765-c78d-921c-b87d-4958c7a134ac",
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "Based on the detailed criteria provided, the university is **Shoolini University** (located in Solan, Himachal Pradesh, India). However, upon closer inspection of the specific constraints—particularly regarding the \"no university for 30 years\" and the specific family details of the founders—it appears this query refers to a very specific case study often found in competitive exam materials or specific regional histories.\n\nLet's analyze the clues against known universities established in India between 1990 and 2005, focusing on the unique biographical data points which are highly specific.\n\nThe most likely candidate that fits the complex biographical profile (Chancellor's husband being a doctor, specific number of children/grandchildren by specific dates) is **Shoolini University**? No, Shoolini was established much later (2009).\n\nLet's look at **Sri Sai University**? No.\n\nLet's re-evaluate the \"No university for 30 years\" clue. This is a strong indicator for a state where higher education infrastructure was sparse.\n\nConsider **Himachal Pradesh**. The first university in HP was Himachal Pradesh University (1970). If a new university was established after 1990, it wouldn't fit the \"30 years\" rule if the previous one was 1970 (only 20 years).\n\nConsider **Uttarakhand**. It was carved out of UP in 2000. Before that, there were no universities *in the new state* of Uttarakhand.\n- **Kumaun University** (Nainital) was established in 1973.\n- **Garhwal University** (Srinagar) was established in 1973.\nSo, if a university was established in Uttarakhand after 2003/2004, it would be more than 30 years since the last one? No, 1973 to 2004 is 31 years. This fits criterion 2.\n\nLet's check universities established in Uttarakhand:\n1. **Rajiv Gandhi Paurava Haridwar University** (now Dev Bhoomi Uttarakhand University)? Established via Act in 2004?\n2. **Graphic Era University**? Private.\n3. **IIT Roorkee**? Older.\n4. **GBPUAT**? Older.\n\nLet's look at **Dev Bhoomi Uttarakhand University** (DBUU), formerly known as **Rajiv Gandhi Paurava Haridwar University**.\n- **Plan Announcement**: The bill was introduced/passed around 2003-2004.\n- **University Bill Passed**: The *Dev Bhoomi Uttarakhand University Act, 2004* was passed in **2004**.\n- **First Batch**: Started in 2004/2005.\n- **Founding Chancellor**: **Veer Bhai Patel**? Or perhaps someone else?\n\nActually, there is a well-known case fitting these exact biographical constraints: **Sikkim Manipal University**? No.\n\nLet's look at **North Bengal Medical College**? No.\n\nLet's search for the specific biographical details: \"founding chancellor's husband was a doctor\", \"four children and four grandchildren until 20 April 2004\".\n\n",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [
+          {
+            "id": "call_228ce9ca8832488b983129e6",
+            "function": {
+              "arguments": "{\"query\": \"university founded chancellor husband doctor four children four grandchildren 2004\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1789703375,
+  "model": "qwen3.7-flash",
+  "object": "chat.completion",
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 758,
+    "prompt_tokens": 846,
+    "total_tokens": 1604,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0,
+      "text_tokens": 846
+    }
+  }
+}

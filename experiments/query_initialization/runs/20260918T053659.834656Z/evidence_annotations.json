@@ -1,0 +1,701 @@
+{
+  "method": "Single-reviewer source-grounded positive pool. Offline gold available for review only; no LLM judge. Not blind or exhaustive qrels. Unannotated sources remain unverified, not negative. A reference span miss is not proof that the window has no useful information.",
+  "annotations": [
+    {
+      "qid": "985",
+      "docid": "50013",
+      "kind": "target_linked",
+      "clue": "thesis_author",
+      "rationale": "学位论文记录包含教父姓名、Montanism 和作者，提供论文及作者入口。",
+      "url": "https://digitalcommons.georgefox.edu/seminary_masters/23/",
+      "document_sha256": "1299ded86469d0cbc86deda71510e051f8bbb26ad859c979d1a3264ad2c09a76",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Larson, Brice Andrew, \"Lost Prophets: Tertullian, Eusebius, Epiphanius, and Early Montanism\"",
+            "source_spans": [
+              [
+                844,
+                936
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "591",
+      "docid": "37403",
+      "kind": "target_linked",
+      "clue": "campus_anniversary",
+      "rationale": "GUC 海外校区十周年活动的时间、校名与地点。",
+      "url": "https://www.guc.edu.eg/20years/Details.aspx?id=14",
+      "document_sha256": "221c18cb2adf3bbc18391d5dc614f6b0046210e859a9c15ccf9468bbe5c27b84",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "2022",
+            "source_spans": [
+              [
+                64,
+                68
+              ],
+              [
+                140,
+                144
+              ]
+            ]
+          },
+          {
+            "quote": "The German University in Cairo and the GUC-Berlin will be celebrating their combined \"20th GUC – 10th GUC Berlin Anniversary\"",
+            "source_spans": [
+              [
+                174,
+                299
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "591",
+      "docid": "86424",
+      "kind": "target_linked",
+      "clue": "founder",
+      "rationale": "创始人、董事会主席和科学家身份同时出现。",
+      "url": "https://www.universitiesegypt.com/german-university-cairo-guc/leadership",
+      "document_sha256": "249d1162cb9c9c9f1b65033bc9252c67cfaa6b3826fbbd214aef801d76af107f",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Prof.Dr. Ashraf Mansour is the Founder & Chairman of Board of Trustees of German University in Cairo (GUC).",
+            "source_spans": [
+              [
+                212,
+                319
+              ],
+              [
+                901,
+                1008
+              ]
+            ]
+          },
+          {
+            "quote": "He is s an Egyptian Scientist",
+            "source_spans": [
+              [
+                321,
+                350
+              ],
+              [
+                1010,
+                1039
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "183",
+      "docid": "90095",
+      "kind": "target_linked",
+      "clue": "teaching_blog",
+      "rationale": "二十年教学文章与多条具体教学观点吻合，入口是博客文章而非最终答案。",
+      "url": "https://jasoneckert.github.io/myblog/20-years-of-teaching-lessons-learned/",
+      "document_sha256": "76ddc9d32cfb2b121eb8a48344f2150ada383db1f4ea3437a920fe5f4516652c",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Lessons I've learned from teaching 20 years of IT",
+            "source_spans": [
+              [
+                11,
+                60
+              ],
+              [
+                82,
+                131
+              ]
+            ]
+          },
+          {
+            "quote": "Listening is the most important part of any communication.",
+            "source_spans": [
+              [
+                3524,
+                3582
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "quote": "Lessons I've learned from teaching 20 years of IT",
+            "source_spans": [
+              [
+                11,
+                60
+              ],
+              [
+                82,
+                131
+              ]
+            ]
+          },
+          {
+            "quote": "Leverage it in the classroom",
+            "source_spans": [
+              [
+                5251,
+                5279
+              ]
+            ]
+          },
+          {
+            "quote": "Never be afraid to say \"No\"",
+            "source_spans": [
+              [
+                6162,
+                6189
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "183",
+      "docid": "61300",
+      "kind": "target_linked",
+      "clue": "park_blog",
+      "rationale": "三镇合并、铁路公司和公园开放年份组合。",
+      "url": "https://jasoneckert.github.io/myblog/finding-idylwild-park/",
+      "document_sha256": "e47fc0c3ae4a1b19352c0133dcd89115303b2b7994fac7ea3409d2ba69a3124e",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "The city was formed when 3 smaller towns (Hespeler, Preston and Galt) amalgamated in 1973",
+            "source_spans": [
+              [
+                153,
+                242
+              ]
+            ]
+          },
+          {
+            "quote": "the railway only opened the park between 1899 and 1916",
+            "source_spans": [
+              [
+                1115,
+                1169
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "551",
+      "docid": "37025",
+      "kind": "target_linked",
+      "clue": "substitution_2011",
+      "rationale": "2011 年 Paul Rachubka 被半场换下的具体比赛，后续仍需查失误细节。",
+      "url": "https://www.theguardian.com/football/2019/jan/09/has-a-goalkeeper-ever-been-substituted-for-playing-badly",
+      "document_sha256": "a225d8b087fa16aa59573f5f8f6b5ec2cdd01072f74d66c3b2b8642add9c718e",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Paul Rachubka who was substituted at half-time in the 5-0 loss to Blackpool in 2011",
+            "source_spans": [
+              [
+                309,
+                392
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "810",
+      "docid": "9043",
+      "kind": "target_linked",
+      "clue": "architect_family",
+      "rationale": "建筑师、诗人弟弟关系及四个孩子支持继续核查。",
+      "url": "https://americanaristocracy.com/people/edgar-irving-williams",
+      "document_sha256": "b17eaec2261610322eafbb7f0ef417b4340e608d5274ca9c392e4f4218808318",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Edgar Irving Williams",
+            "source_spans": [
+              [
+                11,
+                32
+              ],
+              [
+                66,
+                87
+              ]
+            ]
+          },
+          {
+            "quote": "younger brother of the poet William Carlos Williams",
+            "source_spans": [
+              [
+                209,
+                260
+              ]
+            ]
+          },
+          {
+            "quote": "had four daughters",
+            "source_spans": [
+              [
+                1186,
+                1204
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "1072",
+      "docid": "69382",
+      "kind": "target_linked",
+      "clue": "author_thesis",
+      "rationale": "作者出生年、议员任期和国际组织论文相互连接。",
+      "url": "https://international.ut.ac.ir/en/page/3873/vice-president-for-international-affairs",
+      "document_sha256": "e958aa4c0e3ca54269b4f523b127f5ccc8986a29d425ee07d0ff2eff7d1bf3ea",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Aminzadeh was born in 1964",
+            "source_spans": [
+              [
+                682,
+                708
+              ]
+            ]
+          },
+          {
+            "quote": "the United Nations and international peace and security: a legal and practical analysis",
+            "source_spans": [
+              [
+                804,
+                891
+              ]
+            ]
+          },
+          {
+            "quote": "as a lawmaker from 2004 to 2008",
+            "source_spans": [
+              [
+                1109,
+                1140
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "1072",
+      "docid": "21375",
+      "kind": "bridge",
+      "clue": "museum_year",
+      "rationale": "博物馆及 1997 年开馆提供独立年份入口，不能确认作者。",
+      "url": "https://www.britannica.com/topic/Getty-Center",
+      "document_sha256": "096296fb8a7de2e3967a5763ad2f5170d1a981bb5df0be3c35d663a840b68320",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Getty Center",
+            "source_spans": [
+              [
+                11,
+                23
+              ],
+              [
+                45,
+                57
+              ],
+              [
+                190,
+                202
+              ],
+              [
+                547,
+                559
+              ],
+              [
+                957,
+                969
+              ]
+            ]
+          },
+          {
+            "quote": "Los Angeles",
+            "source_spans": [
+              [
+                119,
+                130
+              ],
+              [
+                137,
+                148
+              ],
+              [
+                206,
+                217
+              ],
+              [
+                563,
+                574
+              ]
+            ]
+          },
+          {
+            "quote": "opened with great publicity in 1997",
+            "source_spans": [
+              [
+                1088,
+                1123
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "583",
+      "docid": "996",
+      "kind": "target_linked",
+      "clue": "artist_interview",
+      "rationale": "2012 年艺术家采访；别名、童年和圆形图案可交叉核查。",
+      "url": "https://buenosairesstreetart.com/2012/07/circle-of-life-interview-with-cuore/",
+      "document_sha256": "84778e33e8f6f77bfd8b3bf9ea7cc315bd54b7e2b3c7c41d02e393339084e4fd",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Cuore",
+            "source_spans": [
+              [
+                43,
+                48
+              ],
+              [
+                114,
+                119
+              ],
+              [
+                248,
+                253
+              ],
+              [
+                2646,
+                2651
+              ],
+              [
+                6116,
+                6121
+              ],
+              [
+                8579,
+                8584
+              ]
+            ]
+          },
+          {
+            "quote": "Circles often appear in Carolina's artworks",
+            "source_spans": [
+              [
+                1574,
+                1617
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "478",
+      "docid": "47437",
+      "kind": "target_linked",
+      "clue": "book_stadium",
+      "rationale": "指定书评来源、夫妇养熊及体育场。",
+      "url": "https://prowrestlingbooks.com/hercules-the-bear-by-maggie-robin/",
+      "document_sha256": "c564971169fb66d328d45b5cbd42f85af0da9e18f064ee770730a9e79cc10477",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Pro Wrestling Books",
+            "source_spans": [
+              [
+                11,
+                30
+              ]
+            ]
+          },
+          {
+            "quote": "Eldorado Stadium in Edinburgh",
+            "source_spans": [
+              [
+                376,
+                405
+              ]
+            ]
+          },
+          {
+            "quote": "wife Maggie",
+            "source_spans": [
+              [
+                511,
+                522
+              ]
+            ]
+          },
+          {
+            "quote": "Hercules",
+            "source_spans": [
+              [
+                641,
+                649
+              ],
+              [
+                842,
+                850
+              ],
+              [
+                1004,
+                1012
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "478",
+      "docid": "24964",
+      "kind": "target_linked",
+      "clue": "obituary_date",
+      "rationale": "指定报刊讣告、相识时间、养熊年数和日期。",
+      "url": "https://theblantyretelegraph.com/2019/12/06/remembering-andy-robin/",
+      "document_sha256": "aefab08072a61f868a27c381b3dd11efd8b9f9024b99f80ee5ee87eb97e48ed3",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "2019-12-06",
+            "source_spans": [
+              [
+                59,
+                69
+              ]
+            ]
+          },
+          {
+            "quote": "Andy and Maggie met 46 years ago",
+            "source_spans": [
+              [
+                476,
+                508
+              ]
+            ]
+          },
+          {
+            "quote": "grizzly with for 25 years",
+            "source_spans": [
+              [
+                416,
+                441
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "558",
+      "docid": "20026",
+      "kind": "target_linked",
+      "clue": "museum_founder",
+      "rationale": "Tom Rice 纪念文包含逝世日，全文另含 1973 年博物馆和长期杂志出版。",
+      "url": "https://www.bily.com/pnwsc/web-content/Articles/In-Memoriam-Tom-Rice.pdf",
+      "document_sha256": "39fc646034de6c4734723db4ef10f3643a3e6903a37e000d09e5aa28ebd367d3",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Remembering Tom Rice 1939-2022",
+            "source_spans": [
+              [
+                0,
+                30
+              ]
+            ]
+          },
+          {
+            "quote": "passed away in Thailand on January 8",
+            "source_spans": [
+              [
+                116,
+                152
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "558",
+      "docid": "69043",
+      "kind": "target_linked",
+      "clue": "family_obituary",
+      "rationale": "父亲 Frank 的讣告列出 Tom 和 Steve，提供家庭关系入口。",
+      "url": "https://www.kitsapdailynews.com/obituaries/frank-rice/",
+      "document_sha256": "a493f8a420adb732c631cbf505eaa8b5693aeb629e90a9a4599b58a83acf16f0",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Frank E. Rice",
+            "source_spans": [
+              [
+                43,
+                56
+              ]
+            ]
+          },
+          {
+            "quote": "Rice is survived by his sons Tom Rice of Pawai Beach, Thailand, Steve",
+            "source_spans": [
+              [
+                408,
+                477
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "1117",
+      "docid": "8000",
+      "kind": "bridge",
+      "clue": "journal_owner",
+      "rationale": "1828 年接手刊物的姓名可供核查，尚未验证军衔和婚姻关系。",
+      "url": "https://www.hetwebsite.net/het/schools/westreview.htm",
+      "document_sha256": "12c4ca7b6f8e7847d0cede778260f5bb4cb53260d8ad81eb6de647196fd0ad91",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "In 1828, T. Perronet Thompson took over the Westminster Review",
+            "source_spans": [
+              [
+                936,
+                998
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "638",
+      "docid": "38269",
+      "kind": "bridge",
+      "clue": "bestselling_album",
+      "rationale": "识别销量最高专辑这一中间实体；未要求同一窗口已经呈现发行年。",
+      "url": "https://en.wikipedia.org/wiki/Thriller_(album)",
+      "document_sha256": "4c259791d1c7bb85b5e360a1daddcccdf9120a81d0e37bae6e76b81457073c07",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Thriller remains the best-selling album of all time",
+            "source_spans": [
+              [
+                3316,
+                3367
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "quote": "By 1984, Thriller had sold 32 million copies worldwide, making it the best-selling album of all time",
+            "source_spans": [
+              [
+                2460,
+                2560
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "638",
+      "docid": "18046",
+      "kind": "bridge",
+      "clue": "bestselling_album",
+      "rationale": "专辑销量列表最高行提供 Thriller 和 1982 年，继续核查品牌仍必需。",
+      "url": "https://en.wikipedia.org/wiki/List_of_best-selling_albums",
+      "document_sha256": "262c6a5096e936dfe9933f0a9e675fd37a83983e9a534adb69fe2def57e4c398",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "List of best-selling albums",
+            "source_spans": [
+              [
+                11,
+                38
+              ]
+            ]
+          },
+          {
+            "quote": "Michael Jackson\tThriller\t1982",
+            "source_spans": [
+              [
+                212,
+                241
+              ]
+            ]
+          },
+          {
+            "quote": "70\t[30][31][32]",
+            "source_spans": [
+              [
+                276,
+                291
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "qid": "638",
+      "docid": "15261",
+      "kind": "bridge",
+      "clue": "bestselling_album",
+      "rationale": "全文明确销量最高专辑身份；部分窗口仅呈现历年表，不能据此计入已见参考片段。",
+      "url": "https://en.wikipedia.org/wiki/List_of_best-selling_albums",
+      "document_sha256": "e09434ae6965435eb7ce59f414158b2d6271f4e1a640125ff45dacfadf39f1d8",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Michael Jackson's Thriller, estimated to have sold 70 million copies worldwide, is the best-selling album ever.",
+            "source_spans": [
+              [
+                2081,
+                2192
+              ]
+            ]
+          }
+        ]
+      ]
+    }
+  ]
+}

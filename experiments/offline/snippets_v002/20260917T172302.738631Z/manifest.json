@@ -1,0 +1,17 @@
+{
+  "source": "experiments/offline/snippets_v001/20260917T095014.433850Z",
+  "source_comparisons_sha256": "305d7f61ec59e4bc488e810ac1da7237a4810200db82e05a7a5f0c51078dad15",
+  "budget": 400,
+  "tokenizer": "/data/model/Qwen3-Embedding-8B",
+  "scope": "Offline frozen queries/documents. A=v001 fixed BM25 chunk, B=sentence/line BM25 anchor plus alternating context expansion.",
+  "limitations": [
+    "Candidate units change BM25 statistics; not an expansion-only ablation.",
+    "Regex sentence boundaries; only Markdown headings delimit sections; no HTML cleaning or remote headers.",
+    "Equal text token caps, not equal actual consumption; metadata overhead excluded. No online claims."
+  ],
+  "source_sha256": {
+    "selector.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "window.py": "1634f103388c87da3117ce21364d726fa73092ea74b02b185259f5d2f772d8b0",
+    "compare_windows.py": "bcad2e171d5ff8143910795afe935416aea3666f4fc9fdf599483896324f499b"
+  }
+}

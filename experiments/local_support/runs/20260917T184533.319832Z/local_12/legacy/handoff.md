@@ -1,0 +1,9 @@
+Based on the provided search observation, there is a reference to **Lionel Messi** scoring a free kick in the 95th minute for PSG. However, this event is dated **2025**, which falls into the mid-21st century, not the early 21st century (typically defined as 2000–2010 or up to 2015 depending on context).
+
+The provided text does not contain information about an early 21st-century football final decided by a 95th-minute free kick. A prominent candidate often cited in such contexts is **Roberto Carlos** (e.g., 2002 World Cup semi-final vs. Turkey, though that was open play) or potentially **Zinedine Zidane** (2006 World Cup Final, but he scored penalties and a header, not a late free kick winner). Another possibility is **Derek Post** (2005 Eredivisie) or **Andriy Shevchenko** (2003 Champions League Final, though that was 89th min), but none match the specific "early 21st century final + 95th minute free kick" criteria perfectly in general knowledge without further verification. The only player mentioned in the supplied text is Messi, but the date does not fit the "early 21st century" constraint.
+
+**Evidence Handoff:**
+*   **Relevant Information Observed:** A YouTube video title mentions "Messi's 95th-minute free-kick" for PSG.
+*   **Exact Supporting Quotation:** "Messi's 95th-minute free-kick gets PSG back on track !"
+*   **Document/Window Reference:** Search Result [1] (Doc ID: 39918), Title: "A Hollywood finish to a blockbuster match, Messi's 95th-minute free-kick gets PSG back on track !", Date: 2025-01-01.
+*   **Limitations:** The observed event occurred in 2025, which is not the early 21st century. The search results do not provide information regarding an early 21st-century final with this specific characteristic. Further searching would be required to identify if any such event exists in that era (e.g., checking 2000s finals like Euro 2000, 2002 WC, 2006 WC, etc.).

@@ -1,0 +1,44 @@
+{
+  "status": "valid",
+  "directions": [
+    {
+      "goal": "Identify the university founded in the late 19th century that has a seminary where this thesis was completed.",
+      "source_clues": [
+        "seminary of a university founded in the late 19th century",
+        "professor at this same university as of December 2023"
+      ],
+      "query": "university founded in the late 19th century with a seminary and Lutheran professor",
+      "clue_locations": [
+        [
+          136
+        ],
+        [
+          288
+        ]
+      ],
+      "long_query_warning": false
+    },
+    {
+      "goal": "Find the author of a thesis exploring Church Fathers and a condemned Charismatic sect, advised by an ordained Lutheran minister.",
+      "source_clues": [
+        "thesis explores the work of notable Church Fathers and a condemned Charismatic sect",
+        "primary advisor to whom this thesis was submitted is an ordained Lutheran minister"
+      ],
+      "query": "\"thesis\" \"Church Fathers\" \"condemned Charismatic sect\" \"ordained Lutheran minister\"",
+      "clue_locations": [
+        [
+          5
+        ],
+        [
+          199
+        ]
+      ],
+      "long_query_warning": false
+    }
+  ],
+  "repairs": 1,
+  "initial_valid": false,
+  "initial_errors": [
+    "directions[1].source_clues[1] is not an exact nonempty substring of the original question"
+  ]
+}

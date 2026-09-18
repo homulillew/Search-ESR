@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "qid": "311",
+      "status": "natural_answer",
+      "api_responses": 7,
+      "tool_calls": {
+        "search": 6
+      },
+      "reported_usage": {
+        "prompt_tokens": 82211,
+        "completion_tokens": 11678,
+        "total_tokens": 93889
+      },
+      "elapsed_seconds": 139.6861597551033,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "abstained",
+        "answer_entity_match": false,
+        "gold_answer": "Cocomiel",
+        "notes": "搜索 6 次后主动弃答，最终回复大量枚举电视台名称，没有锁定目标。",
+        "full_claim_verification_performed": false
+      },
+      "directory": "experiments/runs/v000_baseline/qid_311/20260917T090903.053907Z"
+    },
+    {
+      "qid": "776",
+      "status": "natural_answer",
+      "api_responses": 20,
+      "tool_calls": {
+        "search": 19
+      },
+      "reported_usage": {
+        "prompt_tokens": 530534,
+        "completion_tokens": 3288,
+        "total_tokens": 533822
+      },
+      "elapsed_seconds": 79.40840173047036,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "abstained",
+        "answer_entity_match": false,
+        "gold_answer": "The Dorset Culture of the Eastern Arctic",
+        "notes": "搜索 19 次后主动弃答，明确表示无法确定报告名称。",
+        "full_claim_verification_performed": false
+      },
+      "directory": "experiments/runs/v000_baseline/qid_776/20260917T090903.033709Z"
+    },
+    {
+      "qid": "324",
+      "status": "natural_answer",
+      "api_responses": 19,
+      "tool_calls": {
+        "search": 18
+      },
+      "reported_usage": {
+        "prompt_tokens": 454247,
+        "completion_tokens": 1859,
+        "total_tokens": 456106
+      },
+      "elapsed_seconds": 67.00873030535877,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "abstained",
+        "answer_entity_match": false,
+        "gold_answer": "Svetlana Gromenkova",
+        "notes": "搜索 18 次后主动弃答，仍围绕 Player X 的线索寻找，没有完成目标答案的关系链。",
+        "full_claim_verification_performed": false
+      },
+      "directory": "experiments/runs/v000_baseline/qid_324/20260917T090903.066977Z"
+    },
+    {
+      "qid": "546",
+      "status": "natural_answer",
+      "api_responses": 11,
+      "tool_calls": {
+        "search": 10
+      },
+      "reported_usage": {
+        "prompt_tokens": 203472,
+        "completion_tokens": 3292,
+        "total_tokens": 206764
+      },
+      "elapsed_seconds": 55.2384404046461,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "incorrect",
+        "answer_entity_match": false,
+        "gold_answer": "Ding Junhui",
+        "notes": "搜索 10 次后回答 Mark Selby；标准答案为 Ding Junhui。",
+        "full_claim_verification_performed": false
+      },
+      "directory": "experiments/runs/v000_baseline/qid_546/20260917T090903.079976Z"
+    },
+    {
+      "qid": "517",
+      "status": "natural_answer",
+      "api_responses": 9,
+      "tool_calls": {
+        "search": 7,
+        "get_document": 1
+      },
+      "reported_usage": {
+        "prompt_tokens": 128105,
+        "completion_tokens": 7768,
+        "total_tokens": 135873
+      },
+      "elapsed_seconds": 113.81450991611928,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "correct_entity",
+        "answer_entity_match": true,
+        "gold_answer": "Peter King",
+        "notes": "7 次搜索、1 次文档阅读后回答 Peter King，实体匹配；附带说明未作完整事实核验。",
+        "full_claim_verification_performed": false
+      },
+      "directory": "experiments/runs/v000_baseline/qid_517/20260917T090903.064285Z"
+    },
+    {
+      "qid": "1094",
+      "status": "natural_answer",
+      "api_responses": 11,
+      "tool_calls": {
+        "search": 10
+      },
+      "reported_usage": {
+        "prompt_tokens": 170778,
+        "completion_tokens": 7858,
+        "total_tokens": 178636
+      },
+      "elapsed_seconds": 121.04819388501346,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "abstained",
+        "answer_entity_match": false,
+        "gold_answer": "Andrea Pirlo",
+        "notes": "搜索 10 次后主动弃答，最终在不同比赛和球员间猜测，未得到 Andrea Pirlo。",
+        "full_claim_verification_performed": false
+      },
+      "directory": "experiments/runs/v000_baseline/qid_1094/20260917T090903.061270Z"
+    }
+  ],
+  "reported_usage_total": {
+    "prompt_tokens": 1569347,
+    "completion_tokens": 35743,
+    "total_tokens": 1605090
+  }
+}

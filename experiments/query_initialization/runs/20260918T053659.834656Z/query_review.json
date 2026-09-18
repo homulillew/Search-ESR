@@ -1,0 +1,1319 @@
+{
+  "method": "All accepted goals and queries read against original questions by one reviewer. Flags distinguish explicit changes and ambiguities; no flag is not proof of semantic correctness. Failed outputs excluded from direction review but retained in attempt metrics.",
+  "directions": [
+    {
+      "session": "qid_1072__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "author born 1964 lawmaker 2004 2010 research paper international organization",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1072__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "politician born 1964 lawmaker 2004 2009",
+      "flags": [
+        {
+          "field": "query",
+          "kind": "range_ambiguity",
+          "note": "before 2010 改为 2009，可能被读成确定任期终点；保留为歧义。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_1072__B__r1",
+      "direction": 1,
+      "goal": "Identify the author of a research paper who was born in 1964, served as a lawmaker from 2004 to before 2010, and whose thesis supervisor held a judicial role.",
+      "query": "author born 1964 lawmaker 2004 thesis supervisor judicial role",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1072__B__r2",
+      "direction": 1,
+      "goal": "Identify the author born in 1964 who served as a lawmaker from 2004 to before 2010 and submitted a research paper about an international organization.",
+      "query": "lawmaker born 1964 served 2004 before 2010 research paper international organization",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1072__C__r1",
+      "direction": 1,
+      "goal": "Identify the author born in 1964 who served as a lawmaker from 2004 to before 2010 and wrote a paper on an international organization.",
+      "query": "born in 1964 lawmaker 2004 research paper international organization",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1072__C__r1",
+      "direction": 2,
+      "goal": "Determine which popular museum opened its center in Los Angeles in the year the paper was submitted, to establish the submission date.",
+      "query": "popular museum opened its center in Los Angeles year",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1072__C__r2",
+      "direction": 1,
+      "goal": "Identify the author born in 1964 who was a lawmaker from 2004 to before 2010 and submitted a research paper.",
+      "query": "lawmaker born 1964 served 2004 to 2010 research paper submission",
+      "flags": [
+        {
+          "field": "query",
+          "kind": "range_narrowing",
+          "note": "before 2010 改为 served 2004 to 2010。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_1072__C__r2",
+      "direction": 2,
+      "goal": "Identify the year the paper was submitted by linking it to a museum opening its Los Angeles center, then find the scholarship provider for that author.",
+      "query": "popular museum opened center in Los Angeles year author scholarship provider",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1117__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "B.A. 1821 M.A. 1824 literary reviewing 1824 1832",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1117__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "B.A. 1821 M.A. 1824 literary reviewer 1824 1832",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1117__B__r1",
+      "direction": 1,
+      "goal": "Identify the sibling who received a B.A. in 1821 and M.A. in 1824, married to or related by elopement to the Major who bought the journal.",
+      "query": "B.A. 1821 M.A. 1824 sibling eloped Major journal",
+      "flags": [
+        {
+          "field": "goal",
+          "kind": "relation_ambiguity",
+          "note": "将 Major 的配偶之兄弟姐妹描述为 married to or related by elopement to Major，配偶关系不清。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_1117__B__r2",
+      "direction": 1,
+      "goal": "Identify the posthumous publication title from 1853 containing two articles by the Major's in-law.",
+      "query": "1853 two articles republished under a single title posthumously literary reviewing 1824 to 1832",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1209__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "series released prior to 2015 known by four other titles protagonist loses beloved to crime",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1209__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "series protagonist loses beloved to crime dedicated life uncovering truth released before 2015",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1209__B__r1",
+      "direction": 1,
+      "goal": "Identify a TV series released before 2015 with four other titles, featuring a protagonist seeking truth after a loved one's death.",
+      "query": "series released prior to 2015 known by four other titles protagonist losing beloved to crime dedicated life uncovering truth",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1209__B__r2",
+      "direction": 1,
+      "goal": "Identify a TV series released prior to 2015 known by four other titles, featuring a protagonist seeking truth after losing a beloved to crime.",
+      "query": "series released prior to 2015 known by four other titles protagonist losing beloved to crime dedicated life to uncovering truth",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1209__C__r1",
+      "direction": 1,
+      "goal": "Identify the series known by four other titles, involving a protagonist avenging a lost beloved.",
+      "query": "series released prior to 2015 known by four other titles protagonist loses beloved to crime",
+      "flags": [
+        {
+          "field": "goal",
+          "kind": "unsupported_intent",
+          "note": "uncovering the truth 改成 avenging / seeking revenge，增加复仇动机；query 未加。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_1209__C__r1",
+      "direction": 2,
+      "goal": "Identify the main cast members based on their debut roles: one in a 1990s series, another gaining recognition via a supporting role.",
+      "query": "actor main lead began career role in 1990s series actress gained recognition supporting role different series",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_1209__C__r2",
+      "direction": 1,
+      "goal": "Identify a TV series released before 2015 with four alternative titles, featuring a protagonist seeking revenge for a loved one's death.",
+      "query": "TV series released prior to 2015 known by four other titles protagonist loses beloved to crime",
+      "flags": [
+        {
+          "field": "goal",
+          "kind": "unsupported_intent",
+          "note": "uncovering the truth 改成 avenging / seeking revenge，增加复仇动机；query 未加。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_1209__C__r2",
+      "direction": 2,
+      "goal": "Find an actor who played a main lead in this series and started their career in a 1990s series, to help identify the show.",
+      "query": "actor main lead career began role in 1990s series",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_183__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "blog post \"teaching is an art\" \"listening\" \"say no\" internet classroom",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_183__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "blog post \"teaching is an art\" \"listening\" \"leverage the Internet\" \"saying No\"",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_183__B__r1",
+      "direction": 1,
+      "goal": "Identify the blog author who taught in the 1990s, grew up in a city formed by three merging towns with a railway-owned park, and wrote about marrying their high school crush.",
+      "query": "blog post author taught in the 1990s grew up in a city somewhere in the Western Hemisphere The person they had a crush on in high school was the one they married",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_183__B__r2",
+      "direction": 1,
+      "goal": "Identify the author of the blog posts by locating a post mentioning teaching since the 1990s, published on the second Friday between 2008 and 2020, containing specific lessons like 'Teaching is an art' and 'Leverage the Internet in the classroom'.",
+      "query": "blog post teaching since 1990s second Friday 2008-2020 \"Teaching is an art\" \"Leverage the Internet in the classroom\"",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_183__C__r1",
+      "direction": 1,
+      "goal": "Identify the author of the blog posts by finding the specific article about growing up in a city formed by three merging towns, mentioning a park opened by a railway company.",
+      "query": "blog post grew up city three smaller towns merged late 20th century park railway company",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_183__C__r1",
+      "direction": 2,
+      "goal": "Identify the author by finding the blog post where they discuss their high school crush who became their spouse, raising a child as a single parent, and coffee being their favorite morning smell.",
+      "query": "blog post crush high school married single parent coffee favorite smell",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_183__C__r2",
+      "direction": 1,
+      "goal": "Identify the author of the blog posts by finding the specific city described in Section B (Western Hemisphere, formed by three towns merging in late 20th century, with a park opened by a railway company).",
+      "query": "blog post author grew up city Western Hemisphere three smaller towns merged late 20th century park railway company",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_183__C__r2",
+      "direction": 2,
+      "goal": "Identify the specific blog post referenced in Section C to find details about the author's first crush at age seven.",
+      "query": "blog post author child five single parent crush high school married",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_23__B__r1",
+      "direction": 1,
+      "goal": "Identify a movie based on a non-fiction book where a character is inspired by an honest cop to stop a scam and emulate his integrity.",
+      "query": "movie based on non-fiction book character inspired by honest cop stop scam emulate integrity",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_23__B__r2",
+      "direction": 1,
+      "goal": "Identify the movie based on a plot point involving an honest cop whose integrity motivates another character to emulate him.",
+      "query": "movie character inspired by honest cop stop scam emulate integrity",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_23__C__r1",
+      "direction": 1,
+      "goal": "Identify the movie and book by searching for a film adaptation of a non-fiction book involving an honest cop who stops a scam.",
+      "query": "movie based on non-fiction book honest cop stop scam",
+      "flags": [
+        {
+          "field": "goal_and_query",
+          "kind": "relation_reassignment",
+          "note": "原题是某角色受警察启发阻止骗局；改写使警察直接成为阻止骗局的主体。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_23__C__r1",
+      "direction": 2,
+      "goal": "Identify the specific non-fiction book published between 2015-2022 about a scam stopped by an honest cop, to find its author and subsequent movie adaptation.",
+      "query": "non-fiction book published 2015 2022 honest cop scam",
+      "flags": [
+        {
+          "field": "goal",
+          "kind": "relation_reassignment",
+          "note": "将书的故事概括为骗局由警察阻止，未保持原角色关系。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_23__C__r2",
+      "direction": 1,
+      "goal": "Identify the movie based on a specific character arc involving an honest cop and scam prevention.",
+      "query": "movie character inspired by honest cop to stop scam emulate integrity",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_23__C__r2",
+      "direction": 2,
+      "goal": "Identify the film through its director's birth year and the source book's publication window.",
+      "query": "movie based on non-fiction book published 2015-2022 directed by someone born 1950-1960",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_285__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "research center North America founded 1900-1920 changed name three times dean co-edited two volumes",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_285__B__r1",
+      "direction": 1,
+      "goal": "Identify the research center founded between 1900 and 1920 in North America that changed its name three times by December 2023.",
+      "query": "research center founded between 1900 and 1920 in North America changed name three times by December 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_285__B__r2",
+      "direction": 1,
+      "goal": "Identify the research center founded between 1900-1920 in North America that changed its name three times by December 2023.",
+      "query": "research center founded 1900-1920 North America changed name three times by 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_285__C__r1",
+      "direction": 1,
+      "goal": "Identify the research center founded between 1900-1920 in North America that changed its name three times by Dec 2023.",
+      "query": "research center founded 1900 1920 North America changed name three times December 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_285__C__r1",
+      "direction": 2,
+      "goal": "Identify the scientist who was dean of the identified research center, obtained bachelor's and master's degrees from the same university (chartered 1860-1870) which their spouse also attended, and co-edited two volumes of a staple publication.",
+      "query": "dean researcher bachelor master spouse same university chartered 1860 1870 co-edited two volumes",
+      "flags": [
+        {
+          "field": "goal",
+          "kind": "unsupported_relation",
+          "note": "原题只说科学家任 dean；未明确他是研究中心的 dean。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_285__C__r2",
+      "direction": 1,
+      "goal": "Identify the research center founded between 1900-1920 in North America that changed its name three times by Dec 2023.",
+      "query": "research center founded between 1900 and 1920 in North America changed name three times by December 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_285__C__r2",
+      "direction": 2,
+      "goal": "Identify the scientist who was dean of the identified research center, co-edited two volumes of a staple resource publication, and obtained degrees from specific universities.",
+      "query": "dean of research center co-edited two volumes staple resource publication bachelor's master's same university spouse attended",
+      "flags": [
+        {
+          "field": "goal_and_query",
+          "kind": "unsupported_relation",
+          "note": "原题只说科学家任 dean；未明确他是研究中心的 dean。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_433__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "director father killed in car crash mid 2000s",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_433__B__r1",
+      "direction": 1,
+      "goal": "Identify the producer who quit a movie project in the 2020s due to backlash, which is linked to the target film.",
+      "query": "producer quit producing movie 2020s backlash",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_433__B__r2",
+      "direction": 1,
+      "goal": "Identify the producer who quit a movie project in the 2020s due to backlash, which may lead to the specific movie and its director.",
+      "query": "producer quit producing movie 2020s backlash",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_433__C__r1",
+      "direction": 1,
+      "goal": "Identify a movie producer who quit producing another film in the 2020s due to backlash.",
+      "query": "producer quit producing movie 2020s backlash",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_433__C__r1",
+      "direction": 2,
+      "goal": "Identify a director born in the 1960s whose father died in a car crash in the mid-2000s.",
+      "query": "director born 1960s father killed car crash mid 2000s",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_433__C__r2",
+      "direction": 1,
+      "goal": "Identify a film producer who quit producing another movie in the 2020s due to backlash, which may link to the target comedy film.",
+      "query": "producer quit producing movie 2020s backlash",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_433__C__r2",
+      "direction": 2,
+      "goal": "Identify a film director born in the 1960s whose father died in a car crash in the mid-2000s, likely linked to the target comedy film.",
+      "query": "director born 1960s father killed car crash mid 2000s",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_478__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "Blantyre Telegraph article spouses animal raised 20 years book",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_478__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "Pro Wrestling Books review animal book",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_478__B__r1",
+      "direction": 1,
+      "goal": "Identify the animal and the book written about it by one of the spouses to narrow down the couple.",
+      "query": "book about animal raised by spouses Pro Wrestling Books review",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_478__B__r2",
+      "direction": 1,
+      "goal": "Find the Pro Wrestling Books review of a book about an animal raised by two spouses, to identify the stadium mentioned and link back to the article.",
+      "query": "Pro Wrestling Books review book animal raised by spouses stadium",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_478__C__r1",
+      "direction": 1,
+      "goal": "Identify the book written by one of the spouses about their shared animal, published before 2023.",
+      "query": "book written about animal raised by spouses published before 2023 Pro Wrestling Books review",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_478__C__r1",
+      "direction": 2,
+      "goal": "Find the article on Blantyre Telegraph (2018-2020) mentioning spouses who raised an animal for 20-30 years and how long ago they met.",
+      "query": "Blantyre Telegraph article spouses met animal raised 20-30 years",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_478__C__r2",
+      "direction": 1,
+      "goal": "Find the name of the animal and the spouse who wrote a book about it, published before 2023.",
+      "query": "book about animal raised by spouses published before 2023 Pro Wrestling Books review",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_478__C__r2",
+      "direction": 2,
+      "goal": "Identify the specific article on Blantyre Telegraph from 2018-2020 mentioning the duration spouses met and the long-lived animal.",
+      "query": "Blantyre Telegraph article spouses met animal raised 20-30 years",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_506__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "short film 2018 13 minutes mom audition son one shot Alexa mini",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_506__B__r1",
+      "direction": 1,
+      "goal": "Identify the short film produced in 2018, directed by an architect, about a mother heading to an audition while her son is unsupervised.",
+      "query": "short film 2018 13 minutes director architect mother audition son unsupervised",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_506__B__r2",
+      "direction": 1,
+      "goal": "Identify the short film produced in 2018, directed by an architect, featuring a mom heading to an audition.",
+      "query": "short film produced 2018 13 minutes director architect mom audition theatre play",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_506__C__r1",
+      "direction": 1,
+      "goal": "Identify the short film based on its director who is also an architect, produced in 2018, and filmed as a one-shot.",
+      "query": "short film director architect produced 2018 one-shot Alexa mini",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_506__C__r1",
+      "direction": 2,
+      "goal": "Identify the sound designer who skipped half a year of music education before 2010 due to ability, to help find the film he worked on.",
+      "query": "sound designer skip half a year music education before 2010 abilities",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_506__C__r2",
+      "direction": 1,
+      "goal": "Identify the short film based on its production details: produced in 2018, 13 minutes long, one-shot with Alexa Mini, and directed by an architect.",
+      "query": "short film produced 2018 13 minutes one-shot Alexa Mini director architect",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_506__C__r2",
+      "direction": 2,
+      "goal": "Identify the sound designer who skipped half a year of music education before 2010 due to abilities, then find the 2018 short film he worked on.",
+      "query": "sound designer skipped half a year music education before 2010 short film 2018",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_551__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "football player saved substitute shot cup game 2007 match report",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_551__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "footballer saved substitute shot cup game 2007 match report",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_551__B__r1",
+      "direction": 1,
+      "goal": "Identify the professional football player who appeared in a testimonial match in 2023 and had a career ending around 2020 with over 300 appearances.",
+      "query": "football player testimonial match 2023 retired 2020 over 300 appearances",
+      "flags": [
+        {
+          "field": "goal_and_query",
+          "kind": "range_ambiguity",
+          "note": "as of 2020 retired 改成 career ending around 2020 / retired 2020。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_551__C__r1",
+      "direction": 1,
+      "goal": "Identify the football player who made over 300 career appearances, retired by 2020, and played in a 2011 match where he was substituted after making a mistake leading to a goal.",
+      "query": "football player retired 2020 over 300 appearances substituted mistake led to goal 2011",
+      "flags": [
+        {
+          "field": "query",
+          "kind": "range_ambiguity",
+          "note": "goal 保留 by 2020，但 query 写 retired 2020。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_551__C__r1",
+      "direction": 2,
+      "goal": "Identify the football player who joined a club in 2015 making 7 league appearances including a draw with an added-time equalizer, then signed for another club making only 1 appearance before finishing his career on a different continent.",
+      "query": "football player joined club 2015 7 league appearances draw added time equalizer signed new club 1 appearance",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_551__C__r2",
+      "direction": 1,
+      "goal": "Identify the professional football player who retired in 2020 with over 300 career appearances and played in a testimonial match in 2023.",
+      "query": "football player retired 2020 over 300 appearances testimonial match 2023",
+      "flags": [
+        {
+          "field": "goal_and_query",
+          "kind": "range_narrowing",
+          "note": "原题截至 2020 已退役，goal 明确改成 retired in 2020。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_551__C__r2",
+      "direction": 2,
+      "goal": "Find the specific footballer who joined a new club in 2015, made 7 league appearances, and had a team equalize in added time during one of those games.",
+      "query": "football player joined club 2015 7 league appearances team equalized added time",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_558__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "died January 8 2021 2022 2023 editor publisher magazine marine species named after",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_558__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "died January 8 2021 editor publisher magazine marine species named after him parent Frank sibling Steve",
+      "flags": [
+        {
+          "field": "query",
+          "kind": "range_narrowing",
+          "note": "将 2021—2023 区间收窄到 2021。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_558__B__r1",
+      "direction": 1,
+      "goal": "Identify the individual who founded a museum (1972-1975), was editor/publisher of a magazine for 30+ years, had parents named Frank and sibling Steve, died Jan 8 (2021-2023), and has three marine species named after them.",
+      "query": "individual with three marine species named in honor editor publisher magazine over thirty years died January 8 2021 2022 2023 parent Frank sibling Steve",
+      "flags": [
+        {
+          "field": "goal",
+          "kind": "relation_ambiguity",
+          "note": "one parent named Frank 改成 parents named Frank；query 未继承这一复数改写。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_558__B__r2",
+      "direction": 1,
+      "goal": "Identify the individual who founded a museum established between 1972 and 1975, was editor/publisher of a magazine for over 30 years, had parents named Frank, sibling Steve, died Jan 8 2021-2023, and has three marine species named after them.",
+      "query": "founder museum established 1972 1975 editor publisher magazine thirty years three marine species named in honor",
+      "flags": [
+        {
+          "field": "goal",
+          "kind": "relation_ambiguity",
+          "note": "one parent named Frank 改成 parents named Frank；query 未继承这一复数改写。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_558__C__r1",
+      "direction": 1,
+      "goal": "Identify the individual who was editor/publisher of a magazine for over 30 years, had a parent named Frank and sibling named Steve, and died Jan 8 between 2021-2023.",
+      "query": "editor and publisher of a magazine for over thirty years parent Frank sibling Steve died January 8 2021 2022 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_558__C__r1",
+      "direction": 2,
+      "goal": "Identify the museum founder who had three marine species named in their honor and founded a museum established between 1972 and 1975.",
+      "query": "marine species named in their honor founded museum established 1972 1973 1974 1975",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_558__C__r2",
+      "direction": 1,
+      "goal": "Identify the individual who founded a museum between 1972-1975, was editor/publisher of a magazine for 30+ years, and has three marine species named after them.",
+      "query": "founder of museum established 1972 1975 editor publisher magazine 30 years marine species named after",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_558__C__r2",
+      "direction": 2,
+      "goal": "Identify the individual with parent Frank and sibling Steve who died Jan 8 2021-2023 abroad and received an award in 2014.",
+      "query": "died January 8 2021 2022 2023 parent Frank sibling Steve award 2014",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_561__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "new band director 2023 article superintendent met spouse Birmingham",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_561__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "new band director hired 2023 began playing in band fifth grade superintendent met spouse Birmingham",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_561__B__r1",
+      "direction": 1,
+      "goal": "Find the name of the new band director and their predecessor to determine the years spent in music education.",
+      "query": "school welcoming a new band director 2023 article predecessor music education",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_561__B__r2",
+      "direction": 1,
+      "goal": "Find the 2023 article about a school welcoming a new band director to identify the predecessor and their tenure.",
+      "query": "2023 article school welcoming new band director predecessor music education years",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_561__C__r1",
+      "direction": 1,
+      "goal": "Identify the school and the new band director mentioned in a 2023 article about a new band director, where the author's maternal grandfather served in Korea.",
+      "query": "school welcoming a new band director 2023 article author maternal grandfather served in Korea",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_561__C__r1",
+      "direction": 2,
+      "goal": "Identify the school principal with a master's degree from a university that lost by 30 points in a basketball game in fall 2023 to help locate the specific school context.",
+      "query": "principal master's degree university defeated by 30 points basketball game fall 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_561__C__r2",
+      "direction": 1,
+      "goal": "Identify the school, the new band director, and their predecessor to find the duration of the predecessor's tenure in music education.",
+      "query": "2023 article school welcoming new band director predecessor music education years",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_561__C__r2",
+      "direction": 2,
+      "goal": "Identify the specific school by using the principal's educational background and the basketball game defeat details from fall 2023.",
+      "query": "school principal master's degree university defeated 30 points basketball game fall 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_583__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "artist alias tough challenges growing up circles human behavior blog post 2012",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_583__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "artist alias \"circles\" \"human behavior\" \"tough challenges\" growing up",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_583__B__r1",
+      "direction": 1,
+      "goal": "Identify the artist described in a 2012 entry who works under an alias, features circles, and is fascinated by human behavior.",
+      "query": "artist alias circles human behavior 2012 blog post",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_583__B__r2",
+      "direction": 1,
+      "goal": "Identify the organization and artist based on the 2012 blog post details to find the specific art piece funded in 2019.",
+      "query": "organization blog post 2012 artist alias circles human behavior",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_583__C__r1",
+      "direction": 1,
+      "goal": "Identify the organization that posts blog entries about an artist with specific characteristics and funding decisions.",
+      "query": "organization blog post 2016 art form support acceptance local community founder",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_583__C__r1",
+      "direction": 2,
+      "goal": "Identify the artist described by specific traits to find the organization that features them, which leads to the 2019 entry title.",
+      "query": "artist alias works under features circles in their work fascinated by human behavior",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_583__C__r2",
+      "direction": 1,
+      "goal": "Identify the artist described in a 2012 entry as working under an alias, featuring circles, and fascinated by human behavior.",
+      "query": "artist alias circles work fascinated by human behavior 2012 entry",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_583__C__r2",
+      "direction": 2,
+      "goal": "Identify the organization that posted entries in 2012, 2016, and 2019 regarding art funding and community support.",
+      "query": "organization blog post 2016 founder entry January 28 2019 art",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_591__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "university established 2000 2003 overseas campus 10th anniversary 2020 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_591__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "university founded 2000 2003 international campus 10th anniversary 2020 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_591__B__r1",
+      "direction": 1,
+      "goal": "Identify the university that celebrated its 10th anniversary of a foreign campus opening between 2020 and 2023.",
+      "query": "university celebrated 10th anniversary campus opening another country 2020 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_591__B__r2",
+      "direction": 1,
+      "goal": "Identify the university that celebrated its 10th campus anniversary in another country between 2020 and 2023.",
+      "query": "university celebrated 10th anniversary campus opening another country 2020 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_591__C__r1",
+      "direction": 1,
+      "goal": "Identify a university established between 2000-2003 that celebrated the 10th anniversary of a foreign campus opening between 2020 and 2023.",
+      "query": "university established 2000 2003 10th anniversary campus opening another country 2020 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_591__C__r1",
+      "direction": 2,
+      "goal": "Identify the university's founder who is a scientist, board chairman, and earned a PhD from an institute recognized as a university between 1965 and 1968.",
+      "query": "university founder scientist chairman board of trustees PhD institute recognized as university July 1965 1968",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_591__C__r2",
+      "direction": 1,
+      "goal": "Identify the university that celebrated the 10th anniversary of its campus opening in another country between 2020 and 2023.",
+      "query": "university celebrated 10th anniversary campus opening another country 2020 2023",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_591__C__r2",
+      "direction": 2,
+      "goal": "Identify the university established between 2000 and 2003 whose founder was a scientist and board chairman requiring mandatory foreign language courses for students.",
+      "query": "university established 2000 2003 founder scientist chairman board trustees mandatory language courses",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_638__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "brand formed 1900s added product decade later repackaged 1982 best selling album Thriller",
+      "flags": [
+        {
+          "field": "query",
+          "kind": "unsupported_entity",
+          "note": "原题没有直接给出 1982；r1 同时加入 Thriller。可能知识正确，但此处未验证。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_638__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "brand formed 1900s added product decade later armed force repackaged 1982",
+      "flags": [
+        {
+          "field": "query",
+          "kind": "unsupported_entity",
+          "note": "原题没有直接给出 1982；r1 同时加入 Thriller。可能知识正确，但此处未验证。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_638__B__r1",
+      "direction": 1,
+      "goal": "Identify the brand formed in the 1900s that added a distinct product a decade later, diverted focus to an armed force, and repackaged it when the best-selling album ever was dropped.",
+      "query": "brand formed in the 1900s added a distinct product a decade after the brand was formed diverted their focus to the production of this new product for a particular armed force",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_638__B__r2",
+      "direction": 1,
+      "goal": "Identify the brand formed in the 1900s that added a distinct product a decade later and diverted focus to it for an armed force.",
+      "query": "brand formed in the 1900s added a distinct product a decade after the brand was formed diverted their focus to the production of this new product for a particular armed force",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_638__C__r1",
+      "direction": 1,
+      "goal": "Identify the brand formed in the 1900s that added a distinct product a decade later and diverted focus to an armed force.",
+      "query": "brand formed in the 1900s added a distinct product a decade later diverted focus to production for a particular armed force",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_638__C__r1",
+      "direction": 2,
+      "goal": "Identify the brand whose product was re-packaged in the same year as the release of the best-selling album ever (as of 2022), linked to a founder who imported equipment to promote locally made products.",
+      "query": "product re-packaged same year best selling album ever as of 2022 was dropped founder imported equipment locally made products",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_638__C__r2",
+      "direction": 1,
+      "goal": "Identify the brand formed in the 1900s that added a distinct product a decade later and diverted focus to an armed force.",
+      "query": "brand formed in 1900s added product decade later produced for armed force",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_638__C__r2",
+      "direction": 2,
+      "goal": "Identify the founder who imported equipment to promote locally made products, linking them to the brand.",
+      "query": "founder imported equipment to promote locally made products brand",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_757__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "author bachelor degree history master urban planning",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_757__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "author bachelor's degree in history master's in urban planning",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_757__B__r1",
+      "direction": 1,
+      "goal": "Identify the author of a stand-alone novel who co-authored non-fiction books adapted into film and was praised by an African American actress from a 2000s crime comedy.",
+      "query": "author praised by African American actress crime comedy 2000s co-authored non-fiction book adapted into film",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_757__B__r2",
+      "direction": 1,
+      "goal": "Identify the author of a stand-alone novel who co-authored non-fiction books adapted into film and was praised by an African American actress from a 2000s crime comedy.",
+      "query": "author bachelor's degree in history master's in urban planning co-authored non-fiction books adapted into film praised by African American actress crime comedy 2000s",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_757__C__r1",
+      "direction": 1,
+      "goal": "Identify the African American actress who starred in a 2000s crime comedy movie and praised the target author.",
+      "query": "African American actress star crime comedy movie 2000s praised author",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_757__C__r1",
+      "direction": 2,
+      "goal": "Identify the non-fiction book co-authored before 2015 that was adapted into a film, to help identify the co-author.",
+      "query": "non-fiction book co-authored before 2015 adapted into film",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_757__C__r2",
+      "direction": 1,
+      "goal": "Identify the author who co-authored non-fiction books before 2015, one of which was adapted into a film.",
+      "query": "author co-authored non-fiction books before 2015 adapted into a film",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_757__C__r2",
+      "direction": 2,
+      "goal": "Identify the author praised by an African American actress from a 2000s crime comedy movie.",
+      "query": "writer praised by African American actress star crime comedy movie 2000s",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_786__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "\"Perfectly formed\" actor born 1950s Indian immigrant",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_786__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "\"Perfectly formed\" actor film 1 hour 31 minutes",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_786__B__r1",
+      "direction": 1,
+      "goal": "Identify the director known for English-produced dinosaur, sci-fi, and adventure films to find their short film co-directed with a nephew.",
+      "query": "director English-produced dinosaur sci-fi adventure films short film nephew",
+      "flags": [
+        {
+          "field": "goal_and_query",
+          "kind": "relation_reassignment",
+          "note": "将目标演员和侄子拍短片的线索接到另一部长片的导演。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_786__B__r2",
+      "direction": 1,
+      "goal": "Identify the director of a film approximately 1 hour and 31 minutes long, known for English-produced dinosaur, sci-fi, and adventure series.",
+      "query": "director English-produced dinosaur sci-fi adventure films film runtime 1 hour 31 minutes",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_786__C__r1",
+      "direction": 1,
+      "goal": "Identify the director known for English-produced dinosaur, sci-fi, and adventure films to find their short film co-directed with a nephew.",
+      "query": "English produced dinosaur sci-fi adventure film director short film nephew",
+      "flags": [
+        {
+          "field": "goal_and_query",
+          "kind": "relation_reassignment",
+          "note": "将目标演员和侄子拍短片的线索接到另一部长片的导演。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_786__C__r1",
+      "direction": 2,
+      "goal": "Identify the person born to Indian immigrants in the 1950s who described themselves as 'Perfectly formed' and appeared in the identified film.",
+      "query": "\"Perfectly formed\" born 1950s Indian immigrants actor",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_786__C__r2",
+      "direction": 1,
+      "goal": "Identify the person who described themselves as 'Perfectly formed' and appeared in a specific short film.",
+      "query": "Described themselves as “Perfectly formed” film 1 hour and 31 minutes",
+      "flags": [
+        {
+          "field": "goal",
+          "kind": "work_type_change",
+          "note": "将目标人物出演的 91 分钟电影称为 short film。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_786__C__r2",
+      "direction": 2,
+      "goal": "Identify the director known for English-produced dinosaur, sci-fi, and adventure films to find the actor in their 91-minute film.",
+      "query": "director series of English-produced dinosaur sci-fi and adventure films film 1 hour and 31 minutes",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_810__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "architecture student sibling doctor poet parent seances boarding school business trip",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_810__B__r1",
+      "direction": 1,
+      "goal": "Identify the architecture student who had a sibling that was both a doctor and a poet, and whose parent conducted seances.",
+      "query": "architecture student sibling doctor poet parent conducted seances",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_810__B__r2",
+      "direction": 1,
+      "goal": "Identify an architect born in the 19th century with a sibling who was a doctor and poet, whose parent conducted seances.",
+      "query": "architect born 19th century died 20th century sibling doctor poet parent seances",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_810__C__r1",
+      "direction": 1,
+      "goal": "Identify the architecture student with a sibling who was a doctor and poet, and a parent who conducted seances.",
+      "query": "architecture student sibling doctor poet parent seances",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_810__C__r1",
+      "direction": 2,
+      "goal": "Find the person who attended boarding school while a parent was on a year-long business trip and had four children.",
+      "query": "boarding school parent year-long business trip four children architecture student",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_810__C__r2",
+      "direction": 1,
+      "goal": "Identify the architecture student who had a sibling that was a doctor and poet.",
+      "query": "architecture student sibling doctor poet",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_810__C__r2",
+      "direction": 2,
+      "goal": "Identify the family background involving parental seances and boarding school to pinpoint the specific individual.",
+      "query": "parent conducted seances attended boarding school parent year-long business trip",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_867__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "author monograph Manchester University Press 2020 2025 film adaptation director shorts named after animals 2019 interview",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_867__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "director second third shorts named after animals",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_867__B__r1",
+      "direction": 1,
+      "goal": "Identify the author who published a monograph with Manchester University Press between 2020 and 2025.",
+      "query": "Manchester University Press monograph 2020 2021 2022 2023 2024 2025",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_867__B__r2",
+      "direction": 1,
+      "goal": "Identify the author who published a monograph with Manchester University Press between 2020 and 2025, won an award in 2016, and gave a 2019 interview about a film adaptation.",
+      "query": "Manchester University Press monograph author 2020-2025 award 2016 film adaptation interview 2019",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_867__C__r1",
+      "direction": 1,
+      "goal": "Identify the author who published a monograph with Manchester University Press between 2020 and 2025.",
+      "query": "Manchester University Press monograph published 2020 2021 2022 2023 2024",
+      "flags": [
+        {
+          "field": "query",
+          "kind": "range_narrowing",
+          "note": "列举年份 2020—2024，遗漏原区间允许的 2025；goal 仍到 2025。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_867__C__r1",
+      "direction": 2,
+      "goal": "Identify the director whose second and third shorts were named after animals, based on an interview quote from 2019.",
+      "query": "director second third shorts named after animals interview 2019",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_867__C__r2",
+      "direction": 1,
+      "goal": "Identify the author who published a monograph with Manchester University Press between 2020 and 2025, using this specific publication detail as the primary anchor.",
+      "query": "Manchester University Press monograph published 2020 2021 2022 2023 2024",
+      "flags": [
+        {
+          "field": "query",
+          "kind": "range_narrowing",
+          "note": "列举年份 2020—2024，遗漏原区间允许的 2025；goal 仍到 2025。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_867__C__r2",
+      "direction": 2,
+      "goal": "Identify the author who retold a supernatural being's story for a podcast in 2019, linking this project to their identity.",
+      "query": "podcast project 2019 retold story supernatural being",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_985__A__r1",
+      "direction": 1,
+      "goal": null,
+      "query": "thesis Church Fathers condemned Charismatic sect Lutheran minister professor advisor",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_985__A__r2",
+      "direction": 1,
+      "goal": null,
+      "query": "thesis Church Fathers condemned Charismatic sect Montanism seminary university late 19th century",
+      "flags": [
+        {
+          "field": "query",
+          "kind": "unsupported_entity",
+          "note": "原题没有明确给出 Montanism；未经检索先具体化教派。"
+        }
+      ],
+      "screen": "flagged"
+    },
+    {
+      "session": "qid_985__B__r1",
+      "direction": 1,
+      "goal": "Identify the author of a thesis on Church Fathers and a condemned Charismatic sect, advised by an ordained Lutheran minister who is a professor at the founding university.",
+      "query": "thesis \"Church Fathers\" \"Charismatic sect\" \"primary advisor\"",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_985__B__r2",
+      "direction": 1,
+      "goal": "Find the author of a thesis on Church Fathers and a condemned Charismatic sect, advised by an ordained Lutheran minister/professor at a late-19th-century university.",
+      "query": "thesis \"Church Fathers\" \"Charismatic sect\" \"ordained Lutheran minister\" professor",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_985__C__r1",
+      "direction": 1,
+      "goal": "Identify the university founded in the late 19th century that has a seminary where this thesis was completed.",
+      "query": "university founded in the late 19th century with a seminary and Lutheran professor",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    },
+    {
+      "session": "qid_985__C__r1",
+      "direction": 2,
+      "goal": "Find the author of a thesis exploring Church Fathers and a condemned Charismatic sect, advised by an ordained Lutheran minister.",
+      "query": "\"thesis\" \"Church Fathers\" \"condemned Charismatic sect\" \"ordained Lutheran minister\"",
+      "flags": [],
+      "screen": "no_explicit_issue_flagged"
+    }
+  ]
+}

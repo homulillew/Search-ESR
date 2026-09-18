@@ -1,0 +1,3 @@
+Based on the information from the Wikipedia article on Peter Nzioki, he made his film debut in *The Constant Gardener* (2005) with a **minor role**. The specific character name is not explicitly listed in the provided text snippet, but it is noted as a minor part.
+
+If you need the exact character name, I can search for more specific details about the cast list of *The Constant Gardener*. Would you like me to do that?

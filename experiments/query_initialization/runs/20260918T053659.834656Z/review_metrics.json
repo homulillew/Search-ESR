@@ -1,0 +1,3105 @@
+{
+  "caveat": "Confirmed-positive lower bounds in a manually reviewed pool; unverified is not irrelevant. Reference coverage is narrower than all possible useful windows. No full-corpus recall or final answer accuracy.",
+  "aggregates": {
+    "A": {
+      "attempts": 40,
+      "confirmed_document": 15,
+      "confirmed_target_document": 12,
+      "reference_visible": 11,
+      "target_reference_visible": 10,
+      "second_adds_verified_clue": 0,
+      "second_only_verified_entry": 0,
+      "reviewed_directions": 34,
+      "flagged_directions": 5,
+      "flagged_sessions": 5
+    },
+    "B": {
+      "attempts": 40,
+      "confirmed_document": 13,
+      "confirmed_target_document": 12,
+      "reference_visible": 13,
+      "target_reference_visible": 12,
+      "second_adds_verified_clue": 0,
+      "second_only_verified_entry": 0,
+      "reviewed_directions": 39,
+      "flagged_directions": 5,
+      "flagged_sessions": 5
+    },
+    "C": {
+      "attempts": 40,
+      "confirmed_document": 13,
+      "confirmed_target_document": 11,
+      "reference_visible": 13,
+      "target_reference_visible": 11,
+      "second_adds_verified_clue": 9,
+      "second_only_verified_entry": 5,
+      "reviewed_directions": 74,
+      "flagged_directions": 13,
+      "flagged_sessions": 12
+    }
+  },
+  "paired": {
+    "B_vs_A__confirmed_document": {
+      "wins": 5,
+      "ties": 10,
+      "losses": 5,
+      "questions": [
+        {
+          "qid": "23",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "183",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "285",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "433",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "478",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "506",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "551",
+          "left": 2,
+          "right": 0
+        },
+        {
+          "qid": "558",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "561",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "583",
+          "left": 2,
+          "right": 0
+        },
+        {
+          "qid": "591",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "638",
+          "left": 1,
+          "right": 0
+        },
+        {
+          "qid": "757",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "786",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "810",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "867",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "985",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "1072",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "1117",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "1209",
+          "left": 0,
+          "right": 0
+        }
+      ]
+    },
+    "B_vs_A__reference_visible": {
+      "wins": 6,
+      "ties": 11,
+      "losses": 3,
+      "questions": [
+        {
+          "qid": "23",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "183",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "285",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "433",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "478",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "506",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "551",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "558",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "561",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "583",
+          "left": 2,
+          "right": 0
+        },
+        {
+          "qid": "591",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "638",
+          "left": 1,
+          "right": 0
+        },
+        {
+          "qid": "757",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "786",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "810",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "867",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "985",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "1072",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "1117",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "1209",
+          "left": 0,
+          "right": 0
+        }
+      ]
+    },
+    "B_vs_A__target_reference_visible": {
+      "wins": 5,
+      "ties": 13,
+      "losses": 2,
+      "questions": [
+        {
+          "qid": "23",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "183",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "285",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "433",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "478",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "506",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "551",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "558",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "561",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "583",
+          "left": 2,
+          "right": 0
+        },
+        {
+          "qid": "591",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "638",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "757",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "786",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "810",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "867",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "985",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "1072",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "1117",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "1209",
+          "left": 0,
+          "right": 0
+        }
+      ]
+    },
+    "C_vs_B__confirmed_document": {
+      "wins": 4,
+      "ties": 12,
+      "losses": 4,
+      "questions": [
+        {
+          "qid": "23",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "183",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "285",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "433",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "478",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "506",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "551",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "558",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "561",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "583",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "591",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "638",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "757",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "786",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "810",
+          "left": 1,
+          "right": 0
+        },
+        {
+          "qid": "867",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "985",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "1072",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "1117",
+          "left": 1,
+          "right": 0
+        },
+        {
+          "qid": "1209",
+          "left": 0,
+          "right": 0
+        }
+      ]
+    },
+    "C_vs_B__reference_visible": {
+      "wins": 4,
+      "ties": 12,
+      "losses": 4,
+      "questions": [
+        {
+          "qid": "23",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "183",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "285",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "433",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "478",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "506",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "551",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "558",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "561",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "583",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "591",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "638",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "757",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "786",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "810",
+          "left": 1,
+          "right": 0
+        },
+        {
+          "qid": "867",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "985",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "1072",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "1117",
+          "left": 1,
+          "right": 0
+        },
+        {
+          "qid": "1209",
+          "left": 0,
+          "right": 0
+        }
+      ]
+    },
+    "C_vs_B__target_reference_visible": {
+      "wins": 3,
+      "ties": 13,
+      "losses": 4,
+      "questions": [
+        {
+          "qid": "23",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "183",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "285",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "433",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "478",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "506",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "551",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "558",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "561",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "583",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "591",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "638",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "757",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "786",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "810",
+          "left": 1,
+          "right": 0
+        },
+        {
+          "qid": "867",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "985",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "1072",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "1117",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "1209",
+          "left": 0,
+          "right": 0
+        }
+      ]
+    },
+    "C_vs_A__confirmed_document": {
+      "wins": 3,
+      "ties": 13,
+      "losses": 4,
+      "questions": [
+        {
+          "qid": "23",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "183",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "285",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "433",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "478",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "506",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "551",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "558",
+          "left": 1,
+          "right": 1
+        },
+        {
+          "qid": "561",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "583",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "591",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "638",
+          "left": 1,
+          "right": 1
+        },
+        {
+          "qid": "757",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "786",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "810",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "867",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "985",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "1072",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "1117",
+          "left": 2,
+          "right": 0
+        },
+        {
+          "qid": "1209",
+          "left": 0,
+          "right": 0
+        }
+      ]
+    },
+    "C_vs_A__reference_visible": {
+      "wins": 4,
+      "ties": 14,
+      "losses": 2,
+      "questions": [
+        {
+          "qid": "23",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "183",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "285",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "433",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "478",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "506",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "551",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "558",
+          "left": 1,
+          "right": 1
+        },
+        {
+          "qid": "561",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "583",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "591",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "638",
+          "left": 1,
+          "right": 1
+        },
+        {
+          "qid": "757",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "786",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "810",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "867",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "985",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "1072",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "1117",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "1209",
+          "left": 0,
+          "right": 0
+        }
+      ]
+    },
+    "C_vs_A__target_reference_visible": {
+      "wins": 3,
+      "ties": 15,
+      "losses": 2,
+      "questions": [
+        {
+          "qid": "23",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "183",
+          "left": 2,
+          "right": 2
+        },
+        {
+          "qid": "285",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "433",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "478",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "506",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "551",
+          "left": 0,
+          "right": 1
+        },
+        {
+          "qid": "558",
+          "left": 1,
+          "right": 1
+        },
+        {
+          "qid": "561",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "583",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "591",
+          "left": 1,
+          "right": 2
+        },
+        {
+          "qid": "638",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "757",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "786",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "810",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "867",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "985",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "qid": "1072",
+          "left": 1,
+          "right": 1
+        },
+        {
+          "qid": "1117",
+          "left": 0,
+          "right": 0
+        },
+        {
+          "qid": "1209",
+          "left": 0,
+          "right": 0
+        }
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "session": "qid_1072__A__r1",
+      "qid": "1072",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "direction": 1,
+          "window_ref": "w_6a8cefecd60d7178cea6797d",
+          "kind": "target_linked",
+          "clue": "author_thesis",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1072__A__r2",
+      "qid": "1072",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1072__B__r1",
+      "qid": "1072",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "direction": 1,
+          "window_ref": "w_6a8cefecd60d7178cea6797d",
+          "kind": "target_linked",
+          "clue": "author_thesis",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1072__B__r2",
+      "qid": "1072",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "direction": 1,
+          "window_ref": "w_6a8cefecd60d7178cea6797d",
+          "kind": "target_linked",
+          "clue": "author_thesis",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1072__C__r1",
+      "qid": "1072",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "direction": 1,
+          "window_ref": "w_6a8cefecd60d7178cea6797d",
+          "kind": "target_linked",
+          "clue": "author_thesis",
+          "reference_visible": true
+        },
+        {
+          "docid": "21375",
+          "direction": 2,
+          "window_ref": "w_342c94213cc1d7b3c0fe4435",
+          "kind": "bridge",
+          "clue": "museum_year",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": true,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1072__C__r2",
+      "qid": "1072",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": false,
+      "reference_visible": true,
+      "target_reference_visible": false,
+      "hits": [
+        {
+          "docid": "21375",
+          "direction": 2,
+          "window_ref": "w_342c94213cc1d7b3c0fe4435",
+          "kind": "bridge",
+          "clue": "museum_year",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": true,
+      "second_only_verified_entry": true
+    },
+    {
+      "session": "qid_1117__A__r1",
+      "qid": "1117",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [
+        {
+          "docid": "8000",
+          "direction": 1,
+          "window_ref": "w_ae46930826c003614360c091",
+          "kind": "bridge",
+          "clue": "journal_owner",
+          "reference_visible": false
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1117__A__r2",
+      "qid": "1117",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [
+        {
+          "docid": "8000",
+          "direction": 1,
+          "window_ref": "w_ae46930826c003614360c091",
+          "kind": "bridge",
+          "clue": "journal_owner",
+          "reference_visible": false
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1117__B__r1",
+      "qid": "1117",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1117__B__r2",
+      "qid": "1117",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": false,
+      "reference_visible": true,
+      "target_reference_visible": false,
+      "hits": [
+        {
+          "docid": "8000",
+          "direction": 1,
+          "window_ref": "w_790dbc32ae4374e29a91b3f7",
+          "kind": "bridge",
+          "clue": "journal_owner",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1117__C__r1",
+      "qid": "1117",
+      "arm": "C",
+      "repeat": 1,
+      "status": "invalid",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1117__C__r2",
+      "qid": "1117",
+      "arm": "C",
+      "repeat": 2,
+      "status": "invalid",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1209__A__r1",
+      "qid": "1209",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1209__A__r2",
+      "qid": "1209",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1209__B__r1",
+      "qid": "1209",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1209__B__r2",
+      "qid": "1209",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1209__C__r1",
+      "qid": "1209",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_1209__C__r2",
+      "qid": "1209",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_183__A__r1",
+      "qid": "183",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "90095",
+          "direction": 1,
+          "window_ref": "w_a81c633f7a652c81d3fa68f3",
+          "kind": "target_linked",
+          "clue": "teaching_blog",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_183__A__r2",
+      "qid": "183",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "90095",
+          "direction": 1,
+          "window_ref": "w_a81c633f7a652c81d3fa68f3",
+          "kind": "target_linked",
+          "clue": "teaching_blog",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_183__B__r1",
+      "qid": "183",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_183__B__r2",
+      "qid": "183",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "90095",
+          "direction": 1,
+          "window_ref": "w_f8958cba21baaddb37724be0",
+          "kind": "target_linked",
+          "clue": "teaching_blog",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_183__C__r1",
+      "qid": "183",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "61300",
+          "direction": 1,
+          "window_ref": "w_5741063ea6b17003079133d6",
+          "kind": "target_linked",
+          "clue": "park_blog",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_183__C__r2",
+      "qid": "183",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "61300",
+          "direction": 1,
+          "window_ref": "w_5741063ea6b17003079133d6",
+          "kind": "target_linked",
+          "clue": "park_blog",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_23__A__r1",
+      "qid": "23",
+      "arm": "A",
+      "repeat": 1,
+      "status": "error",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_23__A__r2",
+      "qid": "23",
+      "arm": "A",
+      "repeat": 2,
+      "status": "error",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_23__B__r1",
+      "qid": "23",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_23__B__r2",
+      "qid": "23",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_23__C__r1",
+      "qid": "23",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_23__C__r2",
+      "qid": "23",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_285__A__r1",
+      "qid": "285",
+      "arm": "A",
+      "repeat": 1,
+      "status": "error",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_285__A__r2",
+      "qid": "285",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_285__B__r1",
+      "qid": "285",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_285__B__r2",
+      "qid": "285",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_285__C__r1",
+      "qid": "285",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_285__C__r2",
+      "qid": "285",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_433__A__r1",
+      "qid": "433",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_433__A__r2",
+      "qid": "433",
+      "arm": "A",
+      "repeat": 2,
+      "status": "error",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_433__B__r1",
+      "qid": "433",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_433__B__r2",
+      "qid": "433",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_433__C__r1",
+      "qid": "433",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_433__C__r2",
+      "qid": "433",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_478__A__r1",
+      "qid": "478",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_478__A__r2",
+      "qid": "478",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "47437",
+          "direction": 1,
+          "window_ref": "w_5f7d2fe0f9842c95adb586ee",
+          "kind": "target_linked",
+          "clue": "book_stadium",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_478__B__r1",
+      "qid": "478",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "47437",
+          "direction": 1,
+          "window_ref": "w_5f7d2fe0f9842c95adb586ee",
+          "kind": "target_linked",
+          "clue": "book_stadium",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_478__B__r2",
+      "qid": "478",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "47437",
+          "direction": 1,
+          "window_ref": "w_5f7d2fe0f9842c95adb586ee",
+          "kind": "target_linked",
+          "clue": "book_stadium",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_478__C__r1",
+      "qid": "478",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "47437",
+          "direction": 1,
+          "window_ref": "w_5f7d2fe0f9842c95adb586ee",
+          "kind": "target_linked",
+          "clue": "book_stadium",
+          "reference_visible": true
+        },
+        {
+          "docid": "24964",
+          "direction": 2,
+          "window_ref": "w_b287a8932a3f5065131d4147",
+          "kind": "target_linked",
+          "clue": "obituary_date",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": true,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_478__C__r2",
+      "qid": "478",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "47437",
+          "direction": 1,
+          "window_ref": "w_5f7d2fe0f9842c95adb586ee",
+          "kind": "target_linked",
+          "clue": "book_stadium",
+          "reference_visible": true
+        },
+        {
+          "docid": "24964",
+          "direction": 2,
+          "window_ref": "w_b287a8932a3f5065131d4147",
+          "kind": "target_linked",
+          "clue": "obituary_date",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": true,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_506__A__r1",
+      "qid": "506",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_506__A__r2",
+      "qid": "506",
+      "arm": "A",
+      "repeat": 2,
+      "status": "no_search",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_506__B__r1",
+      "qid": "506",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_506__B__r2",
+      "qid": "506",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_506__C__r1",
+      "qid": "506",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_506__C__r2",
+      "qid": "506",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_551__A__r1",
+      "qid": "551",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "direction": 1,
+          "window_ref": "w_fe6da8ae94a31c6735a98d23",
+          "kind": "target_linked",
+          "clue": "substitution_2011",
+          "reference_visible": false
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_551__A__r2",
+      "qid": "551",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "direction": 1,
+          "window_ref": "w_fe6da8ae94a31c6735a98d23",
+          "kind": "target_linked",
+          "clue": "substitution_2011",
+          "reference_visible": false
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_551__B__r1",
+      "qid": "551",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_551__B__r2",
+      "qid": "551",
+      "arm": "B",
+      "repeat": 2,
+      "status": "invalid",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_551__C__r1",
+      "qid": "551",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "37025",
+          "direction": 1,
+          "window_ref": "w_6420b3ea7eef8e55ed1b85f1",
+          "kind": "target_linked",
+          "clue": "substitution_2011",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_551__C__r2",
+      "qid": "551",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_558__A__r1",
+      "qid": "558",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_558__A__r2",
+      "qid": "558",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "69043",
+          "direction": 1,
+          "window_ref": "w_3289a779233fea53aefafba3",
+          "kind": "target_linked",
+          "clue": "family_obituary",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_558__B__r1",
+      "qid": "558",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "20026",
+          "direction": 1,
+          "window_ref": "w_aa1936a2cdc1d9af475b8ef9",
+          "kind": "target_linked",
+          "clue": "museum_founder",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_558__B__r2",
+      "qid": "558",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "20026",
+          "direction": 1,
+          "window_ref": "w_aa1936a2cdc1d9af475b8ef9",
+          "kind": "target_linked",
+          "clue": "museum_founder",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_558__C__r1",
+      "qid": "558",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_558__C__r2",
+      "qid": "558",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "20026",
+          "direction": 1,
+          "window_ref": "w_aa1936a2cdc1d9af475b8ef9",
+          "kind": "target_linked",
+          "clue": "museum_founder",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_561__A__r1",
+      "qid": "561",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_561__A__r2",
+      "qid": "561",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_561__B__r1",
+      "qid": "561",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_561__B__r2",
+      "qid": "561",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_561__C__r1",
+      "qid": "561",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_561__C__r2",
+      "qid": "561",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_583__A__r1",
+      "qid": "583",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "996",
+          "direction": 1,
+          "window_ref": "w_20939c7dec195f8eb54230cd",
+          "kind": "target_linked",
+          "clue": "artist_interview",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_583__A__r2",
+      "qid": "583",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "996",
+          "direction": 1,
+          "window_ref": "w_20939c7dec195f8eb54230cd",
+          "kind": "target_linked",
+          "clue": "artist_interview",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_583__B__r1",
+      "qid": "583",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_583__B__r2",
+      "qid": "583",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_583__C__r1",
+      "qid": "583",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "996",
+          "direction": 2,
+          "window_ref": "w_b0396e6fe65bd652466b2740",
+          "kind": "target_linked",
+          "clue": "artist_interview",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": true,
+      "second_only_verified_entry": true
+    },
+    {
+      "session": "qid_583__C__r2",
+      "qid": "583",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_591__A__r1",
+      "qid": "591",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_591__A__r2",
+      "qid": "591",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "direction": 1,
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "kind": "target_linked",
+          "clue": "campus_anniversary",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_591__B__r1",
+      "qid": "591",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "direction": 1,
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "kind": "target_linked",
+          "clue": "campus_anniversary",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_591__B__r2",
+      "qid": "591",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "direction": 1,
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "kind": "target_linked",
+          "clue": "campus_anniversary",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_591__C__r1",
+      "qid": "591",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "86424",
+          "direction": 2,
+          "window_ref": "w_524af7a345ecb4254b76e616",
+          "kind": "target_linked",
+          "clue": "founder",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": true,
+      "second_only_verified_entry": true
+    },
+    {
+      "session": "qid_591__C__r2",
+      "qid": "591",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "direction": 1,
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "kind": "target_linked",
+          "clue": "campus_anniversary",
+          "reference_visible": true
+        },
+        {
+          "docid": "86424",
+          "direction": 2,
+          "window_ref": "w_524af7a345ecb4254b76e616",
+          "kind": "target_linked",
+          "clue": "founder",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": true,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_638__A__r1",
+      "qid": "638",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": false,
+      "reference_visible": true,
+      "target_reference_visible": false,
+      "hits": [
+        {
+          "docid": "38269",
+          "direction": 1,
+          "window_ref": "w_926d4f361e093a7738ba882b",
+          "kind": "bridge",
+          "clue": "bestselling_album",
+          "reference_visible": true
+        },
+        {
+          "docid": "18046",
+          "direction": 1,
+          "window_ref": "w_da42a98d5cf4a3f5fe07ab3f",
+          "kind": "bridge",
+          "clue": "bestselling_album",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_638__A__r2",
+      "qid": "638",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_638__B__r1",
+      "qid": "638",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_638__B__r2",
+      "qid": "638",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_638__C__r1",
+      "qid": "638",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": false,
+      "reference_visible": true,
+      "target_reference_visible": false,
+      "hits": [
+        {
+          "docid": "15261",
+          "direction": 2,
+          "window_ref": "w_d6833007a66c15136fec23ac",
+          "kind": "bridge",
+          "clue": "bestselling_album",
+          "reference_visible": false
+        },
+        {
+          "docid": "18046",
+          "direction": 2,
+          "window_ref": "w_da42a98d5cf4a3f5fe07ab3f",
+          "kind": "bridge",
+          "clue": "bestselling_album",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": true,
+      "second_only_verified_entry": true
+    },
+    {
+      "session": "qid_638__C__r2",
+      "qid": "638",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_757__A__r1",
+      "qid": "757",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_757__A__r2",
+      "qid": "757",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_757__B__r1",
+      "qid": "757",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_757__B__r2",
+      "qid": "757",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_757__C__r1",
+      "qid": "757",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_757__C__r2",
+      "qid": "757",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_786__A__r1",
+      "qid": "786",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_786__A__r2",
+      "qid": "786",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_786__B__r1",
+      "qid": "786",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_786__B__r2",
+      "qid": "786",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_786__C__r1",
+      "qid": "786",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_786__C__r2",
+      "qid": "786",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_810__A__r1",
+      "qid": "810",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_810__A__r2",
+      "qid": "810",
+      "arm": "A",
+      "repeat": 2,
+      "status": "no_search",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_810__B__r1",
+      "qid": "810",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_810__B__r2",
+      "qid": "810",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "9043",
+          "direction": 1,
+          "window_ref": "w_a9115f6092e2fc440f2f96c5",
+          "kind": "target_linked",
+          "clue": "architect_family",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_810__C__r1",
+      "qid": "810",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_810__C__r2",
+      "qid": "810",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_867__A__r1",
+      "qid": "867",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_867__A__r2",
+      "qid": "867",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_867__B__r1",
+      "qid": "867",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_867__B__r2",
+      "qid": "867",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_867__C__r1",
+      "qid": "867",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_867__C__r2",
+      "qid": "867",
+      "arm": "C",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_985__A__r1",
+      "qid": "985",
+      "arm": "A",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "50013",
+          "direction": 1,
+          "window_ref": "w_146d7002d9e64202c79a0a92",
+          "kind": "target_linked",
+          "clue": "thesis_author",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_985__A__r2",
+      "qid": "985",
+      "arm": "A",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "50013",
+          "direction": 1,
+          "window_ref": "w_146d7002d9e64202c79a0a92",
+          "kind": "target_linked",
+          "clue": "thesis_author",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_985__B__r1",
+      "qid": "985",
+      "arm": "B",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "50013",
+          "direction": 1,
+          "window_ref": "w_146d7002d9e64202c79a0a92",
+          "kind": "target_linked",
+          "clue": "thesis_author",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_985__B__r2",
+      "qid": "985",
+      "arm": "B",
+      "repeat": 2,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "50013",
+          "direction": 1,
+          "window_ref": "w_146d7002d9e64202c79a0a92",
+          "kind": "target_linked",
+          "clue": "thesis_author",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    },
+    {
+      "session": "qid_985__C__r1",
+      "qid": "985",
+      "arm": "C",
+      "repeat": 1,
+      "status": "complete",
+      "confirmed_document": true,
+      "confirmed_target_document": true,
+      "reference_visible": true,
+      "target_reference_visible": true,
+      "hits": [
+        {
+          "docid": "50013",
+          "direction": 2,
+          "window_ref": "w_146d7002d9e64202c79a0a92",
+          "kind": "target_linked",
+          "clue": "thesis_author",
+          "reference_visible": true
+        }
+      ],
+      "second_adds_verified_clue": true,
+      "second_only_verified_entry": true
+    },
+    {
+      "session": "qid_985__C__r2",
+      "qid": "985",
+      "arm": "C",
+      "repeat": 2,
+      "status": "invalid",
+      "confirmed_document": false,
+      "confirmed_target_document": false,
+      "reference_visible": false,
+      "target_reference_visible": false,
+      "hits": [],
+      "second_adds_verified_clue": false,
+      "second_only_verified_entry": false
+    }
+  ]
+}

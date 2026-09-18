@@ -1,0 +1,27 @@
+{
+  "status": "valid",
+  "directions": [
+    {
+      "goal": "Find the author of a thesis on Church Fathers and a condemned Charismatic sect, advised by an ordained Lutheran minister/professor at a late-19th-century university.",
+      "source_clues": [
+        "thesis explores the work of notable Church Fathers and a condemned Charismatic sect",
+        "primary advisor to whom this thesis was submitted is an ordained Lutheran minister"
+      ],
+      "query": "thesis \"Church Fathers\" \"Charismatic sect\" \"ordained Lutheran minister\" professor",
+      "clue_locations": [
+        [
+          5
+        ],
+        [
+          199
+        ]
+      ],
+      "long_query_warning": false
+    }
+  ],
+  "repairs": 1,
+  "initial_valid": false,
+  "initial_errors": [
+    "directions[0].source_clues[1] is not an exact nonempty substring of the original question"
+  ]
+}

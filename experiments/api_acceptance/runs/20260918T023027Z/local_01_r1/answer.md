@@ -1,0 +1,3 @@
+Based on the available information, **Peter King** (also known as Peter Nzioki or Peter King Nzioki Mwania) is a Kenyan actor who made his film debut in the 2005 movie *The Constant Gardener*, directed by Fernando Meirelles.
+
+In the film, he had a **minor role**. The specific character name for his part in *The Constant Gardener* is not detailed in the provided sources, but it marked the beginning of his acting career. He has since gone on to appear in other notable productions such as *Sense8* and *The Fifth Estate*.

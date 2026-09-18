@@ -1,0 +1,6 @@
+**Evidence Handoff:**
+
+*   **Relevant Information Observed:** The provided text confirms the details of the 2005 UEFA Champions League final between Liverpool and AC Milan, including the score (3–3 after extra time, Liverpool won on penalties), date (May 25, 2005), and location (Istanbul). However, it does not contain specific details about Andriy Shevchenko's actions in the 117th minute.
+*   **Exact Supporting Quotation:** "The 2005 UEFA Champions League final was the final match of the 2004–05 UEFA Champions League... contested between Liverpool of England and AC Milan of Italy at the Atatürk Olympic Stadium in Istanbul, Turkey on 25 May 2005." / "team1score: 3 / team2score: 3 / details: After extra time Liverpool won 3–2 on penalties"
+*   **Document/Window Reference:** `docid: 23800`, offset 0-1600.
+*   **Limitations/Next Reading:** The current observation lacks minute-by-minute event logs or specific player actions during extra time. To verify if Shevchenko had a significant action (e.g., a shot, penalty, or card) in the 117th minute, further search is needed focusing on match reports detailing extra-time events involving Shevchenko.

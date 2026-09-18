@@ -1,0 +1,16 @@
+{
+  "source": "experiments/offline/search_open_diagnosis/20260917T182655.718687Z",
+  "source_hash": "e9a1a065dd03223bc922225bf8f40ef7e67930a878c8809f29a29a29980eb611",
+  "arms": {
+    "A": "unchanged",
+    "B_pool3": "original BM25 top3 parent chunks, joint unit BM25; exact spans deduplicated",
+    "C_scores": "top1 parent, score-pair lexical tokens at both stages; otherwise unchanged"
+  },
+  "scope": "Frozen 75 query/document pairs, no LLM/retrieval/gold. No production ranking changes.",
+  "code_hashes": {
+    "probe_locator.py": "e13d593582f21891df8fe44224203eda6a2edad777ff9985984e7486ce2c1b32",
+    "raw_windows.py": "5817507f6811d544ae13d819fedb4c813aa7e7cc57086645b4e48601faec6c8a",
+    "window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2"
+  }
+}

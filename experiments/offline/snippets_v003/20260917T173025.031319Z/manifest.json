@@ -1,0 +1,20 @@
+{
+  "source": "experiments/offline/snippets_v001/20260917T095014.433850Z",
+  "source_sha256": "305d7f61ec59e4bc488e810ac1da7237a4810200db82e05a7a5f0c51078dad15",
+  "scope": "Query-local information need only. Frozen historical query/documents/order; no gold or LLM calls.",
+  "A": "v001 BM25 top-1 <=400 text tokens",
+  "B": "same top-1 plus highest positive-score nonoverlapping block; <=800 total text tokens",
+  "ranking": "identical v001 BM25 k1=1.5 b=.75, same chunks, tie earliest; exact top-1 equality asserted",
+  "limitations": [
+    "Additional-budget experiment; not fixed-total-budget comparison.",
+    "Character overlap excluded; semantic redundancy remains.",
+    "Historical queries are not newly decomposed single-constraint tasks.",
+    "No online behavior/answer evaluation."
+  ],
+  "open_check": "Actual BCPlusTools.get_document at each block start; paginate if >12000 characters; assert exact raw text.",
+  "code_sha256": {
+    "selector.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "compare_multiblock.py": "dfc435ab08d759c1cf411a2055501206ace2846ac41acc21e232896bed73d60a",
+    "agent_snapshot.py": "34e3e6d909355350d01d3d175558c3c11c648faf164acb58003a6528ac2504bc"
+  }
+}

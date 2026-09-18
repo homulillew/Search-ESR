@@ -1,0 +1,6 @@
+The supplied text confirms that the 2005 Champions League final went to extra time, with the score remaining 3–3 throughout that period before a penalty shoot-out decided the match. However, the provided excerpt from the Wikipedia article does not contain specific details about John Arne Riise's free kick attempt at the end of extra time. It mentions the goals by Gerrard, Šmicer, and Alonso in regular time but omits specific late-extra-time events or shots by Riise.
+
+**Evidence Handoff:**
+*   **Relevant Information Observed:** The match went to extra time after being 3–3 at full time; the score remained 3–3 during extra time, leading to a penalty shootout.
+*   **Supporting Quotation:** "The scores remained the same during extra time, and a penalty shoot-out was required to decide the champions." (Source: `23800`, offset 1600)
+*   **Limitations:** The provided text does not mention John Arne Riise or any specific free-kick attempts made during extra time. To verify if Riise took a free kick at the end of extra time, further reading of the detailed match report or play-by-play commentary is required.

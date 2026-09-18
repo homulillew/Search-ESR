@@ -1,0 +1,1 @@
+Based on the cast list from *The Fifth Estate* (2013), the Kenyan actor Peter King (Peter Nzioki) played the character **Oscar Kamau Kingara**.

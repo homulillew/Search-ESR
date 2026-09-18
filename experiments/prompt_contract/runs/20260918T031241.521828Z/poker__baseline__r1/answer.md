@@ -1,0 +1,3 @@
+Svetlana Gromenkova's final opponent in the 2008 WSOP Ladies event was **Anh Le**.
+
+According to the records, Gromenkova defeated Anh Le heads-up to win the bracelet. Although Le had taken a chip lead earlier in the match by hitting a five on the flop with A-5 against Gromenkova's A-K, Gromenkova rallied back. On the final hand, Gromenkova held pocket Kings and Le called with A-6. The turn brought a King for Gromenkova, and despite Le hitting an Ace on the river, it was not enough to overcome the pair of Kings, leaving Le in second place.

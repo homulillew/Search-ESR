@@ -1,0 +1,19 @@
+{
+  "source": "experiments/offline/snippets_v004/20260917T173648.577447Z",
+  "source_sha256": "110ebcc003ea60428fd594f16546ecf1b9bf232ad450bb4745d0b8f53b14216c",
+  "scope": "Freeze v004 C parent chunks and D per-block quotas; compare D prefix with within-parent sentence/line BM25 anchor and context expansion. No global reranking, gold, API or online rollout.",
+  "budget": "Same per-block quotas, total <=400 text tokens; metadata excluded; no redistribution after window construction.",
+  "limits": [
+    "Regex sentence rules inherited from v002; only Markdown headings are section boundaries.",
+    "Cannot recover context outside parent chunk; parent edges may already be incomplete.",
+    "Oversize units may still be split. Local lexical matching is not semantic support.",
+    "Fitting blocks unchanged; sentence boundaries not retroactively repaired."
+  ],
+  "source_hashes": {
+    "selector.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "window.py": "1634f103388c87da3117ce21364d726fa73092ea74b02b185259f5d2f772d8b0",
+    "short_window.py": "e92a329338d1ba57594ab035f014f9a7ae157a33570c2f2ef893a40fb821fc95",
+    "compare_short_window.py": "bd26ded79870db5e3103491fcec699ae21e76bc1e4cc549c9548d835b080f7c1",
+    "agent_snapshot.py": "34e3e6d909355350d01d3d175558c3c11c648faf164acb58003a6528ac2504bc"
+  }
+}

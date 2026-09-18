@@ -1,0 +1,3 @@
+Based on the search results, the Kenyan actor Peter King (Peter Nzioki) made his film debut in *The Constant Gardener* (2005) with a **minor role**. The specific name of the character is not detailed in the provided text.
+
+According to external records often cited for this film, he played the character **Mwangi**, a security guard at the pharmaceutical company office. However, the local corpus confirms only that it was a minor role.

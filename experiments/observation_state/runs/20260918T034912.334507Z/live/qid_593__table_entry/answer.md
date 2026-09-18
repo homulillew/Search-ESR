@@ -1,0 +1,3 @@
+The provided search results do not contain the specific dissertation described in the query. The results include general information about dissertations, acknowledgements, and lists of graduates from various universities (such as UIC, Clemson, Harvard, Missouri S&T), but none match the specific criteria: a dissertation on polymers submitted to a university founded in the mid-20th century, where the author is an assistant professor at that same university as of 2023, and which acknowledges two co-major professors and three other individuals with Ph.D.s.
+
+Therefore, based on the available corpus, I cannot provide the date this dissertation was approved.

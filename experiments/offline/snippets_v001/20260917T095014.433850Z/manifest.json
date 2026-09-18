@@ -1,0 +1,20 @@
+{
+  "source_batch": "20260917T090903.022551Z",
+  "qids": [
+    "546",
+    "1094",
+    "517"
+  ],
+  "tokenizer": "/data/model/Qwen3-Embedding-8B",
+  "per_document_text_token_cap": 400,
+  "target_chunk_tokens": 400,
+  "overlap_max_tokens": 50,
+  "ranking": "BM25 within each document; k1=1.5 b=0.75; unique query terms; ties prefer earliest",
+  "scope": "Offline only. Original query, docids, order and document scores frozen. No gold or extra API calls.",
+  "html_policy": "Raw HTML: both arms use prefix; flagged, no cleaning in this experiment.",
+  "budget_note": "Equal upper bounds, not necessarily equal consumed tokens. Headers/JSON overhead excluded from text budget.",
+  "source_sha256": {
+    "selector.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "compare.py": "ca2569ec84ea3d7322870cab87af091394e5b8e4b9a72b542968f509b9f6f32d"
+  }
+}

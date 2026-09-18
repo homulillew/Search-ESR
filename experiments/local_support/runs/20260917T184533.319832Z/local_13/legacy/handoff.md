@@ -1,0 +1,6 @@
+Based on the search observation from document **78848** (a list of 1990s cartoons):
+
+*   **Relevant Information:** The text describes a cartoon plot where a professor discovers that household gremlins are not random events but are caused by mysterious creatures called **Quarxs**. These creatures are invisible except when viewed through the professor's detectors.
+*   **Exact Supporting Quotation:** "A professor has discovered the true cause of household gremlins. Rather than being random events, they are caused by mysterious creatures, invisible except through the professor's detectors. He calls them Quarxs..."
+*   **Document/Window Reference:** Document `78848`, offset `0`, end_char `1600`.
+*   **Limitations/Next Reading:** This appears to be a synopsis for a specific animated series (likely *The Professor* or similar 90s educational/cartoon content). The text does not specify the title of the show itself, only the premise. To identify the specific show or get more context on the "Quarxs," one might search for the specific cartoon title associated with this description.

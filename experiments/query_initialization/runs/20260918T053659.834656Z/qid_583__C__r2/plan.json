@@ -1,0 +1,53 @@
+{
+  "status": "valid",
+  "directions": [
+    {
+      "goal": "Identify the artist described in a 2012 entry as working under an alias, featuring circles, and fascinated by human behavior.",
+      "source_clues": [
+        "works under an alias",
+        "features circles in their work often",
+        "fascinated by human behavior"
+      ],
+      "query": "artist alias circles work fascinated by human behavior 2012 entry",
+      "clue_locations": [
+        [
+          312
+        ],
+        [
+          369
+        ],
+        [
+          414
+        ]
+      ],
+      "long_query_warning": false
+    },
+    {
+      "goal": "Identify the organization that posted entries in 2012, 2016, and 2019 regarding art funding and community support.",
+      "source_clues": [
+        "entry made on January 28, 2019",
+        "organization's founder",
+        "blog post from 2016"
+      ],
+      "query": "organization blog post 2016 founder entry January 28 2019 art",
+      "clue_locations": [
+        [
+          69
+        ],
+        [
+          219
+        ],
+        [
+          258
+        ]
+      ],
+      "long_query_warning": false
+    }
+  ],
+  "repairs": 1,
+  "initial_valid": false,
+  "initial_errors": [
+    "directions[0].source_clues must contain 1 to 3 exact quotations",
+    "directions[1].source_clues must contain 1 to 3 exact quotations"
+  ]
+}

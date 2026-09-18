@@ -1,0 +1,202 @@
+{
+  "summary": {
+    "local_cases": 20,
+    "baseline_hits": 16,
+    "safe_hits": 17,
+    "regressions": 0,
+    "new_initial_windows_unchanged": 60,
+    "risky_searches_guarded": 2
+  },
+  "local": [
+    {
+      "task": "local_01",
+      "baseline_hit": false,
+      "safe_hit": true,
+      "repair": {
+        "status": "repaired",
+        "old_span": [
+          458,
+          2044
+        ],
+        "new_span": [
+          630,
+          2122
+        ],
+        "protected_anchor": [
+          1031,
+          1138
+        ],
+        "table_header": 2006,
+        "first_row_end": 2122
+      }
+    },
+    {
+      "task": "local_02",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_03",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_04",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_05",
+      "baseline_hit": false,
+      "safe_hit": false,
+      "repair": null
+    },
+    {
+      "task": "local_06",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_07",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_08",
+      "baseline_hit": false,
+      "safe_hit": false,
+      "repair": null
+    },
+    {
+      "task": "local_09",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_10",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_11",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_12",
+      "baseline_hit": null,
+      "safe_hit": null,
+      "repair": null
+    },
+    {
+      "task": "local_13",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_14",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_15",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_16",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_17",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_18",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_19",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    },
+    {
+      "task": "local_20",
+      "baseline_hit": true,
+      "safe_hit": true,
+      "repair": null
+    }
+  ],
+  "guards": [
+    {
+      "docid": "40817",
+      "query": "\"father represented a state\" \"mother was an actress\" politician",
+      "baseline_preserved": true,
+      "repair": {
+        "status": "unchanged_existing_table_rows",
+        "old_span": [
+          60154,
+          61531
+        ],
+        "new_span": [
+          60154,
+          61531
+        ],
+        "protected_anchor": [
+          61045,
+          61128
+        ],
+        "table_header": 61426,
+        "first_row_end": 61681,
+        "rejected_span": [
+          60443,
+          61681
+        ]
+      }
+    },
+    {
+      "docid": "40817",
+      "query": "\"mother was an actress\" father politician state assembly house parliament",
+      "baseline_preserved": true,
+      "repair": {
+        "status": "unchanged_existing_table_rows",
+        "old_span": [
+          59683,
+          61128
+        ],
+        "new_span": [
+          59683,
+          61128
+        ],
+        "protected_anchor": [
+          60049,
+          60590
+        ],
+        "table_header": 61045,
+        "first_row_end": 61307,
+        "rejected_span": [
+          60018,
+          61307
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+Based on the available information, Peter King (Peter Nzioki) made his film debut in *The Constant Gardener* (2005), but he played a **minor role**. The specific character name is not explicitly listed in the provided source text, which only notes it was a minor role.
+
+If you need more specific details about his exact character name or screen time, further research into the full cast list of the film would be required.

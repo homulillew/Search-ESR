@@ -1,0 +1,22 @@
+{
+  "source": "experiments/offline/snippets_v001/20260917T095014.433850Z",
+  "source_sha256": "305d7f61ec59e4bc488e810ac1da7237a4810200db82e05a7a5f0c51078dad15",
+  "arms": {
+    "A": "Original top1 <=400",
+    "B_strict": "Original strict-disjoint top2 <=800",
+    "C_whitespace": "Allow only whitespace overlap top2 <=800",
+    "D_equal_cap": "C blocks clipped at prefixes to 200+200; unused quota from short source block transferred; total <=400"
+  },
+  "scope": "Frozen queries/chunks/BM25. No gold, LLM or online rollout. Query-local needs only.",
+  "limitations": [
+    "Same upper bound, not identical consumed tokens. Text-only budget excludes metadata.",
+    "Prefix clipping can cut sentences and discard query matches; this experiment evaluates this explicit allocation policy, not all multiblock methods.",
+    "Whitespace overlap retained verbatim and counted in each block; substantive overlap still excluded."
+  ],
+  "source_hashes": {
+    "selector.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "compare_multiblock.py": "987103e28774c2731885678ac3e163ccb553a9de98b84cfe54f867f330f11d41",
+    "compare_budget.py": "0c783f6a84d61d94f3312ca4317ce453fb354179f55a8e06f285a665298d746a",
+    "agent_snapshot.py": "34e3e6d909355350d01d3d175558c3c11c648faf164acb58003a6528ac2504bc"
+  }
+}

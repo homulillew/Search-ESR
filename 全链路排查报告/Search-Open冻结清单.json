@@ -1,0 +1,43 @@
+{
+  "version": "v002_raw_windows_mechanical",
+  "recorded_date": "2026-09-18",
+  "scope": "Local file hash manifest; no git tag or deployment implied. No secrets included.",
+  "parameters": {
+    "default_top_k": 5,
+    "search_title_and_text_tokens": 400,
+    "title_tokens_max": 48,
+    "open_direction_tokens": 1200,
+    "around_total_tokens_max": 2400,
+    "token_count_cache_entries": 256,
+    "locator_parent_blocks": 1,
+    "directions": [
+      "before",
+      "after",
+      "around"
+    ],
+    "tokenizer_path": "/data/model/Qwen3-Embedding-8B"
+  },
+  "files": {
+    "llm_chat/agent.py": "abb241830af9d2e7531ff7dd103bc5731e956a8ef8ace54ece857b1d2efb3fa6",
+    "llm_chat/raw_windows.py": "c20c0ec11bc2c9fbc3110bcf674d7603d7d0bbe4f6076bd63697c9e8af8beaed",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "llm_chat/window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2",
+    "llm_chat/RAW_WINDOWS.md": "3f4000f9af44e67e72889ed042a16396ad38d31b0d06eb516833da34330b7efe",
+    "experiments/run_rollout.py": "da5e6ac648b349c18f72b5065bebf726ee72546722fe9013a3b4ed5a5cb94368",
+    "experiments/run_batch.py": "1ee141a29832754d71f5203c537127ee07b45d2080505e48d00843fdc9d94ce8",
+    "BCPlus/scripts/search_bcplus.py": "5b13d6ad0faf6055887ff7e642e64f14737a4b51c7768953e9df02ddc87e40fd",
+    "BCPlus/indexes/bcplus-qwen3-8b/metadata.json": "a89540baa2736475f104bab5202f50e87a4bc63cf3b726070e31a074190d0c7f",
+    "tests/test_raw_windows.py": "37fcbb13e60df04c3b48eb06b48b7b3e9860db3f91b0a8809f8114b47ef4b22d",
+    "tests/test_raw_windows_deep.py": "3ebd2ad9792fbb7876f9b9e472e0d3d43d23040a3b99e3af85ff5d1bff2bae31",
+    "tests/test_window_mechanics.py": "2e71cc5d0f1c4bea85b634cbfdd1ef7556a8bb88a3690d156e4cdbf2f9243304"
+  },
+  "tokenizer_files": {
+    "/data/model/Qwen3-Embedding-8B/tokenizer.json": "83cdf8c3a34f68862319cb1810ee7b1e2c0a44e0864ae930194ddb76bb7feb8d",
+    "/data/model/Qwen3-Embedding-8B/tokenizer_config.json": "2f58f4bbd7bbce15d683f525954ef3a92cd82f5e06415a9c513859bf8ab72436"
+  },
+  "validation": {
+    "full_test_count": 33,
+    "log": "../experiments/mechanical/runs/20260917T190036.604272Z/all_tests.log",
+    "limits": "Mechanical tests and four-document check; no new full rollout of final mechanical revision."
+  }
+}

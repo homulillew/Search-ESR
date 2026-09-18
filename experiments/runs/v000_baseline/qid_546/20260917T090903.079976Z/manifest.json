@@ -1,0 +1,30 @@
+{
+  "variant": "v000_baseline",
+  "run_id": "20260917T090903.079976Z",
+  "qid": "546",
+  "batch_id": "20260917T090903.022551Z",
+  "execution": "parallel_api_serial_shared_retrieval",
+  "model": "qwen3.7-flash",
+  "base_url": "https://llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "system_prompt": "你是一个可靠的助手。请用清晰、准确的语言回答问题。",
+  "request_options": {
+    "extra_body": {
+      "enable_thinking": false
+    }
+  },
+  "timeout": 120.0,
+  "sdk_max_retries": 2,
+  "max_tool_rounds": 64,
+  "max_tool_calls_per_round": 8,
+  "dataset": "BCPlus/data/bcplus/qa.jsonl",
+  "dataset_sha256": "44b80cc9fcd9dd5a44aa09292c2165364b0c0e9df26c9cd6c11846165a0916b7",
+  "source_sha256": {
+    "llm_chat/agent.py": "34e3e6d909355350d01d3d175558c3c11c648faf164acb58003a6528ac2504bc",
+    "llm_chat/client.py": "f47d0d82dcf9b1e83d4ed4484a0fb8df9f9008d933f2b2f6552b5641092c8e66",
+    "BCPlus/scripts/search_bcplus.py": "5b13d6ad0faf6055887ff7e642e64f14737a4b51c7768953e9df02ddc87e40fd",
+    "experiments/run_rollout.py": "6743e0922bf09502a1a420c2e7eb28e574711e315caaf68f8846e239f46b3033",
+    "experiments/run_batch.py": "e9876e0f077e4500a2ac9ffb472b92b6e3705398f072415a46b66129a47be877"
+  },
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+  "notes": "Unchanged AgentSession policy. SDK retries are internal to each recorded API call. No gold supplied."
+}

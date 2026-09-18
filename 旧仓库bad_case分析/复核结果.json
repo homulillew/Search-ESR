@@ -1,0 +1,7204 @@
+{
+  "commit": "253beb48865ffa14cd9b0861e83fef0f45b7cd67",
+  "batches": {
+    "esr_retry20_g1": {
+      "runs_files": 10,
+      "valid_stores": 10,
+      "empty_stores": [],
+      "submitted": 0,
+      "zero_open_attempts": 0,
+      "unsubmitted_with_verify_attempt": 10,
+      "supported_but_unsubmitted": [],
+      "action_counts": {
+        "search": 106,
+        "open_page": 37,
+        "update_state": 42,
+        "verify_answer": 31,
+        "read_evidence": 15
+      },
+      "illegal_counts": {
+        "verify_answer": 7,
+        "read_evidence": 9,
+        "open_page": 1,
+        "update_state": 12
+      },
+      "parse_failures": 2,
+      "parse_failure_episodes": 2,
+      "episodes": [
+        {
+          "qid": "1002",
+          "submitted": false,
+          "actions": 8,
+          "counts": {
+            "search": 5,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1044",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 12,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 9
+          },
+          "illegal": {
+            "verify_answer": 7
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "416",
+          "submitted": false,
+          "actions": 25,
+          "counts": {
+            "search": 14,
+            "open_page": 4,
+            "update_state": 3,
+            "read_evidence": 2,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "530",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 11,
+            "open_page": 3,
+            "update_state": 7,
+            "verify_answer": 4,
+            "read_evidence": 4
+          },
+          "illegal": {
+            "update_state": 2,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "533",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 10,
+            "open_page": 6,
+            "update_state": 8,
+            "verify_answer": 4,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "update_state": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "546",
+          "submitted": false,
+          "actions": 18,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "update_state": 4,
+            "verify_answer": 1,
+            "read_evidence": 5
+          },
+          "illegal": {
+            "read_evidence": 5,
+            "update_state": 3
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "625",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 13,
+            "open_page": 5,
+            "update_state": 6,
+            "verify_answer": 4,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 2,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "633",
+          "submitted": false,
+          "actions": 18,
+          "counts": {
+            "search": 9,
+            "open_page": 7,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "661",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 12,
+            "open_page": 4,
+            "update_state": 7,
+            "verify_answer": 3,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "666",
+          "submitted": false,
+          "actions": 20,
+          "counts": {
+            "search": 14,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        }
+      ]
+    },
+    "esr_retry20_v2_g0": {
+      "runs_files": 9,
+      "valid_stores": 9,
+      "empty_stores": [
+        "530.sqlite"
+      ],
+      "submitted": 0,
+      "zero_open_attempts": 0,
+      "unsubmitted_with_verify_attempt": 9,
+      "supported_but_unsubmitted": [],
+      "action_counts": {
+        "search": 95,
+        "open_page": 26,
+        "read_evidence": 17,
+        "update_state": 27,
+        "verify_answer": 17
+      },
+      "illegal_counts": {
+        "read_evidence": 13,
+        "update_state": 9,
+        "open_page": 1
+      },
+      "parse_failures": 5,
+      "parse_failure_episodes": 4,
+      "episodes": [
+        {
+          "qid": "120",
+          "submitted": false,
+          "actions": 16,
+          "counts": {
+            "search": 4,
+            "open_page": 3,
+            "read_evidence": 4,
+            "update_state": 4,
+            "verify_answer": 1
+          },
+          "illegal": {
+            "read_evidence": 3,
+            "update_state": 3,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "170",
+          "submitted": false,
+          "actions": 24,
+          "counts": {
+            "search": 15,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "186",
+          "submitted": false,
+          "actions": 20,
+          "counts": {
+            "search": 11,
+            "open_page": 5,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "228",
+          "submitted": false,
+          "actions": 25,
+          "counts": {
+            "search": 19,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "239",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 15,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 3,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "266",
+          "submitted": false,
+          "actions": 14,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "update_state": 3,
+            "verify_answer": 1,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 2,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "324",
+          "submitted": false,
+          "actions": 18,
+          "counts": {
+            "search": 7,
+            "open_page": 3,
+            "update_state": 5,
+            "verify_answer": 3
+          },
+          "illegal": {
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 2,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "384",
+          "submitted": false,
+          "actions": 9,
+          "counts": {
+            "search": 6,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "391",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 12,
+            "open_page": 4,
+            "update_state": 3,
+            "verify_answer": 2,
+            "read_evidence": 9
+          },
+          "illegal": {
+            "read_evidence": 8,
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        }
+      ]
+    },
+    "esr_retry20_v2_g1": {
+      "runs_files": 10,
+      "valid_stores": 10,
+      "empty_stores": [
+        "170.sqlite"
+      ],
+      "submitted": 1,
+      "zero_open_attempts": 0,
+      "unsubmitted_with_verify_attempt": 9,
+      "supported_but_unsubmitted": [
+        "533"
+      ],
+      "action_counts": {
+        "search": 118,
+        "open_page": 38,
+        "update_state": 44,
+        "verify_answer": 27,
+        "read_evidence": 8,
+        "submit_answer": 1
+      },
+      "illegal_counts": {
+        "update_state": 14,
+        "read_evidence": 8
+      },
+      "parse_failures": 3,
+      "parse_failure_episodes": 3,
+      "episodes": [
+        {
+          "qid": "1002",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 14,
+            "open_page": 6,
+            "update_state": 3,
+            "verify_answer": 3
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1044",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 12,
+            "open_page": 4,
+            "update_state": 11,
+            "verify_answer": 3
+          },
+          "illegal": {
+            "update_state": 8
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "416",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 15,
+            "open_page": 3,
+            "update_state": 5,
+            "verify_answer": 3,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "530",
+          "submitted": false,
+          "actions": 15,
+          "counts": {
+            "search": 7,
+            "open_page": 2,
+            "update_state": 3,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "533",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 11,
+            "open_page": 5,
+            "update_state": 7,
+            "verify_answer": 4,
+            "read_evidence": 3
+          },
+          "illegal": {
+            "update_state": 2,
+            "read_evidence": 3
+          },
+          "ever_supported": true,
+          "parse_failures": 1,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "546",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 15,
+            "open_page": 5,
+            "update_state": 5,
+            "verify_answer": 4,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "625",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 15,
+            "open_page": 7,
+            "update_state": 4,
+            "verify_answer": 3,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "633",
+          "submitted": false,
+          "actions": 11,
+          "counts": {
+            "search": 8,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "661",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 15,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 3,
+            "read_evidence": 1,
+            "submit_answer": 1
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "update_state": 1
+          },
+          "ever_supported": true,
+          "parse_failures": 1,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "666",
+          "submitted": false,
+          "actions": 10,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        }
+      ]
+    },
+    "exp100_baseline": {
+      "runs_files": 76,
+      "valid_stores": 76,
+      "empty_stores": [],
+      "submitted": 76,
+      "zero_open_attempts": 33,
+      "unsubmitted_with_verify_attempt": 0,
+      "supported_but_unsubmitted": [],
+      "action_counts": {
+        "search": 898,
+        "finish": 76,
+        "open_page": 125,
+        "read_evidence": 296
+      },
+      "illegal_counts": {
+        "read_evidence": 296,
+        "open_page": 38
+      },
+      "parse_failures": 0,
+      "parse_failure_episodes": 0,
+      "episodes": [
+        {
+          "qid": "1004",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 4,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "102",
+          "submitted": true,
+          "actions": 19,
+          "counts": {
+            "search": 5,
+            "open_page": 4,
+            "read_evidence": 9,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 9,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1041",
+          "submitted": true,
+          "actions": 9,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "read_evidence": 5,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 5
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1044",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 30,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1063",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 10,
+            "open_page": 4,
+            "read_evidence": 16,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 16,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1089",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 2,
+            "open_page": 2,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1094",
+          "submitted": true,
+          "actions": 4,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1149",
+          "submitted": true,
+          "actions": 7,
+          "counts": {
+            "search": 3,
+            "open_page": 3,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1196",
+          "submitted": true,
+          "actions": 7,
+          "counts": {
+            "search": 5,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1198",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 3,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "120",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 6,
+            "open_page": 3,
+            "read_evidence": 20,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 20
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1209",
+          "submitted": true,
+          "actions": 15,
+          "counts": {
+            "search": 14,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1217",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 4,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1223",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 15,
+            "open_page": 4,
+            "read_evidence": 11,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 11,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1235",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 5,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1243",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 29,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1252",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 11,
+            "open_page": 6,
+            "read_evidence": 12,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 12,
+            "open_page": 5
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "170",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 6,
+            "open_page": 3,
+            "read_evidence": 2,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "176",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 5,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "186",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 10,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "200",
+          "submitted": true,
+          "actions": 20,
+          "counts": {
+            "search": 10,
+            "open_page": 4,
+            "read_evidence": 5,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 5,
+            "open_page": 3
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "202",
+          "submitted": true,
+          "actions": 7,
+          "counts": {
+            "search": 6,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "223",
+          "submitted": true,
+          "actions": 28,
+          "counts": {
+            "search": 27,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "228",
+          "submitted": true,
+          "actions": 29,
+          "counts": {
+            "search": 28,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "23",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "233",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 11,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "239",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 11,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "263",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 4,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "266",
+          "submitted": true,
+          "actions": 25,
+          "counts": {
+            "search": 24,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "278",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 12,
+            "open_page": 3,
+            "read_evidence": 14,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 14,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "279",
+          "submitted": true,
+          "actions": 28,
+          "counts": {
+            "search": 27,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "284",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 4,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "288",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 23,
+            "open_page": 3,
+            "read_evidence": 4,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "299",
+          "submitted": true,
+          "actions": 28,
+          "counts": {
+            "search": 4,
+            "open_page": 1,
+            "read_evidence": 22,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 22
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "311",
+          "submitted": true,
+          "actions": 8,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "read_evidence": 1,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "322",
+          "submitted": true,
+          "actions": 24,
+          "counts": {
+            "search": 23,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "324",
+          "submitted": true,
+          "actions": 22,
+          "counts": {
+            "search": 6,
+            "open_page": 3,
+            "read_evidence": 12,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 12
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "364",
+          "submitted": true,
+          "actions": 9,
+          "counts": {
+            "search": 8,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "391",
+          "submitted": true,
+          "actions": 25,
+          "counts": {
+            "search": 8,
+            "open_page": 5,
+            "read_evidence": 11,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 11,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "416",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 13,
+            "read_evidence": 11,
+            "open_page": 6,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 11,
+            "open_page": 3
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "421",
+          "submitted": true,
+          "actions": 29,
+          "counts": {
+            "search": 28,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "427",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 6,
+            "open_page": 6,
+            "read_evidence": 18,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 18,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "490",
+          "submitted": true,
+          "actions": 13,
+          "counts": {
+            "search": 12,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "506",
+          "submitted": true,
+          "actions": 16,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "read_evidence": 9,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 9
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "533",
+          "submitted": true,
+          "actions": 7,
+          "counts": {
+            "search": 4,
+            "open_page": 1,
+            "read_evidence": 1,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "56",
+          "submitted": true,
+          "actions": 15,
+          "counts": {
+            "search": 14,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "563",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 9,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "577",
+          "submitted": true,
+          "actions": 23,
+          "counts": {
+            "search": 10,
+            "open_page": 3,
+            "read_evidence": 9,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 9
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "581",
+          "submitted": true,
+          "actions": 22,
+          "counts": {
+            "search": 4,
+            "open_page": 4,
+            "read_evidence": 13,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 13,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "607",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 2,
+            "open_page": 2,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "625",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 14,
+            "open_page": 4,
+            "read_evidence": 11,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 11
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "633",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "636",
+          "submitted": true,
+          "actions": 4,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "637",
+          "submitted": true,
+          "actions": 25,
+          "counts": {
+            "search": 2,
+            "open_page": 3,
+            "read_evidence": 19,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 19,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "643",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 2,
+            "open_page": 2,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "661",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 2,
+            "open_page": 2,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "666",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 19,
+            "open_page": 2,
+            "read_evidence": 9,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 9
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "670",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "682",
+          "submitted": true,
+          "actions": 18,
+          "counts": {
+            "search": 10,
+            "open_page": 3,
+            "read_evidence": 4,
+            "finish": 1
+          },
+          "illegal": {
+            "open_page": 1,
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "695",
+          "submitted": true,
+          "actions": 21,
+          "counts": {
+            "search": 13,
+            "open_page": 1,
+            "read_evidence": 6,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 6
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "703",
+          "submitted": true,
+          "actions": 29,
+          "counts": {
+            "search": 28,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "710",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 21,
+            "open_page": 1,
+            "read_evidence": 4,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "718",
+          "submitted": true,
+          "actions": 14,
+          "counts": {
+            "search": 13,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "745",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 30,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "768",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "770",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "read_evidence": 2,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "772",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 14,
+            "open_page": 8,
+            "read_evidence": 8,
+            "finish": 1
+          },
+          "illegal": {
+            "open_page": 7,
+            "read_evidence": 8
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "776",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 11,
+            "open_page": 5,
+            "read_evidence": 14,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 14,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "796",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "83",
+          "submitted": true,
+          "actions": 22,
+          "counts": {
+            "search": 9,
+            "open_page": 2,
+            "read_evidence": 10,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 10
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "883",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 11,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "941",
+          "submitted": true,
+          "actions": 8,
+          "counts": {
+            "search": 7,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "95",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 10,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "980",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 10,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "981",
+          "submitted": true,
+          "actions": 16,
+          "counts": {
+            "search": 8,
+            "open_page": 5,
+            "read_evidence": 2,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "open_page": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "998",
+          "submitted": true,
+          "actions": 16,
+          "counts": {
+            "search": 9,
+            "open_page": 4,
+            "read_evidence": 2,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        }
+      ]
+    },
+    "exp100_esr": {
+      "runs_files": 76,
+      "valid_stores": 76,
+      "empty_stores": [],
+      "submitted": 13,
+      "zero_open_attempts": 0,
+      "unsubmitted_with_verify_attempt": 61,
+      "supported_but_unsubmitted": [],
+      "action_counts": {
+        "search": 805,
+        "open_page": 212,
+        "update_state": 276,
+        "verify_answer": 188,
+        "submit_answer": 13,
+        "read_evidence": 108
+      },
+      "illegal_counts": {
+        "update_state": 96,
+        "read_evidence": 69,
+        "verify_answer": 47,
+        "open_page": 5
+      },
+      "parse_failures": 28,
+      "parse_failure_episodes": 17,
+      "episodes": [
+        {
+          "qid": "1004",
+          "submitted": false,
+          "actions": 8,
+          "counts": {
+            "search": 5,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "102",
+          "submitted": true,
+          "actions": 10,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "1041",
+          "submitted": false,
+          "actions": 12,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 5,
+            "verify_answer": 3,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 3,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1044",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 15,
+            "open_page": 4,
+            "read_evidence": 1,
+            "update_state": 5,
+            "verify_answer": 5
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "update_state": 2,
+            "verify_answer": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1063",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 16,
+            "open_page": 4,
+            "update_state": 5,
+            "verify_answer": 4,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "verify_answer": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1089",
+          "submitted": false,
+          "actions": 17,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "update_state": 4,
+            "verify_answer": 3,
+            "read_evidence": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 3,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1094",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 15,
+            "open_page": 4,
+            "update_state": 4,
+            "verify_answer": 5,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "verify_answer": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1149",
+          "submitted": false,
+          "actions": 21,
+          "counts": {
+            "search": 8,
+            "open_page": 4,
+            "update_state": 3,
+            "verify_answer": 1,
+            "read_evidence": 5
+          },
+          "illegal": {
+            "read_evidence": 4,
+            "update_state": 2,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1196",
+          "submitted": false,
+          "actions": 20,
+          "counts": {
+            "search": 12,
+            "open_page": 2,
+            "update_state": 2,
+            "read_evidence": 3,
+            "verify_answer": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1198",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 12,
+            "open_page": 2,
+            "update_state": 10,
+            "verify_answer": 1,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 8,
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "120",
+          "submitted": false,
+          "actions": 24,
+          "counts": {
+            "search": 11,
+            "open_page": 4,
+            "read_evidence": 5,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1209",
+          "submitted": false,
+          "actions": 13,
+          "counts": {
+            "search": 10,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1217",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 18,
+            "open_page": 4,
+            "update_state": 4,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1223",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 13,
+            "open_page": 4,
+            "update_state": 9,
+            "verify_answer": 2,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 7,
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1235",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 11,
+            "open_page": 2,
+            "update_state": 11,
+            "verify_answer": 2,
+            "read_evidence": 4
+          },
+          "illegal": {
+            "update_state": 9,
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1243",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 16,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1252",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 13,
+            "open_page": 5,
+            "read_evidence": 3,
+            "update_state": 5,
+            "verify_answer": 4
+          },
+          "illegal": {
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "170",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 13,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 2,
+            "read_evidence": 9
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 8
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "176",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 18,
+            "open_page": 6,
+            "update_state": 3,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "186",
+          "submitted": false,
+          "actions": 20,
+          "counts": {
+            "search": 8,
+            "open_page": 4,
+            "read_evidence": 2,
+            "update_state": 4,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "200",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 17,
+            "open_page": 3,
+            "update_state": 5,
+            "verify_answer": 2,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "202",
+          "submitted": false,
+          "actions": 15,
+          "counts": {
+            "search": 11,
+            "open_page": 1,
+            "update_state": 3
+          },
+          "illegal": {
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "223",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 15,
+            "open_page": 4,
+            "update_state": 5,
+            "verify_answer": 4,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 2,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "228",
+          "submitted": false,
+          "actions": 13,
+          "counts": {
+            "search": 9,
+            "open_page": 1,
+            "update_state": 2,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "23",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 19,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 4
+          },
+          "illegal": {
+            "verify_answer": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "233",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 14,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 2,
+            "read_evidence": 3
+          },
+          "illegal": {
+            "update_state": 2,
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "239",
+          "submitted": false,
+          "actions": 17,
+          "counts": {
+            "search": 9,
+            "open_page": 4,
+            "update_state": 3,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "263",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "266",
+          "submitted": false,
+          "actions": 13,
+          "counts": {
+            "search": 7,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "278",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 11,
+            "open_page": 4,
+            "update_state": 8,
+            "verify_answer": 2,
+            "read_evidence": 5
+          },
+          "illegal": {
+            "update_state": 6,
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "279",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 8,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 15
+          },
+          "illegal": {
+            "verify_answer": 13
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "284",
+          "submitted": true,
+          "actions": 13,
+          "counts": {
+            "search": 5,
+            "open_page": 2,
+            "update_state": 3,
+            "verify_answer": 2,
+            "submit_answer": 1
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "288",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 12,
+            "open_page": 3,
+            "read_evidence": 2,
+            "update_state": 8,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "update_state": 6
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "299",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 5,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 1,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "311",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "322",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 20,
+            "open_page": 6,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "324",
+          "submitted": false,
+          "actions": 11,
+          "counts": {
+            "search": 5,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "364",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 14,
+            "open_page": 3,
+            "update_state": 9,
+            "verify_answer": 3,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 6,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "391",
+          "submitted": false,
+          "actions": 11,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "416",
+          "submitted": false,
+          "actions": 24,
+          "counts": {
+            "search": 16,
+            "open_page": 4,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "421",
+          "submitted": false,
+          "actions": 28,
+          "counts": {
+            "search": 13,
+            "open_page": 3,
+            "update_state": 5,
+            "read_evidence": 3,
+            "verify_answer": 4
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 1,
+            "verify_answer": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "427",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 11,
+            "open_page": 4,
+            "update_state": 3,
+            "verify_answer": 9
+          },
+          "illegal": {
+            "verify_answer": 7
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "490",
+          "submitted": false,
+          "actions": 23,
+          "counts": {
+            "search": 11,
+            "open_page": 3,
+            "update_state": 5,
+            "verify_answer": 3,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "506",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "533",
+          "submitted": false,
+          "actions": 17,
+          "counts": {
+            "search": 9,
+            "open_page": 3,
+            "update_state": 2,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "verify_answer": 1,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "56",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 17,
+            "open_page": 6,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "563",
+          "submitted": true,
+          "actions": 9,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "577",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "581",
+          "submitted": true,
+          "actions": 28,
+          "counts": {
+            "search": 8,
+            "open_page": 3,
+            "update_state": 10,
+            "verify_answer": 3,
+            "read_evidence": 3,
+            "submit_answer": 1
+          },
+          "illegal": {
+            "update_state": 7,
+            "read_evidence": 2
+          },
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "607",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "625",
+          "submitted": false,
+          "actions": 18,
+          "counts": {
+            "search": 5,
+            "open_page": 2,
+            "update_state": 6,
+            "verify_answer": 1,
+            "read_evidence": 4
+          },
+          "illegal": {
+            "update_state": 5,
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "633",
+          "submitted": false,
+          "actions": 25,
+          "counts": {
+            "search": 14,
+            "open_page": 4,
+            "update_state": 4,
+            "verify_answer": 3
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "636",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "update_state": 10,
+            "verify_answer": 5,
+            "read_evidence": 3
+          },
+          "illegal": {
+            "update_state": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 5,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "637",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "643",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "661",
+          "submitted": false,
+          "actions": 22,
+          "counts": {
+            "search": 11,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2,
+            "read_evidence": 5
+          },
+          "illegal": {
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "666",
+          "submitted": false,
+          "actions": 21,
+          "counts": {
+            "search": 14,
+            "open_page": 3,
+            "update_state": 2,
+            "verify_answer": 1,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "open_page": 1,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "670",
+          "submitted": false,
+          "actions": 11,
+          "counts": {
+            "search": 8,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "682",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 20,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 3
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "695",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 17,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "703",
+          "submitted": false,
+          "actions": 25,
+          "counts": {
+            "search": 13,
+            "open_page": 4,
+            "update_state": 3,
+            "read_evidence": 3,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 2,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "710",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 21,
+            "open_page": 5,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "718",
+          "submitted": false,
+          "actions": 12,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "update_state": 3,
+            "verify_answer": 1
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "745",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 19,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 2,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "768",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 22,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 1,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "770",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 9,
+            "open_page": 3,
+            "update_state": 11,
+            "verify_answer": 2,
+            "read_evidence": 4
+          },
+          "illegal": {
+            "read_evidence": 4,
+            "update_state": 9
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "772",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 11,
+            "open_page": 2,
+            "update_state": 5,
+            "verify_answer": 4,
+            "read_evidence": 4
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "776",
+          "submitted": true,
+          "actions": 26,
+          "counts": {
+            "search": 14,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 2,
+            "read_evidence": 3,
+            "submit_answer": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": true,
+          "parse_failures": 1,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "796",
+          "submitted": false,
+          "actions": 8,
+          "counts": {
+            "search": 5,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "83",
+          "submitted": false,
+          "actions": 24,
+          "counts": {
+            "search": 10,
+            "open_page": 4,
+            "update_state": 5,
+            "verify_answer": 4,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "883",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 16,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 3
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 2,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "941",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 13,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 8,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "verify_answer": 7
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "95",
+          "submitted": false,
+          "actions": 4,
+          "counts": {
+            "search": 3,
+            "open_page": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "980",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 20,
+            "open_page": 6,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "981",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 15,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 8
+          },
+          "illegal": {
+            "verify_answer": 6
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "998",
+          "submitted": false,
+          "actions": 18,
+          "counts": {
+            "search": 5,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 1,
+            "read_evidence": 6
+          },
+          "illegal": {
+            "read_evidence": 5,
+            "update_state": 2,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        }
+      ]
+    },
+    "exp100_merged_baseline": {
+      "runs_files": 100,
+      "valid_stores": 100,
+      "empty_stores": [],
+      "submitted": 100,
+      "zero_open_attempts": 41,
+      "unsubmitted_with_verify_attempt": 0,
+      "supported_but_unsubmitted": [],
+      "action_counts": {
+        "search": 1208,
+        "open_page": 182,
+        "read_evidence": 447,
+        "finish": 100
+      },
+      "illegal_counts": {
+        "read_evidence": 447,
+        "open_page": 64
+      },
+      "parse_failures": 0,
+      "parse_failure_episodes": 0,
+      "episodes": [
+        {
+          "qid": "1002",
+          "submitted": true,
+          "actions": 19,
+          "counts": {
+            "search": 12,
+            "open_page": 1,
+            "read_evidence": 5,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 5
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1004",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 4,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "102",
+          "submitted": true,
+          "actions": 19,
+          "counts": {
+            "search": 5,
+            "open_page": 4,
+            "read_evidence": 9,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 9,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1038",
+          "submitted": true,
+          "actions": 36,
+          "counts": {
+            "search": 6,
+            "open_page": 4,
+            "read_evidence": 25,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 25,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1041",
+          "submitted": true,
+          "actions": 9,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "read_evidence": 5,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 5
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1044",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 30,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1063",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 10,
+            "open_page": 4,
+            "read_evidence": 16,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 16,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1089",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 2,
+            "open_page": 2,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1094",
+          "submitted": true,
+          "actions": 4,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1119",
+          "submitted": true,
+          "actions": 39,
+          "counts": {
+            "search": 12,
+            "open_page": 3,
+            "read_evidence": 23,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 23
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1149",
+          "submitted": true,
+          "actions": 7,
+          "counts": {
+            "search": 3,
+            "open_page": 3,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1193",
+          "submitted": true,
+          "actions": 4,
+          "counts": {
+            "search": 3,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1196",
+          "submitted": true,
+          "actions": 7,
+          "counts": {
+            "search": 5,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1198",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 3,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "120",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 6,
+            "open_page": 3,
+            "read_evidence": 20,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 20
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1209",
+          "submitted": true,
+          "actions": 15,
+          "counts": {
+            "search": 14,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1217",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 4,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1223",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 15,
+            "open_page": 4,
+            "read_evidence": 11,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 11,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1235",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 5,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1243",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 29,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "1252",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 11,
+            "open_page": 6,
+            "read_evidence": 12,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 12,
+            "open_page": 5
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "127",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 17,
+            "open_page": 2,
+            "read_evidence": 7,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 7,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "170",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 6,
+            "open_page": 3,
+            "read_evidence": 2,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "176",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 5,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "186",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 10,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "200",
+          "submitted": true,
+          "actions": 20,
+          "counts": {
+            "search": 10,
+            "open_page": 4,
+            "read_evidence": 5,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 5,
+            "open_page": 3
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "202",
+          "submitted": true,
+          "actions": 7,
+          "counts": {
+            "search": 6,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "223",
+          "submitted": true,
+          "actions": 28,
+          "counts": {
+            "search": 27,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "228",
+          "submitted": true,
+          "actions": 29,
+          "counts": {
+            "search": 28,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "23",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "233",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 11,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "239",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 11,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "241",
+          "submitted": true,
+          "actions": 25,
+          "counts": {
+            "search": 14,
+            "open_page": 5,
+            "read_evidence": 5,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 5,
+            "open_page": 3
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "250",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 29,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "263",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 4,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "266",
+          "submitted": true,
+          "actions": 25,
+          "counts": {
+            "search": 24,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "278",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 12,
+            "open_page": 3,
+            "read_evidence": 14,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 14,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "279",
+          "submitted": true,
+          "actions": 28,
+          "counts": {
+            "search": 27,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "284",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 4,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "285",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 11,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "288",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 23,
+            "open_page": 3,
+            "read_evidence": 4,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "299",
+          "submitted": true,
+          "actions": 28,
+          "counts": {
+            "search": 4,
+            "open_page": 1,
+            "read_evidence": 22,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 22
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "311",
+          "submitted": true,
+          "actions": 8,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "read_evidence": 1,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "322",
+          "submitted": true,
+          "actions": 24,
+          "counts": {
+            "search": 23,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "324",
+          "submitted": true,
+          "actions": 22,
+          "counts": {
+            "search": 6,
+            "open_page": 3,
+            "read_evidence": 12,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 12
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "364",
+          "submitted": true,
+          "actions": 9,
+          "counts": {
+            "search": 8,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "372",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 15,
+            "open_page": 11,
+            "read_evidence": 4,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 4,
+            "open_page": 10
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "383",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 8,
+            "open_page": 1,
+            "read_evidence": 1,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "384",
+          "submitted": true,
+          "actions": 29,
+          "counts": {
+            "search": 28,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "391",
+          "submitted": true,
+          "actions": 25,
+          "counts": {
+            "search": 8,
+            "open_page": 5,
+            "read_evidence": 11,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 11,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "416",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 13,
+            "read_evidence": 11,
+            "open_page": 6,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 11,
+            "open_page": 3
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "421",
+          "submitted": true,
+          "actions": 29,
+          "counts": {
+            "search": 28,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "427",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 6,
+            "open_page": 6,
+            "read_evidence": 18,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 18,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "490",
+          "submitted": true,
+          "actions": 13,
+          "counts": {
+            "search": 12,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "506",
+          "submitted": true,
+          "actions": 16,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "read_evidence": 9,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 9
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "512",
+          "submitted": true,
+          "actions": 15,
+          "counts": {
+            "search": 3,
+            "open_page": 2,
+            "read_evidence": 9,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 9,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "517",
+          "submitted": true,
+          "actions": 24,
+          "counts": {
+            "search": 8,
+            "open_page": 3,
+            "read_evidence": 12,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 12
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "530",
+          "submitted": true,
+          "actions": 18,
+          "counts": {
+            "search": 15,
+            "open_page": 1,
+            "read_evidence": 1,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "533",
+          "submitted": true,
+          "actions": 7,
+          "counts": {
+            "search": 4,
+            "open_page": 1,
+            "read_evidence": 1,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "546",
+          "submitted": true,
+          "actions": 16,
+          "counts": {
+            "search": 9,
+            "open_page": 2,
+            "read_evidence": 4,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 4,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "56",
+          "submitted": true,
+          "actions": 15,
+          "counts": {
+            "search": 14,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "563",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 9,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "577",
+          "submitted": true,
+          "actions": 23,
+          "counts": {
+            "search": 10,
+            "open_page": 3,
+            "read_evidence": 9,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 9
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "581",
+          "submitted": true,
+          "actions": 22,
+          "counts": {
+            "search": 4,
+            "open_page": 4,
+            "read_evidence": 13,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 13,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "607",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 2,
+            "open_page": 2,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "625",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 14,
+            "open_page": 4,
+            "read_evidence": 11,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 11
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "633",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "636",
+          "submitted": true,
+          "actions": 4,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "637",
+          "submitted": true,
+          "actions": 25,
+          "counts": {
+            "search": 2,
+            "open_page": 3,
+            "read_evidence": 19,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 19,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "643",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 2,
+            "open_page": 2,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "661",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 2,
+            "open_page": 2,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "666",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 19,
+            "open_page": 2,
+            "read_evidence": 9,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 9
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "670",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "675",
+          "submitted": true,
+          "actions": 49,
+          "counts": {
+            "search": 10,
+            "open_page": 10,
+            "read_evidence": 28,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 28,
+            "open_page": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "682",
+          "submitted": true,
+          "actions": 18,
+          "counts": {
+            "search": 10,
+            "open_page": 3,
+            "read_evidence": 4,
+            "finish": 1
+          },
+          "illegal": {
+            "open_page": 1,
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "695",
+          "submitted": true,
+          "actions": 21,
+          "counts": {
+            "search": 13,
+            "open_page": 1,
+            "read_evidence": 6,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 6
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "703",
+          "submitted": true,
+          "actions": 29,
+          "counts": {
+            "search": 28,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "710",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 21,
+            "open_page": 1,
+            "read_evidence": 4,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "718",
+          "submitted": true,
+          "actions": 14,
+          "counts": {
+            "search": 13,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "738",
+          "submitted": true,
+          "actions": 16,
+          "counts": {
+            "search": 15,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "745",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 30,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "756",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 3,
+            "open_page": 2,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "768",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "770",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "read_evidence": 2,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "772",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 14,
+            "open_page": 8,
+            "read_evidence": 8,
+            "finish": 1
+          },
+          "illegal": {
+            "open_page": 7,
+            "read_evidence": 8
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "776",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 11,
+            "open_page": 5,
+            "read_evidence": 14,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 14,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "796",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "804",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 30,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "806",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 10,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "811",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 25,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "815",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 7,
+            "open_page": 4,
+            "read_evidence": 15,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 15,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "83",
+          "submitted": true,
+          "actions": 22,
+          "counts": {
+            "search": 9,
+            "open_page": 2,
+            "read_evidence": 10,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 10
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "883",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 11,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "919",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 13,
+            "open_page": 5,
+            "read_evidence": 12,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 12,
+            "open_page": 3
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "941",
+          "submitted": true,
+          "actions": 8,
+          "counts": {
+            "search": 7,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "95",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 10,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "980",
+          "submitted": true,
+          "actions": 11,
+          "counts": {
+            "search": 10,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "981",
+          "submitted": true,
+          "actions": 16,
+          "counts": {
+            "search": 8,
+            "open_page": 5,
+            "read_evidence": 2,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "open_page": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "984",
+          "submitted": true,
+          "actions": 8,
+          "counts": {
+            "search": 7,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "998",
+          "submitted": true,
+          "actions": 16,
+          "counts": {
+            "search": 9,
+            "open_page": 4,
+            "read_evidence": 2,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        }
+      ]
+    },
+    "exp100_merged_esr": {
+      "runs_files": 100,
+      "valid_stores": 100,
+      "empty_stores": [],
+      "submitted": 19,
+      "zero_open_attempts": 0,
+      "unsubmitted_with_verify_attempt": 78,
+      "supported_but_unsubmitted": [],
+      "action_counts": {
+        "search": 1067,
+        "open_page": 279,
+        "update_state": 340,
+        "verify_answer": 232,
+        "submit_answer": 19,
+        "read_evidence": 150
+      },
+      "illegal_counts": {
+        "update_state": 111,
+        "read_evidence": 95,
+        "verify_answer": 48,
+        "open_page": 7
+      },
+      "parse_failures": 30,
+      "parse_failure_episodes": 19,
+      "episodes": [
+        {
+          "qid": "1002",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 19,
+            "open_page": 5,
+            "update_state": 4,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1004",
+          "submitted": false,
+          "actions": 8,
+          "counts": {
+            "search": 5,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "102",
+          "submitted": true,
+          "actions": 10,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "1038",
+          "submitted": true,
+          "actions": 7,
+          "counts": {
+            "search": 3,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "1041",
+          "submitted": false,
+          "actions": 12,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 5,
+            "verify_answer": 3,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 3,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1044",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 15,
+            "open_page": 4,
+            "read_evidence": 1,
+            "update_state": 5,
+            "verify_answer": 5
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "update_state": 2,
+            "verify_answer": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1063",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 16,
+            "open_page": 4,
+            "update_state": 5,
+            "verify_answer": 4,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "verify_answer": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1089",
+          "submitted": false,
+          "actions": 17,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "update_state": 4,
+            "verify_answer": 3,
+            "read_evidence": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 3,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1094",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 15,
+            "open_page": 4,
+            "update_state": 4,
+            "verify_answer": 5,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "verify_answer": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1119",
+          "submitted": false,
+          "actions": 25,
+          "counts": {
+            "search": 17,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1149",
+          "submitted": false,
+          "actions": 21,
+          "counts": {
+            "search": 8,
+            "open_page": 4,
+            "update_state": 3,
+            "verify_answer": 1,
+            "read_evidence": 5
+          },
+          "illegal": {
+            "read_evidence": 4,
+            "update_state": 2,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1193",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 12,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 1,
+            "read_evidence": 12
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 10
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1196",
+          "submitted": false,
+          "actions": 20,
+          "counts": {
+            "search": 12,
+            "open_page": 2,
+            "update_state": 2,
+            "read_evidence": 3,
+            "verify_answer": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1198",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 12,
+            "open_page": 2,
+            "update_state": 10,
+            "verify_answer": 1,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 8,
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "120",
+          "submitted": false,
+          "actions": 24,
+          "counts": {
+            "search": 11,
+            "open_page": 4,
+            "read_evidence": 5,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1209",
+          "submitted": false,
+          "actions": 13,
+          "counts": {
+            "search": 10,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1217",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 18,
+            "open_page": 4,
+            "update_state": 4,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1223",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 13,
+            "open_page": 4,
+            "update_state": 9,
+            "verify_answer": 2,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 7,
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1235",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 11,
+            "open_page": 2,
+            "update_state": 11,
+            "verify_answer": 2,
+            "read_evidence": 4
+          },
+          "illegal": {
+            "update_state": 9,
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1243",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 16,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "1252",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 13,
+            "open_page": 5,
+            "read_evidence": 3,
+            "update_state": 5,
+            "verify_answer": 4
+          },
+          "illegal": {
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "127",
+          "submitted": false,
+          "actions": 28,
+          "counts": {
+            "search": 15,
+            "open_page": 5,
+            "update_state": 4,
+            "verify_answer": 4
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "170",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 13,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 2,
+            "read_evidence": 9
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 8
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "176",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 18,
+            "open_page": 6,
+            "update_state": 3,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "186",
+          "submitted": false,
+          "actions": 20,
+          "counts": {
+            "search": 8,
+            "open_page": 4,
+            "read_evidence": 2,
+            "update_state": 4,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "200",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 17,
+            "open_page": 3,
+            "update_state": 5,
+            "verify_answer": 2,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "202",
+          "submitted": false,
+          "actions": 15,
+          "counts": {
+            "search": 11,
+            "open_page": 1,
+            "update_state": 3
+          },
+          "illegal": {
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "223",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 15,
+            "open_page": 4,
+            "update_state": 5,
+            "verify_answer": 4,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 2,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "228",
+          "submitted": false,
+          "actions": 13,
+          "counts": {
+            "search": 9,
+            "open_page": 1,
+            "update_state": 2,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "23",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 19,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 4
+          },
+          "illegal": {
+            "verify_answer": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "233",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 14,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 2,
+            "read_evidence": 3
+          },
+          "illegal": {
+            "update_state": 2,
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "239",
+          "submitted": false,
+          "actions": 17,
+          "counts": {
+            "search": 9,
+            "open_page": 4,
+            "update_state": 3,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "241",
+          "submitted": true,
+          "actions": 14,
+          "counts": {
+            "search": 7,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "250",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 16,
+            "open_page": 4,
+            "update_state": 5,
+            "verify_answer": 3,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "263",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "266",
+          "submitted": false,
+          "actions": 13,
+          "counts": {
+            "search": 7,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "278",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 11,
+            "open_page": 4,
+            "update_state": 8,
+            "verify_answer": 2,
+            "read_evidence": 5
+          },
+          "illegal": {
+            "update_state": 6,
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "279",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 8,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 15
+          },
+          "illegal": {
+            "verify_answer": 13
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "284",
+          "submitted": true,
+          "actions": 13,
+          "counts": {
+            "search": 5,
+            "open_page": 2,
+            "update_state": 3,
+            "verify_answer": 2,
+            "submit_answer": 1
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "285",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 18,
+            "open_page": 4,
+            "update_state": 2,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "288",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 12,
+            "open_page": 3,
+            "read_evidence": 2,
+            "update_state": 8,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "read_evidence": 2,
+            "update_state": 6
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "299",
+          "submitted": true,
+          "actions": 12,
+          "counts": {
+            "search": 5,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 1,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "311",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "322",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 20,
+            "open_page": 6,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "324",
+          "submitted": false,
+          "actions": 11,
+          "counts": {
+            "search": 5,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "364",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 14,
+            "open_page": 3,
+            "update_state": 9,
+            "verify_answer": 3,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 6,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "372",
+          "submitted": false,
+          "actions": 31,
+          "counts": {
+            "search": 15,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 2,
+            "read_evidence": 8
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 5
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "383",
+          "submitted": false,
+          "actions": 6,
+          "counts": {
+            "search": 3,
+            "open_page": 2,
+            "update_state": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "384",
+          "submitted": false,
+          "actions": 10,
+          "counts": {
+            "search": 6,
+            "open_page": 1,
+            "update_state": 2,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "391",
+          "submitted": false,
+          "actions": 11,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "416",
+          "submitted": false,
+          "actions": 24,
+          "counts": {
+            "search": 16,
+            "open_page": 4,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "421",
+          "submitted": false,
+          "actions": 28,
+          "counts": {
+            "search": 13,
+            "open_page": 3,
+            "update_state": 5,
+            "read_evidence": 3,
+            "verify_answer": 4
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 1,
+            "verify_answer": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "427",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 11,
+            "open_page": 4,
+            "update_state": 3,
+            "verify_answer": 9
+          },
+          "illegal": {
+            "verify_answer": 7
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "490",
+          "submitted": false,
+          "actions": 23,
+          "counts": {
+            "search": 11,
+            "open_page": 3,
+            "update_state": 5,
+            "verify_answer": 3,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "506",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "512",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 12,
+            "open_page": 3,
+            "update_state": 5,
+            "verify_answer": 3,
+            "read_evidence": 3,
+            "submit_answer": 1
+          },
+          "illegal": {
+            "update_state": 2
+          },
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "517",
+          "submitted": false,
+          "actions": 23,
+          "counts": {
+            "search": 11,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 3,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "530",
+          "submitted": false,
+          "actions": 18,
+          "counts": {
+            "search": 13,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "533",
+          "submitted": false,
+          "actions": 17,
+          "counts": {
+            "search": 9,
+            "open_page": 3,
+            "update_state": 2,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "verify_answer": 1,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "546",
+          "submitted": false,
+          "actions": 16,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "update_state": 4,
+            "verify_answer": 1,
+            "read_evidence": 3
+          },
+          "illegal": {
+            "update_state": 3,
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "56",
+          "submitted": false,
+          "actions": 27,
+          "counts": {
+            "search": 17,
+            "open_page": 6,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "563",
+          "submitted": true,
+          "actions": 9,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "577",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "581",
+          "submitted": true,
+          "actions": 28,
+          "counts": {
+            "search": 8,
+            "open_page": 3,
+            "update_state": 10,
+            "verify_answer": 3,
+            "read_evidence": 3,
+            "submit_answer": 1
+          },
+          "illegal": {
+            "update_state": 7,
+            "read_evidence": 2
+          },
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "607",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "625",
+          "submitted": false,
+          "actions": 18,
+          "counts": {
+            "search": 5,
+            "open_page": 2,
+            "update_state": 6,
+            "verify_answer": 1,
+            "read_evidence": 4
+          },
+          "illegal": {
+            "update_state": 5,
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "633",
+          "submitted": false,
+          "actions": 25,
+          "counts": {
+            "search": 14,
+            "open_page": 4,
+            "update_state": 4,
+            "verify_answer": 3
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "636",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "update_state": 10,
+            "verify_answer": 5,
+            "read_evidence": 3
+          },
+          "illegal": {
+            "update_state": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 5,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "637",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "643",
+          "submitted": true,
+          "actions": 5,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "661",
+          "submitted": false,
+          "actions": 22,
+          "counts": {
+            "search": 11,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2,
+            "read_evidence": 5
+          },
+          "illegal": {
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "666",
+          "submitted": false,
+          "actions": 21,
+          "counts": {
+            "search": 14,
+            "open_page": 3,
+            "update_state": 2,
+            "verify_answer": 1,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "open_page": 1,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "670",
+          "submitted": false,
+          "actions": 11,
+          "counts": {
+            "search": 8,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "675",
+          "submitted": false,
+          "actions": 11,
+          "counts": {
+            "search": 8,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "682",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 20,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 3
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "695",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 17,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "703",
+          "submitted": false,
+          "actions": 25,
+          "counts": {
+            "search": 13,
+            "open_page": 4,
+            "update_state": 3,
+            "read_evidence": 3,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 2,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "710",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 21,
+            "open_page": 5,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "718",
+          "submitted": false,
+          "actions": 12,
+          "counts": {
+            "search": 6,
+            "open_page": 2,
+            "update_state": 3,
+            "verify_answer": 1
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "738",
+          "submitted": false,
+          "actions": 20,
+          "counts": {
+            "search": 6,
+            "open_page": 4,
+            "update_state": 4,
+            "verify_answer": 1,
+            "read_evidence": 5
+          },
+          "illegal": {
+            "update_state": 3,
+            "read_evidence": 5,
+            "open_page": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "745",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 19,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 2,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "756",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 13,
+            "open_page": 5,
+            "update_state": 3,
+            "verify_answer": 3,
+            "read_evidence": 2,
+            "submit_answer": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "768",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 22,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 1,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "770",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 9,
+            "open_page": 3,
+            "update_state": 11,
+            "verify_answer": 2,
+            "read_evidence": 4
+          },
+          "illegal": {
+            "read_evidence": 4,
+            "update_state": 9
+          },
+          "ever_supported": false,
+          "parse_failures": 1,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "772",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 11,
+            "open_page": 2,
+            "update_state": 5,
+            "verify_answer": 4,
+            "read_evidence": 4
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "776",
+          "submitted": true,
+          "actions": 26,
+          "counts": {
+            "search": 14,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 2,
+            "read_evidence": 3,
+            "submit_answer": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": true,
+          "parse_failures": 1,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "796",
+          "submitted": false,
+          "actions": 8,
+          "counts": {
+            "search": 5,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "804",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 14,
+            "open_page": 4,
+            "update_state": 4,
+            "verify_answer": 4,
+            "read_evidence": 3
+          },
+          "illegal": {
+            "verify_answer": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "806",
+          "submitted": false,
+          "actions": 7,
+          "counts": {
+            "search": 4,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "811",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 17,
+            "open_page": 4,
+            "update_state": 3,
+            "verify_answer": 2
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "815",
+          "submitted": true,
+          "actions": 8,
+          "counts": {
+            "search": 4,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "83",
+          "submitted": false,
+          "actions": 24,
+          "counts": {
+            "search": 10,
+            "open_page": 4,
+            "update_state": 5,
+            "verify_answer": 4,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "883",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 16,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 3
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 2,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "919",
+          "submitted": true,
+          "actions": 6,
+          "counts": {
+            "search": 2,
+            "open_page": 1,
+            "update_state": 1,
+            "verify_answer": 1,
+            "submit_answer": 1
+          },
+          "illegal": {},
+          "ever_supported": true,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        },
+        {
+          "qid": "941",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 13,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 8,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "read_evidence": 1,
+            "verify_answer": 7
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "95",
+          "submitted": false,
+          "actions": 4,
+          "counts": {
+            "search": 3,
+            "open_page": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "980",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 20,
+            "open_page": 6,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "981",
+          "submitted": false,
+          "actions": 29,
+          "counts": {
+            "search": 15,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 8
+          },
+          "illegal": {
+            "verify_answer": 6
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "984",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 21,
+            "open_page": 4,
+            "update_state": 2,
+            "verify_answer": 2,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "998",
+          "submitted": false,
+          "actions": 18,
+          "counts": {
+            "search": 5,
+            "open_page": 3,
+            "update_state": 3,
+            "verify_answer": 1,
+            "read_evidence": 6
+          },
+          "illegal": {
+            "read_evidence": 5,
+            "update_state": 2,
+            "open_page": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        }
+      ]
+    },
+    "exp100b_baseline": {
+      "runs_files": 13,
+      "valid_stores": 14,
+      "empty_stores": [],
+      "submitted": 13,
+      "zero_open_attempts": 3,
+      "unsubmitted_with_verify_attempt": 0,
+      "supported_but_unsubmitted": [],
+      "action_counts": {
+        "search": 129,
+        "open_page": 37,
+        "finish": 13,
+        "read_evidence": 41
+      },
+      "illegal_counts": {
+        "read_evidence": 41,
+        "open_page": 20
+      },
+      "parse_failures": 0,
+      "parse_failure_episodes": 0,
+      "episodes": [
+        {
+          "qid": "125",
+          "submitted": true,
+          "actions": 3,
+          "counts": {
+            "search": 1,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "130",
+          "submitted": true,
+          "actions": 9,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "read_evidence": 2,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "171",
+          "submitted": true,
+          "actions": 13,
+          "counts": {
+            "search": 9,
+            "open_page": 2,
+            "read_evidence": 1,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "178",
+          "submitted": false,
+          "actions": 15,
+          "counts": {
+            "search": 10,
+            "open_page": 2,
+            "read_evidence": 3
+          },
+          "illegal": {
+            "read_evidence": 3
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "33",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 26,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "36",
+          "submitted": true,
+          "actions": 7,
+          "counts": {
+            "search": 6,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "39",
+          "submitted": true,
+          "actions": 27,
+          "counts": {
+            "search": 9,
+            "open_page": 11,
+            "read_evidence": 6,
+            "finish": 1
+          },
+          "illegal": {
+            "open_page": 10,
+            "read_evidence": 6
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "55",
+          "submitted": true,
+          "actions": 10,
+          "counts": {
+            "search": 8,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "68",
+          "submitted": true,
+          "actions": 10,
+          "counts": {
+            "search": 3,
+            "open_page": 2,
+            "read_evidence": 4,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "70",
+          "submitted": true,
+          "actions": 9,
+          "counts": {
+            "search": 8,
+            "finish": 1
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "78",
+          "submitted": true,
+          "actions": 10,
+          "counts": {
+            "search": 7,
+            "read_evidence": 1,
+            "open_page": 1,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "79",
+          "submitted": true,
+          "actions": 30,
+          "counts": {
+            "search": 13,
+            "open_page": 7,
+            "read_evidence": 9,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 9,
+            "open_page": 6
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "89",
+          "submitted": true,
+          "actions": 31,
+          "counts": {
+            "search": 20,
+            "open_page": 2,
+            "read_evidence": 8,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 8
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "96",
+          "submitted": true,
+          "actions": 19,
+          "counts": {
+            "search": 5,
+            "open_page": 6,
+            "read_evidence": 7,
+            "finish": 1
+          },
+          "illegal": {
+            "read_evidence": 7,
+            "open_page": 4
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        }
+      ]
+    },
+    "exp100b_esr": {
+      "runs_files": 7,
+      "valid_stores": 8,
+      "empty_stores": [],
+      "submitted": 0,
+      "zero_open_attempts": 0,
+      "unsubmitted_with_verify_attempt": 6,
+      "supported_but_unsubmitted": [],
+      "action_counts": {
+        "search": 74,
+        "open_page": 23,
+        "update_state": 29,
+        "read_evidence": 15,
+        "verify_answer": 15
+      },
+      "illegal_counts": {
+        "update_state": 11,
+        "read_evidence": 11
+      },
+      "parse_failures": 3,
+      "parse_failure_episodes": 1,
+      "episodes": [
+        {
+          "qid": "33",
+          "submitted": false,
+          "actions": 11,
+          "counts": {
+            "search": 4,
+            "open_page": 1,
+            "update_state": 1,
+            "read_evidence": 5
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 5
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": null
+        },
+        {
+          "qid": "36",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 18,
+            "open_page": 4,
+            "update_state": 3,
+            "verify_answer": 3,
+            "read_evidence": 2
+          },
+          "illegal": {
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "39",
+          "submitted": false,
+          "actions": 26,
+          "counts": {
+            "search": 10,
+            "open_page": 3,
+            "update_state": 7,
+            "verify_answer": 2,
+            "read_evidence": 4
+          },
+          "illegal": {
+            "read_evidence": 3,
+            "update_state": 5
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "55",
+          "submitted": false,
+          "actions": 22,
+          "counts": {
+            "search": 12,
+            "open_page": 5,
+            "update_state": 3,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "68",
+          "submitted": false,
+          "actions": 18,
+          "counts": {
+            "search": 5,
+            "open_page": 3,
+            "update_state": 4,
+            "verify_answer": 3,
+            "read_evidence": 3
+          },
+          "illegal": {
+            "update_state": 1,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 3,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "70",
+          "submitted": false,
+          "actions": 30,
+          "counts": {
+            "search": 16,
+            "open_page": 4,
+            "update_state": 6,
+            "verify_answer": 3,
+            "read_evidence": 1
+          },
+          "illegal": {
+            "update_state": 2,
+            "read_evidence": 1
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "78",
+          "submitted": false,
+          "actions": 10,
+          "counts": {
+            "search": 4,
+            "open_page": 2,
+            "update_state": 2,
+            "verify_answer": 2
+          },
+          "illegal": {},
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 1
+        },
+        {
+          "qid": "79",
+          "submitted": false,
+          "actions": 9,
+          "counts": {
+            "search": 5,
+            "open_page": 1,
+            "update_state": 3
+          },
+          "illegal": {
+            "update_state": 2
+          },
+          "ever_supported": false,
+          "parse_failures": 0,
+          "final_gap_count": 0
+        }
+      ]
+    }
+  },
+  "probes": {
+    "schema_has_offset_implementation_does_not": true,
+    "baseline_read_after_open_rejected": "read_evidence requires an Evidence ID in the current evidence_directory",
+    "duplicate_open_view_mismatch": {
+      "same_id": true,
+      "last_open": "[关键片段 #1]\nbeta fact",
+      "verifier": "[关键片段 #0]\nalpha fact",
+      "mismatch": true
+    },
+    "parse_error_becomes_semantic_repair": {
+      "status": "needs_revision",
+      "gap": "校验机输出无法解析：当前 answer 或 supporting_evidence 无法客观判定，请整理 answer 为答案本身、确认 supporting_evidence 指向真正支撑它的证据后再验证"
+    },
+    "supported_does_not_auto_submit": true,
+    "unchanged_update_resets_verification": "unverified",
+    "esr_dispatch_accepts_finish_without_verification": true,
+    "compaction_orphan_tool_results": [
+      "c1",
+      "c2"
+    ],
+    "replay_logs_chunks_but_verifies_full_document": {
+      "logged_view": "[关键片段 #0]\nalpha fact",
+      "actual_verifier_input": "alpha fact; beta fact",
+      "mismatch": true
+    }
+  },
+  "selected_traces": {
+    "results/exp1/exp100_merged_esr/stores/120.sqlite": {
+      "actions": 24,
+      "submitted": false,
+      "verifications": [
+        {
+          "sequence_index": 6,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g1"
+            ],
+            "rationale": "The answer fails Rule 1 (Entity Identity) because the supervisor's identity and affiliation described in the answer do not match the evidence provided in the document.",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 13,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g2"
+            ],
+            "rationale": "Rule 1 violation: The answer entity (implied 'exclusivity' institution) does not match the evidence entity (Auream Phoenix University for Women). The supervisor is Prof. Salvatore Fava, and the institution is dedicated to women's education, not exclusivity.",
+            "resolved_gap_ids": [
+              "g1"
+            ],
+            "verification_status": "needs_revision"
+          }
+        }
+      ]
+    },
+    "results/exp1/exp100_merged_esr/stores/186.sqlite": {
+      "actions": 20,
+      "submitted": false,
+      "verifications": [
+        {
+          "sequence_index": 6,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g1"
+            ],
+            "rationale": "The answer is empty ('暂无候选'), which is explicitly required to be flagged as needs_revision. Furthermore, the provided evidence only lists programming languages and tools named after animals, containing no data regarding the specific game described in the query.",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 19,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g2"
+            ],
+            "rationale": "verifier returned unparseable output",
+            "resolved_gap_ids": [
+              "g1"
+            ],
+            "verification_status": "needs_revision"
+          }
+        }
+      ]
+    },
+    "results/exp1/exp100_merged_esr/stores/324.sqlite": {
+      "actions": 11,
+      "submitted": false,
+      "verifications": [
+        {
+          "sequence_index": 4,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g1"
+            ],
+            "rationale": "答案实体与问题描述的实体特征（时间、奖金、事件细节）不匹配。证据显示 Vanessa Hellebuyck 是 2010 年该赛事的获胜者，符合问题中 2009-2016 的时间范围和奖金描述，而 Lisa Hamilton 是 2009 年的获胜者。",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 9,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g2"
+            ],
+            "rationale": "实体身份不匹配。问题描述的实体特征（网页设计师、从 sibling 学牌、2010 年赢得第 3 个大赛）完全符合 Vanessa Hellebuyck，而答案提供的 Svetlana Gromenkova 是 2008 年冠军，且证据中未包含问题描述的其他关键特征。",
+            "resolved_gap_ids": [
+              "g1"
+            ],
+            "verification_status": "needs_revision"
+          }
+        }
+      ]
+    },
+    "results/exp1/exp100_merged_esr/stores/170.sqlite": {
+      "actions": 30,
+      "submitted": false,
+      "verifications": [
+        {
+          "sequence_index": 6,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g1"
+            ],
+            "rationale": "The answer correctly identifies the actor and series but fails to provide the specific season requested by the question. The evidence confirms the actor's polio history and his role in the show, but does not pinpoint the season of the fictional attack. Per rule 1, the answer must be precise; per rule 3, an incomplete answer regarding the specific season constitutes a gap requiring revision.",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 16,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [],
+            "rationale": "The answer correctly identifies the actor and series but fails to provide the specific season requested by the question. The evidence confirms the actor's polio history and his role in the show, but does not pinpoint the season of the fictional attack. Per rule 1, the answer must be precise; per rule 3, an incomplete answer regarding the specific season constitutes a gap requiring revision.",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        }
+      ]
+    },
+    "results/exp1/exp100_merged_esr/stores/1044.sqlite": {
+      "actions": 30,
+      "submitted": false,
+      "verifications": [
+        {
+          "sequence_index": 9,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g1"
+            ],
+            "rationale": "The answer is empty ('暂无候选'), which is explicitly prohibited by rule 3. Furthermore, the provided evidence contains no information matching the specific biographical constraints (Master's in Critical and Cultural Theory, chapter 'Secrets', book in 2012, Person B abroad in 1995, meeting in London in 2006) required to answer the question.",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 19,
+          "legal": false,
+          "metadata": {
+            "error": "verifier 服务暂时不可用（HTTPError），请稍后重试 verify_answer 或先继续检索证据"
+          }
+        },
+        {
+          "sequence_index": 24,
+          "legal": false,
+          "metadata": {
+            "error": "verifier 服务暂时不可用（HTTPError），请稍后重试 verify_answer 或先继续检索证据"
+          }
+        },
+        {
+          "sequence_index": 28,
+          "legal": false,
+          "metadata": {
+            "error": "verifier 服务暂时不可用（HTTPError），请稍后重试 verify_answer 或先继续检索证据"
+          }
+        },
+        {
+          "sequence_index": 29,
+          "legal": false,
+          "metadata": {
+            "error": "verifier 服务暂时不可用（HTTPError），请稍后重试 verify_answer 或先继续检索证据"
+          }
+        }
+      ]
+    },
+    "results/exp1/esr_retry20_v2_g1/stores/416.sqlite": {
+      "actions": 27,
+      "submitted": false,
+      "verifications": [
+        {
+          "sequence_index": 6,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g1"
+            ],
+            "rationale": "原始证据仅提供了关于植物表型组学全球趋势的综述文章，未包含问题所描述的具体论文细节（如作者名单、具体研究内容、致谢部分），因此无法提取所需信息。",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 15,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g2"
+            ],
+            "rationale": "原始证据中没有任何关于特定植物病害识别论文或致谢部分的信息，无法回答该问题。",
+            "resolved_gap_ids": [
+              "g1"
+            ],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 25,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g3"
+            ],
+            "rationale": "原始证据仅是一篇关于植物病害检测综述的论文内容，未提供问题所描述的特定研究团队（如作者名单、致谢部分）的具体信息，且答案'暂无候选'表明缺乏检索到的具体实体。",
+            "resolved_gap_ids": [
+              "g2"
+            ],
+            "verification_status": "needs_revision"
+          }
+        }
+      ]
+    },
+    "results/exp1/esr_retry20_v2_g1/stores/533.sqlite": {
+      "actions": 30,
+      "submitted": false,
+      "verifications": [
+        {
+          "sequence_index": 5,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g1"
+            ],
+            "rationale": "答案实体 Yazan Haifawi 仅被证据支持为歌曲《Wainek Min Zaman》的作者，但缺乏证据支持其符合问题中关于童年学琴、组建乐队及电吉他手成就的具体描述。问题描述的实体特征与答案实体不匹配。",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 14,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g2"
+            ],
+            "rationale": "原始证据仅包含 Jay Chattaway 的传记，其生平与问题描述的实体特征（如 5 岁学琴、电吉他手身份、特定年份的流行歌曲）不匹配，且答案显示为'暂无候选'，违反搜索计划描述一律判 needs_revision 的规则。",
+            "resolved_gap_ids": [
+              "g1"
+            ],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 19,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g3"
+            ],
+            "rationale": "verifier returned unparseable output",
+            "resolved_gap_ids": [
+              "g2"
+            ],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 29,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [],
+            "rationale": "",
+            "resolved_gap_ids": [
+              "g3"
+            ],
+            "verification_status": "supported"
+          }
+        }
+      ]
+    },
+    "analysis-L/drive_324/324.sqlite": {
+      "actions": 5,
+      "submitted": true,
+      "verifications": [
+        {
+          "sequence_index": 3,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [],
+            "rationale": "答案 Svetlana Gromenkova 是证据中明确提到的 2008 年 WSOP Ladies Championship 冠军。根据证据，X (Vanessa Hellebuyck) 赢得该赛事是在 2010 年。2010 年减去两年等于 2008 年，证据明确记载 Svetlana Gromenkova 在 2008 年获胜，完全符合问题要求。",
+            "resolved_gap_ids": [],
+            "verification_status": "supported"
+          }
+        }
+      ]
+    },
+    "analysis-L/drive_120/120.sqlite": {
+      "actions": 3,
+      "submitted": false,
+      "verifications": []
+    },
+    "analysis-L/drive_186/186.sqlite": {
+      "actions": 17,
+      "submitted": true,
+      "verifications": [
+        {
+          "sequence_index": 4,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g1"
+            ],
+            "rationale": "答案提供了游戏名'Galacta: The Battle for Saturn'，但原始证据中未提及该游戏在早期 1990 年代曾使用过不同的名称，因此无法验证问题中关于'had a different name in the early 1990s'这一关键条件是否成立。",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 7,
+          "legal": false,
+          "metadata": {
+            "error": "latest Evidence has not been written to evidence_directory"
+          }
+        },
+        {
+          "sequence_index": 10,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [],
+            "rationale": "答案提供了游戏名'Galacta: The Battle for Saturn'，但原始证据中未提及该游戏在早期 1990 年代曾使用过不同的名称，仅显示其于 1992 年 11 月发布且公司名为 Albino Frog Software, Inc.（原名 Night Sky，但这是公司名称而非游戏名）。",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        },
+        {
+          "sequence_index": 12,
+          "legal": false,
+          "metadata": {
+            "error": "current TaskState has already been verified; call update_state before verifying again"
+          }
+        },
+        {
+          "sequence_index": 15,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [],
+            "rationale": "答案准确提供了游戏名称'Galacta: The Battle for Saturn'，并正确指出开发商为'Albino Frog Software'（原名'Night Sky'），该名称符合'以两栖动物命名'且'早期 90 年代使用不同名称'的条件。证据[e1]证实游戏于 1992 年 11 月发布、仅支持单人、采用共享软件模式、有 3 人署名（Sean Michael Puckett 和 Terri L. Puckett 同姓）。证据[e2]证实 Albino Frog Software 前身确为 Night Sky（1992-1993），且 Sean Michael Puckett 是唯一员工，符合'三人署名，两人同姓'的描述。所有关键信息均被原始证据直接支持。",
+            "resolved_gap_ids": [
+              "g1"
+            ],
+            "verification_status": "supported"
+          }
+        }
+      ]
+    },
+    "analysis-L/q120_e2.db": {
+      "actions": 6,
+      "submitted": false,
+      "verifications": [
+        {
+          "sequence_index": 3,
+          "legal": true,
+          "metadata": {
+            "created_gap_ids": [
+              "g1"
+            ],
+            "rationale": "答案提供了具体的地理实体'Nigeria'，满足实体身份要求。然而，原始证据中虽然提到了'Nigeria'和'Africapitalism'，但并未直接包含'West African entrepreneurship'这一特定短语或明确指代该概念的具体实体，且证据片段主要聚焦于尼日利亚国内情况，存在证据支撑不够直接的问题。",
+            "resolved_gap_ids": [],
+            "verification_status": "needs_revision"
+          }
+        }
+      ]
+    }
+  },
+  "qid120_observation": {
+    "docid": "37015",
+    "document_characters": 223876,
+    "answer_character_offset": 18680,
+    "answer_in_head_16000": false
+  }
+}

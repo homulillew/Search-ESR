@@ -1,0 +1,5 @@
+**Evidence Handoff:**
+
+*   **Relevant Information Observed:** The search result confirms that Andriy Shevchenko had a significant moment in the 117th minute of the 2005 Champions League final, but he did not score. Instead, Liverpool goalkeeper Jerzy Dudek made a crucial "double save" from Shevchenko during this period. This specific event was voted the greatest Champions League moment of all time in a 2011 UEFA.com poll.
+*   **Exact Supporting Quotation:** "In a 2011 poll conducted by UEFA.com, Dudek's double save from Shevchenko in the 117th minute was voted the greatest Champions League moment of all time..." (Source: `w_455a4433c3df513dffef677a`, docid: `23800`)
+*   **Limitations/Next Reading:** The provided text focuses on the *save* rather than a goal by Shevchenko. To clarify if Shevchenko scored or missed other chances in extra time, or to confirm the final scoreline context, further reading on the match details (specifically the penalty shootout outcome) would be useful. However, the specific query about the "117th minute" is directly addressed as a save by Dudek.

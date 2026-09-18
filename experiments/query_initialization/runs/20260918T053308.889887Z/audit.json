@@ -1,0 +1,548 @@
+{
+  "aggregates": {
+    "A": {
+      "attempts": 4,
+      "complete": 4,
+      "first_valid": 4,
+      "repairs": 0,
+      "statuses": {
+        "complete": 4
+      },
+      "plan_statuses": {
+        "valid": 4
+      },
+      "search_calls": 4,
+      "returned_windows": 24,
+      "window_tokens": 8785,
+      "fallbacks": 1,
+      "distinct_docs_sum": 24,
+      "api_requests": 4,
+      "usage": {
+        "prompt_tokens": 3028,
+        "completion_tokens": 1357,
+        "total_tokens": 4385
+      }
+    },
+    "B": {
+      "attempts": 4,
+      "complete": 4,
+      "first_valid": 3,
+      "repairs": 1,
+      "statuses": {
+        "complete": 4
+      },
+      "plan_statuses": {
+        "valid": 4
+      },
+      "search_calls": 4,
+      "returned_windows": 24,
+      "window_tokens": 9310,
+      "fallbacks": 0,
+      "distinct_docs_sum": 24,
+      "api_requests": 5,
+      "usage": {
+        "prompt_tokens": 3916,
+        "completion_tokens": 909,
+        "total_tokens": 4825
+      }
+    },
+    "C": {
+      "attempts": 4,
+      "complete": 3,
+      "first_valid": 3,
+      "repairs": 1,
+      "statuses": {
+        "complete": 3,
+        "invalid": 1
+      },
+      "plan_statuses": {
+        "invalid": 1,
+        "valid": 3
+      },
+      "search_calls": 6,
+      "returned_windows": 18,
+      "window_tokens": 6988,
+      "fallbacks": 0,
+      "distinct_docs_sum": 18,
+      "api_requests": 5,
+      "usage": {
+        "prompt_tokens": 4047,
+        "completion_tokens": 1418,
+        "total_tokens": 5465
+      }
+    }
+  },
+  "sessions": [
+    {
+      "session": "qid_1034__A__r1",
+      "qid": "1034",
+      "arm": "A",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": true,
+      "repairs": 0,
+      "directions": 1,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 1,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 10184,
+        "covered_source_chars": 10184,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 10.06589063629508,
+      "usage": {
+        "prompt_tokens": 800,
+        "completion_tokens": 304,
+        "total_tokens": 1104
+      },
+      "api_requests": 1,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 2367,
+      "body_chars": 9973,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 1
+    },
+    {
+      "session": "qid_1034__B__r1",
+      "qid": "1034",
+      "arm": "B",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": false,
+      "repairs": 1,
+      "directions": 1,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 1,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 10129,
+        "covered_source_chars": 10129,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 10.413336441852152,
+      "usage": {
+        "prompt_tokens": 1813,
+        "completion_tokens": 414,
+        "total_tokens": 2227
+      },
+      "api_requests": 2,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 2341,
+      "body_chars": 9927,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 1
+    },
+    {
+      "session": "qid_1034__C__r1",
+      "qid": "1034",
+      "arm": "C",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": true,
+      "repairs": 0,
+      "directions": 2,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 2,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 9331,
+        "covered_source_chars": 9331,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 4.799912913702428,
+      "usage": {
+        "prompt_tokens": 758,
+        "completion_tokens": 285,
+        "total_tokens": 1043
+      },
+      "api_requests": 1,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 2343,
+      "body_chars": 9057,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 2,
+      "second_direction_new_documents": [
+        "11915",
+        "15753",
+        "70127"
+      ]
+    },
+    {
+      "session": "qid_387__A__r1",
+      "qid": "387",
+      "arm": "A",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": true,
+      "repairs": 0,
+      "directions": 1,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 1,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 6438,
+        "covered_source_chars": 6438,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 8.630643844604492,
+      "usage": {
+        "prompt_tokens": 810,
+        "completion_tokens": 475,
+        "total_tokens": 1285
+      },
+      "api_requests": 1,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 1750,
+      "body_chars": 6385,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 1,
+      "search_calls": 1
+    },
+    {
+      "session": "qid_387__B__r1",
+      "qid": "387",
+      "arm": "B",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": true,
+      "repairs": 0,
+      "directions": 1,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 1,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 10407,
+        "covered_source_chars": 10407,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 4.641499163582921,
+      "usage": {
+        "prompt_tokens": 768,
+        "completion_tokens": 172,
+        "total_tokens": 940
+      },
+      "api_requests": 1,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 2359,
+      "body_chars": 10233,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 1
+    },
+    {
+      "session": "qid_387__C__r1",
+      "qid": "387",
+      "arm": "C",
+      "repeat": 1,
+      "plan_status": "invalid",
+      "initial_valid": false,
+      "repairs": 1,
+      "directions": 0,
+      "status": "invalid",
+      "search_errors": [],
+      "observations": {
+        "events": 0,
+        "returned_windows": 0,
+        "distinct_windows": 0,
+        "repeated_windows": 0,
+        "source_versions": 0,
+        "new_source_chars": 0,
+        "covered_source_chars": 0,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 6.584361455403268,
+      "usage": {
+        "prompt_tokens": 1954,
+        "completion_tokens": 596,
+        "total_tokens": 2550
+      },
+      "api_requests": 2,
+      "raw_checks_passed": true,
+      "returned_windows": 0,
+      "distinct_documents": 0,
+      "distinct_windows": 0,
+      "window_tokens": 0,
+      "body_chars": 0,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 0
+    },
+    {
+      "session": "qid_645__A__r1",
+      "qid": "645",
+      "arm": "A",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": true,
+      "repairs": 0,
+      "directions": 1,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 1,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 9151,
+        "covered_source_chars": 9151,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 8.37060363497585,
+      "usage": {
+        "prompt_tokens": 721,
+        "completion_tokens": 347,
+        "total_tokens": 1068
+      },
+      "api_requests": 1,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 2291,
+      "body_chars": 8573,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 1
+    },
+    {
+      "session": "qid_645__B__r1",
+      "qid": "645",
+      "arm": "B",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": true,
+      "repairs": 0,
+      "directions": 1,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 1,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 10686,
+        "covered_source_chars": 10686,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 4.00986887421459,
+      "usage": {
+        "prompt_tokens": 679,
+        "completion_tokens": 136,
+        "total_tokens": 815
+      },
+      "api_requests": 1,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 2278,
+      "body_chars": 10170,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 1
+    },
+    {
+      "session": "qid_645__C__r1",
+      "qid": "645",
+      "arm": "C",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": true,
+      "repairs": 0,
+      "directions": 2,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 2,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 10334,
+        "covered_source_chars": 10334,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 11.587065676227212,
+      "usage": {
+        "prompt_tokens": 679,
+        "completion_tokens": 256,
+        "total_tokens": 935
+      },
+      "api_requests": 1,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 2298,
+      "body_chars": 9834,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 2,
+      "second_direction_new_documents": [
+        "22038",
+        "28183",
+        "44571"
+      ]
+    },
+    {
+      "session": "qid_905__A__r1",
+      "qid": "905",
+      "arm": "A",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": true,
+      "repairs": 0,
+      "directions": 1,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 1,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 8516,
+        "covered_source_chars": 8516,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 4.783049871213734,
+      "usage": {
+        "prompt_tokens": 697,
+        "completion_tokens": 231,
+        "total_tokens": 928
+      },
+      "api_requests": 1,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 2377,
+      "body_chars": 8337,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 1
+    },
+    {
+      "session": "qid_905__B__r1",
+      "qid": "905",
+      "arm": "B",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": true,
+      "repairs": 0,
+      "directions": 1,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 1,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 9315,
+        "covered_source_chars": 9315,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 3.1568906577304006,
+      "usage": {
+        "prompt_tokens": 656,
+        "completion_tokens": 187,
+        "total_tokens": 843
+      },
+      "api_requests": 1,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 2332,
+      "body_chars": 9083,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 1
+    },
+    {
+      "session": "qid_905__C__r1",
+      "qid": "905",
+      "arm": "C",
+      "repeat": 1,
+      "plan_status": "valid",
+      "initial_valid": true,
+      "repairs": 0,
+      "directions": 2,
+      "status": "complete",
+      "search_errors": [],
+      "observations": {
+        "events": 2,
+        "returned_windows": 6,
+        "distinct_windows": 6,
+        "repeated_windows": 0,
+        "source_versions": 6,
+        "new_source_chars": 9459,
+        "covered_source_chars": 9459,
+        "note": "Returned source ranges, not model comprehension or semantic research progress."
+      },
+      "elapsed_seconds": 5.255522110499442,
+      "usage": {
+        "prompt_tokens": 656,
+        "completion_tokens": 281,
+        "total_tokens": 937
+      },
+      "api_requests": 1,
+      "raw_checks_passed": true,
+      "returned_windows": 6,
+      "distinct_documents": 6,
+      "distinct_windows": 6,
+      "window_tokens": 2347,
+      "body_chars": 9279,
+      "overlap_chars": 0,
+      "prefix_fallbacks": 0,
+      "search_calls": 2,
+      "second_direction_new_documents": [
+        "71173",
+        "78433",
+        "90927"
+      ]
+    }
+  ]
+}

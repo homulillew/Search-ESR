@@ -1,0 +1,5 @@
+Based on the search results, there is no standard football final (such as a World Cup or major European club final) in the provided corpus that features a player taking a free kick in the 95th minute.
+
+The document found (`39918`) references **Lionel Messi** scoring with a "95th-minute free-kick," but it explicitly describes this event as getting **PSG back on track** in a "blockbuster match" (likely referring to a league game against Marseille or similar), not a cup final. Furthermore, the content of the document itself is largely placeholder text ("this is a placeholder") and does not provide detailed narrative confirmation of a specific final.
+
+Therefore, the supplied document does **not** identify a player who took a free kick in the 95th minute of a **football final**. It establishes a reference to Lionel Messi scoring a late free kick in a significant PSG match, but not in a final context.

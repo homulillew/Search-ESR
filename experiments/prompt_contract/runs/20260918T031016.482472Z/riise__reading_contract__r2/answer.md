@@ -1,0 +1,3 @@
+At the end of extra time in the 2005 Champions League final, **John Arne Riise's free kick was blocked** by AC Milan's defense. This prevented Liverpool from scoring before the match went to a penalty shootout.
+
+The incident occurred in the dying moments of extra time (around the 120th minute), just three minutes before the referee was scheduled to signal the end of the match and proceed to penalties.

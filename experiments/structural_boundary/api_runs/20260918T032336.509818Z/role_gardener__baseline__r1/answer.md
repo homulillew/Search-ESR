@@ -1,0 +1,3 @@
+Based on the search results, the Kenyan actor Peter King (Peter Nzioki) played a **minor role** in the 2005 film *The Constant Gardener*. The specific character name is not explicitly mentioned in the provided text, but it is noted as his film debut.
+
+If you need more specific details about the exact character name or nature of the role, I can look further into the document or search for additional sources.

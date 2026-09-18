@@ -1,0 +1,3 @@
+Based on the available information, Peter Nzioki (also known as Peter King) played a **minor role** in the 2005 film *The Constant Gardener*. The specific character name is not explicitly listed in the provided source, which only notes that he made his film debut with a minor role in the movie directed by Fernando Meirelles.
+
+Unfortunately, the document does not specify the exact character name or description of his role beyond it being a "minor role."

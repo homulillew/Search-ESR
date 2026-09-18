@@ -1,0 +1,44 @@
+{
+  "status": "valid",
+  "directions": [
+    {
+      "goal": "Identify the architecture student with a sibling who was a doctor and poet, and a parent who conducted seances.",
+      "source_clues": [
+        "student of architecture",
+        "sibling one year older who was a doctor and poet"
+      ],
+      "query": "architecture student sibling doctor poet parent seances",
+      "clue_locations": [
+        [
+          2
+        ],
+        [
+          86
+        ]
+      ],
+      "long_query_warning": false
+    },
+    {
+      "goal": "Find the person who attended boarding school while a parent was on a year-long business trip and had four children.",
+      "source_clues": [
+        "attended boarding school during which time one of their parents was on a year-long business trip",
+        "have four children"
+      ],
+      "query": "boarding school parent year-long business trip four children architecture student",
+      "clue_locations": [
+        [
+          188
+        ],
+        [
+          341
+        ]
+      ],
+      "long_query_warning": false
+    }
+  ],
+  "repairs": 1,
+  "initial_valid": false,
+  "initial_errors": [
+    "directions[0].source_clues must contain 1 to 3 exact quotations"
+  ]
+}

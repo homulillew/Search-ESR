@@ -1,0 +1,184 @@
+{
+  "rows": [
+    {
+      "qid": "311",
+      "status": "budget_forced_answer",
+      "api_responses": 13,
+      "tool_calls": {
+        "search": 12
+      },
+      "reported_usage": {
+        "prompt_tokens": 223119,
+        "completion_tokens": 3141,
+        "total_tokens": 226260
+      },
+      "elapsed_seconds": 61.753348731435835,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "incorrect",
+        "answer_entity_match": false,
+        "gold_answer": "Cocomiel",
+        "observed_answer": "Los Lunnis",
+        "notes": "先将国家线索解释为 Argentina，随后长期围绕 Los Lunnis 搜索，最终把冲突条件解释成题目可能有误。存在完全相同的 query 重复。",
+        "full_claim_verification_performed": false,
+        "search_hit_count": 60,
+        "unique_search_docids": 31,
+        "exact_duplicate_query_count": 1
+      },
+      "directory": "experiments/runs/v000_baseline/qid_311/20260917T090239.474309Z"
+    },
+    {
+      "qid": "776",
+      "status": "budget_forced_answer",
+      "api_responses": 13,
+      "tool_calls": {
+        "search": 12
+      },
+      "reported_usage": {
+        "prompt_tokens": 213343,
+        "completion_tokens": 4717,
+        "total_tokens": 218060
+      },
+      "elapsed_seconds": 209.04556164518,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "abstained",
+        "answer_entity_match": false,
+        "gold_answer": "The Dorset Culture of the Eastern Arctic",
+        "observed_answer": "无法确定报告题名",
+        "notes": "多次改写 shaman、出生年份、期刊和作者线索，始终没有收敛。预算结束后输出长篇猜测和搜索意图，最终表示语料不足；这是模型声明，不代表已经证明语料确实缺失。",
+        "full_claim_verification_performed": false,
+        "search_hit_count": 60,
+        "unique_search_docids": 38,
+        "exact_duplicate_query_count": 0
+      },
+      "directory": "experiments/runs/v000_baseline/qid_776/20260917T090239.459563Z"
+    },
+    {
+      "qid": "324",
+      "status": "budget_forced_answer",
+      "api_responses": 13,
+      "tool_calls": {
+        "search": 12
+      },
+      "reported_usage": {
+        "prompt_tokens": 205659,
+        "completion_tokens": 1316,
+        "total_tokens": 206975
+      },
+      "elapsed_seconds": 45.76328455097973,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "no_valid_answer",
+        "answer_entity_match": false,
+        "gold_answer": "Svetlana Gromenkova",
+        "observed_answer": "未给出答案实体",
+        "notes": "12 次搜索后，禁用工具的最后回复仍表示想继续搜索，并输出文本形式的 search(...) 和 answer()。这些文字没有被执行。协议正常 stop 不等于语义上已完成作答。",
+        "full_claim_verification_performed": false,
+        "search_hit_count": 60,
+        "unique_search_docids": 27,
+        "exact_duplicate_query_count": 0
+      },
+      "directory": "experiments/runs/v000_baseline/qid_324/20260917T090239.490377Z"
+    },
+    {
+      "qid": "546",
+      "status": "natural_answer",
+      "api_responses": 6,
+      "tool_calls": {
+        "search": 5
+      },
+      "reported_usage": {
+        "prompt_tokens": 64306,
+        "completion_tokens": 4136,
+        "total_tokens": 68442
+      },
+      "elapsed_seconds": 62.82684806082398,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "incorrect",
+        "answer_entity_match": false,
+        "gold_answer": "Ding Junhui",
+        "observed_answer": "Mark Selby",
+        "notes": "选择 Mark Selby 后，将不匹配的比分和赛事关系解释成题目可能混淆。自然结束仍可能带着未解决的关键冲突提交错误答案。",
+        "full_claim_verification_performed": false,
+        "search_hit_count": 25,
+        "unique_search_docids": 10,
+        "exact_duplicate_query_count": 0
+      },
+      "directory": "experiments/runs/v000_baseline/qid_546/20260917T090239.512097Z"
+    },
+    {
+      "qid": "517",
+      "status": "natural_answer",
+      "api_responses": 11,
+      "tool_calls": {
+        "search": 8,
+        "get_document": 2
+      },
+      "reported_usage": {
+        "prompt_tokens": 135383,
+        "completion_tokens": 1769,
+        "total_tokens": 137152
+      },
+      "elapsed_seconds": 45.40384774748236,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "correct_entity",
+        "answer_entity_match": true,
+        "gold_answer": "Peter King",
+        "observed_answer": "Peter King",
+        "notes": "两次 get_document 阅读后答出正确实体，但对生肖与出生年份冲突的处理仍需检查。答案实体匹配不能证明所有说明均可靠；没有做完整逐事实评分。",
+        "full_claim_verification_performed": false,
+        "search_hit_count": 40,
+        "unique_search_docids": 26,
+        "exact_duplicate_query_count": 0
+      },
+      "directory": "experiments/runs/v000_baseline/qid_517/20260917T090239.481849Z"
+    },
+    {
+      "qid": "1094",
+      "status": "natural_answer",
+      "api_responses": 10,
+      "tool_calls": {
+        "search": 9
+      },
+      "reported_usage": {
+        "prompt_tokens": 123122,
+        "completion_tokens": 6598,
+        "total_tokens": 129720
+      },
+      "elapsed_seconds": 109.65791412442923,
+      "accuracy": "not_evaluated",
+      "evaluation": {
+        "method": "offline_manual_answer_entity_comparison",
+        "official_grader_used": false,
+        "outcome": "incorrect",
+        "answer_entity_match": false,
+        "gold_answer": "Andrea Pirlo",
+        "observed_answer": "主要回答 Cristiano Ronaldo，另列其他人",
+        "notes": "query 从题目中的任意球被执行，变成任意球进球，随后围绕 2014 决赛搜索。最终回答在多个球员间摇摆，未给出标准答案 Andrea Pirlo。",
+        "full_claim_verification_performed": false,
+        "search_hit_count": 45,
+        "unique_search_docids": 17,
+        "exact_duplicate_query_count": 0
+      },
+      "directory": "experiments/runs/v000_baseline/qid_1094/20260917T090239.504259Z"
+    }
+  ],
+  "reported_usage_total": {
+    "prompt_tokens": 964932,
+    "completion_tokens": 21677,
+    "total_tokens": 986609
+  }
+}

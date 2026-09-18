@@ -1,0 +1,114 @@
+[
+  {
+    "id": "R01",
+    "kind": "full_repeat",
+    "answer": "根据 PC Gamer 的《How I Game: Dean Dodrill》一文（文档 ID：5266，URL：https://www.pcgamer.com/how-i-game-dean-dodrill/），Dean Dodrill 的游戏电脑拥有 **5TB** 的存储空间。\n\n原文提到：“My main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, **5TB of Storage**, and an MSI Geforce GTX660Ti (2GB).”\n\n关于最后一条工具返回的核对：\n上一条工具返回的窗口是 `w_5740417ea459e383b8ad9328`，而最新一次调用（使用 `open` 读取后续内容）返回的窗口是 `w_768658c1412f205f3f4fde95`。由于这是通过 `open(..., direction=\"after\")` 获取的新上下文，其中包含了此前未返回的文字。\n\n新增原文摘录一句如下：\n\"As for software, I'm running Windows 7 64-bit, and use a combination of Adobe Photoshop, After Effects, Painter, and a 3D suite for art.\"",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R02",
+    "kind": "partial_overlap",
+    "answer": "根据 PC Gamer 的《How I Game: Dean Dodrill》一文（文档 ID: 5266），Dean Dodrill 的游戏电脑拥有 **5TB** 的存储空间。\n\n文中相关原文为：“My main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, **5TB of Storage**, and an MSI Geforce GTX660Ti (2GB).”\n\n关于核对最后一条工具返回：\n第一条工具返回（window_ref: `w_5740417ea459e383b8ad9328`）包含了文章的前半部分，直到 \"I'm a fan of Sennheiser Wireless headphones. It's been nearly two years since I built this system, so I imagine I'll be due for an upgrade sometime next year.\" 结束。\n\n第二条工具返回（window_ref: `w_a1256582d72f8227b9b4004f`）是前一条的扩展（around），它包含了第一条的所有内容，并增加了后续段落。因此，存在相对于此前工具返回新增的原文。\n\n从新增内容中逐字摘录一句如下：\n\n> \"As for software, I'm running Windows 7 64-bit, and use a combination of Adobe Photoshop, After Effects, Painter, and a 3D suite for art. I use Visual Studio running C#/XNA for code.\"",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R03",
+    "kind": "need_read",
+    "answer": "根据资料，肯尼亚演员 Peter King（本名 Peter Nzioki）在电影《The Constant Gardener》（2005年上映）中饰演的角色是 **Policeman 1**（警察甲）。\n\n具体引用如下：\n*   维基百科关于 Peter Nzioki 的条目在其“Filmography”（作品列表）表格中明确列出：2005年电影《The Constant Gardener》，角色为 **\"Policeman 1\"** [[docid: 67431], [window_ref: w_af977c3798bcba1892f712c1]]。\n*   该条目也提到这是他于2005年在导演费尔南多·梅里尔斯（Fernando Meirelles）执导的电影中的出道角色，且是一个小角色（minor role）[[docid: 67431], [window_ref: w_847088d110a745604b5159e5]]。",
+    "expected": "Policeman 1",
+    "reference_observed": true
+  },
+  {
+    "id": "R04",
+    "kind": "partial_overlap",
+    "answer": "根据 PC Gamer 的文章《How I Game: Dean Dodrill》（文档 ID：5266，URL：https://www.pcgamer.com/how-i-game-dean-dodrill/），Dean Dodrill 的游戏电脑拥有 **5TB** 的存储空间。\n\n原文摘录如下：“My main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, 5TB of Storage, and an MSI Geforce GTX660Ti (2GB).”\n\n关于最后一条工具返回（`window_ref: w_a1256582d72f8227b9b4004f`）与第一条工具返回（`window_ref: w_5740417ea459e383b8ad9328`）的对比：\n\n第一条工具返回的内容是文章开头部分，主要包含标题、作者、日期以及“Who are you?”和“What's in your PC?”两个问题的回答片段。\n\n第二条工具返回（通过 `open` 调用获取的更大范围的上下文）包含了第一条工具返回的所有文字，并增加了大量后续内容，包括：\n*   “As for software...” 段落\n*   “What's the most interesting part of your setup?” 及其回答\n*   “What's on your desk?” 及其回答\n*   “What are you playing right now?” 及其回答\n*   “What's your favorite game and why?” 及其回答\n*   “Why do you game?” 及其回答\n*   文章结尾的介绍性文字\n\n因此，有新增的原文。逐字摘录一句新增的文字如下：\n\n\"As for software, I'm running Windows 7 64-bit, and use a combination of Adobe Photoshop, After Effects, Painter, and a 3D suite for art.\"",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R05",
+    "kind": "sufficient",
+    "answer": "根据 PC Gamer 的 \"How I Game: Dean Dodrill\" 访谈资料，Dean Dodrill 介绍的游戏电脑拥有 **5TB** 的存储空间。\n\n他在回答“你的电脑配置如何？”（What's in your PC?）时提到：\n> \"My main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, **5TB of Storage**, and an MSI Geforce GTX660Ti (2GB).\"\n\n*   **来源文档**: [How I Game: Dean Dodrill](https://www.pcgamer.com/how-i-game-dean-dodrill/) (PC Gamer, 2013年7月24日)\n*   **引用段落**: `w_5740417ea459e383b8ad9328`",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R06",
+    "kind": "sufficient",
+    "answer": "根据 PC Gamer 的 \"How I Game: Dean Dodrill\" 访谈，Dean Dodrill 的游戏电脑拥有 **5TB** 的存储空间。\n\n他在回答“你的电脑里有什么？”（What's in your PC?）时提到：\n> \"My main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, **5TB of Storage**, and an MSI Geforce GTX660Ti (2GB).\"\n\n来源：[PC Gamer - How I Game: Dean Dodrill](https://www.pcgamer.com/how-i-game-dean-dodrill/)",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R07",
+    "kind": "sufficient",
+    "answer": "根据 PC Gamer 的访谈资料，Dean Dodrill 的游戏电脑拥有 **5TB** 的存储空间。\n\n在回答“你的电脑里有什么？”（What's in your PC?）这一部分时，他明确提到：“我的主工作站（也兼作游戏电脑）是一台定制的 i7 2600k @ 3.4GHz，配备 8GB RAM、**5TB 的存储**以及 MSI Geforce GTX660Ti (2GB)。”\n\n**引用来源：**\n*   **文档 ID:** 5266\n*   **URL:** https://www.pcgamer.com/how-i-game-dean-dodrill/\n*   **窗口参考 (Window Ref):** `w_5740417ea459e383b8ad9328`\n*   **原文片段:** \"My main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, **5TB of Storage**, and an MSI Geforce GTX660Ti (2GB).\"",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R08",
+    "kind": "partial_overlap",
+    "answer": "Dean Dodrill 的游戏电脑拥有 **5TB** 的存储空间。\n\n根据既有工具返回的内容，最后一条工具（`open`）相对于此前工具返回（`search`）新增的原文摘录如下：\n\n\"As for software, I'm running Windows 7 64-bit, and use a combination of Adobe Photoshop, After Effects, Painter, and a 3D suite for art. I use Visual Studio running C#/XNA for code.\"\n\n*(注：此句位于文档后半部分，此前 `search` 结果仅覆盖了文档前半部分至 \"upgrade sometime next year.\" 为止。)*",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R09",
+    "kind": "need_read",
+    "answer": "根据资料，肯尼亚演员 Peter King（本名 Peter Nzioki）在电影《The Constant Gardener》（2005年上映）中饰演的角色是 **Policeman 1**（警察甲）。\n\n引用来源：\n*   Wikipedia: Peter Nzioki - Filmography table shows \"2005 | The Constant Gardener | Policeman 1\" [[docid: 67431](https://en.wikipedia.org/wiki/Peter_Nzioki)]。",
+    "expected": "Policeman 1",
+    "reference_observed": true
+  },
+  {
+    "id": "R10",
+    "kind": "full_repeat",
+    "answer": "根据 PC Gamer 的文章《How I Game: Dean Dodrill》，Dean Dodrill 的这台游戏电脑（也是他的主要工作站）拥有 **5TB** 的存储空间。\n\n原文相关描述为：“My main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, **5TB of Storage**, and an MSI Geforce GTX660Ti (2GB).”\n\n***\n\n**关于最后一条既有工具返回的核对：**\n\n在上一条工具调用中，我读取了 `w_5740417ea459e383b8ad9328` 之后的内容，得到了窗口 `w_768658c1412f205f3f4fde95`。由于这是该文档剩余部分的唯一后续窗口，且没有更多的后续文本（`has_more_after` 为 false），因此不存在“相对于此前工具返回新增的原文”。\n\n明确说明：**没有新增文字。**",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R11",
+    "kind": "sufficient",
+    "answer": "根据 PC Gamer 的 \"How I Game: Dean Dodrill\" 访谈资料，Dean Dodrill 的游戏电脑拥有 **5TB** 的存储空间。\n\n他在回答“What's in your PC?”（你的电脑配置是什么？）时提到：\n> \"My main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, **5TB of Storage**, and an MSI Geforce GTX660Ti (2GB).\"\n\n**引用来源：**\n*   **文档标题**: How I Game: Dean Dodrill\n*   **URL**: https://www.pcgamer.com/how-i-game-dean-dodrill/\n*   **窗口引用**: `w_5740417ea459e383b8ad9328` (DocID: 5266)",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R12",
+    "kind": "full_repeat",
+    "answer": "Dean Dodrill 的游戏电脑拥有 **5TB** 的存储空间。\n\n根据文档 `5266` (URL: https://www.pcgamer.com/how-i-game-dean-dodrill/) 中的描述：“My main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, **5TB of Storage**, and an MSI Geforce GTX660Ti (2GB).”\n\n关于最后一条既有工具返回（即第二次调用 `open`，window_ref `w_768658c1412f205f3f4fde95`）：\n该次调用返回的文本与上一次 `open` 调用完全相同（均为 window `w_768658c1412f205f3f4fde95`），没有新增任何原文内容。因此，**没有相对于此前工具返回新增的原文**。",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R13",
+    "kind": "need_read",
+    "answer": "根据提供的资料，肯尼亚演员 Peter King（本名 Peter Nzioki）在电影《The Constant Gardener》（《不朽的园丁》）中饰演的角色并未在现有文本中明确命名。\n\n资料显示：\n1. 他在 **2005年** 凭借在由 Fernando Meirelles 执导的电影 **《The Constant Gardener》** 中的演出完成了他的电影首秀。\n2. 该角色被描述为一个 **“minor role”**（小角色/次要角色）。\n\n现有来源（Wikipedia 关于 Peter Nzioki 的页面）仅指出他出演了该片并饰演了一个次要角色，但**没有提供该角色的具体名称**。\n\n**引用来源：**\n*   **文档 ID:** 67431 (https://en.wikipedia.org/wiki/Peter_Nzioki)\n*   **相关文本片段:** \"In 2005, he made his film debut with a minor role in The Constant Gardener directed by Fernando Meirelles.\" (Window ref: `w_b462c39905e5e57cf6d841aa`)",
+    "expected": "Policeman 1",
+    "reference_observed": false
+  },
+  {
+    "id": "R14",
+    "kind": "need_read",
+    "answer": "根据提供的资料，肯尼亚演员 Peter King（本名 Peter Nzioki）在电影《The Constant Gardener》（《不朽的园丁》）中饰演的是一个**小角色（minor role）**。\n\n资料中并未明确指出该角色的具体名称或身份，仅说明这是他在 2005 年的电影处女作。\n\n**引用来源：**\n*   **文档 ID:** 67431 (Peter Nzioki - Wikipedia)\n*   **URL:** https://en.wikipedia.org/wiki/Peter_Nzioki\n*   **相关文本:** \"In 2005, he made his film debut with a minor role in The Constant Gardener directed by Fernando Meirelles.\" （2005年，他在费尔南多·梅里尔斯执导的电影《The Constant Gardener》中以一个小角色开始了他的电影生涯。）",
+    "expected": "Policeman 1",
+    "reference_observed": false
+  },
+  {
+    "id": "R15",
+    "kind": "partial_overlap",
+    "answer": "根据 PC Gamer 的文章《How I Game: Dean Dodrill》，Dean Dodrill 的游戏电脑拥有 **5TB** 的存储空间。\n\n关于最后一条工具返回（`open` 调用，window_ref `w_a1256582d72f8227b9b4004f`）：\n该窗口相对于此前 `search` 返回的内容（`w_5740417ea459e383b8ad9328`）有新增原文。以下是逐字摘录的一句新增文字：\n\n\"As for software, I'm running Windows 7 64-bit, and use a combination of Adobe Photoshop, After Effects, Painter, and a 3D suite for art.\"",
+    "expected": "5TB",
+    "reference_observed": true
+  },
+  {
+    "id": "R16",
+    "kind": "full_repeat",
+    "answer": "Dean Dodrill 的这台游戏电脑拥有 **5TB** 的存储空间。\n\n根据文档内容，他的主要工作站（兼作游戏电脑）配置包括：“5TB of Storage”（5TB 存储）。\n\n关于最后一条既有工具返回的核对：\n最后一条工具调用是 `open(window_ref=\"w_768658c1412f205f3f4fde95\", direction=\"after\")`。观察记录显示，此次调用返回的窗口引用与前一次相同，且 `new_body` 为空列表（`\"new_body\":[]`），`body_overlap_chars` 为 3319。这意味着该次调用没有返回此前未返回的新原文。\n\n因此，明确说明：**没有新增的原文。**",
+    "expected": "5TB",
+    "reference_observed": true
+  }
+]

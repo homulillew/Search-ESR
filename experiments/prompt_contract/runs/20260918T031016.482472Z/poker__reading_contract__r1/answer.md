@@ -1,0 +1,3 @@
+Svetlana Gromenkova's final opponent in the 2008 WSOP Ladies event was **Anh Le**.
+
+According to the source, Gromenkova defeated Anh Le in heads-up play. On the final hand, Gromenkova held pocket Kings and got Anh Le to call with A-6. The turn brought a King for Gromenkova, and although the river was an Ace (giving Le a pair of Aces), it was not enough to beat Gromenkova's Kings, securing the win for Gromenkova.
