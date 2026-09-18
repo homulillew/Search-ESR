@@ -1,0 +1,49 @@
+{
+  "status": "valid",
+  "intents": [
+    {
+      "query": "blog post teacher began teaching in the 1990s grew up in city somewhere in the Western Hemisphere",
+      "basis_refs": [
+        "q2",
+        "q3",
+        "q7"
+      ],
+      "goal": "Identify the author of three specific blog posts based on clues about their teaching career, hometown in the Western Hemisphere formed by merging towns, and personal life details."
+    }
+  ],
+  "initial_valid": false,
+  "repairs": 1,
+  "raw_plan": {
+    "status": "valid",
+    "directions": [
+      {
+        "goal": "Identify the author of three specific blog posts based on clues about their teaching career, hometown in the Western Hemisphere formed by merging towns, and personal life details.",
+        "source_clues": [
+          "They published a blog post on the second Friday of a month after 2008 but before 2020",
+          "they mentioned that they had begun teaching in the 1990s",
+          "grew up in a city somewhere in the Western Hemisphere"
+        ],
+        "query": "blog post teacher began teaching in the 1990s grew up in city somewhere in the Western Hemisphere",
+        "clue_locations": [
+          [
+            91
+          ],
+          [
+            185
+          ],
+          [
+            848
+          ]
+        ],
+        "long_query_warning": false
+      }
+    ],
+    "repairs": 1,
+    "initial_valid": false,
+    "initial_errors": [
+      "directions[0].source_clues must contain 1 to 3 exact quotations"
+    ]
+  },
+  "question_sha256": "2bfdebb8b1c8a0c818239b2a20a220d4fa28822a0ece685604f28682134c550c",
+  "basis_origin": "runtime_mapped_exact_quotes"
+}

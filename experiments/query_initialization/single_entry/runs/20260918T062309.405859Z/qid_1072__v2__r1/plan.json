@@ -1,0 +1,46 @@
+{
+  "status": "valid",
+  "intents": [
+    {
+      "query": "author born 1964 lawmaker 2004 research paper international organization",
+      "basis_refs": [
+        "q3",
+        "q4"
+      ],
+      "goal": "Identify the author born in 1964 who served as a lawmaker from 2004 to before 2010 and submitted a research paper about an international organization."
+    }
+  ],
+  "initial_valid": true,
+  "repairs": 0,
+  "raw_plan": {
+    "status": "valid",
+    "directions": [
+      {
+        "goal": "Identify the author born in 1964 who served as a lawmaker from 2004 to before 2010 and submitted a research paper about an international organization.",
+        "source_clues": [
+          "born in 1964",
+          "served as a lawmaker from 2004 to sometime before 2010",
+          "paper was about an analysis of an international organization"
+        ],
+        "query": "author born 1964 lawmaker 2004 research paper international organization",
+        "clue_locations": [
+          [
+            242
+          ],
+          [
+            264
+          ],
+          [
+            324
+          ]
+        ],
+        "long_query_warning": false
+      }
+    ],
+    "repairs": 0,
+    "initial_valid": true,
+    "initial_errors": []
+  },
+  "question_sha256": "37f5fe20771a892e8dc75e15a36327f2451a7aa556e57be0ca82736ca94a5b39",
+  "basis_origin": "runtime_mapped_exact_quotes"
+}

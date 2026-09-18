@@ -1,0 +1,42 @@
+{
+  "status": "valid",
+  "intents": [
+    {
+      "query": "director English-produced dinosaur sci-fi adventure films short film nephew",
+      "basis_refs": [
+        "q4",
+        "q5"
+      ],
+      "goal": "Identify the director known for English-produced dinosaur, sci-fi, and adventure films to find the short film they directed with their nephew."
+    }
+  ],
+  "initial_valid": true,
+  "repairs": 0,
+  "raw_plan": {
+    "status": "valid",
+    "directions": [
+      {
+        "goal": "Identify the director known for English-produced dinosaur, sci-fi, and adventure films to find the short film they directed with their nephew.",
+        "source_clues": [
+          "directed by someone well-known for their series of English-produced dinosaur, sci-fi, and adventure films",
+          "Directed a short film with their nephew"
+        ],
+        "query": "director English-produced dinosaur sci-fi adventure films short film nephew",
+        "clue_locations": [
+          [
+            277
+          ],
+          [
+            386
+          ]
+        ],
+        "long_query_warning": false
+      }
+    ],
+    "repairs": 0,
+    "initial_valid": true,
+    "initial_errors": []
+  },
+  "question_sha256": "02f459eb47468c845948dfe821be1e6c1b75f9c1e44f7e94fa6857e22910a71c",
+  "basis_origin": "runtime_mapped_exact_quotes"
+}

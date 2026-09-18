@@ -1,0 +1,46 @@
+{
+  "status": "valid",
+  "intents": [
+    {
+      "query": "organization funding art blog post founder 2016 2012",
+      "basis_refs": [
+        "q1",
+        "q2"
+      ],
+      "goal": "Identify the organization that funds art, posts blog entries about artists and art forms, and has a specific entry from January 28, 2019."
+    }
+  ],
+  "initial_valid": true,
+  "repairs": 0,
+  "raw_plan": {
+    "status": "valid",
+    "directions": [
+      {
+        "goal": "Identify the organization that funds art, posts blog entries about artists and art forms, and has a specific entry from January 28, 2019.",
+        "source_clues": [
+          "funded by a certain organization",
+          "entry made on January 28, 2019",
+          "according to the organization's founder"
+        ],
+        "query": "organization funding art blog post founder 2016 2012",
+        "clue_locations": [
+          [
+            19
+          ],
+          [
+            69
+          ],
+          [
+            202
+          ]
+        ],
+        "long_query_warning": false
+      }
+    ],
+    "repairs": 0,
+    "initial_valid": true,
+    "initial_errors": []
+  },
+  "question_sha256": "91c1abcbaedf7750746ab63954bb0a3494effff5c0a6bfc53614134b8c385a49",
+  "basis_origin": "runtime_mapped_exact_quotes"
+}

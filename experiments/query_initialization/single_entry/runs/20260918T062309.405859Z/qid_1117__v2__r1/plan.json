@@ -1,0 +1,47 @@
+{
+  "status": "valid",
+  "intents": [
+    {
+      "query": "literary reviewing journal 1824 1832 posthumous publication 1853 articles republished single title",
+      "basis_refs": [
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "goal": "Identify the posthumous publication title from 1853, authored by the sibling of the Major's wife."
+    }
+  ],
+  "initial_valid": true,
+  "repairs": 0,
+  "raw_plan": {
+    "status": "valid",
+    "directions": [
+      {
+        "goal": "Identify the posthumous publication title from 1853, authored by the sibling of the Major's wife.",
+        "source_clues": [
+          "In 1853, two of the in-law's articles were republished under a single title, posthumously",
+          "whose sibling received a B.A. in 1821 and an M.A. in 1824",
+          "This sibling and \"in-law\" of the Major did literary reviewing for the aforementioned journal from 1824 to 1832"
+        ],
+        "query": "literary reviewing journal 1824 1832 posthumous publication 1853 articles republished single title",
+        "clue_locations": [
+          [
+            431
+          ],
+          [
+            219
+          ],
+          [
+            278
+          ]
+        ],
+        "long_query_warning": false
+      }
+    ],
+    "repairs": 0,
+    "initial_valid": true,
+    "initial_errors": []
+  },
+  "question_sha256": "50defe6de16487c8c36eabd0e2cd4c8e929faee38056e985ccc4455e2bfae4c9",
+  "basis_origin": "runtime_mapped_exact_quotes"
+}

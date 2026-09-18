@@ -1,0 +1,47 @@
+{
+  "status": "valid",
+  "intents": [
+    {
+      "query": "football player saved substitute's shot 2007 cup match retired 2020 300 appearances",
+      "basis_refs": [
+        "q1",
+        "q3",
+        "q5"
+      ],
+      "goal": "Identify the professional football player who retired in 2020 after 300+ appearances, played a cup game in 2007 saving a substitute's shot, and made 7 league appearances for a club joined in 2015."
+    }
+  ],
+  "initial_valid": true,
+  "repairs": 0,
+  "raw_plan": {
+    "status": "valid",
+    "directions": [
+      {
+        "goal": "Identify the professional football player who retired in 2020 after 300+ appearances, played a cup game in 2007 saving a substitute's shot, and made 7 league appearances for a club joined in 2015.",
+        "source_clues": [
+          "retired from playing as of 2020 after making over 300 appearances",
+          "In 2007, they played in a cup game where they were noted in a match report for saving a substitute's shot",
+          "They joined a new club in 2015, for whom they made 7 league appearances"
+        ],
+        "query": "football player saved substitute's shot 2007 cup match retired 2020 300 appearances",
+        "clue_locations": [
+          [
+            48
+          ],
+          [
+            213
+          ],
+          [
+            394
+          ]
+        ],
+        "long_query_warning": false
+      }
+    ],
+    "repairs": 0,
+    "initial_valid": true,
+    "initial_errors": []
+  },
+  "question_sha256": "3d34be2cc8d8aac6922bbc61b3a5b80ca8fb578d0364d9b56f3537b5fbf51715",
+  "basis_origin": "runtime_mapped_exact_quotes"
+}

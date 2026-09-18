@@ -1,0 +1,411 @@
+{
+  "method": "Existing positive reference spans only; no new qrels or automatic relevance judging. Unmatched windows unassessed. qid645 is outside the previous holdout pool.",
+  "annotations_file": "/data/WSH/Search-ESR/experiments/query_initialization/runs/20260918T053659.834656Z/evidence_annotations.json",
+  "annotations_sha256": "9d1a3ebf2f95ac300531b3c78f5cdad4b0c18725f92bde1f9f3ce9d2e3c427ed",
+  "aggregates": {
+    "minimal": {
+      "attempts": 8,
+      "confirmed_document": 5,
+      "reference_visible": 3
+    },
+    "refs": {
+      "attempts": 8,
+      "confirmed_document": 4,
+      "reference_visible": 3
+    },
+    "refs_goal": {
+      "attempts": 8,
+      "confirmed_document": 5,
+      "reference_visible": 5
+    },
+    "v2": {
+      "attempts": 8,
+      "confirmed_document": 4,
+      "reference_visible": 3
+    }
+  },
+  "sessions": [
+    {
+      "session": "qid_1072__minimal__r1",
+      "qid": "1072",
+      "arm": "minimal",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1072__refs__r1",
+      "qid": "1072",
+      "arm": "refs",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "21375",
+          "window_ref": "w_342c94213cc1d7b3c0fe4435",
+          "kind": "bridge",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__refs_goal__r1",
+      "qid": "1072",
+      "arm": "refs_goal",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "window_ref": "w_6a8cefecd60d7178cea6797d",
+          "kind": "target_linked",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__v2__r1",
+      "qid": "1072",
+      "arm": "v2",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "window_ref": "w_6a8cefecd60d7178cea6797d",
+          "kind": "target_linked",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__minimal__r1",
+      "qid": "1117",
+      "arm": "minimal",
+      "confirmed_document": true,
+      "reference_visible": false,
+      "hits": [
+        {
+          "docid": "8000",
+          "window_ref": "w_ae46930826c003614360c091",
+          "kind": "bridge",
+          "reference_visible": false
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__refs__r1",
+      "qid": "1117",
+      "arm": "refs",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "window_ref": "w_09231edc94900e6ea17d0441",
+          "kind": "bridge",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__refs_goal__r1",
+      "qid": "1117",
+      "arm": "refs_goal",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "window_ref": "w_09231edc94900e6ea17d0441",
+          "kind": "bridge",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__v2__r1",
+      "qid": "1117",
+      "arm": "v2",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "window_ref": "w_09231edc94900e6ea17d0441",
+          "kind": "bridge",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_183__minimal__r1",
+      "qid": "183",
+      "arm": "minimal",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "90095",
+          "window_ref": "w_a81c633f7a652c81d3fa68f3",
+          "kind": "target_linked",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_183__refs__r1",
+      "qid": "183",
+      "arm": "refs",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_183__refs_goal__r1",
+      "qid": "183",
+      "arm": "refs_goal",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_183__v2__r1",
+      "qid": "183",
+      "arm": "v2",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_551__minimal__r1",
+      "qid": "551",
+      "arm": "minimal",
+      "confirmed_document": true,
+      "reference_visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "window_ref": "w_2661428040aa2bcd4ba9f062",
+          "kind": "target_linked",
+          "reference_visible": false
+        }
+      ]
+    },
+    {
+      "session": "qid_551__refs__r1",
+      "qid": "551",
+      "arm": "refs",
+      "confirmed_document": true,
+      "reference_visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "window_ref": "w_2661428040aa2bcd4ba9f062",
+          "kind": "target_linked",
+          "reference_visible": false
+        }
+      ]
+    },
+    {
+      "session": "qid_551__refs_goal__r1",
+      "qid": "551",
+      "arm": "refs_goal",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "37025",
+          "window_ref": "w_6420b3ea7eef8e55ed1b85f1",
+          "kind": "target_linked",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_551__v2__r1",
+      "qid": "551",
+      "arm": "v2",
+      "confirmed_document": true,
+      "reference_visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "window_ref": "w_fe6da8ae94a31c6735a98d23",
+          "kind": "target_linked",
+          "reference_visible": false
+        }
+      ]
+    },
+    {
+      "session": "qid_583__minimal__r1",
+      "qid": "583",
+      "arm": "minimal",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "996",
+          "window_ref": "w_20939c7dec195f8eb54230cd",
+          "kind": "target_linked",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_583__refs__r1",
+      "qid": "583",
+      "arm": "refs",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_583__refs_goal__r1",
+      "qid": "583",
+      "arm": "refs_goal",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "996",
+          "window_ref": "w_20939c7dec195f8eb54230cd",
+          "kind": "target_linked",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_583__v2__r1",
+      "qid": "583",
+      "arm": "v2",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_591__minimal__r1",
+      "qid": "591",
+      "arm": "minimal",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "kind": "target_linked",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_591__refs__r1",
+      "qid": "591",
+      "arm": "refs",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "kind": "target_linked",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_591__refs_goal__r1",
+      "qid": "591",
+      "arm": "refs_goal",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "kind": "target_linked",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_591__v2__r1",
+      "qid": "591",
+      "arm": "v2",
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "kind": "target_linked",
+          "reference_visible": true
+        }
+      ]
+    },
+    {
+      "session": "qid_645__minimal__r1",
+      "qid": "645",
+      "arm": "minimal",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_645__refs__r1",
+      "qid": "645",
+      "arm": "refs",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_645__refs_goal__r1",
+      "qid": "645",
+      "arm": "refs_goal",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_645__v2__r1",
+      "qid": "645",
+      "arm": "v2",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__minimal__r1",
+      "qid": "786",
+      "arm": "minimal",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__refs__r1",
+      "qid": "786",
+      "arm": "refs",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__refs_goal__r1",
+      "qid": "786",
+      "arm": "refs_goal",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__v2__r1",
+      "qid": "786",
+      "arm": "v2",
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    }
+  ]
+}
