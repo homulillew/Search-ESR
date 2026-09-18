@@ -1,0 +1,44 @@
+{
+  "review_scope": "Two requested qid1117 cards only; card mapping and arm labels were not opened. Parent proposed mutation classification before independent inspection, so this is independent textual adjudication with disclosed hypothesis exposure, not fully blind review.",
+  "source_relation": "Major eloped with person P; P has sibling S; S received B.A. in 1821 and M.A. in 1824 and reviewed the journal. P and S are distinct relational positions in the original.",
+  "cards": [
+    {
+      "card_id": "2731bede208a",
+      "qid": "1117",
+      "judgment": "relation_mutation",
+      "confidence": "moderate",
+      "source_quote": "The Major had eloped with a person whose sibling received a B.A. in 1821 and an M.A. in 1824.",
+      "query_quote": "Major eloped with sibling B.A. 1821 M.A. 1824",
+      "reason": "The query retains the explicit predicate eloped with but places sibling directly in its object position. It removes the intermediate person whose relation, attaching the degree-bearing sibling to the elopement. This is stronger than bare keyword adjacency such as retired 2020. The remaining query is highly telegraphic, so reading it as an unordered keyword bag is possible; for that reason confidence is lower than the other card, and a sensitivity count should allow this card to be treated as ambiguous."
+    },
+    {
+      "card_id": "3bb845a359ce",
+      "qid": "1117",
+      "judgment": "relation_mutation",
+      "confidence": "high",
+      "source_quote": "The Major had eloped with a person whose sibling received a B.A. in 1821 and an M.A. in 1824.",
+      "query_quote": "eloped with sibling who received B.A. in 1821 M.A. in 1824",
+      "reason": "The explicit with-object sibling and relative clause who received identify the degree-holder as the elopement partner. Original identifies that degree-holder as the partner's sibling. This supports clear relation mutation rather than only missing context."
+    }
+  ],
+  "recommended_count": {
+    "relation_mutation": 2,
+    "conservative_sensitivity": {
+      "clear_relation_mutation": 1,
+      "ambiguous": 1
+    },
+    "note": "Two mutations is defensible under retained explicit predicate relations; avoid presenting both as equally incontrovertible. The substantive node diagnosis should not depend on counting the telegraphic first card as definite."
+  },
+  "null_response_audit": {
+    "abstained_attempts": 12,
+    "responses": 12,
+    "finish_stop": 12,
+    "content_exact_query_null": 12,
+    "refusal_field_present": 12,
+    "refusal_field_nonempty": 0,
+    "reasoning_fields_present": 0,
+    "nonempty_tool_calls": 0,
+    "explanation_available": false,
+    "conclusion": "All observed nulls were normal stop responses containing only query:null, with refusal=null and no reasoning field. The archive does not expose why the model abstained; explanations about perceived source insufficiency are hypotheses, not observed model reasons."
+  }
+}

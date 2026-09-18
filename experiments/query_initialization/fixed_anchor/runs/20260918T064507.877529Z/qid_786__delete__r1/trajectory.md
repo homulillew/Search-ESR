@@ -1,0 +1,189 @@
+# 完整 rollout 轨迹
+
+API 请求是 SDK 调用参数；响应是 SDK 解析结果。未记录密钥或 HTTP 头。
+仅记录 API 实际返回的内容，不推断未返回的内部推理。
+
+## 1. control_query · 2026-09-18T06:45:21.099260+00:00
+
+```json
+{
+  "seq": 1,
+  "time": "2026-09-18T06:45:21.099260+00:00",
+  "kind": "control_query",
+  "arm": "delete",
+  "query": "A person directed a short film with their own nephew."
+}
+```
+
+## 2. query_finalized · 2026-09-18T06:45:21.099594+00:00
+
+```json
+{
+  "seq": 2,
+  "time": "2026-09-18T06:45:21.099594+00:00",
+  "kind": "query_finalized",
+  "plan": {
+    "status": "valid",
+    "query": "A person directed a short film with their own nephew.",
+    "initial_valid": true,
+    "repairs": 0,
+    "origin": "preregistered_manual_control"
+  }
+}
+```
+
+## 3. search_start · 2026-09-18T06:45:21.099830+00:00
+
+```json
+{
+  "seq": 3,
+  "time": "2026-09-18T06:45:21.099830+00:00",
+  "kind": "search_start",
+  "arguments": {
+    "query": "A person directed a short film with their own nephew.",
+    "k": 6
+  }
+}
+```
+
+## 4. search_result · 2026-09-18T06:45:21.793880+00:00
+
+```json
+{
+  "seq": 4,
+  "time": "2026-09-18T06:45:21.793880+00:00",
+  "kind": "search_result",
+  "arguments": {
+    "query": "A person directed a short film with their own nephew.",
+    "k": 6
+  },
+  "result": [
+    {
+      "docid": "6928",
+      "url": "https://theatlanticdispatch.com/film-bury-your-nephew/",
+      "title": "BURY YOUR NEPHEW: A BEAUTIFULLY CRAFTED SHORT FILM",
+      "title_span": [
+        11,
+        61
+      ],
+      "document_sha256": "01b3338354d5d5f102a22195b35e218567c4ccfd54157923fa0bf2784c42a06b",
+      "window_ref": "w_70e14822c7c33f4b9f156c71",
+      "text": "Bury Your Nephew highlights Karl Pilkington as an incredibly natural actor and together with Harry Jones, they create a relationship that is authentic and believable.\n\nHis portrayal of a man searching to find a bond with his nephew feels real and it gives a beautiful depth to the film.\n\n\"I think Karl blends perfectly into his role as Toby,\" Yoni tells us. \"It is a gentle and sincere performance that comes from his own sensibility and his own nature and everything about his role in the film felt right. It just all felt really right.\"\n\nAs the film draws you in we find Toby struggling to feel part of Liam's life, and we learn more about Liam's character who is almost dealing with a sense of abandonment.\n\nIt is this feeling which leads him to ask Toby a question that changes the entire dynamic of their relationship.\n\nIt was an absolute pleasure for The Atlantic Dispatch to sit down with Yoni, as we discussed Bury Your Nephew, his background and career so far and why short films are an art form of their own.\n\nI'M REALLY LUCKY THAT I GREW TO FALL IN LOVE WITH FILMS AND CINEMA\n\nI was born and raised in London and, grew up weirdly not being shown a lot of films, as my parents didn't really watch any. Whereas the journey of my contemporaries and friends wanting to become filmmakers was being inspired by films, that their mum or dad would have shown them, and they fell in love with cinema that way.\n\nMy journey with it was when I was 12 or 13, I got into just shooting videos with friends and I fell in love with making short skits.\n\nI feel lucky that my tastes and my appreciation for cinema, and filmmaking I discovered on my own. I fell in love with making films, and then I fell in love with watching them. ",
+      "offset": 1788,
+      "end_char": 3512,
+      "text_tokens": 377,
+      "title_tokens": 20,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.6499728560447693
+    },
+    {
+      "docid": "15878",
+      "url": "https://www.thewrap.com/sundance-short-films-movies-danny-pudi-rose-mcgowan-highlight-lineup/",
+      "title": "Sundance Short Films: Movies From Danny Pudi, Rose McGowan Highlight Lineup",
+      "title_span": [
+        11,
+        86
+      ],
+      "document_sha256": "bafce1638574f069b3c27421c756334173c413eb72e18f6639b7b4217588c2ad",
+      "window_ref": "w_68b3b7e982199dba25d3e8ea",
+      "text": "Jonathan's Chest / U.S.A. (Director and screenwriter: Christopher Radcliff) — Everything changes one night for Alex, a troubled teenager, when he is visited by a boy claiming to be his brother–who disappeared years earlier.\n\nKekasih / U.S.A., Malaysia (Director and screenwriter: Diffan Sina Norman) — While pursuing his late wife, a botanical professor encounters a divine presence that will transform him forever.\n\nMaster Muscles / U.S.A. (Director and screenwriter: Efrén Hernández) — Veronica and Efren go on a trip.\n\nMe + Her / U.S.A. (Director and screenwriter: Joseph Oxford) — In a faraway world, tucked away in a small fold of land behind an enormous willow tree, exists the tiny city of Cardboard. After a tragic event, Jack Cardboard goes on a journey to mend his broken heart.\n\nPerson to Person / U.S.A. (Director and screenwriter: Dustin Guy Defa) — Waking up the morning after hosting a party, a man discovers a stranger passed out on his floor. He spends the rest of the day trying to convince her to leave.\n\nRat Pack Rat / U.S.A. (Director and screenwriter: Todd Rohal) — A Sammy Davis Jr. impersonator, hired to visit a loyal Rat Pack fan, finds himself performing the last rites at the boy's bedside.\n\nVerbatim / U.S.A. (Director: Brett Weiner, Screenwriter: Court Document) — A jaded lawyer wastes an afternoon trying to figure out if a dim-witted government employee has ever used a photocopier. All the dialogue in this short comes from an actual deposition filed with the Supreme Court of Ohio.\n\nINTERNATIONAL NARRATIVE SHORT FILMS\n",
+      "offset": 4758,
+      "end_char": 6312,
+      "text_tokens": 364,
+      "title_tokens": 17,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5644811987876892
+    },
+    {
+      "docid": "13190",
+      "url": "https://borrowingtape.com/interviews/my-nephew-emmett-5-questions-for-director-kevin-wilson-jr",
+      "title": "My Nephew Emmett – 5 Questions for Film Director Kevin Wilson Jr.",
+      "title_span": [
+        11,
+        76
+      ],
+      "document_sha256": "989028c48879bb6de592b376fc39139bcd597ab0dadebccc73d6d783e2717480",
+      "window_ref": "w_8f2fcf0fba969d7606ee3c4d",
+      "text": "I started reading all of Spike Lee's books and realized he attended NYU's Graduate Film Program so that's where I applied. The first time I applied, I got rejected. I was defeated, crushed. I cried like a baby. Years later, I reapplied and got waitlisted. Finally, after months of waiting, I was accepted. So my journey to making films hasn't been traditional by any means.\n\n2. How does your film primarily differentiate or distinguish itself from other work?\n\nI try to make my films as personal as possible. I'm beginning to realize lately that making films for me is about exploration and in many ways, self-discovery. There are questions about the world and about myself that I have that in an effort to find an answer, I research and write a script. In \"My Nephew Emmett\", the question was, what does a protector feel when they are faced with the impossible dilemma of relinquishing control to someone who means harm for someone they are responsible for? I wanted to explore that pain and helplessness. I wanted to also explore the strength that people like Mose Wright (Emmett Till's Uncle) and Mamie Till (Emmett Till's mother) had to muster in those trying times and determine if I were capable of finding that same kind of strength in the various struggles I'm faced with. I wanted to know what Mose felt and as a father myself, what I would've felt if placed in a similar situation. It really is so timely because these are the same feelings that many parents, spouses, and loved ones of innocent people who have fallen victim to senseless violence feel daily. Especially violence that results in little to no accountability or justice. I think focusing heavily on perspective and trying to find myself somewhere in the work naturally sets it apart.\n\n3. What's some of the best advice you've received?\n",
+      "offset": 1548,
+      "end_char": 3359,
+      "text_tokens": 380,
+      "title_tokens": 17,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5630345940589905
+    },
+    {
+      "docid": "37318",
+      "url": "https://www.ifccenter.com/films/2018-sundance-film-festival-short-film-tour/",
+      "title": "2018 Sundance Film Festival Short Film Tour",
+      "title_span": [
+        11,
+        54
+      ],
+      "document_sha256": "d6f83e7ff732c4438f8935147d6ba7cfae8956e48e5a97dedb599f516f444eb3",
+      "window_ref": "w_6c599a78d20d76e3038e398d",
+      "text": "A dark musical enacted in a modern shopping center, situated next to a large freeway. The employees of the various commercial venues deal with boredom and existential anxiety by performing cheerful musical turns. The apocalypse is a tempting liberator.\n\nHair Wolf\n\nShort Film Jury Award: U.S. Fiction\n\nU.S.A., 12 minutes. Written and directed by Mariama Diallo.\n\nIn a black hair salon in gentrifying Brooklyn, the local residents fend off a strange new monster: white women intent on sucking the lifeblood from black culture.\n\nJEOM\n\nU.S.A., South Korea, 4 minutes. Written and directed by Kangmin Kim.\n\nA father and a son both have the same big birthmark on their butt. Believing that the two birthmarks are connected, the son scrubs his father's birthmark to remove it – but he just can't get rid of it.\n\nFauve\n\nShort Film Special Jury Award\n\nCanada, 16 minutes. Written and directed by Jérémy Comte.\n\nSet in a surface mine, two boys sink into a seemingly innocent power game, with Mother Nature as the sole observer.\n\nMatria\n\nShort Film Grand Jury Prize, Presented by YouTube\n\nSpain, 21 minutes. Written and directed by Álvaro Gago.\n\nFaced with a challenging daily routine, Ramona tries to take refuge in her relationships with her daughter and granddaughter.\n\nPhoto: Still from \"Hair Wolf.\" Courtesy of Sundance Institute.\n\n- Running Time 95 minutes\n\nIFC Center does not generally provide advisories about subject matter or potentially triggering content in films, as sensitivities vary from person to person. In addition to the synopses, trailers and other links on our website, further information about content and age-appropriateness for specific films can be found on Common Sense Media, IMDb and DoesTheDogDie.com as well as through general internet searches.",
+      "offset": 2019,
+      "end_char": 3787,
+      "text_tokens": 387,
+      "title_tokens": 11,
+      "has_more_before": true,
+      "has_more_after": false,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5504805445671082
+    },
+    {
+      "docid": "85742",
+      "url": "https://bohdanasmyrnova.com/additional-projects/assistant-director/",
+      "title": "1st Assistant Director",
+      "title_span": [
+        11,
+        33
+      ],
+      "document_sha256": "078490307b9231cae98512dd1d8f3d968ad9665515ac431871bc44fb0d64163f",
+      "window_ref": "w_aa99ef568e028be2993821d5",
+      "text": "---\ntitle: 1st Assistant Director\ndate: 2015-01-01\n---\n2019 – \"Chasing Ghosts\", a feature film by Noemi Schneider (Switzerland/USA, NYU Grad Thesis film)\n\n2018 – \"The Giverny Document\", a short film by Ja'Tovia Gary (New York, NY), premiere in Frank Elbaz gallery (Paris, France)\n\n2018 – \"Magic Hour\"(additional 1stAD), a feature film by Jackie Christie, starring Miriam Shor\n\n2018 – \"Detour\" by Brian Peng (NYU thesis film)\n\n2018 – \"Payroll\", a short TV pilot by Dennis Williams II\n\n2018 – \"Dawn\", a short film by Amy Guggenheim\n\n2017 – \"Our Way Home\", a short film by Alexandra Hsu (HBO APA Short Film Competition)\n\n2016 – 'You Are a Star', a short commercial for Viacom\n\n2016 – 'Shift' by Daniel Poller, short film\n\n2015 – 'Premier Logistics' training video for FedEx\n\n2014 – \"Kimchi Taco\" by Seran Kim (USA), short film\n\n2014 – \"Strange Planet\" by Jarreau Carillo (USA), short film\n\n2014 – \"American Sign Language\" by Oscar Sharp (USA), short film\n\n2013 – \"The Vixens\" (2nd Unit) by Brian Fairbanks (USA), feature film\n\n2013 – \"She Lights up Well\" by Joyce Wu (USA), feature film, NYU thesis\n\n2013 – \"Sabu\", NYU Grad 2nd Year Film short film dir. by Roger Gregory, 35mm\n",
+      "offset": 0,
+      "end_char": 1174,
+      "text_tokens": 388,
+      "title_tokens": 4,
+      "has_more_before": false,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5501925349235535
+    },
+    {
+      "docid": "55192",
+      "url": "https://www.directedbykevin.com/bio",
+      "title": "Kevin Wilson, Jr.",
+      "title_span": [
+        11,
+        28
+      ],
+      "document_sha256": "ee251a950bd4c6fce5f55b7c1471911ec9e91381e82fb14438689a0daabe2247",
+      "window_ref": "w_aab25cf19b4080e19018fd48",
+      "text": "---\ntitle: Kevin Wilson, Jr.\ndate: 2017-01-01\n---\nBIO\n\nKevin Wilson, Jr. is an Oscar Nominated Filmmaker based in New York City. His film My Nephew Emmett, a 20 minute short film based on the true story of the 1955 murder of Emmett Till, was nominated for an Oscar for Best Live Action Short Film at the 90th Academy Awards. It screened at film festivals all over the world including the New York Film Festival, Telluride Film Festival, and HollyShorts Film Festival. Wilson won the Gold Medal at the 44th Student Academy Awards, a Directors Guild of America Student Film Award and a BAFTA Student Film Award. In 2020 he began directing National commercials. His breakout ad \"States United\", a PSA aimed to prevent gun violence, launched to critical acclaim including AdWeek's \"Spot of the Day.\" He has directed commercials for McDonalds, Marvel, Crown Royal, Meta (Facebook), PNC Bank, Kohls and partnered with Procter & Gamble to direct the commercial \"Widen The Screen\", a campaign that calls for Hollywood to address stereotypical images of Black People in Film & Television. The commercial premiered during the 2021 NAACP Image Awards, the 93rd Academy Awards, the Tribeca Film Festival, and was championed by Oprah Winfrey and screened on the OWN Network. \"Widen The Screen\" would go on to win a Silver Lion in Film at the 2021 Cannes Lions International Festival of Creativity, win numerous awards including AICP's Best New Director, D&AD Pencils, and remains archived at the Museum of Modern Art in New York City.\n",
+      "offset": 0,
+      "end_char": 1522,
+      "text_tokens": 368,
+      "title_tokens": 5,
+      "has_more_before": false,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5489862561225891
+    }
+  ]
+}
+```

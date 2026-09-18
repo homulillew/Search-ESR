@@ -1,5 +1,15 @@
 # 单入口 Query 初始化 v003
 
+新增实验候选 `entry_v1`：使用 [五条通用原则](ENTRY_PROMPT.txt)，保持 `minimal` 的输入、输出与执行流程。具体错误类型放在 [离线审阅规则](ENTRY_EVALUATION.md)。默认运行组与默认生成策略未改变。
+
+已完成 [开发 32 次](runs/20260918T072122.779614Z/README.md)和[新题 80 次](runs/20260918T072839.341275Z/README.md)真实 API 对照。精简版约节省四分之一 API tokens，但未证明检索或语义优势，保留为候选。见 [完整分析](../../../全链路排查报告/Query通用原则提示词落地与对照实验.md)。
+
+开发对照命令（8 道已知开发题、每组两次，共 32 次初始 API 请求，修复另计）：
+
+```bash
+python -m experiments.query_initialization.single_entry.run --arms minimal entry_v1 --repeats 2 --workers 4
+```
+
 已完成 [首批 32 次真实 API 联调](runs/20260918T062309.405859Z/README.md)，详见 [落地与问题分析](../../../全链路排查报告/Query单入口初始化落地与联调.md)。
 
 独立实验实现。默认只执行一次 Search，不修改 chat.py、Search–Open 工具描述、原文窗口或后续 Agent 循环。没有增加 candidate、gap、语义进展判定或 REPLAN。
@@ -51,7 +61,9 @@ python -m experiments.query_initialization.single_entry.run
 python -m experiments.query_initialization.single_entry.run --arms minimal --qids 591 786 --repeats 1 --workers 2
 ```
 
-输出位于 `runs/<UTC>/`。该命令会产生真实 API 调用；没有自动留出集抽样或自动升级默认方案。联调题和次数可显式配置，原始问题之外不向模型输入标准答案。
+输出位于 `runs/<UTC>/`。该命令会产生真实 API 调用；默认运行不会自动抽样留出集或升级默认方案。联调题和次数可显式配置，原始问题之外不向模型输入标准答案。
+
+开发结果审阅后，可在批次 `dev_review.json` 中记录 `proceed_holdout`，用 `python -m experiments.query_initialization.single_entry.holdout <development_run>` 建立一次性清单。随后用 `run --evaluation-lock <holdout_lock.json>`，显式传入清单中的 qids、arms、repeats。runner 会核对开发决定、题目、提示词、源码、数据集和 API 配置。修改已锁定策略后应重新做开发审阅，不覆盖既有清单。
 
 离线测试与审计：
 

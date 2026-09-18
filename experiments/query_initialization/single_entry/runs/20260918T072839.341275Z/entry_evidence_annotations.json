@@ -1,0 +1,506 @@
+{
+  "stage": "post_run_pooled_manual_positive_leads",
+  "method": "Limited positive annotations with exact source spans, not exhaustive qrels. Review was not blinded. Gold inspected offline only after all API generation; never sent to generator. Candidate leads do not prove intended identity or final answer.",
+  "pooled_qid_docs": 235,
+  "positive_qid_docs": 12,
+  "annotations": [
+    {
+      "qid": "119",
+      "docid": "45549",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "94484f5f19eae0a31fb9d6d8c1529b500655002001b60aa5fdf18f40938b466e",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "built his first elevator probably in 236 BC",
+            "source_spans": [
+              [
+                1005,
+                1048
+              ]
+            ]
+          },
+          {
+            "quote": "The Roman Colosseum, completed in 80 AD, had roughly 25 elevators",
+            "source_spans": [
+              [
+                1239,
+                1304
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "quote": "The first electric elevator was built by Werner von Siemens in 1880 in Germany.",
+            "source_spans": [
+              [
+                5904,
+                5983
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "识别机器的历史线索；不证明 Thanksgiving 事故。"
+    },
+    {
+      "qid": "119",
+      "docid": "33431",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "e3aa0adfb4ed03c9e81cbd2c5ccda9a285578131e319cfe46aa29eb61cc4bc98",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "The first passenger elevator got off to a slow start. Installed in 1857",
+            "source_spans": [
+              [
+                165,
+                236
+              ]
+            ]
+          },
+          {
+            "quote": "Powered by a steam engine",
+            "source_spans": [
+              [
+                364,
+                389
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "乘客电梯与蒸汽动力的历史入口。"
+    },
+    {
+      "qid": "127",
+      "docid": "30042",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "0602fd9a7d3ad96b9dd69f851d7b1c8d02e3f5b9c0e00e58cec61de6fe908e51",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "The Yidan Prize was founded in 2016 by Dr. Charles Chen Yidan, the core founder of Tencent Holdings Limited.",
+            "source_spans": [
+              [
+                106,
+                214
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "符合奖项设立年代和科技公司创办者关系的候选入口；尚未证明就是题目所指奖项。"
+    },
+    {
+      "qid": "127",
+      "docid": "38298",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "6dff1afcb7ce195899c76783aab6b9363d3ea11f101207474d3ccc79eafa75d1",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Founder, Yidan Prize;",
+            "source_spans": [
+              [
+                340,
+                361
+              ]
+            ]
+          },
+          {
+            "quote": "Core Founder, Tencent",
+            "source_spans": [
+              [
+                362,
+                383
+              ]
+            ]
+          },
+          {
+            "quote": "Dr Charles CHEN Yidan established the Yidan Prize Foundation in 2016",
+            "source_spans": [
+              [
+                384,
+                452
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "支持奖项候选及创办者关系；未核实文章作者。"
+    },
+    {
+      "qid": "416",
+      "docid": "41839",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "df2bc19192bb529c65e179087ce6228f54c2159418d9824fb66c6114fb3c6961",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Machine Learning for High-Throughput Stress Phenotyping in Plants",
+            "source_spans": [
+              [
+                11,
+                76
+              ],
+              [
+                124,
+                189
+              ],
+              [
+                2942,
+                3007
+              ],
+              [
+                3457,
+                3522
+              ]
+            ]
+          },
+          {
+            "quote": "Arti Singh1,Baskar Ganapathysubramanian2,Asheesh Kumar Singh3,Soumik Sarkar2",
+            "source_spans": [
+              [
+                3008,
+                3084
+              ],
+              [
+                3804,
+                3880
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "quote": "extracting patterns and features from this large corpus of data requires the use of machine learning (ML) tools to enable data assimilation and feature identification for stress phenotyping",
+            "source_spans": [
+              [
+                4434,
+                4623
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "论文主题、作者或摘要提供研究入口，不要求窗口包含致谢答案。"
+    },
+    {
+      "qid": "416",
+      "docid": "96700",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "1d6a9bef542eb36510ce2921a80692c6c247300410ecbd4e47033ff47b8f9a25",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Hyperspectral band selection using genetic algorithm and support vector machines for early identification of charcoal rot disease in soybean stems",
+            "source_spans": [
+              [
+                11,
+                157
+              ],
+              [
+                241,
+                387
+              ],
+              [
+                46808,
+                46954
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "题名对应早期识别、光谱、监督学习与搜索算法；原文致谢另经核对。"
+    },
+    {
+      "qid": "416",
+      "docid": "6722",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "fc8825a90a040635695d6fb8849a5812a34acee380ed4eee95491cb92bed7125",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Arti Singh",
+            "source_spans": [
+              [
+                57,
+                67
+              ],
+              [
+                110,
+                120
+              ]
+            ]
+          },
+          {
+            "quote": "2013 Women in Triticum Early Career Award",
+            "source_spans": [
+              [
+                11,
+                52
+              ],
+              [
+                68,
+                109
+              ]
+            ]
+          },
+          {
+            "quote": "post-doctoral fellow at the Semiarid Prairie Agricultural Research Centre",
+            "source_spans": [
+              [
+                140,
+                213
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "与论文第一作者对应的农业研究奖及履历入口。"
+    },
+    {
+      "qid": "499",
+      "docid": "69120",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "befeb248dca19c2614eec1d2d37402a62f9621c4cf8ee470dd16c99a72686569",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Verity was erected in 2012",
+            "source_spans": [
+              [
+                860,
+                886
+              ]
+            ]
+          },
+          {
+            "quote": "responded to the town's tourism drive",
+            "source_spans": [
+              [
+                918,
+                955
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "作品、展示年与旅游动机；没有核实额外 4500 游客。"
+    },
+    {
+      "qid": "499",
+      "docid": "41589",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "8ab6a6034bc9a619b50ce1031cde4036811fad9054540b72977666ed3ef2b77f",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "this conception of artistic merit has found its ultimate expression, in the shape of the gigantic and arrestingly hideous Verity.",
+            "source_spans": [
+              [
+                1612,
+                1741
+              ]
+            ]
+          },
+          {
+            "quote": "economic ambitions of Ilfracombe's tourism officials",
+            "source_spans": [
+              [
+                1554,
+                1606
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "quote": "This indifference to Verity's appearance",
+            "source_spans": [
+              [
+                4154,
+                4194
+              ]
+            ]
+          },
+          {
+            "quote": "significant impact to the tourism industry",
+            "source_spans": [
+              [
+                4108,
+                4150
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "作品争议和当地旅游背景，未单独证明游客数量。"
+    },
+    {
+      "qid": "499",
+      "docid": "8925",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "8e10ebc97d58b69aec761af93d7d6d2b5a7e4a5e0d2a450f2fcdcbb22de3ffd4",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Hirst responded to North Devon Council's tourism drive for Ilfracombe",
+            "source_spans": [
+              [
+                596,
+                665
+              ]
+            ]
+          },
+          {
+            "quote": "there was much argument and debate before Verity was allowed to visit",
+            "source_spans": [
+              [
+                734,
+                803
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "quote": "An extra 5000 people visited within the first month of Verity's arrival.",
+            "source_spans": [
+              [
+                2671,
+                2743
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "作品争议及旅游背景；原文 5000 人满足题目的超过 4500 人。"
+    },
+    {
+      "qid": "556",
+      "docid": "84412",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "fd452438fbae9b7f086419f7712ba49e1dc0935f9b8adebb51e6ff0d45ec32b3",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Victor Mhleli Ntoni was born in Langa in 1947",
+            "source_spans": [
+              [
+                52,
+                97
+              ]
+            ]
+          },
+          {
+            "quote": "In 1975 they performed a Royal Command Performance",
+            "source_spans": [
+              [
+                585,
+                635
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "quote": "Victor Mhleli Ntoni",
+            "source_spans": [
+              [
+                11,
+                30
+              ],
+              [
+                52,
+                71
+              ]
+            ]
+          },
+          {
+            "quote": "Born:\n1947",
+            "source_spans": [
+              [
+                325,
+                335
+              ]
+            ]
+          },
+          {
+            "quote": "In 1975 they performed a Royal Command Performance",
+            "source_spans": [
+              [
+                585,
+                635
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "人物、成长地点及皇家演出形成后续搜索入口；不确认论文致谢人。"
+    },
+    {
+      "qid": "598",
+      "docid": "20111",
+      "kind": "question_supported_entry_lead",
+      "document_sha256": "1177f754564a165f844ddc16c2829e445219529030b73e3a6653baf5898aa727",
+      "proof_alternatives": [
+        [
+          {
+            "quote": "Afrigo Band is a musical band in Uganda.",
+            "source_spans": [
+              [
+                387,
+                427
+              ]
+            ]
+          },
+          {
+            "quote": "The band was formed by a group of eight musicians",
+            "source_spans": [
+              [
+                575,
+                624
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "quote": "Afrigo Band",
+            "source_spans": [
+              [
+                11,
+                22
+              ],
+              [
+                162,
+                173
+              ],
+              [
+                387,
+                398
+              ],
+              [
+                2780,
+                2791
+              ]
+            ]
+          },
+          {
+            "quote": "In November 2015, the band celebrated its 40th anniversary with a sold-out concert at Hotel Africana, in Kampala.",
+            "source_spans": [
+              [
+                3054,
+                3167
+              ]
+            ]
+          }
+        ]
+      ],
+      "note": "八名创始成员或 2015 四十周年音乐会的乐队入口；不等于全部约束核实。"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "reference_annotations_sha256": "9d1a3ebf2f95ac300531b3c78f5cdad4b0c18725f92bde1f9f3ce9d2e3c427ed",
+  "version": "fixed_anchor_v001",
+  "phase": "known_case_diagnostic",
+  "model": "qwen3.7-flash",
+  "base_url": "https://llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "request_options": {
+    "extra_body": {
+      "enable_thinking": false
+    }
+  },
+  "source_sha256": {
+    "experiments/query_initialization/fixed_anchor/PROMPT.txt": "fc37e1126dd73f5573a0f141fba3accc82f61d2d6b20f3c93bfdf4e094b2d74e",
+    "experiments/query_initialization/fixed_anchor/run.py": "e83dd174773658d30bd964f72fcb81ef01f957c2feeafb2a9b287ea3f4102412",
+    "experiments/query_initialization/fixed_anchor/generate.py": "213af2888692daf070d5d7c43db4aad480b9fa227fce8fdb1024b4dcedf1e12d",
+    "experiments/query_initialization/fixed_anchor/audit.py": "c920865d93a4a34732015e0998836c69f8d4f00ff86eb0ce872dd30a3edd08e8",
+    "experiments/query_initialization/fixed_anchor/__init__.py": "7196a8d2a4ed43d5958466a2ed3d5e71db73403f3626980404901ec11d2c1eb2",
+    "experiments/query_initialization/fixed_anchor/cases.json": "fd5e3b3fe3fdecfb84fa047860707b2adc17abd968b5f5b30d9c46704c969842",
+    "experiments/query_initialization/fixed_anchor/test_fixed_anchor.py": "54637104c5218807713f25e9b90a8b61704b876301fa85ee16ccbf289f93575b",
+    "experiments/query_initialization/single_entry/initializer.py": "976fe2b27a37bbd523d9465dabcdde64a1ea4fdbd60e5520268377151c862e91",
+    "experiments/query_initialization/single_entry/source_units.py": "2420815746e5bddf5e6f8a7be74e5035825dfe37b5be820936c9640d48f1c43c",
+    "experiments/query_initialization/initializer.py": "72168211358931efe7920a7af9590262e87269b996179d4fbefc415f8e329538",
+    "experiments/run_rollout.py": "da5e6ac648b349c18f72b5065bebf726ee72546722fe9013a3b4ed5a5cb94368",
+    "llm_chat/client.py": "f47d0d82dcf9b1e83d4ed4484a0fb8df9f9008d933f2b2f6552b5641092c8e66",
+    "llm_chat/agent.py": "abb241830af9d2e7531ff7dd103bc5731e956a8ef8ace54ece857b1d2efb3fa6",
+    "llm_chat/observed_agent.py": "3382351f0b38b927cffb4d4a085777cc9d7dcec5b7f69c5a4313439f3bc44b5e",
+    "llm_chat/observations.py": "858bcb25ec347e21060d5dc9074cd09d64acecf0b987900475043407fe6cedde",
+    "llm_chat/raw_windows.py": "c20c0ec11bc2c9fbc3110bcf674d7603d7d0bbe4f6076bd63697c9e8af8beaed",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "llm_chat/window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2",
+    "BCPlus/scripts/search_bcplus.py": "5b13d6ad0faf6055887ff7e642e64f14737a4b51c7768953e9df02ddc87e40fd",
+    "BCPlus/indexes/bcplus-qwen3-8b/metadata.json": "a89540baa2736475f104bab5202f50e87a4bc63cf3b726070e31a074190d0c7f"
+  },
+  "workers": 4,
+  "model_repeats": 3,
+  "control_repeats": 1,
+  "max_tokens": 1536,
+  "timeout": 120,
+  "sdk_retries": 0,
+  "repair_limit": 1,
+  "schedule_seed": 20260921,
+  "window": "baseline",
+  "k": 6,
+  "window_tokens": 400,
+  "total_window_budget": 2400,
+  "note": "Full/delete are human-specified controls, not API variants. Model receives original question, fixed target and exact clue units only. No gold, manual queries, or retrieval feedback."
+}

@@ -1,0 +1,197 @@
+# 完整 rollout 轨迹
+
+API 请求是 SDK 调用参数；响应是 SDK 解析结果。未记录密钥或 HTTP 头。
+仅记录 API 实际返回的内容，不推断未返回的内部推理。
+
+## 1. control_query · 2026-09-18T08:21:00.174353+00:00
+
+```json
+{
+  "seq": 1,
+  "time": "2026-09-18T08:21:00.174353+00:00",
+  "kind": "control_query",
+  "arm": "verbatim",
+  "query": "Provide the first name and last name of the person based on the following details available as of Dec 2023:\n\n- Appeared in a film of 1 hour and 31 minutes, directed by someone well-known for their series of English-produced dinosaur, sci-fi, and adventure films.\n\n- Directed a short film with their nephew."
+}
+```
+
+## 2. query_finalized · 2026-09-18T08:21:00.174770+00:00
+
+```json
+{
+  "seq": 2,
+  "time": "2026-09-18T08:21:00.174770+00:00",
+  "kind": "query_finalized",
+  "plan": {
+    "status": "valid",
+    "query": "Provide the first name and last name of the person based on the following details available as of Dec 2023:\n\n- Appeared in a film of 1 hour and 31 minutes, directed by someone well-known for their series of English-produced dinosaur, sci-fi, and adventure films.\n\n- Directed a short film with their nephew.",
+    "initial_valid": true,
+    "repairs": 0,
+    "initial_errors": [],
+    "errors": [],
+    "input_refs": [
+      "q1",
+      "q4",
+      "q5"
+    ],
+    "query_tokens": 90,
+    "origin": "deterministic_verbatim"
+  }
+}
+```
+
+## 3. search_start · 2026-09-18T08:21:00.175902+00:00
+
+```json
+{
+  "seq": 3,
+  "time": "2026-09-18T08:21:00.175902+00:00",
+  "kind": "search_start",
+  "arguments": {
+    "query": "Provide the first name and last name of the person based on the following details available as of Dec 2023:\n\n- Appeared in a film of 1 hour and 31 minutes, directed by someone well-known for their series of English-produced dinosaur, sci-fi, and adventure films.\n\n- Directed a short film with their nephew.",
+    "k": 6
+  }
+}
+```
+
+## 4. search_result · 2026-09-18T08:21:06.956329+00:00
+
+```json
+{
+  "seq": 4,
+  "time": "2026-09-18T08:21:06.956329+00:00",
+  "kind": "search_result",
+  "arguments": {
+    "query": "Provide the first name and last name of the person based on the following details available as of Dec 2023:\n\n- Appeared in a film of 1 hour and 31 minutes, directed by someone well-known for their series of English-produced dinosaur, sci-fi, and adventure films.\n\n- Directed a short film with their nephew.",
+    "k": 6
+  },
+  "result": [
+    {
+      "docid": "6928",
+      "url": "https://theatlanticdispatch.com/film-bury-your-nephew/",
+      "title": "BURY YOUR NEPHEW: A BEAUTIFULLY CRAFTED SHORT FILM",
+      "title_span": [
+        11,
+        61
+      ],
+      "document_sha256": "01b3338354d5d5f102a22195b35e218567c4ccfd54157923fa0bf2784c42a06b",
+      "window_ref": "w_0ac893ebc20f9a821687cef1",
+      "text": "Because it's already stretching out to 20 minutes. And that's very long in the short film world and I don't want it to turn into a half an hour short.\n\nThis story doesn't need half an hour. It could maybe benefit from a few more minutes, but really, I think the biggest challenge is the efficiency at which you need to be a storyteller.\n\nI think the biggest way to deal with that challenge is on the page, and it's knowing how much of a story am I trying to capture. What are the things I'm trying to pull off? Because if you try and do too many things I think you miss the mark.\n\nThere's no real money in short films, because there's not much money to be made. Very few short films get purchased, and very few films get commissioned, compared to the feature film world, because it's not something people can make a return on their investment very easily.\n\nSo they'd rather spend 10 times the amount on a feature because it can make their money back, versus spending 20 grand on a short that probably won't do anything other than hopefully get into festivals, which is its own thing.\n\nShorts are interesting because they allow for some pretty unique expressiveness. And you can do things that maybe you would struggle to get funding for in the feature space because they don't need to be commercially viable.\n\nSo it's nice to be completely in control and be able to put something out there that is genuine and authentic and everything about it screams me and my sensibility, and I'm very proud of it for that.\n\nThe whole experience was great. It was exhausting and it was a lot of work for a 20-minute film. It was a good six to eight months of my life.\n",
+      "offset": 13283,
+      "end_char": 14937,
+      "text_tokens": 361,
+      "title_tokens": 20,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5188835859298706
+    },
+    {
+      "docid": "90404",
+      "url": "https://tvtropes.org/pmwiki/pmwiki.php/Main/DirectedByCastMember",
+      "title": "Directed by Cast Member",
+      "title_span": [
+        11,
+        34
+      ],
+      "document_sha256": "3da562107099ac1a2a1fbc9b069a133540f99a7f836194494526efdfb7c296cd",
+      "window_ref": "w_d215284e174e21f56639335c",
+      "text": "- Singaporean director Jack Neo made the duology, I Not Stupid and I Not Stupid Too, and plays the main character's fathers in both of them. A third movie was scheduled after a 17-year Sequel Gap with Jack returning to direct, but Word of God has it that he won't be playing anyone's fathers this time because of his age.\n\n- Jean Renoir was a notable director who appeared in supporting roles in his own films, most famously as Octave in his masterpiece, The Rules of the Game.\n\n- Rob Morrow, who plays the titular Lyle Maze, directed Maze.\n\n- François Truffaut appeared as an actor in the following films The Wild Child, Day for Night, The Green Room while showing up in Creator Cameo in other films he made.\n\n- Shintaro Katsu was already producing as well as starring in the Zatoichi film series by the time he took up directing. He directed himself in Zatoichi in Desperation, the TV series Zatoichi monogatari and the 1989 revival movie.\n\n- Lou Diamond Phillips directed two movies he starred in , Sioux City and Dangerous Touch.\n\n- Peter Sellers directed most of his final film, The Fiendish Plot of Dr. Fu Manchu, but refused to have his name credited.\n\n- Jon Favreau starred in his directorial debut, Made. Since then he has played minor roles in many of the films he's directed — including Iron Man and Iron Man 2, where he played Tony's bodyguard Happy Hogan — and has also directed and starred in Chef (2014).\n\n- Tommy Wiseau, who starred in his own film The Room (2003), had written the script, produced the film, and directed it. The results are well-known.\n\n- Anthony Perkins directed Psycho III while reprising the role of Norman Bates.\n",
+      "offset": 13716,
+      "end_char": 15367,
+      "text_tokens": 382,
+      "title_tokens": 4,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.4866466224193573
+    },
+    {
+      "docid": "85742",
+      "url": "https://bohdanasmyrnova.com/additional-projects/assistant-director/",
+      "title": "1st Assistant Director",
+      "title_span": [
+        11,
+        33
+      ],
+      "document_sha256": "078490307b9231cae98512dd1d8f3d968ad9665515ac431871bc44fb0d64163f",
+      "window_ref": "w_aa99ef568e028be2993821d5",
+      "text": "---\ntitle: 1st Assistant Director\ndate: 2015-01-01\n---\n2019 – \"Chasing Ghosts\", a feature film by Noemi Schneider (Switzerland/USA, NYU Grad Thesis film)\n\n2018 – \"The Giverny Document\", a short film by Ja'Tovia Gary (New York, NY), premiere in Frank Elbaz gallery (Paris, France)\n\n2018 – \"Magic Hour\"(additional 1stAD), a feature film by Jackie Christie, starring Miriam Shor\n\n2018 – \"Detour\" by Brian Peng (NYU thesis film)\n\n2018 – \"Payroll\", a short TV pilot by Dennis Williams II\n\n2018 – \"Dawn\", a short film by Amy Guggenheim\n\n2017 – \"Our Way Home\", a short film by Alexandra Hsu (HBO APA Short Film Competition)\n\n2016 – 'You Are a Star', a short commercial for Viacom\n\n2016 – 'Shift' by Daniel Poller, short film\n\n2015 – 'Premier Logistics' training video for FedEx\n\n2014 – \"Kimchi Taco\" by Seran Kim (USA), short film\n\n2014 – \"Strange Planet\" by Jarreau Carillo (USA), short film\n\n2014 – \"American Sign Language\" by Oscar Sharp (USA), short film\n\n2013 – \"The Vixens\" (2nd Unit) by Brian Fairbanks (USA), feature film\n\n2013 – \"She Lights up Well\" by Joyce Wu (USA), feature film, NYU thesis\n\n2013 – \"Sabu\", NYU Grad 2nd Year Film short film dir. by Roger Gregory, 35mm\n",
+      "offset": 0,
+      "end_char": 1174,
+      "text_tokens": 388,
+      "title_tokens": 4,
+      "has_more_before": false,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.4759797155857086
+    },
+    {
+      "docid": "23857",
+      "url": "https://screenrant.com/former-child-actors-turned-filmmakers/",
+      "title": "Screen Rant",
+      "title_span": [
+        11,
+        22
+      ],
+      "document_sha256": "d54fe37523a353635459e461ebdd2a3828a64d18c681d91d5c7275d3db480c83",
+      "window_ref": "w_22f449286eae1b99eb90fe40",
+      "text": "13 Ron Howard\n\nWent from teenage star on Happy Days to acclaimed film director across multiple genres\n\nWith a career spanning over 60 years, Ron Howard is one of the most successful examples of a child-actor-turned-filmmaker. Howard started acting at five years old with roles including an appearance in The Twilight Zone, Opie Taylor in The Andy Griffith Show, and he later became a household name with a starring role on Happy Days. In 1980, Howard shifted his focus to filmmaking and Howard defied categorization by making movies across all genres like the children's fantasy How The Grinch Stole Christmas, the mystery thriller The Da Vinci Code, and Solo: A Star Wars Story. Howard won the Academy Award for Best Picture for his drama A Beautiful Mind.\n\n12 Sarah Polley\n\nWent from a child actress on children's television to an Academy Award-winner\n\nSarah Polley first gained the public's attention by playing eight-year-old Romana Quimby in the television show Ramona, based series by Beverly Cleary. Polley went on to star in the television series Road to Avonlea and films such as The Sweet Hereafter, Guinevere, and My Life Without Me. In 2006, Polley released her feature directional debut Away from Here, and in 2022 released the critically acclaimed drama Women Talking, which she also wrote. Women Talking was nominated for Best Picture at the Academy Awards and Polley took home the prize for Best Screenplay for the film.\n\n11 Drew Barrymore\n\nWent from a successful child actress to film director and media personality\n\nAs a member of the Barrymore family of actors, Drew Barrymore's career began when she was 11 months old, and she gained major recognition at just 7 when she appeared in E.T. the Extra-Terrestrial. ",
+      "offset": 1689,
+      "end_char": 3420,
+      "text_tokens": 385,
+      "title_tokens": 3,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.47101929783821106
+    },
+    {
+      "docid": "36780",
+      "url": "http://www.filmquestfest.com/speakers/short-films-o-r-2022/",
+      "title": "SHORT FILMS ( O – R ) 2022",
+      "title_span": [
+        11,
+        37
+      ],
+      "document_sha256": "78b7ee49ce10958f0fee49cff18ccf4f025925348302cfba6bdb742701a08380",
+      "window_ref": "w_f18114f5610fcf82664e2e22",
+      "text": "DIRECTOR: Minsun Park & Teddy Tennebaum\n\nGENRE: Horror\n\nPREMIERE STATUS: Regional Premiere\n\nSCREENING DATE: Friday, Nov. 4th @ 8:00 PM\n\nDIRECTOR'S BIO: Minsun Park & Teddy Tenenbaum are a writing/directing team with combined experience in features and television, including work for Paramount, Sony, New Line, Warner Bothers, Universal, Fox, CBS, ABC, NBC and Hulu. In 2021, their short film Koreatown Ghost Story starring Margaret Cho won over 100 festival awards, including 45 wins for best short, 10 wins for best director, and various other awards from such festivals as HollyShorts, FilmQuest, PanicFest, the Los Angeles Film Festival, Portland Horror Film Festival, British Horror Film Festival, and Knoxville Horror Film Fest.\n\nThey were proud to be featured in Fantasia Fest, Screamfest NOLA, Bentonville Film Festival, The Telluride Horror Show, CAAMFest, Salem Horror Fest, and Fantasy FilmFest Germany among others. They sold Koreatown Ghost Story to Paramount where they are currently developing it as a feature film, as well as directing and writing an episode of the Hulu anthology series Bite Size Halloween. With Minsun's background as an Asian-American woman born in Korea and Teddy's experience as a White dude from Ohio, they cover a lot of bases.\n\nIMAGES FROM THE FILM:\n\nTRAILER: N/A\n\n_____________________\n\nRINGWORMS (USA)\n\nSYNOPSIS: After discovering her boyfriend's plan to propose on their weekend vacation, a young girl undergoes a crisis of commitment which attracts the attention of a sinister cult.\n\nRATINGS GUIDE: Strong Violence, Strong Language, Intense Imagery\n\nDIRECTOR: Will Lee\n",
+      "offset": 11510,
+      "end_char": 13123,
+      "text_tokens": 380,
+      "title_tokens": 13,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.4703409671783447
+    },
+    {
+      "docid": "72668",
+      "url": "https://en.wikipedia.org/wiki/List_of_film_director%E2%80%93composer_collaborations",
+      "title": "List of film director–composer collaborations - Wikipedia",
+      "title_span": [
+        11,
+        68
+      ],
+      "document_sha256": "341df83e8716a14ec58e6b02fb685a3b8578b4a739aa1998e8d6756c353ea91e",
+      "window_ref": "w_3ee0b6ceaee34e1ea7297770",
+      "text": "**Justice League (2001–2004) – Producer\n**Teen Titans (2003–2006) – Executive Producer\n**Justice League Unlimited (2004–2006) – Producer\n**Batman: The Killing Joke (2016) – Executive Producer\n**Batman and Harley Quinn (2017) – Executive Producer\n**Justice League vs. the Fatal Five (2019) – Executive Producer\n**DC Showcase: Sgt. Rock (2019) \n**DC Showcase: The Phantom Stranger (2020)\n*Shirley Walker\n**Batman: The Animated Series (1992–1995) – They collaborated on three episodes.\n**Batman: Mask of the Phantasm (1993) – Eric Radomski co-directed this film.\n**Superman: The Animated Series (1996–2000) – Produced by, Walker wrote the show's main theme and six episodes.\n**The New Batman Adventures (1997–1999) – Produced by, They contributed on fourteen episodes.\n**Batman Beyond (1999–2001) – Produced by, They contributed ten episodes.\n*Christopher Drake\n**Batman: Gotham Knight (2008) – Executive Producer, They collaborated on two segments.\n**Wonder Woman (2009) – Producer\n**Superman/Batman: Public Enemies (2009) – Executive Producer\n**Batman: Under the Red Hood (2010) – Producer\n**All-Star Superman (2011) – Producer\n**Green Lantern: Emerald Knights (2011) – Executive Producer\n**Batman: Year One (2011) – Executive Producer\n",
+      "offset": 282571,
+      "end_char": 283806,
+      "text_tokens": 383,
+      "title_tokens": 9,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.46842488646507263
+    }
+  ]
+}
+```

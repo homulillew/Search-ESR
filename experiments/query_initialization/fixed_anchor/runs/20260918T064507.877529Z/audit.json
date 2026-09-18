@@ -1,0 +1,957 @@
+{
+  "aggregates": {
+    "full": {
+      "attempts": 7,
+      "complete": 7,
+      "api_requests": 0,
+      "windows": 42,
+      "confirmed_document": 5,
+      "reference_visible": 4,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    "delete": {
+      "attempts": 7,
+      "complete": 7,
+      "api_requests": 0,
+      "windows": 42,
+      "confirmed_document": 3,
+      "reference_visible": 2,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    "model": {
+      "attempts": 21,
+      "complete": 21,
+      "api_requests": 22,
+      "windows": 126,
+      "confirmed_document": 14,
+      "reference_visible": 11,
+      "usage": {
+        "prompt_tokens": 13228,
+        "completion_tokens": 778,
+        "total_tokens": 14006
+      }
+    }
+  },
+  "sessions": [
+    {
+      "session": "qid_1072__delete__r1",
+      "qid": "1072",
+      "arm": "delete",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 0.7065217467024922,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "An author was born in 1964 and served as a lawmaker from 2004 to sometime before 2010.",
+      "windows": 6,
+      "window_tokens": 2321,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1072__full__r1",
+      "qid": "1072",
+      "arm": "full",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 2.8218106189742684,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "An author was born in 1964 and served as a lawmaker from 2004 to sometime before 2010. This author's research paper analyzed an international organization.",
+      "windows": 6,
+      "window_tokens": 1969,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 1,
+          "window_ref": "w_6a8cefecd60d7178cea6797d",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__model__r1",
+      "qid": "1072",
+      "arm": "model",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 6.296953440643847,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 586,
+        "completion_tokens": 36,
+        "total_tokens": 622
+      },
+      "query": "author born in 1964 served as lawmaker from 2004 to before 2010 research paper analysis of an international organization",
+      "windows": 6,
+      "window_tokens": 2304,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 1,
+          "window_ref": "w_6a8cefecd60d7178cea6797d",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__model__r2",
+      "qid": "1072",
+      "arm": "model",
+      "repeat": 2,
+      "status": "complete",
+      "elapsed_seconds": 1.6343025704845786,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 586,
+        "completion_tokens": 29,
+        "total_tokens": 615
+      },
+      "query": "author born 1964 lawmaker 2004 before 2010",
+      "windows": 6,
+      "window_tokens": 2104,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1072__model__r3",
+      "qid": "1072",
+      "arm": "model",
+      "repeat": 3,
+      "status": "complete",
+      "elapsed_seconds": 2.9564192099496722,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 586,
+        "completion_tokens": 26,
+        "total_tokens": 612
+      },
+      "query": "born 1964 lawmaker 2004 before 2010 analysis international organization",
+      "windows": 6,
+      "window_tokens": 2282,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 1,
+          "window_ref": "w_6a8cefecd60d7178cea6797d",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__delete__r1",
+      "qid": "1117",
+      "arm": "delete",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 0.8652798496186733,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "A literary reviewer received a B.A. in 1821 and an M.A. in 1824, and reviewed a journal from 1824 to 1832.",
+      "windows": 6,
+      "window_tokens": 2344,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 3,
+          "window_ref": "w_fcd4a305d27fd7f540f0f065",
+          "reference_visible": true,
+          "kind": "bridge"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__full__r1",
+      "qid": "1117",
+      "arm": "full",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 1.2827990287914872,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "A literary reviewer received a B.A. in 1821 and an M.A. in 1824, and reviewed a journal from 1824 to 1832. This reviewer is the sibling of the person who eloped with a Major.",
+      "windows": 6,
+      "window_tokens": 2302,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 1,
+          "window_ref": "w_09231edc94900e6ea17d0441",
+          "reference_visible": true,
+          "kind": "bridge"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__model__r1",
+      "qid": "1117",
+      "arm": "model",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 2.0792101873084903,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 645,
+        "completion_tokens": 41,
+        "total_tokens": 686
+      },
+      "query": "literary reviewer who did literary reviewing for the journal from 1824 to 1832 and whose sibling eloped with a Major in 1828",
+      "windows": 6,
+      "window_tokens": 2331,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 1,
+          "window_ref": "w_fcd4a305d27fd7f540f0f065",
+          "reference_visible": true,
+          "kind": "bridge"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__model__r2",
+      "qid": "1117",
+      "arm": "model",
+      "repeat": 2,
+      "status": "complete",
+      "elapsed_seconds": 3.0001654447987676,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 645,
+        "completion_tokens": 61,
+        "total_tokens": 706
+      },
+      "query": "literary reviewer who did literary reviewing for the journal from 1824 to 1832 and was the sibling of the person Major eloped with, receiving a B.A. in 1821 and an M.A. in 1824",
+      "windows": 6,
+      "window_tokens": 2307,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 2,
+          "window_ref": "w_09231edc94900e6ea17d0441",
+          "reference_visible": true,
+          "kind": "bridge"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__model__r3",
+      "qid": "1117",
+      "arm": "model",
+      "repeat": 3,
+      "status": "complete",
+      "elapsed_seconds": 4.307264822535217,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 645,
+        "completion_tokens": 57,
+        "total_tokens": 702
+      },
+      "query": "literary reviewer who did literary reviewing for the journal from 1824 to 1832, sibling of the person Major eloped with, received B.A. in 1821 and M.A. in 1824",
+      "windows": 6,
+      "window_tokens": 2356,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 2,
+          "window_ref": "w_fcd4a305d27fd7f540f0f065",
+          "reference_visible": true,
+          "kind": "bridge"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__delete__r1",
+      "qid": "551",
+      "arm": "delete",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 1.126662079244852,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "A professional football player saved a substitute's shot in a cup game in 2007.",
+      "windows": 6,
+      "window_tokens": 2268,
+      "confirmed_document": true,
+      "reference_visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "rank": 1,
+          "window_ref": "w_2661428040aa2bcd4ba9f062",
+          "reference_visible": false,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__full__r1",
+      "qid": "551",
+      "arm": "full",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 0.6810368103906512,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "A professional football player saved a substitute's shot in a cup game in 2007. The player had retired by 2020 after making over 300 career appearances.",
+      "windows": 6,
+      "window_tokens": 2284,
+      "confirmed_document": true,
+      "reference_visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "rank": 1,
+          "window_ref": "w_854300c217f89b56c8b2e972",
+          "reference_visible": false,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__model__r1",
+      "qid": "551",
+      "arm": "model",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 1.8700331822037697,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 653,
+        "completion_tokens": 30,
+        "total_tokens": 683
+      },
+      "query": "professional football player retired 2020 over 300 appearances 2007 cup game saving substitute shot",
+      "windows": 6,
+      "window_tokens": 2302,
+      "confirmed_document": true,
+      "reference_visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "rank": 2,
+          "window_ref": "w_2661428040aa2bcd4ba9f062",
+          "reference_visible": false,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__model__r2",
+      "qid": "551",
+      "arm": "model",
+      "repeat": 2,
+      "status": "complete",
+      "elapsed_seconds": 2.4095359006896615,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 653,
+        "completion_tokens": 39,
+        "total_tokens": 692
+      },
+      "query": "professional football player retired as of 2020 after making over 300 appearances career 2007 cup game match report noted saving substitute's shot",
+      "windows": 6,
+      "window_tokens": 2328,
+      "confirmed_document": true,
+      "reference_visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "rank": 1,
+          "window_ref": "w_fe6da8ae94a31c6735a98d23",
+          "reference_visible": false,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__model__r3",
+      "qid": "551",
+      "arm": "model",
+      "repeat": 3,
+      "status": "complete",
+      "elapsed_seconds": 1.6896960968151689,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 653,
+        "completion_tokens": 31,
+        "total_tokens": 684
+      },
+      "query": "professional football player retired 2020 over 300 appearances 2007 cup game saving substitute's shot",
+      "windows": 6,
+      "window_tokens": 2329,
+      "confirmed_document": true,
+      "reference_visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "rank": 1,
+          "window_ref": "w_854300c217f89b56c8b2e972",
+          "reference_visible": false,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_583__delete__r1",
+      "qid": "583",
+      "arm": "delete",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 0.7896979777142406,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "An artist worked under an alias, often featured circles in their work and was fascinated by human behavior, according to a 2012 entry.",
+      "windows": 6,
+      "window_tokens": 2348,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_583__full__r1",
+      "qid": "583",
+      "arm": "full",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 1.0753079690039158,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "An artist worked under an alias, often featured circles in their work and was fascinated by human behavior, according to a 2012 entry. The same artist faced tough challenges growing up.",
+      "windows": 6,
+      "window_tokens": 2303,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "996",
+          "rank": 1,
+          "window_ref": "w_20939c7dec195f8eb54230cd",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_583__model__r1",
+      "qid": "583",
+      "arm": "model",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 4.54232934769243,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 19,
+        "total_tokens": 598
+      },
+      "query": "artist alias faced tough challenges growing up features circles often fascinated by human behavior",
+      "windows": 6,
+      "window_tokens": 2337,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "996",
+          "rank": 1,
+          "window_ref": "w_20939c7dec195f8eb54230cd",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_583__model__r2",
+      "qid": "583",
+      "arm": "model",
+      "repeat": 2,
+      "status": "complete",
+      "elapsed_seconds": 2.6260631158947945,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 25,
+        "total_tokens": 604
+      },
+      "query": "artist works under an alias faced tough challenges growing up features circles in their work often fascinated by human behavior",
+      "windows": 6,
+      "window_tokens": 2212,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "996",
+          "rank": 1,
+          "window_ref": "w_20939c7dec195f8eb54230cd",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_583__model__r3",
+      "qid": "583",
+      "arm": "model",
+      "repeat": 3,
+      "status": "complete",
+      "elapsed_seconds": 8.003544700331986,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 579,
+        "completion_tokens": 22,
+        "total_tokens": 601
+      },
+      "query": "artist alias tough challenges growing up circles work fascinated by human behavior 2012",
+      "windows": 6,
+      "window_tokens": 2249,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "996",
+          "rank": 1,
+          "window_ref": "w_20939c7dec195f8eb54230cd",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_591__delete__r1",
+      "qid": "591",
+      "arm": "delete",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 0.4293883554637432,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "A university celebrated the 10th anniversary of its campus opening in another country between 2020 and 2023.",
+      "windows": 6,
+      "window_tokens": 1834,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "rank": 1,
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_591__full__r1",
+      "qid": "591",
+      "arm": "full",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 0.5554372817277908,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "A university celebrated the 10th anniversary of its campus opening in another country between 2020 and 2023. The university was established between 2000 and 2003.",
+      "windows": 6,
+      "window_tokens": 1923,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "rank": 2,
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_591__model__r1",
+      "qid": "591",
+      "arm": "model",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 1.753757500089705,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 599,
+        "completion_tokens": 40,
+        "total_tokens": 639
+      },
+      "query": "university established 2000-2003 celebrated 10th anniversary of campus opening in another country 2020-2023",
+      "windows": 6,
+      "window_tokens": 1968,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "rank": 2,
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_591__model__r2",
+      "qid": "591",
+      "arm": "model",
+      "repeat": 2,
+      "status": "complete",
+      "elapsed_seconds": 1.8674465958029032,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 599,
+        "completion_tokens": 42,
+        "total_tokens": 641
+      },
+      "query": "university established 2000-2003 celebrated 10th anniversary of campus opening in another country between 2020 and 2023",
+      "windows": 6,
+      "window_tokens": 1968,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "rank": 2,
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_591__model__r3",
+      "qid": "591",
+      "arm": "model",
+      "repeat": 3,
+      "status": "complete",
+      "elapsed_seconds": 1.8865310782566667,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 599,
+        "completion_tokens": 44,
+        "total_tokens": 643
+      },
+      "query": "university established between 2000 and 2003 celebrated 10th anniversary of campus opening in another country between 2020 and 2023",
+      "windows": 6,
+      "window_tokens": 1968,
+      "confirmed_document": true,
+      "reference_visible": true,
+      "hits": [
+        {
+          "docid": "37403",
+          "rank": 2,
+          "window_ref": "w_86378bad4d4470ed1af845ab",
+          "reference_visible": true,
+          "kind": "target_linked"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__delete__r1",
+      "qid": "645",
+      "arm": "delete",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 1.7540718587115407,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "A study first published online in 2020 analyzed eighteen compounds in the first line of defense of a Mediterranean species.",
+      "windows": 6,
+      "window_tokens": 2313,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_645__full__r1",
+      "qid": "645",
+      "arm": "full",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 1.8748920010402799,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "A study first published online in 2020 analyzed eighteen compounds in the first line of defense of a Mediterranean species. Farjon is an author of the first reference listed in the study's References section.",
+      "windows": 6,
+      "window_tokens": 2315,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_645__model__r1",
+      "qid": "645",
+      "arm": "model",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 2.9577298387885094,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 588,
+        "completion_tokens": 33,
+        "total_tokens": 621
+      },
+      "query": "study first published online in 2020 Farjon authors first reference analyzed profile of eighteen compounds in the first line of defense Mediterranean species",
+      "windows": 6,
+      "window_tokens": 2277,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_645__model__r2",
+      "qid": "645",
+      "arm": "model",
+      "repeat": 2,
+      "status": "complete",
+      "elapsed_seconds": 2.947104509919882,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 588,
+        "completion_tokens": 21,
+        "total_tokens": 609
+      },
+      "query": "Farjon 2020 study Mediterranean species eighteen compounds first line of defense",
+      "windows": 6,
+      "window_tokens": 2278,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_645__model__r3",
+      "qid": "645",
+      "arm": "model",
+      "repeat": 3,
+      "status": "complete",
+      "elapsed_seconds": 8.81623996887356,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 588,
+        "completion_tokens": 37,
+        "total_tokens": 625
+      },
+      "query": "study first published online in 2020 Farjon authors the first reference analyzed profile of eighteen compounds first line of defense species Mediterranean",
+      "windows": 6,
+      "window_tokens": 2276,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__delete__r1",
+      "qid": "786",
+      "arm": "delete",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 0.6979888500645757,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "A person directed a short film with their own nephew.",
+      "windows": 6,
+      "window_tokens": 2338,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__full__r1",
+      "qid": "786",
+      "arm": "full",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 0.6946534710004926,
+      "api_requests": 0,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "query": "A person directed a short film with their own nephew. The same person appeared in a 91-minute film directed by someone known for a series of English-produced dinosaur, sci-fi and adventure films.",
+      "windows": 6,
+      "window_tokens": 2328,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__model__r1",
+      "qid": "786",
+      "arm": "model",
+      "repeat": 1,
+      "status": "complete",
+      "elapsed_seconds": 8.258500759489834,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 551,
+        "completion_tokens": 32,
+        "total_tokens": 583
+      },
+      "query": "person appeared in 1 hour 31 minute film directed by creator of English dinosaur sci-fi adventure series and directed short film with nephew",
+      "windows": 6,
+      "window_tokens": 2313,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__model__r2",
+      "qid": "786",
+      "arm": "model",
+      "repeat": 2,
+      "status": "complete",
+      "elapsed_seconds": 1.7107754843309522,
+      "api_requests": 1,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 551,
+        "completion_tokens": 38,
+        "total_tokens": 589
+      },
+      "query": "actor appeared in 1 hour 31 minute film directed by creator of English-produced dinosaur sci-fi adventure films and directed short film with nephew",
+      "windows": 6,
+      "window_tokens": 2322,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__model__r3",
+      "qid": "786",
+      "arm": "model",
+      "repeat": 3,
+      "status": "complete",
+      "elapsed_seconds": 8.473633865825832,
+      "api_requests": 2,
+      "search_calls": 1,
+      "usage": {
+        "prompt_tokens": 1176,
+        "completion_tokens": 75,
+        "total_tokens": 1251
+      },
+      "query": "person born 1950s Indian immigrants described Perfectly formed appeared in film 1 hour 31 minutes directed by director of English dinosaur sci-fi adventure films directed short film with nephew",
+      "windows": 6,
+      "window_tokens": 2303,
+      "confirmed_document": false,
+      "reference_visible": false,
+      "hits": []
+    }
+  ],
+  "note": "Reference counts use pre-existing positive spans only. qid645 and qid786 have no positive annotations. Unmatched is unassessed. Controls once/question; model repeats clustered within question. No final accuracy or global recall."
+}

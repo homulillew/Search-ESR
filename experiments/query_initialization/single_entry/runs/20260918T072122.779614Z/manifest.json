@@ -1,0 +1,54 @@
+{
+  "version": "query_init_v004_entry",
+  "phase": "development",
+  "arms": [
+    "minimal",
+    "entry_v1"
+  ],
+  "model": "qwen3.7-flash",
+  "base_url": "https://llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "request_options": {
+    "extra_body": {
+      "enable_thinking": false
+    }
+  },
+  "max_tokens": 1536,
+  "timeout": 120,
+  "sdk_retries": 0,
+  "repair_limit": 1,
+  "repeats": 2,
+  "workers": 4,
+  "schedule_seed": 20260920,
+  "source_sha256": {
+    "experiments/query_initialization/single_entry/run.py": "a98578c1164f966ce38d9499a9651e632970af1810539d3dc5f37be33a669574",
+    "experiments/query_initialization/single_entry/audit.py": "ef98af22d536869f51ef6e74aeb6e473ea0ae9ed891752471aee476f30558cb8",
+    "experiments/query_initialization/single_entry/__init__.py": "444f15962513a3d02ec9b45e3629f4c5723e781badfcfb113ccdd12b1b56e035",
+    "experiments/query_initialization/single_entry/test_single_entry.py": "07ec998956dea558a5428e6dd5b81c1d3d30830b08b2b5c768dc16cde6a659c4",
+    "experiments/query_initialization/single_entry/source_units.py": "2420815746e5bddf5e6f8a7be74e5035825dfe37b5be820936c9640d48f1c43c",
+    "experiments/query_initialization/single_entry/recheck_references.py": "f11c12587df01d6ab7937556428f924a872f9a08527aef1f391201670e60d50b",
+    "experiments/query_initialization/single_entry/pipeline.py": "bb0b2e0c6ec647a7581de78268234f8fbf33063a5f3c647498fe1151b8ea8132",
+    "experiments/query_initialization/single_entry/initializer.py": "c541c38e5b48e68df779e00f5846f60730ed654ba0f620705e056693ca968c63",
+    "experiments/query_initialization/single_entry/check_handoff.py": "972c14705cd1db6e45bccf5c68d7d5cf80a7ffb512eae0a445d4e9082b1487a3",
+    "experiments/query_initialization/single_entry/MINIMAL_PROMPT.txt": "f9f33627b5c627da27eb0943bfa5f26ea69d27871a84b24da285b36a4c79387e",
+    "experiments/query_initialization/single_entry/ENTRY_PROMPT.txt": "7e6aa2cc5c1bfd06e7230d851f6322a8d0eef44bf6f45ad7d7c60b346d764284",
+    "experiments/query_initialization/single_entry/ENTRY_EVALUATION.md": "a7136a50d5b74a0f7b19ced6c2962eb947006c4553395ed82cac932abaaa4c63",
+    "experiments/query_initialization/initializer.py": "72168211358931efe7920a7af9590262e87269b996179d4fbefc415f8e329538",
+    "experiments/query_initialization/INITIALIZER_PROMPT.md": "f23c0594a7ad31846d73f0f7ec0771afb63e8bb0cfa5f0db5d017b8e0cfe5af2",
+    "experiments/run_rollout.py": "da5e6ac648b349c18f72b5065bebf726ee72546722fe9013a3b4ed5a5cb94368",
+    "llm_chat/agent.py": "abb241830af9d2e7531ff7dd103bc5731e956a8ef8ace54ece857b1d2efb3fa6",
+    "llm_chat/client.py": "f47d0d82dcf9b1e83d4ed4484a0fb8df9f9008d933f2b2f6552b5641092c8e66",
+    "llm_chat/observed_agent.py": "3382351f0b38b927cffb4d4a085777cc9d7dcec5b7f69c5a4313439f3bc44b5e",
+    "llm_chat/observations.py": "858bcb25ec347e21060d5dc9074cd09d64acecf0b987900475043407fe6cedde",
+    "llm_chat/raw_windows.py": "c20c0ec11bc2c9fbc3110bcf674d7603d7d0bbe4f6076bd63697c9e8af8beaed",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "llm_chat/window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2",
+    "BCPlus/scripts/search_bcplus.py": "5b13d6ad0faf6055887ff7e642e64f14737a4b51c7768953e9df02ddc87e40fd",
+    "BCPlus/indexes/bcplus-qwen3-8b/metadata.json": "a89540baa2736475f104bab5202f50e87a4bc63cf3b726070e31a074190d0c7f"
+  },
+  "dataset_sha256": "44b80cc9fcd9dd5a44aa09292c2165364b0c0e9df26c9cd6c11846165a0916b7",
+  "window": "baseline",
+  "k": 6,
+  "window_tokens": 400,
+  "max_total_window_tokens": 2400,
+  "note": "Known development questions, no holdout claims. Original question retained. No synthesis or rollout."
+}

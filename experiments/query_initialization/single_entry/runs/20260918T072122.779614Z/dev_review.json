@@ -1,0 +1,17 @@
+{
+  "proceed_holdout": true,
+  "promote_default": false,
+  "reason": "32/32 contract and raw checks passed. One definite added relation in entry_v1 qid786 r1; not repeated in r2. Multiple ambiguities retained separately. No repeatable known-positive retrieval regression. Proceed with frozen prompts to test transfer; this is not semantic acceptance.",
+  "semantic_review": "semantic_review.json",
+  "known_positive_counts": {
+    "minimal": {
+      "documents": 7,
+      "visible": 6
+    },
+    "entry_v1": {
+      "documents": 10,
+      "visible": 9
+    }
+  },
+  "holdout_plan": "20 locally unused qids, minimal vs entry_v1, two repeats each, no prompt changes"
+}

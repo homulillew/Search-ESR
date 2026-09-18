@@ -1,0 +1,262 @@
+{
+  "method": "Single assistant review of all 21 final queries against preselected original units and full question. Explicit errors, ambiguities, scope additions, and omissions are distinct; no single accuracy rate inferred.",
+  "control_limit": "Manual controls are diagnostic texts, not a formal semantic gold standard. qid591 places the celebration date at the sentence end, which can have attachment ambiguity. Controls were not changed after running.",
+  "queries": [
+    {
+      "session": "qid_1072__model__r1",
+      "qid": "1072",
+      "repeat": 1,
+      "query": "author born in 1964 served as lawmaker from 2004 to before 2010 research paper analysis of an international organization",
+      "notes": [
+        {
+          "kind": "relations_preserved",
+          "note": "保留出生年、任期时间边界及国际组织论文。"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__model__r2",
+      "qid": "1072",
+      "repeat": 2,
+      "query": "author born 1964 lawmaker 2004 before 2010",
+      "notes": [
+        {
+          "kind": "selected_information_omitted",
+          "note": "省略整条研究论文与国际组织主题，已核实来源未进入 top6。"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__model__r3",
+      "qid": "1072",
+      "repeat": 3,
+      "query": "born 1964 lawmaker 2004 before 2010 analysis international organization",
+      "notes": [
+        {
+          "kind": "relation_underspecified",
+          "note": "保留 international organization，但 analysis 未明确连接研究论文及作者；保留为压缩风险。"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__model__r1",
+      "qid": "1117",
+      "repeat": 1,
+      "query": "literary reviewer who did literary reviewing for the journal from 1824 to 1832 and whose sibling eloped with a Major in 1828",
+      "notes": [
+        {
+          "kind": "unsupported_date_attachment",
+          "note": "1828 是刊物购买/父亲去世年份，不是原题提供的私奔年份。"
+        },
+        {
+          "kind": "selected_information_omitted",
+          "note": "没有保留所选线索中的 B.A.1821 与 M.A.1824。"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__model__r2",
+      "qid": "1117",
+      "repeat": 2,
+      "query": "literary reviewer who did literary reviewing for the journal from 1824 to 1832 and was the sibling of the person Major eloped with, receiving a B.A. in 1821 and an M.A. in 1824",
+      "notes": [
+        {
+          "kind": "relation_preserved",
+          "note": "sibling of the person Major eloped with 保持了关系链；学位与评论任期保留。"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__model__r3",
+      "qid": "1117",
+      "repeat": 3,
+      "query": "literary reviewer who did literary reviewing for the journal from 1824 to 1832, sibling of the person Major eloped with, received B.A. in 1821 and M.A. in 1824",
+      "notes": [
+        {
+          "kind": "relation_preserved",
+          "note": "保留私奔对象的兄弟姐妹，而非 Major 的兄弟姐妹。"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__model__r1",
+      "qid": "551",
+      "repeat": 1,
+      "query": "professional football player retired 2020 over 300 appearances 2007 cup game saving substitute shot",
+      "notes": [
+        {
+          "kind": "time_ambiguity",
+          "note": "retired 2020 未保留截至/by 含义，不能当作忠实的时间界限。"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__model__r2",
+      "qid": "551",
+      "repeat": 2,
+      "query": "professional football player retired as of 2020 after making over 300 appearances career 2007 cup game match report noted saving substitute's shot",
+      "notes": [
+        {
+          "kind": "time_preserved",
+          "note": "retired as of 2020 保留时间上界；出场数与 2007 比赛线索保留。"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__model__r3",
+      "qid": "551",
+      "repeat": 3,
+      "query": "professional football player retired 2020 over 300 appearances 2007 cup game saving substitute's shot",
+      "notes": [
+        {
+          "kind": "time_ambiguity",
+          "note": "retired 2020 未保留截至/by 含义。"
+        }
+      ]
+    },
+    {
+      "session": "qid_583__model__r1",
+      "qid": "583",
+      "repeat": 1,
+      "query": "artist alias faced tough challenges growing up features circles often fascinated by human behavior",
+      "notes": [
+        {
+          "kind": "selected_information_omitted",
+          "note": "省略 2012 年，但保留童年经历；仍取得已核实来源。"
+        }
+      ]
+    },
+    {
+      "session": "qid_583__model__r2",
+      "qid": "583",
+      "repeat": 2,
+      "query": "artist works under an alias faced tough challenges growing up features circles in their work often fascinated by human behavior",
+      "notes": [
+        {
+          "kind": "selected_information_omitted",
+          "note": "省略 2012 年，但保留童年经历；仍取得已核实来源。"
+        }
+      ]
+    },
+    {
+      "session": "qid_583__model__r3",
+      "qid": "583",
+      "repeat": 3,
+      "query": "artist alias tough challenges growing up circles work fascinated by human behavior 2012",
+      "notes": [
+        {
+          "kind": "clues_preserved",
+          "note": "保留艺术家别名、童年、圆形、人类行为、2012 年。"
+        }
+      ]
+    },
+    {
+      "session": "qid_591__model__r1",
+      "qid": "591",
+      "repeat": 1,
+      "query": "university established 2000-2003 celebrated 10th anniversary of campus opening in another country 2020-2023",
+      "notes": [
+        {
+          "kind": "date_attachment_risk",
+          "note": "时间区间数字都保留，但尾置 2020-2023 的修饰范围较简略；完整控制查询也存在日期尾置风险。"
+        }
+      ]
+    },
+    {
+      "session": "qid_591__model__r2",
+      "qid": "591",
+      "repeat": 2,
+      "query": "university established 2000-2003 celebrated 10th anniversary of campus opening in another country between 2020 and 2023",
+      "notes": [
+        {
+          "kind": "date_attachment_risk",
+          "note": "两个区间保留，庆祝年份的尾置仍可能产生附着歧义。"
+        }
+      ]
+    },
+    {
+      "session": "qid_591__model__r3",
+      "qid": "591",
+      "repeat": 3,
+      "query": "university established between 2000 and 2003 celebrated 10th anniversary of campus opening in another country between 2020 and 2023",
+      "notes": [
+        {
+          "kind": "date_attachment_risk",
+          "note": "两个区间保留，庆祝年份的尾置仍可能产生附着歧义。"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__model__r1",
+      "qid": "645",
+      "repeat": 1,
+      "query": "study first published online in 2020 Farjon authors first reference analyzed profile of eighteen compounds in the first line of defense Mediterranean species",
+      "notes": [
+        {
+          "kind": "relation_preserved",
+          "note": "Farjon authors first reference 保留参考文献归属。"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__model__r2",
+      "qid": "645",
+      "repeat": 2,
+      "query": "Farjon 2020 study Mediterranean species eighteen compounds first line of defense",
+      "notes": [
+        {
+          "kind": "relation_underspecified",
+          "note": "Farjon 2020 study 省略 first reference，容易被读作研究作者；这不是明确写出 by Farjon 的确定断言。"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__model__r3",
+      "qid": "645",
+      "repeat": 3,
+      "query": "study first published online in 2020 Farjon authors the first reference analyzed profile of eighteen compounds first line of defense species Mediterranean",
+      "notes": [
+        {
+          "kind": "relation_preserved",
+          "note": "Farjon authors the first reference 保留归属。"
+        }
+      ]
+    },
+    {
+      "session": "qid_786__model__r1",
+      "qid": "786",
+      "repeat": 1,
+      "query": "person appeared in 1 hour 31 minute film directed by creator of English dinosaur sci-fi adventure series and directed short film with nephew",
+      "notes": [
+        {
+          "kind": "attachment_risk",
+          "note": "and directed short film with nephew 的主体没有重述，存在附着歧义；不标成确定人物接错。"
+        }
+      ]
+    },
+    {
+      "session": "qid_786__model__r2",
+      "qid": "786",
+      "repeat": 2,
+      "query": "actor appeared in 1 hour 31 minute film directed by creator of English-produced dinosaur sci-fi adventure films and directed short film with nephew",
+      "notes": [
+        {
+          "kind": "attachment_risk",
+          "note": "长片导演从句后接 and directed，仍有主体附着风险；不标成确定接错。"
+        }
+      ]
+    },
+    {
+      "session": "qid_786__model__r3",
+      "qid": "786",
+      "repeat": 3,
+      "query": "person born 1950s Indian immigrants described Perfectly formed appeared in film 1 hour 31 minutes directed by director of English dinosaur sci-fi adventure films directed short film with nephew",
+      "notes": [
+        {
+          "kind": "fixed_scope_violation",
+          "note": "格式修复后加入未选 q2/q3 的出生年代、移民背景和 Perfectly formed；信息存在于整题但超出固定线索。"
+        }
+      ]
+    }
+  ]
+}

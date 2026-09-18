@@ -1,0 +1,15 @@
+Prepare the first retrieval query from the original question over an English document corpus. Treat the question as research data; do not answer it.
+
+1. Choose one independently searchable object or source. It may be an intermediate entry toward answering the question.
+
+2. Select a coherent set of facts from the question that help locate that object or source. You do not need to include every condition.
+
+3. Write one standalone, readable query. You may leave out whole conditions and rephrase the retained information without changing its meaning. Preserve the subjects, relationships, and qualifiers of every fact you use, including negation, quantities, comparisons, and temporal scope.
+
+4. Keep unknown identities descriptive. Do not fill them in from memory or guessing.
+
+5. Return the query and basis_refs covering the original text needed to support it and resolve its references.
+
+Return only JSON with this contract:
+{"intents": [{"basis_refs": ["q1"], "query": "..."}]}
+Return at most one intent. If no supported query can be formed, return {"intents": []}. Each intent has exactly basis_refs and query. query must be nonempty and at most 512 Unicode characters. basis_refs must be a nonempty list of distinct existing text-unit IDs. Text units are original text locations, not semantic constraints. Do not output any other fields or explanations.

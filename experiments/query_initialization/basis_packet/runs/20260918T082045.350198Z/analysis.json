@@ -1,0 +1,2717 @@
+{
+  "execution": {
+    "verbatim": {
+      "attempts": 6,
+      "status_counts": {
+        "complete": 6
+      },
+      "complete": 6,
+      "initial_valid": 6,
+      "initial_invalid": 0,
+      "repairs": 0,
+      "api_requests": 0,
+      "search_calls": 6,
+      "windows": 36,
+      "confirmed_document": 4,
+      "reference_visible": 3,
+      "selected_basis_document": 4,
+      "selected_basis_visible": 3,
+      "elapsed_seconds_sum": 14.171987297944725,
+      "query_tokens_sum": 593,
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    "conservative": {
+      "attempts": 18,
+      "status_counts": {
+        "complete": 12,
+        "abstained": 6
+      },
+      "complete": 12,
+      "initial_valid": 18,
+      "initial_invalid": 0,
+      "repairs": 0,
+      "api_requests": 18,
+      "search_calls": 12,
+      "windows": 72,
+      "confirmed_document": 9,
+      "reference_visible": 7,
+      "selected_basis_document": 9,
+      "selected_basis_visible": 7,
+      "elapsed_seconds_sum": 45.179952825419605,
+      "query_tokens_sum": 958,
+      "usage": {
+        "prompt_tokens": 5490,
+        "completion_tokens": 813,
+        "total_tokens": 6303
+      }
+    },
+    "expression_packet": {
+      "attempts": 18,
+      "status_counts": {
+        "complete": 15,
+        "abstained": 3
+      },
+      "complete": 15,
+      "initial_valid": 18,
+      "initial_invalid": 0,
+      "repairs": 0,
+      "api_requests": 18,
+      "search_calls": 15,
+      "windows": 90,
+      "confirmed_document": 11,
+      "reference_visible": 6,
+      "selected_basis_document": 11,
+      "selected_basis_visible": 6,
+      "elapsed_seconds_sum": 64.55941182747483,
+      "query_tokens_sum": 819,
+      "usage": {
+        "prompt_tokens": 9198,
+        "completion_tokens": 609,
+        "total_tokens": 9807
+      }
+    },
+    "expression_full_context": {
+      "attempts": 18,
+      "status_counts": {
+        "complete": 15,
+        "abstained": 3
+      },
+      "complete": 15,
+      "initial_valid": 18,
+      "initial_invalid": 0,
+      "repairs": 0,
+      "api_requests": 18,
+      "search_calls": 15,
+      "windows": 90,
+      "confirmed_document": 9,
+      "reference_visible": 7,
+      "selected_basis_document": 9,
+      "selected_basis_visible": 7,
+      "elapsed_seconds_sum": 50.06011612061411,
+      "query_tokens_sum": 897,
+      "usage": {
+        "prompt_tokens": 11991,
+        "completion_tokens": 687,
+        "total_tokens": 12678
+      }
+    }
+  },
+  "semantic": {
+    "verbatim": {
+      "attempts": 6,
+      "evaluable": 6,
+      "abstained": 0,
+      "explicit_mutation": 0,
+      "strict_explicit_mutation": 0,
+      "ambiguity": 0,
+      "ambiguity_or_mutation": 0,
+      "outside_packet_question_fact": 0,
+      "outside_actual_input": 0,
+      "unsupported_fact": 0,
+      "condition_omitted": 0
+    },
+    "conservative": {
+      "attempts": 18,
+      "evaluable": 12,
+      "abstained": 6,
+      "explicit_mutation": 0,
+      "strict_explicit_mutation": 0,
+      "ambiguity": 5,
+      "ambiguity_or_mutation": 5,
+      "outside_packet_question_fact": 0,
+      "outside_actual_input": 0,
+      "unsupported_fact": 0,
+      "condition_omitted": 4
+    },
+    "expression_packet": {
+      "attempts": 18,
+      "evaluable": 15,
+      "abstained": 3,
+      "explicit_mutation": 2,
+      "strict_explicit_mutation": 1,
+      "ambiguity": 10,
+      "ambiguity_or_mutation": 10,
+      "outside_packet_question_fact": 0,
+      "outside_actual_input": 0,
+      "unsupported_fact": 0,
+      "condition_omitted": 10
+    },
+    "expression_full_context": {
+      "attempts": 18,
+      "evaluable": 15,
+      "abstained": 3,
+      "explicit_mutation": 0,
+      "strict_explicit_mutation": 0,
+      "ambiguity": 15,
+      "ambiguity_or_mutation": 15,
+      "outside_packet_question_fact": 10,
+      "outside_actual_input": 0,
+      "unsupported_fact": 0,
+      "condition_omitted": 14
+    }
+  },
+  "semantic_per_qid": {
+    "1117": {
+      "verbatim": {
+        "attempts": 1,
+        "evaluable": 1,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "conservative": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 1
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 2,
+        "strict_explicit_mutation": 1,
+        "ambiguity": 3,
+        "ambiguity_or_mutation": 3,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 3
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 3,
+        "ambiguity_or_mutation": 3,
+        "outside_packet_question_fact": 3,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 3
+      }
+    },
+    "551": {
+      "verbatim": {
+        "attempts": 1,
+        "evaluable": 1,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "conservative": {
+        "attempts": 3,
+        "evaluable": 0,
+        "abstained": 3,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "evaluable": 2,
+        "abstained": 1,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 2,
+        "ambiguity_or_mutation": 2,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 2
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "evaluable": 2,
+        "abstained": 1,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 2,
+        "ambiguity_or_mutation": 2,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 2
+      }
+    },
+    "645": {
+      "verbatim": {
+        "attempts": 1,
+        "evaluable": 1,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "conservative": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 3,
+        "ambiguity_or_mutation": 3,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 3
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 2,
+        "ambiguity_or_mutation": 2,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 3
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 3,
+        "ambiguity_or_mutation": 3,
+        "outside_packet_question_fact": 3,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 3
+      }
+    },
+    "786": {
+      "verbatim": {
+        "attempts": 1,
+        "evaluable": 1,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "conservative": {
+        "attempts": 3,
+        "evaluable": 0,
+        "abstained": 3,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "evaluable": 1,
+        "abstained": 2,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 1,
+        "ambiguity_or_mutation": 1,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 1
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 3,
+        "ambiguity_or_mutation": 3,
+        "outside_packet_question_fact": 3,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 3
+      }
+    },
+    "1072": {
+      "verbatim": {
+        "attempts": 1,
+        "evaluable": 1,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "conservative": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 2,
+        "ambiguity_or_mutation": 2,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 2,
+        "ambiguity_or_mutation": 2,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 1
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "evaluable": 1,
+        "abstained": 2,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 1,
+        "ambiguity_or_mutation": 1,
+        "outside_packet_question_fact": 1,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      }
+    },
+    "1172": {
+      "verbatim": {
+        "attempts": 1,
+        "evaluable": 1,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "conservative": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 0,
+        "ambiguity_or_mutation": 0,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 0
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "evaluable": 3,
+        "abstained": 0,
+        "explicit_mutation": 0,
+        "strict_explicit_mutation": 0,
+        "ambiguity": 3,
+        "ambiguity_or_mutation": 3,
+        "outside_packet_question_fact": 0,
+        "outside_actual_input": 0,
+        "unsupported_fact": 0,
+        "condition_omitted": 3
+      }
+    }
+  },
+  "semantic_rows": [
+    {
+      "card_id": "0dc9ece3b831",
+      "qid": "1117",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        "eloped sibling B.A. 1821 M.A. 1824 没有表达私奔对象与学位获得者之间的 sibling 关系，不能明确判断 sibling 修饰谁。"
+      ],
+      "outside_packet_question_facts": [
+        "posthumous republished 1853 articles single title 来自未选 q4。"
+      ],
+      "unsupported_facts": [],
+      "omissions": [
+        "刊物存在于1800s/1900s",
+        "向多个刊物供稿"
+      ],
+      "notes": "关键词并置按歧义记录，不把1828自动附到私奔事件。",
+      "session": "qid_1117__expression_full_context__r3",
+      "arm": "expression_full_context",
+      "repeat": 3
+    },
+    {
+      "card_id": "1bff6ca51ae0",
+      "qid": "786",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": "合法null：无query可审阅，不计为忠实表达成功。",
+      "session": "qid_786__expression_packet__r3",
+      "arm": "expression_packet",
+      "repeat": 3
+    },
+    {
+      "card_id": "2731bede208a",
+      "qid": "1117",
+      "query_evaluable": true,
+      "explicit_mutations": [
+        "Major eloped with sibling B.A. 1821 M.A. 1824 将私奔直接连接到被学位描述的 sibling，原文是私奔对象的 sibling 获得学位。"
+      ],
+      "ambiguities": [
+        "literary reviewing 的主体缺少明确连接"
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "向多个刊物供稿"
+      ],
+      "notes": "",
+      "session": "qid_1117__expression_packet__r1",
+      "arm": "expression_packet",
+      "repeat": 1
+    },
+    {
+      "card_id": "2bb70cd3b109",
+      "qid": "1117",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        "eloped with person sibling received 缺少 whose，虽可还原正确链条，但私奔对象与 sibling 的关系不再独立明确。"
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "向多个刊物供稿"
+      ],
+      "notes": "",
+      "session": "qid_1117__expression_packet__r2",
+      "arm": "expression_packet",
+      "repeat": 2
+    },
+    {
+      "card_id": "2c2c0844dcec",
+      "qid": "786",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": "合法null：无query可审阅，不计为忠实表达成功。",
+      "session": "qid_786__conservative__r2",
+      "arm": "conservative",
+      "repeat": 2
+    },
+    {
+      "card_id": "2e99a279f595",
+      "qid": "1117",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        "in-law ... sibling B.A. 1821 M.A. 1824 并置，缺少明确的私奔对象与学位获得者关系。"
+      ],
+      "outside_packet_question_facts": [
+        "posthumous publication 1853 来自未选 q4。"
+      ],
+      "unsupported_facts": [],
+      "omissions": [
+        "刊物存在于1800s/1900s",
+        "Major父亲于1828年去世",
+        "Major私奔关系",
+        "向多个刊物供稿"
+      ],
+      "notes": "",
+      "session": "qid_1117__expression_full_context__r2",
+      "arm": "expression_full_context",
+      "repeat": 2
+    },
+    {
+      "card_id": "2f2d9bd58642",
+      "qid": "786",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": "合法null：无query可审阅，不计为忠实表达成功。",
+      "session": "qid_786__conservative__r1",
+      "arm": "conservative",
+      "repeat": 1
+    },
+    {
+      "card_id": "300179f7bddb",
+      "qid": "786",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        "and directed a short film with their nephew 位于长片导演从句之后，短片导演与侄子的主体存在附着歧义。"
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "as of Dec 2023",
+        "恐龙科幻冒险作品是系列的关系"
+      ],
+      "notes": "",
+      "session": "qid_786__expression_packet__r2",
+      "arm": "expression_packet",
+      "repeat": 2
+    },
+    {
+      "card_id": "3a0bc0d780bb",
+      "qid": "1117",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": "保留各事件年份、私奔对象之sibling与评论者关系。",
+      "session": "qid_1117__conservative__r1",
+      "arm": "conservative",
+      "repeat": 1
+    },
+    {
+      "card_id": "3bb845a359ce",
+      "qid": "1117",
+      "query_evaluable": true,
+      "explicit_mutations": [
+        "eloped with sibling who received B.A. in 1821 M.A. in 1824 直接将学位获得者设为私奔对象，原文是该对象的 sibling。"
+      ],
+      "ambiguities": [
+        "whose father died ... eloped 的语法还可造成私奔主体附着风险"
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "向多个刊物供稿"
+      ],
+      "notes": "",
+      "session": "qid_1117__expression_packet__r3",
+      "arm": "expression_packet",
+      "repeat": 3
+    },
+    {
+      "card_id": "3e6f99602cf8",
+      "qid": "786",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": "合法null：无query可审阅，不计为忠实表达成功。",
+      "session": "qid_786__conservative__r3",
+      "arm": "conservative",
+      "repeat": 3
+    },
+    {
+      "card_id": "5aecc498b130",
+      "qid": "1117",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": "原文片段保留，无生成式关系改写。",
+      "session": "qid_1117__verbatim__r1",
+      "arm": "verbatim",
+      "repeat": 1
+    },
+    {
+      "card_id": "62ffc4286250",
+      "qid": "1117",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "Major与某人私奔的具体关系",
+        "向多个刊物供稿"
+      ],
+      "notes": "选择刊物作为搜索对象；保留原题明确称谓sibling-in-law及其学位，不将整体省略记为关系改变。",
+      "session": "qid_1117__conservative__r2",
+      "arm": "conservative",
+      "repeat": 2
+    },
+    {
+      "card_id": "78fdbd566b18",
+      "qid": "1117",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        "in-law ... sibling B.A. 1821 M.A. 1824 并置，没有明确谁是谁的sibling。"
+      ],
+      "outside_packet_question_facts": [
+        "posthumous publication 1853 two articles republished single title 来自未选q4。"
+      ],
+      "unsupported_facts": [],
+      "omissions": [
+        "刊物存在于1800s/1900s",
+        "Major父亲于1828年去世",
+        "Major私奔关系",
+        "向多个刊物供稿"
+      ],
+      "notes": "",
+      "session": "qid_1117__expression_full_context__r1",
+      "arm": "expression_full_context",
+      "repeat": 1
+    },
+    {
+      "card_id": "80652d6ac5d0",
+      "qid": "1117",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": "保留原题各事件和主体关系。",
+      "session": "qid_1117__conservative__r3",
+      "arm": "conservative",
+      "repeat": 3
+    },
+    {
+      "card_id": "8087bfed99e9",
+      "qid": "786",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        "films directed a short film with their nephew 缺少独立主语/分句，可能将短片导演附着到长片导演。"
+      ],
+      "outside_packet_question_facts": [
+        "born in the 1950s to first- and second-generation Indian immigrants 来自q2",
+        "Perfectly formed 来自q3"
+      ],
+      "unsupported_facts": [],
+      "omissions": [
+        "as of Dec 2023"
+      ],
+      "notes": "",
+      "session": "qid_786__expression_full_context__r3",
+      "arm": "expression_full_context",
+      "repeat": 3
+    },
+    {
+      "card_id": "b679c6568372",
+      "qid": "786",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        "films directed a short film with their nephew 缺少独立主语/分句，可能将短片导演附着到长片导演。"
+      ],
+      "outside_packet_question_facts": [
+        "born in the 1950s to first- and second-generation Indian immigrants 来自q2",
+        "Perfectly formed 来自q3"
+      ],
+      "unsupported_facts": [],
+      "omissions": [
+        "as of Dec 2023"
+      ],
+      "notes": "",
+      "session": "qid_786__expression_full_context__r2",
+      "arm": "expression_full_context",
+      "repeat": 2
+    },
+    {
+      "card_id": "bbbdcd594432",
+      "qid": "786",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        "films directed a short film with their nephew 缺少独立主语/分句，可能将短片导演附着到长片导演。"
+      ],
+      "outside_packet_question_facts": [
+        "born in 1950s to first- and second-generation Indian immigrants 来自q2",
+        "Perfectly formed 来自q3"
+      ],
+      "unsupported_facts": [],
+      "omissions": [
+        "as of Dec 2023",
+        "described themselves 的自述归属被弱化为described as"
+      ],
+      "notes": "",
+      "session": "qid_786__expression_full_context__r1",
+      "arm": "expression_full_context",
+      "repeat": 1
+    },
+    {
+      "card_id": "debd23d20203",
+      "qid": "786",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": "原文列表保留人物主体与两部作品区别；不因本身措辞复杂而认定新增错误。",
+      "session": "qid_786__verbatim__r1",
+      "arm": "verbatim",
+      "repeat": 1
+    },
+    {
+      "card_id": "e09033be42cf",
+      "qid": "786",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": "合法null：无query可审阅，不计为忠实表达成功。",
+      "session": "qid_786__expression_packet__r1",
+      "arm": "expression_packet",
+      "repeat": 1
+    },
+    {
+      "card_id": "12db7ac1cd18",
+      "qid": "551",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "not_evaluable: query=null; abstention is not a semantic-fidelity pass. The supplied packet contains a searchable player description; usability failure is separate from semantic accuracy."
+      ],
+      "session": "qid_551__expression_packet__r2",
+      "arm": "expression_packet",
+      "repeat": 2
+    },
+    {
+      "card_id": "1f2c99781b60",
+      "qid": "551",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "not_evaluable: query=null; abstention is not a semantic-fidelity pass. The supplied packet contains a searchable player description; usability failure is separate from semantic accuracy."
+      ],
+      "session": "qid_551__conservative__r1",
+      "arm": "conservative",
+      "repeat": 1
+    },
+    {
+      "card_id": "3e6231bd453a",
+      "qid": "645",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "Farjon 2020 study",
+          "source_quote": "A study first published online in 2020, in which Farjon authors the first reference listed in the \"References\" section",
+          "reason": "Farjon is the author of the first cited reference, not stated to be author of the 2020 study. The query removes this relation and may be read as Farjon-authored study; it does not explicitly say by/authored by, so this is ambiguous rather than a definite false attribution."
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "First-reference authorship and References-section position are omitted while Farjon is retained.",
+        "First-published-online qualifier for the retained 2020 date is omitted.",
+        "For the first time novelty qualifier of compound profiling is omitted.",
+        "The count of eighteen compounds is omitted.",
+        "A specific part of this species as the source of evolution-related compounds is omitted."
+      ],
+      "notes": [
+        "No named species, compound or other guessed identity appears. No explicit false author relation is asserted; loss of the first-reference relation is scored separately from definite mutation."
+      ],
+      "session": "qid_645__expression_packet__r1",
+      "arm": "expression_packet",
+      "repeat": 1
+    },
+    {
+      "card_id": "55c426ece086",
+      "qid": "551",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "retired 2020",
+          "source_quote": "was retired from playing as of 2020",
+          "reason": "The upper-bound marker is missing. Keyword form permits an exact-retirement-year reading, but does not explicitly assert retired in 2020; classify as ambiguity, not definite contradiction."
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "The explicit retirement upper bound as of is omitted while its year remains; see ambiguity.",
+        "The source relation noted in a match report is omitted, although the save event itself is retained.",
+        "The 2007 date of the cup-game save is omitted; the 2011 substitution date remains."
+      ],
+      "notes": [
+        "No unknown player identity, new club or other unselected original-question fact is introduced. Query keeps the player/save/substitution roles at keyword level."
+      ],
+      "session": "qid_551__expression_packet__r1",
+      "arm": "expression_packet",
+      "repeat": 1
+    },
+    {
+      "card_id": "5a51ea5d57f2",
+      "qid": "551",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "not_evaluable: query=null; abstention is not a semantic-fidelity pass. The supplied packet contains a searchable player description; usability failure is separate from semantic accuracy."
+      ],
+      "session": "qid_551__conservative__r2",
+      "arm": "conservative",
+      "repeat": 2
+    },
+    {
+      "card_id": "6e0febf4c781",
+      "qid": "645",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "The first-time novelty qualifier is omitted.",
+        "A specific part of the species as source of evolution-related compounds is omitted."
+      ],
+      "notes": [
+        "Farjon first reference retains the critical attribution cue; study published online 2020 preserves date attachment. Keyword compression is not by itself counted as a false relationship."
+      ],
+      "session": "qid_645__expression_packet__r3",
+      "arm": "expression_packet",
+      "repeat": 3
+    },
+    {
+      "card_id": "708908d444cc",
+      "qid": "645",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "Farjon 2020 study",
+          "source_quote": "A study first published online in 2020, in which Farjon authors the first reference listed in the \"References\" section",
+          "reason": "Farjon is the author of the first cited reference, not stated to be author of the 2020 study. The query removes this relation and may be read as Farjon-authored study; it does not explicitly say by/authored by, so this is ambiguous rather than a definite false attribution."
+        }
+      ],
+      "outside_packet_question_facts": [
+        {
+          "query_quote": "most dominant compound Results and Discussion",
+          "source_quote": "Which compound was found to be the most dominant in the \"Results and Discussion\" section, as mentioned in said study?",
+          "reason": "This search objective/section comes from unselected q5, not from q1–q4 packet. Actual accessibility depends on arm and must be assessed after unblinding."
+        }
+      ],
+      "unsupported_facts": [],
+      "omissions": [
+        "First-reference authorship and References-section position are omitted while Farjon is retained.",
+        "First-published-online qualifier for the retained 2020 date is omitted.",
+        "For the first time novelty qualifier of compound profiling is omitted.",
+        "The compound use for determining evolutionary relationships is omitted.",
+        "Northern-Hemisphere temperate genus background is omitted."
+      ],
+      "notes": [
+        "No named species, compound or other guessed identity appears. No explicit false author relation is asserted; loss of the first-reference relation is scored separately from definite mutation."
+      ],
+      "session": "qid_645__expression_full_context__r2",
+      "arm": "expression_full_context",
+      "repeat": 2
+    },
+    {
+      "card_id": "73bd759e5942",
+      "qid": "645",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "Farjon 2020 study",
+          "source_quote": "A study first published online in 2020, in which Farjon authors the first reference listed in the \"References\" section",
+          "reason": "Farjon is the author of the first cited reference, not stated to be author of the 2020 study. The query removes this relation and may be read as Farjon-authored study; it does not explicitly say by/authored by, so this is ambiguous rather than a definite false attribution."
+        }
+      ],
+      "outside_packet_question_facts": [
+        {
+          "query_quote": "most dominant compound Results and Discussion",
+          "source_quote": "Which compound was found to be the most dominant in the \"Results and Discussion\" section, as mentioned in said study?",
+          "reason": "This search objective/section comes from unselected q5, not from q1–q4 packet. Actual accessibility depends on arm and must be assessed after unblinding."
+        }
+      ],
+      "unsupported_facts": [],
+      "omissions": [
+        "First-reference authorship and References-section position are omitted while Farjon is retained.",
+        "First-published-online qualifier for the retained 2020 date is omitted.",
+        "For the first time novelty qualifier of compound profiling is omitted.",
+        "The compound use for determining evolutionary relationships is omitted."
+      ],
+      "notes": [
+        "No named species, compound or other guessed identity appears. No explicit false author relation is asserted; loss of the first-reference relation is scored separately from definite mutation."
+      ],
+      "session": "qid_645__expression_full_context__r1",
+      "arm": "expression_full_context",
+      "repeat": 1
+    },
+    {
+      "card_id": "812ed95f99d3",
+      "qid": "645",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "Selected source text retained verbatim apart from whitespace; no new identity or relation introduced. Original generic references remain, but the genus/species antecedents are available in packet."
+      ],
+      "session": "qid_645__verbatim__r1",
+      "arm": "verbatim",
+      "repeat": 1
+    },
+    {
+      "card_id": "81f3d20e28a3",
+      "qid": "551",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "Selected source text retained with paragraph boundaries; retirement bound, 2007 save and 2011 substitution remain intact. This reviews the supplied packet only, not completeness of the original question."
+      ],
+      "session": "qid_551__verbatim__r1",
+      "arm": "verbatim",
+      "repeat": 1
+    },
+    {
+      "card_id": "8a82e6967c8a",
+      "qid": "645",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "analyzed the profile ... using several compounds ... to determine evolutionary relationships",
+          "source_quote": "Several compounds ... have been used to determine evolutionary relationships. A study ... analyzed the profile of eighteen compounds",
+          "reason": "The joined using clause can make determining evolutionary relationships the specific 2020 study’s action or purpose. Original q3 describes compound use generally; q4 only explicitly states profiling. Because the intended linkage is not fully determined in either phrasing, flag scope ambiguity, not a definite unsupported study purpose."
+        },
+        {
+          "query_quote": "a species within a genus found in the Northern Hemisphere, largely in temperate latitudes, and specifically found in the Mediterranean",
+          "source_quote": "A genus can be found in the Northern Hemisphere ... A species within this genus is found in the Mediterranean.",
+          "reason": "The last location phrase can attach to genus or species in the merged sentence. Original makes the species location explicit. Genus presence in Mediterranean follows from its species being there; this is weakened/ambiguous target attachment, not a proven false genus location."
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "For the first time novelty qualifier of profiling is omitted."
+      ],
+      "notes": [
+        "Farjon authors the first reference and first published online in 2020 are preserved exactly. No packet-external question fact is used."
+      ],
+      "session": "qid_645__conservative__r3",
+      "arm": "conservative",
+      "repeat": 3
+    },
+    {
+      "card_id": "8c9e472abf10",
+      "qid": "645",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "Farjon 2020 study",
+          "source_quote": "A study first published online in 2020, in which Farjon authors the first reference listed in the \"References\" section",
+          "reason": "Farjon is the author of the first cited reference, not stated to be author of the 2020 study. The query removes this relation and may be read as Farjon-authored study; it does not explicitly say by/authored by, so this is ambiguous rather than a definite false attribution."
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "First-reference authorship and References-section position are omitted while Farjon is retained.",
+        "First-published-online qualifier for the retained 2020 date is omitted.",
+        "For the first time novelty qualifier of compound profiling is omitted.",
+        "A specific part of this species as the source of evolution-related compounds is omitted."
+      ],
+      "notes": [
+        "No named species, compound or other guessed identity appears. No explicit false author relation is asserted; loss of the first-reference relation is scored separately from definite mutation."
+      ],
+      "session": "qid_645__expression_packet__r2",
+      "arm": "expression_packet",
+      "repeat": 2
+    },
+    {
+      "card_id": "9bbcdf48f4db",
+      "qid": "551",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "retired 2020",
+          "source_quote": "was retired from playing as of 2020",
+          "reason": "The upper-bound marker is missing. Keyword form permits an exact-retirement-year reading, but does not explicitly assert retired in 2020; classify as ambiguity, not definite contradiction."
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "The explicit retirement upper bound as of is omitted while its year remains; see ambiguity.",
+        "The source relation noted in a match report is omitted, although the save event itself is retained."
+      ],
+      "notes": [
+        "No unknown player identity, new club or other unselected original-question fact is introduced. Query keeps the player/save/substitution roles at keyword level."
+      ],
+      "session": "qid_551__expression_full_context__r3",
+      "arm": "expression_full_context",
+      "repeat": 3
+    },
+    {
+      "card_id": "aa9e8e4bd679",
+      "qid": "551",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "retired 2020",
+          "source_quote": "was retired from playing as of 2020",
+          "reason": "The upper-bound marker is missing. Keyword form permits an exact-retirement-year reading, but does not explicitly assert retired in 2020; classify as ambiguity, not definite contradiction."
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "The explicit retirement upper bound as of is omitted while its year remains; see ambiguity.",
+        "The source relation noted in a match report is omitted, although the save event itself is retained.",
+        "The 2007 date of the cup-game save is omitted; the 2011 substitution date remains."
+      ],
+      "notes": [
+        "No unknown player identity, new club or other unselected original-question fact is introduced. Query keeps the player/save/substitution roles at keyword level."
+      ],
+      "session": "qid_551__expression_full_context__r2",
+      "arm": "expression_full_context",
+      "repeat": 2
+    },
+    {
+      "card_id": "b6b6d3ed8f67",
+      "qid": "551",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "retired 2020",
+          "source_quote": "was retired from playing as of 2020",
+          "reason": "The upper-bound marker is missing. Keyword form permits an exact-retirement-year reading, but does not explicitly assert retired in 2020; classify as ambiguity, not definite contradiction."
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "The explicit retirement upper bound as of is omitted while its year remains; see ambiguity.",
+        "The source relation noted in a match report is omitted, although the save event itself is retained.",
+        "The 2007 date of the cup-game save is omitted; the 2011 substitution date remains."
+      ],
+      "notes": [
+        "No unknown player identity, new club or other unselected original-question fact is introduced. Query keeps the player/save/substitution roles at keyword level."
+      ],
+      "session": "qid_551__expression_packet__r3",
+      "arm": "expression_packet",
+      "repeat": 3
+    },
+    {
+      "card_id": "c625db323961",
+      "qid": "645",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "analyzed the profile ... using several compounds ... to determine evolutionary relationships",
+          "source_quote": "Several compounds ... have been used to determine evolutionary relationships. A study ... analyzed the profile of eighteen compounds",
+          "reason": "The joined using clause can make determining evolutionary relationships the specific 2020 study’s action or purpose. Original q3 describes compound use generally; q4 only explicitly states profiling. Because the intended linkage is not fully determined in either phrasing, flag scope ambiguity, not a definite unsupported study purpose."
+        },
+        {
+          "query_quote": "a species within a genus found in the Northern Hemisphere, largely in temperate latitudes, and specifically found in the Mediterranean",
+          "source_quote": "A genus can be found in the Northern Hemisphere ... A species within this genus is found in the Mediterranean.",
+          "reason": "The last location phrase can attach to genus or species in the merged sentence. Original makes the species location explicit. Genus presence in Mediterranean follows from its species being there; this is weakened/ambiguous target attachment, not a proven false genus location."
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "For the first time novelty qualifier of profiling is omitted."
+      ],
+      "notes": [
+        "Farjon authors the first reference and first published online in 2020 are preserved exactly. No packet-external question fact is used."
+      ],
+      "session": "qid_645__conservative__r1",
+      "arm": "conservative",
+      "repeat": 1
+    },
+    {
+      "card_id": "c6e719e81564",
+      "qid": "645",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "Farjon 2020 study",
+          "source_quote": "A study first published online in 2020, in which Farjon authors the first reference listed in the \"References\" section",
+          "reason": "Farjon is the author of the first cited reference, not stated to be author of the 2020 study. The query removes this relation and may be read as Farjon-authored study; it does not explicitly say by/authored by, so this is ambiguous rather than a definite false attribution."
+        }
+      ],
+      "outside_packet_question_facts": [
+        {
+          "query_quote": "most dominant compound Results and Discussion",
+          "source_quote": "Which compound was found to be the most dominant in the \"Results and Discussion\" section, as mentioned in said study?",
+          "reason": "This search objective/section comes from unselected q5, not from q1–q4 packet. Actual accessibility depends on arm and must be assessed after unblinding."
+        }
+      ],
+      "unsupported_facts": [],
+      "omissions": [
+        "First-reference authorship and References-section position are omitted while Farjon is retained.",
+        "First-published-online qualifier for the retained 2020 date is omitted.",
+        "For the first time novelty qualifier of compound profiling is omitted.",
+        "The compound use for determining evolutionary relationships is omitted.",
+        "Temperate-latitude qualifier of the genus is omitted."
+      ],
+      "notes": [
+        "No named species, compound or other guessed identity appears. No explicit false author relation is asserted; loss of the first-reference relation is scored separately from definite mutation."
+      ],
+      "session": "qid_645__expression_full_context__r3",
+      "arm": "expression_full_context",
+      "repeat": 3
+    },
+    {
+      "card_id": "d20543ae3f72",
+      "qid": "645",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "query_quote": "a species within a genus found in the Mediterranean, which is found in the Northern Hemisphere",
+          "source_quote": "A genus can be found in the Northern Hemisphere ... A species within this genus is found in the Mediterranean.",
+          "reason": "The query explicitly places the genus in the Mediterranean and leaves which’s geographic antecedent less clear, losing the requirement that the target species is Mediterranean. The genus location is entailed by a member species being there, so do not count it as an invented geography claim."
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        "The specific target species being Mediterranean is weakened to genus-level location.",
+        "Compound use for evolutionary relationships, and their source in a specific species part, are omitted.",
+        "For the first time novelty qualifier is omitted."
+      ],
+      "notes": [
+        "First-reference authorship and online-publication date are preserved. This is target-constraint weakening, not a definite false species/genus fact."
+      ],
+      "session": "qid_645__conservative__r2",
+      "arm": "conservative",
+      "repeat": 2
+    },
+    {
+      "card_id": "e81a5d60bde0",
+      "qid": "551",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "not_evaluable: query=null; abstention is not a semantic-fidelity pass. The supplied packet contains a searchable player description; usability failure is separate from semantic accuracy."
+      ],
+      "session": "qid_551__expression_full_context__r1",
+      "arm": "expression_full_context",
+      "repeat": 1
+    },
+    {
+      "card_id": "eaaec144cbd6",
+      "qid": "551",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "not_evaluable: query=null; abstention is not a semantic-fidelity pass. The supplied packet contains a searchable player description; usability failure is separate from semantic accuracy."
+      ],
+      "session": "qid_551__conservative__r3",
+      "arm": "conservative",
+      "repeat": 3
+    },
+    {
+      "card_id": "2d0599307f25",
+      "qid": "1072",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "kind": "temporal_relation_underspecified",
+          "query_quote": "lawmaker 2004 before 2010",
+          "source_quote": "served as a lawmaker from 2004 to sometime before 2010",
+          "note": "两个年份与 before 均保留，但 from/to 及任期结束语义未明示；可以读回原条件，也可能只是并列关键词，不能按明确任期缩窄判错。"
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "论文、作者出生年与国际组织分析主题保留；未发现明确主体替换或原题不支持的具体实体。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1072__conservative__r3",
+      "arm": "conservative",
+      "repeat": 3
+    },
+    {
+      "card_id": "346e8d6da01c",
+      "qid": "1072",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "合法 null 弃答；不计为表达忠实通过，也不将所有条件省略计入 query 错误。"
+      ],
+      "status": "not_evaluable",
+      "session": "qid_1072__expression_full_context__r2",
+      "arm": "expression_full_context",
+      "repeat": 2
+    },
+    {
+      "card_id": "4c91ff438de4",
+      "qid": "1172",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "2008–2011 含端点、原产国上映及岛名与片名相同均保留；压缩为 island name same as movie 不单独视作“实地拍摄于该岛”的新增断言。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1172__conservative__r1",
+      "arm": "conservative",
+      "repeat": 1
+    },
+    {
+      "card_id": "5776ba4cad82",
+      "qid": "1172",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "2008–2011 含端点、原产国上映及岛名与片名相同均保留；压缩为 island name same as movie 不单独视作“实地拍摄于该岛”的新增断言。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1172__conservative__r2",
+      "arm": "conservative",
+      "repeat": 2
+    },
+    {
+      "card_id": "6defc3727cd7",
+      "qid": "1172",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "2008–2011 含端点、原产国上映及岛名与片名相同均保留；压缩为 island name same as movie 不单独视作“实地拍摄于该岛”的新增断言。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1172__expression_packet__r3",
+      "arm": "expression_packet",
+      "repeat": 3
+    },
+    {
+      "card_id": "70ae11893f96",
+      "qid": "1172",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "2008–2011 含端点、原产国上映及岛名与片名相同均保留；压缩为 island name same as movie 不单独视作“实地拍摄于该岛”的新增断言。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1172__conservative__r3",
+      "arm": "conservative",
+      "repeat": 3
+    },
+    {
+      "card_id": "7b43939e8719",
+      "qid": "1172",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "kind": "temporal_endpoint_scope",
+          "query_quote": "between 2008-11",
+          "source_quote": "between 2008-11(inclusive)",
+          "note": "自然语言 between 可能含端点也可能不含；记录范围含混，不按确定排除 2008/2011 或缩成单年判错。"
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        {
+          "kind": "qualifier_omission",
+          "source_quote": "in it's country of origin",
+          "query_quote": "movie released between 2008-11",
+          "note": "删除原产国上映这一地点限定；没有明确改为全球首映。"
+        },
+        {
+          "kind": "endpoint_inclusivity_omission",
+          "source_quote": "between 2008-11(inclusive)",
+          "query_quote": "between 2008-11",
+          "note": "区间两端年份保留，未保留 inclusive。"
+        }
+      ],
+      "notes": [
+        "仍是电影与片中岛屿同名的搜索；没有补充国家、语言、岛名或其他未选剧情。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1172__expression_full_context__r2",
+      "arm": "expression_full_context",
+      "repeat": 2
+    },
+    {
+      "card_id": "7ff28a6b92b7",
+      "qid": "1072",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "kind": "temporal_relation_underspecified",
+          "query_quote": "lawmaker 2004 before 2010",
+          "source_quote": "served as a lawmaker from 2004 to sometime before 2010",
+          "note": "两个年份与 before 均保留，但 from/to 及任期结束语义未明示；可以读回原条件，也可能只是并列关键词，不能按明确任期缩窄判错。"
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "论文、作者出生年与国际组织分析主题保留；未发现明确主体替换或原题不支持的具体实体。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1072__expression_packet__r1",
+      "arm": "expression_packet",
+      "repeat": 1
+    },
+    {
+      "card_id": "8aac724d6a4d",
+      "qid": "1172",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "2008–2011 含端点、原产国上映及岛名与片名相同均保留；压缩为 island name same as movie 不单独视作“实地拍摄于该岛”的新增断言。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1172__expression_packet__r2",
+      "arm": "expression_packet",
+      "repeat": 2
+    },
+    {
+      "card_id": "8fe557c9f603",
+      "qid": "1072",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "kind": "temporal_relation_underspecified",
+          "query_quote": "lawmaker 2004 before 2010",
+          "source_quote": "served as a lawmaker from 2004 to sometime before 2010",
+          "note": "两个年份与 before 均保留，但 from/to 及任期结束语义未明示；可以读回原条件，也可能只是并列关键词，不能按明确任期缩窄判错。"
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "论文、作者出生年与国际组织分析主题保留；未发现明确主体替换或原题不支持的具体实体。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1072__conservative__r2",
+      "arm": "conservative",
+      "repeat": 2
+    },
+    {
+      "card_id": "a2c28d2c772d",
+      "qid": "1072",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "kind": "temporal_relation_underspecified",
+          "query_quote": "lawmaker 2004",
+          "source_quote": "served as a lawmaker from 2004 to sometime before 2010",
+          "note": "未明确 2004 是任期开始年。原文确实蕴含 2004 任议员，因此不能仅凭这段压缩认定查询宣称“只任职 2004 一年”；这是范围信息丢失与关系欠明确。"
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        {
+          "kind": "partial_temporal_condition_omission",
+          "source_quote": "from 2004 to sometime before 2010",
+          "query_quote": "lawmaker 2004",
+          "note": "保留 2004，删除任期在 2010 前结束的信息；不是整体不使用时间条件。"
+        }
+      ],
+      "notes": [
+        "论文、作者出生年与国际组织分析主题保留；未发现明确主体替换或原题不支持的具体实体。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1072__expression_packet__r2",
+      "arm": "expression_packet",
+      "repeat": 2
+    },
+    {
+      "card_id": "ad6a1b8b3005",
+      "qid": "1172",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "kind": "temporal_endpoint_scope",
+          "query_quote": "between 2008-11",
+          "source_quote": "between 2008-11(inclusive)",
+          "note": "自然语言 between 可能含端点也可能不含；记录范围含混，不按确定排除 2008/2011 或缩成单年判错。"
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        {
+          "kind": "qualifier_omission",
+          "source_quote": "in it's country of origin",
+          "query_quote": "movie released between 2008-11",
+          "note": "删除原产国上映这一地点限定；没有明确改为全球首映。"
+        },
+        {
+          "kind": "endpoint_inclusivity_omission",
+          "source_quote": "between 2008-11(inclusive)",
+          "query_quote": "between 2008-11",
+          "note": "区间两端年份保留，未保留 inclusive。"
+        }
+      ],
+      "notes": [
+        "仍是电影与片中岛屿同名的搜索；没有补充国家、语言、岛名或其他未选剧情。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1172__expression_full_context__r1",
+      "arm": "expression_full_context",
+      "repeat": 1
+    },
+    {
+      "card_id": "ae3c5b515d6e",
+      "qid": "1072",
+      "query_evaluable": false,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "合法 null 弃答；不计为表达忠实通过，也不将所有条件省略计入 query 错误。"
+      ],
+      "status": "not_evaluable",
+      "session": "qid_1072__expression_full_context__r3",
+      "arm": "expression_full_context",
+      "repeat": 3
+    },
+    {
+      "card_id": "af24ad6fec6c",
+      "qid": "1072",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "出生年属于论文作者；2004 到 2010 前结束的任期范围，以及论文分析国际组织的关系均清楚保留。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1072__expression_packet__r3",
+      "arm": "expression_packet",
+      "repeat": 3
+    },
+    {
+      "card_id": "c05443f3789e",
+      "qid": "1172",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "kind": "temporal_endpoint_scope",
+          "query_quote": "between 2008-11",
+          "source_quote": "between 2008-11(inclusive)",
+          "note": "自然语言 between 可能含端点也可能不含；记录范围含混，不按确定排除 2008/2011 或缩成单年判错。"
+        }
+      ],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [
+        {
+          "kind": "qualifier_omission",
+          "source_quote": "in it's country of origin",
+          "query_quote": "movie released between 2008-11",
+          "note": "删除原产国上映这一地点限定；没有明确改为全球首映。"
+        },
+        {
+          "kind": "endpoint_inclusivity_omission",
+          "source_quote": "between 2008-11(inclusive)",
+          "query_quote": "between 2008-11",
+          "note": "区间两端年份保留，未保留 inclusive。"
+        }
+      ],
+      "notes": [
+        "仍是电影与片中岛屿同名的搜索；没有补充国家、语言、岛名或其他未选剧情。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1172__expression_full_context__r3",
+      "arm": "expression_full_context",
+      "repeat": 3
+    },
+    {
+      "card_id": "c24893629508",
+      "qid": "1072",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [
+        {
+          "kind": "temporal_relation_underspecified",
+          "query_quote": "lawmaker 2004 before 2010",
+          "source_quote": "served as a lawmaker from 2004 to sometime before 2010",
+          "note": "两个年份与 before 均保留，但 from/to 及任期结束语义未明示；可以读回原条件，也可能只是并列关键词，不能按明确任期缩窄判错。"
+        }
+      ],
+      "outside_packet_question_facts": [
+        {
+          "query_quote": "scholarship",
+          "source_quote": "What is the name of the body that provided the author with a scholarship?",
+          "source_ref": "q7",
+          "note": "奖学金来自完整原题 q7，但不在本次 q1/q3/q4 packet；输入模式揭盲后才能判断是未提供信息的补入还是完整原题条件扩展。"
+        }
+      ],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "论文、作者出生年与国际组织分析主题保留；未发现明确主体替换或原题不支持的具体实体。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1072__expression_full_context__r1",
+      "arm": "expression_full_context",
+      "repeat": 1
+    },
+    {
+      "card_id": "ddd0532b582f",
+      "qid": "1172",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "与所选两段原文一致（空白规范化）；上映范围含端点、原产国与岛名/片名同名关系均保留。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1172__verbatim__r1",
+      "arm": "verbatim",
+      "repeat": 1
+    },
+    {
+      "card_id": "e6542453e6de",
+      "qid": "1072",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "与所选三段原文一致（空白规范化），未新增关系；本审阅不据此保证检索有效。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1072__verbatim__r1",
+      "arm": "verbatim",
+      "repeat": 1
+    },
+    {
+      "card_id": "edc177853063",
+      "qid": "1072",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "出生年属于论文作者；2004 到 2010 前结束的任期范围，以及论文分析国际组织的关系均清楚保留。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1072__conservative__r1",
+      "arm": "conservative",
+      "repeat": 1
+    },
+    {
+      "card_id": "f01d27c346b4",
+      "qid": "1172",
+      "query_evaluable": true,
+      "explicit_mutations": [],
+      "ambiguities": [],
+      "outside_packet_question_facts": [],
+      "unsupported_facts": [],
+      "omissions": [],
+      "notes": [
+        "2008–2011 含端点、原产国上映及岛名与片名相同均保留；压缩为 island name same as movie 不单独视作“实地拍摄于该岛”的新增断言。"
+      ],
+      "status": "reviewed",
+      "session": "qid_1172__expression_packet__r1",
+      "arm": "expression_packet",
+      "repeat": 1
+    }
+  ],
+  "review_methods": [
+    {
+      "file": "semantic_review_1117_786.json",
+      "method": "Source-grounded manual agent review; cards arm-hidden but reviewer previously saw partial arm-labeled outputs, therefore not blind. No extra API judge. Conservative ambiguous vs explicit distinction."
+    },
+    {
+      "file": "semantic_review_551_645.json",
+      "method": "Agent reviewer reported arm-hidden source review; see row notes."
+    },
+    {
+      "file": "semantic_review_1072_1172.json",
+      "method": "Arm-hidden manual source/query review. Reviewer read semantic_cards.json plus preregistered protocol/cases, not card mapping, results or ranks before writing. Verbatim text may be recognizable, so this is not fully blinded. Null is not evaluable, never a fidelity pass. Labels describe text; arm-dependent omission compliance assessed only after reveal."
+    }
+  ],
+  "semantic_sensitivity": "2731bede208a can be read as a wrong direct elopement relationship or telegraphic ambiguity. Report one high-confidence mutation plus one borderline; original labels preserved. See review_adjudication_1117.json.",
+  "supplemental_retrieval": {
+    "verbatim": {
+      "attempts": 6,
+      "document": 4,
+      "visible": 3
+    },
+    "conservative": {
+      "attempts": 18,
+      "document": 9,
+      "visible": 9
+    },
+    "expression_packet": {
+      "attempts": 18,
+      "document": 12,
+      "visible": 10
+    },
+    "expression_full_context": {
+      "attempts": 18,
+      "document": 10,
+      "visible": 8
+    }
+  },
+  "supplemental_per_qid": {
+    "1117": {
+      "verbatim": {
+        "attempts": 1,
+        "document": 1,
+        "visible": 1
+      },
+      "conservative": {
+        "attempts": 3,
+        "document": 3,
+        "visible": 3
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "document": 3,
+        "visible": 3
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "document": 3,
+        "visible": 3
+      }
+    },
+    "551": {
+      "verbatim": {
+        "attempts": 1,
+        "document": 1,
+        "visible": 0
+      },
+      "conservative": {
+        "attempts": 3,
+        "document": 0,
+        "visible": 0
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "document": 2,
+        "visible": 0
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "document": 2,
+        "visible": 0
+      }
+    },
+    "645": {
+      "verbatim": {
+        "attempts": 1,
+        "document": 1,
+        "visible": 1
+      },
+      "conservative": {
+        "attempts": 3,
+        "document": 3,
+        "visible": 3
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "document": 3,
+        "visible": 3
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "document": 3,
+        "visible": 3
+      }
+    },
+    "786": {
+      "verbatim": {
+        "attempts": 1,
+        "document": 0,
+        "visible": 0
+      },
+      "conservative": {
+        "attempts": 3,
+        "document": 0,
+        "visible": 0
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "document": 1,
+        "visible": 1
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "document": 1,
+        "visible": 1
+      }
+    },
+    "1072": {
+      "verbatim": {
+        "attempts": 1,
+        "document": 1,
+        "visible": 1
+      },
+      "conservative": {
+        "attempts": 3,
+        "document": 3,
+        "visible": 3
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "document": 3,
+        "visible": 3
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "document": 1,
+        "visible": 1
+      }
+    },
+    "1172": {
+      "verbatim": {
+        "attempts": 1,
+        "document": 0,
+        "visible": 0
+      },
+      "conservative": {
+        "attempts": 3,
+        "document": 0,
+        "visible": 0
+      },
+      "expression_packet": {
+        "attempts": 3,
+        "document": 0,
+        "visible": 0
+      },
+      "expression_full_context": {
+        "attempts": 3,
+        "document": 0,
+        "visible": 0
+      }
+    }
+  },
+  "retrieval_rows": [
+    {
+      "session": "qid_1072__conservative__r1",
+      "qid": "1072",
+      "arm": "conservative",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__conservative__r2",
+      "qid": "1072",
+      "arm": "conservative",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__conservative__r3",
+      "qid": "1072",
+      "arm": "conservative",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__expression_full_context__r1",
+      "qid": "1072",
+      "arm": "expression_full_context",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 2,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__expression_full_context__r2",
+      "qid": "1072",
+      "arm": "expression_full_context",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1072__expression_full_context__r3",
+      "qid": "1072",
+      "arm": "expression_full_context",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1072__expression_packet__r1",
+      "qid": "1072",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__expression_packet__r2",
+      "qid": "1072",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__expression_packet__r3",
+      "qid": "1072",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1072__verbatim__r1",
+      "qid": "1072",
+      "arm": "verbatim",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "69382",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__conservative__r1",
+      "qid": "1117",
+      "arm": "conservative",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 2,
+          "visible": true,
+          "kind": "bridge",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__conservative__r2",
+      "qid": "1117",
+      "arm": "conservative",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 2,
+          "visible": true,
+          "kind": "bridge",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__conservative__r3",
+      "qid": "1117",
+      "arm": "conservative",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 2,
+          "visible": true,
+          "kind": "bridge",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__expression_full_context__r1",
+      "qid": "1117",
+      "arm": "expression_full_context",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 1,
+          "visible": true,
+          "kind": "bridge",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__expression_full_context__r2",
+      "qid": "1117",
+      "arm": "expression_full_context",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 1,
+          "visible": true,
+          "kind": "bridge",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__expression_full_context__r3",
+      "qid": "1117",
+      "arm": "expression_full_context",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 3,
+          "visible": true,
+          "kind": "bridge",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__expression_packet__r1",
+      "qid": "1117",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 2,
+          "visible": true,
+          "kind": "bridge",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__expression_packet__r2",
+      "qid": "1117",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 2,
+          "visible": true,
+          "kind": "bridge",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__expression_packet__r3",
+      "qid": "1117",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 2,
+          "visible": true,
+          "kind": "bridge",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1117__verbatim__r1",
+      "qid": "1117",
+      "arm": "verbatim",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "8000",
+          "rank": 2,
+          "visible": true,
+          "kind": "bridge",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_1172__conservative__r1",
+      "qid": "1172",
+      "arm": "conservative",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1172__conservative__r2",
+      "qid": "1172",
+      "arm": "conservative",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1172__conservative__r3",
+      "qid": "1172",
+      "arm": "conservative",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1172__expression_full_context__r1",
+      "qid": "1172",
+      "arm": "expression_full_context",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1172__expression_full_context__r2",
+      "qid": "1172",
+      "arm": "expression_full_context",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1172__expression_full_context__r3",
+      "qid": "1172",
+      "arm": "expression_full_context",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1172__expression_packet__r1",
+      "qid": "1172",
+      "arm": "expression_packet",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1172__expression_packet__r2",
+      "qid": "1172",
+      "arm": "expression_packet",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1172__expression_packet__r3",
+      "qid": "1172",
+      "arm": "expression_packet",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_1172__verbatim__r1",
+      "qid": "1172",
+      "arm": "verbatim",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_551__conservative__r1",
+      "qid": "551",
+      "arm": "conservative",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_551__conservative__r2",
+      "qid": "551",
+      "arm": "conservative",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_551__conservative__r3",
+      "qid": "551",
+      "arm": "conservative",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_551__expression_full_context__r1",
+      "qid": "551",
+      "arm": "expression_full_context",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_551__expression_full_context__r2",
+      "qid": "551",
+      "arm": "expression_full_context",
+      "document": true,
+      "visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "rank": 1,
+          "visible": false,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__expression_full_context__r3",
+      "qid": "551",
+      "arm": "expression_full_context",
+      "document": true,
+      "visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "rank": 1,
+          "visible": false,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__expression_packet__r1",
+      "qid": "551",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "rank": 1,
+          "visible": false,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__expression_packet__r2",
+      "qid": "551",
+      "arm": "expression_packet",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_551__expression_packet__r3",
+      "qid": "551",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "rank": 1,
+          "visible": false,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_551__verbatim__r1",
+      "qid": "551",
+      "arm": "verbatim",
+      "document": true,
+      "visible": false,
+      "hits": [
+        {
+          "docid": "37025",
+          "rank": 1,
+          "visible": false,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__conservative__r1",
+      "qid": "645",
+      "arm": "conservative",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "28183",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__conservative__r2",
+      "qid": "645",
+      "arm": "conservative",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "28183",
+          "rank": 2,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__conservative__r3",
+      "qid": "645",
+      "arm": "conservative",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "28183",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__expression_full_context__r1",
+      "qid": "645",
+      "arm": "expression_full_context",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "28183",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__expression_full_context__r2",
+      "qid": "645",
+      "arm": "expression_full_context",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "28183",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__expression_full_context__r3",
+      "qid": "645",
+      "arm": "expression_full_context",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "28183",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__expression_packet__r1",
+      "qid": "645",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "28183",
+          "rank": 3,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__expression_packet__r2",
+      "qid": "645",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "28183",
+          "rank": 2,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__expression_packet__r3",
+      "qid": "645",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "28183",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_645__verbatim__r1",
+      "qid": "645",
+      "arm": "verbatim",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "28183",
+          "rank": 1,
+          "visible": true,
+          "kind": "target_linked",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_786__conservative__r1",
+      "qid": "786",
+      "arm": "conservative",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__conservative__r2",
+      "qid": "786",
+      "arm": "conservative",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__conservative__r3",
+      "qid": "786",
+      "arm": "conservative",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__expression_full_context__r1",
+      "qid": "786",
+      "arm": "expression_full_context",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "75245",
+          "rank": 5,
+          "visible": true,
+          "kind": "partial_director_series_lead",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_786__expression_full_context__r2",
+      "qid": "786",
+      "arm": "expression_full_context",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__expression_full_context__r3",
+      "qid": "786",
+      "arm": "expression_full_context",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__expression_packet__r1",
+      "qid": "786",
+      "arm": "expression_packet",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__expression_packet__r2",
+      "qid": "786",
+      "arm": "expression_packet",
+      "document": true,
+      "visible": true,
+      "hits": [
+        {
+          "docid": "75245",
+          "rank": 2,
+          "visible": true,
+          "kind": "partial_director_series_lead",
+          "packet_alignment": "selected_basis"
+        }
+      ]
+    },
+    {
+      "session": "qid_786__expression_packet__r3",
+      "qid": "786",
+      "arm": "expression_packet",
+      "document": false,
+      "visible": false,
+      "hits": []
+    },
+    {
+      "session": "qid_786__verbatim__r1",
+      "qid": "786",
+      "arm": "verbatim",
+      "document": false,
+      "visible": false,
+      "hits": []
+    }
+  ],
+  "api_elapsed_seconds": {
+    "verbatim": {
+      "count": 0,
+      "sum": 0,
+      "mean": null
+    },
+    "conservative": {
+      "count": 18,
+      "sum": 20.076475556008518,
+      "mean": 1.1153597531115844
+    },
+    "expression_packet": {
+      "count": 18,
+      "sum": 19.75268406420946,
+      "mean": 1.0973713369005256
+    },
+    "expression_full_context": {
+      "count": 18,
+      "sum": 20.85687452275306,
+      "mean": 1.1587152512640588
+    }
+  },
+  "first_event": "2026-09-18T08:20:46.645974+00:00",
+  "last_event": "2026-09-18T08:21:44.542695+00:00",
+  "limitation": "Six known development packets, manually selected. Post-run positive pool is incomplete and includes partial leads. No final-answer assessment. Model repetitions within question are not independent questions. Semantic review is agent/manual, partly arm-hidden, no separate API judge or human gold annotation. Null reasons were not exposed by API."
+}

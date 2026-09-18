@@ -54,3 +54,5 @@ API 请求记录 SDK 调用参数，响应记录 SDK 解析的完整响应；不
 见 [Query 初始化节点](query_initialization/README.md)。已实现单/双方向局部对照，完成两批开发共 24 次及 20 道留出题共 120 次真实 API 尝试。执行可靠性提高，但入口改善尚不稳定；候选保持独立，未替换默认 Agent。完整轨迹、原文标注和报告见该目录。
 
 单入口 v003 已实现原题定位、basis_refs + query、一次 Search 和持久化观察交接；完成 32 次开发联调和 8 次重启 Open 检查。见 [实现与对照](query_initialization/single_entry/README.md)。默认运行时未升级。
+
+固定原题线索的表达诊断已完成：7 题、35 次检索，含每题三次模型压缩与人工完整/删除控制。见 [协议、结果和轨迹](query_initialization/fixed_anchor/README.md)。

@@ -1,0 +1,189 @@
+# 完整 rollout 轨迹
+
+API 请求是 SDK 调用参数；响应是 SDK 解析结果。未记录密钥或 HTTP 头。
+仅记录 API 实际返回的内容，不推断未返回的内部推理。
+
+## 1. control_query · 2026-09-18T06:45:38.860955+00:00
+
+```json
+{
+  "seq": 1,
+  "time": "2026-09-18T06:45:38.860955+00:00",
+  "kind": "control_query",
+  "arm": "full",
+  "query": "A person directed a short film with their own nephew. The same person appeared in a 91-minute film directed by someone known for a series of English-produced dinosaur, sci-fi and adventure films."
+}
+```
+
+## 2. query_finalized · 2026-09-18T06:45:38.861278+00:00
+
+```json
+{
+  "seq": 2,
+  "time": "2026-09-18T06:45:38.861278+00:00",
+  "kind": "query_finalized",
+  "plan": {
+    "status": "valid",
+    "query": "A person directed a short film with their own nephew. The same person appeared in a 91-minute film directed by someone known for a series of English-produced dinosaur, sci-fi and adventure films.",
+    "initial_valid": true,
+    "repairs": 0,
+    "origin": "preregistered_manual_control"
+  }
+}
+```
+
+## 3. search_start · 2026-09-18T06:45:38.861498+00:00
+
+```json
+{
+  "seq": 3,
+  "time": "2026-09-18T06:45:38.861498+00:00",
+  "kind": "search_start",
+  "arguments": {
+    "query": "A person directed a short film with their own nephew. The same person appeared in a 91-minute film directed by someone known for a series of English-produced dinosaur, sci-fi and adventure films.",
+    "k": 6
+  }
+}
+```
+
+## 4. search_result · 2026-09-18T06:45:39.552576+00:00
+
+```json
+{
+  "seq": 4,
+  "time": "2026-09-18T06:45:39.552576+00:00",
+  "kind": "search_result",
+  "arguments": {
+    "query": "A person directed a short film with their own nephew. The same person appeared in a 91-minute film directed by someone known for a series of English-produced dinosaur, sci-fi and adventure films.",
+    "k": 6
+  },
+  "result": [
+    {
+      "docid": "6928",
+      "url": "https://theatlanticdispatch.com/film-bury-your-nephew/",
+      "title": "BURY YOUR NEPHEW: A BEAUTIFULLY CRAFTED SHORT FILM",
+      "title_span": [
+        11,
+        61
+      ],
+      "document_sha256": "01b3338354d5d5f102a22195b35e218567c4ccfd54157923fa0bf2784c42a06b",
+      "window_ref": "w_9d2a15b38de87ec01e5ce012",
+      "text": "Fingers crossed.\n\nI think I've proven to myself that I can make something that obtains a cinema quality and we're very proud that the film looks gorgeous.\n\nIt's almost a joke between me and my Simon Van Parijs, that I get frustrated because when people watch the film, the first compliment they always give is that It looks amazing.\n\nI'm involved in the visual look, but it's massively due to Simon and Francesca Jones, the production designer and costume and makeup and then every single person who puts stuff on screen but those two bring the whole aesthetic together, and they get the first compliment every time.\n\nThe film will be available for everybody to watch, post-festival season. It's amazing that there's so much interest and people are messaging me every week asking, 'Where can I watch it?' Unfortunately, it's unwatchable at the moment publicly.\n\nIf you follow my Instagram and the second there's a festival announcement, I will post it there and as soon as we know where we're premiering we will announce it.\n\nOnce we know that, we will then hopefully be reaching out to all kinds of festivals. We just need to know where we're starting and where we're premiering and we'll go from there.\n\nAll of our thanks to the wonderfully talented Yoni Ben-Haim.\n\nFor more information on Bury Your Nephew and Yoni click here\n\nStarring Karl Pilkington, @harryjonesact and katiepattinson_actress\n\nDirected by Yoni Ben-Haim\n\nWritten by @orsonphotography and Yoni Ben-Haim\n\nProduced by @dombaker@minoanpictures\n\nEdited by: @alexemborg\n\nMusic by: @malthus___",
+      "offset": 15229,
+      "end_char": 16786,
+      "text_tokens": 354,
+      "title_tokens": 20,
+      "has_more_before": true,
+      "has_more_after": false,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5373597741127014
+    },
+    {
+      "docid": "75245",
+      "url": "https://www.theguardian.com/film/2020/feb/10/how-we-made-the-land-that-time-forgot-kevin-connor-susan-penhaligon-dinosaur-classic",
+      "title": "How we made The Land That Time Forgot",
+      "title_span": [
+        11,
+        48
+      ],
+      "document_sha256": "5bb9bb92f4b4cce74267422df4e24b420e666228d386aec1c8ddfd5895a0e622",
+      "window_ref": "w_7039e1bfc1a63344dfd59bd6",
+      "text": "---\ntitle: How we made The Land That Time Forgot\nauthor: Phil Hoad\ndate: 2020-02-11\n---\nKevin Connor, director\n\nAmicus were a kind of second-string Hammer Horror in the 1960s – my first film for them was From Beyond the Grave. By the 70s, they were trying to move in a different direction and do productions that could compete with Hollywood.\n\nAmicus had got a deal with Edgar Rice Burroughs' estate to make three or four movies based on his books. Producer Milton Subotsky handed me a script for The Land That Time Forgot, about a crew of first world war sailors who discover an island inhabited by dinosaurs and prehistoric men. The adaptation was co-written by the fantasy writer Michael Moorcock and smoothed over some of the novel's more Victorian attitudes.\n\nWe had a slightly bigger budget – about $250,000 – but we still had to be really inventive about the special effects. The production designer, Maurice Carter, suggested doing all the dinosaurs as hand puppets. They were about 2ft tall and the guy who made them, Roger Dicken, had his arm up inside them, while their arms were on tiny sticks, a bit like the Muppets. We could go in quite close, they were so beautifully made. We front-projected the forest backgrounds we had shot on large-format VistaVision.\n\nShepperton was empty at the time, so we had the run of the studio. We built a full-size submarine exterior and flooded it - but it was only three feet deep. We recreated the landscapes of Caprona, the prehistoric island, in an overgrown clay pit in Reading – we didn't even have to do that much to it, just put in the odd palm tree.\n\nHandling actors was a bigger problem, because I didn't have any stage training. ",
+      "offset": 0,
+      "end_char": 1688,
+      "text_tokens": 392,
+      "title_tokens": 8,
+      "has_more_before": false,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.5020321607589722
+    },
+    {
+      "docid": "9478",
+      "url": "https://www.imdb.com/title/tt1907779/",
+      "title": "The Dinosaur Project",
+      "title_span": [
+        11,
+        31
+      ],
+      "document_sha256": "08f6b68cefe27b83b7d17429af985bcc120c1e190553716661b6e76da46935e0",
+      "window_ref": "w_7bb3906ceb77fa22f3cfd05d",
+      "text": "I was actually hugely impressed at how well it was filmed for the constraints that a \"found footage\" film puts on the director. From a technical point of view, it's probably one of the best examples of the genre in my opinion. I'm not really a fan of \"found footage\" film as such, but this movie is a brilliant example of how to use it effectively. And there are a number of people with cameras in the movie, so we get to see different camera angles too.\n\nBy no means is it perfect though, there are moments in the movie which are implausible and the scripting could have been improved in places. But I could say the same for a lot of movies I've seen, and many of them are, again, big budget Hollywood blockbusters. This movie isn't trying to teach you about dinosaurs, it's not scientifically precise, it's not trying to emulate the epic nature of the Jurassic Park franchise. All it's trying to do is entertain you, in a sort of pop-corn flick fashion. At the same time however, it's unique, absorbing and well-directed.\n\nWith a somewhat open-ending, I'd definitely be interested in watching part 2 if it ever gets produced. Remember, it's not Jurassic Park, it's a different spin on the dinosaur theme but with understandably similar consequences of human and dinosaur coexistence.\n\nIf you're a fan of anything dinosaur-related then this is a movie you don't want to miss. Just go into it with low expectations (like I did after seeing the low IMDb score) and you'll probably be pleasantly surprised. I give this one a 6.5.\n\nDid you know\n\n- ConnectionsFeatured in Projector: The Dinosaur Project (2012)\n\n- How long is The Dinosaur Project?Powered by Alexa\n\nDetails\n\nBox office\n\n- Gross worldwide\n\n- $2,412,576\n\n- Runtime1 hour 23 minutes\n",
+      "offset": 11890,
+      "end_char": 13632,
+      "text_tokens": 396,
+      "title_tokens": 4,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.4704929292201996
+    },
+    {
+      "docid": "36780",
+      "url": "http://www.filmquestfest.com/speakers/short-films-o-r-2022/",
+      "title": "SHORT FILMS ( O – R ) 2022",
+      "title_span": [
+        11,
+        37
+      ],
+      "document_sha256": "78b7ee49ce10958f0fee49cff18ccf4f025925348302cfba6bdb742701a08380",
+      "window_ref": "w_677e038e8914319d02fcb1be",
+      "text": "His favorite horror films are THE THING (1982), THE SHINING (1980), and MANDY (2018).\n\nIMAGES FROM THE FILM:\n\nTRAILER:\n\n_____________________\n\nRISEN (AUSTRALIA)\n\nSYNOPSIS: A young teen struggles to navigate the 'floating drug' infested world of the west, haunted by a familial past and an unknown future. A lone wolf comes to his defence, but it will take more than friendship to survive.\n\nRATINGS GUIDE: Violence, Language ,Adult Content\n\nDIRECTOR: Tony Radevski\n\nGENRE: Sci-Fi\n\nPREMIERE STATUS: Regional Premiere\n\nSCREENING DATE: Monday, Oct. 31st @ 9:00 PM\n\nDIRECTOR'S BIO: Tony Radevski is an award winning writer, director and producer from Sydney. Tony started in documentary, directing \"The Prodigal Son\", which won Best Short Documentary at the IF Awards and Most Popular Film at Flickerfest (2006). Other documentaries include \"Broken\" and \"Part One: Love\". He produced/ co-illustrated the animated documentary \"Chip\", winning an AFI/AACTA 'Social Shorts' Award (2015). His animation work includes \"Ephemeral\", that he wrote and directed/produced with animator Jongsu Oh, which premiered at Stuttgart Animation Festival, was nominated for Best Animation at the 2008 ATOM Awards and St Kilda Film Festival and went on to win Dendy Awards Most Innovative Film in 2008.\n\nTony's short animation \"Hole\" won Best Film and Best Screenplay at the 2015 Mardi Gras Film Festival's My Queer Career and was a finalist in the prestigious Iris Prize (UK). ",
+      "offset": 13613,
+      "end_char": 15064,
+      "text_tokens": 382,
+      "title_tokens": 13,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.46593302488327026
+    },
+    {
+      "docid": "90404",
+      "url": "https://tvtropes.org/pmwiki/pmwiki.php/Main/DirectedByCastMember",
+      "title": "Directed by Cast Member",
+      "title_span": [
+        11,
+        34
+      ],
+      "document_sha256": "3da562107099ac1a2a1fbc9b069a133540f99a7f836194494526efdfb7c296cd",
+      "window_ref": "w_30047b8d8bf2fab540bfce79",
+      "text": "That is not this trope. This trope is about those whose careers evolve (or attempt to evolve) into another role, using their current employment as a springboard. Think Dual classing vs Multi-classing with Directed by Cast Member being Dual Classing.\n\nSee also Descended Creator and Written by Cast Member. Also overlaps with Actor Turned Director.\n\nExamples:\n\n- Patrick Seitz is the voice director of English dub of the first season of JoJo's Bizarre Adventure and voices Dio Brando.\n\n- Laura Bailey voice directed some episodes of Blue Gender, Crayon Shin-chan, and Gunslinger Girl, while voicing leads in all three shows.\n\n- Liam O'Brien worked on Naruto as a writer and voice director while voicing Gaara.\n\n- Caitlin Glass voice directed Ouran High School Host Club while voicing lead Haruhi, and also did some episodes of One Piece while voicing Vivi, and Baccano! while voicing Miria. Similarly, she's directed the dubs for Lord Marksman and Vanadis and co-directed the dub New Game!, whilst voicing lead characters in both. She too directed the dub of the Fruits Basket remake where she voices Machi in the series.\n\n- Fullmetal Alchemist (2003) was co-directed by Mike McFarland and Colleen Clinkenbeard, who also played both Havoc and Hawkeye respectively (the former would also direct Brotherhood).\n\n- Colleen Clinkenbeard also directed the dub for My Hero Academia, in addition to voicing Momo Yaoyorozu.\n\n- Mike McFarland also directed Attack on Titan's dub where he plays a similarly named character as the above. He would eventually also direct the 7th season of My Hero Academia where he also voices Ojiro.\n",
+      "offset": 1650,
+      "end_char": 3270,
+      "text_tokens": 371,
+      "title_tokens": 4,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.4652833938598633
+    },
+    {
+      "docid": "15878",
+      "url": "https://www.thewrap.com/sundance-short-films-movies-danny-pudi-rose-mcgowan-highlight-lineup/",
+      "title": "Sundance Short Films: Movies From Danny Pudi, Rose McGowan Highlight Lineup",
+      "title_span": [
+        11,
+        86
+      ],
+      "document_sha256": "bafce1638574f069b3c27421c756334173c413eb72e18f6639b7b4217588c2ad",
+      "window_ref": "w_d74f239dcc582460a5b5ab70",
+      "text": "But whatever it is they have to say, Sayeeda ain't willing to hear it.\n\nCatherine / U.S.A. (Director: Dean Fleischer-Camp, Screenwriters: Dean Fleischer-Camp, Jenny Slate) –Catherine returns to work after a hiatus.\n\nChapel Perilous / U.S.A. (Director and screenwriter: Matthew Lessner) — Chapel perilous is an occult term describing a psychological state where people are uncertain if they have been aided or hindered by a force outside the natural world.\n\nCruising Electric (1980) / U.S.A. (Director and screenwriter: Brumby Boylston) — The marketing department green-lights a red-light tie-in: 60 lost seconds of modern movie merchandising.\n\nDawn (pictured above) / U.S.A. (Director: Rose McGowan, Screenwriters: M.A. Fortin, Joshua John Miller) — Dawn is a quiet young teenager who longs for something or someone to free her from her sheltered life.\n\nDig / U.S.A. (Director and screenwriter: Toby Halbrooks) — A young girl watches her father dig a hole in their backyard. Mystified about his purpose, the neighborhood comes to watch.\n\nThe End of Eating Everything / U.S.A. (Director and screenwriter: Wangechi Mutu) — The End of Eating Everything traces the journey of a flying, planetlike creature navigating a bleak skyscape. This sick soul is lost in a polluted atmosphere without grounding or roots, led by hunger toward its destruction.\n\nFunnel / U.S.A. (Director and screenwriter: Andre Hyland) — A man's car breaks down and sends him on a quest across town that slowly turns into the most fantastically mundane adventure.\n",
+      "offset": 2185,
+      "end_char": 3717,
+      "text_tokens": 367,
+      "title_tokens": 17,
+      "has_more_before": true,
+      "has_more_after": true,
+      "parent_window_ref": null,
+      "status": "ok",
+      "score": 0.4610621929168701
+    }
+  ]
+}
+```
