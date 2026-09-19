@@ -1,0 +1,31 @@
+{
+  "session": "qid_191__current__r1",
+  "qid": "191",
+  "arm": "current",
+  "repeat": 1,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_6da73b3d1e0d4dfca4f725b3",
+            "function": {
+              "arguments": "{\"query\": \"performer trained as TV producer editor drove car blindfolded Melbourne International Comedy Festival bought shop 1992\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

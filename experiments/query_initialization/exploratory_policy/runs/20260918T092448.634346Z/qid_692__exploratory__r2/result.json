@@ -1,0 +1,31 @@
+{
+  "session": "qid_692__exploratory__r2",
+  "qid": "692",
+  "arm": "exploratory",
+  "repeat": 2,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_ff2717e0f1194c87bfa872ec",
+            "function": {
+              "arguments": "{\"query\": \"author director diagnostic clinic migratory animal contemplations fated connected\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

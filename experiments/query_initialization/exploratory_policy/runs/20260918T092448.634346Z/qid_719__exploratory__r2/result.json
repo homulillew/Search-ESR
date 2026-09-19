@@ -1,0 +1,31 @@
+{
+  "session": "qid_719__exploratory__r2",
+  "qid": "719",
+  "arm": "exploratory",
+  "repeat": 2,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_ff24ec29483a48bb888b29dd",
+            "function": {
+              "arguments": "{\"query\": \"musician collaborated with band formed in 1970s lead vocalist born before band formation 1990s singles\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

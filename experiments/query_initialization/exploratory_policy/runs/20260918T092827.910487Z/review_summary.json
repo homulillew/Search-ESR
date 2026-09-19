@@ -1,0 +1,4967 @@
+{
+  "method": "Post-run coding-agent qualitative review, partly unblinded, incomplete pooled relevance labels; not independent human gold or full recall. Every pooled returned window screened. Mechanical source/quote/visible-range checks are deterministic. Semantic novelty additionally depends on reviewer comparison of facts, not just text intervals.",
+  "review_files": [
+    "review_part_a.json",
+    "review_part_b.json",
+    "review_part_c.json"
+  ],
+  "coverage": {
+    "questions": 20,
+    "sessions": 80,
+    "pooled_sources": 420,
+    "distinct_windows": 527,
+    "positive_sources": 42,
+    "verified_quote_spans": 156
+  },
+  "metrics": {
+    "first_source": {
+      "current": {
+        "hits": 15,
+        "attempts": 40,
+        "question_mean": 0.375
+      },
+      "exploratory": {
+        "hits": 17,
+        "attempts": 40,
+        "question_mean": 0.425
+      },
+      "delta": 0.05,
+      "paired_counts": {
+        "tie": 17,
+        "win": 2,
+        "loss": 1
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": []
+    },
+    "first_visible": {
+      "current": {
+        "hits": 14,
+        "attempts": 40,
+        "question_mean": 0.35
+      },
+      "exploratory": {
+        "hits": 16,
+        "attempts": 40,
+        "question_mean": 0.4
+      },
+      "delta": 0.05,
+      "paired_counts": {
+        "tie": 17,
+        "win": 2,
+        "loss": 1
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": []
+    },
+    "cumulative_source": {
+      "current": {
+        "hits": 16,
+        "attempts": 40,
+        "question_mean": 0.4
+      },
+      "exploratory": {
+        "hits": 19,
+        "attempts": 40,
+        "question_mean": 0.475
+      },
+      "delta": 0.075,
+      "paired_counts": {
+        "tie": 16,
+        "win": 3,
+        "loss": 1
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": []
+    },
+    "cumulative_visible": {
+      "current": {
+        "hits": 16,
+        "attempts": 40,
+        "question_mean": 0.4
+      },
+      "exploratory": {
+        "hits": 18,
+        "attempts": 40,
+        "question_mean": 0.45
+      },
+      "delta": 0.05,
+      "paired_counts": {
+        "tie": 15,
+        "win": 3,
+        "loss": 2
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": []
+    },
+    "new_relevant_evidence": {
+      "current": {
+        "hits": 14,
+        "attempts": 40,
+        "question_mean": 0.35
+      },
+      "exploratory": {
+        "hits": 13,
+        "attempts": 40,
+        "question_mean": 0.325
+      },
+      "delta": -0.025,
+      "paired_counts": {
+        "tie": 15,
+        "win": 2,
+        "loss": 3
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": [
+        "191"
+      ]
+    },
+    "visible_gain_from_second": {
+      "current": {
+        "hits": 2,
+        "attempts": 40,
+        "question_mean": 0.05
+      },
+      "exploratory": {
+        "hits": 2,
+        "attempts": 40,
+        "question_mean": 0.05
+      },
+      "delta": 0.0,
+      "paired_counts": {
+        "tie": 18,
+        "win": 1,
+        "loss": 1
+      },
+      "repeatable_wins": [],
+      "repeatable_losses": []
+    },
+    "source_gain_from_second": {
+      "current": {
+        "hits": 1,
+        "attempts": 40,
+        "question_mean": 0.025
+      },
+      "exploratory": {
+        "hits": 2,
+        "attempts": 40,
+        "question_mean": 0.05
+      },
+      "delta": 0.025,
+      "paired_counts": {
+        "tie": 19,
+        "win": 1
+      },
+      "repeatable_wins": [],
+      "repeatable_losses": []
+    }
+  },
+  "behavior": {
+    "current": {
+      "first_query_fidelity": {
+        "acceptable": 30,
+        "ambiguous": 7,
+        "not_evaluable": 2,
+        "mutation": 1
+      },
+      "second_action_grounding": {
+        "observation_grounded": 14,
+        "unsupported_premise": 6,
+        "question_reanchor": 4,
+        "repeat_same_need": 14,
+        "protocol_error": 2
+      },
+      "sessions_with_unsupported_claims": 14
+    },
+    "exploratory": {
+      "first_query_fidelity": {
+        "acceptable": 29,
+        "not_evaluable": 3,
+        "ambiguous": 4,
+        "mutation": 4
+      },
+      "second_action_grounding": {
+        "observation_grounded": 15,
+        "protocol_error": 5,
+        "question_reanchor": 7,
+        "repeat_same_need": 11,
+        "unsupported_premise": 1,
+        "unobservable": 1
+      },
+      "sessions_with_unsupported_claims": 14
+    }
+  },
+  "aggregates": {
+    "current": {
+      "sessions": 40,
+      "status_counts": {
+        "complete": 38,
+        "protocol_error": 2
+      },
+      "api_requests": 78,
+      "search_calls": 75,
+      "open_calls": 1,
+      "returned_windows": 451,
+      "second_action_counts": {
+        "search": 37,
+        "open": 1,
+        "not_reached": 2
+      },
+      "repeated_windows": 38,
+      "new_source_chars": 639634,
+      "usage": {
+        "prompt_tokens": 221040,
+        "completion_tokens": 23567,
+        "total_tokens": 244607
+      }
+    },
+    "exploratory": {
+      "sessions": 40,
+      "status_counts": {
+        "complete": 35,
+        "protocol_error": 5
+      },
+      "api_requests": 77,
+      "search_calls": 72,
+      "open_calls": 0,
+      "returned_windows": 432,
+      "second_action_counts": {
+        "search": 35,
+        "not_reached": 3,
+        "protocol_error": 2
+      },
+      "repeated_windows": 36,
+      "new_source_chars": 601921,
+      "usage": {
+        "prompt_tokens": 219120,
+        "completion_tokens": 21700,
+        "total_tokens": 240820
+      }
+    }
+  },
+  "concurrency": {
+    "api_peak_observed": 8,
+    "experimental_retrieval_peak_observed": 2,
+    "experimental_retrieval_calls": 147,
+    "preflight_retrieval_calls": 6,
+    "worker_pids": {
+      "0": 1082299,
+      "1": 1082302
+    }
+  },
+  "net_and_repeatable_utility_gain": true,
+  "default_prompt_changed": false,
+  "decision_note": "Utility criterion alone is not a promotion decision; interpret semantic issues, repeated losses and actual cost without adjusting the frozen prompts.",
+  "paired": [
+    {
+      "qid": "719",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_719__current__r1",
+            "qid": "719",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_719__current__r2",
+            "qid": "719",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "unsupported_premise",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              {
+                "stage": "second_query",
+                "claim": "collaborated with Queen",
+                "reason": "是未验证且与模型自己已指出主唱存活条件冲突的候选入口，未给出解决冲突的理由。"
+              }
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_719__exploratory__r1",
+            "qid": "719",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "protocol_error",
+            "first_query_fidelity": "not_evaluable",
+            "second_action_grounding": "protocol_error",
+            "first_query_issues": [
+              "No executable first query."
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_719__exploratory__r2",
+            "qid": "719",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              {
+                "stage": "first_content",
+                "claim": "Steven Tyler ... 22 years ... fits just short of two decades",
+                "reason": "把超过20年说成不足20年，属于可见分析中的关系错误；实际首query没有该年份关系。"
+              }
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "520",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_520__current__r1",
+            "qid": "520",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_520__current__r2",
+            "qid": "520",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_520__exploratory__r1",
+            "qid": "520",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_520__exploratory__r2",
+            "qid": "520",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "protocol_error",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "protocol_error",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              {
+                "stage": "first_content",
+                "claim": "J.D. Salinger (alive); Philip Roth (alive)",
+                "reason": "与题目/已见来源无关的无来源具体生存断言；不据此计新增依据。"
+              }
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "605",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_605__current__r1",
+            "qid": "605",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "47140",
+                "document_sha256": "2a3d42246805ffd49c7a475eb6c67bbf92501b1b0500364c7a59eb05f2c7cfdf",
+                "fact": "ReCore于2016-09-13发行，第6首为Nothing According to Plan。",
+                "question_link": "对应发行区间和待找第6首。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "| 6. |\n\nNothing According to Plan",
+                      "source_spans": [
+                        [
+                          392,
+                          425
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "release date: September 13th 2016",
+                      "source_spans": [
+                        [
+                          40,
+                          73
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "47140"
+            ],
+            "first_visible_docs": [
+              "47140"
+            ],
+            "cumulative_useful_docs": [
+              "47140"
+            ],
+            "cumulative_visible_docs": [
+              "47140"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_605__current__r2",
+            "qid": "605",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "47140",
+                "document_sha256": "2a3d42246805ffd49c7a475eb6c67bbf92501b1b0500364c7a59eb05f2c7cfdf",
+                "fact": "ReCore于2016-09-13发行，第6首为Nothing According to Plan。",
+                "question_link": "对应发行区间和待找第6首。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "| 6. |\n\nNothing According to Plan",
+                      "source_spans": [
+                        [
+                          392,
+                          425
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "release date: September 13th 2016",
+                      "source_spans": [
+                        [
+                          40,
+                          73
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "47140"
+            ],
+            "first_visible_docs": [
+              "47140"
+            ],
+            "cumulative_useful_docs": [
+              "47140"
+            ],
+            "cumulative_visible_docs": [
+              "47140"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_605__exploratory__r1",
+            "qid": "605",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "47140",
+                "document_sha256": "2a3d42246805ffd49c7a475eb6c67bbf92501b1b0500364c7a59eb05f2c7cfdf",
+                "fact": "ReCore于2016-09-13发行，第6首为Nothing According to Plan。",
+                "question_link": "对应发行区间和待找第6首。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "| 6. |\n\nNothing According to Plan",
+                      "source_spans": [
+                        [
+                          392,
+                          425
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "release date: September 13th 2016",
+                      "source_spans": [
+                        [
+                          40,
+                          73
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "47140"
+            ],
+            "first_visible_docs": [
+              "47140"
+            ],
+            "cumulative_useful_docs": [
+              "47140"
+            ],
+            "cumulative_visible_docs": [
+              "47140"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_605__exploratory__r2",
+            "qid": "605",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "47140",
+                "document_sha256": "2a3d42246805ffd49c7a475eb6c67bbf92501b1b0500364c7a59eb05f2c7cfdf",
+                "fact": "ReCore于2016-09-13发行，第6首为Nothing According to Plan。",
+                "question_link": "对应发行区间和待找第6首。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "| 6. |\n\nNothing According to Plan",
+                      "source_spans": [
+                        [
+                          392,
+                          425
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "release date: September 13th 2016",
+                      "source_spans": [
+                        [
+                          40,
+                          73
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "47140"
+            ],
+            "first_visible_docs": [
+              "47140"
+            ],
+            "cumulative_useful_docs": [
+              "47140"
+            ],
+            "cumulative_visible_docs": [
+              "47140"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "760",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_760__current__r1",
+            "qid": "760",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [
+              "African actor（或African born简写）未明确保留“出生在非洲国家”；不能把国籍/族裔当出生地。"
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_760__current__r2",
+            "qid": "760",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [
+              "African actor（或African born简写）未明确保留“出生在非洲国家”；不能把国籍/族裔当出生地。"
+            ],
+            "unsupported_claims": [
+              {
+                "stage": "second_query",
+                "claim": "died 2017 2018 2019",
+                "reason": "在声称保留原题2016–2023条件时，实际query遗漏部分边界年份；未说明是分批尝试。"
+              }
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_760__exploratory__r1",
+            "qid": "760",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [
+              "African actor（或African born简写）未明确保留“出生在非洲国家”；不能把国籍/族裔当出生地。"
+            ],
+            "unsupported_claims": [
+              {
+                "stage": "second_query",
+                "claim": "died 2017 2018 2019 2020 2021 2022",
+                "reason": "在声称保留原题2016–2023条件时，实际query遗漏部分边界年份；未说明是分批尝试。"
+              }
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_760__exploratory__r2",
+            "qid": "760",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [
+              "African actor（或African born简写）未明确保留“出生在非洲国家”；不能把国籍/族裔当出生地。",
+              "stage actress mother与person主体的绑定含混，下一轮又把未知性别限定为actress。"
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "519",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_519__current__r1",
+            "qid": "519",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "unsupported_premise",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              {
+                "stage": "first_content",
+                "claim": "Based on the details provided, the political leader is **Margaret Thatcher**.",
+                "reason": "身份和BBC/Vienna初遇叙述没有题目或已见来源支持；甚至承认子女/年龄条件矛盾而迁就候选。"
+              },
+              {
+                "stage": "second_action",
+                "claim": "biographer of Margaret Thatcher",
+                "reason": "首批观察没有建立该传记对象或作者关系。"
+              }
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_519__current__r2",
+            "qid": "519",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "unsupported_premise",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              {
+                "stage": "first_content",
+                "claim": "Based on the details provided, the political leader is **Margaret Thatcher**.",
+                "reason": "身份和BBC/Vienna初遇叙述没有题目或已见来源支持；甚至承认子女/年龄条件矛盾而迁就候选。"
+              },
+              {
+                "stage": "second_action",
+                "claim": "John Campbell biographer Margaret Thatcher",
+                "reason": "首批观察没有建立该传记对象或作者关系。"
+              }
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_519__exploratory__r1",
+            "qid": "519",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              {
+                "stage": "first_content",
+                "claim": "The meeting at the BBC and the Vienna Café is a famous anecdote regarding Margaret Thatcher",
+                "reason": "此具体附会未被原题/来源支持；模型随后质疑且检索后纠正，不能因此说它从未猜候选。"
+              }
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "32525",
+                "document_sha256": "dcecf765db336714d5808a6673952b5748607554e63b1250b3429cfc93cad74b",
+                "fact": "Niyazi出生于1959年12月7日。",
+                "question_link": "验证原题研究者生日。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Professor Dr. Niyazi Kızılyürek was born on the 7th of December 1959 in Potamia a small bicommunal village in Cyprus.",
+                      "source_spans": [
+                        [
+                          107,
+                          224
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              },
+              {
+                "docid": "73078",
+                "document_sha256": "e520136fcf130ecb05e47afb743af07c18e7556b3ba2be578590a5823687518f",
+                "fact": "该传记的出版年份为2008。",
+                "question_link": "验证2010之前出版。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "The book, Glafkos Clerides: The Path of a Country, is an important document for anyone who wants to understand the long-standing Cyprus problem and derive their own lessons for the future.",
+                      "source_spans": [
+                        [
+                          1038,
+                          1226
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Year: 2008",
+                      "source_spans": [
+                        [
+                          1355,
+                          1365
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              },
+              {
+                "docid": "27467",
+                "document_sha256": "9c422c106587180b1855683d1410c77797838ce8306f78d533f78e1da8e112d2",
+                "fact": "Niyazi于1990在Bremen取得PhD。",
+                "question_link": "首步62838已确立其为传记作者；本步才取得博士年份。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "He graduated from the University of Bremen in Germany in 1983, where he also obtained his PhD in 1990.",
+                      "source_spans": [
+                        [
+                          463,
+                          565
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "62838"
+            ],
+            "first_visible_docs": [
+              "62838"
+            ],
+            "cumulative_useful_docs": [
+              "62838",
+              "32525",
+              "73078",
+              "6229",
+              "27467"
+            ],
+            "cumulative_visible_docs": [
+              "62838",
+              "32525",
+              "73078",
+              "27467"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_519__exploratory__r2",
+            "qid": "519",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              {
+                "stage": "first_content",
+                "claim": "This narrative strongly matches **Margaret Thatcher**.",
+                "reason": "此具体附会未被原题/来源支持；模型随后质疑且检索后纠正，不能因此说它从未猜候选。"
+              }
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "32525",
+                "document_sha256": "dcecf765db336714d5808a6673952b5748607554e63b1250b3429cfc93cad74b",
+                "fact": "Niyazi出生于1959年12月7日。",
+                "question_link": "验证原题研究者生日。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Professor Dr. Niyazi Kızılyürek was born on the 7th of December 1959 in Potamia a small bicommunal village in Cyprus.",
+                      "source_spans": [
+                        [
+                          107,
+                          224
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              },
+              {
+                "docid": "73078",
+                "document_sha256": "e520136fcf130ecb05e47afb743af07c18e7556b3ba2be578590a5823687518f",
+                "fact": "该传记的出版年份为2008。",
+                "question_link": "验证2010之前出版。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "The book, Glafkos Clerides: The Path of a Country, is an important document for anyone who wants to understand the long-standing Cyprus problem and derive their own lessons for the future.",
+                      "source_spans": [
+                        [
+                          1038,
+                          1226
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Year: 2008",
+                      "source_spans": [
+                        [
+                          1355,
+                          1365
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              },
+              {
+                "docid": "27467",
+                "document_sha256": "9c422c106587180b1855683d1410c77797838ce8306f78d533f78e1da8e112d2",
+                "fact": "Niyazi于1990在Bremen取得PhD。",
+                "question_link": "首步62838已确立其为传记作者；本步才取得博士年份。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "He graduated from the University of Bremen in Germany in 1983, where he also obtained his PhD in 1990.",
+                      "source_spans": [
+                        [
+                          463,
+                          565
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "62838"
+            ],
+            "first_visible_docs": [
+              "62838"
+            ],
+            "cumulative_useful_docs": [
+              "62838",
+              "32525",
+              "73078",
+              "6229",
+              "27467"
+            ],
+            "cumulative_visible_docs": [
+              "62838",
+              "32525",
+              "73078",
+              "27467"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 1,
+          "delta": 1,
+          "direction": "win",
+          "repeatable_win": true,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 1,
+          "delta": 1,
+          "direction": "win",
+          "repeatable_win": true,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 1,
+          "delta": 1,
+          "direction": "win",
+          "repeatable_win": true,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 1,
+          "delta": 1,
+          "direction": "win",
+          "repeatable_win": true,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 1,
+          "delta": 1,
+          "direction": "win",
+          "repeatable_win": true,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "854",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_854__current__r1",
+            "qid": "854",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "unsupported_premise",
+            "first_query_issues": [
+              "把文章发表于2017年2月近似为事故发生日期；原题并未显式保证两者同月。"
+            ],
+            "unsupported_claims": [
+              {
+                "stage": "first_and_second_content",
+                "claim": "Since the corpus is BC+; The Bainskloof incident is in South Africa, not BC.",
+                "reason": "把数据集名解读为地理范围并加入BC限制，原题没有这个限制。"
+              }
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "3817",
+                "document_sha256": "9552f5536f98e58ebc1e7be871265d43850e69817faab6abea64856773eb3ff7",
+                "fact": "Bain于1818结婚，其子Thomas也随其修路。",
+                "question_link": "验证事故年减199所指历史入口及家族修路关系。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "On 16 November 1818 he married Elizabeth von Backström in the Groote Kerk in Cape Town.",
+                      "source_spans": [
+                        [
+                          755,
+                          842
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Thomas Charles John, his second son, would later join his father as apprentice road builder to one day become the builder of many more roads than his father.",
+                      "source_spans": [
+                        [
+                          902,
+                          1059
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "41381"
+            ],
+            "first_visible_docs": [
+              "41381"
+            ],
+            "cumulative_useful_docs": [
+              "41381",
+              "3817"
+            ],
+            "cumulative_visible_docs": [
+              "41381",
+              "3817"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_854__current__r2",
+            "qid": "854",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [
+              "把文章发表于2017年2月近似为事故发生日期；原题并未显式保证两者同月。"
+            ],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "3817",
+                "document_sha256": "9552f5536f98e58ebc1e7be871265d43850e69817faab6abea64856773eb3ff7",
+                "fact": "Bain于1818结婚，其子Thomas也随其修路。",
+                "question_link": "验证事故年减199所指历史入口及家族修路关系。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "On 16 November 1818 he married Elizabeth von Backström in the Groote Kerk in Cape Town.",
+                      "source_spans": [
+                        [
+                          755,
+                          842
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Thomas Charles John, his second son, would later join his father as apprentice road builder to one day become the builder of many more roads than his father.",
+                      "source_spans": [
+                        [
+                          902,
+                          1059
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              },
+              {
+                "docid": "71391",
+                "document_sha256": "83efd593c3607f1899aab603e92eea63d803e743a8b65666292546c53288e474",
+                "fact": "Bain童年失去双亲，1818婚姻的妻子于1857去世。",
+                "question_link": "验证孤儿及晚1850年代丧偶。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Both parents died when he was a child and he was brought up by an aunt who lived near Edinburgh.",
+                      "source_spans": [
+                        [
+                          918,
+                          1014
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "In November 1818 he married Miss Elizabeth Maria von Backstrom, who bore him 11 children.",
+                      "source_spans": [
+                        [
+                          1236,
+                          1325
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Elizabeth died in 1857, and he was then briefly married to Theodora Kerr.",
+                      "source_spans": [
+                        [
+                          1417,
+                          1490
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              },
+              {
+                "docid": "15991",
+                "document_sha256": "10297706ae0ed973bf46224d1a13f631ac4a52f3b782c19536f85ef7e647f754",
+                "fact": "Thomas与父亲分别修建24和8条主要山路。",
+                "question_link": "总数32处在题目开放范围内。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Bain built 24 major mountain roads and passes in the second half of the 1800s. His father built eight during the first half of the same century.",
+                      "source_spans": [
+                        [
+                          2890,
+                          3034
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "41381"
+            ],
+            "first_visible_docs": [
+              "41381"
+            ],
+            "cumulative_useful_docs": [
+              "41381",
+              "3817",
+              "71391",
+              "46302",
+              "15991",
+              "54571",
+              "69065"
+            ],
+            "cumulative_visible_docs": [
+              "41381",
+              "3817",
+              "71391",
+              "46302",
+              "15991"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_854__exploratory__r1",
+            "qid": "854",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "mutation",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [
+              "query把本人及家人合计more than28 less than40 roads压成road builder built28-40 roads，丢失共同主体和开放区间；1818还假设事故年即报道年。"
+            ],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "3817",
+                "document_sha256": "9552f5536f98e58ebc1e7be871265d43850e69817faab6abea64856773eb3ff7",
+                "fact": "Bain妻子1857年去世，次年再婚。",
+                "question_link": "验证晚1850年代丧偶。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "His wife passed away after their relocation in 1857 and Bain married Theodora Kerr, a widow from Uitenhage one year later.",
+                      "source_spans": [
+                        [
+                          5224,
+                          5346
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "15991",
+              "54571",
+              "3817"
+            ],
+            "first_visible_docs": [
+              "3817"
+            ],
+            "cumulative_useful_docs": [
+              "15991",
+              "54571",
+              "3817",
+              "71391"
+            ],
+            "cumulative_visible_docs": [
+              "3817",
+              "71391"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_854__exploratory__r2",
+            "qid": "854",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "mutation",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [
+              "query把家族合计道路数变成本人built28-40，并弱化晚1850年代；1818基于事故年=报道年的假设。"
+            ],
+            "unsupported_claims": [
+              {
+                "stage": "second_content",
+                "claim": "Andrew died in 1863. His wife Elizabeth died in 1858.",
+                "reason": "这两个年份不在首步窗口；实际本地Bain原文为1864/1857。"
+              }
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "41381",
+                "document_sha256": "c1bc0633cf6811b11b6b8ceb00b88d58ece0a13f6e3d31446eb6022bfa50d8b4",
+                "fact": "2017年2月Bainskloof Pass汽车撞豹，事故后测得37kg。",
+                "question_link": "直接连接事故月份/道路与待问动物体重。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "On Thursday 16 Feb 2017, a leopard was hit by a car in Bainskloof Pass near Wellington.",
+                      "source_spans": [
+                        [
+                          171,
+                          258
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "He was quite large for a fynbos leopard, weighing in at 37kg and was estimated to be around 5 years old.",
+                      "source_spans": [
+                        [
+                          782,
+                          886
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "15991",
+              "54571",
+              "3817"
+            ],
+            "first_visible_docs": [
+              "3817"
+            ],
+            "cumulative_useful_docs": [
+              "15991",
+              "54571",
+              "3817",
+              "41381"
+            ],
+            "cumulative_visible_docs": [
+              "3817",
+              "41381"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "1000",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_1000__current__r1",
+            "qid": "1000",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              {
+                "stage": "second_query",
+                "claim": "book profiled 1990s",
+                "reason": "原题为20世纪末的闰年，没有限定1990年代；是未说明的范围收窄。"
+              }
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "33294",
+                "document_sha256": "41378018bf931c1633726abc88d8f76feb61d4396db6ceedabbc2ba5f5d8580b",
+                "fact": "Barnor在加纳1957独立之后，于1958开设Link Road诊所。",
+                "question_link": "验证独立次年开诊所。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "After independence in 1957 Dr Barnor retired from the government service.",
+                      "source_spans": [
+                        [
+                          3311,
+                          3384
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "In 1958 he set up the Link Road clinic, Accra, which assumed hospital status in 1972.",
+                      "source_spans": [
+                        [
+                          3486,
+                          3571
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "33294"
+            ],
+            "first_visible_docs": [
+              "33294"
+            ],
+            "cumulative_useful_docs": [
+              "33294"
+            ],
+            "cumulative_visible_docs": [
+              "33294"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_1000__current__r2",
+            "qid": "1000",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "33294",
+                "document_sha256": "41378018bf931c1633726abc88d8f76feb61d4396db6ceedabbc2ba5f5d8580b",
+                "fact": "Barnor在独立次年1958开Link Road诊所。",
+                "question_link": "诊所年份条件。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "After independence in 1957 Dr Barnor retired from the government service.",
+                      "source_spans": [
+                        [
+                          3311,
+                          3384
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "In 1958 he set up the Link Road clinic, Accra, which assumed hospital status in 1972.",
+                      "source_spans": [
+                        [
+                          3486,
+                          3571
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              },
+              {
+                "docid": "33294",
+                "document_sha256": "41378018bf931c1633726abc88d8f76feb61d4396db6ceedabbc2ba5f5d8580b",
+                "fact": "Barnor于2005年6月20日去世。",
+                "question_link": "早21世纪去世条件。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Matthew Arnum Barnor, former family physician, president Ghana Medical Association, founding father Planned Parenthood Association Ghana, founder Link Road Hospital, Accra, Ghana (born 1917; q Edinburgh 1947; DTM&H), d 20 June 2005.",
+                      "source_spans": [
+                        [
+                          5651,
+                          5883
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "33294"
+            ],
+            "first_visible_docs": [
+              "33294"
+            ],
+            "cumulative_useful_docs": [
+              "33294"
+            ],
+            "cumulative_visible_docs": [
+              "33294"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_1000__exploratory__r1",
+            "qid": "1000",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [
+              "query使用clinic1958依赖一般历史知识将独立次年具体化；区别于题目逐字事实，不把这一可核算展开计为关系错误。"
+            ],
+            "unsupported_claims": [
+              {
+                "stage": "first_content",
+                "claim": "Dr. Charles Odamtten Easmon ... He sailed on the Copacabana? Yes",
+                "reason": "首搜前把具体候选航行关系作肯定陈述，尚无来源；实际query未使用该候选。"
+              },
+              {
+                "stage": "second_content",
+                "claim": "one of seven West African students",
+                "reason": "窗口原文是seven ships以及several west African students，数量主体混淆。"
+              }
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "33294",
+                "document_sha256": "41378018bf931c1633726abc88d8f76feb61d4396db6ceedabbc2ba5f5d8580b",
+                "fact": "Barnor获政府奖学金去Edinburgh University学医，并于二战乘Copacabana赴学。",
+                "question_link": "本会话first仅展示Edinburgh临床工作和船队后文，second才显示大学留学的明确关系。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Born in Accra, in the then Gold Coast, in 1917, he won a British government scholarship to study medicine and left for Edinburgh University on the Belgian ship Copacabana during the second world war.",
+                      "source_spans": [
+                        [
+                          1871,
+                          2070
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "33294"
+            ],
+            "first_visible_docs": [
+              "33294"
+            ],
+            "cumulative_useful_docs": [
+              "33294"
+            ],
+            "cumulative_visible_docs": [
+              "33294"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_1000__exploratory__r2",
+            "qid": "1000",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "protocol_error",
+            "first_query_fidelity": "not_evaluable",
+            "second_action_grounding": "protocol_error",
+            "first_query_issues": [
+              "No executable first query."
+            ],
+            "unsupported_claims": [
+              {
+                "stage": "first_content",
+                "claim": "the biographical markers ... uniquely identify Charles Odamtten Easmon",
+                "reason": "没有任何检索观察，具体大学、诊所、去世年均来自未验证记忆/猜测。"
+              }
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 1,
+          "exploratory": 0.5,
+          "delta": -0.5,
+          "direction": "loss",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 1,
+          "exploratory": 0.5,
+          "delta": -0.5,
+          "direction": "loss",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 1,
+          "exploratory": 0.5,
+          "delta": -0.5,
+          "direction": "loss",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 1,
+          "exploratory": 0.5,
+          "delta": -0.5,
+          "direction": "loss",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 1,
+          "exploratory": 0.5,
+          "delta": -0.5,
+          "direction": "loss",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "435",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_435__current__r1",
+            "qid": "435",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "第二步声称search results confirm人权活动身份，但首步返回正文未证明该属性。"
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "fact": "Forbes五月2017报道关联65张专辑",
+                "question_link": "新增题内身份约束或最终所问时点数量",
+                "docid": "51535",
+                "document_sha256": "e2d0e0fe581430d22d497d2192d46736e46fb05d840229ca7a1f37e46a347142",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "#10 – Oliver Mtukudzi (Zimbabwe)",
+                      "source_spans": [
+                        [
+                          539,
+                          571
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Throughout his years as a musician, he has produced 65 albums, traveled all over the world on tours, and has been the recipient of many awards.",
+                      "source_spans": [
+                        [
+                          791,
+                          934
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "His long and industrious musical career has brought him immense wealth. Forbes listed him as one of Africa's top richest musicians in its May 2017 release.",
+                      "source_spans": [
+                        [
+                          936,
+                          1091
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "70761"
+            ],
+            "first_visible_docs": [
+              "70761"
+            ],
+            "cumulative_useful_docs": [
+              "70761",
+              "40274",
+              "43657",
+              "30145",
+              "57503",
+              "51535"
+            ],
+            "cumulative_visible_docs": [
+              "70761",
+              "43657",
+              "57503",
+              "51535"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_435__current__r2",
+            "qid": "435",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "第二步content将began performing in 1977改述为first album specifically 1977；首步来源未证明首专辑日期。",
+              "把原题的人权活动身份说成该候选已确认属性，首步窗口未直接证明。"
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "fact": "Forbes五月2017报道关联65张专辑",
+                "question_link": "新增题内身份约束或最终所问时点数量",
+                "docid": "51535",
+                "document_sha256": "e2d0e0fe581430d22d497d2192d46736e46fb05d840229ca7a1f37e46a347142",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "#10 – Oliver Mtukudzi (Zimbabwe)",
+                      "source_spans": [
+                        [
+                          539,
+                          571
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Throughout his years as a musician, he has produced 65 albums, traveled all over the world on tours, and has been the recipient of many awards.",
+                      "source_spans": [
+                        [
+                          791,
+                          934
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "His long and industrious musical career has brought him immense wealth. Forbes listed him as one of Africa's top richest musicians in its May 2017 release.",
+                      "source_spans": [
+                        [
+                          936,
+                          1091
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "70761"
+            ],
+            "first_visible_docs": [
+              "70761"
+            ],
+            "cumulative_useful_docs": [
+              "70761",
+              "43657",
+              "40274",
+              "30145",
+              "57503",
+              "51535"
+            ],
+            "cumulative_visible_docs": [
+              "70761",
+              "43657",
+              "57503",
+              "51535"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_435__exploratory__r1",
+            "qid": "435",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "fact": "Forbes五月2017报道关联65张专辑",
+                "question_link": "新增题内身份约束或最终所问时点数量",
+                "docid": "51535",
+                "document_sha256": "e2d0e0fe581430d22d497d2192d46736e46fb05d840229ca7a1f37e46a347142",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "#10 – Oliver Mtukudzi (Zimbabwe)",
+                      "source_spans": [
+                        [
+                          539,
+                          571
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Throughout his years as a musician, he has produced 65 albums, traveled all over the world on tours, and has been the recipient of many awards.",
+                      "source_spans": [
+                        [
+                          791,
+                          934
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "His long and industrious musical career has brought him immense wealth. Forbes listed him as one of Africa's top richest musicians in its May 2017 release.",
+                      "source_spans": [
+                        [
+                          936,
+                          1091
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "70761"
+            ],
+            "first_visible_docs": [
+              "70761"
+            ],
+            "cumulative_useful_docs": [
+              "70761",
+              "43657",
+              "40274",
+              "30145",
+              "57503",
+              "51535"
+            ],
+            "cumulative_visible_docs": [
+              "70761",
+              "43657",
+              "57503",
+              "51535"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_435__exploratory__r2",
+            "qid": "435",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "首步content未经检索断言Miriam Makeba died at 67；该旁支记忆没有进入实际query。"
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "fact": "具名音乐家死亡66岁且生涯67张专辑",
+                "question_link": "新增题内身份约束或最终所问时点数量",
+                "docid": "70761",
+                "document_sha256": "862eacfa7d67dbfe0cb3669e740b00d752cfa846792f2f399a0c1556d758cf8f",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Zimbabwe's most successful and internationally renowned musician Oliver Mtukudzi died on Wednesday after suffering from diabetes, ending a career that spanned four decades and 67 albums.",
+                      "source_spans": [
+                        [
+                          49,
+                          235
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "The 66-year-old singer, affectionately known as \"Tuku,\" died at a local clinic on Wednesday afternoon",
+                      "source_spans": [
+                        [
+                          237,
+                          338
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "54137",
+              "48151"
+            ],
+            "first_visible_docs": [
+              "54137",
+              "48151"
+            ],
+            "cumulative_useful_docs": [
+              "54137",
+              "48151",
+              "40274",
+              "30145",
+              "12469",
+              "43657",
+              "70761",
+              "57503"
+            ],
+            "cumulative_visible_docs": [
+              "54137",
+              "48151",
+              "40274",
+              "30145",
+              "12469",
+              "43657",
+              "70761",
+              "57503"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "60",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_60__current__r1",
+            "qid": "60",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_60__current__r2",
+            "qid": "60",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_60__exploratory__r1",
+            "qid": "60",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_60__exploratory__r2",
+            "qid": "60",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "1249",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_1249__current__r1",
+            "qid": "1249",
+            "arm": "current",
+            "repeat": 1,
+            "status": "protocol_error",
+            "first_query_fidelity": "not_evaluable",
+            "second_action_grounding": "protocol_error",
+            "first_query_issues": [
+              "no_executable_first_query"
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_1249__current__r2",
+            "qid": "1249",
+            "arm": "current",
+            "repeat": 2,
+            "status": "protocol_error",
+            "first_query_fidelity": "not_evaluable",
+            "second_action_grounding": "protocol_error",
+            "first_query_issues": [
+              "no_executable_first_query"
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_1249__exploratory__r1",
+            "qid": "1249",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "mutation",
+            "second_action_grounding": "unsupported_premise",
+            "first_query_issues": [
+              "unsupported_US_scope",
+              "exclusive_year_bounds_weakened"
+            ],
+            "unsupported_claims": [
+              "原题国家未知，却把候选空间解释为US states；between 1975 and 1980弱化after/before边界。"
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_1249__exploratory__r2",
+            "qid": "1249",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "protocol_error",
+            "first_query_fidelity": "not_evaluable",
+            "second_action_grounding": "protocol_error",
+            "first_query_issues": [
+              "no_executable_first_query"
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "71",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_71__current__r1",
+            "qid": "71",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "fact": "Ballast Bank用于稳定船舶且酒店酒吧以它命名，来源报1905",
+                "question_link": "新增直接关联结构功能、年代与餐厅命名的依据",
+                "docid": "10907",
+                "document_sha256": "216b7af129f0337eaa660e58c742a15c6b3247b181091cd034f12da3d2b911f8",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "The Ballast Bank is a rather curious man-made island in Wexford Harbour opposite the Talbot Hotel. It was erected to provide a place for loading and unloading ballast, which was essential to stabilise ships sailing without cargo.",
+                      "source_spans": [
+                        [
+                          49,
+                          278
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Both the Talbot Hotel and the Ballast Bank were constructed in 1905 and so it seems fitting to name one of Wexford's landmark bars after one of Wexford's most famous landmarks.",
+                      "source_spans": [
+                        [
+                          279,
+                          455
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [
+              "10907"
+            ],
+            "cumulative_visible_docs": [
+              "10907"
+            ],
+            "visible_gain_from_second": 1,
+            "source_gain_from_second": 1
+          },
+          {
+            "session": "qid_71__current__r2",
+            "qid": "71",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_71__exploratory__r1",
+            "qid": "71",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "fact": "Ballast Bank用于稳定船舶且酒店酒吧以它命名，来源报1905",
+                "question_link": "新增直接关联结构功能、年代与餐厅命名的依据",
+                "docid": "10907",
+                "document_sha256": "216b7af129f0337eaa660e58c742a15c6b3247b181091cd034f12da3d2b911f8",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "The Ballast Bank is a rather curious man-made island in Wexford Harbour opposite the Talbot Hotel. It was erected to provide a place for loading and unloading ballast, which was essential to stabilise ships sailing without cargo.",
+                      "source_spans": [
+                        [
+                          49,
+                          278
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Both the Talbot Hotel and the Ballast Bank were constructed in 1905 and so it seems fitting to name one of Wexford's landmark bars after one of Wexford's most famous landmarks.",
+                      "source_spans": [
+                        [
+                          279,
+                          455
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [
+              "10907"
+            ],
+            "cumulative_visible_docs": [
+              "10907"
+            ],
+            "visible_gain_from_second": 1,
+            "source_gain_from_second": 1
+          },
+          {
+            "session": "qid_71__exploratory__r2",
+            "qid": "71",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "fact": "Ballast Bank用于稳定船舶且酒店酒吧以它命名，来源报1905",
+                "question_link": "新增直接关联结构功能、年代与餐厅命名的依据",
+                "docid": "10907",
+                "document_sha256": "216b7af129f0337eaa660e58c742a15c6b3247b181091cd034f12da3d2b911f8",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "The Ballast Bank is a rather curious man-made island in Wexford Harbour opposite the Talbot Hotel. It was erected to provide a place for loading and unloading ballast, which was essential to stabilise ships sailing without cargo.",
+                      "source_spans": [
+                        [
+                          49,
+                          278
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Both the Talbot Hotel and the Ballast Bank were constructed in 1905 and so it seems fitting to name one of Wexford's landmark bars after one of Wexford's most famous landmarks.",
+                      "source_spans": [
+                        [
+                          279,
+                          455
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [
+              "10907"
+            ],
+            "cumulative_visible_docs": [
+              "10907"
+            ],
+            "visible_gain_from_second": 1,
+            "source_gain_from_second": 1
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0.5,
+          "exploratory": 1,
+          "delta": 0.5,
+          "direction": "win",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0.5,
+          "exploratory": 1,
+          "delta": 0.5,
+          "direction": "win",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0.5,
+          "exploratory": 1,
+          "delta": 0.5,
+          "direction": "win",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0.5,
+          "exploratory": 1,
+          "delta": 0.5,
+          "direction": "win",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0.5,
+          "exploratory": 1,
+          "delta": 0.5,
+          "direction": "win",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "1039",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_1039__current__r1",
+            "qid": "1039",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_1039__current__r2",
+            "qid": "1039",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_1039__exploratory__r1",
+            "qid": "1039",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_1039__exploratory__r2",
+            "qid": "1039",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "446",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_446__current__r1",
+            "qid": "446",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "首步及第二步content以记忆猜测歌手/作者并否定Taylor Swift命名关系，没有来源支持；实际query没有这些具体名字。"
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_446__current__r2",
+            "qid": "446",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "unsupported_premise",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "第二步December 13, 1989没有题目/首步窗口支持。",
+              "首步content把Carly Simon说成以James Taylor命名，虽随后自我犹疑且未写入query。"
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [
+              "96498",
+              "40395",
+              "42972",
+              "18050",
+              "66009",
+              "43979"
+            ],
+            "first_visible_docs": [
+              "40395",
+              "42972",
+              "18050",
+              "43979"
+            ],
+            "cumulative_useful_docs": [
+              "96498",
+              "40395",
+              "42972",
+              "18050",
+              "66009",
+              "43979"
+            ],
+            "cumulative_visible_docs": [
+              "40395",
+              "42972",
+              "18050",
+              "43979"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_446__exploratory__r1",
+            "qid": "446",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [
+              "40395",
+              "89090",
+              "42972",
+              "96498",
+              "56426",
+              "18050"
+            ],
+            "first_visible_docs": [
+              "89090",
+              "42972",
+              "56426",
+              "18050"
+            ],
+            "cumulative_useful_docs": [
+              "40395",
+              "89090",
+              "42972",
+              "96498",
+              "56426",
+              "18050"
+            ],
+            "cumulative_visible_docs": [
+              "89090",
+              "42972",
+              "56426",
+              "18050"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_446__exploratory__r2",
+            "qid": "446",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "首步content先断言Carole King/Carly Simon对应线索，后自我纠正；实际query保留未知身份。"
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [
+              "96498",
+              "42972",
+              "40395",
+              "18050",
+              "43979",
+              "89090"
+            ],
+            "first_visible_docs": [
+              "42972",
+              "40395",
+              "18050",
+              "43979",
+              "89090"
+            ],
+            "cumulative_useful_docs": [
+              "96498",
+              "42972",
+              "40395",
+              "18050",
+              "43979",
+              "89090"
+            ],
+            "cumulative_visible_docs": [
+              "42972",
+              "40395",
+              "18050",
+              "43979",
+              "89090"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0.5,
+          "exploratory": 1,
+          "delta": 0.5,
+          "direction": "win",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0.5,
+          "exploratory": 1,
+          "delta": 0.5,
+          "direction": "win",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0.5,
+          "exploratory": 1,
+          "delta": 0.5,
+          "direction": "win",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0.5,
+          "exploratory": 1,
+          "delta": 0.5,
+          "direction": "win",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "1035",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_1035__current__r1",
+            "qid": "1035",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "mutation",
+            "second_action_grounding": "unsupported_premise",
+            "first_query_issues": [
+              "concert_year_narrowed_to_sales_year_2022"
+            ],
+            "unsupported_claims": [
+              "以DMC合作方替代Mountain View组织者并用作否定理由；把题目销售年份贴到音乐会。"
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "fact": "Jan Koum移居Mountain View并创办WhatsApp，以190亿美元出售",
+                "question_link": "补入此前未见的另一题内桥接事实",
+                "docid": "38647",
+                "document_sha256": "da6b1b992bc1a62900cb847d5607a94362be3d9b7c829f2126406b5accfc133c",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Jan Koum — WhatsApp",
+                      "source_spans": [
+                        [
+                          5174,
+                          5193
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Fleeing persecution in Ukraine as a teenager, Koum settled with his family in Mountain View, California, an ideal landing pad for a budding computer enthusiast.",
+                      "source_spans": [
+                        [
+                          5332,
+                          5492
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "Ignoring offers from venture capitalists, WhatsApp boomed in popularity and Facebook took notice, purchasing the 5-year-old company for $19B.",
+                      "source_spans": [
+                        [
+                          5678,
+                          5819
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "72400"
+            ],
+            "first_visible_docs": [
+              "72400"
+            ],
+            "cumulative_useful_docs": [
+              "72400",
+              "38647"
+            ],
+            "cumulative_visible_docs": [
+              "72400",
+              "38647"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_1035__current__r2",
+            "qid": "1035",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "content把同名城市说成named after，命名原因未由已见资料证明。"
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "fact": "Mountain View于2005年成立",
+                "question_link": "首步音乐会候选成立晚于2002的新验证",
+                "docid": "44626",
+                "document_sha256": "5bcc44c90acb0861f5b63894d888f043d9dab4bb8efe17577351cb4dcca155f5",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Mountain View was founded by Mohamed Galal, Wahby Mohamed and a group of ten additional investors in 2005, and launched its first project, Mountain View 1, New Cairo in 2006.",
+                      "source_spans": [
+                        [
+                          608,
+                          782
+                        ]
+                      ]
+                    }
+                  ]
+                ],
+                "context_note": "候选来自first step doc72400的Mountain View音乐会；不将公司成立年份向其他session泛化为独立有用来源。"
+              }
+            ],
+            "first_useful_docs": [
+              "72400"
+            ],
+            "first_visible_docs": [
+              "72400"
+            ],
+            "cumulative_useful_docs": [
+              "72400",
+              "44626"
+            ],
+            "cumulative_visible_docs": [
+              "72400",
+              "44626"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_1035__exploratory__r1",
+            "qid": "1035",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "mutation",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [
+              "app_venture_and_company_A_conflated"
+            ],
+            "unsupported_claims": [
+              "把Company A与创业者的app venture混同，因WhatsApp不是城市名错误排斥Mountain View关联。"
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "fact": "Mountain View举办6000人规模音乐会",
+                "question_link": "补入此前未见的另一题内桥接事实",
+                "docid": "72400",
+                "document_sha256": "0902d23b15ac706da91880b25f01a065541e0d55817cab814b5682446ad1b489",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "The organizers at Mountain View were working on a Greek-themed project called \"Greek Islands\", and Yanni, owing to his roots, was the perfect fit.",
+                      "source_spans": [
+                        [
+                          435,
+                          581
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "The concert at Mountain View has made history as well, as it was the largest seated concert in Egypt's history with more than 6,000 seated attendees.",
+                      "source_spans": [
+                        [
+                          1264,
+                          1413
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "66841",
+              "38647"
+            ],
+            "first_visible_docs": [
+              "66841",
+              "38647"
+            ],
+            "cumulative_useful_docs": [
+              "66841",
+              "38647",
+              "72400"
+            ],
+            "cumulative_visible_docs": [
+              "66841",
+              "38647",
+              "72400"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_1035__exploratory__r2",
+            "qid": "1035",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "protocol_error",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "protocol_error",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "没有来源支持就说Mountain View unlikely major brand；正确城市入口被先验猜测削弱。"
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [
+              "38647",
+              "66841"
+            ],
+            "first_visible_docs": [
+              "38647",
+              "66841"
+            ],
+            "cumulative_useful_docs": [
+              "38647",
+              "66841"
+            ],
+            "cumulative_visible_docs": [
+              "38647",
+              "66841"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 1,
+          "exploratory": 0.5,
+          "delta": -0.5,
+          "direction": "loss",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "1147",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_1147__current__r1",
+            "qid": "1147",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_1147__current__r2",
+            "qid": "1147",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_1147__exploratory__r1",
+            "qid": "1147",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_1147__exploratory__r2",
+            "qid": "1147",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "unobservable",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "124",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_124__current__r1",
+            "qid": "124",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [
+              "关键词排列未清楚绑定2018为文章年份，实际召回颁奖名单；不是显式把获奖时间改成2018。"
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_124__current__r2",
+            "qid": "124",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [
+              "关键词排列未清楚绑定2018为文章年份，实际召回颁奖名单；不是显式把获奖时间改成2018。"
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_124__exploratory__r1",
+            "qid": "124",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [
+              "关键词排列未清楚绑定2018为文章年份，实际召回颁奖名单；不是显式把获奖时间改成2018。"
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_124__exploratory__r2",
+            "qid": "124",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [
+              "关键词排列未清楚绑定2018为文章年份，实际召回颁奖名单；不是显式把获奖时间改成2018。"
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "978",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_978__current__r1",
+            "qid": "978",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 0,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "70422",
+                "document_sha256": "d8d975bc3d6bf3f05266fad2cc7c462481524f1fc75fd4da0e184499b20576ef",
+                "fact": "首次可见Endo是Spy X Family作者并曾为Blue Exorcist等担任助手。",
+                "question_link": "作者与先前助手作品的关系为题内具体候选入口。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Tatsuya Endo is perhaps the most well-known on the list as he is the author of the massively successful Spy X Family. He initially worked as an assistant for Blue Exorcist, Attack on Titan, and Fire Punch.",
+                      "source_spans": [
+                        [
+                          1464,
+                          1669
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "70422"
+            ],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [
+              "70422"
+            ],
+            "cumulative_visible_docs": [
+              "70422"
+            ],
+            "visible_gain_from_second": 1,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_978__current__r2",
+            "qid": "978",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "首步content在检索前断言Komi、Tomohito Oda、Gege助手及rehabilitation及well-documented第三次编辑合作，后有自我质疑；这些先前断言没有原题或来源依据。首query本身未写这些实体。"
+            ],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [
+              "70422"
+            ],
+            "first_visible_docs": [
+              "70422"
+            ],
+            "cumulative_useful_docs": [
+              "70422"
+            ],
+            "cumulative_visible_docs": [
+              "70422"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_978__exploratory__r1",
+            "qid": "978",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "5794",
+                "document_sha256": "06aaae35385800b3e7501760c494c4f33f83f0f24db1a4e221e5269f49d74538",
+                "fact": "Endo家庭一名家长一个哥哥，爱好含篮球及持拍球类。",
+                "question_link": "首步已显示Endo与Spy X Family/助手关系，第二步新家庭和运动属性对应原题尚未核验条件。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "His family consists of one parent and one elder brother.",
+                      "source_spans": [
+                        [
+                          127,
+                          183
+                        ]
+                      ]
+                    },
+                    {
+                      "quote": "His hobbies, special skills, pride include skiing, basketball, racket-based ball games, repeated side-steps, doing nothing, getting stomatitis, and health destruction.[1]",
+                      "source_spans": [
+                        [
+                          385,
+                          555
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "70422"
+            ],
+            "first_visible_docs": [
+              "70422"
+            ],
+            "cumulative_useful_docs": [
+              "70422",
+              "5794"
+            ],
+            "cumulative_visible_docs": [
+              "70422",
+              "5794"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_978__exploratory__r2",
+            "qid": "978",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "question_reanchor",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 0,
+            "cumulative_source": 1,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [
+              "70422"
+            ],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [
+              "70422"
+            ],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0.5,
+          "exploratory": 0.5,
+          "delta": 0.0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 1,
+          "exploratory": 0.5,
+          "delta": -0.5,
+          "direction": "loss",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0.5,
+          "exploratory": 0.5,
+          "delta": 0.0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0.5,
+          "exploratory": 0,
+          "delta": -0.5,
+          "direction": "loss",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "191",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_191__current__r1",
+            "qid": "191",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "80098",
+                "document_sha256": "5d8dad87163302a5b1af072b281789d65b74da67b5ede56ee65a80f0c4921294",
+                "fact": "Tim共同制作具体电视节目。",
+                "question_link": "首步仅刊物制作/编辑、Magic Week宣传与购店，未呈现具体电视制作经历；新事实能推进TV背景核验，仍不等于训练已确认。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Tim has acted as magic consultant on several plays, movies and TV series and co-produced 'The Catchpenny Club' for Channel 31 and 'Magical Mystery Tour Downunder' for NHKTV Japan.",
+                      "source_spans": [
+                        [
+                          374,
+                          553
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "86746",
+              "48963"
+            ],
+            "first_visible_docs": [
+              "86746",
+              "48963"
+            ],
+            "cumulative_useful_docs": [
+              "86746",
+              "48963",
+              "28646",
+              "74394",
+              "85951",
+              "80098"
+            ],
+            "cumulative_visible_docs": [
+              "86746",
+              "48963",
+              "74394",
+              "85951",
+              "80098"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_191__current__r2",
+            "qid": "191",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 1,
+            "new_evidence": [
+              {
+                "docid": "80098",
+                "document_sha256": "5d8dad87163302a5b1af072b281789d65b74da67b5ede56ee65a80f0c4921294",
+                "fact": "Tim共同制作具体电视节目。",
+                "question_link": "首步仅刊物制作/编辑、Magic Week宣传与购店，未呈现具体电视制作经历；新事实能推进TV背景核验，仍不等于训练已确认。",
+                "proof_alternatives": [
+                  [
+                    {
+                      "quote": "Tim has acted as magic consultant on several plays, movies and TV series and co-produced 'The Catchpenny Club' for Channel 31 and 'Magical Mystery Tour Downunder' for NHKTV Japan.",
+                      "source_spans": [
+                        [
+                          374,
+                          553
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            "first_useful_docs": [
+              "86746",
+              "48963"
+            ],
+            "first_visible_docs": [
+              "86746",
+              "48963"
+            ],
+            "cumulative_useful_docs": [
+              "86746",
+              "48963",
+              "28646",
+              "74394",
+              "85951",
+              "80098"
+            ],
+            "cumulative_visible_docs": [
+              "86746",
+              "48963",
+              "74394",
+              "85951",
+              "80098"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_191__exploratory__r1",
+            "qid": "191",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "observation_grounded",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [
+              "86746"
+            ],
+            "first_visible_docs": [
+              "86746"
+            ],
+            "cumulative_useful_docs": [
+              "86746"
+            ],
+            "cumulative_visible_docs": [
+              "86746"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_191__exploratory__r2",
+            "qid": "191",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 1,
+            "first_visible": 1,
+            "cumulative_source": 1,
+            "cumulative_visible": 1,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [
+              "86746"
+            ],
+            "first_visible_docs": [
+              "86746"
+            ],
+            "cumulative_useful_docs": [
+              "86746"
+            ],
+            "cumulative_visible_docs": [
+              "86746"
+            ],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 1,
+          "exploratory": 1,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 1,
+          "exploratory": 0,
+          "delta": -1,
+          "direction": "loss",
+          "repeatable_win": false,
+          "repeatable_loss": true
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "134",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_134__current__r1",
+            "qid": "134",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "content把原题according to an article改说supervisor wrote an article，原题没有说明导师就是作者。实际query尚未指定文章作者。"
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_134__current__r2",
+            "qid": "134",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_134__exploratory__r1",
+            "qid": "134",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_134__exploratory__r2",
+            "qid": "134",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [
+              "content把原题according to an article改说supervisor wrote an article，原题没有说明导师就是作者。实际query尚未指定文章作者。"
+            ],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    },
+    {
+      "qid": "692",
+      "sessions": {
+        "current": [
+          {
+            "session": "qid_692__current__r1",
+            "qid": "692",
+            "arm": "current",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_692__current__r2",
+            "qid": "692",
+            "arm": "current",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "ambiguous",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [
+              "关键词缺少主谓，diagnostic clinic与个人文章关系较含混，但未明确置换。"
+            ],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ],
+        "exploratory": [
+          {
+            "session": "qid_692__exploratory__r1",
+            "qid": "692",
+            "arm": "exploratory",
+            "repeat": 1,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          },
+          {
+            "session": "qid_692__exploratory__r2",
+            "qid": "692",
+            "arm": "exploratory",
+            "repeat": 2,
+            "status": "complete",
+            "first_query_fidelity": "acceptable",
+            "second_action_grounding": "repeat_same_need",
+            "first_query_issues": [],
+            "unsupported_claims": [],
+            "first_source": 0,
+            "first_visible": 0,
+            "cumulative_source": 0,
+            "cumulative_visible": 0,
+            "new_relevant_evidence": 0,
+            "new_evidence": [],
+            "first_useful_docs": [],
+            "first_visible_docs": [],
+            "cumulative_useful_docs": [],
+            "cumulative_visible_docs": [],
+            "visible_gain_from_second": 0,
+            "source_gain_from_second": 0
+          }
+        ]
+      },
+      "metrics": {
+        "first_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "first_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_source": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "cumulative_visible": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "new_relevant_evidence": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "visible_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        },
+        "source_gain_from_second": {
+          "current": 0,
+          "exploratory": 0,
+          "delta": 0,
+          "direction": "tie",
+          "repeatable_win": false,
+          "repeatable_loss": false
+        }
+      }
+    }
+  ]
+}

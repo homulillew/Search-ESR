@@ -1,0 +1,31 @@
+{
+  "session": "qid_124__current__r1",
+  "qid": "124",
+  "arm": "current",
+  "repeat": 1,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_0227e2319b854fe1b33cc239",
+            "function": {
+              "arguments": "{\"query\": \"2018 article origins of a card game Emmy award winner author\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

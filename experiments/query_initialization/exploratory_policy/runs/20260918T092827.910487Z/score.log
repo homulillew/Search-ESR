@@ -1,0 +1,199 @@
+{
+  "coverage": {
+    "questions": 20,
+    "sessions": 80,
+    "pooled_sources": 420,
+    "distinct_windows": 527,
+    "positive_sources": 42,
+    "verified_quote_spans": 156
+  },
+  "metrics": {
+    "first_source": {
+      "current": {
+        "hits": 15,
+        "attempts": 40,
+        "question_mean": 0.375
+      },
+      "exploratory": {
+        "hits": 17,
+        "attempts": 40,
+        "question_mean": 0.425
+      },
+      "delta": 0.05,
+      "paired_counts": {
+        "tie": 17,
+        "win": 2,
+        "loss": 1
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": []
+    },
+    "first_visible": {
+      "current": {
+        "hits": 14,
+        "attempts": 40,
+        "question_mean": 0.35
+      },
+      "exploratory": {
+        "hits": 16,
+        "attempts": 40,
+        "question_mean": 0.4
+      },
+      "delta": 0.05,
+      "paired_counts": {
+        "tie": 17,
+        "win": 2,
+        "loss": 1
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": []
+    },
+    "cumulative_source": {
+      "current": {
+        "hits": 16,
+        "attempts": 40,
+        "question_mean": 0.4
+      },
+      "exploratory": {
+        "hits": 19,
+        "attempts": 40,
+        "question_mean": 0.475
+      },
+      "delta": 0.075,
+      "paired_counts": {
+        "tie": 16,
+        "win": 3,
+        "loss": 1
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": []
+    },
+    "cumulative_visible": {
+      "current": {
+        "hits": 16,
+        "attempts": 40,
+        "question_mean": 0.4
+      },
+      "exploratory": {
+        "hits": 18,
+        "attempts": 40,
+        "question_mean": 0.45
+      },
+      "delta": 0.05,
+      "paired_counts": {
+        "tie": 15,
+        "win": 3,
+        "loss": 2
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": []
+    },
+    "new_relevant_evidence": {
+      "current": {
+        "hits": 14,
+        "attempts": 40,
+        "question_mean": 0.35
+      },
+      "exploratory": {
+        "hits": 13,
+        "attempts": 40,
+        "question_mean": 0.325
+      },
+      "delta": -0.025,
+      "paired_counts": {
+        "tie": 15,
+        "win": 2,
+        "loss": 3
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": [
+        "191"
+      ]
+    },
+    "visible_gain_from_second": {
+      "current": {
+        "hits": 2,
+        "attempts": 40,
+        "question_mean": 0.05
+      },
+      "exploratory": {
+        "hits": 2,
+        "attempts": 40,
+        "question_mean": 0.05
+      },
+      "delta": 0.0,
+      "paired_counts": {
+        "tie": 18,
+        "win": 1,
+        "loss": 1
+      },
+      "repeatable_wins": [],
+      "repeatable_losses": []
+    },
+    "source_gain_from_second": {
+      "current": {
+        "hits": 1,
+        "attempts": 40,
+        "question_mean": 0.025
+      },
+      "exploratory": {
+        "hits": 2,
+        "attempts": 40,
+        "question_mean": 0.05
+      },
+      "delta": 0.025,
+      "paired_counts": {
+        "tie": 19,
+        "win": 1
+      },
+      "repeatable_wins": [],
+      "repeatable_losses": []
+    }
+  },
+  "behavior": {
+    "current": {
+      "first_query_fidelity": {
+        "acceptable": 30,
+        "ambiguous": 7,
+        "not_evaluable": 2,
+        "mutation": 1
+      },
+      "second_action_grounding": {
+        "observation_grounded": 14,
+        "unsupported_premise": 6,
+        "question_reanchor": 4,
+        "repeat_same_need": 14,
+        "protocol_error": 2
+      },
+      "sessions_with_unsupported_claims": 14
+    },
+    "exploratory": {
+      "first_query_fidelity": {
+        "acceptable": 29,
+        "not_evaluable": 3,
+        "ambiguous": 4,
+        "mutation": 4
+      },
+      "second_action_grounding": {
+        "observation_grounded": 15,
+        "protocol_error": 5,
+        "question_reanchor": 7,
+        "repeat_same_need": 11,
+        "unsupported_premise": 1,
+        "unobservable": 1
+      },
+      "sessions_with_unsupported_claims": 14
+    }
+  },
+  "net_and_repeatable_utility_gain": true
+}

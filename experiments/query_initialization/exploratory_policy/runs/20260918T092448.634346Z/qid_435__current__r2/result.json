@@ -1,0 +1,31 @@
+{
+  "session": "qid_435__current__r2",
+  "qid": "435",
+  "arm": "current",
+  "repeat": 2,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_60fbcc12489544c99eaf8c0a",
+            "function": {
+              "arguments": "{\"query\": \"musician died at 66 67 albums first album 1970s urged president to retire early 2000s human rights activist\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

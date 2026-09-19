@@ -1,0 +1,31 @@
+{
+  "session": "qid_760__exploratory__r2",
+  "qid": "760",
+  "arm": "exploratory",
+  "repeat": 2,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_fda80b63a76e4a048c768fdd",
+            "function": {
+              "arguments": "{\"query\": \"African actor born 1930s mother stage actress divorced 1960s died 2016-2023\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

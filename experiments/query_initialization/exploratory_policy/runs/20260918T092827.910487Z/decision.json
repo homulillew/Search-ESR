@@ -1,0 +1,78 @@
+{
+  "default_prompt_changed": false,
+  "adopt_exploratory_prompt": false,
+  "query_optimization_closed": true,
+  "reason": "Local first-search gains coexist with repeated follow-up regressions. Cumulative visible criterion passes its numerical part, but strict new relevant evidence does not improve and semantic/protocol issues remain. Retain current runtime; do not add Query modules or tune case-specific rules.",
+  "next_node": "Observation -> Research interpretation/hypothesis -> next information need",
+  "experiment_scope": "Two-action known-question prompt ablation; no final-answer accuracy or long-horizon claim",
+  "metrics": {
+    "first_visible": {
+      "current": {
+        "hits": 14,
+        "attempts": 40,
+        "question_mean": 0.35
+      },
+      "exploratory": {
+        "hits": 16,
+        "attempts": 40,
+        "question_mean": 0.4
+      },
+      "delta": 0.05,
+      "paired_counts": {
+        "tie": 17,
+        "win": 2,
+        "loss": 1
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": []
+    },
+    "cumulative_visible": {
+      "current": {
+        "hits": 16,
+        "attempts": 40,
+        "question_mean": 0.4
+      },
+      "exploratory": {
+        "hits": 18,
+        "attempts": 40,
+        "question_mean": 0.45
+      },
+      "delta": 0.05,
+      "paired_counts": {
+        "tie": 15,
+        "win": 3,
+        "loss": 2
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": []
+    },
+    "new_relevant_evidence": {
+      "current": {
+        "hits": 14,
+        "attempts": 40,
+        "question_mean": 0.35
+      },
+      "exploratory": {
+        "hits": 13,
+        "attempts": 40,
+        "question_mean": 0.325
+      },
+      "delta": -0.025,
+      "paired_counts": {
+        "tie": 15,
+        "win": 2,
+        "loss": 3
+      },
+      "repeatable_wins": [
+        "519"
+      ],
+      "repeatable_losses": [
+        "191"
+      ]
+    }
+  }
+}

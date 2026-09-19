@@ -1,0 +1,31 @@
+{
+  "session": "qid_760__current__r1",
+  "qid": "760",
+  "arm": "current",
+  "repeat": 1,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "To identify this person, I need to break down the clues:\n1.  **Born in the 1930s** in an African country.\n2.  **Divorced in the 1960s**.\n3.  **Mother was a stage actress**.\n4.  **Studied drama** in a city where they eventually passed away between **2016 and 2023**.\n5.  **Starred in a movie in the 1950s** directed by someone who received the **NSFC (National Society of Film Critics) award** between **1974 and 1982**.\n\nLet's start by searching for actors born in Africa in the 1930s whose mothers were stage actresses. A prominent figure fitting this description is likely from South Africa or another major film-producing nation in Africa at the time.\n\nOne strong candidate is **John Kani**, but he was born in 1940. Let's look for others.\nAnother possibility is **Sidney Poitier**, born in 1927 (too early).\n**Harry Belafonte**, born 1927.\n**Diana Rigg**? No, British.\n\nLet's search for \"African actor born 1930s mother stage actress\".\n\n",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_1d6711c84b704a3d81405c97",
+            "function": {
+              "arguments": "{\"query\": \"African actor born 1930s mother stage actress\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

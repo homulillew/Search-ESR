@@ -1,0 +1,31 @@
+{
+  "session": "qid_71__current__r1",
+  "qid": "71",
+  "arm": "current",
+  "repeat": 1,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_f9d4c84534d14aa1bab9acb5",
+            "function": {
+              "arguments": "{\"query\": \"Irish water structure built 19th century stability restaurant named after it hotel\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

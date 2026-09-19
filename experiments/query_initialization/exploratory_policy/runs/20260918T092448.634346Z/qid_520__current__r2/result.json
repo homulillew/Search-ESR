@@ -1,0 +1,31 @@
+{
+  "session": "qid_520__current__r2",
+  "qid": "520",
+  "arm": "current",
+  "repeat": 2,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_c926c26f2ee64459b28484c5",
+            "function": {
+              "arguments": "{\"query\": \"author born 1940s first published at age 19 spouse writer born 1950s father ambassador divorced 1980s died 1998-2010\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

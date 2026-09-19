@@ -1,0 +1,31 @@
+{
+  "session": "qid_605__current__r1",
+  "qid": "605",
+  "arm": "current",
+  "repeat": 1,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_2f52e3abf753493c98daf623",
+            "function": {
+              "arguments": "{\"query\": \"video game soundtrack album 21st track \\\"tower\\\" runtime 95-100 minutes released after 2010 before 2023\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

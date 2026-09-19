@@ -62,3 +62,9 @@ python -m pytest -q tests experiments/structural_boundary/test_candidate.py expe
 [实现与配置](selector_verbatim/README.md) · [60 次完整轨迹](selector_verbatim/runs/20260918T085353.300461Z/README.md) · [结果与根因分析](../../全链路排查报告/Selector原文选材与整题检索对照实验.md)
 
 本轮 20 题比较整题原文与 Selector 选材后直接检索，不使用 Compiler。40 次 API、60 次 Search 完成，机械审计及账本恢复 Open 通过。代理辅助审阅下，来源命中 45%→47.5%，可见依据 45%→45%；重复改善与退化并存，未默认启用 Selector。审阅方法及预注册表述差异见报告，不称人工金标或完整召回率。
+
+## 模型自主探索的提示词对照
+
+[实验说明](exploratory_policy/README.md) · [80 条完整轨迹](exploratory_policy/runs/20260918T092827.910487Z/README.md) · [分析报告](../../全链路排查报告/Query探索原则提示词两步对照实验.md)
+
+复用上述 20 道开发题，当前提示词与追加三句探索原则各重复两次，观察首搜及下一步 Search/Open。首步可见依据 35%→40%，两步累计 40%→45%，第二步严格新增依据 35%→32.5%。保留当前默认提示词，不新增 Selector/Compiler，结束本轮 Query 局部优化；下一设计节点转向观察如何形成可修正的研究判断并驱动行动。本轮补充了返回池审阅，不能与旧实验百分比直接拼成三组排序。

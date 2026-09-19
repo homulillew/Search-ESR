@@ -1,0 +1,31 @@
+{
+  "session": "qid_519__current__r1",
+  "qid": "519",
+  "arm": "current",
+  "repeat": 1,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_523af58142284e019f502ee9",
+            "function": {
+              "arguments": "{\"query\": \"political leader couple met at BBC headquarters London Vienna Café tea married civil ceremony church wedding over 60\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

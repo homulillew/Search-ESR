@@ -1,0 +1,31 @@
+{
+  "session": "qid_1147__current__r2",
+  "qid": "1147",
+  "arm": "current",
+  "repeat": 2,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_546c732e411f48ae881eed68",
+            "function": {
+              "arguments": "{\"query\": \"rapper born 2000-2010 bullied middle school youngest sibling first attention 2017 song\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}

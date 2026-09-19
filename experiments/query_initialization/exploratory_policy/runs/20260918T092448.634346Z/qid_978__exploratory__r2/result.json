@@ -1,0 +1,31 @@
+{
+  "session": "qid_978__exploratory__r2",
+  "qid": "978",
+  "arm": "exploratory",
+  "repeat": 2,
+  "status": "protocol_error",
+  "steps": [
+    {
+      "step": 1,
+      "status": "protocol_error",
+      "assistant_message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "id": "call_3348caae5a3b471d8a0e83cf",
+            "function": {
+              "arguments": "{\"query\": \"manga serialized 2010s anime adaptation premiered after 2010 before 2023 mangaka assistant series 2000s same North American distributor rehabilitation project single-parent household sibling sports games\"}",
+              "name": "search"
+            },
+            "type": "function",
+            "index": 0
+          }
+        ]
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "error_type": "ValueError",
+  "error_detail": "Exactly one complete tool call is allowed per action"
+}
