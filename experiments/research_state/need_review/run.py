@@ -15,6 +15,7 @@ import subprocess
 import sys
 import time
 
+from .accounting import inspect_usage
 from .checkpoint import canonical_json, digest, extract_checkpoint, load_checkpoint
 from .node import build_actor_request, build_review_request, classify_actor_response, validate_review
 from .integrity import (
@@ -333,7 +334,8 @@ def summarize(directory, schedule, *, include_conditions=True, write_output=True
     statuses, review_statuses, actor_kinds = Counter(), Counter(), Counter()
     actor_protocol = Counter()
     usage = {stage: Counter() for stage in ('review', 'actor')}
-    requests = responses = api_errors = missing_usage = 0
+    requests = responses = api_errors = missing_usage = inconsistent_usage = 0
+    missing_fields = {stage: Counter() for stage in usage}
     record_errors = []
     by_arm = {arm: {'scheduled': 0, 'branch_statuses': Counter(), 'logical_requests': 0,
                     'reported_usage': Counter(), 'fallbacks': 0,
@@ -391,24 +393,32 @@ def summarize(directory, schedule, *, include_conditions=True, write_output=True
                 responses += 1
                 raw = event.get('response')
                 reported = raw.get('usage') if isinstance(raw, dict) else None
-                if (not isinstance(reported, dict) or event.get('stage') not in usage
-                        or any(type(reported.get(k)) is not int or reported[k] < 0 for k in TOKEN_KEYS)):
+                stage = event.get('stage')
+                inspected = inspect_usage(reported)
+                if stage not in usage:
                     missing_usage += 1
-                else:
-                    for key in TOKEN_KEYS:
-                        if type(reported.get(key)) is int:
-                            usage[event['stage']][key] += reported[key]
-                            arm_stats['reported_usage'][key] += reported[key]
+                    record_errors.append({'sample_id': item['sample_id'], 'error': 'unknown_usage_stage'})
+                    continue
+                missing_usage += bool(inspected['missing'])
+                inconsistent_usage += inspected['inconsistent']
+                missing_fields[stage].update(inspected['missing'])
+                # Keep valid partial counts as reported, without inventing totals.
+                # A complete-looking but inconsistent report is still not a bill.
+                usage[stage].update(inspected['known'])
+                arm_stats['reported_usage'].update(inspected['known'])
     summary = {'scheduled_branches': len(schedule), 'branch_statuses': dict(statuses),
                'review_statuses': dict(review_statuses), 'actor_response_kinds': dict(actor_kinds),
                'actor_protocol_statuses': dict(actor_protocol),
                'logical_requests_attempted': requests, 'responses_received': responses,
                'failed_requests_with_unknown_cost': api_errors, 'responses_missing_usage': missing_usage,
+               'responses_inconsistent_usage': inconsistent_usage,
+               'missing_usage_fields_by_stage': {key: dict(value) for key, value in missing_fields.items()},
                'reported_usage_by_stage': {key: dict(value) for key, value in usage.items()},
                'tool_executions': 0, 'semantic_evaluation': 'not_evaluated',
                'record_errors': record_errors, 'by_arm': by_arm}
     summary['mechanically_clean'] = branch_exit_code(summary) == 0
-    summary['cost_accounting_complete'] = not (api_errors or missing_usage or record_errors or requests != responses)
+    summary['cost_accounting_complete'] = not (api_errors or missing_usage or inconsistent_usage
+                                                or record_errors or requests != responses)
     if include_conditions and any('review_contract' in item for item in schedule):
         summary['by_contract'] = {
             contract: summarize(directory, [item for item in schedule if item.get('review_contract') == contract],
