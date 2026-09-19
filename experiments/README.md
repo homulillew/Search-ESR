@@ -56,3 +56,9 @@ API 请求记录 SDK 调用参数，响应记录 SDK 解析的完整响应；不
 单入口 v003 已实现原题定位、basis_refs + query、一次 Search 和持久化观察交接；完成 32 次开发联调和 8 次重启 Open 检查。见 [实现与对照](query_initialization/single_entry/README.md)。默认运行时未升级。
 
 固定原题线索的表达诊断已完成：7 题、35 次检索，含每题三次模型压缩与人工完整/删除控制。见 [协议、结果和轨迹](query_initialization/fixed_anchor/README.md)。
+
+## Research State：最小 Need Review 实验
+
+见 [E0 固定前缀实验](research_state/need_review/README.md)、[实验计划](research_state/need_review/EXPERIMENT_PLAN.md)及[后续 Codex 执行任务](research_state/need_review/CODEX_TASK.md)。入口已实现离线检查点准备、三组交错调度、一次审查接一次 Actor 决策、失败回退与审阅材料导出；本次交付未执行真实模型实验。
+
+首批固定三道历史 v000 开发病例，每组重复两次，共 30 次逻辑模型调用。E0 保存完整下一动作，不执行工具；它先检查需求能否改善决策，尚未接入持久状态、触发器或停止器。历史工具版本、当前 Search/Open 和后续真实工具分叉分别记录。
