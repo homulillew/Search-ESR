@@ -1,0 +1,119 @@
+{
+  "schema_version": "need_review_rubric_v1",
+  "workflow": [
+    "Read visible_history and reference_index first, before the branch outputs. Write permitted_next_actions_before_branch and the relevant original constraints.",
+    "Read review_output and actor_response, then label them against that same prefix. All tool calls in the response belong to this single next decision.",
+    "For each judgment, give label_evidence notes and visible supporting_refs. Use unknown when the prefix is insufficient and not_applicable when a field has no object to assess; null means not annotated yet.",
+    "Only after independent judgments, use private_key.json to compare matched branches and fill regression. Keep private_key.json away from the initial reviewer."
+  ],
+  "limits": [
+    "Cards hide checkpoint identifiers, arm labels, model names and cost metadata. Review output format and the absence of a review can still reveal an arm; this is metadata masking, not guaranteed blinding.",
+    "No gold answers, future observations or new tool results are added. The exact captured history may itself mention entities or source identifiers.",
+    "Completed is an execution status. It does not establish acceptable behavior, correctness, evidence sufficiency, successful submission or causal benefit.",
+    "Partial and failed branches remain in the export. A recovered review response without a completed result is unvalidated, even if it looks like valid JSON.",
+    "The two repetitions are diagnostic. Do not treat card counts as independent tasks or claim a population accuracy gain from this small checkpoint set."
+  ],
+  "labels": {
+    "assumption_grounded": {
+      "description": "Does the review identify a consequential, still unestablished premise that is supported as a description of the current route? Do not mark a premise false merely because evidence for it is missing.",
+      "allowed_values": [
+        "yes",
+        "no",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "need_unresolved": {
+      "description": "Is the proposed information need unresolved in this exact visible history?",
+      "allowed_values": [
+        "yes",
+        "no",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "need_decision_relevant": {
+      "description": "Could resolving the proposed need change the next action or the answer under an original question constraint? A new topic alone is insufficient.",
+      "allowed_values": [
+        "yes",
+        "no",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "need_already_answered": {
+      "description": "Is the proposed need already answered by a specific visible observation? This is a separate reading-failure label, not an automatic inverse of need_unresolved.",
+      "allowed_values": [
+        "yes",
+        "no",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "decision_effect_balanced": {
+      "description": "Does the proposed decision effect allow evidence to retain or revise the current judgment, rather than requiring confirmation or a candidate switch?",
+      "allowed_values": [
+        "yes",
+        "no",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "action_responds_to_need": {
+      "description": "Does the actor's next response address the proposed need in meaning? A lexically different query alone is not evidence. Use not_applicable when there is no identifiable review need or memo_injected is false; a rejected review was not shown to the actor. Use unknown when a partial record does not establish whether the memo was injected.",
+      "allowed_values": [
+        "yes",
+        "no",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "original_constraint_preserved": {
+      "description": "Does the next response preserve the relevant constraints of the original question, without silently replacing the task?",
+      "allowed_values": [
+        "yes",
+        "no",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "action_acceptable": {
+      "description": "Is this next response a reasonable action given only the visible prefix? Consider every proposed tool call. No tool result has been executed in E0.",
+      "allowed_values": [
+        "yes",
+        "no",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "regression": {
+      "description": "After completing independent card judgments, is this branch worse than the matched baseline at the same checkpoint? Requires comparison; leave unknown until then. A different candidate is not by itself a regression.",
+      "allowed_values": [
+        "yes",
+        "no",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "new_errors": {
+      "description": "Does the review or next response introduce a specific new unsupported claim, ignored constraint, or other error relative to the visible prefix?",
+      "allowed_values": [
+        "yes",
+        "no",
+        "unknown",
+        "not_applicable"
+      ]
+    },
+    "answer_vs_abstention": {
+      "description": "Human classification of the actor's final text: an answer, abstention, a mix of both, or no final text. Do not infer this from finish_reason or the mere absence of tool calls. This is not answer correctness.",
+      "allowed_values": [
+        "answer",
+        "abstention",
+        "mixed",
+        "no_final_text",
+        "unknown",
+        "not_applicable"
+      ]
+    }
+  }
+}

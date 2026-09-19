@@ -1,0 +1,158 @@
+{
+  "schema_version": "need_review_plan_v1",
+  "settings": {
+    "repeats": 2,
+    "seed": 20260919,
+    "review_max_tokens": 512,
+    "model_override": null,
+    "sdk_max_retries": 0,
+    "execute_tools": false,
+    "actor_decisions_per_branch": 1
+  },
+  "schedule": [
+    {
+      "sample_id": "qid_776_s53__C__r1",
+      "checkpoint_id": "qid_776_s53",
+      "arm": "C",
+      "repeat_id": 1
+    },
+    {
+      "sample_id": "qid_546_s29__A__r1",
+      "checkpoint_id": "qid_546_s29",
+      "arm": "A",
+      "repeat_id": 1
+    },
+    {
+      "sample_id": "qid_517_s21__A__r1",
+      "checkpoint_id": "qid_517_s21",
+      "arm": "A",
+      "repeat_id": 1
+    },
+    {
+      "sample_id": "qid_776_s53__A__r1",
+      "checkpoint_id": "qid_776_s53",
+      "arm": "A",
+      "repeat_id": 1
+    },
+    {
+      "sample_id": "qid_546_s29__B__r1",
+      "checkpoint_id": "qid_546_s29",
+      "arm": "B",
+      "repeat_id": 1
+    },
+    {
+      "sample_id": "qid_517_s21__C__r1",
+      "checkpoint_id": "qid_517_s21",
+      "arm": "C",
+      "repeat_id": 1
+    },
+    {
+      "sample_id": "qid_776_s53__B__r1",
+      "checkpoint_id": "qid_776_s53",
+      "arm": "B",
+      "repeat_id": 1
+    },
+    {
+      "sample_id": "qid_546_s29__C__r1",
+      "checkpoint_id": "qid_546_s29",
+      "arm": "C",
+      "repeat_id": 1
+    },
+    {
+      "sample_id": "qid_517_s21__B__r1",
+      "checkpoint_id": "qid_517_s21",
+      "arm": "B",
+      "repeat_id": 1
+    },
+    {
+      "sample_id": "qid_776_s53__C__r2",
+      "checkpoint_id": "qid_776_s53",
+      "arm": "C",
+      "repeat_id": 2
+    },
+    {
+      "sample_id": "qid_517_s21__B__r2",
+      "checkpoint_id": "qid_517_s21",
+      "arm": "B",
+      "repeat_id": 2
+    },
+    {
+      "sample_id": "qid_546_s29__C__r2",
+      "checkpoint_id": "qid_546_s29",
+      "arm": "C",
+      "repeat_id": 2
+    },
+    {
+      "sample_id": "qid_776_s53__A__r2",
+      "checkpoint_id": "qid_776_s53",
+      "arm": "A",
+      "repeat_id": 2
+    },
+    {
+      "sample_id": "qid_517_s21__A__r2",
+      "checkpoint_id": "qid_517_s21",
+      "arm": "A",
+      "repeat_id": 2
+    },
+    {
+      "sample_id": "qid_546_s29__A__r2",
+      "checkpoint_id": "qid_546_s29",
+      "arm": "A",
+      "repeat_id": 2
+    },
+    {
+      "sample_id": "qid_776_s53__B__r2",
+      "checkpoint_id": "qid_776_s53",
+      "arm": "B",
+      "repeat_id": 2
+    },
+    {
+      "sample_id": "qid_517_s21__C__r2",
+      "checkpoint_id": "qid_517_s21",
+      "arm": "C",
+      "repeat_id": 2
+    },
+    {
+      "sample_id": "qid_546_s29__B__r2",
+      "checkpoint_id": "qid_546_s29",
+      "arm": "B",
+      "repeat_id": 2
+    }
+  ],
+  "scheduled_actor_requests": 18,
+  "scheduled_review_requests": 12,
+  "scheduled_logical_requests": 30,
+  "tool_executions": 0,
+  "prepared_manifest_sha256": "4be2f801c38d12e8a70e538dadaf3ec15bb1fb28f85239965bf0c7357233ceb9",
+  "prompt_sha256": {
+    "generic_review": "786c2be0f67813c2b59df7467f5adf14ddf316237a1e163e1efb8eb4379a566d",
+    "need_review": "6f1b3972cb7c2345505b121b44745fa7aed51654faf9bc723209544b7a226049",
+    "memo": "fd45a15017fba5061231f2ffa09d8baddb521457fa625cf1e7531072bd080991"
+  },
+  "checkpoints": [
+    {
+      "checkpoint_id": "qid_546_s29",
+      "request_sha256": "d00d97f20ffa6294fc377ed155abc9ee41e6706005ddefe5ee3688e4ec4916b9",
+      "tool_version": "v000_baseline",
+      "captured_model": "qwen3.7-flash",
+      "effective_model": "qwen3.7-flash",
+      "request_utf8_bytes": 75968
+    },
+    {
+      "checkpoint_id": "qid_776_s53",
+      "request_sha256": "18f2413cfcd431868ab86d33517ca05d40b4163eed9370c215e56054f69771dc",
+      "tool_version": "v000_baseline",
+      "captured_model": "qwen3.7-flash",
+      "effective_model": "qwen3.7-flash",
+      "request_utf8_bytes": 133037
+    },
+    {
+      "checkpoint_id": "qid_517_s21",
+      "request_sha256": "18f97d50b35ee082bfe4af0f8a9a4019fc675bfe841464190493a09661953ce7",
+      "tool_version": "v000_baseline",
+      "captured_model": "qwen3.7-flash",
+      "effective_model": "qwen3.7-flash",
+      "request_utf8_bytes": 64095
+    }
+  ]
+}

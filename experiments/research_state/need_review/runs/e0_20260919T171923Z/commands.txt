@@ -1,0 +1,8 @@
+python -m unittest discover -s tests -p 'test_need_review*.py' -v
+python -m experiments.research_state.need_review.run prepare --output /tmp/search-esr-e0-prepared-20260919T171923Z
+python -m experiments.research_state.need_review.run plan --prepared /tmp/search-esr-e0-prepared-20260919T171923Z --repeats 2 --seed 20260919 --review-max-tokens 512 --sdk-max-retries 0
+python -m experiments.research_state.need_review.run execute --prepared /tmp/search-esr-e0-prepared-20260919T171923Z --output experiments/research_state/need_review/runs/e0_20260919T171923Z --repeats 2 --seed 20260919 --review-max-tokens 512 --sdk-max-retries 0 --env-file .env
+python -m experiments.research_state.need_review.run review --run-dir experiments/research_state/need_review/runs/e0_20260919T171923Z --output experiments/research_state/need_review/runs/e0_20260919T171923Z/review
+PYTHONPATH=. python /tmp/e0_audit.py
+python /tmp/e0_annotate.py
+python /tmp/e0_finalize_annotations.py
