@@ -121,12 +121,16 @@ def build_actor_request(
     memo_template: str,
     *,
     model: str | None = None,
+    memo_mode: str = "legacy_text",
 ) -> dict:
     """Clone the captured actor request and optionally append one review memo.
 
     Callers pass None for arm A or a failed reviewer. This function does not
     validate a review; callers must use validate_review before injecting one.
     """
+    from .integrity import MEMO_MODES, visible_reference_index
+    if memo_mode not in MEMO_MODES:
+        raise ValueError("Unknown memo handoff mode")
     request = deepcopy(_captured_request(checkpoint))
     _model_override(request, model)
     if review_output is not None:
@@ -134,6 +138,11 @@ def build_actor_request(
             raise ValueError("review_output must be nonempty text or None")
         if not isinstance(memo_template, str) or memo_template.count("{review_output}") != 1:
             raise ValueError("memo_template must contain exactly one {review_output} placeholder")
+        if memo_mode == "indexed_json_v1":
+            review_output = json.dumps({
+                "review_text": review_output,
+                "reference_index": visible_reference_index(checkpoint),
+            }, ensure_ascii=False, allow_nan=False)
         request["messages"].append(
             {"role": "user", "content": memo_template.replace("{review_output}", review_output)}
         )

@@ -17,11 +17,32 @@ import re
 from typing import Any
 
 from .checkpoint import CheckpointError, digest, load_checkpoint
+from .integrity import HARNESS_REVISION, read_events, strict_json, verify_plan
+from .audit import recover_record, verify_branch_requests
 
 
 _SAFE_COMPONENT = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")
 _COMMON_VALUES = ["yes", "no", "unknown", "not_applicable"]
 _LABEL_DESCRIPTIONS = {
+    "review_source_attribution_correct": (
+        "Does the review distinguish actual question/tool evidence from earlier assistant hypotheses? "
+        "A relevant document title or valid reference alone is not entailment. Use not_applicable for no review."
+    ),
+    "tool_action_direction_acceptable": (
+        "Is the entire proposed tool batch a reasonable information-gathering direction, independently "
+        "of accompanying prose? This supplementary axis is not retrieval success or a replacement "
+        "for action_acceptable. Use not_applicable for final text with no tools."
+    ),
+    "assistant_assertions_supported": (
+        "Are factual assertions in the actor content supported by visible evidence or clearly marked "
+        "as unestablished hypotheses? Do not penalize merely considering a candidate. Do not treat "
+        "a tentative final Query as repairing unsupported confident prose."
+    ),
+    "final_answer_supported": (
+        "For an actual final answer, does the visible prefix support the decisive original constraints? "
+        "Do not infer correctness from finish_reason, gold knowledge or next_need=null. "
+        "Use not_applicable for a tool decision or no final answer."
+    ),
     "assumption_grounded": (
         "Does the review identify a consequential, still unestablished premise "
         "that is supported as a description of the current route? Do not mark "
@@ -113,10 +134,10 @@ def _rubric() -> dict[str, Any]:
 
 def _read_object(path: Path) -> tuple[dict[str, Any] | None, str | None]:
     try:
-        value = json.loads(path.read_text(encoding="utf-8"))
+        value = strict_json(path.read_text(encoding="utf-8"))
     except FileNotFoundError:
         return None, "missing"
-    except (OSError, UnicodeError, json.JSONDecodeError):
+    except (OSError, UnicodeError, ValueError):
         return None, "unreadable_or_invalid_json"
     if not isinstance(value, dict):
         return None, "not_an_object"
@@ -132,6 +153,8 @@ def _safe_component(value: Any, field: str) -> str:
 def _load_schedule(manifest: dict[str, Any]) -> list[dict[str, Any]]:
     if manifest.get("schema_version") != "need_review_run_v1":
         raise ValueError("Unsupported or missing manifest schema_version")
+    if manifest.get("harness_revision") not in (None, HARNESS_REVISION):
+        raise ValueError("Unsupported harness revision")
     schedule = manifest.get("schedule")
     if not isinstance(schedule, list):
         raise ValueError("manifest.schedule must be a list")
@@ -153,28 +176,7 @@ def _load_schedule(manifest: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def _read_events(path: Path) -> tuple[list[dict[str, Any]], list[str]]:
-    """Keep complete events if an interrupted JSONL ends in a partial write."""
-    try:
-        lines = path.read_text(encoding="utf-8").splitlines()
-    except FileNotFoundError:
-        return [], []
-    except (OSError, UnicodeError):
-        return [], ["events_unreadable"]
-    events = []
-    errors = []
-    for line_number, line in enumerate(lines, 1):
-        if not line.strip():
-            continue
-        try:
-            event = json.loads(line)
-        except json.JSONDecodeError:
-            errors.append(f"invalid_event_line_{line_number}")
-            continue
-        if isinstance(event, dict):
-            events.append(event)
-        else:
-            errors.append(f"non_object_event_line_{line_number}")
-    return events, errors
+    return read_events(path)
 
 
 def _partial_record(events: list[dict[str, Any]]) -> dict[str, Any]:
@@ -279,7 +281,10 @@ def _read_branch(
     errors = []
     if result is not None:
         if all(result.get(key) == sample[key] for key in ("sample_id", "checkpoint_id", "arm", "repeat_id")):
-            return result, []
+            events, issues = _read_events(branch_dir / "events.jsonl")
+            recovered, recovered_stages = recover_record(result, events)
+            issues.extend("recovered_unvalidated_" + stage for stage in recovered_stages)
+            return recovered, issues
         errors.append("result_metadata_mismatch")
     elif error != "missing":
         errors.append(f"result_{error}")
@@ -303,6 +308,30 @@ def export_review(run_dir: Path, output: Path) -> dict[str, Any]:
         raise ValueError(f"Cannot read run manifest: {error}")
     assert manifest is not None
     schedule = _load_schedule(manifest)
+    prompts, prompt_errors = {}, []
+    if manifest.get("harness_revision") == HARNESS_REVISION:
+        if manifest.get("plan_approved") is not True:
+            prompt_errors.append("run_plan_not_approved")
+        else:
+            try:
+                approved = manifest["approved_plan"]
+                if not isinstance(approved, dict):
+                    raise ValueError("Missing approved plan")
+                # The run envelope intentionally has a different schema tag.
+                actual_plan = {key: manifest.get(key) for key in approved}
+                actual_plan['schema_version'] = 'need_review_plan_v1'
+                verify_plan(approved, actual_plan)
+            except (ValueError, KeyError, TypeError):
+                prompt_errors.append("run_manifest_differs_from_approved_plan")
+        for name, expected in manifest.get("prompt_sha256", {}).items():
+            try:
+                _safe_component(name, "prompt name")
+                raw = (run_dir / "prompts" / f"{name}.txt").read_bytes()
+                if hashlib.sha256(raw).hexdigest() != expected:
+                    raise ValueError("Prompt hash mismatch")
+                prompts[name] = raw.decode("utf-8")
+            except (ValueError, OSError, UnicodeError):
+                prompt_errors.append("frozen_prompt_missing_or_changed")
     settings = manifest.get("settings", {})
     seed = settings.get("seed", 0) if isinstance(settings, dict) else 0
     # Stable masking does not alter the execution schedule or use a process-random hash.
@@ -313,6 +342,7 @@ def export_review(run_dir: Path, output: Path) -> dict[str, Any]:
         ).hexdigest(),
     )
     cards = []
+    prefix_cards = []
     private_entries = []
     checkpoints = {}
     status_counts: Counter[str] = Counter()
@@ -322,7 +352,15 @@ def export_review(run_dir: Path, output: Path) -> dict[str, Any]:
             checkpoints[checkpoint_id] = _read_checkpoint(run_dir, checkpoint_id, manifest)
         checkpoint, checkpoint_errors = checkpoints[checkpoint_id]
         result, branch_errors = _read_branch(run_dir, sample)
-        errors = list(checkpoint_errors) + branch_errors
+        errors = list(checkpoint_errors) + branch_errors + prompt_errors
+        if manifest.get("harness_revision") == HARNESS_REVISION and checkpoint and not prompt_errors:
+            events, _ = _read_events(run_dir / "branches" / sample["sample_id"] / "events.jsonl")
+            if events or result.get("status") != "not_run":
+                try:
+                    errors.extend(verify_branch_requests(checkpoint, result, sample,
+                                                        settings, prompts, events))
+                except (ValueError, KeyError, TypeError):
+                    errors.append("branch_request_audit_failed")
         status = result.get("status", "invalid_result")
         if not isinstance(status, str):
             status = "invalid_result"
@@ -349,6 +387,13 @@ def export_review(run_dir: Path, output: Path) -> dict[str, Any]:
         review_status = review.get("status")
         if sample["arm"] == "A" and review_status in {None, "uncompleted"}:
             review_status = "not_applicable"
+        prefix_cards.append({
+            "card_id": card_id,
+            "visible_history": deepcopy(checkpoint.get("request", {}).get("messages", [])),
+            "reference_index": deepcopy(checkpoint.get("references", [])),
+            "permitted_next_actions_before_branch": None,
+            "original_constraints_before_branch": None,
+        })
         cards.append({
             "card_id": card_id,
             "visible_history": deepcopy(checkpoint.get("request", {}).get("messages", [])),
@@ -376,6 +421,7 @@ def export_review(run_dir: Path, output: Path) -> dict[str, Any]:
             "checkpoint_id": checkpoint_id,
             "arm": sample["arm"],
             "repeat_id": sample["repeat_id"],
+            "review_contract": sample.get("review_contract", settings.get("review_contract", "baseline")),
             "execution_status": status,
             "actor_classification": deepcopy(mechanical_classification),
             "source": deepcopy(checkpoint.get("source")),
@@ -395,6 +441,9 @@ def export_review(run_dir: Path, output: Path) -> dict[str, Any]:
         "cards_with_export_errors": sum(bool(card["execution_status"]["export_errors"]) for card in cards),
     }
     output.mkdir(parents=True, exist_ok=False)
+    with (output / "prefix_cards.jsonl").open("w", encoding="utf-8") as handle:
+        for card in prefix_cards:
+            handle.write(json.dumps(card, ensure_ascii=False) + "\n")
     with (output / "cards.jsonl").open("w", encoding="utf-8") as handle:
         for card in cards:
             handle.write(json.dumps(card, ensure_ascii=False) + "\n")
@@ -422,7 +471,7 @@ def main(argv: list[str] | None = None) -> int:
     except (OSError, ValueError) as exc:
         parser.error(str(exc))
     print(json.dumps(summary, ensure_ascii=False, indent=2))
-    return 0
+    return 2 if summary['cards_with_export_errors'] else 0
 
 
 if __name__ == "__main__":
