@@ -1,0 +1,9 @@
+# Working directory: /data/WSH/Search-ESR; base 6e6222c773cedb07da96cc8385a7a9b0bc91c168
+python -m unittest discover -s tests -p 'test_need_review*.py' -v
+python -m experiments.research_state.need_review.run prepare --output /tmp/esr-e01-prepared-20260920
+API_BASE='https://llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com/compatible-mode/v1'
+COMMON=(--prepared /tmp/esr-e01-prepared-20260920 --repeats 2 --seed 20260919 --review-max-tokens 512 --sdk-max-retries 0 --memo-mode legacy_text --comparison source_contract_pair --expected-base-url "$API_BASE")
+python -m experiments.research_state.need_review.run plan "${COMMON[@]}" --output /tmp/esr-e01-preflight-20260920/approved_plan.json
+python -m experiments.research_state.need_review.run execute "${COMMON[@]}" --plan-file /tmp/esr-e01-preflight-20260920/approved_plan.json --env-file .env --output experiments/research_state/need_review/runs/e01_source_20260920T0314Z
+# Next, offline export; no API calls:
+python -m experiments.research_state.need_review.run review --run-dir experiments/research_state/need_review/runs/e01_source_20260920T0314Z --output experiments/research_state/need_review/runs/e01_source_20260920T0314Z/review

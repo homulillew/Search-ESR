@@ -1,0 +1,34 @@
+{
+  "kind": "offline_synthetic_fault_injection",
+  "source_commit": "0193fc072c31554284c9459bac62f436e9f7ba64",
+  "verified_base_blobs": {
+    "checkpoint.py": "600b089e3ee353d029edb007aa608dd9c32e7a85",
+    "node.py": "4f6fdd07a199208f35c0d5193c13a76dad443f64",
+    "run.py": "f925fc0a3a17fa2f611f46e1a3916752b3342702",
+    "report.py": "812a13abda8543b74072fbcf0cf3cf66b4985ceb"
+  },
+  "real_model_calls": 0,
+  "tool_executions": 0,
+  "probes": {
+    "reference_handoff": {
+      "reviewer_index_present": true,
+      "actor_memo_has_reference_index": false
+    },
+    "plan_drift": {
+      "planned_review_cap": 512,
+      "executed_review_cap": 1024,
+      "drift_was_rejected": false
+    },
+    "wrong_actor_request": {
+      "request_was_altered": true,
+      "cards_with_export_errors": 0
+    },
+    "torn_journal": {
+      "summary_raised": "JSONDecodeError"
+    },
+    "interrupted_review": {
+      "paid_response_in_journal": true,
+      "review_missing_from_export": true
+    }
+  }
+}
