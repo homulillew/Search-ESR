@@ -1,0 +1,138 @@
+{
+  "created_at": "2026-09-20T06:28:07.027760+00:00",
+  "prior_run": "e01_atria_20260920",
+  "current_run": "e01_atria4096_20260920",
+  "settings_diff": {
+    "review_max_tokens": {
+      "prior": 512,
+      "current": 4096
+    }
+  },
+  "same_schedule_checkpoints_prompts_implementation": true,
+  "prior_plan_sha256": "6084415fdd2879dd53561bdd0896502ec2b99d1cb469461a8998fabbf376715a",
+  "current_plan_sha256": "46e3b5b4a9c8596e35b78c20d3b778e8c12e54b607bb97ee197acba58d5b0c7c",
+  "cross_batch_requests": [
+    {
+      "sample_id": "qid_776_s53__C__r1__source_grounded_v1",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    },
+    {
+      "sample_id": "qid_776_s53__C__r1__baseline",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    },
+    {
+      "sample_id": "qid_517_s21__C__r1__baseline",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    },
+    {
+      "sample_id": "qid_517_s21__C__r1__source_grounded_v1",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    },
+    {
+      "sample_id": "qid_546_s29__C__r1__source_grounded_v1",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": false,
+      "prior_memo_injected": false,
+      "current_memo_injected": true
+    },
+    {
+      "sample_id": "qid_546_s29__C__r1__baseline",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    },
+    {
+      "sample_id": "qid_776_s53__C__r2__baseline",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    },
+    {
+      "sample_id": "qid_776_s53__C__r2__source_grounded_v1",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    },
+    {
+      "sample_id": "qid_546_s29__C__r2__baseline",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    },
+    {
+      "sample_id": "qid_546_s29__C__r2__source_grounded_v1",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    },
+    {
+      "sample_id": "qid_517_s21__C__r2__baseline",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    },
+    {
+      "sample_id": "qid_517_s21__C__r2__source_grounded_v1",
+      "review_request_only_cap_changed": true,
+      "actor_request_identical_to_prior": true,
+      "prior_memo_injected": false,
+      "current_memo_injected": false
+    }
+  ],
+  "within_batch_actor_pairs": [
+    {
+      "checkpoint_id": "qid_517_s21",
+      "repeat_id": 1,
+      "both_fallback": true,
+      "actor_requests_identical": true
+    },
+    {
+      "checkpoint_id": "qid_517_s21",
+      "repeat_id": 2,
+      "both_fallback": true,
+      "actor_requests_identical": true
+    },
+    {
+      "checkpoint_id": "qid_546_s29",
+      "repeat_id": 1,
+      "both_fallback": false,
+      "actor_requests_identical": false
+    },
+    {
+      "checkpoint_id": "qid_546_s29",
+      "repeat_id": 2,
+      "both_fallback": true,
+      "actor_requests_identical": true
+    },
+    {
+      "checkpoint_id": "qid_776_s53",
+      "repeat_id": 1,
+      "both_fallback": true,
+      "actor_requests_identical": true
+    },
+    {
+      "checkpoint_id": "qid_776_s53",
+      "repeat_id": 2,
+      "both_fallback": true,
+      "actor_requests_identical": true
+    }
+  ]
+}

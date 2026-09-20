@@ -1,0 +1,208 @@
+{
+  "verified_at": "2026-09-20T06:36:51.933713+00:00",
+  "plan_sha256": "46e3b5b4a9c8596e35b78c20d3b778e8c12e54b607bb97ee197acba58d5b0c7c",
+  "source_and_prompt_hashes_match": true,
+  "request_and_event_audit_errors": 0,
+  "paired_requests_only_reviewer_system_differs": true,
+  "actor_prefix_and_settings_unchanged": true,
+  "invalid_review_fallback_exact": true,
+  "all_12_annotations_complete": true,
+  "first_pass_hashes_match": true,
+  "post_unmask_only_regression_changed": true,
+  "credential_pattern_scan": "passed",
+  "cost_accounting_complete": false,
+  "unknown_cost_requests": 4,
+  "responses_missing_usage": 0,
+  "responses_inconsistent_usage": 0,
+  "missing_usage_fields_by_stage": {
+    "review": {},
+    "actor": {}
+  },
+  "first_event": "2026-09-20T06:08:55.520898+00:00",
+  "last_event": "2026-09-20T06:27:41.968935+00:00",
+  "event_span_seconds": 1126.448037,
+  "branches": [
+    {
+      "sample_id": "qid_776_s53__C__r1__source_grounded_v1",
+      "review_status": "api_error",
+      "review_finish_reason": null,
+      "review_errors": [
+        "review_api_error"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [
+        "review"
+      ],
+      "reported_token_lower_bound": 33326,
+      "elapsed_seconds": 132.23280759714544
+    },
+    {
+      "sample_id": "qid_776_s53__C__r1__baseline",
+      "review_status": "node_invalid",
+      "review_finish_reason": "length",
+      "review_errors": [
+        "review must finish with stop",
+        "review must contain nonempty text"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [],
+      "reported_token_lower_bound": 75056,
+      "elapsed_seconds": 57.56643310189247
+    },
+    {
+      "sample_id": "qid_517_s21__C__r1__baseline",
+      "review_status": "node_invalid",
+      "review_finish_reason": "length",
+      "review_errors": [
+        "review must finish with stop",
+        "review must contain nonempty text"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [],
+      "reported_token_lower_bound": 42667,
+      "elapsed_seconds": 64.2948241494596
+    },
+    {
+      "sample_id": "qid_517_s21__C__r1__source_grounded_v1",
+      "review_status": "node_invalid",
+      "review_finish_reason": "length",
+      "review_errors": [
+        "review must finish with stop",
+        "review must contain nonempty text"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [],
+      "reported_token_lower_bound": 40969,
+      "elapsed_seconds": 77.66363052278757
+    },
+    {
+      "sample_id": "qid_546_s29__C__r1__source_grounded_v1",
+      "review_status": "ok",
+      "review_finish_reason": "stop",
+      "review_errors": [],
+      "memo_injected": true,
+      "actor_kind": null,
+      "actor_status": "api_error",
+      "unknown_cost_stages": [
+        "actor"
+      ],
+      "reported_token_lower_bound": 28611,
+      "elapsed_seconds": 155.487245362252
+    },
+    {
+      "sample_id": "qid_546_s29__C__r1__baseline",
+      "review_status": "api_error",
+      "review_finish_reason": null,
+      "review_errors": [
+        "review_api_error"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [
+        "review"
+      ],
+      "reported_token_lower_bound": 22581,
+      "elapsed_seconds": 149.27626395598054
+    },
+    {
+      "sample_id": "qid_776_s53__C__r2__baseline",
+      "review_status": "node_invalid",
+      "review_finish_reason": "length",
+      "review_errors": [
+        "review must finish with stop",
+        "review must contain nonempty text"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [],
+      "reported_token_lower_bound": 75054,
+      "elapsed_seconds": 48.02070609666407
+    },
+    {
+      "sample_id": "qid_776_s53__C__r2__source_grounded_v1",
+      "review_status": "api_error",
+      "review_finish_reason": null,
+      "review_errors": [
+        "review_api_error"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [
+        "review"
+      ],
+      "reported_token_lower_bound": 33042,
+      "elapsed_seconds": 134.7150727212429
+    },
+    {
+      "sample_id": "qid_546_s29__C__r2__baseline",
+      "review_status": "node_invalid",
+      "review_finish_reason": "length",
+      "review_errors": [
+        "review must finish with stop",
+        "review must contain nonempty text"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [],
+      "reported_token_lower_bound": 53488,
+      "elapsed_seconds": 99.83374960906804
+    },
+    {
+      "sample_id": "qid_546_s29__C__r2__source_grounded_v1",
+      "review_status": "node_invalid",
+      "review_finish_reason": "length",
+      "review_errors": [
+        "review must finish with stop",
+        "review must contain nonempty text"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [],
+      "reported_token_lower_bound": 53765,
+      "elapsed_seconds": 57.9775283113122
+    },
+    {
+      "sample_id": "qid_517_s21__C__r2__baseline",
+      "review_status": "node_invalid",
+      "review_finish_reason": "length",
+      "review_errors": [
+        "review must finish with stop",
+        "review must contain nonempty text"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [],
+      "reported_token_lower_bound": 40229,
+      "elapsed_seconds": 64.81367135420442
+    },
+    {
+      "sample_id": "qid_517_s21__C__r2__source_grounded_v1",
+      "review_status": "node_invalid",
+      "review_finish_reason": "length",
+      "review_errors": [
+        "review must finish with stop",
+        "review must contain nonempty text"
+      ],
+      "memo_injected": false,
+      "actor_kind": "tool_calls",
+      "actor_status": "ok",
+      "unknown_cost_stages": [],
+      "reported_token_lower_bound": 40750,
+      "elapsed_seconds": 82.1573052611202
+    }
+  ]
+}

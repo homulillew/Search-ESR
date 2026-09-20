@@ -1,0 +1,190 @@
+{
+  "reviewer": "single Codex-assisted; prior outputs/card order known, not blind or independent human gold",
+  "scheduled": 12,
+  "valid_review_semantic_denominator": 1,
+  "source_correct_valid_reviews": 1,
+  "source_rate_among_valid": 1.0,
+  "caveat": "1/1 describes the sole available review, not 100% end-to-end success or a population accuracy estimate.",
+  "by_contract": {
+    "baseline": {
+      "scheduled": 6,
+      "valid_reviews": 0,
+      "source_correct": 0,
+      "source_rate_among_valid": null,
+      "labels": {
+        "review_source_attribution_correct": {
+          "not_applicable": 6
+        },
+        "tool_action_direction_acceptable": {
+          "no": 4,
+          "yes": 2
+        },
+        "assistant_assertions_supported": {
+          "no": 2,
+          "yes": 3,
+          "not_applicable": 1
+        },
+        "final_answer_supported": {
+          "not_applicable": 6
+        },
+        "assumption_grounded": {
+          "not_applicable": 6
+        },
+        "need_unresolved": {
+          "not_applicable": 6
+        },
+        "need_decision_relevant": {
+          "not_applicable": 6
+        },
+        "need_already_answered": {
+          "not_applicable": 6
+        },
+        "decision_effect_balanced": {
+          "not_applicable": 6
+        },
+        "action_responds_to_need": {
+          "not_applicable": 6
+        },
+        "original_constraint_preserved": {
+          "yes": 5,
+          "no": 1
+        },
+        "action_acceptable": {
+          "no": 5,
+          "yes": 1
+        },
+        "regression": {
+          "not_applicable": 6
+        },
+        "new_errors": {
+          "yes": 2,
+          "no": 4
+        },
+        "answer_vs_abstention": {
+          "no_final_text": 6
+        }
+      },
+      "acceptable_actions_after_valid_review": 0,
+      "observable_actor_after_valid_review": 0
+    },
+    "source_grounded_v1": {
+      "scheduled": 6,
+      "valid_reviews": 1,
+      "source_correct": 1,
+      "source_rate_among_valid": 1.0,
+      "labels": {
+        "review_source_attribution_correct": {
+          "not_applicable": 5,
+          "yes": 1
+        },
+        "tool_action_direction_acceptable": {
+          "yes": 2,
+          "not_applicable": 1,
+          "no": 3
+        },
+        "assistant_assertions_supported": {
+          "not_applicable": 3,
+          "yes": 3
+        },
+        "final_answer_supported": {
+          "not_applicable": 6
+        },
+        "assumption_grounded": {
+          "not_applicable": 5,
+          "yes": 1
+        },
+        "need_unresolved": {
+          "not_applicable": 5,
+          "yes": 1
+        },
+        "need_decision_relevant": {
+          "not_applicable": 5,
+          "yes": 1
+        },
+        "need_already_answered": {
+          "not_applicable": 5,
+          "no": 1
+        },
+        "decision_effect_balanced": {
+          "not_applicable": 5,
+          "yes": 1
+        },
+        "action_responds_to_need": {
+          "not_applicable": 5,
+          "unknown": 1
+        },
+        "original_constraint_preserved": {
+          "yes": 4,
+          "unknown": 1,
+          "no": 1
+        },
+        "action_acceptable": {
+          "yes": 2,
+          "unknown": 1,
+          "no": 3
+        },
+        "regression": {
+          "no": 4,
+          "unknown": 1,
+          "yes": 1
+        },
+        "new_errors": {
+          "no": 5,
+          "unknown": 1
+        },
+        "answer_vs_abstention": {
+          "no_final_text": 5,
+          "unknown": 1
+        }
+      },
+      "acceptable_actions_after_valid_review": 0,
+      "observable_actor_after_valid_review": 0
+    }
+  },
+  "by_checkpoint": {
+    "qid_517_s21": {
+      "scheduled": 4,
+      "acceptable": 2,
+      "unknown": 0
+    },
+    "qid_546_s29": {
+      "scheduled": 4,
+      "acceptable": 1,
+      "unknown": 1
+    },
+    "qid_776_s53": {
+      "scheduled": 4,
+      "acceptable": 0,
+      "unknown": 0
+    }
+  },
+  "cross_budget_descriptive": {
+    "prior_review_cap": 512,
+    "current_review_cap": 4096,
+    "prior_valid_reviews": 0,
+    "current_valid_reviews": 1,
+    "prior_acceptable": 7,
+    "current_acceptable": 3,
+    "current_unacceptable": 8,
+    "current_unknown": 1,
+    "scheduled_each": 12,
+    "identical_actor_request_count": 11,
+    "transitions_on_identical_actor_requests": {
+      "yes->no": 5,
+      "yes->yes": 2,
+      "no->no": 3,
+      "no->yes": 1
+    },
+    "caveat": "Every observed current Actor used exact fallback and matches the prior request; differences do not show that a larger Reviewer cap caused better/worse Actor reasoning. Repeated development cases and variable service/sampling, no rollout accuracy."
+  },
+  "sensitivity": {
+    "weak_pass_cards": [
+      "card_0002",
+      "card_0012"
+    ],
+    "main_acceptable_count": 3,
+    "if_both_weak_passes_downgraded_acceptable_count": 1,
+    "fixed_denominator": 12,
+    "reason": "OR query may repeat an old branch; unverified Championship League format may warrant checking first. Main delivery/attribution conclusions unchanged."
+  }
+}

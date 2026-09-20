@@ -1,0 +1,38 @@
+{
+  "source_commit": "809dfeb130df50358561049dbdb9fc5b0302ec6d",
+  "run": "e0_20260919T171923Z",
+  "scope": "report/semantic summary reviewed; selected raw responses checked; not an independent blind annotation of every branch",
+  "existing_real_calls": 30,
+  "new_real_calls_in_this_audit": 0,
+  "tool_executions_in_existing_e0": 0,
+  "reported_tokens": {
+    "A": 160843,
+    "B": 347166,
+    "C": 347551,
+    "total": 855560
+  },
+  "semantic_labels_source": "Codex single-assessor report, no independent human adjudication",
+  "raw_response_checks": [
+    {
+      "branch": "qid_517_s21__C__r2",
+      "result_blob_sha": "dfd3d54f8b48f558f825dbefb7d200198bbdeacf",
+      "finding": "Reviewer allowed role weakening; Actor returned an unsupported final identity while admitting an unresolved film relation; non-null need did not programmatically trigger stop."
+    },
+    {
+      "branch": "qid_776_s53__B__r2",
+      "result_blob_sha": "b805bc8ddaa20bfd312b0ed6e036265c0036a467",
+      "finding": "Reviewer stated the occupation hypothesis was unsupported; Actor repeated a query with that occupation and reasserted a journal binding."
+    },
+    {
+      "branch": "qid_546_s29__C__r2",
+      "result_blob_sha": "89ff67d6ba9b0fbceacbb7c07d1623eeb172960e",
+      "finding": "Reviewer treated failure of a guessed player-tournament binding as grounds to reject the player; the original question did not specify that tournament."
+    },
+    {
+      "branch": "qid_776_s53__C__r1",
+      "result_blob_sha": "b2a2967c9aff8468f170ae126d43ce5eef54d2cb",
+      "finding": "Reviewer output hit 512 tokens inside a long reference list; finish_reason length, invalid JSON, no-memo fallback. Do not score Actor as responding to that review."
+    }
+  ],
+  "next_experiment": "source_contract_pair: 3 checkpoints x 2 repeats x 2 contracts x 2 model stages =24 logical calls; no real tool execution; legacy memo fixed"
+}

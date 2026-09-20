@@ -1,0 +1,9 @@
+# Base commit: ce8bb3d6517309c55b890ecba0391e0baf6063fb
+# cwd: /data/WSH/Search-ESR
+python -m unittest discover -s tests -p 'test_need_review*.py' -v
+python -m experiments.research_state.need_review.run prepare --output /tmp/esr-atria4096-prepared-20260920
+COMMON=(--prepared /tmp/esr-atria4096-prepared-20260920 --repeats 2 --seed 20260919 --review-max-tokens 4096 --sdk-max-retries 0 --memo-mode legacy_text --comparison source_contract_pair --model Atria-Dawn-Preview --expected-base-url https://api.atria-asi.ai/v1)
+python -m experiments.research_state.need_review.run plan "${COMMON[@]}" --output /tmp/esr-atria4096-preflight-20260920/approved_plan.json
+python -m experiments.research_state.need_review.run execute "${COMMON[@]}" --plan-file /tmp/esr-atria4096-preflight-20260920/approved_plan.json --env-file .env --output experiments/research_state/need_review/runs/e01_atria4096_20260920
+# Post-run offline export:
+python -m experiments.research_state.need_review.run review --run-dir experiments/research_state/need_review/runs/e01_atria4096_20260920 --output experiments/research_state/need_review/runs/e01_atria4096_20260920/review
