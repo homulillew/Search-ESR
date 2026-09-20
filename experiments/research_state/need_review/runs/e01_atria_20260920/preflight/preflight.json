@@ -1,0 +1,42 @@
+{
+  "created_at": "2026-09-20T05:44:37.607276+00:00",
+  "git_head": "6319c64cbff6995a879ed4fb8ceca095ec8d1b2a",
+  "git_status": "",
+  "offline_tests_passed": 135,
+  "plan_sha256": "6084415fdd2879dd53561bdd0896502ec2b99d1cb469461a8998fabbf376715a",
+  "checks": [
+    {
+      "checkpoint": "qid_546_s29",
+      "identical_to_prior_checkpoint": true,
+      "only_review_system_differs_between_contracts": true,
+      "model": "Atria-Dawn-Preview",
+      "extra_body": {
+        "enable_thinking": false
+      }
+    },
+    {
+      "checkpoint": "qid_776_s53",
+      "identical_to_prior_checkpoint": true,
+      "only_review_system_differs_between_contracts": true,
+      "model": "Atria-Dawn-Preview",
+      "extra_body": {
+        "enable_thinking": false
+      }
+    },
+    {
+      "checkpoint": "qid_517_s21",
+      "identical_to_prior_checkpoint": true,
+      "only_review_system_differs_between_contracts": true,
+      "model": "Atria-Dawn-Preview",
+      "extra_body": {
+        "enable_thinking": false
+      }
+    }
+  ],
+  "provider_docs": "https://api.atria-asi.ai/docs",
+  "context_capacity_documented": 256000,
+  "compatibility_evidence": "Previous turn verified Chat Completions, streaming, tool roundtrip on this endpoint/model. Full checkpoint requests not smoke-tested; no extra paid probes.",
+  "thinking_control": "Captured extra_body enable_thinking=false retained exactly. Atria support/effect undocumented; effective reasoning not assumed disabled; retain response reasoning and reasoning_tokens.",
+  "cross_model_scope": "Same prompts, prefixes, schema, caps, schedule, memo; change model and endpoint only. Not equal-tokenizer/equal-reasoning compute; no model ability ceiling claim.",
+  "evaluation": "same rubric/pre-output expectations as prior; single Codex-assisted; prior source and cases known, not blind human gold."
+}
