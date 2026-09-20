@@ -17,6 +17,7 @@ class Config:
     system_prompt: str = '你是一个可靠的助手。请用清晰、准确的语言回答问题。'
     timeout: float = 120
     enable_thinking: bool | None = None
+    allow_tool_calls_with_stop: bool = False
 
     @classmethod
     def load(cls, env_file=ROOT / '.env', *, model=None, base_url=None):
@@ -29,16 +30,19 @@ class Config:
         parts = urlsplit(url)
         if parts.scheme not in {'http', 'https'} or not parts.netloc or parts.query or parts.fragment or parts.username:
             raise ValueError('OPENAI_BASE_URL 必须是有效的 HTTP(S) API 基础地址。')
-        if parts.path.endswith('/chat/completions'):
-            raise ValueError('OPENAI_BASE_URL 请填写 API 基础地址（通常以 /v1 结尾），不要包含 /chat/completions。')
+        if parts.path.endswith(('/chat/completions', '/responses')):
+            raise ValueError('OPENAI_BASE_URL 请填写 API 基础地址（通常以 /v1 结尾），不要包含 /chat/completions 或 /responses。')
         timeout = float(values.get('OPENAI_TIMEOUT') or 120)
         if timeout <= 0:
             raise ValueError('OPENAI_TIMEOUT 必须大于 0。')
         thinking = (values.get('DASHSCOPE_ENABLE_THINKING') or '').strip().lower()
         if thinking not in {'', 'true', 'false'}:
             raise ValueError('DASHSCOPE_ENABLE_THINKING 应为 true、false 或空。')
+        stop_tools = (values.get('OPENAI_ALLOW_TOOL_CALLS_WITH_STOP') or '').strip().lower()
+        if stop_tools not in {'', 'true', 'false'}:
+            raise ValueError('OPENAI_ALLOW_TOOL_CALLS_WITH_STOP 应为 true、false 或空。')
         return cls(key, url, model, values.get('CHAT_SYSTEM_PROMPT') or cls.system_prompt, timeout,
-                   None if not thinking else thinking == 'true')
+                   None if not thinking else thinking == 'true', stop_tools == 'true')
 
     def request_options(self):
         if self.enable_thinking is None:

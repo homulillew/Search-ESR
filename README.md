@@ -4,13 +4,23 @@
 
 ## 当前配置
 
-已配置阿里云百炼北京工作空间的 OpenAI 兼容接口，模型为 `qwen3.7-flash`。
-密钥通过 `DASHSCOPE_API_KEY` 读取，已保存在受 Git 忽略且权限为 600 的 `.env`。
-也支持 `OPENAI_API_KEY`。程序优先读取非空环境变量，再读取 `.env`。
+当前本地配置为 Atria，API 基础地址 `https://api.atria-asi.ai/v1`，模型 `Atria-Dawn-Preview`。
+密钥通过 `OPENAI_API_KEY` 读取，只保存在受 Git 忽略且权限为 600 的 `.env`。
+程序优先读取非空环境变量，再读取 `.env`。
 
-`DASHSCOPE_ENABLE_THINKING=false` 通过 `extra_body` 传递，当前关闭思考模式。
-可设为 `true` 启用；普通对话只展示回答正文，不展示 reasoning_content。
-其他服务商可将该配置留空以省略此参数。
+`DASHSCOPE_ENABLE_THINKING` 当前留空，不向 Atria 发送百炼专用参数；这不表示关闭 Atria 推理。
+普通对话只展示回答正文。历史百炼实验仍保留各自冻结的模型与参数。
+
+2026-09-20 实测 `/responses` 和 `/chat/completions` 均可用，现有客户端继续使用 Chat Completions。
+Atria 的工具响应可能包含完整 `tool_calls`，但 `finish_reason=stop`。
+本地显式设置 `OPENAI_ALLOW_TOOL_CALLS_WITH_STOP=true`，允许 Agent 在校验整个工具批次后执行；
+不改写服务端完成原因，状态回调会标明兼容路径。代码默认仍为严格模式，`length` 等非完整返回仍拒绝执行。
+改变此策略需使用新的观察状态文件。E0 固定前缀 runner 的旧协议分类不受此开关影响，未来实验仍须重新冻结并单独记录兼容性。
+
+本次连通性检查通过 Responses 最小请求、Chat Completions 普通/流式回复、工具格式探测及
+真实模型的两次请求工具往返。工具往返使用合成结果，没有执行 BC+ 检索；原始往返记录在本地
+`chat_logs/atria_api_check.json`。强制工具探测返回 `stop`，自主工具往返返回 `tool_calls`，两种情况分别覆盖。
+客户端与观察恢复相关测试共29项通过。
 
 ## 配置与启动
 
@@ -23,12 +33,14 @@ python -m pip install -r requirements-chat.txt
 编辑仓库根目录的 `.env`（已创建，文件权限为 600），填写：
 
 ```dotenv
-OPENAI_BASE_URL=https://你的服务商地址/v1
-OPENAI_MODEL=你的模型名称
+OPENAI_BASE_URL=https://api.atria-asi.ai/v1
+OPENAI_MODEL=Atria-Dawn-Preview
 OPENAI_API_KEY=你的密钥
+DASHSCOPE_ENABLE_THINKING=
+OPENAI_ALLOW_TOOL_CALLS_WITH_STOP=true
 ```
 
-地址填写服务商提供的 API 基础路径，不要包含 `/chat/completions`。
+地址填写服务商提供的 API 基础路径，不要包含 `/chat/completions` 或 `/responses`。
 阿里云密钥也可配置为 `DASHSCOPE_API_KEY`。
 模型需要支持 Chat Completions 的 `tools` / function calling。
 环境变量优先于 `.env`；也可通过 `--env-file` 指定其他配置。
@@ -122,7 +134,7 @@ python -m pytest -q tests/test_chat.py
 ```
 
 测试通过模拟 HTTP 验证 API 请求格式、流式响应、多轮上下文、错误处理、工具调用循环，
-并使用真实 BC+ 文档库验证分页读取。真实 API 联调结果见 `chat_logs/dashscope_agent_check.log`。
+并使用真实 BC+ 文档库验证分页读取。旧百炼联调结果见本地 `chat_logs/dashscope_agent_check.log`，不代表当前模型结果。
 
 接口依据：[OpenAI Chat Completions 官方文档](https://developers.openai.com/api/reference/python/resources/chat/subresources/completions/methods/create)。
 

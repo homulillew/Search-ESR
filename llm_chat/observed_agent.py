@@ -40,7 +40,10 @@ class ObservedAgentSession(AgentSession):
         saved=self.observations.checkpoint()
         variant=variant or (saved['variant'] if saved else 'baseline')
         self.variant=variant
-        self.protocol_hash=hashlib.sha256(json.dumps([config.system_prompt,AGENT_PROMPT,TOOLS],ensure_ascii=False).encode()).hexdigest()
+        protocol=[config.system_prompt,AGENT_PROMPT,TOOLS]
+        if config.allow_tool_calls_with_stop:
+            protocol.append({'allow_tool_calls_with_stop':True})
+        self.protocol_hash=hashlib.sha256(json.dumps(protocol,ensure_ascii=False).encode()).hexdigest()
         self._initializing=True
         if saved and (saved['variant']!=variant or saved['model']!=config.model or saved['base_url']!=config.base_url or saved['protocol_hash']!=self.protocol_hash):
             self.observations.close()

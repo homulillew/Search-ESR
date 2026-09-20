@@ -115,10 +115,29 @@ class AgentSession(ChatSession):
             if message.tool_calls:
                 if final_round:
                     raise ValueError('达到工具调用上限，服务端仍返回工具调用；本轮未写入历史。')
-                if choice.finish_reason != 'tool_calls':
+                stop_tools = choice.finish_reason == 'stop' and self.config.allow_tool_calls_with_stop
+                if choice.finish_reason != 'tool_calls' and not stop_tools:
                     raise ValueError('工具调用未完整结束，本轮未写入历史。')
                 if len(message.tool_calls) > 8:
                     raise ValueError('单轮工具调用过多（最多 8 个），本轮未写入历史。')
+                if stop_tools:
+                    # Explicit provider compatibility: validate the whole batch
+                    # before execution; never rewrite the raw finish_reason.
+                    ids = set()
+                    names = {tool['function']['name'] for tool in TOOLS}
+                    for call in message.tool_calls:
+                        if (not call.id or call.id in ids or call.type != 'function'
+                                or call.function.name not in names):
+                            raise ValueError('stop 响应中的工具调用结构无效，本轮未写入历史。')
+                        ids.add(call.id)
+                        try:
+                            arguments = json.loads(call.function.arguments)
+                        except (ValueError, TypeError):
+                            raise ValueError('stop 响应中的工具参数不完整，本轮未写入历史。') from None
+                        if not isinstance(arguments, dict):
+                            raise ValueError('stop 响应中的工具参数必须为对象，本轮未写入历史。')
+                    if self.on_status:
+                        self.on_status('兼容配置已启用：接受 finish_reason=stop 的完整工具批次；原始完成原因保持不变。')
                 pending.append(message.model_dump(exclude_none=True))
                 for call in message.tool_calls:
                     if self.on_status:

@@ -110,6 +110,17 @@ def test_completed_session_resume_open_and_configuration(tokenizer,tmp_path):
     with pytest.raises(ValueError):ObservedAgentSession(other,state_path=state)
 
 
+@pytest.mark.parametrize('initial', [False, True])
+def test_resume_rejects_changed_stop_tool_policy(tmp_path, initial):
+    cfg=config();cfg.allow_tool_calls_with_stop=initial
+    path=tmp_path/'state.sqlite'
+    session=ObservedAgentSession(cfg,state_path=path,client=client(lambda r:httpx.Response(200,json=reply('ok'))))
+    session.close()
+    cfg.allow_tool_calls_with_stop=not initial
+    with pytest.raises(ValueError,match='State configuration differs'):
+        ObservedAgentSession(cfg,state_path=path)
+
+
 def test_persisted_source_corruption_fails_closed(tokenizer,tmp_path):
     b=RawWindowBuilder(tokenizer);text,v=source(b);store=ObservationStore(tmp_path/'state.sqlite');store.record('search',{},[v],b)
     with store.db:store.db.execute('UPDATE documents SET text=?',('changed',))

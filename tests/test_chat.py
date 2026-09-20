@@ -149,3 +149,75 @@ def test_dashscope_key_and_thinking_option(tmp_path, monkeypatch):
     assert agent.ask('hi') == 'ok'
     assert requests[-1]['enable_thinking'] is False
     agent.close()
+
+
+@pytest.mark.parametrize('enabled,finish,accepted', [
+    (False, 'stop', False), (True, 'stop', True),
+    (True, 'length', False), (False, 'tool_calls', True),
+])
+def test_stop_tool_calls_require_explicit_compatibility(enabled, finish, accepted):
+    calls = [{'id': 'c1', 'type': 'function',
+              'function': {'name': 'search', 'arguments': '{"query":"test"}'}}]
+    raw = reply(None, calls)
+    raw['choices'][0]['finish_reason'] = finish
+    requests, executed, statuses = [], [], []
+    def handler(request):
+        requests.append(json.loads(request.content))
+        return httpx.Response(200, json=raw if len(requests) == 1 else reply('done'))
+    class Tools:
+        def execute(self, name, args):
+            executed.append((name, args))
+            return {'text': 'observed'}
+        def close(self): pass
+    cfg = config()
+    cfg.allow_tool_calls_with_stop = enabled
+    agent = AgentSession(cfg, client(handler), Tools(), on_status=statuses.append)
+    try:
+        if accepted:
+            assert agent.ask('test') == 'done'
+            assert executed == [('search', {'query': 'test'})]
+            assert requests[1]['messages'][-1]['tool_call_id'] == 'c1'
+            assert any('finish_reason=stop' in s for s in statuses) == (finish == 'stop')
+        else:
+            with pytest.raises(ValueError): agent.ask('test')
+            assert not executed and len(agent.messages) == 1
+        assert raw['choices'][0]['finish_reason'] == finish
+    finally:
+        agent.close()
+
+
+@pytest.mark.parametrize('bad_args,bad_id,bad_name', [
+    ('{', 'c2', 'search'), ('[]', 'c2', 'search'),
+    ('{}', 'c1', 'search'), ('{}', '', 'search'), ('{}', 'c2', 'unknown'),
+])
+def test_stop_tool_batch_rejected_before_any_execution(bad_args, bad_id, bad_name):
+    raw = reply(None, [
+        {'id': 'c1', 'type': 'function', 'function': {'name': 'search', 'arguments': '{"query":"ok"}'}},
+        {'id': bad_id, 'type': 'function', 'function': {'name': bad_name, 'arguments': bad_args}},
+    ])
+    raw['choices'][0]['finish_reason'] = 'stop'
+    class Tools:
+        def execute(self, *args): pytest.fail('Invalid batch must not execute even its first call')
+        def close(self): pass
+    cfg = config()
+    cfg.allow_tool_calls_with_stop = True
+    agent = AgentSession(cfg, client(lambda r: httpx.Response(200, json=raw)), Tools())
+    try:
+        with pytest.raises(ValueError): agent.ask('test')
+        assert len(agent.messages) == 1
+    finally:
+        agent.close()
+
+
+def test_stop_tool_config_and_responses_url(tmp_path, monkeypatch):
+    monkeypatch.delenv('OPENAI_ALLOW_TOOL_CALLS_WITH_STOP', raising=False)
+    env = tmp_path / '.env'
+    env.write_text('OPENAI_API_KEY=test\nOPENAI_BASE_URL=https://example.test/v1\nOPENAI_MODEL=test\nOPENAI_ALLOW_TOOL_CALLS_WITH_STOP=true\n')
+    assert Config.load(env).allow_tool_calls_with_stop
+    with pytest.raises(ValueError, match='基础地址'):
+        Config.load(env, base_url='https://example.test/v1/responses')
+    monkeypatch.setenv('OPENAI_ALLOW_TOOL_CALLS_WITH_STOP', 'false')
+    assert not Config.load(env).allow_tool_calls_with_stop
+    monkeypatch.setenv('OPENAI_ALLOW_TOOL_CALLS_WITH_STOP', 'invalid')
+    with pytest.raises(ValueError, match='OPENAI_ALLOW_TOOL_CALLS_WITH_STOP'):
+        Config.load(env)
