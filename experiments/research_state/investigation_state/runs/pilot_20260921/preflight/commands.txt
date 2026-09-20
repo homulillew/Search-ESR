@@ -1,0 +1,11 @@
+git fetch origin
+git merge --ff-only origin/main
+python -m pip install -r requirements-chat.txt
+python -m unittest discover -s tests -p 'test_investigation_state.py' -v
+python -m unittest discover -s tests -p 'test_need_review*.py' -v
+python -m experiments.research_state.investigation_state.run prepare --output /tmp/esr-state-prepared-20260921
+# Offline fixture review found 776 provenance wording issue; patch archived.
+# Both test suites rerun after the fixture/document/test edit.
+python -m experiments.research_state.investigation_state.run prepare --output /tmp/esr-state-prepared-20260921-v2
+python -m experiments.research_state.investigation_state.run plan --prepared /tmp/esr-state-prepared-20260921-v2 --profile /tmp/esr-state-preflight-20260921/profile.json --purpose pilot --comparison layout --repeats 1 --fixture-review /tmp/esr-state-prepared-20260921-v2/fixture_review.json --output /tmp/esr-state-preflight-20260921/pilot_plan.json
+python -m experiments.research_state.investigation_state.run execute --prepared /tmp/esr-state-prepared-20260921-v2 --plan /tmp/esr-state-preflight-20260921/pilot_plan.json --env-file .env --output experiments/research_state/investigation_state/runs/pilot_20260921

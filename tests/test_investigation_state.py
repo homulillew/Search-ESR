@@ -522,6 +522,13 @@ class StorageAndPreparationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as root:
             result=r.prepare(r.PACKAGE/'fixtures.json',r.ROOT,Path(root)/'prepared')
             self.assertEqual(len(result['cases']),3)
+            bundle=r.load_bundle(Path(root)/'prepared'/'bundle.json')
+            cp=bundle['packets']['qid_776_s53']['checkpoint']
+            ref=next(x for x in cp['references'] if x['ref']=='event:16:doc:34541')
+            observation=json.loads(cp['request']['messages'][ref['message_index']]['content'])[int(ref['path'][1:])]
+            self.assertIn('title: Nineteenth Century Periodicals: 1880-1899',observation['text'])
+            self.assertIn('American Anthropologist (1888-present)',observation['text'])
+            self.assertNotIn('1940',observation['text'])
 
 
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,57 @@
+{
+  "schema_version": "investigation_audit_v1",
+  "purpose": "pilot",
+  "mode": "live",
+  "plan_sha256": "590a6e8958e2919347b7c8be3d7ccad8334adae4ce5c2c38f57561efc78c879f",
+  "scheduled_branches": 6,
+  "statuses": {
+    "completed": 5,
+    "api_error": 1
+  },
+  "logical_requests_attempted": 6,
+  "responses_received": 5,
+  "unknown_usage_calls": 1,
+  "responses_inconsistent_usage": 0,
+  "reported_token_lower_bounds": {
+    "prompt_tokens": 136738,
+    "completion_tokens": 31145,
+    "total_tokens": 167883,
+    "reported_reasoning_tokens": 30925
+  },
+  "cost_accounting_complete": false,
+  "global_errors": [],
+  "branches_with_audit_errors": 0,
+  "by_view": {
+    "typed": {
+      "planned": 3,
+      "protocol_valid": 1,
+      "unknown_usage_calls": 0,
+      "reported_tokens": {
+        "prompt_tokens": 88685,
+        "completion_tokens": 22648,
+        "total_tokens": 111333
+      },
+      "statuses": {
+        "completed": 3
+      }
+    },
+    "flat": {
+      "planned": 3,
+      "protocol_valid": 1,
+      "unknown_usage_calls": 1,
+      "reported_tokens": {
+        "prompt_tokens": 48053,
+        "completion_tokens": 8497,
+        "total_tokens": 56550
+      },
+      "statuses": {
+        "completed": 2,
+        "api_error": 1
+      }
+    }
+  },
+  "tool_executions": 0,
+  "reviewer_calls": 0,
+  "semantic_evaluation": "not_evaluated",
+  "mechanically_clean": false
+}
