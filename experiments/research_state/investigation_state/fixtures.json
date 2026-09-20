@@ -1,0 +1,240 @@
+{
+  "schema_version": "investigation_selection_v1",
+  "archive_commit": "396592c3ed371a6be260ca0a40434d1f6afc821f",
+  "fixture_origin": "assistant_authored_from_visible_prefix; earlier bad-case analyses known; not automated state or human gold",
+  "scope": "Three development checkpoints using historical v000 tools, not new-model rollouts under current Search/Open.",
+  "cases": [
+    {
+      "case_id": "qid_517_s21",
+      "checkpoint_path": "experiments/research_state/need_review/runs/e01_atria4096_20260920/checkpoints/qid_517_s21.json",
+      "checkpoint_blob_sha": "7a1d10e5e0e087c001f1eb227ae8bac03c290462",
+      "fixture": {
+        "notebook": [
+          {
+            "kind": "given_constraint",
+            "text": "The original task requires the same actor to satisfy the birth-decade/zodiac, family and two film-role conditions. A clue is not evidence that any proposed actor satisfies it.",
+            "basis": [
+              {
+                "ref": "question",
+                "quote": "This person was born sometime in the 1970s"
+              },
+              {
+                "ref": "question",
+                "quote": "Their Chinese zodiac sign is a goat."
+              }
+            ]
+          },
+          {
+            "kind": "observed_finding",
+            "text": "The visible festival excerpt attributes Meirelles's decision to become a filmmaker to seeing Iracema.",
+            "basis": [
+              {
+                "ref": "event:4:doc:46172",
+                "quote": "He decided to become a filmmaker after seeing Jorge Bodanzky and Orlando Senna's Iracema (1975)."
+              }
+            ]
+          },
+          {
+            "kind": "hypothesis",
+            "text": "The exact 1975 birth-year filter and the Idris identity in earlier analysis remain unverified bindings; a director excerpt does not establish an actor biography.",
+            "basis": [
+              {
+                "message_index": 2,
+                "quote": "specifically 1975"
+              },
+              {
+                "message_index": 2,
+                "quote": "Idris Elba"
+              }
+            ]
+          },
+          {
+            "kind": "unresolved",
+            "text": "The actor-role and same-person links remain open in this notebook. Do not resolve them by loosening policeman or changing the birth decade.",
+            "basis": [
+              {
+                "ref": "question",
+                "quote": "They acted as a policeman in a 2005 film"
+              },
+              {
+                "ref": "question",
+                "quote": "They also acted in a 2013 dramatic thriller"
+              }
+            ]
+          }
+        ],
+        "task": {
+          "intent": "discover",
+          "question": "Who is credited with a policeman role in the 2005 film associated with the director identified through the Iracema clue?",
+          "decision_effect": "A source-backed role gives a candidate to check against the birth, family and 2013 film clues. No retrieved cast entry is not proof that no such actor exists; an uncertain film binding can itself be revisited.",
+          "basis": [
+            {
+              "ref": "question",
+              "quote": "They acted as a policeman in a 2005 film"
+            },
+            {
+              "ref": "event:4:doc:46172",
+              "quote": "He decided to become a filmmaker after seeing Jorge Bodanzky and Orlando Senna's Iracema (1975)."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "qid_546_s29",
+      "checkpoint_path": "experiments/research_state/need_review/runs/e01_atria4096_20260920/checkpoints/qid_546_s29.json",
+      "checkpoint_blob_sha": "c77469de92101b45392fd9b4836500730b735015",
+      "fixture": {
+        "notebook": [
+          {
+            "kind": "given_constraint",
+            "text": "The task asks for a deciding-frame win, two further wins 4-3 and 4-0, and the subsequent loss. Keep the first-opponent and final-opponent thresholds distinct; date-bounded qualifications still need checking.",
+            "basis": [
+              {
+                "ref": "question",
+                "quote": "He won the decider game in 2023 against a player who has less than 250 centuries followed by two more wins 4-3 and 4-0 respectively"
+              },
+              {
+                "ref": "question",
+                "quote": "as of 30th January 2025"
+              }
+            ]
+          },
+          {
+            "kind": "observed_finding",
+            "text": "A visible tournament excerpt is titled 2023 British Open and contains a Semi-final section. This is a source entry, not a verified answer identity.",
+            "basis": [
+              {
+                "ref": "event:28:doc:84585",
+                "quote": "2023 British Open"
+              },
+              {
+                "ref": "event:28:doc:84585",
+                "quote": "Semi-final"
+              }
+            ]
+          },
+          {
+            "kind": "hypothesis",
+            "text": "Players Championship is a proposed event in the earlier analysis; it is not an event named by the question.",
+            "basis": [
+              {
+                "message_index": 2,
+                "quote": "Players Championship"
+              },
+              {
+                "ref": "question",
+                "quote": "He won the decider game in 2023"
+              }
+            ]
+          },
+          {
+            "kind": "unresolved",
+            "text": "The complete match sequence is not established in this notebook. Failure of one guessed person-event binding must not be upgraded into exclusion of that person across all events.",
+            "basis": [
+              {
+                "ref": "question",
+                "quote": "followed by two more wins 4-3 and 4-0 respectively"
+              },
+              {
+                "message_index": 2,
+                "quote": "Players Championship"
+              }
+            ]
+          }
+        ],
+        "task": {
+          "intent": "clarify",
+          "question": "Which 2023 event or player match record can establish the deciding win, the separate 4-3 and 4-0 wins, and the following loss without assuming the Players Championship binding?",
+          "decision_effect": "A matching source sequence can support a candidate while leaving the original date-bounded qualifications to check. A mismatch can revise the event binding or candidate; retrieval failure alone cannot refute all possible bindings.",
+          "basis": [
+            {
+              "ref": "question",
+              "quote": "He won the decider game in 2023"
+            },
+            {
+              "ref": "question",
+              "quote": "followed by two more wins 4-3 and 4-0 respectively"
+            },
+            {
+              "message_index": 2,
+              "quote": "Players Championship"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "qid_776_s53",
+      "checkpoint_path": "experiments/research_state/need_review/runs/e01_atria4096_20260920/checkpoints/qid_776_s53.json",
+      "checkpoint_blob_sha": "f4066b207738e4b0bf7db3e6a11167af966d6bca",
+      "fixture": {
+        "notebook": [
+          {
+            "kind": "given_constraint",
+            "text": "Keep distinct the person born in 1886, the English-born author born in the early 1910s, encouragement between 1936 and 1940, publication in 1940, and the journal founded in 1888.",
+            "basis": [
+              {
+                "ref": "question",
+                "quote": "Someone born in 1886"
+              },
+              {
+                "ref": "question",
+                "quote": "Sometime between 1936 and 1940 inclusive"
+              },
+              {
+                "ref": "question",
+                "quote": "The report was published in 1940 in a quarterly journal initiated in 1888."
+              }
+            ]
+          },
+          {
+            "kind": "observed_finding",
+            "text": "An American Anthropologist source is visible. Its title supplies an available lead, not proof that it is the target journal.",
+            "basis": [
+              {
+                "ref": "event:16:doc:34541",
+                "quote": "American Anthropologist"
+              }
+            ]
+          },
+          {
+            "kind": "hypothesis",
+            "text": "The protagonist's professional anthropologist/folklorist restriction is an earlier search hypothesis, not an occupation supplied by the original question.",
+            "basis": [
+              {
+                "message_index": 2,
+                "quote": "This sounds like a biographical detail from a specific anthropologist or writer."
+              }
+            ]
+          },
+          {
+            "kind": "unresolved",
+            "text": "The encouraging person, the author and the official report title remain distinct unresolved identities in this notebook; matching a journal clue does not establish their connection.",
+            "basis": [
+              {
+                "ref": "question",
+                "quote": "Please provide the title of this report as it appears in the official journal records"
+              }
+            ]
+          }
+        ],
+        "task": {
+          "intent": "discover",
+          "question": "What official 1940 report entries are available for the provisional journal lead, without assuming a particular profession for the people involved?",
+          "decision_effect": "A relevant title and author provide a lead for checking the encouragement and biographical links. An unproductive journal route can be deferred without declaring the protagonist absent or changing the birth year.",
+          "basis": [
+            {
+              "ref": "question",
+              "quote": "The report was published in 1940 in a quarterly journal initiated in 1888."
+            },
+            {
+              "ref": "event:16:doc:34541",
+              "quote": "American Anthropologist"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
