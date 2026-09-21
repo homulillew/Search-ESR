@@ -1,0 +1,112 @@
+diff --git a/experiments/research_state/first_observation/retrieval.py b/experiments/research_state/first_observation/retrieval.py
+index 5a7387e..a6eeb71 100644
+--- a/experiments/research_state/first_observation/retrieval.py
++++ b/experiments/research_state/first_observation/retrieval.py
+@@ -14,6 +14,25 @@ from .contracts import positive
+ ROOT = Path(__file__).resolve().parents[3]
+ TOKENIZER = Path('/data/model/Qwen3-Embedding-8B')
+ INDEX = ROOT / 'BCPlus/indexes/bcplus-qwen3-8b'
++VECTORS = ROOT / 'BCPlus/indexes/qwen3-embedding-8b'
++
++
++def retrieval_files(index, vectors, tokenizer):
++    """Include the actual sibling vector shards, not only the document store."""
++    shards = sorted(Path(vectors).glob('*.pkl'))
++    if not shards or not (Path(index) / 'documents.sqlite').is_file():
++        raise ValueError('Missing corpus or retrieval vector shards')
++    return sorted(set([*[p for p in Path(index).rglob('*') if p.is_file()],
++        *shards, *[p for p in Path(tokenizer).rglob('*') if p.is_file()
++        and '.cache' not in p.parts
++        and p.suffix in {'.json', '.txt', '.model', '.safetensors', '.bin', '.pt', '.tiktoken'}]]))
++
++
++def checked_prefix(metadata, actual_prefix):
++    prefix = metadata.get('query_prefix')
++    if not isinstance(prefix, str) or prefix != actual_prefix:
++        raise ValueError('Metadata query_prefix must match actual retrieval script PREFIX')
++    return prefix
+ 
+ 
+ class LocalSearch:
+@@ -22,25 +41,27 @@ class LocalSearch:
+     def __init__(self):
+         from llm_chat.agent import TOOLS
+         from transformers import AutoTokenizer
+-        from BCPlus.scripts.search_bcplus import BCPlusSearcher
++        from BCPlus.scripts.search_bcplus import BCPlusSearcher, PREFIX, MODEL, BASE
+         metadata = read(INDEX / 'metadata.json')
+-        if not isinstance(metadata.get('query_prefix'), str):
+-            raise ValueError('Missing frozen retrieval query_prefix')
+-        self.prefix = metadata['query_prefix']
++        self.prefix = checked_prefix(metadata, PREFIX)
++        if Path(MODEL).resolve() != TOKENIZER.resolve() or (BASE / 'indexes/qwen3-embedding-8b').resolve() != VECTORS.resolve():
++            raise ValueError('Actual retrieval model/vector paths differ from frozen assets')
+         self.tools = deepcopy(TOOLS)
+         self.tokenizer = AutoTokenizer.from_pretrained(str(TOKENIZER), local_files_only=True, use_fast=True)
+-        self.searcher = BCPlusSearcher()
+         self._files = sorted(set([*(ROOT / 'llm_chat').glob('*.py'),
+             ROOT / 'BCPlus/scripts/search_bcplus.py',
+-            *[p for p in INDEX.rglob('*') if p.is_file()],
+-            *[p for p in TOKENIZER.glob('*') if p.is_file() and p.suffix in {'.json', '.txt', '.model', '.safetensors', '.bin', '.pt', '.tiktoken'}]]))
++            *retrieval_files(INDEX, VECTORS, TOKENIZER)]))
+         if not self._files or not INDEX.is_dir():
+             raise ValueError('Missing local retrieval assets')
+         self._stats = {str(p): (p.stat().st_size, p.stat().st_mtime_ns) for p in self._files}
+         self._passport = {'adapter': 'ObservedTools/baseline', 'index_directory': str(INDEX),
++                          'vector_directory': str(VECTORS),
+                           'tokenizer_directory': str(TOKENIZER), 'query_prefix': self.prefix,
+                           'asset_sha256': {str(p): file_hash(p) for p in self._files}}
+         self.check_unchanged()
++        self.searcher = BCPlusSearcher()
++        self._passport['device'] = self.searcher.device
++        self.check_unchanged()
+ 
+     def passport(self):
+         return deepcopy(self._passport)
+@@ -56,6 +77,10 @@ class LocalSearch:
+                              truncation=False)['input_ids']
+         if ids and isinstance(ids[0], list):
+             raise ValueError('Unexpected batched tokenizer result')
++        actual = self.searcher.tokenizer(self.prefix + query, add_special_tokens=True,
++                                        truncation=False)['input_ids']
++        if ids != actual:
++            raise ValueError('Guard and retrieval tokenizer disagree')
+         return len(ids)
+ 
+     def search(self, query, k, folder):
+diff --git a/tests/test_first_observation.py b/tests/test_first_observation.py
+index 2708d09..4cbb96f 100644
+--- a/tests/test_first_observation.py
++++ b/tests/test_first_observation.py
+@@ -10,6 +10,31 @@ from unittest.mock import patch
+ from experiments.research_state.first_observation import contracts as c
+ from experiments.research_state.first_observation import artifacts as io
+ from experiments.research_state.first_observation import run as r
++from experiments.research_state.first_observation.retrieval import checked_prefix, retrieval_files
++
++
++class LiveAssetContractTests(unittest.TestCase):
++    def test_prefix_missing_or_different_is_rejected(self):
++        for metadata in ({}, {'query_prefix': 'other'}, {'query_prefix': None}):
++            with self.assertRaises(ValueError):
++                checked_prefix(metadata, 'real\nQuery:')
++        self.assertEqual(checked_prefix({'query_prefix': 'real\nQuery:'}, 'real\nQuery:'), 'real\nQuery:')
++
++    def test_sibling_vectors_and_nested_model_config_are_frozen(self):
++        with tempfile.TemporaryDirectory() as temp:
++            root = Path(temp)
++            index, vectors, model = [root / x for x in ('documents', 'vectors', 'model')]
++            for p in (index, vectors, model / '1_Pooling'):
++                p.mkdir(parents=True)
++            (index / 'documents.sqlite').write_bytes(b'corpus')
++            shard = vectors / 'corpus.shard.pkl'; shard.write_bytes(b'vectors')
++            config = model / '1_Pooling/config.json'; config.write_text('{}')
++            files = retrieval_files(index, vectors, model)
++            self.assertIn(shard, files)
++            self.assertIn(config, files)
++            shard.unlink()
++            with self.assertRaises(ValueError):
++                retrieval_files(index, vectors, model)
+ 
+ TOOLS = [
+     {'type': 'function', 'function': {'name': 'search', 'parameters': {'type': 'object',

@@ -10,6 +10,31 @@ from unittest.mock import patch
 from experiments.research_state.first_observation import contracts as c
 from experiments.research_state.first_observation import artifacts as io
 from experiments.research_state.first_observation import run as r
+from experiments.research_state.first_observation.retrieval import checked_prefix, retrieval_files
+
+
+class LiveAssetContractTests(unittest.TestCase):
+    def test_prefix_missing_or_different_is_rejected(self):
+        for metadata in ({}, {'query_prefix': 'other'}, {'query_prefix': None}):
+            with self.assertRaises(ValueError):
+                checked_prefix(metadata, 'real\nQuery:')
+        self.assertEqual(checked_prefix({'query_prefix': 'real\nQuery:'}, 'real\nQuery:'), 'real\nQuery:')
+
+    def test_sibling_vectors_and_nested_model_config_are_frozen(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            index, vectors, model = [root / x for x in ('documents', 'vectors', 'model')]
+            for p in (index, vectors, model / '1_Pooling'):
+                p.mkdir(parents=True)
+            (index / 'documents.sqlite').write_bytes(b'corpus')
+            shard = vectors / 'corpus.shard.pkl'; shard.write_bytes(b'vectors')
+            config = model / '1_Pooling/config.json'; config.write_text('{}')
+            files = retrieval_files(index, vectors, model)
+            self.assertIn(shard, files)
+            self.assertIn(config, files)
+            shard.unlink()
+            with self.assertRaises(ValueError):
+                retrieval_files(index, vectors, model)
 
 TOOLS = [
     {'type': 'function', 'function': {'name': 'search', 'parameters': {'type': 'object',

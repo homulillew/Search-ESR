@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-09-21T04:57:33.366460+00:00",
+  "base_commit": "5aa3bfd1c110455bd5f550e7cc649630fd0e0a68",
+  "upstream_task_commit": "edcfb92",
+  "selection_sha256": "37468ad159d74693cad79927c3ec0c272e856c89e0e9150d5b2bdfb6a431a9ce",
+  "selection_unchanged_from_preflight": true,
+  "model_profile": {
+    "model": "qwen3.7-flash",
+    "base_url": "https://llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+    "timeout_seconds": 180,
+    "request_options": {
+      "max_tokens": 8192
+    },
+    "max_request_utf8_bytes": 200000,
+    "allow_tool_calls_with_stop": false
+  },
+  "BCPLUS_DEVICE": "cuda:1",
+  "planned_search_calls": 6,
+  "planned_note_calls_max": 6,
+  "initial_model_calls": 0,
+  "actor_calls": 0,
+  "followup_tool_calls": 0,
+  "fingerprint": {
+    "source_sha256": {
+      "__init__.py": "81d0be28c5f37a2083ae02898f870551e66597134fc68a6e0215183e7da6b8c6",
+      "artifacts.py": "bff31818cc4a57e6dbb7b9b6c9eb4300d111aa2eeaf0dc0006c8779d159022e5",
+      "contracts.py": "8600ea17cb347ff8d038269ea3a20400d35f7a32802d1feceff6143ae6b388ce",
+      "prompts/actor.txt": "7a28e6e75866b59f6d36b09a0558c8af77a8beca76fb83ab60cfab5f5ad08964",
+      "prompts/note.txt": "e5f56d4d1b527c6d28e36620b91ecce9a87e756ace1e89dcd610b96dafc7afd4",
+      "retrieval.py": "6bab1a97d0fbb151feb67197535657e284d1fb693fd1e295f267972637c4d750",
+      "run.py": "658995921b0f97fe8a50d733ce5f82caec8b1dfcfd63a677c1bcdc9930578877"
+    },
+    "runtime": {
+      "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:50:58) [GCC 12.3.0]",
+      "openai": "1.109.1",
+      "python-dotenv": "1.1.1",
+      "transformers": "5.12.1",
+      "torch": "2.10.0",
+      "tokenizers": "0.22.2",
+      "faiss-cpu": "1.15.1",
+      "faiss-gpu": null
+    }
+  },
+  "retrieval_script_sha256": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339",
+  "changes": [
+    "metadata query_prefix copied exactly from actual script constant",
+    "adapter hashes actual sibling vector shards and nested model configs",
+    "adapter checks prefix/model/vector paths and query tokenizer identity",
+    "BCPLUS_DEVICE=cuda:1 only for this collection process"
+  ],
+  "evaluation": "single Codex-assisted; known development cases; no gold/old prefixes/previous notes used; evaluate Q/O1 before notes; distinguish quote membership from entailment; 0-3 notes need not cover every question clue; preserve all failures and unknown cost",
+  "tests": "44 first_observation and 20 retrieval tests; previous preflight 60 state and 135 need_review remain recorded separately"
+}

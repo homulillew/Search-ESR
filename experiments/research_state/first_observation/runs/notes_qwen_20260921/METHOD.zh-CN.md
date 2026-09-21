@@ -1,0 +1,19 @@
+# 执行边界与复现
+
+上游任务版本edcfb92；本轮从已推送阻塞报告5aa3bfd继续。用户显式授权修复配置后执行。旧预检报告/失败原样保留，新记录独立目录。
+
+只修改真实检索适配：metadata增加与脚本PREFIX相同的query_prefix；冻结清单纳入相邻目录四个真实向量分片及嵌套模型配置；核对真实前缀、模型/向量路径和tokenizer输出一致。实际检索脚本、排序、top5、400-token窗口、生成提示词和模型参数均未修改。检索用进程环境BCPLUS_DEVICE=cuda:1，未改变其他进程配置。完整变更见preflight/implementation.patch，metadata前后版本及可复现修复脚本也在preflight。外部BCPlus目录本身不提交。
+
+原来的六题选择hash保持不变，select再次核对当前数据集query投影与原选择相同；只使用query，不使用gold、旧回答、旧s21/s29/s53、人工候选或笔记。所有题均为已知开发题，不称留出集。每题真实Search一次，query严格等于原题，不先生成goal或改写。实际脚本上限8192 tokens，harness保护线1024；均truncation=False，六题含prefix与special后的84–169 tokens通过，两种tokenizer调用的token ID完全一致。
+
+collect成功后，先阅读全部30个实际可见窗口并写review/observation_first_assessment.json，再冻结notes-plan并发起模型调用。该先行记录是外部评阅材料，绝不传入模型。六请求只含question/first_query/observation，system为共同note合同，不含qid、答案或tools。单次笔记生成，零重试，不追加smoke，不修复输出JSON、不用reasoning替代正文、不补采。完整原始SDK响应包含usage和reasoning，审阅只看实际content。
+
+模型qwen3.7-flash，用户先前授权的阿里云定制Chat Completions端点；max_tokens8192，timeout180秒，max_retries0，不传enable_thinking/reasoning_effort或采样覆盖。前一轮建议的300秒没有自动启用。此前同端点真实S0已交付，故本轮不追加兼容pilot。此处8192不被解释为关闭推理或全推理计算的统一上限。
+
+44项first_observation测试和20项窗口/观察pytest在修复后通过；前一预检的60项state及135项need_review记录在../preflight_20260921，不宣称本轮又跑了一遍。初次预检0项的错误测试入口也保留在旧报告，不计通过数。
+
+评价为单Codex辅助、已知历史案例，非独立人工金标/盲评。区分结构有效、来源支持、主体关系/时间限定、局部重要信息覆盖、与题目线索的相关性。0–3条不要求覆盖所有原题条件；原文根本没有的内容不能算笔记遗漏。空notes可能合理也可能漏核心，必须逐题看原文。引文存在只证明连续子串，不证明statement成立。来源自己的历史说法可记录，不等于世界事实已验证；不能借外部常识补成来源事实。
+
+SQLite包含固定全文，只在本机capture/<qid>/observations.sqlite保留恢复能力，由本目录.gitignore排除。离线程序仅核对散列和窗口切片，不把未见全文用于语义判断；没有调用Open。可提交的collection/events保留实际交付窗口及来源版本、范围、预算和URL，检索源码也归档。无完整数据库、向量、权重、密钥或.env提交。
+
+本阶段只执行6次Search和最多6次notes。A/B未生成计划、Actor0、Open0、完整rollout0。没有同期初始化对照，不报告原题直搜优于改写，不报告笔记的即时使用或跨步记忆收益，更不能报告BC+最终准确率。

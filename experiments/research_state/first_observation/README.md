@@ -19,6 +19,8 @@ python -m unittest discover -s tests -p 'test_first_observation.py' -v
 
 以上不验证GPU检索。采集还依赖现有 `/data/model/Qwen3-Embedding-8B`、`BCPlus/scripts/search_bcplus.py`、`BCPlus/indexes/bcplus-qwen3-8b/` 和原检索依赖。缺资产应报告，不用旧v000轨迹/合成文本替代真实O1。
 
+本机恢复版适配器的实际向量位于 `BCPlus/indexes/qwen3-embedding-8b/*.pkl`，也必须纳入散列及运行中变更检查。`metadata.query_prefix` 必须与实际脚本的 `PREFIX` 逐字相同；查询保护与检索 tokenizer 的 token ID 也会逐题核对。不静默猜测缺失配置。2026-09-21 的显式授权修复及前后 metadata 留在 `runs/notes_qwen_20260921/preflight/`，此前初始化失败留在 `runs/preflight_20260921/`。实际脚本上限8192、实验保护线1024，两者均不截断查询。用进程环境 `BCPLUS_DEVICE` 选择有足够显存的设备，实际设备会写入采集清单。
+
 复制 `profile.example.json` 到本轮目录，填入本次实际批准的模型、无凭证endpoint及预算。示例8192/180秒不是已验证配置，尤其不能假设该额度能关闭或约束服务商的推理方式。`reasoning_effort`仅在该接口已验证支持时显式填写；不继承旧enable_thinking。安装完SDK再生成计划。
 
 ## 1. 冻结题目并真实采集（0次生成模型）
