@@ -1,0 +1,78 @@
+{
+  "recorded_at": "2026-09-21T04:49:27.131616+00:00",
+  "base_commit": "edcfb92dce6ec195fecc73f13b839cb92ce985da",
+  "initial_worktree_clean": true,
+  "runtime": {
+    "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:50:58) [GCC 12.3.0]",
+    "openai": "1.109.1",
+    "python-dotenv": "1.1.1",
+    "transformers": "5.12.1",
+    "torch": "2.10.0",
+    "tokenizers": "0.22.2",
+    "faiss-cpu": "1.15.1",
+    "faiss-gpu": null
+  },
+  "query_prefix_in_metadata": null,
+  "actual_script_prefix": "Instruct: Given a web search query, retrieve relevant passages that answer the query\nQuery:",
+  "actual_script_limit": 8192,
+  "harness_limit": 1024,
+  "truncation": false,
+  "tokenizer_class": "Qwen2Tokenizer",
+  "searcher_tokenizer_class": "Qwen2Tokenizer",
+  "queries": [
+    {
+      "id": "517",
+      "chars": 555,
+      "embedding_tokens_including_script_prefix": 151,
+      "same_token_ids": true,
+      "within_guard_1024": true
+    },
+    {
+      "id": "546",
+      "chars": 434,
+      "embedding_tokens_including_script_prefix": 150,
+      "same_token_ids": true,
+      "within_guard_1024": true
+    },
+    {
+      "id": "776",
+      "chars": 615,
+      "embedding_tokens_including_script_prefix": 169,
+      "same_token_ids": true,
+      "within_guard_1024": true
+    },
+    {
+      "id": "519",
+      "chars": 600,
+      "embedding_tokens_including_script_prefix": 164,
+      "same_token_ids": true,
+      "within_guard_1024": true
+    },
+    {
+      "id": "191",
+      "chars": 369,
+      "embedding_tokens_including_script_prefix": 95,
+      "same_token_ids": true,
+      "within_guard_1024": true
+    },
+    {
+      "id": "71",
+      "chars": 283,
+      "embedding_tokens_including_script_prefix": 84,
+      "same_token_ids": true,
+      "within_guard_1024": true
+    }
+  ],
+  "document_rows": 100195,
+  "gpu_inventory": [
+    "NVIDIA GeForce RTX 4090 D, 24564 MiB, 6023 MiB",
+    "NVIDIA GeForce RTX 4090 D, 24564 MiB, 24180 MiB"
+  ],
+  "BCPLUS_DEVICE": null,
+  "model_profile_status": "validated structure only; prior user-authorized Qwen endpoint, no current API calls",
+  "actual_search_calls": 0,
+  "actual_model_calls": 0,
+  "initialization_failure": "Missing frozen retrieval query_prefix",
+  "capture_created": false,
+  "asset_manifest_gap": "LocalSearch hashes bcplus-qwen3-8b directory but actual vectors are in sibling qwen3-embedding-8b/*.pkl"
+}

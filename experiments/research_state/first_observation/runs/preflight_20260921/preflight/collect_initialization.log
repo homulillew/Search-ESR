@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/WSH/Search-ESR/experiments/research_state/first_observation/run.py", line 498, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/data/WSH/Search-ESR/experiments/research_state/first_observation/run.py", line 463, in main
+    backend = LocalSearch()
+              ^^^^^^^^^^^^^
+  File "/data/WSH/Search-ESR/experiments/research_state/first_observation/retrieval.py", line 28, in __init__
+    raise ValueError('Missing frozen retrieval query_prefix')
+ValueError: Missing frozen retrieval query_prefix
