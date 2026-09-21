@@ -241,6 +241,9 @@ def make_plan(collection, config, stage, *, prior=None, repeats=1, seed=20260921
 
 def validate_plan(plan):
     verify(plan)
+    if plan.get('stage') == 'note_fidelity':
+        from .fidelity import validate_fidelity_plan
+        return validate_fidelity_plan(plan)
     if plan.get('version') != VERSION or plan.get('kind') != 'model_plan':
         raise ValueError('Invalid model plan')
     rebuilt = make_plan(plan['collection'], plan['profile'], plan['stage'], prior=plan['prior'],
@@ -252,12 +255,19 @@ def validate_plan(plan):
 
 def _classify(plan, job, response):
     observation = next(r['observation'] for r in plan['collection']['cases'] if r['id'] == job['case_id'])
-    return note_result(response, observation) if plan['stage'] == 'notes' else actor_result(
+    return note_result(response, observation) if plan['stage'] in ('notes', 'note_fidelity') else actor_result(
         response, observation, plan['profile']['allow_tool_calls_with_stop'])
 
 
-def execute(plan, client, output, *, mode='mock', api_error_types=()):
+def execute(plan, client, output, *, mode='mock', api_error_types=(), preoutput_review=None):
     plan = deepcopy(validate_plan(plan))
+    if plan['stage'] == 'note_fidelity':
+        from .fidelity import authorize
+        verify(preoutput_review)
+        if preoutput_review != authorize(plan, preoutput_review['review_basis']):
+            raise ValueError('Invalid pre-output review attestation')
+    elif preoutput_review is not None:
+        raise ValueError('Pre-output review belongs only to the fidelity protocol')
     if mode not in ('mock', 'live'):
         raise ValueError('Explicit execution mode required')
     if mode == 'live':
@@ -273,7 +283,13 @@ def execute(plan, client, output, *, mode='mock', api_error_types=()):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)
     io.exclusive(output / 'plan.json', plan)
-    io.exclusive(output / 'execution.json', seal({'mode': mode, 'plan_sha256': plan['sha256']}))
+    execution = {'mode': mode, 'plan_sha256': plan['sha256']}
+    if preoutput_review is not None:
+        io.exclusive(output / 'preoutput_review.json', preoutput_review)
+        execution['preoutput_review_sha256'] = preoutput_review['sha256']
+        from datetime import datetime, timezone
+        execution['preoutput_review_recorded_at'] = datetime.now(timezone.utc).isoformat()
+    io.exclusive(output / 'execution.json', seal(execution))
     for source in io.source_files():
         target = output / 'source' / source.relative_to(PACKAGE)
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -319,6 +335,12 @@ def audit(folder):
     execution = verify(io.read(folder / 'execution.json'))
     if execution['plan_sha256'] != plan['sha256']:
         raise ValueError('Execution manifest mismatch')
+    if plan['stage'] == 'note_fidelity':
+        from .fidelity import authorize
+        attestation = verify(io.read(folder / 'preoutput_review.json'))
+        if (execution.get('preoutput_review_sha256') != attestation['sha256']
+                or attestation != authorize(plan, attestation['review_basis'])):
+            raise ValueError('Pre-output review snapshot mismatch')
     for name, h in plan['fingerprint']['source_sha256'].items():
         if io.file_hash(folder / 'source' / name) != h:
             raise ValueError('Source snapshot mismatch')
