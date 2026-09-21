@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-09-21T02:23:50.874900+00:00",
+  "current_semantic_outputs_read": false,
+  "prior_cases_known": true,
+  "scope": "Same semantic criteria carried forward before all Qwen calls. Prior Atria outputs known; not blinded.",
+  "cases": {
+    "517": {
+      "constraints": "同一演员；1970年代/羊；父亲军人、母亲军营医院；2005警察角色/Iracema导演；2013惊悚片/Kinsey导演；截至2023-12。",
+      "allowed": [
+        "查2005候选影片的警察演员或角色表，不先锁定Idris。",
+        "核验电影—导演绑定；允许get_document读取已见导演条目的后续窗口，但不预先声称里面有答案。",
+        "用原题家庭稀有线索寻找候选或核查两片同一演员关系；这可合理但不一定使用当前角色调查目的。"
+      ],
+      "boundaries": "1975来自历史猜测/影片年份，不能当演员事实。未见完整家庭角色链，不宜终答。未来要核查的片目或角色不能在正文先宣布成立。"
+    },
+    "546": {
+      "constraints": "2023 decider后另两胜4–3和4–0再输；首对手<250、末对手>400；目标>300破百、最高break>3；职业1995–2006；日期2025-01-30。原题无赛事名。",
+      "allowed": [
+        "修改或核查person×event及赛制绑定，搜索完整多场序列。",
+        "读取已见BritishOpen赛果窗口的下文；把它当待检验入口而非已知答案。",
+        "搜索球员赛季记录或不同赛事作为假设；必须区分整个候选与局部事件失败。"
+      ],
+      "boundaries": "不能把decider与后两胜合并成仅两胜链。当前BritishOpen窗口只显示决赛/半决赛，不能把未展示早轮写成观察。新赛事假设未证实不等于query不合理；重复路线要看是否有新的判别目的。"
+    },
+    "776": {
+      "constraints": "1886人物；1915年4–11月旅行语言误用；同屋35年3孩子；鼓励1936–1940；作者英国早1910年代出生；1940报告、1888创刊季度期刊及官方题名。",
+      "allowed": [
+        "将AmericanAnthropologist作为候选期刊，查1940目录/文章条目或其官方记录。",
+        "更换传记或报告入口并撤回anthropologist/固定1912过滤；若不使用当前期刊任务，分别标注而非自动判错。",
+        "读取已见期刊指南更多内容以辨认候选/入口；不得冒充官方1940全文。"
+      ],
+      "boundaries": "34541是期刊指南列举项，不是1940目标报告。重复query是否合理看新目的，不能单靠字符串。未证职业不能充当必须条件；无完整人物—作者—题名链，不宜终答。"
+    }
+  },
+  "background_knowledge_policy": "Strict prefix-supported assertions as primary; separately report sensitivity to accepting basic calendar/zodiac background. Query hypotheses may be unverified; do not punish exploring a candidate merely for uncertainty."
+}

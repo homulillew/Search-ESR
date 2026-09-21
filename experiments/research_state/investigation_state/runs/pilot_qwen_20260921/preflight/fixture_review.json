@@ -1,0 +1,34 @@
+{
+  "bundle_sha256": "328e8324e44b4167b608248c9e2ab8f2c8139a97b81b5458d4698155e3384106",
+  "reviewer": "Codex-assisted prefix-only review; same assistant knows earlier bad cases, not independent human gold",
+  "reviewed_at": "2026-09-21T02:23:50.874900+00:00",
+  "prefix_only": true,
+  "quotes_and_claim_scope_checked": true,
+  "task_is_not_a_gold_answer_hint": true,
+  "prior_outputs_known": true,
+  "notes": "Same exact revised bundle as prior Atria pilot; original questions and observed-finding windows rechecked, prior item judgments retained. No fixture or task change; prior Atria outputs known.",
+  "item_reviews": {
+    "qid_517_s21": [
+      "given_constraint：原题要求同一演员、1970年代/羊、家庭与两影片；未绑定到Idris，as-of Dec2023保留在原题。",
+      "observed_finding：46172全文可见窗口的He确指Meirelles；1975属于Iracema影片，不是演员出生年。材料日期2025，不据此宣称已核验as-of2023。",
+      "hypothesis：m2确有specifically1975及Idris；保留为历史猜测，未补入外部演员真生日。",
+      "unresolved：可见资料未建立同一演员的角色和生平链；policeman不放宽。",
+      "task：局部寻找2005影片警察角色，允许回查影片绑定，不泄露演员答案；未要求必定换人。"
+    ],
+    "qid_546_s29": [
+      "given_constraint：decider之后另两胜4–3/4–0再负；首对手<250与末对手>400分开，2025-01-30资格仍未完成。deciding-frame为局部解释，原题decider game完整保留供修订。",
+      "observed_finding：84585确标题BritishOpen2023及Semi-final，窗口截于Quarter-final，不视为完整赛果或答案。",
+      "hypothesis：Players仅来自m2猜测，原题没命名赛事。",
+      "unresolved：缺完整四场链；局部赛事不匹配不排除候选所有赛事。",
+      "task：开放查询2023事件/球员记录，未绑定Players或BritishOpen答案，保留随后资格复核。"
+    ],
+    "qid_776_s53": [
+      "given_constraint：1886人物、早1910年代英国作者、1936–1940鼓励、1940发表、1888创刊为不同关系，未绑定人名。",
+      "observed_finding：首次prepare发现来源描述不精确，已改为periodicals guide列出AmericanAnthropologist(1888-present)。34541不是官方1940刊物记录，也不能证明目标期刊身份。",
+      "hypothesis：m2确用anthropologist or writer猜测，后续工具查询重复anthropologist；原题未指定职业，保留假设身份。",
+      "unresolved：人物、作者、正式题名仍独立未知，不以期刊年份替代关系证明。",
+      "task：以暂定期刊线索查1940官方条目，允许弃置无果路线且不改变1886；不预告题名或人物。"
+    ]
+  },
+  "carried_from": "experiments/research_state/investigation_state/runs/pilot_20260921/preflight/fixture_review.json"
+}

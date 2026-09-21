@@ -1,0 +1,68 @@
+{
+  "card_0001": {
+    "labels": {
+      "complete_response_acceptable": "yes",
+      "relation_scope_preserved": "yes",
+      "task_used_in_decision": "yes",
+      "tool_direction_reasonable": "yes",
+      "repetition_has_new_purpose": "yes",
+      "new_error_introduced": "no"
+    },
+    "analysis": "先检索1940 cultural discoveries，再查候选期刊American Anthropologist 1940。第二个调用将期刊/年份入口具体化，未把指南冒充官方记录，也未锁定人物职业。第一条与旧a3相近但撤回多重过滤可扩召回。尚未得到正式目录、作者和人物关系。"
+  },
+  "card_0002": {
+    "labels": {
+      "complete_response_acceptable": "yes",
+      "relation_scope_preserved": "yes",
+      "task_used_in_decision": "no",
+      "tool_direction_reasonable": "yes",
+      "repetition_has_new_purpose": "yes",
+      "new_error_introduced": "no"
+    },
+    "analysis": "只查1940 cultural discoveries，属于报告入口的宽化，撤回旧a3的journal/init1888过滤可扩召回，不能仅因主题重复判无用。但没有候选期刊或官方记录入口，不能认为当前具体期刊调查目的已被使用。题目人物、作者和正式标题仍未知。"
+  },
+  "card_0003": {
+    "labels": {
+      "complete_response_acceptable": "yes",
+      "relation_scope_preserved": "yes",
+      "task_used_in_decision": "no",
+      "tool_direction_reasonable": "yes",
+      "repetition_has_new_purpose": "yes",
+      "new_error_introduced": "no"
+    },
+    "analysis": "查父亲军人、母亲医院、演员1970s，撤回旧a4未经核实的1975和goat精确过滤，是合理的家庭稀有线索入口。未使用当前警察角色调查目的；来源无显式断言，不能证明模型已经掌握导演/演员归属。身份及同一演员跨影片关系仍未知。"
+  },
+  "card_0004": {
+    "labels": {
+      "complete_response_acceptable": "yes",
+      "relation_scope_preserved": "yes",
+      "task_used_in_decision": "yes",
+      "tool_direction_reasonable": "yes",
+      "repetition_has_new_purpose": "unknown",
+      "new_error_introduced": "no"
+    },
+    "analysis": "四个调用分别检索比分链、两个对手破百阈值、转职业范围。撤回固定Players/Selby绑定，主查询确实针对decider与4–3/4–0序列，另三条作为资格分解可接受。阈值查询带2023不证明其日期口径正确，后续仍须核验2025-01-30限定。不能从搜索词认定已把decider和后两场合并。旧a0/a1已搜过宽序列，新增拆分或精确短语的净收益未知，不自动判失败。赛事、四场完整链及日期资格均未定。"
+  },
+  "card_0005": {
+    "labels": {
+      "complete_response_acceptable": "yes",
+      "relation_scope_preserved": "yes",
+      "task_used_in_decision": "yes",
+      "tool_direction_reasonable": "yes",
+      "repetition_has_new_purpose": "unknown",
+      "new_error_introduced": "no"
+    },
+    "analysis": "单条decider/2023/4–3/4–0检索撤回旧Players绑定，和当前开放赛事调查方向一致。但与旧a0/a1宽序列目的相近，精确短语能否改善召回未知；没有工具结果，不能判已建立完整比赛链或自动判无用重复。"
+  },
+  "card_0006": {
+    "labels": {
+      "complete_response_acceptable": "no",
+      "relation_scope_preserved": "no",
+      "task_used_in_decision": "no",
+      "tool_direction_reasonable": "no",
+      "repetition_has_new_purpose": "no",
+      "new_error_introduced": "no"
+    },
+    "analysis": "仍以born1975作为精确家庭检索过滤，未体现固定笔记要求撤回的未验证年份绑定，也未查警察角色。和旧a2/a4相比主要改写引号，未见新调查目的；解码query仍含反斜杠转义引号，额外检索风险未实际测试。问题是继承旧绑定，不是新增人物事实，new_error=no。没有正文断言或最终身份。"
+  }
+}

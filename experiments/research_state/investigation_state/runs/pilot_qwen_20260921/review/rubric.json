@@ -1,0 +1,27 @@
+{
+  "allowed": [
+    "yes",
+    "no",
+    "unknown",
+    "not_applicable"
+  ],
+  "labels": {
+    "complete_response_acceptable": "Whole delivered content and every proposed call; not eventual answer accuracy.",
+    "source_attribution_correct": "Were original clues, source text, and earlier assistant hypotheses distinguished?",
+    "relation_scope_preserved": "Were subject, time, polarity, and upstream-binding scope preserved?",
+    "task_used_in_decision": "Was the specific uncertainty/decision purpose used, not merely the same topic?",
+    "tool_direction_reasonable": "Is the proposed action reasonable? Do not infer retrieval outcome before tools execute.",
+    "repetition_has_new_purpose": "For a repeated/nearby route, is a substantive new purpose present? Equality is not a veto.",
+    "body_assertions_supported": "Evaluate visible content, not private reasoning. Tentative exploration is not a confirmed fact.",
+    "final_answer_supported": "Only for a final answer: do actual visible sources support its necessary claims?",
+    "new_error_introduced": "A new unsupported binding or relaxed original condition; distinguish inherited errors.",
+    "regression": "Fill only after separate judgments; compare matched runs, allowing unknown for mixed changes."
+  },
+  "limits": [
+    "Metadata masking is not blinding; the fixture authors know earlier cases.",
+    "No tool has executed; direction judgments are not retrieval success.",
+    "Keep all scheduled rows; protocol failures have no attributable semantic success.",
+    "Curated notes/needs are fixed diagnostic inputs, not an automatic state updater.",
+    "Partial query constraints can be deliberate exploration; not all similar queries are bad."
+  ]
+}

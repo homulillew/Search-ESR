@@ -1,0 +1,17 @@
+# 固定输入、冻结计划与评估边界
+
+本轮在1581ba5550ece437881200be7ce63cec5485d512上，以用户之前给定的Qwen模型和阿里云定制端点重做S0。没有拉取会改变待复现实验的新实现。原始checkpoint blob、内部hash及引用全部prepare验证；60项state与135项need_review测试通过，真实归档测试无跳过。新fixture review有本轮实际时间，明确知晓开发案例和上轮Atria结果，不冒称盲评。
+
+固定bundle SHA256 `328e8324e44b4167b608248c9e2ab8f2c8139a97b81b5458d4698155e3384106` 与Atria已执行pilot逐字一致。未修改原题、固定笔记、任务、提示词、工具定义或代码。模型为qwen3.7-flash，base_url为用户授权的阿里云兼容接口，max_tokens=8192、timeout=180秒、SDK max_retries=0；不附加enable_thinking、reasoning_effort或采样覆盖。旧Qwen Reviewer实验曾用不同参数，不能混为本批状态对照。
+
+[阿里云官方Chat Completions文档](https://www.alibabacloud.com/help/en/model-studio/qwen-api-via-openai-chat-completions)将Qwen的max_tokens描述为不含思维链的回答上限，max_completion_tokens则包含思维链。本轮保留上一批同名参数8192，不能据此宣称两模型有效计算预算相等，也不能把推理token超8192直接判为程序违规；以冻结请求和实际usage分别审计。
+
+pilot冻结计划 `d32f66bd967b7f4603a2cd1ad99f7fc944d935d756f8a5b7ac2c96f617ba9550`，3题×2视图×1重复=6次。仅按交付、请求一致性和usage完整性验收，6/6通过。在阅读本轮语义输出之前，记录gate并生成正式计划 `7675ce539f94c46d63fa6a5eb080a3c394f6c1478f219c2741310910b85a7579`，3题×2视图×2重复=12次，正式使用新响应。不给失败样本补采，不复用pilot充数。
+
+flat是含kind的平面条目列表，typed按kind分组。两者均拥有原题、观察、假设、未决事项、当前任务、历史记录与attempts；typed不是额外获得状态信息的组。每题typed多192 UTF-8字节结构开销，canonical items分别22/28/46；引用索引、正文、共同system及工具定义一致。未加入attempt_index，所以不属于S1。
+
+评估先记录相同可见前缀下允许的多种下一动作，再读完整content与所有tool_calls，最后展开配对。保存首次与最终标签、时间/hash及配对说明。单Codex辅助判断，已知旧案例；不能称严格盲评或独立人工金标。原始reasoning保存但不当作交付正文。无来源身份断言、无正文或未提交最终答案时，对应轴不适用；不自动计为正确。API错误无可评价动作，记unknown并保留全分母；仅有reasoning的截断不制造不存在的语义错误。
+
+当前任务是可质疑的调查提案，不是新权威。没有使用它不必然是坏响应，应区分整体合理性、task_used和旧绑定保留。相似检索可以有新目的，未执行工具时其实际信息增益通常未知。一个探索性query不是已经证实的事实；缺少某个检索词也不直接等于放弃原题限制。所有结论限定为固定夹具上的一次下一动作，不是自动State、ESR或BC+最终准确率。
+
+完整成本同时报告计划数、实际请求数、收到响应数、provider token已知下界及未知usage。未取得实际账单/计费单价，货币成本未知，不用token完整性冒充费用已知。保留原始失败与全部响应，不执行Reviewer、真实检索、S1、自动状态更新或E1。

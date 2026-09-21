@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-09-21T02:23:50.874900+00:00",
+  "base_commit": "1581ba5550ece437881200be7ce63cec5485d512",
+  "working_tree": "",
+  "bundle_sha256": "328e8324e44b4167b608248c9e2ab8f2c8139a97b81b5458d4698155e3384106",
+  "same_bundle_as_atria": true,
+  "profile_changes_only": [
+    "model",
+    "base_url"
+  ],
+  "state_tests_passed": 60,
+  "state_tests_skipped": 0,
+  "need_review_tests_passed": 135,
+  "pilot_calls": 6,
+  "formal_calls_if_gate_passes": 12,
+  "no_hidden_smoke": true,
+  "api_docs": "https://www.alibabacloud.com/help/en/model-studio/qwen-api-via-openai-chat-completions",
+  "budget_caveat": "Provider docs distinguish max_tokens (answer-only for Qwen) from max_completion_tokens (reasoning+answer). Retain same max_tokens=8192 parameter as Atria pilot, not a claim of equivalent reasoning budgets. No enable_thinking or reasoning override."
+}

@@ -1,0 +1,50 @@
+{
+  "qid_776_s53__typed__r1": {
+    "regression": "unknown",
+    "notes": "flat批次有候选期刊入口也有两个无新目的的精确重跑；typed超时，没有配对动作，不能归因布局。"
+  },
+  "qid_517_s21__typed__r2": {
+    "regression": "unknown",
+    "notes": "flat交付合理家庭入口，typed超时，无可配对动作；失败不能解释为状态语义退化。"
+  },
+  "qid_776_s53__flat__r1": {
+    "regression": "not_applicable",
+    "notes": "flat批次有候选期刊入口也有两个无新目的的精确重跑；typed超时，没有配对动作，不能归因布局。"
+  },
+  "qid_517_s21__flat__r2": {
+    "regression": "not_applicable",
+    "notes": "flat交付合理家庭入口，typed超时，无可配对动作；失败不能解释为状态语义退化。"
+  },
+  "qid_546_s29__typed__r2": {
+    "regression": "unknown",
+    "notes": "flat继续宽比分链，typed新增European Tour假设。动作发生变化，但该假设没有新结果验证，无法判断改善或退化，不能把换赛事词当状态收益。"
+  },
+  "qid_517_s21__typed__r1": {
+    "regression": "yes",
+    "notes": "flat交付角色核验+家庭+2013演员表，typed只查两片共同演员。双方整体可接受，但typed未直接使用policeman当前任务，存在任务落实程度下降；这不是最终正确率下降，也不能据单次认定布局因果。"
+  },
+  "qid_546_s29__typed__r1": {
+    "regression": "no",
+    "notes": "两组解码后的工具名称和参数完全一致，均为snooker 2023 \"4-3\" \"4-0\" decider、k=5；没有可观察的动作改变。"
+  },
+  "qid_546_s29__flat__r1": {
+    "regression": "not_applicable",
+    "notes": "两组解码后的工具名称和参数完全一致，均为snooker 2023 \"4-3\" \"4-0\" decider、k=5；没有可观察的动作改变。"
+  },
+  "qid_776_s53__flat__r2": {
+    "regression": "not_applicable",
+    "notes": "flat混合报告和传记短语，typed以shaman/house变体继续旧路线。双方均未采用候选期刊官方条目任务；typed完整合理性unknown，不能确认退化或布局收益。"
+  },
+  "qid_776_s53__typed__r2": {
+    "regression": "unknown",
+    "notes": "flat混合报告和传记短语，typed以shaman/house变体继续旧路线。双方均未采用候选期刊官方条目任务；typed完整合理性unknown，不能确认退化或布局收益。"
+  },
+  "qid_517_s21__flat__r1": {
+    "regression": "not_applicable",
+    "notes": "flat交付角色核验+家庭+2013演员表，typed只查两片共同演员。双方整体可接受，但typed未直接使用policeman当前任务，存在任务落实程度下降；这不是最终正确率下降，也不能据单次认定布局因果。"
+  },
+  "qid_546_s29__flat__r2": {
+    "regression": "not_applicable",
+    "notes": "flat继续宽比分链，typed新增European Tour假设。动作发生变化，但该假设没有新结果验证，无法判断改善或退化，不能把换赛事词当状态收益。"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "created_at": "2026-09-21T02:43:41.090427+00:00",
+  "pilot": {
+    "schema_version": "investigation_audit_v1",
+    "purpose": "pilot",
+    "mode": "live",
+    "plan_sha256": "d32f66bd967b7f4603a2cd1ad99f7fc944d935d756f8a5b7ac2c96f617ba9550",
+    "scheduled_branches": 6,
+    "statuses": {
+      "completed": 6
+    },
+    "logical_requests_attempted": 6,
+    "responses_received": 6,
+    "unknown_usage_calls": 0,
+    "responses_inconsistent_usage": 0,
+    "reported_token_lower_bounds": {
+      "prompt_tokens": 192681,
+      "completion_tokens": 22501,
+      "total_tokens": 215182,
+      "reported_reasoning_tokens": 22020
+    },
+    "cost_accounting_complete": true,
+    "global_errors": [],
+    "branches_with_audit_errors": 0,
+    "by_view": {
+      "typed": {
+        "planned": 3,
+        "protocol_valid": 3,
+        "unknown_usage_calls": 0,
+        "reported_tokens": {
+          "prompt_tokens": 96402,
+          "completion_tokens": 16885,
+          "total_tokens": 113287
+        },
+        "statuses": {
+          "completed": 3
+        }
+      },
+      "flat": {
+        "planned": 3,
+        "protocol_valid": 3,
+        "unknown_usage_calls": 0,
+        "reported_tokens": {
+          "prompt_tokens": 96279,
+          "completion_tokens": 5616,
+          "total_tokens": 101895
+        },
+        "statuses": {
+          "completed": 3
+        }
+      }
+    },
+    "tool_executions": 0,
+    "reviewer_calls": 0,
+    "semantic_evaluation": "not_evaluated",
+    "mechanically_clean": true
+  },
+  "formal": {
+    "schema_version": "investigation_audit_v1",
+    "purpose": "formal",
+    "mode": "live",
+    "plan_sha256": "7675ce539f94c46d63fa6a5eb080a3c394f6c1478f219c2741310910b85a7579",
+    "scheduled_branches": 12,
+    "statuses": {
+      "completed": 10,
+      "api_error": 2
+    },
+    "logical_requests_attempted": 12,
+    "responses_received": 10,
+    "unknown_usage_calls": 2,
+    "responses_inconsistent_usage": 0,
+    "reported_token_lower_bounds": {
+      "prompt_tokens": 320261,
+      "completion_tokens": 31633,
+      "total_tokens": 351894,
+      "reported_reasoning_tokens": 30627
+    },
+    "cost_accounting_complete": false,
+    "global_errors": [],
+    "branches_with_audit_errors": 0,
+    "by_view": {
+      "typed": {
+        "planned": 6,
+        "protocol_valid": 4,
+        "unknown_usage_calls": 2,
+        "reported_tokens": {
+          "prompt_tokens": 127703,
+          "completion_tokens": 15448,
+          "total_tokens": 143151
+        },
+        "statuses": {
+          "completed": 4,
+          "api_error": 2
+        }
+      },
+      "flat": {
+        "planned": 6,
+        "protocol_valid": 6,
+        "unknown_usage_calls": 0,
+        "reported_tokens": {
+          "prompt_tokens": 192558,
+          "completion_tokens": 16185,
+          "total_tokens": 208743
+        },
+        "statuses": {
+          "completed": 6
+        }
+      }
+    },
+    "tool_executions": 0,
+    "reviewer_calls": 0,
+    "semantic_evaluation": "not_evaluated",
+    "mechanically_clean": false
+  },
+  "combined": {
+    "planned": 18,
+    "requests": 18,
+    "responses": 16,
+    "unknown_usage_calls": 2,
+    "reported_token_lower_bounds": {
+      "prompt_tokens": 512942,
+      "completion_tokens": 54134,
+      "total_tokens": 567076,
+      "reported_reasoning_tokens": 52647
+    },
+    "monetary_cost": null,
+    "monetary_cost_reason": "No verified billing record or applicable price; missing usage is not zero. Reasoning is a component of completion tokens, not added again."
+  }
+}
