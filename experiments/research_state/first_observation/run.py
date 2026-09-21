@@ -20,6 +20,15 @@ from .contracts import (VERSION, canonical, digest, seal, verify, nonempty, posi
                         profile, windows, note_result, actor_result, usage)
 
 PACKAGE = Path(__file__).parent
+
+
+def _stage_package(plan):
+    """The package whose source files a plan's fingerprint commits to."""
+    if plan.get('stage') == 'evidence_pointer':
+        from experiments.research_state.evidence_pointer import run as ep_run
+        return Path(ep_run.__file__).parent
+    return PACKAGE
+
 ROOT = Path(__file__).resolve().parents[3]
 
 
@@ -244,6 +253,10 @@ def validate_plan(plan):
     if plan.get('stage') == 'note_fidelity':
         from .fidelity import validate_fidelity_plan
         return validate_fidelity_plan(plan)
+    if plan.get('stage') == 'evidence_pointer':
+        # Sibling package; lazy import keeps one shared execution loop.
+        from experiments.research_state.evidence_pointer.run import validate_ab_plan
+        return validate_ab_plan(plan)
     if plan.get('version') != VERSION or plan.get('kind') != 'model_plan':
         raise ValueError('Invalid model plan')
     rebuilt = make_plan(plan['collection'], plan['profile'], plan['stage'], prior=plan['prior'],
@@ -255,11 +268,16 @@ def validate_plan(plan):
 
 def _classify(plan, job, response):
     observation = next(r['observation'] for r in plan['collection']['cases'] if r['id'] == job['case_id'])
-    return note_result(response, observation) if plan['stage'] in ('notes', 'note_fidelity') else actor_result(
-        response, observation, plan['profile']['allow_tool_calls_with_stop'])
+    if plan['stage'] in ('notes', 'note_fidelity'):
+        return note_result(response, observation)
+    return actor_result(response, observation, plan['profile']['allow_tool_calls_with_stop'])
 
 
-def execute(plan, client, output, *, mode='mock', api_error_types=(), preoutput_review=None):
+def execute(plan, client, output, *, mode='mock', api_error_types=(),
+         auth_error_types=(), preoutput_review=None):
+    """auth_error_types marks rejections that void the whole credential: every
+    remaining request in this batch is left unsent rather than counted as an
+    API attempt."""
     plan = deepcopy(validate_plan(plan))
     if plan['stage'] == 'note_fidelity':
         from .fidelity import authorize
@@ -290,10 +308,13 @@ def execute(plan, client, output, *, mode='mock', api_error_types=(), preoutput_
         from datetime import datetime, timezone
         execution['preoutput_review_recorded_at'] = datetime.now(timezone.utc).isoformat()
     io.exclusive(output / 'execution.json', seal(execution))
-    for source in io.source_files():
-        target = output / 'source' / source.relative_to(PACKAGE)
+    # Snapshot only the plan's own package; sibling packages share flat filenames.
+    stage_package = _stage_package(plan)
+    for source in io.source_files(stage_package):
+        target = output / 'source' / source.relative_to(stage_package)
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
+    auth_failure = None
     try:
         for job in plan['jobs']:
             folder = output / job['id']
@@ -301,6 +322,13 @@ def execute(plan, client, output, *, mode='mock', api_error_types=(), preoutput_
             journal = io.Journal(folder / 'events.jsonl')
             if job['request'] is None:
                 journal.emit('skipped', reason='first_search_failed')
+                continue
+            # A rejected credential applies to every remaining request in this batch:
+            # the endpoint, key and profile are fixed for the whole execute() call.
+            # Remaining jobs stay unsent rather than being counted as API attempts.
+            # (Failure denominator is preserved: they are audited as blocked_by_auth.)
+            if auth_failure is not None:
+                journal.emit('blocked_by_auth', error_type=auth_failure)
                 continue
             start = time.monotonic()
             journal.emit('request', request=deepcopy(job['request']))
@@ -313,6 +341,8 @@ def execute(plan, client, output, *, mode='mock', api_error_types=(), preoutput_
                 if not isinstance(exc, api_error_types):
                     journal.emit('harness_error', error_type=type(exc).__name__)
                     raise
+                if auth_error_types and isinstance(exc, auth_error_types):
+                    auth_failure = type(exc).__name__
                 journal.emit('api_error', error_type=type(exc).__name__,
                              elapsed_seconds=time.monotonic() - start)
             else:
@@ -358,6 +388,8 @@ def audit(folder):
         status = 'not_run'
         if kinds == ['skipped'] and job['request'] is None:
             status = 'skipped_first_search'
+        elif kinds == ['blocked_by_auth'] and job['request'] is not None:
+            status = 'blocked_by_auth'
         elif kinds == ['request', 'response']:
             response = responses[0]['response']
             classification = _classify(plan, job, response)
@@ -511,7 +543,9 @@ def main(argv=None):
             raise ValueError('API key missing; never put secrets in profile/plan')
         p = plan['profile']
         with OpenAI(api_key=api_key, base_url=p['base_url'], timeout=p['timeout_seconds'], max_retries=0) as client:
-            summary = execute(plan, client, args.output, mode='live', api_error_types=(APIError,))
+            from openai import AuthenticationError
+            summary = execute(plan, client, args.output, mode='live',
+                              api_error_types=(APIError,), auth_error_types=(AuthenticationError,))
     print(canonical(summary))
     return 0 if summary['all_model_jobs_delivered'] and summary['cost_accounting_complete'] else 2
 

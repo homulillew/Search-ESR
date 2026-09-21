@@ -56,18 +56,18 @@ def runtime():
     return value
 
 
-def source_files():
-    root = Path(__file__).parent
+def source_files(root=None):
+    root = Path(root) if root is not None else Path(__file__).parent
     return sorted([*root.glob('*.py'), *root.glob('prompts/*.txt')])
 
 
-def sources():
-    root = Path(__file__).parent
-    return {str(p.relative_to(root)): file_hash(p) for p in source_files()}
+def sources(root=None):
+    root = Path(root) if root is not None else Path(__file__).parent
+    return {str(p.relative_to(root)): file_hash(p) for p in source_files(root)}
 
 
-def fingerprint():
-    return {'source_sha256': sources(), 'runtime': runtime()}
+def fingerprint(root=None):
+    return {'source_sha256': sources(root), 'runtime': runtime()}
 
 
 class Journal:
