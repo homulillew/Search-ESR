@@ -115,6 +115,33 @@ class RawWindowBuilder:
         start,end=self._expand(key,start,end,cap)
         return self._emit(key,start,end)
 
+    def find(self,key,query):
+        """Locate a query-relevant raw window inside an already registered document.
+
+        Unlike search(), a lexical miss is explicit: it never falls back to the
+        document prefix. This keeps local-location failure distinct from
+        document discovery.
+        """
+        if key not in self.documents:
+            raise ValueError('Unknown document key')
+        if not isinstance(query,str) or not query.strip():
+            raise ValueError('find query must be nonempty text')
+        doc=self.documents[key]
+        cap=self.search_budget-self.count(doc['title'])
+        chunk,meta=self.selector.select(query,doc['chunks'])
+        if chunk is None:
+            return None,meta
+        local=WindowSelector(self.tokenizer,budget=cap,overlap=0)
+        units=local.units(key[0],chunk.text)
+        anchor,_=local.select(query,[c for c,_ in units])
+        if anchor is None:
+            start=chunk.start_char;end=start+len(local.prefix(chunk.text))
+        else:
+            start=chunk.start_char+anchor.start_char;end=chunk.start_char+anchor.end_char
+        start,end=self._repair_anchor(key,start,end,cap)
+        start,end=self._expand(key,start,end,cap)
+        return self._emit(key,start,end),meta
+
     def open(self,ref,direction):
         if ref not in self.windows:raise ValueError('Unknown window_ref; use a reference returned by search or open')
         if direction not in ('before','after','around'):raise ValueError('direction must be before, after, or around')
