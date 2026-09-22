@@ -13,6 +13,7 @@ from types import SimpleNamespace
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from llm_chat.agent import AgentSession, BCPlusTools
+from llm_chat.search_find_agent import SearchFindAgentSession, SearchFindTools
 from llm_chat.client import Config
 from openai import OpenAI
 
@@ -86,16 +87,25 @@ class RecordedTools:
                  for d in docs if 'text' in d]
         self.recorder.emit('tool_result', name=name, result=result, views=views,
                            elapsed_seconds=time.monotonic() - start)
+        audit = getattr(self.inner, 'audit_record', None)
+        if callable(audit):
+            private = audit()
+            if private is not None:
+                self.recorder.emit('tool_internal', name=name, audit=private)
         return result
 
     def close(self):
         self.inner.close()
 
 
-def run_question(qid, max_tool_rounds=64, tools=None, batch_id=None):
+def run_question(qid, max_tool_rounds=64, tools=None, batch_id=None, agent_protocol='baseline'):
     args = SimpleNamespace(qid=str(qid), max_tool_rounds=max_tool_rounds)
     if args.max_tool_rounds < 1 or not args.qid.isdigit():
         raise ValueError('qid must be numeric and max-tool-rounds must be positive')
+    if agent_protocol not in {'baseline', 'search_find_v3a'}:
+        raise ValueError('agent_protocol must be baseline or search_find_v3a')
+    if agent_protocol == 'search_find_v3a' and tools is not None:
+        raise ValueError('search_find_v3a requires episode-local tools; do not pass shared tools')
     dataset = ROOT / 'BCPlus/data/bcplus/qa.jsonl'
     with dataset.open() as f:
         item = next((row for line in f if str((row := json.loads(line))['query_id']) == args.qid), None)
@@ -103,12 +113,18 @@ def run_question(qid, max_tool_rounds=64, tools=None, batch_id=None):
         raise ValueError('qid not found')
     config = Config.load()
     run_id = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ')
-    directory = ROOT / 'experiments/runs/v002_raw_windows_mechanical' / f'qid_{args.qid}' / run_id
+    variant = 'v002_raw_windows_mechanical' if agent_protocol == 'baseline' else 'v003a_search_find'
+    directory = ROOT / 'experiments/runs' / variant / f'qid_{args.qid}' / run_id
     directory.mkdir(parents=True, exist_ok=False)
     sources = directory / 'source'
     sources.mkdir()
     hashes = {}
-    for relative in ['llm_chat/raw_windows.py', 'llm_chat/window_locator.py', 'llm_chat/window_units.py', 'llm_chat/agent.py', 'llm_chat/client.py', 'BCPlus/scripts/search_bcplus.py', 'experiments/run_rollout.py', 'experiments/run_batch.py']:
+    source_files = ['llm_chat/raw_windows.py', 'llm_chat/window_locator.py', 'llm_chat/window_units.py',
+                    'llm_chat/agent.py', 'llm_chat/client.py', 'BCPlus/scripts/search_bcplus.py',
+                    'experiments/run_rollout.py', 'experiments/run_batch.py']
+    if agent_protocol == 'search_find_v3a':
+        source_files.append('llm_chat/search_find_agent.py')
+    for relative in source_files:
         path = ROOT / relative
         hashes[relative] = hashlib.sha256(path.read_bytes()).hexdigest()
         dest = sources / relative
@@ -118,18 +134,25 @@ def run_question(qid, max_tool_rounds=64, tools=None, batch_id=None):
     write_json(directory / 'input.json', {'qid': args.qid, 'question': item['query']})
     # Gold is deliberately not persisted in the online run or passed to the agent.
     write_json(directory / 'manifest.json', {
-        'variant': 'v002_raw_windows_mechanical', 'run_id': run_id, 'qid': args.qid, 'batch_id': batch_id,
+        'variant': variant, 'agent_protocol': agent_protocol, 'run_id': run_id, 'qid': args.qid, 'batch_id': batch_id,
         'execution': 'parallel_api_serial_shared_retrieval' if batch_id else 'single',
         'model': config.model, 'base_url': config.base_url, 'system_prompt': config.system_prompt,
         'request_options': config.request_options(), 'timeout': config.timeout, 'sdk_max_retries': 2,
         'max_tool_rounds': args.max_tool_rounds, 'max_tool_calls_per_round': 8,
         'dataset': str(dataset.relative_to(ROOT)), 'dataset_sha256': hashlib.sha256(dataset.read_bytes()).hexdigest(),
         'source_sha256': hashes, 'python': sys.version,
-        'notes': 'Unified raw-window search/open; no forced reading or research-state policy. SDK retries are internal to each recorded API call. No gold supplied.'})
+        'notes': ('Unified raw-window search/open baseline; no forced reading or research-state policy. '
+                  if agent_protocol == 'baseline' else
+                  'Experimental v3a: baseline global search plus stable D#/W# handles and document-local find; '
+                  'existing Open semantics retained. ') +
+                 'SDK retries are internal to each recorded API call. No gold supplied.'})
     recorder = Recorder(directory)
     client = RecordedClient(OpenAI(api_key=config.api_key, base_url=config.base_url,
                                     timeout=config.timeout, max_retries=2), recorder)
-    session = AgentSession(config, client=client, tools=RecordedTools(recorder, tools), max_rounds=args.max_tool_rounds)
+    inner_tools = SearchFindTools() if agent_protocol == 'search_find_v3a' else (tools if tools is not None else BCPlusTools())
+    recorded_tools = RecordedTools(recorder, inner_tools)
+    session_class = SearchFindAgentSession if agent_protocol == 'search_find_v3a' else AgentSession
+    session = session_class(config, client=client, tools=recorded_tools, max_rounds=args.max_tool_rounds)
     print(f'RUN_DIR={directory}', flush=True)
     start = time.monotonic()
     status = 'error'
@@ -163,8 +186,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--qid', required=True)
     parser.add_argument('--max-tool-rounds', type=int, default=64)
+    parser.add_argument('--agent-protocol', choices=['baseline', 'search_find_v3a'], default='baseline')
     args = parser.parse_args()
-    run_question(args.qid, args.max_tool_rounds)
+    run_question(args.qid, args.max_tool_rounds, agent_protocol=args.agent_protocol)
 
 
 if __name__ == '__main__':
