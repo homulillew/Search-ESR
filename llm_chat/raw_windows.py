@@ -130,7 +130,7 @@ class RawWindowBuilder:
         cap=self.search_budget-self.count(doc['title'])
         chunk,meta=self.selector.select(query,doc['chunks'])
         if chunk is None:
-            return None,meta
+            return None,dict(meta,fallback='no_lexical_match')
         local=WindowSelector(self.tokenizer,budget=cap,overlap=0)
         units=local.units(key[0],chunk.text)
         anchor,_=local.select(query,[c for c,_ in units])
