@@ -1,0 +1,5 @@
+The player who took the free-kick on the 95th minute is **Lionel Messi**. 
+
+This famous moment occurred during a **Paris Saint-Germain (PSG)** vs **Lille** match in Ligue 1 (specifically referenced in reports from February 2023). The sequence was highlighted as a dramatic finish where Messi, having seen very little of the ball throughout the game, was given the free-kick deep into stoppage time. He famously paused, spun the ball in his hands to reassure himself, and curled a world-class strike into the top corner to secure a last-minute victory (often cited as giving PSG a 4-3 win). 
+
+While the phrasing "born out of discord among two parties" often refers to the historical founding of **Inter Milan** (which split from AC Milan in 1908), and "evolved through several iterations" can describe clubs like **Manchester City** or **Real Madrid**, the specific detail of a player taking a defining free-kick in the **95th minute**—alongside the precise media coverage of a player holding and spinning the ball right before striking it—points directly to Lionel Messi's celebrated goal for PSG.
