@@ -299,4 +299,4 @@ def test_local_find_has_explicit_no_match_without_prefix_fallback():
     missing, meta = builder.find(key, 'nonexistentterm')
     assert match is not None and 'father was Bob' in match['text']
     assert missing is None
-    assert meta['fallback'] == 'no_lexical_match_use_prefix'
+    assert meta['fallback'] == 'no_lexical_match'
