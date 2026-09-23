@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "sample": "Exactly eight cases fixed before Stage C calls: two each nominal Search, Find, Open, Verify. Execute the already frozen C-B first choice once; no Actor resampling or substitution. Closure V1 adds direct Verify.",
+  "source_compatible": "For retrieval actions, true when the returned source type/content is suitable to check the current ActiveGap, false when unsuitable, unclear if result gives too little to decide. Search can return multiple hits: true requires at least one suitable returned new source, and list its ref.",
+  "useful_evidence": "yes if the new observation directly supports, refutes or effectively excludes a material part of the ActiveGap; partial if it reduces uncertainty or identifies a usable source but does not answer the gap; no if irrelevant, duplicate, empty or non-informative. Discovery of a suitable D without answer is at most partial.",
+  "gap_effect": "supports_closure only if the new observation suffices for the local claim; refutes if incompatible; narrows if useful but not closed; no_progress otherwise. Never infer absence from a failed Find or short preview.",
+  "review_boundary": "Reviewer sees frozen pre-action state plus that one tool result, including the previously observed W for comparison; no future trajectory, full-document audit, gold or final answer.",
+  "verify": "Semantic subroutine takes the exact frozen claim and exact currently observed W excerpt. It creates no new corpus evidence. V0 calls it only when the frozen free Actor selected Verify; V1 calls it for each closure case by harness trigger. One call per indicated arm, zero retries.",
+  "failure": "Retain API and backend failures. Invalid first call is not repaired, and later calls in a batch are not executed. No replacement case or best-of.",
+  "stage_gate": "Descriptive mechanism assessment only: report source compatibility, useful evidence, gap progress and Verify comparison separately. No post-hoc numeric pass threshold or long rollout."
+}
