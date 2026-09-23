@@ -16,9 +16,11 @@ M0 was frozen and gated **10/10 PASS** before its four live calls. Its
 real forced-tool `stop + tool_calls` response and a real two-call batch.
 `PROTOCOL_COMPATIBILITY.md` is the human-readable audit.
 
-M1 has **not** been frozen or run. The AI-authored prefix-only draft and exact
-prefix packets are ready for independent human review. The M1 runner refuses
-to freeze until `PREFIX_ONLY_ANNOTATIONS.json` has the human-reviewed status.
+The 13 prefix-only annotations were semantically reviewed by Codex under the
+user's clarified authorization and frozen in `PREFIX_ONLY_ANNOTATIONS.json`
+and `ANNOTATION_FREEZE.json`. This is a single-reviewer diagnostic annotation.
+M1 has not yet been frozen or run. The M1 runner checks the annotation freeze
+and refuses to run when a hash or source-ref check fails.
 M2/M4 code and exact evidence candidates are preparatory only; neither stage
 has a freeze or API events.
 

@@ -52,11 +52,23 @@ def digest(value):
 def approved_annotations():
     path = STUDY / 'PREFIX_ONLY_ANNOTATIONS.json'
     data = json.loads(path.read_text())
-    if data.get('status') != 'human_reviewed_frozen' or not data.get('human_reviewed_at_utc'):
-        raise ValueError('M1 requires human-reviewed prefix-only annotation freeze')
+    if data.get('status') != 'prefix_only_semantic_review_frozen' \
+            or data.get('reviewer') != 'Codex prefix-only semantic review' \
+            or not data.get('reviewed_at_utc'):
+        raise ValueError('M1 requires the authorized prefix-only semantic review freeze')
     rows = data.get('rows', [])
     if not isinstance(rows, list) or len(rows) != len(CASES):
         raise ValueError('M1 requires exactly the 13 frozen annotations')
+    annotation_freeze = json.loads((STUDY / 'ANNOTATION_FREEZE.json').read_text())
+    for name, key in (('PREFIX_ONLY_ANNOTATIONS.json', 'annotation_sha256'),
+                      ('PREFIX_ONLY_PACKETS.json', 'packet_bundle_sha256'),
+                      ('ANNOTATION_REVIEW.md', 'annotation_review_sha256')):
+        if sha(STUDY / name) != annotation_freeze[key]:
+            raise ValueError(f'annotation freeze mismatch: {name}')
+    if annotation_freeze['reviewed_count'] != len(CASES) or any(
+            annotation_freeze[k] for k in ('future_trajectory_consulted',
+                                            'gold_consulted', 'full_source_audit_consulted')):
+        raise ValueError('annotation provenance does not satisfy prefix-only gate')
     keys = [(r.get('qid'), r.get('seq')) for r in rows]
     if len(set(keys)) != len(CASES) or set(keys) != set(CASES):
         raise ValueError('annotation checkpoint IDs differ from the frozen 13')
@@ -95,6 +107,7 @@ def freeze():
     if qwen.model != 'qwen3.7-flash':
         raise ValueError('historical Qwen model changed')
     sources = ['experiments/model_backend_atria/planning_probe/run.py',
+               'experiments/model_backend_atria/planning_probe/analyze.py',
                'experiments/model_backend_atria/provider.json',
                'llm_chat/client.py',
                'experiments/search_find_v3b/orthogonal_search/run_partial.py']
@@ -112,7 +125,9 @@ def freeze():
       'atria_timeout_seconds': ATRIA['timeout_seconds'],
       'openai_sdk_version': version('openai'), 'python_version': platform.python_version(),
       'annotations_sha256': sha(STUDY/'PREFIX_ONLY_ANNOTATIONS.json'),
+      'annotation_freeze_sha256': sha(STUDY/'ANNOTATION_FREEZE.json'),
       'prefix_packets_sha256': sha(STUDY/'PREFIX_ONLY_PACKETS.json'),
+      'evaluation_rules_sha256': sha(HERE/'EVALUATION_RULES.json'),
       'protocol_summary_sha256': sha(STUDY/'protocol_summary.json'),
       'source_sha256': {p: file_sha(ROOT/p) for p in sources},
       'original_event_sha256': old['run_events_sha256'],
@@ -131,7 +146,9 @@ def gate():
     old = json.loads((ROOT / 'experiments/search_find_v3b/orthogonal_search/freeze.json').read_text())
     checks = {
       'annotation': sha(STUDY/'PREFIX_ONLY_ANNOTATIONS.json') == frozen['annotations_sha256'],
+      'annotation_freeze': sha(STUDY/'ANNOTATION_FREEZE.json') == frozen['annotation_freeze_sha256'],
       'prefix_packets': sha(STUDY/'PREFIX_ONLY_PACKETS.json') == frozen['prefix_packets_sha256'],
+      'evaluation_rules': sha(HERE/'EVALUATION_RULES.json') == frozen['evaluation_rules_sha256'],
       'protocol': sha(STUDY/'protocol_summary.json') == frozen['protocol_summary_sha256']
                   and json.loads((STUDY/'protocol_summary.json').read_text())['pass'],
       'sources': all(file_sha(ROOT/p)==h for p,h in frozen['source_sha256'].items()),

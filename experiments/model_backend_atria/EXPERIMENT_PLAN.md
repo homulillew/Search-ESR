@@ -18,8 +18,9 @@ Any required M0 failure stops the paired study.
 ## M1 explicit planning
 
 The 13 exact checkpoint `api_request.messages` from the original v3a runs
-are reused verbatim. Before model calls, prefix-only labels are reviewed and
-frozen in `PREFIX_ONLY_ANNOTATIONS.json`. Qwen and Atria each receive the
+are reused verbatim. Before model calls, prefix-only labels are semantically
+reviewed by Codex under the clarified authorization and frozen in
+`PREFIX_ONLY_ANNOTATIONS.json`. Qwen and Atria each receive the
 same messages plus exactly the diagnostic instruction specified in the user
 protocol, with no tools. One sample per model/checkpoint, fixed cell order.
 The prompt and selection rule are frozen in `planning_probe/freeze.json`.

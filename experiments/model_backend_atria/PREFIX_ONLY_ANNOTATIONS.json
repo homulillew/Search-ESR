@@ -1,0 +1,254 @@
+{
+  "status": "prefix_only_semantic_review_frozen",
+  "reviewer": "Codex prefix-only semantic review",
+  "reviewed_at_utc": "2026-09-23T05:41:07.336756+00:00",
+  "annotation_kind": "single-reviewer diagnostic annotation",
+  "input_policy": "Only original question, frozen checkpoint prefix messages, visible D/W, prefix reasoning, and the AI draft; no later trajectory, gold, final answer or full-source audit was consulted during this review.",
+  "rows": [
+    {
+      "qid": "546",
+      "seq": 9,
+      "current_need": "Identify a snooker candidate meeting the career statistics and reconstruct the stated 2023 match sequence.",
+      "expected_source_type": [
+        "biography",
+        "official_statistics",
+        "tournament_result_or_log"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document"
+      ],
+      "plausible_document_refs": [
+        "D5"
+      ],
+      "ambiguity": "high",
+      "reason": "The question has several separate constraints. D5 is a visible player biography but no observed passage establishes the match run; broader event/result retrieval remains reasonable."
+    },
+    {
+      "qid": "546",
+      "seq": 17,
+      "current_need": "Find a 2023 tournament result showing the decider, subsequent 4-3 and 4-0 wins, and following loss for a plausible player.",
+      "expected_source_type": [
+        "tournament_result_or_log",
+        "event_or_match_report"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document"
+      ],
+      "plausible_document_refs": [
+        "D11"
+      ],
+      "ambiguity": "high",
+      "reason": "D11 is a visible 2023 British Open result page with a 4-3 match preview, so local inspection is defensible; the visible prefix does not establish the full score sequence or its event, so corpus search remains defensible."
+    },
+    {
+      "qid": "546",
+      "seq": 25,
+      "current_need": "Test the proposed player against an exact 2023 score sequence and professional/career constraints.",
+      "expected_source_type": [
+        "tournament_result_or_log",
+        "biography",
+        "official_statistics"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document"
+      ],
+      "plausible_document_refs": [
+        "D11"
+      ],
+      "ambiguity": "high",
+      "reason": "D11 remains a visible 2023 tournament result page with a 4-3 preview. It may be checked locally, while the candidate and full 4-3/4-0 sequence remain unresolved and justify broader retrieval."
+    },
+    {
+      "qid": "546",
+      "seq": 33,
+      "current_need": "Locate the 2023 match sequence, then verify the candidate's professional start and breaks.",
+      "expected_source_type": [
+        "tournament_result_or_log",
+        "biography",
+        "official_statistics"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document"
+      ],
+      "plausible_document_refs": [
+        "D5",
+        "D11",
+        "D17"
+      ],
+      "ambiguity": "high",
+      "reason": "The prefix contains candidate biographies D5 and D17 and the 2023 result page D11 with a 4-3 preview. Each permits a local check, but no visible passage establishes the complete requested run."
+    },
+    {
+      "qid": "546",
+      "seq": 41,
+      "current_need": "Find source evidence for the 2023 decider-to-loss sequence and cross-check the leading player's statistics.",
+      "expected_source_type": [
+        "tournament_result_or_log",
+        "biography",
+        "official_statistics"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document"
+      ],
+      "plausible_document_refs": [
+        "D5",
+        "D11",
+        "D17"
+      ],
+      "ambiguity": "high",
+      "reason": "The visible D11 result page and D5/D17 biographies can test parts of the score and career clues locally; the event and full match sequence remain uncertain, so corpus search is also reasonable."
+    },
+    {
+      "qid": "1094",
+      "seq": 23,
+      "current_need": "Identify the split-founded team and the match corresponding to the 95th-minute free kick.",
+      "expected_source_type": [
+        "organization_history",
+        "event_or_match_report"
+      ],
+      "acceptable_scopes": [
+        "corpus"
+      ],
+      "plausible_document_refs": [],
+      "ambiguity": "high",
+      "reason": "The visible reasoning has several incompatible club guesses and no clear team or match source to inspect locally."
+    },
+    {
+      "qid": "1094",
+      "seq": 34,
+      "current_need": "Verify the possible Inter split clue and find the specific match and free-kick taker.",
+      "expected_source_type": [
+        "organization_history",
+        "event_or_match_report"
+      ],
+      "acceptable_scopes": [
+        "corpus"
+      ],
+      "plausible_document_refs": [],
+      "ambiguity": "high",
+      "reason": "Inter has become a hypothesis in reasoning, but the currently visible sources do not yet offer a clear Inter history or match report focus."
+    },
+    {
+      "qid": "1094",
+      "seq": 45,
+      "current_need": "Connect the plausible Inter identity to a match report with the 95th-minute free kick and identify the taker.",
+      "expected_source_type": [
+        "event_or_match_report",
+        "organization_history"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document"
+      ],
+      "plausible_document_refs": [
+        "D34",
+        "D37"
+      ],
+      "ambiguity": "high",
+      "reason": "D37 preview directly describes the Milan split that produced Inter. D34 preview names Messi and the 95th-minute PSG–Lille free kick; checking these sources can test the competing clues, while the requested match is not yet established."
+    },
+    {
+      "qid": "1094",
+      "seq": 53,
+      "current_need": "Find the opponent and match in which the Inter-like team scored early and a player took a 95th-minute free kick.",
+      "expected_source_type": [
+        "event_or_match_report",
+        "organization_history"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document"
+      ],
+      "plausible_document_refs": [
+        "D34",
+        "D37"
+      ],
+      "ambiguity": "high",
+      "reason": "D37 visibly supports the Inter split hypothesis and D34 identifies a 95th-minute PSG–Lille kick. The two leads conflict on team identity, so inspecting them or retrieving a matching report are both defensible."
+    },
+    {
+      "qid": "1094",
+      "seq": 61,
+      "current_need": "Disambiguate the Messi 95th-minute article from the split-founded-team clue and locate the matching event.",
+      "expected_source_type": [
+        "event_or_match_report",
+        "organization_history"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document",
+        "window"
+      ],
+      "plausible_document_refs": [
+        "D34",
+        "D37"
+      ],
+      "ambiguity": "high",
+      "reason": "D34 is a substantive 95th-minute match preview and D37 states the Inter split; D11 is only a video placeholder and D38 is a trophies page. Local inspection or further retrieval can resolve the mismatch."
+    },
+    {
+      "qid": "1094",
+      "seq": 69,
+      "current_need": "Identify the early-century match involving the plausible split-founded team and verify who took the 95th-minute free kick.",
+      "expected_source_type": [
+        "event_or_match_report",
+        "organization_history"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document"
+      ],
+      "plausible_document_refs": [
+        "D34",
+        "D37"
+      ],
+      "ambiguity": "high",
+      "reason": "D34 provides the concrete Messi PSG–Lille event and D37 the Inter split clue. D14 is a generic last-minute-goal list, so the two focused pages are the plausible local checks while corpus discovery remains possible."
+    },
+    {
+      "qid": "1094",
+      "seq": 77,
+      "current_need": "Test the proposed Messi event against both teams' descriptions before naming the taker.",
+      "expected_source_type": [
+        "event_or_match_report",
+        "organization_history"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document",
+        "window"
+      ],
+      "plausible_document_refs": [
+        "D34",
+        "D37"
+      ],
+      "ambiguity": "high",
+      "reason": "The visible D34 preview identifies a PSG–Lille 95th-minute kick; D37 documents the separate Inter origin clue. The reasoning notices a team mismatch, so the candidate still needs local or corpus verification."
+    },
+    {
+      "qid": "1094",
+      "seq": 93,
+      "current_need": "Resolve the team-identity mismatch and establish a source-backed 95th-minute free-kick taker.",
+      "expected_source_type": [
+        "event_or_match_report",
+        "organization_history"
+      ],
+      "acceptable_scopes": [
+        "corpus",
+        "document",
+        "window"
+      ],
+      "plausible_document_refs": [
+        "D34",
+        "D37"
+      ],
+      "ambiguity": "high",
+      "reason": "D34 and D37 are the visible focused sources for the 95th-minute event and split-founded club. The prefix has not reconciled them with one match; local checks and further discovery remain reasonable."
+    }
+  ]
+}

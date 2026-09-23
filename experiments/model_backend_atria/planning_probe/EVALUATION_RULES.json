@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "frozen_before_first_m1_call": true,
+  "samples_per_checkpoint_per_model": 1,
+  "cell_count": 26,
+  "annotation_kind": "single-reviewer diagnostic annotation",
+  "need_agreement_rule": "Semantic yes only if the model states a still-unresolved information need compatible with the prefix label, without treating an unverified candidate as established. Multiple equivalent phrasings are acceptable. If the content is absent or materially wrong, score no. Record a reason per cell.",
+  "source_type_agreement_rule": "Semantic yes if at least one concrete source type proposed by the model could address a source type in expected_source_type for the stated need. Synonyms such as results table/tournament log and club origin/organization history count. Generic search alone is insufficient unless expected_source_type includes unknown. Record a reason per cell.",
+  "scope_rule": "parsed scope belongs to prefix-only acceptable_scopes",
+  "target_document_rule": "If parsed scope is document, parsed D# must belong to prefix-only plausible_document_refs; otherwise target accuracy is not in the denominator. A missing or non-D target under document is incorrect.",
+  "over_search_rule": "parsed scope is corpus while corpus is not an acceptable scope",
+  "premature_local_rule": "parsed scope is document or window when acceptable_scopes is exactly [corpus]",
+  "ambiguity_rule": "Keep every cell in the paired table; report low, medium and high ambiguity strata separately. Do not remove high-ambiguity cells from the overall paired counts.",
+  "api_error_rule": "Record API errors and missing/malformed scope as incompatible for mechanical scope counts; keep semantic scores null for absent responses. Separate provider errors from semantic failures in narrative.",
+  "semantic_review_rule": "Score need and source-type from verbatim outputs without consulting future trajectory, gold, full-source audit or downstream results. Review all 26 cells using this frozen rubric; no post-result rule changes.",
+  "mcnemar_rule": "Two-sided exact McNemar on discordant paired scope-compatibility cells; report paired counts first."
+}

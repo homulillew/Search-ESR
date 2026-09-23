@@ -1,4 +1,4 @@
-# Human review required before M1
+# Prefix-only annotation review preparation
 
 The proposed labels are in `PREFIX_ONLY_ANNOTATIONS_DRAFT.json`. The exact
 messages available at each checkpoint are in `PREFIX_ONLY_PACKETS.json`.
@@ -28,8 +28,7 @@ consulting later trajectories, gold, full documents or post-run source audit.
 
 The draft is deliberately broad where source containment is unclear.
 `plausible_document_refs` means a prefix-plausible place to inspect, not a
-claim that the full document actually contains the answer. In particular,
-the draft is **AI-authored** and its author has prior study context; it does
-not satisfy the requested independent human annotation until a person
-reviews or revises it. M1 runner refuses to freeze without the human-reviewed
-status file.
+claim that the full document actually contains the answer. The user later
+authorized Codex to complete the semantic review without external signoff.
+The completed decisions and all draft changes are in `ANNOTATION_REVIEW.md`;
+the final labels are in `PREFIX_ONLY_ANNOTATIONS.json`.
