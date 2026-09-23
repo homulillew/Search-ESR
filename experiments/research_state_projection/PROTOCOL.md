@@ -1,0 +1,9 @@
+# Selective Research Control State projection
+
+This append-only study starts from `origin/experiment/research-state-qualification` at `d7878c0`. Historical Plan-handoff and Qualification artifacts are read by hash and never edited. Evidence is observed source text; hypotheses may remain in conversation history; the Control State selectively displays the present verification gap, required source type, and only an inspectable promoted target. Belief State and Control State are distinct.
+
+S0 is a post-hoc, zero-model-call mechanism diagnostic of prior R1 actions. It cannot revise R1's failed preregistered gate. S1 is a concurrent paired one-step Actor comparison on all 13 frozen R1 checkpoints: B replays the exact Broad Plan plus Qualification request; C uses the same original prefix plus one reviewer-resolved control card. Neither executes tools. B/C order alternates by historical case index. Every new request, annotation, rubric, prompt, schema and historical source is frozen before calls; zero retries and no selective reruns.
+
+S1b candidate mention ablation occurs only if S1 meets its practical gate. S2 self-projection occurs only after positive S1/S1b evidence. S3 dynamic Orthogonal Search projection requires reliable S2 and keeps all Search/Find/Open actions enabled. Workspace Directory and hard action gating have separate later prerequisites. No backend, localizer, reranker, AtomicNeed schema or model training changes are authorized in this study.
+
+The S1 primary measure is whether an action's arguments address the current verification gap. Candidate inspection, promoted-target utilization, repeated supported facts and Search query quality are separate measurements. Opening a tentative candidate can be a valid falsification attempt; the reviewer must judge the actual query/window against the missing prerequisite. One-step actions do not reveal source compatibility or useful evidence.

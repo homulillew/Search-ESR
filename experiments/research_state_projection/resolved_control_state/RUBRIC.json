@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "cases": "All 13 frozen R1 cells; B and C one new response each in alternating order.",
+  "B": "Exact prior R1 Actor request: original prefix plus frozen Broad Plan plus frozen Qualification Card.",
+  "C": "Identical original prefix plus one resolved card; no Broad Plan, status label or unpromoted D# in the added card.",
+  "promotion": "no_target/hypothesis_only -> none; inspectable -> reviewed candidate handle. This is a source-for-gap judgment, never final-answer correctness.",
+  "gap_action_alignment": "Single-reviewer prefix-only assessment from frozen gap, current prefix and tool arguments: yes/partial/no/unclear. A cell is directly aligned if at least one call is yes; partial is reported separately. Paired gate counts changes in directly aligned cells. Report per-call, per-cell and first-call separately. No future or result text.",
+  "candidate_inspection": "Find(D#) or Open(W# mapped to D#). In hypothesis_only, unpromoted candidate inspection is counted regardless of whether it might be a falsification attempt; separately score gap alignment.",
+  "promoted_utilization": "In inspectable, any Find/Open of the promoted D or its visible W, with first-call separately.",
+  "unsupported_repetition": "Query/window chiefly revisits a fact already supported by prefix without testing a missing prerequisite.",
+  "search_appropriateness": "Search is appropriate when its query addresses the frozen verification gap, even if an old D exists; generic re-search solely for an already supported fact is not.",
+  "success_gate": "At least two paired hypothesis-only cells reduce unpromoted inspection, fewer than two countervailing; no net inspectable utilization loss; at least two net paired Gap Action Alignment improvements; no generic Search-only explanation.",
+  "failure": "Provider, schema and harness errors kept separately; zero SDK retries, no selective reruns, no tool execution."
+}

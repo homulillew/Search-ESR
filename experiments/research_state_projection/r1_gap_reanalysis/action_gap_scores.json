@@ -1,0 +1,940 @@
+[
+  {
+    "cell": "546:9",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Mark Selby 2023 tournament decider 4-3 4-0 match results"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Candidate-specific Mark Selby query tests a possible sequence, but adds an unsupported player restriction."
+  },
+  {
+    "cell": "546:9",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "snooker 2023 deciding frame win then 4-3 4-0 then lost to player over 400 centuries"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search directly asks for the four-match score chain without a fixed player."
+  },
+  {
+    "cell": "546:9",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "snooker player 2023 \"4-3\" \"4-0\" then lost decider centuries"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search directly seeks the 2023 4-3/4-0 sequence with the career clue."
+  },
+  {
+    "cell": "546:9",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "2023 British Open snooker results 4-3 4-0 best of seven"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "British Open result search could locate a sequence but assumes the event before it is established."
+  },
+  {
+    "cell": "546:9",
+    "arm": "H1",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "snooker \"turned professional\" 1995 2006 \"more than 300 centuries\""
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Career-statistic query does not locate the missing four-match tournament chain."
+  },
+  {
+    "cell": "546:17",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Ding Junhui 2023 English Open results 4-3 4-0"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Ding English Open result query seeks the 4-3/4-0 sequence in a 2023 event."
+  },
+  {
+    "cell": "546:17",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Ding Junhui turned professional 2003 centuries 147 maximum breaks"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Pro-year and break statistics are a separate career gap rather than this tournament sequence."
+  },
+  {
+    "cell": "546:17",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "open",
+    "arguments": {
+      "window_ref": "W17",
+      "direction": "around"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Opening W17 can inspect a dated Ding-Brecel 2023 result but may establish only one match of the chain."
+  },
+  {
+    "cell": "546:17",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "find",
+    "arguments": {
+      "doc_ref": "D11",
+      "query": "Ding Junhui"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Find(D11,Ding) tests whether the visible 2023 tournament-results record contains this candidate's matches."
+  },
+  {
+    "cell": "546:25",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Ding Junhui 2023 English Open 4-3 4-0 match results bracket"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search for Ding's English Open bracket and both scores directly targets the missing linked rounds."
+  },
+  {
+    "cell": "546:25",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "find",
+    "arguments": {
+      "doc_ref": "D10",
+      "query": "Ding Junhui 4-3 Ma Hailong"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": true,
+    "candidate_inspection_role": "local_fact_repeat",
+    "reason": "Find(D10) asks only for Ding's 4-3 opening win over Ma Hailong, already visible in W13."
+  },
+  {
+    "cell": "546:25",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "find",
+    "arguments": {
+      "doc_ref": "D10",
+      "query": "Ding Junhui English Open 4-3 4-0 next round"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "gap_test",
+    "reason": "Find(D10) asks about a later 4-0/next round as well as the known 4-3; it tries to test the missing chain, although D10 is a weak one-match source."
+  },
+  {
+    "cell": "546:25",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "2023 English Open snooker Ding Junhui results bracket Last 16"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search for the Ding English Open bracket could establish subsequent rounds and loss."
+  },
+  {
+    "cell": "546:33",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "find",
+    "arguments": {
+      "doc_ref": "D12",
+      "query": "2023 English Open Ding Junhui Matthew Selt 4-0"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Find(D12) looks for a 2023 match score, while this immediate gap is Ding's career facts."
+  },
+  {
+    "cell": "546:33",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "find",
+    "arguments": {
+      "doc_ref": "D17",
+      "query": "turned professional 2003 centuries maximum breaks"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "gap_test",
+    "reason": "Find(D17) asks the named player's biography for pro year, centuries and maximum breaks."
+  },
+  {
+    "cell": "546:33",
+    "arm": "H0",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "2023 English Open Ding Junhui Judd Trump quarter-final 4-0 Matthew Selt"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search for an English Open match is outside the current career-statistics check."
+  },
+  {
+    "cell": "546:33",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "2023 English Open snooker Ding Junhui results"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Generic Ding 2023 results Search targets the separate match-chain question."
+  },
+  {
+    "cell": "546:33",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "2023 English Open snooker bracket quarter-finals"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "English Open bracket Search targets event results rather than Ding's career facts."
+  },
+  {
+    "cell": "546:41",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "find",
+    "arguments": {
+      "doc_ref": "D17",
+      "query": "turned professional 2003 centuries maximum breaks"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "gap_test",
+    "reason": "Find(D17) requests Ding's pro year, centuries and maximum-break facts from his biography."
+  },
+  {
+    "cell": "546:41",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "find",
+    "arguments": {
+      "doc_ref": "D17",
+      "query": "2023 English Open Ma Hailong Brecel Trump"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "unrelated",
+    "reason": "Find(D17) asks for a 2023 match chain, not the current career-statistics check."
+  },
+  {
+    "cell": "546:41",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "find",
+    "arguments": {
+      "doc_ref": "D17",
+      "query": "turned professional 2003"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "gap_test",
+    "reason": "Find(D17) directly seeks Ding's pro-year evidence."
+  },
+  {
+    "cell": "546:41",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "find",
+    "arguments": {
+      "doc_ref": "D17",
+      "query": "maximum break 147"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "gap_test",
+    "reason": "Find(D17) directly seeks Ding's maximum-break evidence."
+  },
+  {
+    "cell": "546:41",
+    "arm": "H1",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "2023 English Open snooker last 16 Ding Junhui Luca Brecel 4-3"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search for one 2023 English Open match addresses a separate sequence gap."
+  },
+  {
+    "cell": "546:41",
+    "arm": "H1",
+    "call_index": 4,
+    "tool_name": "search",
+    "arguments": {
+      "query": "snooker 2023 won 4-3 4-0 then lost decider player 400 centuries"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search for the four-match chain addresses a separate sequence gap."
+  },
+  {
+    "cell": "1094:23",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "AFC Wimbledon Milton Keynes Dons 95th minute free-kick"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "AFC Wimbledon/MK Dons query tests one split-club hypothesis plus minute, but not all match clues."
+  },
+  {
+    "cell": "1094:23",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Torino Juventus derby 95th minute free-kick"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Torino/Juventus query tests another fixture hypothesis plus minute, without the full conjunction."
+  },
+  {
+    "cell": "1094:23",
+    "arm": "H0",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"95th minute\" \"free-kick\" match report"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Generic 95th-minute match-report query targets one decisive event clue but not club identities."
+  },
+  {
+    "cell": "1094:23",
+    "arm": "H0",
+    "call_index": 4,
+    "tool_name": "search",
+    "arguments": {
+      "query": "club founded by breakaway split fans 95th minute free kick"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Split-founded club plus minute query combines two clues but not the other club and goal timing."
+  },
+  {
+    "cell": "1094:23",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "club founded after split from another club discord breakaway football"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search seeks the founding-split prerequisite to the matching fixture."
+  },
+  {
+    "cell": "1094:23",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "club identity changed names several iterations Manchester United Newton Heath Arsenal Dial Square"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search seeks the evolving-identity opponent prerequisite."
+  },
+  {
+    "cell": "1094:23",
+    "arm": "H1",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "match report 95th minute free-kick goal early goals late comeback"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search combines 95th-minute free kick and early/late match goals without naming an unsupported fixture."
+  },
+  {
+    "cell": "1094:34",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"95th minute\" \"free-kick\" match report goal"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "A generic free-kick report does not test the currently proposed club-founding split."
+  },
+  {
+    "cell": "1094:34",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"founded after a dispute\" football club split"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search for a club founded after a dispute directly seeks a founding-split source."
+  },
+  {
+    "cell": "1094:34",
+    "arm": "H0",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"took the free-kick\" 95th minute"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search for the free-kick taker does not establish the club founding relation."
+  },
+  {
+    "cell": "1094:34",
+    "arm": "H0",
+    "call_index": 4,
+    "tool_name": "search",
+    "arguments": {
+      "query": "match report team scored early goals opponent late goals 95th minute free kick"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Goal-timing match query addresses the fixture, not the current founding-split check."
+  },
+  {
+    "cell": "1094:34",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"95th minute\" \"free kick\" scored match report"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Generic 95th-minute search does not test the proposed club split."
+  },
+  {
+    "cell": "1094:34",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "match report team scored two early goals opponent scored late 95th minute free kick"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Early/late goal search does not establish the club founding relation."
+  },
+  {
+    "cell": "1094:34",
+    "arm": "H1",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Toni Kroos free kick 95th minute Germany Sweden"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Kroos 95th-minute candidate search is unrelated to the proposed club split."
+  },
+  {
+    "cell": "1094:45",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "open",
+    "arguments": {
+      "window_ref": "W38",
+      "direction": "after"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "gap_test",
+    "reason": "Open(W38,after) can inspect PSG-Lille goal chronology, but not both clubs' founding histories."
+  },
+  {
+    "cell": "1094:45",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"95th minute\" free-kick PSG Marseille winner"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "PSG-Marseille search switches to another fixture instead of testing PSG-Lille's missing conditions."
+  },
+  {
+    "cell": "1094:45",
+    "arm": "H0",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "club founded after a split dispute football \"discord\""
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "A general split-club source may help compare one club-origin clue but does not test PSG-Lille directly."
+  },
+  {
+    "cell": "1094:45",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "open",
+    "arguments": {
+      "window_ref": "W38",
+      "direction": "after"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "gap_test",
+    "reason": "Open(W38,after) can test the PSG-Lille scoring pattern, though not the founding clues."
+  },
+  {
+    "cell": "1094:45",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Liverpool born out of discord Everton John Houlding split"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Liverpool founding search explores an alternative split-club explanation rather than the PSG-Lille candidate."
+  },
+  {
+    "cell": "1094:45",
+    "arm": "H1",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"identity evolved through several iterations\""
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Identity-iteration search can seek the other club prerequisite but has no fixture anchor."
+  },
+  {
+    "cell": "1094:53",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "open",
+    "arguments": {
+      "window_ref": "W50",
+      "direction": "around"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Open(W50) explores another late-event match candidate but does not establish all identity clues."
+  },
+  {
+    "cell": "1094:53",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Arsenal Reading 5-7 95th minute free-kick Walcott"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Arsenal-Reading query tests a speculative late free-kick candidate, not the full clue set."
+  },
+  {
+    "cell": "1094:53",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Liverpool Arsenal 95th minute free-kick"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Liverpool-Arsenal query tests another fixture hypothesis with the 95th-minute clue."
+  },
+  {
+    "cell": "1094:53",
+    "arm": "H1",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "match one team scored all goals early other scored late 95th minute free-kick"
+    },
+    "addresses_verification_gap": "yes",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Search combines early/late goals and 95th-minute free kick to locate the missing fixture."
+  },
+  {
+    "cell": "1094:61",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "football club \"born out of\" discord OR dispute OR split"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Generic born-out-of-discord query may corroborate a split, but does not name Inter."
+  },
+  {
+    "cell": "1094:61",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "football club \"formed after a dispute\" OR \"founded after a dispute\""
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Generic formed-after-dispute query may identify a split-founded club, without directly checking Inter."
+  },
+  {
+    "cell": "1094:61",
+    "arm": "H0",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "football \"several iterations\" identity club formation"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Identity-iteration club search concerns the opponent rather than Inter's founding split."
+  },
+  {
+    "cell": "1094:61",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Liverpool FC founded out of discord Houlding Everton split"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Liverpool/Everton founding query changes the club candidate rather than verifying proposed Inter."
+  },
+  {
+    "cell": "1094:61",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"95th minute\" free-kick Liverpool match"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Liverpool 95th-minute match query bypasses the current Inter-origin check."
+  },
+  {
+    "cell": "1094:61",
+    "arm": "H1",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"95th minute\" free kick Arsenal"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Arsenal 95th-minute event query bypasses the current Inter-origin check."
+  },
+  {
+    "cell": "1094:69",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"95th minute\" free kick goal match report football"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Generic 95th-minute event Search does not test PSG-Lille's club-history or timing conjunction."
+  },
+  {
+    "cell": "1094:69",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"90+5\" free kick goal football match"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Another generic 90+5 free-kick Search repeats the event type without testing PSG-Lille."
+  },
+  {
+    "cell": "1094:69",
+    "arm": "H0",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "club \"formed after a split\" football born dispute"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "A split-founded club search could test one missing club-origin prerequisite."
+  },
+  {
+    "cell": "1094:69",
+    "arm": "H0",
+    "call_index": 4,
+    "tool_name": "search",
+    "arguments": {
+      "query": "football club changed name several times \"St Mark's\" Ardwick"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Changing-name club search could test the other identity prerequisite."
+  },
+  {
+    "cell": "1094:69",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "open",
+    "arguments": {
+      "window_ref": "W38",
+      "direction": "after"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "gap_test",
+    "reason": "Open(W38,after) can examine PSG-Lille's scoring timeline, though not the club histories."
+  },
+  {
+    "cell": "1094:69",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "open",
+    "arguments": {
+      "window_ref": "W38",
+      "direction": "before"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "gap_test",
+    "reason": "Open(W38,before) can examine surrounding match context and goal chronology, not club origins."
+  },
+  {
+    "cell": "1094:77",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Inter Milan match 95th minute free-kick Inter scored early"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Inter plus 95th-minute and early goals narrows a possible fixture but not the Messi event's identity mismatch."
+  },
+  {
+    "cell": "1094:77",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Inter Milan \"95th minute\" free-kick goal scorer"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Inter free-kick search explores the split-club line but not the proposed Messi fixture directly."
+  },
+  {
+    "cell": "1094:77",
+    "arm": "H0",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Inter Milan 2000s match 95th minute free kick"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Inter 2000s free-kick query seeks an alternative fixture but does not test both clubs' histories."
+  },
+  {
+    "cell": "1094:77",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Inter Milan match \"95th minute\" free kick"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Inter plus minute query explores an alternative to PSG-Lille."
+  },
+  {
+    "cell": "1094:77",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"95th minute\" \"free kick\" match report early goals late goals"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Early/late goals plus minute query seeks a matching fixture but lacks club-history terms."
+  },
+  {
+    "cell": "1094:93",
+    "arm": "H0",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"95th minute\" \"free kick\" match report goal"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Generic minute/event search does not resolve why Inter and PSG-Lille point to different fixtures."
+  },
+  {
+    "cell": "1094:93",
+    "arm": "H0",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"founded after a split\" OR \"born from a split\" OR \"founded by dissident\" football club"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Split-founded club search could find an alternative founding hypothesis to reconcile the mismatch."
+  },
+  {
+    "cell": "1094:93",
+    "arm": "H0",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "Bayern Munich Manchester United 1999 Champions League final Basler free kick"
+    },
+    "addresses_verification_gap": "no",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Bayern-Manchester United candidate query introduces another unverified event without resolving the existing mismatch."
+  },
+  {
+    "cell": "1094:93",
+    "arm": "H1",
+    "call_index": 1,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"95th minute\" free-kick \"scored all\" early goals match"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Minute plus early-goal search may locate an alternative fixture, but does not join the club histories."
+  },
+  {
+    "cell": "1094:93",
+    "arm": "H1",
+    "call_index": 2,
+    "tool_name": "search",
+    "arguments": {
+      "query": "club \"born out of\" dispute split football history"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "A new split-club source could challenge the current Inter hypothesis."
+  },
+  {
+    "cell": "1094:93",
+    "arm": "H1",
+    "call_index": 3,
+    "tool_name": "search",
+    "arguments": {
+      "query": "\"several iterations\" identity football club name change"
+    },
+    "addresses_verification_gap": "partial",
+    "repeats_already_supported_fact": false,
+    "candidate_inspection_role": "not_candidate_inspection",
+    "reason": "Identity-iteration club search seeks the remaining opponent clue."
+  }
+]

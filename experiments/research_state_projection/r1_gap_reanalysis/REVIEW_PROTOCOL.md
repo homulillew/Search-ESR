@@ -1,0 +1,7 @@
+# S0 action-gap review protocol
+
+This is a **post-hoc mechanism diagnostic** of prior R1, with zero new model calls. For every H0 and H1 one-step tool call, the reviewer may see only the exact current checkpoint prefix, frozen R1 annotation, tool name and arguments. Do not inspect tool results, future trajectories, gold, final answers or later source audits. The original R1 preregistered gate remains failed regardless of these labels.
+
+`addresses_verification_gap`: yes if arguments directly seek the missing prerequisite; partial if they address a necessary but nondecisive component; no if they repeat an already supported fact or follow an unrelated candidate; unclear if intent cannot be judged. `repeats_already_supported_fact` marks a query/window chiefly revisiting a fact already visible in the prefix, regardless of its possible utility for independent confirmation. `candidate_inspection_role`: `gap_test` when Find/Open of the frozen candidate could test a missing prerequisite, `local_fact_repeat` when it revisits only the supported part, `unrelated`, `not_candidate_inspection`, or `unclear`. An inspection of a hypothesis-only D# is not automatically bad. All calls receive an explicit reason.
+
+Report yes and yes+partial denominators; repeat-fact counts; candidate inspection roles; the four focal cells 546:25, 1094:45, 1094:53, 1094:69; mixed batches; and case clustering. No p-value or new success claim.
