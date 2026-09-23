@@ -1,0 +1,57 @@
+{
+  "frozen_at_utc": "2026-09-23T05:05:36.748200+00:00",
+  "git_head": "a63ca25604f1d8e8f833a666f92f54e549da9832",
+  "model": "Atria-Dawn-Preview",
+  "base_url_host": "api.atria-asi.ai",
+  "allow_tool_calls_with_stop": true,
+  "timeout_seconds": 120,
+  "max_retries": 0,
+  "openai_sdk_version": "1.109.1",
+  "python_version": "3.12.2",
+  "jsonschema_version": "4.26.0",
+  "tool_schema_sha256": "60de1d45580c0dcd1fab666fbb97052122259f14c7f92bafab59825f3e7662ba",
+  "agent_prompt_sha256": "b93952826c95fcb4c5ba050012cdcb8f275de94445af724949bcdd74809342ca",
+  "checkpoint_request_sha256": {
+    "546:9": "6451598c42634940f80c600b9c825d2dcf04bf2916b6de5b2249306415e002aa",
+    "546:17": "36ee6b3b54e0c214c39b4f09cd422ed2ef320399ef7cdc249bb38a4182ea1605",
+    "546:25": "ba3acae1646bdf2b905f4c78105d69a861d4d2f86362d4f663e29c1fcb07c46a",
+    "546:33": "9fd76698f8d1ed40ac2bcbb69b8a5f946d317c68a23d18331e9b5828abd79380",
+    "546:41": "04918d9f46a09521c02230a1098adb38b0a13f237d997653255a4120d92b25fb",
+    "1094:23": "e38b1c5c83e8b1b8de7c23eee08fa293408e24a739d8518dc102b60f76033e28",
+    "1094:34": "f276c9e6f32270690b4ae401816eef6eb206f749a682d9721584ad43c3ab37fc",
+    "1094:45": "12b41ae5a6ad335e19a99ac9bee4eca24f77bba80c4884724268bc3d8538ec59",
+    "1094:53": "4b35dc1ca76531e14f9df3ebba4f4bd920496600d70f1b557f7b31b34887c4fa",
+    "1094:61": "19434a529d5aed08723e03c54070307553f55f589a306a5f5475579ee7092def",
+    "1094:69": "a8c1b9a3c8bce279bd6f637837e4b94f5e04158d55ce91e21aa0dbc0bc493da4",
+    "1094:77": "f8007418f9e78ae83a9cf7fc1d81710e5895480188eb82e73fc74531f7507c99",
+    "1094:93": "67c2b6c01a7afb64af48aafefe4ff698bd55f3b3105cb0918587d5791b235e49"
+  },
+  "checkpoint_source_event_sha256": {
+    "546": "947b96b506405923078038893bf84b6b4190d9821af8d7fba5bc365479132852",
+    "1094": "eed7b39e19b39b7db960acd64ea4e28b6a6afbabe6eac06a68f0665ac3adbf8a"
+  },
+  "source_sha256": {
+    "experiments/model_backend_atria/provider.json": "ad9e6b4e0f5e1bbea9365dfaf475bd95d9e5a4c93344026e00798c4eac65d61b",
+    "experiments/model_backend_atria/protocol.py": "d89d579c05c00cc3b4aaebad6d7b4311a1a6a2b359ff1bda98b66cd31a32904d",
+    "experiments/model_backend_atria/preflight.py": "1153ade4fcf5e784d28a179d3e373e1e323bff47af6f14c8324c7228fe6a14b3",
+    "llm_chat/client.py": "126ee2d49ed526a64931b4ac7a27df1db63fb77ba10b5dd368770d0d79846204",
+    "llm_chat/agent.py": "e129a97b823881168be894e4b29bbac93f5da9f151c1c4260ef0b7fb7b06811a",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720",
+    "llm_chat/search_find_v3b_agent.py": "1788f3cf74df01dea25b1421a31d572a0ede6c9919c6df7fd8db8d4c76d8b56d",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1"
+  },
+  "live_requests": [
+    "ordinary_chat",
+    "auto_tool",
+    "forced_single_tool",
+    "multi_tool_prompt"
+  ],
+  "synthetic_cases": [
+    "stop_with_calls",
+    "malformed_json",
+    "undeclared_tool",
+    "missing_required",
+    "batch_atomicity"
+  ],
+  "success_gate": "ordinary response; auto and forced legal Search; all synthetic validation expectations; raw finish preserved. Multi-tool prompt is observational because provider may choose one call."
+}

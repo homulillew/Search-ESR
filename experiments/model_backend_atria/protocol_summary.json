@@ -1,0 +1,65 @@
+{
+  "checks": {
+    "ordinary_chat": true,
+    "auto_tool": true,
+    "forced_single_tool": true,
+    "synthetic_validation": true
+  },
+  "pass": true,
+  "observed": {
+    "ordinary_chat": {
+      "finish_reason": "stop",
+      "tool_count": 0,
+      "validation": "valid",
+      "error_type": null
+    },
+    "auto_tool": {
+      "finish_reason": "tool_calls",
+      "tool_count": 1,
+      "validation": "valid",
+      "error_type": null
+    },
+    "forced_single_tool": {
+      "finish_reason": "stop",
+      "tool_count": 1,
+      "validation": "valid",
+      "error_type": null
+    },
+    "multi_tool_prompt": {
+      "finish_reason": "tool_calls",
+      "tool_count": 2,
+      "validation": "valid",
+      "error_type": null
+    },
+    "stop_with_calls": {
+      "finish_reason": "stop",
+      "tool_count": 1,
+      "validation": "valid",
+      "error_type": null
+    },
+    "malformed_json": {
+      "finish_reason": "tool_calls",
+      "tool_count": 1,
+      "validation": "malformed_json",
+      "error_type": null
+    },
+    "undeclared_tool": {
+      "finish_reason": "tool_calls",
+      "tool_count": 1,
+      "validation": "undeclared_tool",
+      "error_type": null
+    },
+    "missing_required": {
+      "finish_reason": "tool_calls",
+      "tool_count": 1,
+      "validation": "schema_invalid",
+      "error_type": null
+    },
+    "batch_atomicity": {
+      "finish_reason": "tool_calls",
+      "tool_count": 2,
+      "validation": "schema_invalid",
+      "error_type": null
+    }
+  }
+}
