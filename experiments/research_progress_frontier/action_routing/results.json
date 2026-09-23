@@ -1,0 +1,1409 @@
+{
+  "summary": {
+    "groups": {
+      "A": {
+        "n": 25,
+        "correct": 25,
+        "valid_arguments": 10,
+        "api_errors": 0,
+        "by_class": {
+          "source": {
+            "n": 5,
+            "correct": 5,
+            "action_distribution": {
+              "search": 5
+            },
+            "valid_arguments": 5
+          },
+          "location": {
+            "n": 5,
+            "correct": 5,
+            "action_distribution": {
+              "find": 5
+            },
+            "valid_arguments": 0
+          },
+          "context": {
+            "n": 5,
+            "correct": 5,
+            "action_distribution": {
+              "open": 5
+            },
+            "valid_arguments": 0
+          },
+          "closure": {
+            "n": 5,
+            "correct": 5,
+            "action_distribution": {
+              "verify": 5
+            },
+            "valid_arguments": 0
+          },
+          "complete": {
+            "n": 5,
+            "correct": 5,
+            "action_distribution": {
+              "submit": 5
+            },
+            "valid_arguments": 5
+          }
+        }
+      },
+      "B": {
+        "n": 25,
+        "correct": 23,
+        "valid_arguments": 25,
+        "api_errors": 0,
+        "by_class": {
+          "source": {
+            "n": 5,
+            "correct": 5,
+            "action_distribution": {
+              "search": 5
+            },
+            "valid_arguments": 5
+          },
+          "location": {
+            "n": 5,
+            "correct": 5,
+            "action_distribution": {
+              "find": 5
+            },
+            "valid_arguments": 5
+          },
+          "context": {
+            "n": 5,
+            "correct": 5,
+            "action_distribution": {
+              "open": 5
+            },
+            "valid_arguments": 5
+          },
+          "closure": {
+            "n": 5,
+            "correct": 3,
+            "action_distribution": {
+              "open": 2,
+              "verify": 3
+            },
+            "valid_arguments": 5
+          },
+          "complete": {
+            "n": 5,
+            "correct": 5,
+            "action_distribution": {
+              "submit": 5
+            },
+            "valid_arguments": 5
+          }
+        }
+      }
+    },
+    "optional_verify": {
+      "n_closure": 5,
+      "verify_first": 3,
+      "other_first": {
+        "open": 2
+      }
+    },
+    "cache": {
+      "A": {
+        "usage_reported": 25,
+        "hit_tokens": 0,
+        "miss_tokens": 5971,
+        "weighted_hit_rate": 0.0
+      },
+      "B": {
+        "usage_reported": 25,
+        "hit_tokens": 18304,
+        "miss_tokens": 6217,
+        "weighted_hit_rate": 0.746462216059704
+      }
+    },
+    "gate": {
+      "overall_correct_ge_75pct": true,
+      "every_class_ge_60pct": true
+    },
+    "stage_C_pass": true,
+    "note": "C-A gate is prespecified; C-B free optional Verify is descriptive and does not by itself stop D. No tools executed."
+  },
+  "rows": [
+    {
+      "cell": "C_source_546:A",
+      "case_id": "C_source_546",
+      "qid": "546",
+      "arm": "A",
+      "uncertainty_type": "source",
+      "expected_action": "search",
+      "action": "search",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "search",
+        "arguments": {
+          "query": "2023 British Open snooker Ding Junhui round-by-round results 4-3 4-0 decider loss"
+        },
+        "finish_reason": "stop",
+        "content": "Action: search\nArguments: {\"query\":\"2023 British Open snooker Ding Junhui round-by-round results 4-3 4-0 decider loss\"}\nReason: No suitable document or relevant window is known, so search is needed to discover dated round-by-round tournament results for Ding's 2023 matches."
+      }
+    },
+    {
+      "cell": "C_source_546:B",
+      "case_id": "C_source_546",
+      "qid": "546",
+      "arm": "B",
+      "uncertainty_type": "source",
+      "expected_action": "search",
+      "action": "search",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "search",
+        "arguments": {
+          "query": "2023 snooker tournament round-by-round results Ding Junhui 4-3 4-0 loss",
+          "k": 10
+        },
+        "all_calls": [
+          {
+            "id": "call_00_oFA2v2g5RwlKr7sHoGnW7877",
+            "name": "search",
+            "arguments": {
+              "query": "2023 snooker tournament round-by-round results Ding Junhui 4-3 4-0 loss",
+              "k": 10
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_source_1094:A",
+      "case_id": "C_source_1094",
+      "qid": "1094",
+      "arm": "A",
+      "uncertainty_type": "source",
+      "expected_action": "search",
+      "action": "search",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "search",
+        "arguments": {
+          "query": "Lille OSC founding name history club identity"
+        },
+        "finish_reason": "stop",
+        "content": "Action: search\nArguments: {\"query\":\"Lille OSC founding name history club identity\"}\nReason: No suitable document or relevant window is known, so discovering a Lille founding and name-history source is the necessary next step."
+      }
+    },
+    {
+      "cell": "C_source_1094:B",
+      "case_id": "C_source_1094",
+      "qid": "1094",
+      "arm": "B",
+      "uncertainty_type": "source",
+      "expected_action": "search",
+      "action": "search",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "search",
+        "arguments": {
+          "query": "Lille football club founding name history",
+          "k": 5
+        },
+        "all_calls": [
+          {
+            "id": "call_00_y8seIag7qQ6IyJDPN7kl0930",
+            "name": "search",
+            "arguments": {
+              "query": "Lille football club founding name history",
+              "k": 5
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_source_580:A",
+      "case_id": "C_source_580",
+      "qid": "580",
+      "arm": "A",
+      "uncertainty_type": "source",
+      "expected_action": "search",
+      "action": "search",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "search",
+        "arguments": {
+          "query": "season one episode guide date scene"
+        },
+        "finish_reason": "stop",
+        "content": "Action: search\nArguments: {\"query\":\"season one episode guide date scene\"}\nReason: No season-one document or relevant window is known, so discovery is needed to locate the expected season-one episode guide."
+      }
+    },
+    {
+      "cell": "C_source_580:B",
+      "case_id": "C_source_580",
+      "qid": "580",
+      "arm": "B",
+      "uncertainty_type": "source",
+      "expected_action": "search",
+      "action": "search",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "search",
+        "arguments": {
+          "query": "season one episode guide date scene",
+          "k": 5
+        },
+        "all_calls": [
+          {
+            "id": "call_00_DjAjpAFIsWcu7lL5XaQC5525",
+            "name": "search",
+            "arguments": {
+              "query": "season one episode guide date scene",
+              "k": 5
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_source_177:A",
+      "case_id": "C_source_177",
+      "qid": "177",
+      "arm": "A",
+      "uncertainty_type": "source",
+      "expected_action": "search",
+      "action": "search",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "search",
+        "arguments": {
+          "query": "2011–2016 league table tied points position goal difference historical standings"
+        },
+        "finish_reason": "stop",
+        "content": "Action: search\nArguments: {\"query\":\"2011–2016 league table tied points position goal difference historical standings\"}\nReason: No suitable document or relevant window is known, so discovering a dated historical league standings source is the necessary next step."
+      }
+    },
+    {
+      "cell": "C_source_177:B",
+      "case_id": "C_source_177",
+      "qid": "177",
+      "arm": "B",
+      "uncertainty_type": "source",
+      "expected_action": "search",
+      "action": "search",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "search",
+        "arguments": {
+          "query": "2011–2016 league table tied points position goal difference historical standings",
+          "k": 10
+        },
+        "all_calls": [
+          {
+            "id": "call_00_GIYaDhAfTC2YNPpFCiqC2047",
+            "name": "search",
+            "arguments": {
+              "query": "2011–2016 league table tied points position goal difference historical standings",
+              "k": 10
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_source_1034:A",
+      "case_id": "C_source_1034",
+      "qid": "1034",
+      "arm": "A",
+      "uncertainty_type": "source",
+      "expected_action": "search",
+      "action": "search",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "search",
+        "arguments": {
+          "query": "Heart Evangelista university education child birthplace biography family interview"
+        },
+        "finish_reason": "stop",
+        "content": "Action: search\nArguments: {\"query\":\"Heart Evangelista university education child birthplace biography family interview\"}\nReason: No suitable document is known yet, so search must discover a biography or family interview covering both missing conditions."
+      }
+    },
+    {
+      "cell": "C_source_1034:B",
+      "case_id": "C_source_1034",
+      "qid": "1034",
+      "arm": "B",
+      "uncertainty_type": "source",
+      "expected_action": "search",
+      "action": "search",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "search",
+        "arguments": {
+          "query": "Heart Evangelista biography university study child birthplace family",
+          "k": 5
+        },
+        "all_calls": [
+          {
+            "id": "call_00_E89I0hyRcoyY3V1DNdHF5239",
+            "name": "search",
+            "arguments": {
+              "query": "Heart Evangelista biography university study child birthplace family",
+              "k": 5
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_location_546_bio:A",
+      "case_id": "C_location_546_bio",
+      "qid": "546",
+      "arm": "A",
+      "uncertainty_type": "location",
+      "expected_action": "find",
+      "action": "find",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "find",
+        "arguments": {
+          "doc_id": "D17",
+          "query": "Ding Junhui professional start year career break totals"
+        },
+        "finish_reason": "stop",
+        "content": "Action: find\nArguments: {\"doc_id\":\"D17\",\"query\":\"Ding Junhui professional start year career break totals\"}\nReason: D17 is the known suitable biography, but no relevant window is identified, so we need to locate the statistics within that document."
+      }
+    },
+    {
+      "cell": "C_location_546_bio:B",
+      "case_id": "C_location_546_bio",
+      "qid": "546",
+      "arm": "B",
+      "uncertainty_type": "location",
+      "expected_action": "find",
+      "action": "find",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "find",
+        "arguments": {
+          "doc_ref": "D17",
+          "query": "Ding Junhui turned professional career break totals"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_2RMOKnmQPn0rPoZHoZ308344",
+            "name": "find",
+            "arguments": {
+              "doc_ref": "D17",
+              "query": "Ding Junhui turned professional career break totals"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_location_546_results:A",
+      "case_id": "C_location_546_results",
+      "qid": "546",
+      "arm": "A",
+      "uncertainty_type": "location",
+      "expected_action": "find",
+      "action": "find",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "find",
+        "arguments": {
+          "document_id": "D11",
+          "query": "2023 British Open 4-0 match result"
+        },
+        "finish_reason": "stop",
+        "content": "Action: find\nArguments: {\"document_id\":\"D11\",\"query\":\"2023 British Open 4-0 match result\"}\nReason: D11 is the known tournament-results document, but no relevant window is known, so find is needed to locate the requested match within it."
+      }
+    },
+    {
+      "cell": "C_location_546_results:B",
+      "case_id": "C_location_546_results",
+      "qid": "546",
+      "arm": "B",
+      "uncertainty_type": "location",
+      "expected_action": "find",
+      "action": "find",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "find",
+        "arguments": {
+          "doc_ref": "D11",
+          "query": "British Open 2023 4-0"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_V7zNOnwHCIrcOTdT00PX2083",
+            "name": "find",
+            "arguments": {
+              "doc_ref": "D11",
+              "query": "British Open 2023 4-0"
+            }
+          },
+          {
+            "id": "call_01_ESkAwhcif3oe9eDAOmPl9987",
+            "name": "find",
+            "arguments": {
+              "doc_ref": "D11",
+              "query": "4-0 match result"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_location_517:A",
+      "case_id": "C_location_517",
+      "qid": "517",
+      "arm": "A",
+      "uncertainty_type": "location",
+      "expected_action": "find",
+      "action": "find",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "find",
+        "arguments": {
+          "doc_id": "D1",
+          "query": "Peter Nzioki The Constant Gardener character"
+        },
+        "finish_reason": "stop",
+        "content": "Action: find\nArguments: {\"doc_id\": \"D1\", \"query\": \"Peter Nzioki The Constant Gardener character\"}\nReason: D1 is the known suitable document but no relevant window has been located, so I need to find the passage naming Peter Nzioki’s character in it."
+      }
+    },
+    {
+      "cell": "C_location_517:B",
+      "case_id": "C_location_517",
+      "qid": "517",
+      "arm": "B",
+      "uncertainty_type": "location",
+      "expected_action": "find",
+      "action": "find",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "find",
+        "arguments": {
+          "doc_ref": "D1",
+          "query": "Constant Gardener character role Peter Nzioki"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_WyP3IYDcuK8Wpiz7B0F01220",
+            "name": "find",
+            "arguments": {
+              "doc_ref": "D1",
+              "query": "Constant Gardener character role Peter Nzioki"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_location_435:A",
+      "case_id": "C_location_435",
+      "qid": "435",
+      "arm": "A",
+      "uncertainty_type": "location",
+      "expected_action": "find",
+      "action": "find",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "find",
+        "arguments": {
+          "doc_id": "D2",
+          "query": "Oliver Mtukudzi first album period and exact album total"
+        },
+        "finish_reason": "stop",
+        "content": "Action: find\nArguments: {\"doc_id\":\"D2\",\"query\":\"Oliver Mtukudzi first album period and exact album total\"}\nReason: D2 is a known suitable biography, but no relevant window or evidence is yet located, so the next step is to find the specific album-period and total-albums evidence inside it."
+      }
+    },
+    {
+      "cell": "C_location_435:B",
+      "case_id": "C_location_435",
+      "qid": "435",
+      "arm": "B",
+      "uncertainty_type": "location",
+      "expected_action": "find",
+      "action": "find",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "find",
+        "arguments": {
+          "doc_ref": "D2",
+          "query": "first album debut album career began albums total"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_a9bfXFknMh2vstdRK9wv5340",
+            "name": "find",
+            "arguments": {
+              "doc_ref": "D2",
+              "query": "first album debut album career began albums total"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_location_387:A",
+      "case_id": "C_location_387",
+      "qid": "387",
+      "arm": "A",
+      "uncertainty_type": "location",
+      "expected_action": "find",
+      "action": "find",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "find",
+        "arguments": {
+          "doc_id": "D1",
+          "query": "8x11-inch paper"
+        },
+        "finish_reason": "stop",
+        "content": "Action: find\nArguments: {\"doc_id\":\"D1\",\"query\":\"8x11-inch paper\"}\nReason: D1 is the known suitable interview, and find is the action for locating the 8x11-inch paper passage inside a known document."
+      }
+    },
+    {
+      "cell": "C_location_387:B",
+      "case_id": "C_location_387",
+      "qid": "387",
+      "arm": "B",
+      "uncertainty_type": "location",
+      "expected_action": "find",
+      "action": "find",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "find",
+        "arguments": {
+          "doc_ref": "D1",
+          "query": "8x11 inch paper"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_qy3mewGUVbmpKTxorKKS7369",
+            "name": "find",
+            "arguments": {
+              "doc_ref": "D1",
+              "query": "8x11 inch paper"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_context_1094:A",
+      "case_id": "C_context_1094",
+      "qid": "1094",
+      "arm": "A",
+      "uncertainty_type": "context",
+      "expected_action": "open",
+      "action": "open",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "document_id": "D34",
+          "window_id": "W38",
+          "direction": "after"
+        },
+        "finish_reason": "stop",
+        "content": "Action: open\nArguments: {\"document_id\": \"D34\", \"window_id\": \"W38\", \"direction\": \"after\"}\nReason: The known fixture article window W38 ends during the opening goal narrative, so opening adjacent following context is needed to assess later scoring chronology."
+      }
+    },
+    {
+      "cell": "C_context_1094:B",
+      "case_id": "C_context_1094",
+      "qid": "1094",
+      "arm": "B",
+      "uncertainty_type": "context",
+      "expected_action": "open",
+      "action": "open",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "window_ref": "W38",
+          "direction": "after"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_WldQNxFLdhOauAqGN0bR9805",
+            "name": "open",
+            "arguments": {
+              "window_ref": "W38",
+              "direction": "after"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_context_546:A",
+      "case_id": "C_context_546",
+      "qid": "546",
+      "arm": "A",
+      "uncertainty_type": "context",
+      "expected_action": "open",
+      "action": "open",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "doc_id": "D11",
+          "window": "W14",
+          "direction": "around"
+        },
+        "finish_reason": "stop",
+        "content": "Action: open\nArguments: {\"doc_id\": \"D11\", \"window\": \"W14\", \"direction\": \"around\"}\nReason: W14 is a known relevant window in D11, and the gap requires reading its adjacent rows to find the neighboring dated match."
+      }
+    },
+    {
+      "cell": "C_context_546:B",
+      "case_id": "C_context_546",
+      "qid": "546",
+      "arm": "B",
+      "uncertainty_type": "context",
+      "expected_action": "open",
+      "action": "open",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "window_ref": "W14",
+          "direction": "around"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_o78lvnxSqgJWTkmrEupl8765",
+            "name": "open",
+            "arguments": {
+              "window_ref": "W14",
+              "direction": "around"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_context_517:A",
+      "case_id": "C_context_517",
+      "qid": "517",
+      "arm": "A",
+      "uncertainty_type": "context",
+      "expected_action": "open",
+      "action": "open",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "document": "D1",
+          "window": "W1"
+        },
+        "finish_reason": "stop",
+        "content": "Action: open\nArguments: {\"document\":\"D1\",\"window\":\"W1\"}\nReason: Open the known biography document D1 at window W1 to read the continuation immediately after the current Peter Nzioki career paragraph."
+      }
+    },
+    {
+      "cell": "C_context_517:B",
+      "case_id": "C_context_517",
+      "qid": "517",
+      "arm": "B",
+      "uncertainty_type": "context",
+      "expected_action": "open",
+      "action": "open",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "window_ref": "W1",
+          "direction": "after"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_Jp9lKrhuVGqYmFsGTnrD4876",
+            "name": "open",
+            "arguments": {
+              "window_ref": "W1",
+              "direction": "after"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_context_387:A",
+      "case_id": "C_context_387",
+      "qid": "387",
+      "arm": "A",
+      "uncertainty_type": "context",
+      "expected_action": "open",
+      "action": "open",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "document": "D1",
+          "window": "W1"
+        },
+        "finish_reason": "stop",
+        "content": "Action: open\nArguments: {\"document\":\"D1\",\"window\":\"W1\"}\nReason: W1 ends right after introducing the animation work area, so opening adjacent context in D1 is needed to read the interview continuation."
+      }
+    },
+    {
+      "cell": "C_context_387:B",
+      "case_id": "C_context_387",
+      "qid": "387",
+      "arm": "B",
+      "uncertainty_type": "context",
+      "expected_action": "open",
+      "action": "open",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "window_ref": "W1",
+          "direction": "after"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_BZ9BZKXGKi8mhIIJ5Mh58056",
+            "name": "open",
+            "arguments": {
+              "window_ref": "W1",
+              "direction": "after"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_context_580:A",
+      "case_id": "C_context_580",
+      "qid": "580",
+      "arm": "A",
+      "uncertainty_type": "context",
+      "expected_action": "open",
+      "action": "open",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "doc_id": "D1",
+          "window_id": "W1"
+        },
+        "finish_reason": "stop",
+        "content": "Action: open\nArguments: {\"doc_id\":\"D1\",\"window_id\":\"W1\"}\nReason: Open the known episode synopsis around W1 to read adjacent context and locate the friend’s stated reason why Jimmy left Gretchen."
+      }
+    },
+    {
+      "cell": "C_context_580:B",
+      "case_id": "C_context_580",
+      "qid": "580",
+      "arm": "B",
+      "uncertainty_type": "context",
+      "expected_action": "open",
+      "action": "open",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "window_ref": "W1",
+          "direction": "around"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_2oJDSNZPbdrO9Rz4jlQF2162",
+            "name": "open",
+            "arguments": {
+              "window_ref": "W1",
+              "direction": "around"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_closure_546:A",
+      "case_id": "C_closure_546",
+      "qid": "546",
+      "arm": "A",
+      "uncertainty_type": "closure",
+      "expected_action": "verify",
+      "action": "verify",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "verify",
+        "arguments": {
+          "claim_id": "C1",
+          "evidence_refs": [
+            "W13"
+          ]
+        },
+        "finish_reason": "stop",
+        "content": "Action: verify\nArguments: {\"claim_id\":\"C1\",\"evidence_refs\":[\"W13\"]}\nReason: W13 is already visible and directly discusses the result, so semantic verification against it can close C1."
+      }
+    },
+    {
+      "cell": "C_closure_546:B",
+      "case_id": "C_closure_546",
+      "qid": "546",
+      "arm": "B",
+      "uncertainty_type": "closure",
+      "expected_action": "verify",
+      "action": "open",
+      "correct": false,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "window_ref": "W13",
+          "direction": "around"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_aW9iukeTvSR6MAZp0sbZ5005",
+            "name": "open",
+            "arguments": {
+              "window_ref": "W13",
+              "direction": "around"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_closure_1094:A",
+      "case_id": "C_closure_1094",
+      "qid": "1094",
+      "arm": "A",
+      "uncertainty_type": "closure",
+      "expected_action": "verify",
+      "action": "verify",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "verify",
+        "arguments": {
+          "claim": "C1",
+          "evidence_refs": [
+            "W42"
+          ]
+        },
+        "finish_reason": "stop",
+        "content": "Action: verify\nArguments: {\"claim\":\"C1\",\"evidence_refs\":[\"W42\"]}\nReason: W42 is already visible and directly discusses the 1908 split, so the open claim can now be semantically verified against the known evidence."
+      }
+    },
+    {
+      "cell": "C_closure_1094:B",
+      "case_id": "C_closure_1094",
+      "qid": "1094",
+      "arm": "B",
+      "uncertainty_type": "closure",
+      "expected_action": "verify",
+      "action": "verify",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "verify",
+        "arguments": {
+          "claim_ref": "C1",
+          "evidence_refs": [
+            "W42"
+          ]
+        },
+        "all_calls": [
+          {
+            "id": "call_00_1IXyPz66tiIFIrqBUEtn6801",
+            "name": "verify",
+            "arguments": {
+              "claim_ref": "C1",
+              "evidence_refs": [
+                "W42"
+              ]
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_closure_517:A",
+      "case_id": "C_closure_517",
+      "qid": "517",
+      "arm": "A",
+      "uncertainty_type": "closure",
+      "expected_action": "verify",
+      "action": "verify",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "verify",
+        "arguments": {
+          "claim": "C1",
+          "evidence_refs": [
+            "W1"
+          ]
+        },
+        "finish_reason": "stop",
+        "content": "Action: verify\nArguments: {\"claim\":\"C1\",\"evidence_refs\":[\"W1\"]}\nReason: W1 already contains the candidate biography and is the known evidence ref, so the next step is to semantically verify whether it supports the claim about Peter Nzioki’s 1978 birth and parents."
+      }
+    },
+    {
+      "cell": "C_closure_517:B",
+      "case_id": "C_closure_517",
+      "qid": "517",
+      "arm": "B",
+      "uncertainty_type": "closure",
+      "expected_action": "verify",
+      "action": "verify",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "verify",
+        "arguments": {
+          "claim_ref": "C1",
+          "evidence_refs": [
+            "W1"
+          ]
+        },
+        "all_calls": [
+          {
+            "id": "call_00_HwVsDZr4aEyvSRsk4e5p7789",
+            "name": "verify",
+            "arguments": {
+              "claim_ref": "C1",
+              "evidence_refs": [
+                "W1"
+              ]
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_closure_435:A",
+      "case_id": "C_closure_435",
+      "qid": "435",
+      "arm": "A",
+      "uncertainty_type": "closure",
+      "expected_action": "verify",
+      "action": "verify",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "verify",
+        "arguments": {
+          "claim_id": "C1",
+          "evidence_refs": [
+            "W2"
+          ]
+        },
+        "finish_reason": "stop",
+        "content": "Action: verify\nArguments: {\"claim_id\":\"C1\",\"evidence_refs\":[\"W2\"]}\nReason: W2 is already the relevant obituary evidence, so verification can close the open claim about Mtukudzi’s age at death."
+      }
+    },
+    {
+      "cell": "C_closure_435:B",
+      "case_id": "C_closure_435",
+      "qid": "435",
+      "arm": "B",
+      "uncertainty_type": "closure",
+      "expected_action": "verify",
+      "action": "verify",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "verify",
+        "arguments": {
+          "claim_ref": "C1",
+          "evidence_refs": [
+            "W2"
+          ]
+        },
+        "all_calls": [
+          {
+            "id": "call_00_RliK0EJmpolg1jDZLvAd2678",
+            "name": "verify",
+            "arguments": {
+              "claim_ref": "C1",
+              "evidence_refs": [
+                "W2"
+              ]
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_closure_177:A",
+      "case_id": "C_closure_177",
+      "qid": "177",
+      "arm": "A",
+      "uncertainty_type": "closure",
+      "expected_action": "verify",
+      "action": "verify",
+      "correct": true,
+      "argument_valid": false,
+      "api_error": null,
+      "parsed": {
+        "action": "verify",
+        "arguments": {
+          "claim_id": "C1",
+          "evidence_refs": [
+            "W1"
+          ]
+        },
+        "finish_reason": "stop",
+        "content": "Action: verify\nArguments: {\"claim_id\":\"C1\",\"evidence_refs\":[\"W1\"]}\nReason: W1 is already observed as the relevant signing article, so the next step is to verify whether it supports the claim that Rangers signed 13 players ahead of 2022/23."
+      }
+    },
+    {
+      "cell": "C_closure_177:B",
+      "case_id": "C_closure_177",
+      "qid": "177",
+      "arm": "B",
+      "uncertainty_type": "closure",
+      "expected_action": "verify",
+      "action": "open",
+      "correct": false,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "open",
+        "arguments": {
+          "window_ref": "W1",
+          "direction": "around"
+        },
+        "all_calls": [
+          {
+            "id": "call_00_GEuEqUwb9IGEclATPXiy1298",
+            "name": "open",
+            "arguments": {
+              "window_ref": "W1",
+              "direction": "around"
+            }
+          }
+        ],
+        "validation": "valid",
+        "finish_reason": "tool_calls",
+        "content": ""
+      }
+    },
+    {
+      "cell": "C_complete_546:A",
+      "case_id": "C_complete_546",
+      "qid": "546",
+      "arm": "A",
+      "uncertainty_type": "complete",
+      "expected_action": "submit",
+      "action": "submit",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "submit",
+        "arguments": {},
+        "finish_reason": "stop",
+        "content": "Action: submit\nArguments: {}\nReason: The local opening-result subtask is complete with C1 verified and no remaining open claim or gap."
+      }
+    },
+    {
+      "cell": "C_complete_546:B",
+      "case_id": "C_complete_546",
+      "qid": "546",
+      "arm": "B",
+      "uncertainty_type": "complete",
+      "expected_action": "submit",
+      "action": "submit",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "submit",
+        "arguments": null,
+        "all_calls": [],
+        "validation": "valid",
+        "finish_reason": "stop",
+        "content": "The local opening-result subtask is complete: C1 is supported and verified — Ding beat Ma Hailong 4-3, with evidence in W13. No active gap or open claim remains, so no further research action is needed.\n\n**Final answer:** Ding defeated Ma Hailong 4-3."
+      }
+    },
+    {
+      "cell": "C_complete_1094:A",
+      "case_id": "C_complete_1094",
+      "qid": "1094",
+      "arm": "A",
+      "uncertainty_type": "complete",
+      "expected_action": "submit",
+      "action": "submit",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "submit",
+        "arguments": {},
+        "finish_reason": "stop",
+        "content": "Action: submit\nArguments: {}\nReason: The local club-origin subtask is complete with C1 verified against W42, and no open claim or gap remains."
+      }
+    },
+    {
+      "cell": "C_complete_1094:B",
+      "case_id": "C_complete_1094",
+      "qid": "1094",
+      "arm": "B",
+      "uncertainty_type": "complete",
+      "expected_action": "submit",
+      "action": "submit",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "submit",
+        "arguments": null,
+        "all_calls": [],
+        "validation": "valid",
+        "finish_reason": "stop",
+        "content": "## Final Answer\n\n**Subtask complete — no further research action needed.**\n\n**Claim C1 (verified):** Internazionale was formed following the 1908 split from the Milan Cricket and Football Club (AC Milan).\n\n**What the evidence establishes:**\n- A dissident group broke away from the Milan club in 1908.\n- That breakaway group founded the new club, Internazionale (\"Inter\").\n- The origin story is therefore a *split-based founding* originating from an existing Milan club, not an independent creation.\n\n**Supporting evidence:** W42 (C1 supported and verified).\n\n**Status:** No open claims remain in this local club-origin subtask, and no additional source type is required. Nothing left to search, find, open, or verify for this scope."
+      }
+    },
+    {
+      "cell": "C_complete_517:A",
+      "case_id": "C_complete_517",
+      "qid": "517",
+      "arm": "A",
+      "uncertainty_type": "complete",
+      "expected_action": "submit",
+      "action": "submit",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "submit",
+        "arguments": {},
+        "finish_reason": "stop",
+        "content": "Action: submit\nArguments: {}\nReason: The local birth-year subtask is complete with C1 supported and verified via W1, and no open claim or evidence gap remains."
+      }
+    },
+    {
+      "cell": "C_complete_517:B",
+      "case_id": "C_complete_517",
+      "qid": "517",
+      "arm": "B",
+      "uncertainty_type": "complete",
+      "expected_action": "submit",
+      "action": "submit",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "submit",
+        "arguments": null,
+        "all_calls": [],
+        "validation": "valid",
+        "finish_reason": "stop",
+        "content": "The local birth-year subtask is complete: claim C1 (Peter Nzioki born in 1978) is supported and verified by W1, and no open claim or gap remains. No further research action is needed.\n\n**Final answer:** Peter Nzioki was born in 1978."
+      }
+    },
+    {
+      "cell": "C_complete_435:A",
+      "case_id": "C_complete_435",
+      "qid": "435",
+      "arm": "A",
+      "uncertainty_type": "complete",
+      "expected_action": "submit",
+      "action": "submit",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "submit",
+        "arguments": {},
+        "finish_reason": "stop",
+        "content": "Action: submit\nArguments: {}\nReason: The local age-at-death subtask is complete and verified, with no remaining open gaps or claims."
+      }
+    },
+    {
+      "cell": "C_complete_435:B",
+      "case_id": "C_complete_435",
+      "qid": "435",
+      "arm": "B",
+      "uncertainty_type": "complete",
+      "expected_action": "submit",
+      "action": "submit",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "submit",
+        "arguments": null,
+        "all_calls": [],
+        "validation": "valid",
+        "finish_reason": "stop",
+        "content": "The local age-at-death subtask is complete. Verified claim C1 stands: Oliver Mtukudzi died at 66, supported by the observed evidence (W2). No open local claims remain, so no further research action is needed.\n\n**Final answer:** Oliver Mtukudzi died at age 66."
+      }
+    },
+    {
+      "cell": "C_complete_580:A",
+      "case_id": "C_complete_580",
+      "qid": "580",
+      "arm": "A",
+      "uncertainty_type": "complete",
+      "expected_action": "submit",
+      "action": "submit",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "submit",
+        "arguments": {},
+        "finish_reason": "stop",
+        "content": "Action: submit\nArguments: {}\nReason: The local season-four plot subtask is complete, with C1 supported and verified and no remaining open claims or gaps."
+      }
+    },
+    {
+      "cell": "C_complete_580:B",
+      "case_id": "C_complete_580",
+      "qid": "580",
+      "arm": "B",
+      "uncertainty_type": "complete",
+      "expected_action": "submit",
+      "action": "submit",
+      "correct": true,
+      "argument_valid": true,
+      "api_error": null,
+      "parsed": {
+        "action": "submit",
+        "arguments": null,
+        "all_calls": [],
+        "validation": "valid",
+        "finish_reason": "stop",
+        "content": "The local season-four plot subtask is complete. C1 — Gretchen returned for her brother's baby's birth — is supported and verified by W1, with no remaining open claims or gaps. No further retrieval is needed."
+      }
+    }
+  ]
+}
