@@ -1,0 +1,59 @@
+{
+  "frozen_at_utc": "2026-09-23T07:12:34.203033+00:00",
+  "model_order": [
+    "qwen3.7-flash",
+    "deepseek-flash"
+  ],
+  "arm_order": [
+    "E0",
+    "E1"
+  ],
+  "prior_qwen_cells": [
+    "546_mark_professional_refute:E0:qwen3.7-flash",
+    "546_mark_professional_refute:E1:qwen3.7-flash"
+  ],
+  "samples_per_cell": 1,
+  "tools": null,
+  "stream": false,
+  "sampling_overrides": {},
+  "max_retries": 0,
+  "qwen_host": "llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com",
+  "qwen_timeout_seconds": 180.0,
+  "deepseek_host": "api.deepseek.com",
+  "deepseek_timeout_seconds": 240,
+  "thinking_mode": "provider default",
+  "instruction_sha256": "1cc91edbf341a9c12678557547221740126489c488617ad0bcf7a4f616651137",
+  "case_file_sha256": "d63e78c24449c4ace1c59c788adf613fbc828baaa0dd56783a739283846e0ec8",
+  "rubric_sha256": "5e50756751b5c20d0d527a6f7cd9dc523485657286ffe3491ef288f1b635e6b8",
+  "old_events_sha256": "895635fafa62a5badce5e9a17597e832e0301a81926f2f0f55c562abea9b0e5a",
+  "m2_summary_sha256": "d4bee4022a00652d1c8c5fe785b99431e42cb3c49864c3d3d834edc88a33cbe8",
+  "baseline_fingerprints_sha256": "08b3480871323cb2c422a321f7f3101fabf6ec13b1721416b6abc3b6509a2c60",
+  "source_sha256": {
+    "experiments/model_backend_deepseek/evidence_update/run.py": "d470dfc4ef8cf44ad0eb7b6be3047a3468d35d0cdb23a7d5778f38ed49bd7c15",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14",
+    "experiments/model_backend_deepseek/cache_usage.py": "0fe723921efc5cb524539edcc436bd21994c5923fb10d2b6687cf9362560e8d6",
+    "experiments/model_backend_atria/evidence_update/run.py": "8c4e7852a6cb17a205d23633f954ebdc62ff4efeca63e2271d519fb6843b9f5b",
+    "experiments/model_backend_atria/evidence_update/analyze.py": "e60956f94aefd915b5cbc055f7e3063dd3ab21220852ca0bbc8d55a3bfa22a7e",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1",
+    "llm_chat/client.py": "126ee2d49ed526a64931b4ac7a27df1db63fb77ba10b5dd368770d0d79846204"
+  },
+  "messages_sha256": {
+    "546_mark_professional_refute:E0": "c4e828364950f22a20dead0d2c8b2c2fce380d0999ea4dc0fd5e9a7368b32e4b",
+    "546_mark_professional_refute:E1": "e917f44c84c2e047a9c65bfd63d50326bf91274b8a7e1b63878373d77c384c98",
+    "546_mark_maximum_refute:E0": "9838ab601601c89d7336b9dcf954a0fdfa8bed1b87a50c127cc8c37247926ab6",
+    "546_mark_maximum_refute:E1": "1b52bf9dc18b98e575f897e412bbf57fbb8abc5a14efdbdb28128b543884839b",
+    "546_ding_professional_support:E0": "36de97574140cf5e4653f8d14cbe6f8d8098ed15a8a4ca4281e1d4211bd2b6d2",
+    "546_ding_professional_support:E1": "b212ab430004721e79baf6fe314872f0e63c9247b808132d9fb07309d7274774",
+    "546_ding_breaks_support:E0": "a24d4f519f4f4cfb5b78650404c8adeea63eb5031de66fae02c7b75d2ae89dcc",
+    "546_ding_breaks_support:E1": "e59f3cf1c890a59b18ec70e17ec2142794a23e0cca6c327620c066c0b90a1b95",
+    "546_mark_result_non_support:E0": "92a7158cfcfa87b44f9ba6463abb2f8c13fc9be822a456bd775fde005fa71a62",
+    "546_mark_result_non_support:E1": "12acc94c4705f798384143e383e8e4615d6925833fed4a890fb21352c55b8980",
+    "1094_inter_split_support:E0": "efa66935f2c636959cbf12728a8d7d25f9b2c340274e7c1d910358bcfbadc3c2",
+    "1094_inter_split_support:E1": "ff0dde34fcce2ac3a5e71741b8bdb6ff66878dc8cd4372d192adcb28d12e8043",
+    "1094_inter_page_irrelevant:E0": "d228c6a14ef9cb2bd3838478d11e22849adc0e564609a044cb8207d12bf5173a",
+    "1094_inter_page_irrelevant:E1": "e4122b13d5988bbb3abfec7de9593ebf5089cd7fc15727851ffc7aa4942226e6",
+    "1094_totti_penalty_refute:E0": "c9a9d1533dc3215c1cf537ce74438eaffdb849bfcd2744d2f8b052c7b5d75b99",
+    "1094_totti_penalty_refute:E1": "6b4d7f846fbdb46031b79faf251b8ac9abc3da8bdd7c5741d24b344f8343534b"
+  },
+  "failure_policy": "Reuse two completed Qwen cells; once each for 14 remaining Qwen and 16 DeepSeek; preserve failures"
+}

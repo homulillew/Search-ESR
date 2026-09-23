@@ -1,0 +1,95 @@
+{
+  "checks": {
+    "ordinary_chat": true,
+    "auto_tool": true,
+    "forced_single_tool": false,
+    "synthetic_validation": true
+  },
+  "pass": false,
+  "observed": {
+    "ordinary_chat": {
+      "finish_reason": "stop",
+      "tool_count": 0,
+      "validation": "valid",
+      "error_type": null,
+      "cache_usage": {
+        "prompt_tokens": 35,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 35,
+        "reported_cached_tokens": 0,
+        "status": "reported",
+        "hit_rate": 0.0
+      }
+    },
+    "auto_tool": {
+      "finish_reason": "tool_calls",
+      "tool_count": 1,
+      "validation": "valid",
+      "error_type": null,
+      "cache_usage": {
+        "prompt_tokens": 686,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 686,
+        "reported_cached_tokens": 0,
+        "status": "reported",
+        "hit_rate": 0.0
+      }
+    },
+    "forced_single_tool": {
+      "finish_reason": null,
+      "tool_count": 0,
+      "validation": null,
+      "error_type": "BadRequestError",
+      "cache_usage": null
+    },
+    "multi_tool_prompt": {
+      "finish_reason": "tool_calls",
+      "tool_count": 2,
+      "validation": "valid",
+      "error_type": null,
+      "cache_usage": {
+        "prompt_tokens": 690,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 690,
+        "reported_cached_tokens": 0,
+        "status": "reported",
+        "hit_rate": 0.0
+      }
+    },
+    "stop_with_calls": {
+      "finish_reason": "stop",
+      "tool_count": 1,
+      "validation": "valid",
+      "error_type": null,
+      "cache_usage": null
+    },
+    "malformed_json": {
+      "finish_reason": "tool_calls",
+      "tool_count": 1,
+      "validation": "malformed_json",
+      "error_type": null,
+      "cache_usage": null
+    },
+    "undeclared_tool": {
+      "finish_reason": "tool_calls",
+      "tool_count": 1,
+      "validation": "undeclared_tool",
+      "error_type": null,
+      "cache_usage": null
+    },
+    "missing_required": {
+      "finish_reason": "tool_calls",
+      "tool_count": 1,
+      "validation": "schema_invalid",
+      "error_type": null,
+      "cache_usage": null
+    },
+    "batch_atomicity": {
+      "finish_reason": "tool_calls",
+      "tool_count": 2,
+      "validation": "schema_invalid",
+      "error_type": null,
+      "cache_usage": null
+    }
+  }
+}

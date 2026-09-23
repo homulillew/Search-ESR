@@ -1,0 +1,54 @@
+{
+  "rows": [
+    {
+      "qid": "546",
+      "model": "deepseek-flash",
+      "status": "api_error",
+      "decisions": 0,
+      "actions": {},
+      "documents": 0,
+      "windows": 0,
+      "errors": [
+        {
+          "kind": "api_error",
+          "decision": 1,
+          "error_type": "InternalServerError",
+          "http_status": 503
+        }
+      ],
+      "qwen_historical_first_12": {
+        "decisions": 7,
+        "actions": {
+          "search": 12
+        },
+        "documents": 19,
+        "windows": 41,
+        "comparison_note": "Qwen historical v3a; different harness and possible horizon"
+      }
+    },
+    {
+      "qid": "1094",
+      "model": "deepseek-flash",
+      "status": "horizon_no_answer",
+      "decisions": 12,
+      "actions": {
+        "search": 7,
+        "find": 3,
+        "open": 2
+      },
+      "documents": 51,
+      "windows": 56,
+      "errors": [],
+      "qwen_historical_first_12": {
+        "decisions": 12,
+        "actions": {
+          "search": 28
+        },
+        "documents": 62,
+        "windows": 87,
+        "comparison_note": "Qwen historical v3a; different harness and possible horizon"
+      }
+    }
+  ],
+  "model_effect_caveat": "Native DeepSeek used Orthogonal Search; historical Qwen used v3a. Tool mix and registry size are descriptive, not a randomized model-only effect."
+}

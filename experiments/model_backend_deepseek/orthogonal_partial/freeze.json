@@ -1,0 +1,65 @@
+{
+  "frozen_at_utc": "2026-09-23T07:23:36.163813+00:00",
+  "selection": [
+    {
+      "qid": "546",
+      "seq": 33,
+      "role": "document_triage",
+      "reason": "DeepSeek M1 document plan, natural M2 search batch"
+    },
+    {
+      "qid": "1094",
+      "seq": 69,
+      "role": "natural_verification",
+      "reason": "frozen local-verification cohort; Qwen stopped, DeepSeek searched"
+    },
+    {
+      "qid": "1094",
+      "seq": 23,
+      "role": "prefix_only_corpus",
+      "reason": "only corpus accepted by prefix annotation"
+    },
+    {
+      "qid": "1094",
+      "seq": 77,
+      "role": "stop_or_over_search",
+      "reason": "Qwen planned stop and DeepSeek corpus; test continuation"
+    }
+  ],
+  "arm_order": [
+    "P0",
+    "P1"
+  ],
+  "horizon_api_decisions": 4,
+  "replicates": 1,
+  "model": "deepseek-flash",
+  "base_url_host": "api.deepseek.com",
+  "timeout_seconds": 240,
+  "max_retries": 0,
+  "tool_schema_sha256": "60de1d45580c0dcd1fab666fbb97052122259f14c7f92bafab59825f3e7662ba",
+  "selection_sha256": "cf52c425cfd1b2cb01e2f7eaa254c80fbcf1133c99a177f55ec9b9914aee4829",
+  "baseline_fingerprints_sha256": "08b3480871323cb2c422a321f7f3101fabf6ec13b1721416b6abc3b6509a2c60",
+  "source_sha256": {
+    "experiments/model_backend_deepseek/orthogonal_partial/run.py": "5f22ac2be95297ea238d075621dd9d045b7e7d36c06907505e6cc95badf4637c",
+    "experiments/model_backend_deepseek/orthogonal_partial/SELECTION.json": "cf52c425cfd1b2cb01e2f7eaa254c80fbcf1133c99a177f55ec9b9914aee4829",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14",
+    "experiments/model_backend_deepseek/protocol.py": "d89d579c05c00cc3b4aaebad6d7b4311a1a6a2b359ff1bda98b66cd31a32904d",
+    "experiments/model_backend_deepseek/cache_usage.py": "0fe723921efc5cb524539edcc436bd21994c5923fb10d2b6687cf9362560e8d6",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1",
+    "llm_chat/agent.py": "e129a97b823881168be894e4b29bbac93f5da9f151c1c4260ef0b7fb7b06811a",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720",
+    "llm_chat/search_find_v3b_agent.py": "1788f3cf74df01dea25b1421a31d572a0ede6c9919c6df7fd8db8d4c76d8b56d",
+    "llm_chat/raw_windows.py": "b72948cf78cdf15dd4966721f49581738b7cd93430480149ead717fb230cee6f",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "llm_chat/window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339"
+  },
+  "initial_request_sha256": {
+    "546:33": "51334e7d3b09ce6a39fb0f36bf53e8bf8c2abcea2a5050d7c8a4aab22094fbc1",
+    "1094:69": "1ff211d4fb33d150a9aec157f04527483894bcaff1b90307bf37c69f2a40d6c8",
+    "1094:23": "c3dfcc400d1fed75e2fdf04bc0547411fc499ea4fbff0e1e3b81001d83cfc41b",
+    "1094:77": "f0e37708d2b84174914e8e22ed5677532a8d39c132a32cd6a49da99a7c98aa32"
+  },
+  "continuation": "natural stop only; no forced final answer",
+  "failure_policy": "All eight cells once, stop each on error; preserve raw output and cache usage"
+}

@@ -1,0 +1,94 @@
+{
+  "frozen_at_utc": "2026-09-23T06:58:59.648806+00:00",
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "timeout_seconds": 240,
+  "max_retries": 0,
+  "thinking_mode": "provider default",
+  "tools": null,
+  "samples_per_cell": 1,
+  "cases": [
+    [
+      "546",
+      9
+    ],
+    [
+      "546",
+      17
+    ],
+    [
+      "546",
+      25
+    ],
+    [
+      "546",
+      33
+    ],
+    [
+      "546",
+      41
+    ],
+    [
+      "1094",
+      23
+    ],
+    [
+      "1094",
+      34
+    ],
+    [
+      "1094",
+      45
+    ],
+    [
+      "1094",
+      53
+    ],
+    [
+      "1094",
+      61
+    ],
+    [
+      "1094",
+      69
+    ],
+    [
+      "1094",
+      77
+    ],
+    [
+      "1094",
+      93
+    ]
+  ],
+  "diagnostic_sha256": "7034232c5927b00739c03e602fdbfd705e131d738e49d5afa0409147135927a5",
+  "rubric_sha256": "bb6a0576644d1007ed40aba3e4918a6a1f5f95a24ebece5c09a681f05a0d4aa6",
+  "qwen_events_sha256": "50a359efeeec3af37d8e197fae00076f155345bea760daf64d1a5f7752c7de4a",
+  "m0_summary_sha256": "c925da7e1b73f81d785863e417ce1ffa97120cde382c85b0f227e7266d5118f4",
+  "m0b_summary_sha256": "d4771265bf3b3120e351669cfc14c8f89d6df72486aef2ef3f9fa513e9625853",
+  "baselines_sha256": "08b3480871323cb2c422a321f7f3101fabf6ec13b1721416b6abc3b6509a2c60",
+  "source_sha256": {
+    "experiments/model_backend_deepseek/planning_probe/run.py": "00b797546f85e081e5bca0f0373cde365c23de722d869a1cffce6598e7ae5ccd",
+    "experiments/model_backend_deepseek/cache_usage.py": "0fe723921efc5cb524539edcc436bd21994c5923fb10d2b6687cf9362560e8d6",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14",
+    "experiments/model_backend_atria/planning_probe/run.py": "61f4ad5e8eb356efe3782113bc1ff488aca0d3ec5139920841f6f68292791d2d",
+    "experiments/model_backend_atria/planning_probe/analyze.py": "7a701247158240a6cbb51869faa8d833659446d7baa6e966fb4fd1978d2c70a9",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1"
+  },
+  "messages_sha256": {
+    "546:9": "deeb0c9be99ad71c0dc8f9602cd829dccec369d11388dfd7eb2916f4f8422483",
+    "546:17": "ed6219366c172cd13d16d430ce2b0b8642e2b04c2566123ea7f263411b3669e8",
+    "546:25": "d9ddad7836746a74c1138645f139d6ae33eeb2aa4c9268e165214bae33ef6fc9",
+    "546:33": "ae3adbff352ec634e0eca3d1cbc7afbd2ebda4017ccd5d8ff8859d2154a59420",
+    "546:41": "af3c10d17944d77642d784a051d76ebf2a9b3765246b650de40625048bc9a28c",
+    "1094:23": "62bf13b22a8ea517d6e5deba3f8498e25cca115a73bde48a27fed9eabc44b4f8",
+    "1094:34": "a4a641ba356fab667e4b8db5e8c1cd9f8ee879775dd2a5124a5b2de76b21e647",
+    "1094:45": "0e3c86ad55ecef6d5f980f04c19ff5d4a66bcb5f05d9ceab448ed42affc1bcd3",
+    "1094:53": "9e2e44c408534dd9e9758010a8389ab6eda0826194b573f1c8a3ae0a1535f7b4",
+    "1094:61": "07ef48b48cfb940e4d0a175f8a0e7ea35b3ef6792082544a9948cc329089edd1",
+    "1094:69": "c883fd75ecae88a0957d4d2238817562f97b75c79bac0e7e3d972b6fecd242e1",
+    "1094:77": "9a37a118fa4c99e863b91168a1d3a258b1684f6b5190d87e012e08bf3c519b68",
+    "1094:93": "73d982524ea031e94c1caa0f2e570b74aa7a7ed6fda7b3c95f75393c9508ac8f"
+  },
+  "failure_policy": "All 13 DeepSeek cells once, no selective retry; preserve errors"
+}

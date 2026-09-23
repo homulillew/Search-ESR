@@ -20,3 +20,9 @@ The stage order is M0 protocol preflight, M1 same-prefix planning, M2 natural
 next action, conditional M3 partial rollout, independent M4 evidence update,
 and conditional M5 native trajectories. Each API stage is frozen before its
 first call. No historical Atria or Qwen event is modified.
+
+Execution and limitations are in `RESULTS.md`. The authoritative cache
+aggregate, including the separately frozen M0b forced-choice diagnostic, is
+`CACHE_USAGE_FINAL.json`; each stage event retains the original provider
+`usage` object. M4 began before M3 because the M3 entry rule was initially
+misread; the order deviation and M3 selection timing are recorded there.

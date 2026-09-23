@@ -1,0 +1,38 @@
+{
+  "frozen_at_utc": "2026-09-23T07:32:07.002775+00:00",
+  "qids": [
+    "546",
+    "1094"
+  ],
+  "model": "deepseek-flash",
+  "base_url_host": "api.deepseek.com",
+  "timeout_seconds": 240,
+  "max_retries": 0,
+  "horizon_api_decisions": 12,
+  "replicates": 1,
+  "harness": "Orthogonal Search, no State, unchanged prompt/schema/retriever",
+  "natural_stop_only": true,
+  "tool_schema_sha256": "60de1d45580c0dcd1fab666fbb97052122259f14c7f92bafab59825f3e7662ba",
+  "m1_summary_sha256": "aeb861cbdaa0b831e58373a49243e08e27141da481c782d3497b4e1c2ce9a746",
+  "m4_summary_sha256": "1221b6123e7f3475c6715e83116dc7331dd9b3ea33cb8ac9cab5f6d9a9a20cff",
+  "baseline_fingerprints_sha256": "08b3480871323cb2c422a321f7f3101fabf6ec13b1721416b6abc3b6509a2c60",
+  "source_sha256": {
+    "experiments/model_backend_deepseek/deepseek_native/run.py": "6d2b88ba94365e0c67c9cd1a0f8b64bd8675a31f6f246880a3ab3542fe1be1ad",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14",
+    "experiments/model_backend_deepseek/protocol.py": "d89d579c05c00cc3b4aaebad6d7b4311a1a6a2b359ff1bda98b66cd31a32904d",
+    "experiments/model_backend_deepseek/cache_usage.py": "0fe723921efc5cb524539edcc436bd21994c5923fb10d2b6687cf9362560e8d6",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1",
+    "llm_chat/agent.py": "e129a97b823881168be894e4b29bbac93f5da9f151c1c4260ef0b7fb7b06811a",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720",
+    "llm_chat/search_find_v3b_agent.py": "1788f3cf74df01dea25b1421a31d572a0ede6c9919c6df7fd8db8d4c76d8b56d",
+    "llm_chat/raw_windows.py": "b72948cf78cdf15dd4966721f49581738b7cd93430480149ead717fb230cee6f",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "llm_chat/window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339"
+  },
+  "initial_request_sha256": {
+    "546": "1a0cfc6c4923094e7099fc7ea3371ab474a2f8a2e618f314ff2dd501f9135f69",
+    "1094": "e71663416191bed2ea435e14dbfb4501eff3da926ee542db16b48a1d5a83a7d6"
+  },
+  "failure_policy": "one native trajectory per qid; no selective retry; record errors and horizon_no_answer"
+}

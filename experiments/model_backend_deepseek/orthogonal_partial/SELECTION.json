@@ -1,0 +1,38 @@
+{
+  "frozen_at_utc": "2026-09-23T07:18:11.183571+00:00",
+  "selection_basis": "M1 strong planning signal; M2 valid but no Find; selected without examining M4 response content",
+  "m1_summary_sha256": "aeb861cbdaa0b831e58373a49243e08e27141da481c782d3497b4e1c2ce9a746",
+  "m2_summary_sha256": "d4bee4022a00652d1c8c5fe785b99431e42cb3c49864c3d3d834edc88a33cbe8",
+  "cells": [
+    {
+      "qid": "546",
+      "seq": 33,
+      "role": "document_triage",
+      "reason": "DeepSeek M1 document plan, natural M2 search batch"
+    },
+    {
+      "qid": "1094",
+      "seq": 69,
+      "role": "natural_verification",
+      "reason": "frozen local-verification cohort; Qwen stopped, DeepSeek searched"
+    },
+    {
+      "qid": "1094",
+      "seq": 23,
+      "role": "prefix_only_corpus",
+      "reason": "only corpus accepted by prefix annotation"
+    },
+    {
+      "qid": "1094",
+      "seq": 77,
+      "role": "stop_or_over_search",
+      "reason": "Qwen planned stop and DeepSeek corpus; test continuation"
+    }
+  ],
+  "arms": [
+    "P0",
+    "P1"
+  ],
+  "decisions_per_cell": 4,
+  "one_sample_per_cell": true
+}

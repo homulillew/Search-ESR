@@ -1,0 +1,82 @@
+{
+  "546_mark_professional_refute:E1:qwen3.7-flash": {
+    "belief_update_correct": false,
+    "unsupported_override": false,
+    "reason": "Refutation and 1992 are stated, but the leading candidate is blank, change is no, and stop abandons unresolved full-question work."
+  },
+  "546_mark_professional_refute:E1:deepseek-flash": {
+    "belief_update_correct": false,
+    "unsupported_override": false,
+    "reason": "The text recognizes 1992 excludes Mark but still lists him as leading candidate with no change; the fields conflict."
+  },
+  "546_mark_maximum_refute:E1:qwen3.7-flash": {
+    "belief_update_correct": false,
+    "unsupported_override": false,
+    "reason": "The count of three refutes the claim, yet Mark remains the named leading candidate with no change."
+  },
+  "546_mark_maximum_refute:E1:deepseek-flash": {
+    "belief_update_correct": true,
+    "unsupported_override": false,
+    "reason": "The count of three disqualifies Mark, the leading candidate becomes none, and the full answer remains unresolved."
+  },
+  "546_ding_professional_support:E1:qwen3.7-flash": {
+    "belief_update_correct": true,
+    "unsupported_override": false,
+    "reason": "Accepts only the observed 2003 professional start and keeps the match sequence and other constraints unresolved."
+  },
+  "546_ding_professional_support:E1:deepseek-flash": {
+    "belief_update_correct": true,
+    "unsupported_override": false,
+    "reason": "Accepts the 2003 professional start as one supported condition and explicitly leaves the other conditions open."
+  },
+  "546_ding_breaks_support:E1:qwen3.7-flash": {
+    "belief_update_correct": false,
+    "unsupported_override": false,
+    "reason": "Relation is right but the leading-candidate field is malformed and stop is chosen despite unresolved match sequence."
+  },
+  "546_ding_breaks_support:E1:deepseek-flash": {
+    "belief_update_correct": false,
+    "unsupported_override": false,
+    "reason": "Acknowledges more than 600 centuries and seven maximums, then inconsistently says the more-than-three maximum-break element is not evidenced."
+  },
+  "546_mark_result_non_support:E1:qwen3.7-flash": {
+    "belief_update_correct": false,
+    "unsupported_override": false,
+    "reason": "Leaves the sequence unresolved but gives a malformed candidate/change field and stops before resolving the full question."
+  },
+  "546_mark_result_non_support:E1:deepseek-flash": {
+    "belief_update_correct": true,
+    "unsupported_override": false,
+    "reason": "Treats the partial result table as inconclusive and leaves the exact sequence and career conditions unresolved."
+  },
+  "1094_inter_split_support:E1:qwen3.7-flash": {
+    "belief_update_correct": false,
+    "unsupported_override": false,
+    "reason": "Recognizes the split, but omits a leading candidate and all remaining match/free-kick needs, then stops."
+  },
+  "1094_inter_split_support:E1:deepseek-flash": {
+    "belief_update_correct": true,
+    "unsupported_override": false,
+    "reason": "Accepts the Inter split only and explicitly keeps the match, opponent, timings, and free-kick taker unresolved."
+  },
+  "1094_inter_page_irrelevant:E1:qwen3.7-flash": {
+    "belief_update_correct": false,
+    "unsupported_override": false,
+    "reason": "Correctly calls the generic page irrelevant, but supplies no valid candidate/change field for the pending match."
+  },
+  "1094_inter_page_irrelevant:E1:deepseek-flash": {
+    "belief_update_correct": true,
+    "unsupported_override": false,
+    "reason": "Calls the page inconclusive rather than irrelevant, but correctly leaves the player and specific match unresolved without treating the page as proof."
+  },
+  "1094_totti_penalty_refute:E1:qwen3.7-flash": {
+    "belief_update_correct": false,
+    "unsupported_override": false,
+    "reason": "States penalty refutes free kick but omits the remaining original-match question and stops."
+  },
+  "1094_totti_penalty_refute:E1:deepseek-flash": {
+    "belief_update_correct": true,
+    "unsupported_override": false,
+    "reason": "Rejects the free-kick characterization of Totti’s incident and keeps the intended match and taker unresolved."
+  }
+}

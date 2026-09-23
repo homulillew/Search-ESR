@@ -1,0 +1,35 @@
+{
+  "frozen_at_utc": "2026-09-23T06:58:00.566329+00:00",
+  "purpose": "Named tool choice with thinking disabled, after default-thinking 400",
+  "model": "deepseek-flash",
+  "host": "api.deepseek.com",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Call search with query synthetic preflight and k=1."
+    }
+  ],
+  "tool_choice": {
+    "type": "function",
+    "function": {
+      "name": "search"
+    }
+  },
+  "extra_body": {
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "tool_schema_sha256": "60de1d45580c0dcd1fab666fbb97052122259f14c7f92bafab59825f3e7662ba",
+  "m0_summary_sha256": "c925da7e1b73f81d785863e417ce1ffa97120cde382c85b0f227e7266d5118f4",
+  "source_sha256": {
+    "experiments/model_backend_deepseek/forced_choice_compat.py": "1cacaef3c7a78604e652adfe338de2ca0e865f7142bdff380f3c7f58f94c1e7a",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14",
+    "experiments/model_backend_deepseek/protocol.py": "d89d579c05c00cc3b4aaebad6d7b4311a1a6a2b359ff1bda98b66cd31a32904d",
+    "experiments/model_backend_deepseek/cache_usage.py": "0fe723921efc5cb524539edcc436bd21994c5923fb10d2b6687cf9362560e8d6",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720"
+  },
+  "max_retries": 0,
+  "samples": 1,
+  "success_gate": "A single valid search tool call and preserved raw finish reason"
+}

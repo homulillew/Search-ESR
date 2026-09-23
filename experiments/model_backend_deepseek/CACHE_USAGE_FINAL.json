@@ -1,0 +1,1017 @@
+{
+  "model": "deepseek-flash",
+  "definition": "sum(hit tokens) / sum(hit tokens + miss tokens) over responses with consistent reported usage",
+  "stages": {
+    "M0": {
+      "responses": 3,
+      "api_errors": 1,
+      "usage_reported": 3,
+      "usage_unavailable": 0,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1411,
+      "weighted_hit_rate": 0.0,
+      "per_response": [
+        {
+          "cell": "ordinary_chat",
+          "cache": {
+            "prompt_tokens": 35,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 35,
+            "reported_cached_tokens": 0,
+            "status": "reported",
+            "hit_rate": 0.0
+          }
+        },
+        {
+          "cell": "auto_tool",
+          "cache": {
+            "prompt_tokens": 686,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 686,
+            "reported_cached_tokens": 0,
+            "status": "reported",
+            "hit_rate": 0.0
+          }
+        },
+        {
+          "cell": "multi_tool_prompt",
+          "cache": {
+            "prompt_tokens": 690,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 690,
+            "reported_cached_tokens": 0,
+            "status": "reported",
+            "hit_rate": 0.0
+          }
+        }
+      ]
+    },
+    "M1": {
+      "responses": 13,
+      "api_errors": 0,
+      "usage_reported": 13,
+      "usage_unavailable": 0,
+      "prompt_cache_hit_tokens": 277120,
+      "prompt_cache_miss_tokens": 84285,
+      "weighted_hit_rate": 0.766785185595108,
+      "per_response": [
+        {
+          "cell": "546:9:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 5428,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 5428,
+            "reported_cached_tokens": 0,
+            "status": "reported",
+            "hit_rate": 0.0
+          }
+        },
+        {
+          "cell": "546:17:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 10357,
+            "prompt_cache_hit_tokens": 5120,
+            "prompt_cache_miss_tokens": 5237,
+            "reported_cached_tokens": 5120,
+            "status": "reported",
+            "hit_rate": 0.49435164622960315
+          }
+        },
+        {
+          "cell": "546:25:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 14807,
+            "prompt_cache_hit_tokens": 10240,
+            "prompt_cache_miss_tokens": 4567,
+            "reported_cached_tokens": 10240,
+            "status": "reported",
+            "hit_rate": 0.691564800432228
+          }
+        },
+        {
+          "cell": "546:33:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 19594,
+            "prompt_cache_hit_tokens": 14720,
+            "prompt_cache_miss_tokens": 4874,
+            "reported_cached_tokens": 14720,
+            "status": "reported",
+            "hit_rate": 0.7512503827702358
+          }
+        },
+        {
+          "cell": "546:41:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 24209,
+            "prompt_cache_hit_tokens": 19328,
+            "prompt_cache_miss_tokens": 4881,
+            "reported_cached_tokens": 19328,
+            "status": "reported",
+            "hit_rate": 0.7983807674831674
+          }
+        },
+        {
+          "cell": "1094:23:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 14763,
+            "prompt_cache_hit_tokens": 128,
+            "prompt_cache_miss_tokens": 14635,
+            "reported_cached_tokens": 128,
+            "status": "reported",
+            "hit_rate": 0.008670324459798144
+          }
+        },
+        {
+          "cell": "1094:34:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 22453,
+            "prompt_cache_hit_tokens": 14464,
+            "prompt_cache_miss_tokens": 7989,
+            "reported_cached_tokens": 14464,
+            "status": "reported",
+            "hit_rate": 0.6441900859573331
+          }
+        },
+        {
+          "cell": "1094:45:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 29068,
+            "prompt_cache_hit_tokens": 22144,
+            "prompt_cache_miss_tokens": 6924,
+            "reported_cached_tokens": 22144,
+            "status": "reported",
+            "hit_rate": 0.7617999174349801
+          }
+        },
+        {
+          "cell": "1094:53:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 33157,
+            "prompt_cache_hit_tokens": 28800,
+            "prompt_cache_miss_tokens": 4357,
+            "reported_cached_tokens": 28800,
+            "status": "reported",
+            "hit_rate": 0.8685948668456133
+          }
+        },
+        {
+          "cell": "1094:61:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 38248,
+            "prompt_cache_hit_tokens": 32896,
+            "prompt_cache_miss_tokens": 5352,
+            "reported_cached_tokens": 32896,
+            "status": "reported",
+            "hit_rate": 0.8600711148295336
+          }
+        },
+        {
+          "cell": "1094:69:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 43229,
+            "prompt_cache_hit_tokens": 38144,
+            "prompt_cache_miss_tokens": 5085,
+            "reported_cached_tokens": 38144,
+            "status": "reported",
+            "hit_rate": 0.8823706308265284
+          }
+        },
+        {
+          "cell": "1094:77:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 48286,
+            "prompt_cache_hit_tokens": 43136,
+            "prompt_cache_miss_tokens": 5150,
+            "reported_cached_tokens": 43136,
+            "status": "reported",
+            "hit_rate": 0.8933438263678913
+          }
+        },
+        {
+          "cell": "1094:93:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 57806,
+            "prompt_cache_hit_tokens": 48000,
+            "prompt_cache_miss_tokens": 9806,
+            "reported_cached_tokens": 48000,
+            "status": "reported",
+            "hit_rate": 0.8303636300730028
+          }
+        }
+      ]
+    },
+    "M2": {
+      "responses": 13,
+      "api_errors": 0,
+      "usage_reported": 13,
+      "usage_unavailable": 0,
+      "prompt_cache_hit_tokens": 358016,
+      "prompt_cache_miss_tokens": 113367,
+      "weighted_hit_rate": 0.7595012972466126,
+      "per_response": [
+        {
+          "cell": "546:9:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 8984,
+            "prompt_cache_hit_tokens": 128,
+            "prompt_cache_miss_tokens": 8856,
+            "reported_cached_tokens": 128,
+            "status": "reported",
+            "hit_rate": 0.014247551202137132
+          }
+        },
+        {
+          "cell": "546:17:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 15335,
+            "prompt_cache_hit_tokens": 8960,
+            "prompt_cache_miss_tokens": 6375,
+            "reported_cached_tokens": 8960,
+            "status": "reported",
+            "hit_rate": 0.5842843169220737
+          }
+        },
+        {
+          "cell": "546:25:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 20954,
+            "prompt_cache_hit_tokens": 15232,
+            "prompt_cache_miss_tokens": 5722,
+            "reported_cached_tokens": 15232,
+            "status": "reported",
+            "hit_rate": 0.7269256466545767
+          }
+        },
+        {
+          "cell": "546:33:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 26966,
+            "prompt_cache_hit_tokens": 20864,
+            "prompt_cache_miss_tokens": 6102,
+            "reported_cached_tokens": 20864,
+            "status": "reported",
+            "hit_rate": 0.773715048579693
+          }
+        },
+        {
+          "cell": "546:41:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 32768,
+            "prompt_cache_hit_tokens": 26880,
+            "prompt_cache_miss_tokens": 5888,
+            "reported_cached_tokens": 26880,
+            "status": "reported",
+            "hit_rate": 0.8203125
+          }
+        },
+        {
+          "cell": "1094:23:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 18042,
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 17274,
+            "reported_cached_tokens": 768,
+            "status": "reported",
+            "hit_rate": 0.04256734286664449
+          }
+        },
+        {
+          "cell": "1094:34:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 26975,
+            "prompt_cache_hit_tokens": 17920,
+            "prompt_cache_miss_tokens": 9055,
+            "reported_cached_tokens": 17920,
+            "status": "reported",
+            "hit_rate": 0.6643188137164041
+          }
+        },
+        {
+          "cell": "1094:45:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 36125,
+            "prompt_cache_hit_tokens": 26880,
+            "prompt_cache_miss_tokens": 9245,
+            "reported_cached_tokens": 26880,
+            "status": "reported",
+            "hit_rate": 0.744083044982699
+          }
+        },
+        {
+          "cell": "1094:53:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 41266,
+            "prompt_cache_hit_tokens": 36096,
+            "prompt_cache_miss_tokens": 5170,
+            "reported_cached_tokens": 36096,
+            "status": "reported",
+            "hit_rate": 0.8747152619589977
+          }
+        },
+        {
+          "cell": "1094:61:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 46843,
+            "prompt_cache_hit_tokens": 41216,
+            "prompt_cache_miss_tokens": 5627,
+            "reported_cached_tokens": 41216,
+            "status": "reported",
+            "hit_rate": 0.8798753282240677
+          }
+        },
+        {
+          "cell": "1094:69:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 53450,
+            "prompt_cache_hit_tokens": 46720,
+            "prompt_cache_miss_tokens": 6730,
+            "reported_cached_tokens": 46720,
+            "status": "reported",
+            "hit_rate": 0.874087932647334
+          }
+        },
+        {
+          "cell": "1094:77:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 63030,
+            "prompt_cache_hit_tokens": 53376,
+            "prompt_cache_miss_tokens": 9654,
+            "reported_cached_tokens": 53376,
+            "status": "reported",
+            "hit_rate": 0.846834840552118
+          }
+        },
+        {
+          "cell": "1094:93:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 80645,
+            "prompt_cache_hit_tokens": 62976,
+            "prompt_cache_miss_tokens": 17669,
+            "reported_cached_tokens": 62976,
+            "status": "reported",
+            "hit_rate": 0.7809039618079237
+          }
+        }
+      ]
+    },
+    "M3": {
+      "responses": 26,
+      "api_errors": 0,
+      "usage_reported": 26,
+      "usage_unavailable": 0,
+      "prompt_cache_hit_tokens": 1064320,
+      "prompt_cache_miss_tokens": 76854,
+      "weighted_hit_rate": 0.9326535655386471,
+      "per_response": [
+        {
+          "cell": "546:33:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 26966,
+            "prompt_cache_hit_tokens": 26752,
+            "prompt_cache_miss_tokens": 214,
+            "reported_cached_tokens": 26752,
+            "status": "reported",
+            "hit_rate": 0.9920640806942075
+          }
+        },
+        {
+          "cell": "546:33:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 31579,
+            "prompt_cache_hit_tokens": 27136,
+            "prompt_cache_miss_tokens": 4443,
+            "reported_cached_tokens": 27136,
+            "status": "reported",
+            "hit_rate": 0.8593052344912758
+          }
+        },
+        {
+          "cell": "546:33:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 45635,
+            "prompt_cache_hit_tokens": 40832,
+            "prompt_cache_miss_tokens": 4803,
+            "reported_cached_tokens": 40832,
+            "status": "reported",
+            "hit_rate": 0.8947518352141997
+          }
+        },
+        {
+          "cell": "546:33:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 53016,
+            "prompt_cache_hit_tokens": 48128,
+            "prompt_cache_miss_tokens": 4888,
+            "reported_cached_tokens": 48128,
+            "status": "reported",
+            "hit_rate": 0.9078014184397163
+          }
+        },
+        {
+          "cell": "546:33:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 26966,
+            "prompt_cache_hit_tokens": 26752,
+            "prompt_cache_miss_tokens": 214,
+            "reported_cached_tokens": 26752,
+            "status": "reported",
+            "hit_rate": 0.9920640806942075
+          }
+        },
+        {
+          "cell": "546:33:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 30960,
+            "prompt_cache_hit_tokens": 29184,
+            "prompt_cache_miss_tokens": 1776,
+            "reported_cached_tokens": 29184,
+            "status": "reported",
+            "hit_rate": 0.9426356589147287
+          }
+        },
+        {
+          "cell": "546:33:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 36902,
+            "prompt_cache_hit_tokens": 35584,
+            "prompt_cache_miss_tokens": 1318,
+            "reported_cached_tokens": 35584,
+            "status": "reported",
+            "hit_rate": 0.9642837786569833
+          }
+        },
+        {
+          "cell": "546:33:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 38752,
+            "prompt_cache_hit_tokens": 37504,
+            "prompt_cache_miss_tokens": 1248,
+            "reported_cached_tokens": 37504,
+            "status": "reported",
+            "hit_rate": 0.967795210569777
+          }
+        },
+        {
+          "cell": "1094:69:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 53450,
+            "prompt_cache_hit_tokens": 53248,
+            "prompt_cache_miss_tokens": 202,
+            "reported_cached_tokens": 53248,
+            "status": "reported",
+            "hit_rate": 0.9962207670720299
+          }
+        },
+        {
+          "cell": "1094:69:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 63014,
+            "prompt_cache_hit_tokens": 56192,
+            "prompt_cache_miss_tokens": 6822,
+            "reported_cached_tokens": 56192,
+            "status": "reported",
+            "hit_rate": 0.8917383438600945
+          }
+        },
+        {
+          "cell": "1094:69:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 71508,
+            "prompt_cache_hit_tokens": 64256,
+            "prompt_cache_miss_tokens": 7252,
+            "reported_cached_tokens": 64256,
+            "status": "reported",
+            "hit_rate": 0.8985847737316105
+          }
+        },
+        {
+          "cell": "1094:69:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 80384,
+            "prompt_cache_hit_tokens": 72960,
+            "prompt_cache_miss_tokens": 7424,
+            "reported_cached_tokens": 72960,
+            "status": "reported",
+            "hit_rate": 0.9076433121019108
+          }
+        },
+        {
+          "cell": "1094:69:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 53450,
+            "prompt_cache_hit_tokens": 53248,
+            "prompt_cache_miss_tokens": 202,
+            "reported_cached_tokens": 53248,
+            "status": "reported",
+            "hit_rate": 0.9962207670720299
+          }
+        },
+        {
+          "cell": "1094:69:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 56771,
+            "prompt_cache_hit_tokens": 54272,
+            "prompt_cache_miss_tokens": 2499,
+            "reported_cached_tokens": 54272,
+            "status": "reported",
+            "hit_rate": 0.9559810466611475
+          }
+        },
+        {
+          "cell": "1094:69:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 59678,
+            "prompt_cache_hit_tokens": 58368,
+            "prompt_cache_miss_tokens": 1310,
+            "reported_cached_tokens": 58368,
+            "status": "reported",
+            "hit_rate": 0.9780488622272865
+          }
+        },
+        {
+          "cell": "1094:69:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 63084,
+            "prompt_cache_hit_tokens": 60544,
+            "prompt_cache_miss_tokens": 2540,
+            "reported_cached_tokens": 60544,
+            "status": "reported",
+            "hit_rate": 0.9597362247162513
+          }
+        },
+        {
+          "cell": "1094:23:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 18042,
+            "prompt_cache_hit_tokens": 17792,
+            "prompt_cache_miss_tokens": 250,
+            "reported_cached_tokens": 17792,
+            "status": "reported",
+            "hit_rate": 0.9861434430772642
+          }
+        },
+        {
+          "cell": "1094:23:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 26447,
+            "prompt_cache_hit_tokens": 19328,
+            "prompt_cache_miss_tokens": 7119,
+            "reported_cached_tokens": 19328,
+            "status": "reported",
+            "hit_rate": 0.7308201308276931
+          }
+        },
+        {
+          "cell": "1094:23:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 35454,
+            "prompt_cache_hit_tokens": 28544,
+            "prompt_cache_miss_tokens": 6910,
+            "reported_cached_tokens": 28544,
+            "status": "reported",
+            "hit_rate": 0.805099565634343
+          }
+        },
+        {
+          "cell": "1094:23:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 44029,
+            "prompt_cache_hit_tokens": 37120,
+            "prompt_cache_miss_tokens": 6909,
+            "reported_cached_tokens": 37120,
+            "status": "reported",
+            "hit_rate": 0.8430806968134639
+          }
+        },
+        {
+          "cell": "1094:23:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 18042,
+            "prompt_cache_hit_tokens": 17792,
+            "prompt_cache_miss_tokens": 250,
+            "reported_cached_tokens": 17792,
+            "status": "reported",
+            "hit_rate": 0.9861434430772642
+          }
+        },
+        {
+          "cell": "1094:23:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 23368,
+            "prompt_cache_hit_tokens": 19968,
+            "prompt_cache_miss_tokens": 3400,
+            "reported_cached_tokens": 19968,
+            "status": "reported",
+            "hit_rate": 0.8545018829168093
+          }
+        },
+        {
+          "cell": "1094:23:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 26125,
+            "prompt_cache_hit_tokens": 24448,
+            "prompt_cache_miss_tokens": 1677,
+            "reported_cached_tokens": 24448,
+            "status": "reported",
+            "hit_rate": 0.9358086124401914
+          }
+        },
+        {
+          "cell": "1094:23:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 31492,
+            "prompt_cache_hit_tokens": 28672,
+            "prompt_cache_miss_tokens": 2820,
+            "reported_cached_tokens": 28672,
+            "status": "reported",
+            "hit_rate": 0.9104534484948559
+          }
+        },
+        {
+          "cell": "1094:77:P0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 63030,
+            "prompt_cache_hit_tokens": 62848,
+            "prompt_cache_miss_tokens": 182,
+            "reported_cached_tokens": 62848,
+            "status": "reported",
+            "hit_rate": 0.9971124861177217
+          }
+        },
+        {
+          "cell": "1094:77:P1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 63030,
+            "prompt_cache_hit_tokens": 62848,
+            "prompt_cache_miss_tokens": 182,
+            "reported_cached_tokens": 62848,
+            "status": "reported",
+            "hit_rate": 0.9971124861177217
+          }
+        }
+      ]
+    },
+    "M4": {
+      "responses": 16,
+      "api_errors": 0,
+      "usage_reported": 16,
+      "usage_unavailable": 0,
+      "prompt_cache_hit_tokens": 311040,
+      "prompt_cache_miss_tokens": 4133,
+      "weighted_hit_rate": 0.9868865670599957,
+      "per_response": [
+        {
+          "cell": "546_mark_professional_refute:E0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 5472,
+            "prompt_cache_hit_tokens": 5120,
+            "prompt_cache_miss_tokens": 352,
+            "reported_cached_tokens": 5120,
+            "status": "reported",
+            "hit_rate": 0.935672514619883
+          }
+        },
+        {
+          "cell": "546_mark_professional_refute:E1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 5566,
+            "prompt_cache_hit_tokens": 5376,
+            "prompt_cache_miss_tokens": 190,
+            "reported_cached_tokens": 5376,
+            "status": "reported",
+            "hit_rate": 0.9658641753503413
+          }
+        },
+        {
+          "cell": "546_mark_maximum_refute:E0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 5471,
+            "prompt_cache_hit_tokens": 5248,
+            "prompt_cache_miss_tokens": 223,
+            "reported_cached_tokens": 5248,
+            "status": "reported",
+            "hit_rate": 0.95923962712484
+          }
+        },
+        {
+          "cell": "546_mark_maximum_refute:E1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 5541,
+            "prompt_cache_hit_tokens": 5376,
+            "prompt_cache_miss_tokens": 165,
+            "reported_cached_tokens": 5376,
+            "status": "reported",
+            "hit_rate": 0.9702219815917704
+          }
+        },
+        {
+          "cell": "546_ding_professional_support:E0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 19639,
+            "prompt_cache_hit_tokens": 19328,
+            "prompt_cache_miss_tokens": 311,
+            "reported_cached_tokens": 19328,
+            "status": "reported",
+            "hit_rate": 0.984164163144763
+          }
+        },
+        {
+          "cell": "546_ding_professional_support:E1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 19703,
+            "prompt_cache_hit_tokens": 19456,
+            "prompt_cache_miss_tokens": 247,
+            "reported_cached_tokens": 19456,
+            "status": "reported",
+            "hit_rate": 0.9874638379942141
+          }
+        },
+        {
+          "cell": "546_ding_breaks_support:E0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 19642,
+            "prompt_cache_hit_tokens": 19328,
+            "prompt_cache_miss_tokens": 314,
+            "reported_cached_tokens": 19328,
+            "status": "reported",
+            "hit_rate": 0.9840138478769983
+          }
+        },
+        {
+          "cell": "546_ding_breaks_support:E1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 19696,
+            "prompt_cache_hit_tokens": 19456,
+            "prompt_cache_miss_tokens": 240,
+            "reported_cached_tokens": 19456,
+            "status": "reported",
+            "hit_rate": 0.9878147847278635
+          }
+        },
+        {
+          "cell": "546_mark_result_non_support:E0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 5487,
+            "prompt_cache_hit_tokens": 5248,
+            "prompt_cache_miss_tokens": 239,
+            "reported_cached_tokens": 5248,
+            "status": "reported",
+            "hit_rate": 0.9564425004556224
+          }
+        },
+        {
+          "cell": "546_mark_result_non_support:E1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 5651,
+            "prompt_cache_hit_tokens": 5376,
+            "prompt_cache_miss_tokens": 275,
+            "reported_cached_tokens": 5376,
+            "status": "reported",
+            "hit_rate": 0.9513360467173951
+          }
+        },
+        {
+          "cell": "1094_inter_split_support:E0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 29110,
+            "prompt_cache_hit_tokens": 28800,
+            "prompt_cache_miss_tokens": 310,
+            "reported_cached_tokens": 28800,
+            "status": "reported",
+            "hit_rate": 0.9893507385778083
+          }
+        },
+        {
+          "cell": "1094_inter_split_support:E1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 29171,
+            "prompt_cache_hit_tokens": 28928,
+            "prompt_cache_miss_tokens": 243,
+            "reported_cached_tokens": 28928,
+            "status": "reported",
+            "hit_rate": 0.9916698090569401
+          }
+        },
+        {
+          "cell": "1094_inter_page_irrelevant:E0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 43282,
+            "prompt_cache_hit_tokens": 43136,
+            "prompt_cache_miss_tokens": 146,
+            "reported_cached_tokens": 43136,
+            "status": "reported",
+            "hit_rate": 0.9966267732544707
+          }
+        },
+        {
+          "cell": "1094_inter_page_irrelevant:E1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 43457,
+            "prompt_cache_hit_tokens": 43136,
+            "prompt_cache_miss_tokens": 321,
+            "reported_cached_tokens": 43136,
+            "status": "reported",
+            "hit_rate": 0.992613387946706
+          }
+        },
+        {
+          "cell": "1094_totti_penalty_refute:E0:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 29114,
+            "prompt_cache_hit_tokens": 28800,
+            "prompt_cache_miss_tokens": 314,
+            "reported_cached_tokens": 28800,
+            "status": "reported",
+            "hit_rate": 0.989214810743972
+          }
+        },
+        {
+          "cell": "1094_totti_penalty_refute:E1:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 29171,
+            "prompt_cache_hit_tokens": 28928,
+            "prompt_cache_miss_tokens": 243,
+            "reported_cached_tokens": 28928,
+            "status": "reported",
+            "hit_rate": 0.9916698090569401
+          }
+        }
+      ]
+    },
+    "M5": {
+      "responses": 12,
+      "api_errors": 1,
+      "usage_reported": 12,
+      "usage_unavailable": 0,
+      "prompt_cache_hit_tokens": 220032,
+      "prompt_cache_miss_tokens": 27308,
+      "weighted_hit_rate": 0.8895932724185331,
+      "per_response": [
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 984,
+            "prompt_cache_hit_tokens": 768,
+            "prompt_cache_miss_tokens": 216,
+            "reported_cached_tokens": 768,
+            "status": "reported",
+            "hit_rate": 0.7804878048780488
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 5589,
+            "prompt_cache_hit_tokens": 1408,
+            "prompt_cache_miss_tokens": 4181,
+            "reported_cached_tokens": 1408,
+            "status": "reported",
+            "hit_rate": 0.2519234210055466
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 8935,
+            "prompt_cache_hit_tokens": 6144,
+            "prompt_cache_miss_tokens": 2791,
+            "reported_cached_tokens": 6144,
+            "status": "reported",
+            "hit_rate": 0.6876329043088976
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 14370,
+            "prompt_cache_hit_tokens": 9600,
+            "prompt_cache_miss_tokens": 4770,
+            "reported_cached_tokens": 9600,
+            "status": "reported",
+            "hit_rate": 0.6680584551148225
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 19028,
+            "prompt_cache_hit_tokens": 14848,
+            "prompt_cache_miss_tokens": 4180,
+            "reported_cached_tokens": 14848,
+            "status": "reported",
+            "hit_rate": 0.7803237334454488
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 23098,
+            "prompt_cache_hit_tokens": 19072,
+            "prompt_cache_miss_tokens": 4026,
+            "reported_cached_tokens": 19072,
+            "status": "reported",
+            "hit_rate": 0.8256991947354749
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 26896,
+            "prompt_cache_hit_tokens": 23936,
+            "prompt_cache_miss_tokens": 2960,
+            "reported_cached_tokens": 23936,
+            "status": "reported",
+            "hit_rate": 0.8899464604402142
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 27752,
+            "prompt_cache_hit_tokens": 27136,
+            "prompt_cache_miss_tokens": 616,
+            "reported_cached_tokens": 27136,
+            "status": "reported",
+            "hit_rate": 0.9778034015566446
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 28350,
+            "prompt_cache_hit_tokens": 27776,
+            "prompt_cache_miss_tokens": 574,
+            "reported_cached_tokens": 27776,
+            "status": "reported",
+            "hit_rate": 0.9797530864197531
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 29746,
+            "prompt_cache_hit_tokens": 28416,
+            "prompt_cache_miss_tokens": 1330,
+            "reported_cached_tokens": 28416,
+            "status": "reported",
+            "hit_rate": 0.9552881059638271
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 30912,
+            "prompt_cache_hit_tokens": 29824,
+            "prompt_cache_miss_tokens": 1088,
+            "reported_cached_tokens": 29824,
+            "status": "reported",
+            "hit_rate": 0.9648033126293996
+          }
+        },
+        {
+          "cell": "1094:deepseek-flash",
+          "cache": {
+            "prompt_tokens": 31680,
+            "prompt_cache_hit_tokens": 31104,
+            "prompt_cache_miss_tokens": 576,
+            "reported_cached_tokens": 31104,
+            "status": "reported",
+            "hit_rate": 0.9818181818181818
+          }
+        }
+      ]
+    },
+    "M0b": {
+      "responses": 1,
+      "api_errors": 0,
+      "usage_reported": 1,
+      "usage_unavailable": 0,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 361,
+      "weighted_hit_rate": 0.0,
+      "per_response": [
+        {
+          "cell": "forced_single_tool_thinking_disabled",
+          "cache": {
+            "prompt_tokens": 361,
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 361,
+            "reported_cached_tokens": 0,
+            "status": "reported",
+            "hit_rate": 0.0
+          }
+        }
+      ]
+    }
+  },
+  "all_stages": {
+    "responses": 84,
+    "api_errors": 2,
+    "usage_reported": 84,
+    "usage_unavailable": 0,
+    "prompt_cache_hit_tokens": 2230528,
+    "prompt_cache_miss_tokens": 307719,
+    "weighted_hit_rate": 0.8787671176209407
+  },
+  "scope_note": "All experimental DeepSeek Chat Completions responses M0-M5, including M0b. Failed requests have unknown cache usage; no artificial cache warm-up. This observed hit rate may include provider cache from activity outside the experiment."
+}
