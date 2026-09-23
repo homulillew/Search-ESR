@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "cases": "8 one-per-qid clean Progress Views; 6 low and 2 medium ambiguity",
+  "frontier_acceptability": "Chosen single G# is in the pre-call acceptable_active_gaps set.",
+  "closed_gap_reselection": "Chosen G# is in unacceptable_closed_gaps.",
+  "premature_downstream": "Chosen G# is in unsupported_hypothesis_gaps or generated answer commitment equivalent to it.",
+  "source_type_compatibility": "Single-reviewer semantic check of model Expected source type against pre-call preferred_source_types for its selected acceptable G#; record reason. A selected unsuitable gap is source-type incompatible for the current frontier.",
+  "known_source": "Check output D# exists in the view directory and can directly help the selected G#; none is valid if no observed source is suitable.",
+  "invalid_policy": "Missing/invalid response or unrecognized G# counts against acceptability; retain error, no retry.",
+  "gate": "Acceptable >=75% of all cases AND closed-gap reselection <=10% AND premature downstream <=15%; report low-ambiguity subset separately."
+}

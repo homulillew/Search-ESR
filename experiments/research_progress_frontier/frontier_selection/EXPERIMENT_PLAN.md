@@ -1,0 +1,5 @@
+# Stage B: Closure → Frontier
+
+Eight prefix-only, one-per-qid clean Progress Views are frozen after Stage A passed. Each contains the original question, candidate hypothesis, four reviewer status claims, four named research questions and a directory of actually observed document titles. The reviewer froze two acceptable active gaps per case, one closed gap, one premature downstream question and preferred source types. The Actor receives the view and must choose exactly one G#; the acceptable set is not shown. Historical plans, long message history, later tools and final answers are excluded.
+
+For legacy histories, the new view deterministically aliases already observed raw docids to D1/D2 and records the original mapping privately. This is a new Stage B presentation only; Stage A kept raw historical handles. Orthogonal Search D#/W# remain unchanged. A candidate can remain provisional; a gap may be open without being the current research frontier. One DeepSeek response per case, no tools, zero retries. Source-type and known-source judgments are reviewed against the frozen preferred types and observed directory after calls, independent of ActiveGap parsing.
