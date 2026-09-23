@@ -1,0 +1,2159 @@
+{
+  "summary": {
+    "by_arm": {
+      "O": {
+        "n": 24,
+        "errors": 6,
+        "claims": 37,
+        "claims_per_case": 1.5416666666666667,
+        "progress_appropriate_precision": 0.05405405405405406,
+        "progress_appropriate_fraction": [
+          2,
+          37
+        ],
+        "case_mean_precision": 0.027777777777777776,
+        "coverage": 0.08333333333333333,
+        "premature_rate": 0.02702702702702703,
+        "redundant_rate": 0.16216216216216217,
+        "task_anchor_valid": 0.8378378378378378,
+        "testability": 0.8918918918918919,
+        "semantic_plausibility": 1.0
+      },
+      "G": {
+        "n": 24,
+        "errors": 0,
+        "claims": 37,
+        "claims_per_case": 1.5416666666666667,
+        "progress_appropriate_precision": 0.35135135135135137,
+        "progress_appropriate_fraction": [
+          13,
+          37
+        ],
+        "case_mean_precision": 0.3125,
+        "coverage": 0.3541666666666667,
+        "premature_rate": 0.4864864864864865,
+        "redundant_rate": 0.02702702702702703,
+        "task_anchor_valid": 1.0,
+        "testability": 0.8648648648648649,
+        "semantic_plausibility": 1.0
+      }
+    },
+    "pairs": {
+      "improved": 8,
+      "worsened": 1,
+      "equal": 15
+    },
+    "gate": {
+      "paired_precision": true,
+      "coverage": true,
+      "premature": false,
+      "redundant": true
+    },
+    "A1_pass": false,
+    "cache": {
+      "O": {
+        "reported": 24,
+        "hit_tokens": 3712,
+        "miss_tokens": 18665,
+        "weighted_hit_rate": 0.16588461366581758
+      },
+      "G": {
+        "reported": 24,
+        "hit_tokens": 3456,
+        "miss_tokens": 18705,
+        "weighted_hit_rate": 0.15594964126167593
+      }
+    }
+  },
+  "rows": [
+    {
+      "review_id": "R498192e5f129",
+      "case_id": "T1_1034",
+      "qid": "1034",
+      "arm": "O",
+      "error": "ValueError",
+      "claims": 0,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 0,
+      "testable": 0,
+      "plausible": 0,
+      "review": {
+        "claim_reviews": [],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Output failed anchor validation; no Claim was admitted."
+      }
+    },
+    {
+      "review_id": "R948c64a5256d",
+      "case_id": "T1_1034",
+      "qid": "1034",
+      "arm": "G",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 0,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": false,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The wording is not a concrete falsifiable candidate proposition. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": false,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The wording is not a concrete falsifiable candidate proposition. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Unnamed target restatements do not test the observed candidate."
+      }
+    },
+    {
+      "review_id": "R9b0741331d22",
+      "case_id": "T2_517",
+      "qid": "517",
+      "arm": "O",
+      "error": "ValueError",
+      "claims": 0,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 0,
+      "testable": 0,
+      "plausible": 0,
+      "review": {
+        "claim_reviews": [],
+        "coverage": [
+          false
+        ],
+        "reason": "Output failed anchor validation; no Claim was admitted."
+      }
+    },
+    {
+      "review_id": "Rd1783c68c345",
+      "case_id": "T2_517",
+      "qid": "517",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 1,
+      "precision": 1.0,
+      "coverage": 1.0,
+      "covered": [
+        true
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          }
+        ],
+        "coverage": [
+          true
+        ],
+        "reason": "Exact cast credit is the active testable condition."
+      }
+    },
+    {
+      "review_id": "R4f8bcec1db29",
+      "case_id": "T1_580",
+      "qid": "580",
+      "arm": "O",
+      "error": "ValueError",
+      "claims": 0,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 0,
+      "testable": 0,
+      "plausible": 0,
+      "review": {
+        "claim_reviews": [],
+        "coverage": [
+          false
+        ],
+        "reason": "Output failed anchor validation; no Claim was admitted."
+      }
+    },
+    {
+      "review_id": "R4c03a629272d",
+      "case_id": "T1_580",
+      "qid": "580",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 1,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "Exact season-one title and number are unsupported."
+      }
+    },
+    {
+      "review_id": "R4e362417a800",
+      "case_id": "T3_546",
+      "qid": "546",
+      "arm": "O",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 0,
+      "redundant": 1,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": false,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition. An adequate existing Claim already registers this proposition."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "Opening-match restatement adds no later-sequence check."
+      }
+    },
+    {
+      "review_id": "Re42f7ca30349",
+      "case_id": "T3_546",
+      "qid": "546",
+      "arm": "G",
+      "error": null,
+      "claims": 3,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 3,
+      "redundant": 0,
+      "task_anchor_valid": 3,
+      "testable": 3,
+      "plausible": 3,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "All three precise later matches are unsupported by W1 or the question."
+      }
+    },
+    {
+      "review_id": "Rf404c6ad4b40",
+      "case_id": "T3_580",
+      "qid": "580",
+      "arm": "O",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "Season-four summary/cast does not test the season-one scene."
+      }
+    },
+    {
+      "review_id": "R4cde2e0b3093",
+      "case_id": "T3_580",
+      "qid": "580",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 1,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "The asserted season-one episode title is absent from W1."
+      }
+    },
+    {
+      "review_id": "Rd90773e2ee57",
+      "case_id": "T3_517",
+      "qid": "517",
+      "arm": "O",
+      "error": null,
+      "claims": 3,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 1.0,
+      "covered": [
+        true
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 3,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": false,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. The wording is not a concrete falsifiable candidate proposition. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": false,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The cited near-verbatim anchor does not cover this proposition. This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          true
+        ],
+        "reason": "Existing C1 already registers the exact role; extra W1 biography is not G2 admission."
+      }
+    },
+    {
+      "review_id": "Rf0f308772f8c",
+      "case_id": "T3_517",
+      "qid": "517",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 1.0,
+      "covered": [
+        true
+      ],
+      "premature": 0,
+      "redundant": 1,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": false,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "An adequate existing Claim already registers this proposition."
+          }
+        ],
+        "coverage": [
+          true
+        ],
+        "reason": "The same policeman-role proposition already exists as C1."
+      }
+    },
+    {
+      "review_id": "Rad62fbf05300",
+      "case_id": "T3_387",
+      "qid": "387",
+      "arm": "O",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": false,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The cited near-verbatim anchor does not cover this proposition. This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Equipment and answer-size facts do not resolve the animation/paper Gap."
+      }
+    },
+    {
+      "review_id": "Rcb241f3647ef",
+      "case_id": "T3_387",
+      "qid": "387",
+      "arm": "G",
+      "error": null,
+      "claims": 0,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 0,
+      "testable": 0,
+      "plausible": 0,
+      "review": {
+        "claim_reviews": [],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "No new Claim covers the still-open animation/paper checks."
+      }
+    },
+    {
+      "review_id": "Rfba33d12acc4",
+      "case_id": "T3_1034",
+      "qid": "1034",
+      "arm": "O",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 0,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": false,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. The wording is not a concrete falsifiable candidate proposition. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Candidate rejection is a working-hypothesis update, not education/child Claim Admission."
+      }
+    },
+    {
+      "review_id": "Rc1455a300b3c",
+      "case_id": "T3_1034",
+      "qid": "1034",
+      "arm": "G",
+      "error": null,
+      "claims": 2,
+      "appropriate": 2,
+      "precision": 1.0,
+      "coverage": 1.0,
+      "covered": [
+        true,
+        true
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          }
+        ],
+        "coverage": [
+          true,
+          true
+        ],
+        "reason": "Separating the two question conditions yields individually testable open Claims."
+      }
+    },
+    {
+      "review_id": "Rdff4fceeb14d",
+      "case_id": "T2_546",
+      "qid": "546",
+      "arm": "O",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "Two observed opening-match details leave later results unregistered."
+      }
+    },
+    {
+      "review_id": "Raabaf174b683",
+      "case_id": "T2_546",
+      "qid": "546",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 1,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "The detailed later sequence is an unsupported commitment."
+      }
+    },
+    {
+      "review_id": "R81a32b3b2a42",
+      "case_id": "T2_387",
+      "qid": "387",
+      "arm": "O",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 1,
+      "task_anchor_valid": 1,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": false,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The cited near-verbatim anchor does not cover this proposition. This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": false,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition. An adequate existing Claim already registers this proposition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Observed storage and keyboard facts bypass the missing Game B link."
+      }
+    },
+    {
+      "review_id": "R5a6be6c24278",
+      "case_id": "T2_387",
+      "qid": "387",
+      "arm": "G",
+      "error": null,
+      "claims": 2,
+      "appropriate": 1,
+      "precision": 0.5,
+      "coverage": 0.5,
+      "covered": [
+        false,
+        true
+      ],
+      "premature": 1,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          }
+        ],
+        "coverage": [
+          false,
+          true
+        ],
+        "reason": "Jazz Jackrabbit 2 identification is unseen; the paper-size test is question anchored."
+      }
+    },
+    {
+      "review_id": "R00ab550ec97a",
+      "case_id": "T1_435",
+      "qid": "435",
+      "arm": "O",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Observed lower bound and career span cannot register the exact G2 conditions."
+      }
+    },
+    {
+      "review_id": "Rf2c15a80b49c",
+      "case_id": "T1_435",
+      "qid": "435",
+      "arm": "G",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 2,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Neither exact Forbes count nor 1975 debut is visible."
+      }
+    },
+    {
+      "review_id": "R581f023e9d1a",
+      "case_id": "T1_517",
+      "qid": "517",
+      "arm": "O",
+      "error": null,
+      "claims": 3,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 3,
+      "plausible": 3,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": false,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The cited near-verbatim anchor does not cover this proposition. This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": false,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The cited near-verbatim anchor does not cover this proposition. This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "Observed name and other film facts do not specify the missing character."
+      }
+    },
+    {
+      "review_id": "Rdde971ed85ae",
+      "case_id": "T1_517",
+      "qid": "517",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 1,
+      "precision": 1.0,
+      "coverage": 1.0,
+      "covered": [
+        true
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          }
+        ],
+        "coverage": [
+          true
+        ],
+        "reason": "The question supplies the policeman clue and W1 links the candidate to the film."
+      }
+    },
+    {
+      "review_id": "R5f70586c5154",
+      "case_id": "T1_177",
+      "qid": "177",
+      "arm": "O",
+      "error": "ValueError",
+      "claims": 0,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 0,
+      "testable": 0,
+      "plausible": 0,
+      "review": {
+        "claim_reviews": [],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Output failed anchor validation; no Claim was admitted."
+      }
+    },
+    {
+      "review_id": "R88e497723378",
+      "case_id": "T1_177",
+      "qid": "177",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 1,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "The exact 2015 NPFL row is not present in W1."
+      }
+    },
+    {
+      "review_id": "R5b46fa5d8333",
+      "case_id": "T2_177",
+      "qid": "177",
+      "arm": "O",
+      "error": "ValueError",
+      "claims": 0,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 0,
+      "testable": 0,
+      "plausible": 0,
+      "review": {
+        "claim_reviews": [],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Output failed anchor validation; no Claim was admitted."
+      }
+    },
+    {
+      "review_id": "Rb7c11c5e9029",
+      "case_id": "T2_177",
+      "qid": "177",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 1,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Uganda/Express standings are unsupported and unrelated to registered Rangers lead."
+      }
+    },
+    {
+      "review_id": "R6aaca8f875a6",
+      "case_id": "T3_435",
+      "qid": "435",
+      "arm": "O",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "W1 caveats are source notes, not exact album/debut Claims."
+      }
+    },
+    {
+      "review_id": "Rdf11aa7bd7c7",
+      "case_id": "T3_435",
+      "qid": "435",
+      "arm": "G",
+      "error": null,
+      "claims": 2,
+      "appropriate": 2,
+      "precision": 1.0,
+      "coverage": 1.0,
+      "covered": [
+        true,
+        true
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          }
+        ],
+        "coverage": [
+          true,
+          true
+        ],
+        "reason": "Question-stated 67 albums and 1970s debut are bounded open tests."
+      }
+    },
+    {
+      "review_id": "R27b2b4b39c6c",
+      "case_id": "T2_1034",
+      "qid": "1034",
+      "arm": "O",
+      "error": "ValueError",
+      "claims": 0,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 0,
+      "testable": 0,
+      "plausible": 0,
+      "review": {
+        "claim_reviews": [],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Output failed anchor validation; no Claim was admitted."
+      }
+    },
+    {
+      "review_id": "Ra397a5db273d",
+      "case_id": "T2_1034",
+      "qid": "1034",
+      "arm": "G",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 0,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": false,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The wording is not a concrete falsifiable candidate proposition. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": false,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The wording is not a concrete falsifiable candidate proposition. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Unnamed target restatements do not test the observed candidate."
+      }
+    },
+    {
+      "review_id": "R41b0352b0356",
+      "case_id": "T2_1094",
+      "qid": "1094",
+      "arm": "O",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Free-kick and fixture facts are local W1 facts, not club-history checks."
+      }
+    },
+    {
+      "review_id": "R4671da93592a",
+      "case_id": "T2_1094",
+      "qid": "1094",
+      "arm": "G",
+      "error": null,
+      "claims": 2,
+      "appropriate": 2,
+      "precision": 1.0,
+      "coverage": 1.0,
+      "covered": [
+        true,
+        true
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          }
+        ],
+        "coverage": [
+          true,
+          true
+        ],
+        "reason": "Two bounded open club-history propositions map to the two anchors."
+      }
+    },
+    {
+      "review_id": "R72451a079ca3",
+      "case_id": "T3_1094",
+      "qid": "1094",
+      "arm": "O",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 1,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 0,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": false,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. The wording is not a concrete falsifiable candidate proposition. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": false,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. The wording is not a concrete falsifiable candidate proposition. It commits to an exact entity, date, score, or relation absent from the visible prefix and question. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Alternative 'may be' entities belong in hypotheses; the single spelling note cannot establish several identity iterations."
+      }
+    },
+    {
+      "review_id": "Rdfae38452612",
+      "case_id": "T3_1094",
+      "qid": "1094",
+      "arm": "G",
+      "error": null,
+      "claims": 2,
+      "appropriate": 2,
+      "precision": 1.0,
+      "coverage": 1.0,
+      "covered": [
+        true,
+        true
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          }
+        ],
+        "coverage": [
+          true,
+          true
+        ],
+        "reason": "Two club-history propositions are testable without asserting a verified result."
+      }
+    },
+    {
+      "review_id": "R5ecdb552591a",
+      "case_id": "T1_546",
+      "qid": "546",
+      "arm": "O",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 0,
+      "redundant": 2,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": false,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition. An adequate existing Claim already registers this proposition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": false,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition. An adequate existing Claim already registers this proposition."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "The already registered opener is copied into extra Claims."
+      }
+    },
+    {
+      "review_id": "R2e1a96ce6f1c",
+      "case_id": "T1_546",
+      "qid": "546",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 1,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "Exact later opponents and dates are absent from the prefix."
+      }
+    },
+    {
+      "review_id": "R1778221990eb",
+      "case_id": "T1_387",
+      "qid": "387",
+      "arm": "O",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 0,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": false,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The cited near-verbatim anchor does not cover this proposition. This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Storage is a final-answer fact outside the active animation/paper Gap."
+      }
+    },
+    {
+      "review_id": "Rbdeae76230d5",
+      "case_id": "T1_387",
+      "qid": "387",
+      "arm": "G",
+      "error": null,
+      "claims": 2,
+      "appropriate": 2,
+      "precision": 1.0,
+      "coverage": 1.0,
+      "covered": [
+        true,
+        true
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          }
+        ],
+        "coverage": [
+          true,
+          true
+        ],
+        "reason": "Two question-stated, candidate-specific verification conditions cover G2."
+      }
+    },
+    {
+      "review_id": "Rdc3abce40664",
+      "case_id": "T2_580",
+      "qid": "580",
+      "arm": "O",
+      "error": null,
+      "claims": 3,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 0,
+      "redundant": 1,
+      "task_anchor_valid": 3,
+      "testable": 3,
+      "plausible": 3,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": false,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition. An adequate existing Claim already registers this proposition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "All three Claims repackage season-four observations outside G2."
+      }
+    },
+    {
+      "review_id": "Ra722e09ab35a",
+      "case_id": "T2_580",
+      "qid": "580",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false
+      ],
+      "premature": 1,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false
+        ],
+        "reason": "Exact season-one title and number are unsupported."
+      }
+    },
+    {
+      "review_id": "Re0bb6369be1d",
+      "case_id": "T1_1094",
+      "qid": "1094",
+      "arm": "O",
+      "error": null,
+      "claims": 3,
+      "appropriate": 2,
+      "precision": 0.6666666666666666,
+      "coverage": 1.0,
+      "covered": [
+        true,
+        true
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 3,
+      "testable": 3,
+      "plausible": 3,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "A bounded, testable condition for the active Gap."
+          }
+        ],
+        "coverage": [
+          true,
+          true
+        ],
+        "reason": "One fixture summary is extra; the two open club-history tests fit G2."
+      }
+    },
+    {
+      "review_id": "Rfb2177bb06a9",
+      "case_id": "T1_1094",
+      "qid": "1094",
+      "arm": "G",
+      "error": null,
+      "claims": 2,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 2,
+      "redundant": 0,
+      "task_anchor_valid": 2,
+      "testable": 2,
+      "plausible": 2,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "The specific founding/merger examples have no visible support."
+      }
+    },
+    {
+      "review_id": "R65927669a046",
+      "case_id": "T3_177",
+      "qid": "177",
+      "arm": "O",
+      "error": null,
+      "claims": 3,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 1,
+      "task_anchor_valid": 3,
+      "testable": 3,
+      "plausible": 3,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": false,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition. An adequate existing Claim already registers this proposition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "State expands around local city/recent season facts without a historical table check."
+      }
+    },
+    {
+      "review_id": "R16396ffef8ab",
+      "case_id": "T3_177",
+      "qid": "177",
+      "arm": "G",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 0,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": false,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "The wording is not a concrete falsifiable candidate proposition. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Circular whole-question conjunction lacks a named team and dated row to test."
+      }
+    },
+    {
+      "review_id": "Rbc7a4040e059",
+      "case_id": "T2_435",
+      "qid": "435",
+      "arm": "O",
+      "error": null,
+      "claims": 1,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 0,
+      "redundant": 0,
+      "task_anchor_valid": 1,
+      "testable": 1,
+      "plausible": 1,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": true,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It adds state without a necessary new verification condition."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Excluding Miriam by age does not test her album/debut G2 conditions."
+      }
+    },
+    {
+      "review_id": "Rca701b147aab",
+      "case_id": "T2_435",
+      "qid": "435",
+      "arm": "G",
+      "error": null,
+      "claims": 3,
+      "appropriate": 0,
+      "precision": 0.0,
+      "coverage": 0.0,
+      "covered": [
+        false,
+        false
+      ],
+      "premature": 3,
+      "redundant": 0,
+      "task_anchor_valid": 3,
+      "testable": 3,
+      "plausible": 3,
+      "review": {
+        "claim_reviews": [
+          {
+            "task_anchored": true,
+            "gap_relevant": false,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": false,
+            "semantically_plausible": true,
+            "reason": "This proposition does not advance the active Gap. It commits to an exact entity, date, score, or relation absent from the visible prefix and question. It adds state without a necessary new verification condition."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          },
+          {
+            "task_anchored": true,
+            "gap_relevant": true,
+            "testable": true,
+            "no_premature_commitment": false,
+            "nonredundant": true,
+            "minimal": true,
+            "semantically_plausible": true,
+            "reason": "It commits to an exact entity, date, score, or relation absent from the visible prefix and question."
+          }
+        ],
+        "coverage": [
+          false,
+          false
+        ],
+        "reason": "Oliver identity and exact 1978/May-2015 count are absent from this Miriam packet."
+      }
+    }
+  ]
+}
