@@ -20,6 +20,7 @@ from run_partial import checkpoint,file_sha
 HERE=Path(__file__).resolve().parent
 STUDY=HERE.parent
 ATRIA=json.loads((STUDY/'provider.json').read_text())
+ATRIA_STAGE_TIMEOUT_SECONDS=240  # Prospective M4 override after M2 provider timeouts.
 
 INSTRUCTION=("Diagnostic only. Do not call tools or continue the original research. "
 "Evaluate this tentative claim against only the visible prefix and any additional observed source evidence below. "
@@ -65,8 +66,10 @@ def freeze():
     if qwen.model!='qwen3.7-flash':raise ValueError('Qwen model differs')
     rows=cases()
     sources=['experiments/model_backend_atria/evidence_update/run.py',
+             'experiments/model_backend_atria/evidence_update/analyze.py',
              'experiments/model_backend_atria/evidence_update/build_cases.py',
              'experiments/model_backend_atria/provider.json',
+             'llm_chat/client.py',
              'experiments/search_find_v3b/orthogonal_search/run_partial.py']
     doc={'frozen_at_utc':datetime.now(timezone.utc).isoformat(),
       'cases':[x['case_id'] for x in rows],'arm_order':['E0','E1'],
@@ -74,8 +77,12 @@ def freeze():
       'tools':None,'stream':False,'sampling_overrides':{},'max_retries':0,
       'qwen_model':qwen.model,'qwen_host':urlsplit(qwen.base_url).hostname,
       'atria_model':ATRIA['model'],'atria_host':urlsplit(ATRIA['base_url']).hostname,
-      'timeout_seconds':120,'sdk_version':version('openai'),
+      'qwen_timeout_seconds':qwen.timeout,
+      'atria_timeout_seconds':ATRIA_STAGE_TIMEOUT_SECONDS,
+      'atria_timeout_rationale':'prospective uniform M4 setting after M2 120-second Atria timeouts',
+      'sdk_version':version('openai'),
       'case_file_sha256':sha(HERE/'cases.json'),
+      'evaluation_rules_sha256':sha(HERE/'EVALUATION_RULES.json'),
       'instruction_sha256':hashlib.sha256(INSTRUCTION.encode()).hexdigest(),
       'source_sha256':{p:file_sha(ROOT/p) for p in sources},
       'request_sha256':{f"{c['case_id']}:{arm}":digest(request(c,arm))
@@ -89,11 +96,13 @@ def gate():
     d=json.loads((HERE/'freeze.json').read_text())
     rows=cases()
     checks={'cases':sha(HERE/'cases.json')==d['case_file_sha256'],
+            'evaluation_rules':sha(HERE/'EVALUATION_RULES.json')==d['evaluation_rules_sha256'],
             'instruction':hashlib.sha256(INSTRUCTION.encode()).hexdigest()==d['instruction_sha256'],
             'sources':all(file_sha(ROOT/p)==h for p,h in d['source_sha256'].items()),
             'requests':all(digest(request(c,arm))==d['request_sha256'][f"{c['case_id']}:{arm}"]
                            for c in rows for arm in ('E0','E1')),
             'one_sample_no_tools':d['samples_per_cell']==1 and d['tools'] is None}
+    checks['atria_timeout']=d['atria_timeout_seconds']==ATRIA_STAGE_TIMEOUT_SECONDS
     (HERE/'gate.txt').write_text('\n'.join(f'{"PASS" if v else "FAIL"} {k}' for k,v in checks.items())
                            +f'\n{sum(checks.values())}/{len(checks)} PASS\n')
     if not all(checks.values()):raise AssertionError('M4 gate failed')
@@ -110,9 +119,13 @@ def run():
     gate()
     if (HERE/'events.jsonl').exists():raise FileExistsError('M4 already attempted')
     qwen=Config.load();key=dotenv_values(ROOT/ATRIA['credential_file']).get(ATRIA['credential_field'])
+    frozen=json.loads((HERE/'freeze.json').read_text())
+    if qwen.model!=frozen['qwen_model'] or urlsplit(qwen.base_url).hostname!=frozen['qwen_host'] \
+            or qwen.timeout!=frozen['qwen_timeout_seconds']:
+        raise ValueError('Qwen config changed')
     if not key:raise ValueError('Atria key missing')
-    with OpenAI(api_key=qwen.api_key,base_url=qwen.base_url,timeout=120,max_retries=0) as qc, \
-         OpenAI(api_key=key,base_url=ATRIA['base_url'],timeout=120,max_retries=0) as ac:
+    with OpenAI(api_key=qwen.api_key,base_url=qwen.base_url,timeout=qwen.timeout,max_retries=0) as qc, \
+         OpenAI(api_key=key,base_url=ATRIA['base_url'],timeout=ATRIA_STAGE_TIMEOUT_SECONDS,max_retries=0) as ac:
       for case in cases():
        for arm in ('E0','E1'):
         messages=request(case,arm)

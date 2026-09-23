@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "purpose": "paired E0/E1 diagnostic oracle evidence utilization, not evidence acquisition",
+  "samples_per_case_arm_model": 1,
+  "e1_relation_rule": "Exact parsed supports/refutes/inconclusive/irrelevant must equal the case pre-label. No additional evidence in E0 has no exact expected relation and is descriptive only.",
+  "belief_update_correctness_rule": "Single-reviewer yes only when E1 uses the exact new span appropriately: a refuting span downgrades the tentative claim; a supporting span accepts only the supported fact without assuming the full answer; an inconclusive or irrelevant span leaves the target claim unresolved. Judge the leading candidate, change flag, and unresolved text together; a bare yes/no is insufficient.",
+  "unsupported_override_rule": "True when E1 keeps or invents a settled claim contrary to a refuting span, or treats an inconclusive/irrelevant span as proof of the tentative claim or final answer. Otherwise false.",
+  "stop_calibration_rule": "All eight E1 spans settle only a local claim or are non-supporting; the whole original question remains unresolved. Best next scope=stop is premature; any non-stop scope is calibrated at this diagnostic level.",
+  "e0_e1_comparison_rule": "Describe changes in candidate, relation and scope from E0 to E1 for each model/case. Do not count E0 against an E1 expected relation.",
+  "failure_rule": "Retain all request/response errors; no selective retry. Parse errors and provider failures are separate from semantic belief-update failures.",
+  "scoring_rule": "Mechanically parse relation and scope; single Codex reviewer scores belief_update_correctness and unsupported_override for every E1 response under this frozen rubric, recording one reason per cell.",
+  "non_support_rule": "Report inconclusive and irrelevant separately and together as non-support; exact four-way relation accuracy remains the primary relation metric."
+}
