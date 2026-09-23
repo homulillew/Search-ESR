@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "selection": "Exactly four historical DeepSeek M3 SELECTION.json cells, each in P0 and P1 H1 once; reuse H0 history.",
+  "planner": "Decision 1 reuses exact frozen M1 broad plan; decisions 2-4 request a new no-tool plan from current real history using the unchanged M1 diagnostic prompt. No repair of malformed output.",
+  "actor": "Current real history plus latest descriptive card; old cards and planner messages excluded. Same original tool schema and all actions enabled; four Actor decisions maximum.",
+  "no_gain_search": "A P1 Search call with zero new D# in its returned result; count each call and note whether another call in the same batch gained D#.",
+  "transition": "At a subsequent Actor decision, Inspect is any valid Find or Open. Calls in the same batch as a no-gain Search are not feedback responses. Report next-decision Search and Inspect separately; both may occur in mixed batches.",
+  "plan_realization": "At least one action matching current plan scope: corpus/search, document/find, window/open, stop/natural no-call response. Report first call and conflicting calls as well.",
+  "source_compatibility": "Judge Inspect's D# against the current active need using only current prefix and observed source windows, not entity name overlap. Record a reason per Inspect; uncertain is allowed.",
+  "evidence_gain": "A Find/Open observation directly answers, supports, refutes or materially narrows the current active need. Separately record compatible but non-gaining inspection.",
+  "failure": "Provider, planner parse, schema, tool and harness errors are distinct; no selective retry or forced final answer."
+}

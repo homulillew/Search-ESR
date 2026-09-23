@@ -1,0 +1,133 @@
+{
+  "frozen_at_utc": "2026-09-23T08:54:59.477683+00:00",
+  "git_head": "2ffe93ba881060e5eab4697d6360c3bafd544e51",
+  "model": "deepseek-flash",
+  "provider_host": "api.deepseek.com",
+  "timeout_seconds": 240,
+  "max_retries": 0,
+  "tool_schema_sha256": "60de1d45580c0dcd1fab666fbb97052122259f14c7f92bafab59825f3e7662ba",
+  "agent_prompt_sha256": "b93952826c95fcb4c5ba050012cdcb8f275de94445af724949bcdd74809342ca",
+  "card_prefix": "Current research control state:\n\n",
+  "card_suffix": "\n\nThis state records the current research assessment. Choose the next action normally using the available tools.",
+  "cases": [
+    [
+      "546",
+      9
+    ],
+    [
+      "546",
+      17
+    ],
+    [
+      "546",
+      25
+    ],
+    [
+      "546",
+      33
+    ],
+    [
+      "546",
+      41
+    ],
+    [
+      "1094",
+      23
+    ],
+    [
+      "1094",
+      34
+    ],
+    [
+      "1094",
+      45
+    ],
+    [
+      "1094",
+      53
+    ],
+    [
+      "1094",
+      61
+    ],
+    [
+      "1094",
+      69
+    ],
+    [
+      "1094",
+      77
+    ],
+    [
+      "1094",
+      93
+    ]
+  ],
+  "sample_count": 13,
+  "h1_tools_executed": false,
+  "source_sha256": {
+    "experiments/research_state_plan_handoff/plan_handoff_one_step/run.py": "e042cef0107e960fb7751140ee6766cab596e9f29840c712aee24953b3e3aae3",
+    "experiments/research_state_plan_handoff/plan_handoff_one_step/analyze.py": "a3be1fcbf79e3eee38c79b937d4bc6a7af4c19c3518a51a6ebcfabe8814c1da5",
+    "experiments/research_state_plan_handoff/plan_handoff_one_step/RUBRIC.json": "0ba297b3cd0f244e91bc5bf692227a214e682d1b4d2c715e601ac1c59798a9fc",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14",
+    "experiments/model_backend_deepseek/protocol.py": "d89d579c05c00cc3b4aaebad6d7b4311a1a6a2b359ff1bda98b66cd31a32904d",
+    "experiments/model_backend_deepseek/cache_usage.py": "0fe723921efc5cb524539edcc436bd21994c5923fb10d2b6687cf9362560e8d6",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1"
+  },
+  "historical_sha256": {
+    "experiments/model_backend_deepseek/planning_probe/events.jsonl": "f2444117cf5c67b8fdfcb1a46db591dfecac0ab58cd9576c6541256d12f5a585",
+    "experiments/model_backend_deepseek/planning_probe/mechanical_summary.json": "aeb861cbdaa0b831e58373a49243e08e27141da481c782d3497b4e1c2ce9a746",
+    "experiments/model_backend_deepseek/natural_action_probe/events.jsonl": "670a44a12c41b366d7f28522ea1e151ca5df46187d9090f8d4569c29003f9433",
+    "experiments/model_backend_deepseek/natural_action_probe/freeze.json": "bbe20b014d2f04296fe353832fd63a916b2440ee8e6cbd24b306b47ed33852f5",
+    "experiments/model_backend_deepseek/orthogonal_partial/SELECTION.json": "cf52c425cfd1b2cb01e2f7eaa254c80fbcf1133c99a177f55ec9b9914aee4829",
+    "experiments/model_backend_atria/PREFIX_ONLY_ANNOTATIONS.json": "c7924ead8a7e86d402a30de6ebaeff7fe200a868bfbe61085fd4508e7659e8e2",
+    "experiments/search_find_v3b/orthogonal_search/freeze.json": "df38484b54f0b15ac690492fa652b3541f74f3d6d8901d6a8ae375d7bb185c65"
+  },
+  "plan_sha256": {
+    "546:9": "9614ba6a796ede3266e32fdbefb97d84ad5a4ef8a25dcbe08c9013e7def2c5d6",
+    "546:17": "8085d223ea7425381f8e56d9df1a78969a8aa3959832a7ed77ffe77d80990cfb",
+    "546:25": "7fa146368b97f65f41e51230b95718f44583e90b6169180dd7b47baf99f23666",
+    "546:33": "ea1f721645db505ea1197a86826b26cdfb4569036ca7194cedfb50e5c544ac8e",
+    "546:41": "37fec594046f91862e9e6c6c066a8c976ed2ad17cb8d6bb11b2ed7628bb909dc",
+    "1094:23": "4865cc8c47445417aace611f45ddd726e50e61215e8e9e3a28465e4c281e599f",
+    "1094:34": "643544815235e0fb4ebbf227d74264eafd3582bf1a83bd8383980caaebc818f1",
+    "1094:45": "e73e008b54fe879054100e62e2a6b0b469313be069e423800040a21c92a289d4",
+    "1094:53": "92d48ceb75cc50093ec48d46ff8a54003a39c584a7617c37bbf533142d7547e5",
+    "1094:61": "57d0364953b81a54bef4aa44534091533f3e8453d2b61727a184376358e99004",
+    "1094:69": "e17ecb380150292204af23ca51d7618e0843e2ad25644001f5c5bbe3cb47906f",
+    "1094:77": "3d5e9c2f8963c38e0623c680c3fe66be4806a719687b3a61c80f169748896303",
+    "1094:93": "e325cb19294f9fc80bdb63d290ab0d28277170b4b8c8b89090e443124021e45e"
+  },
+  "h0_request_sha256": {
+    "546:9": "bdc8f54366ad41573476a2f8a3885f345ece34119854b71f3dccbb7f5575eb6a",
+    "546:17": "9860705e283a40af922644a18bb0b58ce7711c02b34e020da08dc386cb613303",
+    "546:25": "fbc2406397c683aac4b0eef1e0bc8984f93e0492b278298d0fb0f133717168d5",
+    "546:33": "51334e7d3b09ce6a39fb0f36bf53e8bf8c2abcea2a5050d7c8a4aab22094fbc1",
+    "546:41": "852af5666fe7025940c2917e59294ddd688363c6c19968d4acfe97d2745c8773",
+    "1094:23": "c3dfcc400d1fed75e2fdf04bc0547411fc499ea4fbff0e1e3b81001d83cfc41b",
+    "1094:34": "e36f30bf99fc4954ba13b86519466256a06b8258024804304d918bdb36cc7b24",
+    "1094:45": "60387f8be208628c5c6664aba32efebcf8b42ffa18dca722ba338e38df6f41fb",
+    "1094:53": "9bc7d216b3467ac80edb12ce8da97faa8892ba53aa6b7b64823fd1d3a3b0d1af",
+    "1094:61": "f1bb0a38950f2c0d0913a5d8a091ec067de7fc141e0f69437c1557df57d24644",
+    "1094:69": "1ff211d4fb33d150a9aec157f04527483894bcaff1b90307bf37c69f2a40d6c8",
+    "1094:77": "f0e37708d2b84174914e8e22ed5677532a8d39c132a32cd6a49da99a7c98aa32",
+    "1094:93": "071d37069d0847f01c33e3ffd9606a4cfd4b06dadd7e99b71f89c67f38bc5aa1"
+  },
+  "h1_request_sha256": {
+    "546:9": "4696ce0f7e92f3c871a8350b91f2ceb753a22efe5d10d4313d7663d8553fc144",
+    "546:17": "30976434c7811f873c95ed6f76d34e78c550e3663dc3192fffc3a09728700381",
+    "546:25": "234e7709c6583497add1362066ce86550209a98d0100a2c400714d06b1fde793",
+    "546:33": "31216b721b2c3ca8581d12faf9c855e02af8566931069bc95983cf7dee99a5d3",
+    "546:41": "de41ce0749ec149d7cc1fd6433cd03310239d83701e68b386145c8fe09b4a25b",
+    "1094:23": "df34f6fb66368eff2d325f60f003e47693662d0a245ecc1a5c6453271e9731f6",
+    "1094:34": "41dd36605c05c77ac775a6c52dcad1eb84ac9d1cdd99037157804ac3e7e4398c",
+    "1094:45": "84c348e38ee2ae1c5bd033bd2abd80f5484e53abc100b9d005c5b9c9b49bf725",
+    "1094:53": "b2faf7ed1d5dd60a402237e0dd5033e46833beecbe133122ca42c42a5f2df3fc",
+    "1094:61": "b1e3b053570e067749c51ee05fce2c8ec1df4dc2fe7c7f173b8232e1aeddcc14",
+    "1094:69": "1de6165859d0fbe050e9939e0a98f4f52b51179b0ff9219e14af7a4676e1ad7a",
+    "1094:77": "1a38d6d315f3ba1273546a489e771e516591e5d9e9bc3403a9cd2a8f971e814e",
+    "1094:93": "b23ab5048d125b582080b52505b94008a55f2be8ca6f9d6214cdeb361ec7a3ce"
+  },
+  "failure_policy": "all 13 H1 cells once; errors retained; no best-of or tool execution"
+}
