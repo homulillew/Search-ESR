@@ -1,0 +1,8 @@
+{
+  "stage": "pre-case searcher initialization",
+  "first_launch_device": "cuda:0 (BCPlusSearcher default)",
+  "failure": "torch.OutOfMemoryError while moving frozen Qwen3-Embedding-8B retriever to GPU; GPU 0 had 37.81 MiB free at allocation failure",
+  "case_requests_sent": 0,
+  "case_results_generated": 0,
+  "recovery": "Relaunch the same frozen runner with BCPLUS_DEVICE=cpu. This changes execution device only, not the frozen index, weights, query, semantics, model provider or sample. No failed case is retried."
+}

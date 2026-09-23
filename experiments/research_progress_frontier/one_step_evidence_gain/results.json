@@ -1,0 +1,238 @@
+{
+  "summary": {
+    "selected_cases": 8,
+    "retrieval_executed": 7,
+    "retrieval_errors": 0,
+    "by_action": {
+      "search": {
+        "n": 2,
+        "compatible": 1,
+        "useful_yes": 1,
+        "useful_partial": 0,
+        "gap_progress": 1
+      },
+      "find": {
+        "n": 2,
+        "compatible": 2,
+        "useful_yes": 1,
+        "useful_partial": 0,
+        "gap_progress": 1
+      },
+      "open": {
+        "n": 3,
+        "compatible": 3,
+        "useful_yes": 2,
+        "useful_partial": 0,
+        "gap_progress": 2
+      }
+    },
+    "retrieval_compatible": 6,
+    "retrieval_useful_yes": 4,
+    "retrieval_gap_progress": 4,
+    "gap_effect_distribution": {
+      "no_progress": 3,
+      "narrows": 2,
+      "supports_closure": 2
+    },
+    "verify": {
+      "V0": {
+        "closure_cases": 2,
+        "called": 1,
+        "correct_closure": 1
+      },
+      "V1": {
+        "closure_cases": 2,
+        "called": 2,
+        "correct_closure": 2
+      }
+    },
+    "free_closure_extra_retrieval": 1,
+    "cache": {
+      "reported": 3,
+      "hit_tokens": 256,
+      "miss_tokens": 1285,
+      "weighted_hit_rate": 0.16612589227774172
+    },
+    "notes": "One-step local progress, not full-question accuracy; related qid/checkpoints are correlated."
+  },
+  "retrieval_rows": [
+    {
+      "case_id": "C_source_546",
+      "uncertainty_type": "source",
+      "active_gap": "Find the linked 2023 decider, later 4-3, 4-0 and loss sequence for one player.",
+      "action": "search",
+      "arguments": {
+        "query": "2023 snooker tournament round-by-round results Ding Junhui 4-3 4-0 loss",
+        "k": 10
+      },
+      "result_status": "ok",
+      "source_compatible": false,
+      "compatible_refs": [],
+      "useful_evidence": "no",
+      "gap_effect": "no_progress",
+      "reason": "The old D11 tournament table is returned only as already discovered metadata, with no new local preview. New D17 is a player biography and D18 is a 2025 Championship League page; their visible previews do not give the linked 2023 decider/4-3/4-0/loss sequence."
+    },
+    {
+      "case_id": "C_source_1094",
+      "uncertainty_type": "source",
+      "active_gap": "Find Lille founding/name history to test the PSG–Lille club-identity hypothesis.",
+      "action": "search",
+      "arguments": {
+        "query": "Lille football club founding name history",
+        "k": 5
+      },
+      "result_status": "ok",
+      "source_compatible": true,
+      "compatible_refs": [
+        "D43"
+      ],
+      "useful_evidence": "yes",
+      "gap_effect": "narrows",
+      "reason": "The new D43 preview explicitly traces Olympique Lillois and Iris Club Lillois through two mergers into Lille Olympique Sporting Club. This is direct evidence for the Lille name-history part of the gap, though it does not by itself establish the full PSG–Lille match hypothesis."
+    },
+    {
+      "case_id": "C_location_546_bio",
+      "uncertainty_type": "location",
+      "active_gap": "Locate Ding Junhui's professional-start year and career break totals inside his biography.",
+      "action": "find",
+      "arguments": {
+        "doc_ref": "D17",
+        "query": "Ding Junhui turned professional career break totals"
+      },
+      "result_status": "ok",
+      "source_compatible": true,
+      "compatible_refs": [
+        "D17"
+      ],
+      "useful_evidence": "yes",
+      "gap_effect": "supports_closure",
+      "reason": "Find returns W32 from the chosen player biography, stating Ding turned professional in 2003 and compiled more than 600 century breaks including seven maximum breaks. It directly resolves the local career-statistics lookup.",
+      "find_record": {
+        "ActiveGap": "Locate Ding Junhui's professional-start year and career break totals inside his biography.",
+        "TargetDocument": "D17",
+        "FindQuery": "Ding Junhui turned professional career break totals",
+        "ReturnedWindow": [
+          "W32"
+        ],
+        "UsefulEvidence": "yes"
+      }
+    },
+    {
+      "case_id": "C_location_546_results",
+      "uncertainty_type": "location",
+      "active_gap": "Locate a 2023 British Open 4-0 match result elsewhere in the observed tournament table.",
+      "action": "find",
+      "arguments": {
+        "doc_ref": "D11",
+        "query": "British Open 2023 4-0"
+      },
+      "result_status": "ok",
+      "source_compatible": true,
+      "compatible_refs": [
+        "D11"
+      ],
+      "useful_evidence": "no",
+      "gap_effect": "no_progress",
+      "reason": "D11 is a suitable 2023 tournament-results table, but the returned W19 in this restored session shows the final's frame scores and not the requested 4-0 match. The unused second Find call cannot be credited.",
+      "find_record": {
+        "ActiveGap": "Locate a 2023 British Open 4-0 match result elsewhere in the observed tournament table.",
+        "TargetDocument": "D11",
+        "FindQuery": "British Open 2023 4-0",
+        "ReturnedWindow": [
+          "W19"
+        ],
+        "UsefulEvidence": "no"
+      }
+    },
+    {
+      "case_id": "C_context_1094",
+      "uncertainty_type": "context",
+      "active_gap": "Read what follows W38's opening PSG–Lille goal description to assess later scoring chronology.",
+      "action": "open",
+      "arguments": {
+        "window_ref": "W38",
+        "direction": "after"
+      },
+      "result_status": "ok",
+      "source_compatible": true,
+      "compatible_refs": [
+        "D34"
+      ],
+      "useful_evidence": "yes",
+      "gap_effect": "narrows",
+      "reason": "Opening after W38 returns W49 from the same PSG–Lille fixture article, adding later scoring details and an explicit 94:25 Messi free kick. This materially clarifies the candidate fixture's chronology, but the club-identity premise for the overall question remains open."
+    },
+    {
+      "case_id": "C_context_546",
+      "uncertainty_type": "context",
+      "active_gap": "Read adjacent rows around W14 to identify the neighboring dated match in this tournament table.",
+      "action": "open",
+      "arguments": {
+        "window_ref": "W14",
+        "direction": "around"
+      },
+      "result_status": "ok",
+      "source_compatible": true,
+      "compatible_refs": [
+        "D11"
+      ],
+      "useful_evidence": "yes",
+      "gap_effect": "supports_closure",
+      "reason": "Opening around W14 returns adjacent W19 tournament rows with dated Last-128 matches, including a 4-0 Maguire–White result. It satisfies the narrow local task of identifying a neighboring dated match, without proving the full sequence in the original question."
+    },
+    {
+      "case_id": "C_closure_546",
+      "uncertainty_type": "closure",
+      "active_gap": "Decide whether Ding beat Ma Hailong 4-3 in the 2023 English Open opener.",
+      "action": "open",
+      "arguments": {
+        "window_ref": "W13",
+        "direction": "around"
+      },
+      "result_status": "document_complete",
+      "source_compatible": true,
+      "compatible_refs": [
+        "D10"
+      ],
+      "useful_evidence": "no",
+      "gap_effect": "no_progress",
+      "reason": "D10/W13 already supplied the exact result before the action. Open around W13 returned document_complete and the same text, so it added no evidence and did not perform the pending semantic closure."
+    }
+  ],
+  "verify_rows": [
+    {
+      "case_id": "C_closure_546",
+      "arm": "V0",
+      "called": false,
+      "correct_closure": false,
+      "reason": "Free Actor chose retrieval"
+    },
+    {
+      "case_id": "C_closure_546",
+      "arm": "V1",
+      "called": true,
+      "status": "supported",
+      "cited_frozen_ref": true,
+      "correct_closure": true,
+      "response": "Status: supported\nEvidence refs: W13\nMissing evidence: none\nReason: W13 states Ding recovered to grind out a 4-3 victory over Ma Hailong in his opening match at the 2023 English Open."
+    },
+    {
+      "case_id": "C_closure_1094",
+      "arm": "V0",
+      "called": true,
+      "status": "supported",
+      "cited_frozen_ref": true,
+      "correct_closure": true,
+      "response": "Status: supported\nEvidence refs: W42\nMissing evidence: none\nReason: W42 states that in 1908 Milan experienced a split that led to the forming of F.C. Internazionale."
+    },
+    {
+      "case_id": "C_closure_1094",
+      "arm": "V1",
+      "called": true,
+      "status": "supported",
+      "cited_frozen_ref": true,
+      "correct_closure": true,
+      "response": "Status: supported\nEvidence refs: W42\nMissing evidence: none\nReason: W42 states that in 1908 Milan experienced a split that led to the forming of F.C. Internazionale."
+    }
+  ]
+}

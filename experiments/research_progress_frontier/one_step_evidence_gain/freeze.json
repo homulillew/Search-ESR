@@ -1,0 +1,222 @@
+{
+  "frozen_at_utc": "2026-09-23T15:51:44.583255+00:00",
+  "git_head": "f212a787ffc4c2308cfae4e1defce2b5f4608ce4",
+  "provider_host": "api.deepseek.com",
+  "model": "deepseek-flash",
+  "timeout_seconds": 240,
+  "max_retries": 0,
+  "selection": [
+    "C_source_546",
+    "C_source_1094",
+    "C_location_546_bio",
+    "C_location_546_results",
+    "C_context_1094",
+    "C_context_546",
+    "C_closure_546",
+    "C_closure_1094"
+  ],
+  "sample_count": 8,
+  "actor_source": "frozen Stage C-B first response, no resampling",
+  "first_actions": {
+    "C_source_546": {
+      "name": "search",
+      "arguments": {
+        "query": "2023 snooker tournament round-by-round results Ding Junhui 4-3 4-0 loss",
+        "k": 10
+      }
+    },
+    "C_source_1094": {
+      "name": "search",
+      "arguments": {
+        "query": "Lille football club founding name history",
+        "k": 5
+      }
+    },
+    "C_location_546_bio": {
+      "name": "find",
+      "arguments": {
+        "doc_ref": "D17",
+        "query": "Ding Junhui turned professional career break totals"
+      }
+    },
+    "C_location_546_results": {
+      "name": "find",
+      "arguments": {
+        "doc_ref": "D11",
+        "query": "British Open 2023 4-0"
+      }
+    },
+    "C_context_1094": {
+      "name": "open",
+      "arguments": {
+        "window_ref": "W38",
+        "direction": "after"
+      }
+    },
+    "C_context_546": {
+      "name": "open",
+      "arguments": {
+        "window_ref": "W14",
+        "direction": "around"
+      }
+    },
+    "C_closure_546": {
+      "name": "open",
+      "arguments": {
+        "window_ref": "W13",
+        "direction": "around"
+      }
+    },
+    "C_closure_1094": {
+      "name": "verify",
+      "arguments": {
+        "claim_ref": "C1",
+        "evidence_refs": [
+          "W42"
+        ]
+      }
+    }
+  },
+  "case_qid_checkpoint": {
+    "C_source_546": [
+      "546",
+      "R1:25"
+    ],
+    "C_source_1094": [
+      "1094",
+      "R1:45"
+    ],
+    "C_location_546_bio": [
+      "546",
+      "R1:33"
+    ],
+    "C_location_546_results": [
+      "546",
+      "R1:17"
+    ],
+    "C_context_1094": [
+      "1094",
+      "R1:45"
+    ],
+    "C_context_546": [
+      "546",
+      "R1:17"
+    ],
+    "C_closure_546": [
+      "546",
+      "R1:25"
+    ],
+    "C_closure_1094": [
+      "1094",
+      "R1:45"
+    ]
+  },
+  "prefix_sha256": {
+    "C_source_546": "baa3bd0fd30b3b4517c54e6baed618602a210360e2f334698cb5898de32a5051",
+    "C_source_1094": "45dfc948340ee12828c665c2cd85c89fda371cbc42d1212c2046089c30047ece",
+    "C_location_546_bio": "c2f630d9e4ebfc8dab97fc8561e6125a8b2dc3e94498b72527de7197ddc83a80",
+    "C_location_546_results": "a3b1da930f2c9786a9bbc5b7d750c9444b32b9a854d00e30712c835299a9ec54",
+    "C_context_1094": "45dfc948340ee12828c665c2cd85c89fda371cbc42d1212c2046089c30047ece",
+    "C_context_546": "a3b1da930f2c9786a9bbc5b7d750c9444b32b9a854d00e30712c835299a9ec54",
+    "C_closure_546": "baa3bd0fd30b3b4517c54e6baed618602a210360e2f334698cb5898de32a5051",
+    "C_closure_1094": "45dfc948340ee12828c665c2cd85c89fda371cbc42d1212c2046089c30047ece"
+  },
+  "evidence_excerpt_sha256": {
+    "C_source_546": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "C_source_1094": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "C_location_546_bio": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "C_location_546_results": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "C_context_1094": "17a00b776b3b10c34ccc0394281c7ab8b39d58b6fb4e7db0bf6908466fb80dd8",
+    "C_context_546": "b273d7482020a30ae57dbdc1c04ce93beff363b64bec0e77e2bfde64313a15be",
+    "C_closure_546": "69502dd5596abb20665e3485a73d1183bfefd19e05861679ec9f4b46ec75238a",
+    "C_closure_1094": "28fe25f9506a72a2a48c442487149f27c69e0efaeb5b5730c0d53c3e2ce9cdec"
+  },
+  "review_labels": {
+    "C_source_546": {
+      "uncertainty_type": "source",
+      "expected_action": "search"
+    },
+    "C_source_1094": {
+      "uncertainty_type": "source",
+      "expected_action": "search"
+    },
+    "C_location_546_bio": {
+      "uncertainty_type": "location",
+      "expected_action": "find"
+    },
+    "C_location_546_results": {
+      "uncertainty_type": "location",
+      "expected_action": "find"
+    },
+    "C_context_1094": {
+      "uncertainty_type": "context",
+      "expected_action": "open"
+    },
+    "C_context_546": {
+      "uncertainty_type": "context",
+      "expected_action": "open"
+    },
+    "C_closure_546": {
+      "uncertainty_type": "closure",
+      "expected_action": "verify"
+    },
+    "C_closure_1094": {
+      "uncertainty_type": "closure",
+      "expected_action": "verify"
+    }
+  },
+  "closure_review_status": {
+    "C_closure_546": "supported",
+    "C_closure_1094": "supported"
+  },
+  "verify_prompt_sha256": "95d75c7e2374ef3dd622b192a5da5e39f5d637af1518fb9180b640dc5da8d7a5",
+  "verify_request_sha256": {
+    "C_closure_546": "54b139c820b007b5a8ee60be07e355835d31c7fed4203e28f113e89d647b1cc5",
+    "C_closure_1094": "ffdf952e72841e458581369b406fb578e0c315685bdbece65e27e18a2bd3d739"
+  },
+  "verify_excerpt_sha256": {
+    "C_closure_546": {
+      "W13": "8929ccffff6cc4390f1c25d506f35fc374f81bb88e34e89ae4716034d2a59d2e"
+    },
+    "C_closure_1094": {
+      "W42": "fb599295cca74c24e72c6f612e25c7133ee8ae4884a655b07bdfbcf710c77acc"
+    }
+  },
+  "source_sha256": {
+    "experiments/research_progress_frontier/one_step_evidence_gain/RUBRIC.json": "f7682b46828b0f62832934b7cf449c364684b21edc9554c61a8440fef9a2c379",
+    "experiments/research_progress_frontier/one_step_evidence_gain/EXPERIMENT_PLAN.md": "4f2d6c4ed0e727f565ae51a59d9369a79645378c126df3d1717d270e5f6b1dd3",
+    "experiments/research_progress_frontier/one_step_evidence_gain/run.py": "81cffc8a6f10f50454bdccf505222ece754908098642f978081ed3bdc090d008",
+    "experiments/research_progress_frontier/action_routing/review_cases.json": "c827002a332d85b71ae65dbcabc5f4d0f2f848856f303081913d0d893b03f656",
+    "experiments/research_progress_frontier/action_routing/stage_d_preselection.json": "96e806b4c5327cd5eecba9249da1c90395bc03b2950e1cbf0c091c870ea30744",
+    "experiments/research_progress_frontier/action_routing/results.json": "81227f6ef92eb51b551af7c81ad58971bb6fe997d11f9bf03a46091f30152bf2",
+    "experiments/research_progress_frontier/action_routing/events.jsonl": "52797e58249739d092270a895febf74fbb1ef3fc33bd36f889ceb9452c93a784",
+    "experiments/research_progress_frontier/action_routing/freeze.json": "63a3616120825a215bc112274cabe9d534e032c32a55fd96f4d00a0c11c07aec",
+    "experiments/research_progress_frontier/action_routing/gate.txt": "852649655aa3eeda3a731e278ef7af29780679783aa23e7271536807c10d7048",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1",
+    "llm_chat/agent.py": "e129a97b823881168be894e4b29bbac93f5da9f151c1c4260ef0b7fb7b06811a",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720",
+    "llm_chat/search_find_v3b_agent.py": "1788f3cf74df01dea25b1421a31d572a0ede6c9919c6df7fd8db8d4c76d8b56d",
+    "llm_chat/raw_windows.py": "b72948cf78cdf15dd4966721f49581738b7cd93430480149ead717fb230cee6f",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "llm_chat/window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339"
+  },
+  "historical_run_sha256": {
+    "546": "947b96b506405923078038893bf84b6b4190d9821af8d7fba5bc365479132852",
+    "1094": "eed7b39e19b39b7db960acd64ea4e28b6a6afbabe6eac06a68f0665ac3adbf8a"
+  },
+  "rubric": {
+    "version": 1,
+    "sample": "Exactly eight cases fixed before Stage C calls: two each nominal Search, Find, Open, Verify. Execute the already frozen C-B first choice once; no Actor resampling or substitution. Closure V1 adds direct Verify.",
+    "source_compatible": "For retrieval actions, true when the returned source type/content is suitable to check the current ActiveGap, false when unsuitable, unclear if result gives too little to decide. Search can return multiple hits: true requires at least one suitable returned new source, and list its ref.",
+    "useful_evidence": "yes if the new observation directly supports, refutes or effectively excludes a material part of the ActiveGap; partial if it reduces uncertainty or identifies a usable source but does not answer the gap; no if irrelevant, duplicate, empty or non-informative. Discovery of a suitable D without answer is at most partial.",
+    "gap_effect": "supports_closure only if the new observation suffices for the local claim; refutes if incompatible; narrows if useful but not closed; no_progress otherwise. Never infer absence from a failed Find or short preview.",
+    "review_boundary": "Reviewer sees frozen pre-action state plus that one tool result, including the previously observed W for comparison; no future trajectory, full-document audit, gold or final answer.",
+    "verify": "Semantic subroutine takes the exact frozen claim and exact currently observed W excerpt. It creates no new corpus evidence. V0 calls it only when the frozen free Actor selected Verify; V1 calls it for each closure case by harness trigger. One call per indicated arm, zero retries.",
+    "failure": "Retain API and backend failures. Invalid first call is not repaired, and later calls in a batch are not executed. No replacement case or best-of.",
+    "stage_gate": "Descriptive mechanism assessment only: report source compatibility, useful evidence, gap progress and Verify comparison separately. No post-hoc numeric pass threshold or long rollout."
+  },
+  "order": "selection order; V0 first retrieval/verify then V1 for each closure case",
+  "failure_policy": "One frozen C-B first action per case, one V1 verifier per closure, zero retries; retain all errors."
+}
