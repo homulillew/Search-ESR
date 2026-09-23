@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "dataset": "29 pre-call prefix-only cases, 8 qids, 5 stale-gap cases; sibling cases are correlated",
+  "supported": "Every material clause of the current claim follows from exact visible evidence.",
+  "refuted": "Exact visible evidence is explicitly incompatible with at least one material clause.",
+  "open": "Neither support nor explicit refutation is established; relevance or silence is insufficient.",
+  "false_close_denominator": "All reviewer=open cases; model supported/refuted counts as false close.",
+  "missed_closure_denominator": "All reviewer=supported/refuted cases; model open counts as missed closure.",
+  "invalid_policy": "Missing response or unparsable status counts incorrect in overall/class accuracy, separately as API/schema error; no retry or replacement.",
+  "stale_recovery": "Reviewer stale_gap cases with model status equal to the frozen closure label; show 5/5 and sensitivity excluding medium-ambiguity case.",
+  "stage_A_gate": "Overall agreement >=0.80 AND false-close rate <=0.10 AND stale closure >=4/5; if case count changes use analogous proportions; no best-of.",
+  "decision_scope": "One model response without tools or further evidence per frozen case. No claim of final-answer accuracy or independent trials."
+}
