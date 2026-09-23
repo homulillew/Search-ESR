@@ -1,0 +1,6 @@
+{
+  "phase": "pre-call offline gate",
+  "model_requests_sent": 0,
+  "failed_check": "arm_order tuple serialized to JSON list, then compared to tuple on gate reload",
+  "recovery": "Correct gate comparison to list, commit before any model call, and create a new freeze against the corrected source hash. The case bank, labels, prompts, order and rubric remain the same."
+}

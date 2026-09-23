@@ -163,7 +163,7 @@ def gate():
         "provider": CONFIG["model"] == f["model"] and urlsplit(CONFIG["base_url"]).hostname == f["provider_host"]
         and CONFIG["timeout_seconds"] == f["timeout_seconds"] and CONFIG["max_retries"] == f["max_retries"] == 0,
         "order": [c["case_id"] for c in order()] == f["case_order"] and all(
-            f["arm_order"][c["case_id"]] == arm_order(i) for i, c in enumerate(order())),
+            f["arm_order"][c["case_id"]] == list(arm_order(i)) for i, c in enumerate(order())),
         "requests": all(digest(request(c, a)) == f["request_sha256"][f"{c['case_id']}:{a}"]
                         for c in CASES for a in ("A", "B", "C")),
         "rubric": json.loads((HERE / "RUBRIC.json").read_text()) == f["rubric"],
