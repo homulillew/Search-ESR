@@ -1,0 +1,160 @@
+{
+  "model": "deepseek-flash",
+  "groups": {
+    "R1_actor": {
+      "responses": 13,
+      "api_errors": 0,
+      "usage_reported": 13,
+      "usage_unavailable": 0,
+      "prompt_cache_hit_tokens": 470400,
+      "prompt_cache_miss_tokens": 4220,
+      "weighted_hit_rate": 0.991108676414816,
+      "per_response": [
+        {
+          "cell": "546:9:Q1",
+          "usage": {
+            "prompt_tokens": 9242,
+            "prompt_cache_hit_tokens": 8960,
+            "prompt_cache_miss_tokens": 282,
+            "reported_cached_tokens": 8960,
+            "status": "reported",
+            "hit_rate": 0.9694871239991344
+          }
+        },
+        {
+          "cell": "546:17:Q1",
+          "usage": {
+            "prompt_tokens": 15576,
+            "prompt_cache_hit_tokens": 15232,
+            "prompt_cache_miss_tokens": 344,
+            "reported_cached_tokens": 15232,
+            "status": "reported",
+            "hit_rate": 0.977914740626605
+          }
+        },
+        {
+          "cell": "546:25:Q1",
+          "usage": {
+            "prompt_tokens": 21225,
+            "prompt_cache_hit_tokens": 20864,
+            "prompt_cache_miss_tokens": 361,
+            "reported_cached_tokens": 20864,
+            "status": "reported",
+            "hit_rate": 0.9829917550058893
+          }
+        },
+        {
+          "cell": "546:33:Q1",
+          "usage": {
+            "prompt_tokens": 27205,
+            "prompt_cache_hit_tokens": 26880,
+            "prompt_cache_miss_tokens": 325,
+            "reported_cached_tokens": 26880,
+            "status": "reported",
+            "hit_rate": 0.9880536666054034
+          }
+        },
+        {
+          "cell": "546:41:Q1",
+          "usage": {
+            "prompt_tokens": 33018,
+            "prompt_cache_hit_tokens": 32768,
+            "prompt_cache_miss_tokens": 250,
+            "reported_cached_tokens": 32768,
+            "status": "reported",
+            "hit_rate": 0.9924283724029317
+          }
+        },
+        {
+          "cell": "1094:23:Q1",
+          "usage": {
+            "prompt_tokens": 18283,
+            "prompt_cache_hit_tokens": 17920,
+            "prompt_cache_miss_tokens": 363,
+            "reported_cached_tokens": 17920,
+            "status": "reported",
+            "hit_rate": 0.9801454903462232
+          }
+        },
+        {
+          "cell": "1094:34:Q1",
+          "usage": {
+            "prompt_tokens": 27222,
+            "prompt_cache_hit_tokens": 26880,
+            "prompt_cache_miss_tokens": 342,
+            "reported_cached_tokens": 26880,
+            "status": "reported",
+            "hit_rate": 0.9874366321357725
+          }
+        },
+        {
+          "cell": "1094:45:Q1",
+          "usage": {
+            "prompt_tokens": 36367,
+            "prompt_cache_hit_tokens": 36096,
+            "prompt_cache_miss_tokens": 271,
+            "reported_cached_tokens": 36096,
+            "status": "reported",
+            "hit_rate": 0.9925481892924904
+          }
+        },
+        {
+          "cell": "1094:53:Q1",
+          "usage": {
+            "prompt_tokens": 41520,
+            "prompt_cache_hit_tokens": 41216,
+            "prompt_cache_miss_tokens": 304,
+            "reported_cached_tokens": 41216,
+            "status": "reported",
+            "hit_rate": 0.9926782273603083
+          }
+        },
+        {
+          "cell": "1094:61:Q1",
+          "usage": {
+            "prompt_tokens": 47082,
+            "prompt_cache_hit_tokens": 46720,
+            "prompt_cache_miss_tokens": 362,
+            "reported_cached_tokens": 46720,
+            "status": "reported",
+            "hit_rate": 0.9923112866913045
+          }
+        },
+        {
+          "cell": "1094:69:Q1",
+          "usage": {
+            "prompt_tokens": 53679,
+            "prompt_cache_hit_tokens": 53376,
+            "prompt_cache_miss_tokens": 303,
+            "reported_cached_tokens": 53376,
+            "status": "reported",
+            "hit_rate": 0.9943553344883475
+          }
+        },
+        {
+          "cell": "1094:77:Q1",
+          "usage": {
+            "prompt_tokens": 63303,
+            "prompt_cache_hit_tokens": 62976,
+            "prompt_cache_miss_tokens": 327,
+            "reported_cached_tokens": 62976,
+            "status": "reported",
+            "hit_rate": 0.9948343680394294
+          }
+        },
+        {
+          "cell": "1094:93:Q1",
+          "usage": {
+            "prompt_tokens": 80898,
+            "prompt_cache_hit_tokens": 80512,
+            "prompt_cache_miss_tokens": 386,
+            "reported_cached_tokens": 80512,
+            "status": "reported",
+            "hit_rate": 0.9952285594205048
+          }
+        }
+      ]
+    }
+  },
+  "definition": "sum(provider prompt_cache_hit_tokens) / sum(hit + miss); unavailable usage excluded"
+}
