@@ -1,0 +1,3 @@
+Given one existing Claim, its previous verified evidence and the new cited exact evidence, decide whether the Claim is supported, refuted, or open. Use only supplied evidence. A partially matching clue does not support a conjunction. If old and new evidence conflict and neither resolves the conflict, return open. An instruction to check something is not itself a verifiable factual proposition.
+
+Return exactly one JSON object: {"status":"supported|refuted|open","evidence_refs":["W1"],"missing_evidence":"...","reason":"..."}. Cite only supplied refs. The returned status is authoritative for the harness commit.
