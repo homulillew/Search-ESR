@@ -1,0 +1,125 @@
+{
+  "frozen_at_utc": "2026-09-23T05:43:34.358435+00:00",
+  "git_head": "8fa3266aae5def48201c7af4c53ffd217d0c245f",
+  "cases": [
+    [
+      "546",
+      9
+    ],
+    [
+      "546",
+      17
+    ],
+    [
+      "546",
+      25
+    ],
+    [
+      "546",
+      33
+    ],
+    [
+      "546",
+      41
+    ],
+    [
+      "1094",
+      23
+    ],
+    [
+      "1094",
+      34
+    ],
+    [
+      "1094",
+      45
+    ],
+    [
+      "1094",
+      53
+    ],
+    [
+      "1094",
+      61
+    ],
+    [
+      "1094",
+      69
+    ],
+    [
+      "1094",
+      77
+    ],
+    [
+      "1094",
+      93
+    ]
+  ],
+  "arm_order": [
+    "qwen3.7-flash",
+    "Atria-Dawn-Preview"
+  ],
+  "samples_per_cell": 1,
+  "tools": null,
+  "stream": false,
+  "sampling_overrides": {},
+  "sdk_max_retries": 0,
+  "diagnostic_prompt": "Diagnostic only. Do not continue the original research task and do not call tools.\n\nBased only on the information already visible in this conversation, identify the next research-control decision.\n\nReturn exactly:\nCurrent unresolved need:\nExpected source type:\nBest scope: corpus | document | window | stop\nTarget document/window: D# | W# | none\nReason:\nKeep Reason to about 1–3 sentences.",
+  "diagnostic_prompt_sha256": "7034232c5927b00739c03e602fdbfd705e131d738e49d5afa0409147135927a5",
+  "qwen_model": "qwen3.7-flash",
+  "qwen_host": "llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com",
+  "qwen_timeout_seconds": 180.0,
+  "atria_model": "Atria-Dawn-Preview",
+  "atria_host": "api.atria-asi.ai",
+  "atria_timeout_seconds": 120,
+  "openai_sdk_version": "1.109.1",
+  "python_version": "3.12.2",
+  "annotations_sha256": "c7924ead8a7e86d402a30de6ebaeff7fe200a868bfbe61085fd4508e7659e8e2",
+  "annotation_freeze_sha256": "069afac23769e924e10dc951b2aeb7ff207d609bc2178da9ccdc60ac666f29df",
+  "prefix_packets_sha256": "26dc048911ae7a50ceb58ba57bd0b3d58659a683ac7b9514ddad6e5e95ef6617",
+  "evaluation_rules_sha256": "bb6a0576644d1007ed40aba3e4918a6a1f5f95a24ebece5c09a681f05a0d4aa6",
+  "protocol_summary_sha256": "16307c90d102571f18bbfb63f4c046a3bb417369403e3a33f6cd2d2d95161b59",
+  "source_sha256": {
+    "experiments/model_backend_atria/planning_probe/run.py": "61f4ad5e8eb356efe3782113bc1ff488aca0d3ec5139920841f6f68292791d2d",
+    "experiments/model_backend_atria/planning_probe/analyze.py": "7a701247158240a6cbb51869faa8d833659446d7baa6e966fb4fd1978d2c70a9",
+    "experiments/model_backend_atria/provider.json": "ad9e6b4e0f5e1bbea9365dfaf475bd95d9e5a4c93344026e00798c4eac65d61b",
+    "llm_chat/client.py": "126ee2d49ed526a64931b4ac7a27df1db63fb77ba10b5dd368770d0d79846204",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1"
+  },
+  "original_event_sha256": {
+    "546": "947b96b506405923078038893bf84b6b4190d9821af8d7fba5bc365479132852",
+    "1094": "eed7b39e19b39b7db960acd64ea4e28b6a6afbabe6eac06a68f0665ac3adbf8a"
+  },
+  "original_request_sha256": {
+    "546:9": "6451598c42634940f80c600b9c825d2dcf04bf2916b6de5b2249306415e002aa",
+    "546:17": "36ee6b3b54e0c214c39b4f09cd422ed2ef320399ef7cdc249bb38a4182ea1605",
+    "546:25": "ba3acae1646bdf2b905f4c78105d69a861d4d2f86362d4f663e29c1fcb07c46a",
+    "546:33": "9fd76698f8d1ed40ac2bcbb69b8a5f946d317c68a23d18331e9b5828abd79380",
+    "546:41": "04918d9f46a09521c02230a1098adb38b0a13f237d997653255a4120d92b25fb",
+    "1094:23": "e38b1c5c83e8b1b8de7c23eee08fa293408e24a739d8518dc102b60f76033e28",
+    "1094:34": "f276c9e6f32270690b4ae401816eef6eb206f749a682d9721584ad43c3ab37fc",
+    "1094:45": "12b41ae5a6ad335e19a99ac9bee4eca24f77bba80c4884724268bc3d8538ec59",
+    "1094:53": "4b35dc1ca76531e14f9df3ebba4f4bd920496600d70f1b557f7b31b34887c4fa",
+    "1094:61": "19434a529d5aed08723e03c54070307553f55f589a306a5f5475579ee7092def",
+    "1094:69": "a8c1b9a3c8bce279bd6f637837e4b94f5e04158d55ce91e21aa0dbc0bc493da4",
+    "1094:77": "f8007418f9e78ae83a9cf7fc1d81710e5895480188eb82e73fc74531f7507c99",
+    "1094:93": "67c2b6c01a7afb64af48aafefe4ff698bd55f3b3105cb0918587d5791b235e49"
+  },
+  "messages_sha256": {
+    "546:9": "adc41842ffc5b9bfafcdbd28c1404c5bf7b0b105f853d4a8357e59b2db9dc59b",
+    "546:17": "c091e71c61a3b6489e21d75910635b421279bc7fe47ff292a90c7c86565599b1",
+    "546:25": "4abf97d4b2395c36361d8da01f20502553081210f2d24d9a3e09081a893f7e3d",
+    "546:33": "e39cc25811c7109f4d081b30f03f329529cac48587c077b727329c1b5dfde08f",
+    "546:41": "c9248acaf9f0c9ffccdd9bea5002a76bdfc4dc19442120f0c02dbea03b60bf8c",
+    "1094:23": "2811b31cb7229f845c1b5cb779cc8d314109478fe5af0da6a0dabca22d39b0b0",
+    "1094:34": "d573a8b48b12487129178de0ab0ab1ea18ac280954b3960245d7af430bc9e69b",
+    "1094:45": "e28a25084f08b98dda7994498341d6fbad31a8d63ac1b8579ef94522ee2ffbbe",
+    "1094:53": "d7cb0ce2bc507be522cc7b8aabd2083c662790674f32c5fab4c69af250ff3bb6",
+    "1094:61": "1e42e38d5bf2efd2913eb1dc00c467bc586cc855fee585d6b6fce5e20a0de94b",
+    "1094:69": "848721171b0142b9409f4103bf669e86a8476416164915f63a094f0c0303408a",
+    "1094:77": "5bf1bd535986f7f52d793ea82419640a44791cbd020806c2e3ab857fa2df25a2",
+    "1094:93": "8ff4edb8802adeb782d841208e0bd0ed15933d5808b638305efe95a0a35d3014"
+  },
+  "strong_signal": "Atria >=4 more compatible scopes of 13, not all stop, and >=2 better source/target judgments",
+  "failure_policy": "attempt all 26 model cells in order; no selective retry or best-of; record all failures"
+}

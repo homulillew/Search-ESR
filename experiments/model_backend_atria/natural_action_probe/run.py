@@ -53,7 +53,10 @@ def freeze():
     qwen=Config.load()
     if qwen.model!='qwen3.7-flash':raise ValueError('Qwen model differs')
     sources=['experiments/model_backend_atria/natural_action_probe/run.py',
+             'experiments/model_backend_atria/natural_action_probe/analyze.py',
              'experiments/model_backend_atria/protocol.py',
+             'experiments/model_backend_atria/provider.json',
+             'llm_chat/client.py',
              'llm_chat/search_find_agent.py',
              'llm_chat/search_find_v3b_agent.py',
              'experiments/search_find_v3b/orthogonal_search/run_partial.py']
@@ -64,7 +67,9 @@ def freeze():
          'atria_model':ATRIA['model'],'atria_host':urlsplit(ATRIA['base_url']).hostname,
          'qwen_allow_stop_with_calls':False,
          'atria_allow_stop_with_calls':ATRIA['allow_tool_calls_with_stop'],
-         'timeout_seconds':120,'max_retries':0,'sdk_version':version('openai'),
+         'qwen_timeout_seconds':qwen.timeout,
+         'atria_timeout_seconds':ATRIA['timeout_seconds'],
+         'max_retries':0,'sdk_version':version('openai'),
          'schema_sha256':digest(SEARCH_FIND_TOOLS),
          'm1_summary_sha256':sha(STUDY/'planning_probe/mechanical_summary.json'),
          'source_sha256':{p:file_sha(ROOT/p) for p in sources},
@@ -101,14 +106,18 @@ def run():
     gate()
     if (HERE/'events.jsonl').exists():raise FileExistsError('M2 already attempted')
     qwen=Config.load()
-    if qwen.model!='qwen3.7-flash':raise ValueError('Qwen config changed')
+    frozen=json.loads((HERE/'freeze.json').read_text())
+    if qwen.model!=frozen['qwen_model'] or urlsplit(qwen.base_url).hostname!=frozen['qwen_host'] \
+            or qwen.timeout!=frozen['qwen_timeout_seconds']:
+        raise ValueError('Qwen config changed')
     key=dotenv_values(ROOT/ATRIA['credential_file']).get(ATRIA['credential_field'])
     if not key:raise ValueError('Atria key missing')
     selected,_=selection()
-    with OpenAI(api_key=qwen.api_key,base_url=qwen.base_url,timeout=120,max_retries=0) as qc, \
-         OpenAI(api_key=key,base_url=ATRIA['base_url'],timeout=120,max_retries=0) as ac:
+    with OpenAI(api_key=qwen.api_key,base_url=qwen.base_url,timeout=qwen.timeout,max_retries=0) as qc, \
+         OpenAI(api_key=key,base_url=ATRIA['base_url'],timeout=ATRIA['timeout_seconds'],max_retries=0) as ac:
       for q,s in selected:
-       for model,client,allow in ((qwen.model,qc,False),(ATRIA['model'],ac,True)):
+       for model,client,allow in ((qwen.model,qc,False),
+                                  (ATRIA['model'],ac,ATRIA['allow_tool_calls_with_stop'])):
         cell=f'{q}:{s}:{model}'
         params=request(q,s,model)
         emit('api_request',cell=cell,request=params)
