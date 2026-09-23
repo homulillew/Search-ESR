@@ -1,0 +1,795 @@
+{
+  "summary": {
+    "total": 29,
+    "qids": 8,
+    "api_responses": 29,
+    "api_errors": 0,
+    "valid_statuses": 29,
+    "agreement": {
+      "correct": 29,
+      "rate": 1.0
+    },
+    "by_label": {
+      "supported": {
+        "n": 13,
+        "correct": 13
+      },
+      "refuted": {
+        "n": 8,
+        "correct": 8
+      },
+      "open": {
+        "n": 8,
+        "correct": 8
+      }
+    },
+    "confusion": {
+      "supported": {
+        "supported": 13
+      },
+      "refuted": {
+        "refuted": 8
+      },
+      "open": {
+        "open": 8
+      }
+    },
+    "false_close": {
+      "n": 0,
+      "denominator": 8,
+      "rate": 0.0
+    },
+    "missed_closure": {
+      "n": 0,
+      "denominator": 21
+    },
+    "stale_gap": {
+      "correct": 5,
+      "n": 5,
+      "low_ambiguity_correct": 4,
+      "low_ambiguity_n": 4
+    },
+    "invalid_ref_cases": [],
+    "cache": {
+      "usage_reported": 29,
+      "hit_tokens": 0,
+      "miss_tokens": 17837,
+      "weighted_hit_rate": 0.0
+    },
+    "gate": {
+      "overall_ge_80pct": true,
+      "false_close_le_10pct": true,
+      "stale_closure_ge_4of5": true
+    },
+    "stage_A_pass": true,
+    "caveat": "Single responses, single-reviewer labels, repeated claim/checkpoint siblings; not independent trials."
+  },
+  "rows": [
+    {
+      "case_id": "546_support_opening",
+      "qid": "546",
+      "checkpoint": "R1:25",
+      "case_type": "support",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "W13"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "W13 explicitly states Ding Junhui recovered to beat Ma Hailong 4-3 in his opening match at the 2023 English Open.",
+        "content": "Status: supported\nEvidence refs: W13\nMissing evidence: none\nReason: W13 explicitly states Ding Junhui recovered to beat Ma Hailong 4-3 in his opening match at the 2023 English Open."
+      }
+    },
+    {
+      "case_id": "546_refute_opening_loss",
+      "qid": "546",
+      "checkpoint": "R1:25",
+      "case_type": "refute",
+      "ambiguity": "low",
+      "review_label": "refuted",
+      "model_status": "refuted",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "refuted",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "W13"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "W13 explicitly states Ding Junhui recovered to beat Ma Hailong 4-3 in his English Open opening match, contradicting the claim that he lost.",
+        "content": "Status: refuted\nEvidence refs: W13\nMissing evidence: none\nReason: W13 explicitly states Ding Junhui recovered to beat Ma Hailong 4-3 in his English Open opening match, contradicting the claim that he lost."
+      }
+    },
+    {
+      "case_id": "546_open_full_run",
+      "qid": "546",
+      "checkpoint": "R1:25",
+      "case_type": "insufficient",
+      "ambiguity": "low",
+      "review_label": "open",
+      "model_status": "open",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "open",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "W13"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "Ding Junhui’s subsequent matches after the opening 4-3 win, specifically a later 4-3, then 4-0, then a loss.",
+        "reason": "W13 confirms Ding’s opening 4-3 victory in 2023, but it does not show the specified later sequence of results.",
+        "content": "Status: open\nEvidence refs: W13\nMissing evidence: Ding Junhui’s subsequent matches after the opening 4-3 win, specifically a later 4-3, then 4-0, then a loss.\nReason: W13 confirms Ding’s opening 4-3 victory in 2023, but it does not show the specified later sequence of results."
+      }
+    },
+    {
+      "case_id": "1094_support_messi",
+      "qid": "1094",
+      "checkpoint": "R1:69",
+      "case_type": "support",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "W38"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt explicitly describes Lionel Messi’s last-gasp free-kick in the 95th minute of PSG’s home game against Lille, matching the claim.",
+        "content": "Status: supported\nEvidence refs: W38\nMissing evidence: none\nReason: The excerpt explicitly describes Lionel Messi’s last-gasp free-kick in the 95th minute of PSG’s home game against Lille, matching the claim."
+      }
+    },
+    {
+      "case_id": "1094_refute_inter_lille",
+      "qid": "1094",
+      "checkpoint": "R1:69",
+      "case_type": "refute",
+      "ambiguity": "low",
+      "review_label": "refuted",
+      "model_status": "refuted",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "refuted",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "W38"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The article states the 95th-minute Messi free kick occurred in PSG's home game vs Lille, not an Inter–Lille fixture.",
+        "content": "Status: refuted\nEvidence refs: W38\nMissing evidence: none\nReason: The article states the 95th-minute Messi free kick occurred in PSG's home game vs Lille, not an Inter–Lille fixture."
+      }
+    },
+    {
+      "case_id": "1094_open_full_match",
+      "qid": "1094",
+      "checkpoint": "R1:69",
+      "case_type": "insufficient",
+      "ambiguity": "low",
+      "review_label": "open",
+      "model_status": "open",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "open",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "W38",
+          "W42"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "Evidence connecting PSG and Lille histories to a split-founded club and an evolving-identity opponent; W42 concerns AC Milan/Inter, not PSG–Lille.",
+        "reason": "W38 only confirms the 95th-minute PSG–Lille goal chronology, while W42’s split-founded club evidence is about AC Milan, so the claim’s additional history/identity clues are not established.",
+        "content": "Status: open\nEvidence refs: W38, W42\nMissing evidence: Evidence connecting PSG and Lille histories to a split-founded club and an evolving-identity opponent; W42 concerns AC Milan/Inter, not PSG–Lille.\nReason: W38 only confirms the 95th-minute PSG–Lille goal chronology, while W42’s split-founded club evidence is about AC Milan, so the claim’s additional history/identity clues are not established."
+      }
+    },
+    {
+      "case_id": "517_support_biography",
+      "qid": "517",
+      "checkpoint": "event:16",
+      "case_type": "support",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_847088d110a745604b5159e5"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt states Peter King Nzioki was born on 25 May 1978, his father served in the Kenyan Army, and his mother worked at the military hospital.",
+        "content": "Status: supported\nEvidence refs: [w_847088d110a745604b5159e5]\nMissing evidence: none\nReason: The excerpt states Peter King Nzioki was born on 25 May 1978, his father served in the Kenyan Army, and his mother worked at the military hospital."
+      }
+    },
+    {
+      "case_id": "517_refute_birth_1979",
+      "qid": "517",
+      "checkpoint": "event:16",
+      "case_type": "refute",
+      "ambiguity": "low",
+      "review_label": "refuted",
+      "model_status": "refuted",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "refuted",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_847088d110a745604b5159e5"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt explicitly states Peter King Nzioki Mwania was born on 25 May 1978, contradicting the claim that he was born in 1979.",
+        "content": "Status: refuted\nEvidence refs: w_847088d110a745604b5159e5\nMissing evidence: none\nReason: The excerpt explicitly states Peter King Nzioki Mwania was born on 25 May 1978, contradicting the claim that he was born in 1979."
+      }
+    },
+    {
+      "case_id": "517_open_policeman",
+      "qid": "517",
+      "checkpoint": "event:16",
+      "case_type": "insufficient",
+      "ambiguity": "low",
+      "review_label": "open",
+      "model_status": "open",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "open",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_847088d110a745604b5159e5"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "The excerpt does not specify his role in The Constant Gardener, only that it was a minor role.",
+        "reason": "The film and year match, but the claim that the role was a policeman is not stated or contradicted in the visible evidence.",
+        "content": "Status: open\nEvidence refs: w_847088d110a745604b5159e5\nMissing evidence: The excerpt does not specify his role in The Constant Gardener, only that it was a minor role.\nReason: The film and year match, but the claim that the role was a policeman is not stated or contradicted in the visible evidence."
+      }
+    },
+    {
+      "case_id": "435_support_oliver_age",
+      "qid": "435",
+      "checkpoint": "event:12",
+      "case_type": "support",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_d10a873c7f9c87b1d58df6eb"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The visible excerpt states that Oliver \"Tuku\" Mtukudzi died on Wednesday at the age of 66, directly supporting the claim.",
+        "content": "Status: supported\nEvidence refs: w_d10a873c7f9c87b1d58df6eb\nMissing evidence: none\nReason: The visible excerpt states that Oliver \"Tuku\" Mtukudzi died on Wednesday at the age of 66, directly supporting the claim."
+      }
+    },
+    {
+      "case_id": "435_refute_miriam_age",
+      "qid": "435",
+      "checkpoint": "event:6",
+      "case_type": "refute",
+      "ambiguity": "low",
+      "review_label": "refuted",
+      "model_status": "refuted",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "refuted",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_c695c833138d105df73d74a4"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt explicitly states Miriam Makeba died at age 76, contradicting the claim that she died at age 66.",
+        "content": "Status: refuted\nEvidence refs: w_c695c833138d105df73d74a4\nMissing evidence: none\nReason: The excerpt explicitly states Miriam Makeba died at age 76, contradicting the claim that she died at age 66."
+      }
+    },
+    {
+      "case_id": "435_open_full_identity",
+      "qid": "435",
+      "checkpoint": "event:12",
+      "case_type": "insufficient",
+      "ambiguity": "low",
+      "review_label": "open",
+      "model_status": "open",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "open",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_d10a873c7f9c87b1d58df6eb"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "The original question’s full article, album and political clues, plus evidence matching all of them to Mtukudzi.",
+        "reason": "The excerpt confirms some career details such as age 66, over 60 albums, and the 1980 independence anthem, but it does not establish every article, album and political clue in the question.",
+        "content": "Status: open\nEvidence refs: w_d10a873c7f9c87b1d58df6eb\nMissing evidence: The original question’s full article, album and political clues, plus evidence matching all of them to Mtukudzi.\nReason: The excerpt confirms some career details such as age 66, over 60 albums, and the 1980 independence anthem, but it does not establish every article, album and political clue in the question."
+      }
+    },
+    {
+      "case_id": "580_support_birth_plot",
+      "qid": "580",
+      "checkpoint": "event:2",
+      "case_type": "support",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_3f0b06b4cba0eda41784c085"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The visible excerpt identifies “Not a Great Bet” as a Season 4 episode and states Gretchen goes home for the birth of her brother’s baby/first child.",
+        "content": "Status: supported\nEvidence refs: w_3f0b06b4cba0eda41784c085\nMissing evidence: none\nReason: The visible excerpt identifies “Not a Great Bet” as a Season 4 episode and states Gretchen goes home for the birth of her brother’s baby/first child."
+      }
+    },
+    {
+      "case_id": "580_refute_sister_birth",
+      "qid": "580",
+      "checkpoint": "event:2",
+      "case_type": "refute",
+      "ambiguity": "low",
+      "review_label": "refuted",
+      "model_status": "refuted",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "refuted",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_3f0b06b4cba0eda41784c085"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt says Gretchen went home for the birth of her brother's baby, not her sister's baby, directly contradicting the claim.",
+        "content": "Status: refuted\nEvidence refs: w_3f0b06b4cba0eda41784c085\nMissing evidence: none\nReason: The excerpt says Gretchen went home for the birth of her brother's baby, not her sister's baby, directly contradicting the claim."
+      }
+    },
+    {
+      "case_id": "580_open_all_seasons",
+      "qid": "580",
+      "checkpoint": "event:2",
+      "case_type": "insufficient",
+      "ambiguity": "low",
+      "review_label": "open",
+      "model_status": "open",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "open",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_3f0b06b4cba0eda41784c085"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "Evidence that the series matches the specified season-one date and the season-three roommate sacrifice.",
+        "reason": "The excerpt only establishes “Not a Great Bet” as a Season 4 episode; it does not confirm the season-one date or season-three roommate sacrifice.",
+        "content": "Status: open\nEvidence refs: w_3f0b06b4cba0eda41784c085\nMissing evidence: Evidence that the series matches the specified season-one date and the season-three roommate sacrifice.\nReason: The excerpt only establishes “Not a Great Bet” as a Season 4 episode; it does not confirm the season-one date or season-three roommate sacrifice."
+      }
+    },
+    {
+      "case_id": "177_support_13",
+      "qid": "177",
+      "checkpoint": "event:2",
+      "case_type": "support",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_f9e5e8720a7c6d12c69bc393"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt explicitly states Rangers signed 13 new players ahead of the 2022/23 NPFL season and identifies Rangers as the Enugu-based club. This directly supports the candidate claim.",
+        "content": "Status: supported\nEvidence refs: w_f9e5e8720a7c6d12c69bc393\nMissing evidence: none\nReason: The excerpt explicitly states Rangers signed 13 new players ahead of the 2022/23 NPFL season and identifies Rangers as the Enugu-based club. This directly supports the candidate claim."
+      }
+    },
+    {
+      "case_id": "177_refute_12",
+      "qid": "177",
+      "checkpoint": "event:2",
+      "case_type": "refute",
+      "ambiguity": "low",
+      "review_label": "refuted",
+      "model_status": "refuted",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "refuted",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_f9e5e8720a7c6d12c69bc393"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt explicitly states Rangers signed 13 new players ahead of the 2022/23 season, contradicting the claim of 12.",
+        "content": "Status: refuted\nEvidence refs: w_f9e5e8720a7c6d12c69bc393\nMissing evidence: none\nReason: The excerpt explicitly states Rangers signed 13 new players ahead of the 2022/23 season, contradicting the claim of 12."
+      }
+    },
+    {
+      "case_id": "177_open_league",
+      "qid": "177",
+      "checkpoint": "event:2",
+      "case_type": "insufficient",
+      "ambiguity": "low",
+      "review_label": "open",
+      "model_status": "open",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "open",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_f9e5e8720a7c6d12c69bc393"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "The 2011–2016 equal-points table, relevant league-position, points, goal-difference details, and all capital-city/trophy conditions.",
+        "reason": "The visible excerpt only confirms Rangers is Enugu-based, finished fifth, and is a seven-time NPFL champion; it does not establish the specific table or every condition in the claim.",
+        "content": "Status: open\nEvidence refs: w_f9e5e8720a7c6d12c69bc393\nMissing evidence: The 2011–2016 equal-points table, relevant league-position, points, goal-difference details, and all capital-city/trophy conditions.\nReason: The visible excerpt only confirms Rangers is Enugu-based, finished fifth, and is a seven-time NPFL champion; it does not establish the specific table or every condition in the claim."
+      }
+    },
+    {
+      "case_id": "1034_support_model",
+      "qid": "1034",
+      "checkpoint": "event:2",
+      "case_type": "support",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_5dc63ed12276c51dff9f14e4"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt explicitly lists Heart Evangelista as a singer and model, so both parts of the claim follow.",
+        "content": "Status: supported\nEvidence refs: w_5dc63ed12276c51dff9f14e4\nMissing evidence: none\nReason: The excerpt explicitly lists Heart Evangelista as a singer and model, so both parts of the claim follow."
+      }
+    },
+    {
+      "case_id": "1034_refute_no_model",
+      "qid": "1034",
+      "checkpoint": "event:2",
+      "case_type": "refute",
+      "ambiguity": "low",
+      "review_label": "refuted",
+      "model_status": "refuted",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "refuted",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_5dc63ed12276c51dff9f14e4"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt explicitly lists “model” among her roles, which contradicts the claim that she has never worked as a model.",
+        "content": "Status: refuted\nEvidence refs: w_5dc63ed12276c51dff9f14e4\nMissing evidence: none\nReason: The excerpt explicitly lists “model” among her roles, which contradicts the claim that she has never worked as a model."
+      }
+    },
+    {
+      "case_id": "1034_open_education_child",
+      "qid": "1034",
+      "checkpoint": "event:2",
+      "case_type": "insufficient",
+      "ambiguity": "low",
+      "review_label": "open",
+      "model_status": "open",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "open",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_5dc63ed12276c51dff9f14e4"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "Evidence that Heart Evangelista studied Business Administration and that she has a child born in the United States",
+        "reason": "The visible excerpt only discusses her family background, career, and time living in the US as a teenager; it does not confirm the education or child-birthplace parts of the claim.",
+        "content": "Status: open\nEvidence refs: w_5dc63ed12276c51dff9f14e4\nMissing evidence: Evidence that Heart Evangelista studied Business Administration and that she has a child born in the United States\nReason: The visible excerpt only discusses her family background, career, and time living in the US as a teenager; it does not confirm the education or child-birthplace parts of the claim."
+      }
+    },
+    {
+      "case_id": "387_support_dean_equipment",
+      "qid": "387",
+      "checkpoint": "event:2",
+      "case_type": "support",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_12cea48292e6ff0cbce7a031"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt explicitly states Dean Dodrill’s main workstation also doubled as his gaming PC and that he had a wireless keyboard in his setup.",
+        "content": "Status: supported\nEvidence refs: w_12cea48292e6ff0cbce7a031\nMissing evidence: none\nReason: The excerpt explicitly states Dean Dodrill’s main workstation also doubled as his gaming PC and that he had a wireless keyboard in his setup."
+      }
+    },
+    {
+      "case_id": "387_refute_no_pc",
+      "qid": "387",
+      "checkpoint": "event:2",
+      "case_type": "refute",
+      "ambiguity": "low",
+      "review_label": "refuted",
+      "model_status": "refuted",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "refuted",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_12cea48292e6ff0cbce7a031"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt states his main workstation “also doubles as my gaming PC,” directly contradicting the claim that Dean Dodrill did not have a gaming PC.",
+        "content": "Status: refuted\nEvidence refs: w_12cea48292e6ff0cbce7a031\nMissing evidence: none\nReason: The excerpt states his main workstation “also doubles as my gaming PC,” directly contradicting the claim that Dean Dodrill did not have a gaming PC."
+      }
+    },
+    {
+      "case_id": "387_open_paper",
+      "qid": "387",
+      "checkpoint": "event:2",
+      "case_type": "insufficient",
+      "ambiguity": "low",
+      "review_label": "open",
+      "model_status": "open",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "open",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_12cea48292e6ff0cbce7a031"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "Evidence connecting Dean Dodrill to Game B, and evidence that its intro and end animations were drawn on 8x11-inch paper.",
+        "reason": "The visible excerpt identifies Dean Dodrill as an illustrator/animator and describes his setup, but never mentions Game B, intro/end animations, or 8x11-inch paper.",
+        "content": "Status: open\nEvidence refs: w_12cea48292e6ff0cbce7a031\nMissing evidence: Evidence connecting Dean Dodrill to Game B, and evidence that its intro and end animations were drawn on 8x11-inch paper.\nReason: The visible excerpt identifies Dean Dodrill as an illustrator/animator and describes his setup, but never mentions Game B, intro/end animations, or 8x11-inch paper."
+      }
+    },
+    {
+      "case_id": "stale_546_opening",
+      "qid": "546",
+      "checkpoint": "R1:25+H0",
+      "case_type": "stale_gap",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "W13"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt states Ding Junhui’s English Open opening match in Brentwood and that he recovered to beat Ma Hailong 4-3, matching the claim.",
+        "content": "Status: supported\nEvidence refs: W13\nMissing evidence: none\nReason: The excerpt states Ding Junhui’s English Open opening match in Brentwood and that he recovered to beat Ma Hailong 4-3, matching the claim."
+      }
+    },
+    {
+      "case_id": "stale_1094_inter_split",
+      "qid": "1094",
+      "checkpoint": "R1:53+S1B",
+      "case_type": "stale_gap",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "W42"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "W42 explicitly states that in 1908 Milan split over disagreements about signing foreign players, leading to the formation of F.C. Internazionale.",
+        "content": "Status: supported\nEvidence refs: W42\nMissing evidence: none\nReason: W42 explicitly states that in 1908 Milan split over disagreements about signing foreign players, leading to the formation of F.C. Internazionale."
+      }
+    },
+    {
+      "case_id": "stale_177_signings_first",
+      "qid": "177",
+      "checkpoint": "event:3",
+      "case_type": "stale_gap",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_f9e5e8720a7c6d12c69bc393"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The visible article explicitly states that Rangers signed 13 new players ahead of the 2022/23 NPFL season.",
+        "content": "Status: supported\nEvidence refs: w_f9e5e8720a7c6d12c69bc393\nMissing evidence: none\nReason: The visible article explicitly states that Rangers signed 13 new players ahead of the 2022/23 NPFL season."
+      }
+    },
+    {
+      "case_id": "stale_177_signings_later",
+      "qid": "177",
+      "checkpoint": "event:13",
+      "case_type": "stale_gap",
+      "ambiguity": "low",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_f9e5e8720a7c6d12c69bc393"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The article title and opening sentence explicitly state Rangers signed 13 new players ahead of the 2022/23 NPFL season.",
+        "content": "Status: supported\nEvidence refs: w_f9e5e8720a7c6d12c69bc393\nMissing evidence: none\nReason: The article title and opening sentence explicitly state Rangers signed 13 new players ahead of the 2022/23 NPFL season."
+      }
+    },
+    {
+      "case_id": "stale_1034_model",
+      "qid": "1034",
+      "checkpoint": "event:3",
+      "case_type": "stale_gap",
+      "ambiguity": "medium",
+      "review_label": "supported",
+      "model_status": "supported",
+      "agree": true,
+      "false_close": false,
+      "missed_closure": false,
+      "invalid_refs": [],
+      "api_error": null,
+      "parsed": {
+        "status": "supported",
+        "finish_reason": "stop",
+        "evidence_refs": [
+          "w_5dc63ed12276c51dff9f14e4"
+        ],
+        "ref_field_present": true,
+        "missing_evidence": "none",
+        "reason": "The excerpt explicitly lists Heart Evangelista among her roles as a model, directly supporting the claim.",
+        "content": "Status: supported\nEvidence refs: w_5dc63ed12276c51dff9f14e4\nMissing evidence: none\nReason: The excerpt explicitly lists Heart Evangelista among her roles as a model, directly supporting the claim."
+      }
+    }
+  ]
+}
