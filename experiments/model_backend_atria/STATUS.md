@@ -8,7 +8,7 @@
 | M1 paired explicit planning | complete; 26 attempts, 23 responses | `planning_probe/RESULTS.md` |
 | M2 natural action | complete; 26 terminal cells after frozen interruption recovery | `natural_action_probe/RESULTS.md` |
 | M3 orthogonal partial | skipped by model-signal/provider-availability gate | `orthogonal_partial/DECISION.md` |
-| M4 evidence update | preparing freeze | Eight exact source cases and pre-call rubric prepared |
+| M4 evidence update | paused at user request after 3 terminal cells | `evidence_update/freeze.json`, `evidence_update/events.jsonl`, `evidence_update/INTERRUPTION.json` |
 | M5 Atria-native | not run | Conditional on material model effect |
 
 The user clarified that Codex may perform the prefix-only semantic review

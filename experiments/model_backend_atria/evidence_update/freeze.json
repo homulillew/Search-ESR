@@ -1,0 +1,64 @@
+{
+  "frozen_at_utc": "2026-09-23T06:41:05.213402+00:00",
+  "cases": [
+    "546_mark_professional_refute",
+    "546_mark_maximum_refute",
+    "546_ding_professional_support",
+    "546_ding_breaks_support",
+    "546_mark_result_non_support",
+    "1094_inter_split_support",
+    "1094_inter_page_irrelevant",
+    "1094_totti_penalty_refute"
+  ],
+  "arm_order": [
+    "E0",
+    "E1"
+  ],
+  "model_order": [
+    "qwen3.7-flash",
+    "Atria-Dawn-Preview"
+  ],
+  "samples_per_cell": 1,
+  "tools": null,
+  "stream": false,
+  "sampling_overrides": {},
+  "max_retries": 0,
+  "qwen_model": "qwen3.7-flash",
+  "qwen_host": "llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com",
+  "atria_model": "Atria-Dawn-Preview",
+  "atria_host": "api.atria-asi.ai",
+  "qwen_timeout_seconds": 180.0,
+  "atria_timeout_seconds": 240,
+  "atria_timeout_rationale": "prospective uniform M4 setting after M2 120-second Atria timeouts",
+  "sdk_version": "1.109.1",
+  "case_file_sha256": "d63e78c24449c4ace1c59c788adf613fbc828baaa0dd56783a739283846e0ec8",
+  "evaluation_rules_sha256": "5e50756751b5c20d0d527a6f7cd9dc523485657286ffe3491ef288f1b635e6b8",
+  "instruction_sha256": "1cc91edbf341a9c12678557547221740126489c488617ad0bcf7a4f616651137",
+  "source_sha256": {
+    "experiments/model_backend_atria/evidence_update/run.py": "8c4e7852a6cb17a205d23633f954ebdc62ff4efeca63e2271d519fb6843b9f5b",
+    "experiments/model_backend_atria/evidence_update/analyze.py": "e60956f94aefd915b5cbc055f7e3063dd3ab21220852ca0bbc8d55a3bfa22a7e",
+    "experiments/model_backend_atria/evidence_update/build_cases.py": "185d892843c11a35c7297f6db9852eddc55e5144f929f297d7e76fb2d63f5654",
+    "experiments/model_backend_atria/provider.json": "ad9e6b4e0f5e1bbea9365dfaf475bd95d9e5a4c93344026e00798c4eac65d61b",
+    "llm_chat/client.py": "126ee2d49ed526a64931b4ac7a27df1db63fb77ba10b5dd368770d0d79846204",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1"
+  },
+  "request_sha256": {
+    "546_mark_professional_refute:E0": "3cac96ca0d43b87f2007d9937033b5562a8b55b79638e9927ba4e4257bb9d4e7",
+    "546_mark_professional_refute:E1": "eb3f2ba16d1aa6904b4f731fc17494b4308f18db8e24c3c08e5d821b3d6c171d",
+    "546_mark_maximum_refute:E0": "dd239086bec9196649b9cf866ce51645ce4c0e2254f8cfd4fc83c6252c4c3827",
+    "546_mark_maximum_refute:E1": "acdbcea61acd0c14457d8e7e855012ee9ae20ac58377a1ab8afb6e8b96b7fcb1",
+    "546_ding_professional_support:E0": "95a477ab89190cad9402c2a777fcdac1cb29619d3ce5b7dbcdccb048e3eff0ce",
+    "546_ding_professional_support:E1": "01d5816fa04258a8b96a7f4e3127b1761b85665f20fa1f6f0d9a1d2e52d6bc7d",
+    "546_ding_breaks_support:E0": "370b1086f814f957fb19641fbf87e5b278d190e0b123db1b1fd0e8637bd585a2",
+    "546_ding_breaks_support:E1": "0bdd09100046787945b3999118d9c8f416172228d8fa8817d8700c1043cb749e",
+    "546_mark_result_non_support:E0": "e9835d6791a8ac590c3b877ed939e55968375372d3ac93fd75c17984e0159333",
+    "546_mark_result_non_support:E1": "8c368f731eba887c3fbe6b16c18ecc4b36823c91d15054b6832d62cca0c63c54",
+    "1094_inter_split_support:E0": "53fa94b46f14d1aa054fc85a6b1e6c9f1ee0c4fb0d36d3bf0a40971a7d3d7fed",
+    "1094_inter_split_support:E1": "353c254c678e2f7d33e34573dc33f6e96a7306259f43f880e35dbf1a1e2ec74b",
+    "1094_inter_page_irrelevant:E0": "1377a111fce250467079c7c7f9e228d61fa0fd9e22d9d78289ac172b1dd1d2d8",
+    "1094_inter_page_irrelevant:E1": "44fac33538a3d2ed3b46cf61d116756ba923c4878689e36a6f205f19428038b5",
+    "1094_totti_penalty_refute:E0": "aa2632eda9ce3e05f10b57f7c1b952f613e29ec3b0a5ab26cd40415a0da0602e",
+    "1094_totti_penalty_refute:E1": "f687c41efd4cc8f3adbfe4d4335eb18c124db18a364232200f78519fcb15fc44"
+  },
+  "failure_policy": "all 8 cases x 2 arms x 2 models, no selective retry"
+}
