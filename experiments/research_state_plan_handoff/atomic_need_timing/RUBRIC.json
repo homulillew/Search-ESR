@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "selection": "Eight preselected qid/seq cells from prefix-only annotations, four per qid; no outcome-based replacement.",
+  "one_active_need": "Exactly one currently verifiable information gap chiefly answerable by one source type, or literal none. A list of heterogeneous tasks is too broad.",
+  "a1_question_only": "One planner response per original question, reused at all selected checkpoints for that qid. No observations, candidate, or D/W refs. Target must be none unless original question names a directly locatable source.",
+  "a2_evidence_conditioned": "One planner response per checkpoint from exact visible prefix. Claims may be question_only, hypothesis_bound, or evidence_bound; basis refs identify visible question/D#/W# without copying long evidence.",
+  "premature_commitment": "True for unsupported entity guesses, narrowing a range to an exact fact, premature source-type exclusivity, or a target absent from visible evidence. Record specific text and reason.",
+  "need_fidelity": "Does the single active need correspond to a still-unresolved gap at this checkpoint? none may be valid if a defensible atomic need cannot be formed.",
+  "granularity": "too_broad, appropriate, over_fragmented, or none; judge one source-type criterion and current verifiability.",
+  "source_compatibility": "Proposed source type can chiefly answer this need. Entity relevance alone is insufficient.",
+  "action_realization": "A valid action compatible with the card's explicitly stated scope, or with the need/source type if no scope is asserted. Report mixed and first-call actions separately.",
+  "concrete_source_quality": "If Actor inspects a D#, judge whether that D# can plausibly answer the current atomic need using only visible prefix, with reason and unknown allowed.",
+  "evidence_gain": "Not measured in first one-step phase; no tool is executed. Do not infer gain from Find count.",
+  "failure": "Keep provider, parse, validation and absent-card failures distinct. Zero SDK retries and no selective reruns."
+}

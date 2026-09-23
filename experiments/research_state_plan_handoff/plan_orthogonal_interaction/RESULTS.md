@@ -1,0 +1,18 @@
+# P2 results: broad Plan × Orthogonal Search
+
+Frozen design: four historical M3 checkpoints, two harnesses, historical H0 trajectories reused, eight new H1 trajectories of up to four Actor decisions. Decision 1 uses its exact historical M1 plan; subsequent decisions use a fresh broad plan from the current tool history. Each H1 Actor sees only the current descriptive card. All Search, Find and Open actions remain available. All eight H1 cells reached the decision horizon; 24 new planner and 32 new Actor responses have no provider, parse, schema, invalid-tool or invalid-argument failures. There were no retries. The 33 Find/Open observations across all four arms were reviewed individually in `inspection_scores.json` against the active need and returned excerpt. `inspection_review_cards.json` preserves those excerpts.
+
+| Arm | Search | Find/Open | Plan-scope realization | Compatible inspection | Useful evidence | Natural stops |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| P0H0 (v3a, no plan) | 30 | 2 | n/a | 0/2 | 0/2 | 1/4 |
+| P0H1 (v3a, plan) | 33 | 12 | 16/16 | 5/12 | 3/12 | 0/4 |
+| P1H0 (Orthogonal, no plan) | 27 | 3 | n/a | 1/3 | 0/3 | 1/4 |
+| P1H1 (Orthogonal, plan) | 28 | 16 | 14/16 | 4/16 | 3/16 | 0/4 |
+
+Plan realization here means **any** call in the batch matches the planned scope. Four P0H1 and six P1H1 realized decisions also contain a conflicting tool type. In P1H1, only two of 16 first calls were Inspect, versus one of 16 in P0H1; the table's high realization rate must not be read as exclusive obedience. New document hits were 43/61 for P0H0/H1 and 11/56 for P1H0/H1. These are exposure and retrieval counts, not useful evidence.
+
+For Orthogonal Search, 18 H0 and six H1 Search calls returned zero new D#. There were eight H0 and five H1 no-gain *decisions* with a following Actor response. The next response contained Inspect in 2/8 H0 and 4/5 H1; it also contained Search in 7/8 H0 and **5/5 H1**. Thus visible dynamic planning increases the frequency of inspection after a no-gain observation in this tiny paired set, but it does not produce a clean Search-to-Inspect switch. The mixed batches are decisive: Find/Open often accompanies, rather than replaces, further Search. The one historical natural stop at q1094:77 in each harness disappeared under H1 at the same checkpoint, so stopping is not improved.
+
+The source audit constrains the behavioral result. All six useful observations in H1 were from q546:33, primarily Ding Junhui's career biography and 2023 match records. At q1094, the H1 arms made 18 inspections without a confirmed useful observation. The planner and Actor repeatedly explored Liverpool–Milan 2005, generic stoppage-time lists, or the Chennaiyin–Goa final without verifying the required club-origin and 95th-minute free-kick conjunction. The Messi PSG–Lille article explicitly names a 95th-minute kick, but the club-origin and goal-timing clues remain unverified, so those two observations are marked source compatibility uncertain and useful evidence false. This review gives credit for a relevant *partial* fact at q546 without crediting an unproven complete answer.
+
+The interaction is therefore limited to **more inspection after no-gain**, with neither elimination of repeat Search nor general improvement in source routing established. Plan handoff can propagate a wrong match hypothesis as well as a useful target. The four checkpoints were frozen before H1, but H0 was recorded earlier and the sample has only two questions; these descriptive contrasts cannot support a population effect estimate. P3 will test whether a single evidence-conditioned need improves source choice, rather than treating the higher Find count as success.

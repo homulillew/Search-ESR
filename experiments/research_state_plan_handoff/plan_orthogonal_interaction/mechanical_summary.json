@@ -1,0 +1,713 @@
+{
+  "rows": [
+    {
+      "cell": "546:33:P0:deepseek-flash",
+      "qid": "546",
+      "seq": 33,
+      "harness": "P0",
+      "handoff": "H0",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 0,
+      "actions": {
+        "search": 8
+      },
+      "new_document_hits": 1,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 0,
+      "plan_realized_decisions": 0,
+      "plan_realized_with_conflict": 0,
+      "inspections": [],
+      "inspections_reviewed": 0,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "546:33:P0H1",
+      "qid": "546",
+      "seq": 33,
+      "harness": "P0",
+      "handoff": "H1",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 3,
+      "actions": {
+        "open": 2,
+        "find": 3,
+        "search": 5
+      },
+      "new_document_hits": 2,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 4,
+      "plan_realized_decisions": 4,
+      "plan_realized_with_conflict": 2,
+      "inspections": [
+        {
+          "id": "546:33:P0H1:1:1",
+          "doc_ref": "D10",
+          "source_compatible": true,
+          "useful_evidence": true
+        },
+        {
+          "id": "546:33:P0H1:1:2",
+          "doc_ref": "D12",
+          "source_compatible": true,
+          "useful_evidence": true
+        },
+        {
+          "id": "546:33:P0H1:1:3",
+          "doc_ref": "D17",
+          "source_compatible": true,
+          "useful_evidence": true
+        },
+        {
+          "id": "546:33:P0H1:1:4",
+          "doc_ref": "D17",
+          "source_compatible": true,
+          "useful_evidence": false
+        },
+        {
+          "id": "546:33:P0H1:2:1",
+          "doc_ref": "D17",
+          "source_compatible": true,
+          "useful_evidence": false
+        }
+      ],
+      "inspections_reviewed": 5,
+      "compatible_inspections": 5,
+      "useful_evidence_inspections": 3
+    },
+    {
+      "cell": "546:33:P1:deepseek-flash",
+      "qid": "546",
+      "seq": 33,
+      "harness": "P1",
+      "handoff": "H0",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 0,
+      "actions": {
+        "search": 7,
+        "find": 1
+      },
+      "new_document_hits": 2,
+      "no_gain_search_calls": 5,
+      "no_gain_decisions_with_followup": 3,
+      "next_decision_inspect_after_no_gain": 1,
+      "next_decision_search_after_no_gain": 3,
+      "plan_decisions": 0,
+      "plan_realized_decisions": 0,
+      "plan_realized_with_conflict": 0,
+      "inspections": [
+        {
+          "id": "546:33:P1:deepseek-flash:3:2",
+          "doc_ref": "D17",
+          "source_compatible": true,
+          "useful_evidence": false
+        }
+      ],
+      "inspections_reviewed": 1,
+      "compatible_inspections": 1,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "546:33:P1H1",
+      "qid": "546",
+      "seq": 33,
+      "harness": "P1",
+      "handoff": "H1",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 3,
+      "actions": {
+        "open": 2,
+        "search": 4,
+        "find": 3
+      },
+      "new_document_hits": 2,
+      "no_gain_search_calls": 3,
+      "no_gain_decisions_with_followup": 3,
+      "next_decision_inspect_after_no_gain": 3,
+      "next_decision_search_after_no_gain": 3,
+      "plan_decisions": 4,
+      "plan_realized_decisions": 3,
+      "plan_realized_with_conflict": 3,
+      "inspections": [
+        {
+          "id": "546:33:P1H1:1:1",
+          "doc_ref": "D12",
+          "source_compatible": true,
+          "useful_evidence": true
+        },
+        {
+          "id": "546:33:P1H1:2:1",
+          "doc_ref": "D17",
+          "source_compatible": true,
+          "useful_evidence": true
+        },
+        {
+          "id": "546:33:P1H1:3:1",
+          "doc_ref": "D17",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "546:33:P1H1:3:2",
+          "doc_ref": "D11",
+          "source_compatible": true,
+          "useful_evidence": true
+        },
+        {
+          "id": "546:33:P1H1:4:1",
+          "doc_ref": "D11",
+          "source_compatible": true,
+          "useful_evidence": false
+        }
+      ],
+      "inspections_reviewed": 5,
+      "compatible_inspections": 4,
+      "useful_evidence_inspections": 3
+    },
+    {
+      "cell": "1094:69:P0:deepseek-flash",
+      "qid": "1094",
+      "seq": 69,
+      "harness": "P0",
+      "handoff": "H0",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 0,
+      "actions": {
+        "search": 12
+      },
+      "new_document_hits": 17,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 0,
+      "plan_realized_decisions": 0,
+      "plan_realized_with_conflict": 0,
+      "inspections": [],
+      "inspections_reviewed": 0,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:69:P0H1",
+      "qid": "1094",
+      "seq": 69,
+      "harness": "P0",
+      "handoff": "H1",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 3,
+      "actions": {
+        "search": 10
+      },
+      "new_document_hits": 6,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 4,
+      "plan_realized_decisions": 4,
+      "plan_realized_with_conflict": 0,
+      "inspections": [],
+      "inspections_reviewed": 0,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:69:P1:deepseek-flash",
+      "qid": "1094",
+      "seq": 69,
+      "harness": "P1",
+      "handoff": "H0",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 0,
+      "actions": {
+        "search": 10
+      },
+      "new_document_hits": 4,
+      "no_gain_search_calls": 7,
+      "no_gain_decisions_with_followup": 3,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 3,
+      "plan_decisions": 0,
+      "plan_realized_decisions": 0,
+      "plan_realized_with_conflict": 0,
+      "inspections": [],
+      "inspections_reviewed": 0,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:69:P1H1",
+      "qid": "1094",
+      "seq": 69,
+      "harness": "P1",
+      "handoff": "H1",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 3,
+      "actions": {
+        "open": 1,
+        "search": 9,
+        "find": 2
+      },
+      "new_document_hits": 21,
+      "no_gain_search_calls": 1,
+      "no_gain_decisions_with_followup": 1,
+      "next_decision_inspect_after_no_gain": 1,
+      "next_decision_search_after_no_gain": 1,
+      "plan_decisions": 4,
+      "plan_realized_decisions": 4,
+      "plan_realized_with_conflict": 3,
+      "inspections": [
+        {
+          "id": "1094:69:P1H1:1:1",
+          "doc_ref": "D42",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:69:P1H1:2:1",
+          "doc_ref": "D34",
+          "source_compatible": null,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:69:P1H1:4:2",
+          "doc_ref": "D60",
+          "source_compatible": false,
+          "useful_evidence": false
+        }
+      ],
+      "inspections_reviewed": 3,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:23:P0:deepseek-flash",
+      "qid": "1094",
+      "seq": 23,
+      "harness": "P0",
+      "handoff": "H0",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 0,
+      "actions": {
+        "search": 10,
+        "find": 2
+      },
+      "new_document_hits": 25,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 0,
+      "plan_realized_decisions": 0,
+      "plan_realized_with_conflict": 0,
+      "inspections": [
+        {
+          "id": "1094:23:P0:deepseek-flash:4:1",
+          "doc_ref": "D42",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:23:P0:deepseek-flash:4:2",
+          "doc_ref": "D40",
+          "source_compatible": false,
+          "useful_evidence": false
+        }
+      ],
+      "inspections_reviewed": 2,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:23:P0H1",
+      "qid": "1094",
+      "seq": 23,
+      "harness": "P0",
+      "handoff": "H1",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 3,
+      "actions": {
+        "search": 8,
+        "find": 5
+      },
+      "new_document_hits": 18,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 4,
+      "plan_realized_decisions": 4,
+      "plan_realized_with_conflict": 0,
+      "inspections": [
+        {
+          "id": "1094:23:P0H1:3:1",
+          "doc_ref": "D35",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:23:P0H1:3:2",
+          "doc_ref": "D37",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:23:P0H1:4:1",
+          "doc_ref": "D37",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:23:P0H1:4:2",
+          "doc_ref": "D35",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:23:P0H1:4:3",
+          "doc_ref": "D37",
+          "source_compatible": false,
+          "useful_evidence": false
+        }
+      ],
+      "inspections_reviewed": 5,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:23:P1:deepseek-flash",
+      "qid": "1094",
+      "seq": 23,
+      "harness": "P1",
+      "handoff": "H0",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 0,
+      "actions": {
+        "search": 10,
+        "find": 1,
+        "open": 1
+      },
+      "new_document_hits": 5,
+      "no_gain_search_calls": 6,
+      "no_gain_decisions_with_followup": 2,
+      "next_decision_inspect_after_no_gain": 1,
+      "next_decision_search_after_no_gain": 1,
+      "plan_decisions": 0,
+      "plan_realized_decisions": 0,
+      "plan_realized_with_conflict": 0,
+      "inspections": [
+        {
+          "id": "1094:23:P1:deepseek-flash:2:1",
+          "doc_ref": "D14",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:23:P1:deepseek-flash:2:2",
+          "doc_ref": "D14",
+          "source_compatible": false,
+          "useful_evidence": false
+        }
+      ],
+      "inspections_reviewed": 2,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:23:P1H1",
+      "qid": "1094",
+      "seq": 23,
+      "harness": "P1",
+      "handoff": "H1",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 3,
+      "actions": {
+        "search": 8,
+        "open": 1,
+        "find": 3
+      },
+      "new_document_hits": 24,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 4,
+      "plan_realized_decisions": 3,
+      "plan_realized_with_conflict": 0,
+      "inspections": [
+        {
+          "id": "1094:23:P1H1:3:1",
+          "doc_ref": "D40",
+          "source_compatible": null,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:23:P1H1:4:1",
+          "doc_ref": "D41",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:23:P1H1:4:2",
+          "doc_ref": "D43",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:23:P1H1:4:3",
+          "doc_ref": "D41",
+          "source_compatible": false,
+          "useful_evidence": false
+        }
+      ],
+      "inspections_reviewed": 4,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:77:P0:deepseek-flash",
+      "qid": "1094",
+      "seq": 77,
+      "harness": "P0",
+      "handoff": "H0",
+      "status": "natural_stop",
+      "actor_responses": 1,
+      "planner_responses": 0,
+      "actions": {},
+      "new_document_hits": 0,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 0,
+      "plan_realized_decisions": 0,
+      "plan_realized_with_conflict": 0,
+      "inspections": [],
+      "inspections_reviewed": 0,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:77:P0H1",
+      "qid": "1094",
+      "seq": 77,
+      "harness": "P0",
+      "handoff": "H1",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 3,
+      "actions": {
+        "search": 10,
+        "open": 2
+      },
+      "new_document_hits": 35,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 4,
+      "plan_realized_decisions": 4,
+      "plan_realized_with_conflict": 2,
+      "inspections": [
+        {
+          "id": "1094:77:P0H1:3:1",
+          "doc_ref": "D42",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:77:P0H1:4:1",
+          "doc_ref": "D69",
+          "source_compatible": false,
+          "useful_evidence": false
+        }
+      ],
+      "inspections_reviewed": 2,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:77:P1:deepseek-flash",
+      "qid": "1094",
+      "seq": 77,
+      "harness": "P1",
+      "handoff": "H0",
+      "status": "natural_stop",
+      "actor_responses": 1,
+      "planner_responses": 0,
+      "actions": {},
+      "new_document_hits": 0,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 0,
+      "plan_realized_decisions": 0,
+      "plan_realized_with_conflict": 0,
+      "inspections": [],
+      "inspections_reviewed": 0,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    {
+      "cell": "1094:77:P1H1",
+      "qid": "1094",
+      "seq": 77,
+      "harness": "P1",
+      "handoff": "H1",
+      "status": "horizon",
+      "actor_responses": 4,
+      "planner_responses": 3,
+      "actions": {
+        "search": 7,
+        "find": 4
+      },
+      "new_document_hits": 9,
+      "no_gain_search_calls": 2,
+      "no_gain_decisions_with_followup": 1,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 1,
+      "plan_decisions": 4,
+      "plan_realized_decisions": 4,
+      "plan_realized_with_conflict": 0,
+      "inspections": [
+        {
+          "id": "1094:77:P1H1:3:1",
+          "doc_ref": "D14",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:77:P1H1:3:2",
+          "doc_ref": "D14",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:77:P1H1:3:3",
+          "doc_ref": "D14",
+          "source_compatible": false,
+          "useful_evidence": false
+        },
+        {
+          "id": "1094:77:P1H1:3:4",
+          "doc_ref": "D14",
+          "source_compatible": false,
+          "useful_evidence": false
+        }
+      ],
+      "inspections_reviewed": 4,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    }
+  ],
+  "aggregates": {
+    "P0H0": {
+      "cells": 4,
+      "actions": {
+        "search": 30,
+        "find": 2
+      },
+      "natural_stops": 1,
+      "api_or_planner_failures": 0,
+      "new_document_hits": 43,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 0,
+      "plan_realized_decisions": 0,
+      "plan_realized_with_conflict": 0,
+      "inspections": 2,
+      "inspections_reviewed": 2,
+      "compatible_inspections": 0,
+      "useful_evidence_inspections": 0
+    },
+    "P0H1": {
+      "cells": 4,
+      "actions": {
+        "open": 4,
+        "find": 8,
+        "search": 33
+      },
+      "natural_stops": 0,
+      "api_or_planner_failures": 0,
+      "new_document_hits": 61,
+      "no_gain_search_calls": 0,
+      "no_gain_decisions_with_followup": 0,
+      "next_decision_inspect_after_no_gain": 0,
+      "next_decision_search_after_no_gain": 0,
+      "plan_decisions": 16,
+      "plan_realized_decisions": 16,
+      "plan_realized_with_conflict": 4,
+      "inspections": 12,
+      "inspections_reviewed": 12,
+      "compatible_inspections": 5,
+      "useful_evidence_inspections": 3
+    },
+    "P1H0": {
+      "cells": 4,
+      "actions": {
+        "search": 27,
+        "find": 2,
+        "open": 1
+      },
+      "natural_stops": 1,
+      "api_or_planner_failures": 0,
+      "new_document_hits": 11,
+      "no_gain_search_calls": 18,
+      "no_gain_decisions_with_followup": 8,
+      "next_decision_inspect_after_no_gain": 2,
+      "next_decision_search_after_no_gain": 7,
+      "plan_decisions": 0,
+      "plan_realized_decisions": 0,
+      "plan_realized_with_conflict": 0,
+      "inspections": 3,
+      "inspections_reviewed": 3,
+      "compatible_inspections": 1,
+      "useful_evidence_inspections": 0
+    },
+    "P1H1": {
+      "cells": 4,
+      "actions": {
+        "open": 4,
+        "search": 28,
+        "find": 12
+      },
+      "natural_stops": 0,
+      "api_or_planner_failures": 0,
+      "new_document_hits": 56,
+      "no_gain_search_calls": 6,
+      "no_gain_decisions_with_followup": 5,
+      "next_decision_inspect_after_no_gain": 4,
+      "next_decision_search_after_no_gain": 5,
+      "plan_decisions": 16,
+      "plan_realized_decisions": 14,
+      "plan_realized_with_conflict": 6,
+      "inspections": 16,
+      "inspections_reviewed": 16,
+      "compatible_inspections": 4,
+      "useful_evidence_inspections": 3
+    }
+  },
+  "metric_note": "NoGain is a P1 Search call with zero new D#. Transition denominator includes only no-gain decisions with a subsequent Actor response. Parallel same-batch calls cannot react to their own result. Manual source/evidence labels refer only to visible source text and current need."
+}

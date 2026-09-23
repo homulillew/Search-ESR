@@ -1,0 +1,83 @@
+{
+  "frozen_at_utc": "2026-09-23T09:00:28.311122+00:00",
+  "git_head": "d54600f61e48b338523d02297f5163284db37b43",
+  "model": "deepseek-flash",
+  "provider_host": "api.deepseek.com",
+  "timeout_seconds": 240,
+  "max_retries": 0,
+  "selection": [
+    {
+      "qid": "546",
+      "seq": 33,
+      "role": "document_triage",
+      "reason": "DeepSeek M1 document plan, natural M2 search batch"
+    },
+    {
+      "qid": "1094",
+      "seq": 69,
+      "role": "natural_verification",
+      "reason": "frozen local-verification cohort; Qwen stopped, DeepSeek searched"
+    },
+    {
+      "qid": "1094",
+      "seq": 23,
+      "role": "prefix_only_corpus",
+      "reason": "only corpus accepted by prefix annotation"
+    },
+    {
+      "qid": "1094",
+      "seq": 77,
+      "role": "stop_or_over_search",
+      "reason": "Qwen planned stop and DeepSeek corpus; test continuation"
+    }
+  ],
+  "arms": [
+    "P0H1",
+    "P1H1"
+  ],
+  "sample_count": 8,
+  "horizon_actor_decisions": 4,
+  "decision_1_plan": "reuse exact historical M1 plan at same prefix",
+  "decision_2_plus": "new no-tool M1 diagnostic on current real history",
+  "actor_history": "current prefix and real tool observations plus only latest card",
+  "tool_schema_sha256": "60de1d45580c0dcd1fab666fbb97052122259f14c7f92bafab59825f3e7662ba",
+  "agent_prompt_sha256": "b93952826c95fcb4c5ba050012cdcb8f275de94445af724949bcdd74809342ca",
+  "diagnostic_sha256": "7034232c5927b00739c03e602fdbfd705e131d738e49d5afa0409147135927a5",
+  "source_sha256": {
+    "experiments/research_state_plan_handoff/plan_orthogonal_interaction/run.py": "0888195b750701c76ca21a8aefca491ff4f16752d1ffa49f3f133b52b1314d27",
+    "experiments/research_state_plan_handoff/plan_orthogonal_interaction/RUBRIC.json": "a3d4749df0ce6f3e1059abcfee86e577275a4d36b0479f0e9be3ffcb9a936ad9",
+    "experiments/research_state_plan_handoff/plan_handoff_one_step/run.py": "e042cef0107e960fb7751140ee6766cab596e9f29840c712aee24953b3e3aae3",
+    "experiments/model_backend_atria/planning_probe/run.py": "61f4ad5e8eb356efe3782113bc1ff488aca0d3ec5139920841f6f68292791d2d",
+    "experiments/model_backend_atria/planning_probe/analyze.py": "7a701247158240a6cbb51869faa8d833659446d7baa6e966fb4fd1978d2c70a9",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14",
+    "experiments/model_backend_deepseek/protocol.py": "d89d579c05c00cc3b4aaebad6d7b4311a1a6a2b359ff1bda98b66cd31a32904d",
+    "experiments/model_backend_deepseek/cache_usage.py": "0fe723921efc5cb524539edcc436bd21994c5923fb10d2b6687cf9362560e8d6",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720",
+    "llm_chat/search_find_v3b_agent.py": "1788f3cf74df01dea25b1421a31d572a0ede6c9919c6df7fd8db8d4c76d8b56d",
+    "llm_chat/agent.py": "e129a97b823881168be894e4b29bbac93f5da9f151c1c4260ef0b7fb7b06811a",
+    "llm_chat/raw_windows.py": "b72948cf78cdf15dd4966721f49581738b7cd93430480149ead717fb230cee6f",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339"
+  },
+  "historical_sha256": {
+    "experiments/model_backend_deepseek/planning_probe/events.jsonl": "f2444117cf5c67b8fdfcb1a46db591dfecac0ab58cd9576c6541256d12f5a585",
+    "experiments/model_backend_deepseek/planning_probe/mechanical_summary.json": "aeb861cbdaa0b831e58373a49243e08e27141da481c782d3497b4e1c2ce9a746",
+    "experiments/model_backend_deepseek/orthogonal_partial/SELECTION.json": "cf52c425cfd1b2cb01e2f7eaa254c80fbcf1133c99a177f55ec9b9914aee4829",
+    "experiments/model_backend_deepseek/orthogonal_partial/events.jsonl": "aad34b10e50f4ab0ea3640cd4ad886b94a7987ad3d2c1cf88ef32aa3aea942fd",
+    "experiments/research_state_plan_handoff/plan_handoff_one_step/events.jsonl": "654068e944039b217c34c606daff78b06a6eee73e3cb68ac823aa5e7a13674f5",
+    "experiments/research_state_plan_handoff/plan_handoff_one_step/mechanical_summary.json": "7e169fcee238cb4af7b5cbaec00e4041267b15d1ece93061d4284ddaa25235f8"
+  },
+  "first_plan_sha256": {
+    "546:33": "ea1f721645db505ea1197a86826b26cdfb4569036ca7194cedfb50e5c544ac8e",
+    "1094:69": "e17ecb380150292204af23ca51d7618e0843e2ad25644001f5c5bbe3cb47906f",
+    "1094:23": "4865cc8c47445417aace611f45ddd726e50e61215e8e9e3a28465e4c281e599f",
+    "1094:77": "3d5e9c2f8963c38e0623c680c3fe66be4806a719687b3a61c80f169748896303"
+  },
+  "initial_request_sha256": {
+    "546:33": "51334e7d3b09ce6a39fb0f36bf53e8bf8c2abcea2a5050d7c8a4aab22094fbc1",
+    "1094:69": "1ff211d4fb33d150a9aec157f04527483894bcaff1b90307bf37c69f2a40d6c8",
+    "1094:23": "c3dfcc400d1fed75e2fdf04bc0547411fc499ea4fbff0e1e3b81001d83cfc41b",
+    "1094:77": "f0e37708d2b84174914e8e22ed5677532a8d39c132a32cd6a49da99a7c98aa32"
+  },
+  "failure_policy": "eight cells once; stop cell on first provider, planner, validation, or tool error"
+}
