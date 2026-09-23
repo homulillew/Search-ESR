@@ -1,0 +1,103 @@
+{
+  "frozen_at": "2026-09-23T03:04:00.667038+00:00",
+  "design": "P0 v3a vs P1 orthogonal Search; paired checkpoint partial rollouts",
+  "cohorts": {
+    "broad_relocation": [
+      [
+        "546",
+        9
+      ],
+      [
+        "546",
+        17
+      ],
+      [
+        "546",
+        25
+      ],
+      [
+        "546",
+        33
+      ],
+      [
+        "546",
+        41
+      ],
+      [
+        "1094",
+        23
+      ],
+      [
+        "1094",
+        34
+      ],
+      [
+        "1094",
+        45
+      ],
+      [
+        "1094",
+        53
+      ],
+      [
+        "1094",
+        61
+      ]
+    ],
+    "local_verification": [
+      [
+        "1094",
+        69
+      ],
+      [
+        "1094",
+        77
+      ],
+      [
+        "1094",
+        93
+      ]
+    ]
+  },
+  "horizon_api_decisions": 4,
+  "arm_order": [
+    "P0",
+    "P1"
+  ],
+  "replicates": 1,
+  "tool_schema_sha256": "60de1d45580c0dcd1fab666fbb97052122259f14c7f92bafab59825f3e7662ba",
+  "model": "qwen3.7-flash",
+  "base_url_host": "llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com",
+  "request_options": {},
+  "source_sha256": {
+    "llm_chat/agent.py": "e129a97b823881168be894e4b29bbac93f5da9f151c1c4260ef0b7fb7b06811a",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720",
+    "llm_chat/search_find_v3b_agent.py": "1788f3cf74df01dea25b1421a31d572a0ede6c9919c6df7fd8db8d4c76d8b56d",
+    "llm_chat/raw_windows.py": "b72948cf78cdf15dd4966721f49581738b7cd93430480149ead717fb230cee6f",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "llm_chat/window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1"
+  },
+  "run_events_sha256": {
+    "546": "947b96b506405923078038893bf84b6b4190d9821af8d7fba5bc365479132852",
+    "1094": "eed7b39e19b39b7db960acd64ea4e28b6a6afbabe6eac06a68f0665ac3adbf8a"
+  },
+  "checkpoint_request_sha256": {
+    "546:9": "6451598c42634940f80c600b9c825d2dcf04bf2916b6de5b2249306415e002aa",
+    "546:17": "36ee6b3b54e0c214c39b4f09cd422ed2ef320399ef7cdc249bb38a4182ea1605",
+    "546:25": "ba3acae1646bdf2b905f4c78105d69a861d4d2f86362d4f663e29c1fcb07c46a",
+    "546:33": "9fd76698f8d1ed40ac2bcbb69b8a5f946d317c68a23d18331e9b5828abd79380",
+    "546:41": "04918d9f46a09521c02230a1098adb38b0a13f237d997653255a4120d92b25fb",
+    "1094:23": "e38b1c5c83e8b1b8de7c23eee08fa293408e24a739d8518dc102b60f76033e28",
+    "1094:34": "f276c9e6f32270690b4ae401816eef6eb206f749a682d9721584ad43c3ab37fc",
+    "1094:45": "12b41ae5a6ad335e19a99ac9bee4eca24f77bba80c4884724268bc3d8538ec59",
+    "1094:53": "4b35dc1ca76531e14f9df3ebba4f4bd920496600d70f1b557f7b31b34887c4fa",
+    "1094:61": "19434a529d5aed08723e03c54070307553f55f589a306a5f5475579ee7092def",
+    "1094:69": "a8c1b9a3c8bce279bd6f637837e4b94f5e04158d55ce91e21aa0dbc0bc493da4",
+    "1094:77": "f8007418f9e78ae83a9cf7fc1d81710e5895480188eb82e73fc74531f7507c99",
+    "1094:93": "67c2b6c01a7afb64af48aafefe4ff698bd55f3b3105cb0918587d5791b235e49"
+  },
+  "failure_policy": "all cells attempted in order; every failure recorded; no selective retry",
+  "continuation": "natural stop only; no forced final answer"
+}

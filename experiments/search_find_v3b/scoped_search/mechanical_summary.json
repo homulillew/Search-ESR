@@ -1,0 +1,436 @@
+{
+  "expected_cells": 8,
+  "completed_cells": 8,
+  "rows": [
+    {
+      "cell": "546:9:S2",
+      "qid": "546",
+      "seq": 9,
+      "arm": "S2",
+      "source": "reused_state_S2",
+      "status": "horizon",
+      "decisions": 4,
+      "actions": [
+        "find",
+        "find",
+        "search",
+        "find"
+      ],
+      "find_any": true,
+      "find_before_next_search": true,
+      "find_within_1": true,
+      "find_within_2": true,
+      "find_within_3": true,
+      "find_new_windows": 2,
+      "no_gain_searches": 0,
+      "find_within_2_after_no_gain": false,
+      "search_again_after_no_gain": false,
+      "new_documents": 1,
+      "old_document_hits": 4,
+      "old_document_new_search_windows": 0,
+      "raw_chars": 4000,
+      "prompt_tokens": 46149,
+      "total_tokens": 49203,
+      "elapsed_seconds": 46.148663917556405,
+      "undeclared_tool_calls": 0,
+      "tool_errors": 0
+    },
+    {
+      "cell": "546:9:SC",
+      "qid": "546",
+      "seq": 9,
+      "arm": "SC",
+      "source": "new_scoped_call",
+      "status": "horizon",
+      "decisions": 4,
+      "actions": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          "corpus"
+        ],
+        [
+          "search",
+          "corpus"
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "local_any": false,
+      "local_before_next_corpus": false,
+      "local_within_1": false,
+      "local_within_2": false,
+      "local_within_3": false,
+      "local_new_windows": 0,
+      "local_no_match": 0,
+      "local_calls": 0,
+      "corpus_calls": 2,
+      "no_gain_searches": 0,
+      "new_documents": 6,
+      "old_document_hits": 4,
+      "raw_chars": 6376,
+      "prompt_tokens": 52715,
+      "total_tokens": 56331,
+      "elapsed_seconds": 55.64823588356376,
+      "undeclared_tool_calls": 0,
+      "invalid_tool_arguments": 4,
+      "tool_errors": 0
+    },
+    {
+      "cell": "1094:69:S2",
+      "qid": "1094",
+      "seq": 69,
+      "arm": "S2",
+      "source": "reused_state_S2",
+      "status": "horizon",
+      "decisions": 4,
+      "actions": [
+        "search",
+        "search",
+        "search",
+        "search",
+        "search",
+        "find",
+        "find",
+        "find",
+        "search"
+      ],
+      "find_any": true,
+      "find_before_next_search": false,
+      "find_within_1": false,
+      "find_within_2": false,
+      "find_within_3": true,
+      "find_new_windows": 0,
+      "no_gain_searches": 3,
+      "find_within_2_after_no_gain": true,
+      "search_again_after_no_gain": true,
+      "new_documents": 6,
+      "old_document_hits": 24,
+      "old_document_new_search_windows": 0,
+      "raw_chars": 10180,
+      "prompt_tokens": 250405,
+      "total_tokens": 264542,
+      "elapsed_seconds": 125.52284552715719,
+      "undeclared_tool_calls": 0,
+      "tool_errors": 0
+    },
+    {
+      "cell": "1094:69:SC",
+      "qid": "1094",
+      "seq": 69,
+      "arm": "SC",
+      "source": "new_scoped_call",
+      "status": "horizon",
+      "decisions": 4,
+      "actions": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "local_any": false,
+      "local_before_next_corpus": false,
+      "local_within_1": false,
+      "local_within_2": false,
+      "local_within_3": false,
+      "local_new_windows": 0,
+      "local_no_match": 0,
+      "local_calls": 0,
+      "corpus_calls": 0,
+      "no_gain_searches": 0,
+      "new_documents": 0,
+      "old_document_hits": 0,
+      "raw_chars": 0,
+      "prompt_tokens": 228775,
+      "total_tokens": 235232,
+      "elapsed_seconds": 59.38215080648661,
+      "undeclared_tool_calls": 0,
+      "invalid_tool_arguments": 9,
+      "tool_errors": 0
+    },
+    {
+      "cell": "1094:77:S2",
+      "qid": "1094",
+      "seq": 77,
+      "arm": "S2",
+      "source": "reused_state_S2",
+      "status": "horizon",
+      "decisions": 4,
+      "actions": [
+        "search",
+        "search",
+        "search",
+        "search",
+        "search",
+        "search",
+        "search"
+      ],
+      "find_any": false,
+      "find_before_next_search": false,
+      "find_within_1": false,
+      "find_within_2": false,
+      "find_within_3": false,
+      "find_new_windows": 0,
+      "no_gain_searches": 6,
+      "find_within_2_after_no_gain": false,
+      "search_again_after_no_gain": true,
+      "new_documents": 1,
+      "old_document_hits": 34,
+      "old_document_new_search_windows": 0,
+      "raw_chars": 1908,
+      "prompt_tokens": 312596,
+      "total_tokens": 340811,
+      "elapsed_seconds": 213.95309588126838,
+      "undeclared_tool_calls": 0,
+      "tool_errors": 0
+    },
+    {
+      "cell": "1094:77:SC",
+      "qid": "1094",
+      "seq": 77,
+      "arm": "SC",
+      "source": "new_scoped_call",
+      "status": "horizon",
+      "decisions": 4,
+      "actions": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "local_any": false,
+      "local_before_next_corpus": false,
+      "local_within_1": false,
+      "local_within_2": false,
+      "local_within_3": false,
+      "local_new_windows": 0,
+      "local_no_match": 0,
+      "local_calls": 0,
+      "corpus_calls": 0,
+      "no_gain_searches": 0,
+      "new_documents": 0,
+      "old_document_hits": 0,
+      "raw_chars": 0,
+      "prompt_tokens": 266894,
+      "total_tokens": 272358,
+      "elapsed_seconds": 53.22964250482619,
+      "undeclared_tool_calls": 0,
+      "invalid_tool_arguments": 6,
+      "tool_errors": 0
+    },
+    {
+      "cell": "1094:93:S2",
+      "qid": "1094",
+      "seq": 93,
+      "arm": "S2",
+      "source": "reused_state_S2",
+      "status": "horizon",
+      "decisions": 4,
+      "actions": [
+        "search",
+        "search",
+        "search",
+        "search",
+        "search",
+        "search",
+        "search",
+        "search"
+      ],
+      "find_any": false,
+      "find_before_next_search": false,
+      "find_within_1": false,
+      "find_within_2": false,
+      "find_within_3": false,
+      "find_new_windows": 0,
+      "no_gain_searches": 5,
+      "find_within_2_after_no_gain": false,
+      "search_again_after_no_gain": true,
+      "new_documents": 8,
+      "old_document_hits": 32,
+      "old_document_new_search_windows": 0,
+      "raw_chars": 13249,
+      "prompt_tokens": 361368,
+      "total_tokens": 375532,
+      "elapsed_seconds": 130.34703891910613,
+      "undeclared_tool_calls": 0,
+      "tool_errors": 0
+    },
+    {
+      "cell": "1094:93:SC",
+      "qid": "1094",
+      "seq": 93,
+      "arm": "SC",
+      "source": "new_scoped_call",
+      "status": "horizon",
+      "decisions": 4,
+      "actions": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "local_any": false,
+      "local_before_next_corpus": false,
+      "local_within_1": false,
+      "local_within_2": false,
+      "local_within_3": false,
+      "local_new_windows": 0,
+      "local_no_match": 0,
+      "local_calls": 0,
+      "corpus_calls": 0,
+      "no_gain_searches": 0,
+      "new_documents": 0,
+      "old_document_hits": 0,
+      "raw_chars": 0,
+      "prompt_tokens": 355852,
+      "total_tokens": 371815,
+      "elapsed_seconds": 136.27106443978846,
+      "undeclared_tool_calls": 0,
+      "invalid_tool_arguments": 8,
+      "tool_errors": 0
+    }
+  ],
+  "aggregate": {
+    "S2": {
+      "n": 4,
+      "status": {
+        "horizon": 4
+      },
+      "local_any": 2,
+      "local_before_next_corpus": 1,
+      "local_within_1": 1,
+      "local_within_2": 1,
+      "local_within_3": 2,
+      "local_new_windows": 2,
+      "local_no_match": 0,
+      "local_calls": 0,
+      "corpus_calls": 0,
+      "no_gain_searches": 14,
+      "new_documents": 16,
+      "old_document_hits": 94,
+      "raw_chars": 29337,
+      "prompt_tokens": 970518,
+      "total_tokens": 1030088,
+      "undeclared_tool_calls": 0,
+      "invalid_tool_arguments": 0,
+      "tool_errors": 0
+    },
+    "SC": {
+      "n": 4,
+      "status": {
+        "horizon": 4
+      },
+      "local_any": 0,
+      "local_before_next_corpus": 0,
+      "local_within_1": 0,
+      "local_within_2": 0,
+      "local_within_3": 0,
+      "local_new_windows": 0,
+      "local_no_match": 0,
+      "local_calls": 0,
+      "corpus_calls": 2,
+      "no_gain_searches": 0,
+      "new_documents": 6,
+      "old_document_hits": 4,
+      "raw_chars": 6376,
+      "prompt_tokens": 904236,
+      "total_tokens": 935736,
+      "undeclared_tool_calls": 0,
+      "invalid_tool_arguments": 27,
+      "tool_errors": 0
+    }
+  }
+}

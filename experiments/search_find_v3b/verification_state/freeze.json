@@ -1,0 +1,62 @@
+{
+  "frozen_at": "2026-09-23T03:49:48.140966+00:00",
+  "cases": [
+    {
+      "qid": "546",
+      "seq": 9,
+      "need": "Which candidate's 2023 run had a decider win followed by 4-3 and 4-0 wins and then a loss?",
+      "focus": "D5"
+    },
+    {
+      "qid": "1094",
+      "seq": 69,
+      "need": "Which early-21st-century Inter match had the 95th-minute free kick, and who took it?",
+      "focus": "D38"
+    },
+    {
+      "qid": "1094",
+      "seq": 77,
+      "need": "Which player took the 95th-minute free kick in a match matching the Inter clue?",
+      "focus": "D14"
+    },
+    {
+      "qid": "1094",
+      "seq": 93,
+      "need": "Which player took the 95th-minute free kick in a match matching the Inter clue?",
+      "focus": "D14"
+    }
+  ],
+  "arms": [
+    "S1",
+    "S2"
+  ],
+  "s0_reuse_arm": "orthogonal_search P1",
+  "horizon_api_decisions": 4,
+  "replicates": 1,
+  "model": "qwen3.7-flash",
+  "base_url_host": "llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com",
+  "request_options": {},
+  "orthogonal_events_sha256": "0408cc0146d78328a1cc4cf028a34cba6a7133f85ddb9a256f6cf80f8985b2d0",
+  "source_sha256": {
+    "llm_chat/agent.py": "e129a97b823881168be894e4b29bbac93f5da9f151c1c4260ef0b7fb7b06811a",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720",
+    "llm_chat/search_find_v3b_agent.py": "1788f3cf74df01dea25b1421a31d572a0ede6c9919c6df7fd8db8d4c76d8b56d",
+    "llm_chat/raw_windows.py": "b72948cf78cdf15dd4966721f49581738b7cd93430480149ead717fb230cee6f",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "llm_chat/window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1",
+    "experiments/search_find_v3b/verification_state/run_state.py": "ff85ce49bb3032493db7dcc429d3030b93061461e5e886f36d9bfa8200eaf9ac"
+  },
+  "request_sha256": {
+    "546:9:S1": "94efe0f5aec3e721de5238c81c22b0c53d15ba57d207a1be4a3cd7690ff4ba39",
+    "546:9:S2": "e0365ca59251a0048a22d6e5db03b6b08aa80485c708411a40a0e977f5cc674d",
+    "1094:69:S1": "40cbdd7a28b344cd112252ea3a11aa510e3c834293b02110105b6038d6e503e4",
+    "1094:69:S2": "a0085cb9077e965ba7a9434251e18dbfa6dbcc24c38a1a7169c901430a3456d7",
+    "1094:77:S1": "03bd39f379c44a40ecc5b3d52f3f5fb1e8f1ae9c66b2bec35afb0fbf1d45488d",
+    "1094:77:S2": "bbda1bac698455de132944b56a4f6a6630d994bcc633d0479af16a06c348aea7",
+    "1094:93:S1": "51911e7154df810db4fe85e418ec29bb249d4ad76d325b7a248ee744cfd796c9",
+    "1094:93:S2": "1abb379502d1c0a0a0aa0c696faed06c3a178089c713731f13b6b53286124974"
+  },
+  "failure_policy": "all eight cells attempted; no selective retry or best-of"
+}
