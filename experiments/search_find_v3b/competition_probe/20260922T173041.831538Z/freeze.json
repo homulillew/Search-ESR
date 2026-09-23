@@ -1,0 +1,51 @@
+{
+  "probe": "tool_competition_upper_bound",
+  "probe_id": "20260922T173041.831538Z",
+  "head": "d06a5d40ab3c48ed987a354f32470cd226866131",
+  "model": "qwen3.7-flash",
+  "base_url_host": "llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com",
+  "timeout": 180.0,
+  "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:50:58) [GCC 12.3.0]",
+  "openai_sdk": "1.109.1",
+  "arm_a_tools_sha256": "60de1d45580c0dcd1fab666fbb97052122259f14c7f92bafab59825f3e7662ba",
+  "arm_b_tools_sha256": "bbd52def8d420b29edefa7ff962f445c7618cf998ab0f65d7f89234c0a577490",
+  "arm_c_tools_sha256": "bbd52def8d420b29edefa7ff962f445c7618cf998ab0f65d7f89234c0a577490",
+  "arm_a_prompt_sha256": "92c684041432ef79d987c18862eba3aa26708309c35cad2de9156beff0df5a1f",
+  "arm_b_prompt_sha256": "92c684041432ef79d987c18862eba3aa26708309c35cad2de9156beff0df5a1f",
+  "arm_c_prompt_sha256": "2cc743244d715b2fd2de8dc2491c0a3b4bf32103b677f5db646bb7938d203385",
+  "arm_c_local_only_paragraph": "Global document discovery for this question has already been done. The documents identified by the D# handles in this conversation are the candidate set, and this step offers no further global search. Use find and open on the D# / W# material already in the conversation.",
+  "arm_c_replaced_paragraph_sha256": "2cef0c3c686805dd561ba7cfccc0d7a1a83f6efa274d98bc34439acd12f4182c",
+  "samples_per_checkpoint_arm": 5,
+  "arm_a_source": "reused from v3a probe 20260922T141730.317105Z (not re-sampled)",
+  "arm_a_records": 50,
+  "arm_a_records_sha256": "ecb2f5a1c7ec7801c43adca9d01d6ec11ae2b6e10b9d6d010510e833303d4854",
+  "checkpoints": {
+    "/data/WSH/Search-ESR/experiments/runs/v003a_search_find/qid_546/20260922T121742.932067Z": [
+      9,
+      17,
+      25,
+      33,
+      41
+    ],
+    "/data/WSH/Search-ESR/experiments/runs/v003a_search_find/qid_1094/20260922T113202.256169Z": [
+      23,
+      34,
+      45,
+      53,
+      61
+    ]
+  },
+  "no_tool_executed": true,
+  "tool_choice": "auto",
+  "sampling": "provider default (recorded requests carry no temperature/max_tokens)",
+  "interpretation_bands": {
+    "metric": "arm C exploratory_find count out of 50, with arm A near 0",
+    "strong": ">= 15/50 AND spread over >= 5/10 checkpoints -> H1 holds; go to Experiment 2",
+    "medium": "5-14/50 -> go to Experiment 2, keep H2 alive in parallel",
+    "weak": "<= 4/50 -> stop attributing to search dominance; go to Experiment 3"
+  },
+  "find_subdivision": {
+    "exploratory_find": "candidate or constraint not yet settled at call time; find tests, compares, or locates something not pinned",
+    "confirmation_find": "answer already locked when find is called; find only confirms the prior"
+  }
+}
