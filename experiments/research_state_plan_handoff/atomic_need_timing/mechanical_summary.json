@@ -1,0 +1,892 @@
+{
+  "rows": [
+    {
+      "cell": "546:17:A0",
+      "qid": "546",
+      "seq": 17,
+      "arm": "A0",
+      "plan": {
+        "need": "The identity of the >300-century player who turned pro 1995–2006 and whose 2023 run was decider win → 4-3 → 4-0 → loss to a >400-century player (specifically, which event/match chain and confirming his century count and pro debut year).",
+        "source": "A head-to-head or tournament-draw page (cuetracker-style) or the player's Wikipedia biography.",
+        "scope": "document",
+        "target": "D12",
+        "grounding": "prefix_broad",
+        "basis": "visible prefix"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": "document",
+      "stated_scope_realized": false,
+      "plan_target_prefix_compatible": false,
+      "premature_commitment": null,
+      "need_fidelity": null,
+      "granularity": null,
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "546:17:A1",
+      "qid": "546",
+      "seq": 17,
+      "arm": "A1",
+      "plan": {
+        "need": "none",
+        "source": "none",
+        "grounding": "question_only",
+        "target": "none",
+        "scope": "none",
+        "basis": "original question"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": null,
+      "stated_scope_realized": null,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": false,
+      "granularity": "none",
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "546:17:A2",
+      "qid": "546",
+      "seq": 17,
+      "arm": "A2",
+      "plan": {
+        "need": "Which professional snooker player has compiled more than 300 career centuries and first turned professional between 1995 and 2006?",
+        "source": "Player biography or century-break statistics page (e.g., Wikipedia / Cuetracker player profile)",
+        "grounding": "hypothesis_bound",
+        "scope": "corpus",
+        "target": "none",
+        "basis": "question; D1 (century-break lists), D5 (Mark Williams profile: \"more than 600 competitive centuries\")"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": "corpus",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": false,
+      "granularity": "too_broad",
+      "source_compatibility": true,
+      "action_matches_need": false,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "546:25:A0",
+      "qid": "546",
+      "seq": 25,
+      "arm": "A0",
+      "plan": {
+        "need": "Identify which player matches the clue chain — specifically the player's 2023 tournament run (a deciding-frame win over a sub-250-century opponent, then 4-3 and 4-0 wins, then a loss to a 400+ century player), plus confirmation of 300+ centuries, multiple highest-break honours, and a 1995–2006 professional debut.",
+        "source": "Snooker tournament/match-results document (tournament bracket or match report) plus player career-statistics page.",
+        "scope": "document",
+        "target": "D10",
+        "grounding": "prefix_broad",
+        "basis": "visible prefix"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "find"
+      ],
+      "inspect_refs": [
+        "D10"
+      ],
+      "mixed_batch": true,
+      "stated_scope": "document",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": false,
+      "premature_commitment": null,
+      "need_fidelity": null,
+      "granularity": null,
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "546:25:A1",
+      "qid": "546",
+      "seq": 25,
+      "arm": "A1",
+      "plan": {
+        "need": "none",
+        "source": "none",
+        "grounding": "question_only",
+        "target": "none",
+        "scope": "none",
+        "basis": "original question"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": null,
+      "stated_scope_realized": null,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": false,
+      "granularity": "none",
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "546:25:A2",
+      "qid": "546",
+      "seq": 25,
+      "arm": "A2",
+      "plan": {
+        "need": "Identify the snooker player whose 2023 run consisted of a deciding-frame win, followed by 4–3 and 4–0 wins, then a loss in his next match.",
+        "source": "snooker match-results / tournament-record listing (e.g., cuetracker-style results pages or tournament coverage)",
+        "grounding": "hypothesis_bound",
+        "scope": "document",
+        "target": "D10",
+        "basis": "question; W13 (D10) preview citing 2023 English Open results with 4–3 and 4–0 scorelines"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "find",
+      "all_calls": [
+        "find",
+        "search"
+      ],
+      "inspect_refs": [
+        "D10"
+      ],
+      "mixed_batch": true,
+      "stated_scope": "document",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": false,
+      "premature_commitment": true,
+      "need_fidelity": true,
+      "granularity": "appropriate",
+      "source_compatibility": true,
+      "action_matches_need": false,
+      "concrete_source_quality": false
+    },
+    {
+      "cell": "546:33:A0",
+      "qid": "546",
+      "seq": 33,
+      "arm": "A0",
+      "plan": {
+        "need": "Confirm which player fits the 2023 win sequence (decider win, then 4‑3 and 4‑0 wins, then a loss to a >400‑century opponent) and tie that to a 300+ century career and a pre‑2006 professional debut.",
+        "source": "Snooker match/tournament draw records (cuetracker-style head-to-head pages) and player profile pages.",
+        "scope": "document",
+        "target": "D10 | W13, D12 | W17",
+        "grounding": "prefix_broad",
+        "basis": "visible prefix"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "find",
+      "all_calls": [
+        "find",
+        "find",
+        "search"
+      ],
+      "inspect_refs": [
+        "D12",
+        "D17"
+      ],
+      "mixed_batch": true,
+      "stated_scope": "document",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": false,
+      "premature_commitment": null,
+      "need_fidelity": null,
+      "granularity": null,
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "546:33:A1",
+      "qid": "546",
+      "seq": 33,
+      "arm": "A1",
+      "plan": {
+        "need": "none",
+        "source": "none",
+        "grounding": "question_only",
+        "target": "none",
+        "scope": "none",
+        "basis": "original question"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": null,
+      "stated_scope_realized": null,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": false,
+      "granularity": "none",
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "546:33:A2",
+      "qid": "546",
+      "seq": 33,
+      "arm": "A2",
+      "plan": {
+        "need": "Which snooker player turned professional between 1995 and 2006 and, as of 30 January 2025, had more than 300 career centuries and more than three maximum/highest breaks?",
+        "source": "Snooker player statistics/profile page or career-summary database",
+        "grounding": "question_only",
+        "scope": "corpus",
+        "target": "none",
+        "basis": "question"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": "corpus",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": false,
+      "granularity": "too_broad",
+      "source_compatibility": true,
+      "action_matches_need": false,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "546:41:A0",
+      "qid": "546",
+      "seq": 41,
+      "arm": "A0",
+      "plan": {
+        "need": "Identify the mystery player's name and verify his 2023 match sequence (decider win over a sub-250-century player, then 4-3 and 4-0 wins, then a loss to a 400+ century player), plus his >300 centuries, >3 highest-break titles, and 1995–2006 professional debut.",
+        "source": "Full player biography/results page (e.g., Wikipedia career section or a cuetracker head-to-head/match list) covering 2023 tournament results and century totals.",
+        "scope": "document",
+        "target": "D17",
+        "grounding": "prefix_broad",
+        "basis": "visible prefix"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "find",
+      "all_calls": [
+        "find",
+        "find"
+      ],
+      "inspect_refs": [
+        "D17",
+        "D17"
+      ],
+      "mixed_batch": false,
+      "stated_scope": "document",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": true,
+      "premature_commitment": null,
+      "need_fidelity": null,
+      "granularity": null,
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "546:41:A1",
+      "qid": "546",
+      "seq": 41,
+      "arm": "A1",
+      "plan": {
+        "need": "none",
+        "source": "none",
+        "grounding": "question_only",
+        "target": "none",
+        "scope": "none",
+        "basis": "original question"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": null,
+      "stated_scope_realized": null,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": false,
+      "granularity": "none",
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "546:41:A2",
+      "qid": "546",
+      "seq": 41,
+      "arm": "A2",
+      "plan": {
+        "need": "Confirm whether Ding Junhui turned professional between 1995 and 2006 and has more than 300 career centuries and more than three 147/maximum breaks as of 30 January 2025.",
+        "source": "Snooker player biography/statistics page (e.g., Wikipedia or cuetracker player profile).",
+        "grounding": "hypothesis_bound",
+        "scope": "document",
+        "target": "D17",
+        "basis": "question; D10/W13; D12/W17; D17/W31"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "find",
+      "all_calls": [
+        "find",
+        "find",
+        "search"
+      ],
+      "inspect_refs": [
+        "D17",
+        "D17"
+      ],
+      "mixed_batch": true,
+      "stated_scope": "document",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": true,
+      "premature_commitment": false,
+      "need_fidelity": true,
+      "granularity": "too_broad",
+      "source_compatibility": true,
+      "action_matches_need": true,
+      "concrete_source_quality": true
+    },
+    {
+      "cell": "1094:45:A0",
+      "qid": "1094",
+      "seq": 45,
+      "arm": "A0",
+      "plan": {
+        "need": "Identify the specific early-21st-century match (a club born from a schism between two parties vs. a club whose identity went through several iterations) and the name of the player who took the 95th-minute free-kick.",
+        "source": "A match report or Wikipedia match/season article describing the fixture, its goal timings (early vs. late), and the stoppage-time free-kick.",
+        "scope": "corpus",
+        "target": "none",
+        "grounding": "prefix_broad",
+        "basis": "visible prefix"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "open",
+      "all_calls": [
+        "open",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [
+        "W38"
+      ],
+      "mixed_batch": true,
+      "stated_scope": "corpus",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": null,
+      "need_fidelity": null,
+      "granularity": null,
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "1094:45:A1",
+      "qid": "1094",
+      "seq": 45,
+      "arm": "A1",
+      "plan": {
+        "need": "The identity of the player who took the free-kick in the 95th minute of the described football match.",
+        "source": "Football match report or minute-by-minute match summary",
+        "grounding": "question_only",
+        "target": "none",
+        "scope": "none",
+        "basis": "original question"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": null,
+      "stated_scope_realized": null,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": true,
+      "granularity": "appropriate",
+      "source_compatibility": true,
+      "action_matches_need": true,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "1094:45:A2",
+      "qid": "1094",
+      "seq": 45,
+      "arm": "A2",
+      "plan": {
+        "need": "Identify the player who took the free-kick in the 95th minute of the PSG vs Lille Ligue 1 match reported in the ESPN \"Moment of the Weekend\" article.",
+        "source": "Sports news / match report article",
+        "grounding": "hypothesis_bound",
+        "scope": "document",
+        "target": "D34",
+        "basis": "question; W38 (D34 preview citing a 95th-minute free-kick)"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "find",
+      "all_calls": [
+        "find",
+        "find"
+      ],
+      "inspect_refs": [
+        "D34",
+        "D34"
+      ],
+      "mixed_batch": false,
+      "stated_scope": "document",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": true,
+      "premature_commitment": true,
+      "need_fidelity": false,
+      "granularity": "appropriate",
+      "source_compatibility": true,
+      "action_matches_need": false,
+      "concrete_source_quality": true
+    },
+    {
+      "cell": "1094:53:A0",
+      "qid": "1094",
+      "seq": 53,
+      "arm": "A0",
+      "plan": {
+        "need": "Identify the early-21st-century match matching the clues (a club born of a split/schism vs. a club with several identity iterations; first team scoring all goals early, other late; a 95th-minute free-kick) and determine which player took that free-kick.",
+        "source": "Match report or fixture-specific article/Wikipedia entry naming the 95th-minute free-kick taker.",
+        "scope": "corpus",
+        "target": "none",
+        "grounding": "prefix_broad",
+        "basis": "visible prefix"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "open",
+      "all_calls": [
+        "open"
+      ],
+      "inspect_refs": [
+        "W50"
+      ],
+      "mixed_batch": false,
+      "stated_scope": "corpus",
+      "stated_scope_realized": false,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": null,
+      "need_fidelity": null,
+      "granularity": null,
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "1094:53:A1",
+      "qid": "1094",
+      "seq": 53,
+      "arm": "A1",
+      "plan": {
+        "need": "The identity of the player who took the free-kick in the 95th minute of the described football match.",
+        "source": "Football match report or minute-by-minute match summary",
+        "grounding": "question_only",
+        "target": "none",
+        "scope": "none",
+        "basis": "original question"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": null,
+      "stated_scope_realized": null,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": true,
+      "granularity": "appropriate",
+      "source_compatibility": true,
+      "action_matches_need": true,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "1094:53:A2",
+      "qid": "1094",
+      "seq": 53,
+      "arm": "A2",
+      "plan": {
+        "need": "Identify which player took/scored the 95th-minute free-kick in the specific early-21st-century match that fits the question's team descriptions (one side \"born out of discord among two parties\"; opponent with several identity iterations).",
+        "source": "Association football match report / Wikipedia match or club-history article.",
+        "grounding": "hypothesis_bound",
+        "scope": "corpus",
+        "target": "none",
+        "basis": "question; visible W38 (D34), W12 (D12)"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": "corpus",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": true,
+      "granularity": "too_broad",
+      "source_compatibility": false,
+      "action_matches_need": true,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "1094:69:A0",
+      "qid": "1094",
+      "seq": 69,
+      "arm": "A0",
+      "plan": {
+        "need": "Identify the specific early-21st-century match whose two teams match the clue descriptions, and confirm which player took the 95th-minute free-kick.",
+        "source": "Match report or match-article (e.g., Wikipedia/ESPN long-form) covering the fixture.",
+        "scope": "corpus",
+        "target": "none",
+        "grounding": "prefix_broad",
+        "basis": "visible prefix"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": "corpus",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": null,
+      "need_fidelity": null,
+      "granularity": null,
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "1094:69:A1",
+      "qid": "1094",
+      "seq": 69,
+      "arm": "A1",
+      "plan": {
+        "need": "The identity of the player who took the free-kick in the 95th minute of the described football match.",
+        "source": "Football match report or minute-by-minute match summary",
+        "grounding": "question_only",
+        "target": "none",
+        "scope": "none",
+        "basis": "original question"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": null,
+      "stated_scope_realized": null,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": true,
+      "granularity": "appropriate",
+      "source_compatibility": true,
+      "action_matches_need": true,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "1094:69:A2",
+      "qid": "1094",
+      "seq": 69,
+      "arm": "A2",
+      "plan": {
+        "need": "Identify the player who took the free-kick in the 95th minute of the described match.",
+        "source": "sports match report / football news article",
+        "grounding": "hypothesis_bound",
+        "scope": "corpus",
+        "target": "D34",
+        "basis": "question; W38, W45/D40, W42/D37"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "open",
+      "all_calls": [
+        "open"
+      ],
+      "inspect_refs": [
+        "W38"
+      ],
+      "mixed_batch": false,
+      "stated_scope": "corpus",
+      "stated_scope_realized": false,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": true,
+      "need_fidelity": false,
+      "granularity": "appropriate",
+      "source_compatibility": true,
+      "action_matches_need": false,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "1094:77:A0",
+      "qid": "1094",
+      "seq": 77,
+      "arm": "A0",
+      "plan": {
+        "need": "Identify the specific early-21st-century match (one team founded from a split between two parties, the other club with a multi-iteration identity) and the player who took the 95th-minute free-kick. No document yet confirms the match or the taker; only D37/W42 establishes Inter Milan's origin via a 1908 split from AC Milan.",
+        "source": "A match report or match-summary article (early 2000s) naming the 95th-minute free-kick taker and the scoreline/goal timings.",
+        "scope": "corpus",
+        "target": "none",
+        "grounding": "prefix_broad",
+        "basis": "visible prefix"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": "corpus",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": null,
+      "need_fidelity": null,
+      "granularity": null,
+      "source_compatibility": null,
+      "action_matches_need": null,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "1094:77:A1",
+      "qid": "1094",
+      "seq": 77,
+      "arm": "A1",
+      "plan": {
+        "need": "The identity of the player who took the free-kick in the 95th minute of the described football match.",
+        "source": "Football match report or minute-by-minute match summary",
+        "grounding": "question_only",
+        "target": "none",
+        "scope": "none",
+        "basis": "original question"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": null,
+      "stated_scope_realized": null,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": true,
+      "granularity": "appropriate",
+      "source_compatibility": true,
+      "action_matches_need": false,
+      "concrete_source_quality": null
+    },
+    {
+      "cell": "1094:77:A2",
+      "qid": "1094",
+      "seq": 77,
+      "arm": "A2",
+      "plan": {
+        "need": "Identify the football club described as \"born out of discord among two parties\" (formed via a split between two parties).",
+        "source": "Encyclopedia/club-history article on a football club's founding.",
+        "grounding": "question_only",
+        "scope": "corpus",
+        "target": "none",
+        "basis": "question"
+      },
+      "actor_response": true,
+      "validation": "valid",
+      "raw_finish_reason": "tool_calls",
+      "first_call": "search",
+      "all_calls": [
+        "search",
+        "search",
+        "search"
+      ],
+      "inspect_refs": [],
+      "mixed_batch": false,
+      "stated_scope": "corpus",
+      "stated_scope_realized": true,
+      "plan_target_prefix_compatible": null,
+      "premature_commitment": false,
+      "need_fidelity": false,
+      "granularity": "appropriate",
+      "source_compatibility": true,
+      "action_matches_need": false,
+      "concrete_source_quality": null
+    }
+  ],
+  "aggregates": {
+    "A0": {
+      "cells": 8,
+      "actor_responses": 8,
+      "valid_batches": 8,
+      "actions": {
+        "search": 13,
+        "find": 5,
+        "open": 2
+      },
+      "inspect_cells": 5,
+      "stated_scope_count": 8,
+      "stated_scope_realized": 6,
+      "semantic_reviewed": 0,
+      "premature_commitment": 0,
+      "need_fidelity": 0,
+      "appropriate_granularity": 0,
+      "source_compatibility": 0,
+      "action_matches_need": 0,
+      "concrete_source_quality": 0
+    },
+    "A1": {
+      "cells": 8,
+      "actor_responses": 8,
+      "valid_batches": 8,
+      "actions": {
+        "search": 22
+      },
+      "inspect_cells": 0,
+      "stated_scope_count": 0,
+      "stated_scope_realized": 0,
+      "semantic_reviewed": 8,
+      "premature_commitment": 0,
+      "need_fidelity": 4,
+      "appropriate_granularity": 4,
+      "source_compatibility": 4,
+      "action_matches_need": 3,
+      "concrete_source_quality": 0
+    },
+    "A2": {
+      "cells": 8,
+      "actor_responses": 8,
+      "valid_batches": 8,
+      "actions": {
+        "search": 13,
+        "find": 5,
+        "open": 1
+      },
+      "inspect_cells": 4,
+      "stated_scope_count": 8,
+      "stated_scope_realized": 7,
+      "semantic_reviewed": 8,
+      "premature_commitment": 3,
+      "need_fidelity": 3,
+      "appropriate_granularity": 4,
+      "source_compatibility": 7,
+      "action_matches_need": 2,
+      "concrete_source_quality": 2
+    }
+  },
+  "note": "A1 has two unique question-only planner outputs persisted across four checkpoints each; its eight semantic rows are repeated-state evaluations, not eight independent plans. A0 reuses frozen broad H1. No P3 tools executed, so evidence gain is unobserved."
+}

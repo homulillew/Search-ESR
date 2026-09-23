@@ -1,0 +1,97 @@
+{
+  "frozen_at_utc": "2026-09-23T09:24:59.882080+00:00",
+  "git_head": "f6dd09fce749547e9cc67c35d3955da8b55a6833",
+  "model": "deepseek-flash",
+  "provider_host": "api.deepseek.com",
+  "timeout_seconds": 240,
+  "max_retries": 0,
+  "selection": [
+    {
+      "qid": "546",
+      "seq": 17,
+      "role": "tournament_sequence_vs_biography"
+    },
+    {
+      "qid": "546",
+      "seq": 25,
+      "role": "candidate_specific_match_sequence"
+    },
+    {
+      "qid": "546",
+      "seq": 33,
+      "role": "candidate_specific_match_sequence"
+    },
+    {
+      "qid": "546",
+      "seq": 41,
+      "role": "candidate_stats_vs_match_report"
+    },
+    {
+      "qid": "1094",
+      "seq": 45,
+      "role": "split_club_history_vs_match_report"
+    },
+    {
+      "qid": "1094",
+      "seq": 53,
+      "role": "inter_hypothesis_vs_fixture_report"
+    },
+    {
+      "qid": "1094",
+      "seq": 69,
+      "role": "search_observations_without_match"
+    },
+    {
+      "qid": "1094",
+      "seq": 77,
+      "role": "candidate_event_disambiguation"
+    }
+  ],
+  "a1_planner_samples": 2,
+  "a2_planner_samples": 8,
+  "actor_samples": 16,
+  "tools_executed": false,
+  "actor_order": "alternating A1,A2 on even selection indices; A2,A1 on odd",
+  "a1_prompt_sha256": "97aedc92095cf58a3453c6fdbb10bd6ef77bc0ed0444d84bfdbf222f0a0f5bbc",
+  "a2_prompt_sha256": "ad266632a0d8110fdd3691137a0b08032a03f6090c3ebfd61545892294e675ca",
+  "card_prefix": "Current research control state:\n\n",
+  "card_suffix": "\n\nThis state records the current research assessment. Choose the next action normally using the available tools.",
+  "tool_schema_sha256": "60de1d45580c0dcd1fab666fbb97052122259f14c7f92bafab59825f3e7662ba",
+  "agent_prompt_sha256": "b93952826c95fcb4c5ba050012cdcb8f275de94445af724949bcdd74809342ca",
+  "source_sha256": {
+    "experiments/research_state_plan_handoff/atomic_need_timing/run.py": "c73d15edf8db86596ac2ba6b94cc448725a8f6b723b5852fa3da17fea8a547ef",
+    "experiments/research_state_plan_handoff/atomic_need_timing/analyze.py": "214dadff011e0a98758d0358a0175bb1b98865f6e372d9bb363fb38b3556e254",
+    "experiments/research_state_plan_handoff/atomic_need_timing/RUBRIC.json": "f2e245bd014cc3ddef49bbcf28bf022fe90f233547ade4bd43f1e7bc76eb2042",
+    "experiments/research_state_plan_handoff/atomic_need_timing/SELECTION.json": "459a0ba0b1da4295df04e7f02d5fa45a01304426a8d47cd874b66fdcc02a56c2",
+    "experiments/research_state_plan_handoff/plan_handoff_one_step/run.py": "e042cef0107e960fb7751140ee6766cab596e9f29840c712aee24953b3e3aae3",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14",
+    "experiments/model_backend_deepseek/protocol.py": "d89d579c05c00cc3b4aaebad6d7b4311a1a6a2b359ff1bda98b66cd31a32904d",
+    "experiments/model_backend_deepseek/cache_usage.py": "0fe723921efc5cb524539edcc436bd21994c5923fb10d2b6687cf9362560e8d6",
+    "experiments/search_find_v3b/orthogonal_search/run_partial.py": "a95985f1505299087080a7ba5047999240619e1c8348a0a6e21a71cde9c480b1",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720"
+  },
+  "historical_sha256": {
+    "experiments/model_backend_atria/PREFIX_ONLY_ANNOTATIONS.json": "c7924ead8a7e86d402a30de6ebaeff7fe200a868bfbe61085fd4508e7659e8e2",
+    "experiments/model_backend_deepseek/planning_probe/mechanical_summary.json": "aeb861cbdaa0b831e58373a49243e08e27141da481c782d3497b4e1c2ce9a746",
+    "experiments/model_backend_deepseek/natural_action_probe/events.jsonl": "670a44a12c41b366d7f28522ea1e151ca5df46187d9090f8d4569c29003f9433",
+    "experiments/research_state_plan_handoff/plan_handoff_one_step/events.jsonl": "654068e944039b217c34c606daff78b06a6eee73e3cb68ac823aa5e7a13674f5",
+    "experiments/research_state_plan_handoff/plan_handoff_one_step/mechanical_summary.json": "7e169fcee238cb4af7b5cbaec00e4041267b15d1ece93061d4284ddaa25235f8",
+    "experiments/research_state_plan_handoff/plan_orthogonal_interaction/events.jsonl": "b81105ebdb046f677155874ddada0c4356a7a84ed139eb71c66c77cedef44a48",
+    "experiments/research_state_plan_handoff/plan_orthogonal_interaction/mechanical_summary.json": "5a047154bbbb1530f70c34d8ad57dded02dd4af57a82c384818b53f132b555c8"
+  },
+  "question_sha256": {
+    "546": "5daa5541a9242ecacb61018ebc9e5531dec12e04584cf0b7b6169e5ed3180f9e",
+    "1094": "c753a2704d4f35675205690c52b1c7f493f1fc81df292f9937636b1cd81ae953"
+  },
+  "prefix_sha256": {
+    "546:17": "a3b1da930f2c9786a9bbc5b7d750c9444b32b9a854d00e30712c835299a9ec54",
+    "546:25": "baa3bd0fd30b3b4517c54e6baed618602a210360e2f334698cb5898de32a5051",
+    "546:33": "c2f630d9e4ebfc8dab97fc8561e6125a8b2dc3e94498b72527de7197ddc83a80",
+    "546:41": "43b4ff3936e711febe411e65083576d32bbb3cd8153fcddb85e2e7e2b82fe4fa",
+    "1094:45": "45dfc948340ee12828c665c2cd85c89fda371cbc42d1212c2046089c30047ece",
+    "1094:53": "7cc4802a6233adbb7b838459ba638cbbeef593646857cd673975e21754adbbd3",
+    "1094:69": "9b69899bdd3ff1c8eef3d8a19a924582889e81a44b927ab36f6596983a510b4e",
+    "1094:77": "7ea121a039189c159c46930dab065bd0820d8b0e1515e884f4b3999d168272a2"
+  },
+  "failure_policy": "one planner response per A1 qid and A2 checkpoint; one Actor response per arm/checkpoint; no selective retry"
+}
