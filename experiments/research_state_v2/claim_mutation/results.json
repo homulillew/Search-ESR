@@ -1,0 +1,3053 @@
+{
+  "summary": {
+    "by_arm": {
+      "W": {
+        "n": 41,
+        "errors": 1,
+        "final_mutation_precision": 0.6481481481481481,
+        "final_mutation_precision_fraction": [
+          35,
+          54
+        ],
+        "final_mutation_recall": 0.9210526315789473,
+        "final_mutation_recall_fraction": [
+          35,
+          38
+        ],
+        "unrelated_churn_cases": 11,
+        "unrelated_churn_units": 19,
+        "new_claims": 16,
+        "false_closure_cases": 0,
+        "NoGain_preservation": [
+          8,
+          8
+        ],
+        "missed_closure_claims": 1
+      },
+      "N": {
+        "n": 41,
+        "errors": 0,
+        "final_mutation_precision": 0.9743589743589743,
+        "final_mutation_precision_fraction": [
+          38,
+          39
+        ],
+        "final_mutation_recall": 1.0,
+        "final_mutation_recall_fraction": [
+          38,
+          38
+        ],
+        "unrelated_churn_cases": 1,
+        "unrelated_churn_units": 1,
+        "new_claims": 0,
+        "false_closure_cases": 1,
+        "NoGain_preservation": [
+          8,
+          8
+        ],
+        "missed_closure_claims": 0,
+        "routing_precision": 0.8536585365853658,
+        "routing_precision_fraction": [
+          35,
+          41
+        ],
+        "routing_recall": 1.0,
+        "routing_recall_fraction": [
+          35,
+          35
+        ]
+      }
+    },
+    "paired_unrelated_churn": {
+      "improved": 11,
+      "worsened": 0,
+      "equal": 30
+    },
+    "N_at_risk_false_closure": [
+      1,
+      17
+    ],
+    "N_conflict_recovery_T7_186": {
+      "C1_reopened": true,
+      "G1_reopened": true
+    },
+    "gate": {
+      "routing_recall": true,
+      "mutation_precision": true,
+      "mutation_recall": true,
+      "NoGain_preservation": true,
+      "false_closure": true,
+      "paired_churn": true
+    },
+    "M1_pass": true,
+    "cache": {
+      "updater_response": {
+        "reported": 41,
+        "hit_tokens": 35451,
+        "miss_tokens": 8143,
+        "weighted_hit_rate": 0.8132082396660091
+      },
+      "wide_verify_response": {
+        "reported": 39,
+        "hit_tokens": 16128,
+        "miss_tokens": 8226,
+        "weighted_hit_rate": 0.6622320768662232
+      },
+      "router_response": {
+        "reported": 41,
+        "hit_tokens": 768,
+        "miss_tokens": 37578,
+        "weighted_hit_rate": 0.02002816460647786
+      },
+      "narrow_verify_response": {
+        "reported": 41,
+        "hit_tokens": 2176,
+        "miss_tokens": 24858,
+        "weighted_hit_rate": 0.08049123326181845
+      }
+    },
+    "sensitivity_excluding_qid186_T5_T7": {
+      "W": {
+        "n": 39,
+        "errors": 1,
+        "final_mutation_precision": 0.6530612244897959,
+        "final_mutation_precision_fraction": [
+          32,
+          49
+        ],
+        "final_mutation_recall": 0.9696969696969697,
+        "final_mutation_recall_fraction": [
+          32,
+          33
+        ],
+        "unrelated_churn_cases": 10,
+        "unrelated_churn_units": 17,
+        "new_claims": 14,
+        "false_closure_cases": 0,
+        "NoGain_preservation": [
+          8,
+          8
+        ],
+        "missed_closure_claims": 1
+      },
+      "N": {
+        "n": 39,
+        "errors": 0,
+        "final_mutation_precision": 0.9705882352941176,
+        "final_mutation_precision_fraction": [
+          33,
+          34
+        ],
+        "final_mutation_recall": 1.0,
+        "final_mutation_recall_fraction": [
+          33,
+          33
+        ],
+        "unrelated_churn_cases": 1,
+        "unrelated_churn_units": 1,
+        "new_claims": 0,
+        "false_closure_cases": 1,
+        "NoGain_preservation": [
+          8,
+          8
+        ],
+        "missed_closure_claims": 0,
+        "routing_precision": 0.8285714285714286,
+        "routing_precision_fraction": [
+          29,
+          35
+        ],
+        "routing_recall": 1.0,
+        "routing_recall_fraction": [
+          29,
+          29
+        ]
+      }
+    },
+    "limitations": "Reviewer-authored state; correlated sibling cases; qid186 malformed credit Claims and ambiguous title identity are separated."
+  },
+  "rows": [
+    {
+      "case_id": "T1_546",
+      "qid": "546",
+      "transition_type": "T1",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_546",
+      "qid": "546",
+      "transition_type": "T1",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_546",
+      "qid": "546",
+      "transition_type": "T2",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        },
+        {
+          "kind": "new_claim",
+          "id": "C3",
+          "correct": false,
+          "scorable": true
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 1,
+      "new_claims": 1,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_546",
+      "qid": "546",
+      "transition_type": "T2",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_546",
+      "qid": "546",
+      "transition_type": "T3",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_refs_only",
+          "id": "C1",
+          "correct": false,
+          "scorable": true
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 1,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_546",
+      "qid": "546",
+      "transition_type": "T3",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 0,
+      "routing_total": 1,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_1094",
+      "qid": "1094",
+      "transition_type": "T1",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_1094",
+      "qid": "1094",
+      "transition_type": "T1",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_1094",
+      "qid": "1094",
+      "transition_type": "T2",
+      "arm": "W",
+      "error": "ValueError",
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 1,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 1,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_1094",
+      "qid": "1094",
+      "transition_type": "T2",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_1094",
+      "qid": "1094",
+      "transition_type": "T3",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "new_claim",
+          "id": "C3",
+          "correct": false,
+          "scorable": true
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 1,
+      "new_claims": 1,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_1094",
+      "qid": "1094",
+      "transition_type": "T3",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "routing_correct": 0,
+      "routing_total": 2,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_517",
+      "qid": "517",
+      "transition_type": "T1",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_517",
+      "qid": "517",
+      "transition_type": "T1",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_517",
+      "qid": "517",
+      "transition_type": "T2",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        },
+        {
+          "kind": "new_claim",
+          "id": "C3",
+          "correct": false,
+          "scorable": true
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 1,
+      "new_claims": 1,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_517",
+      "qid": "517",
+      "transition_type": "T2",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_517",
+      "qid": "517",
+      "transition_type": "T3",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "new_claim",
+          "id": "C3",
+          "correct": false,
+          "scorable": true
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 1,
+      "new_claims": 1,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_517",
+      "qid": "517",
+      "transition_type": "T3",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_435",
+      "qid": "435",
+      "transition_type": "T1",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_435",
+      "qid": "435",
+      "transition_type": "T1",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_435",
+      "qid": "435",
+      "transition_type": "T2",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_435",
+      "qid": "435",
+      "transition_type": "T2",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_435",
+      "qid": "435",
+      "transition_type": "T3",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_refs_only",
+          "id": "C1",
+          "correct": false,
+          "scorable": true
+        },
+        {
+          "kind": "new_claim",
+          "id": "C4",
+          "correct": false,
+          "scorable": true
+        },
+        {
+          "kind": "new_claim",
+          "id": "C5",
+          "correct": false,
+          "scorable": true
+        },
+        {
+          "kind": "new_claim",
+          "id": "C3",
+          "correct": false,
+          "scorable": true
+        }
+      ],
+      "mutation_total": 4,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 4,
+      "new_claims": 3,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_435",
+      "qid": "435",
+      "transition_type": "T3",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": false,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 1,
+      "new_claims": 0,
+      "false_closure": true,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "routing_correct": 0,
+      "routing_total": 2,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_580",
+      "qid": "580",
+      "transition_type": "T1",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_580",
+      "qid": "580",
+      "transition_type": "T1",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_580",
+      "qid": "580",
+      "transition_type": "T2",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        },
+        {
+          "kind": "new_claim",
+          "id": "C3",
+          "correct": false,
+          "scorable": true
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 1,
+      "new_claims": 1,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_580",
+      "qid": "580",
+      "transition_type": "T2",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_580",
+      "qid": "580",
+      "transition_type": "T3",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_580",
+      "qid": "580",
+      "transition_type": "T3",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_177",
+      "qid": "177",
+      "transition_type": "T1",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_177",
+      "qid": "177",
+      "transition_type": "T1",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_177",
+      "qid": "177",
+      "transition_type": "T2",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        },
+        {
+          "kind": "new_claim",
+          "id": "C3",
+          "correct": false,
+          "scorable": true
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 1,
+      "new_claims": 1,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_177",
+      "qid": "177",
+      "transition_type": "T2",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_177",
+      "qid": "177",
+      "transition_type": "T3",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_refs_only",
+          "id": "C1",
+          "correct": false,
+          "scorable": true
+        },
+        {
+          "kind": "new_claim",
+          "id": "C3",
+          "correct": false,
+          "scorable": true
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 2,
+      "new_claims": 1,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_177",
+      "qid": "177",
+      "transition_type": "T3",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 0,
+      "routing_total": 1,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_1034",
+      "qid": "1034",
+      "transition_type": "T1",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_1034",
+      "qid": "1034",
+      "transition_type": "T1",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_1034",
+      "qid": "1034",
+      "transition_type": "T2",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_1034",
+      "qid": "1034",
+      "transition_type": "T2",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_1034",
+      "qid": "1034",
+      "transition_type": "T3",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_1034",
+      "qid": "1034",
+      "transition_type": "T3",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_387",
+      "qid": "387",
+      "transition_type": "T1",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T1_387",
+      "qid": "387",
+      "transition_type": "T1",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_387",
+      "qid": "387",
+      "transition_type": "T2",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T2_387",
+      "qid": "387",
+      "transition_type": "T2",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 1,
+      "mutation_correct": 1,
+      "required_total": 1,
+      "required_hit": 1,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_387",
+      "qid": "387",
+      "transition_type": "T3",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T3_387",
+      "qid": "387",
+      "transition_type": "T3",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_546",
+      "qid": "546",
+      "transition_type": "T4",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_546",
+      "qid": "546",
+      "transition_type": "T4",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_1094",
+      "qid": "1094",
+      "transition_type": "T4",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_1094",
+      "qid": "1094",
+      "transition_type": "T4",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_177",
+      "qid": "177",
+      "transition_type": "T4",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_177",
+      "qid": "177",
+      "transition_type": "T4",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_517",
+      "qid": "517",
+      "transition_type": "T4",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_517",
+      "qid": "517",
+      "transition_type": "T4",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_311",
+      "qid": "311",
+      "transition_type": "T4",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_311",
+      "qid": "311",
+      "transition_type": "T4",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_324",
+      "qid": "324",
+      "transition_type": "T4",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_324",
+      "qid": "324",
+      "transition_type": "T4",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_776",
+      "qid": "776",
+      "transition_type": "T4",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_776",
+      "qid": "776",
+      "transition_type": "T4",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_186",
+      "qid": "186",
+      "transition_type": "T4",
+      "arm": "W",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T4_186",
+      "qid": "186",
+      "transition_type": "T4",
+      "arm": "N",
+      "error": null,
+      "mutations": [],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 0,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": true,
+      "routed_claim_ids": [],
+      "routing_correct": 0,
+      "routing_total": 0,
+      "routing_gold_total": 0,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T5_546",
+      "qid": "546",
+      "transition_type": "T5",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C3",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 3,
+      "mutation_correct": 3,
+      "required_total": 3,
+      "required_hit": 3,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T5_546",
+      "qid": "546",
+      "transition_type": "T5",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C3",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 3,
+      "mutation_correct": 3,
+      "required_total": 3,
+      "required_hit": 3,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "routing_correct": 3,
+      "routing_total": 3,
+      "routing_gold_total": 3,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T5_517",
+      "qid": "517",
+      "transition_type": "T5",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C3",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 3,
+      "mutation_correct": 3,
+      "required_total": 3,
+      "required_hit": 3,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T5_517",
+      "qid": "517",
+      "transition_type": "T5",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C3",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 3,
+      "mutation_correct": 3,
+      "required_total": 3,
+      "required_hit": 3,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "routing_correct": 3,
+      "routing_total": 3,
+      "routing_gold_total": 3,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T5_311",
+      "qid": "311",
+      "transition_type": "T5",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C3",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "new_claim",
+          "id": "C5",
+          "correct": false,
+          "scorable": true
+        },
+        {
+          "kind": "new_claim",
+          "id": "C7",
+          "correct": false,
+          "scorable": true
+        },
+        {
+          "kind": "new_claim",
+          "id": "C6",
+          "correct": false,
+          "scorable": true
+        },
+        {
+          "kind": "new_claim",
+          "id": "C8",
+          "correct": false,
+          "scorable": true
+        }
+      ],
+      "mutation_total": 7,
+      "mutation_correct": 3,
+      "required_total": 3,
+      "required_hit": 3,
+      "unrelated_churn": 4,
+      "new_claims": 4,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T5_311",
+      "qid": "311",
+      "transition_type": "T5",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C3",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        }
+      ],
+      "mutation_total": 3,
+      "mutation_correct": 3,
+      "required_total": 3,
+      "required_hit": 3,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "routing_correct": 3,
+      "routing_total": 3,
+      "routing_gold_total": 3,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T5_186",
+      "qid": "186",
+      "transition_type": "T5",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C3",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C4",
+          "correct": false,
+          "scorable": false,
+          "before": "open",
+          "after": "refuted"
+        },
+        {
+          "kind": "new_claim",
+          "id": "C5",
+          "correct": false,
+          "scorable": true
+        },
+        {
+          "kind": "new_claim",
+          "id": "C6",
+          "correct": false,
+          "scorable": true
+        },
+        {
+          "kind": "gap_status",
+          "id": "G2",
+          "correct": false,
+          "scorable": false,
+          "before": "open",
+          "after": "closed"
+        }
+      ],
+      "mutation_total": 5,
+      "mutation_correct": 3,
+      "required_total": 3,
+      "required_hit": 3,
+      "unrelated_churn": 2,
+      "new_claims": 2,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": false,
+      "malformed_claim_mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C4",
+          "correct": false,
+          "scorable": false,
+          "before": "open",
+          "after": "refuted"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G2",
+          "correct": false,
+          "scorable": false,
+          "before": "open",
+          "after": "closed"
+        }
+      ]
+    },
+    {
+      "case_id": "T5_186",
+      "qid": "186",
+      "transition_type": "T5",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C3",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "claim_status",
+          "id": "C4",
+          "correct": false,
+          "scorable": false,
+          "before": "open",
+          "after": "refuted"
+        }
+      ],
+      "mutation_total": 3,
+      "mutation_correct": 3,
+      "required_total": 3,
+      "required_hit": 3,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "routing_correct": 4,
+      "routing_total": 4,
+      "routing_gold_total": 4,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C4",
+          "correct": false,
+          "scorable": false,
+          "before": "open",
+          "after": "refuted"
+        }
+      ]
+    },
+    {
+      "case_id": "T6_546",
+      "qid": "546",
+      "transition_type": "T6",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "closed"
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 2,
+      "required_total": 2,
+      "required_hit": 2,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T6_546",
+      "qid": "546",
+      "transition_type": "T6",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "closed"
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 2,
+      "required_total": 2,
+      "required_hit": 2,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T6_1094",
+      "qid": "1094",
+      "transition_type": "T6",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "closed"
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 2,
+      "required_total": 2,
+      "required_hit": 2,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T6_1094",
+      "qid": "1094",
+      "transition_type": "T6",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "closed"
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 2,
+      "required_total": 2,
+      "required_hit": 2,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T6_435",
+      "qid": "435",
+      "transition_type": "T6",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "closed"
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 2,
+      "required_total": 2,
+      "required_hit": 2,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T6_435",
+      "qid": "435",
+      "transition_type": "T6",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "closed"
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 2,
+      "required_total": 2,
+      "required_hit": 2,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T6_177",
+      "qid": "177",
+      "transition_type": "T6",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "closed"
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 2,
+      "required_total": 2,
+      "required_hit": 2,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T6_177",
+      "qid": "177",
+      "transition_type": "T6",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G1",
+          "correct": true,
+          "scorable": true,
+          "before": "open",
+          "after": "closed"
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 2,
+      "required_total": 2,
+      "required_hit": 2,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1"
+      ],
+      "routing_correct": 1,
+      "routing_total": 1,
+      "routing_gold_total": 1,
+      "routing_missed": [],
+      "active_gap_retired": true,
+      "malformed_claim_mutations": []
+    },
+    {
+      "case_id": "T7_186",
+      "qid": "186",
+      "transition_type": "T7",
+      "arm": "W",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": false,
+          "scorable": false,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G2",
+          "correct": false,
+          "scorable": false,
+          "before": "open",
+          "after": "closed"
+        }
+      ],
+      "mutation_total": 0,
+      "mutation_correct": 0,
+      "required_total": 2,
+      "required_hit": 0,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": null,
+      "routing_correct": null,
+      "routing_total": null,
+      "routing_gold_total": null,
+      "routing_missed": null,
+      "active_gap_retired": true,
+      "malformed_claim_mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C2",
+          "correct": false,
+          "scorable": false,
+          "before": "open",
+          "after": "supported"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G2",
+          "correct": false,
+          "scorable": false,
+          "before": "open",
+          "after": "closed"
+        }
+      ]
+    },
+    {
+      "case_id": "T7_186",
+      "qid": "186",
+      "transition_type": "T7",
+      "arm": "N",
+      "error": null,
+      "mutations": [
+        {
+          "kind": "claim_status",
+          "id": "C1",
+          "correct": true,
+          "scorable": true,
+          "before": "supported",
+          "after": "open"
+        },
+        {
+          "kind": "gap_status",
+          "id": "G1",
+          "correct": true,
+          "scorable": true,
+          "before": "closed",
+          "after": "open"
+        }
+      ],
+      "mutation_total": 2,
+      "mutation_correct": 2,
+      "required_total": 2,
+      "required_hit": 2,
+      "unrelated_churn": 0,
+      "new_claims": 0,
+      "false_closure": false,
+      "missed_closure": 0,
+      "NoGain_preserved": null,
+      "routed_claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "routing_correct": 2,
+      "routing_total": 2,
+      "routing_gold_total": 2,
+      "routing_missed": [],
+      "active_gap_retired": false,
+      "malformed_claim_mutations": []
+    }
+  ]
+}
