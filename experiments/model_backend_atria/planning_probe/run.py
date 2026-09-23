@@ -54,8 +54,35 @@ def approved_annotations():
     data = json.loads(path.read_text())
     if data.get('status') != 'human_reviewed_frozen' or not data.get('human_reviewed_at_utc'):
         raise ValueError('M1 requires human-reviewed prefix-only annotation freeze')
-    if len(data.get('rows', [])) != 13:
-        raise ValueError('M1 requires 13 annotations')
+    rows = data.get('rows', [])
+    if not isinstance(rows, list) or len(rows) != len(CASES):
+        raise ValueError('M1 requires exactly the 13 frozen annotations')
+    keys = [(r.get('qid'), r.get('seq')) for r in rows]
+    if len(set(keys)) != len(CASES) or set(keys) != set(CASES):
+        raise ValueError('annotation checkpoint IDs differ from the frozen 13')
+    packets = json.loads((STUDY / 'PREFIX_ONLY_PACKETS.json').read_text())['packets']
+    visible = {(p['qid'], p['seq']): {d['doc_ref'] for d in p['observed_documents']}
+               for p in packets}
+    source_types = {'biography', 'event_or_match_report', 'tournament_result_or_log',
+                    'official_statistics', 'organization_history', 'general_article', 'unknown'}
+    scopes = {'corpus', 'document', 'window', 'stop'}
+    for row in rows:
+        key = row['qid'], row['seq']
+        for field in ('current_need', 'reason'):
+            if not isinstance(row.get(field), str) or not row[field].strip():
+                raise ValueError(f'{key}: missing {field}')
+        for field, allowed in (('expected_source_type', source_types),
+                               ('acceptable_scopes', scopes)):
+            values = row.get(field)
+            if not isinstance(values, list) or not values or len(values) != len(set(values)) \
+                    or not set(values) <= allowed:
+                raise ValueError(f'{key}: invalid {field}')
+        refs = row.get('plausible_document_refs')
+        if not isinstance(refs, list) or len(refs) != len(set(refs)) \
+                or not set(refs) <= visible[key]:
+            raise ValueError(f'{key}: document refs were not visible in the prefix')
+        if row.get('ambiguity') not in {'low', 'medium', 'high'}:
+            raise ValueError(f'{key}: invalid ambiguity')
     return data
 
 
@@ -85,6 +112,7 @@ def freeze():
       'atria_timeout_seconds': ATRIA['timeout_seconds'],
       'openai_sdk_version': version('openai'), 'python_version': platform.python_version(),
       'annotations_sha256': sha(STUDY/'PREFIX_ONLY_ANNOTATIONS.json'),
+      'prefix_packets_sha256': sha(STUDY/'PREFIX_ONLY_PACKETS.json'),
       'protocol_summary_sha256': sha(STUDY/'protocol_summary.json'),
       'source_sha256': {p: file_sha(ROOT/p) for p in sources},
       'original_event_sha256': old['run_events_sha256'],
@@ -103,6 +131,7 @@ def gate():
     old = json.loads((ROOT / 'experiments/search_find_v3b/orthogonal_search/freeze.json').read_text())
     checks = {
       'annotation': sha(STUDY/'PREFIX_ONLY_ANNOTATIONS.json') == frozen['annotations_sha256'],
+      'prefix_packets': sha(STUDY/'PREFIX_ONLY_PACKETS.json') == frozen['prefix_packets_sha256'],
       'protocol': sha(STUDY/'protocol_summary.json') == frozen['protocol_summary_sha256']
                   and json.loads((STUDY/'protocol_summary.json').read_text())['pass'],
       'sources': all(file_sha(ROOT/p)==h for p,h in frozen['source_sha256'].items()),

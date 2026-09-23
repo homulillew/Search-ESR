@@ -2,6 +2,9 @@
 
 The proposed labels are in `PREFIX_ONLY_ANNOTATIONS_DRAFT.json`. The exact
 messages available at each checkpoint are in `PREFIX_ONLY_PACKETS.json`.
+`PREFIX_REVIEW_INDEX.md` links to one exact packet per checkpoint for easier
+review; the split packets have been checked to match the bundle byte-for-byte
+after JSON parsing.
 `make_prefix_packets.py` stops reading the event stream at that checkpoint;
 it never reads a later response. The packet hashes match the historical
 Orthogonal Search freeze. Please judge each row from its packet, without
