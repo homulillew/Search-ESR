@@ -1,0 +1,9 @@
+# A1 Frontier-driven Claim Admission
+
+Run only because M1 passed all six gates. Select T1/T2/T3 from each of the eight qids shared by the historical Frontier case bank: 24 paired packets, all before any A1 model call. Each packet uses its historical M1 visible W excerpt, prior existing Claims, original question from the historical Frontier bank, and a reviewer-selected open G2 question constraint. No gold answer, future tool result, or later claim status is included. The selection and content are frozen in `CASES.json`.
+
+O sees raw question, existing state including active Gap, and latest observed excerpt; its prompt asks for observation-driven admission of 0–3 new Claims. G sees the same information organized as raw question, near-verbatim anchors, ActiveGap, existing Claims and observed basis refs, and uses `../prompts/claim_compiler.md`. Both outputs use the same strict schema; the harness validates parent Gap and anchors and would create accepted Claims only with `status=open`. No status verification occurs in A1.
+
+Reviewer scores each proposed Claim for task anchoring, gap relevance, testability, premature commitment, redundancy, and minimality. A Claim is progress-appropriate only if all six pass. Semantic plausibility is recorded separately. Case-level coverage is whether the proposed Claim set, together with valid existing Claims, captures each frozen verification condition for the active Gap. Reviewer sees shuffled arm-blind proposals with frozen requirements and exact packet. Claims are scored regardless of whether they seem true in W.
+
+Gate: G must have at least five paired cases with higher progress-appropriate precision, reverse worse cases less than half; coverage no more than 10 percentage points below O; premature and redundant claim rates each ≤15%. Errors score zero coverage and remain in paired denominator. `max_retries=0`, one call per arm per case, no best-of.
