@@ -1,0 +1,220 @@
+{
+  "summary": {
+    "cases": 8,
+    "qids": 8,
+    "responses": 8,
+    "api_errors": 0,
+    "acceptable": {
+      "n": 8,
+      "rate": 1.0
+    },
+    "closed_gap_reselection": {
+      "n": 0,
+      "rate": 0.0
+    },
+    "premature_downstream": {
+      "n": 1,
+      "rate": 0.125
+    },
+    "source_type_compatible": 8,
+    "known_source_valid": 8,
+    "source_ref_exists_or_none": 8,
+    "low_ambiguity": {
+      "n": 6,
+      "acceptable": 6,
+      "closed": 0,
+      "premature": 0
+    },
+    "cache": {
+      "usage_reported": 8,
+      "hit_tokens": 0,
+      "miss_tokens": 3916,
+      "weighted_hit_rate": 0.0
+    },
+    "gate": {
+      "acceptable_ge_75pct": true,
+      "closed_reselection_le_10pct": true,
+      "premature_downstream_le_15pct": true
+    },
+    "stage_B_pass": true,
+    "caveat": "Only eight one-per-qid clean reviewer-authored views; no full history or tool observations."
+  },
+  "rows": [
+    {
+      "case_id": "frontier_546",
+      "qid": "546",
+      "ambiguity": "low",
+      "selected_gap": "G2",
+      "acceptable": true,
+      "closed_gap_reselected": false,
+      "premature_downstream": false,
+      "source_type_compatible": true,
+      "known_source_valid": true,
+      "source_ref_exists_or_none": true,
+      "review_reason": "A dated round-by-round result source fits the open linked-score gap; none of the one-title directory directly provides Ding's later tournament sequence.",
+      "parsed": {
+        "gap": "G2",
+        "why_now": "The opening 4-3 decider is supported, but the later 4-3, 4-0 wins and loss to a >400-century player remain unverified, so this chain is the next dependency to resolve.",
+        "source_type": "Dated tournament draw/round-by-round match results.",
+        "known_source": "none",
+        "finish_reason": "stop",
+        "content": "Active gap: G2\nWhy now: The opening 4-3 decider is supported, but the later 4-3, 4-0 wins and loss to a >400-century player remain unverified, so this chain is the next dependency to resolve.\nExpected source type: Dated tournament draw/round-by-round match results.\nKnown suitable source: none"
+      },
+      "api_error": null
+    },
+    {
+      "case_id": "frontier_1094",
+      "qid": "1094",
+      "ambiguity": "medium",
+      "selected_gap": "G3",
+      "acceptable": true,
+      "closed_gap_reselected": false,
+      "premature_downstream": true,
+      "source_type_compatible": true,
+      "known_source_valid": true,
+      "source_ref_exists_or_none": true,
+      "review_reason": "A fixture report/timeline fits G3 and no observed title directly links the two club leads. The Why-now sentence prematurely narrows the unsupported opponent to an Inter–Milan fixture.",
+      "parsed": {
+        "gap": "G3",
+        "why_now": "C3 and C4 are still open, so the next step is to find the Inter–Milan fixture and full goal chronology that can confirm the 95th-minute free-kick context.",
+        "source_type": "football match report or minute-by-minute event timeline",
+        "known_source": "none",
+        "finish_reason": "stop",
+        "content": "Active gap: G3\nWhy now: C3 and C4 are still open, so the next step is to find the Inter–Milan fixture and full goal chronology that can confirm the 95th-minute free-kick context.\nExpected source type: football match report or minute-by-minute event timeline\nKnown suitable source: none"
+      },
+      "api_error": null
+    },
+    {
+      "case_id": "frontier_517",
+      "qid": "517",
+      "ambiguity": "low",
+      "selected_gap": "G2",
+      "acceptable": true,
+      "closed_gap_reselected": false,
+      "premature_downstream": false,
+      "source_type_compatible": true,
+      "known_source_valid": true,
+      "source_ref_exists_or_none": true,
+      "review_reason": "Film credits or an actor filmography fit the exact-role gap. The observed Peter Nzioki biography already discusses the 2005 film and is a plausible local inspection source, although the current excerpt lacks the character.",
+      "parsed": {
+        "gap": "G2",
+        "why_now": "C3 remains open, and verifying his exact Constant Gardener role can confirm or eliminate the candidate’s key 2005 film clue.",
+        "source_type": "Film cast/credit listing or actor filmography.",
+        "known_source": "D1",
+        "finish_reason": "stop",
+        "content": "Active gap: G2\nWhy now: C3 remains open, and verifying his exact Constant Gardener role can confirm or eliminate the candidate’s key 2005 film clue.\nExpected source type: Film cast/credit listing or actor filmography.\nKnown suitable source: D1"
+      },
+      "api_error": null
+    },
+    {
+      "case_id": "frontier_435",
+      "qid": "435",
+      "ambiguity": "low",
+      "selected_gap": "G2",
+      "acceptable": true,
+      "closed_gap_reselected": false,
+      "premature_downstream": false,
+      "source_type_compatible": true,
+      "known_source_valid": true,
+      "source_ref_exists_or_none": true,
+      "review_reason": "A dated artist biography/obituary can test album chronology; the observed Oliver Mtukudzi article discusses his albums and career but does not itself close the exact 67-album claim.",
+      "parsed": {
+        "gap": "G2",
+        "why_now": "Oliver’s age is verified, but his dated album total and first-album period remain open and can be checked against the available obituary.",
+        "source_type": "Obituary/biographical profile",
+        "known_source": "D2",
+        "finish_reason": "stop",
+        "content": "Active gap: G2\nWhy now: Oliver’s age is verified, but his dated album total and first-album period remain open and can be checked against the available obituary.\nExpected source type: Obituary/biographical profile\nKnown suitable source: D2"
+      },
+      "api_error": null
+    },
+    {
+      "case_id": "frontier_580",
+      "qid": "580",
+      "ambiguity": "low",
+      "selected_gap": "G2",
+      "acceptable": true,
+      "closed_gap_reselected": false,
+      "premature_downstream": false,
+      "source_type_compatible": true,
+      "known_source_valid": true,
+      "source_ref_exists_or_none": true,
+      "review_reason": "A season-one episode summary directly fits G2; the observed season-four episode page is not that source.",
+      "parsed": {
+        "gap": "G2",
+        "why_now": "C3 is open and verifying the early season-one date scene will test the lead series against the first listed plot point.",
+        "source_type": "Season-one episode recap/summary.",
+        "known_source": "none",
+        "finish_reason": "stop",
+        "content": "Active gap: G2\nWhy now: C3 is open and verifying the early season-one date scene will test the lead series against the first listed plot point.\nExpected source type: Season-one episode recap/summary.\nKnown suitable source: none"
+      },
+      "api_error": null
+    },
+    {
+      "case_id": "frontier_177",
+      "qid": "177",
+      "ambiguity": "low",
+      "selected_gap": "G2",
+      "acceptable": true,
+      "closed_gap_reselected": false,
+      "premature_downstream": false,
+      "source_type_compatible": true,
+      "known_source_valid": true,
+      "source_ref_exists_or_none": true,
+      "review_reason": "Historical league standings fit the tied-points, position and goal-difference gap; the observed signing article does not contain that table.",
+      "parsed": {
+        "gap": "G2",
+        "why_now": "The signing-count lead points to Rangers, but C3's 2011–2016 equal-points table position and goal difference remain unverified.",
+        "source_type": "Historical league standings table",
+        "known_source": "none",
+        "finish_reason": "stop",
+        "content": "Active gap: G2\nWhy now: The signing-count lead points to Rangers, but C3's 2011–2016 equal-points table position and goal difference remain unverified.\nExpected source type: Historical league standings table\nKnown suitable source: none"
+      },
+      "api_error": null
+    },
+    {
+      "case_id": "frontier_1034",
+      "qid": "1034",
+      "ambiguity": "medium",
+      "selected_gap": "G2",
+      "acceptable": true,
+      "closed_gap_reselected": false,
+      "premature_downstream": false,
+      "source_type_compatible": true,
+      "known_source_valid": true,
+      "source_ref_exists_or_none": true,
+      "review_reason": "A biography or family interview can test the education and child clues; the observed profile does not indicate it contains the specific facts, so none is reasonable.",
+      "parsed": {
+        "gap": "G2",
+        "why_now": "The education and US-born child constraints are still open and can confirm or eliminate the provisional Heart hypothesis.",
+        "source_type": "biography or interview",
+        "known_source": "none",
+        "finish_reason": "stop",
+        "content": "Active gap: G2\nWhy now: The education and US-born child constraints are still open and can confirm or eliminate the provisional Heart hypothesis.\nExpected source type: biography or interview\nKnown suitable source: none"
+      },
+      "api_error": null
+    },
+    {
+      "case_id": "frontier_387",
+      "qid": "387",
+      "ambiguity": "low",
+      "selected_gap": "G2",
+      "acceptable": true,
+      "closed_gap_reselected": false,
+      "premature_downstream": false,
+      "source_type_compatible": true,
+      "known_source_valid": true,
+      "source_ref_exists_or_none": true,
+      "review_reason": "A developer interview or game credits fit animation authorship and paper-size details; D1 is an observed Dean Dodrill interview with equipment and animation context. The Why-now phrase 'PC-storage answer' is unsupported wording but does not change the selected G2.",
+      "parsed": {
+        "gap": "G2",
+        "why_now": "C3 is still open, and confirming Dean’s Game B intro/end animation credit plus the 8x11 paper detail is needed before using D1 for the PC-storage answer.",
+        "source_type": "2013 developer interview and/or game credit listing",
+        "known_source": "D1",
+        "finish_reason": "stop",
+        "content": "Active gap: G2\nWhy now: C3 is still open, and confirming Dean’s Game B intro/end animation credit plus the 8x11 paper detail is needed before using D1 for the PC-storage answer.\nExpected source type: 2013 developer interview and/or game credit listing\nKnown suitable source: D1"
+      },
+      "api_error": null
+    }
+  ]
+}

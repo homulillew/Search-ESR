@@ -1,0 +1,239 @@
+{
+  "frozen_at_utc": "2026-09-23T15:33:07.672884+00:00",
+  "git_head": "c9d31a82dcf0bbf218d52982a373f7c6f5806966",
+  "model": "deepseek-flash",
+  "provider_host": "api.deepseek.com",
+  "timeout_seconds": 240,
+  "max_retries": 0,
+  "prompt_sha256": "dd1f4b89ab8bafd1d28f45105c48ae17de58043d5ed2dbd08379962bc87ee686",
+  "tool_schema": null,
+  "sample_count": 8,
+  "case_order": [
+    "frontier_1094",
+    "frontier_387",
+    "frontier_580",
+    "frontier_177",
+    "frontier_546",
+    "frontier_435",
+    "frontier_517",
+    "frontier_1034"
+  ],
+  "qid_checkpoint": {
+    "frontier_546": "546",
+    "frontier_1094": "1094",
+    "frontier_517": "517",
+    "frontier_435": "435",
+    "frontier_580": "580",
+    "frontier_177": "177",
+    "frontier_1034": "1034",
+    "frontier_387": "387"
+  },
+  "review_labels": {
+    "frontier_546": {
+      "acceptable_active_gaps": [
+        "G2",
+        "G3"
+      ],
+      "unacceptable_closed_gaps": [
+        "G1"
+      ],
+      "unsupported_hypothesis_gaps": [
+        "G4"
+      ],
+      "preferred_source_types": {
+        "G2": [
+          "round-by-round tournament results",
+          "match log"
+        ],
+        "G3": [
+          "player biography",
+          "career statistics"
+        ]
+      }
+    },
+    "frontier_1094": {
+      "acceptable_active_gaps": [
+        "G2",
+        "G3"
+      ],
+      "unacceptable_closed_gaps": [
+        "G1"
+      ],
+      "unsupported_hypothesis_gaps": [
+        "G4"
+      ],
+      "preferred_source_types": {
+        "G2": [
+          "club founding history",
+          "club name history"
+        ],
+        "G3": [
+          "fixture match report",
+          "goal timeline"
+        ]
+      }
+    },
+    "frontier_517": {
+      "acceptable_active_gaps": [
+        "G2",
+        "G3"
+      ],
+      "unacceptable_closed_gaps": [
+        "G1"
+      ],
+      "unsupported_hypothesis_gaps": [
+        "G4"
+      ],
+      "preferred_source_types": {
+        "G2": [
+          "film cast credits",
+          "actor role listing"
+        ],
+        "G3": [
+          "film credits",
+          "director biography"
+        ]
+      }
+    },
+    "frontier_435": {
+      "acceptable_active_gaps": [
+        "G2",
+        "G3"
+      ],
+      "unacceptable_closed_gaps": [
+        "G1"
+      ],
+      "unsupported_hypothesis_gaps": [
+        "G4"
+      ],
+      "preferred_source_types": {
+        "G2": [
+          "artist discography",
+          "dated biography"
+        ],
+        "G3": [
+          "Forbes Africa original feature",
+          "dated magazine article"
+        ]
+      }
+    },
+    "frontier_580": {
+      "acceptable_active_gaps": [
+        "G2",
+        "G3"
+      ],
+      "unacceptable_closed_gaps": [
+        "G1"
+      ],
+      "unsupported_hypothesis_gaps": [
+        "G4"
+      ],
+      "preferred_source_types": {
+        "G2": [
+          "season-one episode guide",
+          "episode synopsis"
+        ],
+        "G3": [
+          "season-three episode guide",
+          "episode synopsis"
+        ]
+      }
+    },
+    "frontier_177": {
+      "acceptable_active_gaps": [
+        "G2",
+        "G3"
+      ],
+      "unacceptable_closed_gaps": [
+        "G1"
+      ],
+      "unsupported_hypothesis_gaps": [
+        "G4"
+      ],
+      "preferred_source_types": {
+        "G2": [
+          "historical league standings",
+          "season table"
+        ],
+        "G3": [
+          "club history",
+          "official trophy record"
+        ]
+      }
+    },
+    "frontier_1034": {
+      "acceptable_active_gaps": [
+        "G2",
+        "G3"
+      ],
+      "unacceptable_closed_gaps": [
+        "G1"
+      ],
+      "unsupported_hypothesis_gaps": [
+        "G4"
+      ],
+      "preferred_source_types": {
+        "G2": [
+          "biography",
+          "family interview",
+          "education record"
+        ],
+        "G3": [
+          "biographical profile",
+          "source comparing candidate clues"
+        ]
+      }
+    },
+    "frontier_387": {
+      "acceptable_active_gaps": [
+        "G2",
+        "G3"
+      ],
+      "unacceptable_closed_gaps": [
+        "G1"
+      ],
+      "unsupported_hypothesis_gaps": [
+        "G4"
+      ],
+      "preferred_source_types": {
+        "G2": [
+          "animator interview",
+          "game credits"
+        ],
+        "G3": [
+          "game history",
+          "developer/company credits"
+        ]
+      }
+    }
+  },
+  "source_sha256": {
+    "experiments/research_progress_frontier/frontier_selection/case_specs.py": "77bbe2bbf8b4667102811249f40e62a24b81505ba35ab3b3b5b6b7d25bb97ed7",
+    "experiments/research_progress_frontier/frontier_selection/build_cases.py": "58562da995ca8700730213e8b1ae1c1b0783a57e68f566ac0c9d9378ba66e4b3",
+    "experiments/research_progress_frontier/frontier_selection/review_cases.json": "376146203f8be198b937c5dc879c780dadbb7b63c659f680d416ae5ae1c5fe98",
+    "experiments/research_progress_frontier/frontier_selection/source_aliases.json": "dbf1c684f2e18e5dc048b07382673ee5e251d655f0569ce8d75a2d73a7631645",
+    "experiments/research_progress_frontier/frontier_selection/EXPERIMENT_PLAN.md": "8cb064e146e2227a5b4643ac21c926a7014465600e33c45de8f2fb7980cb2361",
+    "experiments/research_progress_frontier/frontier_selection/RUBRIC.json": "b1af4f3cdbf5894a9dec6ba13172eac53d332bee5c95c65160cead5600907d25",
+    "experiments/research_progress_frontier/frontier_selection/run.py": "ab5a0c3a13d84bc266bf42330f55c2bc4fe743f7778b7e85cf06c8d5d0016e52",
+    "experiments/research_progress_frontier/frontier_selection/analyze.py": "dd0255cb0a90ecacfd2a5f60cd39817072ddd4e548c52ff0b7e755b8303b377c",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14"
+  },
+  "history_sha256": {
+    "experiments/research_progress_frontier/closure_probe/review_cases.json": "12117dcf4f086c6e9b74ac0862a80df3fbfc7c20ba815a14846aaddac8582247",
+    "experiments/research_progress_frontier/closure_probe/results.json": "028b4c51fad5ef64e35ca216acdae42c5a925b0f7b9def72b18bc3f668737ac5",
+    "experiments/research_progress_frontier/closure_probe/freeze.json": "6bc9abb5ce380585fa28789532dbb35ac4a9134c2aa23e42ecd912d056b7bed8",
+    "experiments/research_state_qualification/qualification_upper_bound/review_packets.json": "307cda43e6e06086bf1007e451bf01c6736f49ea7d8d9686eb9e5bbb3099bf3e"
+  },
+  "request_sha256": {
+    "frontier_546": "7b6a967e98b366588eac28380fbac6ab8511f8c9bfcd67fa5f5de6cdaeae3d35",
+    "frontier_1094": "5623fd839e3079f51dd272d31ef1e9dd94a045c99d3c5a0da2da4ce9402bcc6f",
+    "frontier_517": "323db08e813139f62907c51a9c0aa7247f5c21ec03414a7b14eca3f3eff0dfdb",
+    "frontier_435": "1998dca94ff130367243ab798ebdee4ae2d3fee6dc2d10b0d19704051f7ca3e6",
+    "frontier_580": "dfc0db9f3f0bd069a6b0c6d774771c216578b8602b0ec27ef254a11c7aa725ae",
+    "frontier_177": "671f5573ec33e3fd98186eeb86cfd6795638257061da48e202b0cf384ab1083c",
+    "frontier_1034": "2e91f288ce7dc67c464e1dada62fde739ca941fc9801469f16fffb94eb8c6010",
+    "frontier_387": "eb3ab6468abe36ae7392dc4084d5ab4b09ce4f27a4b00af847d50321a634109b"
+  },
+  "gate": "Acceptable >=75% of all cases AND closed-gap reselection <=10% AND premature downstream <=15%; report low-ambiguity subset separately.",
+  "failure_policy": "One response per case, no tools, zero SDK retries, no selective reruns or repairs."
+}
