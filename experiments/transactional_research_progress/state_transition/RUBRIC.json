@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "sample": "41 reviewer-authored same-input cases from 12 qids: T1=8, T2=8, T3=8, T4=8, T5=4, T6=4, T7=1. T7 is medium ambiguity and reported separately.",
+  "arms": "A rewrites complete state with JSON/schema/ref validation only. B proposes a Delta and commits mechanically valid semantics without Verify. C uses exactly B's prompt and schema, then triggers Verify on status transitions or semantically dependent gap closure; failed Verify retains previous committed status.",
+  "mutation_unit": "One claim status change, one claim statement or evidence-ref change without status change, one new claim, or one gap status change. ControlProjection active-gap retirement is reported separately. Correct mutation matches required id/status and cites the new observation ref when specified. Unrequired mutations are churn; unsupported new claims are promotion.",
+  "false_closure": "Case-level count of any committed open-to-supported/refuted claim not allowed by reviewer labels; report over 17 T3/T4/T7 at-risk cases and separately over all 41 cases. A verifier rejection is a proposed error but not a committed false closure.",
+  "missed_closure": "Required supported/refuted claim stays open after the arm completes; report over the 28 target cases T1/T2/T5/T6, with T5's three claims counted individually in claim-level recall.",
+  "evidence_binding": "A required claim mutation must cite the currently observed new W ref; C verifier receives exact cited text, plus earlier verified text when reopening. Refs must map to this case's packet-local observed W# identities.",
+  "unrelated_churn": "Any final change to a reviewer-forbidden Claim or nonrequired Gap, including changed statement or refs, counts per case. Full Rewrite may not receive semantic repair. Mechanical invalidity is reported separately and scores zero correct mutations.",
+  "NoGain_preservation": "For T4, VerifiedProgress Claims and Gaps remain semantically identical; ControlProjection is assessed separately.",
+  "stale_active_gap": "If the model proposes to keep a gap it also closes, record proposed stale. Transactional commit mechanically retires a closed active gap under invariant I7. A full rewrite is not semantically repaired.",
+  "gate": {
+    "G1": "B or C versus A has at least four paired cases with less unrelated state churn; reverse worsening count is less than half improvement count.",
+    "G2": "C committed false closure <=10% of 17 T3/T4/T7 at-risk cases.",
+    "G3": "C mutation precision >=80% across committed semantic state mutations.",
+    "G4": "At least 80% of T4 NoGain cases preserve VerifiedProgress unchanged in C."
+  },
+  "failure_policy": "Exactly one A/B/C Updater request per case in rotating order, zero retries, all errors and invalid JSON retained. Verifier calls occur only by predeclared trigger; errors reject transition without retry. No best-of or selective replacement."
+}
