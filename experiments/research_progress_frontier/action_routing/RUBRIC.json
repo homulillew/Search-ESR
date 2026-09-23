@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "sample": "25 cases, five each source/location/context/closure/complete; 8 D cases selected before C calls",
+  "C_A": "No tools. First exact Action line is search/find/open/verify/submit; parse the Arguments JSON independently. An invalid/missing action is incorrect, no repair.",
+  "C_B": "Existing search/find/open plus experiment-only verify, tool_choice auto. First declared tool call is action; no tool calls with a completed final response is submit. Validate full tool batch atomically; retain all calls and errors. No execution.",
+  "verify_optional_use": "Among five closure cases report fraction whose C-B first action is verify, and fractions diverted to search/find/open or submit; C-A semantic capability separately.",
+  "complete_scope": "Synthetic local-subtask completion only; it does not assert the full original multi-hop answer is verified.",
+  "gate": "C-A correct action >=75% overall AND >=60% in every uncertainty class. C-B optional-Verify underuse is a Stage D contrast condition, not an independent stop gate.",
+  "failure": "Provider/schema failures count incorrect; zero retries, no selective replacement, no tool execution."
+}
