@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "samples_per_checkpoint": 1,
+  "document_plan_realized": "At least one valid find call in the returned batch when the frozen M1 parsed scope is document; report first-call Find separately.",
+  "target_realized": "For document plans, a find doc_ref exactly equals the frozen M1 parsed D# target. If the plan target is invalid or none, record unknown/false separately from scope realization.",
+  "scope_realized": "At least one valid action matching the frozen M1 scope: corpus=search, document=find, window=open, stop=no tool calls with natural stop. A batch may contain both consistent and conflicting actions.",
+  "search_despite_non_corpus": "At least one search call when the frozen M1 scope is document, window, or stop.",
+  "batch": "Record first call, ordered all calls, contains consistent action, contains conflicting action, and mixed composition. Never collapse Search+Find into Find-only.",
+  "plan_quality": "Use the pre-existing prefix-only plausible_document_refs label for document-target compatibility. This is a proxy for source suitability, not evidence gain. Do not change the historical plan or use future/gold evidence.",
+  "error": "API errors have no action; malformed batches are distinct from semantic behavior. No selective retry."
+}
