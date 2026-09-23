@@ -1,0 +1,5 @@
+# R1: prefix-only qualification upper bound
+
+Select every one of the 13 frozen P1 cases; the whole-set rule avoids outcome-based selection. Reviewer packets contain the exact original question and checkpoint messages, historical broad Plan, and currently observed D#/W# directory. No future. Annotation chooses one immediate need and at most one candidate. Status has the three preregistered values. For each prefix, H0 is the recorded P1 `Prefix + Broad Plan + Tools` Actor response. H1 reuses the exact H0 request, appends one descriptive Qualification Card, and requests one new Actor response. No tool execution, retry, best-of or prompt repair.
+
+The treatment changes the full card, including a reviewer-chosen immediate need and the candidate's status, supported part and missing prerequisite. R1 thus tests an upper bound on a well-reviewed qualification message. It does not isolate status from wording or show a deployable model qualifier. Inspect target matching maps Open(W#) to its parent D# using only handles available in that prefix.

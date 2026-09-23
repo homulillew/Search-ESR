@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "selection": "All 13 historical DeepSeek P1 checkpoints in frozen historical order; no exclusions after calls.",
+  "review_boundary": "Original question, exact prefix, broad M1 plan, visible D/W only; no future, gold, subsequent tool observations or final answer.",
+  "status": "no_target: no discovered source suitable for immediate need; hypothesis_only: related candidate lacking a necessary premise; inspectable: source can directly test immediate need, without implying final-answer truth.",
+  "harmful_target_follow": "For hypothesis_only, valid Find(candidate D) or Open(any current W belonging to candidate D) without a source-backed way to test the missing prerequisite. Count any and first-call separately.",
+  "inspectable_utilization": "For inspectable, valid Find(candidate D) or Open(any current W belonging to it). Count any and first-call separately.",
+  "no_target_discipline": "No Find/Open of an arbitrary entity-related source when the annotation says no_target; report any inspection and reviewer adjudication separately.",
+  "action_appropriateness": "An action's scope is in frozen acceptable_next_scopes and, for inspection, its D can address immediate need. Mixed calls retain both appropriate and inappropriate actions.",
+  "failure": "Provider, malformed tool, invalid args, missing baseline and harness errors are distinct. Zero SDK retries, one H1 response per cell, no tools executed."
+}
