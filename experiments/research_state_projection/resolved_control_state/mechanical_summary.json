@@ -1,0 +1,2048 @@
+{
+  "aggregate": {
+    "B": {
+      "cells": 13,
+      "responses": 13,
+      "valid": 13,
+      "api_errors": 0,
+      "actions": {
+        "search": 28,
+        "find": 8,
+        "open": 2
+      },
+      "mixed_batches": 6,
+      "hypothesis_cells": 7,
+      "unpromoted_inspection": 2,
+      "unpromoted_first": 2,
+      "inspectable_cells": 4,
+      "promoted_utilization": 3,
+      "promoted_first": 3,
+      "semantic_reviewed_calls": 38,
+      "direct_gap_cells": 6,
+      "any_gap_cells": 11,
+      "gap_yes_calls": 8,
+      "gap_yes_or_partial_calls": 22,
+      "repeat_supported_fact_calls": 2
+    },
+    "C": {
+      "cells": 13,
+      "responses": 13,
+      "valid": 13,
+      "api_errors": 0,
+      "actions": {
+        "search": 22,
+        "find": 10,
+        "open": 1
+      },
+      "mixed_batches": 4,
+      "hypothesis_cells": 7,
+      "unpromoted_inspection": 1,
+      "unpromoted_first": 0,
+      "inspectable_cells": 4,
+      "promoted_utilization": 4,
+      "promoted_first": 4,
+      "semantic_reviewed_calls": 33,
+      "direct_gap_cells": 8,
+      "any_gap_cells": 11,
+      "gap_yes_calls": 9,
+      "gap_yes_or_partial_calls": 22,
+      "repeat_supported_fact_calls": 0
+    }
+  },
+  "pairs": [
+    {
+      "cell": "546:9",
+      "status": "no_target",
+      "B_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": false,
+      "C_promoted": false,
+      "B_direct_gap": true,
+      "C_direct_gap": true
+    },
+    {
+      "cell": "546:17",
+      "status": "inspectable",
+      "B_calls": [
+        [
+          "find",
+          "D11"
+        ],
+        [
+          "find",
+          "D11"
+        ]
+      ],
+      "C_calls": [
+        [
+          "find",
+          "D11"
+        ],
+        [
+          "find",
+          "D11"
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": true,
+      "C_promoted": true,
+      "B_direct_gap": false,
+      "C_direct_gap": true
+    },
+    {
+      "cell": "546:25",
+      "status": "hypothesis_only",
+      "B_calls": [
+        [
+          "open",
+          "D10"
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "B_unpromoted": true,
+      "C_unpromoted": false,
+      "B_promoted": false,
+      "C_promoted": false,
+      "B_direct_gap": true,
+      "C_direct_gap": true
+    },
+    {
+      "cell": "546:33",
+      "status": "inspectable",
+      "B_calls": [
+        [
+          "find",
+          "D17"
+        ],
+        [
+          "find",
+          "D17"
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "find",
+          "D17"
+        ],
+        [
+          "find",
+          "D17"
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": true,
+      "C_promoted": true,
+      "B_direct_gap": true,
+      "C_direct_gap": true
+    },
+    {
+      "cell": "546:41",
+      "status": "inspectable",
+      "B_calls": [
+        [
+          "find",
+          "D17"
+        ],
+        [
+          "find",
+          "D17"
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "find",
+          "D17"
+        ],
+        [
+          "find",
+          "D17"
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": true,
+      "C_promoted": true,
+      "B_direct_gap": true,
+      "C_direct_gap": true
+    },
+    {
+      "cell": "1094:23",
+      "status": "hypothesis_only",
+      "B_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": false,
+      "C_promoted": false,
+      "B_direct_gap": false,
+      "C_direct_gap": false
+    },
+    {
+      "cell": "1094:34",
+      "status": "no_target",
+      "B_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": false,
+      "C_promoted": false,
+      "B_direct_gap": true,
+      "C_direct_gap": false
+    },
+    {
+      "cell": "1094:45",
+      "status": "hypothesis_only",
+      "B_calls": [
+        [
+          "open",
+          "D34"
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "find",
+          "D34"
+        ]
+      ],
+      "B_unpromoted": true,
+      "C_unpromoted": true,
+      "B_promoted": false,
+      "C_promoted": false,
+      "B_direct_gap": false,
+      "C_direct_gap": true
+    },
+    {
+      "cell": "1094:53",
+      "status": "hypothesis_only",
+      "B_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": false,
+      "C_promoted": false,
+      "B_direct_gap": false,
+      "C_direct_gap": true
+    },
+    {
+      "cell": "1094:61",
+      "status": "inspectable",
+      "B_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "find",
+          "D37"
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": false,
+      "C_promoted": true,
+      "B_direct_gap": false,
+      "C_direct_gap": true
+    },
+    {
+      "cell": "1094:69",
+      "status": "hypothesis_only",
+      "B_calls": [
+        [
+          "find",
+          "D14"
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": false,
+      "C_promoted": false,
+      "B_direct_gap": false,
+      "C_direct_gap": false
+    },
+    {
+      "cell": "1094:77",
+      "status": "hypothesis_only",
+      "B_calls": [
+        [
+          "find",
+          "D14"
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "find",
+          "D14"
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": false,
+      "C_promoted": false,
+      "B_direct_gap": true,
+      "C_direct_gap": false
+    },
+    {
+      "cell": "1094:93",
+      "status": "hypothesis_only",
+      "B_calls": [
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ],
+        [
+          "search",
+          null
+        ]
+      ],
+      "C_calls": [
+        [
+          "open",
+          "D53"
+        ],
+        [
+          "find",
+          "D53"
+        ]
+      ],
+      "B_unpromoted": false,
+      "C_unpromoted": false,
+      "B_promoted": false,
+      "C_promoted": false,
+      "B_direct_gap": false,
+      "C_direct_gap": false
+    }
+  ],
+  "rows": [
+    {
+      "cell": "546:9:B",
+      "qid": "546",
+      "seq": 9,
+      "arm": "B",
+      "status_private": "no_target",
+      "candidate_private": "none",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "546:9:B:1",
+          "name": "search",
+          "arguments": {
+            "query": "snooker 2023 tournament results \"4-3\" \"4-0\" decider century breaks"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:9:B:2",
+          "name": "search",
+          "arguments": {
+            "query": "snooker player turned professional 1995 2006 more than 300 centuries maximum breaks"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "yes",
+      "semantic_reviewed_calls": 2
+    },
+    {
+      "cell": "546:9:C",
+      "qid": "546",
+      "seq": 9,
+      "arm": "C",
+      "status_private": "no_target",
+      "candidate_private": "none",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "546:9:C:1",
+          "name": "search",
+          "arguments": {
+            "query": "2023 snooker tournament results 4-3 4-0 decider round by round"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:9:C:2",
+          "name": "search",
+          "arguments": {
+            "query": "Mark Williams 2023 British Open results 4-3 4-0"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "yes",
+      "semantic_reviewed_calls": 2
+    },
+    {
+      "cell": "546:17:B",
+      "qid": "546",
+      "seq": 17,
+      "arm": "B",
+      "status_private": "inspectable",
+      "candidate_private": "D11",
+      "promoted_target": "D11",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "546:17:B:1",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D11",
+            "query": "4-0 match result"
+          },
+          "doc_ref": "D11",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:17:B:2",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D11",
+            "query": "Mark Selby 4-3"
+          },
+          "doc_ref": "D11",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "find",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": true,
+      "promoted_target_first": true,
+      "direct_gap_cell": false,
+      "any_gap_cell": true,
+      "first_call_gap": "partial",
+      "semantic_reviewed_calls": 2
+    },
+    {
+      "cell": "546:17:C",
+      "qid": "546",
+      "seq": 17,
+      "arm": "C",
+      "status_private": "inspectable",
+      "candidate_private": "D11",
+      "promoted_target": "D11",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "546:17:C:1",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D11",
+            "query": "Selby 4-3 4-0 final Williams"
+          },
+          "doc_ref": "D11",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:17:C:2",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D11",
+            "query": "decider 4-3 match progress"
+          },
+          "doc_ref": "D11",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "find",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": true,
+      "promoted_target_first": true,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "yes",
+      "semantic_reviewed_calls": 2
+    },
+    {
+      "cell": "546:25:B",
+      "qid": "546",
+      "seq": 25,
+      "arm": "B",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D10",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "546:25:B:1",
+          "name": "open",
+          "arguments": {
+            "window_ref": "W13",
+            "direction": "around"
+          },
+          "doc_ref": "D10",
+          "inspects_unpromoted_candidate": true,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": true
+        },
+        {
+          "id": "546:25:B:2",
+          "name": "search",
+          "arguments": {
+            "query": "2023 English Open Ding Junhui results 4-3 4-0 Luca Brecel John Higgins"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "open",
+      "mixed_batch": true,
+      "unpromoted_candidate_inspected": true,
+      "unpromoted_candidate_first": true,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "no",
+      "semantic_reviewed_calls": 2
+    },
+    {
+      "cell": "546:25:C",
+      "qid": "546",
+      "seq": 25,
+      "arm": "C",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D10",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "546:25:C:1",
+          "name": "search",
+          "arguments": {
+            "query": "2023 English Open Ding Junhui results 4-3 4-0 quarterfinal"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:25:C:2",
+          "name": "search",
+          "arguments": {
+            "query": "2023 English Open snooker bracket Ding Junhui Ma Hailong"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "yes",
+      "semantic_reviewed_calls": 2
+    },
+    {
+      "cell": "546:33:B",
+      "qid": "546",
+      "seq": 33,
+      "arm": "B",
+      "status_private": "inspectable",
+      "candidate_private": "D17",
+      "promoted_target": "D17",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "546:33:B:1",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D17",
+            "query": "turned professional 2003 centuries maximum breaks"
+          },
+          "doc_ref": "D17",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:33:B:2",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D17",
+            "query": "2023 English Open results"
+          },
+          "doc_ref": "D17",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:33:B:3",
+          "name": "search",
+          "arguments": {
+            "query": "2023 English Open Ding Junhui quarter-final Judd Trump 4-3 4-0"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "find",
+      "mixed_batch": true,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": true,
+      "promoted_target_first": true,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "yes",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "546:33:C",
+      "qid": "546",
+      "seq": 33,
+      "arm": "C",
+      "status_private": "inspectable",
+      "candidate_private": "D17",
+      "promoted_target": "D17",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "546:33:C:1",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D17",
+            "query": "turned professional 2003 centuries maximum break"
+          },
+          "doc_ref": "D17",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:33:C:2",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D17",
+            "query": "2023 English Open Ma Hailong Brecel"
+          },
+          "doc_ref": "D17",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "find",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": true,
+      "promoted_target_first": true,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "yes",
+      "semantic_reviewed_calls": 2
+    },
+    {
+      "cell": "546:41:B",
+      "qid": "546",
+      "seq": 41,
+      "arm": "B",
+      "status_private": "inspectable",
+      "candidate_private": "D17",
+      "promoted_target": "D17",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "546:41:B:1",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D17",
+            "query": "turned professional 2003"
+          },
+          "doc_ref": "D17",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:41:B:2",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D17",
+            "query": "centuries maximum breaks 147"
+          },
+          "doc_ref": "D17",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:41:B:3",
+          "name": "search",
+          "arguments": {
+            "query": "2023 English Open Ding Junhui results quarter-final Judd Trump 4-0"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "find",
+      "mixed_batch": true,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": true,
+      "promoted_target_first": true,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "yes",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "546:41:C",
+      "qid": "546",
+      "seq": 41,
+      "arm": "C",
+      "status_private": "inspectable",
+      "candidate_private": "D17",
+      "promoted_target": "D17",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "546:41:C:1",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D17",
+            "query": "turned professional centuries maximum breaks"
+          },
+          "doc_ref": "D17",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "546:41:C:2",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D17",
+            "query": "2023 World Grand Prix 4-3 4-0"
+          },
+          "doc_ref": "D17",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "find",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": true,
+      "promoted_target_first": true,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "yes",
+      "semantic_reviewed_calls": 2
+    },
+    {
+      "cell": "1094:23:B",
+      "qid": "1094",
+      "seq": 23,
+      "arm": "B",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D12",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:23:B:1",
+          "name": "search",
+          "arguments": {
+            "query": "football club \"founded after a dispute\""
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:23:B:2",
+          "name": "search",
+          "arguments": {
+            "query": "football club \"name changed\" several times \"renamed\""
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:23:B:3",
+          "name": "search",
+          "arguments": {
+            "query": "\"born out of a dispute\" football club"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:23:B:4",
+          "name": "search",
+          "arguments": {
+            "query": "\"95th minute\" \"free kick\" match report"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": true,
+      "first_call_gap": "partial",
+      "semantic_reviewed_calls": 4
+    },
+    {
+      "cell": "1094:23:C",
+      "qid": "1094",
+      "seq": 23,
+      "arm": "C",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D12",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:23:C:1",
+          "name": "search",
+          "arguments": {
+            "query": "\"founded after a dispute\" football club"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:23:C:2",
+          "name": "search",
+          "arguments": {
+            "query": "\"several iterations\" football club name"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:23:C:3",
+          "name": "search",
+          "arguments": {
+            "query": "\"95th minute\" free kick goal football report"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": true,
+      "first_call_gap": "partial",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "1094:34:B",
+      "qid": "1094",
+      "seq": 34,
+      "arm": "B",
+      "status_private": "no_target",
+      "candidate_private": "none",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:34:B:1",
+          "name": "search",
+          "arguments": {
+            "query": "AFC Wimbledon Milton Keynes Dons FA Cup match"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:34:B:2",
+          "name": "search",
+          "arguments": {
+            "query": "Milton Keynes Dons AFC Wimbledon 95th minute free kick"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:34:B:3",
+          "name": "search",
+          "arguments": {
+            "query": "Inter Milan born out of discord split AC Milan"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "no",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "1094:34:C",
+      "qid": "1094",
+      "seq": 34,
+      "arm": "C",
+      "status_private": "no_target",
+      "candidate_private": "none",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:34:C:1",
+          "name": "search",
+          "arguments": {
+            "query": "Messi 95th minute free-kick PSG Marseille match report"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:34:C:2",
+          "name": "search",
+          "arguments": {
+            "query": "football club founded after a split between two parties discord"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:34:C:3",
+          "name": "search",
+          "arguments": {
+            "query": "club formed by breakaway split founders disagreement history"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": true,
+      "first_call_gap": "no",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "1094:45:B",
+      "qid": "1094",
+      "seq": 45,
+      "arm": "B",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D34",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:45:B:1",
+          "name": "open",
+          "arguments": {
+            "window_ref": "W38",
+            "direction": "around"
+          },
+          "doc_ref": "D34",
+          "inspects_unpromoted_candidate": true,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:45:B:2",
+          "name": "search",
+          "arguments": {
+            "query": "\"95th minute\" free-kick goal team scored early"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:45:B:3",
+          "name": "search",
+          "arguments": {
+            "query": "football match 95th minute free-kick 2000s"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "open",
+      "mixed_batch": true,
+      "unpromoted_candidate_inspected": true,
+      "unpromoted_candidate_first": true,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": true,
+      "first_call_gap": "partial",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "1094:45:C",
+      "qid": "1094",
+      "seq": 45,
+      "arm": "C",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D34",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:45:C:1",
+          "name": "search",
+          "arguments": {
+            "query": "'born out of discord'",
+            "k": 10
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:45:C:2",
+          "name": "search",
+          "arguments": {
+            "query": "club founded after split between two parties football history",
+            "k": 10
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:45:C:3",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D34",
+            "query": "Mbappe opened the scoring goal timeline Lille equalised"
+          },
+          "doc_ref": "D34",
+          "inspects_unpromoted_candidate": true,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": true,
+      "unpromoted_candidate_inspected": true,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "partial",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "1094:53:B",
+      "qid": "1094",
+      "seq": 53,
+      "arm": "B",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D34",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:53:B:1",
+          "name": "search",
+          "arguments": {
+            "query": "\"95th minute\" \"free-kick\" match report"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:53:B:2",
+          "name": "search",
+          "arguments": {
+            "query": "club founded after split dispute \"foreign players\" Internazionale"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": true
+        },
+        {
+          "id": "1094:53:B:3",
+          "name": "search",
+          "arguments": {
+            "query": "football club \"changed its name\" several times identity"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:53:B:4",
+          "name": "search",
+          "arguments": {
+            "query": "\"born out of discord among two parties\""
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": true,
+      "first_call_gap": "no",
+      "semantic_reviewed_calls": 4
+    },
+    {
+      "cell": "1094:53:C",
+      "qid": "1094",
+      "seq": 53,
+      "arm": "C",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D34",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:53:C:1",
+          "name": "search",
+          "arguments": {
+            "query": "AC Milan 3-4 Inter 2006 derby goals free-kick"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:53:C:2",
+          "name": "search",
+          "arguments": {
+            "query": "Inter Milan AC Milan derby 95th minute free-kick"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:53:C:3",
+          "name": "search",
+          "arguments": {
+            "query": "\"AC Milan\" \"Inter\" match report \"95th minute\""
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "partial",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "1094:61:B",
+      "qid": "1094",
+      "seq": 61,
+      "arm": "B",
+      "status_private": "inspectable",
+      "candidate_private": "D37",
+      "promoted_target": "D37",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:61:B:1",
+          "name": "search",
+          "arguments": {
+            "query": "Inter Milan 4-3 Tottenham 2010 Champions League free-kick 95th minute"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:61:B:2",
+          "name": "search",
+          "arguments": {
+            "query": "Inter 4-3 Tottenham Bale hat-trick match report free kick"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": false,
+      "first_call_gap": "no",
+      "semantic_reviewed_calls": 2
+    },
+    {
+      "cell": "1094:61:C",
+      "qid": "1094",
+      "seq": 61,
+      "arm": "C",
+      "status_private": "inspectable",
+      "candidate_private": "D37",
+      "promoted_target": "D37",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:61:C:1",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D37",
+            "query": "1908 split internal disagreements foreign players Internazionale"
+          },
+          "doc_ref": "D37",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": true,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:61:C:2",
+          "name": "search",
+          "arguments": {
+            "query": "Inter Milan match 95th minute free-kick took"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "find",
+      "mixed_batch": true,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": true,
+      "promoted_target_first": true,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "yes",
+      "semantic_reviewed_calls": 2
+    },
+    {
+      "cell": "1094:69:B",
+      "qid": "1094",
+      "seq": 69,
+      "arm": "B",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D34",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:69:B:1",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D14",
+            "query": "Inter Milan"
+          },
+          "doc_ref": "D14",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:69:B:2",
+          "name": "search",
+          "arguments": {
+            "query": "Inter Milan match 95th minute free-kick goal"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:69:B:3",
+          "name": "search",
+          "arguments": {
+            "query": "football match early 2000s Inter Milan scored early opponent scored late free-kick 95th minute"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "find",
+      "mixed_batch": true,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": false,
+      "first_call_gap": "no",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "1094:69:C",
+      "qid": "1094",
+      "seq": 69,
+      "arm": "C",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D34",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:69:C:1",
+          "name": "search",
+          "arguments": {
+            "query": "AFC Wimbledon MK Dons \"95th minute\" free-kick"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:69:C:2",
+          "name": "search",
+          "arguments": {
+            "query": "AFC Wimbledon born out of discord MK Dons identity evolved"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:69:C:3",
+          "name": "search",
+          "arguments": {
+            "query": "AFC Wimbledon vs MK Dons match early goals late goals free-kick"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": false,
+      "first_call_gap": "no",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "1094:77:B",
+      "qid": "1094",
+      "seq": 77,
+      "arm": "B",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D34",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:77:B:1",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D14",
+            "query": "free-kick 95th minute"
+          },
+          "doc_ref": "D14",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:77:B:2",
+          "name": "search",
+          "arguments": {
+            "query": "Paris Saint-Germain founded history merger split"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:77:B:3",
+          "name": "search",
+          "arguments": {
+            "query": "Lille LOSC founded history merger Olympique Lillois SC Fives"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "yes",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:77:B:4",
+          "name": "search",
+          "arguments": {
+            "query": "Inter Milan 95th minute free kick goal match"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "find",
+      "mixed_batch": true,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": true,
+      "any_gap_cell": true,
+      "first_call_gap": "no",
+      "semantic_reviewed_calls": 4
+    },
+    {
+      "cell": "1094:77:C",
+      "qid": "1094",
+      "seq": 77,
+      "arm": "C",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D34",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:77:C:1",
+          "name": "search",
+          "arguments": {
+            "query": "\"discord among two parties\""
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:77:C:2",
+          "name": "search",
+          "arguments": {
+            "query": "\"identity evolved through several iterations\""
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:77:C:3",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D14",
+            "query": "95th minute free-kick"
+          },
+          "doc_ref": "D14",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:77:C:4",
+          "name": "search",
+          "arguments": {
+            "query": "95th minute free kick match report football club"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": true,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": true,
+      "first_call_gap": "partial",
+      "semantic_reviewed_calls": 4
+    },
+    {
+      "cell": "1094:93:B",
+      "qid": "1094",
+      "seq": 93,
+      "arm": "B",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D34",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:93:B:1",
+          "name": "search",
+          "arguments": {
+            "query": "Inter Milan \"95th minute\" free-kick goal"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:93:B:2",
+          "name": "search",
+          "arguments": {
+            "query": "Inter Milan \"95th minute\" free-kick match report"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:93:B:3",
+          "name": "search",
+          "arguments": {
+            "query": "\"95th minute\" free-kick Inter"
+          },
+          "doc_ref": null,
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "partial",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "search",
+      "mixed_batch": false,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": true,
+      "first_call_gap": "partial",
+      "semantic_reviewed_calls": 3
+    },
+    {
+      "cell": "1094:93:C",
+      "qid": "1094",
+      "seq": 93,
+      "arm": "C",
+      "status_private": "hypothesis_only",
+      "candidate_private": "D34",
+      "promoted_target": "none",
+      "response": true,
+      "api_error": null,
+      "validation": "valid",
+      "finish_reason": "tool_calls",
+      "calls": [
+        {
+          "id": "1094:93:C:1",
+          "name": "open",
+          "arguments": {
+            "window_ref": "W74",
+            "direction": "around"
+          },
+          "doc_ref": "D53",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        },
+        {
+          "id": "1094:93:C:2",
+          "name": "find",
+          "arguments": {
+            "doc_ref": "D53",
+            "query": "95th minute free kick"
+          },
+          "doc_ref": "D53",
+          "inspects_unpromoted_candidate": false,
+          "uses_promoted_target": false,
+          "addresses_verification_gap": "no",
+          "repeats_already_supported_fact": false
+        }
+      ],
+      "first_call": "open",
+      "mixed_batch": true,
+      "unpromoted_candidate_inspected": false,
+      "unpromoted_candidate_first": false,
+      "promoted_target_utilized": false,
+      "promoted_target_first": false,
+      "direct_gap_cell": false,
+      "any_gap_cell": false,
+      "first_call_gap": "no",
+      "semantic_reviewed_calls": 2
+    }
+  ],
+  "note": "B/C are concurrent one-step samples, no tool observations. Mechanical target rates use private R1 status and prefix W-to-D map. Semantic gap labels are single-reviewer prefix-only judgments, not source yield."
+}
