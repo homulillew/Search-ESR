@@ -1,0 +1,156 @@
+{
+  "V0": {
+    "calls": 68,
+    "errors": 0,
+    "raw_supported_verdicts": 51,
+    "accepted": 51,
+    "true_accepted": 50,
+    "false_accepted": 1,
+    "commit_precision": 0.9803921568627451,
+    "commit_recall": 0.9615384615384616,
+    "full_claim_eligibility_precision": 0.9019607843137255,
+    "stress_negative_rejected": 15,
+    "stress_negative_total": 16,
+    "stress_negative_rejection_rate": 0.9375,
+    "false_accept_ids": [
+      "S1_01"
+    ],
+    "missed_true_ids": [
+      "A_F3_P03_W21_0",
+      "S5_02"
+    ]
+  },
+  "V1": {
+    "calls": 68,
+    "errors": 0,
+    "raw_supported_verdicts": 51,
+    "accepted": 45,
+    "true_accepted": 45,
+    "false_accepted": 0,
+    "commit_precision": 1.0,
+    "commit_recall": 0.8653846153846154,
+    "full_claim_eligibility_precision": 0.9333333333333333,
+    "stress_negative_rejected": 16,
+    "stress_negative_total": 16,
+    "stress_negative_rejection_rate": 1.0,
+    "false_accept_ids": [],
+    "missed_true_ids": [
+      "A_F1_T1_546_0",
+      "A_F1_T3_546_0",
+      "A_F1_T5_517_2",
+      "A_F1_T6_546_0",
+      "A_F3_P10_W9_0",
+      "A_F3_P03_W21_0",
+      "S5_02"
+    ]
+  },
+  "pointer": {
+    "raw_supported": 51,
+    "mechanically_valid": 47,
+    "mechanical_validity_rate": 0.9215686274509803,
+    "semantically_sufficient": 45,
+    "support_sufficiency_rate_among_valid": 0.9574468085106383,
+    "mechanical_invalid_ids": [
+      "A_F1_T1_546_0",
+      "A_F1_T3_546_0",
+      "A_F1_T6_546_0",
+      "A_F3_P10_W9_0"
+    ],
+    "semantically_insufficient_ids": [
+      "A_F1_T5_517_2",
+      "S1_01"
+    ]
+  },
+  "stress": {
+    "S1": {
+      "total": 4,
+      "truth_supported": 0,
+      "V0_accept": 1,
+      "V1_accept": 0,
+      "V0_false_accept": 1,
+      "V1_false_accept": 0
+    },
+    "S2": {
+      "total": 4,
+      "truth_supported": 0,
+      "V0_accept": 0,
+      "V1_accept": 0,
+      "V0_false_accept": 0,
+      "V1_false_accept": 0
+    },
+    "S3": {
+      "total": 4,
+      "truth_supported": 0,
+      "V0_accept": 0,
+      "V1_accept": 0,
+      "V0_false_accept": 0,
+      "V1_false_accept": 0
+    },
+    "S4": {
+      "total": 4,
+      "truth_supported": 0,
+      "V0_accept": 0,
+      "V1_accept": 0,
+      "V0_false_accept": 0,
+      "V1_false_accept": 0
+    },
+    "S5": {
+      "total": 3,
+      "truth_supported": 3,
+      "V0_accept": 2,
+      "V1_accept": 2,
+      "V0_false_accept": 0,
+      "V1_false_accept": 0
+    },
+    "S6": {
+      "total": 3,
+      "truth_supported": 3,
+      "V0_accept": 3,
+      "V1_accept": 3,
+      "V0_false_accept": 0,
+      "V1_false_accept": 0
+    }
+  },
+  "V1_metric_semantics": "offline-review-filtered; semantic reviewer is not an operational Harness gate",
+  "V1_operational_mechanical_only": {
+    "accepted_by_mechanics": 47,
+    "source_supported_accepted": 46,
+    "source_false_accepted": [
+      "S1_01"
+    ],
+    "source_precision": 0.9787234042553191,
+    "source_recall": 0.8846153846153846,
+    "exact_pointer_sufficient_accepted": 45,
+    "exact_support_precision": 0.9574468085106383,
+    "full_claim_eligibility_precision": 0.8936170212765957,
+    "stress_negative_rejected": 15,
+    "stress_negative_total": 16
+  },
+  "V1_operational_checks": {
+    "exact_support_precision": false,
+    "source_recall": false,
+    "temporal_false_accept": false,
+    "pointer_validity": false,
+    "stress_negative_rejection": true
+  },
+  "paired_false_accept_fixes": [
+    "S1_01"
+  ],
+  "paired_false_accept_regressions": [],
+  "conditional_superiority_activated": false,
+  "checks": {
+    "commit_precision": true,
+    "commit_recall": false,
+    "temporal_false_accept": true,
+    "identity_false_accept": true,
+    "sequence_false_accept": true,
+    "pointer_validity": false,
+    "stress_negative_rejection": true
+  },
+  "gate_pass": false,
+  "cache": {
+    "prompt_cache_hit_tokens": 17152,
+    "prompt_cache_miss_tokens": 91684
+  },
+  "all_outcomes_retained": true
+}
