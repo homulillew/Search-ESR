@@ -1,0 +1,843 @@
+{
+  "sample_count": 24,
+  "qids": 10,
+  "arms": {
+    "A0": {
+      "useful": 15,
+      "useful_rate": 0.625,
+      "no_gain": 9,
+      "frontier_specific_progress": 0,
+      "scope_correct": 18,
+      "gap_scatter": 6,
+      "redundant": 0,
+      "errors": 5,
+      "action_counts": {
+        "search": 18,
+        "find": 1,
+        "open": 0
+      },
+      "model_usage": {
+        "selector": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 0,
+          "calls": 0,
+          "prompt_cache_hit_rate": null
+        },
+        "actor": {
+          "prompt_tokens": 42340,
+          "completion_tokens": 121368,
+          "total_tokens": 163708,
+          "prompt_cache_hit_tokens": 21504,
+          "prompt_cache_miss_tokens": 20836,
+          "calls": 24,
+          "prompt_cache_hit_rate": 0.5078885214926783
+        }
+      }
+    },
+    "A1": {
+      "useful": 16,
+      "useful_rate": 0.6666666666666666,
+      "no_gain": 8,
+      "frontier_specific_progress": 11,
+      "scope_correct": 19,
+      "gap_scatter": 5,
+      "redundant": 1,
+      "errors": 4,
+      "action_counts": {
+        "search": 19,
+        "find": 1,
+        "open": 0
+      },
+      "model_usage": {
+        "selector": {
+          "prompt_tokens": 21676,
+          "completion_tokens": 93371,
+          "total_tokens": 115047,
+          "prompt_cache_hit_tokens": 1280,
+          "prompt_cache_miss_tokens": 20396,
+          "calls": 24,
+          "prompt_cache_hit_rate": 0.05905148551393246
+        },
+        "actor": {
+          "prompt_tokens": 41182,
+          "completion_tokens": 37246,
+          "total_tokens": 78428,
+          "prompt_cache_hit_tokens": 22400,
+          "prompt_cache_miss_tokens": 18782,
+          "calls": 24,
+          "prompt_cache_hit_rate": 0.5439269583798747
+        }
+      }
+    }
+  },
+  "paired": {
+    "A1_only_useful": [
+      "F1_F1_T1_435",
+      "F1_F1_T1_580",
+      "F1_F1_T1_177",
+      "F1_F1_T4_177"
+    ],
+    "A0_only_useful": [
+      "F1_F1_T1_1094",
+      "F1_F3_P12_W4",
+      "F1_F1_T5_311"
+    ],
+    "both_useful": [
+      "F1_F1_T1_546",
+      "F1_F1_T4_546",
+      "F1_F1_T3_1094",
+      "F1_F1_T1_517",
+      "F1_F1_T4_517",
+      "F1_F1_T2_435",
+      "F1_F3_P05_W6",
+      "F1_F3_P12_W2",
+      "F1_F3_P07_W17",
+      "F1_F1_T4_186",
+      "F1_F1_T5_186",
+      "F1_F1_T1_387"
+    ],
+    "neither_useful": [
+      "F1_F1_T5_546",
+      "F1_F1_T4_1094",
+      "F1_F3_P10_W9",
+      "F1_F1_T1_1034",
+      "F1_F1_T4_311"
+    ],
+    "net_useful_improvement": 1,
+    "wins_qids": [
+      "177",
+      "435",
+      "580"
+    ],
+    "reverse_qids": [
+      "1094",
+      "311",
+      "580"
+    ]
+  },
+  "selector_preferred_agreement": 16,
+  "selector_valid_count": 24,
+  "cells": {
+    "F1_F1_T1_546:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "2023 English Open snooker results Ding Junhui Ma Hailong bracket"
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T1_546:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Ding Junhui 2023 English Open run results 4-3 4-0 lost next match",
+          "k": 8
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T4_546:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "snooker player over 300 century breaks turned professional 1998 won decider 2023 4-3 4-0 then lost",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T4_546:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "snooker players 300 century breaks maximum break 147 list",
+          "k": 8
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T5_546:A0": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "snooker 2023 player won decider 4-3 then 4-0 then lost match 400 centuries",
+          "k": 8
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T5_546:A1": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": null,
+      "error": "ValueError:actor_exactly_one_tool:2"
+    },
+    "F1_F1_T1_1094:A1": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": true,
+      "action": {
+        "name": "find",
+        "arguments": {
+          "doc_ref": "D1",
+          "query": "goal scoring chronology PSG Lille opened the scoring equalised"
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T1_1094:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "95th minute free-kick winner scored all goals early comeback",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T3_1094:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "95th minute free kick taken by player football match early 2000s",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T3_1094:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "95th minute free kick scored match",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T4_1094:A1": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": null,
+      "error": "ValueError:actor_exactly_one_tool:2"
+    },
+    "F1_F1_T4_1094:A0": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": null,
+      "error": "ValueError:actor_exactly_one_tool:2"
+    },
+    "F1_F1_T1_517:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "find",
+        "arguments": {
+          "doc_ref": "D1",
+          "query": "policeman Constant Gardener 2005"
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T1_517:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "2005 film director became filmmaker after watching Iracema policeman role",
+          "k": 8
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T4_517:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "\"decided to become a filmmaker after watching Iracema\"",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T4_517:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "\"Iracema\" decided to become a filmmaker",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T1_435:A0": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": null,
+      "error": "ValueError:actor_exactly_one_tool:2"
+    },
+    "F1_F1_T1_435:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Forbes Africa May 2017 Oliver Mtukudzi albums",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T2_435:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "musician died at 66 67 albums first album 1970s song urging president to retire human rights activist Forbes Africa",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T2_435:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Oliver Mtukudzi Forbes Africa May 2017 albums",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F3_P10_W9:A0": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": null,
+      "error": "ValueError:actor_exactly_one_tool:2"
+    },
+    "F1_F3_P10_W9:A1": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "musician \"Why do we sing, why is there art?\" interview human rights activist",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F3_P05_W6:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Oliver Mtukudzi Forbes Africa May 2017 albums",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F3_P05_W6:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Oliver Mtukudzi albums Forbes Africa May 2017 65 albums",
+          "k": 8
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T1_580:A0": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": null,
+      "error": "ValueError:actor_exactly_one_tool:2"
+    },
+    "F1_F1_T1_580:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "You're the Worst season 3 Edgar sacrifice episode"
+        }
+      },
+      "error": null
+    },
+    "F1_F3_P12_W2:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "You're the Worst season 3 finale Edgar roommate sacrifice",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F3_P12_W2:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "List of You're the Worst episodes season 3 season 4",
+          "k": 8
+        }
+      },
+      "error": null
+    },
+    "F1_F3_P12_W4:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "You're the Worst season 4 Gretchen returns home sister baby reconnects old friend"
+        }
+      },
+      "error": null
+    },
+    "F1_F3_P12_W4:A1": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": null,
+      "error": "ValueError:actor_exactly_one_tool:2"
+    },
+    "F1_F1_T1_177:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Rangers International F.C. Enugu founded year history"
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T1_177:A0": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": null,
+      "error": "ValueError:actor_exactly_one_tool:2"
+    },
+    "F1_F1_T4_177:A0": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "football club based in capital city won league title 1970s fifteen trophies signed 13 players ahead of season 2023",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T4_177:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "team won fifteen trophies signed 13 players ahead of season 2023 capital city",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F3_P07_W17:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Enugu Rangers fifteen trophies signed 13 players ahead of season 2023",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F3_P07_W17:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "team has won fifteen trophies signed 13 players ahead of season 2023",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T1_1034:A0": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "commercial model most of wealth came from showbiz debut single coordinator promoted manager",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T1_1034:A1": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "commercial model most of their wealth came from showbiz 2022 article",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T4_186:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "software company named after amphibian developed DOS shareware game November",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T4_186:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "software company named after amphibian formerly name game DOS shareware November",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T5_186:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Albino Frog Software formerly known as company name early 1990s",
+          "k": 8
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T5_186:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Albino Frog Software developer earlier name company history",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T4_311:A1": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": false,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": null,
+      "error": "ValueError:actor_exactly_one_tool:2"
+    },
+    "F1_F1_T4_311:A0": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "educational television series 52 episodes 5 minutes early 1990s TV5 twins poet grumbler living vehicle",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T5_311:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "educational animated series 1990 twins poet complainer living train episodes Argentina"
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T5_311:A1": {
+      "useful_evidence": false,
+      "no_gain": true,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": true,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "educational animated television series 1990s short episodes twins poet complainer living car characters",
+          "k": 10
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T1_387:A1": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": true,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Jazz Jackrabbit 2 intro and ending animations animator Dean Dodrill",
+          "k": 5
+        }
+      },
+      "error": null
+    },
+    "F1_F1_T1_387:A0": {
+      "useful_evidence": true,
+      "no_gain": false,
+      "frontier_specific_progress": false,
+      "scope_correct": true,
+      "gap_scatter": false,
+      "redundant": false,
+      "action": {
+        "name": "search",
+        "arguments": {
+          "query": "Dean Dodrill Jazz Jackrabbit intro and ending animation animator",
+          "k": 5
+        }
+      },
+      "error": null
+    }
+  },
+  "A0_diagnostic_failures": 12,
+  "gate": {
+    "A0_failure_condition_met": true,
+    "net_improvement_met": false,
+    "reverse_worsening_met": false,
+    "useful_rate_no_decline": true,
+    "no_gain_no_increase": true,
+    "explicit_frontier_worth_extra_call": false
+  }
+}
