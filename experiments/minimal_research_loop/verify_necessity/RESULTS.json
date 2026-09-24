@@ -1,0 +1,55 @@
+{
+  "n_packets": 52,
+  "n_findings": 55,
+  "n_qids_with_findings": 10,
+  "direct": {
+    "accepted": 55,
+    "source_supported_accepted": 53,
+    "source_precision": 0.9636363636363636,
+    "claim_eligible_accepted": 47,
+    "full_claim_precision": 0.8545454545454545,
+    "supported_recall": 1.0,
+    "unsupported_false_promotions": 2,
+    "supported_false_rejections": 0,
+    "off_gap_or_duplicate_accepted": 6
+  },
+  "verify": {
+    "accepted": 54,
+    "source_supported_accepted": 53,
+    "source_precision": 0.9814814814814815,
+    "claim_eligible_accepted": 47,
+    "full_claim_precision": 0.8703703703703703,
+    "supported_recall": 1.0,
+    "unsupported_false_promotions": 1,
+    "supported_false_rejections": 0,
+    "off_gap_or_duplicate_accepted": 6
+  },
+  "rejected_ids": [
+    "E1_F3_P12_W4:F0"
+  ],
+  "unsupported_ids": [
+    "E1_F3_P05_W7:F0",
+    "E1_F3_P12_W4:F0"
+  ],
+  "api_errors": 0,
+  "extra_verifier_calls": 55,
+  "verifier_usage": {
+    "prompt_tokens": 33502,
+    "completion_tokens": 12624,
+    "total_tokens": 46126,
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 32734
+  },
+  "verifier_prompt_cache_hit_rate": 0.022924004537042564,
+  "verifier_latency_seconds_sum": 83.53849524259567,
+  "verifier_latency_seconds_median": 1.1596018746495247,
+  "unsupported_removed_fraction": 0.5,
+  "decision": {
+    "A_necessity_unproven": false,
+    "B_verify_deployable": false,
+    "C_verify_recall_prohibits": false,
+    "R1_direct_admissible": false,
+    "R1_verify_admissible": false,
+    "interpretation": "Gray zone: V improves source precision, but neither path is admissible for R1."
+  }
+}
