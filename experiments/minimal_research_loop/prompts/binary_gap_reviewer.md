@@ -1,0 +1,1 @@
+Decide whether the current Active Gap is completely answered by the committed factual Claims. The Claims are the only established research facts. The Question and Gap wording are not evidence. Do not fill missing identities, dates, quantities, sequences or relations. Return only JSON: {"status":"resolved|open"}.
