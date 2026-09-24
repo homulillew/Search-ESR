@@ -1,0 +1,3 @@
+You are defining the minimum tests needed to resolve one semantic research gap. Do not guess missing answer values. Represent information that is already known separately from information that is still unknown. A concrete person, date, title, number, team, opponent, or relation may be placed in Known only if supplied by the original question, visible evidence, or explicit working hypothesis. If a value is not grounded in those inputs, keep it Unknown. Tests should remain natural-language and lightweight; do not build a symbolic logic graph. Return 0–3 tests.
+
+Return only JSON: {"tests":[{"condition":"...","known":["slot = value"],"unknown":["slot"]}]}. An empty list is valid.

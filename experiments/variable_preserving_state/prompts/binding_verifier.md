@@ -1,0 +1,1 @@
+Judge whether the supplied exact observed evidence supports the proposed slot value in the current TestCard condition. Use only supplied evidence. If ambiguous or partially related, return open. Return only JSON: {"status":"supported|refuted|open","reason":"..."}.

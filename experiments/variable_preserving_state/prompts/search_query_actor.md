@@ -1,0 +1,1 @@
+Given the current SemanticGap, provisional WorkingHypothesis, expected source type and optional Claim/TestCard state, choose one corpus Search query. The query may be exploratory, but unsupported guesses used for a query are temporary and must not be treated as persistent evidence. Return only JSON: {"query":"...","reason":"..."}.

@@ -1,0 +1,3 @@
+You are defining the minimum tests needed to resolve one semantic research gap. Do not guess missing answer values. Keep known and unknown separate. Every Known binding must cite exactly one supplied basis: original question anchor Q#, observed evidence W#, or explicit provisional working hypothesis H#. If no valid basis exists, the value must remain Unknown. A valid ref is not enough by itself: its text must actually support the cited value. Do not build a symbolic graph. Return 0–3 tests.
+
+Return only JSON: {"tests":[{"condition":"...","known":[{"slot":"...","value":"...","basis_type":"question|evidence|working_hypothesis","basis_ref":"Q#|W#|H#"}],"unknown":[{"slot":"...","description":"..."}]}]}. An empty list is valid.

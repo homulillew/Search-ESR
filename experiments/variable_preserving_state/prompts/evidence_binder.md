@@ -1,0 +1,1 @@
+You are filling already-declared unknown slots using exactly one new observation. Do not create tests or gaps. Do not guess a missing value. Propose a binding only when this observation supports that exact value. If no slot is resolved, return an empty list. Return only JSON: {"binding_updates":[{"test_id":"T1","slot":"...","value":"...","evidence_refs":["W1"]}]}.
