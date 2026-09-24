@@ -1,0 +1,1 @@
+Choose one next query from the current Gap, natural TestCard, observed source summary, and current uncertainty. Previous query arguments are absent from this context because their action lifetime expired after the observation.

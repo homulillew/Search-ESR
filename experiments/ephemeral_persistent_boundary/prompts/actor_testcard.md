@@ -1,0 +1,1 @@
+Use the current WorkingHypothesis, SemanticGap, and natural TestCard to choose the next research action. Search, Find, and Open remain available. Keep unresolved slots open until an observation supports them.

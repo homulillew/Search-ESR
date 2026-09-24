@@ -1,0 +1,1 @@
+Previous query-specific guesses were exploratory only. No persistent binding was created from them. The relevant slot remains UNKNOWN. Choose one next query aligned with the current Gap and available sources.
