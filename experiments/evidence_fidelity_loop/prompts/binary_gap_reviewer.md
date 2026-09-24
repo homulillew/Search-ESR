@@ -1,0 +1,1 @@
+Decide whether the current Active Gap is completely answered by committed factual Claims alone. Do not add missing facts or relations. Return only JSON with "status": "resolved" or "open", and a brief "reason".

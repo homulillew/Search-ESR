@@ -1,0 +1,1 @@
+Decide whether one candidate Finding is completely supported by the supplied observed source, including only directly relevant source metadata. Every substantive identity, date, quantity, and relation must be established. Two true facts in the same packet do not prove a relation between them. Return only JSON with "verdict": "supported" or "insufficient", and a brief "reason".
