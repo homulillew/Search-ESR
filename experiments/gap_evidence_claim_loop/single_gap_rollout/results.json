@@ -1,0 +1,574 @@
+{
+  "by_arm": {
+    "R0": {
+      "cases": 6,
+      "completed_without_interruption": 5,
+      "true_claim_based_gap_resolutions": 1,
+      "evidence_answer_available": 3,
+      "model_resolved": 3,
+      "premature_close_cases": 2,
+      "retrieval_actions": 32,
+      "tool_counts": {
+        "find": 8,
+        "open": 3,
+        "search": 21
+      },
+      "W_observations": 72,
+      "useful_W_observations": 6,
+      "useful_W_per_retrieval": 0.1875,
+      "useful_retrieval_actions": 4,
+      "useful_action_rate": 0.125,
+      "new_claims": 6,
+      "supported_claims": 5,
+      "committed_claim_precision": 0.8333333333333334,
+      "claim_bloat_per_case": 1.0,
+      "no_new_window_actions": 6,
+      "post_close_queued_actions": 4,
+      "next_scope_after_nogain_decision": {
+        "open": 1,
+        "search": 4,
+        "find": 2
+      }
+    },
+    "R1": {
+      "cases": 6,
+      "completed_without_interruption": 6,
+      "true_claim_based_gap_resolutions": 1,
+      "evidence_answer_available": 4,
+      "model_resolved": 3,
+      "premature_close_cases": 2,
+      "retrieval_actions": 38,
+      "tool_counts": {
+        "search": 24,
+        "find": 14
+      },
+      "W_observations": 75,
+      "useful_W_observations": 10,
+      "useful_W_per_retrieval": 0.2631578947368421,
+      "useful_retrieval_actions": 6,
+      "useful_action_rate": 0.15789473684210525,
+      "new_claims": 12,
+      "supported_claims": 11,
+      "committed_claim_precision": 0.9166666666666666,
+      "claim_bloat_per_case": 2.0,
+      "no_new_window_actions": 12,
+      "post_close_queued_actions": 7,
+      "next_scope_after_nogain_decision": {
+        "search": 4,
+        "find": 2
+      }
+    }
+  },
+  "paired": {
+    "1094": {
+      "R0": "F3_1094:R0",
+      "R1": "F3_1094:R1",
+      "winner": "R1",
+      "resolution_R0": false,
+      "resolution_R1": false,
+      "useful_action_rate_R0": 0.0,
+      "useful_action_rate_R1": 0.09090909090909091
+    },
+    "177": {
+      "R0": "F3_177:R0",
+      "R1": "F3_177:R1",
+      "winner": "R1",
+      "resolution_R0": false,
+      "resolution_R1": false,
+      "useful_action_rate_R0": 0.0,
+      "useful_action_rate_R1": 0.2
+    },
+    "435": {
+      "R0": "F3_435:R0",
+      "R1": "F3_435:R1",
+      "winner": "R1",
+      "resolution_R0": false,
+      "resolution_R1": false,
+      "useful_action_rate_R0": 0.5,
+      "useful_action_rate_R1": 1.0
+    },
+    "517": {
+      "R0": "F3_517:R0",
+      "R1": "F3_517:R1",
+      "winner": "R1",
+      "resolution_R0": false,
+      "resolution_R1": false,
+      "useful_action_rate_R0": 0.125,
+      "useful_action_rate_R1": 0.25
+    },
+    "546": {
+      "R0": "F3_546:R0",
+      "R1": "F3_546:R1",
+      "winner": "tie",
+      "resolution_R0": false,
+      "resolution_R1": false,
+      "useful_action_rate_R0": 0.0,
+      "useful_action_rate_R1": 0.0
+    },
+    "580": {
+      "R0": "F3_580:R0",
+      "R1": "F3_580:R1",
+      "winner": "R0",
+      "resolution_R0": true,
+      "resolution_R1": true,
+      "useful_action_rate_R0": 0.6666666666666666,
+      "useful_action_rate_R1": 0.14285714285714285
+    }
+  },
+  "paired_wins": {
+    "R1": 4,
+    "tie": 1,
+    "R0": 1
+  },
+  "net_R1_case_wins": 3,
+  "complete_pair_wins": {
+    "R1": 3,
+    "tie": 1,
+    "R0": 1
+  },
+  "complete_pair_net_R1_wins": 2,
+  "gate_checks": {
+    "paired_net_improvements_min_3": true,
+    "R1_claim_precision_min_95pct": false,
+    "R1_premature_close_max_10pct": false
+  },
+  "f3_pass": false,
+  "failure_code_counts": {
+    "GE12": 5,
+    "GE7": 2,
+    "GE10": 4,
+    "GE14": 5,
+    "GE13": 2,
+    "GE5": 1,
+    "GE9": 2,
+    "GE8": 1,
+    "GE16": 1
+  },
+  "cache_usage": {
+    "actor_response": {
+      "calls": 29,
+      "prompt_tokens": 425347,
+      "hit_tokens": 368384,
+      "weighted_hit_rate": 0.8660787545227778
+    },
+    "reader_response": {
+      "calls": 147,
+      "prompt_tokens": 122950,
+      "hit_tokens": 44031,
+      "weighted_hit_rate": 0.35812118747458316
+    },
+    "verifier_response": {
+      "calls": 25,
+      "prompt_tokens": 15720,
+      "hit_tokens": 0,
+      "weighted_hit_rate": 0.0
+    },
+    "gap_review_response": {
+      "calls": 146,
+      "prompt_tokens": 60452,
+      "hit_tokens": 30712,
+      "weighted_hit_rate": 0.5080394362469397
+    }
+  },
+  "rows": [
+    {
+      "review_id": "P01",
+      "cell": "F3_1094:R0",
+      "qid": "1094",
+      "arm": "R0",
+      "status": "horizon",
+      "actor_decisions": 4,
+      "retrieval_actions": 10,
+      "action_counts": {
+        "find": 3,
+        "open": 2,
+        "search": 5
+      },
+      "new_W_observations": 13,
+      "useful_W_observations": 0,
+      "useful_action_count": 0,
+      "useful_W_per_action": 0.0,
+      "useful_action_rate": 0.0,
+      "new_claims": 0,
+      "supported_claims": 0,
+      "unsupported_claims": 0,
+      "claim_gap_resolved": false,
+      "evidence_answer_available": false,
+      "model_resolved": false,
+      "premature_close": false,
+      "missed_close": false,
+      "first_close_action_index": null,
+      "post_close_queued_actions": 0,
+      "no_new_window_actions": 1,
+      "failure_codes": [
+        "GE12"
+      ]
+    },
+    {
+      "review_id": "P02",
+      "cell": "F3_177:R0",
+      "qid": "177",
+      "arm": "R0",
+      "status": "interrupted_gap_review",
+      "actor_decisions": 1,
+      "retrieval_actions": 1,
+      "action_counts": {
+        "search": 1
+      },
+      "new_W_observations": 4,
+      "useful_W_observations": 0,
+      "useful_action_count": 0,
+      "useful_W_per_action": 0.0,
+      "useful_action_rate": 0.0,
+      "new_claims": 0,
+      "supported_claims": 0,
+      "unsupported_claims": 0,
+      "claim_gap_resolved": false,
+      "evidence_answer_available": false,
+      "model_resolved": false,
+      "premature_close": false,
+      "missed_close": false,
+      "first_close_action_index": null,
+      "post_close_queued_actions": 0,
+      "no_new_window_actions": 0,
+      "failure_codes": [
+        "GE12"
+      ]
+    },
+    {
+      "review_id": "P03",
+      "cell": "F3_517:R0",
+      "qid": "517",
+      "arm": "R0",
+      "status": "gap_reviewer_resolved",
+      "actor_decisions": 2,
+      "retrieval_actions": 8,
+      "action_counts": {
+        "search": 6,
+        "find": 2
+      },
+      "new_W_observations": 26,
+      "useful_W_observations": 1,
+      "useful_action_count": 1,
+      "useful_W_per_action": 0.125,
+      "useful_action_rate": 0.125,
+      "new_claims": 1,
+      "supported_claims": 0,
+      "unsupported_claims": 1,
+      "claim_gap_resolved": false,
+      "evidence_answer_available": true,
+      "model_resolved": true,
+      "premature_close": true,
+      "missed_close": false,
+      "first_close_action_index": 4,
+      "post_close_queued_actions": 3,
+      "no_new_window_actions": 0,
+      "failure_codes": [
+        "GE7",
+        "GE10"
+      ]
+    },
+    {
+      "review_id": "P04",
+      "cell": "F3_1094:R1",
+      "qid": "1094",
+      "arm": "R1",
+      "status": "horizon",
+      "actor_decisions": 4,
+      "retrieval_actions": 11,
+      "action_counts": {
+        "search": 11
+      },
+      "new_W_observations": 13,
+      "useful_W_observations": 1,
+      "useful_action_count": 1,
+      "useful_W_per_action": 0.09090909090909091,
+      "useful_action_rate": 0.09090909090909091,
+      "new_claims": 1,
+      "supported_claims": 1,
+      "unsupported_claims": 0,
+      "claim_gap_resolved": false,
+      "evidence_answer_available": false,
+      "model_resolved": false,
+      "premature_close": false,
+      "missed_close": false,
+      "first_close_action_index": null,
+      "post_close_queued_actions": 0,
+      "no_new_window_actions": 4,
+      "failure_codes": [
+        "GE12"
+      ]
+    },
+    {
+      "review_id": "P05",
+      "cell": "F3_435:R0",
+      "qid": "435",
+      "arm": "R0",
+      "status": "gap_reviewer_resolved",
+      "actor_decisions": 1,
+      "retrieval_actions": 2,
+      "action_counts": {
+        "search": 1,
+        "find": 1
+      },
+      "new_W_observations": 10,
+      "useful_W_observations": 3,
+      "useful_action_count": 1,
+      "useful_W_per_action": 1.5,
+      "useful_action_rate": 0.5,
+      "new_claims": 3,
+      "supported_claims": 3,
+      "unsupported_claims": 0,
+      "claim_gap_resolved": false,
+      "evidence_answer_available": true,
+      "model_resolved": true,
+      "premature_close": true,
+      "missed_close": false,
+      "first_close_action_index": 0,
+      "post_close_queued_actions": 1,
+      "no_new_window_actions": 0,
+      "failure_codes": [
+        "GE10",
+        "GE14"
+      ]
+    },
+    {
+      "review_id": "P06",
+      "cell": "F3_546:R0",
+      "qid": "546",
+      "arm": "R0",
+      "status": "horizon",
+      "actor_decisions": 4,
+      "retrieval_actions": 8,
+      "action_counts": {
+        "search": 5,
+        "open": 1,
+        "find": 2
+      },
+      "new_W_observations": 5,
+      "useful_W_observations": 0,
+      "useful_action_count": 0,
+      "useful_W_per_action": 0.0,
+      "useful_action_rate": 0.0,
+      "new_claims": 0,
+      "supported_claims": 0,
+      "unsupported_claims": 0,
+      "claim_gap_resolved": false,
+      "evidence_answer_available": false,
+      "model_resolved": false,
+      "premature_close": false,
+      "missed_close": false,
+      "first_close_action_index": null,
+      "post_close_queued_actions": 0,
+      "no_new_window_actions": 5,
+      "failure_codes": [
+        "GE12",
+        "GE13"
+      ]
+    },
+    {
+      "review_id": "P07",
+      "cell": "F3_177:R1",
+      "qid": "177",
+      "arm": "R1",
+      "status": "gap_reviewer_resolved",
+      "actor_decisions": 2,
+      "retrieval_actions": 5,
+      "action_counts": {
+        "search": 3,
+        "find": 2
+      },
+      "new_W_observations": 23,
+      "useful_W_observations": 1,
+      "useful_action_count": 1,
+      "useful_W_per_action": 0.2,
+      "useful_action_rate": 0.2,
+      "new_claims": 2,
+      "supported_claims": 2,
+      "unsupported_claims": 0,
+      "claim_gap_resolved": false,
+      "evidence_answer_available": true,
+      "model_resolved": true,
+      "premature_close": true,
+      "missed_close": false,
+      "first_close_action_index": 2,
+      "post_close_queued_actions": 2,
+      "no_new_window_actions": 0,
+      "failure_codes": [
+        "GE10",
+        "GE14"
+      ]
+    },
+    {
+      "review_id": "P08",
+      "cell": "F3_546:R1",
+      "qid": "546",
+      "arm": "R1",
+      "status": "horizon",
+      "actor_decisions": 4,
+      "retrieval_actions": 9,
+      "action_counts": {
+        "search": 4,
+        "find": 5
+      },
+      "new_W_observations": 7,
+      "useful_W_observations": 0,
+      "useful_action_count": 0,
+      "useful_W_per_action": 0.0,
+      "useful_action_rate": 0.0,
+      "new_claims": 0,
+      "supported_claims": 0,
+      "unsupported_claims": 0,
+      "claim_gap_resolved": false,
+      "evidence_answer_available": false,
+      "model_resolved": false,
+      "premature_close": false,
+      "missed_close": false,
+      "first_close_action_index": null,
+      "post_close_queued_actions": 0,
+      "no_new_window_actions": 4,
+      "failure_codes": [
+        "GE12",
+        "GE13"
+      ]
+    },
+    {
+      "review_id": "P09",
+      "cell": "F3_580:R0",
+      "qid": "580",
+      "arm": "R0",
+      "status": "gap_reviewer_resolved",
+      "actor_decisions": 1,
+      "retrieval_actions": 3,
+      "action_counts": {
+        "search": 3
+      },
+      "new_W_observations": 14,
+      "useful_W_observations": 2,
+      "useful_action_count": 2,
+      "useful_W_per_action": 0.6666666666666666,
+      "useful_action_rate": 0.6666666666666666,
+      "new_claims": 2,
+      "supported_claims": 2,
+      "unsupported_claims": 0,
+      "claim_gap_resolved": true,
+      "evidence_answer_available": true,
+      "model_resolved": true,
+      "premature_close": false,
+      "missed_close": false,
+      "first_close_action_index": 2,
+      "post_close_queued_actions": 0,
+      "no_new_window_actions": 0,
+      "failure_codes": []
+    },
+    {
+      "review_id": "P10",
+      "cell": "F3_435:R1",
+      "qid": "435",
+      "arm": "R1",
+      "status": "gap_reviewer_resolved",
+      "actor_decisions": 1,
+      "retrieval_actions": 2,
+      "action_counts": {
+        "search": 2
+      },
+      "new_W_observations": 10,
+      "useful_W_observations": 4,
+      "useful_action_count": 2,
+      "useful_W_per_action": 2.0,
+      "useful_action_rate": 1.0,
+      "new_claims": 5,
+      "supported_claims": 4,
+      "unsupported_claims": 1,
+      "claim_gap_resolved": false,
+      "evidence_answer_available": true,
+      "model_resolved": true,
+      "premature_close": true,
+      "missed_close": false,
+      "first_close_action_index": 0,
+      "post_close_queued_actions": 1,
+      "no_new_window_actions": 0,
+      "failure_codes": [
+        "GE5",
+        "GE7",
+        "GE10",
+        "GE14",
+        "GE9"
+      ]
+    },
+    {
+      "review_id": "P11",
+      "cell": "F3_517:R1",
+      "qid": "517",
+      "arm": "R1",
+      "status": "natural_stop",
+      "actor_decisions": 2,
+      "retrieval_actions": 4,
+      "action_counts": {
+        "search": 2,
+        "find": 2
+      },
+      "new_W_observations": 11,
+      "useful_W_observations": 1,
+      "useful_action_count": 1,
+      "useful_W_per_action": 0.25,
+      "useful_action_rate": 0.25,
+      "new_claims": 0,
+      "supported_claims": 0,
+      "unsupported_claims": 0,
+      "claim_gap_resolved": false,
+      "evidence_answer_available": true,
+      "model_resolved": false,
+      "premature_close": false,
+      "missed_close": false,
+      "first_close_action_index": null,
+      "post_close_queued_actions": 0,
+      "no_new_window_actions": 0,
+      "failure_codes": [
+        "GE8",
+        "GE14"
+      ]
+    },
+    {
+      "review_id": "P12",
+      "cell": "F3_580:R1",
+      "qid": "580",
+      "arm": "R1",
+      "status": "gap_reviewer_resolved",
+      "actor_decisions": 2,
+      "retrieval_actions": 7,
+      "action_counts": {
+        "search": 2,
+        "find": 5
+      },
+      "new_W_observations": 11,
+      "useful_W_observations": 3,
+      "useful_action_count": 1,
+      "useful_W_per_action": 0.42857142857142855,
+      "useful_action_rate": 0.14285714285714285,
+      "new_claims": 4,
+      "supported_claims": 4,
+      "unsupported_claims": 0,
+      "claim_gap_resolved": true,
+      "evidence_answer_available": true,
+      "model_resolved": true,
+      "premature_close": false,
+      "missed_close": false,
+      "first_close_action_index": 2,
+      "post_close_queued_actions": 4,
+      "no_new_window_actions": 4,
+      "failure_codes": [
+        "GE14",
+        "GE16",
+        "GE9"
+      ]
+    }
+  ],
+  "audit": {
+    "event_count": 1196,
+    "cell_starts": 12,
+    "cell_ends": 12,
+    "unanswered_gap_review_requests": 1,
+    "interrupted_cell": "F3_177:R0"
+  }
+}
