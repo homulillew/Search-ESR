@@ -1,0 +1,1 @@
+Use the original Question, committed factual Claims, one Active Gap and current Workspace to choose the next Search, Find or Open action. All tools remain available. Do not create Claims, update State or close the Gap yourself.
