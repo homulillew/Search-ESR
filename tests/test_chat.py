@@ -4,6 +4,8 @@ import pytest
 from openai import OpenAI, AuthenticationError
 from llm_chat.client import Config, ChatSession
 from llm_chat.agent import AgentSession, BCPlusTools
+from llm_chat.search_find_agent import HandleRegistry, SearchFindAgentSession
+from llm_chat.raw_windows import RawWindowBuilder
 
 
 def config():
@@ -221,3 +223,80 @@ def test_stop_tool_config_and_responses_url(tmp_path, monkeypatch):
     monkeypatch.setenv('OPENAI_ALLOW_TOOL_CALLS_WITH_STOP', 'invalid')
     with pytest.raises(ValueError, match='OPENAI_ALLOW_TOOL_CALLS_WITH_STOP'):
         Config.load(env)
+
+
+def test_short_handle_registry_is_stable_and_typed():
+    registry = HandleRegistry()
+    d1, new1 = registry.document(('42', 'abc'))
+    d1_again, new_again = registry.document(('42', 'abc'))
+    d2, new2 = registry.document(('43', 'def'))
+    w1, _ = registry.window('w_source_a')
+    w1_again, _ = registry.window('w_source_a')
+    w2, _ = registry.window('w_source_b')
+    assert (d1, d1_again, d2) == ('D1', 'D1', 'D2')
+    assert (new1, new_again, new2) == (True, False, True)
+    assert (w1, w1_again, w2) == ('W1', 'W1', 'W2')
+    assert registry.resolve_document('D1') == ('42', 'abc')
+    assert registry.resolve_window('W2') == 'w_source_b'
+    with pytest.raises(ValueError):
+        registry.resolve_document('D99')
+    with pytest.raises(ValueError):
+        registry.resolve_window('W99')
+
+
+def test_search_find_agent_exposes_find_without_changing_core_loop():
+    requests = []
+    def handler(request):
+        body = json.loads(request.content)
+        requests.append(body)
+        if len(requests) == 1:
+            return httpx.Response(200, json=reply(None, [{
+                'id': 'search1', 'type': 'function',
+                'function': {'name': 'search', 'arguments': '{"query":"target"}'}
+            }]))
+        if len(requests) == 2:
+            return httpx.Response(200, json=reply(None, [{
+                'id': 'find1', 'type': 'function',
+                'function': {'name': 'find', 'arguments': '{"doc_ref":"D1","query":"father"}'}
+            }]))
+        return httpx.Response(200, json=reply('answer [W2]'))
+
+    class FakeTools:
+        def execute(self, name, args):
+            if name == 'search':
+                return {'status': 'ok', 'results': [{'doc_ref': 'D1', 'preview_ref': 'W1',
+                         'preview': 'candidate'}], 'usage_hint': 'preview'}
+            if name == 'find':
+                return {'status': 'ok', 'doc_ref': 'D1',
+                        'matches': [{'window_ref': 'W2', 'text': 'father evidence'}],
+                        'usage_hint': 'localized'}
+            raise AssertionError(name)
+        def close(self): pass
+
+    agent = SearchFindAgentSession(config(), client(handler), tools=FakeTools())
+    try:
+        assert agent.ask('question') == 'answer [W2]'
+        names = {t['function']['name'] for t in requests[0]['tools']}
+        assert names == {'search', 'find', 'open'}
+        assert requests[2]['messages'][-1]['tool_call_id'] == 'find1'
+    finally:
+        agent.close()
+
+
+def test_local_find_has_explicit_no_match_without_prefix_fallback():
+    class CharTokenizer:
+        def encode(self, text, add_special_tokens=False):
+            return list(range(len(text)))
+        def __call__(self, text, add_special_tokens=False, return_offsets_mapping=False):
+            result = {}
+            if return_offsets_mapping:
+                result['offset_mapping'] = [(i, i + 1) for i in range(len(text))]
+            return result
+
+    builder = RawWindowBuilder(CharTokenizer())
+    key = builder.register('doc', 'Alpha paragraph.\n\nThe father was Bob.\n', 'https://example.test')
+    match, _ = builder.find(key, 'father')
+    missing, meta = builder.find(key, 'nonexistentterm')
+    assert match is not None and 'father was Bob' in match['text']
+    assert missing is None
+    assert meta['fallback'] == 'no_lexical_match'

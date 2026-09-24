@@ -1,0 +1,31 @@
+{
+  "variant": "v003a_search_find",
+  "agent_protocol": "search_find_v3a",
+  "run_id": "20260922T120722.543923Z",
+  "qid": "546",
+  "batch_id": null,
+  "execution": "single",
+  "model": "qwen3.7-flash",
+  "base_url": "https://llm-p0vhlut44muxw0h2.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "system_prompt": "你是一个可靠的助手。请用清晰、准确的语言回答问题。",
+  "request_options": {},
+  "timeout": 180.0,
+  "sdk_max_retries": 2,
+  "max_tool_rounds": 64,
+  "max_tool_calls_per_round": 8,
+  "dataset": "BCPlus/data/bcplus/qa.jsonl",
+  "dataset_sha256": "44b80cc9fcd9dd5a44aa09292c2165364b0c0e9df26c9cd6c11846165a0916b7",
+  "source_sha256": {
+    "llm_chat/raw_windows.py": "b72948cf78cdf15dd4966721f49581738b7cd93430480149ead717fb230cee6f",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "llm_chat/window_units.py": "06aac46abd434450abde5972f93dffd082799bd9e042101855e006fd7649d1b2",
+    "llm_chat/agent.py": "e129a97b823881168be894e4b29bbac93f5da9f151c1c4260ef0b7fb7b06811a",
+    "llm_chat/client.py": "126ee2d49ed526a64931b4ac7a27df1db63fb77ba10b5dd368770d0d79846204",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339",
+    "experiments/run_rollout.py": "9f1fbf8ccdb7b5c3a972f351cf04266fbebf081e3115a69e1c334156da96f105",
+    "experiments/run_batch.py": "1ee141a29832754d71f5203c537127ee07b45d2080505e48d00843fdc9d94ce8",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720"
+  },
+  "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:50:58) [GCC 12.3.0]",
+  "notes": "Experimental v3a: baseline global search plus stable D#/W# handles and document-local find; existing Open semantics retained. SDK retries are internal to each recorded API call. No gold supplied."
+}

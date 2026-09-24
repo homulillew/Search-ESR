@@ -86,7 +86,11 @@ class BCPlusTools:
             self.db.close()
 
 class AgentSession(ChatSession):
-    def __init__(self, config, client=None, tools=None, max_rounds=64, on_status=None):
+    def __init__(self, config, client=None, tools=None, max_rounds=64, on_status=None,
+                 tool_schema=None, agent_prompt=None):
+        # Set protocol fields before ChatSession.__init__ calls reset().
+        self.tool_schema = tool_schema if tool_schema is not None else TOOLS
+        self.agent_prompt = agent_prompt if agent_prompt is not None else AGENT_PROMPT
         super().__init__(config, client)
         if max_rounds < 1:
             raise ValueError('max_rounds must be positive')
@@ -95,7 +99,7 @@ class AgentSession(ChatSession):
         self.on_status = on_status
 
     def reset(self):
-        self.messages = [{'role': 'system', 'content': self.config.system_prompt + '\n\n' + AGENT_PROMPT}]
+        self.messages = [{'role': 'system', 'content': self.config.system_prompt + '\n\n' + self.agent_prompt}]
 
     def ask(self, text, *, stream=False, on_text=None):
         if not text.strip():
@@ -104,7 +108,7 @@ class AgentSession(ChatSession):
         for round_index in range(self.max_rounds + 1):
             final_round = round_index == self.max_rounds
             response = self.client.chat.completions.create(
-                model=self.config.model, messages=pending, tools=TOOLS,
+                model=self.config.model, messages=pending, tools=self.tool_schema,
                 tool_choice='none' if final_round else 'auto', stream=False,
                 **self.config.request_options(),
             )
@@ -124,7 +128,7 @@ class AgentSession(ChatSession):
                     # Explicit provider compatibility: validate the whole batch
                     # before execution; never rewrite the raw finish_reason.
                     ids = set()
-                    names = {tool['function']['name'] for tool in TOOLS}
+                    names = {tool['function']['name'] for tool in self.tool_schema}
                     for call in message.tool_calls:
                         if (not call.id or call.id in ids or call.type != 'function'
                                 or call.function.name not in names):

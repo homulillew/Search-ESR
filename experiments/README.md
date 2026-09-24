@@ -62,3 +62,9 @@ API 请求记录 SDK 调用参数，响应记录 SDK 解析的完整响应；不
 见 [E0 固定前缀实验](research_state/need_review/README.md)、[实验计划](research_state/need_review/EXPERIMENT_PLAN.md)及[后续 Codex 执行任务](research_state/need_review/CODEX_TASK.md)。入口已实现离线检查点准备、三组交错调度、一次审查接一次 Actor 决策、失败回退与审阅材料导出；本次交付未执行真实模型实验。
 
 首批固定三道历史 v000 开发病例，每组重复两次，共 30 次逻辑模型调用。E0 保存完整下一动作，不执行工具；它先检查需求能否改善决策，尚未接入持久状态、触发器或停止器。历史工具版本、当前 Search/Open 和后续真实工具分叉分别记录。
+
+
+## Search–Find v3a：文档内定向查找候选
+
+见 [协议边界](search_find_v3a/README.md) 与 [Claude Code 下一步实验计划](search_find_v3a/CLAUDE_NEXT.md)。
+该候选保持默认 baseline 不变，只在独立 rollout 中增加 episode-local D#/W# 句柄和 find(D#, query)，用于检验重复全局 Search 是否在补偿缺失的文档内局部定位能力。首轮只允许 qid 546 / 1094 的小规模 A/B 机制实验；离线门禁通过且出现机制信号后，才进入预冻结的 10–20 题 cohort。
