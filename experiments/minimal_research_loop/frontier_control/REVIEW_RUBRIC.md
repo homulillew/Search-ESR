@@ -1,0 +1,7 @@
+# Prefix and action review rubric
+
+Before calls, each bank cell must have one exact historical W, source metadata, evidence-bound factual Claims, two to four semantic Open Gaps and prefix-only eligible/preferred labels. The preferred Gap may be one of several reasonable next directions. An already Claim-resolved local Gap is removed. A distracting document may support no Claim; it still belongs to the observed Workspace.
+
+After real tool execution, label each newly returned W `useful_evidence=true` only when its text directly provides a new material fact for a frozen Open Gap. A merely related title, entity mention, vague claim, repeated source content, unverified joining of two facts, or knowledge outside the returned W does not count. Separately label whether it advances A1's selected Frontier. An Orthogonal Search hit that is already discovered and gives no new preview has no new W and is not useful. A Find/Open error or no match is NoGain. If a W contradicts a current factual lead and thereby rules it out, it may count as useful with an explicit reason.
+
+Action-level `useful_evidence` is true if any returned W is useful. `no_gain` is its complement. `redundant` means the action returned only facts already in frozen Claims or W. `scope_correct` means the chosen tool matches known sources and required localization, independently of useful evidence. `gap_scatter` is true when the chosen query combines unrelated Gap requirements with no coherent source to inspect. Preserve API/schema/tool failures in the denominator, without replacement.
