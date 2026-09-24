@@ -1,0 +1,57 @@
+{
+  "n_packets": 40,
+  "n_qids": 10,
+  "arms": {
+    "C0": {
+      "valid": 40,
+      "errors": {},
+      "premature_close_ids": [],
+      "premature_close_rate": 0.0,
+      "missed_close_ids": [],
+      "missed_close_rate": 0.0,
+      "fully_resolved_recall": 1.0,
+      "near_complete_rejected": 9,
+      "near_complete_total": 9,
+      "near_complete_trap_rejection": 1.0,
+      "usage": {
+        "prompt_tokens": 13307,
+        "completion_tokens": 6347,
+        "total_tokens": 19654,
+        "prompt_cache_hit_tokens": 1792,
+        "prompt_cache_miss_tokens": 11515
+      },
+      "prompt_cache_hit_rate": 0.13466596528143082,
+      "latency_seconds_sum": 51.2915426120162,
+      "gate_pass": true
+    },
+    "C1": {
+      "valid": 39,
+      "errors": {
+        "C1_387_keyboard": "ValueError"
+      },
+      "premature_close_ids": [],
+      "premature_close_rate": 0.0,
+      "missed_close_ids": [
+        "C1_387_keyboard"
+      ],
+      "missed_close_rate": 0.05,
+      "fully_resolved_recall": 0.95,
+      "near_complete_rejected": 9,
+      "near_complete_total": 9,
+      "near_complete_trap_rejection": 1.0,
+      "usage": {
+        "prompt_tokens": 15667,
+        "completion_tokens": 9005,
+        "total_tokens": 24672,
+        "prompt_cache_hit_tokens": 3968,
+        "prompt_cache_miss_tokens": 11699
+      },
+      "prompt_cache_hit_rate": 0.25327120699559585,
+      "latency_seconds_sum": 61.424374990165234,
+      "gate_pass": true,
+      "missing_description_accurate": 20,
+      "missing_description_total": 20
+    }
+  },
+  "chosen_policy": "C0"
+}
