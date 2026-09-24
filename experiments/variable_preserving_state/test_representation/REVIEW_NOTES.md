@@ -35,3 +35,8 @@ semantic judgments. The C0 coverage score is deliberately strict about
 unsupported answer assertions; the V1 gate chiefly uses C0's paired premature
 specificity and checks TestCard coverage separately. This stage does not show
 that a TestCard changes query policy, evidence binding, or Actor behavior.
+The binding-rate denominators also differ by output schema: C0 uses one
+reviewed factual proposition per Claim, while C1/C2 count individual known
+fields plus any unsupported condition-only exact relation. Cross-arm
+binding-rate magnitudes are descriptive; the case-level paired comparison is
+the more comparable specificity result.

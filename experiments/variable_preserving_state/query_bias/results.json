@@ -1,0 +1,1088 @@
+{
+  "summary": {
+    "by_arm": {
+      "Q0": {
+        "n": 16,
+        "errors": 0,
+        "gap_alignment": 0.875,
+        "source_type_alignment": 0.9375,
+        "unsupported_binding_leakage": 0.4375,
+        "confirmation_bias": 0.4375,
+        "unknown_targeting": 0.875,
+        "mean_output_tokens": 5210.625,
+        "mean_latency_seconds": 24.15167312079575
+      },
+      "Q1": {
+        "n": 16,
+        "errors": 0,
+        "gap_alignment": 0.9375,
+        "source_type_alignment": 1.0,
+        "unsupported_binding_leakage": 0.5625,
+        "confirmation_bias": 0.5,
+        "unknown_targeting": 0.9375,
+        "mean_output_tokens": 5314.25,
+        "mean_latency_seconds": 24.11578266741708
+      },
+      "Q2": {
+        "n": 16,
+        "errors": 0,
+        "gap_alignment": 0.9375,
+        "source_type_alignment": 1.0,
+        "unsupported_binding_leakage": 0.4375,
+        "confirmation_bias": 0.4375,
+        "unknown_targeting": 0.9375,
+        "mean_output_tokens": 6507.8125,
+        "mean_latency_seconds": 30.04241087869741
+      }
+    },
+    "paired": {
+      "improved": 3,
+      "worsened": 1,
+      "equal": 12,
+      "net_improvements": 2
+    },
+    "gate": {
+      "paired_leakage": false,
+      "gap_alignment": true,
+      "source_type_alignment": true
+    },
+    "V2_pass": false,
+    "cache": {
+      "Q0": {
+        "reported": 16,
+        "hit_tokens": 7808,
+        "miss_tokens": 5110,
+        "weighted_hit_rate": 0.604427930020127
+      },
+      "Q1": {
+        "reported": 16,
+        "hit_tokens": 8576,
+        "miss_tokens": 6087,
+        "weighted_hit_rate": 0.5848734911000477
+      },
+      "Q2": {
+        "reported": 16,
+        "hit_tokens": 9600,
+        "miss_tokens": 7217,
+        "weighted_hit_rate": 0.5708509246595707
+      }
+    }
+  },
+  "rows": [
+    {
+      "review_id": "Qa9d68234d5fe94",
+      "case_id": "T1_1034",
+      "qid": "1034",
+      "arm": "Q0",
+      "query": "Nana Ama McBrown Business Administration child born United States debut single coordinator manager birth name",
+      "error": null,
+      "review": {
+        "gap_alignment": false,
+        "source_type_alignment": false,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": false,
+        "leaking_values": [
+          "Nana Ama McBrown"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 7891,
+      "latency_seconds": 37.38884371332824
+    },
+    {
+      "review_id": "Q651cbddec3785f",
+      "case_id": "T1_1034",
+      "qid": "1034",
+      "arm": "Q1",
+      "query": "Heart Evangelista biography Business Administration university child born United States",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 6026,
+      "latency_seconds": 31.170579124242067
+    },
+    {
+      "review_id": "Q722b201a7f6f3b",
+      "case_id": "T1_1034",
+      "qid": "1034",
+      "arm": "Q2",
+      "query": "Heart Evangelista Business Administration university child born United States",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 8209,
+      "latency_seconds": 42.012639882043004
+    },
+    {
+      "review_id": "Q5d6eb06ff85e1b",
+      "case_id": "T2_517",
+      "qid": "517",
+      "arm": "Q0",
+      "query": "Peter King Nzioki The Constant Gardener policeman",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 3518,
+      "latency_seconds": 17.61044556647539
+    },
+    {
+      "review_id": "Qa6811057044bf3",
+      "case_id": "T2_517",
+      "qid": "517",
+      "arm": "Q1",
+      "query": "The Constant Gardener Peter King policeman",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 726,
+      "latency_seconds": 3.882679373025894
+    },
+    {
+      "review_id": "Q14aad77bcd5354",
+      "case_id": "T2_517",
+      "qid": "517",
+      "arm": "Q2",
+      "query": "The Constant Gardener 2005 cast Peter King policeman",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 1042,
+      "latency_seconds": 4.917819827795029
+    },
+    {
+      "review_id": "Q914bf5d8ea3bde",
+      "case_id": "T1_580",
+      "qid": "580",
+      "arm": "Q0",
+      "query": "\"Jimmy Shive-Overly\" \"Gretchen Cutler\" season 1 friends convince date",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 3163,
+      "latency_seconds": 15.910684624686837
+    },
+    {
+      "review_id": "Q1c6ac430eab216",
+      "case_id": "T1_580",
+      "qid": "580",
+      "arm": "Q1",
+      "query": "You're the Worst season 1 episode Jimmy Gretchen friends convince date",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "You're the Worst"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 4905,
+      "latency_seconds": 24.19400814920664
+    },
+    {
+      "review_id": "Qe0d54ffb9c02a8",
+      "case_id": "T1_580",
+      "qid": "580",
+      "arm": "Q2",
+      "query": "You're the Worst Insouciance episode plot Jimmy Gretchen date friends convince",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "You're the Worst",
+          "Insouciance"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 3663,
+      "latency_seconds": 17.938252929598093
+    },
+    {
+      "review_id": "Qeb1f31f7dbe3ea",
+      "case_id": "T2_546",
+      "qid": "546",
+      "arm": "Q0",
+      "query": "Ding Junhui English Open 2023 round-by-round results",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 4131,
+      "latency_seconds": 19.204394852742553
+    },
+    {
+      "review_id": "Q7a31284127f653",
+      "case_id": "T2_546",
+      "qid": "546",
+      "arm": "Q1",
+      "query": "Ding Junhui 2023 English Open results Ma Hailong 4-3 next matches 4-3 4-0 loss Ronnie O'Sullivan",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Ronnie O'Sullivan"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 2438,
+      "latency_seconds": 12.09232990257442
+    },
+    {
+      "review_id": "Qc59dce4de21e5c",
+      "case_id": "T2_546",
+      "qid": "546",
+      "arm": "Q2",
+      "query": "Ding Junhui 2023 English Open results after Ma Hailong 4-3 next matches 4-3 4-0 loss opponent centuries",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 2561,
+      "latency_seconds": 11.16049426048994
+    },
+    {
+      "review_id": "Qb1c1f8d3749530",
+      "case_id": "T2_387",
+      "qid": "387",
+      "arm": "Q0",
+      "query": "Dean Dodrill Jazz Jackrabbit 2 intro ending animations 8x11 paper",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Jazz Jackrabbit 2"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 2401,
+      "latency_seconds": 11.446775447577238
+    },
+    {
+      "review_id": "Qd08a59bd32957f",
+      "case_id": "T2_387",
+      "qid": "387",
+      "arm": "Q1",
+      "query": "\"Dean Dodrill\" \"Jazz Jackrabbit\" intro ending animation \"8x11\" paper",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Jazz Jackrabbit"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 3933,
+      "latency_seconds": 19.335419427603483
+    },
+    {
+      "review_id": "Q7332aed6540051",
+      "case_id": "T2_387",
+      "qid": "387",
+      "arm": "Q2",
+      "query": "Dean Dodrill Jazz Jackrabbit 2 intro end animations 8x11 printing paper",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Jazz Jackrabbit 2"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 4324,
+      "latency_seconds": 20.829094149172306
+    },
+    {
+      "review_id": "Qecb7c86aac5a9e",
+      "case_id": "T1_435",
+      "qid": "435",
+      "arm": "Q0",
+      "query": "Oliver Mtukudzi Forbes Africa May 2010s albums",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 397,
+      "latency_seconds": 2.295586444437504
+    },
+    {
+      "review_id": "Q4a026cfb3ca09d",
+      "case_id": "T1_435",
+      "qid": "435",
+      "arm": "Q1",
+      "query": "\"Forbes Africa\" \"Oliver Mtukudzi\" May albums",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 372,
+      "latency_seconds": 2.3470074739307165
+    },
+    {
+      "review_id": "Q1c2e0acd2a4792",
+      "case_id": "T1_435",
+      "qid": "435",
+      "arm": "Q2",
+      "query": "Forbes Africa Oliver Mtukudzi May albums first album 1970s",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 360,
+      "latency_seconds": 2.0976009145379066
+    },
+    {
+      "review_id": "Q858cd5d04dc174",
+      "case_id": "T1_517",
+      "qid": "517",
+      "arm": "Q0",
+      "query": "The Constant Gardener Peter King policeman",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 1266,
+      "latency_seconds": 6.715007634833455
+    },
+    {
+      "review_id": "Q710e54fc9a131a",
+      "case_id": "T1_517",
+      "qid": "517",
+      "arm": "Q1",
+      "query": "The Constant Gardener Peter King policeman Fernando Meirelles Iracema",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 2966,
+      "latency_seconds": 14.395088650286198
+    },
+    {
+      "review_id": "Q8b435cc68e3cc3",
+      "case_id": "T1_517",
+      "qid": "517",
+      "arm": "Q2",
+      "query": "The Constant Gardener 2005 cast Peter King Nzioki Policeman Fernando Meirelles Iracema",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 496,
+      "latency_seconds": 3.280479857698083
+    },
+    {
+      "review_id": "Q3f7e9273ec5826",
+      "case_id": "T1_177",
+      "qid": "177",
+      "arm": "Q0",
+      "query": "2013 Nigeria Professional Football League final table Enugu Rangers points goal difference",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 10028,
+      "latency_seconds": 42.784384563565254
+    },
+    {
+      "review_id": "Q3d4189614a851a",
+      "case_id": "T1_177",
+      "qid": "177",
+      "arm": "Q1",
+      "query": "2011 Nigeria Premier League final table Enugu Rangers points goal difference",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 18240,
+      "latency_seconds": 74.74447419308126
+    },
+    {
+      "review_id": "Q18a40257b7ab2a",
+      "case_id": "T1_177",
+      "qid": "177",
+      "arm": "Q2",
+      "query": "Enugu Rangers Nigeria Premier League final league table 2011 2012 2013 2014 2015 2016 points goal difference position",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 6601,
+      "latency_seconds": 29.80317641608417
+    },
+    {
+      "review_id": "Q6a357d760f03de",
+      "case_id": "T2_177",
+      "qid": "177",
+      "arm": "Q0",
+      "query": "Enugu Rangers Nigeria Professional Football League final standings 2011 2012 2013 2014 2015 2016 points goal difference",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 5289,
+      "latency_seconds": 22.520632354542613
+    },
+    {
+      "review_id": "Q143a479f8f3af9",
+      "case_id": "T2_177",
+      "qid": "177",
+      "arm": "Q1",
+      "query": "2014 Nigeria Professional Football League final table Rangers International points goal difference",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Rangers International"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 5641,
+      "latency_seconds": 24.680117027834058
+    },
+    {
+      "review_id": "Q3fb059adfdb25b",
+      "case_id": "T2_177",
+      "qid": "177",
+      "arm": "Q2",
+      "query": "Enugu Rangers 2011 2012 2013 2014 2015 2016 Nigeria Premier League final table points goal difference",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 18574,
+      "latency_seconds": 77.57489717379212
+    },
+    {
+      "review_id": "Q9dc4af3e332162",
+      "case_id": "T2_1034",
+      "qid": "1034",
+      "arm": "Q0",
+      "query": "Heart Evangelista Business Administration university child born United States",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 10153,
+      "latency_seconds": 47.689899161458015
+    },
+    {
+      "review_id": "Qbfe6091872357d",
+      "case_id": "T2_1034",
+      "qid": "1034",
+      "arm": "Q1",
+      "query": "Heart Evangelista Business Administration university child born United States biography",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 13187,
+      "latency_seconds": 56.028300700709224
+    },
+    {
+      "review_id": "Q0a21a29c0af3eb",
+      "case_id": "T2_1034",
+      "qid": "1034",
+      "arm": "Q2",
+      "query": "Heart Evangelista Business Administration university child born United States",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 15381,
+      "latency_seconds": 73.77300226688385
+    },
+    {
+      "review_id": "Q0f3f682e1e176c",
+      "case_id": "T2_1094",
+      "qid": "1094",
+      "arm": "Q0",
+      "query": "Paris Saint-Germain club history founded merger split Paris FC Stade Saint-Germain Lille OSC history founded merger Olympique Lillois SC Fives name changes",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Paris FC",
+          "Stade Saint-Germain",
+          "Olympique Lillois",
+          "SC Fives"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 2682,
+      "latency_seconds": 13.524067217484117
+    },
+    {
+      "review_id": "Qcc5f2d41bba9c2",
+      "case_id": "T2_1094",
+      "qid": "1094",
+      "arm": "Q1",
+      "query": "Paris Saint-Germain Lille club history founded merger split name changes",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 13074,
+      "latency_seconds": 56.03616331145167
+    },
+    {
+      "review_id": "Q4e65a135597a0e",
+      "case_id": "T2_1094",
+      "qid": "1094",
+      "arm": "Q2",
+      "query": "Paris Saint-Germain founding discord Paris FC Lille OSC identity evolution history",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Paris FC"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 23309,
+      "latency_seconds": 105.4327071364969
+    },
+    {
+      "review_id": "Q6f1c7c09bb3e0e",
+      "case_id": "T1_546",
+      "qid": "546",
+      "arm": "Q0",
+      "query": "Ding Junhui English Open 2023 match results round by round Ma Hailong Michael White Liam Highfield Ronnie O'Sullivan",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Michael White",
+          "Liam Highfield",
+          "Ronnie O'Sullivan"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 16902,
+      "latency_seconds": 74.76904972828925
+    },
+    {
+      "review_id": "Qe18bff4d89359c",
+      "case_id": "T1_546",
+      "qid": "546",
+      "arm": "Q1",
+      "query": "Ding Junhui 2023 English Open David Grace Zak Surety John Higgins results",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "David Grace",
+          "Zak Surety",
+          "John Higgins"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 1168,
+      "latency_seconds": 6.121610444039106
+    },
+    {
+      "review_id": "Q2f58327a53315d",
+      "case_id": "T1_546",
+      "qid": "546",
+      "arm": "Q2",
+      "query": "Ding Junhui 2023 English Open results Ma Hailong 4-3 next matches 4-3 4-0 John Higgins",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "John Higgins"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 3185,
+      "latency_seconds": 15.727509139105678
+    },
+    {
+      "review_id": "Q59dc73243f6174",
+      "case_id": "T1_387",
+      "qid": "387",
+      "arm": "Q0",
+      "query": "\"Dean Dodrill\" \"Jazz Jackrabbit\" intro end animation \"8x11\" paper",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Jazz Jackrabbit"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 1691,
+      "latency_seconds": 8.492364248260856
+    },
+    {
+      "review_id": "Q335bd2f343fe3f",
+      "case_id": "T1_387",
+      "qid": "387",
+      "arm": "Q1",
+      "query": "Dean Dodrill Jazz Jackrabbit 2 intro end animations 8x11 paper",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Jazz Jackrabbit 2"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 499,
+      "latency_seconds": 2.5452376380562782
+    },
+    {
+      "review_id": "Q7422b375791377",
+      "case_id": "T1_387",
+      "qid": "387",
+      "arm": "Q2",
+      "query": "Dean Dodrill Jazz Jackrabbit 2 intro ending animations 8x11 paper",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Jazz Jackrabbit 2"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 2127,
+      "latency_seconds": 10.356306524947286
+    },
+    {
+      "review_id": "Q670c77caaad02b",
+      "case_id": "T2_580",
+      "qid": "580",
+      "arm": "Q0",
+      "query": "\"You're the Worst\" season 1 episode synopsis Jimmy Gretchen friends convince date",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "You're the Worst"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 2607,
+      "latency_seconds": 14.335028167814016
+    },
+    {
+      "review_id": "Qb987f907c41616",
+      "case_id": "T2_580",
+      "qid": "580",
+      "arm": "Q1",
+      "query": "You're the Worst season 1 episode guide Jimmy Gretchen date friends convince reconciliation",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "You're the Worst"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 7945,
+      "latency_seconds": 38.631835751235485
+    },
+    {
+      "review_id": "Q7e9230bd7a3fc2",
+      "case_id": "T2_580",
+      "qid": "580",
+      "arm": "Q2",
+      "query": "You're the Worst season 1 episode guide synopsis",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "You're the Worst"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 3837,
+      "latency_seconds": 17.86524046957493
+    },
+    {
+      "review_id": "Qd567851b233891",
+      "case_id": "T1_1094",
+      "qid": "1094",
+      "arm": "Q0",
+      "query": "Paris Saint-Germain Lille club history foundation merger name changes",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 9133,
+      "latency_seconds": 41.06677941046655
+    },
+    {
+      "review_id": "Q812a23497caf84",
+      "case_id": "T1_1094",
+      "qid": "1094",
+      "arm": "Q1",
+      "query": "Paris Saint-Germain history founded merger Paris FC Stade Saint-Germain Lille OSC history name changes iterations",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": true,
+        "leaking_values": [
+          "Paris FC",
+          "Stade Saint-Germain"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 1640,
+      "latency_seconds": 7.991166597232223
+    },
+    {
+      "review_id": "Q93713ec62bb643",
+      "case_id": "T1_1094",
+      "qid": "1094",
+      "arm": "Q2",
+      "query": "Paris Saint-Germain Lille OSC club history founded merger split name changes",
+      "error": null,
+      "review": {
+        "gap_alignment": true,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": false,
+        "confirmation_bias": false,
+        "unknown_targeting": true,
+        "leaking_values": [],
+        "specificity": "medium",
+        "reason": "Query uses the supplied range, observed entities and/or provisional H to seek the unresolved relation without an extra exact answer value."
+      },
+      "output_tokens": 8078,
+      "latency_seconds": 36.67143778130412
+    },
+    {
+      "review_id": "Q8196462c1a3057",
+      "case_id": "T2_435",
+      "qid": "435",
+      "arm": "Q0",
+      "query": "\"Why do we sing, why is there art?\" Forbes Africa May Oliver Mtukudzi albums",
+      "error": null,
+      "review": {
+        "gap_alignment": false,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": false,
+        "leaking_values": [
+          "Oliver Mtukudzi"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 2118,
+      "latency_seconds": 10.672826796770096
+    },
+    {
+      "review_id": "Q35dc02a610e484",
+      "case_id": "T2_435",
+      "qid": "435",
+      "arm": "Q1",
+      "query": "\"Why do we sing, why is there art?\" \"Forbes Africa\" Oliver Mtukudzi albums",
+      "error": null,
+      "review": {
+        "gap_alignment": false,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": false,
+        "leaking_values": [
+          "Oliver Mtukudzi"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 2268,
+      "latency_seconds": 11.656504914164543
+    },
+    {
+      "review_id": "Q0bfe80e0f4bac9",
+      "case_id": "T2_435",
+      "qid": "435",
+      "arm": "Q2",
+      "query": "Oliver Mtukudzi Forbes Africa May albums",
+      "error": null,
+      "review": {
+        "gap_alignment": false,
+        "source_type_alignment": true,
+        "unsupported_binding_leakage": true,
+        "confirmation_bias": true,
+        "unknown_targeting": false,
+        "leaking_values": [
+          "Oliver Mtukudzi"
+        ],
+        "specificity": "high",
+        "reason": "Query includes at least one exact entity, title, opponent, or club relation absent from the current question/W/H; packet 18 remains a table-discovery query despite its unobserved team-name variant."
+      },
+      "output_tokens": 2378,
+      "latency_seconds": 11.237915329635143
+    }
+  ]
+}
