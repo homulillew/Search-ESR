@@ -1,0 +1,5 @@
+# E1 gate interpretation before E2
+
+The user-approved original E1 gate defined Finding Precision as complete source support, and listed Gap Relevance as a separate measure. On that definition, P achieved support precision 46/46, recall 35/37, identity 1/1, temporal 2/2, and metadata overreach 0/46; all five original absolute thresholds pass. T had three, not five, clear identity/time errors, so the original conditional superiority test did not activate.
+
+The E1 implementation froze a stricter *combined* support-and-Gap-relevance precision and failed it at 42/46. That failure remains in `evidence_packet/results.json` and is not relabelled or removed. Four off-Gap but supported findings are retained as an admission hazard. This amendment is prospective: E2 is a separately frozen diagnostic authorized by the user after reviewing E1, and is **not** evidence that the original local frozen gate passed. E2 tests complete source support; full Claim eligibility (support plus Gap relevance and novelty) is reported separately so these concepts are never merged in the gate again.
