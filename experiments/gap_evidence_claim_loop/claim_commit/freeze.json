@@ -1,0 +1,1012 @@
+{
+  "frozen_at_utc": "2026-09-24T06:56:41.284400+00:00",
+  "git_head": "519782865f409d656925aaba674469da28a445f1",
+  "provider": {
+    "host": "api.deepseek.com",
+    "model": "deepseek-flash",
+    "timeout_seconds": 240,
+    "max_retries": 0
+  },
+  "source_hashes": {
+    "experiments/gap_evidence_claim_loop/PROTOCOL.md": "45dc0195579e1ec84c29d11d1f66c09db664e3d9e08921721c809b9752d1f2d4",
+    "experiments/gap_evidence_claim_loop/HYPOTHESES.md": "7fc1c3152dbab337f392157e7a49838d485b652f1c0f1d1bb5f41dae03cc7753",
+    "experiments/gap_evidence_claim_loop/STATE.md": "b424306306c9a50dbc0099ea91539f759cf3daa43e806d75bd4647b39115a95e",
+    "experiments/gap_evidence_claim_loop/FROZEN_STATE.md": "305dc8a694aea34fda2c2f00f9c9e57f1562fe48ec373d077c2020754ce4a050",
+    "experiments/gap_evidence_claim_loop/prompts/finding_verifier.md": "11cdab1637a605fec81d1ffec87eaa05ada8732450185dbca6a4c4b94c59d727",
+    "experiments/gap_evidence_claim_loop/claim_commit/PROTOCOL.md": "768ac167b14ab644930d23672e1b599bff131d63d49e56159fff3c9fa23f3d30",
+    "experiments/gap_evidence_claim_loop/claim_commit/REVIEW_RUBRIC.md": "9bf5d9708d918fe1576aacc079530ec55b00b25d6b0961a3ed1c89f3071eafff",
+    "experiments/gap_evidence_claim_loop/claim_commit/prepare_bank.py": "aae12068e1b49eacea43c4b8bd92c0dc364e5b3f86c32d82e7d93dedabef6003",
+    "experiments/gap_evidence_claim_loop/claim_commit/BANK.json": "f0321f8762d5725aeeaca310e5479722c560a5f622be274abceb707ccd16e9aa",
+    "experiments/gap_evidence_claim_loop/claim_commit/run.py": "bed31092f6485a3f0302f92f35bad376af5147bafa80a68917635fde402fd477",
+    "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json": "22f96b20a891a63763128e90bcb5e841d92f092a74290472c0096a3ffd886a70",
+    "experiments/gap_evidence_claim_loop/finding_extraction/outcomes.json": "f0b5b65026f557411ade543573f026a8730453b208bc80087053100067ed0a54",
+    "experiments/gap_evidence_claim_loop/finding_extraction/REVIEWS.json": "b25efc312f7db8e81dc6aa3d1547697afcbe6e867263a7fb8e3c0f2fdb1eafee",
+    "experiments/gap_evidence_claim_loop/finding_extraction/PRIVATE_MAPPING.json": "69e29011b2fca862d4c3dcf1415008e5288e2455b7d1182ee9112adafb83a542",
+    "experiments/gap_evidence_claim_loop/finding_extraction/results.json": "e26b7b064f3c3390ccaa661992e59325f4c1c96ea9b3fe25821347d16bbdbbb8",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14",
+    "experiments/model_backend_deepseek/cache_usage.py": "0fe723921efc5cb524539edcc436bd21994c5923fb10d2b6687cf9362560e8d6"
+  },
+  "prompt_sha256": "f89f360e8aa1f551d7bcb1068010666fb035a6d9d9cc13efc1b53640713094ea",
+  "schema_sha256": "2edb87db8157f98225e591e00d9178cce2071bbde7006e16731a00d9d61ee993",
+  "packet_order": [
+    "A_T3_435_0",
+    "A_T2_387_0",
+    "A_T3_580_1",
+    "A_T1_1094_0",
+    "A_T3_177_0",
+    "A_T2_517_0",
+    "B_00_V1_T2_546",
+    "A_T5_186_1",
+    "A_T7_186_1",
+    "A_T5_517_1",
+    "B_04_V2_T3_580",
+    "A_T5_186_2",
+    "A_T5_311_2",
+    "A_T2_387_1",
+    "B_05_V2_T3_177",
+    "A_T7_186_0",
+    "B_02_V1_T4_324",
+    "A_T5_517_0",
+    "B_06_V3_T3_546",
+    "A_T1_546_0",
+    "A_T5_311_1",
+    "A_T3_177_1",
+    "B_08_V4_T3_1094",
+    "A_T5_546_1",
+    "A_T5_546_2",
+    "A_T1_177_0",
+    "B_13_V5_T5_186",
+    "A_T1_517_1",
+    "B_10_V4_T3_1034",
+    "A_T3_435_1",
+    "A_T1_1034_0",
+    "B_14_V5_T5_311",
+    "A_T1_177_1",
+    "A_T1_517_0",
+    "A_T2_177_0",
+    "B_11_V4_T3_517",
+    "A_T1_387_0",
+    "A_T1_1094_1",
+    "A_T5_311_0",
+    "A_T5_186_0",
+    "B_03_V2_T3_435",
+    "A_T3_546_0",
+    "A_T1_580_0",
+    "B_12_V5_T7_186",
+    "B_09_V4_T2_435",
+    "A_T5_517_2",
+    "A_T2_435_0",
+    "A_T1_435_0",
+    "B_07_V3_T2_580",
+    "A_T5_546_0",
+    "A_T2_1094_0",
+    "B_01_V1_T2_387",
+    "A_T3_580_0"
+  ],
+  "packet_ids": [
+    "A_T1_546_0",
+    "A_T3_546_0",
+    "A_T1_1094_0",
+    "A_T1_1094_1",
+    "A_T2_1094_0",
+    "A_T1_517_0",
+    "A_T1_517_1",
+    "A_T2_517_0",
+    "A_T1_435_0",
+    "A_T2_435_0",
+    "A_T3_435_0",
+    "A_T3_435_1",
+    "A_T1_580_0",
+    "A_T3_580_0",
+    "A_T3_580_1",
+    "A_T1_177_0",
+    "A_T1_177_1",
+    "A_T2_177_0",
+    "A_T3_177_0",
+    "A_T3_177_1",
+    "A_T1_1034_0",
+    "A_T1_387_0",
+    "A_T2_387_0",
+    "A_T2_387_1",
+    "A_T5_546_0",
+    "A_T5_546_1",
+    "A_T5_546_2",
+    "A_T5_517_0",
+    "A_T5_517_1",
+    "A_T5_517_2",
+    "A_T5_311_0",
+    "A_T5_311_1",
+    "A_T5_311_2",
+    "A_T5_186_0",
+    "A_T5_186_1",
+    "A_T5_186_2",
+    "A_T7_186_0",
+    "A_T7_186_1",
+    "B_00_V1_T2_546",
+    "B_01_V1_T2_387",
+    "B_02_V1_T4_324",
+    "B_03_V2_T3_435",
+    "B_04_V2_T3_580",
+    "B_05_V2_T3_177",
+    "B_06_V3_T3_546",
+    "B_07_V3_T2_580",
+    "B_08_V4_T3_1094",
+    "B_09_V4_T2_435",
+    "B_10_V4_T3_1034",
+    "B_11_V4_T3_517",
+    "B_12_V5_T7_186",
+    "B_13_V5_T5_186",
+    "B_14_V5_T5_311"
+  ],
+  "qids_checkpoints": {
+    "A_T1_546_0": [
+      "546",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "546_support_opening",
+        "historical_ref": "W13",
+        "historical_doc_ref": "D10",
+        "checkpoint": "R1:25",
+        "text_sha256": "8929ccffff6cc4390f1c25d506f35fc374f81bb88e34e89ae4716034d2a59d2e"
+      }
+    ],
+    "A_T3_546_0": [
+      "546",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "546_open_full_run",
+        "historical_ref": "W13",
+        "historical_doc_ref": "D10",
+        "checkpoint": "R1:25",
+        "text_sha256": "8929ccffff6cc4390f1c25d506f35fc374f81bb88e34e89ae4716034d2a59d2e"
+      }
+    ],
+    "A_T1_1094_0": [
+      "1094",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "1094_support_messi",
+        "historical_ref": "W38",
+        "historical_doc_ref": "D34",
+        "checkpoint": "R1:69",
+        "text_sha256": "8bd1a641669a50f45a29bcf0f6c8bf3cb12c8dd0ada4ad4cea6313597d0eee85"
+      }
+    ],
+    "A_T1_1094_1": [
+      "1094",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "1094_support_messi",
+        "historical_ref": "W38",
+        "historical_doc_ref": "D34",
+        "checkpoint": "R1:69",
+        "text_sha256": "8bd1a641669a50f45a29bcf0f6c8bf3cb12c8dd0ada4ad4cea6313597d0eee85"
+      }
+    ],
+    "A_T2_1094_0": [
+      "1094",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "1094_refute_inter_lille",
+        "historical_ref": "W38",
+        "historical_doc_ref": "D34",
+        "checkpoint": "R1:69",
+        "text_sha256": "8bd1a641669a50f45a29bcf0f6c8bf3cb12c8dd0ada4ad4cea6313597d0eee85"
+      }
+    ],
+    "A_T1_517_0": [
+      "517",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "517_support_biography",
+        "historical_ref": "w_847088d110a745604b5159e5",
+        "historical_doc_ref": "67431",
+        "checkpoint": "event:16",
+        "text_sha256": "bf632626ce5ffb8c6f7c85ca4e3e5ad7949a2aa446c881ab500a2be5b4a981fc"
+      }
+    ],
+    "A_T1_517_1": [
+      "517",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "517_support_biography",
+        "historical_ref": "w_847088d110a745604b5159e5",
+        "historical_doc_ref": "67431",
+        "checkpoint": "event:16",
+        "text_sha256": "bf632626ce5ffb8c6f7c85ca4e3e5ad7949a2aa446c881ab500a2be5b4a981fc"
+      }
+    ],
+    "A_T2_517_0": [
+      "517",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "517_refute_birth_1979",
+        "historical_ref": "w_847088d110a745604b5159e5",
+        "historical_doc_ref": "67431",
+        "checkpoint": "event:16",
+        "text_sha256": "bf632626ce5ffb8c6f7c85ca4e3e5ad7949a2aa446c881ab500a2be5b4a981fc"
+      }
+    ],
+    "A_T1_435_0": [
+      "435",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "435_support_oliver_age",
+        "historical_ref": "w_d10a873c7f9c87b1d58df6eb",
+        "historical_doc_ref": "43657",
+        "checkpoint": "event:12",
+        "text_sha256": "6ff837bc2b0baf912957feb2a04e936d3984e488d6c0eea7bb06b95bcbc08292"
+      }
+    ],
+    "A_T2_435_0": [
+      "435",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "435_refute_miriam_age",
+        "historical_ref": "w_c695c833138d105df73d74a4",
+        "historical_doc_ref": "11427",
+        "checkpoint": "event:6",
+        "text_sha256": "e7b991806a8bb785663b2dcc489b118a507272e73ebbf555fbc9b7b805b5d09c"
+      }
+    ],
+    "A_T3_435_0": [
+      "435",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "435_open_full_identity",
+        "historical_ref": "w_d10a873c7f9c87b1d58df6eb",
+        "historical_doc_ref": "43657",
+        "checkpoint": "event:12",
+        "text_sha256": "6ff837bc2b0baf912957feb2a04e936d3984e488d6c0eea7bb06b95bcbc08292"
+      }
+    ],
+    "A_T3_435_1": [
+      "435",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "435_open_full_identity",
+        "historical_ref": "w_d10a873c7f9c87b1d58df6eb",
+        "historical_doc_ref": "43657",
+        "checkpoint": "event:12",
+        "text_sha256": "6ff837bc2b0baf912957feb2a04e936d3984e488d6c0eea7bb06b95bcbc08292"
+      }
+    ],
+    "A_T1_580_0": [
+      "580",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "580_support_birth_plot",
+        "historical_ref": "w_3f0b06b4cba0eda41784c085",
+        "historical_doc_ref": "78633",
+        "checkpoint": "event:2",
+        "text_sha256": "0f50a3513f9e2f3e2d7c0311f3a4882cafadad4673ef1d1e11dc83657d12d632"
+      }
+    ],
+    "A_T3_580_0": [
+      "580",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "580_open_all_seasons",
+        "historical_ref": "w_3f0b06b4cba0eda41784c085",
+        "historical_doc_ref": "78633",
+        "checkpoint": "event:2",
+        "text_sha256": "0f50a3513f9e2f3e2d7c0311f3a4882cafadad4673ef1d1e11dc83657d12d632"
+      }
+    ],
+    "A_T3_580_1": [
+      "580",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "580_open_all_seasons",
+        "historical_ref": "w_3f0b06b4cba0eda41784c085",
+        "historical_doc_ref": "78633",
+        "checkpoint": "event:2",
+        "text_sha256": "0f50a3513f9e2f3e2d7c0311f3a4882cafadad4673ef1d1e11dc83657d12d632"
+      }
+    ],
+    "A_T1_177_0": [
+      "177",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "177_support_13",
+        "historical_ref": "w_f9e5e8720a7c6d12c69bc393",
+        "historical_doc_ref": "86819",
+        "checkpoint": "event:2",
+        "text_sha256": "d613dc12908da35924fa596d511adae447db521a8c33d35d98937c938e83cc1c"
+      }
+    ],
+    "A_T1_177_1": [
+      "177",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "177_support_13",
+        "historical_ref": "w_f9e5e8720a7c6d12c69bc393",
+        "historical_doc_ref": "86819",
+        "checkpoint": "event:2",
+        "text_sha256": "d613dc12908da35924fa596d511adae447db521a8c33d35d98937c938e83cc1c"
+      }
+    ],
+    "A_T2_177_0": [
+      "177",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "177_refute_12",
+        "historical_ref": "w_f9e5e8720a7c6d12c69bc393",
+        "historical_doc_ref": "86819",
+        "checkpoint": "event:2",
+        "text_sha256": "d613dc12908da35924fa596d511adae447db521a8c33d35d98937c938e83cc1c"
+      }
+    ],
+    "A_T3_177_0": [
+      "177",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "177_open_league",
+        "historical_ref": "w_f9e5e8720a7c6d12c69bc393",
+        "historical_doc_ref": "86819",
+        "checkpoint": "event:2",
+        "text_sha256": "d613dc12908da35924fa596d511adae447db521a8c33d35d98937c938e83cc1c"
+      }
+    ],
+    "A_T3_177_1": [
+      "177",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "177_open_league",
+        "historical_ref": "w_f9e5e8720a7c6d12c69bc393",
+        "historical_doc_ref": "86819",
+        "checkpoint": "event:2",
+        "text_sha256": "d613dc12908da35924fa596d511adae447db521a8c33d35d98937c938e83cc1c"
+      }
+    ],
+    "A_T1_1034_0": [
+      "1034",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "1034_support_model",
+        "historical_ref": "w_5dc63ed12276c51dff9f14e4",
+        "historical_doc_ref": "24300",
+        "checkpoint": "event:2",
+        "text_sha256": "6995c514f89a090bd2744a261bce6607eff7121788a1350133571e270e2086c5"
+      }
+    ],
+    "A_T1_387_0": [
+      "387",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "387_support_dean_equipment",
+        "historical_ref": "w_12cea48292e6ff0cbce7a031",
+        "historical_doc_ref": "5266",
+        "checkpoint": "event:2",
+        "text_sha256": "0c5eb6b19b35f3ffe7746476e6352fbe4e8e8f88edf7a5e7ca5a68fa106045e2"
+      }
+    ],
+    "A_T2_387_0": [
+      "387",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "387_refute_no_pc",
+        "historical_ref": "w_12cea48292e6ff0cbce7a031",
+        "historical_doc_ref": "5266",
+        "checkpoint": "event:2",
+        "text_sha256": "0c5eb6b19b35f3ffe7746476e6352fbe4e8e8f88edf7a5e7ca5a68fa106045e2"
+      }
+    ],
+    "A_T2_387_1": [
+      "387",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "387_refute_no_pc",
+        "historical_ref": "w_12cea48292e6ff0cbce7a031",
+        "historical_doc_ref": "5266",
+        "checkpoint": "event:2",
+        "text_sha256": "0c5eb6b19b35f3ffe7746476e6352fbe4e8e8f88edf7a5e7ca5a68fa106045e2"
+      }
+    ],
+    "A_T5_546_0": [
+      "546",
+      {
+        "source": "prior_stage_D_real_tool",
+        "case_id": "C_location_546_bio",
+        "historical_ref": "W32",
+        "historical_doc_ref": "D17",
+        "text_sha256": "4920eaa06d1b35464cdbd286d88ce2c9d0429dd0e39e267c987c59d4b0d182f2"
+      }
+    ],
+    "A_T5_546_1": [
+      "546",
+      {
+        "source": "prior_stage_D_real_tool",
+        "case_id": "C_location_546_bio",
+        "historical_ref": "W32",
+        "historical_doc_ref": "D17",
+        "text_sha256": "4920eaa06d1b35464cdbd286d88ce2c9d0429dd0e39e267c987c59d4b0d182f2"
+      }
+    ],
+    "A_T5_546_2": [
+      "546",
+      {
+        "source": "prior_stage_D_real_tool",
+        "case_id": "C_location_546_bio",
+        "historical_ref": "W32",
+        "historical_doc_ref": "D17",
+        "text_sha256": "4920eaa06d1b35464cdbd286d88ce2c9d0429dd0e39e267c987c59d4b0d182f2"
+      }
+    ],
+    "A_T5_517_0": [
+      "517",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "517_support_biography",
+        "historical_ref": "w_847088d110a745604b5159e5",
+        "historical_doc_ref": "67431",
+        "checkpoint": "event:16",
+        "text_sha256": "bf632626ce5ffb8c6f7c85ca4e3e5ad7949a2aa446c881ab500a2be5b4a981fc"
+      }
+    ],
+    "A_T5_517_1": [
+      "517",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "517_support_biography",
+        "historical_ref": "w_847088d110a745604b5159e5",
+        "historical_doc_ref": "67431",
+        "checkpoint": "event:16",
+        "text_sha256": "bf632626ce5ffb8c6f7c85ca4e3e5ad7949a2aa446c881ab500a2be5b4a981fc"
+      }
+    ],
+    "A_T5_517_2": [
+      "517",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "517_support_biography",
+        "historical_ref": "w_847088d110a745604b5159e5",
+        "historical_doc_ref": "67431",
+        "checkpoint": "event:16",
+        "text_sha256": "bf632626ce5ffb8c6f7c85ca4e3e5ad7949a2aa446c881ab500a2be5b4a981fc"
+      }
+    ],
+    "A_T5_311_0": [
+      "311",
+      {
+        "source": "experiments/runs/v000_baseline/qid_311/20260917T090239.474309Z/events.jsonl",
+        "event_seq": 4,
+        "rank": 3,
+        "historical_doc_ref": "20521",
+        "historical_ref": null,
+        "text_sha256": "f2994897ea7877bb7b16e9a95f56953b97972308c88327d6cd647669f68ab5a3"
+      }
+    ],
+    "A_T5_311_1": [
+      "311",
+      {
+        "source": "experiments/runs/v000_baseline/qid_311/20260917T090239.474309Z/events.jsonl",
+        "event_seq": 4,
+        "rank": 3,
+        "historical_doc_ref": "20521",
+        "historical_ref": null,
+        "text_sha256": "f2994897ea7877bb7b16e9a95f56953b97972308c88327d6cd647669f68ab5a3"
+      }
+    ],
+    "A_T5_311_2": [
+      "311",
+      {
+        "source": "experiments/runs/v000_baseline/qid_311/20260917T090239.474309Z/events.jsonl",
+        "event_seq": 4,
+        "rank": 3,
+        "historical_doc_ref": "20521",
+        "historical_ref": null,
+        "text_sha256": "f2994897ea7877bb7b16e9a95f56953b97972308c88327d6cd647669f68ab5a3"
+      }
+    ],
+    "A_T5_186_0": [
+      "186",
+      {
+        "source": "experiments/runs/v000_baseline/qid_186/20260917T084428.558480Z/events.jsonl",
+        "event_seq": 8,
+        "rank": 5,
+        "historical_doc_ref": "39978",
+        "historical_ref": null,
+        "text_sha256": "71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d"
+      }
+    ],
+    "A_T5_186_1": [
+      "186",
+      {
+        "source": "experiments/runs/v000_baseline/qid_186/20260917T084428.558480Z/events.jsonl",
+        "event_seq": 8,
+        "rank": 5,
+        "historical_doc_ref": "39978",
+        "historical_ref": null,
+        "text_sha256": "71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d"
+      }
+    ],
+    "A_T5_186_2": [
+      "186",
+      {
+        "source": "experiments/runs/v000_baseline/qid_186/20260917T084428.558480Z/events.jsonl",
+        "event_seq": 8,
+        "rank": 5,
+        "historical_doc_ref": "39978",
+        "historical_ref": null,
+        "text_sha256": "71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d"
+      }
+    ],
+    "A_T7_186_0": [
+      "186",
+      {
+        "source": "experiments/runs/v000_baseline/qid_186/20260917T084428.558480Z/events.jsonl",
+        "event_seq": 8,
+        "rank": 5,
+        "historical_doc_ref": "39978",
+        "historical_ref": null,
+        "text_sha256": "71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d"
+      }
+    ],
+    "A_T7_186_1": [
+      "186",
+      {
+        "source": "experiments/runs/v000_baseline/qid_186/20260917T084428.558480Z/events.jsonl",
+        "event_seq": 8,
+        "rank": 5,
+        "historical_doc_ref": "39978",
+        "historical_ref": null,
+        "text_sha256": "71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d"
+      }
+    ],
+    "B_00_V1_T2_546": [
+      "546",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "546_refute_opening_loss",
+        "historical_ref": "W13",
+        "historical_doc_ref": "D10",
+        "checkpoint": "R1:25",
+        "text_sha256": "8929ccffff6cc4390f1c25d506f35fc374f81bb88e34e89ae4716034d2a59d2e"
+      }
+    ],
+    "B_01_V1_T2_387": [
+      "387",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "387_refute_no_pc",
+        "historical_ref": "w_12cea48292e6ff0cbce7a031",
+        "historical_doc_ref": "5266",
+        "checkpoint": "event:2",
+        "text_sha256": "0c5eb6b19b35f3ffe7746476e6352fbe4e8e8f88edf7a5e7ca5a68fa106045e2"
+      }
+    ],
+    "B_02_V1_T4_324": [
+      "324",
+      {
+        "source": "experiments/runs/v000_baseline/qid_324/20260917T090903.066977Z/events.jsonl",
+        "event_seq": 4,
+        "rank": 3,
+        "historical_doc_ref": "51275",
+        "historical_ref": null,
+        "text_sha256": "5154b874a5fbf8b2f7cf7db75e766f21aafa29c39365c4af167656e18b5c9176"
+      }
+    ],
+    "B_03_V2_T3_435": [
+      "435",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "435_open_full_identity",
+        "historical_ref": "w_d10a873c7f9c87b1d58df6eb",
+        "historical_doc_ref": "43657",
+        "checkpoint": "event:12",
+        "text_sha256": "6ff837bc2b0baf912957feb2a04e936d3984e488d6c0eea7bb06b95bcbc08292"
+      }
+    ],
+    "B_04_V2_T3_580": [
+      "580",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "580_open_all_seasons",
+        "historical_ref": "w_3f0b06b4cba0eda41784c085",
+        "historical_doc_ref": "78633",
+        "checkpoint": "event:2",
+        "text_sha256": "0f50a3513f9e2f3e2d7c0311f3a4882cafadad4673ef1d1e11dc83657d12d632"
+      }
+    ],
+    "B_05_V2_T3_177": [
+      "177",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "177_open_league",
+        "historical_ref": "w_f9e5e8720a7c6d12c69bc393",
+        "historical_doc_ref": "86819",
+        "checkpoint": "event:2",
+        "text_sha256": "d613dc12908da35924fa596d511adae447db521a8c33d35d98937c938e83cc1c"
+      }
+    ],
+    "B_06_V3_T3_546": [
+      "546",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "546_open_full_run",
+        "historical_ref": "W13",
+        "historical_doc_ref": "D10",
+        "checkpoint": "R1:25",
+        "text_sha256": "8929ccffff6cc4390f1c25d506f35fc374f81bb88e34e89ae4716034d2a59d2e"
+      }
+    ],
+    "B_07_V3_T2_580": [
+      "580",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "580_refute_sister_birth",
+        "historical_ref": "w_3f0b06b4cba0eda41784c085",
+        "historical_doc_ref": "78633",
+        "checkpoint": "event:2",
+        "text_sha256": "0f50a3513f9e2f3e2d7c0311f3a4882cafadad4673ef1d1e11dc83657d12d632"
+      }
+    ],
+    "B_08_V4_T3_1094": [
+      "1094",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "1094_open_full_match",
+        "historical_ref": "W42",
+        "historical_doc_ref": "D37",
+        "checkpoint": "R1:69",
+        "text_sha256": "fb599295cca74c24e72c6f612e25c7133ee8ae4884a655b07bdfbcf710c77acc"
+      }
+    ],
+    "B_09_V4_T2_435": [
+      "435",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "435_refute_miriam_age",
+        "historical_ref": "w_c695c833138d105df73d74a4",
+        "historical_doc_ref": "11427",
+        "checkpoint": "event:6",
+        "text_sha256": "e7b991806a8bb785663b2dcc489b118a507272e73ebbf555fbc9b7b805b5d09c"
+      }
+    ],
+    "B_10_V4_T3_1034": [
+      "1034",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "1034_open_education_child",
+        "historical_ref": "w_5dc63ed12276c51dff9f14e4",
+        "historical_doc_ref": "24300",
+        "checkpoint": "event:2",
+        "text_sha256": "6995c514f89a090bd2744a261bce6607eff7121788a1350133571e270e2086c5"
+      }
+    ],
+    "B_11_V4_T3_517": [
+      "517",
+      {
+        "source": "stage_A_review_packet",
+        "case_id": "517_open_policeman",
+        "historical_ref": "w_847088d110a745604b5159e5",
+        "historical_doc_ref": "67431",
+        "checkpoint": "event:16",
+        "text_sha256": "bf632626ce5ffb8c6f7c85ca4e3e5ad7949a2aa446c881ab500a2be5b4a981fc"
+      }
+    ],
+    "B_12_V5_T7_186": [
+      "186",
+      {
+        "source": "experiments/runs/v000_baseline/qid_186/20260917T084428.558480Z/events.jsonl",
+        "event_seq": 8,
+        "rank": 5,
+        "historical_doc_ref": "39978",
+        "historical_ref": null,
+        "text_sha256": "71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d"
+      }
+    ],
+    "B_13_V5_T5_186": [
+      "186",
+      {
+        "source": "experiments/runs/v000_baseline/qid_186/20260917T084428.558480Z/events.jsonl",
+        "event_seq": 8,
+        "rank": 5,
+        "historical_doc_ref": "39978",
+        "historical_ref": null,
+        "text_sha256": "71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d"
+      }
+    ],
+    "B_14_V5_T5_311": [
+      "311",
+      {
+        "source": "experiments/runs/v000_baseline/qid_311/20260917T090239.474309Z/events.jsonl",
+        "event_seq": 4,
+        "rank": 3,
+        "historical_doc_ref": "20521",
+        "historical_ref": null,
+        "text_sha256": "f2994897ea7877bb7b16e9a95f56953b97972308c88327d6cd647669f68ab5a3"
+      }
+    ]
+  },
+  "gap_hashes": {
+    "A_T1_546_0": "e01b0a66669170ab875cd278153c74975fca017ac9085e1204590422531f7a84",
+    "A_T3_546_0": "051b65aaf6c0e2daa08bd52ab7626a4546d78b82238fde98423989a9682f16f9",
+    "A_T1_1094_0": "90e6d153606c952c5196cab9bb3096644d667ec801cd3caa41dd71ec62d61ae3",
+    "A_T1_1094_1": "90e6d153606c952c5196cab9bb3096644d667ec801cd3caa41dd71ec62d61ae3",
+    "A_T2_1094_0": "fee035c905658434cae297c36a77e2652747fb31d5af146710bb530a0c0edb13",
+    "A_T1_517_0": "30ac906b1ec8750eb38f67498992f535adeaa3bef312f39185a02db3ebdb1eb8",
+    "A_T1_517_1": "30ac906b1ec8750eb38f67498992f535adeaa3bef312f39185a02db3ebdb1eb8",
+    "A_T2_517_0": "d7860f379287cc25efd9cc2b80fd50cba40f6b508b03f39ebc1aaa56fb10d3f0",
+    "A_T1_435_0": "5a87545cee9e92bb399ef2c083f1c82bcdde05965c3b66baf450a0f0d60b0c97",
+    "A_T2_435_0": "471014f1eb94d5bc44352d9ef4d5a40c6cf2c5aae85ed8deec27b1ce73417ccd",
+    "A_T3_435_0": "08c22b07372677b269ac97763d086083fd1618a7656bb6d817572c730428b17f",
+    "A_T3_435_1": "08c22b07372677b269ac97763d086083fd1618a7656bb6d817572c730428b17f",
+    "A_T1_580_0": "3ba37fc18b0da36abe3fe6c776fdb096f2566fc311f011848ade8db15d101d5f",
+    "A_T3_580_0": "f2259cdb4a8c0ef6e3016b64f5ab2a8970378ddc6860da83484f96bee609f15c",
+    "A_T3_580_1": "f2259cdb4a8c0ef6e3016b64f5ab2a8970378ddc6860da83484f96bee609f15c",
+    "A_T1_177_0": "86e533351c4391149f13a2a4bff5e7bce897f9601a7dbc2bf19a7fe1ae987065",
+    "A_T1_177_1": "86e533351c4391149f13a2a4bff5e7bce897f9601a7dbc2bf19a7fe1ae987065",
+    "A_T2_177_0": "e8a79af260729aed7b0e8c9c449dd3b22517c1a7b1c9e23b1d970692bdc1d14a",
+    "A_T3_177_0": "f809827b0015bde4d733ea8b479f6cd29e6c6b989e7785b35e95ba146ca33d41",
+    "A_T3_177_1": "f809827b0015bde4d733ea8b479f6cd29e6c6b989e7785b35e95ba146ca33d41",
+    "A_T1_1034_0": "d2157e82a08f28618be24686cdc901b2d43e53201a9a01c1229da3fec3c6d279",
+    "A_T1_387_0": "255b6895d6a9205095f25356ca3c6a762a4a4e7bc45e11df6678a13a72d35ade",
+    "A_T2_387_0": "f9ee70ce339d83221a4918e9d8b3537c7463427f13a6e467311fd9920e0ccc80",
+    "A_T2_387_1": "f9ee70ce339d83221a4918e9d8b3537c7463427f13a6e467311fd9920e0ccc80",
+    "A_T5_546_0": "3ae07dd023f63f6528f5e43bf083d1979f7847ce726e164d9d0368188d2cddef",
+    "A_T5_546_1": "3ae07dd023f63f6528f5e43bf083d1979f7847ce726e164d9d0368188d2cddef",
+    "A_T5_546_2": "3ae07dd023f63f6528f5e43bf083d1979f7847ce726e164d9d0368188d2cddef",
+    "A_T5_517_0": "3805007e0e161f2bac9a9b7388b0db0cfdec3baf45fa39f81eb8fe9bee879eb7",
+    "A_T5_517_1": "3805007e0e161f2bac9a9b7388b0db0cfdec3baf45fa39f81eb8fe9bee879eb7",
+    "A_T5_517_2": "3805007e0e161f2bac9a9b7388b0db0cfdec3baf45fa39f81eb8fe9bee879eb7",
+    "A_T5_311_0": "c37ed776dab02df090413d752792799ba78e3b263514b15494d2d4ea882573b0",
+    "A_T5_311_1": "c37ed776dab02df090413d752792799ba78e3b263514b15494d2d4ea882573b0",
+    "A_T5_311_2": "c37ed776dab02df090413d752792799ba78e3b263514b15494d2d4ea882573b0",
+    "A_T5_186_0": "4790c9b7284f2f55be84dcb7e647be1b37dd539f659d35dfb6c031bedc42ce38",
+    "A_T5_186_1": "4790c9b7284f2f55be84dcb7e647be1b37dd539f659d35dfb6c031bedc42ce38",
+    "A_T5_186_2": "4790c9b7284f2f55be84dcb7e647be1b37dd539f659d35dfb6c031bedc42ce38",
+    "A_T7_186_0": "586adb362b7d7aae5c8ef4bad04e65c6dfd5dd1235ade60c57579f0acfb789a2",
+    "A_T7_186_1": "586adb362b7d7aae5c8ef4bad04e65c6dfd5dd1235ade60c57579f0acfb789a2",
+    "B_00_V1_T2_546": "f3b1e53e4601feffae97a89d3e2087a8197f711fd1b8e034de1e80da51cc31f1",
+    "B_01_V1_T2_387": "f9ee70ce339d83221a4918e9d8b3537c7463427f13a6e467311fd9920e0ccc80",
+    "B_02_V1_T4_324": "613cae94ae0e958adc8ba9d1da4021fe2f136e41b85c64a07bbfce9336287fc4",
+    "B_03_V2_T3_435": "08c22b07372677b269ac97763d086083fd1618a7656bb6d817572c730428b17f",
+    "B_04_V2_T3_580": "f2259cdb4a8c0ef6e3016b64f5ab2a8970378ddc6860da83484f96bee609f15c",
+    "B_05_V2_T3_177": "f809827b0015bde4d733ea8b479f6cd29e6c6b989e7785b35e95ba146ca33d41",
+    "B_06_V3_T3_546": "051b65aaf6c0e2daa08bd52ab7626a4546d78b82238fde98423989a9682f16f9",
+    "B_07_V3_T2_580": "5c916b644c087b0084e1d299c48f6dca1ddbdad9e56bf40873c204c8f5a90ae3",
+    "B_08_V4_T3_1094": "e5db3e04a07aa7ae4f4659e818a74310c7d26e754512e6ac58e5f6c806acba2f",
+    "B_09_V4_T2_435": "471014f1eb94d5bc44352d9ef4d5a40c6cf2c5aae85ed8deec27b1ce73417ccd",
+    "B_10_V4_T3_1034": "96a9a7ed17ee3da4ec473e415f9c6f2be0c9de00b0950e77c3f578c52f4b2652",
+    "B_11_V4_T3_517": "92280a12c562386b917b27a78aed3fa7b39dbab9786c616782cf574dd964f32d",
+    "B_12_V5_T7_186": "586adb362b7d7aae5c8ef4bad04e65c6dfd5dd1235ade60c57579f0acfb789a2",
+    "B_13_V5_T5_186": "4790c9b7284f2f55be84dcb7e647be1b37dd539f659d35dfb6c031bedc42ce38",
+    "B_14_V5_T5_311": "c37ed776dab02df090413d752792799ba78e3b263514b15494d2d4ea882573b0"
+  },
+  "existing_claim_hashes": {
+    "A_T1_546_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T3_546_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T1_1094_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T1_1094_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T2_1094_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T1_517_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T1_517_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T2_517_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T1_435_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T2_435_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T3_435_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T3_435_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T1_580_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T3_580_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T3_580_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T1_177_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T1_177_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T2_177_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T3_177_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T3_177_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T1_1034_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T1_387_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T2_387_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T2_387_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_546_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_546_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_546_2": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_517_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_517_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_517_2": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_311_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_311_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_311_2": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_186_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_186_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T5_186_2": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T7_186_0": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "A_T7_186_1": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_00_V1_T2_546": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_01_V1_T2_387": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_02_V1_T4_324": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_03_V2_T3_435": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_04_V2_T3_580": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_05_V2_T3_177": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_06_V3_T3_546": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_07_V3_T2_580": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_08_V4_T3_1094": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_09_V4_T2_435": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_10_V4_T3_1034": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_11_V4_T3_517": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_12_V5_T7_186": "18d46bc9cf39e92feee160232f259dc1d43010efbb36b6103a0e062996bad406",
+    "B_13_V5_T5_186": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "B_14_V5_T5_311": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "observation_hashes": {
+    "A_T1_546_0": "87e5b45b2573c6a9489ce7d730973a404c6cb5d2775794097ca3c4c9d1019356",
+    "A_T3_546_0": "87e5b45b2573c6a9489ce7d730973a404c6cb5d2775794097ca3c4c9d1019356",
+    "A_T1_1094_0": "59fd5044afea598f8fc6bbe240daa3a42fc89b407735b7caa7623a2b90cf0bf9",
+    "A_T1_1094_1": "59fd5044afea598f8fc6bbe240daa3a42fc89b407735b7caa7623a2b90cf0bf9",
+    "A_T2_1094_0": "59fd5044afea598f8fc6bbe240daa3a42fc89b407735b7caa7623a2b90cf0bf9",
+    "A_T1_517_0": "d7aad5f84a676dfb8d487fe6addd21ee74e2a1e0e6aad9342126860843b5e2be",
+    "A_T1_517_1": "d7aad5f84a676dfb8d487fe6addd21ee74e2a1e0e6aad9342126860843b5e2be",
+    "A_T2_517_0": "d7aad5f84a676dfb8d487fe6addd21ee74e2a1e0e6aad9342126860843b5e2be",
+    "A_T1_435_0": "2bae73d0cb85a17bfb31df3b6f3843c9e26bfb9ec5f74a10a8f6555af4f323d6",
+    "A_T2_435_0": "388873356eeeb8239ac0851dcb64c2dd8d8321d091b1d68d64629916ee31659b",
+    "A_T3_435_0": "2bae73d0cb85a17bfb31df3b6f3843c9e26bfb9ec5f74a10a8f6555af4f323d6",
+    "A_T3_435_1": "2bae73d0cb85a17bfb31df3b6f3843c9e26bfb9ec5f74a10a8f6555af4f323d6",
+    "A_T1_580_0": "21d9f55c3aaba8779c0690ce7356400268524ad952cfb3062e7cc6fca0ee0a1e",
+    "A_T3_580_0": "21d9f55c3aaba8779c0690ce7356400268524ad952cfb3062e7cc6fca0ee0a1e",
+    "A_T3_580_1": "21d9f55c3aaba8779c0690ce7356400268524ad952cfb3062e7cc6fca0ee0a1e",
+    "A_T1_177_0": "0938007bcf4cef5276ae4f7c47460ed7407069c7aea05938e3cc828cca2ae701",
+    "A_T1_177_1": "0938007bcf4cef5276ae4f7c47460ed7407069c7aea05938e3cc828cca2ae701",
+    "A_T2_177_0": "0938007bcf4cef5276ae4f7c47460ed7407069c7aea05938e3cc828cca2ae701",
+    "A_T3_177_0": "0938007bcf4cef5276ae4f7c47460ed7407069c7aea05938e3cc828cca2ae701",
+    "A_T3_177_1": "0938007bcf4cef5276ae4f7c47460ed7407069c7aea05938e3cc828cca2ae701",
+    "A_T1_1034_0": "f747321fb716f973bcecd32b0dcba6ad4c6dfe4cb0549fc0fd41be26e8774aaf",
+    "A_T1_387_0": "07770a86b01496bd23f3def5abe8ffe52c25bdf83dfe7d061f9107d137999065",
+    "A_T2_387_0": "07770a86b01496bd23f3def5abe8ffe52c25bdf83dfe7d061f9107d137999065",
+    "A_T2_387_1": "07770a86b01496bd23f3def5abe8ffe52c25bdf83dfe7d061f9107d137999065",
+    "A_T5_546_0": "c509ac33ce0342020c9dafbf693bd5151b2e188aec36c57748ec87544fea3736",
+    "A_T5_546_1": "c509ac33ce0342020c9dafbf693bd5151b2e188aec36c57748ec87544fea3736",
+    "A_T5_546_2": "c509ac33ce0342020c9dafbf693bd5151b2e188aec36c57748ec87544fea3736",
+    "A_T5_517_0": "d7aad5f84a676dfb8d487fe6addd21ee74e2a1e0e6aad9342126860843b5e2be",
+    "A_T5_517_1": "d7aad5f84a676dfb8d487fe6addd21ee74e2a1e0e6aad9342126860843b5e2be",
+    "A_T5_517_2": "d7aad5f84a676dfb8d487fe6addd21ee74e2a1e0e6aad9342126860843b5e2be",
+    "A_T5_311_0": "06a4fafc378ac4e228ef4db34de32b35c4df0cbc693cbd0ea1c322fdd8e70259",
+    "A_T5_311_1": "06a4fafc378ac4e228ef4db34de32b35c4df0cbc693cbd0ea1c322fdd8e70259",
+    "A_T5_311_2": "06a4fafc378ac4e228ef4db34de32b35c4df0cbc693cbd0ea1c322fdd8e70259",
+    "A_T5_186_0": "175f21aa63bf6a6a34df2ef847f06c389df0f48effb8a7b1e2760d7cdf793217",
+    "A_T5_186_1": "175f21aa63bf6a6a34df2ef847f06c389df0f48effb8a7b1e2760d7cdf793217",
+    "A_T5_186_2": "175f21aa63bf6a6a34df2ef847f06c389df0f48effb8a7b1e2760d7cdf793217",
+    "A_T7_186_0": "dcc829dc53ec19792c373d1564de74625b1c474cce789827bf25bafe9b8684e1",
+    "A_T7_186_1": "dcc829dc53ec19792c373d1564de74625b1c474cce789827bf25bafe9b8684e1",
+    "B_00_V1_T2_546": "87e5b45b2573c6a9489ce7d730973a404c6cb5d2775794097ca3c4c9d1019356",
+    "B_01_V1_T2_387": "07770a86b01496bd23f3def5abe8ffe52c25bdf83dfe7d061f9107d137999065",
+    "B_02_V1_T4_324": "15a18ab91e3c8e4f377d44b2c7a7699249481f76cf7fa028546f74c52571cdfd",
+    "B_03_V2_T3_435": "2bae73d0cb85a17bfb31df3b6f3843c9e26bfb9ec5f74a10a8f6555af4f323d6",
+    "B_04_V2_T3_580": "21d9f55c3aaba8779c0690ce7356400268524ad952cfb3062e7cc6fca0ee0a1e",
+    "B_05_V2_T3_177": "0938007bcf4cef5276ae4f7c47460ed7407069c7aea05938e3cc828cca2ae701",
+    "B_06_V3_T3_546": "87e5b45b2573c6a9489ce7d730973a404c6cb5d2775794097ca3c4c9d1019356",
+    "B_07_V3_T2_580": "21d9f55c3aaba8779c0690ce7356400268524ad952cfb3062e7cc6fca0ee0a1e",
+    "B_08_V4_T3_1094": "6a0aa44e6438cd898649d9bcae78aec0b4d324eb9770450502ad1765b31f16b2",
+    "B_09_V4_T2_435": "388873356eeeb8239ac0851dcb64c2dd8d8321d091b1d68d64629916ee31659b",
+    "B_10_V4_T3_1034": "f747321fb716f973bcecd32b0dcba6ad4c6dfe4cb0549fc0fd41be26e8774aaf",
+    "B_11_V4_T3_517": "d7aad5f84a676dfb8d487fe6addd21ee74e2a1e0e6aad9342126860843b5e2be",
+    "B_12_V5_T7_186": "dcc829dc53ec19792c373d1564de74625b1c474cce789827bf25bafe9b8684e1",
+    "B_13_V5_T5_186": "175f21aa63bf6a6a34df2ef847f06c389df0f48effb8a7b1e2760d7cdf793217",
+    "B_14_V5_T5_311": "06a4fafc378ac4e228ef4db34de32b35c4df0cbc693cbd0ea1c322fdd8e70259"
+  },
+  "finding_hashes": {
+    "A_T1_546_0": "9a391513548cd4224a6ad335031daf73bdf88eadef0a581c74cad8daf0122361",
+    "A_T3_546_0": "1122af0df8ae0d2cf3da6b794e9cf16a3ea65eac20bec273dc9df1fe3b5f74f7",
+    "A_T1_1094_0": "0c920c3ec3110b29c3ac2fc6af7299c8cbf07307a7c449696e705e960a7c01b4",
+    "A_T1_1094_1": "b4203737d54378e18b624c9d46287a3ba2d8e6d00e482808a4c6af1332512e54",
+    "A_T2_1094_0": "49f1bb7d3b2b8f7dc12233d7afc8ba51bccd5671aaf89ab4e12329ce88fffd22",
+    "A_T1_517_0": "89ca42d03c7bb8d43f4a06d7943e7394aeb0bc222b635b2e15f237860f5842a6",
+    "A_T1_517_1": "4502ab45fb54a59d77f466b6e4c4003620fa42e10806af9e6e0c77417c2fbc0a",
+    "A_T2_517_0": "129fac23bdbb9e351e73116a2d4d58f89a8454b79f0a0fd12d928c7edd06bbef",
+    "A_T1_435_0": "807c445e8221d08ea8341647e0ccec15015cd06a528e41e9f0b0fa7c2584883f",
+    "A_T2_435_0": "7e25b0b19ca4a7992948b972b253b0e7acf9d022a8afa57ff9854624494b8c1a",
+    "A_T3_435_0": "b828c7184f8927b1de168068b068b165df6478620f583e6c0427de6ee00d21d7",
+    "A_T3_435_1": "77272411b70dde09e194abf581ed6346528d42d721d820a241b3e0fcbe079c4b",
+    "A_T1_580_0": "083bf3a0829591706f74d8b7b86d959163b59710f73b24caebcb67916cbc3bb7",
+    "A_T3_580_0": "85c9ea82009e4f008e70e3da7475771a98ffc0dbf4b179f5328fde360eae3b4f",
+    "A_T3_580_1": "3f2ac4b778fa2eee7dffa4b815fbcaef35f311648932cdb78f15ae426d8d0d3d",
+    "A_T1_177_0": "0ab9f60e46c0f07ac116df8981b5af46e16be038ca5dbb4582affc2be0e906d6",
+    "A_T1_177_1": "9a087027bf9439b8598d7b203245ea65bf3ce4cbb13961ab41af70a69e0caab1",
+    "A_T2_177_0": "09a39a5ef39091936ea9f09f18cfc7a5e7a4598150b131ef146119a5aba4617e",
+    "A_T3_177_0": "0ab9f60e46c0f07ac116df8981b5af46e16be038ca5dbb4582affc2be0e906d6",
+    "A_T3_177_1": "9a087027bf9439b8598d7b203245ea65bf3ce4cbb13961ab41af70a69e0caab1",
+    "A_T1_1034_0": "b49b50c9ecbc2dd4ece7c30359e8ffccaa61f01f2e51fdf9895e2013a6ea999f",
+    "A_T1_387_0": "9b2006a26e694fc682e056e365a979acbc29fb156fd408bee61af866bc954d4b",
+    "A_T2_387_0": "aa6a38c35816d6453b8ebc53bc79ef438f28f7bdcfd476ec8e51627921d82195",
+    "A_T2_387_1": "de48d0f8a6711f5a2b6f9b11522bea5d97192757db4a47c2e112cb49064da7d1",
+    "A_T5_546_0": "955e0b6708e4e48d9701de8ac357239f272036995dd6b0aa77b277d6c10b821c",
+    "A_T5_546_1": "cb8f53863babc13a492a201f0e19ce198c536b91e9ffa9e11d0a34825302a936",
+    "A_T5_546_2": "53fd5b7605b27f4c395d9cecf4a8029666aa5042ba87a81e1f02c4ed3dfc8b32",
+    "A_T5_517_0": "bc5722f89d1cb6ce08d1ac1b1f4ccf36f9697b7bc2c568833838f970776f3fe2",
+    "A_T5_517_1": "2459adf2359afa844649a47952ba7e95548f3e3f9f26f23b62540754f1837ee3",
+    "A_T5_517_2": "468ca28168f345919b47e851f404790c6bd0433d217e731590a6ecffacc646f3",
+    "A_T5_311_0": "b0da919749b9607f777788c53bc4616a189dd2581ab33039478104bbd492151b",
+    "A_T5_311_1": "15353377eb58328bc86bdb215aa57db8cd44930ff38179cb803bb8d47938b1db",
+    "A_T5_311_2": "8ebb98f565d66be4fd00450fce555cab5c47d9d5c5f90544ec7eed323d566674",
+    "A_T5_186_0": "695e2c59d4309a285f9e11fba8558b07eec3fd4722e3d32d19e3755422b33036",
+    "A_T5_186_1": "f7d6ac8a6dde3de1aa4b3c1447d15e98325ff15f0cf7e95651653f9da6bef7d4",
+    "A_T5_186_2": "0ee70190ad212d2d78ba391eb18dc6443e31cb8232244b7359a0b2c1ef4b01ef",
+    "A_T7_186_0": "251035edf2345ce04b92dd7ea2e76da187e3fed4d701c594038ea387c70090c2",
+    "A_T7_186_1": "9a964acfe4d0bb7b7edccd43e3692b3dc58a65454a7d3b8b974672ebad69f741",
+    "B_00_V1_T2_546": "d980fe40317d4cfc26653fd7992daed4c6bb8cc71f53757beacad517f76b459f",
+    "B_01_V1_T2_387": "e5cf0d29f77b068c9540929ba322931aa5cbed548a20439bb9317d4846fb59be",
+    "B_02_V1_T4_324": "8c09a4445a26c8f3f58f5627c54704146e8602a9ae57d89dd46208e4821ed5c0",
+    "B_03_V2_T3_435": "a602a5d402b385e1023000d28987c00063260ab2a216cb2a010d391834ca7fba",
+    "B_04_V2_T3_580": "90216d9695835600a28ed43fe5d991617af71e7e880b3cf4bd84f649209605ce",
+    "B_05_V2_T3_177": "af2d46d675150fcb5d333133f6f2c0d0376700e75fa6539c81b0bd62b8cce4c6",
+    "B_06_V3_T3_546": "fdaff109e72473d96f51a1016ecb583fa7c099d4de82734f1e3966e968144737",
+    "B_07_V3_T2_580": "5c13e08d51acf4604a22c5dfaea34394cd3242767834eb05ef1ee607e01c45bd",
+    "B_08_V4_T3_1094": "f9778d7e2ded3a9d9de84a8f2f21c7c99c9ac658b5c2ff87237008ed018ce887",
+    "B_09_V4_T2_435": "e8bee96ea5a40228a18e9b9d114af725da4f23fbc7ea3069b1b831e0d500b981",
+    "B_10_V4_T3_1034": "4c7b6cf23478103a5ca5e0be1bcfea1d2820727f3e76281634d1bbe57732451b",
+    "B_11_V4_T3_517": "171f356072e9abe68d99ff137fe191a77d12ec82687474302574ca5d2da5aab1",
+    "B_12_V5_T7_186": "534a3f00b58587ec795fe7f588edafd1f10a3baf1ce15af17c392118aff1e278",
+    "B_13_V5_T5_186": "cdf5c9bd76dcdc10b7b82714cf7fc4b335465f0f7c5fd15e8cbfdf8398d2a0c1",
+    "B_14_V5_T5_311": "7169863769fb3ec1e16e21cc72438235a814eb5606ed6e36b35dbb51dc46be38"
+  },
+  "review_hash": "f0321f8762d5725aeeaca310e5479722c560a5f622be274abceb707ccd16e9aa",
+  "request_hashes": {
+    "A_T1_546_0": "47cb9804a7b854a6e44e98901ed50feeacc1827cd963833bc66d66e09cc7b848",
+    "A_T3_546_0": "034b327e54ff2a39cc4f88eb8cc12ba378339c92afacba1184776533694dfd78",
+    "A_T1_1094_0": "7b4824edba4c5162c13b2635fc444adc8a9c3aa446bc244ef9ba12675ea7efb6",
+    "A_T1_1094_1": "def46cd130363b8f87327634f28bcea267c9740c0be8553233fb199e355fd4a7",
+    "A_T2_1094_0": "b7e11be5ea3b36bab0b5bbe35ea7048d973cca8cc813e9dfc68abc0c0a82bf1c",
+    "A_T1_517_0": "033c9c139d8017480f48f1031c17a7ef52806f4cf738babb9ba18f397f87a19a",
+    "A_T1_517_1": "8d57d1aa30f8d500392cd95d6a4cead31982159183a2afe75aeefb9d6fb1d317",
+    "A_T2_517_0": "522fb0fc4ebb28983819fe956255e668c3c59629a73a7d85641501f62b8ddb62",
+    "A_T1_435_0": "21b8cb48c76e0a98b0d0156bc511b3b4fafc3b41ce60082ed17411e718d04994",
+    "A_T2_435_0": "18c8ac7a3aa698b221352d5aeee30a2c637bf4b1d764635c7801832bb98a6443",
+    "A_T3_435_0": "f1f34230234470c5a1b8fc2f71dbd9d7e563b9ca26e6b949b25280867058bddf",
+    "A_T3_435_1": "da7af35468e3a6e93a57bb96cc050ffaddb6f5bb8cbd3b32555ff33e7f7cf007",
+    "A_T1_580_0": "2ebfae0158f1a81f5db1039e00bfaf69fdb6de7fe3ae95ee396998aa70f4ab11",
+    "A_T3_580_0": "6daa174ab591d0390f50d713863898adf35e67ae6c72304683db8d0343eb8f5d",
+    "A_T3_580_1": "c8e40fffdc9cd7fa1e42f110ebe0735a350ea2b49c13e06a5c17e15d3e17cf81",
+    "A_T1_177_0": "d210fecf5a55f93db688420eb5c8aa25c4d5ccbb2d4f7ee523bae7bd32d344e3",
+    "A_T1_177_1": "54e6f892b33f37fa65a589bd5cdda9d4851a54184749e5c89bc13ae1f65200ec",
+    "A_T2_177_0": "5abd88b6c61f0d1882c9c4e0ae45d39b4ce4f8cc2da995c0e72d99389a0aa4a5",
+    "A_T3_177_0": "4217574b7079c7da72800cfbccbc8bf395d18b92f1f99227438cb2b4a053acaa",
+    "A_T3_177_1": "851b69785a4b4010b0dd1b5defd7c8c45eec3b673378da3a595ae57689d0182a",
+    "A_T1_1034_0": "337cb629d1a09cfccdd1f7ae101a622be2cc244acea0de3c38bf6d623817ca41",
+    "A_T1_387_0": "6b0df480b0310672f9061abf987c9333bfb14766d932c55f6a019c19bc01de09",
+    "A_T2_387_0": "e4ae5264278391426b627bc05f8d7cab25e300d34ecd1908c3573f803cdc9d79",
+    "A_T2_387_1": "d7cb071212787d4952391843a1206af9c1c179d3105f834dbad361063ff7a274",
+    "A_T5_546_0": "3fe5e2220e5835b7275dc48f6a2fab14c7039eac6277aff0427254151d02e543",
+    "A_T5_546_1": "34422fd0b344ac314891842c7a4d1c7c4942f693819b1be11ae03665f96893c2",
+    "A_T5_546_2": "a25300ca64bb35a660cbc840ecc37403383c6f29c610cf32d7aa558160a6951e",
+    "A_T5_517_0": "c16596a08bfd9cebba412c1a8502c8fd724e90707473ff6ecef2547652d3626f",
+    "A_T5_517_1": "6d5e63f3efef73086dac8772cd1397ed8271ab4eb2f670c987a002af56315f44",
+    "A_T5_517_2": "75d73f45597e36964bbd9ca81e533f778a43cc14bef3989e7be0255fa4d4f55e",
+    "A_T5_311_0": "e621b93943644ec5a17f2a4c1f727404546aa79ba36575ee3edd2eb4f33bccaa",
+    "A_T5_311_1": "1e60268f95d6e84c4018b2542bca1a48d76a15fe03fc746b63fd99d5cbe3d531",
+    "A_T5_311_2": "b79684bed5bcb6ae7c2d296fad53e195acd591c116d194fc518ef1dd2813579e",
+    "A_T5_186_0": "fdef32e9d9af994dc52ffcfd4ecb23c4ff56d458ddc092ccba678358d4719e55",
+    "A_T5_186_1": "6bfeaff213377fa495c59d1a67ff7293c5cd89c0097fe65aea88a773d2eebf0f",
+    "A_T5_186_2": "15affee25e48660905517c86d66f615a6025f39cd41bf387e88028fab5b645b8",
+    "A_T7_186_0": "2a88a9f9ecd9f384ae7b158278e841573c2fd0ee0b4ea576bb43ec1808ab70b5",
+    "A_T7_186_1": "641eb2c352772821ab46e3eb3154adaf6517b71135e5ded09ee6d95f9fee7887",
+    "B_00_V1_T2_546": "0aefaff405b5e842cc8061777203b0f99b18fddaf326e1ce56047f07af4f5504",
+    "B_01_V1_T2_387": "ec4d6207c7d1f4cdb925ef57e274703a586b271879563406dfd97961b89c9229",
+    "B_02_V1_T4_324": "7d65b51f1598eb44c101e53a7860cddd1e281c752ec58f8e3d2fa4aef71bddb1",
+    "B_03_V2_T3_435": "56155f898356524739951e20dd95d9197bc5693f0e080a8167c5644a9c7dfffb",
+    "B_04_V2_T3_580": "7b2ee10586f3797050eca48abe786f4e46526ba36725f7b511bdcd7b789d510d",
+    "B_05_V2_T3_177": "97eff59a58bfa011274ec37d27ba8983a504014252368c695f8d3d7f0ef6d7df",
+    "B_06_V3_T3_546": "886a596120dd26c17cdfc6eef611e923f6a465cec4a5457d74ce78ab579ea431",
+    "B_07_V3_T2_580": "68ebe8c185659239e07ed5077be1a909f07e18c3751243c1c347b28973efe6c3",
+    "B_08_V4_T3_1094": "76bc750cbe31ac6ec3bff31256a58cda60e22e4d1576dd3852d361955dc1b7a9",
+    "B_09_V4_T2_435": "1320971846a4acdda9a62be797454b7d865c849f579fc70f25f764ddbb423d9e",
+    "B_10_V4_T3_1034": "d9fa88c908ce78aa8997ce17de4288572ecce0296ed3d29f2143180584bc52e6",
+    "B_11_V4_T3_517": "c97cd87dcbde7f3537a61807a264fb8cb5684f1b645c2a4ce567d1272abc5b58",
+    "B_12_V5_T7_186": "84c133fbf39e6dc58045955cb8f3d7a3faa5b32413358784953add2366cacece",
+    "B_13_V5_T5_186": "ce68702226d791e2191009ab1f6d79d2641f1517032779a6e5472c6f96e83b9a",
+    "B_14_V5_T5_311": "b94503014459578bf56aba525aacb68e7c0dae9c8fbd8ff84cdf5229a12f5bdd"
+  },
+  "rubric_hash": "9bf5d9708d918fe1576aacc079530ec55b00b25d6b0961a3ed1c89f3071eafff",
+  "arm_order": [
+    "D mechanical",
+    "V verifier"
+  ],
+  "gate": {
+    "committed_precision_min": 0.95,
+    "commit_recall_min": 0.9,
+    "false_promotion_max": 0.05,
+    "stress_rejection_min": 0.9,
+    "direct_false_promotion_trigger": 4
+  },
+  "failure_policy": "One V call per packet; max_retries=0. Invalid/failed verdict means insufficient, remains in denominator. D deterministic. No best-of."
+}
