@@ -1,0 +1,89 @@
+{
+  "pre_call_head": "409a1511278d943b2f1fffc0fd083edaadaafefb",
+  "t0_commit": "24b1d7f59de080748e0a0be684afdb512d0448fe",
+  "bank_sha256": "15cb63fc693e4fd93f10521f7e2420c25402bd4de203d8f251bb8b4f2d48ddcf",
+  "prompt_sha256": "82761673fd74ed2058a3e77b301a2f52fa406842d13ca2d15f0caa49f44c8df8",
+  "rubric_sha256": "7eff9ca753484250e317543a1421af28faf8765836c864aa26614cab313bac34",
+  "common_sha256": "e022ed39825b73466bca6a21855d1567685ececb68605be03de502911814355e",
+  "requests_sha256": "62cf9c87ed61d84afde7daa65d0a622f09602076df3a4ef34f3aba4f29180b29",
+  "provider": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 240,
+    "max_retries": 0
+  },
+  "generation_config": "SDK defaults; one call per observation",
+  "random_seed": 202609263,
+  "call_order": [
+    [
+      "U1_C01",
+      "ONLINE_UPDATE",
+      "d1841b2063363b2a0713b54ba6718b311ce7823c08420a965464fd6eeae96d4b"
+    ],
+    [
+      "U1_C03",
+      "ONLINE_UPDATE",
+      "d1841b2063363b2a0713b54ba6718b311ce7823c08420a965464fd6eeae96d4b"
+    ],
+    [
+      "U1_C07",
+      "ONLINE_UPDATE",
+      "d9cbf60551011222ddcdf3ae74df173417fea5d58bea3fd3244109291ecccdb9"
+    ],
+    [
+      "U1_C06",
+      "ONLINE_UPDATE",
+      "d9cbf60551011222ddcdf3ae74df173417fea5d58bea3fd3244109291ecccdb9"
+    ],
+    [
+      "U1_B04",
+      "ONLINE_UPDATE",
+      "178966fcc90544b25c9f7d2f67a1a4a0ad280339f3ea960e9f02c7efbcb99d1b"
+    ],
+    [
+      "U1_C11",
+      "ONLINE_UPDATE",
+      "4d34601138f57e7c41187249fc76b31c14c636b8f33aa5d2241b753ab314c5ce"
+    ],
+    [
+      "U1_B01",
+      "ONLINE_UPDATE",
+      "98320a295b1a37c80ee6f878702be248bb52b043fc629c95a25d736ece813f70"
+    ],
+    [
+      "U1_C05",
+      "ONLINE_UPDATE",
+      "2a7b9f4dac196d7889e3ec503ed03f087d53ac831cb8e7845c2491da446fa198"
+    ],
+    [
+      "U1_B06",
+      "ONLINE_UPDATE",
+      "a8597998d147adfd6fc318226353eac90408d54aec34d232f071296d105ebf12"
+    ],
+    [
+      "U1_B05",
+      "ONLINE_UPDATE",
+      "bd9172b1c67779a679e6e7b2a54dcc02cd17bbefd67f350f2fb9f661c81f945e"
+    ],
+    [
+      "U1_B03",
+      "ONLINE_UPDATE",
+      "d1841b2063363b2a0713b54ba6718b311ce7823c08420a965464fd6eeae96d4b"
+    ],
+    [
+      "U1_B07",
+      "ONLINE_UPDATE",
+      "59fee8c17076b9492b10311fecd43af03545c9e72a1d57d25db88e27c6751fc3"
+    ]
+  ],
+  "sample_count": 12,
+  "max_new_claims": 2,
+  "metrics": [
+    "support_precision",
+    "decision_relevance_precision",
+    "oracle_binding_recall",
+    "incidental_admission_rate",
+    "target_leakage_rate"
+  ],
+  "failure_policy": "one call per case, zero retries, no repair, invalid output counts as no recovered claim"
+}

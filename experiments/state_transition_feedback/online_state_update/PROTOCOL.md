@@ -1,0 +1,3 @@
+# T3 online State construction
+
+One DeepSeek `deepseek-flash` updater call per frozen T0 observation. Input is Question, `S_pre`, `G_bridge`, and the real observation text plus URL; the model sees no gold bridge claim or next-Gap truth. It may propose zero, one, or two claims. The harness, not the model, binds each proposal to the current W ref. The single reviewer labels source support, decision relevance, target leakage, duplication, and over-specificity against the frozen prefix. No default Verify model call, retry, repair, or proposal rewrite is allowed. Report support precision, relevance precision, oracle-binding recall, incidental admission, and leakage. T4 uses the actual parsed online claims; invalid or empty output leaves `S_pre` unchanged.
