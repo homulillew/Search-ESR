@@ -1,0 +1,7 @@
+# State transition feedback
+
+T0 freezes real pre-answer bridge windows, verified variable bindings, referent-preserving next Gaps, and expanded direct-source truth before new model calls. T1 compares PRE, POST, and RAW with one frozen query writer and unchanged Qwen3/FAISS top50 retrieval. T2 compares actionable bridge versus premature next Gaps at the same pre-State. T3 tests one online State update per observed window. T4 holds Round1 observation fixed and compares Forget, Raw, Oracle State, and Online State in Round2. T5 tests a maximum of three document Search decisions with and without persistent online State.
+
+Effect thresholds classify evidence strength; only integrity, sample, or tool-validity failures can stop execution. All stages use DeepSeek `deepseek-flash`, `max_retries=0`, one call per frozen request, no repair or post-result relabeling. Historical experiment directories and all Search/Find/Reader/Verify backends are read-only. Each stage's prompt, requests, order, source truth, scoring, and failure policy are committed before its calls. Query output is committed before retrieval.
+
+Primary direct-source scoring uses the pre-frozen expanded sufficient set. Canonical source rank remains secondary. Alternative source reviews after retrieval are reported separately without altering primary truth. A bridge document must support a claim that changes the next decision; topical similarity alone never qualifies.
