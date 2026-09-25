@@ -1,0 +1,89 @@
+{
+  "pre_call_head": "af7dca28df8041f00df961d0c0df862cc8cea1da",
+  "amendment": "transition_bank/PRECALL_GAP_AMENDMENT.md",
+  "prefix_gap_sha256": "2b240a20c87b9f0b3932848952aab0286f5f0f558d2b1a126530fd4ffb619699",
+  "bank_sha256": "15cb63fc693e4fd93f10521f7e2420c25402bd4de203d8f251bb8b4f2d48ddcf",
+  "truth_sha256": "4db8d14538dd17d70219fb70bea3befced3638899b8402133e8b274d20c8a519",
+  "prompt_sha256": "82761673fd74ed2058a3e77b301a2f52fa406842d13ca2d15f0caa49f44c8df8",
+  "common_sha256": "e022ed39825b73466bca6a21855d1567685ececb68605be03de502911814355e",
+  "requests_sha256": "f00d7a752828df7d33535b4aea3f6902b700d97be22a2d9cb65dbb45c34cc792",
+  "original_unused_freeze_sha256": "58d23d6ba53516e4e6c9e16022d4f5b24117e0427c075af8ac4e008b411fe608",
+  "provider": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 240,
+    "max_retries": 0
+  },
+  "random_seed": 202609265,
+  "call_order": [
+    [
+      "U1_B01",
+      "ONLINE_UPDATE",
+      "e052cfda6561cbe8af188d46b63634bfec5bfbb4320c08789b99e51446df83be"
+    ],
+    [
+      "U1_C03",
+      "ONLINE_UPDATE",
+      "7528726d88fef12f6a151dda0e507bbff92439cdd8c9f65259c277293e7f63e4"
+    ],
+    [
+      "U1_C05",
+      "ONLINE_UPDATE",
+      "2cf90a4d8e170dbe21b91f151bb2b1c35b33e0c712191182e577781514f9e4d7"
+    ],
+    [
+      "U1_B03",
+      "ONLINE_UPDATE",
+      "7528726d88fef12f6a151dda0e507bbff92439cdd8c9f65259c277293e7f63e4"
+    ],
+    [
+      "U1_B04",
+      "ONLINE_UPDATE",
+      "8129ba18f031a9adcc630c65142498b54e4aa2ccef0282f3ae0af1300b61b59b"
+    ],
+    [
+      "U1_C07",
+      "ONLINE_UPDATE",
+      "093252412c4f081266d0c548fb8403aeeaca2a6af007225ce001e9e85fb071be"
+    ],
+    [
+      "U1_B07",
+      "ONLINE_UPDATE",
+      "07cc55c9ef6823b13ac63f81f6e7f1d0a518e3553a30e36e5b538e182a1a0027"
+    ],
+    [
+      "U1_B05",
+      "ONLINE_UPDATE",
+      "989447a1ae409805a28729cef71e036c5de6a5f7ca801c92e31e1064f6519cef"
+    ],
+    [
+      "U1_C11",
+      "ONLINE_UPDATE",
+      "78fa7ed39e9f59be9b2fb84722511e2a98c46398d90bea55964be266c22967e5"
+    ],
+    [
+      "U1_B06",
+      "ONLINE_UPDATE",
+      "6349a020422570ddd79c0abff6ce90538b51ff37a501a03dbec89cc70601ba6c"
+    ],
+    [
+      "U1_C01",
+      "ONLINE_UPDATE",
+      "7528726d88fef12f6a151dda0e507bbff92439cdd8c9f65259c277293e7f63e4"
+    ],
+    [
+      "U1_C06",
+      "ONLINE_UPDATE",
+      "093252412c4f081266d0c548fb8403aeeaca2a6af007225ce001e9e85fb071be"
+    ]
+  ],
+  "sample_count": 12,
+  "clean_subset_count": 11,
+  "clean_qid_count": 8,
+  "clean_exclusion": [
+    "U1_B07"
+  ],
+  "failure_policy": "one call per case; max_retries=0; retain all 12 raw outcomes; clean analysis excludes pre-audited B07",
+  "rubric_sha256": "7eff9ca753484250e317543a1421af28faf8765836c864aa26614cab313bac34",
+  "max_new_claims": 2
+}

@@ -1,0 +1,106 @@
+{
+  "pre_call_head": "af7dca28df8041f00df961d0c0df862cc8cea1da",
+  "amendment": "transition_bank/PRECALL_GAP_AMENDMENT.md",
+  "prefix_gap_sha256": "2b240a20c87b9f0b3932848952aab0286f5f0f558d2b1a126530fd4ffb619699",
+  "bank_sha256": "15cb63fc693e4fd93f10521f7e2420c25402bd4de203d8f251bb8b4f2d48ddcf",
+  "truth_sha256": "4db8d14538dd17d70219fb70bea3befced3638899b8402133e8b274d20c8a519",
+  "prompt_sha256": "b718baa050c6a4084361e3a4c958796ef62812dcbd6b31876d88f6e37315ca8e",
+  "common_sha256": "e022ed39825b73466bca6a21855d1567685ececb68605be03de502911814355e",
+  "requests_sha256": "7b9f4b79c7f0cfafd4aeae0ca97249069192286f97b1308f9f681aa114360d6f",
+  "original_unused_freeze_sha256": "d42bf42fd43bc4829ae3e6123681524ac690b2cebcbdbd50cd1c17414ab648e9",
+  "provider": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "timeout_seconds": 240,
+    "max_retries": 0
+  },
+  "random_seed": 202609264,
+  "call_order": [
+    [
+      "U1_C06",
+      "F_EARLY",
+      "d8231b2a095027387c802041f4f713f6c2e1fcd6053ba51cace80cdb1aaabc80"
+    ],
+    [
+      "U1_C07",
+      "F_EARLY",
+      "d8231b2a095027387c802041f4f713f6c2e1fcd6053ba51cace80cdb1aaabc80"
+    ],
+    [
+      "U1_C01",
+      "F_EARLY",
+      "347c0a3cd2fae0f25d1f3f3bb17f470cfbb7eed3aef6e7851a2589b5b0651789"
+    ],
+    [
+      "U1_B07",
+      "F_EARLY",
+      "9889fff5665eb8079cf67ec326c0ec32df1a5d4f0a30f90ee600eef825bf70a7"
+    ],
+    [
+      "U1_C11",
+      "F_EARLY",
+      "9d8d7934f26d1b347233e8d3e0db4fce1046e44eaa5178f4d7934c1e221a8520"
+    ],
+    [
+      "U1_C03",
+      "F_EARLY",
+      "347c0a3cd2fae0f25d1f3f3bb17f470cfbb7eed3aef6e7851a2589b5b0651789"
+    ],
+    [
+      "U1_B01",
+      "F_EARLY",
+      "9100fb1f182685a79f6e2519ffaccdcf820c133235ddca1e037b34e3a93f6f2d"
+    ],
+    [
+      "U1_C05",
+      "F_EARLY",
+      "d0313a37182862898c2ceaa23834ed038ba65f381d046324fd7048286727230c"
+    ],
+    [
+      "U1_B06",
+      "F_EARLY",
+      "876b1d355c1a63ca680d6d9e0b9a54f2f664103480e785d73092f6f4e974bb54"
+    ],
+    [
+      "U1_B04",
+      "F_EARLY",
+      "ff162463fd9ab18218865d111aa6b5d0770ccfea074e5f13f378bfe2c60cbd67"
+    ],
+    [
+      "U1_B05",
+      "F_EARLY",
+      "2a45afacfd4b1d7a6f194abc5a5a80548a7111925089df740acf7af9552c5078"
+    ],
+    [
+      "U1_B03",
+      "F_EARLY",
+      "347c0a3cd2fae0f25d1f3f3bb17f470cfbb7eed3aef6e7851a2589b5b0651789"
+    ]
+  ],
+  "sample_count": 12,
+  "clean_subset_count": 11,
+  "clean_qid_count": 8,
+  "clean_exclusion": [
+    "U1_B07"
+  ],
+  "failure_policy": "one call per case; max_retries=0; retain all 12 raw outcomes; clean analysis excludes pre-audited B07",
+  "device": "cuda:1",
+  "retrieval_depth": 50,
+  "k_values": [
+    1,
+    3,
+    5,
+    10,
+    20,
+    50
+  ],
+  "retriever_sha256": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339",
+  "index_sha256": {
+    "BCPlus/indexes/qwen3-embedding-8b/corpus.shard1_of_4.pkl": "4bfad4863cc4f38d2a6bef1ee54f81b8021a0cad985abd153b91fc0e29f22c7e",
+    "BCPlus/indexes/qwen3-embedding-8b/corpus.shard2_of_4.pkl": "0285996dd37e58f5ad21ea4ed12d61d933c7e223c885955174e71ee30002dbd8",
+    "BCPlus/indexes/qwen3-embedding-8b/corpus.shard3_of_4.pkl": "0701099f6c806c086b0a1eda1b3dc6f76449236f0339bc5cc153c79eb56140ae",
+    "BCPlus/indexes/qwen3-embedding-8b/corpus.shard4_of_4.pkl": "b117e2d9f08c2dcf6f50229f34e1302f10a3b6960ef5dfa7f3719c21aaf0024a"
+  },
+  "progress_truth_sha256": "422da5eab607932a8116bddf371fde294a182c59df375b8aa634444cff471a65",
+  "reused_PRE_sha256": "5325d29348b4a8570edbebf13fbbdadde2794944e771e30156c048da285800a4"
+}

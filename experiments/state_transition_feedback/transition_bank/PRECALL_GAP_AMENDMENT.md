@@ -1,0 +1,7 @@
+# Integrity amendment before T2/T3 calls
+
+T1 did not use `G_bridge`: it used only frozen Question, referent-preserving `G_next`, and PRE/POST/RAW contexts. After T1 Search, a prefix-only wording audit found that the original T0 `G_bridge` sometimes named details first visible in `O_bridge` (for example `Not a Great Bet` and `Ma Hailong`). This would leak the transition treatment into T2's early arm and T3's input. No T2 or T3 model call had occurred.
+
+The previously committed T2/T3 request and freeze files remain in their original locations as an unused, invalid pre-call design. Corrected requests live under each stage's `corrected/` directory and are separately committed before their calls. `PREFIX_GAPS.json` records the replacement gaps. Each corrected gap is composed only from the raw Question's clue categories, without the bound candidate, source title, URL, observed opponent, or target answer. T0 observation, oracle claim, `G_next`, direct/bridge source sets, and T1 outputs are unchanged. The correction was motivated by source timing, not by which case improved in T1.
+
+U1_B07 q1034 is additionally flagged for clean-subset exclusion: its observed Heart Evangelista article supports the named performer, but the article's G-mik clue is absent from the original Question, whose business-coordinator clues do not establish that performer. Its T1 response and later diagnostic calls remain in the raw record; it does not enter clean causal denominators. The remaining 11 transitions span eight qids, above the execution minimum.
