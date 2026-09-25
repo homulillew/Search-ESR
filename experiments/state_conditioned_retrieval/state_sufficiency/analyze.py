@@ -129,7 +129,7 @@ def main():
         for a in ['S0','S1','S2','S3']:
             lines.append(f"- {a}: `{qix[cid,a]['search_query']}` (rank {rankstr(rix[cid,a])})")
         lines.append('')
-    (BASE/'CASE_ANALYSIS.md').write_text('\n'.join(lines)+'\n')
+    (BASE/'CASE_ANALYSIS.md').write_text('\n'.join(lines).rstrip()+'\n')
     print('analysis complete',summary['gate'],flush=True)
 
 if __name__=='__main__':main()
