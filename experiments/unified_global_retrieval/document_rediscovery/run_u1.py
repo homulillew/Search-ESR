@@ -38,7 +38,7 @@ def paths():
     prior=['experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json','experiments/model_backend_deepseek/provider.json','BCPlus/scripts/search_bcplus.py','llm_chat/search_find_v3b_agent.py']
     index=[str(x.relative_to(ROOT)) for x in sorted((ROOT/'BCPlus/indexes/qwen3-embedding-8b').glob('*.pkl'))]
     index+=['BCPlus/indexes/bcplus-qwen3-8b/documents.sqlite']
-    return [ROOT/x for x in local+prior+index]
+    return [STUDY/x for x in local]+[ROOT/x for x in prior+index]
 
 def order():
     return sorted(BANK,key=lambda x:digest(x['case_id']))
