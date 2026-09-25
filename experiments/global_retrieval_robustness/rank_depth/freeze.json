@@ -1,0 +1,73 @@
+{
+  "base_head": "f1e8beec96717dc2b5f7d212e77aaa65ba3ea3f7",
+  "case_order": [
+    "U1_A01",
+    "U1_A02",
+    "U1_A03",
+    "U1_A04",
+    "U1_A05",
+    "U1_A06",
+    "U1_A07",
+    "U1_A08",
+    "U1_A09",
+    "U1_A10",
+    "U1_A11",
+    "U1_A12",
+    "U1_B01",
+    "U1_B02",
+    "U1_B03",
+    "U1_B04",
+    "U1_B05",
+    "U1_B06",
+    "U1_B07",
+    "U1_B08",
+    "U1_C01",
+    "U1_C02",
+    "U1_C03",
+    "U1_C04",
+    "U1_C05",
+    "U1_C06",
+    "U1_C07",
+    "U1_C08",
+    "U1_C09",
+    "U1_C10",
+    "U1_C11",
+    "U1_C12",
+    "U1_D01",
+    "U1_D02",
+    "U1_D03",
+    "U1_D04",
+    "U1_D05",
+    "U1_D06",
+    "U1_D07",
+    "U1_D08"
+  ],
+  "input_sha256": {
+    "experiments/unified_global_retrieval/document_rediscovery/BANK.json": "0cbe6b386d002f1c1024407da8feaefc1006cb4a994f31609e54061bd63fa654",
+    "experiments/unified_global_retrieval/document_rediscovery/PRIVATE_TRUTH.json": "17f6fbc734fbec15fab13ca8336245a8161d131b23157897ab322984ee645ed2",
+    "experiments/unified_global_retrieval/document_rediscovery/QUERIES.json": "f90bcb2beb67a14107e031506c500262690a0d4e611a71a830ae519574045958"
+  },
+  "failure_policy": "No retry, repair, query edit, or case replacement",
+  "retriever_sha256": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339",
+  "index_sha256": {
+    "BCPlus/indexes/qwen3-embedding-8b/corpus.shard1_of_4.pkl": "4bfad4863cc4f38d2a6bef1ee54f81b8021a0cad985abd153b91fc0e29f22c7e",
+    "BCPlus/indexes/qwen3-embedding-8b/corpus.shard2_of_4.pkl": "0285996dd37e58f5ad21ea4ed12d61d933c7e223c885955174e71ee30002dbd8",
+    "BCPlus/indexes/qwen3-embedding-8b/corpus.shard3_of_4.pkl": "0701099f6c806c086b0a1eda1b3dc6f76449236f0339bc5cc153c79eb56140ae",
+    "BCPlus/indexes/qwen3-embedding-8b/corpus.shard4_of_4.pkl": "b117e2d9f08c2dcf6f50229f34e1302f10a3b6960ef5dfa7f3719c21aaf0024a"
+  },
+  "sqlite_sha256": "87c2e90c550350c5e7cbdd48737ad52ab3317923008a295d6ad1af86cacc4591",
+  "model": "/data/model/Qwen3-Embedding-8B",
+  "device": "cuda:1",
+  "k_values": [
+    5,
+    10,
+    20,
+    50
+  ],
+  "old_top5_sha256": "2d369b68173e83d59518d2ff7c8b838d186157b39e855d99a480b79f74e47004",
+  "gates": {
+    "A/B": 19,
+    "C/D": 18,
+    "overall": 37
+  }
+}
