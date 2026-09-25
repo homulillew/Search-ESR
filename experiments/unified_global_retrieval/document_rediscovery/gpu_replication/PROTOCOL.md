@@ -1,0 +1,5 @@
+# GPU device correction replication
+
+The original U1 corpus, Query Writer outputs, scoring code, index and private truth remain immutable. The first CUDA initialization failed before Search because GPU 1 had insufficient free memory; the completed CPU float32 run is retained. This user-requested replication reruns only the 40 **retrieval** decisions on GPU 1 using the existing `BCPlusSearcher` path (`cuda:1`, float16 model weights). It makes no new DeepSeek call, changes no query, and does not overwrite the CPU results. The 40 G/H rankings and raw scores are saved separately.
+
+Before starting, commit this protocol and the runner, freeze git HEAD and input hashes, then execute once. Analyze GPU rankings using the exact U1 sufficient-document truth and gate. Report paired rank changes against CPU, including every changed top-five set. If the GPU gate passes, proceed to U2 under a new stage freeze; if it fails, retain the original stop. A GPU initialization failure is preserved and is not erased or counted as a document miss.
