@@ -1,0 +1,9 @@
+# S1 registered comparison
+
+For each of the 24 frozen SC0 cells, write one query under S0, S1, S2, and S3. The model, prompt, Question, Gap, request format, and retriever are fixed. The four State claim lists are the only varying content. All 96 requests are randomized together with 24 control requests using the frozen order and submitted once, with DeepSeek `deepseek-flash`, `max_retries=0`; errors and malformed outputs count as misses. Query outputs and raw response events must be committed before any new retrieval.
+
+The unchanged Qwen3-Embedding-8B and 100,195-document FAISS index return top50 per valid query. Direct truth is the frozen sufficient-document set; a miss receives rank 51 for paired movement and no reciprocal-rank contribution. Report Recall@1/3/5/10/20/50, MRR@50, rank movement, qid, U1 case type, and arm. ProgressHit is DirectHit or a hit on the frozen bridge set. A source observed in a different window of a B cell's already sufficient document is direct, not bridge.
+
+S1 primary gate: S3–S0 Recall@5 at least +15 percentage points; if the S0 ceiling prevents this, at least half of paired ranks improve, at most 15% worsen, across at least four qids. Mechanism requires candidate inclusion to rise and raw clue load to fall. Noise improvement must be less than half of S3 improvement. If raw-history Recall@5 exceeds S3 by more than 5 percentage points or beats its rank in most controls, do not claim the minimal projection sufficient. A cohort result may justify gated S2 even if the full bank fails; the scope of that conclusion must be explicit.
+
+The comparison is a small paired diagnostic with repeated qids and target documents. No population significance claim is planned. Canonical sufficient-document truth can miss alternative valid sources; this is a separately reported ambiguity, not a reason to change frozen scoring after retrieval.
