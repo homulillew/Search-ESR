@@ -1,0 +1,9 @@
+# Post-retrieval alternative source audit
+
+The primary T2 Progress source sets remain the pre-frozen `PROGRESS_TRUTH.json`. The following is a separately marked semantic sensitivity check; it does not alter those sets or the frozen primary metric.
+
+`U1_B03` F_EARLY retrieved D70761 at rank 2. The corpus text names Oliver Mtukudzi, states that he died at 66 after a career of 67 albums, and identifies his 2001 song *Wasakara* as interpreted as urging Robert Mugabe to retire. This can bind the unresolved musician for the original question. T0 had already frozen D70761 as a direct sufficient source for the downstream album question, but omitted it from T2's **early** progress set. It is a credible alternative bridge source too. Counting it changes the clean F_EARLY Progress@5 from 3/11 to 4/11; F_PREMATURE stays 8/11. It does not reverse the comparison.
+
+Other early top-five results were checked conservatively. For `U1_C01` and `U1_C03`, D48151/D51535 list Oliver Mtukudzi and an album count, but do not establish the question's distinctive song or interview clues. For `U1_B06`, D3079 lists Galacta among multiple Albino Frog games without establishing the required shareware and single-player details. For `U1_B01`, D77135 is a film page without the soldier-father/hospital-mother identity linkage. These are candidate leads or downstream answer material, not independently sufficient proof of the currently unresolved bridge binding. The other top-five misses likewise do not meet the frozen decision-changing-claim rubric.
+
+The alternative audit exposes truth-set narrowness for B03, while the direction and main failure mode remain: with S_pre, many early queries become clue-heavy or guess a candidate. This is a stage-specific mechanism result, not evidence that the downstream question has been answered safely.

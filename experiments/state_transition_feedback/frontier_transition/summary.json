@@ -1,0 +1,229 @@
+{
+  "all": {
+    "F_EARLY": {
+      "n": 12,
+      "hit": {
+        "1": 1,
+        "3": 3,
+        "5": 4,
+        "10": 5,
+        "20": 7,
+        "50": 8
+      },
+      "recall_pct": {
+        "1": 8.33,
+        "3": 25.0,
+        "5": 33.33,
+        "10": 41.67,
+        "20": 58.33,
+        "50": 66.67
+      },
+      "MRR@50": 0.1814
+    },
+    "F_PREMATURE": {
+      "n": 12,
+      "hit": {
+        "1": 4,
+        "3": 6,
+        "5": 8,
+        "10": 9,
+        "20": 9,
+        "50": 10
+      },
+      "recall_pct": {
+        "1": 33.33,
+        "3": 50.0,
+        "5": 66.67,
+        "10": 75.0,
+        "20": 75.0,
+        "50": 83.33
+      },
+      "MRR@50": 0.471
+    },
+    "rank_movement": {
+      "premature_better": 6,
+      "tie": 2,
+      "early_better": 4
+    },
+    "by_case": {
+      "U1_B01": {
+        "early_rank": null,
+        "premature_rank": 2,
+        "movement": "premature_better"
+      },
+      "U1_B03": {
+        "early_rank": 16,
+        "premature_rank": 2,
+        "movement": "premature_better"
+      },
+      "U1_B04": {
+        "early_rank": 5,
+        "premature_rank": 8,
+        "movement": "early_better"
+      },
+      "U1_B05": {
+        "early_rank": null,
+        "premature_rank": null,
+        "movement": "tie"
+      },
+      "U1_B06": {
+        "early_rank": 7,
+        "premature_rank": null,
+        "movement": "early_better"
+      },
+      "U1_B07": {
+        "early_rank": 3,
+        "premature_rank": 37,
+        "movement": "early_better"
+      },
+      "U1_C01": {
+        "early_rank": null,
+        "premature_rank": 4,
+        "movement": "premature_better"
+      },
+      "U1_C03": {
+        "early_rank": null,
+        "premature_rank": 1,
+        "movement": "premature_better"
+      },
+      "U1_C05": {
+        "early_rank": 1,
+        "premature_rank": 1,
+        "movement": "tie"
+      },
+      "U1_C06": {
+        "early_rank": 12,
+        "premature_rank": 1,
+        "movement": "premature_better"
+      },
+      "U1_C07": {
+        "early_rank": 47,
+        "premature_rank": 1,
+        "movement": "premature_better"
+      },
+      "U1_C11": {
+        "early_rank": 3,
+        "premature_rank": 4,
+        "movement": "early_better"
+      }
+    }
+  },
+  "clean": {
+    "F_EARLY": {
+      "n": 11,
+      "hit": {
+        "1": 1,
+        "3": 2,
+        "5": 3,
+        "10": 4,
+        "20": 6,
+        "50": 7
+      },
+      "recall_pct": {
+        "1": 9.09,
+        "3": 18.18,
+        "5": 27.27,
+        "10": 36.36,
+        "20": 54.55,
+        "50": 63.64
+      },
+      "MRR@50": 0.1676
+    },
+    "F_PREMATURE": {
+      "n": 11,
+      "hit": {
+        "1": 4,
+        "3": 6,
+        "5": 8,
+        "10": 9,
+        "20": 9,
+        "50": 9
+      },
+      "recall_pct": {
+        "1": 36.36,
+        "3": 54.55,
+        "5": 72.73,
+        "10": 81.82,
+        "20": 81.82,
+        "50": 81.82
+      },
+      "MRR@50": 0.5114
+    },
+    "rank_movement": {
+      "premature_better": 6,
+      "tie": 2,
+      "early_better": 3
+    },
+    "by_case": {
+      "U1_B01": {
+        "early_rank": null,
+        "premature_rank": 2,
+        "movement": "premature_better"
+      },
+      "U1_B03": {
+        "early_rank": 16,
+        "premature_rank": 2,
+        "movement": "premature_better"
+      },
+      "U1_B04": {
+        "early_rank": 5,
+        "premature_rank": 8,
+        "movement": "early_better"
+      },
+      "U1_B05": {
+        "early_rank": null,
+        "premature_rank": null,
+        "movement": "tie"
+      },
+      "U1_B06": {
+        "early_rank": 7,
+        "premature_rank": null,
+        "movement": "early_better"
+      },
+      "U1_C01": {
+        "early_rank": null,
+        "premature_rank": 4,
+        "movement": "premature_better"
+      },
+      "U1_C03": {
+        "early_rank": null,
+        "premature_rank": 1,
+        "movement": "premature_better"
+      },
+      "U1_C05": {
+        "early_rank": 1,
+        "premature_rank": 1,
+        "movement": "tie"
+      },
+      "U1_C06": {
+        "early_rank": 12,
+        "premature_rank": 1,
+        "movement": "premature_better"
+      },
+      "U1_C07": {
+        "early_rank": 47,
+        "premature_rank": 1,
+        "movement": "premature_better"
+      },
+      "U1_C11": {
+        "early_rank": 3,
+        "premature_rank": 4,
+        "movement": "early_better"
+      }
+    },
+    "F_EARLY_query_proxy": {
+      "mean_clue_load": 0.549,
+      "candidate_inclusion": 1,
+      "candidate_guessed": 1
+    }
+  },
+  "validity": {
+    "early_valid_calls": 12,
+    "early_retrieval_errors": 0
+  },
+  "cache": {
+    "hit_tokens": 2048,
+    "miss_tokens": 2526,
+    "hit_rate": 0.4477
+  }
+}
