@@ -1,0 +1,3 @@
+# T1 oracle bridge-State probe
+
+Twelve frozen T0 transitions, three arms each. PRE receives Question, referent-preserving `G_next`, and empty `S_pre`. POST differs only by the frozen source-supported binding in `S_post`. RAW replaces the structured claim with the same real observation text and URL. DeepSeek writes one query per arm in a randomized, precommitted order. All queries are committed before identical Qwen3/FAISS top50 retrieval. Failures count as misses. Primary truth is the expanded frozen direct-source set; canonical rank is secondary. Pair, qid, type, query grounding, clue load, relation coverage, and input tokens are reported. No effect-size gate blocks T2.
