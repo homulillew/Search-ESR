@@ -1,0 +1,329 @@
+[
+  {
+    "case_id": "U1_B01",
+    "qid": "517",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "Peter Nzioki, popularly known as Peter King, was born on 25 May 1978; his father served in the Kenyan Army and his mother worked at the military hospital, matching the soldier-father and hospital-mother clues.",
+        "decision_effect": "candidate_binding",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Observed biography states name, birth date, and both parental occupations."
+      },
+      {
+        "proposal_index": 1,
+        "statement": "Peter King made his film debut in 2005 in The Constant Gardener, directed by Fernando Meirelles, and is also known for the film The Fifth Estate.",
+        "decision_effect": "constraint_resolution",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Observed biography states the 2005 film debut, director, and The Fifth Estate credit."
+      }
+    ],
+    "oracle_binding_recovered": true
+  },
+  {
+    "case_id": "U1_B03",
+    "qid": "435",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "The musician matching the question's clues is Oliver 'Tuku' Mtukudzi.",
+        "decision_effect": "candidate_binding",
+        "source_supported": false,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": true,
+        "reason": "Observation supports age and broad album career, but not all question clues asserted by “matching the question’s clues”."
+      },
+      {
+        "proposal_index": 1,
+        "statement": "Oliver Mtukudzi died in January 2019 at age 66.",
+        "decision_effect": "constraint_resolution",
+        "source_supported": true,
+        "decision_relevant": false,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Age 66 and January 2019 are observed; after the proposed binding this adds little next-decision information."
+      }
+    ],
+    "oracle_binding_recovered": false
+  },
+  {
+    "case_id": "U1_B04",
+    "qid": "1094",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "In the 95th minute of PSG's home match against Lille, Lionel Messi took a free-kick.",
+        "decision_effect": "candidate_binding",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Match article explicitly states Messi took the free kick in PSG versus Lille."
+      },
+      {
+        "proposal_index": 1,
+        "statement": "The match featuring the 95th-minute free-kick was PSG vs Lille, which ended 4-3 in PSG's favor.",
+        "decision_effect": "candidate_binding",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Match identity and 4–3 result appear in the observed article."
+      }
+    ],
+    "oracle_binding_recovered": true
+  },
+  {
+    "case_id": "U1_B05",
+    "qid": "311",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "The Adventures of Hijitus is an Argentine animated series with three credited writers (Manuel García Ferré, Inés Geldstein, Néstor D'Alessandro), so it fails the question's 'one director and two writers' clue.",
+        "decision_effect": "hypothesis_exclusion",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Observed writer list has three people; this contradicts the question’s two-writer clue."
+      },
+      {
+        "proposal_index": 1,
+        "statement": "The Adventures of Hijitus aired on Canal 13 from 7 August 1967 to 1 March 1996, so its network name and run dates do not match the question's three-character network name containing a number or an early-1990s January-to-December run.",
+        "decision_effect": "hypothesis_exclusion",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Canal 13 and 1967–1996 dates in the observation contradict the original network and run-period clues."
+      }
+    ],
+    "oracle_binding_recovered": false
+  },
+  {
+    "case_id": "U1_B06",
+    "qid": "186",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "Galacta: The Battle for Saturn is a November 1992 DOS shareware game with a single-player offline mode and three credited people (Sean Michael Puckett, Rocco Caputo, Terri L. Puckett), two of whom share the surname Puckett.",
+        "decision_effect": "candidate_binding",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Game name, November 1992 DOS release, shareware, one offline player, and named credits are observed."
+      },
+      {
+        "proposal_index": 1,
+        "statement": "Albino Frog Software, Inc. is listed as the publisher for Galacta: The Battle for Saturn; its name contains 'Frog', an amphibian, matching the amphibian-named company clue.",
+        "decision_effect": "candidate_binding",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Observed publisher is Albino Frog Software; the amphibian name matches the clue."
+      }
+    ],
+    "oracle_binding_recovered": true
+  },
+  {
+    "case_id": "U1_B07",
+    "qid": "1034",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "Heart Evangelista comes from a wealthy family (father Reynaldo Evangelista Ongpauco is an F&B magnate behind Barrio Fiesta Group; mother's family owns a sugar cane plantation), which conflicts with the clue that the target individual's wealth mostly came from showbiz.",
+        "decision_effect": "hypothesis_exclusion",
+        "source_supported": false,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": true,
+        "reason": "Wealthy family is observed, but the inference that most wealth could not come from showbiz is not established."
+      },
+      {
+        "proposal_index": 1,
+        "statement": "Heart Evangelista began her career at age 13 on the youth-oriented TV show G-mik, indicating her initial break was around 1998–1999, not in the 2006–2010 window specified for the target individual.",
+        "decision_effect": "hypothesis_exclusion",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "The source dates her start to roughly 23 years before 2021, inconsistent with a 2006–2010 break."
+      }
+    ],
+    "oracle_binding_recovered": false
+  },
+  {
+    "case_id": "U1_C01",
+    "qid": "435",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "The musician matching the age clue is Oliver \"Tuku\" Mtukudzi, a Zimbabwean Afro-jazz musician who died at 66.",
+        "decision_effect": "candidate_binding",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "The source explicitly names Oliver Mtukudzi and age 66; the claim is limited to the age clue."
+      }
+    ],
+    "oracle_binding_recovered": true
+  },
+  {
+    "case_id": "U1_C03",
+    "qid": "435",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "The musician matching the death-at-66 clue is Oliver 'Tuku' Mtukudzi, who had more than 60 albums by his January 2019 death.",
+        "decision_effect": "candidate_binding",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "The source explicitly names Oliver Mtukudzi, age 66, and more than 60 albums."
+      }
+    ],
+    "oracle_binding_recovered": true
+  },
+  {
+    "case_id": "U1_C05",
+    "qid": "177",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "Rangers, an Enugu-based NPFL club, signed 13 new players ahead of the 2022/23 season.",
+        "decision_effect": "candidate_binding",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Observed article states Rangers, Enugu, NPFL, and 13 new players."
+      },
+      {
+        "proposal_index": 1,
+        "statement": "Rangers are seven-time NPFL champions.",
+        "decision_effect": "constraint_resolution",
+        "source_supported": true,
+        "decision_relevant": false,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Seven-time champions is observed but does not resolve the frozen 2016-winner Gap or original founding question."
+      }
+    ],
+    "oracle_binding_recovered": true
+  },
+  {
+    "case_id": "U1_C06",
+    "qid": "580",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "The series being sought is You're the Worst.",
+        "decision_effect": "candidate_binding",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Observed source URL names youretheworst, and episode text matches the plot clue."
+      },
+      {
+        "proposal_index": 1,
+        "statement": "The mid-season Season 4 clue corresponds to the episode 'Not a Great Bet' (Season 4, Episode 7), in which Gretchen Cutler returns home for her brother's baby and reconnects with her old friend Heidi.",
+        "decision_effect": "constraint_resolution",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Episode number, Gretchen, baby, and Heidi are stated in observed text."
+      }
+    ],
+    "oracle_binding_recovered": true
+  },
+  {
+    "case_id": "U1_C07",
+    "qid": "580",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "The season-four clue about the female lead returning home for a family member's baby and reconnecting with someone from her past matches You're the Worst Season 4 Episode 7, 'Not a Great Bet,' in which Gretchen goes home for her brother's baby and reconnects with Heidi.",
+        "decision_effect": "constraint_resolution",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Observed text and URL link the season-four episode, plot, and series."
+      },
+      {
+        "proposal_index": 1,
+        "statement": "In You're the Worst, the female lead is Gretchen Cutler and the male lead is Jimmy Shive-Overly.",
+        "decision_effect": "candidate_binding",
+        "source_supported": true,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": false,
+        "reason": "Source URL identifies the series; observed cast and plot identify Gretchen and Jimmy."
+      }
+    ],
+    "oracle_binding_recovered": true
+  },
+  {
+    "case_id": "U1_C11",
+    "qid": "546",
+    "model_error": null,
+    "proposals": [
+      {
+        "proposal_index": 0,
+        "statement": "Ding Junhui won a 4-3 decider against Ma Hailong in his opening match at the 2023 English Open on 2 October 2023.",
+        "decision_effect": "candidate_binding",
+        "source_supported": false,
+        "decision_relevant": true,
+        "target_leak": false,
+        "duplicate": false,
+        "over_specific": true,
+        "reason": "The article date is 2 October 2023, but the source does not explicitly date the match itself to that day."
+      }
+    ],
+    "oracle_binding_recovered": false
+  }
+]

@@ -1,5 +1,7 @@
 # T1 — Oracle bridge-state effect
 
+**Post-T3 integrity qualification:** `transition_bank/POST_T3_INTEGRITY_AUDIT.md` found that eight of the 12 frozen transitions either already expose the original requested answer or use a contradicted candidate. The 11-case cohort below only excludes the issue known before T1; it is a *conditional next-Gap retrieval diagnostic*, not a clean causal cohort for the original-question feedback hypothesis. At most four provisional cases across two qids remain, below the execution gate. The requests, primary truth, and numerical results below are preserved without relabeling.
+
 All 36 frozen DeepSeek calls parsed successfully; Search returned 50 documents for each query with no retrieval error. The primary any-sufficient truth set was frozen in T0. `U1_B07` has a question-to-candidate mismatch documented in `transition_bank/PRECALL_GAP_AMENDMENT.md`; it remains in the raw record but is excluded from causal interpretation. The clean cohort has 11 transitions across 8 qids, above the execution floor.
 
 | Cohort / arm | Direct@1 | @3 | @5 | @10 | @20 | @50 | MRR@50 |

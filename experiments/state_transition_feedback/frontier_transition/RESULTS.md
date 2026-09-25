@@ -1,5 +1,7 @@
 # T2 — State–Frontier compatibility
 
+**Post-T3 integrity qualification:** `transition_bank/POST_T3_INTEGRITY_AUDIT.md` found eight frozen transitions invalid for the full original-question feedback hypothesis. The 11-case “clean” metric below only excludes the issue known before T1 and should be read as a *conditional next-Gap diagnostic*. At most four provisional cases across two qids remain, below the execution gate. Frozen primary truth and outputs were not rewritten.
+
 All 12 F_EARLY calls parsed and all 12 searches completed. F_PREMATURE is the exact T1 PRE query and retrieval record, with no resampling. `U1_B07` remains an invalid question-to-candidate transition and is excluded from the clean causal cohort (11 transitions, 8 qids).
 
 | Cohort / arm | Progress@1 | @3 | @5 | @10 | @20 | @50 | First-progress MRR@50 | NoProgress@5 |
