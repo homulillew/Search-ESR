@@ -41,6 +41,9 @@ def freeze_policy():
     head = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
     write(BASE / 'policy_freeze.json', {'git_head': head, 'ranking_source': source,
           'ranking_deployable': deployable, 'ranking_source_sha256': sha(source_path),
+          'k0_summary_sha256': sha(HERE / 'rank_depth/summary.json'),
+          'q1_summary_sha256': sha(HERE / 'query_robustness/summary.json'),
+          'oracle_reviews_sha256': sha(BASE / 'oracle_reviews.json'),
           'policy_bank_sha256': sha(BASE / 'policy_bank.json'),
           'find_backend_sha256': oracle['find_backend_sha256'], 'tokenizer': oracle['tokenizer'],
           'search_budget_tokens': 400, 'case_order': oracle['case_order'],
