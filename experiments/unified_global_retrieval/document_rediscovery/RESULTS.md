@@ -4,7 +4,7 @@
 
 The bank and all private truth were committed before calls. Forty independent Query Writer requests to DeepSeek `deepseek-flash` returned parseable two-field JSON; there were no API/format failures, retries or query rewrites. Its response-reported prompt cache was 4,736 hit tokens and 10,659 miss tokens, a weighted 30.76% hit rate. `QUERIES.json` was separately committed before retrieval.
 
-The first retriever initialization failed before any Search because GPU 1 ran out of memory; `initialization_failure.json` preserves it. The same frozen Qwen3 model, FAISS index and queries then ran on CPU. This uses the backend's CPU float32 path rather than its GPU float16 path, so small rank differences relative to a future GPU run are possible. G and H used the same CPU query vector and IP scoring. All 40 paired retrievals completed without query/tool failure. CPU retrieval latency was 78.30 seconds summed over cells, median 1.92 seconds per cell; H reused each G embedding. No Find was called.
+The first retriever initialization failed before any Search because GPU 1 ran out of memory; `initialization_failure.json` preserves it. The same frozen Qwen3 model, FAISS index and queries then ran on CPU. G and H used the same CPU query vector and IP scoring. All 40 paired retrievals completed without query/tool failure. CPU retrieval latency was 78.30 seconds summed over cells, median 1.92 seconds per cell; H reused each G embedding. No Find was called. A subsequent [GPU 1 replication](gpu_replication/RESULTS.md) successfully loaded the unchanged backend with float16 weights and produced the **same ordered top-five docids in all 40 cells**. Its gate decision was also STOP_U1.
 
 ## Frozen primary metrics
 
