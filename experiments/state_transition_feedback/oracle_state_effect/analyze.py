@@ -59,6 +59,9 @@ def main():
     arms=['PRE','POST','RAW']
     summary={'arms':{a:score([x for x in results if x['arm']==a],direct) for a in arms},
              'canonical':{a:score([x for x in results if x['arm']==a],canonical) for a in arms}}
+    clean_ids=set(cases)-{'U1_B07'}
+    summary['clean_excluding_U1_B07']={'arms':{a:score([x for x in results if x['arm']==a and x['case_id'] in clean_ids],direct) for a in arms},
+      'canonical':{a:score([x for x in results if x['arm']==a and x['case_id'] in clean_ids],canonical) for a in arms}}
     pairs={}
     for a,b in [('PRE','POST'),('PRE','RAW'),('RAW','POST')]:
         movement={cid:'improved' if (first(rix[cid,b],direct[cid]) or 51)<(first(rix[cid,a],direct[cid]) or 51) else
@@ -75,6 +78,13 @@ def main():
       'mean_query_words':round(statistics.mean(x['query_words'] for x in xs),2),
       'median_prompt_tokens':statistics.median(x['prompt_tokens'] for x in xs if x['prompt_tokens'] is not None)}
       for a,xs in feat.items()}
+    summary['clean_excluding_U1_B07']['query_mechanism']={a:{
+      'candidate_inclusion':sum(features(qix[cid,a],cases[cid])['candidate_in_query'] for cid in clean_ids),
+      'candidate_guessed':sum(features(qix[cid,a],cases[cid])['candidate_guessed'] for cid in clean_ids),
+      'mean_clue_load':round(statistics.mean(features(qix[cid,a],cases[cid])['clue_load'] for cid in clean_ids),4),
+      'mean_relation_lexical_coverage':round(statistics.mean(features(qix[cid,a],cases[cid])['relation_lexical_coverage'] for cid in clean_ids),4),
+      'median_prompt_tokens':statistics.median(features(qix[cid,a],cases[cid])['prompt_tokens'] for cid in clean_ids),
+      'total_prompt_tokens':sum(features(qix[cid,a],cases[cid])['prompt_tokens'] for cid in clean_ids)} for a in arms}
     summary['qid']={qid:{a:score([x for x in results if x['qid']==qid and x['arm']==a],direct)
                               for a in arms} for qid in sorted({c['qid'] for c in cases.values()})}
     usage=[x.get('usage') or {} for x in queries]
