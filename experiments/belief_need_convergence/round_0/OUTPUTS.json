@@ -1,0 +1,3740 @@
+[
+  {
+    "case_id": "N001",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Which football club and league season satisfy the criteria of a 2011-2016 season with exactly three pairs of teams tied on points, a team finishing 6th-12th with a goal difference of 6-12, being based in a capital city as of 2023, having won a league between 1973 and 1983, and being described in a 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N001",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N001",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N001",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N001",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which club is the subject of the 2023 article that reports it has won fifteen trophies and signed 13 players ahead of a certain season?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N002",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N002",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N002",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Did a 2023 article state that Rangers International F.C. has won fifteen trophies and signed 13 players ahead of the 2022/23 NPFL season?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N002",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N002",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "As of 2023, in which city is the football club Rangers — the provisional candidate that signed 13 players ahead of the 2022/23 Nigeria Professional Football League season — based?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N003",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What is the official founding year and country of Enugu Rangers International F.C.?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N003",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What year and country was Enugu Rangers F.C. founded?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N003",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N003",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N003",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In the 2014 Nigeria Professional Football League season, did any other club finish on the same points total as Enugu Rangers, and if so, which club?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N004",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Which club does the 2023 article describe as having won fifteen trophies and signed 13 players ahead of a season, and does that club match the capital-city, 1973–1983 league-title, and 2011–2016 shared-points/6th–12th/goal-difference criteria?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N004",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In which season between 2011 and 2016, if any, did Rangers International finish between 6th and 12th in the Nigeria Professional Football League with a goal difference between 6 and 12 and share the same points total with another team?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N004",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N004",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N004",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International Football Club win the relevant league at any point between 1973 and 1983?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N005",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N005",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N005",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N005",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N005",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did a 2023 article state that Rangers had won fifteen trophies?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N006",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N006",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N006",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N006",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N006",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What is the title of the pre-1999 video game in which a mammal character must blast his way through enemies?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N007",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What source dated 25 July 2013 states the storage capacity of the gaming PC used by the person who animated Jazz Jackrabbit 2's intro and end animations, and what capacity does it give?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N007",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What was the storage capacity of the gaming PC used by Dean \"Noogy\" Dodrill as of 25 July 2013?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N007",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N007",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N007",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What was the storage capacity of the gaming PC owned by Dean \"Noogy\" Dodrill, who was an animator for Jazz Jackrabbit 2, as of 25 July 2013?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N008",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill create the intro and ending animations for Jazz Jackrabbit 2, the 1998 Epic MegaGames game featuring the mammal protagonist Jazz Jackrabbit?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N008",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill create or animate the intro and ending cinematics for Jazz Jackrabbit 2?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N008",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N008",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N008",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill create the intro and end animations for the game described in the question?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N009",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N009",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N009",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N009",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N009",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which role-playing game released between 1983 and 1995 was created by the company that was later involved in Jazz Jackrabbit 2, and whose financial success allowed that company's founder to continue funding game development?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N010",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N010",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N010",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N010",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N010",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Who is the filmmaker who was inspired to become a filmmaker after watching Iracema?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N011",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N011",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N011",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N011",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N011",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which 2005 film, if any, directed by Fernando Meirelles is relevant to resolving the original question?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N012",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter Nzioki (also credited as Peter King Nzioki), who played Policeman 1 in The Constant Gardener and Oscar Kamau Kingara in The Fifth Estate, have a documented birth in 1979 to a soldier father and a mother who worked at a barracks hospital, matching the Chinese zodiac goat?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N012",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Are the actors credited as Peter Nzioki (Policeman 1 in The Constant Gardener) and Peter King Nzioki (Oscar Kamau Kingara in The Fifth Estate) the same person?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N012",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Are Peter Nzioki, credited as Policeman 1 in The Constant Gardener, and Peter King Nzioki, credited as Oscar Kamau Kingara in The Fifth Estate, the same person?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N012",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N012",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In what decade was Peter Nzioki, the actor who played Policeman 1 in The Constant Gardener (2005) and appeared in The Fifth Estate (2013), born?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N013",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What is Peter King's exact birth date or year, and does it actually correspond to the Chinese zodiac sign of the Goat, given that a 25 May 1978 birth date would fall under the Horse?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N013",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Was Peter King born in 1979 (a Goat year) rather than 1978, and what is his actual Chinese zodiac sign?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N013",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N013",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N013",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Bill Condon write and direct the film Kinsey?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N014",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "How can the Chinese zodiac Goat clue be reconciled with Peter King's reported 25 May 1978 birth date—is his birth year actually 1979, or is there another actor in both The Constant Gardener and The Fifth Estate who was born in a Goat year?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N014",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King, reported to have been born on 25 May 1978, actually have the Chinese zodiac sign Goat, or does that detail indicate the person in the question is someone else?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N014",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King, born on 25 May 1978, have the Chinese zodiac sign of the Goat?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N014",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N014",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King Nzioki Mwania, who is popularly known as Peter King and has a reported birth date of 25 May 1978, have the Chinese zodiac sign Goat?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N015",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N015",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Which snooker player won a deciding-frame match in 2023 against an opponent with fewer than 250 career centuries, then won his next two matches 4–3 and 4–0, and then lost his next match to an opponent with more than 400 career centuries as of 30 January 2025?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N015",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Which professional snooker player won a deciding-frame match in 2023 against an opponent with fewer than 250 career centuries, then won his next two matches 4-3 and 4-0, and then lost his following match to an opponent with more than 400 career centuries as of 30 January 2025?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N015",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N015",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which snooker player turned professional between 1995 and 2006 and may satisfy the remaining criteria in the original question?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N016",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N016",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What were the scores and opponents of Ding Junhui's subsequent matches at the 2023 English Open after his 4–3 win over Ma Hailong?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N016",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N016",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N016",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In what year did Ding Junhui turn professional?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N017",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N017",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N017",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N017",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N017",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which snooker players turned professional between 1995 and 2006, and are any of them plausible candidates for the player sought in the original question?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N018",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What were Ding Junhui's exact results and opponents at the 2023 English Open after his 4–3 opening win over Ma Hailong, and did that run include a 4–3 win, then a 4–0 win, followed by a loss to a player with more than 400 century breaks as of 30 January 2025?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N018",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Did Ding Junhui's 2023 English Open run, after a 4–3 first-round win over Ma Hailong, continue with 4–3 and 4–0 wins before a loss to an opponent who had more than 400 career centuries as of 30 January 2025?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N018",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "In the 2023 English Open, after Ding Junhui's 4–3 first-round win over Ma Hailong, what were the scores and opponent identities of his subsequent matches, and did he lose his next match to a player with more than 400 career century breaks as of 30 January 2025?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N018",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N018",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Ding Junhui turn professional between 1995 and 2006?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N019",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N019",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N019",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N019",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N019",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which match followed Ding Junhui's 2023 English Open Last 16 win over Luca Brecel?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N020",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N020",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What is the birth name of the individual who, according to a 2020 article, studied Business Administration at university between 2001 and 2007, was hired as a coordinator in 2012, and was later promoted to a manager?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N020",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N020",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N020",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which individual was reported in a 2020 article as having been hired for a coordinator position in 2012 and later promoted to a manager?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N021",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Does Nick Mutuma match all remaining identifying details from the 2020 and 2021 articles—specifically studying Business Administration at university, having a child born in the United States, releasing a debut single between 2010 and 2015, and being hired as a coordinator in 2012 then promoted to manager—or do those details point to a different individual?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N021",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Was Nick Mutuma hired for a coordinator position in 2012 and later promoted to a manager?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N021",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N021",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N021",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Nick Mutuma have a child born in the United States by 2021?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N022",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N022",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N022",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N022",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N022",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which individual, if any, had an industry breakthrough between 2006 and 2010 and could be the person described in the original question, given that the Heart Evangelista route (breakthrough around 1998) is incompatible?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N023",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N023",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N023",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Was Nick Mutuma hired for a coordinator position in 2012 and later promoted to a manager role?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N023",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N023",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Nick Mutuma hold a coordinator position in 2012 and later get promoted to a manager role?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N024",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What birth name is documented for the individual who matches the described commercial-model career, family of three children, break in the industry between 2006 and 2010, U.S.-born child, Business Administration university study between 2001 and 2007, debut single between 2010 and 2015, and 2012 coordinator role later promoted to manager—and is it Nicholas Munene Mutuma?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N024",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Did Nick Mutuma work as a coordinator starting in 2012 and later get promoted to manager, as described in the 2020 article?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N024",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Was Nick Mutuma hired for a coordinator position in 2012 and later promoted to a manager, as described in the 2020 article?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N024",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N024",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What year did Nick Mutuma have his first breakthrough in the entertainment industry, if that breakthrough occurred between 2006 and 2010?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N025",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Did Albino Frog Software develop Galacta: The Battle for Saturn, and was it originally established under a different name in the early 1990s?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N025",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What was the original name of Albino Frog Software when it was first established in the early 1990s, before it adopted the amphibian-themed name?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N025",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N025",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N025",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Albino Frog Software develop Galacta: The Battle for Saturn, or did it only publish the game?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N026",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What was the former name and original establishment date of Albino Frog Software, and did that company develop or publish the November 1992 DOS shareware single-player game credited to three people, two of whom share the same family name?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N026",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Was Galacta: The Battle for Saturn originally released in November 1992 under the earlier company name Night Sky rather than Albino Frog Software, and does the original DOS shareware release credit Night Sky as its developer or publisher?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N026",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N026",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N026",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Does Galacta: The Battle for Saturn have only a single-player mode, or does it also support multiplayer?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N027",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N027",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N027",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N027",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N027",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What is the Argentinian release name of the television programme, distinct from The Adventures of Hijitus, that fits the original early-1990s broadcast clue, if such a programme exists?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N028",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N028",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N028",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N028",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N028",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What is the Argentine release name of a television programme, other than Hijitus, that satisfies the original clues, given that Hijitus conflicts with the early-1990s run dates and the two-writer count?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N029",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Which May issue of Forbes Africa during the 2010s featured Oliver Mtukudzi, and how many albums did that article state he had released by that time?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N029",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In which May issue of Forbes Africa during the 2010s was Oliver Mtukudzi featured, and how many albums had he released by the time of that feature?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N029",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Was Oliver Mtukudzi featured in a May issue of Forbes Africa during the 2010s, and if so, which issue (month and year)?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N029",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N029",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What exact number of albums had Oliver 'Tuku' Mtukudzi released at the time of the Forbes Africa May 2010s feature referenced in the original question?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N030",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N030",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N030",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Did Oliver Mtukudzi give a 2010s interview in which he asked, 'Why do we sing, why is there art?'"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N030",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N030",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Oliver Mtukudzi ask the question \"Why do we sing, why is there art?\" in a 2010s interview?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N031",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Which series contains a third-season final-episodes event where the male lead's roommate makes a sacrifice, and does that event align with the candidate You're the Worst?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N031",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In You’re the Worst, does the male lead’s roommate make a sacrifice in one of the final episodes of season 3?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N031",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "In You’re the Worst, in one of the final episodes of season three, does the male lead's roommate make a sacrifice, and if so, what exactly is that sacrifice?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N031",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N031",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In You’re the Worst, did the male lead’s roommate make a sacrifice in one of the final episodes of season three?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N032",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Does any other television series with fewer than ten seasons contain all three of the described plot points—a season-one episode where friends persuade one lead to take the other on a date after a sensitive assumption, a season-three finale or final arc where the male lead's roommate makes a sacrifice, and a mid-season-four episode where the female lead returns home for a family member's birth and reconnects with a past acquaintance—or do these uniquely identify You’re the Worst?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N032",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N032",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Is You're the Worst the only television series that matches all three of the plot points described in the original question?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N032",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N032",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In You're the Worst season 1 episode 2 (\"Insouciance\"), what specific assumption did Jimmy make about a sensitive issue that caused Gretchen to become upset?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N033",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N033",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N033",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N033",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N033",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In the Paris Saint-Germain vs Lille match in which Lionel Messi took a 95th-minute free kick, did one team score all its goals early in the match while the other team scored all its goals later in the match?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N034",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N034",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N034",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N034",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N034",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which alternative football match, if any, matches the description of one team scoring all its goals early, the other scoring later, and a free kick being taken in the 95th minute, now that the PSG–Lille match has been contradicted on the goal-timing pattern?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N035",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International F.C. finish between 6th and 12th, share the same points with another team, and have a goal difference between 6 and 12 in a 2011–2016 league season that had exactly three pairs of teams level on points, confirming it as the team described in the 2023 article?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N035",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In which Nigerian league season between 2011 and 2016 did Rangers International FC finish between 6th and 12th, share the same points total with another team, and have a goal difference between 6 and 12?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N035",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N035",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N035",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International Football Club win a league title at any point between 1973 and 1983?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N036",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N036",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In what year was Rangers International Football Club founded?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N036",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Did a 2023 article state that Rangers International Football Club had won fifteen trophies and signed 13 players ahead of the 2022/23 Nigeria Professional Football League season?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N036",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N036",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International Football Club win a league championship at any point between 1973 and 1983?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N037",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N037",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N037",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N037",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N037",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International Football Club win a league championship at some point between 1973 and 1983?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N038",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers finish between 6th and 12th, share the same points total with another team, and record a goal difference between +6 and +12 in any Nigerian league season that began and ended between 2011 and 2016?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N038",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In which league season between 2011 and 2016 did Enugu Rangers finish between 6th and 12th with the same points total as another team and a goal difference between 6 and 12?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N038",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "In which Nigerian league season between 2011 and 2016 did Enugu Rangers finish between 6th and 12th with a goal difference between 6 and 12 and share the same points total with another team, in a season that had exactly three pairs of teams level on points?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N038",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N038",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Does the 2023 article attribute fifteen trophies to Rangers?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N039",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Is Dean Dodrill the animator credited with the intro and end animations of Game B, and does the 25 July 2013 source about his gaming PC state that its storage size is 5 TB?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N039",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill create the intro and end animations for Jazz Jackrabbit 2?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N039",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Was Dean Dodrill's statement that his gaming/workstation PC has 5 TB of storage and a wireless keyboard made on 25 July 2013?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N039",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N039",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What type of paper did Dean Dodrill use for animation as of 25 July 2013?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N040",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N040",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean \"Noogy\" Dodrill create the intro and ending animations for Jazz Jackrabbit 2?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N040",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean \"Noogy\" Dodrill create the intro and ending animations for Jazz Jackrabbit 2?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N040",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N040",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean \"Noogy\" Dodrill specifically create the intro and ending animations for Jazz Jackrabbit 2?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N041",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N041",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Was Dean \"Noogy\" Dodrill the animator responsible for the intro and ending animations in Jazz Jackrabbit 2?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N041",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean \"Noogy\" Dodrill create the intro and end animations for Jazz Jackrabbit 2?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N041",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N041",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill use normal 8x11-inch printing paper for his animation work as of 25 July 2013?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N042",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Did Peter King Nzioki, who played Oscar Kamau Kingara in The Fifth Estate, also play a policeman in The Constant Gardener, and do his birth details match a 1970s birth to a soldier father and a mother who worked at a barracks hospital under the Chinese zodiac goat?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N042",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N042",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N042",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N042",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What role, if any, did Peter Nzioki have in the 2005 film The Constant Gardener?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N043",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Is the actor credited as Peter Nzioki for Policeman 1 in The Constant Gardener the same person as Peter King Nzioki who played Oscar Kamau Kingara in The Fifth Estate, and do reliable biographical sources confirm he was born in 1979 to a soldier father and a mother who worked at a barracks hospital?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N043",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N043",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N043",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N043",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What decade was Peter Nzioki born in?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N044",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King Nzioki Mwania’s documented birth date place him in a Chinese zodiac Goat year (such as 1979), or is the reported 25 May 1978 birth date incorrect, thereby resolving the conflict between his birth-year zodiac and the other clues?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N044",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Was Peter King Nzioki Mwania born in a Chinese zodiac Goat year, or does his verified birth date of 25 May 1978 make him a Horse, thereby suggesting the Goat clue is either an error or points to a different person?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N044",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N044",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N044",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Is Peter Nzioki's Chinese zodiac sign the Goat?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N045",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N045",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Is there a reliable source confirming Peter King was born in 1979 (the Chinese zodiac Goat year), rather than the 1978 birth date already noted?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N045",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Is Peter King's Chinese zodiac sign actually Goat, given his recorded birth date of 25 May 1978?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N045",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N045",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Bill Condon both write and direct the film Kinsey?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N046",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What is Peter King's exact birth year, and does it fall in the Chinese zodiac Year of the Goat (1979) rather than the Year of the Horse (1978), thereby reconciling or contradicting the goat clue?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N046",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Is the Chinese zodiac sign for Peter King, born 25 May 1978, a goat as stated in the original question?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N046",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King's birth date of 25 May 1978 correspond to the Chinese zodiac sign of the goat?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N046",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N046",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What is Peter King's Chinese zodiac sign, given his recorded birth date of 25 May 1978?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N047",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N047",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N047",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "As of 30 January 2025, which snooker players have more than 300 career centuries and turned professional between 1995 and 2006?"
+    },
+    "call_stages": [
+      "P2"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N047",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N047",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In what year did Ding Junhui turn professional?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N048",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N048",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N048",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N048",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N048",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "For Ding Junhui, who turned professional in 2003, does his 2023 match record include a deciding-frame win against a player with fewer than 250 centuries, followed by two wins by 4-3 and 4-0 respectively, and then a loss in his next match to a player with more than 400 centuries as of 30 January 2025?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N049",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N049",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N049",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N049",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N049",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In what year did Nick Mutuma first have his television breakthrough?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N050",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N050",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N050",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N050",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N050",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "As of 2021, did Nick Mutuma have a child who was born in the United States?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N051",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N051",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N051",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N051",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N051",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Nick Mutuma hold the 2012 coordinator position and later manager promotion described in the 2020 article?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N052",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What is the founding year and country of Enugu Rangers International F.C., the club that signed 13 players ahead of the 2022/23 Nigeria Professional Football League season?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N052",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What year and country was Rangers International F.C., the Nigerian club that signed 13 players ahead of the 2022/23 Nigeria Professional Football League season, founded?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N052",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N052",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N052",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In which city was the club provisionally identified as Rangers based as of 2023?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N053",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What storage capacity did Dean Dodrill report for his gaming PC in the 25 July 2013 source that describes his wireless keyboard and his practice of animating on normal 8x11-inch printing paper?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N053",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What was the storage capacity of Dean 'Noogy' Dodrill's gaming PC as of 25 July 2013?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N053",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N053",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N053",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What was the storage capacity of Dean 'Noogy' Dodrill's gaming PC as of 25 July 2013?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N054",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Is the actor credited as Peter Nzioki for Policeman 1 in The Constant Gardener the same person as Peter King Nzioki, who played Oscar Kamau Kingara in The Fifth Estate, and do verified biographical sources confirm that he was born in the 1970s (Chinese zodiac goat) to a soldier father and a mother who worked at a barracks hospital?"
+    },
+    "call_stages": [
+      "P0"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N054",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Are Peter Nzioki, credited as Policeman 1 in The Constant Gardener (2005), and Peter King Nzioki, credited as Oscar Kamau Kingara in The Fifth Estate (2013), the same person?"
+    },
+    "call_stages": [
+      "P1"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N054",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N054",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N054",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What is the documented birth decade of Peter Nzioki?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  },
+  {
+    "case_id": "N055",
+    "arm": "P0",
+    "output": null,
+    "call_stages": [
+      "P0"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N055",
+    "arm": "P1",
+    "output": null,
+    "call_stages": [
+      "P1"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N055",
+    "arm": "P2",
+    "output": null,
+    "call_stages": [
+      "P2"
+    ],
+    "errors": [
+      {
+        "category": "length",
+        "type": "ValueError",
+        "message": "finish_reason=length"
+      }
+    ]
+  },
+  {
+    "case_id": "N055",
+    "arm": "P3",
+    "output": null,
+    "call_stages": [
+      "P3A"
+    ],
+    "errors": [
+      {
+        "category": "transport",
+        "type": "HTTPStatusError",
+        "message": "Client error '400 Bad Request' for url 'https://api.deepseek.com/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+      }
+    ]
+  },
+  {
+    "case_id": "N055",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which match did Ding Junhui play immediately after his 4-3 win over Luca Brecel in the 2023 English Open Last 16?"
+    },
+    "call_stages": [
+      "P4"
+    ],
+    "errors": []
+  }
+]

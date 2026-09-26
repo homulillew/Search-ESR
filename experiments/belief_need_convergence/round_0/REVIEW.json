@@ -1,0 +1,5359 @@
+[
+  {
+    "case_id": "N001",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Which football club and league season satisfy the criteria of a 2011-2016 season with exactly three pairs of teams tied on points, a team finishing 6th-12th with a goal difference of 6-12, being based in a capital city as of 2023, having won a league between 1973 and 1983, and being described in a 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season?"
+    },
+    "output_sha256": "4f454ac6a5cec80230e1f62b76eca91d1adda3da48091c7b498c17094c242cab",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B8"
+    ],
+    "reason": "Restates nearly all independent league, club and article conditions; no local uncertainty chosen.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N002",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N003",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What is the official founding year and country of Enugu Rangers International F.C.?"
+    },
+    "output_sha256": "a422f3c65183b43ca9aff1e78e407176d3dd8f2c6ae9c637755ae7ddb82df89e",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "The founding event year/country is the requested relation and absent from C1-C2; candidate binding remains provisional.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N004",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Which club does the 2023 article describe as having won fifteen trophies and signed 13 players ahead of a season, and does that club match the capital-city, 1973–1983 league-title, and 2011–2016 shared-points/6th–12th/goal-difference criteria?"
+    },
+    "output_sha256": "5d835653cd83b2c2c3234ba1cca12c01b34289ebc1e34357f473195b7eb28907",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Bundles article identification with capital status, league-title history and league-table verification.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N005",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N006",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N007",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What source dated 25 July 2013 states the storage capacity of the gaming PC used by the person who animated Jazz Jackrabbit 2's intro and end animations, and what capacity does it give?"
+    },
+    "output_sha256": "dca487ffc94effe57aeb740c69823cbc6055c73404efa0004fa58ea2cded5bd3",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B3",
+      "B4"
+    ],
+    "reason": "Assumes a specific July25 source and binds Jazz2 intro/end animator to the described PC/source; generic animator Claims do not support the full binding.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N008",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill create the intro and ending animations for Jazz Jackrabbit 2, the 1998 Epic MegaGames game featuring the mammal protagonist Jazz Jackrabbit?"
+    },
+    "output_sha256": "84efc9265f2c7e66757baac96b9306947a34c75fc39feb230f83e7a65d2a0a8f",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B7"
+    ],
+    "reason": "Asserts Jazz2 year/developer/mammal facts unavailable in these C1-C3 or H. Intro/end test itself is useful, but inserted assertions are not established.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N009",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N010",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N011",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N012",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter Nzioki (also credited as Peter King Nzioki), who played Policeman 1 in The Constant Gardener and Oscar Kamau Kingara in The Fifth Estate, have a documented birth in 1979 to a soldier father and a mother who worked at a barracks hospital, matching the Chinese zodiac goat?"
+    },
+    "output_sha256": "0112d36d8c87189c4654d628a51979fd23e9066d661c851329ad4dd2fbf67ad8",
+    "V": false,
+    "S": false,
+    "P": true,
+    "W": true,
+    "I": false,
+    "H": true,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B3",
+      "B5"
+    ],
+    "reason": "Treats two credit-name variants as proven identical based on H, then bundles birth and parental conditions.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N013",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What is Peter King's exact birth date or year, and does it actually correspond to the Chinese zodiac sign of the Goat, given that a 25 May 1978 birth date would fall under the Horse?"
+    },
+    "output_sha256": "8fd04e95865e93726ddcd18edd3ead8a4c2e8994ef045fbb7dd27fbb2a36c8a3",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B10"
+    ],
+    "reason": "Asserts the Horse calendar mapping before it is established in Claims; the birth date itself is already stated, while zodiac remains open.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N014",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "How can the Chinese zodiac Goat clue be reconciled with Peter King's reported 25 May 1978 birth date—is his birth year actually 1979, or is there another actor in both The Constant Gardener and The Fifth Estate who was born in a Goat year?"
+    },
+    "output_sha256": "b870e4755d1d5b44aa399af02f6b71bf53008c5e9934abb3b6bcbd05a14dd749",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B10"
+    ],
+    "reason": "Recognizes zodiac compatibility gap but bundles birth-year correction and discovery of an alternative actor; not one local test.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N015",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N016",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N017",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N018",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What were Ding Junhui's exact results and opponents at the 2023 English Open after his 4–3 opening win over Ma Hailong, and did that run include a 4–3 win, then a 4–0 win, followed by a loss to a player with more than 400 century breaks as of 30 January 2025?"
+    },
+    "output_sha256": "cf51463d128fddfca6027af262d19914f7f965a888b05bd426715c347ae39821",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Asks all subsequent results and opponent total, not one local next-match relation.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N019",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N020",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N021",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Does Nick Mutuma match all remaining identifying details from the 2020 and 2021 articles—specifically studying Business Administration at university, having a child born in the United States, releasing a debut single between 2010 and 2015, and being hired as a coordinator in 2012 then promoted to manager—or do those details point to a different individual?"
+    },
+    "output_sha256": "a9e377bb6cbc311cc5b25e6bdb38b0fdcfcdbc5838bf0218d17aa5acd216f3cc",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Explicitly asks all remaining independent biographical details; no one frontier.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N022",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N023",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N024",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What birth name is documented for the individual who matches the described commercial-model career, family of three children, break in the industry between 2006 and 2010, U.S.-born child, Business Administration university study between 2001 and 2007, debut single between 2010 and 2015, and 2012 coordinator role later promoted to manager—and is it Nicholas Munene Mutuma?"
+    },
+    "output_sha256": "179c261c8f72e864b5e9a7b833eba223bf78d094588c0a2abc8708b0b5d3a844",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Near-verbatim full Q conjunction plus final name; no local uncertainty chosen.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N025",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Did Albino Frog Software develop Galacta: The Battle for Saturn, and was it originally established under a different name in the early 1990s?"
+    },
+    "output_sha256": "edcd32e9cf23d51d3b1e8dbda5b46b12d96b7284b37a2f4a34bf9f585252cf9e",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Bundles game-developer relation with company former name/establishment history; two independent checks.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N026",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What was the former name and original establishment date of Albino Frog Software, and did that company develop or publish the November 1992 DOS shareware single-player game credited to three people, two of whom share the same family name?"
+    },
+    "output_sha256": "93763b14095dad529c794759b288605b6c46a226f21d4acd275ac0ba5ee8b45d",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Combines establishment/name question with developer/publisher relation already addressed by C10; no single new question.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N027",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N028",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N029",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Which May issue of Forbes Africa during the 2010s featured Oliver Mtukudzi, and how many albums did that article state he had released by that time?"
+    },
+    "output_sha256": "e5bb721954d650f29bde111e9dad4f824c440651ed9216e5035595e08f90f80d",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4"
+    ],
+    "reason": "Presupposes Mtukudzi had the specified Forbes feature; C1-C2 establish age and >60 albums only.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N030",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N031",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Which series contains a third-season final-episodes event where the male lead's roommate makes a sacrifice, and does that event align with the candidate You're the Worst?"
+    },
+    "output_sha256": "73f0b828ba070bf6f4aa18bfb7d699ae51ea1b0391b8a2d25b0c8e5ac8b2fd36",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Single season-three sacrifice clue for discovery/compatibility; does not assume candidate contains event.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N032",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Does any other television series with fewer than ten seasons contain all three of the described plot points—a season-one episode where friends persuade one lead to take the other on a date after a sensitive assumption, a season-three finale or final arc where the male lead's roommate makes a sacrifice, and a mid-season-four episode where the female lead returns home for a family member's birth and reconnects with a past acquaintance—or do these uniquely identify You’re the Worst?"
+    },
+    "output_sha256": "b1a7847a0eed3ed550b1f8edb35287fbcc486ed0f6cb791f207bce759229e3cc",
+    "V": false,
+    "S": false,
+    "P": true,
+    "W": true,
+    "I": true,
+    "H": true,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B5",
+      "B6"
+    ],
+    "reason": "Global uniqueness comparison adds an unrequested burden and implies candidate already matches all plots despite incomplete sensitive-issue/role bindings.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N033",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N034",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N035",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International F.C. finish between 6th and 12th, share the same points with another team, and have a goal difference between 6 and 12 in a 2011–2016 league season that had exactly three pairs of teams level on points, confirming it as the team described in the 2023 article?"
+    },
+    "output_sha256": "bee6189bcb434ca62ef98e362d4b9ee0caf3c5bc9c731721f279effd88015905",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Entire league-table conjunction plus article identity confirmation; several separable local checks.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N036",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N037",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N038",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers finish between 6th and 12th, share the same points total with another team, and record a goal difference between +6 and +12 in any Nigerian league season that began and ended between 2011 and 2016?"
+    },
+    "output_sha256": "e785b9f9d7137464ee3ca7c3c669b7cc9570a2de676690a186cf4641e64102d0",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Bundles rank, shared-points counterpart and GD over multiple seasons rather than a local league-table uncertainty.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N039",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Is Dean Dodrill the animator credited with the intro and end animations of Game B, and does the 25 July 2013 source about his gaming PC state that its storage size is 5 TB?"
+    },
+    "output_sha256": "d3b4419babf194fb54d02a8c091a0621ca0e12b464b4f872662f3b2c43da18f1",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B5"
+    ],
+    "reason": "Combines game-animation attribution and PC/date source, while presupposing a specific dated source not present in C1-C2.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N040",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N041",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N042",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Did Peter King Nzioki, who played Oscar Kamau Kingara in The Fifth Estate, also play a policeman in The Constant Gardener, and do his birth details match a 1970s birth to a soldier father and a mother who worked at a barracks hospital under the Chinese zodiac goat?"
+    },
+    "output_sha256": "e0e53ad55293ab3503f6006c1e8cc1baae892a7275a19d8256498b85839331d4",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Film role, birth decade, parents and zodiac are separable questions.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N043",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Is the actor credited as Peter Nzioki for Policeman 1 in The Constant Gardener the same person as Peter King Nzioki who played Oscar Kamau Kingara in The Fifth Estate, and do reliable biographical sources confirm he was born in 1979 to a soldier father and a mother who worked at a barracks hospital?"
+    },
+    "output_sha256": "4b144f465fd8d7a48d98085f513827f05ca9748d8be86a99cea48d5618f4027e",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Identity join, birth date and both parental occupations are separate questions; 1979 is proposed as a test, not asserted as known.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N044",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King Nzioki Mwania’s documented birth date place him in a Chinese zodiac Goat year (such as 1979), or is the reported 25 May 1978 birth date incorrect, thereby resolving the conflict between his birth-year zodiac and the other clues?"
+    },
+    "output_sha256": "5305881b321cfbbd340051e1047f398485275b16ea70cb5bb1c63321b46fab38",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B10"
+    ],
+    "reason": "Asserts externally recalled 1979 zodiac mapping and a conflict not established in C; testing the birthdate-to-zodiac relation directly would be safe.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N045",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N046",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What is Peter King's exact birth year, and does it fall in the Chinese zodiac Year of the Goat (1979) rather than the Year of the Horse (1978), thereby reconciling or contradicting the goat clue?"
+    },
+    "output_sha256": "4786926b7624aecf107d6009350545ffd0f2ef4dc327e02c6df65d408725bf27",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B10"
+    ],
+    "reason": "Asserts unprovided 1979/1978 Goat/Horse mappings and seeks a birthdate reconfirmation; unresolved zodiac relation itself is useful.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N047",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N048",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N049",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N050",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N051",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N052",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What is the founding year and country of Enugu Rangers International F.C., the club that signed 13 players ahead of the 2022/23 Nigeria Professional Football League season?"
+    },
+    "output_sha256": "10e4300f795c9f434acd5748f3406963f995cb80f7b34318e80aa52de5e6bc69",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Asks the requested founding event of a Claim-named club; name can anchor a question without H.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N053",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "What storage capacity did Dean Dodrill report for his gaming PC in the 25 July 2013 source that describes his wireless keyboard and his practice of animating on normal 8x11-inch printing paper?"
+    },
+    "output_sha256": "65966a4baec9c3f413e2edde7a09f13906242d0a6c1391d4833ff78e533b2cb6",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4"
+    ],
+    "reason": "Presupposes a dated Dean source with keyboard/paper descriptors that only appear in Q, not the two credit Claims.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N054",
+    "arm": "P0",
+    "output": {
+      "decision": "research",
+      "need": "Is the actor credited as Peter Nzioki for Policeman 1 in The Constant Gardener the same person as Peter King Nzioki, who played Oscar Kamau Kingara in The Fifth Estate, and do verified biographical sources confirm that he was born in the 1970s (Chinese zodiac goat) to a soldier father and a mother who worked at a barracks hospital?"
+    },
+    "output_sha256": "863761cf75f919ce4060542e80eca867a1dd3d63cb24e96d5d44f0108fbed066",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Bundles identity join, birth decade/zodiac and parental occupations; no single focused research uncertainty.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N055",
+    "arm": "P0",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N001",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N002",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N003",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What year and country was Enugu Rangers F.C. founded?"
+    },
+    "output_sha256": "85a48364be04e7305d91b4ffc90690ad1f92daa4c9e222076aae5b1e9a69c720",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Requested founding event year/country remains absent from the two Claims.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N004",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In which season between 2011 and 2016, if any, did Rangers International finish between 6th and 12th in the Nigeria Professional Football League with a goal difference between 6 and 12 and share the same points total with another team?"
+    },
+    "output_sha256": "e5fcbf49ac151c1978d1f896827b402a29a126c9ba72690d9c62d969b9504050",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "If-any avoids premise promotion, but rank, goal difference and points counterpart are separable table conditions.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N005",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N006",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N007",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What was the storage capacity of the gaming PC used by Dean \"Noogy\" Dodrill as of 25 July 2013?"
+    },
+    "output_sha256": "b385f1bdafdd7cc11c6f3a829792f51bd993cef9aebe1de862dcbf8c5752d7ba",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Asks the candidate animator's requested PC attribute/date, not whether all game-identity clues are already true. Attribute question is a legitimate candidate probe.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N008",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill create or animate the intro and ending cinematics for Jazz Jackrabbit 2?"
+    },
+    "output_sha256": "a379f112852128cc9041c559ae678d0445be76f049c70265986f29f2e149c1b2",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Directly tests a proposed game/animation relation without asserting it; candidate route remains tentative.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N009",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N010",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N011",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N012",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Are the actors credited as Peter Nzioki (Policeman 1 in The Constant Gardener) and Peter King Nzioki (Oscar Kamau Kingara in The Fifth Estate) the same person?"
+    },
+    "output_sha256": "771448a6775b1d4a964d0e218685d4186117efc29ab9c3b5dca90748df266323",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests the unresolved entity join between two credited name variants in C2/C4. H proposes sameness but Claims do not explicitly establish it.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N013",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Was Peter King born in 1979 (a Goat year) rather than 1978, and what is his actual Chinese zodiac sign?"
+    },
+    "output_sha256": "2198a70dba7fb65315d24e3750617521dd423e80ccdd615e1a48202cdeaef5d8",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B10"
+    ],
+    "reason": "Asserts 1979 is a Goat year without supplied evidence and directs correction of recorded birthdate; actual zodiac classification is the unresolved relation.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N014",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King, reported to have been born on 25 May 1978, actually have the Chinese zodiac sign Goat, or does that detail indicate the person in the question is someone else?"
+    },
+    "output_sha256": "51d08ab55852de2f49170e7e3051b3f07851e0b5a6c1511642c695c9222d40fd",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Single zodiac-compatibility test; whether it indicates a different person is a consequence, not a second candidate-identification task.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N015",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Which snooker player won a deciding-frame match in 2023 against an opponent with fewer than 250 career centuries, then won his next two matches 4–3 and 4–0, and then lost his next match to an opponent with more than 400 career centuries as of 30 January 2025?"
+    },
+    "output_sha256": "a1668c282e4d645e8940614be3f75a511371e4b080b01d67f392b3b943edd259",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B8"
+    ],
+    "reason": "Whole multi-match sequence plus opponent century totals, explicitly excluded by frozen atomicity rubric.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N016",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What were the scores and opponents of Ding Junhui's subsequent matches at the 2023 English Open after his 4–3 win over Ma Hailong?"
+    },
+    "output_sha256": "604d29cb1fb25b53ce390898a93f5ba8822727b37386b6aeeb9563aa956387a5",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Asks the entire subsequent match series, not one next match; C1 establishes only the opening match.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N017",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N018",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Did Ding Junhui's 2023 English Open run, after a 4–3 first-round win over Ma Hailong, continue with 4–3 and 4–0 wins before a loss to an opponent who had more than 400 career centuries as of 30 January 2025?"
+    },
+    "output_sha256": "0ff260ff02b800ef3517a3b7e910fcfe3a8d95eba7db56ab22ced1a46a224b14",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Tests several future match results and opponent lifetime total together; no single local uncertainty.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N019",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N020",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What is the birth name of the individual who, according to a 2020 article, studied Business Administration at university between 2001 and 2007, was hired as a coordinator in 2012, and was later promoted to a manager?"
+    },
+    "output_sha256": "151e2fa4bc46430b9d3160da421fd9b7c29967a530eaee703d39336372859f7f",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B8"
+    ],
+    "reason": "Combines university history and employment sequence to retrieve the final birth name; separable independent clues.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N021",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Was Nick Mutuma hired for a coordinator position in 2012 and later promoted to a manager?"
+    },
+    "output_sha256": "649f7c589b393a9c031f202be0dca157a6f780dc343840a1ba03a0450f32c209",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "A coherent coordinator-to-manager employment transition remains unestablished; does not assume Nick satisfies it.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N022",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N023",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N024",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Did Nick Mutuma work as a coordinator starting in 2012 and later get promoted to manager, as described in the 2020 article?"
+    },
+    "output_sha256": "224b5233be80d91627a2553231ca2b723f08e5ccdd7f06608ad0e59fcaeb856e",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests the missing employment transition without presupposing its existence.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N025",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What was the original name of Albino Frog Software when it was first established in the early 1990s, before it adopted the amphibian-themed name?"
+    },
+    "output_sha256": "851df95aacb23ca7f7c6ae0b0cca27f04e0d9a34a5698d95e078d0bcba79ce9e",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4"
+    ],
+    "reason": "C1-C2 identify only the publisher. Assumes Albino Frog had a different early-1990s founding name from Q.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N026",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Was Galacta: The Battle for Saturn originally released in November 1992 under the earlier company name Night Sky rather than Albino Frog Software, and does the original DOS shareware release credit Night Sky as its developer or publisher?"
+    },
+    "output_sha256": "df90dea538f407f8a8a0a005ad52ba43cd15f67856f8d20e966b9284be6852ed",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Checks original company attribution on the same release record to resolve establishment/name ambiguity; former name known does not establish name at first establishment.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N027",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N028",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N029",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In which May issue of Forbes Africa during the 2010s was Oliver Mtukudzi featured, and how many albums had he released by the time of that feature?"
+    },
+    "output_sha256": "9a3481e8b9ae3b53231eba0ebd9d252ae939bbe431a19c239ab892f0a8701d44",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4"
+    ],
+    "reason": "Feature existence/date and target binding are presupposed from Q, not supported in C.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N030",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N031",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In You’re the Worst, does the male lead’s roommate make a sacrifice in one of the final episodes of season 3?"
+    },
+    "output_sha256": "3dde13b712281e77d3c9e0b789043e75c15ad53ed8d83725abeb75981728f524",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests the missing season-three plot/role relation without presupposing that the sacrifice occurred.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N032",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N033",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N034",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N035",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In which Nigerian league season between 2011 and 2016 did Rangers International FC finish between 6th and 12th, share the same points total with another team, and have a goal difference between 6 and 12?"
+    },
+    "output_sha256": "cde8e9249e261c0acaf456a0876dee3aef916c3951f5f4bfb02460d313f82b30",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B5"
+    ],
+    "reason": "Presupposes existence of a Rangers season satisfying unestablished rank/tied-points/GD conjunction; bundles separable table facts.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N036",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In what year was Rangers International Football Club founded?"
+    },
+    "output_sha256": "966d5fffa3db740e9e100917844705e6e169b7ad07134905e08ecc66c19ae6cf",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Added city Claim does not answer founding year.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N037",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N038",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "In which league season between 2011 and 2016 did Enugu Rangers finish between 6th and 12th with the same points total as another team and a goal difference between 6 and 12?"
+    },
+    "output_sha256": "fa5f5d875a1522d476c8065ae78a65d4b31fcfda56d8d4bc68d505ba5b9fdf8c",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B5"
+    ],
+    "reason": "Added league title does not establish a season satisfying the bundled table constraints; wh-form presupposes one.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N039",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill create the intro and end animations for Jazz Jackrabbit 2?"
+    },
+    "output_sha256": "94b81af2374993fd98c8683bd73e87b1feda5a054b9c64ec56ad861d19909c1e",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Proposes Jazz2 as an explicit question about the candidate's animation credit; new route is tested rather than asserted.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N040",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean \"Noogy\" Dodrill create the intro and ending animations for Jazz Jackrabbit 2?"
+    },
+    "output_sha256": "eba4c97e3d63fe42d0fedb35a1959abdedc8927b65cc9cb7fedebb049460a1d8",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Generic animator C3 does not establish intro/end-specific credits.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N041",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Was Dean \"Noogy\" Dodrill the animator responsible for the intro and ending animations in Jazz Jackrabbit 2?"
+    },
+    "output_sha256": "1929eac64b8f8fe0d2a53986dd7a7efc40ba0729ebab0eacf2a8a5fee92951d4",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Even with dated PC Claim C3, intro/end credit remains open.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N042",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N043",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N044",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Was Peter King Nzioki Mwania born in a Chinese zodiac Goat year, or does his verified birth date of 25 May 1978 make him a Horse, thereby suggesting the Goat clue is either an error or points to a different person?"
+    },
+    "output_sha256": "8990227c2855aeddf038511ed1e67eb63091e4e7e5a727fe2034ef56947fc446",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Explicitly tests Goat-versus-Horse classification of recorded date; possible consequences remain conditional.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N045",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Is there a reliable source confirming Peter King was born in 1979 (the Chinese zodiac Goat year), rather than the 1978 birth date already noted?"
+    },
+    "output_sha256": "cf3956de21370b8ff64eca1228b1b14e3560fde2e3e394299fb50fcc43d4a7bf",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B10"
+    ],
+    "reason": "Parenthetical 1979=Goat is an unverified calendar fact and directs correction of a supported birthdate before testing the missing classification.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N046",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Is the Chinese zodiac sign for Peter King, born 25 May 1978, a goat as stated in the original question?"
+    },
+    "output_sha256": "f55352ab8dee0ab0c7e3f0c30f055236439ae826068e4f8b6f26ea8e82168420",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Questions whether the provisional actor fits the zodiac clue; does not assert that he is the described person.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N047",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N048",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N049",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N050",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N051",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N052",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What year and country was Rangers International F.C., the Nigerian club that signed 13 players ahead of the 2022/23 Nigeria Professional Football League season, founded?"
+    },
+    "output_sha256": "1f3f9b16fa1767df41ef52b40fb57b919bc4bdd5f1d8a83bfc6e6791fc7f9e63",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Same requested founding relation absent from C; Nigerian league association is not promotion of the full target identity.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N053",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "What was the storage capacity of Dean 'Noogy' Dodrill's gaming PC as of 25 July 2013?"
+    },
+    "output_sha256": "d84d143a8c79ab8c2305b495b75c3aecaa2725b075a262836961d5a0f6a58bdb",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Directly probes a relevant Claim-named animator's requested PC attribute without asserting the game route.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N054",
+    "arm": "P1",
+    "output": {
+      "decision": "research",
+      "need": "Are Peter Nzioki, credited as Policeman 1 in The Constant Gardener (2005), and Peter King Nzioki, credited as Oscar Kamau Kingara in The Fifth Estate (2013), the same person?"
+    },
+    "output_sha256": "60185df1a0db9f4b5bfed2c7390898c6effe97669ea05472941767244ad11d8c",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Safe identity join between supported credits; H absent does not make the names unusable.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N055",
+    "arm": "P1",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N001",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N002",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Did a 2023 article state that Rangers International F.C. has won fifteen trophies and signed 13 players ahead of the 2022/23 NPFL season?"
+    },
+    "output_sha256": "3753b760660682b681fe452f08fa809f59ec519c93a1ca193ec559e467bbade9",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One article-attribution test; signing is known but trophy count and 2023 attribution remain missing.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N003",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N004",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N005",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N006",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N007",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N008",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N009",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N010",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N011",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N012",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Are Peter Nzioki, credited as Policeman 1 in The Constant Gardener, and Peter King Nzioki, credited as Oscar Kamau Kingara in The Fifth Estate, the same person?"
+    },
+    "output_sha256": "04b4bfe58cd462d30a309ada93767a4bf4372375106be0735c2eb5e9f7ddbfee",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Same safe identity-join question; does not repeat a fact explicitly stated in C1-C4.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N013",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N014",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King, born on 25 May 1978, have the Chinese zodiac sign of the Goat?"
+    },
+    "output_sha256": "fcb0c60f789be95e0af620bfbd19d9d508c1775cb481df250dcc3ade514b6262",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Directly tests the single missing zodiac relation against C1 birth date; does not assume Goat.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N015",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Which professional snooker player won a deciding-frame match in 2023 against an opponent with fewer than 250 career centuries, then won his next two matches 4-3 and 4-0, and then lost his following match to an opponent with more than 400 career centuries as of 30 January 2025?"
+    },
+    "output_sha256": "d1964cabdcd714d826c58412ed117ca4c6b03d43ff7443ed088f4fbc3668bdc3",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B8"
+    ],
+    "reason": "Whole multi-match sequence and opponent century thresholds; internal checking did not localize the inquiry.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N016",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N017",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N018",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "In the 2023 English Open, after Ding Junhui's 4–3 first-round win over Ma Hailong, what were the scores and opponent identities of his subsequent matches, and did he lose his next match to a player with more than 400 career century breaks as of 30 January 2025?"
+    },
+    "output_sha256": "644dddadae3f305373aadd4a16013585c92650fc0fb4470102cd4e4a83f1998c",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Whole subsequent match run plus century-count test; internal check did not enforce one local gap.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N019",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N020",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N021",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N022",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N023",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Was Nick Mutuma hired for a coordinator position in 2012 and later promoted to a manager role?"
+    },
+    "output_sha256": "46b9b2a0eb52d77792348e40e0bf234fc4ca90476bcf5b1d49174d3b1ed3f42c",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Missing employment transition; known university/name facts do not answer it.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N024",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Was Nick Mutuma hired for a coordinator position in 2012 and later promoted to a manager, as described in the 2020 article?"
+    },
+    "output_sha256": "809a71e653bdbe25b4ab227b88852acc065131054b56d7321ed8945d2958581d",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests whether provisional Nick fits the specified employment transition; source attribution is framed as the test, not an assertion.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N025",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N026",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N027",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N028",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N029",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Was Oliver Mtukudzi featured in a May issue of Forbes Africa during the 2010s, and if so, which issue (month and year)?"
+    },
+    "output_sha256": "96721b3cfe4c6f3e4055e87dec987857b84b8647b7a15e610422311c986a1abf",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Explicitly tests whether the candidate had the relevant feature; conditional issue date is one event identification.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N030",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Did Oliver Mtukudzi give a 2010s interview in which he asked, 'Why do we sing, why is there art?'"
+    },
+    "output_sha256": "1431e38bd302cd2e633d8376cb46cfdf54c2f4ec40bde0435dee714fed0f57c1",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Safe existence test for the missing interview quotation; C1-C9 do not establish it.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N031",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "In You’re the Worst, in one of the final episodes of season three, does the male lead's roommate make a sacrifice, and if so, what exactly is that sacrifice?"
+    },
+    "output_sha256": "89ba7b86ac460bd0bdcc5d1b2032066f986cdce6daabbb52a5a82059da91d981",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Existence and description of one sacrifice are an inseparable event test; explicit conditional prevents promotion.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N032",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Is You're the Worst the only television series that matches all three of the plot points described in the original question?"
+    },
+    "output_sha256": "5bd4604761bfefdf07f3e537e883589c58ae8e94621dfa3162a6b1b0475817cb",
+    "V": false,
+    "S": false,
+    "P": true,
+    "W": true,
+    "I": true,
+    "H": true,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B5",
+      "B6"
+    ],
+    "reason": "Adds unsupported global uniqueness requirement and presupposes candidate matches all three plots; retained Claims leave sensitive-issue/lead bindings incomplete.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N033",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N034",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N035",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N036",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Did a 2023 article state that Rangers International Football Club had won fifteen trophies and signed 13 players ahead of the 2022/23 Nigeria Professional Football League season?"
+    },
+    "output_sha256": "b501a0c93f10f609b4aa4bfabbf113c249c6cce76e041afbfa58a1c5f48750e1",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One source attribution check, with trophy count and source date not established by existing signing fact.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N037",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N038",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "In which Nigerian league season between 2011 and 2016 did Enugu Rangers finish between 6th and 12th with a goal difference between 6 and 12 and share the same points total with another team, in a season that had exactly three pairs of teams level on points?"
+    },
+    "output_sha256": "39dc66626c677c6d8743fc39604e1638adbb10c25784d23a82c8dd0e94094878",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B5"
+    ],
+    "reason": "Combines team rank/GD/shared points and league-wide exactly-three-pairs; no grounded existence test.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N039",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Was Dean Dodrill's statement that his gaming/workstation PC has 5 TB of storage and a wireless keyboard made on 25 July 2013?"
+    },
+    "output_sha256": "8cdbe4e79ede781c9618031391e93f49371957c1d4a628b304472d1fb012a269",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests missing timing of undated C1. Exact publication day is narrower than as-of requirement, but an answer can establish/reject temporal support.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N040",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean \"Noogy\" Dodrill create the intro and ending animations for Jazz Jackrabbit 2?"
+    },
+    "output_sha256": "eba4c97e3d63fe42d0fedb35a1959abdedc8927b65cc9cb7fedebb049460a1d8",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Precise intro/end animation credit not entailed by generic animator Claim C3.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N041",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean \"Noogy\" Dodrill create the intro and end animations for Jazz Jackrabbit 2?"
+    },
+    "output_sha256": "4e69dad088335d05215cd53c9880c54df60c9e2017137049130419e34e4b6b7b",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Same safe missing role-specific credit test; not stale with PC coverage.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N042",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N043",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N044",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N045",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Is Peter King's Chinese zodiac sign actually Goat, given his recorded birth date of 25 May 1978?"
+    },
+    "output_sha256": "665bd67351fd0f52a7e7ceda31f587a822f3d8f3437336200ace7f16ab3d4ab0",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests the missing zodiac classification against recorded date without asserting a conflicting calendar mapping.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N046",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King's birth date of 25 May 1978 correspond to the Chinese zodiac sign of the goat?"
+    },
+    "output_sha256": "aa1c58991261bf6ecb733826e85e40d8f5cb9ce2c2cd6bcbffb0208ddf1b6031",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Added Kinsey Claim leaves zodiac classification unresolved.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N047",
+    "arm": "P2",
+    "output": {
+      "decision": "research",
+      "need": "As of 30 January 2025, which snooker players have more than 300 career centuries and turned professional between 1995 and 2006?"
+    },
+    "output_sha256": "13e2e888b0215e1a715da5a863697c45701dd567081d593aca080e67a1cad7d3",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "No-Claim discovery bundles professional-debut interval and career century total, two independently investigable attributes.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N048",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N049",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N050",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N051",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N052",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N053",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N054",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N055",
+    "arm": "P2",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N001",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Which football club, if any, satisfies all the combined criteria: it played in a league season that began and ended between 2011 and 2016, finished between 6th and 12th with the same points total as another team and a goal difference between 6 and 12, was based in a capital city as of 2023, won a league between 1973 and 1983, and was described in a 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season?"
+    },
+    "output_sha256": "5b4a78dc2fe6894652d6ce59690282a0cc2e1684c3a3288d5a2a1064979a0348",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B8"
+    ],
+    "reason": "Ephemeral route still returns the whole multi-condition club identification.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N002",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers, the club that signed 13 players ahead of the 2022/23 Nigeria Professional Football League season, finish between 6th and 12th in a league season between 2011 and 2016 while sharing the same points total with another team and recording a goal difference between 6 and 12?"
+    },
+    "output_sha256": "f31b648f93b415a4ad76fcad72c285d966b73ebfe10cb910d607cd73695089d9",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Bundles table rank, points counterpart and goal difference across seasons.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N003",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "In the 2014 Nigeria Professional Football League season, did Enugu Rangers finish on the same points total as another team, and if so, which team shared that points total?"
+    },
+    "output_sha256": "c92222ecae41706b7ed8b5eb2aa636ada3fff3941e1a9943dd4aec3657d2d2a0",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Single points-counterpart relation not answered by known Rangers table row.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N004",
+    "arm": "P3",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N005",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International Football Club finish between 6th and 12th, tied on points with another team, and with a goal difference between 6 and 12 in any league season that began and ended between 2011 and 2016, and if so, which season and what were its final position, points total, and goal difference?"
+    },
+    "output_sha256": "9bfb2d186b65c4b9362ea6ddb88bc4377d581a7df903bac11d5c232c2d927ed4",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Whole league-table condition conjunction instead of one local uncertainty.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N006",
+    "arm": "P3",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N007",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Was Dean \"Noogy\" Dodrill the animator responsible for the intro and ending animations in Jazz Jackrabbit 2, rather than merely one of its animators?"
+    },
+    "output_sha256": "e366574c4cc29cacfd30d65fbb5fe9e86fed06414880a70aad7b68be806e8aff",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Specific intro/end credit remains missing despite generic animator Claim.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N008",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Is Dean Dodrill the person responsible for the intro and ending animations of Game B, the game released by the same company about seven years after Game A that features a mammal character blasting through enemies?"
+    },
+    "output_sha256": "042de3036637c7860747c6d3011a69a76be86839a9a5ad58e745bb17029e55f6",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests Dean-to-target-game role; Q-defined game descriptors are not asserted as Dean's established credit.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N009",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill specifically create the intro and ending animations for Jazz Jackrabbit 2, or was he only credited as a general animator on the game?"
+    },
+    "output_sha256": "66db99ff2ac1b93eb993e36cf5bcae07c80c90ef7f04dfdca464b666e158a39b",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Separates generic animator credit from missing intro/end credit.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N010",
+    "arm": "P3",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N011",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Which 2005 film directed by Fernando Meirelles features an actor playing a policeman, and who is that actor?"
+    },
+    "output_sha256": "3e0ace65f177414e63c66c1f2cd876f70817503e43e36f0a248d1bb76731d97f",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B7"
+    ],
+    "reason": "Wh-form assumes a Meirelles 2005 film with a policeman; C establishes only the Iracema inspiration, while H supplies provisional director binding.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N012",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter Nzioki, who played Policeman 1 in The Constant Gardener (2005) and appeared in The Fifth Estate (2013), also match the biographical and zodiac clues—born in the 1970s to a soldier father and a mother who worked at the barrack’s hospital, with the Chinese zodiac sign Goat—so that his name answers the original question?"
+    },
+    "output_sha256": "fd442269a48641c3717f0a6d19618812b178f30ec47fc4e61f76a12189cff585",
+    "V": false,
+    "S": false,
+    "P": true,
+    "W": true,
+    "I": false,
+    "H": true,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B3",
+      "B5"
+    ],
+    "reason": "Presupposes the H-supplied join between two film-credit name variants, then bundles birth decade, parents and zodiac.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N013",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King’s birth date of 25 May 1978 correspond to the Goat in the Chinese zodiac, or to a different sign such as the Horse?"
+    },
+    "output_sha256": "669f7ecf0c177e344cedf100cea231ce0f202d728f0c738d75e82101bf9670ae",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Asks zodiac classification and offers Horse tentatively, without asserting a calendar mapping as established.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N014",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Is the Chinese zodiac sign of Peter King, the actor born on 25 May 1978, the goat?"
+    },
+    "output_sha256": "b70677c04e35dbb33df6599f3e5a977f1a312b52a0a9dd170a672a394b3c335d",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Direct one-gap zodiac question, supported date kept fixed.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N015",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Which 2023 snooker tournament or event featured a match in which a player won the deciding frame against an opponent with fewer than 250 career centuries, then followed that with 4–3 and 4–0 wins, and then lost his next match to an opponent with more than 400 career centuries as of 30 January 2025?"
+    },
+    "output_sha256": "c637972f38fc7fe6d8ff17e4131864d15a9935d72bc3f2b5b4955a452f9751a8",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B8"
+    ],
+    "reason": "Asks event containing the full multi-match score sequence plus opponent totals; changing target to tournament does not make it local.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N016",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "In the 2023 English Open, after Ding Junhui's 4–3 decider win over Ma Hailong, did he then win his next two matches 4–3 and 4–0 and then lose the following match to a player with more than 400 centuries as of 30 January 2025?"
+    },
+    "output_sha256": "1668e0fe5178d13988f2be6828c35780eabfa5afd1b643a9a6cb59c79c2d7ec8",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Multi-match continuation and opponent century threshold bundled.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N017",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Did the 2023 deciding-frame win against an opponent with fewer than 250 centuries described in the original question occur in the verified 2023 British Open final, or in a different 2023 match involving a player who then won 4-3 and 4-0 before losing to an opponent with over 400 centuries?"
+    },
+    "output_sha256": "ddb0f2c87c5b66d2a1e726e50394a057111140547ac123ff911f7dd56120311c",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B10"
+    ],
+    "reason": "Mixes interpreting the observed 10-7 final with discovery of a full alternative multi-match sequence.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N018",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "When did Ding Junhui turn professional, and does that date fall between 1995 and 2006?"
+    },
+    "output_sha256": "fdf3d562d0cb74589dbb397f38cec8818ff40ff8bc5d6e9a98d82ed66ab91211",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One missing professional-debut date and its interval membership.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N019",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "How many career century breaks had Ding Junhui scored as of 30 January 2025, and does that total exceed 300?"
+    },
+    "output_sha256": "1174e81b029b75952dd1ba1b7c88096299f01cfd1baaf48600db18ddc4b0d2a9",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One career-century count at the specified cutoff; no such count in C1-C3.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N020",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Which individual, if any, matches all of the following criteria—being described in a 2022 article as a commercial model whose wealth largely came from showbiz; being born into a family of three children, having an industry break between 2006 and 2010, and having a child born in the United States as of 2021; entering university between 2001 and 2007 to study Business Administration and releasing a debut single between 2010 and 2015 according to a 2020 article; and being hired as a coordinator in 2012 and later promoted to manager according to that 2020 article—and what is that individual's birth name?"
+    },
+    "output_sha256": "26fd08bd74ae655ba91fe4bf2dbb55c4bbc0cd5e6510cb414b015f405bf88cc1",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B8"
+    ],
+    "reason": "Entire original biographical conjunction plus birth-name request.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N021",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Is Nick Mutuma the person described by the 2020–2022 article-based details in the Original Question, and if so, does that establish his birth name as Nicholas Munene Mutuma?"
+    },
+    "output_sha256": "bc2134847207fc0d10cd0387ef1bb0fc1c6a5faa6387f50bb3b751a0ec9a07f2",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Compressed whole-candidate verification with all article details implicit; no local uncertainty selected.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N022",
+    "arm": "P3",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N023",
+    "arm": "P3",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N024",
+    "arm": "P3",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N025",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Was Albino Frog Software originally established under a different name in the early 1990s, and if so, what was that earlier name?"
+    },
+    "output_sha256": "881743ab8a12965af7bb96d25bb0b8aaeda77550a648438b6cf4ab8fc1625d14",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Explicitly tests company original-name/date relation; earlier name requested only conditionally.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N026",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Was the company later known as Albino Frog Software, Inc. originally established under the name Night Sky in the early 1990s, or was Night Sky only a prior name used before Albino Frog Software, Inc. was officially established in Florida in October 1993?"
+    },
+    "output_sha256": "de7e9cfea2251f1b887967213d44ec137bed0bb87d08ffa9d68ad8522482a8a7",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Separates name-at-first-establishment from later incorporation; existing former-name fact does not settle it.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N027",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "What is the Argentine release name of the television program that satisfies the criteria—one director, two writers, an early-1990s January-to-December run, 50–60 episodes under five minutes, an educational purpose, a three-character network name containing a number, and characters including twins, a poet, a complainer, and a living means of transport—given that The Adventures of Hijitus conflicts with the writer-count and air-date clues?"
+    },
+    "output_sha256": "2e27da1874a7d9f33efd8ad2203aded535636a2c9ff1ebc5483902cde7118e55",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B8"
+    ],
+    "reason": "Alternative candidate discovery repeats almost the full Q instead of one discriminating clue.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N028",
+    "arm": "P3",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N029",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "How many albums had Oliver Mtukudzi released by the time he was featured in Forbes Africa in May during the 2010s?"
+    },
+    "output_sha256": "fa462a24e84e6d7f08c8b3c28e26c987c3d9c34af6276b6f250c55deb5a70c4a",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B7"
+    ],
+    "reason": "Presupposes candidate Forbes feature from Q despite C containing only age and >60 career albums.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N030",
+    "arm": "P3",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N031",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "In You're the Worst, does the male lead's roommate make a sacrifice in one of the final episodes of season three, and if so, what is that sacrifice?"
+    },
+    "output_sha256": "2e722e07fa6c18e964377292453ef6ddb1e876ec42e43ff110ffa80282393f0c",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Conditionally tests and describes a single missing season-three event.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N032",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "In You’re the Worst, is Jimmy Shive-Overly the male lead and Edgar Quintero his roommate, so that Edgar’s sacrifice in the season three finale can be described as the male lead’s roommate making a sacrifice?"
+    },
+    "output_sha256": "b3ae4a927b791989f0844757c5b32f33cadf28369429c347b8a2188b34dd8f32",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Male-lead role binding is truly missing. The already-known roommate relation is context for the one missing role, not a separate research task.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N033",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Is the Paris Saint-Germain–Lille match in which Lionel Messi took a 95th-minute free kick also the match matching the team-origin and goal-timing clues—one team formed from discord between two parties, the other having evolved through several identity iterations, with the first team scoring all its goals early and the other scoring only later?"
+    },
+    "output_sha256": "835ba55deb1719bb052bc1bcda5aa01ee2aa3e2600f4a94be01c41795fee0307",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Bundles both teams' origin histories and match goal timing; free-kick Claim does not justify whole-candidate verification as one Need.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N034",
+    "arm": "P3",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N035",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "In any league season that began and ended between 2011 and 2016, did Rangers International F.C. finish between 6th and 12th, have a goal difference between 6 and 12, and end level on points with another team?"
+    },
+    "output_sha256": "b4a5dd816f05921ae5b38f840219467721fd6c14ce879e69bca060806ed65772",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Several independently answerable season-table conditions bundled.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N036",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "In the 2023 article about the club that signed 13 players ahead of the 2022/23 Nigeria Professional Football League season and has won fifteen trophies, what city is meant by 'the capital city,' and does Enugu satisfy that description?"
+    },
+    "output_sha256": "5ece578bcf344b84a25fc43f000a746bf86622e6cda31cf68e2a50c59f36ea3d",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4"
+    ],
+    "reason": "Presupposes the described article concerns a 2022/23 NPFL club with fifteen trophies, although trophy attribution/year remain unobserved.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N037",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International Football Club win a league championship at any point between 1973 and 1983?"
+    },
+    "output_sha256": "4a44addc6c1371dfb199107d084ca44246ece6727108dd4691e3bdf4b8137f82",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Historical league-title interval still open before the covering Claim.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N038",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Was Rangers International Football Club reported in a 2023 article to have won fifteen trophies?"
+    },
+    "output_sha256": "76ff9354cf38aebaaebe45ae7232456d462321b650d7411646b19b445d1ca6da",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Retires covered league-title interval and asks missing trophy attribution.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N039",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Was Dean Dodrill the animator responsible for the intro and ending animations of the game (Game B) described in the original question, in which a mammal character blasts through enemies?"
+    },
+    "output_sha256": "ecb912d5b2db26eedd49702c404fa2d89059c85e98c69677c24f6ac174d8d589",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests Dean's target-game role with Q descriptors kept inside the proposed test.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N040",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Is the 5 TB storage figure that Dean Dodrill reported for his gaming/workstation PC documented as being the storage size as of 25 July 2013, and what source establishes that date?"
+    },
+    "output_sha256": "c68433910741f9316b93d35f0faf9d53830cc5239467248593d76a76436e85a0",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Undated storage C1 needs temporal grounding; asking for the date-supporting source is part of the same relation.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N041",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Which person created the intro and ending animations for Jazz Jackrabbit 2, and does the available evidence credit Dean \"Noogy\" Dodrill specifically with those animations rather than only with animation work elsewhere in the game?"
+    },
+    "output_sha256": "7d565afbfd70f2ee883e0bab7deaf709b23c2e918d941790f764a532a9d0fd78",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One intro/end credit relation, with candidate-specific evidence check; generic credit remains insufficient.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N042",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Did Peter King Nzioki portray a policeman in the 2005 film The Constant Gardener?"
+    },
+    "output_sha256": "5b26bafaa6a4cf8e7b89c336cb48d30e1f7ec1e4f182a6e671423dc8f5ce0210",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests actor/role relation absent from C1-C3.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N043",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Is the actor credited as Peter Nzioki for the role of Policeman 1 in The Constant Gardener (2005) the same individual as Peter King Nzioki, who appeared as Oscar Kamau Kingara in The Fifth Estate (2013)?"
+    },
+    "output_sha256": "a896c8debf925fdccdbcfefd6f54517089b2bde3c8c4de8c493857a3a52e36aa",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "After role addition, switches to unresolved identity join between credit-name variants.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N044",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Is the actor who played Policeman 1 in the 2005 film The Constant Gardener the same person as Peter King Nzioki Mwania, who appeared in The Fifth Estate (2013) and was born on 25 May 1978 in Nairobi?"
+    },
+    "output_sha256": "d727c62d7b2c6cba578f6de3258037a31b364f9e1380295118cb8f11c53a79cf",
+    "V": false,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": true,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B3",
+      "B7"
+    ],
+    "reason": "Tests policeman identity but presupposes the complete-name birth record belongs to the Fifth Estate credited actor; C2/C5 give related but unjoined name forms.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N045",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "What Chinese zodiac sign corresponds to a birth date of 25 May 1978, and does it match the claimed Goat sign in the original question?"
+    },
+    "output_sha256": "91680d861ab8c6c760b3d628d486fd9442a71b6fb1f45c5ccc1e3613e0f50491",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests birthdate-to-zodiac correspondence without replacing verified date.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N046",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King, born 25 May 1978, have the Chinese zodiac sign of the goat?"
+    },
+    "output_sha256": "f3ca9ba3f855c71bee1c020e19ee7688a2b5ebd77e0b5bf608d6c301e7a2145e",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Zodiac gap remains after adding Kinsey relation.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N047",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "In 2023, did Ding Junhui win a deciding match against an opponent with fewer than 250 career centuries, then win his next two matches by 4–3 and 4–0 respectively, and then lose the following match to an opponent with more than 400 career centuries as of 30 January 2025?"
+    },
+    "output_sha256": "f0afbdc2a3854bc62ff0ffed5aa1600a490d551a14b0c700fc88bde0c215c2dc",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Entire hypothesized multi-match sequence and opponent counts, despite no Claims.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N048",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "As of 30 January 2025, how many career centuries had Ding Junhui scored, and did that total exceed 300?"
+    },
+    "output_sha256": "dba0301a16dfe875044f715d834b242102cad21f56f830d18178843e01aa69f9",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "After debut Claim, tests career centuries at the specified cutoff; this is a different unestablished relation.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N049",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Does Nick Mutuma match all the biographical and career details in the 2022, 2021, and 2020 articles that identify the individual whose birth name is sought, including being a commercial model, being one of three children, breaking into an industry between 2006 and 2010, having a child born in the United States, studying Business Administration between 2001 and 2007, releasing a debut single between 2010 and 2015, and being hired as a coordinator in 2012 then promoted to manager?"
+    },
+    "output_sha256": "bcafc199088d33be9fbb25a236d7118e5a7764bef8ceabb762988aa5e464b4a4",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Whole Nick biography and all Q conditions bundled.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N050",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Does Nick Mutuma—whose first big break on Kenyan television was in 2008 in Tabasamu—match the individual described in the Original Question, and if so, what is his birth name?"
+    },
+    "output_sha256": "4b2c2b8635045d15c387f3cfaa84fac5eaee5cb9bcd8a164f007b2393900b9a5",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Global candidate match plus birth name; no individual missing relation selected.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N051",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "What is the birth name of the individual who released the debut single \"254 Anthem\" in 2013 under the professional name Nick Mutuma, and can that birth name be confirmed as belonging to the person described in the 2020 and 2022 articles?"
+    },
+    "output_sha256": "6d36ac81d484d8a82df7eefaa6102d72e454a76892526f6231f72feb702753b7",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5"
+    ],
+    "reason": "Local birth-name request is bundled with global confirmation against all 2020/2022 article conditions.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N052",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "What year and country was Rangers, the team that signed 13 players ahead of the 2022/23 Nigeria Professional Football League season, founded?"
+    },
+    "output_sha256": "016e565dc40e1f41c8e8ef26bb25c7ac134ce4adeb3a7f9f656f99c5abfb60a2",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Requested founding relation can use the club named in C without H.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N053",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "What was the storage capacity of the gaming PC used by the person who created the intro and ending animations for Game B, as of 25 July 2013?"
+    },
+    "output_sha256": "927f93d4f331e319447333297d65f21dc067934314a18d9cbb896585439544ea",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One requested PC storage/date relation via a Q-defined animator role; does not bind unsupported descriptors to Dean as facts.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N054",
+    "arm": "P3",
+    "output": {
+      "decision": "research",
+      "need": "Are the actor credited as Peter Nzioki, who played Policeman 1 in The Constant Gardener, and the actor credited as Peter King Nzioki, who appeared in The Fifth Estate, the same person?"
+    },
+    "output_sha256": "9e4372f922757e11c38771134e217039c5134b5cf884ff1a4feb2dcbfb4728ca",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests film-credit identity join rather than assuming same-person mapping with no H.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N055",
+    "arm": "P3",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N001",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which club is the subject of the 2023 article that reports it has won fifteen trophies and signed 13 players ahead of a certain season?"
+    },
+    "output_sha256": "8dafca2e796e1b9d0812222bc19692b4dee7b8fdcee7c14b447c8c7e1eaa8eb9",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One source-local discovery question: identify the club in the cited article; trophy/signing descriptors identify that article.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N002",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "As of 2023, in which city is the football club Rangers — the provisional candidate that signed 13 players ahead of the 2022/23 Nigeria Professional Football League season — based?"
+    },
+    "output_sha256": "62f0687c540f3f231cb782b351a4e0d3787704ec6792713da97eb8a1d7d11ec1",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Provisional club's city/date remains unestablished.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N003",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In the 2014 Nigeria Professional Football League season, did any other club finish on the same points total as Enugu Rangers, and if so, which club?"
+    },
+    "output_sha256": "beb52ac99a0c445dd78e8d543eb66b2c3ab374a4aa165927569e0f68e8c42b53",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Local shared-points counterpart test; explicit if-any avoids presuming another club.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N004",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International Football Club win the relevant league at any point between 1973 and 1983?"
+    },
+    "output_sha256": "5aa3a93b3d21b6b7d91c967a4676f65bec18bb763bbfc52b1d2f98720ab27879",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests an unestablished league victory in the required interval; C1-C3 do not answer it.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N005",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did a 2023 article state that Rangers had won fifteen trophies?"
+    },
+    "output_sha256": "2f97c09cd7f50e21728abfc84709b9eb2a00e51fa49c01060b490e5bfaf4ae35",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests the missing fifteen-trophy article attribution; C1-C12 do not establish it.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N006",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What is the title of the pre-1999 video game in which a mammal character must blast his way through enemies?"
+    },
+    "output_sha256": "d2dcc9d21f1ed18c186bd5a902baf41e00412da92808503b7caa267bd9e56a38",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "No-H game discovery using one distinctive gameplay clue and release cutoff.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N007",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What was the storage capacity of the gaming PC owned by Dean \"Noogy\" Dodrill, who was an animator for Jazz Jackrabbit 2, as of 25 July 2013?"
+    },
+    "output_sha256": "224b74901542388cc5d1a3a35f4803862c0bf54058d1c9694f84413519a535ce",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Same local requested PC attribute; animator credit is explicitly supported by C1. Does not promote the full game route.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N008",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill create the intro and end animations for the game described in the question?"
+    },
+    "output_sha256": "4d87104d1f2df5afd26163b99921be63e0dca1b4860543a277887942034c1d2b",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Directly tests whether Dean created the target-game animation; does not assert he did.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N009",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which role-playing game released between 1983 and 1995 was created by the company that was later involved in Jazz Jackrabbit 2, and whose financial success allowed that company's founder to continue funding game development?"
+    },
+    "output_sha256": "e323a950d33e6156d3216fda36b7464a3a6be23ea25f172638a06660f6bcf804",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B7"
+    ],
+    "reason": "Presupposes that a company involved in Jazz2 created the described earlier RPG and funded further development through its success. C4-C5 only establish animation/development credits; an existence/compatibility test is needed.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N010",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Who is the filmmaker who was inspired to become a filmmaker after watching Iracema?"
+    },
+    "output_sha256": "ba03925ca36e60574b14f185860f6119473763765f724db91e8e8cca19ab342f",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Safe no-H discovery through one Iracema-inspiration relation.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N011",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which 2005 film, if any, directed by Fernando Meirelles is relevant to resolving the original question?"
+    },
+    "output_sha256": "a990657a399df27b32ca9de835211336e1a6d6994b1f90c468742ce9d0b921dc",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Conditional candidate filmmaker's 2005 film identification; C only gives Iracema inspiration.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N012",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In what decade was Peter Nzioki, the actor who played Policeman 1 in The Constant Gardener (2005) and appeared in The Fifth Estate (2013), born?"
+    },
+    "output_sha256": "c7686d204452f54da820234cbb3f894dfa27ca192da589a2a1a09514c8e052fe",
+    "V": false,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": true,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B3",
+      "B7"
+    ],
+    "reason": "Parenthetical asserts Peter Nzioki is the Fifth Estate actor; C2 and C4 supply different credit-name forms and H is the only explicit join. Birth-decade question alone is valid.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N013",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Bill Condon write and direct the film Kinsey?"
+    },
+    "output_sha256": "b1f22db201e05fee52ae4807b6f6590a001bf13ae8cea6f3821abf61e293c470",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests missing Condon writer/director Kinsey relation; C6 only establishes Fifth Estate director.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N014",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King Nzioki Mwania, who is popularly known as Peter King and has a reported birth date of 25 May 1978, have the Chinese zodiac sign Goat?"
+    },
+    "output_sha256": "a23f3f3f9986588ecc1ff5cd36b17375975ecb6c913605a0d387598883d5fc35",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Exact one-gap zodiac question with birth/name facts supported by C1.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N015",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which snooker player turned professional between 1995 and 2006 and may satisfy the remaining criteria in the original question?"
+    },
+    "output_sha256": "c10603f006ca60158f8f3aa465efabf0b0269750fb4660eb57244f670432c4ef",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Discovery using one professional-debut interval; remaining criteria explicitly left provisional.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N016",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In what year did Ding Junhui turn professional?"
+    },
+    "output_sha256": "a432ec61b3371036833c9859d28f70f68f63e096f088435c3232e9c48a8dc28c",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Professional debut year is absent from the two match Claims.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N017",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which snooker players turned professional between 1995 and 2006, and are any of them plausible candidates for the player sought in the original question?"
+    },
+    "output_sha256": "c77bee1ba3c1bea4d681128fbfc116117d02777dacde5f8779d3c430a9759cf0",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One debut-interval discovery question; candidate plausibility is a provisional use of the result, not a demand to verify every clue.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N018",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Ding Junhui turn professional between 1995 and 2006?"
+    },
+    "output_sha256": "ff2cb07f725c5f4ff07e1f498063a334de365042065012e16f623edbe846d048",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Career debut interval absent from match and undated totals Claims.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N019",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which match followed Ding Junhui's 2023 English Open Last 16 win over Luca Brecel?"
+    },
+    "output_sha256": "561cbc19f113ecdc8c2a1294e6f57028b5b9a087d29ccd9bc155ad2ada119d17",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Single next-match identity after supported Last16 result; candidate route is tested locally.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N020",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which individual was reported in a 2020 article as having been hired for a coordinator position in 2012 and later promoted to a manager?"
+    },
+    "output_sha256": "b9767bbdf33051026c04ad250b8bfb2d5e73bbf2cb4b6e3c5ba2c9848ff6cb40",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Discovery from one employment transition rather than the full biography.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N021",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Nick Mutuma have a child born in the United States by 2021?"
+    },
+    "output_sha256": "9950e6c84263ba337e3c89933b6093a105691c20346912ba4df25076ca8241d9",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Existence and US birth of a child is one linked relation, framed as a test.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N022",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which individual, if any, had an industry breakthrough between 2006 and 2010 and could be the person described in the original question, given that the Heart Evangelista route (breakthrough around 1998) is incompatible?"
+    },
+    "output_sha256": "fe92c8178966662730375e8d649a64bba7a114a384ea37b35dd4168527886f6d",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Alternative discovery using breakthrough interval; respects rejected Heart route and leaves identity tentative.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N023",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Nick Mutuma hold a coordinator position in 2012 and later get promoted to a manager role?"
+    },
+    "output_sha256": "0e95383b76d7c83853207686aa3f4394687666241c2352907e52abe2d7d273a3",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Same safe local transition question.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N024",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What year did Nick Mutuma have his first breakthrough in the entertainment industry, if that breakthrough occurred between 2006 and 2010?"
+    },
+    "output_sha256": "e8bc067a87ba33a2e9a413f8840d23891262c9a33f85ce3dc02eccd3039ba6d4",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Asks missing first-break date with an explicit conditional range; C1 debut single is a different event.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N025",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Albino Frog Software develop Galacta: The Battle for Saturn, or did it only publish the game?"
+    },
+    "output_sha256": "634a0bcb678532a7bbbe36c720509d5811da0042e2cfec3bad64cfb2220982ce",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Directly tests developer versus publisher, which C2 does not establish.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N026",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Does Galacta: The Battle for Saturn have only a single-player mode, or does it also support multiplayer?"
+    },
+    "output_sha256": "e318365756506afaf18087f9103977958d8ab9aafb3635ca3fa32f1534fb06a3",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Multiplayer exclusivity absent from retained Claims; one offline player is insufficient under frozen strict rule.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N027",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What is the Argentinian release name of the television programme, distinct from The Adventures of Hijitus, that fits the original early-1990s broadcast clue, if such a programme exists?"
+    },
+    "output_sha256": "d89b3babd6b1a7dd3620d209564401b488f10b6d9207ae78379668854a3fba8b",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Alternative discovery focused on early-1990s broadcast, explicitly excluding contradicted Hijitus.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N028",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What is the Argentine release name of a television programme, other than Hijitus, that satisfies the original clues, given that Hijitus conflicts with the early-1990s run dates and the two-writer count?"
+    },
+    "output_sha256": "ca37c599744a3d7e001120ef7ee25f1ab8ed4e6a776a777a4e615d74ed7f2b16",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B7"
+    ],
+    "reason": "Asks for an alternative satisfying all original clues without selecting a local discovery uncertainty; oracle itself is broad.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N029",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What exact number of albums had Oliver 'Tuku' Mtukudzi released at the time of the Forbes Africa May 2010s feature referenced in the original question?"
+    },
+    "output_sha256": "da33900edd7d512f54e5c421f1c072b68f0ec7cced3a7391a8558449410b9b58",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B7"
+    ],
+    "reason": "Oracle total-album gap was narrowed, but Need presupposes a candidate-specific Forbes feature that C does not establish.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N030",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Oliver Mtukudzi ask the question \"Why do we sing, why is there art?\" in a 2010s interview?"
+    },
+    "output_sha256": "771b85caf3d04f5c6b245a63e5bdf42e86440c020436b1771904d74f3403a54c",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests the unobserved interview quotation rather than the already-known Forbes album total.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N031",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In You’re the Worst, did the male lead’s roommate make a sacrifice in one of the final episodes of season three?"
+    },
+    "output_sha256": "8f4fe49651b65c8324c9f0e538533412050d7ca1d76829eda53eece2ed35e4ee",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Safe local season-three event/role test; remaining role binding is part of the question.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N032",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In You're the Worst season 1 episode 2 (\"Insouciance\"), what specific assumption did Jimmy make about a sensitive issue that caused Gretchen to become upset?"
+    },
+    "output_sha256": "40f90a4b82dd2e49e41c1cedb40faaeefa48d0d79b78e76a0b2e9008db7f9d87",
+    "V": true,
+    "S": false,
+    "P": true,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B4",
+      "B7"
+    ],
+    "reason": "C3 gives a generic assumption; Need presupposes it concerned the sensitive issue described by Q.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N033",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In the Paris Saint-Germain vs Lille match in which Lionel Messi took a 95th-minute free kick, did one team score all its goals early in the match while the other team scored all its goals later in the match?"
+    },
+    "output_sha256": "979fde7987d07aa1346b893aa93c0081e5efd1ea1b9ba1a294a93edbee79da31",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One within-match timing partition test; C1 only supplies the free kick and final score.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N034",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which alternative football match, if any, matches the description of one team scoring all its goals early, the other scoring later, and a free kick being taken in the 95th minute, now that the PSG–Lille match has been contradicted on the goal-timing pattern?"
+    },
+    "output_sha256": "059b5100040723cddfe24bbb62b74652d4610338420797036dd8aba54a6056f8",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Alternative-match discovery centered on the same-match goal timing/free kick; explicitly acknowledges rejection and leaves club-history clues for later.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N035",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International Football Club win a league title at any point between 1973 and 1983?"
+    },
+    "output_sha256": "a30f39fb6d2f33772bd1c4c85d725657093487607b69f6dde52ab4992fb96a60",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "League-title interval is genuinely open after adding only the founding year.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N036",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International Football Club win a league championship at any point between 1973 and 1983?"
+    },
+    "output_sha256": "4a44addc6c1371dfb199107d084ca44246ece6727108dd4691e3bdf4b8137f82",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Earlier league victory remains unestablished.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N037",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Rangers International Football Club win a league championship at some point between 1973 and 1983?"
+    },
+    "output_sha256": "89f2113441cd98f1b9e93fb228654cf38e6a103ef8dabca34e52bda24d4b0d08",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Earlier league title is not established by C1-C10; 2016 title lies outside the interval.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N038",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Does the 2023 article attribute fifteen trophies to Rangers?"
+    },
+    "output_sha256": "41504d1dff0058d37242631afba872dc86707ad29f23603cd59b6d9bf4aaeb82",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Added earlier championship does not cover fifteen-trophy article attribution.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N039",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What type of paper did Dean Dodrill use for animation as of 25 July 2013?"
+    },
+    "output_sha256": "ed0d7220bf4c7e51dbaf2e9e672f9919bb169dc8727be82c321577dca8e2b11d",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Paper type/date is not in C1-C2; a local ordinary work-attribute probe for the provisional animator.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N040",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean \"Noogy\" Dodrill specifically create the intro and ending animations for Jazz Jackrabbit 2?"
+    },
+    "output_sha256": "20bc14a1393877a2c296124e5f3dc3cd8b71e25be2d446cc71bb1aeaf0d260cd",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests the precise intro/end role beyond newly added generic animation credit.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N041",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean Dodrill use normal 8x11-inch printing paper for his animation work as of 25 July 2013?"
+    },
+    "output_sha256": "b754b8116b40f662979a34385369103fb054b50b79352fc4af164c8cf595a32b",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Dated storage Claim does not establish paper use by July2013.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N042",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What role, if any, did Peter Nzioki have in the 2005 film The Constant Gardener?"
+    },
+    "output_sha256": "a7a553234fe131d34040b792e72c2bd15489180804dbfc2e39c17cd94c8211a0",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Peter's Constant Gardener role is missing; if-any keeps the proposed cross-film relation tentative.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N043",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What decade was Peter Nzioki born in?"
+    },
+    "output_sha256": "f6532127af81ecebc0f57423f844189bf83901bb328eb588560bcedce46b17d0",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Birth decade remains absent after adding the film role.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N044",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Is Peter Nzioki's Chinese zodiac sign the Goat?"
+    },
+    "output_sha256": "bafd0aa386ab47e4b745aab056013b5f1330e5621e8c1cecc6f90f24338a41f2",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Chinese zodiac classification is absent despite birthdate and parental facts being added.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N045",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Bill Condon both write and direct the film Kinsey?"
+    },
+    "output_sha256": "65bc5253857e2966f82cec3cbdae569446bed52e8f90597138cbffe2c05a95d6",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Condon Kinsey writer/director relation is still missing from C1-C7.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N046",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What is Peter King's Chinese zodiac sign, given his recorded birth date of 25 May 1978?"
+    },
+    "output_sha256": "fb0bb86f02bbd09f982564150f3ff81716a5a68c034e2bc8c4ccc2b45459ac07",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Asks for the missing zodiac classification of the recorded birthdate.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N047",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In what year did Ding Junhui turn professional?"
+    },
+    "output_sha256": "a432ec61b3371036833c9859d28f70f68f63e096f088435c3232e9c48a8dc28c",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Professional debut year absent from empty Claims; candidate may anchor this ordinary career-attribute question.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N048",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "For Ding Junhui, who turned professional in 2003, does his 2023 match record include a deciding-frame win against a player with fewer than 250 centuries, followed by two wins by 4-3 and 4-0 respectively, and then a loss in his next match to a player with more than 400 centuries as of 30 January 2025?"
+    },
+    "output_sha256": "b7cac1447a199ebb4ee14d99a6ca814cc69a5828cf798ca9df6ea440afee8b2a",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": true,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": false,
+    "mechanisms": [
+      "B5",
+      "B7"
+    ],
+    "reason": "Oracle multi-match gap is restated as a multi-match-and-opponent-total bundle instead of one local component.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N049",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In what year did Nick Mutuma first have his television breakthrough?"
+    },
+    "output_sha256": "6ff405e0d083460965139041f144fdcae966a315572cbae9f3a21b52ee75c451",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Local candidate first-break year is open in empty Claims.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N050",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "As of 2021, did Nick Mutuma have a child who was born in the United States?"
+    },
+    "output_sha256": "10933d833f9eedaed8e98418aae1c70fb7ccd82fffaf21106d63991b6195077b",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "US-born child relation remains open after adding the first-break Claim.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N051",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Did Nick Mutuma hold the 2012 coordinator position and later manager promotion described in the 2020 article?"
+    },
+    "output_sha256": "7e99bd8d329b73c7b8d4e7a8911e63031142273dd4717b83741eda78e3029b73",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Employment transition remains open after adding only debut-single Claim.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N052",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "In which city was the club provisionally identified as Rangers based as of 2023?"
+    },
+    "output_sha256": "650ba450c3c914e28e590ecf054b1511b5e269682286b24211f080924061ec00",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Base city remains open; explicitly describes the club identification as provisional.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N053",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What was the storage capacity of Dean 'Noogy' Dodrill's gaming PC as of 25 July 2013?"
+    },
+    "output_sha256": "d84d143a8c79ab8c2305b495b75c3aecaa2725b075a262836961d5a0f6a58bdb",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Same local ordinary candidate attribute, with H absent but Dean named in C1.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N054",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "What is the documented birth decade of Peter Nzioki?"
+    },
+    "output_sha256": "98aaf0f36c0d16f2557c82ba5fd1ebde905e7bf54d55f3233427481fdc1cb4a1",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Birth decade of the Claim-named actor remains unestablished.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N055",
+    "arm": "P4",
+    "output": {
+      "decision": "research",
+      "need": "Which match did Ding Junhui play immediately after his 4-3 win over Luca Brecel in the 2023 English Open Last 16?"
+    },
+    "output_sha256": "8a3841ab43c3a80dddf99ddfbcc718e0d01611eb88b3f17c8e62e0a363554a78",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Next-match relation after an observed game remains open even with H removed.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  }
+]
