@@ -1,0 +1,555 @@
+{
+  "git_head": "43462762d7fa3b15aad58157c569acab008f1854",
+  "frozen_utc": "2026-09-26T06:41:16.399725+00:00",
+  "provider": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "credential_file": ".env.deepseek",
+    "credential_field": "DEEPSEEK_API_KEY",
+    "allow_tool_calls_with_stop": true,
+    "timeout_seconds": 240,
+    "max_retries": 0
+  },
+  "max_workers": 4,
+  "max_retries": 0,
+  "requests_sha256": "bd963aaa16d6d51a5deb4913225bf32775f117e7ed0e9e3fb601936426eac26e",
+  "sample_count": 120,
+  "files": {
+    "experiments/goal_residual_control/harness_v2/contracts.py": "20208fcee28472791e661f298a06f54017f089a673cce64f426125c5c09403cb",
+    "experiments/goal_residual_control/harness_v2/prepare.py": "70d57e38a799d52621d6d6f4d6e6c5a862fa07d23dd1dce5249de9b09f0e397b",
+    "experiments/goal_residual_control/harness_v2/runtime.py": "177d7f0a854492ccb2d07a4c842393824e98edf585096a888730915c2fa22049",
+    "experiments/goal_residual_control/harness_v2/state_updater.md": "cb1b9929d04bd37607c5393f7bb6259e2cfe201a7e4c534bf98f92e191a5230f",
+    "experiments/goal_residual_control/harness_v2/CONTRACT_MATRIX.md": "3ae12f37d44a513898d7b8af64c03fd46056b5698f36a276f3cb663b2aef1950",
+    "experiments/goal_residual_control/harness_v2/actor_contract.md": "cfc6295b6cb2a4cdd5cff1021e1328172ce033b32bf965b004a16f2217eb47d1",
+    "experiments/goal_residual_control/harness_v2/research_actor.md": "17df306bd49a163b4990b8d4ec8dae6f6b97dfb3e5804b8a663d360882603a95",
+    "experiments/goal_residual_control/harness_v2/MODEL_CONTRACT_AUDIT.md": "023e15af004f84835004e0794b87a11809fa70466c404b7bbf0556ddb5793e66",
+    "experiments/goal_residual_control/harness_v2/OFFLINE_VALIDATION.md": "58f38b50294ff621a938b349860226e5d550dc17910bfa82dbb9559c74b7a20e",
+    "experiments/goal_residual_control/harness_v2/PROTOCOL_AMENDMENT.md": "9d7017d36e88815b7b59a4d8010faf9a04d0c963864c91b231db81a04cbe2aaa",
+    "experiments/goal_residual_control/harness_v2/GOAL_RESPONSE_SCHEMA.json": "1187b6b8ab8c8e48b048ee2d41434b7747e7880a18ff850c362737e3d33fe79e",
+    "experiments/goal_residual_control/harness_v2/HISTORICAL_ARTIFACT_HASHES.json": "400b9f7878c210314a89ecb2566373204ff01f5822a87be76c1931e1a54435a7",
+    "experiments/goal_residual_control/harness_v2/UPDATER_RESPONSE_SCHEMA.json": "e7578f6ba3f53551d699d0c80bc22862e65f1427f9b6771d57bab2a2b277a85c",
+    "experiments/goal_residual_control/research_decision_v2/ACTION_RESPONSE_SCHEMA.json": "08c5e123116ebaee6d5a8df9d09481d749099d7fdabecbf4f50fe875c2a4f5fe",
+    "experiments/goal_residual_control/bank/freeze.json": "400f27d59e09a696e7d56140fabd5438999af0793dedb3d2fee11315be9692ed",
+    "experiments/goal_residual_control/bank/SNAPSHOTS.json": "36c0370ab208adda1c4103a405a6e66e5d170994e684d4b9732784c01c202057",
+    "experiments/goal_residual_control/bank/TRANSITIONS.json": "2fd45155cb8c33a1f47e46794acb7d49914e519522a518d90ffd5db57c1b9cd8",
+    "experiments/goal_residual_control/bank/SOURCE_WINDOWS.json": "261ceaa49b1023420314eaaebe2a08048a3baa01f5e02246872314cc93ae4afb",
+    "experiments/goal_residual_control/bank/PRIVATE_TRUTH.json": "06b4d2b4e2d013f03cdacbc0f0b832a651843484ef0305a4d0a2861a57aceb61",
+    "experiments/goal_residual_control/bank/HISTORICAL_SOURCE_SETS.json": "444de4bb5bb80c81a8672aca6fed0440306e05bac5561c4a4a4e63166d46dc0a",
+    "experiments/goal_residual_control/common.py": "58e3d2cd2187cb1aabd9312fd1524b0fd12a5572717a872ef1899822d4ad15a2",
+    "experiments/goal_residual_control/tools_runner.py": "5cd138a107d81f82c5935b8914c340f67e4f9000d70dcdf17f6569edb517d8d6",
+    "experiments/goal_residual_control/REVIEW_RUBRIC.md": "a8b2f6d075f0d5dc1b3cc30e64426229632a29c2d4d87c7789005fb7ddef15bf",
+    "experiments/goal_residual_control/goal_review/outputs.json": "5b22ec7793480c968587c08af0b4cde10414ad6b61adcd2244c5caddc9e6e173",
+    "experiments/goal_residual_control/prompts/goal_reviewer.md": "6f85f696468cd4d44c87509a06e70f212cefd94c5c027a8acba73071f6a33936",
+    "experiments/goal_residual_control/prompts/state_updater.md": "1ee925969d8abd4a1b547cf9e1c6113fe590f264e707e4128c8515566f79c6f2",
+    "experiments/goal_residual_control/prompts/research_actor.md": "fe0599d823b6764a7d0137615b58b810273d78e57eff6ddc78a5b656cf8c6f68",
+    "llm_chat/auth_guard.py": "10ad8fa8c8fca48836ca7bf6893abfa08233307aa231bb7bbe7090f514bb801e",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720",
+    "llm_chat/search_find_v3b_agent.py": "1788f3cf74df01dea25b1421a31d572a0ede6c9919c6df7fd8db8d4c76d8b56d",
+    "llm_chat/raw_windows.py": "b72948cf78cdf15dd4966721f49581738b7cd93430480149ead717fb230cee6f",
+    "llm_chat/window_locator.py": "f9805b2976b7dac4c228e5d3781fbb6e22f7c8fa12117087f7442c9b1610fd0e",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339",
+    "experiments/model_backend_deepseek/provider.json": "2cf29e965a9a386f69e9614db8f62041324c298e804fc046a02b2aa801e44a14"
+  },
+  "extra": {
+    "phase": "G2v2",
+    "request_diff_audit_sha256": "5f649c35482f50de5d9f3101c067ccc9fcb75d16183b56a29c8c5a80b6071d1c",
+    "old_requests_sha256": "7827992855dfd33dd14d4f1ca4e6580de6b02cd1e30a60caaf73a37d6af5362b",
+    "G1_outputs_sha256": "5b22ec7793480c968587c08af0b4cde10414ad6b61adcd2244c5caddc9e6e173",
+    "horizon": 1,
+    "planned": 120,
+    "engineering_target": 0.9,
+    "ideal": 0.95,
+    "execution_minimum": 0.8,
+    "planned_followups": [
+      "G3v2",
+      "G4v2",
+      "G5v2"
+    ],
+    "no_effect_gate": true
+  },
+  "historical_base": "f53a43c9342fa643c117b9362dce1164abaf3e4a",
+  "same_api_surface": true,
+  "tool_schema_sha256": "60de1d45580c0dcd1fab666fbb97052122259f14c7f92bafab59825f3e7662ba",
+  "order": [
+    [
+      "T01_PRE",
+      "A0"
+    ],
+    [
+      "T01_PRE",
+      "A1"
+    ],
+    [
+      "T01_PRE",
+      "A2"
+    ],
+    [
+      "T01_POST",
+      "A1"
+    ],
+    [
+      "T01_POST",
+      "A2"
+    ],
+    [
+      "T01_POST",
+      "A0"
+    ],
+    [
+      "T02_PRE",
+      "A2"
+    ],
+    [
+      "T02_PRE",
+      "A0"
+    ],
+    [
+      "T02_PRE",
+      "A1"
+    ],
+    [
+      "T02_POST",
+      "A0"
+    ],
+    [
+      "T02_POST",
+      "A1"
+    ],
+    [
+      "T02_POST",
+      "A2"
+    ],
+    [
+      "T03_PRE",
+      "A1"
+    ],
+    [
+      "T03_PRE",
+      "A2"
+    ],
+    [
+      "T03_PRE",
+      "A0"
+    ],
+    [
+      "T03_POST",
+      "A2"
+    ],
+    [
+      "T03_POST",
+      "A0"
+    ],
+    [
+      "T03_POST",
+      "A1"
+    ],
+    [
+      "T04_PRE",
+      "A0"
+    ],
+    [
+      "T04_PRE",
+      "A1"
+    ],
+    [
+      "T04_PRE",
+      "A2"
+    ],
+    [
+      "T04_POST",
+      "A1"
+    ],
+    [
+      "T04_POST",
+      "A2"
+    ],
+    [
+      "T04_POST",
+      "A0"
+    ],
+    [
+      "T05_PRE",
+      "A2"
+    ],
+    [
+      "T05_PRE",
+      "A0"
+    ],
+    [
+      "T05_PRE",
+      "A1"
+    ],
+    [
+      "T05_POST",
+      "A0"
+    ],
+    [
+      "T05_POST",
+      "A1"
+    ],
+    [
+      "T05_POST",
+      "A2"
+    ],
+    [
+      "T06_PRE",
+      "A1"
+    ],
+    [
+      "T06_PRE",
+      "A2"
+    ],
+    [
+      "T06_PRE",
+      "A0"
+    ],
+    [
+      "T06_POST",
+      "A2"
+    ],
+    [
+      "T06_POST",
+      "A0"
+    ],
+    [
+      "T06_POST",
+      "A1"
+    ],
+    [
+      "T07_PRE",
+      "A0"
+    ],
+    [
+      "T07_PRE",
+      "A1"
+    ],
+    [
+      "T07_PRE",
+      "A2"
+    ],
+    [
+      "T07_POST",
+      "A1"
+    ],
+    [
+      "T07_POST",
+      "A2"
+    ],
+    [
+      "T07_POST",
+      "A0"
+    ],
+    [
+      "T08_PRE",
+      "A2"
+    ],
+    [
+      "T08_PRE",
+      "A0"
+    ],
+    [
+      "T08_PRE",
+      "A1"
+    ],
+    [
+      "T08_POST",
+      "A0"
+    ],
+    [
+      "T08_POST",
+      "A1"
+    ],
+    [
+      "T08_POST",
+      "A2"
+    ],
+    [
+      "T09_PRE",
+      "A1"
+    ],
+    [
+      "T09_PRE",
+      "A2"
+    ],
+    [
+      "T09_PRE",
+      "A0"
+    ],
+    [
+      "T09_POST",
+      "A2"
+    ],
+    [
+      "T09_POST",
+      "A0"
+    ],
+    [
+      "T09_POST",
+      "A1"
+    ],
+    [
+      "T10_PRE",
+      "A0"
+    ],
+    [
+      "T10_PRE",
+      "A1"
+    ],
+    [
+      "T10_PRE",
+      "A2"
+    ],
+    [
+      "T10_POST",
+      "A1"
+    ],
+    [
+      "T10_POST",
+      "A2"
+    ],
+    [
+      "T10_POST",
+      "A0"
+    ],
+    [
+      "T11_PRE",
+      "A2"
+    ],
+    [
+      "T11_PRE",
+      "A0"
+    ],
+    [
+      "T11_PRE",
+      "A1"
+    ],
+    [
+      "T11_POST",
+      "A0"
+    ],
+    [
+      "T11_POST",
+      "A1"
+    ],
+    [
+      "T11_POST",
+      "A2"
+    ],
+    [
+      "T12_PRE",
+      "A1"
+    ],
+    [
+      "T12_PRE",
+      "A2"
+    ],
+    [
+      "T12_PRE",
+      "A0"
+    ],
+    [
+      "T12_POST",
+      "A2"
+    ],
+    [
+      "T12_POST",
+      "A0"
+    ],
+    [
+      "T12_POST",
+      "A1"
+    ],
+    [
+      "T13_PRE",
+      "A0"
+    ],
+    [
+      "T13_PRE",
+      "A1"
+    ],
+    [
+      "T13_PRE",
+      "A2"
+    ],
+    [
+      "T13_POST",
+      "A1"
+    ],
+    [
+      "T13_POST",
+      "A2"
+    ],
+    [
+      "T13_POST",
+      "A0"
+    ],
+    [
+      "T14_PRE",
+      "A2"
+    ],
+    [
+      "T14_PRE",
+      "A0"
+    ],
+    [
+      "T14_PRE",
+      "A1"
+    ],
+    [
+      "T14_POST",
+      "A0"
+    ],
+    [
+      "T14_POST",
+      "A1"
+    ],
+    [
+      "T14_POST",
+      "A2"
+    ],
+    [
+      "T15_PRE",
+      "A1"
+    ],
+    [
+      "T15_PRE",
+      "A2"
+    ],
+    [
+      "T15_PRE",
+      "A0"
+    ],
+    [
+      "T15_POST",
+      "A2"
+    ],
+    [
+      "T15_POST",
+      "A0"
+    ],
+    [
+      "T15_POST",
+      "A1"
+    ],
+    [
+      "T16_PRE",
+      "A0"
+    ],
+    [
+      "T16_PRE",
+      "A1"
+    ],
+    [
+      "T16_PRE",
+      "A2"
+    ],
+    [
+      "T16_POST",
+      "A1"
+    ],
+    [
+      "T16_POST",
+      "A2"
+    ],
+    [
+      "T16_POST",
+      "A0"
+    ],
+    [
+      "T17_PRE",
+      "A2"
+    ],
+    [
+      "T17_PRE",
+      "A0"
+    ],
+    [
+      "T17_PRE",
+      "A1"
+    ],
+    [
+      "T17_POST",
+      "A0"
+    ],
+    [
+      "T17_POST",
+      "A1"
+    ],
+    [
+      "T17_POST",
+      "A2"
+    ],
+    [
+      "T18_PRE",
+      "A1"
+    ],
+    [
+      "T18_PRE",
+      "A2"
+    ],
+    [
+      "T18_PRE",
+      "A0"
+    ],
+    [
+      "T18_POST",
+      "A2"
+    ],
+    [
+      "T18_POST",
+      "A0"
+    ],
+    [
+      "T18_POST",
+      "A1"
+    ],
+    [
+      "T19_PRE",
+      "A0"
+    ],
+    [
+      "T19_PRE",
+      "A1"
+    ],
+    [
+      "T19_PRE",
+      "A2"
+    ],
+    [
+      "T19_POST",
+      "A1"
+    ],
+    [
+      "T19_POST",
+      "A2"
+    ],
+    [
+      "T19_POST",
+      "A0"
+    ],
+    [
+      "T20_PRE",
+      "A2"
+    ],
+    [
+      "T20_PRE",
+      "A0"
+    ],
+    [
+      "T20_PRE",
+      "A1"
+    ],
+    [
+      "T20_POST",
+      "A0"
+    ],
+    [
+      "T20_POST",
+      "A1"
+    ],
+    [
+      "T20_POST",
+      "A2"
+    ]
+  ]
+}
