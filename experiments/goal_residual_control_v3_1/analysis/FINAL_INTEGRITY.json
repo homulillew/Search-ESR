@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "protected_baseline_files": 10227,
+  "stages": [
+    {
+      "stage": "structured_transport_canary",
+      "planned": 24,
+      "attempted_once": 24,
+      "raw_responses": 24,
+      "structural_valid": 23,
+      "harness_valid": 23,
+      "failures": {
+        "transport_structural_failure": 1
+      },
+      "freeze_head": "fb403bafcdf8524ec0f3b37947422412b533815a",
+      "freeze_sha256": "41eadaa58d0dfb1db1590107429438d38500febd7f1ca0c4b7a18d1e26e916e4"
+    },
+    {
+      "stage": "admission_replay",
+      "planned": 110,
+      "attempted_once": 110,
+      "raw_responses": 110,
+      "structural_valid": 109,
+      "harness_valid": 109,
+      "failures": {
+        "length/incomplete failure": 1
+      },
+      "freeze_head": "3be9198622d6a58c3dbb1c4f622c2da05f9953b3",
+      "freeze_sha256": "0c6d85cb91b099fd8862ffee28cd4f9db630a382e6dd7d3eb8a140fc08a21870"
+    },
+    {
+      "stage": "admission_exploration",
+      "planned": 27,
+      "attempted_once": 27,
+      "raw_responses": 27,
+      "structural_valid": 27,
+      "harness_valid": 27,
+      "failures": {},
+      "freeze_head": "85c0a5393780f69e443c7c1f3c8f06ee84241735",
+      "freeze_sha256": "b57d2166d24341d9166f96519d6546984857cdcbb6f6f8128be1a2f3990f61fe"
+    }
+  ],
+  "calls": 161,
+  "usage": {
+    "input": 326955,
+    "output": 593450,
+    "hit": 162304,
+    "miss": 164651,
+    "reasoning": 584315,
+    "cache_rate": 0.49641082106100226,
+    "total": 920405
+  },
+  "research_tools": 0,
+  "G4_G5": "not_run_original_gate_failed",
+  "semantic_review": "single Codex; not independently replicated",
+  "no_retry_no_repair_raw_identity": true
+}
