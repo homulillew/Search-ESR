@@ -1,0 +1,689 @@
+[
+  {
+    "id": "X09_A1",
+    "case_id": "F22",
+    "qid": "311",
+    "arm": "A1",
+    "replicate": 1,
+    "request_sha256": "254d0ada7b833fd6a6f4d9be3b75ae84c782aeb0ca4e8a4ef30181b87d46e6f8",
+    "view_sha256": "a4313ca52b2571b4498f29dedf3f21205b975c6439fd41bb3b23725b1afbcce2",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Verify whether the educational French animated short series Tchou Tchou (1988) was released in Argentina under the title 'El trencito', or determine its actual Argentinian release name."
+    },
+    "usage": {
+      "input": 488,
+      "output": 36243,
+      "hit": 0,
+      "miss": 488,
+      "reasoning": 36194
+    },
+    "error": null,
+    "elapsed_seconds": 169.4903703033924,
+    "requirement_ids": [
+      "R5",
+      "R7"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": true,
+    "over_broad": false,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": true,
+    "reason": "Introduces TchouTchou1988/French/educational identity without prefix support and seeks its alias before qualifying it; proposed1988also does not establish the early1990s start clue.",
+    "critical": true
+  },
+  {
+    "id": "X05_A0",
+    "case_id": "F18",
+    "qid": "1034",
+    "arm": "A0",
+    "replicate": 1,
+    "request_sha256": "096bf6e6ad4c611a769e8c16c6c5496d43ccf516bbb2d872a2bff681d03c66a7",
+    "view_sha256": "9618b0887db8c791efafb92117766946c93e0f95aa7343bc19d6bab766476b79",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Which specific individual's biography contains the distinctive combination of being a commercial model whose wealth came mostly from showbiz, one of three children, with a child born in the United States, who studied Business Administration at university, released a debut single between 2010 and 2015, and was hired as a coordinator in 2012 then promoted to manager — and what is that person's birth name?"
+    },
+    "usage": {
+      "input": 20652,
+      "output": 6992,
+      "hit": 20480,
+      "miss": 172,
+      "reasoning": 6902
+    },
+    "error": null,
+    "elapsed_seconds": 38.92287797667086,
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": false,
+    "over_broad": true,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": false,
+    "reason": "Full multi-article profile and birth-name goal repeated.",
+    "critical": false
+  },
+  {
+    "id": "X04_A1",
+    "case_id": "F17",
+    "qid": "1034",
+    "arm": "A1",
+    "replicate": 1,
+    "request_sha256": "3025c1788ed2e0f5b65b6d28a9675e800af0996c3656b85442c55234d72db14b",
+    "view_sha256": "075202a911d1c95903c4ab2b48b28da9a41d57a7430e7adc46371ceab8e8342a",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "What is the birth name of the individual who matches the clues: a commercial model, one of three children, studied Business Administration, was hired as a coordinator in 2012 and later promoted to manager, and released a debut single between 2010 and 2015?"
+    },
+    "usage": {
+      "input": 936,
+      "output": 12175,
+      "hit": 0,
+      "miss": 936,
+      "reasoning": 12111
+    },
+    "error": null,
+    "elapsed_seconds": 62.29842903278768,
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": false,
+    "over_broad": true,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": false,
+    "reason": "Bundles modelling,family,education,music,career and birth name into the whole identification task.",
+    "critical": false
+  },
+  {
+    "id": "X08_A1",
+    "case_id": "F21",
+    "qid": "1034",
+    "arm": "A1",
+    "replicate": 1,
+    "request_sha256": "57209ce2981e2c9c1c89e11b0cbb3fb89a3fbe9c1a7fd11cac7c6e72d2ed5c1f",
+    "view_sha256": "90018091bd6d0975f33cb067d60414917865c2b7a8ef20b95fc59c9c113406c4",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "What is the full birth name of the individual who matches the described commercial model/socialite clues (born into a family of three, child born in the US, studied Business Administration, released a debut single between 2010 and 2015, and was hired as a coordinator in 2012 then promoted to manager)?"
+    },
+    "usage": {
+      "input": 934,
+      "output": 10489,
+      "hit": 0,
+      "miss": 934,
+      "reasoning": 10414
+    },
+    "error": null,
+    "elapsed_seconds": 55.840595081448555,
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": true,
+    "over_broad": true,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": true,
+    "reason": "Repeats the whole profile and adds socialite as a target restriction not established for the unknown individual.",
+    "critical": true
+  },
+  {
+    "id": "X03_A0",
+    "case_id": "F13",
+    "qid": "546",
+    "arm": "A0",
+    "replicate": 1,
+    "request_sha256": "c989244588ed7ad65253baac953b96846ac9298703515e09352796706ef29f0a",
+    "view_sha256": "e9629f6038af2b7f92e49c5cd9c4be15c90729a7408b68580d4cd7975d01154e",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Does the player who beat Ma Hailong 4-3 at the 2023 English Open match all remaining criteria: more than 300 centuries, more than three maximum breaks, subsequent 4-3 and 4-0 wins, then a loss to a player with over 400 centuries as of 30 January 2025?"
+    },
+    "usage": {
+      "input": 865,
+      "output": 3067,
+      "hit": 640,
+      "miss": 225,
+      "reasoning": 2989
+    },
+    "error": null,
+    "elapsed_seconds": 14.458151381462812,
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R4"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": false,
+    "over_broad": true,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": false,
+    "reason": "Combines independent career counts with the match sequence as all remaining criteria, instead of one current unresolved relation.",
+    "critical": false
+  },
+  {
+    "id": "X07_A0",
+    "case_id": "F20",
+    "qid": "1094",
+    "arm": "A0",
+    "replicate": 1,
+    "request_sha256": "57e7c611b6497905157964ecf4623eb060edc24b2656cba66ab7b66b90f85e04",
+    "view_sha256": "7d4b68817cf1681bc48e69f3b944b4ec0586d3f416edde8bf61f0e8345e38783",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Which early-21st-century fixture is defined by one club 'born out of discord among two parties' (i.e., founded from a split/dispute between two parties) scoring all its goals in the opening phase, and an opponent whose identity passed through several name/incarnation iterations scoring all its goals in the latter stage — and who then took the 95th-minute free kick in that match?"
+    },
+    "usage": {
+      "input": 13016,
+      "output": 31218,
+      "hit": 12800,
+      "miss": 216,
+      "reasoning": 31128
+    },
+    "error": null,
+    "elapsed_seconds": 141.8468731045723,
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": false,
+    "over_broad": true,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": false,
+    "reason": "Both club histories,goal timing,fixture identity and95minute taker remain bundled; no one current relation.",
+    "critical": false
+  },
+  {
+    "id": "X06_A0",
+    "case_id": "F19",
+    "qid": "1094",
+    "arm": "A0",
+    "replicate": 1,
+    "request_sha256": "39b983a608fc484ca8298022c7eb45a202e235e62de181a905457c64ca46c0a4",
+    "view_sha256": "75bf6b044b70f34da385239f8fe2c569b5131df2b2f84be3d107cc48d852e2bc",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Who took the 95th-minute free-kick in the AFC Wimbledon vs Milton Keynes Dons match on 3 February 2018?"
+    },
+    "usage": {
+      "input": 904,
+      "output": 19160,
+      "hit": 768,
+      "miss": 136,
+      "reasoning": 19123
+    },
+    "error": null,
+    "elapsed_seconds": 85.42636295594275,
+    "requirement_ids": [
+      "R4"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": true,
+    "over_broad": false,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": true,
+    "reason": "Assumes a new fixture/date and95minute event absent from visible history.",
+    "critical": true
+  },
+  {
+    "id": "X08_A0",
+    "case_id": "F21",
+    "qid": "1034",
+    "arm": "A0",
+    "replicate": 1,
+    "request_sha256": "eb9d6b6c6a7976a3e268fb78d18a22af0379c3e5f388fa40622143b3678b50c6",
+    "view_sha256": "90018091bd6d0975f33cb067d60414917865c2b7a8ef20b95fc59c9c113406c4",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Which individual satisfies all four biographical clue sets: a 2022 article calling them a commercial model whose wealth mostly came from showbiz; a 2021 article stating they were born into a family of three children, broke into their industry between 2006 and 2010, and have a child born in the United States; a 2020 article stating they entered university between 2001 and 2007 to study Business Administration and released a debut single between 2010 and 2015; and the same 2020 article stating they were hired as a coordinator in 2012 and later promoted to a manager?"
+    },
+    "usage": {
+      "input": 926,
+      "output": 2077,
+      "hit": 768,
+      "miss": 158,
+      "reasoning": 1941
+    },
+    "error": null,
+    "elapsed_seconds": 9.882605807855725,
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": false,
+    "over_broad": true,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": false,
+    "reason": "Explicitly requests all four biographical clue sets together; whole-goal reconstruction rather than one frontier.",
+    "critical": false
+  },
+  {
+    "id": "X04_A0",
+    "case_id": "F17",
+    "qid": "1034",
+    "arm": "A0",
+    "replicate": 1,
+    "request_sha256": "227f7e7b448a28972b14e7ccd82c80076f1db98216d14398369f4be6e4bf2021",
+    "view_sha256": "075202a911d1c95903c4ab2b48b28da9a41d57a7430e7adc46371ceab8e8342a",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Who is the individual matching all the described details (commercial model, most wealth from showbiz, one of three children, entertainment break between 2006 and 2010, child born in the United States, studied Business Administration at university between 2001 and 2007, debut single between 2010 and 2015, hired as coordinator in 2012 and later promoted to manager), and what is that individual's birth name?"
+    },
+    "usage": {
+      "input": 928,
+      "output": 6601,
+      "hit": 768,
+      "miss": 160,
+      "reasoning": 6501
+    },
+    "error": null,
+    "elapsed_seconds": 36.58129919320345,
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": false,
+    "over_broad": true,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": false,
+    "reason": "Repeats all original identifying details and final birth-name request.",
+    "critical": false
+  },
+  {
+    "id": "X03_A1",
+    "case_id": "F13",
+    "qid": "546",
+    "arm": "A1",
+    "replicate": 1,
+    "request_sha256": "1d5342515c4a3d44f4617dd0e7a3e4e8393c6a250dbc8abca658e7d19975fe5c",
+    "view_sha256": "e9629f6038af2b7f92e49c5cd9c4be15c90729a7408b68580d4cd7975d01154e",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "What were Ding Junhui's exact scores and opponents in the rounds immediately after his 4-3 win over Ma Hailong at the 2023 English Open, and did he then lose his following match to a player with over 400 centuries as of 30 January 2025?"
+    },
+    "usage": {
+      "input": 873,
+      "output": 4463,
+      "hit": 128,
+      "miss": 745,
+      "reasoning": 4395
+    },
+    "error": null,
+    "elapsed_seconds": 22.001441441476345,
+    "requirement_ids": [
+      "R4"
+    ],
+    "valid": true,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": false,
+    "over_broad": false,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": false,
+    "reason": "Specific conditional match-sequence verification after the observed opener.",
+    "critical": false
+  },
+  {
+    "id": "X05_A1",
+    "case_id": "F18",
+    "qid": "1034",
+    "arm": "A1",
+    "replicate": 1,
+    "request_sha256": "b6776101b51ea8218a2a7b4af331cab3c78ce1d27db9e4511442160a123a03d1",
+    "view_sha256": "9618b0887db8c791efafb92117766946c93e0f95aa7343bc19d6bab766476b79",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Which individual does the 2020 biography describe as having been hired for a coordinator position in 2012 (later promoted to a specific manager), studied Business Administration at university (entering 2001–2007), and released a debut single between 2010 and 2015 — and what is that person's birth name?"
+    },
+    "usage": {
+      "input": 20660,
+      "output": 27074,
+      "hit": 896,
+      "miss": 19764,
+      "reasoning": 26998
+    },
+    "error": null,
+    "elapsed_seconds": 139.37060847133398,
+    "requirement_ids": [
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "valid": true,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": false,
+    "over_broad": false,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": false,
+    "reason": "Targets subject identity in the specific2020education/career biography, a bounded subset rather than all family/wealth clues.",
+    "critical": false
+  },
+  {
+    "id": "X02_A1",
+    "case_id": "F05",
+    "qid": "311",
+    "arm": "A1",
+    "replicate": 1,
+    "request_sha256": "3669ee7376aa3ea20531b62a71806a8a133f2a5f14e95b8accd0c4afb36f2ea9",
+    "view_sha256": "a0d257d89434ec5c52145a33d7ed7994fcc9ccd84a9228d2fc4fce4f9fbfbb4f",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "What is the Argentinian release name of the early-1990s French animated short series aired on TF1 that had 52 episodes of less than 5 minutes and featured twins, a poet, a complainer, and a living train?"
+    },
+    "usage": {
+      "input": 520,
+      "output": 18038,
+      "hit": 384,
+      "miss": 136,
+      "reasoning": 17980
+    },
+    "error": null,
+    "elapsed_seconds": 88.32452202215791,
+    "requirement_ids": [
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": true,
+    "over_broad": true,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": true,
+    "reason": "Unobserved French/TF1/52episode/living-train target properties are assumed, and broad programme/title conditions remain bundled.",
+    "critical": true
+  },
+  {
+    "id": "X02_A0",
+    "case_id": "F05",
+    "qid": "311",
+    "arm": "A0",
+    "replicate": 1,
+    "request_sha256": "a74566d6f32ed8a81f9dd0c9193ce9dc8dcefb850c1cef951f8e61e05658ae60",
+    "view_sha256": "a0d257d89434ec5c52145a33d7ed7994fcc9ccd84a9228d2fc4fce4f9fbfbb4f",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Which early-1990s educational French animated series aired on TF1 with 52 episodes of less than 5 minutes and featured a living train, twins, a poet, and a complainer, and what was its Argentine release name?"
+    },
+    "usage": {
+      "input": 512,
+      "output": 28189,
+      "hit": 256,
+      "miss": 256,
+      "reasoning": 28132
+    },
+    "error": null,
+    "elapsed_seconds": 143.70091568119824,
+    "requirement_ids": [
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": true,
+    "over_broad": true,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": true,
+    "reason": "Assumes French/TF1/52episodes/living train without visible support and bundles programme identity with release title.",
+    "critical": true
+  },
+  {
+    "id": "X07_A1",
+    "case_id": "F20",
+    "qid": "1094",
+    "arm": "A1",
+    "replicate": 1,
+    "request_sha256": "7f61fc3434e5b46d61f44bbca1eac2e626d250f519a1f9c01d9052e4f60c8c71",
+    "view_sha256": "7d4b68817cf1681bc48e69f3b944b4ec0586d3f416edde8bf61f0e8345e38783",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "In the Milan derby on 28 October 2006 (Milan 3–4 Inter), who took the 95th-minute free kick?"
+    },
+    "usage": {
+      "input": 13024,
+      "output": 11796,
+      "hit": 128,
+      "miss": 12896,
+      "reasoning": 11756
+    },
+    "error": null,
+    "elapsed_seconds": 53.44148820824921,
+    "requirement_ids": [
+      "R4"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": true,
+    "over_broad": false,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": true,
+    "reason": "Introduces a derby/date/score and assumes its95minute event without prefix evidence.",
+    "critical": true
+  },
+  {
+    "id": "X01_A1",
+    "case_id": "F02",
+    "qid": "177",
+    "arm": "A1",
+    "replicate": 1,
+    "request_sha256": "426b74b24696ecab7a49b1c8c2614b047768e9f6043c4ff0f6892f30ba23babd",
+    "view_sha256": "10317a8ab52d9839dae6458bc8f0cba56dddf84b44965871f475e370260ed05e",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Which club was the subject of the 2023 article stating it had won fifteen trophies and signed 13 players ahead of a season?"
+    },
+    "usage": {
+      "input": 1873,
+      "output": 9856,
+      "hit": 128,
+      "miss": 1745,
+      "reasoning": 9819
+    },
+    "error": null,
+    "elapsed_seconds": 42.44094771891832,
+    "requirement_ids": [
+      "R4"
+    ],
+    "valid": true,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": false,
+    "over_broad": false,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": false,
+    "reason": "A bounded identifying article relation, without assuming BFC meets it.",
+    "critical": false
+  },
+  {
+    "id": "X06_A1",
+    "case_id": "F19",
+    "qid": "1094",
+    "arm": "A1",
+    "replicate": 1,
+    "request_sha256": "49cafa11e950c79293c4af4fdb7c1dcf0759824a38389e1a7a9a988a9f57b96f",
+    "view_sha256": "75bf6b044b70f34da385239f8fe2c569b5131df2b2f84be3d107cc48d852e2bc",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Who took the 95th-minute free kick in the 2006 Serie A match AC Milan 3–4 Inter Milan?"
+    },
+    "usage": {
+      "input": 912,
+      "output": 9367,
+      "hit": 128,
+      "miss": 784,
+      "reasoning": 9332
+    },
+    "error": null,
+    "elapsed_seconds": 45.09901129454374,
+    "requirement_ids": [
+      "R4"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": true,
+    "over_broad": false,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": true,
+    "reason": "Introduces an unqualified2006Milan derby and assumes its95minute event.",
+    "critical": true
+  },
+  {
+    "id": "X09_A0",
+    "case_id": "F22",
+    "qid": "311",
+    "arm": "A0",
+    "replicate": 1,
+    "request_sha256": "f3290a20e33515118b636c36a5c2a53bdb24ade18fc89f70235cff97965ecab8",
+    "view_sha256": "a4313ca52b2571b4498f29dedf3f21205b975c6439fd41bb3b23725b1afbcce2",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "What is the Argentinian release title of the 1993 French animated educational series 'Les Aventures de Balthazar'?"
+    },
+    "usage": {
+      "input": 480,
+      "output": 18770,
+      "hit": 256,
+      "miss": 224,
+      "reasoning": 18734
+    },
+    "error": null,
+    "elapsed_seconds": 82.86926875077188,
+    "requirement_ids": [
+      "R5",
+      "R7"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": true,
+    "over_broad": false,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": true,
+    "reason": "Introduces a specific1993French educational programme and seeks its alias without any prefix qualification of that new candidate.",
+    "critical": true
+  },
+  {
+    "id": "X01_A0",
+    "case_id": "F02",
+    "qid": "177",
+    "arm": "A0",
+    "replicate": 1,
+    "request_sha256": "448ef5c344f044e5106b0b8686120460ebfe1b798212984acf2e2ed790bd9511",
+    "view_sha256": "10317a8ab52d9839dae6458bc8f0cba56dddf84b44965871f475e370260ed05e",
+    "attempted": true,
+    "output": {
+      "decision": "act",
+      "need": "Was BFC Dynamo founded in 1966 in East Germany, and does its 2011–12 Regionalliga Nord season (finished 6th–12th, shared points, goal difference 6–12) confirm it as the team described?"
+    },
+    "usage": {
+      "input": 1865,
+      "output": 5087,
+      "hit": 1664,
+      "miss": 201,
+      "reasoning": 5025
+    },
+    "error": null,
+    "elapsed_seconds": 22.674366584047675,
+    "requirement_ids": [
+      "R1",
+      "R5"
+    ],
+    "valid": false,
+    "stale": false,
+    "drift": false,
+    "unsupported_premise": true,
+    "over_broad": false,
+    "premature_stop": false,
+    "missed_stop": false,
+    "belief_error": true,
+    "reason": "Founding date is proposed conditionally, but the inserted2011–12Regionalliga season/rank/points/GD description is not observed and is treated as a qualifying premise.",
+    "critical": true
+  }
+]

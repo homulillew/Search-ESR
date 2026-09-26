@@ -1,0 +1,92 @@
+{
+  "status": "research_complete",
+  "branch": "experiment/frontier-generation-state-sufficiency",
+  "base_head": "9e4b48c197d4248e2ccf34850948761706252cfd",
+  "audit_commit": "0c51e4c",
+  "F1_execution_commit": "d59b79ece7df2a72844c7949c990733f23f9a7de",
+  "exploration_execution_commit": "c4e48ba3de2acda9a341a5b85c807ea57155f1a8",
+  "F0": {
+    "inventory": 114,
+    "checkpoints": 24,
+    "qids": 10,
+    "prefix_only_coverage_frozen": true
+  },
+  "F1": {
+    "calls": 144,
+    "H_valid": [
+      18,
+      48
+    ],
+    "S_valid": [
+      18,
+      48
+    ],
+    "SH_valid": [
+      19,
+      48
+    ],
+    "gate_pass": false,
+    "length_failures": 2
+  },
+  "exploration": {
+    "direction": "A",
+    "checkpoints": 9,
+    "qids": 5,
+    "calls": 18,
+    "A0_valid": [
+      0,
+      9
+    ],
+    "A1_valid": [
+      3,
+      9
+    ],
+    "broad": [
+      6,
+      3
+    ],
+    "critical": [
+      4,
+      5
+    ],
+    "predeclared_success": false,
+    "budget_exhausted": true
+  },
+  "F2": {
+    "status": "not_run",
+    "reason": "F1 gate failed"
+  },
+  "F3": {
+    "status": "not_run",
+    "reason": "F1 gate failed"
+  },
+  "F4": {
+    "status": "not_run",
+    "reason": "F1 gate failed"
+  },
+  "total_model_calls": 162,
+  "tool_calls": 0,
+  "writer_calls": 0,
+  "retries": 0,
+  "cache": {
+    "hit_tokens": 327800,
+    "input_tokens": 621644,
+    "rate": 0.5273114515703522
+  },
+  "historical_files_unchanged": 10387,
+  "exact_historical_state_pointers_verified": 24,
+  "contract_tests_passed": 5,
+  "final_questions_answered": 30,
+  "publication": {
+    "remote": "origin",
+    "branch": "experiment/frontier-generation-state-sufficiency",
+    "method": "normal push; no force/rebase/history rewrite",
+    "verification": "Compare local HEAD to origin branch after final push; final user response records published commit."
+  },
+  "limitations": [
+    "single masked reviewer, not perfect blinding",
+    "complete archived episode history only; ancestral chronology not fully recoverable",
+    "historical normalized seeds and legacy Writer states; not a fresh minimal-U1 cohort",
+    "small correlated sample; no generalization or significance claim"
+  ]
+}
