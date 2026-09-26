@@ -1,0 +1,9 @@
+# Frozen loop execution interpretation
+
+The original adaptive G5 topology was copied into v2 before calls and tested offline. One Actor decision returns up to two independent tool actions. The tools execute that whole batch; then every returned source window is sent to the Updater, sequentially within its trajectory. The latest Claims/Hypothesis state is reviewed before the next Actor decision; a resolved L2 review stops immediately and sends no Actor request. A final review after decision 3 is allowed, but no fourth Actor decision.
+
+Thus source-level intermediate mutations are **coalesced at the tool-batch boundary** for Goal Reviewer scheduling; the runner does not pay for a separate Goal Reviewer call after every individual window inside an already completed tool batch. This follows the previously frozen adaptive implementation and is narrower than a literal per-window interpretation of “every semantic mutation.” All intermediate states are archived. Interpret Reviewer costs for this batched topology; it is not a benchmark of a per-window-review controller. No extra tool action is issued after a resolved review.
+
+Mutation detection uses a change in serialized Claim statements/Hypothesis. Duplicate or incidental accepted Claims can trigger another review even without new goal-relevant meaning. Claims are retained exactly as proposed; no online semantic deduplication or repair was introduced.
+
+Freeze REQUESTS is initially an empty dynamic-request template (sample_count=0 counts pre-materialized requests). The actual frozen sample is ten listed qids × three arms, at most three Actor decisions and two actions per decision, as specified by selection, arms and max_decisions in freeze.extra. Each actual dynamic request is journaled before submission. Unused horizon is censoring, not a missing response; submitted failures remain failures.

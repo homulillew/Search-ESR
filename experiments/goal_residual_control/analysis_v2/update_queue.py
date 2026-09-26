@@ -12,12 +12,13 @@ def queue():
  return rows
 if __name__=='__main__':
  rows=queue();reviewed=read(TOP/'analysis_v2/UPDATER_LABELS.json') if (TOP/'analysis_v2/UPDATER_LABELS.json').exists() else {};seen=set()
- known_texts={r['observation']['text'] for r in rows if r['review_id'] in reviewed}
+ known_texts={r['observation']['text'] for r in rows if r['review_id'] in reviewed};substantive_pending=0
  for r in sorted(rows,key=lambda x:x['review_id']):
   uid=r['review_id'];o=r['proposal']
   if uid in reviewed or uid in seen:continue
   seen.add(uid)
   if not o:print(uid,'INVALID',r['error']);continue
   if not o['claims_to_add'] and o['hypothesis_update']['action']=='keep':continue
+  substantive_pending+=1
   print('\nID',uid,'Q',r['qid'],'PRIOR_H',r['hypothesis_before'],'PROPOSED',json.dumps(o,ensure_ascii=False),'\nSOURCE',r['observation']['url'],'\n',r['observation']['text'] if r['observation']['text'] not in known_texts else '[Exact observation text already read in a reviewed packet.]')
- print('TOTAL',len(rows),'unique pending substantive',len(seen))
+ print('TOTAL',len(rows),'unique pending substantive',substantive_pending,'unlabelled including empty keep',len(seen))

@@ -27,9 +27,9 @@ def seed_tags(cid):
   if post:tags.add('peter_police')
  return tags
 
-def score(stage,knowledge=None,closure=None):
+def score(stage,knowledge=None,closure=None,labels_override=None,output_prefix=''):
  b=TOP/stage;cat={x['evidence_id']:x for x in read(b/'EVIDENCE_CATALOG.json')};pack=read(b/'REVIEW_PACKETS.json');mp=read(b/'PRIVATE_PACKET_MAP.json')
- labels=read(b/'evidence_labels.json') if (b/'evidence_labels.json').exists() else read(TOP/'analysis_v2/EVIDENCE_LABELS.json');defs=read(TOP/'analysis_v2/FACT_DEFINITIONS.json');out=[]
+ labels=labels_override if labels_override is not None else read(b/'evidence_labels.json') if (b/'evidence_labels.json').exists() else read(TOP/'analysis_v2/EVIDENCE_LABELS.json');defs=read(TOP/'analysis_v2/FACT_DEFINITIONS.json');out=[]
  for p in pack:
   key=mp[p['packet_id']];cid=key['case_id'];k=cid+':'+key['arm']
   known=set(knowledge[k] if knowledge is not None else seed_tags(cid));resolved=closure[k] if closure is not None else p['gold_residual_rubric']['goal_status']=='resolved'
@@ -47,10 +47,10 @@ def score(stage,knowledge=None,closure=None):
    primary_seen |=pri;all_seen |=allf;paths.add(path)
   rr.update(any_progress=bool(primary_seen),direct_progress=any(defs[t]['kind']=='direct' for t in primary_seen),decision_progress=any(defs[t]['kind']=='decision' for t in primary_seen),sensitivity_any_progress=bool(all_seen),belief_updates=[defs[t] for t in sorted(primary_seen)])
   out.append(rr)
- write(b/'progress_reviews.json',out);metrics={}
+ write(b/(output_prefix+'progress_reviews.json'),out);metrics={}
  for arm in sorted(set(r['arm'] for r in out)):
   rows=[r for r in out if r['arm']==arm];aa=[a for r in rows for a in r['actions']];n=sum(r['any_progress'] for r in rows);second=[a for a in aa if a['action_index']==1]
   tools={t:{'calls':sum(a['tool']==t for a in aa),'progress':sum(a['tool']==t and a['any_progress'] for a in aa)} for t in ['search','find','open']}
   metrics[arm]={'planned':len(rows),'valid':sum(r['valid'] for r in rows),'open':sum(not r['resolved_before'] for r in rows),'acting':sum(r['decision']=='act' for r in rows),'any_progress':n,'direct_progress':sum(r['direct_progress'] for r in rows),'decision_progress':sum(r['decision_progress'] for r in rows),'no_progress_valid':sum(r['valid'] and not r['any_progress'] for r in rows),'no_progress_acting':sum(r['decision']=='act' and not r['any_progress'] for r in rows),'sensitivity_any_progress':sum(r['sensitivity_any_progress'] for r in rows),'tool_calls':len(aa),'tool_calls_per_progress':len(aa)/n if n else None,'by_tool':tools,'second_actions':len(second),'second_action_adds_primary_fact':sum(bool(a['marginal_primary_facts']) for a in second),'second_action_adds_sensitivity_fact':sum(bool(a['marginal_sensitivity_facts']) for a in second),'second_repeats_primary_facts_only':sum(a['any_progress'] and not a['marginal_primary_facts'] for a in second),'exact_duplicate_path':sum(a['exact_repeated_path'] for a in aa)}
- write(b/'progress_metrics.json',metrics);print(json.dumps(metrics,indent=2));return out,metrics
+ write(b/(output_prefix+'progress_metrics.json'),metrics);print(json.dumps(metrics,indent=2));return out,metrics
 if __name__=='__main__':score('one_step_acquisition_v2')
