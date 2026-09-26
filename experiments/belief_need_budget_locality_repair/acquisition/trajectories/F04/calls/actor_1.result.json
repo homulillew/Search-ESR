@@ -1,0 +1,48 @@
+{
+  "id": "actor_1",
+  "attempted": true,
+  "request_sha256": "65195559a6b5bb7c4668db697c941a0713c6d6ff74d9b895e93b3e42bbdfff75",
+  "finish_reason": "stop",
+  "final_output_exists": true,
+  "parse_valid": true,
+  "schema_valid": true,
+  "final_valid_JSON": true,
+  "output": {
+    "decision": "act",
+    "gap": "Need to identify the non-English queen regnant and the academic book about her.",
+    "actions": [
+      {
+        "tool": "search",
+        "query": "queen regnant multilingual only one of her kind in her country book academic publisher February",
+        "k": 5
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1408,
+    "completion_tokens": 2308,
+    "total_tokens": 3716,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2251
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 1280
+  },
+  "error": null,
+  "response_model": "deepseek-flash",
+  "final_content_chars": 248,
+  "token_accounting": {
+    "input": 1408,
+    "output": 2308,
+    "reasoning": 2251,
+    "final": 57,
+    "reasoning_output_ratio": 0.9753032928942807,
+    "hit": 128,
+    "miss": 1280
+  },
+  "elapsed_seconds": 13.111171511933208,
+  "completed_utc": "2026-09-26T21:28:51.541033+00:00"
+}
