@@ -1,0 +1,119 @@
+{
+  "type": "object",
+  "properties": {
+    "confirmed": {
+      "type": "boolean"
+    },
+    "blocking_gap": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "gap": {
+              "type": "string",
+              "minLength": 1
+            },
+            "claim_refs": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "gap",
+            "claim_refs"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "closure_support": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "relation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "uniqueItems": true,
+            "minItems": 1
+          }
+        },
+        "required": [
+          "relation",
+          "claim_refs"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "confirmed",
+    "blocking_gap",
+    "closure_support"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "confirmed": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "blocking_gap": {
+            "type": "null"
+          },
+          "closure_support": {
+            "minItems": 1
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "blocking_gap": {
+            "type": "object",
+            "properties": {
+              "gap": {
+                "type": "string",
+                "minLength": 1
+              },
+              "claim_refs": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "gap",
+              "claim_refs"
+            ],
+            "additionalProperties": false
+          },
+          "closure_support": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ]
+}

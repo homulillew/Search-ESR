@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "properties": {
+    "resolved": {
+      "type": "boolean"
+    },
+    "blocking_gaps": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "gap": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "missing",
+              "partial",
+              "conflict"
+            ]
+          },
+          "claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "gap",
+          "status",
+          "claim_refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "closure_claim_refs": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "resolved",
+    "blocking_gaps",
+    "closure_claim_refs"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "resolved": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "blocking_gaps": {
+            "maxItems": 0
+          },
+          "closure_claim_refs": {
+            "minItems": 1
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "blocking_gaps": {
+            "minItems": 1
+          },
+          "closure_claim_refs": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  ]
+}

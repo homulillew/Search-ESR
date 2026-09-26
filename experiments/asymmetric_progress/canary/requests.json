@@ -1,0 +1,30 @@
+[
+  {
+    "id": "CANARY_Audit_1",
+    "case_id": "CANARY",
+    "qid": "dummy",
+    "arm": "Audit",
+    "replicate": 1,
+    "set": "canary",
+    "claim_count": 1,
+    "request": {
+      "model": "deepseek-flash",
+      "messages": [
+        {
+          "role": "system",
+          "content": "This is a mechanical JSON serialization check. Return exactly {\"confirmed\":true,\"blocking_gap\":null,\"closure_support\":[{\"relation\":\"dummy label\",\"claim_refs\":[1]}]}."
+        },
+        {
+          "role": "user",
+          "content": "{\"Original Question\": \"Return the supplied dummy label as established. This is a serialization check, not a research case.\", \"Verified Claims\": [{\"index\": 1, \"statement\": \"The dummy label is K.\"}]}"
+        }
+      ],
+      "stream": false,
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "request_sha256": "3b696890fbb96d955b8e33969317bd250b4458ada420956218240e95f6111772",
+    "view_sha256": "1bea635f31c640bbcd68388978ebd5c32e0c48083e2af49dd50cf9b5978e64c9"
+  }
+]
