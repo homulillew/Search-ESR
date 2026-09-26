@@ -16,6 +16,7 @@ import shutil
 import time
 
 from . import artifacts as io
+from llm_chat.auth_guard import AuthFailureLatch
 from .contracts import (VERSION, canonical, digest, seal, verify, nonempty, positive,
                         profile, windows, note_result, actor_result, usage)
 
@@ -314,7 +315,7 @@ def execute(plan, client, output, *, mode='mock', api_error_types=(),
         target = output / 'source' / source.relative_to(stage_package)
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
-    auth_failure = None
+    auth_guard = AuthFailureLatch(auth_error_types)
     try:
         for job in plan['jobs']:
             folder = output / job['id']
@@ -327,8 +328,8 @@ def execute(plan, client, output, *, mode='mock', api_error_types=(),
             # the endpoint, key and profile are fixed for the whole execute() call.
             # Remaining jobs stay unsent rather than being counted as API attempts.
             # (Failure denominator is preserved: they are audited as blocked_by_auth.)
-            if auth_failure is not None:
-                journal.emit('blocked_by_auth', error_type=auth_failure)
+            if auth_guard.failure is not None:
+                journal.emit('blocked_by_auth', error_type=auth_guard.failure)
                 continue
             start = time.monotonic()
             journal.emit('request', request=deepcopy(job['request']))
@@ -341,8 +342,7 @@ def execute(plan, client, output, *, mode='mock', api_error_types=(),
                 if not isinstance(exc, api_error_types):
                     journal.emit('harness_error', error_type=type(exc).__name__)
                     raise
-                if auth_error_types and isinstance(exc, auth_error_types):
-                    auth_failure = type(exc).__name__
+                auth_guard.observe(exc)
                 journal.emit('api_error', error_type=type(exc).__name__,
                              elapsed_seconds=time.monotonic() - start)
             else:
