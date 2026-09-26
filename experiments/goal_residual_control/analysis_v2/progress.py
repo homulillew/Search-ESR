@@ -29,7 +29,7 @@ def seed_tags(cid):
 
 def score(stage,knowledge=None,closure=None):
  b=TOP/stage;cat={x['evidence_id']:x for x in read(b/'EVIDENCE_CATALOG.json')};pack=read(b/'REVIEW_PACKETS.json');mp=read(b/'PRIVATE_PACKET_MAP.json')
- labels=read(TOP/'analysis_v2/EVIDENCE_LABELS.json');defs=read(TOP/'analysis_v2/FACT_DEFINITIONS.json');out=[]
+ labels=read(b/'evidence_labels.json') if (b/'evidence_labels.json').exists() else read(TOP/'analysis_v2/EVIDENCE_LABELS.json');defs=read(TOP/'analysis_v2/FACT_DEFINITIONS.json');out=[]
  for p in pack:
   key=mp[p['packet_id']];cid=key['case_id'];k=cid+':'+key['arm']
   known=set(knowledge[k] if knowledge is not None else seed_tags(cid));resolved=closure[k] if closure is not None else p['gold_residual_rubric']['goal_status']=='resolved'

@@ -1,7 +1,7 @@
 from progress import *
 b=TOP/'transition_replan_v2';updates=read(b/'state_updates.json');rows=[]
 # Manual clause-level inspection against the exact source windows (no gold answer).
-nonatomic={('T01',0,0),('T03',0,0),('T03',0,1),('T04',0,1),('T05',0,1),('T07',0,0),('T09',0,0),('T09',0,1),('T10',0,1),('T11',0,0),('T12',0,0),('T12',0,1),('T13',0,1),('T15',0,0),('T17',0,0),('T17',0,1),('T11',3,1),('T13',3,1)}
+nonatomic={('T01',0,0),('T03',0,0),('T03',0,1),('T04',0,1),('T05',0,1),('T07',0,0),('T09',0,0),('T09',0,1),('T10',0,1),('T11',0,0),('T12',0,0),('T12',0,1),('T13',0,1),('T15',0,0),('T11',3,1),('T13',3,1)}
 incidental={('T05',0,0),('T13',1,1),('T11',3,0),('T12',3,0),('T12',3,1),('T19',0,0),('T13',3,0)}
 for u in updates:
  tid=u['transition_id'];wave=u['wave'];o=u['proposal']['output']

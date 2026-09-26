@@ -4,7 +4,7 @@
 
 ## Source-supported state
 
-52 proposed Claim sentences: **51/52 supported (98.08%)**; 34/52 atomic under the one-independently-checkable-proposition rule. Support is not equivalent to task relevance. One temporal join is unsupported: T19 binds retrospective 67 albums to the 2016 Forbes interview. No direct partial-clue-to-full-candidate Claim promotion was found. T14's identification is supported jointly by prior plots/roommate and current five-season observation.
+52 proposed Claim sentences: **51/52 supported (98.08%)**; 36/52 atomic under the one-independently-checkable-proposition rule. Support is not equivalent to task relevance. One temporal join is unsupported: T19 binds retrospective 67 albums to the 2016 Forbes interview. No direct partial-clue-to-full-candidate Claim promotion was found. T14's identification is supported jointly by prior plots/roommate and current five-season observation.
 
 Both materially contradicted candidates (Heart and Hijitus) are cleared. Yet R3 on T07 pursues Heart's birth name despite the cleared hypothesis and timing evidence. Correct state rejection is therefore insufficient to guarantee rejection in the next action. This failure occurs with online Residual, not with the persistent-Gap comparator.
 
