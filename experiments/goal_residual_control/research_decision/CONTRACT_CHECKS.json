@@ -1,0 +1,115 @@
+{
+  "new_model_calls": 0,
+  "applied_to_current_requests": false,
+  "checks": [
+    {
+      "value": {
+        "decision": "stop",
+        "gap": "",
+        "actions": []
+      },
+      "expected_valid": true,
+      "actual_valid": true
+    },
+    {
+      "value": {
+        "decision": "act",
+        "gap": "g",
+        "actions": [
+          {
+            "tool": "search",
+            "query": "q"
+          }
+        ]
+      },
+      "expected_valid": true,
+      "actual_valid": true
+    },
+    {
+      "value": {
+        "decision": "act",
+        "gap": "g",
+        "actions": [
+          {
+            "tool": "find",
+            "doc_ref": "D1",
+            "query": "q"
+          },
+          {
+            "tool": "open",
+            "window_ref": "W1",
+            "direction": "around"
+          }
+        ]
+      },
+      "expected_valid": true,
+      "actual_valid": true
+    },
+    {
+      "value": {
+        "decision": "act",
+        "gap": "g",
+        "actions": [
+          {
+            "type": "search",
+            "query": "q"
+          }
+        ]
+      },
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "value": {
+        "decision": "act",
+        "gap": "g",
+        "actions": [
+          {
+            "tool": "search",
+            "arguments": {
+              "query": "q"
+            }
+          }
+        ]
+      },
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "value": {
+        "decision": "stop",
+        "gap": "",
+        "actions": [
+          {
+            "tool": "search",
+            "query": "q"
+          }
+        ]
+      },
+      "expected_valid": false,
+      "actual_valid": false
+    },
+    {
+      "value": {
+        "decision": "act",
+        "gap": "g",
+        "actions": [
+          {
+            "tool": "search",
+            "query": "q"
+          },
+          {
+            "tool": "search",
+            "query": "q"
+          },
+          {
+            "tool": "search",
+            "query": "q"
+          }
+        ]
+      },
+      "expected_valid": false,
+      "actual_valid": false
+    }
+  ]
+}

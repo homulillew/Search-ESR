@@ -1,0 +1,4907 @@
+[
+  {
+    "case_id": "T01_PRE",
+    "qid": "546",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "1104448b7ef2073ba30fc88a0006405eba97901965fa8931ace2b1fc0153bd9e",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 984,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 984,
+      "reported_cached_tokens": 0,
+      "status": "reported",
+      "hit_rate": 0.0
+    },
+    "usage": {
+      "completion_tokens": 8456,
+      "prompt_tokens": 984,
+      "total_tokens": 9440,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 8260,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 984
+    }
+  },
+  {
+    "case_id": "T01_PRE",
+    "qid": "546",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "2be45301199a0fb420527a9c7c3f4da92d84d08313c33dc903c9d970694b2685",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1088,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1088,
+      "reported_cached_tokens": 0,
+      "status": "reported",
+      "hit_rate": 0.0
+    },
+    "usage": {
+      "completion_tokens": 6622,
+      "prompt_tokens": 1088,
+      "total_tokens": 7710,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 6444,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1088
+    }
+  },
+  {
+    "case_id": "T01_PRE",
+    "qid": "546",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "cb4ffb92823878a5a0db6c9c400aad0b03475c364028b891da78343134653c4e",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1012,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1012,
+      "reported_cached_tokens": 0,
+      "status": "reported",
+      "hit_rate": 0.0
+    },
+    "usage": {
+      "completion_tokens": 14823,
+      "prompt_tokens": 1012,
+      "total_tokens": 15835,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 14690,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1012
+    }
+  },
+  {
+    "case_id": "T01_POST",
+    "qid": "546",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "dcf8cbad994c86d4705e0e9e1f8f223342c34ce6de7b8496293cbb0a692bf7c9",
+    "output": {
+      "decision": "act",
+      "gap": "The identity is not yet fully verified: Ding Junhui matches the known 2023 English Open 4–3 opening win over Ma Hailong, but it remains to confirm his career century count (>300), his professional debut year (between 1995 and 2006), and the subsequent 2023 English Open sequence of a 4–3 win, a 4–0 win, then a loss to a player with over 400 centuries as of 30 January 2025.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Ding Junhui career centuries 300 professional 2003 highest break",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "2023 English Open Ding Junhui results Ma Hailong 4-3 Mark Allen",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1689,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1689,
+      "reported_cached_tokens": 0,
+      "status": "reported",
+      "hit_rate": 0.0
+    },
+    "usage": {
+      "completion_tokens": 1754,
+      "prompt_tokens": 1689,
+      "total_tokens": 3443,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1551,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1689
+    }
+  },
+  {
+    "case_id": "T01_POST",
+    "qid": "546",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "59f509cfabc040100d1eecf611a7e35e7e55095874a731c1b05186ba84148a9b",
+    "output": {
+      "decision": "act",
+      "gap": "Verify that Ding Junhui's 2023 English Open run continued with a 4-3 win, then a 4-0 win, before losing to a player with over 400 centuries; also confirm his >300 centuries, >3 maximum breaks, and professional debut between 1995 and 2006.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Ding Junhui English Open 2023 results"
+        },
+        {
+          "tool": "search",
+          "query": "Ding Junhui centuries maximum breaks 147 turned professional 2003"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1579,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 171,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8917036098796707
+    },
+    "usage": {
+      "completion_tokens": 3666,
+      "prompt_tokens": 1579,
+      "total_tokens": 5245,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3522,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 171
+    }
+  },
+  {
+    "case_id": "T01_POST",
+    "qid": "546",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "e988223cc7efb48f32a3a0cc2fa9d5ae2f80ebcee3e457d611b46b30113ea629",
+    "output": {
+      "decision": "act",
+      "gap": "Whether Ding Junhui's 2023 English Open run and career statistics fully match the question's clues: more than 300 centuries, more than 3 maximum/highest breaks, professional debut between 1995 and 2006, and a 2023 sequence of a deciding-frame win over a player with fewer than 250 centuries, followed by 4-3 and 4-0 wins, then a loss to a player with more than 400 centuries as of 30 January 2025.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Ding Junhui 2023 English Open results Ma Hailong 4-3 Ross Muir 4-0 Mark Allen"
+        },
+        {
+          "tool": "search",
+          "query": "Ding Junhui centuries maximum breaks 147 turned professional 2003"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1551,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 143,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.9078014184397163
+    },
+    "usage": {
+      "completion_tokens": 4684,
+      "prompt_tokens": 1551,
+      "total_tokens": 6235,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 4485,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 143
+    }
+  },
+  {
+    "case_id": "T02_PRE",
+    "qid": "1094",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "38e6932ab7b662996ad918cca66a06e652e375cebc44bedc5430b65176fbf92c",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 974,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 846,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.13141683778234087
+    },
+    "usage": {
+      "completion_tokens": 8893,
+      "prompt_tokens": 974,
+      "total_tokens": 9867,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 8731,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 846
+    }
+  },
+  {
+    "case_id": "T02_PRE",
+    "qid": "1094",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "504b19adb452e4ec94309f0fcefb9cc7b8d01017f16ddf7585e8f115b5634a66",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 948,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 180,
+      "reported_cached_tokens": 768,
+      "status": "reported",
+      "hit_rate": 0.810126582278481
+    },
+    "usage": {
+      "completion_tokens": 2587,
+      "prompt_tokens": 948,
+      "total_tokens": 3535,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2434,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 180
+    }
+  },
+  {
+    "case_id": "T02_PRE",
+    "qid": "1094",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "5bf29ece0b32fd37f87cfbfbe60f026fb48a92f4cfe29c9ff6ed540ce1c5c30f",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1024,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 256,
+      "reported_cached_tokens": 768,
+      "status": "reported",
+      "hit_rate": 0.75
+    },
+    "usage": {
+      "completion_tokens": 6570,
+      "prompt_tokens": 1024,
+      "total_tokens": 7594,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 6410,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 256
+    }
+  },
+  {
+    "case_id": "T02_POST",
+    "qid": "1094",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "828abe9ec05a8f4dfb165766d17b6a52e7a2318a9049ea51e193bb733ef1d8cb",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1561,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1305,
+      "reported_cached_tokens": 256,
+      "status": "reported",
+      "hit_rate": 0.16399743754003843
+    },
+    "usage": {
+      "completion_tokens": 2083,
+      "prompt_tokens": 1561,
+      "total_tokens": 3644,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2063,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1305
+    }
+  },
+  {
+    "case_id": "T02_POST",
+    "qid": "1094",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "3ff026841038df63e2bf182a4b6d2fe08ba8f24b9b744a4a51dfd678f24ea741",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1688,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 152,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.909952606635071
+    },
+    "usage": {
+      "completion_tokens": 4522,
+      "prompt_tokens": 1688,
+      "total_tokens": 6210,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 4356,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 152
+    }
+  },
+  {
+    "case_id": "T02_POST",
+    "qid": "1094",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "2980b3b4b916798539fcdd10fb529a6f2d049a7f618cd19602819084fbbb5ee9",
+    "output": {
+      "decision": "act",
+      "gap": "Which two teams played in the 95th-minute free-kick match described in the question?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "95th minute free kick Liverpool Arsenal"
+        },
+        {
+          "tool": "search",
+          "query": "95th minute free kick Arsenal"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1587,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 179,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8872085696282294
+    },
+    "usage": {
+      "completion_tokens": 16017,
+      "prompt_tokens": 1587,
+      "total_tokens": 17604,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 15928,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 179
+    }
+  },
+  {
+    "case_id": "T03_PRE",
+    "qid": "517",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "1262c78928f0b8ce32194309609bb9894d2ba3a050c78e07ffdfd0e7903393dc",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the actor/person matching the biographical details (born in the 1970s, father a soldier, mother worked at a barracks hospital, Chinese zodiac Goat) and the two film roles (policeman in a 2005 film whose director was inspired by Iracema, and a role in the 2013 Bill Condon thriller).",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "father was a soldier mother worked at the barracks hospital actor born 1979"
+        },
+        {
+          "tool": "search",
+          "query": "Iracema inspired filmmaker 2005 film policeman"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1091,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 963,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.11732355637030248
+    },
+    "usage": {
+      "completion_tokens": 20001,
+      "prompt_tokens": 1091,
+      "total_tokens": 21092,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 19848,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 963
+    }
+  },
+  {
+    "case_id": "T03_PRE",
+    "qid": "517",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "e2f376f5c81998e364e6157b2840c5c36be16d89a9697b968d33e4cb66433611",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the actor in Bill Condon's 2013 thriller The Fifth Estate who was born in 1979 (Chinese zodiac goat), had a soldier father and a mother who worked at a barracks hospital, and played a policeman in a 2005 film by an Iracema-inspired director.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Iracema inspired filmmaker 2005 film policeman actor",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "actor born 1979 father soldier mother barracks hospital Chinese zodiac goat The Fifth Estate",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1022,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 254,
+      "reported_cached_tokens": 768,
+      "status": "reported",
+      "hit_rate": 0.7514677103718199
+    },
+    "usage": {
+      "completion_tokens": 15089,
+      "prompt_tokens": 1022,
+      "total_tokens": 16111,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 14933,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 254
+    }
+  },
+  {
+    "case_id": "T03_PRE",
+    "qid": "517",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "e7699851d0a57e40774eaf3f5d0a50a8cf92c0b2ff4890fc8d75c2df892bf48f",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the actor matching the clues: born in the 1970s to a soldier father and a mother who worked at a barracks hospital, Chinese zodiac goat, played a policeman in the 2005 film Hazaaron Khwaishein Aisi (directed by Iracema-inspired Sudhir Mishra), and appeared in Bill Condon's 2013 thriller The Fifth Estate.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Ankur Vikal father soldier mother barracks hospital zodiac goat",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Ankur Vikal Hazaaron Khwaishein Aisi policeman The Fifth Estate",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 994,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 226,
+      "reported_cached_tokens": 768,
+      "status": "reported",
+      "hit_rate": 0.772635814889336
+    },
+    "usage": {
+      "completion_tokens": 9492,
+      "prompt_tokens": 994,
+      "total_tokens": 10486,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 9314,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 226
+    }
+  },
+  {
+    "case_id": "T03_POST",
+    "qid": "517",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "733b4c466385623cab895755adb71e701944596d156e4b33ef1e2522dfa6ca34",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1544,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1288,
+      "reported_cached_tokens": 256,
+      "status": "reported",
+      "hit_rate": 0.16580310880829016
+    },
+    "usage": {
+      "completion_tokens": 7198,
+      "prompt_tokens": 1544,
+      "total_tokens": 8742,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 7178,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1288
+    }
+  },
+  {
+    "case_id": "T03_POST",
+    "qid": "517",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "3d8378dfda8a50c898175b2485a3182b8f66f66a543c68f56338f8ea635af675",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1516,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 236,
+      "reported_cached_tokens": 1280,
+      "status": "reported",
+      "hit_rate": 0.8443271767810027
+    },
+    "usage": {
+      "completion_tokens": 6935,
+      "prompt_tokens": 1516,
+      "total_tokens": 8451,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 6915,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 236
+    }
+  },
+  {
+    "case_id": "T03_POST",
+    "qid": "517",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "956181e2bedba6aab292e63e4ec4cd2c45fa2b40b3ea556428ae1f06646131d2",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1634,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 226,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8616891064871481
+    },
+    "usage": {
+      "completion_tokens": 4310,
+      "prompt_tokens": 1634,
+      "total_tokens": 5944,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 4146,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 226
+    }
+  },
+  {
+    "case_id": "T04_PRE",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "55b4e6b4224849cdcabfa4e7acbcbe7e9a02fc1af567a0e50dbba2dfe7b36d58",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 993,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 865,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.12890231621349446
+    },
+    "usage": {
+      "completion_tokens": 756,
+      "prompt_tokens": 993,
+      "total_tokens": 1749,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 648,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 865
+    }
+  },
+  {
+    "case_id": "T04_PRE",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "eb7e310593c166dbc1cf8bcd4b692cf34b9e2f582d31ef612990c680e176c24a",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1041,
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 145,
+      "reported_cached_tokens": 896,
+      "status": "reported",
+      "hit_rate": 0.8607108549471661
+    },
+    "usage": {
+      "completion_tokens": 918,
+      "prompt_tokens": 1041,
+      "total_tokens": 1959,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 793,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 145
+    }
+  },
+  {
+    "case_id": "T04_PRE",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "77ce27e83aefd87016b9c24aa29c213ceabca84c29c294c62f1705b2c961b23a",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1020,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 252,
+      "reported_cached_tokens": 768,
+      "status": "reported",
+      "hit_rate": 0.7529411764705882
+    },
+    "usage": {
+      "completion_tokens": 1047,
+      "prompt_tokens": 1020,
+      "total_tokens": 2067,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 877,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 252
+    }
+  },
+  {
+    "case_id": "T04_POST",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "7fdfca35658ed0b598f5f6dca903107e9ef763b6c24598a76c8598daf932a448",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1623,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1367,
+      "reported_cached_tokens": 256,
+      "status": "reported",
+      "hit_rate": 0.15773259396179914
+    },
+    "usage": {
+      "completion_tokens": 548,
+      "prompt_tokens": 1623,
+      "total_tokens": 2171,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 435,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1367
+    }
+  },
+  {
+    "case_id": "T04_POST",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "139bdac959a1c0e442d70470addcf16293dc2efc4f68ba931b83669f67018b19",
+    "output": null,
+    "error": {
+      "type": "ValidationError",
+      "status": null,
+      "message": "'query' is a required property\n\nFailed validating 'required' in schema:\n    {'type': 'object',\n     'properties': {'query': {'type': 'string',\n                              'description': 'A standalone global search '\n                                             'query, usually in English'},\n                    'k': {'type': 'integer',\n                          'minimum': 1,\n                          'maximum': 10,\n                          'description': 'Number of documents, default 5'}},\n    "
+    },
+    "cache_usage": {
+      "prompt_tokens": 1564,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 284,
+      "reported_cached_tokens": 1280,
+      "status": "reported",
+      "hit_rate": 0.8184143222506394
+    },
+    "usage": {
+      "completion_tokens": 528,
+      "prompt_tokens": 1564,
+      "total_tokens": 2092,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 392,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 284
+    }
+  },
+  {
+    "case_id": "T04_POST",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "d1a67f031d7911a40d92a494a8f0034a4806ba4337efc79d02105a9754934016",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the Forbes Africa feature on Oliver Mtukudzi from May during the 2010s and determine how many albums he had at that time.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Forbes Africa Oliver Mtukudzi May albums",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa 2015 feature number of albums",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1537,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 257,
+      "reported_cached_tokens": 1280,
+      "status": "reported",
+      "hit_rate": 0.8327911515940143
+    },
+    "usage": {
+      "completion_tokens": 1192,
+      "prompt_tokens": 1537,
+      "total_tokens": 2729,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1068,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 257
+    }
+  },
+  {
+    "case_id": "T05_PRE",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "d9028ea5c4203967991911d2a8a99bfbb0db4842962f982791fb171430b21cf7",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1065,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 937,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.12018779342723004
+    },
+    "usage": {
+      "completion_tokens": 11912,
+      "prompt_tokens": 1065,
+      "total_tokens": 12977,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 11756,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 937
+    }
+  },
+  {
+    "case_id": "T05_PRE",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "4c8af3c7d9fadf403d95cadee466f14e63075ed9edaa417fcf517040fca6d665",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1044,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 916,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.12260536398467432
+    },
+    "usage": {
+      "completion_tokens": 3994,
+      "prompt_tokens": 1044,
+      "total_tokens": 5038,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3868,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 916
+    }
+  },
+  {
+    "case_id": "T05_PRE",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "4edb6828d31bb318a4f7e7bd0d1456b401b888f147ed95446abd990fa9afd769",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1117,
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 221,
+      "reported_cached_tokens": 896,
+      "status": "reported",
+      "hit_rate": 0.8021486123545211
+    },
+    "usage": {
+      "completion_tokens": 19534,
+      "prompt_tokens": 1117,
+      "total_tokens": 20651,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 19359,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 221
+    }
+  },
+  {
+    "case_id": "T05_POST",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "293b25c8d085448983a7ca5ed4220cafdc8f3737775158ab0509c19bd9f7f6ec",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1559,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1175,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.24631173829377806
+    },
+    "usage": {
+      "completion_tokens": 236,
+      "prompt_tokens": 1559,
+      "total_tokens": 1795,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 216,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1175
+    }
+  },
+  {
+    "case_id": "T05_POST",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "c51bcb5eeb821f942b2716d659acee728031ec41c0b3ab27f066211ad9a9b291",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1656,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 248,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8502415458937198
+    },
+    "usage": {
+      "completion_tokens": 1369,
+      "prompt_tokens": 1656,
+      "total_tokens": 3025,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1231,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 248
+    }
+  },
+  {
+    "case_id": "T05_POST",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "406e0b6c4a4b6000eb8601e68b3714684afda5820f5a61b7d4f05c908542b562",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1580,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 172,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8911392405063291
+    },
+    "usage": {
+      "completion_tokens": 695,
+      "prompt_tokens": 1580,
+      "total_tokens": 2275,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 571,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 172
+    }
+  },
+  {
+    "case_id": "T06_PRE",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "29ef8bc20dbe2aeafe7dde497de1c9431ec4472fc2a39acd022071ff3d515fb8",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1111,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 983,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.1152115211521152
+    },
+    "usage": {
+      "completion_tokens": 2329,
+      "prompt_tokens": 1111,
+      "total_tokens": 3440,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2173,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 983
+    }
+  },
+  {
+    "case_id": "T06_PRE",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "8f52318876aa5d61e750854175bc2bb750567cc2f55f73148148edea28ed0293",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1054,
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 158,
+      "reported_cached_tokens": 896,
+      "status": "reported",
+      "hit_rate": 0.8500948766603416
+    },
+    "usage": {
+      "completion_tokens": 39779,
+      "prompt_tokens": 1054,
+      "total_tokens": 40833,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 39590,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 158
+    }
+  },
+  {
+    "case_id": "T06_PRE",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "ff164222d1dfa956ffc0822087cfee9b801aab6e245cb9ab56fed9400c571d11",
+    "output": {
+      "decision": "act",
+      "gap": "The team matching the 2023 article clue — stated to have won fifteen trophies and signed 13 players ahead of a season — remains unidentified, so its founding year and country cannot yet be confirmed.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "won fifteen trophies signed 13 players ahead of season",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "15 trophies 13 players signed ahead of 2023 season",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1026,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 258,
+      "reported_cached_tokens": 768,
+      "status": "reported",
+      "hit_rate": 0.7485380116959064
+    },
+    "usage": {
+      "completion_tokens": 3022,
+      "prompt_tokens": 1026,
+      "total_tokens": 4048,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2887,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 258
+    }
+  },
+  {
+    "case_id": "T06_POST",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "37e1dac04c7960bb4ee42809d7c23cf47abc5a643738a807121f98e945f562c8",
+    "output": {
+      "decision": "act",
+      "gap": "Whether the club is Rangers International (Enugu) and confirmation of its founding year and country.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Rangers International FC Enugu Nigeria founded 1970 history"
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International fifteen trophies signed 13 players season"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1585,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1201,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.24227129337539433
+    },
+    "usage": {
+      "completion_tokens": 2661,
+      "prompt_tokens": 1585,
+      "total_tokens": 4246,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2563,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1201
+    }
+  },
+  {
+    "case_id": "T06_POST",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "c9f06328df511d280298d415e1f046f39db47b9b2f37171790297e5f50d7f402",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1557,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 149,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.9043031470777135
+    },
+    "usage": {
+      "completion_tokens": 9649,
+      "prompt_tokens": 1557,
+      "total_tokens": 11206,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 9524,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 149
+    }
+  },
+  {
+    "case_id": "T06_POST",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "0dfaccea188e5c4fefc1ce5b67444c8674fbe1a2515b515d7c9bbb432547d494",
+    "output": null,
+    "error": {
+      "type": "ValidationError",
+      "status": null,
+      "message": "'query' is a required property\n\nFailed validating 'required' in schema:\n    {'type': 'object',\n     'properties': {'query': {'type': 'string',\n                              'description': 'A standalone global search '\n                                             'query, usually in English'},\n                    'k': {'type': 'integer',\n                          'minimum': 1,\n                          'maximum': 10,\n                          'description': 'Number of documents, default 5'}},\n    "
+    },
+    "cache_usage": {
+      "prompt_tokens": 1695,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 159,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.9061946902654867
+    },
+    "usage": {
+      "completion_tokens": 632,
+      "prompt_tokens": 1695,
+      "total_tokens": 2327,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 457,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 159
+    }
+  },
+  {
+    "case_id": "T07_PRE",
+    "qid": "1034",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "2f9e2cc38353fa551313b2f3088200136fc4b59a56a907d8124f1c9f3c336598",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the individual matching the composite 2022/2021/2020 biography and determine their birth name; the current Heart Evangelista hypothesis does not fit key clues such as the child born in the United States, the 2012 coordinator-to-manager role, and the university/music timeline.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model showbiz wealth family of three children child born in United States"
+        },
+        {
+          "tool": "search",
+          "query": "business administration university debut single hired coordinator 2012 promoted manager"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1081,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 953,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.11840888066604996
+    },
+    "usage": {
+      "completion_tokens": 7152,
+      "prompt_tokens": 1081,
+      "total_tokens": 8233,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 7008,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 953
+    }
+  },
+  {
+    "case_id": "T07_PRE",
+    "qid": "1034",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "f458583fc73224b11c2de5c42b5b49863c016348dabaae3c1f9dd15e8fdaf8bc",
+    "output": {
+      "decision": "act",
+      "gap": "The individual's identity is still unverified. Need evidence linking the 2022 commercial-model/showbiz-wealth profile to the 2021 and 2020 biography clues: born into a family of three children, break in an industry between 2006 and 2010, US-born child, university study of Business Administration between 2001 and 2007, debut single between 2010 and 2015, and being hired as coordinator in 2012 then promoted to manager.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "\"commercial model\" \"showbiz\" wealth 2022"
+        },
+        {
+          "tool": "search",
+          "query": "\"hired as coordinator\" \"promoted to manager\" 2012 \"debut single\""
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1263,
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 239,
+      "reported_cached_tokens": 1024,
+      "status": "reported",
+      "hit_rate": 0.8107680126682502
+    },
+    "usage": {
+      "completion_tokens": 5457,
+      "prompt_tokens": 1263,
+      "total_tokens": 6720,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5267,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 239
+    }
+  },
+  {
+    "case_id": "T07_PRE",
+    "qid": "1034",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "c39cf2f0dd5eba768552a98b36720e9dce051e300a5921a5bf8c20e38a3e2fa3",
+    "output": {
+      "decision": "act",
+      "gap": "The identity of the individual and their birth (real) name is still unverified; the Working Hypothesis (Heart Evangelista) has not been confirmed by any evidence, and no documents are yet in the workspace.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model most of wealth came from showbiz 2022",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "coordinator 2012 promoted manager debut single Business Administration Philippines",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1106,
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 210,
+      "reported_cached_tokens": 896,
+      "status": "reported",
+      "hit_rate": 0.810126582278481
+    },
+    "usage": {
+      "completion_tokens": 597,
+      "prompt_tokens": 1106,
+      "total_tokens": 1703,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 459,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 210
+    }
+  },
+  {
+    "case_id": "T07_POST",
+    "qid": "1034",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "28e6ba6d74dab96453b5e462a65ee9ce6891d79ec0c30b421ad6d70486f007e0",
+    "output": {
+      "decision": "act",
+      "gap": "The identity of the individual matching the 2022/2020 details is unresolved, so the requested birth name cannot yet be determined; Heart Evangelista has not been verified to match those distinctive clues.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "\"hired as a coordinator\" \"promoted to manager\" 2012 debut single Business Administration"
+        },
+        {
+          "tool": "search",
+          "query": "commercial model \"wealth came from showbiz\" 2022 family of three children child born in United States break 2006 2010"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1805,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1421,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.21274238227146813
+    },
+    "usage": {
+      "completion_tokens": 6384,
+      "prompt_tokens": 1805,
+      "total_tokens": 8189,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 6238,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1421
+    }
+  },
+  {
+    "case_id": "T07_POST",
+    "qid": "1034",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "76cd040b75bcd28b6c4b6e4f358d44bbc8b22ac4ae038df4bdf6078e32e3d039",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1677,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 269,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8395945140131187
+    },
+    "usage": {
+      "completion_tokens": 10692,
+      "prompt_tokens": 1677,
+      "total_tokens": 12369,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 10572,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 269
+    }
+  },
+  {
+    "case_id": "T07_POST",
+    "qid": "1034",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "56975d21204a721135774c3df0128db449029fcd1c92d174c1791587701b7f16",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the individual matching the 2020/2021/2022 clues and verify their birth name (candidate: Nana Ama McBrown, whose birth name may be Felicity Ama Agyemang).",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "\"Nana Ama McBrown\" \"Felicity Ama Agyemang\" birth name",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "\"Nana Ama McBrown\" commercial model wealth showbiz Business Administration coordinator Maame",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1652,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 244,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8523002421307506
+    },
+    "usage": {
+      "completion_tokens": 16837,
+      "prompt_tokens": 1652,
+      "total_tokens": 18489,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 16682,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 244
+    }
+  },
+  {
+    "case_id": "T08_PRE",
+    "qid": "311",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "45c08cf8222d8ba9ed8b4bc71e4624284bd7e2ccb8da8cece22f63c7701bae31",
+    "output": {
+      "decision": "act",
+      "gap": "What is the exact Argentine release title of the television program matching the described clues, currently hypothesized to be The Adventures of Hijitus?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Las aventuras de Hijitus Argentine television series release name",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Hijitus Argentine animated series 1967 50 episodes 5 minutes twins poet complainer alive car",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1062,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 934,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.12052730696798493
+    },
+    "usage": {
+      "completion_tokens": 544,
+      "prompt_tokens": 1062,
+      "total_tokens": 1606,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 415,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 934
+    }
+  },
+  {
+    "case_id": "T08_PRE",
+    "qid": "311",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "e22a2c29774100811b05e217c8bb6c0d0f646e6e1dbf1078f0faa5b3d7cdc70b",
+    "output": {
+      "decision": "act",
+      "gap": "The Working Hypothesis (The Adventures of Hijitus) is likely wrong because it aired in the late 1960s/1970s, not the early 1990s. The unresolved gap is identifying the actual short-form educational series matching the character clues and finding its Argentinian release name.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "animated television series early 1990s 52 episodes 5 minutes educational twins poet complainer living vehicle",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "TV series 1990 1991 52 episodes 5 minutes network TF1 TV3 Canal 5 educational characters twins poet complainer living transport Argentinian release name",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1044,
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 148,
+      "reported_cached_tokens": 896,
+      "status": "reported",
+      "hit_rate": 0.8582375478927203
+    },
+    "usage": {
+      "completion_tokens": 2992,
+      "prompt_tokens": 1044,
+      "total_tokens": 4036,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2808,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 148
+    }
+  },
+  {
+    "case_id": "T08_PRE",
+    "qid": "311",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "7cae52c04537b846b45c0c939fd83ceeb13ab649422996501bd8a0be3c1317b0",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the early-1990s educational short-form television program whose characters include twins, a poet, a complainer, and a living means of transport, and which aired on a three-character network containing a number, so that its Argentinian release name can be determined.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "educational animated series 1990s 52 episodes 5 minutes twins poet complainer living vehicle",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "serie educativa gemelos poeta quejumbroso medio de transporte vivo 1990",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1171,
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 147,
+      "reported_cached_tokens": 1024,
+      "status": "reported",
+      "hit_rate": 0.874466268146883
+    },
+    "usage": {
+      "completion_tokens": 20567,
+      "prompt_tokens": 1171,
+      "total_tokens": 21738,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 20405,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 147
+    }
+  },
+  {
+    "case_id": "T08_POST",
+    "qid": "311",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "9c2785bd47ffbacf063ccc9b29840af96fdf54912f55f6c6e7c96a7c2f5ab332",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the actual program matching the clue set rather than Hijitus, since the verified Hijitus facts conflict with the two-writer, early-1990s, and episode-count/runtime constraints.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "educational children's television series 52 episodes less than 5 minutes twins poet complainer living means of transport",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Argentinian release name animated series twins poet complainer alive bus",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1656,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1400,
+      "reported_cached_tokens": 256,
+      "status": "reported",
+      "hit_rate": 0.15458937198067632
+    },
+    "usage": {
+      "completion_tokens": 3948,
+      "prompt_tokens": 1656,
+      "total_tokens": 5604,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3806,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1400
+    }
+  },
+  {
+    "case_id": "T08_POST",
+    "qid": "311",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "37897af713695e3d1c4ce296ce36b0e4477ededa79a9651de11e6ddb00b9f201",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the television program matching the distinctive character set (twins, poet, complainer, and a living means of transport) along with the network, runtime, episode-count, educational-purpose, and country-hosting clues, in order to determine its Argentinian release name.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "educational animated series twins poet complainer living transport"
+        },
+        {
+          "tool": "search",
+          "query": "TV3 educational series twins poet complainer living bus 1990s"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1799,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 263,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.8538076709282935
+    },
+    "usage": {
+      "completion_tokens": 20137,
+      "prompt_tokens": 1799,
+      "total_tokens": 21936,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 20004,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 263
+    }
+  },
+  {
+    "case_id": "T08_POST",
+    "qid": "311",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "17915247fc4cc8d1ffd760037ac923bb618c8537ea3334519bfd4d490c8fbb30",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the early-1990s educational short-episode television program that matches the character clues (twins, poet, complainer, living means of transport), likely aired on a three-character network containing a number such as TF1, and determine its Argentinian release name.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "educational television series twins poet complainer living vehicle short episodes 1990s TF1 Argentine release name",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "French educational animated series TF1 early 1990s 52 episodes less than 5 minutes twins poet complainer living transport Argentina",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1674,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 138,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.9175627240143369
+    },
+    "usage": {
+      "completion_tokens": 4069,
+      "prompt_tokens": 1674,
+      "total_tokens": 5743,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3898,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 138
+    }
+  },
+  {
+    "case_id": "T09_PRE",
+    "qid": "186",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "a6e7cc86fc7f426b49422479bffded9829abed177e807637284f1c3928083beb",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1045,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 917,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.12248803827751197
+    },
+    "usage": {
+      "completion_tokens": 17948,
+      "prompt_tokens": 1045,
+      "total_tokens": 18993,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 17816,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 917
+    }
+  },
+  {
+    "case_id": "T09_PRE",
+    "qid": "186",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "7169c1b3a56eade304f1be00bb728541745fced7c224fdb0ee21638c93c5b682",
+    "output": {
+      "decision": "act",
+      "gap": "Which DOS shareware game matches the November early-1990s clues and was developed by an amphibian-named company that had a different early name?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Bullfrog Productions DOS shareware November single-player game"
+        },
+        {
+          "tool": "search",
+          "query": "game developed by company named after amphibian original name early 1990s DOS shareware November"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 984,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 216,
+      "reported_cached_tokens": 768,
+      "status": "reported",
+      "hit_rate": 0.7804878048780488
+    },
+    "usage": {
+      "completion_tokens": 5384,
+      "prompt_tokens": 984,
+      "total_tokens": 6368,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5266,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 216
+    }
+  },
+  {
+    "case_id": "T09_PRE",
+    "qid": "186",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "7b99d708972a2e0a8454e2eb5c17b10ca6f5e774de3af8e050f90500252bcf4c",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 959,
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 191,
+      "reported_cached_tokens": 768,
+      "status": "reported",
+      "hit_rate": 0.8008342022940563
+    },
+    "usage": {
+      "completion_tokens": 13049,
+      "prompt_tokens": 959,
+      "total_tokens": 14008,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 12919,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 768
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 191
+    }
+  },
+  {
+    "case_id": "T09_POST",
+    "qid": "186",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "79f16b9a9781ff43d7baf1d18a5c75bb7f187dd18ad277b52fe8cd471ad8978d",
+    "output": {
+      "decision": "act",
+      "gap": "Did Albino Frog Software actually develop Galacta: The Battle for Saturn, and was that software company originally established under a different name before adopting its amphibian-derived name?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Albino Frog Software company history former name"
+        },
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "Developed by Albino Frog Software"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1634,
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1378,
+      "reported_cached_tokens": 256,
+      "status": "reported",
+      "hit_rate": 0.15667074663402691
+    },
+    "usage": {
+      "completion_tokens": 2632,
+      "prompt_tokens": 1634,
+      "total_tokens": 4266,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2516,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 1378
+    }
+  },
+  {
+    "case_id": "T09_POST",
+    "qid": "186",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "178e52463a4f73b73795bc6bba46ab0953e4b7baf295b7542b48bf9cf39088c5",
+    "output": null,
+    "error": {
+      "type": "ValidationError",
+      "status": null,
+      "message": "'query' is a required property\n\nFailed validating 'required' in schema:\n    {'type': 'object',\n     'properties': {'query': {'type': 'string',\n                              'description': 'A standalone global search '\n                                             'query, usually in English'},\n                    'k': {'type': 'integer',\n                          'minimum': 1,\n                          'maximum': 10,\n                          'description': 'Number of documents, default 5'}},\n    "
+    },
+    "cache_usage": {
+      "prompt_tokens": 1609,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 201,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.875077688004972
+    },
+    "usage": {
+      "completion_tokens": 3496,
+      "prompt_tokens": 1609,
+      "total_tokens": 5105,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3361,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 201
+    }
+  },
+  {
+    "case_id": "T09_POST",
+    "qid": "186",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "edaa07ec8dd9d34df3f8168d7e386daa3c7172fc851ab4c32e913684193ca015",
+    "output": null,
+    "error": {
+      "type": "ValidationError",
+      "status": null,
+      "message": "'query' is a required property\n\nFailed validating 'required' in schema:\n    {'type': 'object',\n     'properties': {'query': {'type': 'string',\n                              'description': 'A standalone global search '\n                                             'query, usually in English'},\n                    'k': {'type': 'integer',\n                          'minimum': 1,\n                          'maximum': 10,\n                          'description': 'Number of documents, default 5'}},\n    "
+    },
+    "cache_usage": {
+      "prompt_tokens": 1722,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 186,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.89198606271777
+    },
+    "usage": {
+      "completion_tokens": 1925,
+      "prompt_tokens": 1722,
+      "total_tokens": 3647,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1793,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 186
+    }
+  },
+  {
+    "case_id": "T10_PRE",
+    "qid": "387",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "1c63dfa507ce983fa63fd3fca54335da95cd7bd770d6d61ed1b743b38f3b1db3",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the person credited with Game B's (likely Jazz Jackrabbit 2) intro/end animations and locate the 25 July 2013 source giving their gaming PC's storage size, using the distinguishing clues 'nice wireless keyboard', '8.5x11/8x11 paper', and 'animated'.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "\"nice wireless keyboard\" \"8.5x11\" gaming PC animated"
+        },
+        {
+          "tool": "search",
+          "query": "Dean Dodrill Jazz Jackrabbit 2 intro end animations gaming PC storage"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1066,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 938,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.1200750469043152
+    },
+    "usage": {
+      "completion_tokens": 5834,
+      "prompt_tokens": 1066,
+      "total_tokens": 6900,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5683,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 938
+    }
+  },
+  {
+    "case_id": "T10_PRE",
+    "qid": "387",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "7364e72e65809ea46d9abc9d6d6cfb5bfc42c148fcc3ea4b127cd681118d3038",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1182,
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 158,
+      "reported_cached_tokens": 1024,
+      "status": "reported",
+      "hit_rate": 0.8663282571912013
+    },
+    "usage": {
+      "completion_tokens": 8026,
+      "prompt_tokens": 1182,
+      "total_tokens": 9208,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 7877,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1024
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 158
+    }
+  },
+  {
+    "case_id": "T10_PRE",
+    "qid": "387",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "9855ec3ed94e27a86a86be30171840d3e7ba305ba4955e385ce3859f5998a35c",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1086,
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 190,
+      "reported_cached_tokens": 896,
+      "status": "reported",
+      "hit_rate": 0.8250460405156538
+    },
+    "usage": {
+      "completion_tokens": 4291,
+      "prompt_tokens": 1086,
+      "total_tokens": 5377,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 4159,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 896
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 190
+    }
+  },
+  {
+    "case_id": "T10_POST",
+    "qid": "387",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "ad7052fe9448623a74c8ddbe62ef6c0c5dbec52dbcd9ea634bd868fa4eced26c",
+    "output": {
+      "decision": "act",
+      "gap": "Whether the 5 TB storage statement in the 'How I Game: Dean Dodrill' article is expressly dated 25 July 2013, so it can be treated as the storage size as of that date.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "July 25, 2013"
+        },
+        {
+          "tool": "open",
+          "window_ref": "W1",
+          "direction": "before"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1737,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1353,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.22107081174438686
+    },
+    "usage": {
+      "completion_tokens": 1404,
+      "prompt_tokens": 1737,
+      "total_tokens": 3141,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1279,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1353
+    }
+  },
+  {
+    "case_id": "T10_POST",
+    "qid": "387",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "fa696073e2ec816ca374291d0605960dd741adca2285738b1ab2c155f5471f46",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1636,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 228,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8606356968215159
+    },
+    "usage": {
+      "completion_tokens": 110,
+      "prompt_tokens": 1636,
+      "total_tokens": 1746,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 90,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 228
+    }
+  },
+  {
+    "case_id": "T10_POST",
+    "qid": "387",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "e0efb47632b72bc8950565b78cf3f2ee9fb463b01de8520e5d157ef19ae6428d",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1616,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 208,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8712871287128713
+    },
+    "usage": {
+      "completion_tokens": 439,
+      "prompt_tokens": 1616,
+      "total_tokens": 2055,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 419,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 208
+    }
+  },
+  {
+    "case_id": "T11_PRE",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "61892228a7eda2fa55753efca8afd617092239f11f7ddbbc8e0809b5c6166062",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1563,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1179,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.2456813819577735
+    },
+    "usage": {
+      "completion_tokens": 1225,
+      "prompt_tokens": 1563,
+      "total_tokens": 2788,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1100,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1179
+    }
+  },
+  {
+    "case_id": "T11_PRE",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "e0b2c898702f763b854b8534b83db76ac684a36eb485f207042e0733ff516127",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1538,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 258,
+      "reported_cached_tokens": 1280,
+      "status": "reported",
+      "hit_rate": 0.8322496749024707
+    },
+    "usage": {
+      "completion_tokens": 843,
+      "prompt_tokens": 1538,
+      "total_tokens": 2381,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 701,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 258
+    }
+  },
+  {
+    "case_id": "T11_PRE",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "816fa69f2fba9102e7882c72ebb5037333dab67fa6e0f9d1dade18eb3b5cc934",
+    "output": null,
+    "error": {
+      "type": "ValidationError",
+      "status": null,
+      "message": "'query' is a required property\n\nFailed validating 'required' in schema:\n    {'type': 'object',\n     'properties': {'query': {'type': 'string',\n                              'description': 'A standalone global search '\n                                             'query, usually in English'},\n                    'k': {'type': 'integer',\n                          'minimum': 1,\n                          'maximum': 10,\n                          'description': 'Number of documents, default 5'}},\n    "
+    },
+    "cache_usage": {
+      "prompt_tokens": 1623,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 215,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8675292667898953
+    },
+    "usage": {
+      "completion_tokens": 499,
+      "prompt_tokens": 1623,
+      "total_tokens": 2122,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 355,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 215
+    }
+  },
+  {
+    "case_id": "T11_POST",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "af7b5b8c08ca96aa5c01210668cc7d407120aaf22ed51d1e75020455a7c38434",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3717,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 3333,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.1033091202582728
+    },
+    "usage": {
+      "completion_tokens": 299,
+      "prompt_tokens": 3717,
+      "total_tokens": 4016,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 279,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 3333
+    }
+  },
+  {
+    "case_id": "T11_POST",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "1fe2c5a360fd38ab14295a1e51bebe971a7799d43bc5ad2414acb84706be3e59",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3722,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 3338,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.1031703385276733
+    },
+    "usage": {
+      "completion_tokens": 208,
+      "prompt_tokens": 3722,
+      "total_tokens": 3930,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 188,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 3338
+    }
+  },
+  {
+    "case_id": "T11_POST",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "b9522ade2c9e6a4ffcd6856c14e6a93d7435da3fd188575024b695f527556ac1",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3742,
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 158,
+      "reported_cached_tokens": 3584,
+      "status": "reported",
+      "hit_rate": 0.9577765900587921
+    },
+    "usage": {
+      "completion_tokens": 296,
+      "prompt_tokens": 3742,
+      "total_tokens": 4038,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 276,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3584
+      },
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 158
+    }
+  },
+  {
+    "case_id": "T12_PRE",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "7c856863c0155c6900264f417f06440b19b47b7275feb65f86b352ba35f25c2d",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1632,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 224,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8627450980392157
+    },
+    "usage": {
+      "completion_tokens": 810,
+      "prompt_tokens": 1632,
+      "total_tokens": 2442,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 679,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 224
+    }
+  },
+  {
+    "case_id": "T12_PRE",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "61892228a7eda2fa55753efca8afd617092239f11f7ddbbc8e0809b5c6166062",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1563,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 155,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.9008317338451696
+    },
+    "usage": {
+      "completion_tokens": 1242,
+      "prompt_tokens": 1563,
+      "total_tokens": 2805,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1110,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 155
+    }
+  },
+  {
+    "case_id": "T12_PRE",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "e0b2c898702f763b854b8534b83db76ac684a36eb485f207042e0733ff516127",
+    "output": null,
+    "error": {
+      "type": "ValidationError",
+      "status": null,
+      "message": "'query' is a required property\n\nFailed validating 'required' in schema:\n    {'type': 'object',\n     'properties': {'query': {'type': 'string',\n                              'description': 'A standalone global search '\n                                             'query, usually in English'},\n                    'k': {'type': 'integer',\n                          'minimum': 1,\n                          'maximum': 10,\n                          'description': 'Number of documents, default 5'}},\n    "
+    },
+    "cache_usage": {
+      "prompt_tokens": 1538,
+      "prompt_cache_hit_tokens": 1404,
+      "prompt_cache_miss_tokens": 134,
+      "reported_cached_tokens": 1404,
+      "status": "reported",
+      "hit_rate": 0.9128738621586476
+    },
+    "usage": {
+      "completion_tokens": 765,
+      "prompt_tokens": 1538,
+      "total_tokens": 2303,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 631,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1404
+      },
+      "prompt_cache_hit_tokens": 1404,
+      "prompt_cache_miss_tokens": 134
+    }
+  },
+  {
+    "case_id": "T12_POST",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "35f0f0c4f6ca885ad04de4ac816cb67eb3ca902e7f5a869623e419153b3bf40b",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3746,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 3234,
+      "reported_cached_tokens": 512,
+      "status": "reported",
+      "hit_rate": 0.1366791243993593
+    },
+    "usage": {
+      "completion_tokens": 478,
+      "prompt_tokens": 3746,
+      "total_tokens": 4224,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 458,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 3234
+    }
+  },
+  {
+    "case_id": "T12_POST",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "c05a3a960dd4a70b3b81eb97d6a4a27ea2890ee61e803d17a74a88aef3533277",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3721,
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 137,
+      "reported_cached_tokens": 3584,
+      "status": "reported",
+      "hit_rate": 0.9631819403386187
+    },
+    "usage": {
+      "completion_tokens": 159,
+      "prompt_tokens": 3721,
+      "total_tokens": 3880,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 139,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3584
+      },
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 137
+    }
+  },
+  {
+    "case_id": "T12_POST",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "c20ef3e428127a17786b3b4091e66cb5eac8d31d79860c407b9359efef8f2b15",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3726,
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 142,
+      "reported_cached_tokens": 3584,
+      "status": "reported",
+      "hit_rate": 0.9618894256575417
+    },
+    "usage": {
+      "completion_tokens": 321,
+      "prompt_tokens": 3726,
+      "total_tokens": 4047,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 301,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3584
+      },
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 142
+    }
+  },
+  {
+    "case_id": "T13_PRE",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "562a9ef4b85a021b9cd31a231c240cea73a62501adc7437e283653904d5dc259",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1559,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1175,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.24631173829377806
+    },
+    "usage": {
+      "completion_tokens": 583,
+      "prompt_tokens": 1559,
+      "total_tokens": 2142,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 563,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1175
+    }
+  },
+  {
+    "case_id": "T13_PRE",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "6847e3661457d8a2b043d60eeca5a571e322feabf4fe71a997d1daa787a43802",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1564,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1180,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.24552429667519182
+    },
+    "usage": {
+      "completion_tokens": 199,
+      "prompt_tokens": 1564,
+      "total_tokens": 1763,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 179,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1180
+    }
+  },
+  {
+    "case_id": "T13_PRE",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "6791c02575aa2b7afdade92a2e49e232e8fa28b93606518dd8ccd5614502c671",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1584,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 176,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8888888888888888
+    },
+    "usage": {
+      "completion_tokens": 811,
+      "prompt_tokens": 1584,
+      "total_tokens": 2395,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 791,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 176
+    }
+  },
+  {
+    "case_id": "T13_POST",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "2bf549b168336d1f38b71150f0e96b7171d01417a9beed12617e31565dd4a35c",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2782,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2398,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.13803019410496045
+    },
+    "usage": {
+      "completion_tokens": 254,
+      "prompt_tokens": 2782,
+      "total_tokens": 3036,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 234,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2398
+    }
+  },
+  {
+    "case_id": "T13_POST",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "93e2db700ad4cfc763146f439bbc1e4d91c34471e51746eae0e38e48e69a56d8",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2704,
+      "prompt_cache_hit_tokens": 2432,
+      "prompt_cache_miss_tokens": 272,
+      "reported_cached_tokens": 2432,
+      "status": "reported",
+      "hit_rate": 0.8994082840236687
+    },
+    "usage": {
+      "completion_tokens": 68,
+      "prompt_tokens": 2704,
+      "total_tokens": 2772,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 48,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2432
+      },
+      "prompt_cache_hit_tokens": 2432,
+      "prompt_cache_miss_tokens": 272
+    }
+  },
+  {
+    "case_id": "T13_POST",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "e7156171fedab53adf3dd18de6a949e3fbd833b05f2f6ba79090f0c63beabf7d",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2679,
+      "prompt_cache_hit_tokens": 2432,
+      "prompt_cache_miss_tokens": 247,
+      "reported_cached_tokens": 2432,
+      "status": "reported",
+      "hit_rate": 0.9078014184397163
+    },
+    "usage": {
+      "completion_tokens": 297,
+      "prompt_tokens": 2679,
+      "total_tokens": 2976,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 277,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2432
+      },
+      "prompt_cache_hit_tokens": 2432,
+      "prompt_cache_miss_tokens": 247
+    }
+  },
+  {
+    "case_id": "T14_PRE",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "d7b57bac2546346a07d570304563e5764e1cd2ab960cee2bc5541be7371b260d",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2716,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2332,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.14138438880706922
+    },
+    "usage": {
+      "completion_tokens": 227,
+      "prompt_tokens": 2716,
+      "total_tokens": 2943,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 207,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2332
+    }
+  },
+  {
+    "case_id": "T14_PRE",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "962040b3813da221b1f91a1abe57416823dc00b9fcaf3d61f9c4deee43efbf90",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2691,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2307,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.1426978818283166
+    },
+    "usage": {
+      "completion_tokens": 126,
+      "prompt_tokens": 2691,
+      "total_tokens": 2817,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 106,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2307
+    }
+  },
+  {
+    "case_id": "T14_PRE",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "f83cb4b7a49c503bdd9e783c4583a75217a35879af51687c2e4a36a07e3af8c3",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2696,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 136,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9495548961424333
+    },
+    "usage": {
+      "completion_tokens": 89,
+      "prompt_tokens": 2696,
+      "total_tokens": 2785,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 69,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 136
+    }
+  },
+  {
+    "case_id": "T14_POST",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "1c8362689c7387c12a6fed05bd4bcc39a7c7e533775aeb749c2c31b541581802",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3156,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2644,
+      "reported_cached_tokens": 512,
+      "status": "reported",
+      "hit_rate": 0.16223067173637515
+    },
+    "usage": {
+      "completion_tokens": 173,
+      "prompt_tokens": 3156,
+      "total_tokens": 3329,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 153,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2644
+    }
+  },
+  {
+    "case_id": "T14_POST",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "c2b2f9ef1d0205fe17d40c5c554697fbd45603e8bba8c15435a5ff84b8662de9",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3161,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2649,
+      "reported_cached_tokens": 512,
+      "status": "reported",
+      "hit_rate": 0.16197405884213856
+    },
+    "usage": {
+      "completion_tokens": 97,
+      "prompt_tokens": 3161,
+      "total_tokens": 3258,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 77,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2649
+    }
+  },
+  {
+    "case_id": "T14_POST",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "dfa353f579f075946b53a4ce1ada983da9c43e8af3e72533682f35661b5c499b",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3181,
+      "prompt_cache_hit_tokens": 2944,
+      "prompt_cache_miss_tokens": 237,
+      "reported_cached_tokens": 2944,
+      "status": "reported",
+      "hit_rate": 0.9254951273184533
+    },
+    "usage": {
+      "completion_tokens": 125,
+      "prompt_tokens": 3181,
+      "total_tokens": 3306,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 105,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2944
+      },
+      "prompt_cache_hit_tokens": 2944,
+      "prompt_cache_miss_tokens": 237
+    }
+  },
+  {
+    "case_id": "T15_PRE",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "8cb0e77b5cdd830cbe5139c7b2139aadc7bc0994b473ca931bdf24d582f75418",
+    "output": {
+      "decision": "act",
+      "gap": "The founding year and founding country of the team (likely Enugu Rangers) are not yet verified; the available article confirms the 13-player signing and Enugu base but not the club's foundation details.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers founded year country",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International Football Club Enugu founded 1970",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1695,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1311,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.22654867256637168
+    },
+    "usage": {
+      "completion_tokens": 462,
+      "prompt_tokens": 1695,
+      "total_tokens": 2157,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 334,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1311
+    }
+  },
+  {
+    "case_id": "T15_PRE",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "197abed5260b0b77279f4f4730433e060483b64a2c389fa9216dcf48f3c5a247",
+    "output": {
+      "decision": "act",
+      "gap": "The founding year and country of Enugu Rangers (the club identified by the 13-player signing, capital-city base, and 1973–1983 league-success clues) remain unverified.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers founded year country",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International Football Club Enugu founded 1970 Nigeria",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1581,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1197,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.2428842504743833
+    },
+    "usage": {
+      "completion_tokens": 2148,
+      "prompt_tokens": 1581,
+      "total_tokens": 3729,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2021,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1197
+    }
+  },
+  {
+    "case_id": "T15_PRE",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "4a24fb4ead2aae7cb44f5a126d8f522a800c219b1093a3e9355524905a7ad2be",
+    "output": {
+      "decision": "act",
+      "gap": "The founding year and country of Enugu Rangers, the club identified by the 13-signings and Enugu-based clues.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers International FC founded year country"
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International Enugu founded 1970 Nigeria"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1558,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 150,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.9037227214377407
+    },
+    "usage": {
+      "completion_tokens": 3850,
+      "prompt_tokens": 1558,
+      "total_tokens": 5408,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3751,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 150
+    }
+  },
+  {
+    "case_id": "T15_POST",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "26ec8846122de8021c41f4ec4f9afef9313ea87d62f4c9579bf21d8f3c750deb",
+    "output": {
+      "decision": "act",
+      "gap": "The founding year and country of Enugu Rangers, the team matching the league-season points, position, goal-difference, capital-city, and signing/trophy clues, are not yet verified.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers founded year country Nigeria",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers fifteen trophies signed 13 players ahead of season 2023",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2082,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1698,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.1844380403458213
+    },
+    "usage": {
+      "completion_tokens": 1436,
+      "prompt_tokens": 2082,
+      "total_tokens": 3518,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1306,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1698
+    }
+  },
+  {
+    "case_id": "T15_POST",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "c91e6909c8a1ea5997ff9ebad5d7c28cef2fc5ecafe4139fd0385d7f70a7e104",
+    "output": {
+      "decision": "act",
+      "gap": "The team identity (working hypothesis: Enugu Rangers) and its founding year/country remain unverified. The 2014 NPFL table already shows Enugu Rangers 8th with 58 points (shared with Abia Warriors) and +8 goal difference, matching the clue; but the 2023 article claim of 'fifteen trophies and 13 signings' and the club's founding year/country still need confirmation.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Rangers Enugu fifteen trophies signed 13 players ahead of season 2023"
+        },
+        {
+          "tool": "search",
+          "query": "Enugu Rangers International FC founded year Nigeria history"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2059,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 139,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.932491500728509
+    },
+    "usage": {
+      "completion_tokens": 5491,
+      "prompt_tokens": 2059,
+      "total_tokens": 7550,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5319,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 139
+    }
+  },
+  {
+    "case_id": "T15_POST",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "7174127bf564c15ab844598b049652c65af92bb850114852c4f923648dfec4b8",
+    "output": {
+      "decision": "act",
+      "gap": "The team is identified as Enugu Rangers, but the corpus has not yet verified the club's founding year and founding country, which is the exact information requested.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers founded 1970 Nigeria",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International F.C. Enugu club history founding year country",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2171,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 251,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.8843850760018425
+    },
+    "usage": {
+      "completion_tokens": 663,
+      "prompt_tokens": 2171,
+      "total_tokens": 2834,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 540,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 251
+    }
+  },
+  {
+    "case_id": "T16_PRE",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "c91e6909c8a1ea5997ff9ebad5d7c28cef2fc5ecafe4139fd0385d7f70a7e104",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 2059,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 139,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.932491500728509
+    },
+    "usage": {
+      "completion_tokens": 2370,
+      "prompt_tokens": 2059,
+      "total_tokens": 4429,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2286,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 139
+    }
+  },
+  {
+    "case_id": "T16_PRE",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "1b4792b54e1ce96924856ca31db0d52a908fe03a601a139cb2e8700a70b7dc2c",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 2160,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 240,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.8888888888888888
+    },
+    "usage": {
+      "completion_tokens": 707,
+      "prompt_tokens": 2160,
+      "total_tokens": 2867,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 591,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 240
+    }
+  },
+  {
+    "case_id": "T16_PRE",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "26ec8846122de8021c41f4ec4f9afef9313ea87d62f4c9579bf21d8f3c750deb",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 2082,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 162,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.9221902017291066
+    },
+    "usage": {
+      "completion_tokens": 2904,
+      "prompt_tokens": 2082,
+      "total_tokens": 4986,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2778,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 162
+    }
+  },
+  {
+    "case_id": "T16_POST",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "eabc10518393745d19d5c77bb4b3dbdf818244c4418c8e6456b24fc82359f487",
+    "output": {
+      "decision": "act",
+      "gap": "Confirm the described team is Enugu Rangers (and thus that its founding year/country is 1970/Nigeria) by verifying two still-unconfirmed identity clues: that Rangers won a league title between 1973 and 1983, and that a 2023 article stated it had won fifteen trophies and signed 13 players.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "honours league title champions 1974 1975 1977 Nigerian Premier League"
+        },
+        {
+          "tool": "search",
+          "query": "Enugu Rangers fifteen trophies signed 13 players ahead of season 2023"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2676,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2292,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.14349775784753363
+    },
+    "usage": {
+      "completion_tokens": 3474,
+      "prompt_tokens": 2676,
+      "total_tokens": 6150,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3306,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 2292
+    }
+  },
+  {
+    "case_id": "T16_POST",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "de69f663328f1858123dc7e38c9d25b329d65b4bb11119554d445c1e0faf554a",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2528,
+      "prompt_cache_hit_tokens": 2304,
+      "prompt_cache_miss_tokens": 224,
+      "reported_cached_tokens": 2304,
+      "status": "reported",
+      "hit_rate": 0.9113924050632911
+    },
+    "usage": {
+      "completion_tokens": 2308,
+      "prompt_tokens": 2528,
+      "total_tokens": 4836,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2288,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2304
+      },
+      "prompt_cache_hit_tokens": 2304,
+      "prompt_cache_miss_tokens": 224
+    }
+  },
+  {
+    "case_id": "T16_POST",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "c2b76e2d5a9a9ad63aa33a2608e8f4b7798fcba0163fdded5d348b5694658d22",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2505,
+      "prompt_cache_hit_tokens": 2304,
+      "prompt_cache_miss_tokens": 201,
+      "reported_cached_tokens": 2304,
+      "status": "reported",
+      "hit_rate": 0.9197604790419162
+    },
+    "usage": {
+      "completion_tokens": 451,
+      "prompt_tokens": 2505,
+      "total_tokens": 2956,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 431,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2304
+      },
+      "prompt_cache_hit_tokens": 2304,
+      "prompt_cache_miss_tokens": 201
+    }
+  },
+  {
+    "case_id": "T17_PRE",
+    "qid": "517",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "5c8b7e8408f2e22acb5d35fc1f50cbefe70f97e447b8188ecf000f134731d7e0",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1537,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1153,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.2498373454782043
+    },
+    "usage": {
+      "completion_tokens": 8359,
+      "prompt_tokens": 1537,
+      "total_tokens": 9896,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 8264,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1153
+    }
+  },
+  {
+    "case_id": "T17_PRE",
+    "qid": "517",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "4beea27bb9865ca7e821af834bbacb2543a4f62ae9f834dd989713fe2ac4228a",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1516,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 236,
+      "reported_cached_tokens": 1280,
+      "status": "reported",
+      "hit_rate": 0.8443271767810027
+    },
+    "usage": {
+      "completion_tokens": 3073,
+      "prompt_tokens": 1516,
+      "total_tokens": 4589,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3053,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 236
+    }
+  },
+  {
+    "case_id": "T17_PRE",
+    "qid": "517",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "ab59202e7c7c291ea4f0e5cdc865c72dd96f5b70d14e72995f15351680b5004f",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1666,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 258,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.8451380552220888
+    },
+    "usage": {
+      "completion_tokens": 6822,
+      "prompt_tokens": 1666,
+      "total_tokens": 8488,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 6653,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 258
+    }
+  },
+  {
+    "case_id": "T17_POST",
+    "qid": "517",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "20e92b101174ae4d9bc49be2e4b45d09265d3b3a821e10068cbc3917e5f4623c",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 1980,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1596,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.19393939393939394
+    },
+    "usage": {
+      "completion_tokens": 1959,
+      "prompt_tokens": 1980,
+      "total_tokens": 3939,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1939,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1596
+    }
+  },
+  {
+    "case_id": "T17_POST",
+    "qid": "517",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "8c4c5715cceb4d664970c0616bddc34c09ff5a0e20873cc2402c63626b827880",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 2095,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 175,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.9164677804295943
+    },
+    "usage": {
+      "completion_tokens": 5123,
+      "prompt_tokens": 2095,
+      "total_tokens": 7218,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 4975,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 175
+    }
+  },
+  {
+    "case_id": "T17_POST",
+    "qid": "517",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "60b062631bf8000cd6ef36273e7ef248ce56f5bcf414570bcf24ffb6af853d3a",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2001,
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 209,
+      "reported_cached_tokens": 1792,
+      "status": "reported",
+      "hit_rate": 0.895552223888056
+    },
+    "usage": {
+      "completion_tokens": 370,
+      "prompt_tokens": 2001,
+      "total_tokens": 2371,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 350,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 209
+    }
+  },
+  {
+    "case_id": "T18_PRE",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "2b477059dbdda3d6491842d854a8dd6e70bcef537789ca45a627959710a8d5d8",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3701,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 3189,
+      "reported_cached_tokens": 512,
+      "status": "reported",
+      "hit_rate": 0.138340988921913
+    },
+    "usage": {
+      "completion_tokens": 228,
+      "prompt_tokens": 3701,
+      "total_tokens": 3929,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 208,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 3189
+    }
+  },
+  {
+    "case_id": "T18_PRE",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "a518cada4a74ed728054f8e30bdb382cc3431560206710c0030aa0bcb2d5b600",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3721,
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 137,
+      "reported_cached_tokens": 3584,
+      "status": "reported",
+      "hit_rate": 0.9631819403386187
+    },
+    "usage": {
+      "completion_tokens": 205,
+      "prompt_tokens": 3721,
+      "total_tokens": 3926,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 185,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3584
+      },
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 137
+    }
+  },
+  {
+    "case_id": "T18_PRE",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "589317584df5cf656c84be3a4dae82afd1ee5b11fe9d939ca60e1415fda50f9b",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3696,
+      "prompt_cache_hit_tokens": 3456,
+      "prompt_cache_miss_tokens": 240,
+      "reported_cached_tokens": 3456,
+      "status": "reported",
+      "hit_rate": 0.935064935064935
+    },
+    "usage": {
+      "completion_tokens": 245,
+      "prompt_tokens": 3696,
+      "total_tokens": 3941,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 225,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3456
+      },
+      "prompt_cache_hit_tokens": 3456,
+      "prompt_cache_miss_tokens": 240
+    }
+  },
+  {
+    "case_id": "T18_POST",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "8af2866a3361f4830a4be4e7a1fa159ea1d486c6432614b3088ff3135132cd46",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 4199,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 3687,
+      "reported_cached_tokens": 512,
+      "status": "reported",
+      "hit_rate": 0.12193379376041914
+    },
+    "usage": {
+      "completion_tokens": 474,
+      "prompt_tokens": 4199,
+      "total_tokens": 4673,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 454,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 3687
+    }
+  },
+  {
+    "case_id": "T18_POST",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "5ecaf6f28c0eaf0d045b7600f783b6e2cb789a5da3f82d3d026500c63daba40b",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 4174,
+      "prompt_cache_hit_tokens": 3968,
+      "prompt_cache_miss_tokens": 206,
+      "reported_cached_tokens": 3968,
+      "status": "reported",
+      "hit_rate": 0.9506468615237182
+    },
+    "usage": {
+      "completion_tokens": 324,
+      "prompt_tokens": 4174,
+      "total_tokens": 4498,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 304,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3968
+      },
+      "prompt_cache_hit_tokens": 3968,
+      "prompt_cache_miss_tokens": 206
+    }
+  },
+  {
+    "case_id": "T18_POST",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "61d0535bfaaf7f25f3f2b36886abbb4d29689587e56fa10b562f3c72c0963a90",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 4179,
+      "prompt_cache_hit_tokens": 3968,
+      "prompt_cache_miss_tokens": 211,
+      "reported_cached_tokens": 3968,
+      "status": "reported",
+      "hit_rate": 0.9495094520220149
+    },
+    "usage": {
+      "completion_tokens": 251,
+      "prompt_tokens": 4179,
+      "total_tokens": 4430,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 231,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3968
+      },
+      "prompt_cache_hit_tokens": 3968,
+      "prompt_cache_miss_tokens": 211
+    }
+  },
+  {
+    "case_id": "T19_PRE",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "d1e24f4f9df1ba558a3e87c62e01f3b45f01b7bd77c7b6278520dcdfb1de5820",
+    "output": null,
+    "error": {
+      "type": "ValidationError",
+      "status": null,
+      "message": "'query' is a required property\n\nFailed validating 'required' in schema:\n    {'type': 'object',\n     'properties': {'query': {'type': 'string',\n                              'description': 'A standalone global search '\n                                             'query, usually in English'},\n                    'k': {'type': 'integer',\n                          'minimum': 1,\n                          'maximum': 10,\n                          'description': 'Number of documents, default 5'}},\n    "
+    },
+    "cache_usage": {
+      "prompt_tokens": 1537,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1153,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.2498373454782043
+    },
+    "usage": {
+      "completion_tokens": 728,
+      "prompt_tokens": 1537,
+      "total_tokens": 2265,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 597,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1153
+    }
+  },
+  {
+    "case_id": "T19_PRE",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "53b15bda1fb4883ee31be2fd0fe390069c7fe48cf2675e7f8d7e8ae91edc6a8f",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1624,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 344,
+      "reported_cached_tokens": 1280,
+      "status": "reported",
+      "hit_rate": 0.7881773399014779
+    },
+    "usage": {
+      "completion_tokens": 282,
+      "prompt_tokens": 1624,
+      "total_tokens": 1906,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 147,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 344
+    }
+  },
+  {
+    "case_id": "T19_PRE",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "f823b988096e2110bed5b16b459b4ac848e5ae68390d088526806fc19f8fd4fe",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 1565,
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 285,
+      "reported_cached_tokens": 1280,
+      "status": "reported",
+      "hit_rate": 0.8178913738019169
+    },
+    "usage": {
+      "completion_tokens": 922,
+      "prompt_tokens": 1565,
+      "total_tokens": 2487,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 807,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1280
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 285
+    }
+  },
+  {
+    "case_id": "T19_POST",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "b18575c4d388aa8e267f2bbb0b993d147b0dd00381df914f8ba6f983eb42f999",
+    "output": {
+      "decision": "act",
+      "gap": "The exact number of albums Oliver Mtukudzi had at the time of his Forbes Africa feature in May during the 2010s is not established, and the May timing of that feature is not yet verified.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2016 67 albums",
+          "k": 5
+        },
+        {
+          "tool": "find",
+          "doc_ref": "D2",
+          "query": "Forbes Africa May 2016"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2184,
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1800,
+      "reported_cached_tokens": 384,
+      "status": "reported",
+      "hit_rate": 0.17582417582417584
+    },
+    "usage": {
+      "completion_tokens": 1115,
+      "prompt_tokens": 2184,
+      "total_tokens": 3299,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 979,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 1800
+    }
+  },
+  {
+    "case_id": "T19_POST",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "5dba71be5b8dffd0855cda323fc8a75fa58eaecce6a68cad51199189024afca7",
+    "output": null,
+    "error": {
+      "type": "ValueError",
+      "status": null,
+      "message": "tool_schema"
+    },
+    "cache_usage": {
+      "prompt_tokens": 2108,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 188,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.9108159392789373
+    },
+    "usage": {
+      "completion_tokens": 228,
+      "prompt_tokens": 2108,
+      "total_tokens": 2336,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 105,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 188
+    }
+  },
+  {
+    "case_id": "T19_POST",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "3d790df58f581b493d3e5f287f205e72fb9dab61a66ffa2402e0c38094e513d3",
+    "output": {
+      "decision": "act",
+      "gap": "The number of albums Oliver Mtukudzi had at the time of his Forbes Africa feature in May 2016 (or another 2010s May issue) is not yet directly evidenced; the available retrospective quotes Forbes Africa 2016 but does not state the album count as of that feature.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Forbes Africa May 2016 Oliver Mtukudzi albums"
+        },
+        {
+          "tool": "open",
+          "window_ref": "W2",
+          "direction": "around"
+        }
+      ]
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 2080,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 160,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.9230769230769231
+    },
+    "usage": {
+      "completion_tokens": 1948,
+      "prompt_tokens": 2080,
+      "total_tokens": 4028,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1809,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 160
+    }
+  },
+  {
+    "case_id": "T20_PRE",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "afab19dafe2240d982d4c5be6dd1693ffc3017f57ce3cbc7fbb19bb7c14d8661",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3158,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2646,
+      "reported_cached_tokens": 512,
+      "status": "reported",
+      "hit_rate": 0.16212792906903103
+    },
+    "usage": {
+      "completion_tokens": 178,
+      "prompt_tokens": 3158,
+      "total_tokens": 3336,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 158,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2646
+    }
+  },
+  {
+    "case_id": "T20_PRE",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "cc6e691197d51ee5b11da41c449e3b901693c1f772daa4b4f1b8c91159358151",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3133,
+      "prompt_cache_hit_tokens": 2944,
+      "prompt_cache_miss_tokens": 189,
+      "reported_cached_tokens": 2944,
+      "status": "reported",
+      "hit_rate": 0.939674433450367
+    },
+    "usage": {
+      "completion_tokens": 126,
+      "prompt_tokens": 3133,
+      "total_tokens": 3259,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 106,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2944
+      },
+      "prompt_cache_hit_tokens": 2944,
+      "prompt_cache_miss_tokens": 189
+    }
+  },
+  {
+    "case_id": "T20_PRE",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "f6db90d23c6cf095249fdc7769895fbae4d9ddd9ae01f077ab0f95b43479bf00",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3138,
+      "prompt_cache_hit_tokens": 2944,
+      "prompt_cache_miss_tokens": 194,
+      "reported_cached_tokens": 2944,
+      "status": "reported",
+      "hit_rate": 0.9381771829190567
+    },
+    "usage": {
+      "completion_tokens": 63,
+      "prompt_tokens": 3138,
+      "total_tokens": 3201,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 43,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2944
+      },
+      "prompt_cache_hit_tokens": 2944,
+      "prompt_cache_miss_tokens": 194
+    }
+  },
+  {
+    "case_id": "T20_POST",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "666b5fd22c22ab1c75eb77f3c1a23325d124af4c307dc85a081d0b29595a865f",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3282,
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2770,
+      "reported_cached_tokens": 512,
+      "status": "reported",
+      "hit_rate": 0.15600243753808654
+    },
+    "usage": {
+      "completion_tokens": 108,
+      "prompt_tokens": 3282,
+      "total_tokens": 3390,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 88,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 512
+      },
+      "prompt_cache_hit_tokens": 512,
+      "prompt_cache_miss_tokens": 2770
+    }
+  },
+  {
+    "case_id": "T20_POST",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "4f492e921974fb1eee6513e376d01ebba5923c9fb8f4e6c214e4879c45c46c7a",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3287,
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 215,
+      "reported_cached_tokens": 3072,
+      "status": "reported",
+      "hit_rate": 0.9345908122908427
+    },
+    "usage": {
+      "completion_tokens": 97,
+      "prompt_tokens": 3287,
+      "total_tokens": 3384,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 77,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3072
+      },
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 215
+    }
+  },
+  {
+    "case_id": "T20_POST",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "24636a098f8c373e143b5fe4c795507e930a1e83b57b900d459da66a71576f8f",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "cache_usage": {
+      "prompt_tokens": 3307,
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 235,
+      "reported_cached_tokens": 3072,
+      "status": "reported",
+      "hit_rate": 0.9289386150589658
+    },
+    "usage": {
+      "completion_tokens": 66,
+      "prompt_tokens": 3307,
+      "total_tokens": 3373,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 46,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3072
+      },
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 235
+    }
+  }
+]

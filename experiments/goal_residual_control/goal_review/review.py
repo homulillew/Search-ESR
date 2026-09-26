@@ -42,7 +42,8 @@ write(base/'reviews.json',reviews)
 monotonic=[]
 for t in read(TOP/'bank/TRANSITIONS.json'):
  monotonic.append({'transition_id':t['transition_id'],'qid':t['qid'],
-  'no_new_goal_after_update':t['transition_id'] not in ('T03','T10','T13'),
+  'no_new_goal_after_update':t['transition_id'] not in ('T03','T10'),
+  'residual_reopened_after_added_claims':t['transition_id']=='T13',
   'newly_solved_requirement_removed':t['transition_id'] not in ('T13','T14'),
   'reason':{'T03':'POST adds unnecessary Fifth Estate role.','T10':'POST adds unsupported Game B=Dust equality.',
      'T13':'PRE falsely empty; POST reopens the actually missing requirements. This is a closure inconsistency, not harmful factual growth.',

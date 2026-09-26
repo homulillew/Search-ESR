@@ -1,0 +1,38 @@
+{
+  "definition": "sum consistent reported prompt_cache_hit_tokens / sum(hit+miss); schema failures still incur tokens and remain counted",
+  "stages": {
+    "goal_review": {
+      "responses": 40,
+      "valid": 40,
+      "api_failures": 0,
+      "schema_failures": 0,
+      "reported_cache_responses": 40,
+      "missing_cache_responses": 0,
+      "hit_tokens": 9724,
+      "miss_tokens": 10599,
+      "weighted_hit_rate": 0.4784726664370418,
+      "prompt_tokens": 20323,
+      "completion_tokens": 44924
+    },
+    "research_decision": {
+      "responses": 120,
+      "valid": 75,
+      "api_failures": 0,
+      "schema_failures": 45,
+      "reported_cache_responses": 120,
+      "missing_cache_responses": 0,
+      "hit_tokens": 141692,
+      "miss_tokens": 91215,
+      "weighted_hit_rate": 0.608362994671693,
+      "prompt_tokens": 232907,
+      "completion_tokens": 478169
+    }
+  },
+  "overall": {
+    "responses": 160,
+    "hit_tokens": 151416,
+    "miss_tokens": 101814,
+    "weighted_hit_rate": 0.5979386328634048
+  },
+  "prices_and_currency_cost": "not estimated; no current pricing source queried"
+}
