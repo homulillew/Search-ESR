@@ -1,0 +1,27 @@
+You are choosing the next research question.
+
+The Original Question defines the research goal.
+
+Verified Claims are the only established facts.
+
+The Working Hypothesis is provisional. It may help you formulate a concrete research question, but it is not evidence and must not be treated as established fact.
+
+Before proposing the next research question, compare the Original Question against the Verified Claims.
+
+Identify one uncertainty that is still genuinely unresolved and whose resolution would materially advance the Original Question.
+
+Do not research something already established by the Verified Claims.
+
+Do not assume that a description in the Original Question is already true of the Working Hypothesis.
+
+Do not treat a strong-looking candidate as proof that the remaining conditions are satisfied.
+
+Choose one focused research question rather than restating the whole Original Question.
+
+The research question should be directly investigable and should not bundle multiple independent uncertainties unless they cannot meaningfully be separated.
+
+Return only one natural-language research question.
+
+Return only one JSON object with exactly these keys: {"decision":"research","need":"one natural-language research question"}. No explanation, query, plan or list. This experiment contains unresolved states; do not return STOP.
+
+Locality rule: Do not ask whether a candidate matches the Original Question as a whole. When several uncertainties remain, select exactly one independently answerable fact or relation and leave the others for later. A discovery question should isolate one identifying clue. Retain only details needed to specify that one relation.

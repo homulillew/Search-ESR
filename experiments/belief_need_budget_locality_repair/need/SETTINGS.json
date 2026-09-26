@@ -1,0 +1,63 @@
+{
+  "model": "deepseek-flash",
+  "provider": "deepseek",
+  "max_tokens": "OMITTED",
+  "temperature": 0,
+  "max_retries": 0,
+  "timeout": 240,
+  "parallel_workers": 8,
+  "sample_count_per_input_arm": 1,
+  "horizon": 1,
+  "tools": [],
+  "semantic_schema": {
+    "type": "object",
+    "properties": {
+      "decision": {
+        "const": "research"
+      },
+      "need": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    },
+    "required": [
+      "decision",
+      "need"
+    ],
+    "additionalProperties": false
+  },
+  "development_gate": {
+    "completion": 0.95,
+    "strict": 0.85,
+    "premise_max": 0.05,
+    "stale_max": 0.05,
+    "broad_max": 0.1,
+    "no_h": 0.8,
+    "one_gap": 0.9,
+    "delta": 0.85
+  },
+  "confirmation_gate": {
+    "states_min": 24,
+    "qids_min": 8,
+    "completion": 0.95,
+    "strict": 0.9,
+    "premise_max": 0.05,
+    "stale_max": 0.05,
+    "broad_max": 0.05,
+    "no_h": 0.85,
+    "one_gap": 0.9,
+    "delta": 0.9
+  },
+  "delta_gate": "B strict validity and retirement among A-valid activations both meet threshold; zero activations cannot verify retirement. Also report all activation/retirement/both-valid denominators.",
+  "B3_trigger": "B2 >=2 primary broad cases across >=2qids OR primary broadness>10percent. No B3 otherwise.",
+  "bounded_bad_case_loops": 3,
+  "dominant_mechanisms_per_loop": 1,
+  "reasoning_regression": "Flag P90 reasoning>1.5x parent or new length failures; no adoption without cost review.",
+  "one_gap_adequate": {
+    "states": 8,
+    "qids": 3
+  },
+  "review": "Single Codex reviewer, direct final outputs/QCH only; not model rationale. Labels and dimensions kept per item.",
+  "freshness": "Offline evaluator labels do not authorize confirmation outputs for prompt design. Confirmation is called once for selected policy only."
+}
