@@ -1,0 +1,722 @@
+[
+  {
+    "case_id": "912727ae3cfb374f",
+    "qid": "517",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "dd9fa17fb1108a0821f3efaafc8b3f663ea62b71c85a9264c7ce9340a08422df",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Confirm that Peter King (Peter Nzioki) is the unique person matching all clues, specifically whether the 2005 film in which he played a policeman was directed by someone inspired by Iracema, and whether the 2013 dramatic thriller is Bill Condon's Kinsey-follow-up (The Fifth Estate).",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "director decided to become filmmaker after watching Iracema 2005 film policeman role",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "The Fifth Estate 2013 Bill Condon Kinsey director cast Peter King",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3079,
+      "output": 10896,
+      "hit": 1408,
+      "miss": 1671,
+      "reasoning": 10729
+    },
+    "elapsed_seconds": 49.168500600382686
+  },
+  {
+    "case_id": "285b8f9c92b84797",
+    "qid": "517",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "4cf2535d2c999342a5742333f934defe476e0ae76ff937d8a288bc10561a75fe",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Confirm the two film clues that anchor the identification: (a) that the 2005 film in which the person plays a policeman was directed by a filmmaker inspired to make films after watching Iracema, and (b) that the 2013 dramatic thriller is the Bill Condon (Kinsey) film The Fifth Estate — thereby validating that the described person is Peter King and that his popular name is 'Peter King'.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "director decided to become filmmaker after watching Iracema 2005 film Constant Gardener",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "The Fifth Estate 2013 film director Bill Condon Kinsey cast",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3066,
+      "output": 5831,
+      "hit": 1408,
+      "miss": 1658,
+      "reasoning": 5643
+    },
+    "elapsed_seconds": 25.9504637978971
+  },
+  {
+    "case_id": "095e8a9e94a54843",
+    "qid": "186",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "20971bb751f2821250fb4798cd96d4b194b9575bcec5cf84ae305e16285d5926",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "We need to verify that Albino Frog Software (the amphibian-named developer/publisher) was formerly known by a different name when first established in the early 1990s, confirming the company-name evolution described in the question.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Albino Frog Software company history original name formerly known as",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Galacta Battle for Saturn developer Albino Frog Software established 1992 renamed",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3248,
+      "output": 330,
+      "hit": 1408,
+      "miss": 1840,
+      "reasoning": 206
+    },
+    "elapsed_seconds": 2.0559000335633755
+  },
+  {
+    "case_id": "2f8002ca4ea028ed",
+    "qid": "387",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "119cffae57214ca97260b174b8b392c63b526c9f5fbbae3e4f2df3464289499a",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The remaining uncertainty is whether D1 confirms the 25 July 2013 date for the 5TB storage specification, and whether Dean Dodrill is specifically linked to Dust: An Elysian Tail's intro and end animations.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "25 July 2013 publication date"
+        },
+        {
+          "tool": "search",
+          "query": "Dust An Elysian Tail intro ending animation Dean Dodrill",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3253,
+      "output": 1978,
+      "hit": 1408,
+      "miss": 1845,
+      "reasoning": 1840
+    },
+    "elapsed_seconds": 9.41211474686861
+  },
+  {
+    "case_id": "ff353b80a06a5bc9",
+    "qid": "435",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "85fcf163f884cceb3a6511098d9e28c573660f71c6c64c9b6757fe7b70e460b7",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The exact album count Mtukudzi had at the time of his Forbes Africa May (2010s) feature is not established; the 2016 Forbes Africa interview is not tied to May, and the 65/67 album figures belong to other sources/times.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa cover story 2016 magazine feature",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Mtukudzi Forbes Africa May 2016 albums recorded interview",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 6698,
+      "output": 466,
+      "hit": 1664,
+      "miss": 5034,
+      "reasoning": 334
+    },
+    "elapsed_seconds": 2.754456067457795
+  },
+  {
+    "case_id": "88fecd0c021410df",
+    "qid": "311",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "69d4859319ac449248ce59f197444a7eafe83df1bc58228d944761c3af529f39",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The verified/observed Hijitus facts conflict with several original clues (two writers, early-1990s run, January-to-December, 50-60 episodes). The program is likely a different Argentine educational short-form series with twins, a poet, a complainer, and a living vehicle. I need to identify that program and its Argentinian release name.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Argentine animated educational television series twins poet complainer living car",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Argentine children's TV series 1990s 5 minute episodes educational Canal 13",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3178,
+      "output": 153,
+      "hit": 1664,
+      "miss": 1514,
+      "reasoning": 0
+    },
+    "elapsed_seconds": 1.2029983326792717
+  },
+  {
+    "case_id": "a75cf3b4526797d1",
+    "qid": "580",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "f54d6276feff9656da6f53944a33bde2daa33b51678758d586f65e626b06938e",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "usage": {
+      "input": 4201,
+      "output": 330,
+      "hit": 1664,
+      "miss": 2537,
+      "reasoning": 314
+    },
+    "elapsed_seconds": 1.9825707394629717
+  },
+  {
+    "case_id": "28b8998a5afe705b",
+    "qid": "435",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "f0f7f729d7c99edb0da65565a39c36ccad2906eb1a2402ac8b9aea19a64ef900",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "usage": {
+      "input": 5243,
+      "output": 474,
+      "hit": 1920,
+      "miss": 3323,
+      "reasoning": 458
+    },
+    "elapsed_seconds": 2.5767956469208
+  },
+  {
+    "case_id": "39f0aa2c424271a3",
+    "qid": "517",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "7dd0a33009752b011c64cd4a8ee452659abe83c55d5953a3f8754a10a1448215",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "usage": {
+      "input": 5685,
+      "output": 1084,
+      "hit": 1920,
+      "miss": 3765,
+      "reasoning": 1068
+    },
+    "elapsed_seconds": 5.420591540634632
+  },
+  {
+    "case_id": "e3b5870f898beefd",
+    "qid": "387",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "8aa5eb65d4f3b461edf0ce934149f6d74f2fca60d3b8e9fed4a4023ac1692a1d",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": false,
+    "harness_valid": false,
+    "output": null,
+    "error": {
+      "category": "transport_structural_failure",
+      "type": "ValidationError",
+      "message": "{'tool': 'find', 'doc_ref': 'D2', 'query': 'intro and end animations animator Dean Dodrill', 'k': 5} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema['properties']['actions']['items']:\n    {'anyOf': [{'type': 'object',\n                'properties': {'tool': {'type': 'string',\n                                        'enum': ['search']},\n                               'query': {'type': 'string'},\n                               'k': {'type': 'integer',\n                                     'minimum': 1,\n                                     'maximum': 10}},\n                'required': ['tool', 'query', 'k'],\n                'additionalProperties': False},\n               {'type': 'object',\n                'properties': {'tool': {'type': 'string', 'enum': ['find']},\n                               'doc_ref': {'type': 'string'},\n                               'query': {'type': 'string'}},\n                'required': ['tool', 'doc_ref', 'query'],\n                'additionalProperties': False},\n               {'type': 'object',\n                'properties': {'tool': {'type': 'string', 'enum': ['open']},\n                               'window_ref': {'type': 'string'},\n                               'direction': {'type': 'string',\n                                             'enum': ['before',\n                                                      'after',\n                                                      'around']}},\n                'required': ['tool',"
+    },
+    "usage": {
+      "input": 5575,
+      "output": 768,
+      "hit": 1920,
+      "miss": 3655,
+      "reasoning": 615
+    },
+    "elapsed_seconds": 3.8364212885499
+  },
+  {
+    "case_id": "00064b84b9254b4e",
+    "qid": "580",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "f25027f6c6fb1be0252aae64b231ae767307a29df796fe9117e2bdf4b0695001",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The verified claim confirms only the season-four plot point for You’re the Worst. The remaining uncertainty is whether the same series also matches the season-one date-intervention plot point and the season-three sacrifice by the male lead’s roommate, and whether it has fewer than 10 seasons.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "You're the Worst season 1 episode friends convince Jimmy to take Gretchen on a date",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "You're the Worst season 3 finale Edgar sacrifice roommate",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3190,
+      "output": 928,
+      "hit": 1920,
+      "miss": 1270,
+      "reasoning": 771
+    },
+    "elapsed_seconds": 5.42881709523499
+  },
+  {
+    "case_id": "6eaa2dc70391902c",
+    "qid": "435",
+    "arm": "canary",
+    "kind": "research_actor",
+    "request_sha256": "658cda000e76e654439697f515c700444aed071d032d3c6caeaed650f1099a9c",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The full answer requires the Forbes Africa May (2010s) feature on Oliver Mtukudzi and the album count stated at that time, which the verified claims and current document do not establish.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2010s feature albums",
+          "k": 8
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi 67 albums Forbes Africa",
+          "k": 8
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3146,
+      "output": 218,
+      "hit": 1792,
+      "miss": 1354,
+      "reasoning": 84
+    },
+    "elapsed_seconds": 1.3014754075556993
+  },
+  {
+    "case_id": "42f725c5e488273d",
+    "qid": "1094",
+    "arm": "canary",
+    "kind": "state_updater",
+    "request_sha256": "9ec26beb495c9d7be5036b141ed0768ad86a5cf33ce2fcd99aa1b86aa2a611e2",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "claims_to_add": [
+        "Messi's 95th-minute free-kick got PSG back on track."
+      ],
+      "hypothesis_update": {
+        "action": "keep",
+        "statement": ""
+      }
+    },
+    "error": null,
+    "usage": {
+      "input": 1177,
+      "output": 11863,
+      "hit": 512,
+      "miss": 665,
+      "reasoning": 11811
+    },
+    "elapsed_seconds": 49.8969794716686
+  },
+  {
+    "case_id": "a19cf0a9c41c7f57",
+    "qid": "1034",
+    "arm": "canary",
+    "kind": "state_updater",
+    "request_sha256": "e65b3f0f99cc5b6fddc86de8ad1089fc839583cf2abb58b09a33ea365bdd86ce",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "claims_to_add": [
+        "Heart Evangelista began her career in the spotlight with an appearance on G-mik at age 13, about 23 years before 2021.",
+        "Heart Evangelista is the daughter of Reynaldo Evangelista Ongpauco, an F&B magnate."
+      ],
+      "hypothesis_update": {
+        "action": "clear",
+        "statement": ""
+      }
+    },
+    "error": null,
+    "usage": {
+      "input": 1442,
+      "output": 5396,
+      "hit": 640,
+      "miss": 802,
+      "reasoning": 5308
+    },
+    "elapsed_seconds": 23.683297034353018
+  },
+  {
+    "case_id": "32c8da0c60a071f8",
+    "qid": "387",
+    "arm": "canary",
+    "kind": "state_updater",
+    "request_sha256": "201fbaab93ab83b1d54f738454b1e61ff82fc64241bf18a62311cf7c4bbb47c6",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "claims_to_add": [
+        "Dean Dodrill's main workstation doubles as his gaming PC.",
+        "Dean Dodrill's main workstation, which doubles as his gaming PC, has 5TB of storage."
+      ],
+      "hypothesis_update": {
+        "action": "set",
+        "statement": "The person whose gaming PC storage is sought may be Dean Dodrill."
+      }
+    },
+    "error": null,
+    "usage": {
+      "input": 1446,
+      "output": 1028,
+      "hit": 640,
+      "miss": 806,
+      "reasoning": 961
+    },
+    "elapsed_seconds": 4.975732576102018
+  },
+  {
+    "case_id": "4d72f231dc198106",
+    "qid": "1094",
+    "arm": "canary",
+    "kind": "state_updater",
+    "request_sha256": "f8f6b66a41fe24209b040bf469aa8065782d5029f86bb0321e87d1862f48fc43",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "claims_to_add": [
+        "Stoke City Football Club was founded in 1863.",
+        "Stoke City's name was changed from Stoke Football Club in 1925."
+      ],
+      "hypothesis_update": {
+        "action": "keep",
+        "statement": ""
+      }
+    },
+    "error": null,
+    "usage": {
+      "input": 1813,
+      "output": 1181,
+      "hit": 768,
+      "miss": 1045,
+      "reasoning": 1131
+    },
+    "elapsed_seconds": 5.774963263422251
+  },
+  {
+    "case_id": "602a426f4e937eee",
+    "qid": "177",
+    "arm": "canary",
+    "kind": "state_updater",
+    "request_sha256": "9d9145a5731eb175b5aef3e3d9bc7329238b2683a867d4f09da364fddd2d4452",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "claims_to_add": [],
+      "hypothesis_update": {
+        "action": "keep",
+        "statement": ""
+      }
+    },
+    "error": null,
+    "usage": {
+      "input": 1524,
+      "output": 215,
+      "hit": 640,
+      "miss": 884,
+      "reasoning": 184
+    },
+    "elapsed_seconds": 1.7938142344355583
+  },
+  {
+    "case_id": "6dafea10b027b569",
+    "qid": "186",
+    "arm": "canary",
+    "kind": "state_updater",
+    "request_sha256": "9ad51a861283504ccce967a765819663725910355d03607d8b5e46995af57888",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "claims_to_add": [
+        "The first episode of Galacta is titled 'The Battle for Saturn'.",
+        "The first episode of Galacta was shareware."
+      ],
+      "hypothesis_update": {
+        "action": "keep",
+        "statement": ""
+      }
+    },
+    "error": null,
+    "usage": {
+      "input": 1422,
+      "output": 2495,
+      "hit": 640,
+      "miss": 782,
+      "reasoning": 2431
+    },
+    "elapsed_seconds": 11.431779656559229
+  },
+  {
+    "case_id": "88cb8d36705c7099",
+    "qid": "311",
+    "arm": "canary",
+    "kind": "state_updater",
+    "request_sha256": "9337c71fa3dd36864ee2da5972c40a183cea8581f178dddcad0ae2d6bc484ce0",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "claims_to_add": [
+        "The Likeaballs was created by Jim Quick in 1998.",
+        "The Likeaballs concept embodies strong educational ethics."
+      ],
+      "hypothesis_update": {
+        "action": "keep",
+        "statement": ""
+      }
+    },
+    "error": null,
+    "usage": {
+      "input": 1916,
+      "output": 2807,
+      "hit": 640,
+      "miss": 1276,
+      "reasoning": 2762
+    },
+    "elapsed_seconds": 13.940326049923897
+  },
+  {
+    "case_id": "928145abe1386179",
+    "qid": "177",
+    "arm": "canary",
+    "kind": "state_updater",
+    "request_sha256": "722299bf462b15e350c872af6e52165e02ce38dc651fe4b2d20443f3b37e7c5b",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "claims_to_add": [
+        "Rangers International Football Club was founded in 1970.",
+        "Rangers International Football Club is a Nigerian professional association football team based in Enugu."
+      ],
+      "hypothesis_update": {
+        "action": "keep",
+        "statement": ""
+      }
+    },
+    "error": null,
+    "usage": {
+      "input": 1373,
+      "output": 2230,
+      "hit": 768,
+      "miss": 605,
+      "reasoning": 2180
+    },
+    "elapsed_seconds": 10.590847237035632
+  },
+  {
+    "case_id": "9e982fcfb5d3e92e",
+    "qid": "435",
+    "arm": "canary",
+    "kind": "goal_reviewer",
+    "request_sha256": "744e40b6d23e59bb87d520d6a784bababdca036d4dce697b3f198c773cbd1b66",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "resolved": true,
+      "residual": ""
+    },
+    "error": null,
+    "usage": {
+      "input": 665,
+      "output": 1024,
+      "hit": 128,
+      "miss": 537,
+      "reasoning": 1011
+    },
+    "elapsed_seconds": 4.733512895181775
+  },
+  {
+    "case_id": "e10025e3a968333d",
+    "qid": "177",
+    "arm": "canary",
+    "kind": "goal_reviewer",
+    "request_sha256": "5b6e01dacf57dbb3cb3fd8ae1364c2045cced522413ad82f17644a5be19629b0",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "resolved": false,
+      "residual": "The verified claims give Enugu Rangers' founding year (1970) and country (Nigeria), and confirm some matching details: eighth place with 58 points and +8 goal difference in the 2014 NPFL, and signing 13 players ahead of the 2022/23 season. However, they do not establish that this is the team described in the question: there is no verification of the three shared-points instances, that Rangers shared its points with another team, that Enugu is a capital city as of 2023, a league title between 1973 and 1983, or the 2023 article's fifteen-trophy claim. Thus the intended team's founding year and country are not fully confirmed."
+    },
+    "error": null,
+    "usage": {
+      "input": 612,
+      "output": 5854,
+      "hit": 128,
+      "miss": 484,
+      "reasoning": 5693
+    },
+    "elapsed_seconds": 26.66160482726991
+  },
+  {
+    "case_id": "97ee1c62b62ed7d7",
+    "qid": "435",
+    "arm": "canary",
+    "kind": "goal_reviewer",
+    "request_sha256": "ccac66fabe797da7cb0a7516a1dabf925974ff060e7ae55e0e235a83113904fd",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "resolved": false,
+      "residual": "The verified claims confirm the musician died at 66 and had more than 60 albums over a 45-year career, but they do not establish that they were featured in Forbes Africa in May during the 2010s, nor do they give the number of albums they had at the time of any such feature. The exact count asked for also remains unverified because 'more than 60 albums' does not confirm the stated 67-album total or an album count as of that May 2010s feature."
+    },
+    "error": null,
+    "usage": {
+      "input": 528,
+      "output": 554,
+      "hit": 384,
+      "miss": 144,
+      "reasoning": 436
+    },
+    "elapsed_seconds": 3.045158939436078
+  },
+  {
+    "case_id": "f271ae751661c426",
+    "qid": "546",
+    "arm": "canary",
+    "kind": "goal_reviewer",
+    "request_sha256": "7c23f871e9b903208986bea6ab7a97eae64580e5816a64d6fafa12d9b1dbc499",
+    "mode": "responses_structured",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "resolved": false,
+      "residual": "The verified claims do not jointly establish the requested player. They confirm Ding Junhui won a 2023 English Open opener 4–3 against Ma Hailong, but they do not verify that the player in question has more than 300 centuries or has scored the highest break more than 3 times, that he turned professional between 1995 and 2006, that Ma Hailong has fewer than 250 centuries, that the following two wins were 4–3 and 4–0, or that the next loss was against a player with over 400 centuries as of 30 January 2025."
+    },
+    "error": null,
+    "usage": {
+      "input": 1005,
+      "output": 5086,
+      "hit": 128,
+      "miss": 877,
+      "reasoning": 4944
+    },
+    "elapsed_seconds": 23.14869470335543
+  }
+]
