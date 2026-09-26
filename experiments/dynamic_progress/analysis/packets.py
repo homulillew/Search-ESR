@@ -8,12 +8,12 @@ def opaque(i):return hashlib.sha256(('dynamic-progress-review-v1:'+i).encode()).
 bank={c['case_id']:c for name in ['PRIMARY','CHALLENGE'] for c in rd(T/'bank'/f'{name}.json')}
 labels={k:v for name in ['PRIMARY','CHALLENGE'] for k,v in rd(T/'bank'/f'{name}_LABELS.json').items()}
 rows=[]
-log=T/'p1_progress/progress_events.jsonl'
-if log.exists():
- for l in log.read_text().splitlines():
-  try:e=json.loads(l)
-  except json.JSONDecodeError:continue
-  if e['kind']=='completed':rows.append(e['result'])
+for log in [T/'p1_progress/progress_events.jsonl',T/'transport_correction/corrected_events.jsonl',T/'exploration/exploration_events.jsonl']:
+ if log.exists():
+  for l in log.read_text().splitlines():
+   try:e=json.loads(l)
+   except json.JSONDecodeError:continue
+   if e['kind']=='completed':rows.append(e['result'])
 key={opaque(r['id']):r['id'] for r in rows};wr(T/'analysis/private_review_key.json',key)
 review=T/'analysis/semantic_review.json'
 review=rd(review) if review.exists() else {}

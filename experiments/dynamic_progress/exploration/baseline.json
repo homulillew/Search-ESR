@@ -1,0 +1,3498 @@
+[
+  {
+    "id": "P11_B_2",
+    "case_id": "P11",
+    "qid": "435",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "07b02cf625380769b1c5ead69f7b3d1554bfb8476cdf4cb4221c2f2cd3228e5e",
+    "view_sha256": "9308ee9724b958dd58d3818f740125d2954a25dd98941995aef0069f744d2da9",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": true,
+      "blocking_gaps": [],
+      "closure_claim_refs": [
+        5
+      ]
+    },
+    "usage": {
+      "input": 961,
+      "output": 974,
+      "hit": 384,
+      "miss": 577,
+      "reasoning": 950
+    },
+    "error": null,
+    "elapsed_seconds": 4.990215212106705,
+    "review": {
+      "review_id": "946d35afe347",
+      "units": [],
+      "closure_witness_valid": false,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Completion matches frozen label, but solecountClaim5 omits the discriminative identity chain in main witness.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": true,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [],
+    "blockers": [],
+    "valid_presence": false,
+    "adequate": true,
+    "strict_adequate": false
+  },
+  {
+    "id": "P07_B_1",
+    "case_id": "P07",
+    "qid": "311",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "82653cc0b13f61ebfebd93cef9dc860a22f505ed02f094bb47044f5daf371779",
+    "view_sha256": "b3d61febda43b20e64e55ab877b6afe403b338a07fdf80599ddc3d0bf274442c",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "The final requested relation is not established: no Verified Claim supplies the Argentinian release name of a television program, nor links any candidate title to an Argentinian release title.",
+          "status": "missing",
+          "claim_refs": [
+            27,
+            28
+          ]
+        },
+        {
+          "gap": "A full match to the clue set is not established. Claims 27–28 concern Cococinel's 1992 January-to-December run, 52 episodes, ended status, and 4–10 minute runtime, but no Claim establishes one director and two writers, a three-character network containing a number, the host-country World Cup condition, an educational purpose, or the specified characters (twins, poet, complainer, living transport).",
+          "status": "partial",
+          "claim_refs": [
+            27,
+            28
+          ]
+        },
+        {
+          "gap": "The required runtime of less than 5 minutes is not fully established: Claim 28 gives a 4–10 minute range, which does not exclude episodes of 5 minutes or longer.",
+          "status": "partial",
+          "claim_refs": [
+            28
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 1810,
+      "output": 4642,
+      "hit": 384,
+      "miss": 1426,
+      "reasoning": 4393
+    },
+    "error": null,
+    "elapsed_seconds": 23.193448577076197,
+    "review": {
+      "review_id": "2a245c91057b",
+      "units": [
+        {
+          "index": 1,
+          "text": "The final requested relation is not established: no Verified Claim supplies the Argentinian release name of a television program, nor links any candidate title to an Argentinian release title.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "A full match to the clue set is not established. Claims 27–28 concern Cococinel's 1992 January-to-December run, 52 episodes, ended status, and 4–10 minute runtime, but no Claim establishes one director and two writers, a three-character network containing a number, the host-country World Cup condition, an educational purpose, or the specified characters (twins, poet, complainer, living transport).",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "The required runtime of less than 5 minutes is not fully established: Claim 28 gives a 4–10 minute range, which does not exclude episodes of 5 minutes or longer.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Argentine alias and under-five runtime remain unestablished. Second item bundles almost the whole programme identification.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "The final requested relation is not established: no Verified Claim supplies the Argentinian release name of a television program, nor links any candidate title to an Argentinian release title.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "A full match to the clue set is not established. Claims 27–28 concern Cococinel's 1992 January-to-December run, 52 episodes, ended status, and 4–10 minute runtime, but no Claim establishes one director and two writers, a three-character network containing a number, the host-country World Cup condition, an educational purpose, or the specified characters (twins, poet, complainer, living transport).",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The required runtime of less than 5 minutes is not fully established: Claim 28 gives a 4–10 minute range, which does not exclude episodes of 5 minutes or longer.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "The final requested relation is not established: no Verified Claim supplies the Argentinian release name of a television program, nor links any candidate title to an Argentinian release title.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "A full match to the clue set is not established. Claims 27–28 concern Cococinel's 1992 January-to-December run, 52 episodes, ended status, and 4–10 minute runtime, but no Claim establishes one director and two writers, a three-character network containing a number, the host-country World Cup condition, an educational purpose, or the specified characters (twins, poet, complainer, living transport).",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The required runtime of less than 5 minutes is not fully established: Claim 28 gives a 4–10 minute range, which does not exclude episodes of 5 minutes or longer.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P15_B_1",
+    "case_id": "P15",
+    "qid": "546",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "db5a71a2564234fef6bef6c01ee7c3f1fbc9c6d82a1df3637a4c7d30c7e18a25",
+    "view_sha256": "f6e89144cf88d23d1310a16cea99b6b6ca5450b005ed4b89721a82e5385af436",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim establishes the requested player's career profile: more than 300 centuries, highest break scored more than 3 times, and professional debut between 1995 and 2006.",
+          "status": "missing",
+          "claim_refs": []
+        },
+        {
+          "gap": "No Verified Claim establishes the required match sequence: a 2023 decider-game win over a player with fewer than 250 centuries, followed by wins of 4-3 and 4-0, then a loss to a player with over 400 centuries as of 30 January 2025.",
+          "status": "missing",
+          "claim_refs": []
+        },
+        {
+          "gap": "Claim 1 only establishes an isolated 4-3 win by Ding Junhui over Ma Hailong; it does not establish that this match is part of the required sequence or that Ding Junhui satisfies the requested career criteria.",
+          "status": "partial",
+          "claim_refs": [
+            1
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 763,
+      "output": 2485,
+      "hit": 384,
+      "miss": 379,
+      "reasoning": 2264
+    },
+    "error": null,
+    "elapsed_seconds": 11.856423692777753,
+    "review": {
+      "review_id": "c1a4c4a54d7f",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim establishes the requested player's career profile: more than 300 centuries, highest break scored more than 3 times, and professional debut between 1995 and 2006.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No Verified Claim establishes the required match sequence: a 2023 decider-game win over a player with fewer than 250 centuries, followed by wins of 4-3 and 4-0, then a loss to a player with over 400 centuries as of 30 January 2025.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": false,
+          "status_reason": "Known opening4–3event is actual partial sequence evidence.",
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "Claim 1 only establishes an isolated 4-3 win by Ding Junhui over Ma Hailong; it does not establish that this match is part of the required sequence or that Ding Junhui satisfies the requested career criteria.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Career profile and ordered event chain are separate bounded relations. Third item repeats them in a joined profile/eventbundle.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes the requested player's career profile: more than 300 centuries, highest break scored more than 3 times, and professional debut between 1995 and 2006.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes the required match sequence: a 2023 decider-game win over a player with fewer than 250 centuries, followed by wins of 4-3 and 4-0, then a loss to a player with over 400 centuries as of 30 January 2025.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": false,
+        "status_reason": "Known opening4–3event is actual partial sequence evidence.",
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "Claim 1 only establishes an isolated 4-3 win by Ding Junhui over Ma Hailong; it does not establish that this match is part of the required sequence or that Ding Junhui satisfies the requested career criteria.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes the requested player's career profile: more than 300 centuries, highest break scored more than 3 times, and professional debut between 1995 and 2006.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes the required match sequence: a 2023 decider-game win over a player with fewer than 250 centuries, followed by wins of 4-3 and 4-0, then a loss to a player with over 400 centuries as of 30 January 2025.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": false,
+        "status_reason": "Known opening4–3event is actual partial sequence evidence.",
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "Claim 1 only establishes an isolated 4-3 win by Ding Junhui over Ma Hailong; it does not establish that this match is part of the required sequence or that Ding Junhui satisfies the requested career criteria.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P20_B_2",
+    "case_id": "P20",
+    "qid": "1034",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "bb74db0c5d8cbb1a02fa910f83b49373947097ca70be090e6f692ff4c20d8338",
+    "view_sha256": "bd7d7ffe286db8fda893205a9ec5b265add002a8472381e5c0ceb92fb2cd073d",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim identifies an individual matching the 2022/2021 profile: a commercial model whose wealth mostly came from showbiz, who was born into a family of three children, had a career break between 2006 and 2010, and has a child born in the United States.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            2
+          ]
+        },
+        {
+          "gap": "No Verified Claim establishes the 2020 article details for any individual: enrolling in university between 2001 and 2007 to study Business Administration, releasing a debut single between 2010 and 2015, and being hired as a coordinator in 2012 then promoted to a manager.",
+          "status": "missing",
+          "claim_refs": [
+            4,
+            5,
+            7,
+            11
+          ]
+        },
+        {
+          "gap": "No Verified Claim links any named candidate to all the required details or supplies the birth name of such a matching individual.",
+          "status": "missing",
+          "claim_refs": [
+            3,
+            6
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 1164,
+      "output": 2690,
+      "hit": 768,
+      "miss": 396,
+      "reasoning": 2452
+    },
+    "error": null,
+    "elapsed_seconds": 12.502676976844668,
+    "review": {
+      "review_id": "dcc44e22297b",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim identifies an individual matching the 2022/2021 profile: a commercial model whose wealth mostly came from showbiz, who was born into a family of three children, had a career break between 2006 and 2010, and has a child born in the United States.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No Verified Claim establishes the 2020 article details for any individual: enrolling in university between 2001 and 2007 to study Business Administration, releasing a debut single between 2010 and 2015, and being hired as a coordinator in 2012 then promoted to a manager.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "No Verified Claim links any named candidate to all the required details or supplies the birth name of such a matching individual.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Finalidentity/birthname relation is valid; firsttwoitems each combine several independentcareer/family/education/employmentrelations.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim identifies an individual matching the 2022/2021 profile: a commercial model whose wealth mostly came from showbiz, who was born into a family of three children, had a career break between 2006 and 2010, and has a child born in the United States.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes the 2020 article details for any individual: enrolling in university between 2001 and 2007 to study Business Administration, releasing a debut single between 2010 and 2015, and being hired as a coordinator in 2012 then promoted to a manager.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No Verified Claim links any named candidate to all the required details or supplies the birth name of such a matching individual.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim identifies an individual matching the 2022/2021 profile: a commercial model whose wealth mostly came from showbiz, who was born into a family of three children, had a career break between 2006 and 2010, and has a child born in the United States.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes the 2020 article details for any individual: enrolling in university between 2001 and 2007 to study Business Administration, releasing a debut single between 2010 and 2015, and being hired as a coordinator in 2012 then promoted to a manager.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No Verified Claim links any named candidate to all the required details or supplies the birth name of such a matching individual.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P12_B_2",
+    "case_id": "P12",
+    "qid": "435",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "294e0deda76f277542fe93f0bc20dbb40dff908b3a7e5219ad8a7f46feaa5f31",
+    "view_sha256": "824cebefdc8783f270f6dc467aba504da1832ef7e7b2bad49d23f66f04fa4e07",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": true,
+      "blocking_gaps": [],
+      "closure_claim_refs": [
+        13,
+        15,
+        16
+      ]
+    },
+    "usage": {
+      "input": 1291,
+      "output": 386,
+      "hit": 768,
+      "miss": 523,
+      "reasoning": 356
+    },
+    "error": null,
+    "elapsed_seconds": 2.3732345178723335,
+    "review": {
+      "review_id": "fe53d59d4221",
+      "units": [],
+      "closure_witness_valid": false,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Closure correct on fullClaims; witness contains only scoped count/article, not main identity basis.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": true,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [],
+    "blockers": [],
+    "valid_presence": false,
+    "adequate": true,
+    "strict_adequate": false
+  },
+  {
+    "id": "P21_B_1",
+    "case_id": "P21",
+    "qid": "1034",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "59ed4ef96f206db9614b51337544aef3aa527ac1cad48220d06f8d39f06b02fd",
+    "view_sha256": "9246efeae7865a404cc625d180df21d5e5043b01aa2c51f4a4bf955807db0c06",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim establishes that any specific individual is the commercial model described by the 2022 article whose wealth mostly came from showbiz.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            2,
+            21,
+            22
+          ]
+        },
+        {
+          "gap": "No Verified Claim ties the 2021-profile conditions—born into a family of three children, break in an industry between 2006 and 2010, and a child born in the United States—to the same individual.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            25,
+            26,
+            57,
+            58
+          ]
+        },
+        {
+          "gap": "No Verified Claim establishes the 2020-article combination for one individual: university study of Business Administration between 2001 and 2007, a debut single between 2010 and 2015, and a 2012 coordinator hiring later promoted to manager; consequently the requested birth name is not established.",
+          "status": "missing",
+          "claim_refs": [
+            11,
+            12,
+            17,
+            19,
+            20,
+            53,
+            54
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 3007,
+      "output": 5760,
+      "hit": 768,
+      "miss": 2239,
+      "reasoning": 5505
+    },
+    "error": null,
+    "elapsed_seconds": 27.7809186168015,
+    "review": {
+      "review_id": "eeaf4737424e",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim establishes that any specific individual is the commercial model described by the 2022 article whose wealth mostly came from showbiz.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No Verified Claim ties the 2021-profile conditions—born into a family of three children, break in an industry between 2006 and 2010, and a child born in the United States—to the same individual.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "No Verified Claim establishes the 2020-article combination for one individual: university study of Business Administration between 2001 and 2007, a debut single between 2010 and 2015, and a 2012 coordinator hiring later promoted to manager; consequently the requested birth name is not established.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Commercialmodel/wealthidentity isbounded; secondandthirditemsconjoinmultipleindependentfamily/career/education/employmentrequirements.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes that any specific individual is the commercial model described by the 2022 article whose wealth mostly came from showbiz.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim ties the 2021-profile conditions—born into a family of three children, break in an industry between 2006 and 2010, and a child born in the United States—to the same individual.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No Verified Claim establishes the 2020-article combination for one individual: university study of Business Administration between 2001 and 2007, a debut single between 2010 and 2015, and a 2012 coordinator hiring later promoted to manager; consequently the requested birth name is not established.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes that any specific individual is the commercial model described by the 2022 article whose wealth mostly came from showbiz.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim ties the 2021-profile conditions—born into a family of three children, break in an industry between 2006 and 2010, and a child born in the United States—to the same individual.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No Verified Claim establishes the 2020-article combination for one individual: university study of Business Administration between 2001 and 2007, a debut single between 2010 and 2015, and a 2012 coordinator hiring later promoted to manager; consequently the requested birth name is not established.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P07_B_2",
+    "case_id": "P07",
+    "qid": "311",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "82653cc0b13f61ebfebd93cef9dc860a22f505ed02f094bb47044f5daf371779",
+    "view_sha256": "b3d61febda43b20e64e55ab877b6afe403b338a07fdf80599ddc3d0bf274442c",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim states the Argentinian release name of the television program matching the described clues; Claims 27–28 identify Cococinel but do not provide an Argentine release title.",
+          "status": "missing",
+          "claim_refs": [
+            27,
+            28
+          ]
+        },
+        {
+          "gap": "For Cococinel or any other candidate, no Verified Claim establishes the required one-director/two-writer credit, the three-character network containing a number, the specified host country, the educational purpose, or the character set of twins, poet, complainer, and living transport.",
+          "status": "missing",
+          "claim_refs": [
+            27,
+            28
+          ]
+        },
+        {
+          "gap": "The runtime requirement is not established: Claim 28 gives Cococinel an episode runtime of 4–10 minutes, which does not establish that episodes had a running time of less than 5 minutes.",
+          "status": "partial",
+          "claim_refs": [
+            28
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 1810,
+      "output": 4508,
+      "hit": 1664,
+      "miss": 146,
+      "reasoning": 4288
+    },
+    "error": null,
+    "elapsed_seconds": 21.915301540866494,
+    "review": {
+      "review_id": "7b3f832361f1",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim states the Argentinian release name of the television program matching the described clues; Claims 27–28 identify Cococinel but do not provide an Argentine release title.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "For Cococinel or any other candidate, no Verified Claim establishes the required one-director/two-writer credit, the three-character network containing a number, the specified host country, the educational purpose, or the character set of twins, poet, complainer, and living transport.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "The runtime requirement is not established: Claim 28 gives Cococinel an episode runtime of 4–10 minutes, which does not establish that episodes had a running time of less than 5 minutes.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Argentinealias andruntimecorrectlyunresolved; middleitemwholeprogrammecluelist too broad.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim states the Argentinian release name of the television program matching the described clues; Claims 27–28 identify Cococinel but do not provide an Argentine release title.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "For Cococinel or any other candidate, no Verified Claim establishes the required one-director/two-writer credit, the three-character network containing a number, the specified host country, the educational purpose, or the character set of twins, poet, complainer, and living transport.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The runtime requirement is not established: Claim 28 gives Cococinel an episode runtime of 4–10 minutes, which does not establish that episodes had a running time of less than 5 minutes.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim states the Argentinian release name of the television program matching the described clues; Claims 27–28 identify Cococinel but do not provide an Argentine release title.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "For Cococinel or any other candidate, no Verified Claim establishes the required one-director/two-writer credit, the three-character network containing a number, the specified host country, the educational purpose, or the character set of twins, poet, complainer, and living transport.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The runtime requirement is not established: Claim 28 gives Cococinel an episode runtime of 4–10 minutes, which does not establish that episodes had a running time of less than 5 minutes.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P01_B_2",
+    "case_id": "P01",
+    "qid": "177",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "7be37a93d2fcb96f4192ed1314475efcd2755ba147448e6fd9c83fe5e2ef1101",
+    "view_sha256": "e80e4fc7a3dfe953d501d5500f96f706484bf7b59cda18cf546707fb543edb5c",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "The founding year and country of the team are not established by any verified claim; Claims 1–2 identify Rangers as Enugu-based and as having signed 13 players ahead of 2022/23, but do not state when or where the club was founded.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            2
+          ]
+        },
+        {
+          "gap": "The link to the 2023 article is only partially supported: Claim 1 establishes that Rangers signed 13 players ahead of the 2022/23 season, but it does not establish that a 2023 article stated the team had won fifteen trophies and signed 13 players ahead of a certain season.",
+          "status": "partial",
+          "claim_refs": [
+            1
+          ]
+        },
+        {
+          "gap": "The required league-season relations are not established: no verified claim shows a season between 2011 and 2016 with three two-team points ties, a team finishing 6th–12th while sharing points with another team and having a goal difference of 6–12, or a league title won between 1973 and 1983.",
+          "status": "missing",
+          "claim_refs": []
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 814,
+      "output": 2661,
+      "hit": 640,
+      "miss": 174,
+      "reasoning": 2392
+    },
+    "error": null,
+    "elapsed_seconds": 12.46381432004273,
+    "review": {
+      "review_id": "5171b2ad3f13",
+      "units": [
+        {
+          "index": 1,
+          "text": "The founding year and country of the team are not established by any verified claim; Claims 1–2 identify Rangers as Enugu-based and as having signed 13 players ahead of 2022/23, but do not state when or where the club was founded.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "The link to the 2023 article is only partially supported: Claim 1 establishes that Rangers signed 13 players ahead of the 2022/23 season, but it does not establish that a 2023 article stated the team had won fifteen trophies and signed 13 players ahead of a certain season.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "The required league-season relations are not established: no verified claim shows a season between 2011 and 2016 with three two-team points ties, a team finishing 6th–12th while sharing points with another team and having a goal difference of 6–12, or a league title won between 1973 and 1983.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Foundingtarget and2023trophy/signing binding real; finalitemjoinsseasontable anddecades-earlierleaguewin as independentchains.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "The founding year and country of the team are not established by any verified claim; Claims 1–2 identify Rangers as Enugu-based and as having signed 13 players ahead of 2022/23, but do not state when or where the club was founded.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "The link to the 2023 article is only partially supported: Claim 1 establishes that Rangers signed 13 players ahead of the 2022/23 season, but it does not establish that a 2023 article stated the team had won fifteen trophies and signed 13 players ahead of a certain season.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The required league-season relations are not established: no verified claim shows a season between 2011 and 2016 with three two-team points ties, a team finishing 6th–12th while sharing points with another team and having a goal difference of 6–12, or a league title won between 1973 and 1983.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "The founding year and country of the team are not established by any verified claim; Claims 1–2 identify Rangers as Enugu-based and as having signed 13 players ahead of 2022/23, but do not state when or where the club was founded.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "The link to the 2023 article is only partially supported: Claim 1 establishes that Rangers signed 13 players ahead of the 2022/23 season, but it does not establish that a 2023 article stated the team had won fifteen trophies and signed 13 players ahead of a certain season.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The required league-season relations are not established: no verified claim shows a season between 2011 and 2016 with three two-team points ties, a team finishing 6th–12th while sharing points with another team and having a goal difference of 6–12, or a league title won between 1973 and 1983.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P05_B_1",
+    "case_id": "P05",
+    "qid": "311",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "96c5f3131364b3e9c2fff433d99922ba10ec4dec809c2558dcb2e588aab0c352",
+    "view_sha256": "4e612336fd8ed00de1a37099a1f9e8defd2fdc66d16fe1b8ce4d040ac2d94826",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim establishes the Argentinian release name or a program satisfying the full clue set: one director and two writers; early-1990s January-to-December run; 50–60 episodes in one year; under-5-minute episodes; network name of three characters including a number; educational purpose; and characters including twins, a poet, a complainer, and a living transport.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "gap": "The only writer-credit fact in the Claims does not satisfy the two-writer requirement: Claim 1 states The Adventures of Hijitus had three writers, and no Claim establishes a program with exactly one director and two writers.",
+          "status": "missing",
+          "claim_refs": [
+            1
+          ]
+        },
+        {
+          "gap": "The broadcast timing needed for the answer is not established and the only related Claims conflict: Claim 2 states Hijitus aired 7 August 1967 to 1 March 1996, while Claim 3 states it aired 1967–1974; neither establishes an early-1990s January-to-December run.",
+          "status": "conflict",
+          "claim_refs": [
+            2,
+            3
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 954,
+      "output": 2457,
+      "hit": 640,
+      "miss": 314,
+      "reasoning": 2174
+    },
+    "error": null,
+    "elapsed_seconds": 11.773414948955178,
+    "review": {
+      "review_id": "8077671ac642",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim establishes the Argentinian release name or a program satisfying the full clue set: one director and two writers; early-1990s January-to-December run; 50–60 episodes in one year; under-5-minute episodes; network name of three characters including a number; educational purpose; and characters including twins, a poet, a complainer, and a living transport.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "The only writer-credit fact in the Claims does not satisfy the two-writer requirement: Claim 1 states The Adventures of Hijitus had three writers, and no Claim establishes a program with exactly one director and two writers.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "The broadcast timing needed for the answer is not established and the only related Claims conflict: Claim 2 states Hijitus aired 7 August 1967 to 1 March 1996, while Claim 3 states it aired 1967–1974; neither establishes an early-1990s January-to-December run.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": false,
+          "status_reason": "ConflictisonalreadyunsuitableHijitus; targetbroadcastrelationmissing.",
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Firstitemwholequestion; writer-countandrequired1992broadcastrelationunestablished. ActualHijitusdateconflictdoesnotitselfmakequalifyingprogrammebroadcastrelationconflicting.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes the Argentinian release name or a program satisfying the full clue set: one director and two writers; early-1990s January-to-December run; 50–60 episodes in one year; under-5-minute episodes; network name of three characters including a number; educational purpose; and characters including twins, a poet, a complainer, and a living transport.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "The only writer-credit fact in the Claims does not satisfy the two-writer requirement: Claim 1 states The Adventures of Hijitus had three writers, and no Claim establishes a program with exactly one director and two writers.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The broadcast timing needed for the answer is not established and the only related Claims conflict: Claim 2 states Hijitus aired 7 August 1967 to 1 March 1996, while Claim 3 states it aired 1967–1974; neither establishes an early-1990s January-to-December run.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": false,
+        "status_reason": "ConflictisonalreadyunsuitableHijitus; targetbroadcastrelationmissing.",
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes the Argentinian release name or a program satisfying the full clue set: one director and two writers; early-1990s January-to-December run; 50–60 episodes in one year; under-5-minute episodes; network name of three characters including a number; educational purpose; and characters including twins, a poet, a complainer, and a living transport.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "The only writer-credit fact in the Claims does not satisfy the two-writer requirement: Claim 1 states The Adventures of Hijitus had three writers, and no Claim establishes a program with exactly one director and two writers.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The broadcast timing needed for the answer is not established and the only related Claims conflict: Claim 2 states Hijitus aired 7 August 1967 to 1 March 1996, while Claim 3 states it aired 1967–1974; neither establishes an early-1990s January-to-December run.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": false,
+        "status_reason": "ConflictisonalreadyunsuitableHijitus; targetbroadcastrelationmissing.",
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P04_B_2",
+    "case_id": "P04",
+    "qid": "186",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "219bd24cca095a090b0d12694c7e02330844a294a92609310791060f413efc14",
+    "view_sha256": "31089ac704ed1e3dce4d2a02990cc5a7075f4d0d798137d1af3420a4b57398f7",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": true,
+      "blocking_gaps": [],
+      "closure_claim_refs": [
+        1,
+        2,
+        3,
+        4,
+        10
+      ]
+    },
+    "usage": {
+      "input": 1057,
+      "output": 15154,
+      "hit": 640,
+      "miss": 417,
+      "reasoning": 15118
+    },
+    "error": null,
+    "elapsed_seconds": 64.55749199353158,
+    "review": {
+      "review_id": "9c9caab96f13",
+      "units": [],
+      "closure_witness_valid": true,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Correctclosure with identity,release,mode,credits anddeveloper/formername witness.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": true,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [],
+    "blockers": [],
+    "valid_presence": false,
+    "adequate": true,
+    "strict_adequate": true
+  },
+  {
+    "id": "P20_B_1",
+    "case_id": "P20",
+    "qid": "1034",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "bb74db0c5d8cbb1a02fa910f83b49373947097ca70be090e6f692ff4c20d8338",
+    "view_sha256": "bd7d7ffe286db8fda893205a9ec5b265add002a8472381e5c0ceb92fb2cd073d",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim identifies an individual who matches the full described combination: commercial model whose wealth mostly came from showbiz, born into a family of three children, industry break between 2006 and 2010, a child born in the United States, university study of Business Administration between 2001 and 2007, a debut single between 2010 and 2015, and a 2012 coordinator role later promoted to a manager position. The claims mention separate individuals but do not link any one person to all these conditions.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            3,
+            6,
+            7,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "gap": "The required 2022 relation that the individual is a commercial model and that most of their wealth came from showbiz is not established. Claim 2 only states that Heart Evangelista grew up in a wealthy family and expressly does not establish what fraction of her own wealth came from showbiz.",
+          "status": "missing",
+          "claim_refs": [
+            2
+          ]
+        },
+        {
+          "gap": "The requested final answer, the birth name of the individual matching the stated details, is not established. The only birth-name claims provided concern Eminem and Soulja Boy, but no Verified Claim links either person to the full profile described in the question.",
+          "status": "missing",
+          "claim_refs": [
+            3,
+            6
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 1164,
+      "output": 2766,
+      "hit": 1024,
+      "miss": 140,
+      "reasoning": 2446
+    },
+    "error": null,
+    "elapsed_seconds": 13.429500648751855,
+    "review": {
+      "review_id": "8c948b1ecfaf",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim identifies an individual who matches the full described combination: commercial model whose wealth mostly came from showbiz, born into a family of three children, industry break between 2006 and 2010, a child born in the United States, university study of Business Administration between 2001 and 2007, a debut single between 2010 and 2015, and a 2012 coordinator role later promoted to a manager position. The claims mention separate individuals but do not link any one person to all these conditions.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "The required 2022 relation that the individual is a commercial model and that most of their wealth came from showbiz is not established. Claim 2 only states that Heart Evangelista grew up in a wealthy family and expressly does not establish what fraction of her own wealth came from showbiz.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "The requested final answer, the birth name of the individual matching the stated details, is not established. The only birth-name claims provided concern Eminem and Soulja Boy, but no Verified Claim links either person to the full profile described in the question.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Firstitemwholeprofilebundle; showbizwealthrelation andqualifiedbirthnamearevalidseparategaps.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim identifies an individual who matches the full described combination: commercial model whose wealth mostly came from showbiz, born into a family of three children, industry break between 2006 and 2010, a child born in the United States, university study of Business Administration between 2001 and 2007, a debut single between 2010 and 2015, and a 2012 coordinator role later promoted to a manager position. The claims mention separate individuals but do not link any one person to all these conditions.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "The required 2022 relation that the individual is a commercial model and that most of their wealth came from showbiz is not established. Claim 2 only states that Heart Evangelista grew up in a wealthy family and expressly does not establish what fraction of her own wealth came from showbiz.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The requested final answer, the birth name of the individual matching the stated details, is not established. The only birth-name claims provided concern Eminem and Soulja Boy, but no Verified Claim links either person to the full profile described in the question.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim identifies an individual who matches the full described combination: commercial model whose wealth mostly came from showbiz, born into a family of three children, industry break between 2006 and 2010, a child born in the United States, university study of Business Administration between 2001 and 2007, a debut single between 2010 and 2015, and a 2012 coordinator role later promoted to a manager position. The claims mention separate individuals but do not link any one person to all these conditions.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "The required 2022 relation that the individual is a commercial model and that most of their wealth came from showbiz is not established. Claim 2 only states that Heart Evangelista grew up in a wealthy family and expressly does not establish what fraction of her own wealth came from showbiz.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The requested final answer, the birth name of the individual matching the stated details, is not established. The only birth-name claims provided concern Eminem and Soulja Boy, but no Verified Claim links either person to the full profile described in the question.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P11_B_1",
+    "case_id": "P11",
+    "qid": "435",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "07b02cf625380769b1c5ead69f7b3d1554bfb8476cdf4cb4221c2f2cd3228e5e",
+    "view_sha256": "9308ee9724b958dd58d3818f740125d2954a25dd98941995aef0069f744d2da9",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": true,
+      "blocking_gaps": [],
+      "closure_claim_refs": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    "usage": {
+      "input": 961,
+      "output": 2453,
+      "hit": 768,
+      "miss": 193,
+      "reasoning": 2425
+    },
+    "error": null,
+    "elapsed_seconds": 11.225496811792254,
+    "review": {
+      "review_id": "dbeb9a727db4",
+      "units": [],
+      "closure_witness_valid": true,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Correctclosure withdiscriminativebiography/protestanddirectMaycountwitness.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": true,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [],
+    "blockers": [],
+    "valid_presence": false,
+    "adequate": true,
+    "strict_adequate": true
+  },
+  {
+    "id": "P02_B_1",
+    "case_id": "P02",
+    "qid": "177",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "75aa698dbd4f3fb58beb55b738fca1b7a3495cee11689a24fde5b252219ddb68",
+    "view_sha256": "8b4f0d1c4104f679dfa9ecb53fe6c10ce320ee591e4a4200aed8bd0fcc6ff029",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim establishes the required league-season table relation: a season beginning and ending between 2011 and 2016 with exactly three instances of two teams sharing the same points, including the identified team finishing 6th–12th, sharing points with another team, and having a goal difference between 6 and 12.",
+          "status": "missing",
+          "claim_refs": []
+        },
+        {
+          "gap": "No Verified Claim establishes that the team described in the 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season is the same team as the one matching the league-season position, shared-points, and goal-difference conditions.",
+          "status": "partial",
+          "claim_refs": [
+            1
+          ]
+        },
+        {
+          "gap": "No Verified Claim establishes the requested founding year and country of the team, nor the supporting identity links that it was based in a capital city as of 2023 and won the specified league between 1973 and 1983.",
+          "status": "missing",
+          "claim_refs": [
+            1
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 2228,
+      "output": 1764,
+      "hit": 768,
+      "miss": 1460,
+      "reasoning": 1521
+    },
+    "error": null,
+    "elapsed_seconds": 8.038557911291718,
+    "review": {
+      "review_id": "eea52370a1cf",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim establishes the required league-season table relation: a season beginning and ending between 2011 and 2016 with exactly three instances of two teams sharing the same points, including the identified team finishing 6th–12th, sharing points with another team, and having a goal difference between 6 and 12.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No Verified Claim establishes that the team described in the 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season is the same team as the one matching the league-season position, shared-points, and goal-difference conditions.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "No Verified Claim establishes the requested founding year and country of the team, nor the supporting identity links that it was based in a capital city as of 2023 and won the specified league between 1973 and 1983.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Single-table relation and2023article identitybinding are real; thirditemcombines requestedfoundingwithcapitalandolderleaguewin constraints.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes the required league-season table relation: a season beginning and ending between 2011 and 2016 with exactly three instances of two teams sharing the same points, including the identified team finishing 6th–12th, sharing points with another team, and having a goal difference between 6 and 12.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes that the team described in the 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season is the same team as the one matching the league-season position, shared-points, and goal-difference conditions.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No Verified Claim establishes the requested founding year and country of the team, nor the supporting identity links that it was based in a capital city as of 2023 and won the specified league between 1973 and 1983.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes the required league-season table relation: a season beginning and ending between 2011 and 2016 with exactly three instances of two teams sharing the same points, including the identified team finishing 6th–12th, sharing points with another team, and having a goal difference between 6 and 12.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes that the team described in the 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season is the same team as the one matching the league-season position, shared-points, and goal-difference conditions.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No Verified Claim establishes the requested founding year and country of the team, nor the supporting identity links that it was based in a capital city as of 2023 and won the specified league between 1973 and 1983.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P21_B_2",
+    "case_id": "P21",
+    "qid": "1034",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "59ed4ef96f206db9614b51337544aef3aa527ac1cad48220d06f8d39f06b02fd",
+    "view_sha256": "9246efeae7865a404cc625d180df21d5e5043b01aa2c51f4a4bf955807db0c06",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim identifies an individual who, per a 2022 article, is a commercial model and whose wealth mostly came from showbiz, and no Claim links such a person to the remaining requested attributes.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            2,
+            21,
+            22,
+            25,
+            26,
+            31,
+            57,
+            58
+          ]
+        },
+        {
+          "gap": "No Verified Claim establishes the 2021-profile conjunction: the same individual was born into a family of three children, had a break in the relevant industry between 2006 and 2010, and has a child born in the United States.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            30,
+            57,
+            58,
+            59,
+            60
+          ]
+        },
+        {
+          "gap": "No Verified Claim establishes the 2020-article conjunction: the same individual entered university between 2001 and 2007 to study Business Administration, released a debut single between 2010 and 2015, and was hired for a coordinator position in 2012 before being promoted to a manager.",
+          "status": "missing",
+          "claim_refs": [
+            11,
+            12,
+            17,
+            19,
+            20,
+            33,
+            34,
+            41,
+            47,
+            48,
+            53,
+            54
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 3007,
+      "output": 11746,
+      "hit": 2816,
+      "miss": 191,
+      "reasoning": 11442
+    },
+    "error": null,
+    "elapsed_seconds": 61.99829916469753,
+    "review": {
+      "review_id": "e0d5ad66b0ea",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim identifies an individual who, per a 2022 article, is a commercial model and whose wealth mostly came from showbiz, and no Claim links such a person to the remaining requested attributes.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No Verified Claim establishes the 2021-profile conjunction: the same individual was born into a family of three children, had a break in the relevant industry between 2006 and 2010, and has a child born in the United States.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "No Verified Claim establishes the 2020-article conjunction: the same individual entered university between 2001 and 2007 to study Business Administration, released a debut single between 2010 and 2015, and was hired for a coordinator position in 2012 before being promoted to a manager.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Commercialmodel/wealthboundedinquiry; otheritemscombineindependentfamily/career/education/employmentrelations.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim identifies an individual who, per a 2022 article, is a commercial model and whose wealth mostly came from showbiz, and no Claim links such a person to the remaining requested attributes.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes the 2021-profile conjunction: the same individual was born into a family of three children, had a break in the relevant industry between 2006 and 2010, and has a child born in the United States.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No Verified Claim establishes the 2020-article conjunction: the same individual entered university between 2001 and 2007 to study Business Administration, released a debut single between 2010 and 2015, and was hired for a coordinator position in 2012 before being promoted to a manager.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim identifies an individual who, per a 2022 article, is a commercial model and whose wealth mostly came from showbiz, and no Claim links such a person to the remaining requested attributes.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes the 2021-profile conjunction: the same individual was born into a family of three children, had a break in the relevant industry between 2006 and 2010, and has a child born in the United States.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No Verified Claim establishes the 2020-article conjunction: the same individual entered university between 2001 and 2007 to study Business Administration, released a debut single between 2010 and 2015, and was hired for a coordinator position in 2012 before being promoted to a manager.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P10_B_1",
+    "case_id": "P10",
+    "qid": "435",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "67f0781f1fe3dcdcde1f5f69d4fda330118ad0502004f667bdfb03efb7bbcc1c",
+    "view_sha256": "7fae3ddc7b366a0b41a2d7cf791258330729645d64e33006d9ede72171d5d59d",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim establishes that the musician was featured in Forbes Africa in May during the 2010s, nor identifies the relevant Forbes Africa issue or date.",
+          "status": "missing",
+          "claim_refs": []
+        },
+        {
+          "gap": "No Verified Claim establishes the number of albums the musician had at the time of the Forbes Africa feature.",
+          "status": "missing",
+          "claim_refs": [
+            2
+          ]
+        },
+        {
+          "gap": "The full identity match is not established: Claims support that Oliver Mtukudzi died at 66 and had more than 60 albums, but do not establish the 67-album total, first album in the 1970s, early-2000s president-retirement song, 2010s interview quote, or human rights activism as belonging to him.",
+          "status": "partial",
+          "claim_refs": [
+            1,
+            2
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 790,
+      "output": 1737,
+      "hit": 512,
+      "miss": 278,
+      "reasoning": 1530
+    },
+    "error": null,
+    "elapsed_seconds": 8.102162592113018,
+    "review": {
+      "review_id": "bf696b7354e4",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim establishes that the musician was featured in Forbes Africa in May during the 2010s, nor identifies the relevant Forbes Africa issue or date.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No Verified Claim establishes the number of albums the musician had at the time of the Forbes Africa feature.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": false,
+          "status_reason": "Known>60careerquantitypartiallyestablishescountbutnotpublication/datebinding.",
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "The full identity match is not established: Claims support that Oliver Mtukudzi died at 66 and had more than 60 albums, but do not establish the 67-album total, first album in the 1970s, early-2000s president-retirement song, 2010s interview quote, or human rights activism as belonging to him.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Maypublication andattributedcount absent; thirditemwholebiographicalcluelist.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes that the musician was featured in Forbes Africa in May during the 2010s, nor identifies the relevant Forbes Africa issue or date.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes the number of albums the musician had at the time of the Forbes Africa feature.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": false,
+        "status_reason": "Known>60careerquantitypartiallyestablishescountbutnotpublication/datebinding.",
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The full identity match is not established: Claims support that Oliver Mtukudzi died at 66 and had more than 60 albums, but do not establish the 67-album total, first album in the 1970s, early-2000s president-retirement song, 2010s interview quote, or human rights activism as belonging to him.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes that the musician was featured in Forbes Africa in May during the 2010s, nor identifies the relevant Forbes Africa issue or date.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes the number of albums the musician had at the time of the Forbes Africa feature.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": false,
+        "status_reason": "Known>60careerquantitypartiallyestablishescountbutnotpublication/datebinding.",
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The full identity match is not established: Claims support that Oliver Mtukudzi died at 66 and had more than 60 albums, but do not establish the 67-album total, first album in the 1970s, early-2000s president-retirement song, 2010s interview quote, or human rights activism as belonging to him.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P06_B_1",
+    "case_id": "P06",
+    "qid": "311",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "8bbd6cb034870da2b3375ba2b1fd026b6aa0e5f6cb607250a3bdcf4421a9804a",
+    "view_sha256": "f47b60a65dc48e8df5d0cf70fe0b43aa6f8d2c8df358ff188fb8d32faab9ac4c",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No verified Claim establishes that any television program satisfies the composite criteria: one director and two writers, an early-1990s January-to-December run, 50–60 episodes under five minutes, a network with three characters including a number, creation in the specified world-cup country, an educational purpose, and characters including twins, a poet, a complainer, and a living transport.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10
+          ]
+        },
+        {
+          "gap": "No verified Claim provides the Argentinian release name for the target program or for any candidate program.",
+          "status": "missing",
+          "claim_refs": [
+            5,
+            6
+          ]
+        },
+        {
+          "gap": "No verified Claim establishes that any candidate has the required character set of twins, a poet, a complainer, and a living means of transport.",
+          "status": "missing",
+          "claim_refs": [
+            5,
+            6
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 1138,
+      "output": 9687,
+      "hit": 896,
+      "miss": 242,
+      "reasoning": 9453
+    },
+    "error": null,
+    "elapsed_seconds": 50.51150338537991,
+    "review": {
+      "review_id": "7943c38d6589",
+      "units": [
+        {
+          "index": 1,
+          "text": "No verified Claim establishes that any television program satisfies the composite criteria: one director and two writers, an early-1990s January-to-December run, 50–60 episodes under five minutes, a network with three characters including a number, creation in the specified world-cup country, an educational purpose, and characters including twins, a poet, a complainer, and a living transport.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No verified Claim provides the Argentinian release name for the target program or for any candidate program.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "No verified Claim establishes that any candidate has the required character set of twins, a poet, a complainer, and a living means of transport.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Firstitemwholeprogrammedecomposition; Argentinealias anddistinctivecharacterconjunction remainmaterial.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No verified Claim establishes that any television program satisfies the composite criteria: one director and two writers, an early-1990s January-to-December run, 50–60 episodes under five minutes, a network with three characters including a number, creation in the specified world-cup country, an educational purpose, and characters including twins, a poet, a complainer, and a living transport.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No verified Claim provides the Argentinian release name for the target program or for any candidate program.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No verified Claim establishes that any candidate has the required character set of twins, a poet, a complainer, and a living means of transport.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No verified Claim establishes that any television program satisfies the composite criteria: one director and two writers, an early-1990s January-to-December run, 50–60 episodes under five minutes, a network with three characters including a number, creation in the specified world-cup country, an educational purpose, and characters including twins, a poet, a complainer, and a living transport.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No verified Claim provides the Argentinian release name for the target program or for any candidate program.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No verified Claim establishes that any candidate has the required character set of twins, a poet, a complainer, and a living means of transport.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P05_B_2",
+    "case_id": "P05",
+    "qid": "311",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "96c5f3131364b3e9c2fff433d99922ba10ec4dec809c2558dcb2e588aab0c352",
+    "view_sha256": "4e612336fd8ed00de1a37099a1f9e8defd2fdc66d16fe1b8ce4d040ac2d94826",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Claim establishes a program that aired and ended in the early 1990s, ran from January to December, and had 50 to 60 episodes created in one year; the dated Hijitus Claims give incompatible ranges of 1967–1996 and 1967–1974 and do not establish the required early-1990s January-to-December run or episode count.",
+          "status": "conflict",
+          "claim_refs": [
+            2,
+            3
+          ]
+        },
+        {
+          "gap": "No Claim establishes a program with exactly one director and two writers; the only writer-credit evidence states three writers for Hijitus, so the required two-writer relation is not established.",
+          "status": "missing",
+          "claim_refs": [
+            1
+          ]
+        },
+        {
+          "gap": "No Claim establishes the required character set of twins, a poet, a complainer, and a living means of transport, nor the educational purpose, nor a network name with three characters including a number, nor the country world-cup criterion, nor the requested Argentinian release name.",
+          "status": "missing",
+          "claim_refs": []
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 954,
+      "output": 2057,
+      "hit": 768,
+      "miss": 186,
+      "reasoning": 1803
+    },
+    "error": null,
+    "elapsed_seconds": 10.607489371672273,
+    "review": {
+      "review_id": "43199dd0048a",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Claim establishes a program that aired and ended in the early 1990s, ran from January to December, and had 50 to 60 episodes created in one year; the dated Hijitus Claims give incompatible ranges of 1967–1996 and 1967–1974 and do not establish the required early-1990s January-to-December run or episode count.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": false,
+          "status_reason": "ActualHijitusdateconflictbelongsalreadyexcludedcandidate; targetbroadcastrelationmissing.",
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No Claim establishes a program with exactly one director and two writers; the only writer-credit evidence states three writers for Hijitus, so the required two-writer relation is not established.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "No Claim establishes the required character set of twins, a poet, a complainer, and a living means of transport, nor the educational purpose, nor a network name with three characters including a number, nor the country world-cup criterion, nor the requested Argentinian release name.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Qualified1992run/count andtwo-writerrelationmissing; lastitemwholecontent/network/country/titlebundle.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Claim establishes a program that aired and ended in the early 1990s, ran from January to December, and had 50 to 60 episodes created in one year; the dated Hijitus Claims give incompatible ranges of 1967–1996 and 1967–1974 and do not establish the required early-1990s January-to-December run or episode count.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": false,
+        "status_reason": "ActualHijitusdateconflictbelongsalreadyexcludedcandidate; targetbroadcastrelationmissing.",
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Claim establishes a program with exactly one director and two writers; the only writer-credit evidence states three writers for Hijitus, so the required two-writer relation is not established.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No Claim establishes the required character set of twins, a poet, a complainer, and a living means of transport, nor the educational purpose, nor a network name with three characters including a number, nor the country world-cup criterion, nor the requested Argentinian release name.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Claim establishes a program that aired and ended in the early 1990s, ran from January to December, and had 50 to 60 episodes created in one year; the dated Hijitus Claims give incompatible ranges of 1967–1996 and 1967–1974 and do not establish the required early-1990s January-to-December run or episode count.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": false,
+        "status_reason": "ActualHijitusdateconflictbelongsalreadyexcludedcandidate; targetbroadcastrelationmissing.",
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Claim establishes a program with exactly one director and two writers; the only writer-credit evidence states three writers for Hijitus, so the required two-writer relation is not established.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No Claim establishes the required character set of twins, a poet, a complainer, and a living means of transport, nor the educational purpose, nor a network name with three characters including a number, nor the country world-cup criterion, nor the requested Argentinian release name.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P15_B_2",
+    "case_id": "P15",
+    "qid": "546",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "db5a71a2564234fef6bef6c01ee7c3f1fbc9c6d82a1df3637a4c7d30c7e18a25",
+    "view_sha256": "f6e89144cf88d23d1310a16cea99b6b6ca5450b005ed4b89721a82e5385af436",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim establishes that the player has more than 300 centuries, has scored the highest break more than 3 times, or turned professional between 1995 and 2006 as of 30 January 2025.",
+          "status": "missing",
+          "claim_refs": []
+        },
+        {
+          "gap": "No Verified Claim establishes the required 2023 decider win against an opponent with fewer than 250 centuries, the following wins by 4-3 and 4-0, or the subsequent loss to an opponent with more than 400 centuries.",
+          "status": "missing",
+          "claim_refs": [
+            1
+          ]
+        },
+        {
+          "gap": "Claim 1 only shows an isolated 4-3 win by Ding Junhui against Ma Hailong at the English Open; it does not establish that this match was part of the specified sequence, was a 2023 decider, or involved an opponent with fewer than 250 centuries.",
+          "status": "partial",
+          "claim_refs": [
+            1
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 763,
+      "output": 2877,
+      "hit": 512,
+      "miss": 251,
+      "reasoning": 2661
+    },
+    "error": null,
+    "elapsed_seconds": 12.976117253303528,
+    "review": {
+      "review_id": "965d172d069f",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim establishes that the player has more than 300 centuries, has scored the highest break more than 3 times, or turned professional between 1995 and 2006 as of 30 January 2025.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No Verified Claim establishes the required 2023 decider win against an opponent with fewer than 250 centuries, the following wins by 4-3 and 4-0, or the subsequent loss to an opponent with more than 400 centuries.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": false,
+          "status_reason": "Knownopeningmatchpartlyestablishessequence.",
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "Claim 1 only shows an isolated 4-3 win by Ding Junhui against Ma Hailong at the English Open; it does not establish that this match was part of the specified sequence, was a 2023 decider, or involved an opponent with fewer than 250 centuries.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "already_supported_as_gap"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Careerprofile andfullsequencegapsvalid; thirditemincorrectlydeclares2023date/deciderunestablisheddespite2023EnglishOpen4–3Claim.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes that the player has more than 300 centuries, has scored the highest break more than 3 times, or turned professional between 1995 and 2006 as of 30 January 2025.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes the required 2023 decider win against an opponent with fewer than 250 centuries, the following wins by 4-3 and 4-0, or the subsequent loss to an opponent with more than 400 centuries.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": false,
+        "status_reason": "Knownopeningmatchpartlyestablishessequence.",
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "Claim 1 only shows an isolated 4-3 win by Ding Junhui against Ma Hailong at the English Open; it does not establish that this match was part of the specified sequence, was a 2023 decider, or involved an opponent with fewer than 250 centuries.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "already_supported_as_gap"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes that the player has more than 300 centuries, has scored the highest break more than 3 times, or turned professional between 1995 and 2006 as of 30 January 2025.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No Verified Claim establishes the required 2023 decider win against an opponent with fewer than 250 centuries, the following wins by 4-3 and 4-0, or the subsequent loss to an opponent with more than 400 centuries.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": false,
+        "status_reason": "Knownopeningmatchpartlyestablishessequence.",
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "Claim 1 only shows an isolated 4-3 win by Ding Junhui against Ma Hailong at the English Open; it does not establish that this match was part of the specified sequence, was a 2023 decider, or involved an opponent with fewer than 250 centuries.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "already_supported_as_gap"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P06_B_2",
+    "case_id": "P06",
+    "qid": "311",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "8bbd6cb034870da2b3375ba2b1fd026b6aa0e5f6cb607250a3bdcf4421a9804a",
+    "view_sha256": "f47b60a65dc48e8df5d0cf70fe0b43aa6f8d2c8df358ff188fb8d32faab9ac4c",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim identifies a television program satisfying the question's combined criteria, nor states its Argentinian release name.",
+          "status": "missing",
+          "claim_refs": []
+        },
+        {
+          "gap": "The required production facts—one director and exactly two writers, early-1990s airing/ending, a January-to-December run, 50–60 episodes in one year, and episodes under 5 minutes—are not jointly established for any identified program.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "gap": "The required character set (twins, poet, complainer, and a living means of transport), the three-character network name containing a number, the country that hosted three world cups but only two for soccer, and the educational purpose are not established for any candidate; Claims 5–6 only establish a professor and Quarxs.",
+          "status": "missing",
+          "claim_refs": [
+            5,
+            6
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 1138,
+      "output": 6514,
+      "hit": 896,
+      "miss": 242,
+      "reasoning": 6281
+    },
+    "error": null,
+    "elapsed_seconds": 34.00954070314765,
+    "review": {
+      "review_id": "df7b585c879f",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim identifies a television program satisfying the question's combined criteria, nor states its Argentinian release name.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "The required production facts—one director and exactly two writers, early-1990s airing/ending, a January-to-December run, 50–60 episodes in one year, and episodes under 5 minutes—are not jointly established for any identified program.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "The required character set (twins, poet, complainer, and a living means of transport), the three-character network name containing a number, the country that hosted three world cups but only two for soccer, and the educational purpose are not established for any candidate; Claims 5–6 only establish a professor and Quarxs.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Qualifiedprogramme/titlemissing; production/staff andcharacter/network/country bundlescombineindependentrelations.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim identifies a television program satisfying the question's combined criteria, nor states its Argentinian release name.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "The required production facts—one director and exactly two writers, early-1990s airing/ending, a January-to-December run, 50–60 episodes in one year, and episodes under 5 minutes—are not jointly established for any identified program.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The required character set (twins, poet, complainer, and a living means of transport), the three-character network name containing a number, the country that hosted three world cups but only two for soccer, and the educational purpose are not established for any candidate; Claims 5–6 only establish a professor and Quarxs.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim identifies a television program satisfying the question's combined criteria, nor states its Argentinian release name.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "The required production facts—one director and exactly two writers, early-1990s airing/ending, a January-to-December run, 50–60 episodes in one year, and episodes under 5 minutes—are not jointly established for any identified program.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The required character set (twins, poet, complainer, and a living means of transport), the three-character network name containing a number, the country that hosted three world cups but only two for soccer, and the educational purpose are not established for any candidate; Claims 5–6 only establish a professor and Quarxs.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P12_B_1",
+    "case_id": "P12",
+    "qid": "435",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "294e0deda76f277542fe93f0bc20dbb40dff908b3a7e5219ad8a7f46feaa5f31",
+    "view_sha256": "824cebefdc8783f270f6dc467aba504da1832ef7e7b2bad49d23f66f04fa4e07",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": true,
+      "blocking_gaps": [],
+      "closure_claim_refs": [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "usage": {
+      "input": 1291,
+      "output": 1900,
+      "hit": 1152,
+      "miss": 139,
+      "reasoning": 1864
+    },
+    "error": null,
+    "elapsed_seconds": 8.347399087622762,
+    "review": {
+      "review_id": "95abf7ca9345",
+      "units": [],
+      "closure_witness_valid": false,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Correctclosurebutonlypublication/countClaimsincitedwitness; mainidentitybasisomitted.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": true,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [],
+    "blockers": [],
+    "valid_presence": false,
+    "adequate": true,
+    "strict_adequate": false
+  },
+  {
+    "id": "P04_B_1",
+    "case_id": "P04",
+    "qid": "186",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "219bd24cca095a090b0d12694c7e02330844a294a92609310791060f413efc14",
+    "view_sha256": "31089ac704ed1e3dce4d2a02990cc5a7075f4d0d798137d1af3420a4b57398f7",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": true,
+      "blocking_gaps": [],
+      "closure_claim_refs": [
+        1,
+        2,
+        3,
+        4,
+        10
+      ]
+    },
+    "usage": {
+      "input": 1057,
+      "output": 7958,
+      "hit": 896,
+      "miss": 161,
+      "reasoning": 7922
+    },
+    "error": null,
+    "elapsed_seconds": 34.51415825821459,
+    "review": {
+      "review_id": "f75cb833a633",
+      "units": [],
+      "closure_witness_valid": true,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Correctclosureandmaincompleteidentitychainrefs.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": true,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [],
+    "blockers": [],
+    "valid_presence": false,
+    "adequate": true,
+    "strict_adequate": true
+  },
+  {
+    "id": "P10_B_2",
+    "case_id": "P10",
+    "qid": "435",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "67f0781f1fe3dcdcde1f5f69d4fda330118ad0502004f667bdfb03efb7bbcc1c",
+    "view_sha256": "7fae3ddc7b366a0b41a2d7cf791258330729645d64e33006d9ede72171d5d59d",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No Verified Claim establishes that the described musician (or Oliver Mtukudzi) was featured in Forbes Africa in May during the 2010s, nor the date/issue of any such feature.",
+          "status": "missing",
+          "claim_refs": []
+        },
+        {
+          "gap": "The number of albums the musician had released by the time of the Forbes Africa May 2010s feature is not established; Claim 2 only states more than 60 albums across the entire 45-year career.",
+          "status": "partial",
+          "claim_refs": [
+            2
+          ]
+        },
+        {
+          "gap": "The exact 67-album career achievement and the other distinctive question clues (first album in the 1970s, early-2000s song urging a sitting president to retire, 2010s 'Why do we sing...' interview, human rights activism) are not established, so the identity link is not fully bound.",
+          "status": "partial",
+          "claim_refs": [
+            1,
+            2
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 790,
+      "output": 2980,
+      "hit": 640,
+      "miss": 150,
+      "reasoning": 2748
+    },
+    "error": null,
+    "elapsed_seconds": 14.345777733251452,
+    "review": {
+      "review_id": "21a30161ab8a",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim establishes that the described musician (or Oliver Mtukudzi) was featured in Forbes Africa in May during the 2010s, nor the date/issue of any such feature.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "The number of albums the musician had released by the time of the Forbes Africa May 2010s feature is not established; Claim 2 only states more than 60 albums across the entire 45-year career.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "The exact 67-album career achievement and the other distinctive question clues (first album in the 1970s, early-2000s song urging a sitting president to retire, 2010s 'Why do we sing...' interview, human rights activism) are not established, so the identity link is not fully bound.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Maypublication andscopedcountvalid; fullbiographicalcluelisttoo broad.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes that the described musician (or Oliver Mtukudzi) was featured in Forbes Africa in May during the 2010s, nor the date/issue of any such feature.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "The number of albums the musician had released by the time of the Forbes Africa May 2010s feature is not established; Claim 2 only states more than 60 albums across the entire 45-year career.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The exact 67-album career achievement and the other distinctive question clues (first album in the 1970s, early-2000s song urging a sitting president to retire, 2010s 'Why do we sing...' interview, human rights activism) are not established, so the identity link is not fully bound.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No Verified Claim establishes that the described musician (or Oliver Mtukudzi) was featured in Forbes Africa in May during the 2010s, nor the date/issue of any such feature.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "The number of albums the musician had released by the time of the Forbes Africa May 2010s feature is not established; Claim 2 only states more than 60 albums across the entire 45-year career.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The exact 67-album career achievement and the other distinctive question clues (first album in the 1970s, early-2000s song urging a sitting president to retire, 2010s 'Why do we sing...' interview, human rights activism) are not established, so the identity link is not fully bound.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  },
+  {
+    "id": "P01_B_1",
+    "case_id": "P01",
+    "qid": "177",
+    "arm": "B",
+    "replicate": 1,
+    "request_sha256": "7be37a93d2fcb96f4192ed1314475efcd2755ba147448e6fd9c83fe5e2ef1101",
+    "view_sha256": "e80e4fc7a3dfe953d501d5500f96f706484bf7b59cda18cf546707fb543edb5c",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No verified claim establishes that Rangers is the team referred to in the 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season; Claim 1 only establishes 13 signings ahead of the 2022/23 NPFL season.",
+          "status": "partial",
+          "claim_refs": [
+            1
+          ]
+        },
+        {
+          "gap": "No verified claim establishes the required league-season context: a season beginning and ending between 2011 and 2016 with three point-sharing instances, nor that Rangers finished 6th–12th with a goal difference of 6–12 and shared points with another team.",
+          "status": "missing",
+          "claim_refs": []
+        },
+        {
+          "gap": "No verified claim states the team's founding year and founding country, which is the requested final answer.",
+          "status": "missing",
+          "claim_refs": [
+            1,
+            2
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 814,
+      "output": 1278,
+      "hit": 640,
+      "miss": 174,
+      "reasoning": 1067
+    },
+    "error": null,
+    "elapsed_seconds": 6.15114238858223,
+    "review": {
+      "review_id": "1852f64355b6",
+      "units": [
+        {
+          "index": 1,
+          "text": "No verified claim establishes that Rangers is the team referred to in the 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season; Claim 1 only establishes 13 signings ahead of the 2022/23 NPFL season.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No verified claim establishes the required league-season context: a season beginning and ending between 2011 and 2016 with three point-sharing instances, nor that Rangers finished 6th–12th with a goal difference of 6–12 and shared points with another team.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "No verified claim states the team's founding year and founding country, which is the requested final answer.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Separates2023trophy/signingbinding,seasontableandfoundingrelation; eachmaterialwithoutpromotingRangers.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No verified claim establishes that Rangers is the team referred to in the 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season; Claim 1 only establishes 13 signings ahead of the 2022/23 NPFL season.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No verified claim establishes the required league-season context: a season beginning and ending between 2011 and 2016 with three point-sharing instances, nor that Rangers finished 6th–12th with a goal difference of 6–12 and shared points with another team.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No verified claim states the team's founding year and founding country, which is the requested final answer.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No verified claim establishes that Rangers is the team referred to in the 2023 article as having won fifteen trophies and signed 13 players ahead of a certain season; Claim 1 only establishes 13 signings ahead of the 2022/23 NPFL season.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No verified claim establishes the required league-season context: a season beginning and ending between 2011 and 2016 with three point-sharing instances, nor that Rangers finished 6th–12th with a goal difference of 6–12 and shared points with another team.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "No verified claim states the team's founding year and founding country, which is the requested final answer.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": true,
+    "strict_adequate": true
+  },
+  {
+    "id": "P02_B_2",
+    "case_id": "P02",
+    "qid": "177",
+    "arm": "B",
+    "replicate": 2,
+    "request_sha256": "75aa698dbd4f3fb58beb55b738fca1b7a3495cee11689a24fde5b252219ddb68",
+    "view_sha256": "8b4f0d1c4104f679dfa9ecb53fe6c10ce320ee591e4a4200aed8bd0fcc6ff029",
+    "set": "fresh_primary",
+    "attempted": true,
+    "output": {
+      "resolved": false,
+      "blocking_gaps": [
+        {
+          "gap": "No verified claim establishes the qualifying league season: a season beginning and ending between 2011 and 2016 with three end-of-season point ties, nor that any team finished 6th–12th, shared points, and had a goal difference of 6–12.",
+          "status": "missing",
+          "claim_refs": []
+        },
+        {
+          "gap": "No verified claim links a capital-city team that won a league between 1973 and 1983 to a 2023 article stating it had won fifteen trophies. Claim 1 only partially matches by saying Rangers is based in Enugu and signed 13 players ahead of 2022/23, without establishing the fifteen-trophy or 2023-article conditions.",
+          "status": "partial",
+          "claim_refs": [
+            1
+          ]
+        },
+        {
+          "gap": "The requested founding year and country are not established for any team satisfying the question conditions; no verified claim provides Rangers' founding year/country or equivalent founding details for another matching team.",
+          "status": "missing",
+          "claim_refs": [
+            1
+          ]
+        }
+      ],
+      "closure_claim_refs": []
+    },
+    "usage": {
+      "input": 2228,
+      "output": 3903,
+      "hit": 2048,
+      "miss": 180,
+      "reasoning": 3657
+    },
+    "error": null,
+    "elapsed_seconds": 18.547478150576353,
+    "review": {
+      "review_id": "815aa34c5025",
+      "units": [
+        {
+          "index": 1,
+          "text": "No verified claim establishes the qualifying league season: a season beginning and ending between 2011 and 2016 with three end-of-season point ties, nor that any team finished 6th–12th, shared points, and had a goal difference of 6–12.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 2,
+          "text": "No verified claim links a capital-city team that won a league between 1973 and 1983 to a 2023 article stating it had won fifteen trophies. Claim 1 only partially matches by saying Rangers is based in Enugu and signed 13 players ahead of 2022/23, without establishing the fifteen-trophy or 2023-article conditions.",
+          "is_blocker": true,
+          "content_valid": false,
+          "errors": [
+            "over_broad"
+          ],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        },
+        {
+          "index": 3,
+          "text": "The requested founding year and country are not established for any team satisfying the question conditions; no verified claim provides Rangers' founding year/country or equivalent founding details for another matching team.",
+          "is_blocker": true,
+          "content_valid": true,
+          "errors": [],
+          "status_valid": true,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "false_evidence_promotion": false,
+      "omitted_material_blocker_families": null,
+      "missing_material_conflict": false,
+      "reason": "Tableandfinalfoundingunbound; seconditembundlescapital/historicalwin/2023articleidentitychains.",
+      "reviewer": "single Codex semantic review; frozen Q+Claims rubric; condition IDs masked, schemas visible"
+    },
+    "gold_resolved": false,
+    "correct_completion": true,
+    "false_closure": false,
+    "missed_closure": false,
+    "units": [
+      {
+        "index": 1,
+        "text": "No verified claim establishes the qualifying league season: a season beginning and ending between 2011 and 2016 with three end-of-season point ties, nor that any team finished 6th–12th, shared points, and had a goal difference of 6–12.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No verified claim links a capital-city team that won a league between 1973 and 1983 to a 2023 article stating it had won fifteen trophies. Claim 1 only partially matches by saying Rangers is based in Enugu and signed 13 players ahead of 2022/23, without establishing the fifteen-trophy or 2023-article conditions.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The requested founding year and country are not established for any team satisfying the question conditions; no verified claim provides Rangers' founding year/country or equivalent founding details for another matching team.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "blockers": [
+      {
+        "index": 1,
+        "text": "No verified claim establishes the qualifying league season: a season beginning and ending between 2011 and 2016 with three end-of-season point ties, nor that any team finished 6th–12th, shared points, and had a goal difference of 6–12.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 2,
+        "text": "No verified claim links a capital-city team that won a league between 1973 and 1983 to a 2023 article stating it had won fifteen trophies. Claim 1 only partially matches by saying Rangers is based in Enugu and signed 13 players ahead of 2022/23, without establishing the fifteen-trophy or 2023-article conditions.",
+        "is_blocker": true,
+        "content_valid": false,
+        "errors": [
+          "over_broad"
+        ],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      },
+      {
+        "index": 3,
+        "text": "The requested founding year and country are not established for any team satisfying the question conditions; no verified claim provides Rangers' founding year/country or equivalent founding details for another matching team.",
+        "is_blocker": true,
+        "content_valid": true,
+        "errors": [],
+        "status_valid": true,
+        "status_reason": null,
+        "refs_valid": true,
+        "refs_reason": null
+      }
+    ],
+    "valid_presence": true,
+    "adequate": false,
+    "strict_adequate": false
+  }
+]
