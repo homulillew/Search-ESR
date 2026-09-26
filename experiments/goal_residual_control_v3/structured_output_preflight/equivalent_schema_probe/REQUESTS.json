@@ -1,0 +1,950 @@
+[
+  {
+    "id": "compiled_actor_responses",
+    "kind": "capability",
+    "surface": "responses",
+    "path": "/responses",
+    "request": {
+      "model": "deepseek-flash",
+      "input": [
+        {
+          "role": "system",
+          "content": "Complete the user request."
+        },
+        {
+          "role": "user",
+          "content": "Return decision act, gap inspect, actions [{\"tool\":\"find\",\"doc_ref\":\"D1\",\"query\":\"year\",\"k\":5}]."
+        }
+      ],
+      "stream": false,
+      "text": {
+        "format": {
+          "type": "json_schema",
+          "name": "capability_compiled_actor_responses",
+          "schema": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "decision": {
+                    "type": "string",
+                    "enum": [
+                      "stop"
+                    ]
+                  },
+                  "gap": {
+                    "type": "string",
+                    "enum": [
+                      ""
+                    ]
+                  },
+                  "actions": {
+                    "type": "array",
+                    "maxItems": 0,
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "required": [
+                  "decision",
+                  "gap",
+                  "actions"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "decision": {
+                    "type": "string",
+                    "enum": [
+                      "act"
+                    ]
+                  },
+                  "gap": {
+                    "type": "string",
+                    "pattern": "\\S"
+                  },
+                  "actions": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 2,
+                    "items": {
+                      "anyOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "tool": {
+                              "type": "string",
+                              "enum": [
+                                "search"
+                              ]
+                            },
+                            "query": {
+                              "type": "string",
+                              "description": "A standalone global search query, usually in English"
+                            },
+                            "k": {
+                              "type": "integer",
+                              "minimum": 1,
+                              "maximum": 10,
+                              "description": "Number of documents, default 5"
+                            }
+                          },
+                          "required": [
+                            "tool",
+                            "query",
+                            "k"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "tool": {
+                              "type": "string",
+                              "enum": [
+                                "find"
+                              ]
+                            },
+                            "doc_ref": {
+                              "type": "string",
+                              "pattern": "^D[1-9][0-9]*$",
+                              "description": "Stable document handle returned by search, for example D3"
+                            },
+                            "query": {
+                              "type": "string",
+                              "description": "Local query for the fact or passage to locate"
+                            }
+                          },
+                          "required": [
+                            "tool",
+                            "doc_ref",
+                            "query"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "tool": {
+                              "type": "string",
+                              "enum": [
+                                "open"
+                              ]
+                            },
+                            "window_ref": {
+                              "type": "string",
+                              "pattern": "^W[1-9][0-9]*$",
+                              "description": "Stable observed-window handle returned by search, find, or open"
+                            },
+                            "direction": {
+                              "type": "string",
+                              "enum": [
+                                "before",
+                                "after",
+                                "around"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "tool",
+                            "window_ref",
+                            "direction"
+                          ],
+                          "additionalProperties": false
+                        }
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "decision",
+                  "gap",
+                  "actions"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          },
+          "strict": true
+        }
+      }
+    },
+    "request_sha256": "d7444cca3c2eacd8e002d267d6a7d79d01a9a5ae063a20b1b050deaae10f58a2",
+    "validation_schema": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "decision": {
+              "type": "string",
+              "enum": [
+                "stop"
+              ]
+            },
+            "gap": {
+              "type": "string",
+              "enum": [
+                ""
+              ]
+            },
+            "actions": {
+              "type": "array",
+              "maxItems": 0,
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "decision",
+            "gap",
+            "actions"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "decision": {
+              "type": "string",
+              "enum": [
+                "act"
+              ]
+            },
+            "gap": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "actions": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 2,
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "tool": {
+                        "type": "string",
+                        "enum": [
+                          "search"
+                        ]
+                      },
+                      "query": {
+                        "type": "string",
+                        "description": "A standalone global search query, usually in English"
+                      },
+                      "k": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 10,
+                        "description": "Number of documents, default 5"
+                      }
+                    },
+                    "required": [
+                      "tool",
+                      "query",
+                      "k"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "tool": {
+                        "type": "string",
+                        "enum": [
+                          "find"
+                        ]
+                      },
+                      "doc_ref": {
+                        "type": "string",
+                        "pattern": "^D[1-9][0-9]*$",
+                        "description": "Stable document handle returned by search, for example D3"
+                      },
+                      "query": {
+                        "type": "string",
+                        "description": "Local query for the fact or passage to locate"
+                      }
+                    },
+                    "required": [
+                      "tool",
+                      "doc_ref",
+                      "query"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "tool": {
+                        "type": "string",
+                        "enum": [
+                          "open"
+                        ]
+                      },
+                      "window_ref": {
+                        "type": "string",
+                        "pattern": "^W[1-9][0-9]*$",
+                        "description": "Stable observed-window handle returned by search, find, or open"
+                      },
+                      "direction": {
+                        "type": "string",
+                        "enum": [
+                          "before",
+                          "after",
+                          "around"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "tool",
+                      "window_ref",
+                      "direction"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          },
+          "required": [
+            "decision",
+            "gap",
+            "actions"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "expected": "schema-valid final object despite conflicting prose; HTTP errors and violations retained"
+  },
+  {
+    "id": "compiled_updater_responses",
+    "kind": "capability",
+    "surface": "responses",
+    "path": "/responses",
+    "request": {
+      "model": "deepseek-flash",
+      "input": [
+        {
+          "role": "system",
+          "content": "Complete the user request."
+        },
+        {
+          "role": "user",
+          "content": "Return claims_to_add [\"one\",\"two\",\"three\"] and hypothesis_update {\"action\":\"invent\",\"statement\":\"\"}."
+        }
+      ],
+      "stream": false,
+      "text": {
+        "format": {
+          "type": "json_schema",
+          "name": "capability_compiled_updater_responses",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "claims_to_add": {
+                "type": "array",
+                "maxItems": 2,
+                "items": {
+                  "type": "string",
+                  "pattern": "\\S"
+                }
+              },
+              "hypothesis_update": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "enum": [
+                      "keep",
+                      "set",
+                      "clear"
+                    ],
+                    "type": "string"
+                  },
+                  "statement": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "action",
+                  "statement"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "claims_to_add",
+              "hypothesis_update"
+            ],
+            "additionalProperties": false
+          },
+          "strict": true
+        }
+      }
+    },
+    "request_sha256": "2d79b71fe2f34eb76d6da9d1825557c71c0bbf645ab06f08d41f3f7df1f6f800",
+    "validation_schema": {
+      "type": "object",
+      "properties": {
+        "claims_to_add": {
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        },
+        "hypothesis_update": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "enum": [
+                "keep",
+                "set",
+                "clear"
+              ],
+              "type": "string"
+            },
+            "statement": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "action",
+            "statement"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "claims_to_add",
+        "hypothesis_update"
+      ],
+      "additionalProperties": false
+    },
+    "expected": "schema-valid final object despite conflicting prose; HTTP errors and violations retained"
+  },
+  {
+    "id": "goal_responses",
+    "kind": "capability",
+    "surface": "responses",
+    "path": "/responses",
+    "request": {
+      "model": "deepseek-flash",
+      "input": [
+        {
+          "role": "system",
+          "content": "Complete the user request."
+        },
+        {
+          "role": "user",
+          "content": "Return {\"resolved\":\"yes\",\"residual\":\"\",\"extra\":1}."
+        }
+      ],
+      "stream": false,
+      "text": {
+        "format": {
+          "type": "json_schema",
+          "name": "capability_goal_responses",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "resolved": {
+                "type": "boolean"
+              },
+              "residual": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "resolved",
+              "residual"
+            ],
+            "additionalProperties": false
+          },
+          "strict": true
+        }
+      }
+    },
+    "request_sha256": "9ba8c79b551e7820693fad9b8a90339ab7cb4af3933f8e340171d9aa2eee11c1",
+    "validation_schema": {
+      "type": "object",
+      "properties": {
+        "resolved": {
+          "type": "boolean"
+        },
+        "residual": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "resolved",
+        "residual"
+      ],
+      "additionalProperties": false
+    },
+    "expected": "schema-valid final object despite conflicting prose; HTTP errors and violations retained"
+  },
+  {
+    "id": "impossible_array_responses",
+    "kind": "capability",
+    "surface": "responses",
+    "path": "/responses",
+    "request": {
+      "model": "deepseek-flash",
+      "input": [
+        {
+          "role": "system",
+          "content": "Complete the user request."
+        },
+        {
+          "role": "user",
+          "content": "Return exactly {\"items\":[1,2,3]}."
+        }
+      ],
+      "stream": false,
+      "text": {
+        "format": {
+          "type": "json_schema",
+          "name": "capability_impossible_array_responses",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "items": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 2,
+                "items": {
+                  "type": "integer"
+                }
+              }
+            },
+            "required": [
+              "items"
+            ],
+            "additionalProperties": false
+          },
+          "strict": true
+        }
+      }
+    },
+    "request_sha256": "945029d834f0098f62f2019119d59d7477617d2be831f91333bca233a4253ca6",
+    "validation_schema": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 2,
+          "items": {
+            "type": "integer"
+          }
+        }
+      },
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "expected": "No schema-valid object exists: request rejected or failed generation; a completed object demonstrates bounds are not fully enforced."
+  },
+  {
+    "id": "strict_array_auto",
+    "kind": "capability",
+    "surface": "strict_function",
+    "path": "/beta/chat/completions",
+    "request": {
+      "model": "deepseek-flash",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Complete the user request."
+        },
+        {
+          "role": "user",
+          "content": "Call submit_result with all four separate items [1,2,3,4]."
+        }
+      ],
+      "stream": false,
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "submit_result",
+            "description": "Submit the final result.",
+            "strict": true,
+            "parameters": {
+              "type": "object",
+              "properties": {
+                "items": {
+                  "type": "array",
+                  "minItems": 1,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "required": [
+                "items"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      ],
+      "tool_choice": "auto"
+    },
+    "request_sha256": "39f5077c5b4de62a972f09e44f6d72d6204575e7c1ec9fc17c3cee90398f1af4",
+    "validation_schema": {
+      "type": "object",
+      "properties": {
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 2,
+          "items": {
+            "type": "integer"
+          }
+        }
+      },
+      "required": [
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "expected": "schema-valid final object despite conflicting prose; HTTP errors and violations retained"
+  },
+  {
+    "id": "strict_compiled_actor_auto",
+    "kind": "capability",
+    "surface": "strict_function",
+    "path": "/beta/chat/completions",
+    "request": {
+      "model": "deepseek-flash",
+      "messages": [
+        {
+          "role": "system",
+          "content": "Complete the user request."
+        },
+        {
+          "role": "user",
+          "content": "Call submit_result with decision act, gap inspect, and one find action with doc_ref D1 and query year."
+        }
+      ],
+      "stream": false,
+      "tools": [
+        {
+          "type": "function",
+          "function": {
+            "name": "submit_result",
+            "description": "Submit the final result.",
+            "strict": true,
+            "parameters": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "decision": {
+                      "type": "string",
+                      "enum": [
+                        "stop"
+                      ]
+                    },
+                    "gap": {
+                      "type": "string",
+                      "enum": [
+                        ""
+                      ]
+                    },
+                    "actions": {
+                      "type": "array",
+                      "maxItems": 0,
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "required": [
+                    "decision",
+                    "gap",
+                    "actions"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "decision": {
+                      "type": "string",
+                      "enum": [
+                        "act"
+                      ]
+                    },
+                    "gap": {
+                      "type": "string",
+                      "pattern": "\\S"
+                    },
+                    "actions": {
+                      "type": "array",
+                      "minItems": 1,
+                      "maxItems": 2,
+                      "items": {
+                        "anyOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "tool": {
+                                "type": "string",
+                                "enum": [
+                                  "search"
+                                ]
+                              },
+                              "query": {
+                                "type": "string",
+                                "description": "A standalone global search query, usually in English"
+                              },
+                              "k": {
+                                "type": "integer",
+                                "minimum": 1,
+                                "maximum": 10,
+                                "description": "Number of documents, default 5"
+                              }
+                            },
+                            "required": [
+                              "tool",
+                              "query",
+                              "k"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "tool": {
+                                "type": "string",
+                                "enum": [
+                                  "find"
+                                ]
+                              },
+                              "doc_ref": {
+                                "type": "string",
+                                "pattern": "^D[1-9][0-9]*$",
+                                "description": "Stable document handle returned by search, for example D3"
+                              },
+                              "query": {
+                                "type": "string",
+                                "description": "Local query for the fact or passage to locate"
+                              }
+                            },
+                            "required": [
+                              "tool",
+                              "doc_ref",
+                              "query"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "tool": {
+                                "type": "string",
+                                "enum": [
+                                  "open"
+                                ]
+                              },
+                              "window_ref": {
+                                "type": "string",
+                                "pattern": "^W[1-9][0-9]*$",
+                                "description": "Stable observed-window handle returned by search, find, or open"
+                              },
+                              "direction": {
+                                "type": "string",
+                                "enum": [
+                                  "before",
+                                  "after",
+                                  "around"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "tool",
+                              "window_ref",
+                              "direction"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "decision",
+                    "gap",
+                    "actions"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "tool_choice": "auto"
+    },
+    "request_sha256": "697beb791bc2ba72e9fcc9e178d29b81b06b06425f4d2a297b19ab03625c9e13",
+    "validation_schema": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "decision": {
+              "type": "string",
+              "enum": [
+                "stop"
+              ]
+            },
+            "gap": {
+              "type": "string",
+              "enum": [
+                ""
+              ]
+            },
+            "actions": {
+              "type": "array",
+              "maxItems": 0,
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "decision",
+            "gap",
+            "actions"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "decision": {
+              "type": "string",
+              "enum": [
+                "act"
+              ]
+            },
+            "gap": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "actions": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 2,
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "tool": {
+                        "type": "string",
+                        "enum": [
+                          "search"
+                        ]
+                      },
+                      "query": {
+                        "type": "string",
+                        "description": "A standalone global search query, usually in English"
+                      },
+                      "k": {
+                        "type": "integer",
+                        "minimum": 1,
+                        "maximum": 10,
+                        "description": "Number of documents, default 5"
+                      }
+                    },
+                    "required": [
+                      "tool",
+                      "query",
+                      "k"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "tool": {
+                        "type": "string",
+                        "enum": [
+                          "find"
+                        ]
+                      },
+                      "doc_ref": {
+                        "type": "string",
+                        "pattern": "^D[1-9][0-9]*$",
+                        "description": "Stable document handle returned by search, for example D3"
+                      },
+                      "query": {
+                        "type": "string",
+                        "description": "Local query for the fact or passage to locate"
+                      }
+                    },
+                    "required": [
+                      "tool",
+                      "doc_ref",
+                      "query"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "tool": {
+                        "type": "string",
+                        "enum": [
+                          "open"
+                        ]
+                      },
+                      "window_ref": {
+                        "type": "string",
+                        "pattern": "^W[1-9][0-9]*$",
+                        "description": "Stable observed-window handle returned by search, find, or open"
+                      },
+                      "direction": {
+                        "type": "string",
+                        "enum": [
+                          "before",
+                          "after",
+                          "around"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "tool",
+                      "window_ref",
+                      "direction"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            }
+          },
+          "required": [
+            "decision",
+            "gap",
+            "actions"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "expected": "schema-valid final object despite conflicting prose; HTTP errors and violations retained"
+  }
+]
