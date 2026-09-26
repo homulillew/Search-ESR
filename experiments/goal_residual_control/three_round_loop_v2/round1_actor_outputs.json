@@ -1,0 +1,1184 @@
+[
+  {
+    "case_id": "546:L0",
+    "qid": "546",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "b48d228b2ee43d117a561fd087a8562a4ffc40232b7ad38438aab45cccc1124a",
+    "output": {
+      "decision": "act",
+      "gap": "Whether Ding Junhui's full 2023 English Open run matches the described sequence: a decider win over Ma Hailong (<250 centuries), then wins of 4-3 and 4-0, then a loss to a player with over 400 centuries — or whether another player fits.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "2023 English Open results Ding Junhui"
+        },
+        {
+          "tool": "search",
+          "query": "2023 English Open snooker Ding Junhui last 64 last 32 round of 16 results 4-3 4-0",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 7055,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5519,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.21771793054571226
+    },
+    "usage": {
+      "completion_tokens": 3047,
+      "prompt_tokens": 7055,
+      "total_tokens": 10102,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2877,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5519
+    }
+  },
+  {
+    "case_id": "546:L1",
+    "qid": "546",
+    "arm": "L1",
+    "kind": "research_actor",
+    "request_sha256": "31a00e332b4018f68518cdf512e3fdc4e8e7e5f6ae9551c9f6898513bab77424",
+    "output": null,
+    "error": {
+      "type": "JSONDecodeError",
+      "status": null,
+      "message": "Expecting property name enclosed in double quotes: line 14 column 5 (char 675)"
+    },
+    "attempted": true,
+    "serialization_valid": false,
+    "cache_usage": {
+      "prompt_tokens": 6851,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5315,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.22420084659173845
+    },
+    "usage": {
+      "completion_tokens": 7683,
+      "prompt_tokens": 6851,
+      "total_tokens": 14534,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 7494,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5315
+    }
+  },
+  {
+    "case_id": "546:L2",
+    "qid": "546",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "eaf60d173201b3644752fcf93c5cede46b33eeebaa4c02dbb128efdae6502f2b",
+    "output": {
+      "decision": "act",
+      "gap": "Whether the described 2023 run (a deciding-frame win over a sub-250-century player, then 4-3 and 4-0 wins, then a loss to a 400+ century player) belongs to Ding Junhui, and whether Ding has >300 centuries and >3 maximum breaks as of 30 Jan 2025.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "2023 English Open snooker Ding Junhui results last 16 opponents full draw bracket",
+          "k": 5
+        },
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "2023 English Open Ding Junhui matches results"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 6734,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5198,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.2280962280962281
+    },
+    "usage": {
+      "completion_tokens": 5248,
+      "prompt_tokens": 6734,
+      "total_tokens": 11982,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5079,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5198
+    }
+  },
+  {
+    "case_id": "1094:L1",
+    "qid": "1094",
+    "arm": "L1",
+    "kind": "research_actor",
+    "request_sha256": "89c2e76e59754fde8c3252386571424379df063740b4354dd857acb7deb88ee2",
+    "output": {
+      "decision": "act",
+      "gap": "The puzzle's specific match is not yet pinned down: a team born out of discord/a split between two parties versus a club whose identity went through several iterations, with one side scoring all its goals early and the other all late, ending in a 95th-minute free kick. Until this match and the free-kick taker are identified, the answer remains uncertain (candidates include Messi for PSG–Lille and Léo Scienza for Heidenheim).",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D6",
+          "query": "95th minute free kick last-minute goal"
+        },
+        {
+          "tool": "search",
+          "query": "Léo Scienza Heidenheim 95th minute free kick match opponent",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 6965,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5429,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.22053122756640345
+    },
+    "usage": {
+      "completion_tokens": 22050,
+      "prompt_tokens": 6965,
+      "total_tokens": 29015,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 21859,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5429
+    }
+  },
+  {
+    "case_id": "1094:L2",
+    "qid": "1094",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "a38b46a38264e9239e77ae0a2377b60a1214103c8416b0200879ca2c63d985d0",
+    "output": {
+      "decision": "act",
+      "gap": "The question's clues (one team 'born out of discord among two parties', opponent whose identity 'evolved through several iterations', first team scoring all goals early while the other scored late, plus a 95th-minute free kick) fail to uniquely pick between Lionel Messi (PSG 4–3 Lille, whose goals were NOT all scored early) and Léo Scienza (Heidenheim, whose 95th-minute free kick equalised). I need the Heidenheim match's opponent and scoring sequence, and confirmation of which side matches the team-origin clues.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Léo Scienza Heidenheim 95th minute free kick equaliser match opponent score",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "football club founded from split or merger between two parties origin history name iterations",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 7943,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 6407,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.19337781694573838
+    },
+    "usage": {
+      "completion_tokens": 10765,
+      "prompt_tokens": 7943,
+      "total_tokens": 18708,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 10545,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 6407
+    }
+  },
+  {
+    "case_id": "1094:L0",
+    "qid": "1094",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "870d23b12f9a17606ea66dc07abfd69b96c1401e5a733d0199d95330f33fff36",
+    "output": {
+      "decision": "act",
+      "gap": "Which early-21st-century match pits a team formed out of a split/merger dispute against an opponent whose identity went through several renamings, where the opening team scored all its goals early and the other scored all its goals late, and who took the 95th-minute free kick in that match?",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D7",
+          "query": "free kick 95th minute stoppage time"
+        },
+        {
+          "tool": "search",
+          "query": "95th minute free kick equaliser team scored early goals late comeback",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 7783,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 6247,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.1973532057047411
+    },
+    "usage": {
+      "completion_tokens": 19384,
+      "prompt_tokens": 7783,
+      "total_tokens": 27167,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 19226,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 6247
+    }
+  },
+  {
+    "case_id": "517:L2",
+    "qid": "517",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "a0ce171274ac74cedf8aed6d85f0f7d5f3872caaea10537ab2c3e6b36a163976",
+    "output": {
+      "decision": "act",
+      "gap": "It remains unverified that Peter King played a policeman in the 2005 film The Constant Gardener (Fernando Meirelles), and that his attributes match the clue set (including zodiac goat and The Fifth Estate role); this bears directly on confirming the popular name Peter King.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "The Constant Gardener policeman role"
+        },
+        {
+          "tool": "search",
+          "query": "The Constant Gardener 2005 cast Peter King policeman role",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 7892,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 6356,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.19462747085656362
+    },
+    "usage": {
+      "completion_tokens": 971,
+      "prompt_tokens": 7892,
+      "total_tokens": 8863,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 825,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 6356
+    }
+  },
+  {
+    "case_id": "517:L0",
+    "qid": "517",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "9b10e636dae579b5d22c285a56d2401c9e68eaaff79904f50a233ae7785c4343",
+    "output": {
+      "decision": "act",
+      "gap": "Whether the 2005 policeman-role film's director (described as deciding to become a filmmaker after watching Iracema) is Fernando Meirelles of The Constant Gardener, which would firmly tie the Peter King biography to the question despite the Horse-vs-Goat birth-year mismatch.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "filmmaker decided to become a director after watching Iracema Fernando Meirelles",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 5383,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3719,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.3091213078209177
+    },
+    "usage": {
+      "completion_tokens": 2655,
+      "prompt_tokens": 5383,
+      "total_tokens": 8038,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2533,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3719
+    }
+  },
+  {
+    "case_id": "517:L1",
+    "qid": "517",
+    "arm": "L1",
+    "kind": "research_actor",
+    "request_sha256": "f575e2e283eea01341d69e511c3ed641eb87d996551ee001a4b632a5f18a1a2f",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3752,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 2216,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.4093816631130064
+    },
+    "usage": {
+      "completion_tokens": 778,
+      "prompt_tokens": 3752,
+      "total_tokens": 4530,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 758,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 2216
+    }
+  },
+  {
+    "case_id": "435:L0",
+    "qid": "435",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "ad58439995cc5ee7682f6204cd90a8b60b04283b0ca59710b204b78b091c556f",
+    "output": {
+      "decision": "act",
+      "gap": "What album count did Forbes Africa report for Oliver Mtukudzi in the May issue during the 2010s, and does it confirm the 65-album figure?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Forbes Africa Oliver Mtukudzi May 2017 65 albums",
+          "k": 5
+        },
+        {
+          "tool": "find",
+          "doc_ref": "D2",
+          "query": "Why do we sing why is there art"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 6208,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 4672,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.24742268041237114
+    },
+    "usage": {
+      "completion_tokens": 3219,
+      "prompt_tokens": 6208,
+      "total_tokens": 9427,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3087,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 4672
+    }
+  },
+  {
+    "case_id": "435:L2",
+    "qid": "435",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "410ab8e7f2b18c80957b3ade288c201285e50fdb6d1c4ecd5edb7e46f349388f",
+    "output": {
+      "decision": "act",
+      "gap": "The exact album count at the time of the Forbes Africa May feature in the 2010s is not established; the 65-album and 67-album figures are from 2017 and later retrospective sources, not clearly tied to the Forbes Africa feature date.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Forbes Africa magazine Oliver Mtukudzi feature 2016 albums",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2016 number of albums produced",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 6303,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 4767,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.24369347929557353
+    },
+    "usage": {
+      "completion_tokens": 667,
+      "prompt_tokens": 6303,
+      "total_tokens": 6970,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 4767
+    }
+  },
+  {
+    "case_id": "580:L2",
+    "qid": "580",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "c6925c016833b30029bce011aaf2a4ab1e92b4818bb91a351a6802ae7db4b9ac",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4445,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2781,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.37435320584926884
+    },
+    "usage": {
+      "completion_tokens": 226,
+      "prompt_tokens": 4445,
+      "total_tokens": 4671,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 206,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2781
+    }
+  },
+  {
+    "case_id": "177:L2",
+    "qid": "177",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "dfaa34ee70ccd599996cae745874b22f0560c80eccc97c38c450bed9370906de",
+    "output": {
+      "decision": "act",
+      "gap": "Confirm whether Enugu Rangers International F.C. is really the team described (matching the '2023 article states fifteen trophies' clue and a league title won between 1973 and 1983), versus another capital-city club; this determines whether the founding answer is 1970/Nigeria.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "club won fifteen trophies signed 13 players ahead of season 2023 article",
+          "k": 5
+        },
+        {
+          "tool": "open",
+          "window_ref": "W2",
+          "direction": "after"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 5386,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 3850,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.28518380987746006
+    },
+    "usage": {
+      "completion_tokens": 6805,
+      "prompt_tokens": 5386,
+      "total_tokens": 12191,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 6654,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 3850
+    }
+  },
+  {
+    "case_id": "177:L0",
+    "qid": "177",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "6fb463fd706aa83301953ab902bddec158447804cd03815ea8b57526c44db484",
+    "output": {
+      "decision": "act",
+      "gap": "Which capital-city football club matches the 2023 article stating it has won fifteen trophies and signed 13 players ahead of a season (candidate: BFC Dynamo), and what are its founding year and country?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "BFC Dynamo Berlin founded 1966 DDR-Oberliga trophies capital city",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "club based in capital city won national league 1980 fifteen trophies signed thirteen players",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 12865,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 11329,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.11939370384764866
+    },
+    "usage": {
+      "completion_tokens": 11487,
+      "prompt_tokens": 12865,
+      "total_tokens": 24352,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 11337,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 11329
+    }
+  },
+  {
+    "case_id": "177:L1",
+    "qid": "177",
+    "arm": "L1",
+    "kind": "research_actor",
+    "request_sha256": "4792ce438c1ae1155f19a8e782eb52f1f9f0b0fef059bca3c8c4d2cfdedfb50e",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 6887,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 5223,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.24161463627123567
+    },
+    "usage": {
+      "completion_tokens": 7996,
+      "prompt_tokens": 6887,
+      "total_tokens": 14883,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 7976,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 5223
+    }
+  },
+  {
+    "case_id": "1034:L0",
+    "qid": "1034",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "ca046805a59bb98f3bb86e93cda7d7e60658ed1dc855ee3cf21bcd11f005be2b",
+    "output": {
+      "decision": "act",
+      "gap": "The individual's identity remains unresolved: none of the current Heart Evangelista / Soulja Boy / Raj Singh leads satisfy the combined clues (commercial model whose wealth came from showbiz, one of three children, debut single 2010-2015, Business Administration degree, hired as coordinator in 2012 then promoted to manager). The matching biography source must be found.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model most of her wealth came from showbiz net worth 2022",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "hired as coordinator in 2012 later promoted to manager studied business administration debut single",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 7884,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 6220,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.21106037544393708
+    },
+    "usage": {
+      "completion_tokens": 2896,
+      "prompt_tokens": 7884,
+      "total_tokens": 10780,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2716,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 6220
+    }
+  },
+  {
+    "case_id": "1034:L1",
+    "qid": "1034",
+    "arm": "L1",
+    "kind": "research_actor",
+    "request_sha256": "a5877c0c94a618aa5129cb1cec334b6ff02fbdb8efdb0cdb4aa66bfb7362d899",
+    "output": {
+      "decision": "act",
+      "gap": "Who is the individual described (commercial model whose wealth came from showbiz, studied Business Administration at university 2001-2007, worked as a coordinator from 2012 then promoted to manager, released a debut single 2010-2015, has a child born in the US), and what is their birth name?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model most of her wealth came from showbiz 2022 net worth",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "hired as coordinator in 2012 promoted to manager studied Business Administration debut single",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 8171,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 6507,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.20364704442540693
+    },
+    "usage": {
+      "completion_tokens": 1866,
+      "prompt_tokens": 8171,
+      "total_tokens": 10037,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1694,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 6507
+    }
+  },
+  {
+    "case_id": "1034:L2",
+    "qid": "1034",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "5deb823b75f0606c18a11b0cf61a96c54c10cf747e6b7c36efb5fc0a93810b81",
+    "output": {
+      "decision": "act",
+      "gap": "No single identity has been tied to the combination of a commercial model with showbiz-derived wealth, one of three children, a 2006–2010 industry break, a US-born child, 2001–2007 Business Administration studies, a 2010–2015 debut single, and a 2012 coordinator-to-manager promotion. A targeted search for that individual profile is needed.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model most of wealth came from showbiz born family of three children child born in United States",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "studied business administration debut single hired as coordinator in 2012 promoted to manager",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 8530,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 6866,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.19507620164126613
+    },
+    "usage": {
+      "completion_tokens": 2469,
+      "prompt_tokens": 8530,
+      "total_tokens": 10999,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2281,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 6866
+    }
+  },
+  {
+    "case_id": "311:L1",
+    "qid": "311",
+    "arm": "L1",
+    "kind": "research_actor",
+    "request_sha256": "0c0d841e7c18690efa50fd1379544702754ba4030ed33d458a2e0ff2716894cd",
+    "output": null,
+    "error": {
+      "type": "ValidationError",
+      "status": null,
+      "message": "{'decision': 'act', 'gap': 'Which early-1990s French educational animated series (network TF1, short <5-minute episodes, ~52 in one year, characters including twins, a poet, a complainer, and a living vehicle) is described, and what is its Argentinian release title? The Hijitus hypothesis conflicts with the writer count and January–December/early-1990s clues, so the actual series must be identified.', 'actions': [{'tool': 'search', 'query': 'French educational animated series 1990s TF1 short epi"
+    },
+    "attempted": true,
+    "serialization_valid": false,
+    "cache_usage": {
+      "prompt_tokens": 6959,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 5295,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.23911481534703263
+    },
+    "usage": {
+      "completion_tokens": 7541,
+      "prompt_tokens": 6959,
+      "total_tokens": 14500,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 7347,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 5295
+    }
+  },
+  {
+    "case_id": "311:L2",
+    "qid": "311",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "a81f78cf9850b12c50d79677383f281b7f7c86e858cb08a395c6cc67202f6c37",
+    "output": {
+      "decision": "act",
+      "gap": "No single program satisfies all clues, and no Argentinian release name is identified. The distinctive unresolved elements are: a French-language show (network with 3 characters including a digit, likely TF1) whose characters include a set of twins, a poet, a complainer, and a living means of transport, airing early 1990s with 50–60 sub-5-minute educational episodes.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "television series characters twins poet complainer living car educational short episodes",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "TF1 French educational animated series early 1990s short episodes Argentinian release name",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 11872,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 10208,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.14016172506738545
+    },
+    "usage": {
+      "completion_tokens": 6455,
+      "prompt_tokens": 11872,
+      "total_tokens": 18327,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 6274,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 10208
+    }
+  },
+  {
+    "case_id": "311:L0",
+    "qid": "311",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "08c64eaa6f762ebddf813fdc09d07e14bdbc809963a77b8bbb0e50661de55f50",
+    "output": {
+      "decision": "act",
+      "gap": "Which French educational short-episode series aired on TF1 in the early 1990s with 52 episodes of under 5 minutes, and what is its Argentinian release name?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "TF1 educational animated series 1990 1991 52 episodes 4 minutes",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "French animated series twins poet complainer living car educational",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 7760,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 6096,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.21443298969072164
+    },
+    "usage": {
+      "completion_tokens": 3645,
+      "prompt_tokens": 7760,
+      "total_tokens": 11405,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3510,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 6096
+    }
+  },
+  {
+    "case_id": "186:L0",
+    "qid": "186",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "13ed3b974a73fc0b25a8b7acaaf986710f09d4cd092a9d58e6d2052bafebe3fb",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 6932,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5396,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.22158107328332372
+    },
+    "usage": {
+      "completion_tokens": 890,
+      "prompt_tokens": 6932,
+      "total_tokens": 7822,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 870,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5396
+    }
+  },
+  {
+    "case_id": "186:L1",
+    "qid": "186",
+    "arm": "L1",
+    "kind": "research_actor",
+    "request_sha256": "981ffec6a7b3f345e2d8ab2292320d1794dd750dc8e4675a2c3d02db172ddcec",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 6843,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5307,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.2244629548443665
+    },
+    "usage": {
+      "completion_tokens": 836,
+      "prompt_tokens": 6843,
+      "total_tokens": 7679,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 816,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 5307
+    }
+  },
+  {
+    "case_id": "387:L1",
+    "qid": "387",
+    "arm": "L1",
+    "kind": "research_actor",
+    "request_sha256": "e61be165ba33fde27d926382d2d6ec19614f6823efae587a5b562da7519a8b38",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 5294,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3630,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.31431809595768795
+    },
+    "usage": {
+      "completion_tokens": 1039,
+      "prompt_tokens": 5294,
+      "total_tokens": 6333,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1019,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3630
+    }
+  },
+  {
+    "case_id": "387:L2",
+    "qid": "387",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "414de9101b63a20c78c9228cdb102aa7ce55e0043e50f38d701a0dc35205346b",
+    "output": {
+      "decision": "act",
+      "gap": "Did Dean Dodrill specifically create Jazz Jackrabbit 2's intro and end animations, confirming he is the person whose gaming PC storage is described as of 25 July 2013?",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D2",
+          "query": "Jazz Jackrabbit 2 intro and end animations Dean Dodrill"
+        },
+        {
+          "tool": "search",
+          "query": "Jazz Jackrabbit 2 intro end animations Dean Dodrill",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 5273,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3609,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.3155698843163285
+    },
+    "usage": {
+      "completion_tokens": 1377,
+      "prompt_tokens": 5273,
+      "total_tokens": 6650,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1239,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3609
+    }
+  }
+]

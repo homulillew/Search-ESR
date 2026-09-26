@@ -1,0 +1,756 @@
+[
+  {
+    "case_id": "546:L0",
+    "qid": "546",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "f751a512ae4dcb38a531bd0894142a8cfe276131b778b3ad9c18ea8e2eae11b4",
+    "output": {
+      "decision": "act",
+      "gap": "Does Ding Junhui's full 2023 English Open run match the described sequence — a decider win over Ma Hailong (<250 centuries), then wins of 4-3 and 4-0, then a loss to an opponent with over 400 centuries — and does he independently satisfy >300 career centuries and >3 maximum breaks with a professional debut between 1995 and 2006?",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "2023 English Open Ding Junhui results rounds last 16 lost"
+        },
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "turned professional century breaks maximum breaks career total"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 8113,
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 6321,
+      "reported_cached_tokens": 1792,
+      "status": "reported",
+      "hit_rate": 0.22088006902502158
+    },
+    "usage": {
+      "completion_tokens": 6965,
+      "prompt_tokens": 8113,
+      "total_tokens": 15078,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 6786,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 6321
+    }
+  },
+  {
+    "case_id": "546:L2",
+    "qid": "546",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "2cb067fd4eeef96669c6faab229a6c7e9bb988889bd2bbc93b0ed7bb0e0f3be6",
+    "output": {
+      "decision": "act",
+      "gap": "Does Ding Junhui's 2023 English Open run match the described sequence — a decider win over a player with fewer than 250 centuries, then two more wins by 4-3 and 4-0, then a loss to a player with over 400 centuries?",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "English Open 2023 Ding Junhui results rounds"
+        },
+        {
+          "tool": "open",
+          "window_ref": "W9",
+          "direction": "before"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 7298,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 5378,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.263085776925185
+    },
+    "usage": {
+      "completion_tokens": 9553,
+      "prompt_tokens": 7298,
+      "total_tokens": 16851,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 9410,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 5378
+    }
+  },
+  {
+    "case_id": "1094:L1",
+    "qid": "1094",
+    "arm": "L1",
+    "kind": "research_actor",
+    "request_sha256": "d115d8cfa77c2bf0a66b3d41d9214162c85565a0c8ba3a3ccb38b5a5d221ec2f",
+    "output": {
+      "decision": "act",
+      "gap": "Who took the 95th-minute free kick in the match between AFC Wimbledon (born out of discord) and Milton Keynes Dons (evolving identity)?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "AFC Wimbledon MK Dons 95th minute free kick",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "MK Dons 1-2 AFC Wimbledon 12 September 2020 free kick 95",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 7963,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 6043,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.24111515760391813
+    },
+    "usage": {
+      "completion_tokens": 27441,
+      "prompt_tokens": 7963,
+      "total_tokens": 35404,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 27308,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 6043
+    }
+  },
+  {
+    "case_id": "1094:L2",
+    "qid": "1094",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "bd1aa4192fddbee7473032603564c001a33508b015e7b113ececdf9bacee193b",
+    "output": {
+      "decision": "act",
+      "gap": "Which early-21st-century match both (a) features a team born from a two-party split/merger and a team whose name/identity evolved through iterations, and (b) includes a 95th-minute free-kick taken by a player? The 2005 final matches the early-vs-late scoring but has no such free-kick, and no verified claim yet ties the origin/iteration clues plus the scoring pattern to a single match containing a 95th-minute free-kick.",
+      "actions": [
+        {
+          "tool": "open",
+          "window_ref": "W5",
+          "direction": "before"
+        },
+        {
+          "tool": "search",
+          "query": "Newcastle United Stoke City 95th minute free kick match",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 12359,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 10695,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.13463872481592362
+    },
+    "usage": {
+      "completion_tokens": 19883,
+      "prompt_tokens": 12359,
+      "total_tokens": 32242,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 19695,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 10695
+    }
+  },
+  {
+    "case_id": "1094:L0",
+    "qid": "1094",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "5bd3e2c82237c46ac4e56b937000570a54952186702ed5cde39b380b00bc625f",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the early-21st-century match in which one club, born out of a split/dispute between two parties, faced an opponent whose identity changed through several name iterations; the first side scored all its goals early and the other scored all of its late, and a 95th-minute free kick was taken — need the match and the free-kick taker.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "95th minute free kick match team scored all goals first half opponent all goals second half",
+          "k": 6
+        },
+        {
+          "tool": "open",
+          "window_ref": "W14",
+          "direction": "after"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 10627,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 8707,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.18067187352968853
+    },
+    "usage": {
+      "completion_tokens": 28224,
+      "prompt_tokens": 10627,
+      "total_tokens": 38851,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 28060,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 8707
+    }
+  },
+  {
+    "case_id": "517:L0",
+    "qid": "517",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "1dd5d8308cb9cbae1cdba2a07da0e8c3b506c58494e964e6cc1971bed5cd7bc9",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 7859,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 6195,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.2117317724901387
+    },
+    "usage": {
+      "completion_tokens": 1622,
+      "prompt_tokens": 7859,
+      "total_tokens": 9481,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1602,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 6195
+    }
+  },
+  {
+    "case_id": "435:L0",
+    "qid": "435",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "a79360dab6a6c131d2287e690a5b1f5acaff5e2e53e1b900371b0aa20aa1fd0b",
+    "output": {
+      "decision": "act",
+      "gap": "Confirm the album count attributed to Oliver Mtukudzi in the Forbes Africa May 2017 feature, verifying whether it is 65 albums (as stated alongside the May 2017 Forbes listing) rather than another figure.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Forbes Africa May 2017 richest African musicians list Oliver Mtukudzi albums",
+          "k": 5
+        },
+        {
+          "tool": "open",
+          "window_ref": "W6",
+          "direction": "after"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 6827,
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 5035,
+      "reported_cached_tokens": 1792,
+      "status": "reported",
+      "hit_rate": 0.26248718324300574
+    },
+    "usage": {
+      "completion_tokens": 580,
+      "prompt_tokens": 6827,
+      "total_tokens": 7407,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 445,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 5035
+    }
+  },
+  {
+    "case_id": "435:L2",
+    "qid": "435",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "513f39aef6e2b5a1fe05f57e2b3a82c25b3b6e1db0eb9c740afbd9430152cf96",
+    "output": {
+      "decision": "act",
+      "gap": "How many albums did Oliver Mtukudzi have at the time of his May Forbes Africa feature in the 2010s?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2016 interview why do we sing why is there art",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Forbes Africa May 2017 Oliver Mtukudzi 65 albums richest musicians feature",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 6396,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 4476,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.300187617260788
+    },
+    "usage": {
+      "completion_tokens": 1474,
+      "prompt_tokens": 6396,
+      "total_tokens": 7870,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1339,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 4476
+    }
+  },
+  {
+    "case_id": "177:L2",
+    "qid": "177",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "e1c88800094a99b9cf1d9ad7c66dae7923120a8b83d80b70663203147fdf9e4e",
+    "output": {
+      "decision": "act",
+      "gap": "Whether the team in the question is confirmed as Enugu Rangers (via the distinctive 2023-article clue of 'fifteen trophies' combined with the 13-player signing), which would then firmly establish the founding year (1970) and country (Nigeria) rather than merely assume the Working Hypothesis.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D2",
+          "query": "trophies honours total fifteen league titles won"
+        },
+        {
+          "tool": "search",
+          "query": "Rangers fifteen trophies 2023 signed 13 players Enugu",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 8746,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 7082,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.19025840384175624
+    },
+    "usage": {
+      "completion_tokens": 2673,
+      "prompt_tokens": 8746,
+      "total_tokens": 11419,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2515,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 7082
+    }
+  },
+  {
+    "case_id": "177:L0",
+    "qid": "177",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "ebe79b92ca5d1a2ed84223d847bd94645e49a863f7193d58bda7d12368db40c6",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the club described by the 2023 article (fifteen trophies, signed 13 players) and confirm its founding year and country, distinguishing between the BFC Dynamo hypothesis and plausible African capital-city clubs (e.g., Enugu Rangers, Accra Hearts of Oak) that also won league titles between 1973 and 1983.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "capital city football club signed thirteen players fifteen trophies 2023 season",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "club based in capital city won national league between 1973 and 1983 founded year country fifteen trophies",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 18232,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 16184,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.11232996928477403
+    },
+    "usage": {
+      "completion_tokens": 15433,
+      "prompt_tokens": 18232,
+      "total_tokens": 33665,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 15256,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 16184
+    }
+  },
+  {
+    "case_id": "1034:L0",
+    "qid": "1034",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "ce2a856a12e55eb485bf8ae702e2fc37d546fc2cb8d4fb0267fbb4b34531d64a",
+    "output": {
+      "decision": "act",
+      "gap": "The individual's identity is unresolved: no candidate satisfies the combined clues (commercial model whose wealth came mostly from showbiz, one of three children, break 2006-2010, child born in the US, Business Administration study 2001-2007, debut single 2010-2015, hired as coordinator 2012 then promoted to manager). The matching biography source must be located.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model most of her wealth came from showbiz born into a family of three children debut single business administration coordinator promoted manager",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "hired as coordinator in 2012 later promoted to manager studied business administration released debut single child born in United States",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 17056,
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 15264,
+      "reported_cached_tokens": 1792,
+      "status": "reported",
+      "hit_rate": 0.1050656660412758
+    },
+    "usage": {
+      "completion_tokens": 5247,
+      "prompt_tokens": 17056,
+      "total_tokens": 22303,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5045,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 15264
+    }
+  },
+  {
+    "case_id": "1034:L1",
+    "qid": "1034",
+    "arm": "L1",
+    "kind": "research_actor",
+    "request_sha256": "65c060104a316753bb01087dac40cc4c728c1a99de5eb15ab284aa5f6b06ed99",
+    "output": {
+      "decision": "act",
+      "gap": "The identity of the individual who is a commercial model, studied Business Administration, released a debut single (2010-2015), and was hired as a coordinator in 2012 before being promoted to a manager remains unidentified; the specific article/bio containing these facts must be located.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model debut single studied Business Administration coordinator promoted manager",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "commercial model most of her wealth came from showbiz 2022 child born in the United States",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 16847,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 14799,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.12156467026770344
+    },
+    "usage": {
+      "completion_tokens": 11936,
+      "prompt_tokens": 16847,
+      "total_tokens": 28783,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 11777,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 14799
+    }
+  },
+  {
+    "case_id": "1034:L2",
+    "qid": "1034",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "5ee4f9d02cff7219fca72cae7670e732f75d881ec3f8e3d00377b56ab7303455",
+    "output": {
+      "decision": "act",
+      "gap": "No single individual in the corpus yet matches all four clue clusters (2022 commercial-model/showbiz-wealth article; 2021 family of three children, industry break 2006-2010, child born in the US; 2020 university Business Administration study and debut single 2010-2015; 2012 coordinator hired then promoted to manager). The birth name remains unidentified.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model showbiz wealth university business administration debut single",
+          "k": 8
+        },
+        {
+          "tool": "search",
+          "query": "actress model hired as coordinator in 2012 promoted to manager child born in United States",
+          "k": 8
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 9744,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 7824,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.19704433497536947
+    },
+    "usage": {
+      "completion_tokens": 11523,
+      "prompt_tokens": 9744,
+      "total_tokens": 21267,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 11343,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 7824
+    }
+  },
+  {
+    "case_id": "311:L0",
+    "qid": "311",
+    "arm": "L0",
+    "kind": "research_actor",
+    "request_sha256": "f85f112d6692a0089cc2c106bd2015ae9bdc78465d1d36e2ebc5a4af84c5f271",
+    "output": {
+      "decision": "act",
+      "gap": "What is the Argentinian release name of the target program (working hypothesis Cococinel), and does its cast actually match the clues (twins, poet, complainer, living means of transport) rather than a different short-form educational 1990s series?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cococinel Argentina release name Spanish title alternate",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "educational animated series 1990s twins poet complainer living vehicle Argentinian dub",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 14490,
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 12698,
+      "reported_cached_tokens": 1792,
+      "status": "reported",
+      "hit_rate": 0.12367149758454106
+    },
+    "usage": {
+      "completion_tokens": 12301,
+      "prompt_tokens": 14490,
+      "total_tokens": 26791,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 12152,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1792
+      },
+      "prompt_cache_hit_tokens": 1792,
+      "prompt_cache_miss_tokens": 12698
+    }
+  },
+  {
+    "case_id": "387:L2",
+    "qid": "387",
+    "arm": "L2",
+    "kind": "research_actor",
+    "request_sha256": "7779e8923fb15b9131c1ab1bfd846b01e27a44062355138b7c59ed5c4b42caee",
+    "output": {
+      "decision": "act",
+      "gap": "Whether Dean \"Noogy\" Dodrill is specifically the person behind Jazz Jackrabbit 2's intro and end animations (and animated on 8x11\" paper), which would confirm he is the person whose 2013 gaming PC storage size is being asked about.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Jazz Jackrabbit 2 intro end animations Dean Noogy Dodrill animator",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Dean Dodrill animated 8x11 printing paper gaming PC wireless keyboard",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 5923,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 4259,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.2809387134897856
+    },
+    "usage": {
+      "completion_tokens": 1255,
+      "prompt_tokens": 5923,
+      "total_tokens": 7178,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1099,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 4259
+    }
+  }
+]
