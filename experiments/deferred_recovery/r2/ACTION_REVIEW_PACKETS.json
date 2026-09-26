@@ -1,0 +1,246 @@
+[
+  {
+    "cell": "DR01:G",
+    "round": 1,
+    "decision": {
+      "decision": "act",
+      "gap": "The current evidence that Cococinel had an educational purpose rests mainly on one French Wikipedia sentence about familiarizing children with nature; I need a corroborating source explicitly framing the series as educational before accepting the requirement as satisfied.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cocomiel Cococinel educational children's series teaches nature",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "2b9d67d9064b00cb",
+      "472ecce42d539e0a",
+      "c8f935d26072dad1",
+      "bdfb22b4aa790c6a",
+      "8f97aa78726f0abd"
+    ]
+  },
+  {
+    "cell": "DR01:H",
+    "round": 1,
+    "decision": {
+      "decision": "act",
+      "gap": "It is still unverified whether Cococinel is characterized as having an educational purpose: the English Wikipedia article (D28) contained no 'educational purpose' wording, so an independent source (French/Spanish Wikipedia, Allociné) must be checked for an explicit educational/édutatif claim before the working hypothesis can be accepted.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cococinel educational purpose series",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "bdfb22b4aa790c6a",
+      "2b9d67d9064b00cb",
+      "a269946b66e8fd35",
+      "8f97aa78726f0abd",
+      "472ecce42d539e0a"
+    ]
+  },
+  {
+    "cell": "DR02:H",
+    "round": 1,
+    "decision": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": []
+  },
+  {
+    "cell": "DR02:G",
+    "round": 1,
+    "decision": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": []
+  },
+  {
+    "cell": "DR03:G",
+    "round": 1,
+    "decision": {
+      "decision": "act",
+      "gap": "The runtimes conflict: one source gives 4 minutes, another says episodes last five minutes, and the original clue requires strictly less than five minutes. A targeted source check is needed to see whether the program's listed episode length is under five minutes.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cocomiel duración episodios 4 minutos",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "adeae1e66ea3cfde",
+      "46eacdd6957e11ff",
+      "39a89d2e3a08599f",
+      "8240d2c94c1577c0",
+      "e6a0acdf59f4f5b8"
+    ]
+  },
+  {
+    "cell": "DR03:H",
+    "round": 1,
+    "decision": {
+      "decision": "act",
+      "gap": "The French Wikipedia preview states Cococinel episodes have a duration of 5 minutes (not less than 5), so I need a runtime figure that either confirms or contradicts the '<5 minutes' requirement from an episode-listing/infobox source, ideally the English Wikipedia article's runtime field.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D28",
+          "query": "running time minutes per episode"
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "0e796a0da82a4009"
+    ]
+  },
+  {
+    "cell": "DR04:H",
+    "round": 1,
+    "decision": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": []
+  },
+  {
+    "cell": "DR04:G",
+    "round": 1,
+    "decision": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": []
+  },
+  {
+    "cell": "DR05:G",
+    "round": 1,
+    "decision": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": []
+  },
+  {
+    "cell": "DR05:H",
+    "round": 1,
+    "decision": {
+      "decision": "act",
+      "gap": "The available evidence shows credited roles through season 5, but it does not explicitly establish the total number of seasons, so it is still uncertain whether You’re the Worst has fewer than ten seasons.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "five seasons"
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "1569c264978aea81"
+    ]
+  },
+  {
+    "cell": "DR06:H",
+    "round": 1,
+    "decision": {
+      "decision": "act",
+      "gap": "Only MobyGames (D1/W10) currently asserts a November 1992 DOS release; independent release-date evidence is needed to confirm or conflict with that dating for Galacta: The Battle for Saturn.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Galacta: The Battle for Saturn release date 1992 DOS shareware",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "d840cbd3a727219a",
+      "a59c1765510c685c",
+      "b419ca7d8e230099",
+      "56a4f20fa10a46fc",
+      "5bd0d19af159f049"
+    ]
+  },
+  {
+    "cell": "DR06:G",
+    "round": 1,
+    "decision": {
+      "decision": "act",
+      "gap": "Release-date evidence conflicts: MobyGames states November 1992, MyAbandonware and FreeGameEmpire state 1992 generally, while RGB Classic Games lists a 1993 shareware episode and PlayDOSGames lists 1993. More evidence is needed to determine whether the November 1992 DOS release is correct or whether another date applies.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Galacta The Battle for Saturn DOS release date November 1992 Albino Frog Software shareware",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "d840cbd3a727219a",
+      "a59c1765510c685c",
+      "b419ca7d8e230099",
+      "5bd0d19af159f049",
+      "56a4f20fa10a46fc"
+    ]
+  },
+  {
+    "cell": "DR07:G",
+    "round": 1,
+    "decision": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": []
+  },
+  {
+    "cell": "DR07:H",
+    "round": 1,
+    "decision": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": []
+  }
+]

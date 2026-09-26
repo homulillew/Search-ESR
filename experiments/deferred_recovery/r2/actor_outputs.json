@@ -1,0 +1,394 @@
+[
+  {
+    "case_id": "DR01",
+    "qid": "311",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "a12f16b48cb1782d6adca752f2f9502d945b1364a38e4b8b376f8c5b1f702cf5",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The current evidence that Cococinel had an educational purpose rests mainly on one French Wikipedia sentence about familiarizing children with nature; I need a corroborating source explicitly framing the series as educational before accepting the requirement as satisfied.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cocomiel Cococinel educational children's series teaches nature",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 5363,
+      "output": 289,
+      "hit": 1280,
+      "miss": 4083,
+      "reasoning": 200
+    },
+    "elapsed_seconds": 1.9795934204012156
+  },
+  {
+    "case_id": "DR01",
+    "qid": "311",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "a495c8cd50effa8593ae5850c7e15442705e34269330b2fd144446d1430087ac",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "It is still unverified whether Cococinel is characterized as having an educational purpose: the English Wikipedia article (D28) contained no 'educational purpose' wording, so an independent source (French/Spanish Wikipedia, Allociné) must be checked for an explicit educational/édutatif claim before the working hypothesis can be accepted.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cococinel educational purpose series",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3934,
+      "output": 1089,
+      "hit": 2816,
+      "miss": 1118,
+      "reasoning": 983
+    },
+    "elapsed_seconds": 6.126454202458262
+  },
+  {
+    "case_id": "DR02",
+    "qid": "387",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "520fdad0573c5376eac38ff13f4c687f01fb52ce1d24e4c9df5136ae93fe0b75",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "usage": {
+      "input": 4488,
+      "output": 265,
+      "hit": 512,
+      "miss": 3976,
+      "reasoning": 249
+    },
+    "elapsed_seconds": 1.7483206130564213
+  },
+  {
+    "case_id": "DR02",
+    "qid": "387",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "8a3c9b8b4fb9df5789842169fdc13c83dec568494d4d25da5a0b453021209f8f",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "usage": {
+      "input": 3659,
+      "output": 203,
+      "hit": 512,
+      "miss": 3147,
+      "reasoning": 187
+    },
+    "elapsed_seconds": 1.2641033884137869
+  },
+  {
+    "case_id": "DR03",
+    "qid": "311",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "0567086dd07189fe01399255053d19a5e4e307ee007d14fa467f112c5b123a39",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The runtimes conflict: one source gives 4 minutes, another says episodes last five minutes, and the original clue requires strictly less than five minutes. A targeted source check is needed to see whether the program's listed episode length is under five minutes.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cocomiel duración episodios 4 minutos",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 5396,
+      "output": 1036,
+      "hit": 1152,
+      "miss": 4244,
+      "reasoning": 951
+    },
+    "elapsed_seconds": 5.9096847008913755
+  },
+  {
+    "case_id": "DR03",
+    "qid": "311",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "17b74afce376ac2b7dcabfe8423c921a35dfaa25e15f6747b7fb836e6d969b0d",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The French Wikipedia preview states Cococinel episodes have a duration of 5 minutes (not less than 5), so I need a runtime figure that either confirms or contradicts the '<5 minutes' requirement from an episode-listing/infobox source, ideally the English Wikipedia article's runtime field.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D28",
+          "query": "running time minutes per episode"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 4348,
+      "output": 265,
+      "hit": 1152,
+      "miss": 3196,
+      "reasoning": 165
+    },
+    "elapsed_seconds": 1.8283843845129013
+  },
+  {
+    "case_id": "DR04",
+    "qid": "546",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "db8498222105930e20423543df01ace3e4f1b6d6d7dd608349bb9b55f9a95d29",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "usage": {
+      "input": 2484,
+      "output": 369,
+      "hit": 384,
+      "miss": 2100,
+      "reasoning": 356
+    },
+    "elapsed_seconds": 2.3376815505325794
+  },
+  {
+    "case_id": "DR04",
+    "qid": "546",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "603cd01603878819a8057e09e7a669a317c5211d2eab78621199db214e0a58af",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "usage": {
+      "input": 3835,
+      "output": 184,
+      "hit": 384,
+      "miss": 3451,
+      "reasoning": 171
+    },
+    "elapsed_seconds": 1.3551821187138557
+  },
+  {
+    "case_id": "DR05",
+    "qid": "580",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "49bf58c23bf69c3ade6c2623c1185c839120212b1c342ac745f7746b09d8a46b",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "usage": {
+      "input": 3099,
+      "output": 105,
+      "hit": 512,
+      "miss": 2587,
+      "reasoning": 89
+    },
+    "elapsed_seconds": 0.8270713798701763
+  },
+  {
+    "case_id": "DR05",
+    "qid": "580",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "530a64948e6c846dd0daae7bfd6d2278771a69c57b1a2332803173e2f426b33a",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The available evidence shows credited roles through season 5, but it does not explicitly establish the total number of seasons, so it is still uncertain whether You’re the Worst has fewer than ten seasons.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "five seasons"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 2441,
+      "output": 576,
+      "hit": 512,
+      "miss": 1929,
+      "reasoning": 498
+    },
+    "elapsed_seconds": 3.7844693642109632
+  },
+  {
+    "case_id": "DR06",
+    "qid": "186",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "2c9234bba8e0e64e3f74266212bf7c8433d7d253dacf5294d712f3ad3fea863e",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Only MobyGames (D1/W10) currently asserts a November 1992 DOS release; independent release-date evidence is needed to confirm or conflict with that dating for Galacta: The Battle for Saturn.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Galacta: The Battle for Saturn release date 1992 DOS shareware",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 2477,
+      "output": 483,
+      "hit": 768,
+      "miss": 1709,
+      "reasoning": 391
+    },
+    "elapsed_seconds": 2.466137206181884
+  },
+  {
+    "case_id": "DR06",
+    "qid": "186",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "a4c23e74b481f87896cb80a3160736d802415fbc91fc75964cc95ab9faa05dbc",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Release-date evidence conflicts: MobyGames states November 1992, MyAbandonware and FreeGameEmpire state 1992 generally, while RGB Classic Games lists a 1993 shareware episode and PlayDOSGames lists 1993. More evidence is needed to determine whether the November 1992 DOS release is correct or whether another date applies.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Galacta The Battle for Saturn DOS release date November 1992 Albino Frog Software shareware",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3548,
+      "output": 979,
+      "hit": 384,
+      "miss": 3164,
+      "reasoning": 854
+    },
+    "elapsed_seconds": 4.912166781723499
+  },
+  {
+    "case_id": "DR07",
+    "qid": "387",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "25583419746f37681d03ebd5b817fa6709f775ab045889fc56dc7b3581905f57",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "usage": {
+      "input": 3998,
+      "output": 211,
+      "hit": 512,
+      "miss": 3486,
+      "reasoning": 198
+    },
+    "elapsed_seconds": 1.7311419174075127
+  },
+  {
+    "case_id": "DR07",
+    "qid": "387",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "7984d57979be8b8e0d10a2383a3df57000e1ec438ad9ce33bc947dca82732bba",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "usage": {
+      "input": 2489,
+      "output": 391,
+      "hit": 512,
+      "miss": 1977,
+      "reasoning": 375
+    },
+    "elapsed_seconds": 2.2010614667087793
+  }
+]
