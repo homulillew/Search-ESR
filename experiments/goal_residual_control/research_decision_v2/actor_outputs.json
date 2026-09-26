@@ -1,0 +1,5666 @@
+[
+  {
+    "case_id": "T01_PRE",
+    "qid": "546",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "886aa2a326bb1a773c794e9c3595f5ac7c623a459bdcad02018149dc7ff6bc30",
+    "output": {
+      "decision": "act",
+      "gap": "Which snooker player has more than 300 centuries, more than 3 maximum breaks, turned professional between 1995 and 2006, and in 2023 won a decider against a player with fewer than 250 centuries, then won 4-3 and 4-0, before losing to a player with over 400 centuries?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Tom Ford snooker 2023 WST Classic results 4-3 4-0 Mark Selby",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Tom Ford snooker centuries maximum breaks turned professional 2001",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2204,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 2076,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.05807622504537205
+    },
+    "usage": {
+      "completion_tokens": 16857,
+      "prompt_tokens": 2204,
+      "total_tokens": 19061,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 16678,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 2076
+    }
+  },
+  {
+    "case_id": "T01_PRE",
+    "qid": "546",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "fb9082fce2793dc8552adaf50efa7b00eb604a83c4c5f9538de5d8e7d6b7467a",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the snooker player matching the century count, highest-break count, professional debut window, and the specific 2023 match sequence ending in a loss to a player with over 400 centuries.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Stuart Bingham 2023 Welsh Open results 4-3 4-0 Mark Allen",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Stuart Bingham 147 maximum breaks centuries turned professional 1995",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2308,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 2180,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.05545927209705372
+    },
+    "usage": {
+      "completion_tokens": 12444,
+      "prompt_tokens": 2308,
+      "total_tokens": 14752,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 12301,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 2180
+    }
+  },
+  {
+    "case_id": "T01_PRE",
+    "qid": "546",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "ff17b02f187328e0ede571ef537a05fe726d6dfb75cb3318f8b763e03fe7257d",
+    "output": {
+      "decision": "act",
+      "gap": "Which snooker player has more than 300 centuries, more than three maximum breaks, turned professional between 1995 and 2006, and in 2023 won a decider then two more matches 4-3 and 4-0 before losing to a player with over 400 centuries?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Marco Fu 2023 WST Classic 4-3 4-0 Mark Selby",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Marco Fu centuries maximum breaks turned professional 1998",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2232,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 2104,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.05734767025089606
+    },
+    "usage": {
+      "completion_tokens": 14398,
+      "prompt_tokens": 2232,
+      "total_tokens": 16630,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 14234,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 2104
+    }
+  },
+  {
+    "case_id": "T01_POST",
+    "qid": "546",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "2db3854b2b1d3313812b015e22f857b1b084248acf8b70c384430aad98d016bc",
+    "output": {
+      "decision": "act",
+      "gap": "Confirm whether Ding Junhui satisfies the career criteria (>300 centuries, more than 3 maximum breaks, turned professional between 1995 and 2006) and the full 2023 English Open sequence: 4–3 decider win over Ma Hailong, followed by 4–3 and 4–0 wins, then a loss to a player with over 400 centuries as of 30 January 2025.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "2023 English Open Ding Junhui Ma Hailong 4-3 results next matches 4-3 4-0 John Higgins",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Ding Junhui career centuries maximum breaks 147 turned professional 2003",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2909,
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 2781,
+      "reported_cached_tokens": 128,
+      "status": "reported",
+      "hit_rate": 0.044001375042970095
+    },
+    "usage": {
+      "completion_tokens": 2635,
+      "prompt_tokens": 2909,
+      "total_tokens": 5544,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2435,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 2781
+    }
+  },
+  {
+    "case_id": "T01_POST",
+    "qid": "546",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "3f11bedebadf547dc3c6bac643a13f39cab16b7f0f20505197153eea7ba1c1c4",
+    "output": {
+      "decision": "act",
+      "gap": "Does Ding Junhui's 2023 English Open run include a deciding-frame win, then a 4-3 win, then a 4-0 win, followed by a loss to a player with over 400 centuries (e.g., John Higgins), confirming the sequence described in the question?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Ding Junhui 2023 English Open results 4-3 4-0 John Higgins",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Ding Junhui English Open 2023 John Higgins loss",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2799,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 239,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9146123615576992
+    },
+    "usage": {
+      "completion_tokens": 4593,
+      "prompt_tokens": 2799,
+      "total_tokens": 7392,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 4430,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 239
+    }
+  },
+  {
+    "case_id": "T01_POST",
+    "qid": "546",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "514620976b1882f80bc9effe8654955da7571f504a3f7455e60f97697675319c",
+    "output": {
+      "decision": "act",
+      "gap": "Confirm whether Ding Junhui satisfies the remaining criteria: more than 300 centuries, more than three highest-break/maximum-break scores, professional debut between 1995 and 2006, and the described 2023 match sequence ending in a loss to a player with over 400 centuries.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Ding Junhui professional career centuries maximum breaks 147",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "2023 English Open Ding Junhui Matthew Selt Tom Ford Ronnie O'Sullivan results",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2771,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 211,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9238542042583905
+    },
+    "usage": {
+      "completion_tokens": 2555,
+      "prompt_tokens": 2771,
+      "total_tokens": 5326,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2396,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 211
+    }
+  },
+  {
+    "case_id": "T02_PRE",
+    "qid": "1094",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "d7adbe21f6b99aad16133f5be96a54ad9439e852abb244e834a2d94f7b767732",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the early 21st-century football match matching the team-origin clues and the 95th-minute free-kick, then identify the player who took it.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "95th minute free-kick football match report",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "AFC Wimbledon Milton Keynes Dons 95th minute free kick",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2194,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 786,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.6417502278942571
+    },
+    "usage": {
+      "completion_tokens": 1174,
+      "prompt_tokens": 2194,
+      "total_tokens": 3368,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1049,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 786
+    }
+  },
+  {
+    "case_id": "T02_PRE",
+    "qid": "1094",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "bc9c3ea00c56fd0e925979ec29deb6a064f4b040de96b5d6f75c09704decf7c1",
+    "output": {
+      "decision": "act",
+      "gap": "Which player took the 95th-minute free-kick in the early 21st-century match between AFC Wimbledon (born from supporter discord) and Milton Keynes Dons (evolved identity), where Wimbledon scored early and MK Dons scored late?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "AFC Wimbledon 2-2 Milton Keynes Dons 95th minute free-kick Dean Bowditch",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "AFC Wimbledon Milton Keynes Dons 22 October 2016 free kick 95th minute",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2168,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 248,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.8856088560885609
+    },
+    "usage": {
+      "completion_tokens": 7499,
+      "prompt_tokens": 2168,
+      "total_tokens": 9667,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 7338,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 248
+    }
+  },
+  {
+    "case_id": "T02_PRE",
+    "qid": "1094",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "b09d131b144d6793029934bd47b88c2e5b8f95fd8b7841e28b8d0168eec0aaad",
+    "output": {
+      "decision": "act",
+      "gap": "Which early-21st-century match is described, and who took the free-kick in the 95th minute?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "AFC Wimbledon Milton Keynes Dons 95th minute free-kick",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "AFC Wimbledon 2-1 Milton Keynes Dons 2012 free kick 95th minute player",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2244,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 196,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.9126559714795008
+    },
+    "usage": {
+      "completion_tokens": 3741,
+      "prompt_tokens": 2244,
+      "total_tokens": 5985,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3611,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 196
+    }
+  },
+  {
+    "case_id": "T02_POST",
+    "qid": "1094",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "aa56dfef4ac4be3921e2abdf20357e1e7f2d88ecdd48abcd4df114b9f1961f7f",
+    "output": {
+      "decision": "act",
+      "gap": "Which match and player does the 95th-minute free-kick clue refer to, given that the team-origin clues point more strongly to Inter Milan vs AC Milan (or Inter Milan vs Tottenham) than to PSG–Lille?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Inter Milan 4-3 AC Milan 2006 95th minute free kick Pirlo",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Inter Milan 4-3 Tottenham 2010 95th minute free kick Bale",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2781,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 1373,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.5062927004674578
+    },
+    "usage": {
+      "completion_tokens": 10168,
+      "prompt_tokens": 2781,
+      "total_tokens": 12949,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 10012,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 1373
+    }
+  },
+  {
+    "case_id": "T02_POST",
+    "qid": "1094",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "ad63ba9dd58a22bf35b5bc2fc807e9dbf0bb3da3c62db776897e692170426c7d",
+    "output": {
+      "decision": "act",
+      "gap": "Which player took the 95th-minute free kick in the Liverpool vs Arsenal match where Liverpool scored all their goals early and Arsenal scored late?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Liverpool 5-1 Arsenal 95th minute free kick",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Liverpool 5-1 Arsenal match report free kick 90+5",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2908,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 220,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9243466299862448
+    },
+    "usage": {
+      "completion_tokens": 16450,
+      "prompt_tokens": 2908,
+      "total_tokens": 19358,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 16323,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 220
+    }
+  },
+  {
+    "case_id": "T02_POST",
+    "qid": "1094",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "4ccf7e094c6bb47a5557125efd3b95783403f12dcef4dd8690a27c2ddc2e6bf9",
+    "output": {
+      "decision": "act",
+      "gap": "Whether the question's fixture is really PSG–Lille or a different early-21st-century match with a 95th-minute free kick, since the question's goal pattern ('the first team scored all their goals early, while the other scored its own in the latter stage') does not cleanly match PSG–Lille, where the article indicates Mbappé also equalised late (3-3) before Messi's 95th-minute free kick.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "95th minute free kick match winner early goals late goals",
+          "k": 10
+        },
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "goal scorers and minutes PSG Lille Mbappe Neymar Messi"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2807,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 247,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9120057000356252
+    },
+    "usage": {
+      "completion_tokens": 37149,
+      "prompt_tokens": 2807,
+      "total_tokens": 39956,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 36956,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 247
+    }
+  },
+  {
+    "case_id": "T03_PRE",
+    "qid": "517",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "116916e016a685bf43a49531af7560f718ce75501c8012aab3a11219e959aaf6",
+    "output": {
+      "decision": "act",
+      "gap": "Which person matches all identifying clues: born in the 1970s to a soldier father and a mother who worked at a barracks hospital, Chinese zodiac Goat, played a policeman in the 2005 film directed by the Iracema-inspired filmmaker, and appeared in Bill Condon's 2013 dramatic thriller?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "actor played policeman in Dark Water 2005 and The Fifth Estate 2013",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "born 1970s father soldier mother barracks hospital Chinese zodiac goat actor",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2311,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 903,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.6092600605798356
+    },
+    "usage": {
+      "completion_tokens": 5365,
+      "prompt_tokens": 2311,
+      "total_tokens": 7676,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5200,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 903
+    }
+  },
+  {
+    "case_id": "T03_PRE",
+    "qid": "517",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "c3b97631913e7515aa3c3a103941799bc63b137d085723966f973d1614ee456f",
+    "output": {
+      "decision": "act",
+      "gap": "Confirm that Ina Paule Klink is the person described and that her 2005 police role was in a film directed by Hannu Salonen, who was inspired by Iracema.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Ina Paule Klink father soldier mother barracks hospital",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Hannu Salonen decided to become filmmaker after watching Iracema",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2242,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 194,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.9134701159678859
+    },
+    "usage": {
+      "completion_tokens": 22590,
+      "prompt_tokens": 2242,
+      "total_tokens": 24832,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 22456,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 194
+    }
+  },
+  {
+    "case_id": "T03_PRE",
+    "qid": "517",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "46d91f6f107e2cca79c179ae40519079bada5e9bcba41fe44d203bd8cf11363d",
+    "output": {
+      "decision": "act",
+      "gap": "Identify/confirm the actor whose 1970s birth to a soldier father and barracks-hospital mother, goat-related zodiac clue, policeman role in the Iracema-inspired director's 2005 film, and appearance in Bill Condon's 2013 thriller match.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Anatole Taubman father soldier mother barracks hospital born 1970",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Anatole Taubman The Constant Gardener policeman The Fifth Estate Bill Condon Kinsey",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2214,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 166,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.9250225835591689
+    },
+    "usage": {
+      "completion_tokens": 14771,
+      "prompt_tokens": 2214,
+      "total_tokens": 16985,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 14616,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 166
+    }
+  },
+  {
+    "case_id": "T03_POST",
+    "qid": "517",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "3ac0913a982da8885b653c371b4b6547b9bae4c420aba54ab3409c151fbb3089",
+    "output": {
+      "decision": "act",
+      "gap": "Does Peter King's filmography confirm he played a policeman in The Constant Gardener (2005) and appeared in The Fifth Estate (2013), thereby verifying the film clues that point to his popular name?",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "policeman"
+        },
+        {
+          "tool": "open",
+          "window_ref": "W1",
+          "direction": "after"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2764,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1228,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5557163531114327
+    },
+    "usage": {
+      "completion_tokens": 6066,
+      "prompt_tokens": 2764,
+      "total_tokens": 8830,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5945,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1228
+    }
+  },
+  {
+    "case_id": "T03_POST",
+    "qid": "517",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "a39cedf0125605d3a302f21ece1c8e809e2b76dfea831f1dfd7a98c87f22ebdc",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2736,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 176,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.935672514619883
+    },
+    "usage": {
+      "completion_tokens": 11165,
+      "prompt_tokens": 2736,
+      "total_tokens": 13901,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 11145,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 176
+    }
+  },
+  {
+    "case_id": "T03_POST",
+    "qid": "517",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "9c989905c10e50c9663748a61b4a65a974dbd22564d572bed4c0d94af5522558",
+    "output": {
+      "decision": "act",
+      "gap": "The popular name Peter King is verified, but the remaining clues tying the answer together are unconfirmed: that the 2005 film (The Constant Gardener) was directed by someone who became a filmmaker after watching Iracema and that Peter King played a policeman in it, and that the 2013 dramatic thriller (The Fifth Estate) was directed by someone best known for writing/directing Kinsey. Confirming these closes the residual and locks in the answer.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "The Constant Gardener 2005 Fernando Meirelles Iracema became filmmaker policeman role",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "The Fifth Estate 2013 Bill Condon Kinsey dramatic thriller",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2854,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 166,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9418360196215837
+    },
+    "usage": {
+      "completion_tokens": 1879,
+      "prompt_tokens": 2854,
+      "total_tokens": 4733,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1684,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 166
+    }
+  },
+  {
+    "case_id": "T04_PRE",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "0ca0e0ff51d815863e5fedfb67b93c3f36457fba8864b8b0f3a6041a4da6393a",
+    "output": {
+      "decision": "act",
+      "gap": "How many albums did the musician (likely Oliver Mtukudzi) have by the time he was featured in Forbes Africa in May during the 2010s?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2010s albums",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Why do we sing why is there art Oliver Mtukudzi interview",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2213,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 805,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.6362403976502485
+    },
+    "usage": {
+      "completion_tokens": 609,
+      "prompt_tokens": 2213,
+      "total_tokens": 2822,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 478,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 805
+    }
+  },
+  {
+    "case_id": "T04_PRE",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "fbd87d69da65d88f3a7fed4ff43299fe47dc16c3fa63e177554dc92d61515af2",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the musician from the clues (likely Oliver Mtukudzi) and determine how many albums he had at the time of his Forbes Africa May feature in the 2010s.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May albums 2010s",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "musician died at 66 67 albums first album 1970s song urging president to retire human rights activist",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2261,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 213,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.9057938965059709
+    },
+    "usage": {
+      "completion_tokens": 604,
+      "prompt_tokens": 2261,
+      "total_tokens": 2865,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 461,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 213
+    }
+  },
+  {
+    "case_id": "T04_PRE",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "c4376cc4ec3c150043bb3a65a9c60157d6f12c2f0305e6822add833529286ca4",
+    "output": {
+      "decision": "act",
+      "gap": "Which musician matches the clues, and how many albums did they have when featured in Forbes Africa in May during the 2010s?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi died 66 67 albums first album 1970s song urging president retire human rights activist",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Forbes Africa May Oliver Mtukudzi number of albums 2010s",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2240,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 192,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.9142857142857143
+    },
+    "usage": {
+      "completion_tokens": 1532,
+      "prompt_tokens": 2240,
+      "total_tokens": 3772,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1394,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 192
+    }
+  },
+  {
+    "case_id": "T04_POST",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "0234c4abc872e69fb83c58820dba3622c65b35322bcc17370a695e8028d133e7",
+    "output": {
+      "decision": "act",
+      "gap": "The requested album count depends on identifying the specific Forbes Africa May 2010s feature on Oliver Mtukudzi and the number of albums attributed to him at that time.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2010s albums feature",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi 67 albums Forbes Africa",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2843,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1307,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5402743580724587
+    },
+    "usage": {
+      "completion_tokens": 217,
+      "prompt_tokens": 2843,
+      "total_tokens": 3060,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 88,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1307
+    }
+  },
+  {
+    "case_id": "T04_POST",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "58dd47808b4d70c9e3bf1e27f9a26eabc4c846b04addee39af7c365ff4dbe22a",
+    "output": {
+      "decision": "act",
+      "gap": "Which Forbes Africa May feature in the 2010s profiled Oliver Mtukudzi, and how many albums did he have by that time?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Forbes Africa May Oliver Mtukudzi albums",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi featured in Forbes Africa May 2010s number of albums",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2784,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 224,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9195402298850575
+    },
+    "usage": {
+      "completion_tokens": 1082,
+      "prompt_tokens": 2784,
+      "total_tokens": 3866,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 954,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 224
+    }
+  },
+  {
+    "case_id": "T04_POST",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "97cea7c264e94c91761c57e014326e4668b4dc934abf1a1b1108d136e7f2ad39",
+    "output": {
+      "decision": "act",
+      "gap": "How many albums did Oliver Mtukudzi have when he was featured in Forbes Africa in May during the 2010s?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2014 album count",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2010s feature albums",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2757,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 197,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9285455204932898
+    },
+    "usage": {
+      "completion_tokens": 2220,
+      "prompt_tokens": 2757,
+      "total_tokens": 4977,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2096,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 197
+    }
+  },
+  {
+    "case_id": "T05_PRE",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "99f3bd6fffee9a970a0e04a23e7009953f283e48a9f138a80335d5690c12c125",
+    "output": {
+      "decision": "act",
+      "gap": "Which TV series matches the three season-plot clues, and specifically does New Girl match the season 4 baby shower/reconnection clue and the season 1 date intervention clue?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "New Girl season 4 Oregon Jess returns home sister baby shower reconnects ex-boyfriend",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "New Girl season 1 friends convince Nick to take Jess on a date after misunderstanding",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2285,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 877,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.6161925601750547
+    },
+    "usage": {
+      "completion_tokens": 6806,
+      "prompt_tokens": 2285,
+      "total_tokens": 9091,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 6665,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 877
+    }
+  },
+  {
+    "case_id": "T05_PRE",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "3b75a670a686896bc8d23e9951f1a1311ff428822f559f3e6a89e9e0347adb92",
+    "output": {
+      "decision": "act",
+      "gap": "Which TV series matches the described season 1 date reconciliation, season 3 male-lead roommate sacrifice, and season 4 female-lead home birth/reconnection plot points?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "season 3 finale male lead roommate makes a sacrifice sitcom",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "season 4 female lead returns home for birth of sister's baby reconnects with old boyfriend",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2264,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 216,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.9045936395759717
+    },
+    "usage": {
+      "completion_tokens": 16797,
+      "prompt_tokens": 2264,
+      "total_tokens": 19061,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 16660,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 216
+    }
+  },
+  {
+    "case_id": "T05_PRE",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "0238810e19565dd328368c6f096f64f233ed18a086aa23b3edc9e7bb596e7a02",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the series that contains the described season 1 date intervention, season 3 roommate sacrifice, and season 4 return for a family member's baby with a past reconnection.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "female lead returns home for sister's baby shower reconnects with ex-boyfriend TV series",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "male lead's roommate makes a sacrifice season 3 finale TV series",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2337,
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 161,
+      "reported_cached_tokens": 2176,
+      "status": "reported",
+      "hit_rate": 0.9311082584510055
+    },
+    "usage": {
+      "completion_tokens": 28205,
+      "prompt_tokens": 2337,
+      "total_tokens": 30542,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 28067,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 161
+    }
+  },
+  {
+    "case_id": "T05_POST",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "33fc5b0479cb98bae44580894f1bc725df991d008fb190361b4c7b5254c30f35",
+    "output": {
+      "decision": "act",
+      "gap": "Do the remaining two plot points (season 1 early-episode date after a sensitive issue, and the male lead's roommate's sacrifice in the season 3 finale) also match You're the Worst, confirming it as the series?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "You're the Worst season 1 episode friends convince Jimmy to take Gretchen on a date",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "You're the Worst season 3 finale Edgar sacrifice roommate",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2779,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1243,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5527168046059734
+    },
+    "usage": {
+      "completion_tokens": 273,
+      "prompt_tokens": 2779,
+      "total_tokens": 3052,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 126,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1243
+    }
+  },
+  {
+    "case_id": "T05_POST",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "4e9f1f93069937f74bd78a9b3b5d3e4a6374f392bafa4ff718f6e533d332abf4",
+    "output": {
+      "decision": "act",
+      "gap": "Whether 'You're the Worst' also matches the season one date-intervention plot point and the season three roommate sacrifice, confirming it is the described series.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "You're the Worst season 1 episode Jimmy takes Gretchen on a date friends convince",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "You're the Worst season 3 finale Edgar roommate sacrifice",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2876,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 188,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9346314325452016
+    },
+    "usage": {
+      "completion_tokens": 350,
+      "prompt_tokens": 2876,
+      "total_tokens": 3226,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 221,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 188
+    }
+  },
+  {
+    "case_id": "T05_POST",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "5187f0632d728c323bf0c991d04e14e2919089152715eb3a67beb764aa95d625",
+    "output": {
+      "decision": "act",
+      "gap": "Does You’re the Worst also match the remaining season-one date-intervention clue and the season-three finale roommate-sacrifice clue, confirming the series name?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "You're the Worst season 1 friends convince Jimmy take Gretchen on date",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "You're the Worst season 3 finale Edgar sacrifice roommate",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2800,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 240,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9142857142857143
+    },
+    "usage": {
+      "completion_tokens": 1226,
+      "prompt_tokens": 2800,
+      "total_tokens": 4026,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1097,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 240
+    }
+  },
+  {
+    "case_id": "T06_PRE",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "8b899bf8bd3e08266414b8b8a5e08bb4b4b0664bbfde62d4ba7b372504a424c3",
+    "output": {
+      "decision": "act",
+      "gap": "Which capital-city football club is described by the 2023 article claiming fifteen trophies and thirteen signings, and what are its founding year and country?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "football club won 15 trophies signed 13 players 2023",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "club based in capital city won league 1975 15 trophies 13 players 2023",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2331,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 923,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.6040326040326041
+    },
+    "usage": {
+      "completion_tokens": 10022,
+      "prompt_tokens": 2331,
+      "total_tokens": 12353,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 9885,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 923
+    }
+  },
+  {
+    "case_id": "T06_PRE",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "106d9d6bba16d15630eed7905634af2b921f5b676accf273ae935f9ad2e5e72b",
+    "output": {
+      "decision": "act",
+      "gap": "Which football club matches the 2023 article clue about winning fifteen trophies and signing 13 players, leading to its founding year and country?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "football club won fifteen trophies signed 13 players ahead of season 2023",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "\"15 trophies\" \"13 players\" football club 2023 article",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2274,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 226,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.9006156552330695
+    },
+    "usage": {
+      "completion_tokens": 979,
+      "prompt_tokens": 2274,
+      "total_tokens": 3253,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 847,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 226
+    }
+  },
+  {
+    "case_id": "T06_PRE",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "50ed900cd7d2be8c2359809153168c749c2a49042fd0510b461f1edee5866f14",
+    "output": {
+      "decision": "act",
+      "gap": "Which club is described by the 2023 article as having won fifteen trophies and signed 13 players ahead of a season, and what are its founding year and country?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "won fifteen trophies and signed 13 players ahead of season",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "signed 13 players ahead of 2023-24 season club fifteen trophies",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2246,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 198,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.9118432769367765
+    },
+    "usage": {
+      "completion_tokens": 4978,
+      "prompt_tokens": 2246,
+      "total_tokens": 7224,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 4843,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 198
+    }
+  },
+  {
+    "case_id": "T06_POST",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "6a5b28523268b418ab0c14e9c7244a2dd54fedc35d57e8e81b33ac4de08f1668",
+    "output": {
+      "decision": "act",
+      "gap": "The club is likely Rangers based on the Enugu and 13-player-signing clues, but the founding year and country, plus confirmation of the fifteen-trophy clue, still need evidence.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Rangers International FC founded year Enugu Nigeria",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers fifteen trophies signed 13 players 2023 article",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2805,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1269,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5475935828877005
+    },
+    "usage": {
+      "completion_tokens": 3403,
+      "prompt_tokens": 2805,
+      "total_tokens": 6208,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3273,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1269
+    }
+  },
+  {
+    "case_id": "T06_POST",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "b86a4f742acea67257d4027919502882f5a0d8bc1d000c40965020004b2ed5d6",
+    "output": {
+      "decision": "act",
+      "gap": "Whether the described club is Rangers International FC of Enugu, and therefore what year and country the club was founded in.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Rangers International Football Club Enugu founded 1970 Nigeria history",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Enugu Rangers trophies won fifteen trophies 13 players signed 2023",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2777,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 217,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9218581202736766
+    },
+    "usage": {
+      "completion_tokens": 925,
+      "prompt_tokens": 2777,
+      "total_tokens": 3702,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 802,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 217
+    }
+  },
+  {
+    "case_id": "T06_POST",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "3c41579a1ce3f481789e01e758b99efb65cc10a36ef0d68afba5b0e54cc10619",
+    "output": {
+      "decision": "act",
+      "gap": "The founding year and country of the hypothesized team (Rangers) remain unverified, and the corpus has not been checked for a 2023 article stating the club has won fifteen trophies while confirming the 13-player signing.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Rangers International Football Club Enugu founded year history Nigeria",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers fifteen trophies 2023 signed 13 players article",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2915,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 227,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9221269296740995
+    },
+    "usage": {
+      "completion_tokens": 2660,
+      "prompt_tokens": 2915,
+      "total_tokens": 5575,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2520,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 227
+    }
+  },
+  {
+    "case_id": "T07_PRE",
+    "qid": "1034",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "a809a21e6b738cdc470dc20f5260fb604b8f399690feef5e6f3f2eba8c7180d6",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the individual matching the combined clues—commercial model with showbiz-derived wealth, one of three children, industry break between 2006 and 2010, a child born in the United States, university study in Business Administration between 2001 and 2007, debut single between 2010 and 2015, and hired as a coordinator in 2012 then promoted to manager—and determine that person's birth name.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "\"most of her wealth came from showbiz\" commercial model",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "\"hired as a coordinator in 2012\" \"promoted to manager\" debut single business administration",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2301,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 893,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.6119078661451542
+    },
+    "usage": {
+      "completion_tokens": 2899,
+      "prompt_tokens": 2301,
+      "total_tokens": 5200,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2706,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 893
+    }
+  },
+  {
+    "case_id": "T07_PRE",
+    "qid": "1034",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "3a018f3ffbbea8b37d8e3d516b6d43cf3eb5bc6a0b319fad14f900e7db911962",
+    "output": {
+      "decision": "act",
+      "gap": "The individual's identity remains unverified, so the requested birth name cannot yet be determined from the 2022 commercial-model/showbiz-wealth clue, the 2021 family/break/US-born-child clue, or the 2020 Business Administration/debut-single/coordinator-to-manager clue.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model showbiz wealth Business Administration debut single coordinator manager",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "born into a family of three children break industry 2008 child born in United States",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2483,
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 307,
+      "reported_cached_tokens": 2176,
+      "status": "reported",
+      "hit_rate": 0.8763592428513894
+    },
+    "usage": {
+      "completion_tokens": 8466,
+      "prompt_tokens": 2483,
+      "total_tokens": 10949,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 8304,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 307
+    }
+  },
+  {
+    "case_id": "T07_PRE",
+    "qid": "1034",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "090ac403bd9afa1a236e2b55deedb9c47da9f0cdc352799ed9fb5f9dc20604e1",
+    "output": {
+      "decision": "act",
+      "gap": "What is the birth name of the individual described by the clues, likely Vera Sidika?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Vera Nasirumbi",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Vera Sidika real name birth name commercial model showbiz",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2326,
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 150,
+      "reported_cached_tokens": 2176,
+      "status": "reported",
+      "hit_rate": 0.9355116079105761
+    },
+    "usage": {
+      "completion_tokens": 11609,
+      "prompt_tokens": 2326,
+      "total_tokens": 13935,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 11501,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 150
+    }
+  },
+  {
+    "case_id": "T07_POST",
+    "qid": "1034",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "e66a9e6736946287df5874cb23b07eb6882afa438386ae28f4993b5f5e69fd22",
+    "output": {
+      "decision": "act",
+      "gap": "No verified fact identifies the individual matching the 2022 article (commercial model whose wealth mostly came from showbiz) and the 2020 article (studied Business Administration, hired as coordinator in 2012 then promoted to a manager, released a debut single 2010-2015), plus the 2021 details (family of three children, break in an industry 2006-2010, child born in the US). The birth name therefore remains unknown, and the current Heart Evangelista lead does not satisfy these clues.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model most of her wealth came from showbiz net worth",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "hired as coordinator in 2012 promoted to manager studied Business Administration debut single",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3025,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1489,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5077685950413223
+    },
+    "usage": {
+      "completion_tokens": 9624,
+      "prompt_tokens": 3025,
+      "total_tokens": 12649,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 9414,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1489
+    }
+  },
+  {
+    "case_id": "T07_POST",
+    "qid": "1034",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "ba80c488482afd8f9011c469bc8befa659bf5cb557ea5e627ec5b7d8dc73cd23",
+    "output": {
+      "decision": "act",
+      "gap": "The verified material only covers Heart Evangelista, but the target individual's distinguishing clues (commercial model whose wealth came from showbiz, born into a family of three children, university study of Business Administration, a debut single, and a 2012 coordinator-to-manager promotion) are not yet matched to any identified person, so the birth name remains unknown.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model most of her wealth came from showbiz 2022 article",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "studied Business Administration debut single 2012 hired coordinator promoted manager model",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2897,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 209,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.927856403175699
+    },
+    "usage": {
+      "completion_tokens": 1824,
+      "prompt_tokens": 2897,
+      "total_tokens": 4721,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1651,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 209
+    }
+  },
+  {
+    "case_id": "T07_POST",
+    "qid": "1034",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "8fb195faab34766d258ad67d606169c401b41a5ab62173409d0e528a9133083b",
+    "output": {
+      "decision": "act",
+      "gap": "Which individual matches all four clue sets (a commercial model whose wealth largely came from showbiz per a 2022 article; born into a family of three children with a child born in the US; entered a university between 2001-2007 to study Business Administration and released a debut single between 2010-2015; hired as a coordinator in 2012 and later promoted to a manager), and what is that person's birth name?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "commercial model most of her wealth came from showbiz 2022",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "hired as coordinator 2012 promoted to manager studied business administration debut single",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2872,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 184,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.935933147632312
+    },
+    "usage": {
+      "completion_tokens": 3077,
+      "prompt_tokens": 2872,
+      "total_tokens": 5949,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2884,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 184
+    }
+  },
+  {
+    "case_id": "T08_PRE",
+    "qid": "311",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "d6c0ec5985c685c7ef4ebca0c558d758c3fa695b9c253214aee0bba68ea57d3d",
+    "output": {
+      "decision": "act",
+      "gap": "What is the Argentinian release name of the television program matching the clues (candidate: The Adventures of Hijitus)?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Hijitus Argentine release title television series",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Argentine educational cartoon twins poet complainer living transport 5 minutes episodes 1990s",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2282,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 874,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.6170026292725679
+    },
+    "usage": {
+      "completion_tokens": 2771,
+      "prompt_tokens": 2282,
+      "total_tokens": 5053,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2650,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 874
+    }
+  },
+  {
+    "case_id": "T08_PRE",
+    "qid": "311",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "eaec66774917a804e46317c0cc4cc63caa45db21f48d13fc1d5c08330877070b",
+    "output": {
+      "decision": "act",
+      "gap": "What is the Argentinian release name of Els Július, the Catalan educational animated series that matches the clues (TV3, 52 short episodes, twins, poet, complainer, living car)?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Els Július TV3 animated series 52 episodes 5 minutes twins poet complainer living car",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Els Július Argentina release name Los Július",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2264,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 216,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.9045936395759717
+    },
+    "usage": {
+      "completion_tokens": 14909,
+      "prompt_tokens": 2264,
+      "total_tokens": 17173,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 14764,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 216
+    }
+  },
+  {
+    "case_id": "T08_PRE",
+    "qid": "311",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "803d9eb08a92ff46cdeb25821a0d247699e82f4095532f7fa63a9e1ce7160f64",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the early-1990s short-form educational TV series, likely French and aired on TF1, featuring twins, a poet, a complainer, and a living means of transport, and determine its Argentinian release title.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "French educational animated series 1990 TF1 52 episodes 5 minutes twins poet complainer living train",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Argentinian release name educational animated series 1990 52 episodes 5 minutes twins poet complainer living transport",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2391,
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 215,
+      "reported_cached_tokens": 2176,
+      "status": "reported",
+      "hit_rate": 0.9100794646591385
+    },
+    "usage": {
+      "completion_tokens": 6147,
+      "prompt_tokens": 2391,
+      "total_tokens": 8538,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5988,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 215
+    }
+  },
+  {
+    "case_id": "T08_POST",
+    "qid": "311",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "e75de6577aab8b1cbc209e0945bcc68f801581ddf6c02d0c44accf1b1814bdef",
+    "output": {
+      "decision": "act",
+      "gap": "Which television program matches the clue set (educational, early 1990s, ~50-60 episodes under 5 minutes, network name of three characters including a number, characters including twins, a poet, a complainer, and a living means of transport), and what is its Argentine release name? The verified Hijitus facts conflict on writers, airdates, and episode structure, so a different program must be identified.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "educational children's television series twins poet complainer talking car",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Argentine educational animated television series 1990 short episodes network with number",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2876,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1340,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5340751043115438
+    },
+    "usage": {
+      "completion_tokens": 15019,
+      "prompt_tokens": 2876,
+      "total_tokens": 17895,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 14838,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1340
+    }
+  },
+  {
+    "case_id": "T08_POST",
+    "qid": "311",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "4abc7e85bf8565246f6fc18533adecf7eac210477b9e0015c78d55fe3c0b4b82",
+    "output": {
+      "decision": "act",
+      "gap": "The verified Hijitus claims conflict with the required 1990s timing, two-writer credit, and three-character network with a number, so the target program likely is a different short educational series; its Argentinian release name still needs to be identified.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "educational animated series 1990 52 episodes 5 minutes twins poet complainer living vehicle French",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "FR3 children's program 1990 52 episodes 5 minutes educational twins poet complainer living car",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3019,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1483,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5087777409738324
+    },
+    "usage": {
+      "completion_tokens": 6695,
+      "prompt_tokens": 3019,
+      "total_tokens": 9714,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 6534,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1483
+    }
+  },
+  {
+    "case_id": "T08_POST",
+    "qid": "311",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "b04efe8d0d5ad3757290d08ae8d5422e0c1d7563a87093ee283ff94ccd3133f2",
+    "output": {
+      "decision": "act",
+      "gap": "Which French educational short-form series from the early 1990s has characters including twins, a poet, a complainer, and a living vehicle, and what is its Argentinian release name?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "French educational animated series 1990 52 episodes 5 minutes twins poet complainer living vehicle",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Argentinian release name French educational television series early 1990s FR3 TF1",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2894,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 206,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9288182446440912
+    },
+    "usage": {
+      "completion_tokens": 9224,
+      "prompt_tokens": 2894,
+      "total_tokens": 12118,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 9078,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 206
+    }
+  },
+  {
+    "case_id": "T09_PRE",
+    "qid": "186",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "2d8253d85631580b9331daa7b70dcd5cf8988e076010fd5a4735ea615f20cef5",
+    "output": {
+      "decision": "act",
+      "gap": "The game is unidentified; need to find the amphibian-named developer and the DOS shareware game released in November with exactly three credited people, two sharing a surname.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "software company named after amphibian founded early 1990s originally named game developer",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "DOS shareware game November early 1990s single-player three credits same family name",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2265,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 857,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.6216335540838852
+    },
+    "usage": {
+      "completion_tokens": 2948,
+      "prompt_tokens": 2265,
+      "total_tokens": 5213,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2811,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 857
+    }
+  },
+  {
+    "case_id": "T09_PRE",
+    "qid": "186",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "06793ee81002b5fd59e356f09f4def4e672fef3b96a9e56469fb062eb0a603f5",
+    "output": {
+      "decision": "act",
+      "gap": "Which DOS shareware game from November early 1990s was developed by an amphibian-named company (possibly Frog City Software or Bullfrog Productions) with three credited people, two sharing a family name?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Rags to Riches DOS 1993 shareware Frog City Software credits",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Frog City Software founded original name early 1990s",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2204,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 156,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.9292196007259528
+    },
+    "usage": {
+      "completion_tokens": 5774,
+      "prompt_tokens": 2204,
+      "total_tokens": 7978,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5633,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 156
+    }
+  },
+  {
+    "case_id": "T09_PRE",
+    "qid": "186",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "2c7b615d06a65f6ad1a29eb48d62d905780189fe896516f287862405bc514ea9",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the DOS shareware game published in November in the early 1990s, developed by an amphibian-named software company that had a different early-1990s name, with single-player mode and three credited people (two sharing a surname).",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "DOS shareware game November early 1990s single-player three credits same family name software company named after amphibian",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "software company named after frog or toad originally different name developed shareware DOS game November 1990s",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2179,
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 259,
+      "reported_cached_tokens": 1920,
+      "status": "reported",
+      "hit_rate": 0.8811381367599816
+    },
+    "usage": {
+      "completion_tokens": 3388,
+      "prompt_tokens": 2179,
+      "total_tokens": 5567,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3222,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1920
+      },
+      "prompt_cache_hit_tokens": 1920,
+      "prompt_cache_miss_tokens": 259
+    }
+  },
+  {
+    "case_id": "T09_POST",
+    "qid": "186",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "7c853cfa9e628f3ffc9950227f7a4d6b0a9d7c0405160e3965358dc8d5efe437",
+    "output": {
+      "decision": "act",
+      "gap": "Whether Albino Frog Software (the amphibian-named company) is the game's developer and whether it operated under a different name when first established in the early 1990s, to fully confirm Galacta: The Battle for Saturn as the answer.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "developer company Albino Frog Software"
+        },
+        {
+          "tool": "search",
+          "query": "Albino Frog Software company history formerly known as developer Galacta",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2854,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1318,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5381920112123336
+    },
+    "usage": {
+      "completion_tokens": 1023,
+      "prompt_tokens": 2854,
+      "total_tokens": 3877,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 880,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1318
+    }
+  },
+  {
+    "case_id": "T09_POST",
+    "qid": "186",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "786c3066f46488696b5f1a8800262e99b1f13ebaf54ffb479a9bbe04207b3ef2",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2829,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 141,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9501590668080594
+    },
+    "usage": {
+      "completion_tokens": 2794,
+      "prompt_tokens": 2829,
+      "total_tokens": 5623,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2774,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 141
+    }
+  },
+  {
+    "case_id": "T09_POST",
+    "qid": "186",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "dfa8771c3348095cdcaac46565bdc56aeccbf945c1bb370e45e809c8eb59fb51",
+    "output": {
+      "decision": "act",
+      "gap": "Was Galacta: The Battle for Saturn actually developed by Albino Frog Software, and did that company have a different name when it was first established in the early 1990s?",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "developer Albino Frog Software"
+        },
+        {
+          "tool": "search",
+          "query": "Albino Frog Software company history former name early 1990s",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2942,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 254,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9136641740312712
+    },
+    "usage": {
+      "completion_tokens": 1084,
+      "prompt_tokens": 2942,
+      "total_tokens": 4026,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 955,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 254
+    }
+  },
+  {
+    "case_id": "T10_PRE",
+    "qid": "387",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "1ea2292e02456458927dca04fca70457b78aaae941c7d270b450b691edebcf74",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the person behind Game B's intro/end animations and locate their 25 July 2013 description of their gaming PC, specifically its storage size.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "\"nice wireless keyboard\" \"8x11\" gaming PC animated",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "\"Jazz Jackrabbit 2\" intro end animations Lasse Öörni interview 2013",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2286,
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 878,
+      "reported_cached_tokens": 1408,
+      "status": "reported",
+      "hit_rate": 0.615923009623797
+    },
+    "usage": {
+      "completion_tokens": 2103,
+      "prompt_tokens": 2286,
+      "total_tokens": 4389,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1968,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1408
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 878
+    }
+  },
+  {
+    "case_id": "T10_PRE",
+    "qid": "387",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "5fabd3520c804d7faa80f2f4ac5abcc022d6d338b8f0e373b8182d31bf70c5f3",
+    "output": {
+      "decision": "act",
+      "gap": "Identify the animator of Jazz Jackrabbit 2's intro/end animations and the storage size of their gaming PC as of 25 July 2013.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Jazz Jackrabbit 2 intro end animations Dan Paladin gaming PC storage 2013",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "nice wireless keyboard animated on normal 8x11 printing paper gaming PC storage",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2402,
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 226,
+      "reported_cached_tokens": 2176,
+      "status": "reported",
+      "hit_rate": 0.9059117402164862
+    },
+    "usage": {
+      "completion_tokens": 4362,
+      "prompt_tokens": 2402,
+      "total_tokens": 6764,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 4225,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2176
+      },
+      "prompt_cache_hit_tokens": 2176,
+      "prompt_cache_miss_tokens": 226
+    }
+  },
+  {
+    "case_id": "T10_PRE",
+    "qid": "387",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "b373a48b2d1beded3bc91c9371b8d0048e924c835c9d0d17dd1a52b5a567d464",
+    "output": {
+      "decision": "act",
+      "gap": "What storage size did Dean Dodrill's gaming PC have as of 25 July 2013?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Dean Dodrill gaming PC wireless keyboard 8x11 paper storage 2013",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Dust An Elysian Tail interview July 25 2013 PC specs storage",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2306,
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 258,
+      "reported_cached_tokens": 2048,
+      "status": "reported",
+      "hit_rate": 0.8881179531656548
+    },
+    "usage": {
+      "completion_tokens": 1829,
+      "prompt_tokens": 2306,
+      "total_tokens": 4135,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1705,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2048
+      },
+      "prompt_cache_hit_tokens": 2048,
+      "prompt_cache_miss_tokens": 258
+    }
+  },
+  {
+    "case_id": "T10_POST",
+    "qid": "387",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "81b7aa8181b2d46081151673c4ec2165fde9350b56918d897f7a01d8994b284e",
+    "output": {
+      "decision": "act",
+      "gap": "Whether Dean Dodrill is the animator behind Game B's intro/end animations and whether the 5 TB storage figure is from the article dated 25 July 2013.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Dean Dodrill Jazz Jackrabbit intro end animations 8x11 paper",
+          "k": 5
+        },
+        {
+          "tool": "open",
+          "window_ref": "W1",
+          "direction": "before"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2957,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1421,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5194453838349679
+    },
+    "usage": {
+      "completion_tokens": 4707,
+      "prompt_tokens": 2957,
+      "total_tokens": 7664,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 4583,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1421
+    }
+  },
+  {
+    "case_id": "T10_POST",
+    "qid": "387",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "d3b1f9443c41fdbb027b0864af34ae5d5193742143c7eff533165aaa94f05c07",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2856,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 168,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9411764705882353
+    },
+    "usage": {
+      "completion_tokens": 217,
+      "prompt_tokens": 2856,
+      "total_tokens": 3073,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 197,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 168
+    }
+  },
+  {
+    "case_id": "T10_POST",
+    "qid": "387",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "1ecf36ffab6f15473807dc90f035ce24d825c51c2e530788694be0a078fc0ec3",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2836,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 148,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9478138222849083
+    },
+    "usage": {
+      "completion_tokens": 1767,
+      "prompt_tokens": 2836,
+      "total_tokens": 4603,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1747,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 148
+    }
+  },
+  {
+    "case_id": "T11_PRE",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "e8eaf318335cba7e4f098965ca36170bebb1215e7b51bba991722e4870f7c57a",
+    "output": {
+      "decision": "act",
+      "gap": "How many albums did Oliver Mtukudzi have at the time he was featured in Forbes Africa in May during the 2010s?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2010s feature",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi number of albums Forbes Africa 2010s",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2783,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1247,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5519223859144807
+    },
+    "usage": {
+      "completion_tokens": 686,
+      "prompt_tokens": 2783,
+      "total_tokens": 3469,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 560,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1247
+    }
+  },
+  {
+    "case_id": "T11_PRE",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "b347f2117a683c405ba035f828837add40f0fda747a0e417d569e72a3ea78a50",
+    "output": null,
+    "error": {
+      "type": "ValidationError",
+      "status": null,
+      "message": "{'decision': 'act', 'gap': 'Need to locate the 2010s Forbes Africa May feature on Oliver Mtukudzi and determine how many albums he had at that time (career achievements: 67 albums total).', 'actions': [{'tool': 'search', 'query': 'Forbes Africa Oliver Mtukudzi May feature albums', 'k': 5}, {'tool': 'find', 'doc_ref': 'D1', 'query': 'Forbes Africa feature albums', 'k': 5}]} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema:\n    {'$schema': 'https://json-schema.org/d"
+    },
+    "attempted": true,
+    "serialization_valid": false,
+    "cache_usage": {
+      "prompt_tokens": 2758,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 198,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9282088469905729
+    },
+    "usage": {
+      "completion_tokens": 278,
+      "prompt_tokens": 2758,
+      "total_tokens": 3036,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 144,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 198
+    }
+  },
+  {
+    "case_id": "T11_PRE",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "ff51a58549711ea7f7a8001692b4e771e2db45ec17be394179f0b2a469c6550a",
+    "output": {
+      "decision": "act",
+      "gap": "The exact number of albums Oliver Mtukudzi had by the time he was featured in Forbes Africa in May during the 2010s is not established.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May feature albums",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Mtukudzi Forbes Africa 2010s interview album count",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2843,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 155,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9454801266268027
+    },
+    "usage": {
+      "completion_tokens": 562,
+      "prompt_tokens": 2843,
+      "total_tokens": 3405,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 437,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 155
+    }
+  },
+  {
+    "case_id": "T11_POST",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "3ea2cbed57d2e40538df933427af54d950ba0e73d80a15391d1d34761f253bc7",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4937,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 3401,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.31112011342920803
+    },
+    "usage": {
+      "completion_tokens": 651,
+      "prompt_tokens": 4937,
+      "total_tokens": 5588,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 631,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 3401
+    }
+  },
+  {
+    "case_id": "T11_POST",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "927532d615e50a40575aa541ebc45b8a8fed0556b52b5422e171dc5b1e4b63cc",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4942,
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 206,
+      "reported_cached_tokens": 4736,
+      "status": "reported",
+      "hit_rate": 0.9583164710643464
+    },
+    "usage": {
+      "completion_tokens": 147,
+      "prompt_tokens": 4942,
+      "total_tokens": 5089,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 127,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4736
+      },
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 206
+    }
+  },
+  {
+    "case_id": "T11_POST",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "3f3de65d9df605ba3d49e4ab5cf059fa9fdd2abd551317cabd088fa458343a6f",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4962,
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 226,
+      "reported_cached_tokens": 4736,
+      "status": "reported",
+      "hit_rate": 0.954453849254333
+    },
+    "usage": {
+      "completion_tokens": 405,
+      "prompt_tokens": 4962,
+      "total_tokens": 5367,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 385,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4736
+      },
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 226
+    }
+  },
+  {
+    "case_id": "T12_PRE",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "80ffc27cb1d9420a9fb923641ae24175a27f545102a2587d39fcbc8313295148",
+    "output": {
+      "decision": "act",
+      "gap": "Need to find the Forbes Africa feature on Oliver Mtukudzi from May in the 2010s and determine how many albums he had at that time.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May feature albums",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi 67 albums Forbes Africa 2010s",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2852,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 164,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9424964936886395
+    },
+    "usage": {
+      "completion_tokens": 192,
+      "prompt_tokens": 2852,
+      "total_tokens": 3044,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 66,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 164
+    }
+  },
+  {
+    "case_id": "T12_PRE",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "e8eaf318335cba7e4f098965ca36170bebb1215e7b51bba991722e4870f7c57a",
+    "output": {
+      "decision": "act",
+      "gap": "Did Forbes Africa feature Oliver Mtukudzi in May during the 2010s, and how many albums did he have at that time?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2010s albums",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Forbes Africa May Oliver Mtukudzi interview number of albums",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2783,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 223,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9198706431908013
+    },
+    "usage": {
+      "completion_tokens": 339,
+      "prompt_tokens": 2783,
+      "total_tokens": 3122,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 213,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 223
+    }
+  },
+  {
+    "case_id": "T12_PRE",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "b347f2117a683c405ba035f828837add40f0fda747a0e417d569e72a3ea78a50",
+    "output": {
+      "decision": "act",
+      "gap": "How many albums did Oliver Mtukudzi have by the time he was featured in Forbes Africa in May during the 2010s?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Forbes Africa Oliver Mtukudzi \"Why do we sing, why is there art?\"",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2010s albums",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2758,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 198,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9282088469905729
+    },
+    "usage": {
+      "completion_tokens": 601,
+      "prompt_tokens": 2758,
+      "total_tokens": 3359,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 469,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 198
+    }
+  },
+  {
+    "case_id": "T12_POST",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "453f6a78971b7a4b3fc2c7f1e529f6b3208a848c18749e31836ff87dd0a5e495",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4966,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3302,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.33507853403141363
+    },
+    "usage": {
+      "completion_tokens": 348,
+      "prompt_tokens": 4966,
+      "total_tokens": 5314,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 328,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3302
+    }
+  },
+  {
+    "case_id": "T12_POST",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "248bc837ecd7de1002dcf86359ee4b687207d5d0600a61845cf8c2a8aa08bea0",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4941,
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 205,
+      "reported_cached_tokens": 4736,
+      "status": "reported",
+      "hit_rate": 0.9585104229912973
+    },
+    "usage": {
+      "completion_tokens": 241,
+      "prompt_tokens": 4941,
+      "total_tokens": 5182,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 221,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4736
+      },
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 205
+    }
+  },
+  {
+    "case_id": "T12_POST",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "07654ae5b9b92a56c4ec0be68b2f610c1d823cd5c40c0d73002897ac5717b8cc",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4946,
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 210,
+      "reported_cached_tokens": 4736,
+      "status": "reported",
+      "hit_rate": 0.957541447634452
+    },
+    "usage": {
+      "completion_tokens": 198,
+      "prompt_tokens": 4946,
+      "total_tokens": 5144,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 178,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4736
+      },
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 210
+    }
+  },
+  {
+    "case_id": "T13_PRE",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "c365de53fa44afe84f05a375ecedb005def8851f8c4903cde1869101afb77897",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2779,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 1115,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.5987765383231378
+    },
+    "usage": {
+      "completion_tokens": 374,
+      "prompt_tokens": 2779,
+      "total_tokens": 3153,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 354,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 1115
+    }
+  },
+  {
+    "case_id": "T13_PRE",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "4576b6792000d5a2b6e32ef8f2b6a98e1b51121588f417ad60e48cb6a674bac3",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2784,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 1120,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.5977011494252874
+    },
+    "usage": {
+      "completion_tokens": 1308,
+      "prompt_tokens": 2784,
+      "total_tokens": 4092,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1288,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 1120
+    }
+  },
+  {
+    "case_id": "T13_PRE",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "46e25e377aad53c00743f7c2baa2ecb36e371614624772c34df977e69db085e5",
+    "output": {
+      "decision": "act",
+      "gap": "The season-four clue is verified for You're the Worst, but the season-one reconciliation-date episode and the season-three roommate sacrifice remain unverified; confirming them would establish that the named series matches all the stated plot points.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "You're the Worst season 1 episode Jimmy and Gretchen friends convince him to take her on a date",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "You're the Worst season 3 finale roommate Edgar sacrifice",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2804,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 244,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.912981455064194
+    },
+    "usage": {
+      "completion_tokens": 387,
+      "prompt_tokens": 2804,
+      "total_tokens": 3191,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 241,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 244
+    }
+  },
+  {
+    "case_id": "T13_POST",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "b3ca8cbed5a86b535fef23ee484b663a19aae6b8aff4ed3f4088b996650bd3e5",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4002,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2338,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.41579210394802596
+    },
+    "usage": {
+      "completion_tokens": 313,
+      "prompt_tokens": 4002,
+      "total_tokens": 4315,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 293,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2338
+    }
+  },
+  {
+    "case_id": "T13_POST",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "0123995eaea82f8f79e2de8af4637ebd9446d37caa3601c4339619c7dfc83631",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3924,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2260,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.4240570846075433
+    },
+    "usage": {
+      "completion_tokens": 304,
+      "prompt_tokens": 3924,
+      "total_tokens": 4228,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 284,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2260
+    }
+  },
+  {
+    "case_id": "T13_POST",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "a632f959b5645dcd76aa0ea624394035cda36cbce1a07ae59b05e9b2cfd8d820",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3899,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2235,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.4267760964349833
+    },
+    "usage": {
+      "completion_tokens": 97,
+      "prompt_tokens": 3899,
+      "total_tokens": 3996,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 77,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2235
+    }
+  },
+  {
+    "case_id": "T14_PRE",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "06d354f93b5fd14035b8cf0d49701d62eb557e0815658cac1010e6a4c0922428",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3936,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2272,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.42276422764227645
+    },
+    "usage": {
+      "completion_tokens": 141,
+      "prompt_tokens": 3936,
+      "total_tokens": 4077,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 121,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2272
+    }
+  },
+  {
+    "case_id": "T14_PRE",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "95f3a787c3761c1152ceea73c8e9d7b8c0fb68df8f3910b02d62c85a156e8edf",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3911,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2247,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.42546663257478906
+    },
+    "usage": {
+      "completion_tokens": 186,
+      "prompt_tokens": 3911,
+      "total_tokens": 4097,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 173,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2247
+    }
+  },
+  {
+    "case_id": "T14_PRE",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "1d379bb965a79e4ddd6169267516c1c3b1a490f986eacc90e3729d4593f751ba",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3916,
+      "prompt_cache_hit_tokens": 3712,
+      "prompt_cache_miss_tokens": 204,
+      "reported_cached_tokens": 3712,
+      "status": "reported",
+      "hit_rate": 0.947906026557712
+    },
+    "usage": {
+      "completion_tokens": 76,
+      "prompt_tokens": 3916,
+      "total_tokens": 3992,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 56,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3712
+      },
+      "prompt_cache_hit_tokens": 3712,
+      "prompt_cache_miss_tokens": 204
+    }
+  },
+  {
+    "case_id": "T14_POST",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "d5afa765c6c931f52dc5c46b383443db4a3883cec1116b063137625b4dba6285",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4376,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2712,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.3802559414990859
+    },
+    "usage": {
+      "completion_tokens": 207,
+      "prompt_tokens": 4376,
+      "total_tokens": 4583,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 187,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2712
+    }
+  },
+  {
+    "case_id": "T14_POST",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "070c3f083c4135d7520b0fd2501da5a72d7462af8545833b25c6bb3ec29319d2",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4381,
+      "prompt_cache_hit_tokens": 4224,
+      "prompt_cache_miss_tokens": 157,
+      "reported_cached_tokens": 4224,
+      "status": "reported",
+      "hit_rate": 0.964163433006163
+    },
+    "usage": {
+      "completion_tokens": 155,
+      "prompt_tokens": 4381,
+      "total_tokens": 4536,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 135,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4224
+      },
+      "prompt_cache_hit_tokens": 4224,
+      "prompt_cache_miss_tokens": 157
+    }
+  },
+  {
+    "case_id": "T14_POST",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "45312084564dc6004f2b024168885732b416e99b2992d65b6649d884f3bc797f",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4401,
+      "prompt_cache_hit_tokens": 4224,
+      "prompt_cache_miss_tokens": 177,
+      "reported_cached_tokens": 4224,
+      "status": "reported",
+      "hit_rate": 0.9597818677573279
+    },
+    "usage": {
+      "completion_tokens": 133,
+      "prompt_tokens": 4401,
+      "total_tokens": 4534,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 113,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4224
+      },
+      "prompt_cache_hit_tokens": 4224,
+      "prompt_cache_miss_tokens": 177
+    }
+  },
+  {
+    "case_id": "T15_PRE",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "b1b39e8b62110ada67675aa12e37227bb7ee0794927c6f7c588a3b2217e51911",
+    "output": {
+      "decision": "act",
+      "gap": "The founding year and founding country of the club corresponding to Enugu Rangers remain unresolved.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers founded year country history",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International Football Club Enugu founded 1970 Nigeria",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2915,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1379,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5269296740994854
+    },
+    "usage": {
+      "completion_tokens": 350,
+      "prompt_tokens": 2915,
+      "total_tokens": 3265,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 244,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1379
+    }
+  },
+  {
+    "case_id": "T15_PRE",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "ba9712273689e21e1015bf443cb3d3ca2ffde45d200c517150da77f5e2368002",
+    "output": {
+      "decision": "act",
+      "gap": "What year and country was Enugu Rangers (Rangers International F.C.) founded?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers founded year country",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International Football Club Enugu founded 1970 Nigeria",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2801,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1265,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5483755801499465
+    },
+    "usage": {
+      "completion_tokens": 586,
+      "prompt_tokens": 2801,
+      "total_tokens": 3387,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 480,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1265
+    }
+  },
+  {
+    "case_id": "T15_PRE",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "f6ae65bd75f97a30cc2ed3f4c08aaedd285ed7fba2663c18c1fa7ddf4b07e529",
+    "output": {
+      "decision": "act",
+      "gap": "The team (Enugu Rangers) has been identified, but the founding year and country of the club remain unknown, which is the final answer required by the Original Question.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers FC founded year history club formation",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2778,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 218,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9215262778977682
+    },
+    "usage": {
+      "completion_tokens": 165,
+      "prompt_tokens": 2778,
+      "total_tokens": 2943,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 76,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 218
+    }
+  },
+  {
+    "case_id": "T15_POST",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "e210bdc88ef810668ad7c073ddceb93c4cc9d4e9e80eace1b1ce20de74950e97",
+    "output": {
+      "decision": "act",
+      "gap": "What is the founding year and country of Enugu Rangers, the team matching the 2014 NPFL shared-points and 13-signings clues?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers founded 1970 Nigeria",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International FC Enugu founding year history",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3302,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1766,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.46517262265293763
+    },
+    "usage": {
+      "completion_tokens": 2571,
+      "prompt_tokens": 3302,
+      "total_tokens": 5873,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2452,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1766
+    }
+  },
+  {
+    "case_id": "T15_POST",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "0abbf7b1fad297ed05c6d5c6d6121feba21f9a9e14427cef86a73f7c620fd4f8",
+    "output": {
+      "decision": "act",
+      "gap": "The team is likely Enugu Rangers, but the corpus has not yet verified the club's founding year and country.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Rangers International FC Enugu founded 1970 Nigeria",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers fifteen trophies 13 players 2023",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3279,
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 207,
+      "reported_cached_tokens": 3072,
+      "status": "reported",
+      "hit_rate": 0.9368709972552608
+    },
+    "usage": {
+      "completion_tokens": 3751,
+      "prompt_tokens": 3279,
+      "total_tokens": 7030,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3636,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3072
+      },
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 207
+    }
+  },
+  {
+    "case_id": "T15_POST",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "41e782e24d27d4671648708f96d81c59f65326f2dd2a573c0d8ee4281f9c83d3",
+    "output": {
+      "decision": "act",
+      "gap": "What year and country was Enugu Rangers, the team matching the verified claims, founded?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers founded 1970 Nigeria",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International FC Enugu founding year country",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3391,
+      "prompt_cache_hit_tokens": 3200,
+      "prompt_cache_miss_tokens": 191,
+      "reported_cached_tokens": 3200,
+      "status": "reported",
+      "hit_rate": 0.9436744323208494
+    },
+    "usage": {
+      "completion_tokens": 668,
+      "prompt_tokens": 3391,
+      "total_tokens": 4059,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 562,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3200
+      },
+      "prompt_cache_hit_tokens": 3200,
+      "prompt_cache_miss_tokens": 191
+    }
+  },
+  {
+    "case_id": "T16_PRE",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "0abbf7b1fad297ed05c6d5c6d6121feba21f9a9e14427cef86a73f7c620fd4f8",
+    "output": {
+      "decision": "act",
+      "gap": "The team is likely Enugu Rangers, but the founding year and country still need confirmation.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers International FC founded year 1970 Nigeria",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International Football Club Enugu history founded",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3279,
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 207,
+      "reported_cached_tokens": 3072,
+      "status": "reported",
+      "hit_rate": 0.9368709972552608
+    },
+    "usage": {
+      "completion_tokens": 1609,
+      "prompt_tokens": 3279,
+      "total_tokens": 4888,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1501,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3072
+      },
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 207
+    }
+  },
+  {
+    "case_id": "T16_PRE",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "b6969b4b7c72d0acc17c56c6226ec72ad6fe636dc67f1c782707d34c91aa3aee",
+    "output": {
+      "decision": "act",
+      "gap": "The founding year and country of Enugu Rangers, the club identified by the verified claims, remain unestablished.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers founding year founded Nigeria",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International FC Enugu club founded history",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3380,
+      "prompt_cache_hit_tokens": 3200,
+      "prompt_cache_miss_tokens": 180,
+      "reported_cached_tokens": 3200,
+      "status": "reported",
+      "hit_rate": 0.9467455621301775
+    },
+    "usage": {
+      "completion_tokens": 596,
+      "prompt_tokens": 3380,
+      "total_tokens": 3976,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 488,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3200
+      },
+      "prompt_cache_hit_tokens": 3200,
+      "prompt_cache_miss_tokens": 180
+    }
+  },
+  {
+    "case_id": "T16_PRE",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "e210bdc88ef810668ad7c073ddceb93c4cc9d4e9e80eace1b1ce20de74950e97",
+    "output": {
+      "decision": "act",
+      "gap": "What are the founding year and country of Enugu Rangers, the team matching the verified league and signing clues?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Enugu Rangers founded year Nigeria",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International Football Club Enugu foundation history",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3302,
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 230,
+      "reported_cached_tokens": 3072,
+      "status": "reported",
+      "hit_rate": 0.9303452453058753
+    },
+    "usage": {
+      "completion_tokens": 1865,
+      "prompt_tokens": 3302,
+      "total_tokens": 5167,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1757,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3072
+      },
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 230
+    }
+  },
+  {
+    "case_id": "T16_POST",
+    "qid": "177",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "102163ef0de1c56a99b09757605a86e9a8d095309c9c93e1830d2362bb934894",
+    "output": {
+      "decision": "act",
+      "gap": "Whether Enugu Rangers actually satisfies the remaining identity criteria — winning a league between 1973 and 1983 and the 2023 claim of fifteen trophies — which would confirm that the team's founding year and country (1970, Nigeria) is the correct answer.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "honours league titles won Nigeria champions 1974 1975 1977 1981 1982"
+        },
+        {
+          "tool": "search",
+          "query": "Rangers International fifteen trophies signed 13 players 2023",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3896,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2232,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.4271047227926078
+    },
+    "usage": {
+      "completion_tokens": 1726,
+      "prompt_tokens": 3896,
+      "total_tokens": 5622,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1564,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2232
+    }
+  },
+  {
+    "case_id": "T16_POST",
+    "qid": "177",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "5ab0abf18d0ba651e29881bf7c4de23658fd159b94cda982de03c7f48e4d1cf9",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3748,
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 164,
+      "reported_cached_tokens": 3584,
+      "status": "reported",
+      "hit_rate": 0.9562433297758804
+    },
+    "usage": {
+      "completion_tokens": 298,
+      "prompt_tokens": 3748,
+      "total_tokens": 4046,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 278,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3584
+      },
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 164
+    }
+  },
+  {
+    "case_id": "T16_POST",
+    "qid": "177",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "77bf6b6a7bf7b3d888cec3bfb6ef1f7513f56d8976ee4f523cf1c2fc0b7a22be",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3725,
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 141,
+      "reported_cached_tokens": 3584,
+      "status": "reported",
+      "hit_rate": 0.9621476510067114
+    },
+    "usage": {
+      "completion_tokens": 877,
+      "prompt_tokens": 3725,
+      "total_tokens": 4602,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 857,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3584
+      },
+      "prompt_cache_hit_tokens": 3584,
+      "prompt_cache_miss_tokens": 141
+    }
+  },
+  {
+    "case_id": "T17_PRE",
+    "qid": "517",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "e1b0a80a759425163a8a199884214ee31d0972a87ade570c1e2d15b96f8f88f9",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2757,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 1093,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.6035545883206384
+    },
+    "usage": {
+      "completion_tokens": 5511,
+      "prompt_tokens": 2757,
+      "total_tokens": 8268,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 5491,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 1093
+    }
+  },
+  {
+    "case_id": "T17_PRE",
+    "qid": "517",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "11bcf4e4bfbc1ada5eb1f89af00ae5cbd9ff41b208f40b09489395b1176d80f7",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2736,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 176,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.935672514619883
+    },
+    "usage": {
+      "completion_tokens": 2948,
+      "prompt_tokens": 2736,
+      "total_tokens": 5684,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2928,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 176
+    }
+  },
+  {
+    "case_id": "T17_PRE",
+    "qid": "517",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "ce281bbb872767bfa36e34961e62becd4b00ab7eee8dc15978aae20844725b5e",
+    "output": {
+      "decision": "act",
+      "gap": "Whether the 2005 film clue points to The Constant Gardener via Fernando Meirelles and Iracema, and whether the 2013 dramatic thriller clue points to The Fifth Estate via Bill Condon and Kinsey.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "The Constant Gardener Fernando Meirelles Iracema filmmaker",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "The Fifth Estate Bill Condon Kinsey director writer",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2886,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 198,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9313929313929314
+    },
+    "usage": {
+      "completion_tokens": 8255,
+      "prompt_tokens": 2886,
+      "total_tokens": 11141,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 8118,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 198
+    }
+  },
+  {
+    "case_id": "T17_POST",
+    "qid": "517",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "b9824681b2a545d794f025866644fbff5289d1c6bd8370af80c3facf49454fad",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3200,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1664,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.48
+    },
+    "usage": {
+      "completion_tokens": 3850,
+      "prompt_tokens": 3200,
+      "total_tokens": 7050,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3830,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1664
+    }
+  },
+  {
+    "case_id": "T17_POST",
+    "qid": "517",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "d29955136e6593828d5fe13d3b7867dd3221d3cfd19a235b3b02499c59e3ec38",
+    "output": {
+      "decision": "act",
+      "gap": "Need to confirm the identifying clues link Peter King to the answer: that The Constant Gardener's director (Fernando Meirelles) decided to become a filmmaker after watching Iracema, and that the 2013 dramatic thriller The Fifth Estate was directed by the filmmaker best known for Kinsey (Bill Condon).",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Fernando Meirelles decided to become a filmmaker after watching Iracema",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "The Fifth Estate 2013 film directed by Bill Condon Kinsey",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3315,
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 243,
+      "reported_cached_tokens": 3072,
+      "status": "reported",
+      "hit_rate": 0.9266968325791856
+    },
+    "usage": {
+      "completion_tokens": 406,
+      "prompt_tokens": 3315,
+      "total_tokens": 3721,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 242,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3072
+      },
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 243
+    }
+  },
+  {
+    "case_id": "T17_POST",
+    "qid": "517",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "78040e40d0fae69d8efb5dfc7a99b8523626a06d485d455e7476cd8c12525971",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3221,
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 149,
+      "reported_cached_tokens": 3072,
+      "status": "reported",
+      "hit_rate": 0.9537410742005589
+    },
+    "usage": {
+      "completion_tokens": 3175,
+      "prompt_tokens": 3221,
+      "total_tokens": 6396,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3162,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3072
+      },
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 149
+    }
+  },
+  {
+    "case_id": "T18_PRE",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "0c611b108acd08817f0812a807f0430a660a13cea88216c8b65ec914a7021689",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4921,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3257,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.3381426539321276
+    },
+    "usage": {
+      "completion_tokens": 197,
+      "prompt_tokens": 4921,
+      "total_tokens": 5118,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 177,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3257
+    }
+  },
+  {
+    "case_id": "T18_PRE",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "5b07ef6b3b87a9723e91a3c1ddd73586d212ec57d8277438a12cc4c39fda5011",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4941,
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 205,
+      "reported_cached_tokens": 4736,
+      "status": "reported",
+      "hit_rate": 0.9585104229912973
+    },
+    "usage": {
+      "completion_tokens": 479,
+      "prompt_tokens": 4941,
+      "total_tokens": 5420,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 459,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4736
+      },
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 205
+    }
+  },
+  {
+    "case_id": "T18_PRE",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "b5699c95860ce7fa5d453f8ab5899f570e8173b031ec0ec41e220573bbec179a",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4916,
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 180,
+      "reported_cached_tokens": 4736,
+      "status": "reported",
+      "hit_rate": 0.9633848657445078
+    },
+    "usage": {
+      "completion_tokens": 143,
+      "prompt_tokens": 4916,
+      "total_tokens": 5059,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 123,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4736
+      },
+      "prompt_cache_hit_tokens": 4736,
+      "prompt_cache_miss_tokens": 180
+    }
+  },
+  {
+    "case_id": "T18_POST",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "61b331a4ffd4393db3d493c43bf1ea74a76b97e1815bc0aef1bb2c051c56fcf5",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 5419,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3755,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.3070677246724488
+    },
+    "usage": {
+      "completion_tokens": 451,
+      "prompt_tokens": 5419,
+      "total_tokens": 5870,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 431,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3755
+    }
+  },
+  {
+    "case_id": "T18_POST",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "fc7263abe94578b597e14d9e5d10c0f5b9c23dac4f23e5aef4ebefd684bf0f12",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 5394,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3730,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.3084909158324064
+    },
+    "usage": {
+      "completion_tokens": 212,
+      "prompt_tokens": 5394,
+      "total_tokens": 5606,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 192,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 3730
+    }
+  },
+  {
+    "case_id": "T18_POST",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "8bc2b2d4bd610691ddad4652c53b69d58c3e3faf0efe3bdaf2b0d837bb24a21e",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 5399,
+      "prompt_cache_hit_tokens": 5248,
+      "prompt_cache_miss_tokens": 151,
+      "reported_cached_tokens": 5248,
+      "status": "reported",
+      "hit_rate": 0.9720318577514354
+    },
+    "usage": {
+      "completion_tokens": 469,
+      "prompt_tokens": 5399,
+      "total_tokens": 5868,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 449,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 5248
+      },
+      "prompt_cache_hit_tokens": 5248,
+      "prompt_cache_miss_tokens": 151
+    }
+  },
+  {
+    "case_id": "T19_PRE",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "871a2ac4e1c5f490986b61936b823704e5a1261b6edff39a890277cc1a6807e3",
+    "output": {
+      "decision": "act",
+      "gap": "What album count did Oliver Mtukudzi have at the time he was featured in Forbes Africa in May during the 2010s?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2010s albums",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Forbes Africa Oliver Mtukudzi feature interview albums",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2757,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1221,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.5571273122959739
+    },
+    "usage": {
+      "completion_tokens": 411,
+      "prompt_tokens": 2757,
+      "total_tokens": 3168,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 288,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1221
+    }
+  },
+  {
+    "case_id": "T19_PRE",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "69715f89f2aea64894fd9e3c740ec17dfb336967b60b70058bdfa4fd43a1b390",
+    "output": {
+      "decision": "act",
+      "gap": "How many albums did Oliver Mtukudzi have at the time of his Forbes Africa feature in May during the 2010s, and which source confirms both the May feature and the exact album count?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Forbes Africa May Oliver Mtukudzi number of albums",
+          "k": 10
+        },
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "Forbes Africa album count"
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2844,
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 156,
+      "reported_cached_tokens": 2688,
+      "status": "reported",
+      "hit_rate": 0.9451476793248945
+    },
+    "usage": {
+      "completion_tokens": 3578,
+      "prompt_tokens": 2844,
+      "total_tokens": 6422,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3447,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2688
+      },
+      "prompt_cache_hit_tokens": 2688,
+      "prompt_cache_miss_tokens": 156
+    }
+  },
+  {
+    "case_id": "T19_PRE",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "0935dff0436b4fd8d9e10a91f66ff8a5980984fa789410e674967062b283acce",
+    "output": {
+      "decision": "act",
+      "gap": "What exact album count did the May 2017 Forbes Africa feature report for Oliver Mtukudzi?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa May 2017 albums",
+          "k": 10
+        },
+        {
+          "tool": "search",
+          "query": "Mtukudzi Forbes Africa 2017 feature album count",
+          "k": 10
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 2785,
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 225,
+      "reported_cached_tokens": 2560,
+      "status": "reported",
+      "hit_rate": 0.9192100538599641
+    },
+    "usage": {
+      "completion_tokens": 846,
+      "prompt_tokens": 2785,
+      "total_tokens": 3631,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 730,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 2560
+      },
+      "prompt_cache_hit_tokens": 2560,
+      "prompt_cache_miss_tokens": 225
+    }
+  },
+  {
+    "case_id": "T19_POST",
+    "qid": "435",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "f934b9cb21de40f7a991a6db66fe230ce27cc80dd19eeadc39825bcd5fa308ba",
+    "output": null,
+    "error": {
+      "type": "ValidationError",
+      "status": null,
+      "message": "{'decision': 'act', 'gap': 'Exact album count Oliver Mtukudzi had at the time of his Forbes Africa feature in May during the 2010s, and confirmation that the feature was in May, beyond the retrospective 67-album career total.', 'actions': [{'tool': 'search', 'query': 'Forbes Africa May 2016 Oliver Mtukudzi albums', 'k': 5}, {'tool': 'find', 'doc_ref': 'D2', 'query': 'Forbes Africa 2016 albums', 'k': 5}]} is not valid under any of the given schemas\n\nFailed validating 'oneOf' in schema:\n    {'$sch"
+    },
+    "attempted": true,
+    "serialization_valid": false,
+    "cache_usage": {
+      "prompt_tokens": 3404,
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1868,
+      "reported_cached_tokens": 1536,
+      "status": "reported",
+      "hit_rate": 0.4512338425381904
+    },
+    "usage": {
+      "completion_tokens": 1426,
+      "prompt_tokens": 3404,
+      "total_tokens": 4830,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1280,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1536
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 1868
+    }
+  },
+  {
+    "case_id": "T19_POST",
+    "qid": "435",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "96a838371c61693ac5b834cbd048dba2b87be7798c13a103f7a1e8dc4a6b25fc",
+    "output": {
+      "decision": "act",
+      "gap": "How many albums did Oliver Mtukudzi have at the time of the Forbes Africa May feature in the 2010s (per the persisted gap, May 2017)?",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Forbes Africa May 2017 Oliver Mtukudzi album count interview",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi Forbes Africa feature number of albums",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3328,
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 256,
+      "reported_cached_tokens": 3072,
+      "status": "reported",
+      "hit_rate": 0.9230769230769231
+    },
+    "usage": {
+      "completion_tokens": 460,
+      "prompt_tokens": 3328,
+      "total_tokens": 3788,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 327,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3072
+      },
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 256
+    }
+  },
+  {
+    "case_id": "T19_POST",
+    "qid": "435",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "2c020bd80354886e394e95e25fdd84e81bc757ce28107919f127af283d2f9491",
+    "output": {
+      "decision": "act",
+      "gap": "Exact album count Oliver Mtukudzi had at the time of his Forbes Africa feature in May during the 2010s (likely May 2016).",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Forbes Africa Oliver Mtukudzi May 2016",
+          "k": 5
+        },
+        {
+          "tool": "search",
+          "query": "Oliver Mtukudzi 67 albums Forbes Africa 2016",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 3300,
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 228,
+      "reported_cached_tokens": 3072,
+      "status": "reported",
+      "hit_rate": 0.9309090909090909
+    },
+    "usage": {
+      "completion_tokens": 2443,
+      "prompt_tokens": 3300,
+      "total_tokens": 5743,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 2314,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3072
+      },
+      "prompt_cache_hit_tokens": 3072,
+      "prompt_cache_miss_tokens": 228
+    }
+  },
+  {
+    "case_id": "T20_PRE",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "27d7f9a918318aede553dd50a8677d4e3242c6f9684234bbed3915ca8a52864a",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4378,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2714,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.3800822293284605
+    },
+    "usage": {
+      "completion_tokens": 105,
+      "prompt_tokens": 4378,
+      "total_tokens": 4483,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 85,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2714
+    }
+  },
+  {
+    "case_id": "T20_PRE",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "af56e842dd79d1baf34b417c0f050b4d64fb0f90c75f7cb53edeba25ae44bf3c",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4353,
+      "prompt_cache_hit_tokens": 4096,
+      "prompt_cache_miss_tokens": 257,
+      "reported_cached_tokens": 4096,
+      "status": "reported",
+      "hit_rate": 0.9409602572938204
+    },
+    "usage": {
+      "completion_tokens": 87,
+      "prompt_tokens": 4353,
+      "total_tokens": 4440,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 67,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4096
+      },
+      "prompt_cache_hit_tokens": 4096,
+      "prompt_cache_miss_tokens": 257
+    }
+  },
+  {
+    "case_id": "T20_PRE",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "e24849accf5744e6b290ac1cf7786f370fca99fd689dc081e17652652b15702d",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4358,
+      "prompt_cache_hit_tokens": 4096,
+      "prompt_cache_miss_tokens": 262,
+      "reported_cached_tokens": 4096,
+      "status": "reported",
+      "hit_rate": 0.9398806792106471
+    },
+    "usage": {
+      "completion_tokens": 162,
+      "prompt_tokens": 4358,
+      "total_tokens": 4520,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 142,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4096
+      },
+      "prompt_cache_hit_tokens": 4096,
+      "prompt_cache_miss_tokens": 262
+    }
+  },
+  {
+    "case_id": "T20_POST",
+    "qid": "580",
+    "arm": "A0",
+    "kind": "research_actor",
+    "request_sha256": "30c0e4446123eade5fed403c5d6b709df1b6bc5dab6ebd36db4d79f6105f9d3b",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4502,
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2838,
+      "reported_cached_tokens": 1664,
+      "status": "reported",
+      "hit_rate": 0.3696135051088405
+    },
+    "usage": {
+      "completion_tokens": 64,
+      "prompt_tokens": 4502,
+      "total_tokens": 4566,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 44,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 1664
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 2838
+    }
+  },
+  {
+    "case_id": "T20_POST",
+    "qid": "580",
+    "arm": "A1",
+    "kind": "research_actor",
+    "request_sha256": "81b4d50b789c1faa0f5b8e79aa953e17adafa38816db85ac80679eae5ec346ee",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4507,
+      "prompt_cache_hit_tokens": 4352,
+      "prompt_cache_miss_tokens": 155,
+      "reported_cached_tokens": 4352,
+      "status": "reported",
+      "hit_rate": 0.965609052584868
+    },
+    "usage": {
+      "completion_tokens": 114,
+      "prompt_tokens": 4507,
+      "total_tokens": 4621,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 94,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4352
+      },
+      "prompt_cache_hit_tokens": 4352,
+      "prompt_cache_miss_tokens": 155
+    }
+  },
+  {
+    "case_id": "T20_POST",
+    "qid": "580",
+    "arm": "A2",
+    "kind": "research_actor",
+    "request_sha256": "58e98bc8b588489b69ea83cfa290792428ae027a43ec8b1bf076916e6b8ca987",
+    "output": {
+      "decision": "stop",
+      "gap": "",
+      "actions": []
+    },
+    "error": null,
+    "attempted": true,
+    "serialization_valid": true,
+    "cache_usage": {
+      "prompt_tokens": 4527,
+      "prompt_cache_hit_tokens": 4352,
+      "prompt_cache_miss_tokens": 175,
+      "reported_cached_tokens": 4352,
+      "status": "reported",
+      "hit_rate": 0.9613430527943451
+    },
+    "usage": {
+      "completion_tokens": 108,
+      "prompt_tokens": 4527,
+      "total_tokens": 4635,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 88,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 4352
+      },
+      "prompt_cache_hit_tokens": 4352,
+      "prompt_cache_miss_tokens": 175
+    }
+  }
+]

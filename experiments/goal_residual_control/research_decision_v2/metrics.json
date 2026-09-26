@@ -1,0 +1,91 @@
+{
+  "contract_valid": 118,
+  "planned": 120,
+  "valid_rate": 0.9833333333333333,
+  "old_valid_rate": 0.625,
+  "arms": {
+    "A0": {
+      "planned": 40,
+      "valid": 39,
+      "resolved_n": 7,
+      "open_n": 33,
+      "correct_stop": 7,
+      "premature_stop": 9,
+      "act_open": 23,
+      "over_research": 0,
+      "goal_drift": 0,
+      "already_solved": 0,
+      "hypothesis_overcommit": 3,
+      "residual_reducing": 23,
+      "valid_action_semantics": 23,
+      "strict_correct_stop": 3,
+      "strict_premature_stop": 13,
+      "planned_tool_calls": 45,
+      "proposed_tools": {
+        "search": 45
+      }
+    },
+    "A1": {
+      "planned": 40,
+      "valid": 39,
+      "resolved_n": 7,
+      "open_n": 33,
+      "correct_stop": 7,
+      "premature_stop": 3,
+      "act_open": 29,
+      "over_research": 0,
+      "goal_drift": 0,
+      "already_solved": 0,
+      "hypothesis_overcommit": 2,
+      "residual_reducing": 29,
+      "valid_action_semantics": 29,
+      "strict_correct_stop": 3,
+      "strict_premature_stop": 7,
+      "planned_tool_calls": 58,
+      "proposed_tools": {
+        "search": 54,
+        "find": 3,
+        "open": 1
+      }
+    },
+    "A2": {
+      "planned": 40,
+      "valid": 40,
+      "resolved_n": 7,
+      "open_n": 33,
+      "correct_stop": 7,
+      "premature_stop": 6,
+      "act_open": 27,
+      "over_research": 0,
+      "goal_drift": 0,
+      "already_solved": 0,
+      "hypothesis_overcommit": 0,
+      "residual_reducing": 27,
+      "valid_action_semantics": 27,
+      "strict_correct_stop": 3,
+      "strict_premature_stop": 10,
+      "planned_tool_calls": 54,
+      "proposed_tools": {
+        "search": 50,
+        "find": 3,
+        "open": 1
+      }
+    }
+  },
+  "paired": {
+    "A1_vs_A0": {
+      "both_valid_n": 38,
+      "premature_improved": 6,
+      "premature_worsened": 0,
+      "no_independent_sample_claim": "40 snapshots cluster within 10 qids; descriptive pairing only"
+    },
+    "A1_vs_A2": {
+      "both_valid_n": 39,
+      "premature_improved": 4,
+      "premature_worsened": 1,
+      "no_independent_sample_claim": "40 snapshots cluster within 10 qids; descriptive pairing only"
+    }
+  },
+  "semantic_scope": "single arm-hidden Codex reviewer; no executed Evidence Progress yet",
+  "failure": "two Find objects include forbidden k; no wrapper-normalization or retry"
+}
