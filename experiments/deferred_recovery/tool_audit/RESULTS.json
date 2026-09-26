@@ -1,0 +1,585 @@
+{
+  "status": "PASS",
+  "scope": "offline integration with real corpus documents, real tokenizer/localizer and a fixed global-hit fixture; tests known-hit semantics, not retriever recall",
+  "rows": [
+    {
+      "implementation": "SearchFindTools",
+      "docid": "38231",
+      "document_sha256": "7e38c74bca02670e178d8a2d8ea761def69492db0993fbeb8cec428f5d1be909",
+      "old_query": "Ding Junhui early life",
+      "new_query": "Ding fifth 147 Players Tour Championship 2013",
+      "local_search_calls_on_known_doc": 1,
+      "first": {
+        "status": "ok",
+        "query": "Ding Junhui early life",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "previously_discovered": false,
+            "title": "Ding Junhui - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ding_Junhui",
+            "preview_ref": "W1",
+            "preview": "Ding began playing snooker at age nine and rose to international prominence in 2002 after winning the Asian Under-21 Championship and the Asian Championship. At age 15, he became the youngest winner of the IBSF World Under-21 Championship. In 2003, Ding turned professional at the age of 16. His first major professional successes came in 2005 when he won the China Open and the UK Championship, becoming the first player from outside Great Britain and Ireland to win the title.\n\nDuring his career, he has compiled more than 600 century breaks, including seven maximum breaks, in professional play. He is the only Asian player to be ranked world number one, which he first achieved in 2014 to become the 11th player to reach the top spot. He is a long-time resident of Sheffield, England, and owns the Ding Junhui Snooker Academy in the same city.\n\nEarly life\n\nDing Junhui was born on 1 April 1987, in Yixing, Jiangsu. At eight years old, Ding accompanied his father, a pool enthusiast, who wanted to practice with a local pool expert. When his father went for a toilet break, Ding took the cue and played with the professional. Ding won the game before his father returned. Since then, Ding's parents supported him in cue sports training, particularly snooker. At age nine, he was taken by his father to the training centre of the Chinese national snooker team near Shanghai and persuaded his mother to sell their home and grocery business so Ding could continue playing snooker as a career. The family moved to Dongguan, Guangdong, and Ding left formal education at age 11 to practice snooker for eight hours each day.\n\nCareer\n\nEarly career\n",
+            "has_more_before": true,
+            "has_more_after": true,
+            "status": "ok"
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "second": {
+        "status": "ok",
+        "query": "Ding fifth 147 Players Tour Championship 2013",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "previously_discovered": true,
+            "title": "Ding Junhui - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ding_Junhui",
+            "preview_ref": "W2",
+            "preview": "Ronnie O'Sullivan defeated Ding in the Masters for the third time in his career, losing in the first round 4–6.\n\nDing beat Mark Selby in the 2012 Welsh Open to win his fifth ranking tournament and £30,000. Ding's form continued. He won the 2012 Championship League tournament and a place in the 2012 Premier League. Ding reached the semi-finals of the China Open but was eliminated after losing 3–6 to eventual winner Peter Ebdon. Ding ended the season with a defeat in the first round of the World Championship, losing 9–10 to Ryan Day having had a 9–6 lead. After the match, Ding criticised the condition of the tables at the event and the attitude of the audience, saying both were \"rubbish\". He finished the year ranked world number 11, having dropped seven places during the season.\n\nPlayers Tour Championship (2012/2013)\n\nDing did not progress past the second round of the first six ranking events of the 2012–13 season and found himself ranked world number 11 in December. He won the minor-ranking Scottish Open, defeating Anthony McGill in the final. Ding's form then improved; at the Welsh Open, he beat Mark King, Mark Allen, and Robert Milkins to reach the semi-finals, where he was beaten 5–6 by Stuart Bingham. At the World Open, he was defeated 0–5 by John Higgins in the quarter-finals. His title at the Scottish Open formed part of the Players Tour Championship events. Ding finished sixth on the order of merit to qualify for the finals.\n\nAt the finals, Ding made the fifth 147 of his career in the first frame of his quarter-final against Allen and made two more century breaks in a 4–3 win. ",
+            "has_more_before": true,
+            "has_more_after": true,
+            "status": "ok"
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "audit": {
+        "protocol": "search_find_v3a",
+        "tool": "search",
+        "raw_result": [
+          {
+            "docid": "38231",
+            "url": "https://en.wikipedia.org/wiki/Ding_Junhui",
+            "title": "Ding Junhui - Wikipedia",
+            "title_span": [
+              11,
+              34
+            ],
+            "document_sha256": "7e38c74bca02670e178d8a2d8ea761def69492db0993fbeb8cec428f5d1be909",
+            "window_ref": "w_f731291211ab0ac2664a38b4",
+            "text": "Ronnie O'Sullivan defeated Ding in the Masters for the third time in his career, losing in the first round 4–6.\n\nDing beat Mark Selby in the 2012 Welsh Open to win his fifth ranking tournament and £30,000. Ding's form continued. He won the 2012 Championship League tournament and a place in the 2012 Premier League. Ding reached the semi-finals of the China Open but was eliminated after losing 3–6 to eventual winner Peter Ebdon. Ding ended the season with a defeat in the first round of the World Championship, losing 9–10 to Ryan Day having had a 9–6 lead. After the match, Ding criticised the condition of the tables at the event and the attitude of the audience, saying both were \"rubbish\". He finished the year ranked world number 11, having dropped seven places during the season.\n\nPlayers Tour Championship (2012/2013)\n\nDing did not progress past the second round of the first six ranking events of the 2012–13 season and found himself ranked world number 11 in December. He won the minor-ranking Scottish Open, defeating Anthony McGill in the final. Ding's form then improved; at the Welsh Open, he beat Mark King, Mark Allen, and Robert Milkins to reach the semi-finals, where he was beaten 5–6 by Stuart Bingham. At the World Open, he was defeated 0–5 by John Higgins in the quarter-finals. His title at the Scottish Open formed part of the Players Tour Championship events. Ding finished sixth on the order of merit to qualify for the finals.\n\nAt the finals, Ding made the fifth 147 of his career in the first frame of his quarter-final against Allen and made two more century breaks in a 4–3 win. ",
+            "offset": 11926,
+            "end_char": 13536,
+            "text_tokens": 393,
+            "title_tokens": 7,
+            "has_more_before": true,
+            "has_more_after": true,
+            "parent_window_ref": null,
+            "status": "ok",
+            "score": 1.0
+          }
+        ],
+        "handles": {
+          "documents": [
+            {
+              "doc_ref": "D1",
+              "docid": "38231",
+              "document_sha256": "7e38c74bca02670e178d8a2d8ea761def69492db0993fbeb8cec428f5d1be909"
+            }
+          ],
+          "windows": [
+            {
+              "window_ref": "W1",
+              "source_window_ref": "w_a3808cd015c50847d1fe1e34"
+            },
+            {
+              "window_ref": "W2",
+              "source_window_ref": "w_f731291211ab0ac2664a38b4"
+            }
+          ]
+        },
+        "model_result": {
+          "status": "ok",
+          "query": "Ding fifth 147 Players Tour Championship 2013",
+          "results": [
+            {
+              "doc_ref": "D1",
+              "previously_discovered": true,
+              "title": "Ding Junhui - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ding_Junhui",
+              "preview_ref": "W2",
+              "preview": "Ronnie O'Sullivan defeated Ding in the Masters for the third time in his career, losing in the first round 4–6.\n\nDing beat Mark Selby in the 2012 Welsh Open to win his fifth ranking tournament and £30,000. Ding's form continued. He won the 2012 Championship League tournament and a place in the 2012 Premier League. Ding reached the semi-finals of the China Open but was eliminated after losing 3–6 to eventual winner Peter Ebdon. Ding ended the season with a defeat in the first round of the World Championship, losing 9–10 to Ryan Day having had a 9–6 lead. After the match, Ding criticised the condition of the tables at the event and the attitude of the audience, saying both were \"rubbish\". He finished the year ranked world number 11, having dropped seven places during the season.\n\nPlayers Tour Championship (2012/2013)\n\nDing did not progress past the second round of the first six ranking events of the 2012–13 season and found himself ranked world number 11 in December. He won the minor-ranking Scottish Open, defeating Anthony McGill in the final. Ding's form then improved; at the Welsh Open, he beat Mark King, Mark Allen, and Robert Milkins to reach the semi-finals, where he was beaten 5–6 by Stuart Bingham. At the World Open, he was defeated 0–5 by John Higgins in the quarter-finals. His title at the Scottish Open formed part of the Players Tour Championship events. Ding finished sixth on the order of merit to qualify for the finals.\n\nAt the finals, Ding made the fifth 147 of his career in the first frame of his quarter-final against Allen and made two more century breaks in a 4–3 win. ",
+              "has_more_before": true,
+              "has_more_after": true,
+              "status": "ok"
+            }
+          ],
+          "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+        }
+      }
+    },
+    {
+      "implementation": "OrthogonalSearchFindTools",
+      "docid": "38231",
+      "document_sha256": "7e38c74bca02670e178d8a2d8ea761def69492db0993fbeb8cec428f5d1be909",
+      "old_query": "Ding Junhui early life",
+      "new_query": "Ding fifth 147 Players Tour Championship 2013",
+      "local_search_calls_on_known_doc": 0,
+      "first": {
+        "status": "ok",
+        "query": "Ding Junhui early life",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "previously_discovered": false,
+            "title": "Ding Junhui - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ding_Junhui",
+            "preview_ref": "W1",
+            "preview": "Ding began playing snooker at age nine and rose to international prominence in 2002 after winning the Asian Under-21 Championship and the Asian Championship. At age 15, he became the youngest winner of the IBSF World Under-21 Championship. In 2003, Ding turned professional at the age of 16. His first major professional successes came in 2005 when he won the China Open and the UK Championship, becoming the first player from outside Great Britain and Ireland to win the title.\n\nDuring his career, he has compiled more than 600 century breaks, including seven maximum breaks, in professional play. He is the only Asian player to be ranked world number one, which he first achieved in 2014 to become the 11th player to reach the top spot. He is a long-time resident of Sheffield, England, and owns the Ding Junhui Snooker Academy in the same city.\n\nEarly life\n\nDing Junhui was born on 1 April 1987, in Yixing, Jiangsu. At eight years old, Ding accompanied his father, a pool enthusiast, who wanted to practice with a local pool expert. When his father went for a toilet break, Ding took the cue and played with the professional. Ding won the game before his father returned. Since then, Ding's parents supported him in cue sports training, particularly snooker. At age nine, he was taken by his father to the training centre of the Chinese national snooker team near Shanghai and persuaded his mother to sell their home and grocery business so Ding could continue playing snooker as a career. The family moved to Dongguan, Guangdong, and Ding left formal education at age 11 to practice snooker for eight hours each day.\n\nCareer\n\nEarly career\n",
+            "has_more_before": true,
+            "has_more_after": true,
+            "status": "ok"
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "second": {
+        "status": "ok",
+        "query": "Ding fifth 147 Players Tour Championship 2013",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "title": "Ding Junhui - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Ding_Junhui",
+            "status": "already_discovered",
+            "existing_preview_ref": "W1",
+            "usage_hint": "This document is already in the workspace. Global search does not inspect another location inside an existing document. Use find(D#, query) to inspect a different location."
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "audit": {
+        "protocol": "search_find_v3b_orthogonal",
+        "tool": "search",
+        "hits": [
+          {
+            "rank": 1,
+            "score": 1.0,
+            "doc_ref": "D1",
+            "docid": "38231",
+            "document_sha256": "7e38c74bca02670e178d8a2d8ea761def69492db0993fbeb8cec428f5d1be909",
+            "status": "already_discovered"
+          }
+        ],
+        "handles": {
+          "documents": [
+            {
+              "doc_ref": "D1",
+              "docid": "38231",
+              "document_sha256": "7e38c74bca02670e178d8a2d8ea761def69492db0993fbeb8cec428f5d1be909"
+            }
+          ],
+          "windows": [
+            {
+              "window_ref": "W1",
+              "source_window_ref": "w_a3808cd015c50847d1fe1e34"
+            }
+          ]
+        },
+        "model_result": {
+          "status": "ok",
+          "query": "Ding fifth 147 Players Tour Championship 2013",
+          "results": [
+            {
+              "doc_ref": "D1",
+              "title": "Ding Junhui - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Ding_Junhui",
+              "status": "already_discovered",
+              "existing_preview_ref": "W1",
+              "usage_hint": "This document is already in the workspace. Global search does not inspect another location inside an existing document. Use find(D#, query) to inspect a different location."
+            }
+          ],
+          "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+        }
+      }
+    },
+    {
+      "implementation": "SearchFindTools",
+      "docid": "10836",
+      "document_sha256": "e2d0ba1ae2ae775be676ab2c32440c22bdda55737f4a896318ec91a8e052654d",
+      "old_query": "You’re the Worst cast characters",
+      "new_query": "num_seasons num_episodes",
+      "local_search_calls_on_known_doc": 1,
+      "first": {
+        "status": "ok",
+        "query": "You’re the Worst cast characters",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "previously_discovered": false,
+            "title": "You're the Worst - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/You%27re_the_Worst",
+            "preview_ref": "W1",
+            "preview": "The house representing Jimmy's home is in Silver Lake, Los Angeles. For season 3, a replica of the interior of the house was constructed on a sound stage, slightly enlarged to improve camera access.\n\nEpisodes\n\nReception\n\nSeason 1\n\nOn Metacritic, season one has a score of 65 out of 100, based on 20 critics, indicating \"generally favorable reviews\". It also ranked 14th on critics' favorite TV shows of 2014. Rotten Tomatoes gave the show a critic rating of 82% based on 34 reviews, with an average rating of 7.3/10. The site's consensus reads, \"You're the Worst uses clever writing – and its stars' palpable chemistry – to balance comedic elements against its realistically pessimistic tone.\" The A.V. Club listed You're the Worst as one of the ten best shows of the year.\n\nVanity Fair named it one of best shows of 2014 and called the show \"The perfect love story of our time\". David Wiegand of the San Francisco Chronicle called it the best sitcom of 2014.\n\nSeason 2\n\nThe second season received a Metacritic score of 82 out of 100, based on 14 critics, indicating \"universal acclaim\". Rotten Tomatoes reported a 97% approval rating, based on 34 reviews, with an average rating of 8.5/10. The site's critical consensus reads, \"Expertly balancing character growth against edgy humor, season two of You're the Worst elevates the show's excellent writing and talented cast to a new level.\"\n\nSeason 3\n\nThe third season received a Metacritic score of 85 out of 100, based on 14 critics, indicating \"universal acclaim\". ",
+            "has_more_before": true,
+            "has_more_after": true,
+            "status": "ok"
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "second": {
+        "status": "ok",
+        "query": "num_seasons num_episodes",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "previously_discovered": true,
+            "title": "You're the Worst - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/You%27re_the_Worst",
+            "preview_ref": "W2",
+            "preview": "---\ntitle: You're the Worst - Wikipedia\ndate: 2014-07-10\n---\ngenre: Comedy dramaRomantic comedyBlack comedy\ncreator: Stephen Falk\nstarring: * Chris Geere, * Aya Cash, * Desmin Borges, * Kether Donohue\nopen_theme: \"7:30 AM\" by Slothrust\ncomposer: Adam Blau\ncountry: United States\nlanguage: English\nnum_seasons: 5\nnum_episodes: 62\nlist_episodes: List of You're the Worst episodes\nexecutive_producer: Stephen Falk\nlocation: Los Angeles\ncamera: Single-camera\nruntime: 21–35 minutes\ncompany: * Hooptie Entertainment, * FXP\nchannel: FX\nfirst_aired: 17 July 2014\nlast_aired: 18 September 2014\nchannel2: FXX\nfirst_aired2: 9 September 2015\nlast_aired2: 3 April 2019\n\nYou're the Worst is an American comedy-drama television series created by Stephen Falk. Originally broadcast by FX, the series moved to its sister channel FXX beginning with the second season. The series follows Jimmy (Chris Geere), a self-involved writer, and Gretchen (Aya Cash), a self-destructive PR executive, as they attempt a relationship, along with their friends Edgar (Desmin Borges) and Lindsay (Kether Donohue). The series premiered on July 17, 2014.\n\nIn September 2014, FX renewed the show for a thirteen-episode second season, which premiered September 9, 2015 on FXX. The second season shifted its focus towards clinical depression and its effect on modern relationships. ",
+            "has_more_before": false,
+            "has_more_after": true,
+            "status": "ok"
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "audit": {
+        "protocol": "search_find_v3a",
+        "tool": "search",
+        "raw_result": [
+          {
+            "docid": "10836",
+            "url": "https://en.wikipedia.org/wiki/You%27re_the_Worst",
+            "title": "You're the Worst - Wikipedia",
+            "title_span": [
+              11,
+              39
+            ],
+            "document_sha256": "e2d0ba1ae2ae775be676ab2c32440c22bdda55737f4a896318ec91a8e052654d",
+            "window_ref": "w_7ea764249c1230d356b5bc54",
+            "text": "---\ntitle: You're the Worst - Wikipedia\ndate: 2014-07-10\n---\ngenre: Comedy dramaRomantic comedyBlack comedy\ncreator: Stephen Falk\nstarring: * Chris Geere, * Aya Cash, * Desmin Borges, * Kether Donohue\nopen_theme: \"7:30 AM\" by Slothrust\ncomposer: Adam Blau\ncountry: United States\nlanguage: English\nnum_seasons: 5\nnum_episodes: 62\nlist_episodes: List of You're the Worst episodes\nexecutive_producer: Stephen Falk\nlocation: Los Angeles\ncamera: Single-camera\nruntime: 21–35 minutes\ncompany: * Hooptie Entertainment, * FXP\nchannel: FX\nfirst_aired: 17 July 2014\nlast_aired: 18 September 2014\nchannel2: FXX\nfirst_aired2: 9 September 2015\nlast_aired2: 3 April 2019\n\nYou're the Worst is an American comedy-drama television series created by Stephen Falk. Originally broadcast by FX, the series moved to its sister channel FXX beginning with the second season. The series follows Jimmy (Chris Geere), a self-involved writer, and Gretchen (Aya Cash), a self-destructive PR executive, as they attempt a relationship, along with their friends Edgar (Desmin Borges) and Lindsay (Kether Donohue). The series premiered on July 17, 2014.\n\nIn September 2014, FX renewed the show for a thirteen-episode second season, which premiered September 9, 2015 on FXX. The second season shifted its focus towards clinical depression and its effect on modern relationships. ",
+            "offset": 0,
+            "end_char": 1345,
+            "text_tokens": 388,
+            "title_tokens": 6,
+            "has_more_before": false,
+            "has_more_after": true,
+            "parent_window_ref": null,
+            "status": "ok",
+            "score": 1.0
+          }
+        ],
+        "handles": {
+          "documents": [
+            {
+              "doc_ref": "D1",
+              "docid": "10836",
+              "document_sha256": "e2d0ba1ae2ae775be676ab2c32440c22bdda55737f4a896318ec91a8e052654d"
+            }
+          ],
+          "windows": [
+            {
+              "window_ref": "W1",
+              "source_window_ref": "w_1884f45e68ff75d139e59441"
+            },
+            {
+              "window_ref": "W2",
+              "source_window_ref": "w_7ea764249c1230d356b5bc54"
+            }
+          ]
+        },
+        "model_result": {
+          "status": "ok",
+          "query": "num_seasons num_episodes",
+          "results": [
+            {
+              "doc_ref": "D1",
+              "previously_discovered": true,
+              "title": "You're the Worst - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/You%27re_the_Worst",
+              "preview_ref": "W2",
+              "preview": "---\ntitle: You're the Worst - Wikipedia\ndate: 2014-07-10\n---\ngenre: Comedy dramaRomantic comedyBlack comedy\ncreator: Stephen Falk\nstarring: * Chris Geere, * Aya Cash, * Desmin Borges, * Kether Donohue\nopen_theme: \"7:30 AM\" by Slothrust\ncomposer: Adam Blau\ncountry: United States\nlanguage: English\nnum_seasons: 5\nnum_episodes: 62\nlist_episodes: List of You're the Worst episodes\nexecutive_producer: Stephen Falk\nlocation: Los Angeles\ncamera: Single-camera\nruntime: 21–35 minutes\ncompany: * Hooptie Entertainment, * FXP\nchannel: FX\nfirst_aired: 17 July 2014\nlast_aired: 18 September 2014\nchannel2: FXX\nfirst_aired2: 9 September 2015\nlast_aired2: 3 April 2019\n\nYou're the Worst is an American comedy-drama television series created by Stephen Falk. Originally broadcast by FX, the series moved to its sister channel FXX beginning with the second season. The series follows Jimmy (Chris Geere), a self-involved writer, and Gretchen (Aya Cash), a self-destructive PR executive, as they attempt a relationship, along with their friends Edgar (Desmin Borges) and Lindsay (Kether Donohue). The series premiered on July 17, 2014.\n\nIn September 2014, FX renewed the show for a thirteen-episode second season, which premiered September 9, 2015 on FXX. The second season shifted its focus towards clinical depression and its effect on modern relationships. ",
+              "has_more_before": false,
+              "has_more_after": true,
+              "status": "ok"
+            }
+          ],
+          "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+        }
+      }
+    },
+    {
+      "implementation": "OrthogonalSearchFindTools",
+      "docid": "10836",
+      "document_sha256": "e2d0ba1ae2ae775be676ab2c32440c22bdda55737f4a896318ec91a8e052654d",
+      "old_query": "You’re the Worst cast characters",
+      "new_query": "num_seasons num_episodes",
+      "local_search_calls_on_known_doc": 0,
+      "first": {
+        "status": "ok",
+        "query": "You’re the Worst cast characters",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "previously_discovered": false,
+            "title": "You're the Worst - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/You%27re_the_Worst",
+            "preview_ref": "W1",
+            "preview": "The house representing Jimmy's home is in Silver Lake, Los Angeles. For season 3, a replica of the interior of the house was constructed on a sound stage, slightly enlarged to improve camera access.\n\nEpisodes\n\nReception\n\nSeason 1\n\nOn Metacritic, season one has a score of 65 out of 100, based on 20 critics, indicating \"generally favorable reviews\". It also ranked 14th on critics' favorite TV shows of 2014. Rotten Tomatoes gave the show a critic rating of 82% based on 34 reviews, with an average rating of 7.3/10. The site's consensus reads, \"You're the Worst uses clever writing – and its stars' palpable chemistry – to balance comedic elements against its realistically pessimistic tone.\" The A.V. Club listed You're the Worst as one of the ten best shows of the year.\n\nVanity Fair named it one of best shows of 2014 and called the show \"The perfect love story of our time\". David Wiegand of the San Francisco Chronicle called it the best sitcom of 2014.\n\nSeason 2\n\nThe second season received a Metacritic score of 82 out of 100, based on 14 critics, indicating \"universal acclaim\". Rotten Tomatoes reported a 97% approval rating, based on 34 reviews, with an average rating of 8.5/10. The site's critical consensus reads, \"Expertly balancing character growth against edgy humor, season two of You're the Worst elevates the show's excellent writing and talented cast to a new level.\"\n\nSeason 3\n\nThe third season received a Metacritic score of 85 out of 100, based on 14 critics, indicating \"universal acclaim\". ",
+            "has_more_before": true,
+            "has_more_after": true,
+            "status": "ok"
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "second": {
+        "status": "ok",
+        "query": "num_seasons num_episodes",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "title": "You're the Worst - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/You%27re_the_Worst",
+            "status": "already_discovered",
+            "existing_preview_ref": "W1",
+            "usage_hint": "This document is already in the workspace. Global search does not inspect another location inside an existing document. Use find(D#, query) to inspect a different location."
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "audit": {
+        "protocol": "search_find_v3b_orthogonal",
+        "tool": "search",
+        "hits": [
+          {
+            "rank": 1,
+            "score": 1.0,
+            "doc_ref": "D1",
+            "docid": "10836",
+            "document_sha256": "e2d0ba1ae2ae775be676ab2c32440c22bdda55737f4a896318ec91a8e052654d",
+            "status": "already_discovered"
+          }
+        ],
+        "handles": {
+          "documents": [
+            {
+              "doc_ref": "D1",
+              "docid": "10836",
+              "document_sha256": "e2d0ba1ae2ae775be676ab2c32440c22bdda55737f4a896318ec91a8e052654d"
+            }
+          ],
+          "windows": [
+            {
+              "window_ref": "W1",
+              "source_window_ref": "w_1884f45e68ff75d139e59441"
+            }
+          ]
+        },
+        "model_result": {
+          "status": "ok",
+          "query": "num_seasons num_episodes",
+          "results": [
+            {
+              "doc_ref": "D1",
+              "title": "You're the Worst - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/You%27re_the_Worst",
+              "status": "already_discovered",
+              "existing_preview_ref": "W1",
+              "usage_hint": "This document is already in the workspace. Global search does not inspect another location inside an existing document. Use find(D#, query) to inspect a different location."
+            }
+          ],
+          "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+        }
+      }
+    },
+    {
+      "implementation": "SearchFindTools",
+      "docid": "5266",
+      "document_sha256": "b76a6c2039121be68622fc9bfc354df5bf58ee80c5070452b89e4a2b6f1621da",
+      "old_query": "Dean Dodrill gaming PC storage",
+      "new_query": "animate printing paper",
+      "local_search_calls_on_known_doc": 1,
+      "first": {
+        "status": "ok",
+        "query": "Dean Dodrill gaming PC storage",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "previously_discovered": false,
+            "title": "How I Game: Dean Dodrill",
+            "url": "https://www.pcgamer.com/how-i-game-dean-dodrill/",
+            "preview_ref": "W1",
+            "preview": "---\ntitle: How I Game: Dean Dodrill\nauthor: Ben Kim\ndate: 2013-07-24\n---\nDean Dodrill is a one-man army—the lone designer and programmer on Dust: An Elysian Tail . He's come a long way from his days of working as an artist on Jazz Jack Rabbit 2.\n\nName: Dean Dodrill\n\nOccupation: President of Humble Hearts LLC\n\nLocation: Colorado\n\nTwitter: NoogyTweet\n\nWho are you?\n\nMy name is Dean Dodrill and I'm a self-taught illustrator and animator who four years ago decided to try his hand at programming. I've now got one title under my belt, Dust: An Elysian Tail, which recently hit Steam. I'm still grappling with the idea that I'm now a game developer (and owner of a company, Humble Hearts), as I prefer to think of myself as a gamer who has just expanded his hobby.\n\nThe biggest gaming news, reviews and hardware deals\n\nKeep up to date with the most important stories and the best deals, as picked by the PC Gamer team.\n\nWhat's in your PC?\n\n\"I love: fantasy, heroes, beautiful music, and a huge world to explore.\"\n\nMy main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, 5TB of Storage, and an MSI Geforce GTX660Ti (2GB). I have a pair of 24\" flatscreens, and a nice wireless keyboard, mouse, and gamepad setup, as I tend to PC game on my 60\" TV. I'm a fan of Sennheiser Wireless headphones. It's been nearly two years since I built this system, so I imagine I'll be due for an upgrade sometime next year.\n",
+            "has_more_before": false,
+            "has_more_after": true,
+            "status": "ok"
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "second": {
+        "status": "ok",
+        "query": "animate printing paper",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "previously_discovered": true,
+            "title": "How I Game: Dean Dodrill",
+            "url": "https://www.pcgamer.com/how-i-game-dean-dodrill/",
+            "preview_ref": "W2",
+            "preview": "I have a pair of 24\" flatscreens, and a nice wireless keyboard, mouse, and gamepad setup, as I tend to PC game on my 60\" TV. I'm a fan of Sennheiser Wireless headphones. It's been nearly two years since I built this system, so I imagine I'll be due for an upgrade sometime next year.\n\nAs for software, I'm running Windows 7 64-bit, and use a combination of Adobe Photoshop, After Effects, Painter, and a 3D suite for art. I use Visual Studio running C#/XNA for code.\n\nWhat's the most interesting part of your setup?\n\nI think the fact that half of my office is set aside for creating art makes my setup unique. To my left I have an animation light-table, which I built from an old drafting table. Around my desk are scanners, Wacom drawing tablets, and boxes of drawing paper. I animate on normal 8x11\" printing paper, since it's cheap and efficient.\n\nI'm also quite pleased with my HDMI switcher setup. As I said, I tend to play on my 60\", and it's easy to clone my desktop for games and video. I spent many months trying various wireless options until I just settled for a 50ft HDMI cable—it works great.\n\nWhat's on your desk?\n\nBesides my tools, my desk tends to be littered with food, drinks, and video game boxes. And of course, as a parent who works at home, children's toys tend to find their way on, and around my desk. No matter what I do I just can't keep my space clean.\n\nOtherwise, I have the usual, two monitors on my main system, a smaller 22\" monitor for my test computer, console dev kits, my notebook, and my phone.\n\nWhat are you playing right now?\n",
+            "has_more_before": true,
+            "has_more_after": true,
+            "status": "ok"
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "audit": {
+        "protocol": "search_find_v3a",
+        "tool": "search",
+        "raw_result": [
+          {
+            "docid": "5266",
+            "url": "https://www.pcgamer.com/how-i-game-dean-dodrill/",
+            "title": "How I Game: Dean Dodrill",
+            "title_span": [
+              11,
+              35
+            ],
+            "document_sha256": "b76a6c2039121be68622fc9bfc354df5bf58ee80c5070452b89e4a2b6f1621da",
+            "window_ref": "w_3e1b6085e21f2fd57e3e20db",
+            "text": "I have a pair of 24\" flatscreens, and a nice wireless keyboard, mouse, and gamepad setup, as I tend to PC game on my 60\" TV. I'm a fan of Sennheiser Wireless headphones. It's been nearly two years since I built this system, so I imagine I'll be due for an upgrade sometime next year.\n\nAs for software, I'm running Windows 7 64-bit, and use a combination of Adobe Photoshop, After Effects, Painter, and a 3D suite for art. I use Visual Studio running C#/XNA for code.\n\nWhat's the most interesting part of your setup?\n\nI think the fact that half of my office is set aside for creating art makes my setup unique. To my left I have an animation light-table, which I built from an old drafting table. Around my desk are scanners, Wacom drawing tablets, and boxes of drawing paper. I animate on normal 8x11\" printing paper, since it's cheap and efficient.\n\nI'm also quite pleased with my HDMI switcher setup. As I said, I tend to play on my 60\", and it's easy to clone my desktop for games and video. I spent many months trying various wireless options until I just settled for a 50ft HDMI cable—it works great.\n\nWhat's on your desk?\n\nBesides my tools, my desk tends to be littered with food, drinks, and video game boxes. And of course, as a parent who works at home, children's toys tend to find their way on, and around my desk. No matter what I do I just can't keep my space clean.\n\nOtherwise, I have the usual, two monitors on my main system, a smaller 22\" monitor for my test computer, console dev kits, my notebook, and my phone.\n\nWhat are you playing right now?\n",
+            "offset": 1175,
+            "end_char": 2739,
+            "text_tokens": 387,
+            "title_tokens": 8,
+            "has_more_before": true,
+            "has_more_after": true,
+            "parent_window_ref": null,
+            "status": "ok",
+            "score": 1.0
+          }
+        ],
+        "handles": {
+          "documents": [
+            {
+              "doc_ref": "D1",
+              "docid": "5266",
+              "document_sha256": "b76a6c2039121be68622fc9bfc354df5bf58ee80c5070452b89e4a2b6f1621da"
+            }
+          ],
+          "windows": [
+            {
+              "window_ref": "W1",
+              "source_window_ref": "w_5740417ea459e383b8ad9328"
+            },
+            {
+              "window_ref": "W2",
+              "source_window_ref": "w_3e1b6085e21f2fd57e3e20db"
+            }
+          ]
+        },
+        "model_result": {
+          "status": "ok",
+          "query": "animate printing paper",
+          "results": [
+            {
+              "doc_ref": "D1",
+              "previously_discovered": true,
+              "title": "How I Game: Dean Dodrill",
+              "url": "https://www.pcgamer.com/how-i-game-dean-dodrill/",
+              "preview_ref": "W2",
+              "preview": "I have a pair of 24\" flatscreens, and a nice wireless keyboard, mouse, and gamepad setup, as I tend to PC game on my 60\" TV. I'm a fan of Sennheiser Wireless headphones. It's been nearly two years since I built this system, so I imagine I'll be due for an upgrade sometime next year.\n\nAs for software, I'm running Windows 7 64-bit, and use a combination of Adobe Photoshop, After Effects, Painter, and a 3D suite for art. I use Visual Studio running C#/XNA for code.\n\nWhat's the most interesting part of your setup?\n\nI think the fact that half of my office is set aside for creating art makes my setup unique. To my left I have an animation light-table, which I built from an old drafting table. Around my desk are scanners, Wacom drawing tablets, and boxes of drawing paper. I animate on normal 8x11\" printing paper, since it's cheap and efficient.\n\nI'm also quite pleased with my HDMI switcher setup. As I said, I tend to play on my 60\", and it's easy to clone my desktop for games and video. I spent many months trying various wireless options until I just settled for a 50ft HDMI cable—it works great.\n\nWhat's on your desk?\n\nBesides my tools, my desk tends to be littered with food, drinks, and video game boxes. And of course, as a parent who works at home, children's toys tend to find their way on, and around my desk. No matter what I do I just can't keep my space clean.\n\nOtherwise, I have the usual, two monitors on my main system, a smaller 22\" monitor for my test computer, console dev kits, my notebook, and my phone.\n\nWhat are you playing right now?\n",
+              "has_more_before": true,
+              "has_more_after": true,
+              "status": "ok"
+            }
+          ],
+          "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+        }
+      }
+    },
+    {
+      "implementation": "OrthogonalSearchFindTools",
+      "docid": "5266",
+      "document_sha256": "b76a6c2039121be68622fc9bfc354df5bf58ee80c5070452b89e4a2b6f1621da",
+      "old_query": "Dean Dodrill gaming PC storage",
+      "new_query": "animate printing paper",
+      "local_search_calls_on_known_doc": 0,
+      "first": {
+        "status": "ok",
+        "query": "Dean Dodrill gaming PC storage",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "previously_discovered": false,
+            "title": "How I Game: Dean Dodrill",
+            "url": "https://www.pcgamer.com/how-i-game-dean-dodrill/",
+            "preview_ref": "W1",
+            "preview": "---\ntitle: How I Game: Dean Dodrill\nauthor: Ben Kim\ndate: 2013-07-24\n---\nDean Dodrill is a one-man army—the lone designer and programmer on Dust: An Elysian Tail . He's come a long way from his days of working as an artist on Jazz Jack Rabbit 2.\n\nName: Dean Dodrill\n\nOccupation: President of Humble Hearts LLC\n\nLocation: Colorado\n\nTwitter: NoogyTweet\n\nWho are you?\n\nMy name is Dean Dodrill and I'm a self-taught illustrator and animator who four years ago decided to try his hand at programming. I've now got one title under my belt, Dust: An Elysian Tail, which recently hit Steam. I'm still grappling with the idea that I'm now a game developer (and owner of a company, Humble Hearts), as I prefer to think of myself as a gamer who has just expanded his hobby.\n\nThe biggest gaming news, reviews and hardware deals\n\nKeep up to date with the most important stories and the best deals, as picked by the PC Gamer team.\n\nWhat's in your PC?\n\n\"I love: fantasy, heroes, beautiful music, and a huge world to explore.\"\n\nMy main workstation (which also doubles as my gaming PC) is a custom built i7 2600k @ 3.4GHz, sporting 8GB RAM, 5TB of Storage, and an MSI Geforce GTX660Ti (2GB). I have a pair of 24\" flatscreens, and a nice wireless keyboard, mouse, and gamepad setup, as I tend to PC game on my 60\" TV. I'm a fan of Sennheiser Wireless headphones. It's been nearly two years since I built this system, so I imagine I'll be due for an upgrade sometime next year.\n",
+            "has_more_before": false,
+            "has_more_after": true,
+            "status": "ok"
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "second": {
+        "status": "ok",
+        "query": "animate printing paper",
+        "results": [
+          {
+            "doc_ref": "D1",
+            "title": "How I Game: Dean Dodrill",
+            "url": "https://www.pcgamer.com/how-i-game-dean-dodrill/",
+            "status": "already_discovered",
+            "existing_preview_ref": "W1",
+            "usage_hint": "This document is already in the workspace. Global search does not inspect another location inside an existing document. Use find(D#, query) to inspect a different location."
+          }
+        ],
+        "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+      },
+      "audit": {
+        "protocol": "search_find_v3b_orthogonal",
+        "tool": "search",
+        "hits": [
+          {
+            "rank": 1,
+            "score": 1.0,
+            "doc_ref": "D1",
+            "docid": "5266",
+            "document_sha256": "b76a6c2039121be68622fc9bfc354df5bf58ee80c5070452b89e4a2b6f1621da",
+            "status": "already_discovered"
+          }
+        ],
+        "handles": {
+          "documents": [
+            {
+              "doc_ref": "D1",
+              "docid": "5266",
+              "document_sha256": "b76a6c2039121be68622fc9bfc354df5bf58ee80c5070452b89e4a2b6f1621da"
+            }
+          ],
+          "windows": [
+            {
+              "window_ref": "W1",
+              "source_window_ref": "w_5740417ea459e383b8ad9328"
+            }
+          ]
+        },
+        "model_result": {
+          "status": "ok",
+          "query": "animate printing paper",
+          "results": [
+            {
+              "doc_ref": "D1",
+              "title": "How I Game: Dean Dodrill",
+              "url": "https://www.pcgamer.com/how-i-game-dean-dodrill/",
+              "status": "already_discovered",
+              "existing_preview_ref": "W1",
+              "usage_hint": "This document is already in the workspace. Global search does not inspect another location inside an existing document. Use find(D#, query) to inspect a different location."
+            }
+          ],
+          "usage_hint": "These are short previews of candidate documents, not exhaustive document contents. If you need a specific fact from a promising document, use find(doc_ref, query). If a visible preview is already relevant but needs adjacent context, use open(window_ref, direction). Information missing from a preview may still exist elsewhere in the document."
+        }
+      }
+    }
+  ]
+}

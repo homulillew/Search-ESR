@@ -1,0 +1,3 @@
+# Frozen state
+
+Base2544fbf; audit6062a42; taxonomy d260aa3; bank57c79c7. Modeldeepseek-flash, existingJSONmode/provider defaults, retry0. Exact14R1requests and two-decision adaptive builder are pinned in freeze.json with code, prompts, schemas, bank/support/prefix and full corpus/index/embedding hashes. Cases DR01–07; insufficient fresh primary cohort is predeclared. No Actor call before this freeze is committed. Every dynamic Writer/R2request is journaled with its hash and runHEAD before sole submission. Source truth never enters runtime projection. All failure types retained. No history changes or further output-format research.
