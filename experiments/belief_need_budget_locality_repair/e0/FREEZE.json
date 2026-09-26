@@ -1,0 +1,24 @@
+{
+  "head": "3d754d160a02eae8900c4f6bb43ef4999bb530a2",
+  "utc": "2026-09-26T21:22:39.923906+00:00",
+  "files": {
+    "experiments/belief_need_budget_locality_repair/transport.py": "1112864c9d8133859fdd5bd0199b363cab28b5b2f18375ae9baf27d2e7ae4eb9",
+    "experiments/belief_need_budget_locality_repair/CONFIG.json": "991c27595ace92bf0a09f9251d161e217750bbfa06cc8945b2a22ff650c5387b",
+    "experiments/belief_need_budget_locality_repair/PROTOCOL.md": "71b8ea6e3c422498d04a1c2ad28bcd5f7798a5400caf9c6b9a19e2dc479ef2a2",
+    "experiments/belief_need_budget_locality_repair/e0/run.py": "454952df09733ad3095ebac7f8a801f9ee070c591f2cc39ba353233a4a299471",
+    "experiments/belief_need_budget_locality_repair/e0/prepare.py": "d12ccf19c82e581d0fcbe6d32042fdc5af8eb7841e1f22d4056844a025fb5694",
+    "experiments/belief_need_budget_locality_repair/e0/PLAN.json": "e3214c8872641fcca9f2b9fdd1eea398b84a1829ebcea18e817c7ab211d8ebe3",
+    "experiments/belief_need_budget_locality_repair/e0/CASES.json": "82affb45d9fcb7f3434eb193e50482fe53fa946b99fe4bd067e5c7f9122e0922",
+    "experiments/belief_need_budget_locality_repair/e0/SELECTION.json": "78312c92b0806638d780a55e7b6702cc13e86d59b6b969481092049717bb9fef",
+    "experiments/belief_need_budget_locality_repair/e0/HISTORICAL_BUDGET_PROOF.json": "21009c6c08e30f14dc938b29ed669651d8756b4e7641fa156381da44e140df1f"
+  },
+  "semantics_unchanged": true,
+  "max_retries": 0,
+  "planned_cases": 12,
+  "preflight": [
+    "C05",
+    "C10",
+    "C12"
+  ],
+  "adaptive_rule": "3 DEFAULT preflight before formal calibration; if any failure, stop formal batches. Otherwise 8192→16384→32768 until >=11/12 JSON, <=1 length and <3 near-cap. Mandatory default initially three fixed cases; expand default to12 without resampling preflight cases to qualify historical-equivalent primary. Any default long-reasoning failure retained."
+}

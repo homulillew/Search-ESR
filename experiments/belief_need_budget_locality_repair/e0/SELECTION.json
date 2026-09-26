@@ -1,0 +1,32 @@
+{
+  "rule": "Exactly 6 previous P1 and 6 previous P5 actual length failures. Each arm: two No-H, two weak-H, two strong-H; at least four qids, maximize qids then fixed-seed SHA256 tie break. No expected/new answer or outcome used.",
+  "cases": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "C11",
+    "C12"
+  ],
+  "qids": [
+    "1034",
+    "177",
+    "311",
+    "387",
+    "517",
+    "546",
+    "580"
+  ],
+  "default_preflight": [
+    "C05",
+    "C10",
+    "C12"
+  ],
+  "preflight_rule": "Three fixed representatives, three qids, one each H group, both old prompts represented. They are also the mandatory historical-default control. Same default output is reused if EDEFAULT expands to all12."
+}
