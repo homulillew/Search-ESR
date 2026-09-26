@@ -1,0 +1,10 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "properties":{"decision":{"enum":["act","stop"]},"need":{"type":"string"}},
+  "required":["decision","need"],"additionalProperties":false,
+  "allOf":[
+    {"if":{"properties":{"decision":{"const":"act"}}},"then":{"properties":{"need":{"minLength":1,"pattern":"\\S"}}}},
+    {"if":{"properties":{"decision":{"const":"stop"}}},"then":{"properties":{"need":{"const":""}}}}
+  ]
+}
