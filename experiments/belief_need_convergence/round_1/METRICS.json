@@ -1,0 +1,128 @@
+{
+  "bank": "exposed development exploration; not confirmation",
+  "baseline": {
+    "n": 16,
+    "strict_valid": 5,
+    "rate": 0.3125,
+    "assessable": 11,
+    "unavailable": 5,
+    "semantic_given_output": 0.45454545454545453,
+    "dimensions": {
+      "V": 11,
+      "S": 0,
+      "P": 1,
+      "W": 5,
+      "I": 0,
+      "H": 0,
+      "A": 11
+    },
+    "mechanisms": {
+      "B11_output_unavailable": 5,
+      "B5": 5,
+      "B10": 1,
+      "B8": 2
+    }
+  },
+  "P5_locality": {
+    "n": 16,
+    "strict_valid": 6,
+    "rate": 0.375,
+    "assessable": 6,
+    "unavailable": 10,
+    "semantic_given_output": 1.0,
+    "dimensions": {
+      "V": 6,
+      "S": 0,
+      "P": 0,
+      "W": 0,
+      "I": 0,
+      "H": 0,
+      "A": 6
+    },
+    "mechanisms": {
+      "B11_output_unavailable": 10
+    }
+  },
+  "B5_targets": [
+    "N004",
+    "N015",
+    "N016",
+    "N018",
+    "N020"
+  ],
+  "B5_repaired": [
+    "N004",
+    "N018"
+  ],
+  "valid_controls": [
+    "N003",
+    "N007",
+    "N014",
+    "N021",
+    "N024"
+  ],
+  "valid_controls_regressed": [
+    "N003",
+    "N021",
+    "N024"
+  ],
+  "numeric_improvement_is_not_confirmation": true,
+  "mechanism_rule_passed": false,
+  "decision": "STOP: exploratory repair insufficient and qualified fresh confirmation qids exhausted",
+  "usage": {
+    "attempts": 16,
+    "completed_records": 16,
+    "input_tokens": 9174,
+    "output_tokens": 53579,
+    "cache_hit_tokens": 2816,
+    "cache_miss_tokens": 6358,
+    "cache_hit_rate": 0.3069544364508393,
+    "errors": {
+      "length": 10
+    },
+    "by_stage": {
+      "P5": {
+        "calls": 16,
+        "errors": 10
+      }
+    }
+  },
+  "no_H": {
+    "n": 4,
+    "strict_valid": 1,
+    "rate": 0.25,
+    "assessable": 1,
+    "unavailable": 3,
+    "semantic_given_output": 1.0,
+    "dimensions": {
+      "V": 1,
+      "S": 0,
+      "P": 0,
+      "W": 0,
+      "I": 0,
+      "H": 0,
+      "A": 1
+    },
+    "mechanisms": {
+      "B11_output_unavailable": 3
+    }
+  },
+  "U4": {
+    "n": 1,
+    "strict_valid": 1,
+    "rate": 1.0,
+    "assessable": 1,
+    "unavailable": 0,
+    "semantic_given_output": 1.0,
+    "dimensions": {
+      "V": 1,
+      "S": 0,
+      "P": 0,
+      "W": 0,
+      "I": 0,
+      "H": 0,
+      "A": 1
+    },
+    "mechanisms": {}
+  }
+}

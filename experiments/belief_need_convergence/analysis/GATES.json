@@ -1,0 +1,87 @@
+{
+  "development": {
+    "P0": {
+      "numeric_gates": {
+        "strict_21_of_24": false,
+        "P_at_most_1": false,
+        "S_at_most_1": true,
+        "W_at_most_2": false,
+        "U4_1_of_1": false,
+        "coverage_pairs_11_of_12": false,
+        "no_H_6_of_7": false
+      },
+      "all_numeric_gates": false,
+      "production_eligible": true,
+      "fresh_confirmation_coverage": false
+    },
+    "P1": {
+      "numeric_gates": {
+        "strict_21_of_24": false,
+        "P_at_most_1": true,
+        "S_at_most_1": true,
+        "W_at_most_2": false,
+        "U4_1_of_1": true,
+        "coverage_pairs_11_of_12": false,
+        "no_H_6_of_7": false
+      },
+      "all_numeric_gates": false,
+      "production_eligible": true,
+      "fresh_confirmation_coverage": false
+    },
+    "P2": {
+      "numeric_gates": {
+        "strict_21_of_24": false,
+        "P_at_most_1": true,
+        "S_at_most_1": true,
+        "W_at_most_2": true,
+        "U4_1_of_1": true,
+        "coverage_pairs_11_of_12": false,
+        "no_H_6_of_7": false
+      },
+      "all_numeric_gates": false,
+      "production_eligible": true,
+      "fresh_confirmation_coverage": false
+    },
+    "P3": {
+      "numeric_gates": {
+        "strict_21_of_24": false,
+        "P_at_most_1": false,
+        "S_at_most_1": true,
+        "W_at_most_2": false,
+        "U4_1_of_1": true,
+        "coverage_pairs_11_of_12": false,
+        "no_H_6_of_7": false
+      },
+      "all_numeric_gates": false,
+      "production_eligible": true,
+      "fresh_confirmation_coverage": false
+    },
+    "P4": {
+      "numeric_gates": {
+        "strict_21_of_24": true,
+        "P_at_most_1": false,
+        "S_at_most_1": true,
+        "W_at_most_2": true,
+        "U4_1_of_1": true,
+        "coverage_pairs_11_of_12": false,
+        "no_H_6_of_7": true
+      },
+      "all_numeric_gates": false,
+      "production_eligible": false,
+      "fresh_confirmation_coverage": false
+    }
+  },
+  "selected_baseline": "P1",
+  "P3_cost_gate": {
+    "P3_strict": 8,
+    "best_single_strict": 7,
+    "denominator": 24,
+    "required_difference": 2,
+    "observed_difference": 1,
+    "passes": false
+  },
+  "final_classification": "FAIL under tested configuration; EVIDENCE_EXHAUSTED for confirmation",
+  "closure": "NOT RUN",
+  "autonomous_simulation": "NOT RUN",
+  "held_out_end_to_end": "NOT ELIGIBLE"
+}

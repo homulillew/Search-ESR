@@ -1,0 +1,292 @@
+[
+  {
+    "case_id": "N001",
+    "arm": "P5",
+    "output": {
+      "decision": "research",
+      "need": "Which football club was reported in a 2023 article to have won fifteen trophies and signed 13 players ahead of a certain season?"
+    },
+    "output_sha256": "ff19abc28a761360aefe377723481b20c8a4d70eba7ed5a76929d26e0b4a008a",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "No-H discovery narrowed to one article/club relation instead of whole-Q constraints.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N003",
+    "arm": "P5",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N004",
+    "arm": "P5",
+    "output": {
+      "decision": "research",
+      "need": "Did a 2023 article state that Rangers International Football Club has won fifteen trophies?"
+    },
+    "output_sha256": "92739d563e2c6a0223535dc0db3147300533b5ebe371ae021a6e2b496424149d",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests one missing fifteen-trophy article attribution; known founding/city facts are not repeated.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N006",
+    "arm": "P5",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N007",
+    "arm": "P5",
+    "output": {
+      "decision": "research",
+      "need": "Did Dean \"Noogy\" Dodrill create the intro and ending animations for Jazz Jackrabbit 2?"
+    },
+    "output_sha256": "eba4c97e3d63fe42d0fedb35a1959abdedc8927b65cc9cb7fedebb049460a1d8",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Tests role-specific intro/end credit beyond generic animator Claim.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N009",
+    "arm": "P5",
+    "output": {
+      "decision": "research",
+      "need": "Was Dean 'Noogy' Dodrill credited with creating the intro and ending animations for Jazz Jackrabbit 2?"
+    },
+    "output_sha256": "ce2e549a388fd511588adea63d7e8c56df4435fdd30e366b7d7d03bc6bf7be82",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "Same genuinely open specific animation credit despite storage and generic-credit Claims.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N013",
+    "arm": "P5",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N014",
+    "arm": "P5",
+    "output": {
+      "decision": "research",
+      "need": "Does Peter King's birth date of 25 May 1978 correspond to the Chinese zodiac sign of the Goat or the Horse?"
+    },
+    "output_sha256": "f1e45b0724746e27341b5466814c9912e8d47c3932872f7ed03310a562b56c07",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One-gap date-to-zodiac classification remains a direct question; neither sign is asserted as a fact.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N015",
+    "arm": "P5",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N016",
+    "arm": "P5",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N018",
+    "arm": "P5",
+    "output": {
+      "decision": "research",
+      "need": "Did Ding Junhui win his second match at the 2023 English Open by a score of 4–3?"
+    },
+    "output_sha256": "ec3fcff99a9e9290d2edd7676970835492c24b93a726fa3f98173df7939186da",
+    "V": true,
+    "S": false,
+    "P": false,
+    "W": false,
+    "I": false,
+    "H": false,
+    "A": true,
+    "STRICT_VALID": true,
+    "mechanisms": [],
+    "reason": "One immediate next-match score, with observed opening match as context; does not bundle later wins/loss/opponent totals.",
+    "reviewer": "single Codex reviewer, unblinded; QCH and frozen rubric reviewed"
+  },
+  {
+    "case_id": "N019",
+    "arm": "P5",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N020",
+    "arm": "P5",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N021",
+    "arm": "P5",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N023",
+    "arm": "P5",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  },
+  {
+    "case_id": "N024",
+    "arm": "P5",
+    "STRICT_VALID": false,
+    "V": null,
+    "S": null,
+    "P": null,
+    "W": null,
+    "I": null,
+    "H": null,
+    "A": null,
+    "mechanisms": [
+      "B11_output_unavailable"
+    ],
+    "reason": "[{'category': 'length', 'type': 'ValueError', 'message': 'finish_reason=length'}]",
+    "output": null
+  }
+]
