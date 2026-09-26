@@ -1,0 +1,76 @@
+{
+  "head": "70bbb8a8c39a4b42ce6d7b0ba3ea3bb4c5bc8712",
+  "utc": "2026-09-26T21:25:56.385529+00:00",
+  "files": {
+    "experiments/belief_need_budget_locality_repair/acquisition/run.py": "324f9879482620e1127de2317323478efd42f9a9b497c9b96585ecd77041e4dc",
+    "experiments/belief_need_budget_locality_repair/acquisition/prepare.py": "2a7bf03c443473393912a67781b9fd26b255d22559c1ed7d7cc636aa66f16cbe",
+    "experiments/belief_need_budget_locality_repair/acquisition/QUESTIONS.json": "59e928960a492173960969fb719f49ff51365e19c2fd7dba61a9663fa895cc8f",
+    "experiments/belief_need_budget_locality_repair/acquisition/SELECTION.json": "52c769eb5d1411d39d74937508bcff6a226e6616728d22ec583cd24d739d2d95",
+    "experiments/belief_need_budget_locality_repair/acquisition/EXCLUDED_QIDS.json": "dbec0b09930449dc5d8e8d51928af62528ce972b3fb195841509dfe64923e579",
+    "experiments/belief_need_budget_locality_repair/acquisition/INITIAL_REQUESTS.json": "9c6a1bf549c870dd8b9a800a77b7071a95d7013d61eb2d646411ffe6d25ba868",
+    "experiments/belief_need_budget_locality_repair/CONFIG.json": "991c27595ace92bf0a09f9251d161e217750bbfa06cc8945b2a22ff650c5387b",
+    "experiments/belief_need_budget_locality_repair/transport.py": "1112864c9d8133859fdd5bd0199b363cab28b5b2f18375ae9baf27d2e7ae4eb9",
+    "experiments/belief_need_budget_locality_repair/PROTOCOL.md": "71b8ea6e3c422498d04a1c2ad28bcd5f7798a5400caf9c6b9a19e2dc479ef2a2",
+    "experiments/bcplus_verification/prompts/discovery_actor.md": "736b66e63cf9890198bd6064a6c76b3db9e47d8bf9da2ce83ce97adfc7defc97",
+    "experiments/bcplus_verification/prompts/writer.md": "c39bc11b56f98ab3d971b026812a4e2b428928d4e49ddebcb174fc9a52f2c4ad",
+    "experiments/bcplus_verification/schemas/actor_H.json": "f09233c40142ea8ad144bbaabe3121b04826cdaeb4a3acd667417f16965386d6",
+    "experiments/goal_residual_control/harness_v2/UPDATER_RESPONSE_SCHEMA.json": "e7578f6ba3f53551d699d0c80bc22862e65f1427f9b6771d57bab2a2b277a85c",
+    "experiments/deferred_recovery/tools.py": "10de0d99f85b8fa753c66d82101eabb8f9aa0d528e642145508beba8e477ed6f",
+    "experiments/evidence_scope_localization/runtime.py": "d156af546d52b9dc1b7d73e717c5e53296cb509685da04e90a2409ba48e8ccc1",
+    "experiments/bcplus_verification/runtime.py": "e818fb367ce922e520123825283c1a4f2f3de3d3ff09236030ce99f4ce1f0e86",
+    "llm_chat/search_find_agent.py": "7abd1c4414a38bcebe845379fc232803a3f18edfe41be533983afa192e54c720",
+    "llm_chat/agent.py": "e129a97b823881168be894e4b29bbac93f5da9f151c1c4260ef0b7fb7b06811a",
+    "llm_chat/raw_windows.py": "b72948cf78cdf15dd4966721f49581738b7cd93430480149ead717fb230cee6f",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339"
+  },
+  "binary_files": {
+    "/data/WSH/Search-ESR/BCPlus/indexes/qwen3-embedding-8b/corpus.shard1_of_4.pkl": {
+      "size": 410600746,
+      "mtime_ns": 1789836935019390970
+    },
+    "/data/WSH/Search-ESR/BCPlus/indexes/qwen3-embedding-8b/corpus.shard2_of_4.pkl": {
+      "size": 410600745,
+      "mtime_ns": 1789836938159413599
+    },
+    "/data/WSH/Search-ESR/BCPlus/indexes/qwen3-embedding-8b/corpus.shard4_of_4.pkl": {
+      "size": 410584287,
+      "mtime_ns": 1789836977691728712
+    },
+    "/data/WSH/Search-ESR/BCPlus/indexes/qwen3-embedding-8b/corpus.shard3_of_4.pkl": {
+      "size": 410600731,
+      "mtime_ns": 1789836975979713932
+    },
+    "/data/WSH/Search-ESR/BCPlus/indexes/bcplus-qwen3-8b/documents.sqlite": {
+      "size": 3330199552,
+      "mtime_ns": 1789838205471618017
+    },
+    "/data/model/Qwen3-Embedding-8B/model-00002-of-00004.safetensors": {
+      "size": 4915959512,
+      "mtime_ns": 1789837352008862764
+    },
+    "/data/model/Qwen3-Embedding-8B/model-00003-of-00004.safetensors": {
+      "size": 4983067656,
+      "mtime_ns": 1789837352040863330
+    },
+    "/data/model/Qwen3-Embedding-8B/model-00004-of-00004.safetensors": {
+      "size": 335570376,
+      "mtime_ns": 1789837294275870302
+    },
+    "/data/model/Qwen3-Embedding-8B/model-00001-of-00004.safetensors": {
+      "size": 4900037024,
+      "mtime_ns": 1789837351412852231
+    }
+  },
+  "model": "deepseek-flash",
+  "budget": "omit max_tokens, exact historical request fields",
+  "actor_horizon": 3,
+  "qids": 16,
+  "dev_qids": 6,
+  "confirmation_qids": 10,
+  "max_retries": 0,
+  "parallel_trajectories": 8,
+  "gpu": "cuda:1",
+  "mechanical_parallelization": "isolated tokenizer/db/handles per trajectory; shared unchanged embedding forward serialized by lock; HTTP and other independent work overlap",
+  "writer": "exact historical U1, max2 claims per actual observation, stop trajectory on failure",
+  "state_selection": "Archive all states now; selection/labels only after QCH commit, before any B0/B1/B2 semantic experiment."
+}
