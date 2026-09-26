@@ -20,6 +20,11 @@ To preserve both independent histories and the exact running freeze, this local 
 - 67c7801: freeze G5v2.
 - 9dad8ee: complete G4 raw outputs; G5 starts at this HEAD.
 - a6c8868: G4 integrated decision/progress analysis.
+- ecf6909: execution provenance and claim-scope interpretation.
+- 51a4f6e: incremental semantic review and append-only G3 evidence-scoring correction.
+- 7b7a9bf: all completed G5 raw requests, responses, intermediate states and terminal results; no final-analysis edits included.
+
+G5 completed with 30 terminal cells (STOP, open horizon, or retained failure), 70 Actor calls, 372 Updater calls, 30 Reviewer calls and 110 tool actions. No re-run or output repair followed review. Final analysis and the search-status accounting erratum are committed after raw execution. The old G1/G2/FINAL and all frozen code/request hashes remain unchanged.
 
 Main's existing authentication fix 8021aca was already an ancestor. No cherry-pick/merge was required; its latch was extracted and reused as documented in PROTOCOL_AMENDMENT. No Evidence Pointer state fields were imported.
 

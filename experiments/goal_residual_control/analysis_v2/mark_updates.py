@@ -1,4 +1,4 @@
-"""Record explicit human-in-session per-packet decisions, never production repairs."""
+"""Record explicit single-Codex-reviewer packet decisions, never production repairs."""
 from update_queue import *
 import sys
 p=TOP/'analysis_v2/UPDATER_LABELS.json';labels=read(p) if p.exists() else {};rows={r['review_id']:r for r in queue()}

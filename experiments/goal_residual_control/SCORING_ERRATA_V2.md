@@ -13,3 +13,13 @@ No model request, response, tool execution, frozen selection or historical artif
 | Calls / Progress | 2.50 / 3.05 / 2.57 | 2.50 / 3.05 / 2.45 |
 
 All other aggregate metrics, including second-action marginal yield and alternative-source sensitivity, are unchanged. G4 does not contain this window. G5 uses the corrected relation. The final synthesis cites corrected G3 primary numbers and identifies this erratum explicitly; it does not silently rewrite the earlier report.
+
+## Search rediscovery accounting correction
+
+The earlier G3/G4 `path_metrics.json` reader checked only the optional `previously_discovered` boolean. Orthogonal Search reports old documents with `status: already_discovered` and omits that boolean. Treating the missing flag as false incorrectly produced zero rediscovery counts. The raw results and backend are unchanged. Corrected derivations are appended as `review_corrected_path_metrics.json`; the original files remain intact. G5 final path metrics use both actual registry forms.
+
+- G3 already-known result items: A0 78/295, A1 58/325, A2 101/315; all-known Search calls: 3/0/3.
+- G4 already-known result items: R0 17/75, R1 21/85, R2 36/130, R3 36/110; all-known Search calls: 0/0/0/3.
+- G5 already-known result items: L0 93/246, L1 39/120, L2 80/196; all-known Search calls: 2/1/4.
+
+These measure returned-document rediscovery, not repeated identical queries or proof of goal drift. Evidence Progress and closure counts are unaffected.

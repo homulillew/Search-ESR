@@ -20,8 +20,18 @@ def run():
    for a in r['actions']:
     for w in a['observations']:
      if not w.get('text') or not w.get('window_ref') or not w.get('doc_ref'):source_bad.append([stage,r['case_id']])
- report={'historical_files_checked':len(old),'historical_mismatches':old_bad,'stage_freezes':fs,'duplicate_submissions_within_batch':dup,'request_hash_mismatches':request_bad,'model_calls_archived':calls,'response_model_names':dict(models),'observations_missing_provenance_fields':source_bad,'branch':subprocess.check_output(['git','branch','--show-current'],text=True).strip(),'scope':'No resampling; adaptive successive rounds may legitimately reuse an identical request. No claim of stochastic output reproducibility. Old G1/G2/FINAL and all frozen backend files must match exact bytes.'}
+ loop=read(TOP/'three_round_loop_v2/results.json');loop_bad=[];tool_errors=[]
+ for key,c in loop.items():
+  if len(c['decisions'])>3:loop_bad.append([key,'horizon'])
+  for d in c['decisions']:
+   if len(d['actions'])>2:loop_bad.append([key,'batch'])
+   for a in d['actions']:
+    if a.get('error'):tool_errors.append([key,a['error']])
+    for w in a['observations']:
+     if not w.get('text') or not w.get('window_ref') or not w.get('doc_ref'):source_bad.append(['G5',key])
+ report={'historical_files_checked':len(old),'historical_mismatches':old_bad,'stage_freezes':fs,'duplicate_submissions_within_batch':dup,'request_hash_mismatches':request_bad,'model_calls_archived':calls,'response_model_names':dict(models),'observations_missing_provenance_fields':source_bad,'G5_cells':len(loop),'G5_budget_violations':loop_bad,'G5_tool_errors':tool_errors,'branch':subprocess.check_output(['git','branch','--show-current'],text=True).strip(),'scope':'No resampling; adaptive successive rounds may legitimately reuse an identical request. No claim of stochastic output reproducibility. Old G1/G2/FINAL and all frozen backend files must match exact bytes.'}
  assert not old_bad and not dup and not request_bad and not source_bad
+ assert len(loop)==30 and not loop_bad
  assert all(not x['mismatches'] and x['request_hash_matches'] for x in fs.values())
  write(TOP/'INTEGRITY_CHECKS_V2.json',report);return report
 if __name__=='__main__':print(json.dumps(run(),indent=2))
