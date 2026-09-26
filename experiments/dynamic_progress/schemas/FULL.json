@@ -1,0 +1,56 @@
+{
+  "type": "object",
+  "properties": {
+    "resolved": {
+      "type": "boolean"
+    },
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "requirement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "supported",
+              "missing",
+              "conflict"
+            ]
+          },
+          "claim_refs": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "requirement",
+          "status",
+          "claim_refs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "closure_claim_refs": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "resolved",
+    "requirements",
+    "closure_claim_refs"
+  ],
+  "additionalProperties": false
+}
