@@ -1,0 +1,312 @@
+[
+  {
+    "cell": "DR01:G",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "No verified evidence yet establishes that Cococinel had an educational purpose, as required by the original question.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cococinel educational purpose series",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "bdfb22b4aa790c6a",
+      "2b9d67d9064b00cb",
+      "a269946b66e8fd35",
+      "8f97aa78726f0abd",
+      "472ecce42d539e0a"
+    ]
+  },
+  {
+    "cell": "DR01:H",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "It is unverified whether Cococinel is described as having an educational purpose; no current claim establishes this required attribute.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D28",
+          "query": "educational purpose"
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": []
+  },
+  {
+    "cell": "DR02:H",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "The candidate Game B is Jazz Jackrabbit 2 (based on Dean Dodrill's involvement), but it is uncertain whether it was released before 1999, as the original question requires. Confirmation of its release year is needed.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Jazz Jackrabbit 2 release date 1998 Epic MegaGames Orange Games",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "8860832a8b8c0fb7",
+      "ed37e42e372062b8",
+      "d311af94fe7e6d97",
+      "8a96b4b9f640c5db",
+      "e4a062c71406a87c"
+    ]
+  },
+  {
+    "cell": "DR02:G",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "The recovery need is whether Jazz Jackrabbit 2 (candidate Game B) was released before 1999, as required by the question's 'right after approximately 7 years (before 1999)' constraint; no verified release-date evidence for this title is currently in the claims.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Jazz Jackrabbit 2 release date 1998 Epic MegaGames",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "8860832a8b8c0fb7",
+      "e67663ac65fe0e61",
+      "d311af94fe7e6d97",
+      "50bc8d863b46b6fb",
+      "c274583c17c42338"
+    ]
+  },
+  {
+    "cell": "DR03:G",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "Current evidence lists Cococinel episode runtime as 4–10 minutes, which does not clearly establish that every episode ran for less than five minutes. I need a source that explicitly states the episode duration or confirms whether the short episodes were under five minutes.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cococinel episode run time 4 minutes",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "047c20b71f4e9012",
+      "b97b5a32b01d0dd8",
+      "e6a0acdf59f4f5b8",
+      "0e796a0da82a4009",
+      "46eacdd6957e11ff"
+    ]
+  },
+  {
+    "cell": "DR03:H",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "The available runtime evidence says Cococinel episodes run 4-10 minutes, which does not clearly satisfy the under-5-minute requirement; I need to verify the primary runtime listed for Cococinel, preferably from its French Wikipedia entry.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D27",
+          "query": "durée épisode"
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "71465c6be107d4d4"
+    ]
+  },
+  {
+    "cell": "DR04:H",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "Need to confirm whether Ding Junhui has made more than three career maximum breaks (147s) by 30 January 2025; catalog document D3 (Ding Junhui Wikipedia) should contain his career maximum break count.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "maximum breaks 147 career"
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "ae20fee0b8f0b082"
+    ]
+  },
+  {
+    "cell": "DR04:G",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "The available evidence does not yet establish how many career maximum breaks Ding Junhui had made by 30 January 2025, so the >3 requirement remains unverified.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Ding Junhui career maximum breaks 147 total",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "ae20fee0b8f0b082",
+      "f0d530f53679063e",
+      "241ae82fe5d19a9b",
+      "d0b1f44d8736f715",
+      "b5fd1f2e2e2d08a5"
+    ]
+  },
+  {
+    "cell": "DR05:G",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "Need to confirm the total number of seasons of You're the Worst to verify the series has fewer than ten seasons; no source text establishing season count has been observed yet.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "You're the Worst Wikipedia number of seasons",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "dad1d03712eea008",
+      "4e6d157b0d2347c0",
+      "7f7c00c0f305936b",
+      "d5f0942f9f26683a",
+      "d6d66ce2b92b8f58"
+    ]
+  },
+  {
+    "cell": "DR05:H",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "It is not yet established how many seasons You're the Worst ran, so the requirement that the show have fewer than ten seasons cannot be verified.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "number of seasons"
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "dd61338f39575ebf"
+    ]
+  },
+  {
+    "cell": "DR06:H",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "Need direct release-date evidence for Galacta: The Battle for Saturn to confirm or conflict with the claimed November 1992 DOS release.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "Release Date November 1992"
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "a59c1765510c685c"
+    ]
+  },
+  {
+    "cell": "DR06:G",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "Release-date evidence for Galacta: The Battle for Saturn is needed to confirm whether it was published in November 1992 on DOS, since the current claim lacks supporting window text and the company establishment date may conflict with the game's release timing.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Galacta: The Battle for Saturn release date November 1992 DOS shareware",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "d840cbd3a727219a",
+      "a59c1765510c685c",
+      "b419ca7d8e230099",
+      "56a4f20fa10a46fc",
+      "5bd0d19af159f049"
+    ]
+  },
+  {
+    "cell": "DR07:G",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "Need to confirm whether the Dean Dodrill gaming-PC details (5 TB storage, wireless keyboard) appeared in a source published on or before 25 July 2013; the catalog title alone does not establish the article's date.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "How I Game Dean Dodrill PC Gamer 5 TB wireless keyboard 2013",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "a60ef4818c1cc756",
+      "f3d8c7eb8045ada8",
+      "3ff8209576fa5649",
+      "da6ffb40ae782e47",
+      "5d7affc35a840dc9"
+    ]
+  },
+  {
+    "cell": "DR07:H",
+    "round": 0,
+    "decision": {
+      "decision": "act",
+      "gap": "The date of the 'How I Game: Dean Dodrill' source (D1) is unknown; to determine whether the gaming-PC specs were available by the 25 July 2013 cutoff, I need the article's publication date and any date marker around the storage/keyboard statement.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "How I Game Dean Dodrill PC Gamer published date July 2013 gaming PC storage"
+        }
+      ]
+    },
+    "error": null,
+    "tool_error": null,
+    "review_ids": [
+      "a60ef4818c1cc756"
+    ]
+  }
+]

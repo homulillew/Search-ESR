@@ -1,0 +1,436 @@
+[
+  {
+    "case_id": "DR01",
+    "qid": "311",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "077d62174785ad82070d0355ef91a4eb39cf430df4e0a624c852681bef99008d",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "No verified evidence yet establishes that Cococinel had an educational purpose, as required by the original question.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cococinel educational purpose series",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3378,
+      "output": 238,
+      "hit": 0,
+      "miss": 3378,
+      "reasoning": 187
+    },
+    "elapsed_seconds": 1.6908170394599438
+  },
+  {
+    "case_id": "DR01",
+    "qid": "311",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "eded07b79ec87d5cac4eb5420e728e2821f5d3debbf7933420f8b8a6b0b7d3e0",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "It is unverified whether Cococinel is described as having an educational purpose; no current claim establishes this required attribute.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D28",
+          "query": "educational purpose"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3894,
+      "output": 235,
+      "hit": 0,
+      "miss": 3894,
+      "reasoning": 173
+    },
+    "elapsed_seconds": 1.8124659974128008
+  },
+  {
+    "case_id": "DR02",
+    "qid": "387",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "c6d0f698b9b0505e8da0900c14f607a697e9dc5ee068139dd9bef6d1810fb514",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The candidate Game B is Jazz Jackrabbit 2 (based on Dean Dodrill's involvement), but it is uncertain whether it was released before 1999, as the original question requires. Confirmation of its release year is needed.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Jazz Jackrabbit 2 release date 1998 Epic MegaGames Orange Games",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 1882,
+      "output": 1478,
+      "hit": 0,
+      "miss": 1882,
+      "reasoning": 1380
+    },
+    "elapsed_seconds": 6.276106743142009
+  },
+  {
+    "case_id": "DR02",
+    "qid": "387",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "e62ac80d48302ce3747158c5311015912da405f8c00b540c20d5c6f5c088a968",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The recovery need is whether Jazz Jackrabbit 2 (candidate Game B) was released before 1999, as required by the question's 'right after approximately 7 years (before 1999)' constraint; no verified release-date evidence for this title is currently in the claims.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Jazz Jackrabbit 2 release date 1998 Epic MegaGames",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 1366,
+      "output": 161,
+      "hit": 0,
+      "miss": 1366,
+      "reasoning": 54
+    },
+    "elapsed_seconds": 1.2285531796514988
+  },
+  {
+    "case_id": "DR03",
+    "qid": "311",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "bcb591f0e3ef0c4f4feade46ff9a13f2b286fec44662cd58f6753ebcf6ef7fb7",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Current evidence lists Cococinel episode runtime as 4–10 minutes, which does not clearly establish that every episode ran for less than five minutes. I need a source that explicitly states the episode duration or confirms whether the short episodes were under five minutes.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Cococinel episode run time 4 minutes",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3296,
+      "output": 312,
+      "hit": 1152,
+      "miss": 2144,
+      "reasoning": 228
+    },
+    "elapsed_seconds": 2.0877953805029392
+  },
+  {
+    "case_id": "DR03",
+    "qid": "311",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "28eb3fc0740888029ed0c315aea9943ce771c429c3570de817f68bafb1c0b45f",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The available runtime evidence says Cococinel episodes run 4-10 minutes, which does not clearly satisfy the under-5-minute requirement; I need to verify the primary runtime listed for Cococinel, preferably from its French Wikipedia entry.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D27",
+          "query": "durée épisode"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3812,
+      "output": 657,
+      "hit": 1152,
+      "miss": 2660,
+      "reasoning": 578
+    },
+    "elapsed_seconds": 3.880433227866888
+  },
+  {
+    "case_id": "DR04",
+    "qid": "546",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "d6f14824e895b40e7d9f88c931675e0c0f4bbea0a705634c3aa01edeaa14ac0b",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Need to confirm whether Ding Junhui has made more than three career maximum breaks (147s) by 30 January 2025; catalog document D3 (Ding Junhui Wikipedia) should contain his career maximum break count.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "maximum breaks 147 career"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 1996,
+      "output": 404,
+      "hit": 128,
+      "miss": 1868,
+      "reasoning": 317
+    },
+    "elapsed_seconds": 2.2380991503596306
+  },
+  {
+    "case_id": "DR04",
+    "qid": "546",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "5998cbab984f221b1127b29a95b55ebb07122406e2927d6e4e8619a3958ecb77",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The available evidence does not yet establish how many career maximum breaks Ding Junhui had made by 30 January 2025, so the >3 requirement remains unverified.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Ding Junhui career maximum breaks 147 total",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 1480,
+      "output": 279,
+      "hit": 1024,
+      "miss": 456,
+      "reasoning": 211
+    },
+    "elapsed_seconds": 1.9501535706222057
+  },
+  {
+    "case_id": "DR05",
+    "qid": "580",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "0e7aa384ac9cc5de60748c826c0624c17cb588d1e752f894f0c076255e4ec27f",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Need to confirm the total number of seasons of You're the Worst to verify the series has fewer than ten seasons; no source text establishing season count has been observed yet.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "You're the Worst Wikipedia number of seasons",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 1365,
+      "output": 188,
+      "hit": 128,
+      "miss": 1237,
+      "reasoning": 113
+    },
+    "elapsed_seconds": 1.5523438956588507
+  },
+  {
+    "case_id": "DR05",
+    "qid": "580",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "c849a40487ddbe438d45204b959782705d617045009fca0987eb068f47b7bcf9",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "It is not yet established how many seasons You're the Worst ran, so the requirement that the show have fewer than ten seasons cannot be verified.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D3",
+          "query": "number of seasons"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 1881,
+      "output": 158,
+      "hit": 896,
+      "miss": 985,
+      "reasoning": 90
+    },
+    "elapsed_seconds": 1.2196404691785574
+  },
+  {
+    "case_id": "DR06",
+    "qid": "186",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "7df0e9ef4699caa49152f3b5bd73b92189a4bf995b4c603b40b347c82f8f504f",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Need direct release-date evidence for Galacta: The Battle for Saturn to confirm or conflict with the claimed November 1992 DOS release.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "Release Date November 1992"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 1959,
+      "output": 399,
+      "hit": 256,
+      "miss": 1703,
+      "reasoning": 338
+    },
+    "elapsed_seconds": 2.100938867777586
+  },
+  {
+    "case_id": "DR06",
+    "qid": "186",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "15926334cf9f2962203c83d423638c2adfb63d0136246144753819114d5ecb6f",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Release-date evidence for Galacta: The Battle for Saturn is needed to confirm whether it was published in November 1992 on DOS, since the current claim lacks supporting window text and the company establishment date may conflict with the game's release timing.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "Galacta: The Battle for Saturn release date November 1992 DOS shareware",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 1443,
+      "output": 213,
+      "hit": 256,
+      "miss": 1187,
+      "reasoning": 122
+    },
+    "elapsed_seconds": 1.5806262120604515
+  },
+  {
+    "case_id": "DR07",
+    "qid": "387",
+    "arm": "G",
+    "kind": "actor_G",
+    "request_sha256": "fb9ab73372b143fbedf83d878d302f82af5a45e145427553074fe9f4189631db",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Need to confirm whether the Dean Dodrill gaming-PC details (5 TB storage, wireless keyboard) appeared in a source published on or before 25 July 2013; the catalog title alone does not establish the article's date.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "How I Game Dean Dodrill PC Gamer 5 TB wireless keyboard 2013",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 1415,
+      "output": 249,
+      "hit": 384,
+      "miss": 1031,
+      "reasoning": 161
+    },
+    "elapsed_seconds": 1.4331141132861376
+  },
+  {
+    "case_id": "DR07",
+    "qid": "387",
+    "arm": "H",
+    "kind": "actor_H",
+    "request_sha256": "267bbd61efe1e6cf52654e4d9c96d156e39702a9e41c716564690f37d7146647",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "The date of the 'How I Game: Dean Dodrill' source (D1) is unknown; to determine whether the gaming-PC specs were available by the 25 July 2013 cutoff, I need the article's publication date and any date marker around the storage/keyboard statement.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "How I Game Dean Dodrill PC Gamer published date July 2013 gaming PC storage"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 1931,
+      "output": 513,
+      "hit": 384,
+      "miss": 1547,
+      "reasoning": 400
+    },
+    "elapsed_seconds": 2.944615302607417
+  }
+]
