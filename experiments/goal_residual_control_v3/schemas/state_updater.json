@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "claims_to_add": {
+      "type": "array",
+      "maxItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    },
+    "hypothesis_update": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "enum": [
+            "keep",
+            "set",
+            "clear"
+          ]
+        },
+        "statement": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "action",
+        "statement"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "claims_to_add",
+    "hypothesis_update"
+  ],
+  "additionalProperties": false
+}
