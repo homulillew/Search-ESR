@@ -1,0 +1,11 @@
+from review_utils import *
+review('8b7463c790','Founding event date/place tuple is the requested final relation and remains absent.')
+review('092bf3a779','Count and article identity lack the required scoped attribution join.')
+review('b1c1c17ae8','Zodiac and Iracema links are material. Best-known/critically-acclaimed corroboration is redundant after explicit Condon/Kinsey writer-director binding.',bad={3:'invented_requirement'},status={1:'Observed birth date lacks zodiac mapping: partial.'})
+review('2971ef6d8e','Generic appearance is correctly distinguished from a policeman role.')
+review('8a4158e0cb','First gap combines actor role with film-director binding; second correctly withholds zodiac inference.',bad={1:'over_broad'},status={2:'Birth date is an observed endpoint: partial.'})
+review('eba72141fe','Two missing relations: roommate-sacrifice event and total-season upper bound.')
+for u in ['296182940a','10e02e5cbf']:review(u,'Episode, role and total-season support is adequate for series identity.',witness=True)
+review('f8bb536500','First gap combines team origins and scoring pattern into a whole identity problem. The event-existence gap and qualified-taker endpoint remain valid.',bad={1:'over_broad'},status={1:'Scoring pattern is already observed for a candidate: partial.',3:'Candidate takers observed, qualification missing: partial.'})
+review('e4cbbb3681','Asks for the taker in the 2005 final on the basis of its score pattern, without first establishing that this fixture contains the required event; unlike explicit event-existence blockers, the event is presupposed.',bad={1:'unsupported_premise'},refs={1:'C15–16 support scoring phases, not a 95th-minute free kick.'},promotion=True)
+save()

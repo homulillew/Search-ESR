@@ -1,0 +1,10 @@
+from review_utils import *
+review('c7f4241618','Final founding tuple and league-wide tie count are valid separate gaps. Last unit bundles capital, historic title and article trophy count.',bad={3:'over_broad'})
+review('faeff5d3a7','Three single relations: Argentine title, same-programme character set, and network-name structure.')
+review('fcf52146c0','Gameplay identity, specific animation role and dated PC storage are separated without candidate promotion.')
+review('39ebf488d4','Certificate faithfully supports identity and the directly dated feature/count relation.',witness=True)
+review('f5375d3d50','Inspiration and zodiac are material; best-known/critical-acclaim corroboration is redundant once the Kinsey writer/director link is established.',bad={3:'invented_requirement'},status={2:'Birth date supplies an observed endpoint: partial.'})
+review('ca10d466c7','Debut and ordered match chain are distinct valid relations. Last item combines two opponents\' independent century-count conditions.',bad={3:'over_broad'})
+review('93324bd880','The coordinator-to-manager career relation remains unbound to the target individual; a baseball candidate\'s local facts do not establish it.')
+review('29e418384d','Explicitly identifies the missing join between qualified fixture and observed 95th-minute events without assuming a target fixture.')
+save()

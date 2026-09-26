@@ -1,0 +1,11 @@
+from review_utils import *
+review('739efeae97','Founding year, founding country, and article trophy count are separated and unestablished.')
+review('c2df0c059e','First combines league-wide tie multiplicity with the candidate points partner. Historic title and article trophy count are valid separate gaps.',bad={1:'over_broad'},status={1:'Candidate row is observed: partial.'})
+review('2c64ad4984','Specific animation role and dated storage are genuine gaps. Middle unit bundles inter-game corporate chronology with financing success.',bad={2:'over_broad'},status={1:'Generic animation role exists: partial.'})
+review('48bb9619dd','Explicit requested-date binding of observed storage value is missing.')
+review('6dc49a1746','All three gaps demand redundant musician-identity corroboration on a frozen resolved control.',bad={1:'invented_requirement',2:'invented_requirement',3:'invented_requirement'})
+review('05c77c67f2','First bundles actor role and film-director link; zodiac mapping is a separate valid gap without outside inference.',bad={1:'over_broad'},status={2:'Birth date observed: partial.'})
+review('ea936d4db4','Debut and final opponent count are valid separate relations. Middle item bundles ordered matches with the first opponent\'s independent century count.',bad={2:'over_broad'})
+review('1d2e083d6c','Final birth-name endpoint and dated career appointment/promotion are valid. Middle unit combines model occupation and source of wealth.',bad={2:'over_broad'})
+review('7a7599c58c','First combines model occupation and source of wealth. Child birth location and dated coordinator-to-manager relation are separate material gaps.',bad={1:'over_broad'})
+save()

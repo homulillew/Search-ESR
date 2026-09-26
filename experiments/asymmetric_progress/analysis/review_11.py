@@ -1,0 +1,10 @@
+from review_utils import *
+for u in ['6bc8c2a45a','df9be8353a','0b79d905df']:review(u,'Cited Claims cover the frozen discriminative identity, final relation and material bindings.',witness=True)
+review('d3bb7681bc','All three demands are redundant musician-identity corroboration on a frozen resolved control.',bad={1:'invented_requirement',2:'invented_requirement',3:'invented_requirement'})
+review('ca875f97fa','Feature identity and album-count attribution are valid gaps; the additional quote is redundant for already discriminative musician identity.',bad={3:'invented_requirement'})
+review('1a39d26fe9','Zodiac mapping and two director links are material, with no imported calendar inference.',status={1:'Birth date observed; zodiac binding missing: partial.'})
+review('547a24e261','Requires a separate literal final-episode label for the already identified S3E13 event; this is incidental under frozen resolved-series materiality.',bad={1:'invented_requirement'})
+review('07c0da6b6f','First is a whole-profile checklist, third bundles university study with coordinator-to-manager career path. The qualified-person birth-name endpoint is a valid blocker.',bad={1:'over_broad',3:'over_broad'})
+review('c205760f61','First bundles two club histories with fixture identity. Scoring pattern and qualified event-taker endpoint are valid, with observed partial candidate facts.',bad={1:'over_broad'},status={2:'Part of candidate chronology is observed: partial.',3:'Candidate takers observed, target qualification missing: partial.'})
+review('8bb72642bc','First explicitly withholds fixture-event existence, so second does not assert an observed event. Last gap bundles the two teams\' distinct histories.',bad={3:'over_broad'})
+save()
