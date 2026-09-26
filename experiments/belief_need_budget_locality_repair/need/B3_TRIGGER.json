@@ -1,0 +1,31 @@
+{
+  "rule": "SETTINGS.json B3_trigger",
+  "examples": [
+    {
+      "state_id": "F03_S00",
+      "output": {
+        "decision": "research",
+        "need": "Which players who came through a Premier League youth academy were born in the 1980s and later qualified as chartered surveyors?"
+      },
+      "result_sha256": "38e00e66d5ed8153023ff20eb0e28531d419b20ec8e725534f409bf0b255968f"
+    },
+    {
+      "state_id": "F03_S01",
+      "output": {
+        "decision": "research",
+        "need": "Which former Premier League academy footballer wore the number 27 jersey and later became a chartered surveyor?"
+      },
+      "result_sha256": "4c22138f539fed4b87716018e15fbc2151f701bb269afdbbdcec271b60df38bf"
+    },
+    {
+      "state_id": "F04_S02",
+      "output": {
+        "decision": "research",
+        "need": "Is there a book about Christina of Sweden as queen regnant that is more than 300 pages and was published by an academic publisher in February after 2010?"
+      },
+      "result_sha256": "4728c2dc440d5daf6edb6d808e6c990f3f515b934f5e0c7bd5d1623d0978e3b0"
+    }
+  ],
+  "reason": "Birth+academy+profession or jersey+academy+profession; page count+publisher+date. Each bundles independently investigable attributes across at least2qids.",
+  "stage2_uses_all_stage1_outputs": "No semantic selection or repairs."
+}
