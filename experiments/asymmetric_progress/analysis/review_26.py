@@ -1,0 +1,10 @@
+from review_utils import *
+review('7c82935665','Demands corporate chronology beyond frozen resolved materiality and asserts that later official incorporation makes earlier development/publication impossible, which no Claim establishes.',bad={1:['invented_requirement','unsupported_premise']},refs={1:'Dates and credits do not entail legal/operational impossibility.'},promotion=True)
+review('d9a8b4da9a','Raises the same redundant incorporation/development reconciliation as a supposed incompatibility; current Claims do not entail that earlier credits are impossible.',bad={1:['invented_requirement','unsupported_premise']},refs={1:'Official incorporation date does not invalidate established developer credits.'},promotion=True)
+for u in ['83b1aef0a7','9a357d6892','453c1795c3']:review(u,'Certificate supports discriminative musician identity and directly dated feature/count relation.',witness=True)
+review('9d6cb1b44a','Preserves the material count-to-feature attribution gap after the materiality addition.')
+review('4a2a5335a3','The roommate-sacrifice gap is real, but the explanation promotes the observed undated episode event to an established season-four event; C1–2 do not give that season.',bad={1:'unsupported_premise'},refs={1:'Episode title and plot do not establish season-four placement.'},promotion=True)
+review('dc91908e64','False closure: one episode match cannot establish total seasons or the roommate-sacrifice relation. Certificate also calls the event season four without a supporting Claim.',witness=False,certificate_errors=['missing_total_seasons','missing_roommate_event','unsupported_season_four_placement'],promotion=True)
+review('9218b742e7','Explicit total-season bound remains a material blocker.')
+for u in ['10d1d5a2ce','b8adb9b608']:review(u,'Explicitly withholds the fixture/event join; does not turn a scoring pattern into an observed 95th-minute event.')
+save()

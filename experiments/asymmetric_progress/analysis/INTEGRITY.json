@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "historical_files_checked": 10505,
+  "historical_changes": [],
+  "primary_fresh_unique_keys": 24,
+  "claims_mutated": false,
+  "all_requests_committed_before_submission": true,
+  "no_history_labels_or_light_output_in_model_input": true,
+  "all_noncanary_outputs_reviewed": true,
+  "stages": {
+    "canary": {
+      "submissions": 1,
+      "run_heads": [
+        "716f2b0a675f2d9b6c7a925e7b59c107ecf6d324"
+      ],
+      "valid_outputs": 1,
+      "failures": [],
+      "retries": 0
+    },
+    "primary": {
+      "submissions": 144,
+      "run_heads": [
+        "bf1932d3e569a23a4d624af3850054b3226db052"
+      ],
+      "valid_outputs": 142,
+      "failures": [
+        "A22_L0_1",
+        "A01_L0_2"
+      ],
+      "retries": 0
+    },
+    "challenge": {
+      "submissions": 54,
+      "run_heads": [
+        "bf1932d3e569a23a4d624af3850054b3226db052"
+      ],
+      "valid_outputs": 54,
+      "failures": [],
+      "retries": 0
+    },
+    "exploration": {
+      "submissions": 24,
+      "run_heads": [
+        "b9a5936f3320c6d8ec98502506b3c97ff07cab51"
+      ],
+      "valid_outputs": 24,
+      "failures": [],
+      "retries": 0
+    }
+  },
+  "production_controller_modified": false,
+  "frontier_calls": 0
+}
