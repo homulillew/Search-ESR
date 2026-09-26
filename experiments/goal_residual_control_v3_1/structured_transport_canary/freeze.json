@@ -1,0 +1,36 @@
+{
+  "git_head": "fb403bafcdf8524ec0f3b37947422412b533815a",
+  "utc": "2026-09-26T10:03:09.242038+00:00",
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "max_retries": 0,
+  "max_workers": 4,
+  "timeout_seconds": 240,
+  "planned": 24,
+  "extra": {
+    "selection": "reuse 24 previously frozen but never called v3 requests; 12 Actor, 8 Updater, 4 Goal",
+    "decision_rule": "use responses_structured if all 24 return structurally valid objects; otherwise json_mode_fallback for all nodes. Harness violations reported separately, not a schema redesign trigger.",
+    "no_tools": true,
+    "canary_only_once": true
+  },
+  "files": {
+    "experiments/goal_residual_control_v3_1/prepare.py": "8a9950edd709eb628df80f4459e4d78a835fc8e71aae9700de8f1a37bd5a96f6",
+    "experiments/goal_residual_control_v3_1/test_transport.py": "e651e2571e2bf99ccbe34e6722d644d069e275f44e07ce91d4cb780e5c440f46",
+    "experiments/goal_residual_control_v3_1/runtime.py": "cb43ca67e00713bfd54eb313bcfe47fbe2dc966078e09b54d10319fd384166b8",
+    "experiments/goal_residual_control_v3_1/TASK.md": "e562cf04c3156a86f4ef44ce9879f5de54c2d10bbb878811047c50508148a5e7",
+    "experiments/goal_residual_control_v3_1/PROTOCOL.md": "57b5ab496e8e440549ed426f5c362ba1d0cd098b4a95d33604ad6848ae9471a6",
+    "experiments/goal_residual_control_v3_1/README.md": "6c42f2515d125f99928e518e27d37dc558611085d3d24771fcf95f4df5c892cb",
+    "experiments/goal_residual_control_v3_1/FROZEN_STATE.md": "f470b99b2f8f057e42fdaed739bc0a18df00cba12544af07e4e7985f88e153d9",
+    "experiments/goal_residual_control_v3_1/DESIGN_AUDIT.md": "325e5b5f3d4e9c5dc66a2d6625220b49ac3a37f7b368cdf7de08e4a42c682b63",
+    "experiments/goal_residual_control_v3_1/HYPOTHESES.md": "31a52a5c5e0c4b91d3ff7eac5e90f9a81bda685e14cbad7f78110dd64383dee4",
+    "experiments/goal_residual_control_v3_1/PROTOCOL_AMENDMENT.md": "2a8ca3e65fb5272f109837e252c733393dc2452c3c3b4ce39e461c343c019da4",
+    "experiments/goal_residual_control_v3_1/prompts/state_updater_gap_conditioned.md": "c39bc11b56f98ab3d971b026812a4e2b428928d4e49ddebcb174fc9a52f2c4ad",
+    "experiments/goal_residual_control_v3_1/prompts/state_updater_v2_control.md": "cb1b9929d04bd37607c5393f7bb6259e2cfe201a7e4c534bf98f92e191a5230f",
+    "experiments/goal_residual_control_v3_1/schemas/actor_transport.json": "2ff10458553bf0896642b5659174ad3d64fa338ea90c40b4fc09e836e3067b63",
+    "experiments/goal_residual_control_v3_1/schemas/updater_transport.json": "ce40c29864af38bac8a20b08a4048538071f529d24621dddcd4704f27bb3cef4",
+    "experiments/goal_residual_control_v3_1/schemas/goal_transport.json": "1187b6b8ab8c8e48b048ee2d41434b7747e7880a18ff850c362737e3d33fe79e",
+    "experiments/goal_residual_control_v3_1/analysis/HISTORICAL_HASHES.json": "baf8c614a181ab4aa6809473e3dc6bcd2b776575d6ca09275001b87e169a6b7f",
+    "experiments/goal_residual_control_v3_1/structured_transport_canary/requests.json": "00525b0c4c9cb475bbf2274f4ad4d96681392a65ec4fcabbf43745a73c38ce89",
+    "experiments/goal_residual_control_v3_1/structured_transport_canary/PROTOCOL.md": "8a3b7cf463d2ff3fd5309e353d9409d31d19a15165402781214490afe2859d8f"
+  }
+}
