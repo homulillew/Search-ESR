@@ -10,7 +10,7 @@ All gold_resolved=true states in Dynamic Progress and Asymmetric Progress primar
 
 ## S1/S2 design
 
-One trajectory per frozen unit; no retry or replacement. S1 supplies a provisional Candidate and exactly one explicit hard condition. S2 starts from real historical checkpoints without supported candidate identity and supplies no candidate. S1 horizon two decisions, S2 three, one action per decision. All Search/Find/Open remain available; global search k=5 and existing raw-window mechanics are unchanged. No semantic source filter, reranker, extra localizer, or gold stopping.
+One trajectory per frozen unit; no retry or replacement. S1 supplies a provisional Candidate and exactly one explicit hard condition. Both arms reuse real question-only initial checkpoints (empty Claims/H/Workspace before any source observation), with provenance frozen per qid. S2 starts from real historical checkpoints without supported candidate identity and supplies no candidate. S1 horizon two decisions, S2 three, one action per decision. All Search/Find/Open remain available; global search k=5 and existing raw-window mechanics are unchanged. No semantic source filter, reranker, extra localizer, or gold stopping.
 
 U1 Writer is byte-identical to goal_residual_control_v3_1/prompts/state_updater_gap_conditioned.md. One Writer call per returned window, in returned order; max two new Claims per call; no researcher-written Claims. S1 Current Research Gap always verifies the frozen condition for the candidate. S2 uses the Actor's current discovery gap. Hypothesis remains provisional. Old windows remain available in Workspace. An Actor stop ends this bounded task, not whole-question closure.
 
