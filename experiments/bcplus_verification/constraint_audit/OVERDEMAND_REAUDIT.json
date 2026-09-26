@@ -1,0 +1,981 @@
+[
+  {
+    "stage": "dynamic_progress",
+    "review_id": "da7c41c32f7c",
+    "qid": "186",
+    "unit_index": 1,
+    "text": "The required relation that the amphibian-named company was first established under a different name in the early 1990s is not fully established: Albino Frog Software is only said to have formerly been Night Sky, while Claim 4 dates Albino Frog’s establishment to October 1993 and no Claim establishes when Night Sky was established or that Night Sky was the original early-1990s name.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "da7c41c32f7c",
+    "qid": "186",
+    "unit_index": 2,
+    "text": "The game’s publication year/date is conflicting: one Claim gives November 1992 on DOS, while another gives release year 1993; this leaves the required November early-1990s publication relation unresolved.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "extra_exact_year_reconciliation",
+    "reason": "Both years satisfy early 1990s; November is explicitly observed. Record inconsistency without requiring an unasked unique year."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "da7c41c32f7c",
+    "qid": "186",
+    "unit_index": 3,
+    "text": "The timeline relation between the amphibian-named developer/publisher and the 1992 publication is conflicting: Albino Frog Software is dated as established in October 1993, yet it is credited as developer/publisher of the 1992 DOS game.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "extra_exact_year_reconciliation",
+    "reason": "Both years satisfy early 1990s; November is explicitly observed. Record inconsistency without requiring an unasked unique year."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "13826915a2dd",
+    "qid": "435",
+    "unit_index": 3,
+    "text": "The early-2000s song is not established as urging a sitting president to retire; Claim 13 only establishes that 'Wasakara' was interpreted as referring to Robert Mugabe, not that it urged his retirement.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "669748fc90a9",
+    "qid": "517",
+    "unit_index": 2,
+    "text": "The Claims do not explicitly establish that 'Peter King Nzioki Mwania / Peter King' is the same person as the credited 'Peter Nzioki' who played Policeman 1 in The Constant Gardener and Oscar Kamau Kingara in The Fifth Estate; that identity link is needed to connect the popular-name claim to those roles.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "6ee6014019a1",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "Claim 3 only establishes that Gretchen was angry at Jimmy for making an assumption and that her friends convinced him to take her on a date; it does not establish that the assumption was that they would not be spending time together because of a sensitive issue.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "5ce4890587c1",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "The relation that Edgar is the male lead’s roommate making a sacrifice in a final episode of season three is only partially established: Edgar is Jimmy’s roommate and sacrifices in season 3 episode 13, but neither Jimmy being the male lead nor episode 13 being one of the final episodes of season three is established.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "5ce4890587c1",
+    "qid": "580",
+    "unit_index": 3,
+    "text": "The season 1 episode 2 claim does not establish that Jimmy’s assumption was specifically that they would not be spending time together because of a sensitive issue; it only states Gretchen was angry at an assumption and friends convinced him to take her on a date.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "2480dd34aa3e",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "No Claim establishes that Jimmy’s season 1 episode 2 assumption specifically concerned not spending time together due to a sensitive issue; Claim 4 only says Gretchen was angry at an unspecified assumption.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "2480dd34aa3e",
+    "qid": "580",
+    "unit_index": 3,
+    "text": "The Claims do not establish the episode-position constraints as stated: that the season 1 episode is an initial episode, that the season 3 episode is a final episode, or that the season 4 episode is midway through the season.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Relative episode-position requirement is real, but exact cutoffs are unspecified; exclude numerical-cutoff disputes from primary."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "3e71b4ce1c32",
+    "qid": "517",
+    "unit_index": 2,
+    "text": "The identity link between Peter King Nzioki Mwania (popularly Peter King) and Peter Nzioki, the actor who played Policeman 1 in The Constant Gardener and Oscar Kamau Kingara in The Fifth Estate, is not explicitly established.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "ff7fd0f0ec2b",
+    "qid": "186",
+    "unit_index": 1,
+    "text": "The company/game timeline is not resolved: Claim 4 states Albino Frog Software, Inc. was officially established in October 1993, while Claim 11 states the same company published Galacta in 1992 and Claim 9 credits it as developer. This leaves it unestablished how the amphibian-named company could be the developer/publisher of the earlier game.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "extra_exact_year_reconciliation",
+    "reason": "Both years satisfy early 1990s; November is explicitly observed. Record inconsistency without requiring an unasked unique year."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "ff7fd0f0ec2b",
+    "qid": "186",
+    "unit_index": 2,
+    "text": "The release timing is internally inconsistent: Claim 1 says Galacta was released in November 1992 on DOS, but Claim 5 says its release year is 1993, while Claim 11 says 1992. The requested November/early-1990s publication date is therefore not consistently established.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "extra_exact_year_reconciliation",
+    "reason": "Both years satisfy early 1990s; November is explicitly observed. Record inconsistency without requiring an unasked unique year."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "ff7fd0f0ec2b",
+    "qid": "186",
+    "unit_index": 3,
+    "text": "The different-name condition is only partially supported: Claim 3 says Albino Frog was formerly Night Sky, but no claim dates that former name to the early 1990s or states that the company was first established under the different name; Claim 4 places the Albino Frog establishment in October 1993.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "ed6f71fc0739",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "The Claims do not establish that season 3 episode 13 is one of the final episodes of season three.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Relative episode-position requirement is real, but exact cutoffs are unspecified; exclude numerical-cutoff disputes from primary."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "ed6f71fc0739",
+    "qid": "580",
+    "unit_index": 3,
+    "text": "The Claims do not establish that season 4 episode 7 is midway through season four.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Relative episode-position requirement is real, but exact cutoffs are unspecified; exclude numerical-cutoff disputes from primary."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "c2bed8888553",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "fully confirm that the season-one assumption was specifically that the leads would not spend time together because of a sensitive issue.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "402cab0848db",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "In an initial season-one episode, after one lead assumes they will not be spending time together due to a sensitive issue, the other lead becomes upset and their friends convince the first lead to take their partner on a date.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "402cab0848db",
+    "qid": "580",
+    "unit_index": 5,
+    "text": "The season-four episode in which the female lead returns home and reconnects with someone from her past occurs midway through season four.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "d176176adcca",
+    "qid": "517",
+    "unit_index": 2,
+    "text": "do not explicitly establish that Peter Nzioki, credited as Policeman 1 in The Constant Gardener and as a character in The Fifth Estate, is the same individual as Peter King Nzioki Mwania/Peter King. The exact zodiac and acting-role requirements are therefore not jointly entailed for the popular name.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "aa18dc391146",
+    "qid": "435",
+    "unit_index": 4,
+    "text": "The musician released their first album in the 1970s.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "aa18dc391146",
+    "qid": "435",
+    "unit_index": 5,
+    "text": "In the early 2000s, the musician released a song urging a sitting president to retire.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "aa18dc391146",
+    "qid": "435",
+    "unit_index": 6,
+    "text": "In a 2010s interview, the musician posed the question 'Why do we sing, why is there art?'",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "dd33e3363895",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "In an initial season-one episode, one lead assumes they won't be spending time together due to a sensitive issue, the other lead becomes upset, and friends convince the first lead to take their partner on a date to make things right.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "dd33e3363895",
+    "qid": "580",
+    "unit_index": 4,
+    "text": "Midway through season four, the female lead returns home for the birth of a family member's baby, but instead of focusing on the event, she unexpectedly reconnects with someone she knew from the past.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "2b68e1a94930",
+    "qid": "517",
+    "unit_index": 2,
+    "text": "that Bill Condon is best known for directing and writing Kinsey or that Kinsey is critically acclaimed, so the exact original question is not fully answered.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Ranking/praise has no reliable primary threshold; writing/directing Kinsey remains hard."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "ce04c7f8a621",
+    "qid": "517",
+    "unit_index": 2,
+    "text": "verifies that Kinsey is critically acclaimed or that Bill Condon is best known for directing and writing it. These missing details prevent fully confirming the popular name from the given clues.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Ranking/praise has no reliable primary threshold; writing/directing Kinsey remains hard."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "b8fa11efbcfb",
+    "qid": "311",
+    "unit_index": 16,
+    "text": "The candidate program identity is consistently bound to a single work across claims.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "dynamic_progress",
+    "review_id": "b42aa54a33f4",
+    "qid": "311",
+    "unit_index": 6,
+    "text": "Argentine broadcast dates (1996–1997 vs. the early 1990s).",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "6ea13587eb",
+    "qid": "435",
+    "unit_index": 1,
+    "text": "The Verified Claims do not establish that Oliver Mtukudzi gave a 2010s interview in which he posed the question 'Why do we sing, why is there art?', so the described musician's identity is not fully established.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "e8ebed3bde",
+    "qid": "435",
+    "unit_index": 3,
+    "text": "The early-2000s song urging a sitting president to retire is not established: Claim 10 says Wasakara was interpreted by many to refer to Robert Mugabe, then the 77-year-old president, but does not establish that the song urged him to retire.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "2efd90de36",
+    "qid": "435",
+    "unit_index": 1,
+    "text": "No verified claim establishes that Oliver Mtukudzi posed the question \"Why do we sing, why is there art?\" in a 2010s interview; Claim 9 reports a different 2016 Forbes Africa statement.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "2efd90de36",
+    "qid": "435",
+    "unit_index": 2,
+    "text": "No verified claim establishes that he released his first album in the 1970s; Claim 8 only establishes a first recording deal in 1975, not an album release.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "2efd90de36",
+    "qid": "435",
+    "unit_index": 3,
+    "text": "No verified claim fully establishes that the early-2000s song urged a sitting president to retire; Claim 6 only says Wasakara was interpreted to refer to Robert Mugabe.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "f85b64c6b0",
+    "qid": "580",
+    "unit_index": 3,
+    "text": "The relation that the season-four return home for a family baby and past reconnection occurs midway through season four is not established; Claim 1 establishes only season 4 episode 7, not that it is midway through the season.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Relative episode-position requirement is real, but exact cutoffs are unspecified; exclude numerical-cutoff disputes from primary."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "3452523bc9",
+    "qid": "435",
+    "unit_index": 1,
+    "text": "The verified claims do not establish that Oliver Mtukudzi's early-2000s song 'Wasakara' urged sitting president Robert Mugabe to retire; Claim 6 only says it was interpreted to refer to Mugabe as the then president.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "b1c1c17ae8",
+    "qid": "517",
+    "unit_index": 3,
+    "text": "No Verified Claim establishes that Bill Condon is best known for directing and writing the critically acclaimed Kinsey; Claims 6 and 8 establish only that he directed The Fifth Estate and wrote/directed Kinsey.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Ranking/praise has no reliable primary threshold; writing/directing Kinsey remains hard."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "66d5c1d029",
+    "qid": "435",
+    "unit_index": 1,
+    "text": "Claim 6 only states that the 2001 song \"Wasakara\" was interpreted as referring to Robert Mugabe; it does not establish that the song urged the sitting president to retire, which is an explicit identifying relation in the question.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "414b06920b",
+    "qid": "580",
+    "unit_index": 1,
+    "text": "The claims do not establish that Jimmy Shive-Overly is the male lead, so Edgar's sacrifice is not joined to 'the male lead's roommate' as required.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "d3bb7681bc",
+    "qid": "435",
+    "unit_index": 1,
+    "text": "No Verified Claim establishes that Oliver Mtukudzi released his first album in the 1970s; claim 8 only establishes a first recording deal in 1975 and claim 4 only establishes that he began performing in 1977.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "d3bb7681bc",
+    "qid": "435",
+    "unit_index": 2,
+    "text": "No Verified Claim establishes that in a 2010s interview the musician posed the question \"Why do we sing, why is there art?\"",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "d3bb7681bc",
+    "qid": "435",
+    "unit_index": 3,
+    "text": "No Verified Claim establishes that the early 2000s song urged a sitting president to retire; claim 6 only states that Wasakara was interpreted by many to refer to the then-president Robert Mugabe.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "ca875f97fa",
+    "qid": "435",
+    "unit_index": 3,
+    "text": "The 2010s interview quote “Why do we sing, why is there art?” is not established; Claim 4 only refers to an Oliver Mtukudzi interview with Forbes Africa in 2016, without the quoted words.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "547a24e261",
+    "qid": "580",
+    "unit_index": 1,
+    "text": "Claim 2 establishes that 'No Longer Just Us' is You’re the Worst season 3 episode 13 and includes Edgar’s sacrifice, but it does not establish that this episode is one of the final episodes of season three as the question requires.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Relative episode-position requirement is real, but exact cutoffs are unspecified; exclude numerical-cutoff disputes from primary."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "f5375d3d50",
+    "qid": "517",
+    "unit_index": 3,
+    "text": "The 'best known for directing and writing the critically acclaimed Kinsey' relation is not fully established; Claim 8 only states that Bill Condon wrote and directed Kinsey, not that he is best known for it or that Kinsey was critically acclaimed.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Ranking/praise has no reliable primary threshold; writing/directing Kinsey remains hard."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "9f4ef6ffde",
+    "qid": "580",
+    "unit_index": 3,
+    "text": "Claim 3 establishes that Gretchen becomes angry at Jimmy for an assumption and that friends convince him to take her on a date, but it does not establish the specific season-one condition that Jimmy assumed they would not be spending time together because of a sensitive issue.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "6dc49a1746",
+    "qid": "435",
+    "unit_index": 1,
+    "text": "The relation that the described musician posed the question ‘Why do we sing, why is there art?’ in a 2010s interview is not established for Oliver Mtukudzi or any other candidate.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "6dc49a1746",
+    "qid": "435",
+    "unit_index": 2,
+    "text": "The relation that the early 2000s song urged the sitting president to retire is only partially established; Claim 6 states the song was interpreted to refer to Robert Mugabe but does not establish that it urged him to retire.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "6dc49a1746",
+    "qid": "435",
+    "unit_index": 3,
+    "text": "The relation that the described musician released their first album in the 1970s is not established; Claim 4 only states Oliver Mtukudzi began performing in 1977.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "b03097dfaa",
+    "qid": "435",
+    "unit_index": 3,
+    "text": "The early-2000s song urging a sitting president to retire is not established; Claim 10 only says Wasakara was interpreted as referring to Robert Mugabe, not that it urged him to retire.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "965d56bb6c",
+    "qid": "580",
+    "unit_index": 1,
+    "text": "The claims establish Edgar's sacrifice in season 3 and that Edgar is Jimmy Shive-Overly's roommate, but they do not establish that Jimmy Shive-Overly is the male lead. Thus the required relation 'the male lead's roommate makes a sacrifice' is not fully supported.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "e521d20f5c",
+    "qid": "517",
+    "unit_index": 2,
+    "text": "The claims establish that Bill Condon wrote and directed Kinsey, but do not establish that he is best known for directing and writing Kinsey or that Kinsey is critically acclaimed, as required by the 2013-film director clue.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Ranking/praise has no reliable primary threshold; writing/directing Kinsey remains hard."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "6e8ba90803",
+    "qid": "186",
+    "unit_index": 1,
+    "text": "The claims establish that Albino Frog Software, Inc. was formerly Night Sky (Claim 3) and was officially established in October 1993 (Claim 4), but they do not establish that the company had a different name when it was first established; Claim 4 instead indicates it was established under the Albino Frog name, so the required different-name-at-establishment relation is unsupported.",
+    "old_errors": [
+      "invented_requirement",
+      "unsupported_premise"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "7a1ec5a4ea",
+    "qid": "517",
+    "unit_index": 2,
+    "text": "The relation that the 2013 film's director is best known for directing and writing the critically acclaimed Kinsey is only partial: Claim 8 establishes that Bill Condon wrote and directed Kinsey, but no claim establishes that he is best known for it or that it was critically acclaimed.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Ranking/praise has no reliable primary threshold; writing/directing Kinsey remains hard."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "87ee8adbb2",
+    "qid": "186",
+    "unit_index": 1,
+    "text": "Claim 1 dates Galacta: The Battle for Saturn's DOS release to November 1992, while Claim 5 gives its release year as 1993; the required November early-1990s publication date is therefore not consistently established.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "extra_exact_year_reconciliation",
+    "reason": "Both years satisfy early 1990s; November is explicitly observed. Record inconsistency without requiring an unasked unique year."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "9d4765ad85",
+    "qid": "186",
+    "unit_index": 1,
+    "text": "The relation that Albino Frog Software had a different name (Night Sky) at its first establishment in the early 1990s is not fully established: Claim 3 states it was formerly Night Sky, but Claim 4 dates Albino Frog Software's establishment to October 1993, so no supported date or name for the company's first establishment is established.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "9d4765ad85",
+    "qid": "186",
+    "unit_index": 2,
+    "text": "The relation that Albino Frog Software could have developed or published Galacta: The Battle for Saturn for its November 1992 DOS release is in conflict with the claim that Albino Frog Software was officially established in October 1993; Claims 9 and 11 credit Albino Frog Software for the 1992 game, while Claim 4 places the company's establishment after that release.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "unsupported_incompatibility",
+    "reason": "Later official incorporation does not logically preclude earlier credited development. A true founding-name gap does not rescue that inference."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "7207bf82f3",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "The claims do not establish that Gretchen is the female lead, so the season-four return-home/reconnection plot point is not fully matched.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "7207bf82f3",
+    "qid": "580",
+    "unit_index": 3,
+    "text": "The claims do not establish that Jimmy's assumption in season 1 episode 2 was that they would not be spending time together because of a sensitive issue; they only state that Gretchen was angry at him for making an assumption.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "8ac707c6e8",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "For the season-one initial-episode plot point, the Claims establish that Gretchen was angry at Jimmy’s assumption and that friends convinced him to take her on a date, but they do not establish that the assumption was specifically that they would not be spending time together because of a sensitive issue.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "8ac707c6e8",
+    "qid": "580",
+    "unit_index": 3,
+    "text": "The Claims establish that Edgar makes a sacrifice in a season-three episode and that Edgar is Jimmy’s roommate, but they do not establish that Jimmy is the male lead, so the required relation ‘the male lead’s roommate makes a sacrifice’ is not fully supported.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "824b453e84",
+    "qid": "186",
+    "unit_index": 1,
+    "text": "The required November early-1990s DOS publication is not consistently established: Claim 1 places the release in November 1992, while Claim 5 lists the release year as 1993, and Claim 11 gives only 1992.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "extra_exact_year_reconciliation",
+    "reason": "Both years satisfy early 1990s; November is explicitly observed. Record inconsistency without requiring an unasked unique year."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "824b453e84",
+    "qid": "186",
+    "unit_index": 2,
+    "text": "The relation that the amphibian-named company had a different name at the time it was first established is only partial: Claim 3 says Albino Frog Software was formerly Night Sky, but no Claim establishes that Night Sky was the name when the company was first established in the early 1990s.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "824b453e84",
+    "qid": "186",
+    "unit_index": 3,
+    "text": "The developer/publisher identity and timeline is unresolved: Claim 9 credits Albino Frog Software, Inc. as developer, but Claim 4 says that company was established in October 1993, while Claims 1 and 11 place Galacta's DOS release in 1992.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "unsupported_incompatibility",
+    "reason": "Later official incorporation does not logically preclude earlier credited development. A true founding-name gap does not rescue that inference."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "aad7c5f038",
+    "qid": "435",
+    "unit_index": 3,
+    "text": "The early-2000s song urging a sitting president to retire is not established: Claim 13 says the 2001 song 'Wasakara' was interpreted by many to refer to Robert Mugabe, then president, but does not state that it urged him to retire.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "ad1513d553",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "The claims do not establish that the cited season 3 episode 13 is one of the final episodes of season three or that the cited season 4 episode 7 is midway through season four; they only identify episode numbers and events.",
+    "old_errors": [
+      "invented_requirement",
+      "over_broad"
+    ],
+    "classification": "AMBIGUOUS",
+    "strict_verdict": "sensitivity_only",
+    "reason": "Relative episode-position requirement is real, but exact cutoffs are unspecified; exclude numerical-cutoff disputes from primary."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "ad1513d553",
+    "qid": "580",
+    "unit_index": 3,
+    "text": "For the season one plot point, Claim 4 does not establish that Jimmy assumed they would not be spending time together because of a sensitive issue, only that Gretchen was angry at his assumption and friends arranged a date.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "72d85db47a",
+    "qid": "186",
+    "unit_index": 1,
+    "text": "The publication/release date is not consistently established: Claim 1 gives November 1992 and Claim 11 gives 1992, while Claim 5 gives a 1993 release year, leaving a material conflict over whether the required November early-1990s DOS publication condition is satisfied.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "extra_exact_year_reconciliation",
+    "reason": "Both years satisfy early 1990s; November is explicitly observed. Record inconsistency without requiring an unasked unique year."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "72d85db47a",
+    "qid": "186",
+    "unit_index": 2,
+    "text": "The relation that the amphibian-named company was first established in the early 1990s under a different name is not fully established: Claim 3 only says Albino Frog Software was formerly Night Sky, and Claim 4 separately says Albino Frog was established in October 1993; no Claim ties Night Sky to the company's initial establishment.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "72d85db47a",
+    "qid": "186",
+    "unit_index": 3,
+    "text": "The timeline between the credited developer/publisher and the game release is unreconciled: Claims 9 and 11 credit Albino Frog Software with developing/publishing Galacta in 1992, but Claim 4 says Albino Frog was officially established in October 1993.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "unsupported_incompatibility",
+    "reason": "Later official incorporation does not logically preclude earlier credited development. A true founding-name gap does not rescue that inference."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "c1fb707374",
+    "qid": "580",
+    "unit_index": 2,
+    "text": "The season-one clue requires the lead's assumption to be that they will not be spending time together due to a sensitive issue, but Claim 3 only establishes that Gretchen gets angry at Jimmy for making an assumption and that Jimmy is later convinced to take her on a date, without establishing the sensitive-issue/not-spending-time content of that assumption.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "7c82935665",
+    "qid": "186",
+    "unit_index": 1,
+    "text": "Claims 1 and 11 place Galacta: The Battle for Saturn's release/publication in November 1992/1992 by Albino Frog Software, but Claim 4 states Albino Frog Software, Inc. was not officially established until October 1993, so the required publisher/developer entity could not have published or developed the game at that date.",
+    "old_errors": [
+      "invented_requirement",
+      "unsupported_premise"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "unsupported_incompatibility",
+    "reason": "Later official incorporation does not logically preclude earlier credited development. A true founding-name gap does not rescue that inference."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "d9a8b4da9a",
+    "qid": "186",
+    "unit_index": 1,
+    "text": "The required link between Galacta: The Battle for Saturn and Albino Frog Software, Inc. is not temporally established: Claims 1 and 11 place its DOS publication/release in November 1992/1992, while Claim 4 states Albino Frog Software, Inc. was officially established in October 1993; therefore the verified claims conflict on whether Albino Frog could have been the game's developer/publisher for that November early-1990s release.",
+    "old_errors": [
+      "invented_requirement",
+      "unsupported_premise"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "unsupported_incompatibility",
+    "reason": "Later official incorporation does not logically preclude earlier credited development. A true founding-name gap does not rescue that inference."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "10e274f391",
+    "qid": "580",
+    "unit_index": 1,
+    "text": "The Verified Claims do not establish that Jimmy Shive-Overly is the male lead, so the season-three sacrifice by Edgar cannot be tied to the required 'male lead's roommate' role.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  },
+  {
+    "stage": "asymmetric_progress",
+    "review_id": "8b8ff83f52",
+    "qid": "580",
+    "unit_index": 1,
+    "text": "The required participant-role link is missing: no Verified Claim states that Jimmy Shive-Overly is the male lead, so Claim 3 only establishes Edgar as Jimmy's roommate, not as the male lead's roommate who makes the sacrifice in Claim 2.",
+    "old_errors": [
+      "invented_requirement"
+    ],
+    "classification": "HARD_CONSTRAINT",
+    "strict_verdict": "valid_uncovered_hard_constraint",
+    "reason": "Original Question explicitly limits target; old candidate-confidence redundancy is not verification coverage."
+  }
+]
