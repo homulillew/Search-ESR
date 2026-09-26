@@ -1,0 +1,2 @@
+
+Before another corpus search, consider whether an already observed document is a plausible place to resolve this exact missing relation. A search preview is only a partial view of that document. If the source appears suitable, a focused document search or an expansion of an observed window may reveal the relevant passage. Distinguish production roles from similarly named fictional roles, and use the words for the relation you need. Do not treat an omitted relation as a contradiction. All tools remain available; choose the next action normally.
