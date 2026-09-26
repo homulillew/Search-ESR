@@ -1,0 +1,11 @@
+{
+  "stage": "R2",
+  "executed": false,
+  "reason": "Fresh K A3 exact evidence = 9/10 meets the frozen usable threshold. Formal R2 only triggers at <=7/10; 8/10 is frozen no-run gray zone.",
+  "failure_free_sensitivity": "8/10 operational success, also not an R2 trigger under the frozen gray-zone rule.",
+  "challenge_A3": "3/5, diagnostic only; cannot override the fresh gate.",
+  "new_model_calls": 0,
+  "localizer_changed": false,
+  "bounded_exploration_executed": false,
+  "exploration_reason": "A1 already increased local inspection; the fresh failure is a repeated correct-source table query, while free/global baselines are strong. No single additional policy sweep is justified by this small bank. Preserve the failed gate and stop this stage."
+}

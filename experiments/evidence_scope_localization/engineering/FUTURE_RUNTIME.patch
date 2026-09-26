@@ -1,0 +1,20 @@
+--- a/experiments/evidence_scope_localization/runtime.py
++++ b/experiments/evidence_scope_localization/runtime.py
+@@ -10,6 +10,8 @@
+ from experiments.bcplus_verification.runtime import decode,usage
+ from experiments.deferred_recovery.tools import restore,registry,execute
+ from llm_chat.search_find_agent import SEARCH_FIND_TOOLS
++
++from experiments.evidence_scope_localization.engineering.attempts_compat import append_attempt
+ 
+ def contract(arm,oracle=None,reg=None):
+  s=read(TOP/'actor_schema.json');allowed={'search','find','open'}
+@@ -125,7 +127,7 @@
+      d['tool_started_utc']=now();write(outdir/'checkpoint.json',c)
+      d['tool']=execute(t,a['output']['actions'][0]);d['tool_completed_utc']=now();c['registry']=registry(t)
+      r=d['tool']
+-     c['attempts'].append({'action':r['action'],'status':r['result']['status'] if r['result'] else 'tool_error','returned_windows':[w['window_ref'] for w in r['observations']]})
++     c['attempts']=append_attempt(c['attempts'],{'action':r['action'],'status':r['result']['status'] if r['result'] else 'tool_error','returned_windows':[w['window_ref'] for w in r['observations']]})
+      print(stage,cid,arm,'step',step+1,r['action']['tool'],'ok' if not r['error'] else r['error'],flush=True)
+      write(outdir/'checkpoint.json',c)
+      if r['error']:c['status']='tool_failure';break
