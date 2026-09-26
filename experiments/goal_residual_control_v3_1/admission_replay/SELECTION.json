@@ -1,0 +1,47 @@
+{
+  "seed": "admission-20260926-v3.1",
+  "priority": [
+    "missed_discriminative_admission",
+    "qualifier_omission",
+    "missed_material_rejection",
+    "correct_material_rejection",
+    "contradicted_hypothesis_set",
+    "spurious_hypothesis_clear",
+    "weak_hypothesis_replacement",
+    "weak_hypothesis_set",
+    "unresolved_source_conflict",
+    "source_conflict_retained",
+    "incidental",
+    "useful_positive",
+    "no_change",
+    "multi_fact_page",
+    "supported_irrelevant"
+  ],
+  "target_per_qid": 6,
+  "actual_per_qid": {
+    "177": 6,
+    "186": 6,
+    "311": 6,
+    "387": 6,
+    "435": 6,
+    "517": 6,
+    "546": 6,
+    "580": 1,
+    "1034": 6,
+    "1094": 6
+  },
+  "available_per_qid": {
+    "177": 56,
+    "186": 16,
+    "311": 63,
+    "387": 17,
+    "435": 14,
+    "517": 27,
+    "546": 30,
+    "580": 1,
+    "1034": 93,
+    "1094": 55
+  },
+  "rule": "within qid greedily cover first unmet stratum by seeded hash; fill to min(6,available). No redistribution or duplicated packets.",
+  "candidate_or_final_relation": "semantic coverage characterized during pre-call atom review, not post-output selection"
+}

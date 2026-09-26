@@ -1,0 +1,104 @@
+{
+  "type": "object",
+  "properties": {
+    "decision": {
+      "type": "string",
+      "enum": [
+        "stop",
+        "act"
+      ]
+    },
+    "gap": {
+      "type": "string"
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "tool": {
+                "type": "string",
+                "enum": [
+                  "search"
+                ]
+              },
+              "query": {
+                "type": "string"
+              },
+              "k": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 10
+              }
+            },
+            "required": [
+              "tool",
+              "query",
+              "k"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "tool": {
+                "type": "string",
+                "enum": [
+                  "find"
+                ]
+              },
+              "doc_ref": {
+                "type": "string"
+              },
+              "query": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "tool",
+              "doc_ref",
+              "query"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "tool": {
+                "type": "string",
+                "enum": [
+                  "open"
+                ]
+              },
+              "window_ref": {
+                "type": "string"
+              },
+              "direction": {
+                "type": "string",
+                "enum": [
+                  "before",
+                  "after",
+                  "around"
+                ]
+              }
+            },
+            "required": [
+              "tool",
+              "window_ref",
+              "direction"
+            ],
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "decision",
+    "gap",
+    "actions"
+  ],
+  "additionalProperties": false
+}
