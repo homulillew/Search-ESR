@@ -1,0 +1,106 @@
+{
+  "lowest_adequate_explicit": "E32768",
+  "primary_configuration": "EDEFAULT",
+  "max_tokens": null,
+  "omit_max_tokens": true,
+  "all_metrics": {
+    "E8192": {
+      "n": 12,
+      "final_valid_JSON": 9,
+      "FinalJSONCompletionRate": 0.75,
+      "final_output_exists": 9,
+      "schema_valid": 9,
+      "length": 3,
+      "LengthFailureRate": 0.25,
+      "completion_tokens": {
+        "p50": 6770.5,
+        "p90": 8192.0,
+        "max": 8192
+      },
+      "reasoning_tokens": {
+        "p50": 6735.0,
+        "p90": 8192.0,
+        "max": 8192
+      },
+      "final_tokens": 361,
+      "Reasoning_Output_ratio": 0.995131621534146,
+      "near_explicit_cap_count": 4,
+      "budget": 8192,
+      "headroom_unknown_for_default": false
+    },
+    "E16384": {
+      "n": 12,
+      "final_valid_JSON": 10,
+      "FinalJSONCompletionRate": 0.8333333333333334,
+      "final_output_exists": 10,
+      "schema_valid": 10,
+      "length": 2,
+      "LengthFailureRate": 0.16666666666666666,
+      "completion_tokens": {
+        "p50": 5605.5,
+        "p90": 15798.7,
+        "max": 16384
+      },
+      "reasoning_tokens": {
+        "p50": 5571.0,
+        "p90": 15796.000000000002,
+        "max": 16384
+      },
+      "final_tokens": 419,
+      "Reasoning_Output_ratio": 0.9951586439581264,
+      "near_explicit_cap_count": 2,
+      "budget": 16384,
+      "headroom_unknown_for_default": false
+    },
+    "E32768": {
+      "n": 12,
+      "final_valid_JSON": 12,
+      "FinalJSONCompletionRate": 1.0,
+      "final_output_exists": 12,
+      "schema_valid": 12,
+      "length": 0,
+      "LengthFailureRate": 0.0,
+      "completion_tokens": {
+        "p50": 6587.0,
+        "p90": 8951.800000000001,
+        "max": 11485
+      },
+      "reasoning_tokens": {
+        "p50": 6553.5,
+        "p90": 8920.6,
+        "max": 11422
+      },
+      "final_tokens": 582,
+      "Reasoning_Output_ratio": 0.9923497555076503,
+      "near_explicit_cap_count": 0,
+      "budget": 32768,
+      "headroom_unknown_for_default": false
+    },
+    "EDEFAULT": {
+      "n": 12,
+      "final_valid_JSON": 12,
+      "FinalJSONCompletionRate": 1.0,
+      "final_output_exists": 12,
+      "schema_valid": 12,
+      "length": 0,
+      "LengthFailureRate": 0.0,
+      "completion_tokens": {
+        "p50": 5203.5,
+        "p90": 11179.2,
+        "max": 17890
+      },
+      "reasoning_tokens": {
+        "p50": 5146.0,
+        "p90": 11120.300000000001,
+        "max": 17854
+      },
+      "final_tokens": 573,
+      "Reasoning_Output_ratio": 0.9923020084637604,
+      "near_explicit_cap_count": null,
+      "budget": null,
+      "headroom_unknown_for_default": true
+    }
+  },
+  "default_65535_is_observation_not_config_claim": true,
+  "status": "qualified_calibration"
+}
