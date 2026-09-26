@@ -1,0 +1,51 @@
+{
+  "utc": "2026-09-26T17:57:30.085693+00:00",
+  "historical_files_unchanged": 10640,
+  "primary_frozen_files_unchanged": 55,
+  "binary_identities_unchanged": 17,
+  "exploration_frozen_files_unchanged": 13,
+  "exact_prefix_policy_only_pairs": [
+    "VN01",
+    "VN07",
+    "VP06",
+    "VP12"
+  ],
+  "primary_windows_reviewed": 318,
+  "primary_claims_reviewed": 140,
+  "registered_windows_checked_against_actual_corpus": 318,
+  "unique_documents_checked": 174,
+  "journals": {
+    "primary": {
+      "calls": 404,
+      "http_statuses": {
+        "200": 404
+      },
+      "errors": {
+        "transport_structural_failure": 1,
+        "length/incomplete failure": 1
+      }
+    },
+    "exploration": {
+      "calls": 12,
+      "http_statuses": {
+        "200": 12
+      },
+      "errors": {}
+    }
+  },
+  "retained_failures": [
+    {
+      "phase": "primary",
+      "case_id": "VP09",
+      "category": "transport_structural_failure"
+    },
+    {
+      "phase": "primary",
+      "case_id": "D10",
+      "category": "length/incomplete failure"
+    }
+  ],
+  "credential_scan": "clean",
+  "production_components": "unchanged",
+  "all_passed": true
+}

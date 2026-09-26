@@ -1,0 +1,234 @@
+{
+  "units": [
+    {
+      "case_id": "VN01",
+      "qid": "311",
+      "control_success": false,
+      "exploration_success": false,
+      "control_action": {
+        "tool": "find",
+        "doc_ref": "D1",
+        "query": "directed by written by director writers"
+      },
+      "exploration_action": {
+        "tool": "find",
+        "doc_ref": "D1",
+        "query": "Directed by Written by"
+      },
+      "reason": "Correct D1 but Find returns plot/origins instead of production credits. Existing H was already clear for another constraint; this is not new falsification.",
+      "new_target_claim_admitted": false,
+      "new_hypothesis_clear": false
+    },
+    {
+      "case_id": "VN07",
+      "qid": "546",
+      "control_success": false,
+      "exploration_success": false,
+      "control_action": {
+        "tool": "search",
+        "query": "John Higgins turned professional 1992 snooker",
+        "k": 5
+      },
+      "exploration_action": {
+        "tool": "search",
+        "query": "John Higgins turned professional 1992 snooker",
+        "k": 5
+      },
+      "reason": "Same global query and same off-target windows as control. Williams pro-year cannot establish Higgins pro-year; no evidence-based Higgins clear.",
+      "new_target_claim_admitted": false,
+      "new_hypothesis_clear": false
+    },
+    {
+      "case_id": "VP06",
+      "qid": "387",
+      "control_success": false,
+      "exploration_success": true,
+      "control_action": {
+        "tool": "search",
+        "query": "Dean Dodrill Dust An Elysian Tail animating on 8.5 x 11 printing paper frames",
+        "k": 5
+      },
+      "exploration_action": {
+        "tool": "find",
+        "doc_ref": "D1",
+        "query": "8x11 printing paper animation"
+      },
+      "reason": "Find D1 returns explicit normal 8x11 printing paper plus keyboard context. Same dated source and prior correctly admitted keyboard Claim establish the combined condition.",
+      "new_target_claim_admitted": true,
+      "new_hypothesis_clear": false
+    },
+    {
+      "case_id": "VP12",
+      "qid": "517",
+      "control_success": false,
+      "exploration_success": true,
+      "control_action": {
+        "tool": "search",
+        "query": "Peter King Nzioki policeman role 2005 film Constant Gardener",
+        "k": 5
+      },
+      "exploration_action": {
+        "tool": "find",
+        "doc_ref": "D1",
+        "query": "policeman police officer role 2005 film"
+      },
+      "reason": "Find D1 returns exact 2005 Constant Gardener / Policeman1 row; U1 admits it without strengthening.",
+      "new_target_claim_admitted": true,
+      "new_hypothesis_clear": false
+    }
+  ],
+  "control_success": {
+    "n": 0,
+    "d": 4
+  },
+  "exploration_success": {
+    "n": 2,
+    "d": 4
+  },
+  "control_inspections": 1,
+  "exploration_inspections": 3,
+  "useful_inspections": 2,
+  "cost": {
+    "input": 30324,
+    "output": 15577,
+    "reasoning": 15037,
+    "hit": 11392,
+    "miss": 18932,
+    "calls": 12,
+    "actor_calls": 4,
+    "writer_calls": 8,
+    "elapsed_model_seconds_sum": 79.49668096005917,
+    "weighted_cache_hit": 0.3756760321857275,
+    "cache_hit_requests": 12,
+    "failures": 0
+  },
+  "interpretation": "Selected failure states, one sample, no new control sampling. Narrow recoverability/policy signal only; all formal gates remain failed.",
+  "window_review": [
+    {
+      "case_id": "VN01",
+      "wave": 0,
+      "window_ref": "W6",
+      "doc_ref": "D1",
+      "url": "https://en.wikipedia.org/wiki/The_Adventures_of_Hijitus",
+      "text_sha256": "ba1c9a4274f033c1ceee8165d1feabd5223a671645da2ae58a1fd8ebf5db3e4c",
+      "grade": "i",
+      "useful_target_evidence": false,
+      "reason": "Correct D1 but Find returns plot/origins instead of production credits. Existing H was already clear for another constraint; this is not new falsification."
+    },
+    {
+      "case_id": "VN07",
+      "wave": 0,
+      "window_ref": "W1",
+      "doc_ref": "D1",
+      "url": "https://en.wikipedia.org/wiki/Ding_Junhui",
+      "text_sha256": "6497603a97a8bc6c5e207b2768159772428a1fde09fa8b6df041608966a87696",
+      "grade": "i",
+      "useful_target_evidence": false,
+      "reason": "Ding match history, no Higgins debut."
+    },
+    {
+      "case_id": "VN07",
+      "wave": 1,
+      "window_ref": "W2",
+      "doc_ref": "D2",
+      "url": "https://m.youtube.com/watch?v=vOJ_nMzVkM4",
+      "text_sha256": "f9f13cde8884ffdb40bf642ea4adf488804ebdfeb7e21647960fe70deda0a1df",
+      "grade": "i",
+      "useful_target_evidence": false,
+      "reason": "Video placeholder."
+    },
+    {
+      "case_id": "VN07",
+      "wave": 2,
+      "window_ref": "W6",
+      "doc_ref": "D6",
+      "url": "https://www.snookerisland.com/forum/viewtopic.php?f=25&t=11961",
+      "text_sha256": "6e750ca11a82013b9ce4d2aef4edd2ba3e25183d419a0c60d36d09c58f1d0bd8",
+      "grade": "i",
+      "useful_target_evidence": false,
+      "reason": "Later Higgins match, not debut."
+    },
+    {
+      "case_id": "VN07",
+      "wave": 3,
+      "window_ref": "W7",
+      "doc_ref": "D4",
+      "url": "https://en.wikipedia.org/wiki/Mark_Williams_%28snooker_player%29",
+      "text_sha256": "1fd9eee6dc09e09cbc7b9c9799fb162687e4087a4fbfd034a430adfdfc0584fe",
+      "grade": "i",
+      "useful_target_evidence": false,
+      "reason": "Explicit year belongs to Williams."
+    },
+    {
+      "case_id": "VN07",
+      "wave": 4,
+      "window_ref": "W8",
+      "doc_ref": "D7",
+      "url": "https://wpbsa.com/about-us/history/147-breaks/",
+      "text_sha256": "b4f0b0f9356fa82868e71d4eb62339c88dafdab5dbf65350089baff4c3d2457d",
+      "grade": "i",
+      "useful_target_evidence": false,
+      "reason": "Maximum table does not establish Higgins debut."
+    },
+    {
+      "case_id": "VP06",
+      "wave": 0,
+      "window_ref": "W6",
+      "doc_ref": "D1",
+      "url": "https://www.pcgamer.com/how-i-game-dean-dodrill/",
+      "text_sha256": "df8d70595b9e6e22a18c977c9085dd36e5ca51b0d8be5dc7acd44ce8651acdca",
+      "grade": "s",
+      "useful_target_evidence": true,
+      "reason": "Find D1 returns explicit normal 8x11 printing paper plus keyboard context. Same dated source and prior correctly admitted keyboard Claim establish the combined condition."
+    },
+    {
+      "case_id": "VP12",
+      "wave": 0,
+      "window_ref": "W6",
+      "doc_ref": "D1",
+      "url": "https://en.wikipedia.org/wiki/Peter_Nzioki",
+      "text_sha256": "8eed30fb65493977acafaaf2b2979bd5079385913a69dc07d0f7dfdcae33dd07",
+      "grade": "s",
+      "useful_target_evidence": true,
+      "reason": "Find D1 returns exact 2005 Constant Gardener / Policeman1 row; U1 admits it without strengthening."
+    }
+  ],
+  "claim_review": [
+    {
+      "case_id": "VN07",
+      "wave": 3,
+      "statement": "Mark Williams turned professional in 1992.",
+      "observation_ref": "W7",
+      "observation_sha256": "1fd9eee6dc09e09cbc7b9c9799fb162687e4087a4fbfd034a430adfdfc0584fe",
+      "verdict": "supported",
+      "reason": "Williams year only; correctly not attributed to Higgins."
+    },
+    {
+      "case_id": "VP06",
+      "wave": 0,
+      "statement": "Dean Dodrill stated that he animates on normal 8x11\" printing paper.",
+      "observation_ref": "W6",
+      "observation_sha256": "df8d70595b9e6e22a18c977c9085dd36e5ca51b0d8be5dc7acd44ce8651acdca",
+      "verdict": "supported",
+      "reason": "Explicit paper-medium statement in dated source, linked to prior source-scoped Claims."
+    },
+    {
+      "case_id": "VP12",
+      "wave": 0,
+      "statement": "Peter Nzioki played Policeman 1 in the 2005 film The Constant Gardener.",
+      "observation_ref": "W6",
+      "observation_sha256": "8eed30fb65493977acafaaf2b2979bd5079385913a69dc07d0f7dfdcae33dd07",
+      "verdict": "supported",
+      "reason": "Exact filmography row supports role/year/film."
+    },
+    {
+      "case_id": "VP12",
+      "wave": 0,
+      "statement": "Peter Nzioki appeared as Oscar Kamau Kingara in the 2013 film The Fifth Estate.",
+      "observation_ref": "W6",
+      "observation_sha256": "8eed30fb65493977acafaaf2b2979bd5079385913a69dc07d0f7dfdcae33dd07",
+      "verdict": "supported",
+      "reason": "Exact filmography row supports role/year/film."
+    }
+  ]
+}

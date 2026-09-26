@@ -1,0 +1,126 @@
+[
+  {
+    "case_id": "VN01",
+    "qid": "311",
+    "arm": "V",
+    "kind": "actor_H",
+    "request_sha256": "7d000ef74f574751d2a2830cfedf9834ef692f950094f8055a1cd0894ca01bea",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Whether The Adventures of Hijitus credits exactly one director and two writers, as required by the constraint.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "Directed by Written by"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 4101,
+      "output": 585,
+      "hit": 128,
+      "miss": 3973,
+      "reasoning": 525
+    },
+    "elapsed_seconds": 2.9726844616234303
+  },
+  {
+    "case_id": "VN07",
+    "qid": "546",
+    "arm": "V",
+    "kind": "actor_H",
+    "request_sha256": "dd3152fe605c2ee52a4914225e963e10ab47fd77ca4079384796f2d5bc868060",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Whether John Higgins turned professional between 1995 and 2006, as required by the constraint.",
+      "actions": [
+        {
+          "tool": "search",
+          "query": "John Higgins turned professional 1992 snooker",
+          "k": 5
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 3780,
+      "output": 421,
+      "hit": 128,
+      "miss": 3652,
+      "reasoning": 367
+    },
+    "elapsed_seconds": 2.6205725632607937
+  },
+  {
+    "case_id": "VP06",
+    "qid": "387",
+    "arm": "V",
+    "kind": "actor_H",
+    "request_sha256": "f9f3cbb349da69441ecbdadc3c9826fb69280acafefe9c4d69dcc40225907929",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Whether Dean Dodrill animated on normal 8x11 inch printing paper as of 25 July 2013, in addition to using a wireless keyboard.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "8x11 printing paper animation"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 4444,
+      "output": 960,
+      "hit": 128,
+      "miss": 4316,
+      "reasoning": 887
+    },
+    "elapsed_seconds": 4.328745098784566
+  },
+  {
+    "case_id": "VP12",
+    "qid": "517",
+    "arm": "V",
+    "kind": "actor_H",
+    "request_sha256": "cbc4546524115928a4ee645e187a52dc53534f1cf78812352bc68e5af4006f76",
+    "mode": "json_mode_fallback",
+    "attempted": true,
+    "structural_valid": true,
+    "harness_valid": true,
+    "output": {
+      "decision": "act",
+      "gap": "Whether Peter King (Peter Nzioki) specifically played a policeman in a 2005 film; current evidence only shows a minor role in The Constant Gardener and a Barman role in the 2005 TV movie Transit.",
+      "actions": [
+        {
+          "tool": "find",
+          "doc_ref": "D1",
+          "query": "policeman police officer role 2005 film"
+        }
+      ]
+    },
+    "error": null,
+    "usage": {
+      "input": 4339,
+      "output": 582,
+      "hit": 128,
+      "miss": 4211,
+      "reasoning": 490
+    },
+    "elapsed_seconds": 3.3384538516402245
+  }
+]
