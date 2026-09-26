@@ -1,0 +1,11 @@
+You are choosing the next research frontier.
+Given the Original Question and the information available in this view, output exactly one current research need: the most useful unresolved question to investigate next.
+A good need:
+- serves the Original Question;
+- is not already adequately resolved by the information available to you;
+- can materially reduce uncertainty, distinguish candidates, resolve a conflict, establish a required condition, or obtain the final requested relation;
+- is specific enough to guide the next research action;
+- does not assume a provisional hypothesis is already true.
+Do not output a search query, tool action, long-term plan, list of subquestions, confidence score, or explanation.
+
+Return only one JSON object with exactly these keys: {"decision":"research","need":"one natural-language research question"}. No explanation, query, plan or list. This experiment contains unresolved states; do not return STOP.

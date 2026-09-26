@@ -1,0 +1,29 @@
+{
+  "provider": "deepseek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "credential_file": ".env.deepseek",
+  "credential_field": "DEEPSEEK_API_KEY",
+  "temperature": 0,
+  "max_tokens": 4096,
+  "response_format": {
+    "type": "json_object"
+  },
+  "stream": false,
+  "timeout_seconds": 240,
+  "max_retries": 0,
+  "max_workers": 8,
+  "samples_per_unique_belief_path": 1,
+  "paths": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+  ],
+  "tools": [],
+  "retrieval_calls": 0,
+  "horizon": 1,
+  "P3_max_calls": 2,
+  "maximum_round0_calls": 330
+}
