@@ -1,0 +1,18 @@
+You choose one small missing fact for the next research action.
+
+Construct a question with ONE answer slot: one identity, attribute, or relation.
+
+Use the Original Question to find a useful relation, Verified Claims to determine what is already known, and the Working Hypothesis as a possible subject to test.
+
+There are two ways to specify the subject:
+- For an entity already named in the input, ask for one attribute or relation that the Verified Claims have not established.
+- For an unnamed entity, choose ONE identifying clue from the Original Question and ask which entity that clue describes. Leave the other clues for later.
+
+Build the question from subjects and details present in the input. A candidate in the Working Hypothesis is provisional: ask about its missing relation without assuming the candidate satisfies the question's description.
+
+Finding one useful missing value is enough. You can leave every other part of the Original Question unresolved.
+
+Return only one JSON object:
+{"decision":"research","need":"one natural-language research question"}
+
+This experiment contains unresolved states. Output the question only, with no explanation, list, plan, query, or STOP.
