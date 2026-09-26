@@ -1,0 +1,96 @@
+"""Offline screening lexicons only; never imported by the Actor runtime.
+
+Matches propose semantic review, not an automatic evidence verdict.
+"""
+import re
+NEEDS={
+'VP01':'Did Enugu Rangers win a league between 1973 and 1983?',
+'VP02':'Was Galacta: The Battle for Saturn published in November in the early 1990s on DOS?',
+'VP03':'Does Galacta: The Battle for Saturn have only a single-player mode?',
+'VP04':'Does Galacta: The Battle for Saturn have a shareware business model?',
+'VP05':'Does Galacta: The Battle for Saturn credit three people, two sharing a family name?',
+'VP06':'As of 25 July 2013, did Dean Dodrill use a wireless keyboard and animate on normal 8x11 inch printing paper?',
+'VP07':'Did Oliver Mtukudzi die aged 66?',
+'VP08':'Did Oliver Mtukudzi release 67 albums in his career?',
+'VP09':'Did Oliver Mtukudzi ask “Why do we sing, why is there art?” in a 2010s interview?',
+'VP10':'Was Oliver Mtukudzi a human rights activist?',
+'VP11':'Was Peter King Nzioki’s father a soldier and did his mother work at the barracks hospital?',
+'VP12':'What role did Peter Nzioki play in the 2005 film The Constant Gardener?',
+'VP13':'Did Ding Junhui turn professional between 1995 and 2006?',
+'VP14':'Had Ding Junhui made more than three maximum breaks by 30 January 2025?',
+'VP15':'Did You’re the Worst run for fewer than ten seasons?',
+'VP17':'Did Nick Mutuma have his industry break between 2006 and 2010?',
+'VP18':'Did Nick Mutuma release his first music single between 2010 and 2015?',
+'VN01':'Did The Adventures of Hijitus have one director and two writers?',
+'VN02':'Did The Adventures of Hijitus begin and end its broadcast run in the early 1990s?',
+'VN03':'Did The Adventures of Hijitus begin its broadcast run in January and end in December?',
+'VN04':'Did The Adventures of Hijitus air on a network whose name has three characters, including one number?',
+'VN05':'Did Brum begin and end its broadcast run in the early 1990s?',
+'VN06':'Did Ronnie O’Sullivan turn professional between 1995 and 2006?',
+'VN07':'Did John Higgins turn professional between 1995 and 2006?',
+'VN08':'Did Mark Williams turn professional between 1995 and 2006?',
+'VN09':'Had Mark Williams made more than three maximum breaks by 30 January 2025?',
+'VN10':'In the PSG–Lille 4–3 match with Messi’s 95th-minute free kick, did one team score all its goals early and the other all its goals late?'}
+CHALLENGE={'VP06','VP12','VN01','VN03','VN07'}
+TERMS={
+'VP01':('enugu|rangers','league|champion|winner'),
+'VP02':('galacta','november|released|published|dos'),
+'VP03':('galacta','player|multiplayer|mode'),
+'VP04':('galacta','shareware|business model'),
+'VP05':('galacta','credit|puckett|caputo'),
+'VP06':('dodrill|dust','keyboard|wireless|paper|8x11'),
+'VP07':('mtukudzi|tuku','66|died|death'),
+'VP08':('mtukudzi|tuku','67|album'),
+'VP09':('mtukudzi|tuku','why do we sing|why is there art|interview'),
+'VP10':('mtukudzi|tuku','human rights|activist'),
+'VP11':('nzioki|peter king','father|mother|army|soldier|hospital|barrack'),
+'VP12':('nzioki|constant gardener','role|police|2005'),
+'VP13':('ding|junhui','professional|career|2003'),
+'VP14':('ding|junhui','maximum|147|fourth|seventh'),
+'VP15':('worst','season|series finale|ended'),
+'VP17':('mutuma|nicholas','break|2008|tabasamu'),
+'VP18':('mutuma|nicholas','single|2013|anthem'),
+'VN01':('hijitus','writer|written|director|directed'),
+'VN02':('hijitus','1967|1974|aired|broadcast'),
+'VN03':('hijitus','august|march|first.aired|last.aired'),
+'VN04':('hijitus','channel|network|canal|trece'),
+'VN05':('brum','1991|2002|aired|broadcast'),
+'VN06':('ronnie|sullivan','1992|professional|class of'),
+'VN07':('higgins','1992|professional|class of'),
+'VN08':('williams','1992|professional|class of'),
+'VN09':('williams','maximum|147|three'),
+'VN10':('psg|saint.germain|lille','2.0|3.2|3.3|equalis|equaliz|scoring|minute')}
+def candidates(f,text,title=''):
+ """Conservative relation-value screen across full bytes, followed by review."""
+ s=title+'\n'+text;t=' '.join(s.lower().replace('’',"'").split())
+ def has(p):return bool(re.search(p,t,re.I))
+ if not has(TERMS[f][0]): return False
+ return {
+ 'VP01':lambda:has(r'(1974|1975|1977|1981|1982).{0,150}(league|title|winner)|(?:league|title|winner).{0,150}(1974|1975|1977|1981|1982)'),
+ 'VP02':lambda:has('november') and has('1992') and has('dos'),
+ 'VP03':lambda:has('no multiplayer|only.{0,20}single.player|single.player.{0,20}only'),
+ 'VP04':lambda:has('shareware'),
+ 'VP05':lambda:has('terri') and has('sean') and has('caputo'),
+ 'VP06':lambda:has('wireless') and has('8x11'),
+ 'VP07':lambda:has(r'(died|death|dead|bow).{0,80}66|66.{0,50}(died|death|dead)|1952.{0,40}2019'),
+ 'VP08':lambda:has('67 albums|albums.{0,40}67'),
+ 'VP09':lambda:has('why do we sing') and has('why is there art') and has('201[0-9]'),
+ 'VP10':lambda:has('human rights activist'),
+ 'VP11':lambda:has('father') and has('army|soldier') and has('mother') and has('hospital'),
+ 'VP12':lambda:has('constant gardener') and has('policeman|police officer'),
+ 'VP13':lambda:has('professional.{0,30}2003|2003.{0,40}professional'),
+ 'VP14':lambda:has('(fourth|fifth|sixth|seventh|4th|5th|6th|7th).{0,20}maximum|ding.{0,45}[47] maximum|ding junhui.{0,15}7|official maximums: [4-9]'),
+ 'VP15':lambda:has('num_seasons: 5|five seasons|fifth and final|final fifth|seasons.{0,20}5'),
+ 'VP17':lambda:has('break.{0,60}2008|2008.{0,80}break'),
+ 'VP18':lambda:has('2013.{0,80}first single|first single.{0,80}2013'),
+ 'VN01':lambda:has('writer:') and has('director:') or has('writer.{0,80}(ferr[eé]).{0,80}(m[eé]ndez).{0,80}(t[aá]bacznik)'),
+ 'VN02':lambda:has('1967.{0,40}1974|first_aired: 7 august 1967'),
+ 'VN03':lambda:has('first_aired: 7 august|last_aired: 1 march'),
+ 'VN04':lambda:has('channel 13|canal 13|el trece'),
+ 'VN05':lambda:has('brum.{0,120}2002|1991.{0,20}2002.{0,100}brum'),
+ 'VN06':lambda:has('class of') and has('1992') and has('professional') or has("o.sullivan.{0,40}professional.{0,20}1992"),
+ 'VN07':lambda:has('class of') and has('1992') and has('professional') or has('higgins.{0,40}professional.{0,20}1992'),
+ 'VN08':lambda:has('williams.{0,80}professional.{0,20}1992|professional.{0,5}1992'),
+ 'VN09':lambda:has('three maximum|maximum breaks.{0,5}3'),
+ 'VN10':lambda:has('2-0|2–0|opened the scoring') and has('equalis|equaliz|3-3|3–3')
+ }[f]()

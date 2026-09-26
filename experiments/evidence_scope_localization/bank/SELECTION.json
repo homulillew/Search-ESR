@@ -1,0 +1,24 @@
+{
+  "K": 10,
+  "K_qids": 5,
+  "N": 8,
+  "N_qids": 8,
+  "challenge": 5,
+  "shortfall": "K has 10 unique Need families across 5 qids, below requested 12 / 6. No synthetic insertion, repeated equivalent prefix, or new Need family used. Gates remain descriptive with this limited fresh coverage.",
+  "N_rule_clarification": "Within each qid prefer the smallest eligible Workspace family, then family ID; chosen before any new model output. Eight qids, one each.",
+  "eligibility_exclusions": {
+    "VP16": "Non-exhaustive sibling source",
+    "VN12": "Conflicting birth-year sources",
+    "VP02/VP04": "Exact release/shareware already visible when an exact source is known",
+    "VP03": "No-multiplayer source already visible whenever discovered; MobyGames alone is partial",
+    "VP05": "Exact game credits already visible; company 3079 collaborator list does not bind all names to this game",
+    "VP07/VP08": "Exact age/count already visible or retained in Claims when exact source known",
+    "VP15": "Exact total already visible when series overview known",
+    "VP17": "Break year visible in IMDb even when Wikipedia query preview misses it",
+    "VN02/VN04": "Broadcast year/network already visible via other snippets/Claims",
+    "VN05": "Exact Brum date source already visible when known",
+    "VN10": "Initial ESPN preview already shows PSG opening scoring and later equalising; a refutation need not await all goal minutes",
+    "VN06_false_screen": "OLBG Class-of-92 reference is about Higgins/Williams, not a bound Ronnie debut-year statement"
+  },
+  "screening_caveat": "Regex screens are aids, not semantic judgments. Unselected unknown sources are not labeled absent. Single Codex reviewer, not independent inter-rater validation."
+}
