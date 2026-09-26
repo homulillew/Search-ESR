@@ -90,4 +90,8 @@ for w in cat:
  if w['evidence_id'] not in M:
   M[w['evidence_id']]={'facts':[],'reason':('Returned passage does not establish a new discriminative original-goal constraint; document membership alone is insufficient.' if w['in_primary_pool'] else 'Outside frozen primary source pool. Title/topic screening found no qualifying relation; not an exhaustive alternative-source audit.'),'review_depth':'full_observation' if w['in_primary_pool'] else 'title_topic_screen'}
  else:M[w['evidence_id']]['review_depth']='full_observation'
+# Canonical atoms prevent counting the same career-count constraint twice.
+for v in M.values():
+ if 'ding_career' in v['facts']:v['facts']=[t for t in v['facts'] if t!='ding_career']+['ding_pro','ding_counts']
+D=read(TOP/'analysis_v2/FACT_DEFINITIONS.json');D['ding_pro']={'kind':'direct','belief_update':'Ding turned professional in 2003.','next_decision':'Verify the exact 2023 sequence and date-scoped career counts.'};write(TOP/'analysis_v2/FACT_DEFINITIONS.json',D)
 write(TOP/'analysis_v2/EVIDENCE_LABELS.json',M)
