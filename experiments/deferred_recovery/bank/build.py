@@ -1,0 +1,45 @@
+"""Explicit single-reviewer decisions; no model-based screening or generated evidence."""
+import copy,hashlib,json,sqlite3
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[3];TOP=ROOT/'experiments/deferred_recovery';OLD=ROOT/'experiments/goal_residual_control';V=ROOT/'experiments/goal_residual_control_v3_1/admission_replay'
+def rd(p):return json.loads(p.read_text())
+def wr(p,x):p.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
+def sha(t):return hashlib.sha256(t.encode()).hexdigest()
+inv={r['id']:r for r in rd(TOP/'bank/HISTORICAL_INVENTORY.json')};vb={r['packet_id']:r for r in rd(V/'BANK.json')};vu={r['case_id']:r for r in rd(V/'U1_outputs.json')};sn={s['case_id']:s for s in rd(OLD/'bank/SNAPSHOTS.json')}
+# frozen human semantic specifications: case, actual prefix, type, cohort, new need, exact observed support, judgment.
+specs=[
+('DR01','311:L0:25','D3','fresh', 'Does Cococinel satisfy the original requirement that the program had an educational purpose?', 'Elle sait familiariser les enfants avec la vie de la nature', 'The then-active Gap concerned Argentine title and cast, while the returned French source explicitly describes teaching children nature and its protection. These educational aims are not in the exact post-state. This is a new omission diagnosis, not a previously scored v3.1 atom.'),
+('DR02','387:L1:1','D3','known_context', 'Does Jazz Jackrabbit 2, the candidate Game B, satisfy the original requirement that it was released before 1999?', 'Jazz Jackrabbit 2 (1998)', 'The actual v2 update retains animator and developer but not year, while its Gap is animator/PC linkage. Year is an independent unresolved original bound. The same source/year atom was already examined in v3.1 in a different arm, so this is not fresh generalization.'),
+('DR03','65fac53a5f016593','D4','known_challenge', 'Does Cococinel satisfy the original requirement that its episodes run for less than five minutes?', 'Depuis 1992 | 4 min | Animation', 'U1 retains production countries but omits exact runtime during name/cast focus. Existing 4–10 range does not establish under-five; four is a source-scoped material refinement, not a logically disjoint range contradiction. D3 also applies. Other candidate mismatches remain.'),
+('DR04','69d8371fd08ef43b','D3','known_challenge', 'Does Ding Junhui satisfy the requirement of having made more than three career maximum breaks by 30 January 2025?', 'fifth 147 of his career', 'Actual U1 empty update while active Gap seeks 2023 English Open sequence. The observed 2012/13 fifth maximum establishes the independent career threshold by the cutoff. Existing Claims contain no such threshold.'),
+('DR05','T13_POST','D3','known_workspace', "Does You're the Worst satisfy the requirement that the show has fewer than ten seasons?", 'num_seasons: 5', 'Real historical W3 explicitly has total five seasons during plot verification, but normalized historical snapshot Claims omit total seasons. Known Workspace challenge, not proof that U1 originally suppressed it. Preserve actual archived snapshot without erasing Claims.'),
+('DR06','9359fc5d8182a2c0','D2','safety', 'What release-date evidence supports or conflicts with the current dating of Galacta: The Battle for Saturn?', 'Release year:\n\n- 1993', 'Actual U1 returns empty despite source-specific 1993 listing versus persistent November1992. This has immediate belief-revision value. Recovery requires retaining new conflicting dating with source scope; repeating existing1992 alone is not conflict recovery.'),
+('DR07','387:L2:4','D1','immediate_control', "Was the gaming-PC information attributed to Dean Dodrill available by the original question's 25 July 2013 cutoff?", 'date: 2013-07-24', 'The original active Gap explicitly requested article-date verification, and the source header provides July24. Writer only repeats artist role. A grounded by-cutoff statement must bind the article date to this source; not deferred compression.')]
+DB=sqlite3.connect(f"file:{ROOT/'BCPlus/indexes/bcplus-qwen3-8b/documents.sqlite'}?mode=ro",uri=True)
+bank=[];reviews=[]
+for cid,key,cat,cohort,need,anchor,reason in specs:
+ if key in inv:
+  r=inv[key];state=copy.deepcopy(r['post_state']);obs=copy.deepcopy(r['observation']);origin={'kind':'real_v2_post_update','event_id':key,'path':'experiments/goal_residual_control/three_round_loop_v2/results.json','pointer':f"{r['cell']}/updates/{r['update_index']}/post_state"};gap=r['gap'];historical_output=r['proposal']['output']
+ elif key in vb:
+  r=vb[key];state=copy.deepcopy(r['pre_state']);obs=copy.deepcopy(r['observation']);o=vu[key]['output'];assert o
+  for t in o['claims_to_add']:state['verified_claims'].append({'statement':t,'support_refs':[obs['window_ref']],'source_text_hashes':[sha(obs['text'])],'admission':'archived v3.1 U1 counterfactual'})
+  if o['hypothesis_update']['action']=='set':state['working_hypothesis']=o['hypothesis_update']['statement']
+  elif o['hypothesis_update']['action']=='clear':state['working_hypothesis']=None
+  origin={'kind':'archived_U1_counterfactual_post','packet_id':key,'path':'experiments/goal_residual_control_v3_1/admission_replay/BANK.json','output_path':'experiments/goal_residual_control_v3_1/admission_replay/U1_outputs.json'};gap=r['current_actor_gap'];historical_output=o
+ else:
+  state=copy.deepcopy(sn[key]);obs=copy.deepcopy(next(w for w in state['available_workspace']['observed_windows'] if w['window_ref']=='W3'));origin={'kind':'historical_reviewer_normalized_snapshot','snapshot_id':key,'path':'experiments/goal_residual_control/bank/SNAPSHOTS.json','observation_provenance':rd(OLD/'bank/SOURCE_WINDOWS.json')['E020']};gap=state['historical_active_gap'];historical_output=None
+ assert anchor in obs['text'],(cid,anchor)
+ docs=state['available_workspace']['known_documents'];catalog=[{k:d[k] for k in ['doc_ref','title','url']} for d in docs];docmap={d['doc_ref']:d for d in docs};raws={};private_docs=[]
+ for d in docs:
+  text,url=DB.execute('SELECT text,url FROM documents WHERE docid=?',(d['docid'],)).fetchone();assert url==d['url'];raws[d['doc_ref']]=text
+  private_docs.append({**d,'document_sha256':sha(text)})
+ wins=[]
+ for w in state['available_workspace']['observed_windows']:
+  text=raws[w['doc_ref']];off=text.find(w['text']);assert off>=0,(cid,w['window_ref']);wins.append({**w,'offset':off,'text_sha256':sha(w['text'])})
+ doc=docmap[obs['doc_ref']];assert obs['text'] in raws[obs['doc_ref']]
+ rel={'DR01':'Cococinel teaches children about nature/protecting it; educational purpose with candidate scope.', 'DR02':'Jazz Jackrabbit 2 released1998 (or other grounded pre1999 release date).', 'DR03':'Cococinel episodes below5minutes, with source-specific runtime and contradictory ranges not silently erased.', 'DR04':'Ding had >=4 career147s on/before2025-01-30; a dated fifth2013 is sufficient. Current undated lifetime tally alone must not silently be backdated.', 'DR05':"You're the Worst total season count<10; highest season merely mentioned in cast list is insufficient.", 'DR06':'New source-bound1993 listing preserved alongside existing1992; not forced reconciliation or silent overwrite.', 'DR07':'PC Gamer Dean Dodrill interview date2013-07-24 (or grounded publication before/onJuly25) connected to the existing hardware report.'}[cid]
+ bank.append({'case_id':cid,'qid':state['qid'],'original_question':state['question'],'claims_at_recovery_start':state['verified_claims'],'working_hypothesis':state['working_hypothesis'],'recovery_need':need,'historical_document_catalog':catalog,'private_recovery_truth':{'requirement':need,'historical_support_doc':doc['docid'],'historical_support_window':obs['window_ref'],'support_text':obs['text'],'support_hash':sha(obs['text']),'document_sha256':sha(raws[obs['doc_ref']]),'anchor':anchor,'acceptable_relation':rel},'category':cat,'cohort':cohort,'historical_gap':gap,'origin':origin,'historical_writer_output':historical_output,'registry':{'documents':private_docs,'windows':wins},'review_reason':reason})
+ reviews.append({'case_id':cid,'category':cat,'also_D3':cat=='D4','cohort':cohort,'gap':gap,'reason':reason,'reviewer':'single Codex; historical familiarity disclosed','claims_preserved':True})
+wr(TOP/'bank/RECOVERY_BANK.json',bank);wr(TOP/'bank/OMISSION_REVIEW.json',reviews)
+wr(TOP/'bank/SELECTION.json',{'inventory_events':372,'unique_observation_texts':289,'inventory_qids':10,'selected':7,'D3_D4':5,'D3_D4_qids':4,'fresh_D3_D4':1,'fresh_qids':1,'minimum_primary_cases':12,'minimum_primary_qids':6,'primary_integrity_gate':'INSUFFICIENT_BANK','interpretation':'all live results diagnostic only; no reference winner or controller gate from these cases','selection':'explicit prereview of archived omissions; no synthetic evidence or erased Claims; historical known challenges are separate','scope_limit':'Inventory and targeted source review, not an exhaustive proof that no further eligible omission exists in all repository history.'})
+DB.close();print('bank',len(bank),'with private truth segregated')
