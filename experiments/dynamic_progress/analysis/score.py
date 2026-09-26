@@ -24,13 +24,14 @@ def enrich(row):
  r['units']=s['units'] if s else []
  r['blockers']=[u for u in r['units'] if u['is_blocker']]
  r['valid_presence']=not g and bool(o) and not o['resolved'] and any(u['content_valid'] for u in r['blockers'])
- r['adequate']=bool(s and r['correct_completion'] and (g or (r['valid_presence'] and all(u['content_valid'] for u in r['blockers']))))
+ r['adequate']=bool(s and r['correct_completion'] and (g or (r['valid_presence'] and all(u['content_valid'] for u in r['units']))))
+ r['adequate']=r['adequate'] and not (s or {}).get('context_errors')
  r['strict_adequate']=r['adequate'] and (not g or s['closure_witness_valid'] is not False) and all(u['status_valid'] is not False and u['refs_valid'] is not False for u in r['units'])
  return r
 
 def metric(rs):
  n=len(rs);un=sum(not r['gold_resolved'] for r in rs);re=n-un;b=[u for r in rs for u in r['blockers']];us=[r['usage'] for r in rs if r.get('usage')];errs=collections.Counter(e for u in b for e in u['errors'])
- ep=collections.Counter(e for r in rs for e in {e for u in r['units'] for e in u['errors']})
+ ep=collections.Counter(e for r in rs for e in ({e for u in r['units'] for e in u['errors']} | set((r['review'] or {}).get('context_errors',[]))))
  pairs=collections.defaultdict(list)
  for r in rs:pairs[r['case_id']].append(r)
  stability=collections.Counter()

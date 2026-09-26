@@ -1,0 +1,104 @@
+{
+  "baseline": {
+    "planned_or_completed": 24,
+    "gold_unresolved": 18,
+    "gold_resolved": 6,
+    "semantic_reviews": 24,
+    "failed": 0,
+    "correct_completion": 24,
+    "false_closure": 0,
+    "correct_closure": 6,
+    "missed_closure": 0,
+    "valid_blocker_presence": 18,
+    "blocker_valid": 33,
+    "blocker_total": 54,
+    "blocker_precision": 0.6111111111111112,
+    "adequate": 7,
+    "strict_adequate": 4,
+    "unit_errors": {
+      "over_broad": 20,
+      "already_supported_as_gap": 1
+    },
+    "output_errors": {
+      "over_broad": 16,
+      "already_supported_as_gap": 1
+    },
+    "status_errors": 5,
+    "semantic_ref_errors": 0,
+    "false_evidence_promotion": 0,
+    "valid_closure_witness": 3,
+    "closure_witness_denominator": 6,
+    "replicate_stability": {
+      "both_correct_closure": 3,
+      "both_inadequate": 8,
+      "one_adequate_one_inadequate": 1
+    },
+    "completion_agreement_pairs": 12,
+    "usage": {
+      "input": 31954,
+      "output": 101337,
+      "hit": 21376,
+      "miss": 10578,
+      "reasoning": 96712
+    },
+    "cache_hit_rate": 0.6689616323464981,
+    "elapsed_mean": 20.258815160719678
+  },
+  "one_relation": {
+    "planned_or_completed": 24,
+    "gold_unresolved": 18,
+    "gold_resolved": 6,
+    "semantic_reviews": 24,
+    "failed": 0,
+    "correct_completion": 24,
+    "false_closure": 0,
+    "correct_closure": 6,
+    "missed_closure": 0,
+    "valid_blocker_presence": 18,
+    "blocker_valid": 44,
+    "blocker_total": 50,
+    "blocker_precision": 0.88,
+    "adequate": 19,
+    "strict_adequate": 13,
+    "unit_errors": {
+      "over_broad": 5,
+      "already_supported_as_gap": 1
+    },
+    "output_errors": {
+      "over_broad": 4,
+      "already_supported_as_gap": 1
+    },
+    "status_errors": 4,
+    "semantic_ref_errors": 0,
+    "false_evidence_promotion": 0,
+    "valid_closure_witness": 3,
+    "closure_witness_denominator": 6,
+    "replicate_stability": {
+      "both_unresolved_compatible_valid": 5,
+      "both_inadequate": 1,
+      "both_correct_closure": 3,
+      "one_adequate_one_inadequate": 3
+    },
+    "completion_agreement_pairs": 12,
+    "usage": {
+      "input": 33634,
+      "output": 186003,
+      "hit": 20095,
+      "miss": 13539,
+      "reasoning": 182376
+    },
+    "cache_hit_rate": 0.5974609026580247,
+    "elapsed_mean": 37.49992596117469
+  },
+  "criteria": {
+    "precision_gain_ge10pp": true,
+    "presence_not_lower": true,
+    "false_closure_not_higher": true,
+    "correct_closure_not_lower": true,
+    "unsupported_not_higher": true
+  },
+  "local_diagnostic_positive": true,
+  "primary_gate_override": false,
+  "heldout": false,
+  "uncovered_failures": "OriginalfalseclosureP17/P19notinthisbreadth-selectedsample."
+}
