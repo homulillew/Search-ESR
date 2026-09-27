@@ -1,0 +1,21 @@
+{
+  "head": "d5763a5a93bb18fc258a8fb9e3bcc803d70074c3",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You verify one fixed semantic TARGET against a supplied set of Verified Claims.\n\nThe TARGET has already been constructed from the source Parent Requirement.\n\nTARGET SEMANTICS are the exact task semantics that must be established.\n\nINTERPRETIVE CONTEXT may help resolve references or understand the TARGET, but\nits presence does not create additional facts that must independently be\nverified unless those facts also appear in TARGET SEMANTICS.\n\nUse only the supplied Verified Claims.\n\nJudge whether the Claims, taken together, establish all material TARGET\nSEMANTICS.\n\nMultiple Claims may jointly establish the TARGET.\n\nDo not use outside knowledge.\n\nDo not use hypotheses.\n\nDo not require sibling task conditions that are not present in TARGET\nSEMANTICS.\n\nDo not accept a target merely because a related entity, operand, candidate or\nattribute is present.\n\nIf any material TARGET semantic content remains unsupported, keep it OPEN.\n\nReturn JSON only:\n\n{\n  \"verdict\": \"SUPPORTED\",\n  \"supporting_claim_ids\": [\"C1\", \"C4\"],\n  \"uncovered_target_unit_ids\": []\n}\n\nor:\n\n{\n  \"verdict\": \"OPEN\",\n  \"supporting_claim_ids\": [\"C1\"],\n  \"uncovered_target_unit_ids\": [\"U3\"]\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"- Two people wrote it.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The abstract of that 2022 article states that prospective teachers' creative comparisons for science education were gathered under 5 categories: emotion, color, game, transportation vehicle, and technological tool.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"The paper (D10) states that the data were organized in 5 tables, with Table 2 presenting prospective teachers' metaphoric perceptions of science education as an \\\"Emotion\\\".\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "3d4eb7ff0191cd9341bfc24773955d1d2136d2b5613fcd574cb30d9b7f5a5083"
+}

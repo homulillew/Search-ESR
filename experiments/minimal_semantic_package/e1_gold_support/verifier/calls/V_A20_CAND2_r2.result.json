@@ -1,0 +1,59 @@
+{
+  "id": "V_A20_CAND2_r2",
+  "stage": "E1V",
+  "phase": "verifier",
+  "certificate_id": "A20_CAND2",
+  "cell_id": "A20",
+  "case_id": "G21",
+  "qid": "843",
+  "package_id": "M24",
+  "replicate": 2,
+  "request_sha256": "c58d9ec26da09756df61edd5372e39ee603eb5a695025fe4b4deb103dd9e214f",
+  "head": "d5763a5a93bb18fc258a8fb9e3bcc803d70074c3",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "verdict": "OPEN",
+    "supporting_claim_ids": [
+      "C3",
+      "C6"
+    ],
+    "uncovered_target_unit_ids": [
+      "U2"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 547,
+    "completion_tokens": 6154,
+    "total_tokens": 6701,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6122
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 163
+  },
+  "started_utc": "2026-09-27T16:11:10.609342+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 28.701362151652575,
+  "completed_utc": "2026-09-27T16:11:39.310719+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 547,
+      "output": 6154,
+      "total": 6701,
+      "reasoning": 6122,
+      "hit": 384,
+      "miss": 163
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

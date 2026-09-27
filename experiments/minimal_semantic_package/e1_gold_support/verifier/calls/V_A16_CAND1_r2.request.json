@@ -1,0 +1,21 @@
+{
+  "head": "d5763a5a93bb18fc258a8fb9e3bcc803d70074c3",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You verify one fixed semantic TARGET against a supplied set of Verified Claims.\n\nThe TARGET has already been constructed from the source Parent Requirement.\n\nTARGET SEMANTICS are the exact task semantics that must be established.\n\nINTERPRETIVE CONTEXT may help resolve references or understand the TARGET, but\nits presence does not create additional facts that must independently be\nverified unless those facts also appear in TARGET SEMANTICS.\n\nUse only the supplied Verified Claims.\n\nJudge whether the Claims, taken together, establish all material TARGET\nSEMANTICS.\n\nMultiple Claims may jointly establish the TARGET.\n\nDo not use outside knowledge.\n\nDo not use hypotheses.\n\nDo not require sibling task conditions that are not present in TARGET\nSEMANTICS.\n\nDo not accept a target merely because a related entity, operand, candidate or\nattribute is present.\n\nIf any material TARGET semantic content remains unsupported, keep it OPEN.\n\nReturn JSON only:\n\n{\n  \"verdict\": \"SUPPORTED\",\n  \"supporting_claim_ids\": [\"C1\", \"C4\"],\n  \"uncovered_target_unit_ids\": []\n}\n\nor:\n\n{\n  \"verdict\": \"OPEN\",\n  \"supporting_claim_ids\": [\"C1\"],\n  \"uncovered_target_unit_ids\": [\"U3\"]\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"The first case\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"In this case, the individual\"\n    },\n    {\n      \"unit_id\": \"U5\",\n      \"text\": \"presented with\"\n    },\n    {\n      \"unit_id\": \"U6\",\n      \"text\": \"a half-year history of pain in different parts of their body,\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Stiff person syndrome symptoms usually develop over months to years and may remain stable for many years or slowly worsen.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Stiff person syndrome may initially cause aching discomfort, stiffness, or pain, especially in the lower back, hips, and/or legs; it may also affect the shoulders, arms, and/or neck, and progressive leg stiffness can lead to a slow, stiff manner of walking.\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "d18bc560ba70b3f48c4d4f988539ea79090787572bf20d6cc860e7359ffa26b8"
+}

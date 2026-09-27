@@ -1,0 +1,21 @@
+{
+  "head": "d5763a5a93bb18fc258a8fb9e3bcc803d70074c3",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You verify one fixed semantic TARGET against a supplied set of Verified Claims.\n\nThe TARGET has already been constructed from the source Parent Requirement.\n\nTARGET SEMANTICS are the exact task semantics that must be established.\n\nINTERPRETIVE CONTEXT may help resolve references or understand the TARGET, but\nits presence does not create additional facts that must independently be\nverified unless those facts also appear in TARGET SEMANTICS.\n\nUse only the supplied Verified Claims.\n\nJudge whether the Claims, taken together, establish all material TARGET\nSEMANTICS.\n\nMultiple Claims may jointly establish the TARGET.\n\nDo not use outside knowledge.\n\nDo not use hypotheses.\n\nDo not require sibling task conditions that are not present in TARGET\nSEMANTICS.\n\nDo not accept a target merely because a related entity, operand, candidate or\nattribute is present.\n\nIf any material TARGET semantic content remains unsupported, keep it OPEN.\n\nReturn JSON only:\n\n{\n  \"verdict\": \"SUPPORTED\",\n  \"supporting_claim_ids\": [\"C1\", \"C4\"],\n  \"uncovered_target_unit_ids\": []\n}\n\nor:\n\n{\n  \"verdict\": \"OPEN\",\n  \"supporting_claim_ids\": [\"C1\"],\n  \"uncovered_target_unit_ids\": [\"U3\"]\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"A pack of downloadable content\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"was released for\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"a strategy video game\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"over three years after its release.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "65079c2057217c7d637cf094dbc82a87e4baf3e09e33cbda29ca463b52fcfd3f"
+}
