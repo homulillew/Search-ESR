@@ -1,0 +1,99 @@
+{
+  "base": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+  "audit_commit": "74145c2f8c2408019074703bd37e93cdbb6adc88",
+  "count": 36,
+  "qids": 20,
+  "splits": {
+    "D": {
+      "packets": 12,
+      "qids": [
+        "228",
+        "435",
+        "517",
+        "538",
+        "546",
+        "637",
+        "922",
+        "1094"
+      ],
+      "strata": {
+        "ambiguous_negative": 1,
+        "duplicate_no_new": 5,
+        "positive": 4,
+        "relevant_no_new": 2
+      },
+      "useful_atoms": 6,
+      "primary_silence_packets": 7
+    },
+    "H_diagnostic": {
+      "packets": 12,
+      "qids": [
+        "177",
+        "186",
+        "261",
+        "601",
+        "633",
+        "673"
+      ],
+      "strata": {
+        "positive": 7,
+        "relevant_no_new": 2,
+        "ambiguous_negative": 2,
+        "duplicate_no_new": 1
+      },
+      "useful_atoms": 14,
+      "primary_silence_packets": 3
+    },
+    "H_confirmation": {
+      "packets": 12,
+      "qids": [
+        "169",
+        "264",
+        "311",
+        "387",
+        "580",
+        "1034"
+      ],
+      "strata": {
+        "positive": 5,
+        "ambiguous_negative": 3,
+        "relevant_no_new": 4
+      },
+      "useful_atoms": 7,
+      "primary_silence_packets": 4
+    }
+  },
+  "verified_relation_families": [
+    "attribution_modality",
+    "conjunction_sequence",
+    "cross_entity",
+    "identity_entity",
+    "qualifier_quantifier",
+    "role",
+    "source_document",
+    "temporal"
+  ],
+  "context_kinds": {
+    "actual_reader_request; one full observed window selected mechanically from acquisition": 22,
+    "archived_review_packet; Gap/C may be reviewer-constructed, source observed": 14
+  },
+  "historical_candidates": 10,
+  "historical_supported": 9,
+  "historical_strengthened": 1,
+  "files": {
+    "bank/annotate_bank.py": "eab7ece1b141ea51b4c2a15cdcc036443393320b85716c30ec61bd4289079c98",
+    "bank/annotations.json": "d8297621854de5320ffaf4140db5bef5827f84e034bc6946b1cb24f90e775fd7",
+    "bank/build_inventory.py": "aa96a61c0fcc71e899ce8061a18fac741b938ccb437f770da81baf54412b8b5b",
+    "bank/diagnostic.json": "51379ab994f105b8c9e538775ea71faeee414e5e814430d4101199376d0c2310",
+    "bank/freeze_bank.py": "7a76d277f6942cde3bac527239d3a2033c8843ddddba09a9066ac163e04a9aba",
+    "bank/heldout.json": "74287e7747e375f7b049e66a72d76d0d2d46a89ad8ac64c55262bd5614ce23be",
+    "bank/historical_candidates.json": "740820b9d949e54df5d96598348074a6ed8ae0af900123a2697db829273c6460",
+    "bank/inventory.json": "8c249f98c95959d5d5c6fe9e59c70eebd4bc0aa4b9062f4ba442d3448bbac813",
+    "bank/provenance.json": "c1528494c26845d06a1c709fd8897c247b9a724ce583db36ab003317400eb7e4",
+    "bank/select_bank.py": "7f321c35ba5fa23aad02373575acd307df91e2ca4417f99235a9e50914dbac9c",
+    "bank/selection.json": "491cb31bafdfb1f86a98e0ec03a0031d3ebd04bf74fc092cdd10db1d0886ef7e"
+  },
+  "rubric_sha256": "273c99e407fca39064db643c5128254525dca37f7f833dedecd219ec2245a60b",
+  "new_semantic_calls": 0,
+  "new_retrieval_calls": 0
+}

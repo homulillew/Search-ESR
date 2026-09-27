@@ -1,0 +1,955 @@
+{
+  "base": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+  "source_file_hashes": {
+    "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json": "961c29ed0613b42ed1b41d5e06b555f040b47e51d6da0d0a097a31219de4f093",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q228__rep1/calls/002_reader.request.json": "9e705b457eb31577b6257ce4dd48c01040c62a58a6096c3f3dcb1b39327f24bb",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q228__rep1/calls/002_reader.response.body": "9ce4d89a230898b138fac869a5d7fb134807a1b74550c50abdfcfce8b3c646e4",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q228__rep1/calls/005_reader.request.json": "d399344d78e88bff9fd94fd2514cfab4b9b18dcbfdbcf7d14e60e09495aac632",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q228__rep1/calls/005_reader.response.body": "2b1de4aaff3467c01cd81e948ac63231414f1f33a0732bc5e83b8f0e5a5aa89c",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q228__rep2/calls/002_reader.request.json": "f636bec66d29c93bfb07e927b6642d9b8817c0c6e9734ef4e6592f59fb9778fe",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q228__rep2/calls/002_reader.response.body": "1a7391935931754432454a2f21ff970c733ee22987d0b23176aa9d5bbb4660a2",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q637__rep1/calls/002_reader.request.json": "8c4366408d05a3ca7d62496b4ef567eebf2d86cbda0df2b3c57568456d6b7b57",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q637__rep1/calls/002_reader.response.body": "9f933381b66550bf93e9b61efe239b35d52d716ba09f6f9946ad0aca76079972",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q637__rep2/calls/002_reader.request.json": "dc49b036a7eb184f9dd17c1740bd4e2e40adf06b1a34ad6779b4266decf6b326",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q637__rep2/calls/002_reader.response.body": "115ab081e638150db2c37ae29668e6338a1ac2a0d5943c405896929df8159f33",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q538__rep1/calls/003_reader.request.json": "4546b36e001b11dc61d9aa6f04b2fabf5eb2e440aba49fb77e52ed39708af28f",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q538__rep1/calls/003_reader.response.body": "9b05e33cb52927b8c012382ca02e6c46ebae1b687eec1fb560af5536da6b81ac",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q538__rep1/calls/006_reader.request.json": "99686e19391f8a04c1d2ecf50091d643f919b4c0a267bbfab866b84d5d9fd20c",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q538__rep1/calls/006_reader.response.body": "b4ab6f91bf87daaf7edbc35a1570ea4ffa551279241b9d3d9e590ae4f7ec764c",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q538__rep2/calls/003_reader.request.json": "044d742647d777026310b16c69768f6b5c8883e6844b1433765113941a200c24",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q538__rep2/calls/003_reader.response.body": "969b05e3c8adf21c8a5501d0db12062e9cf368a641f522f1e4529c480cc580e1",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q922__rep1/calls/003_reader.request.json": "af1456f58d74a3f6a6279bf3e1b246e48e64723d7ac950ab651b782797108a38",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q922__rep1/calls/003_reader.response.body": "85a3ad9e4ee181b997b2ec80be62cdf0358e35429e6b866aa3f0a1051f1318f0",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q922__rep2/calls/003_reader.request.json": "c59178ad27f409fa94cfe79513db755338174e4d2c1ba28d9eec894058d2aa10",
+    "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q922__rep2/calls/003_reader.response.body": "ef70d3f8321427b126e934614ec332c4b8ccf624c7deddd52b462c24c1943bdc",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q1094__rep1/calls/002_reader.request.json": "448c4ce9b771ad354516dd0105fe87986c6220df11cb81cf8ed8cb9bbcda9ea8",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q1094__rep1/calls/002_reader.response.body": "69bc4c64f6b8ecbe2a694d4e8b5e42de852719b22b65ffbbd32daf034dc4e5fb",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q1094__rep1/calls/005_reader.request.json": "149fbf6ca72b371f31813af9d99329c3b8825827261965e1569b24bbe158215c",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q1094__rep1/calls/005_reader.response.body": "2fab08f973ac0add46acc3861e2438ff60fc5cceef3de0ac13bf6b57d06753c7",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q1094__rep2/calls/004_reader.request.json": "b662f240433e642e4a5233dcaacb36c50aabb1d10802730cca3e08b0880ba1e9",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q1094__rep2/calls/004_reader.response.body": "9a8172f2832222845acc9ab825ae8ddc227d2a279e9004b36569f92c9f9d5769",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q546__rep1/calls/002_reader.request.json": "b8edd0196e8e037a84a628bec1fd84e5547399b74b58499d218aa3ede23489ab",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q546__rep1/calls/002_reader.response.body": "e9ec1b82e9f8c36821e1d099fe3491700e10ca897e0ec9c2466df3db6f29f544",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q546__rep1/calls/004_reader.request.json": "faa70e9ddb8fd3b8080939bc72f02cdbebe7aa90b328517c907b11788e10c454",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q546__rep1/calls/004_reader.response.body": "eb1f8ffe23045ef1a2d3a4daf84fbd2ada3c6c882a2e6c4ef57ee467148de966",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q546__rep2/calls/002_reader.request.json": "7ccfdabac322decd2f1c78bf361a93cffe1f4d97bdee5d8c3bdb2646aed67280",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q546__rep2/calls/002_reader.response.body": "7dec73bfaf3f191d8c258e08521da18856f387331d028eb6c140c11eb7c14f4b",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q546__rep2/calls/005_reader.request.json": "adecd4611f0dd46dab121ec05386807a91d7d126b680cb760131419b8f7b826a",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q546__rep2/calls/005_reader.response.body": "6d4a4e453c31c7fc9053707bd9b3c30e639fd87fc99a07a791816b848689c5d7",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep1/calls/002_reader.request.json": "3520c2f6933eee21435850183a90d576e3f76b51e1a804e75c811d810aa2a496",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep1/calls/002_reader.response.body": "7610bdc0e709003ab534c0335f5da3640eec63290a8325986149a2573db056a6",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep1/calls/006_reader.request.json": "ecd80c472c4373d60d49c73f7cccfb2d8834b5473c16ce7095810b9c8af90210",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep1/calls/006_reader.response.body": "aaf3307d95c2fad2ee80e109ac5012b2d5a1aa70c92c8c343d00d6142a2e9741",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep1/calls/010_reader.request.json": "a86245d7e77a998e000deebf7a963dfea1d67bfeee4c107e712e4a53097e1975",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep1/calls/010_reader.response.body": "dcfee59efcc9b98c1d3645bbeb170f58a536587b8676166fde3e59154b4d17bd",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep2/calls/002_reader.request.json": "768bb769176512d635bd07e33e62f50ffc05e3b2f601c910455b3cb539bd70dc",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep2/calls/002_reader.response.body": "30adeb6ef87364d7759802cbb832f250c4132693c87c6609b32de620057dc0d5",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep2/calls/006_reader.request.json": "ae9993a3d4668fef5fb9febecf5f8102fd34a2297c63e809e24b53a685ecbf83",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep2/calls/006_reader.response.body": "2c75449ee8015e4e50002856dc3adb90739592de9cb88ff12b6755861d6169f1",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep2/calls/009_reader.request.json": "55ac75b591fa86ff1a8053400686722cb5192e73ca1108b9323326b62b74fea9",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q228__rep2/calls/009_reader.response.body": "44cbd1bfeef499a3134cd1fcaf4394541ec813124c6a8fbea11a63d05348cc89",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q637__rep1/calls/002_reader.request.json": "6d0d0c79bac77d72880cbd54cf694961ac3267ff5f68fa2057dc0a5118c85dcc",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q637__rep1/calls/002_reader.response.body": "0ca249f0271b231c8e29fe96d1afcd92057666003aaa3e8432e7eb949535a3db",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q637__rep1/calls/006_reader.request.json": "92766b70b023bec123ee17abd9997d8dabb5e66e30dfb4febbbecc021f2cb0aa",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q637__rep1/calls/006_reader.response.body": "f682790f35dfacf23de1ae7ecbab7ec8806bb4cea5cee7b43dc8f8467ffde9f5",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q637__rep2/calls/002_reader.request.json": "10f33ea83fcc229e4973e92302e13119efc0cc7ae24845e4e7bab275cda52ddb",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q637__rep2/calls/002_reader.response.body": "ec21af53ebc2f0730071cdc860b4192aa85f3fedf7e3f957f0d9914146e030c5",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q637__rep2/calls/007_reader.request.json": "9f1ef4abba492244683423c7884c659bde65406bda0c1ee99c4f523a74bc756f",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q637__rep2/calls/007_reader.response.body": "50f337aaf18a3e39433bacb6d6c3df6273d3d9eb6a2778a354baee177c06e8b1",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q538__rep1/calls/003_reader.request.json": "1fc02ff1376b2d5c174343be04556fa05bc1baf7d0abd99850eb68a4f2807dea",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q538__rep1/calls/003_reader.response.body": "4e395ff895bea44fca0db25fb434b5d764b6293f8eea3609cf6764268caba8da",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q538__rep1/calls/006_reader.request.json": "4af9a1a46609710152f36bff8ac133441ad1e7a60cb48d588975f27e9899bbc3",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q538__rep1/calls/006_reader.response.body": "e2629483748739b1fbeb455c1188a2e721f59f6325a2883fad27f3515564c1e1",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q922__rep1/calls/003_reader.request.json": "667d488b9f37750e8b75e27792808bacc67fcd17ff2b07896c68131b5db736f5",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q922__rep1/calls/003_reader.response.body": "ffaa175a4b3318a071b7b48fef462c65fd2f1ff408d62f56bb20aa65c174cbf0",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q922__rep1/calls/009_reader.request.json": "88bb5f63ea9a1d75159096290254ee0212b2c2541992c5004953b0094ef89fd3",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q922__rep1/calls/009_reader.response.body": "1d7e8099ae02045ed27c9b113df1d7d4163ae74f0230873089cfdee62844b088",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q922__rep2/calls/003_reader.request.json": "7792e870723f0db5d6b4b279a2cc57e348c481c0babf5df492710dad38c4e5e9",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q922__rep2/calls/003_reader.response.body": "862b1023a9d1bdec4a0fb0a7708c12d93710eb1d2ff2ca28493e2ba798f84c52",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q922__rep2/calls/006_reader.request.json": "e3d79d37638436e9586eaf7973d4db9f40bbc20b9820b66bc4a83634f6be6cfc",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q922__rep2/calls/006_reader.response.body": "1f4065755cbf2c1a6528309aab4eac9db8ea592c84235f8e271756274cdb698c",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q169__rep1/calls/003_reader.request.json": "4e2fb2bdfd8bd4f95ad26cb269b0c26efba4e853befb731a36832ae59871b89a",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q169__rep1/calls/003_reader.response.body": "efcd2382cb31a2a994bb6f0de6650ce83a64d7c74d20186fb26269c0ba8e50d1",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q169__rep1/calls/006_reader.request.json": "a73035c0cb371a8a98287695c5b115352313c0eab9d4c132e06afa726d8e85b7",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q169__rep1/calls/006_reader.response.body": "7d5eff2cdec3d1ba36e18fd95e428e212c402d657c52e0d2fe3f81dbfab98174",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q261__rep1/calls/003_reader.request.json": "ce74cb7c157d221773d991fe22f2316614d1384cb13bba7bf45b3a402d6a0b6c",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q261__rep1/calls/003_reader.response.body": "a036618761c3099d6c32c6ec12eb028cb85e78baecc1539a3ce6873799e86e18",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q261__rep1/calls/006_reader.request.json": "d8bd80cdef7cf7a992bf00a3e5db216922df797c26062deb70ca58a243f2e1ac",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q261__rep1/calls/006_reader.response.body": "d17725e329d49c42f49b35e154a63107dd47c130cd7ccce303bb7e57f8d870dc",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q264__rep1/calls/003_reader.request.json": "7c80439af739a8fc06e24397e571932e01525d86ba954462a187a1fadd281f32",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q264__rep1/calls/003_reader.response.body": "55377fc160a59afa2e02233bff082569fec55a0916a587b887d1afd660e13bf8",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q264__rep1/calls/006_reader.request.json": "97cddeaa54cc94218615735b912a7efe2a6ee22d0b389ab458a18581d892491d",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q264__rep1/calls/006_reader.response.body": "234d89c115311a669ea8eae34894aa6706c0aa0cecdf2bd7bf337f88e0190451",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q601__rep1/calls/003_reader.request.json": "d730b541898c8c7c3a667b499d7d4b852487f0651ba40dadaccba21b905822e5",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q601__rep1/calls/003_reader.response.body": "a50b1d546e787f22bda2f071a44401f6b419f952ae12a00029831109e4a0a9ee",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q177__rep1/calls/002_reader.request.json": "945b0557cdfe50c2c34ce043c049e2201d50e233a49590142bb5bb7f0ca9fb4a",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q177__rep1/calls/002_reader.response.body": "030b8a6b946613356267b305c176239d52508a8e60b38dbb5835d60836cc5639",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q177__rep1/calls/005_reader.request.json": "6053289fd0a2291d104d2ff681cf5f31a4ea4f310ba593e03cb746e48c8ce224",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q177__rep1/calls/005_reader.response.body": "1e6711f3134f636abdc377415d56d4e9d4f7f5e042a05eb2f7c890cc212daaa8",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q177__rep1/calls/009_reader.request.json": "1edb4b14a8ae507a39cb964a38957e1a1fb0ae8b51f3a6771677f718dd622ca9",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q177__rep1/calls/009_reader.response.body": "d3887e2bb89c19f831cccd2c56f0c8644388a19ea1becf9f5d19bfae9842317c",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q186__rep1/calls/002_reader.request.json": "c0c145e8bd8725934ded738b2afe2b43da496b9375030617ba4097ab1e9aeb78",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q186__rep1/calls/002_reader.response.body": "4926c4ab2105916294c521284969a8aa2d0cc6c67050f067a40e5061fea2aa05",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q435__rep1/calls/003_reader.request.json": "055d9f69a7055801efe89a9b3fa7beaa2d4b7a46b8cebf6f90135c5c8875e1f0",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q435__rep1/calls/003_reader.response.body": "dc12782ce6364a356cb938887f03088f31837362dcb43c251ec46117e62808ad",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q435__rep1/calls/007_reader.request.json": "acfea7141819a39538f96411aee4e5471c25b571c2961ac223f84610f6f26a34",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q435__rep1/calls/007_reader.response.body": "8f84c92e33bff5d1e597450689aa93ccc5779d60903ea059d702cf97a3a3956a",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q517__rep1/calls/003_reader.request.json": "d49279a51bbe47acf2fbd80b66fab2dbc93b0d571a125996415410cc0f68f7c0",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q517__rep1/calls/003_reader.response.body": "1b6ff267a1dc715449d232fab007954f2a8aa237905b40b4353792fd5b283ce3",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q517__rep1/calls/007_reader.request.json": "6dc95367289eb07f42393353bd96430f134071b3e1a1ec8ec74de3568cd3a640",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q517__rep1/calls/007_reader.response.body": "b756a85faddf8c80d2404b1af41fada78c41c90a0b9e7b189d0f34fc90e42796",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q633__rep1/calls/003_reader.request.json": "7de78e143b62e4dfe7a7675a1d6353286de3c25494c5d8900b9a10c59b4613a1",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q633__rep1/calls/003_reader.response.body": "49b4f8c0e3543f77f13629e0525925eeb8f7852e5508056678a1c95663fb2c4d",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q633__rep1/calls/006_reader.request.json": "7c36ffceaa467fc489bca4773743aa347e9eee751ec4dbf9adbcc67351501cf5",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q633__rep1/calls/006_reader.response.body": "dc81a1a215d9c620da3e1f2eb232692c9e56598fa7609ccfe6dfb5177b99cc06",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q673__rep1/calls/003_reader.request.json": "04cbb90c21035fa647e1bd1cd13758ccb64455e23510f3d20f96ccfd7c24d47d",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q673__rep1/calls/003_reader.response.body": "b3ffe037e236d9372ee8b20932b973b18d8c2f1bd8947e948cc09b40146bf82b",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q673__rep1/calls/006_reader.request.json": "345ee9bf60db6344db3a0bef61f49ab5db04885c66971b4c47662b656e7f1e3a",
+    "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q673__rep1/calls/006_reader.response.body": "85c7fef71c78040df880e062fee80398b116f970197bcbdb158e94a27b9177a7",
+    "experiments/evidence_fidelity_loop/evidence_packet/BANK.json": "5c9ffdc3c35b75242453d8eade6ed81910c75e3ce88d09ad821ba61c27195748",
+    "experiments/minimal_research_loop/verify_necessity/prepare_bank.py": "c2efdb33ed78a0d32e61984a8e98b3d641d8f5dbf905cceb85577696de8b4241",
+    "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json": "22f96b20a891a63763128e90bcb5e841d92f092a74290472c0096a3ffd886a70",
+    "experiments/gap_evidence_claim_loop/single_gap_rollout/REVIEW_PACKETS.json": "f54d836c302f97bd54c0db6678b22f6934f5aa8a8d75bfdf379b455965afd921"
+  },
+  "edges": [
+    {
+      "packet_id": "P_121bdc503f18c0ac",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q228__rep1/calls/002_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/2",
+        "response_path": "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q228__rep1/calls/002_reader.response.body",
+        "trajectory": "R2_Q228__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_61caf5fa7eaa43c6",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/34",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T6_435",
+          "text_sha256": "6ff837bc2b0baf912957feb2a04e936d3984e488d6c0eea7bb06b95bcbc08292"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T6_435",
+        "text_sha256": "6ff837bc2b0baf912957feb2a04e936d3984e488d6c0eea7bb06b95bcbc08292"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T6_435",
+        "checkpoint": {
+          "source": "stage_A_review_packet",
+          "case_id": "435_support_oliver_age",
+          "historical_ref": "w_d10a873c7f9c87b1d58df6eb",
+          "historical_doc_ref": "43657",
+          "checkpoint": "event:12",
+          "text_sha256": "6ff837bc2b0baf912957feb2a04e936d3984e488d6c0eea7bb06b95bcbc08292"
+        },
+        "metadata_corpus_docid": "43657"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2019-01-24"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_0656601af8c9781b",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/5",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T2_517",
+          "text_sha256": "bf632626ce5ffb8c6f7c85ca4e3e5ad7949a2aa446c881ab500a2be5b4a981fc"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T2_517",
+        "text_sha256": "bf632626ce5ffb8c6f7c85ca4e3e5ad7949a2aa446c881ab500a2be5b4a981fc"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T2_517",
+        "checkpoint": {
+          "source": "stage_A_review_packet",
+          "case_id": "517_refute_birth_1979",
+          "historical_ref": "w_847088d110a745604b5159e5",
+          "historical_doc_ref": "67431",
+          "checkpoint": "event:16",
+          "text_sha256": "bf632626ce5ffb8c6f7c85ca4e3e5ad7949a2aa446c881ab500a2be5b4a981fc"
+        },
+        "metadata_corpus_docid": "67431"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2020-11-06"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_0976fca0872fa503",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q538__rep1/calls/006_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q538__rep1/calls/006_reader.response.body",
+        "trajectory": "R3_Q538__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_30351e81662112e3",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/32",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T6_546",
+          "text_sha256": "8929ccffff6cc4390f1c25d506f35fc374f81bb88e34e89ae4716034d2a59d2e"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T6_546",
+        "text_sha256": "8929ccffff6cc4390f1c25d506f35fc374f81bb88e34e89ae4716034d2a59d2e"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T6_546",
+        "checkpoint": {
+          "source": "stage_A_review_packet",
+          "case_id": "546_support_opening",
+          "historical_ref": "W13",
+          "historical_doc_ref": "D10",
+          "checkpoint": "R1:25",
+          "text_sha256": "8929ccffff6cc4390f1c25d506f35fc374f81bb88e34e89ae4716034d2a59d2e"
+        },
+        "metadata_corpus_docid": "84118"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2023-10-02"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_5f891a4579a59d87",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q637__rep1/calls/006_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R2_Q637__rep1/calls/006_reader.response.body",
+        "trajectory": "R2_Q637__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_7ebfcb6f92572c98",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q922__rep1/calls/009_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R3_Q922__rep1/calls/009_reader.response.body",
+        "trajectory": "R3_Q922__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_7761064ae5facce4",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/33",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T6_1094",
+          "text_sha256": "fb599295cca74c24e72c6f612e25c7133ee8ae4884a655b07bdfbcf710c77acc"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T6_1094",
+        "text_sha256": "fb599295cca74c24e72c6f612e25c7133ee8ae4884a655b07bdfbcf710c77acc"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T6_1094",
+        "checkpoint": {
+          "source": "stage_A_review_packet",
+          "case_id": "stale_1094_inter_split",
+          "historical_ref": "W42",
+          "historical_doc_ref": "D37",
+          "checkpoint": "R1:53+S1B",
+          "text_sha256": "fb599295cca74c24e72c6f612e25c7133ee8ae4884a655b07bdfbcf710c77acc"
+        },
+        "metadata_corpus_docid": "37458"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2001-12-10"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_37c827530a066a86",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q435__rep1/calls/003_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q435__rep1/calls/003_reader.response.body",
+        "trajectory": "R3_Q435__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_5224e7809fa57e87",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q517__rep1/calls/003_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q517__rep1/calls/003_reader.response.body",
+        "trajectory": "R3_Q517__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_35a6182953ab5741",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q546__rep2/calls/005_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h1_contract_continuation/run001/trajectories/R1_Q546__rep2/calls/005_reader.response.body",
+        "trajectory": "R1_Q546__rep2"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_8f376d127ace83fa",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q922__rep1/calls/003_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R3_Q922__rep1/calls/003_reader.response.body",
+        "trajectory": "R3_Q922__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_4270f32753493173",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q261__rep1/calls/006_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q261__rep1/calls/006_reader.response.body",
+        "trajectory": "R1_Q261__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_a2aa89d1fc7b87d1",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q261__rep1/calls/003_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q261__rep1/calls/003_reader.response.body",
+        "trajectory": "R1_Q261__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_025b3c7bee50c0da",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/13",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T2_177",
+          "text_sha256": "d613dc12908da35924fa596d511adae447db521a8c33d35d98937c938e83cc1c"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T2_177",
+        "text_sha256": "d613dc12908da35924fa596d511adae447db521a8c33d35d98937c938e83cc1c"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T2_177",
+        "checkpoint": {
+          "source": "stage_A_review_packet",
+          "case_id": "177_refute_12",
+          "historical_ref": "w_f9e5e8720a7c6d12c69bc393",
+          "historical_doc_ref": "86819",
+          "checkpoint": "event:2",
+          "text_sha256": "d613dc12908da35924fa596d511adae447db521a8c33d35d98937c938e83cc1c"
+        },
+        "metadata_corpus_docid": "86819"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2025-06-15"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_0a7e233b45e141d9",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q177__rep1/calls/009_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/3",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q177__rep1/calls/009_reader.response.body",
+        "trajectory": "R2_Q177__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_358bebf81cf42cad",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q601__rep1/calls/003_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/4",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q601__rep1/calls/003_reader.response.body",
+        "trajectory": "R1_Q601__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_577c8a4615e3af7a",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q601__rep1/calls/003_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/2",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q601__rep1/calls/003_reader.response.body",
+        "trajectory": "R1_Q601__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_2f5e61407f535c96",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q186__rep1/calls/002_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R2_Q186__rep1/calls/002_reader.response.body",
+        "trajectory": "R2_Q186__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_40477283f84e9dff",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/31",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T5_186",
+          "text_sha256": "71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T5_186",
+        "text_sha256": "71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T5_186",
+        "checkpoint": {
+          "source": "experiments/runs/v000_baseline/qid_186/20260917T084428.558480Z/events.jsonl",
+          "event_seq": 8,
+          "rank": 5,
+          "historical_doc_ref": "39978",
+          "historical_ref": null,
+          "text_sha256": "71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d"
+        },
+        "metadata_corpus_docid": "39978"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2004-04-09"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_20050c6f95515dde",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q673__rep1/calls/006_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q673__rep1/calls/006_reader.response.body",
+        "trajectory": "R3_Q673__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_d12b40cf59e605d6",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q673__rep1/calls/003_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q673__rep1/calls/003_reader.response.body",
+        "trajectory": "R3_Q673__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_0a49c4e89489de08",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q633__rep1/calls/006_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/2",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q633__rep1/calls/006_reader.response.body",
+        "trajectory": "R3_Q633__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_1968e8e64f2b1026",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q633__rep1/calls/006_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/1",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R3_Q633__rep1/calls/006_reader.response.body",
+        "trajectory": "R3_Q633__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_96b041350b756b96",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/30",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T5_311",
+          "text_sha256": "f2994897ea7877bb7b16e9a95f56953b97972308c88327d6cd647669f68ab5a3"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T5_311",
+        "text_sha256": "f2994897ea7877bb7b16e9a95f56953b97972308c88327d6cd647669f68ab5a3"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T5_311",
+        "checkpoint": {
+          "source": "experiments/runs/v000_baseline/qid_311/20260917T090239.474309Z/events.jsonl",
+          "event_seq": 4,
+          "rank": 3,
+          "historical_doc_ref": "20521",
+          "historical_ref": null,
+          "text_sha256": "f2994897ea7877bb7b16e9a95f56953b97972308c88327d6cd647669f68ab5a3"
+        },
+        "metadata_corpus_docid": "20521"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2014-02-25"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_b68dc1cfe3072c5c",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/24",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T4_311",
+          "text_sha256": "f3b53925ee38a3158e05718dbda9f0aa3874d7638bc1d7efb46e4e864493dcf3"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T4_311",
+        "text_sha256": "f3b53925ee38a3158e05718dbda9f0aa3874d7638bc1d7efb46e4e864493dcf3"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T4_311",
+        "checkpoint": {
+          "source": "experiments/runs/v000_baseline/qid_311/20260917T090239.474309Z/events.jsonl",
+          "event_seq": 4,
+          "rank": 2,
+          "historical_doc_ref": "34974",
+          "historical_ref": null,
+          "text_sha256": "f3b53925ee38a3158e05718dbda9f0aa3874d7638bc1d7efb46e4e864493dcf3"
+        },
+        "metadata_corpus_docid": "34974"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2009-07-12"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_6a128e8889ea080b",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/19",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T3_387",
+          "text_sha256": "0c5eb6b19b35f3ffe7746476e6352fbe4e8e8f88edf7a5e7ca5a68fa106045e2"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T3_387",
+        "text_sha256": "0c5eb6b19b35f3ffe7746476e6352fbe4e8e8f88edf7a5e7ca5a68fa106045e2"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T3_387",
+        "checkpoint": {
+          "source": "stage_A_review_packet",
+          "case_id": "387_open_paper",
+          "historical_ref": "w_12cea48292e6ff0cbce7a031",
+          "historical_doc_ref": "5266",
+          "checkpoint": "event:2",
+          "text_sha256": "0c5eb6b19b35f3ffe7746476e6352fbe4e8e8f88edf7a5e7ca5a68fa106045e2"
+        },
+        "metadata_corpus_docid": "5266"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2013-07-24"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_aac87b8254b22fce",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/18",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T1_387",
+          "text_sha256": "0c5eb6b19b35f3ffe7746476e6352fbe4e8e8f88edf7a5e7ca5a68fa106045e2"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T1_387",
+        "text_sha256": "0c5eb6b19b35f3ffe7746476e6352fbe4e8e8f88edf7a5e7ca5a68fa106045e2"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T1_387",
+        "checkpoint": {
+          "source": "stage_A_review_packet",
+          "case_id": "387_support_dean_equipment",
+          "historical_ref": "w_12cea48292e6ff0cbce7a031",
+          "historical_doc_ref": "5266",
+          "checkpoint": "event:2",
+          "text_sha256": "0c5eb6b19b35f3ffe7746476e6352fbe4e8e8f88edf7a5e7ca5a68fa106045e2"
+        },
+        "metadata_corpus_docid": "5266"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2013-07-24"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_2b5b6c08b967c0d8",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q169__rep1/calls/003_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/5",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q169__rep1/calls/003_reader.response.body",
+        "trajectory": "R1_Q169__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_2e019b5fe38a17d8",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q169__rep1/calls/003_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/6",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q169__rep1/calls/003_reader.response.body",
+        "trajectory": "R1_Q169__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_112bce55a0e56ec0",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q264__rep1/calls/006_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q264__rep1/calls/006_reader.response.body",
+        "trajectory": "R1_Q264__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_c25dc61d5d32e0d1",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q264__rep1/calls/003_reader.request.json",
+        "pointer": "/request/messages/-1/content:json/Observation/0",
+        "response_path": "experiments/recoverable_loop_clean/h2_independent_recovery/run001/trajectories/R1_Q264__rep1/calls/003_reader.response.body",
+        "trajectory": "R1_Q264__rep1"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true
+    },
+    {
+      "packet_id": "P_518f2e2deeba8dcd",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/16",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T2_1034",
+          "text_sha256": "6995c514f89a090bd2744a261bce6607eff7121788a1350133571e270e2086c5"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T2_1034",
+        "text_sha256": "6995c514f89a090bd2744a261bce6607eff7121788a1350133571e270e2086c5"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T2_1034",
+        "checkpoint": {
+          "source": "stage_A_review_packet",
+          "case_id": "1034_refute_no_model",
+          "historical_ref": "w_5dc63ed12276c51dff9f14e4",
+          "historical_doc_ref": "24300",
+          "checkpoint": "event:2",
+          "text_sha256": "6995c514f89a090bd2744a261bce6607eff7121788a1350133571e270e2086c5"
+        },
+        "metadata_corpus_docid": "24300"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2021-03-18"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_fa885c086dbeacd4",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/15",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T1_1034",
+          "text_sha256": "6995c514f89a090bd2744a261bce6607eff7121788a1350133571e270e2086c5"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T1_1034",
+        "text_sha256": "6995c514f89a090bd2744a261bce6607eff7121788a1350133571e270e2086c5"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T1_1034",
+        "checkpoint": {
+          "source": "stage_A_review_packet",
+          "case_id": "1034_support_model",
+          "historical_ref": "w_5dc63ed12276c51dff9f14e4",
+          "historical_doc_ref": "24300",
+          "checkpoint": "event:2",
+          "text_sha256": "6995c514f89a090bd2744a261bce6607eff7121788a1350133571e270e2086c5"
+        },
+        "metadata_corpus_docid": "24300"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2021-03-18"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_0b0bcd75443aa470",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/42",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F3_P12_W2",
+          "text_sha256": "6faf972c2ef11a44a1b646f34257a82e380cff98f109d93da6a05cbe729a96fa"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F3_P12_W2",
+        "text_sha256": "6faf972c2ef11a44a1b646f34257a82e380cff98f109d93da6a05cbe729a96fa"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/single_gap_rollout/REVIEW_PACKETS.json",
+        "review_id": "P12",
+        "window_ref": "W2",
+        "text_sha256": "6faf972c2ef11a44a1b646f34257a82e380cff98f109d93da6a05cbe729a96fa"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2014-07-24"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    },
+    {
+      "packet_id": "P_20ccd514ee7f8e81",
+      "context_archive": {
+        "commit": "dadf69f1c5fb96491f4fd3a34e0ece3418878de3",
+        "path": "experiments/minimal_research_loop/verify_necessity/OBSERVATIONS.json",
+        "pointer": "/11",
+        "historical_origin": {
+          "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+          "case_id": "F1_T3_580",
+          "text_sha256": "0f50a3513f9e2f3e2d7c0311f3a4882cafadad4673ef1d1e11dc83657d12d632"
+        }
+      },
+      "evidence_archive": {
+        "path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+        "case_id": "F1_T3_580",
+        "text_sha256": "0f50a3513f9e2f3e2d7c0311f3a4882cafadad4673ef1d1e11dc83657d12d632"
+      },
+      "upstream_observed_text": {
+        "path": "experiments/gap_evidence_claim_loop/finding_extraction/BANK.json",
+        "case_id": "T3_580",
+        "checkpoint": {
+          "source": "stage_A_review_packet",
+          "case_id": "580_open_all_seasons",
+          "historical_ref": "w_3f0b06b4cba0eda41784c085",
+          "historical_doc_ref": "78633",
+          "checkpoint": "event:2",
+          "text_sha256": "0f50a3513f9e2f3e2d7c0311f3a4882cafadad4673ef1d1e11dc83657d12d632"
+        },
+        "metadata_corpus_docid": "78633"
+      },
+      "context_exact": true,
+      "metadata_exact_at_context_archive": true,
+      "text_exact_through_upstream": true,
+      "legacy_metadata_derivation": {
+        "path": "experiments/minimal_research_loop/verify_necessity/prepare_bank.py",
+        "added_field": "date",
+        "value": "2017-10-11"
+      },
+      "note": "legacy evidence-fidelity bank may supply corpus-resolved metadata; visible in archived review context, not asserted as original live prefix metadata"
+    }
+  ]
+}
