@@ -69,6 +69,7 @@
 - A1三个False Close全部右删失，**可恢复性没有被证明**。A0 q922的持续误关是实证警示，但本任务不引入Verifier、Reaudit或Lazy Reopen。
 - A0 frozen selection reference缺失：N/A不等于安全、不等于危险。不能以D2相同编号冒充语义匹配。
 - 旧引用贡献争议涉及citation，不修改本轮Gold status；二分类正确也不自动修复source entailment或citation precision。
+- 固定A1 replicate1后二分类S1与S0仅G18不同，另外26/27状态输入完全相同。G21的误关闭只出现在replicate2，按任务要求不会进入S1。故Selection主要检验Selector可行性，Mask-error传播的实质对照只有1个状态；其它状态的臂间差异可能来自重复采样波动，不能把整体低loss解释成广泛容错证明。
 - 未来CLOSED应是每轮重算的控制判断；持久边界仍为Q/Skeleton、Verified Claims/Hypothesis与机械Workspace/Trace。Mask/OpenSet/ActiveID/Gap保持ephemeral。
 
 ## E1执行准备与调用预算
