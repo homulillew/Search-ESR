@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "properties": {
+    "verdict": {
+      "enum": [
+        "ADMIT",
+        "REJECT"
+      ]
+    },
+    "error_tags": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "argument_change",
+          "conditional_scope_expansion",
+          "cross_source_composition",
+          "entity_binding_unproven",
+          "excerpt_mismatch",
+          "modality_expansion",
+          "other",
+          "quantifier_expansion",
+          "relation_change",
+          "temporal_scope_expansion",
+          "unsupported_inference"
+        ]
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "verdict",
+    "error_tags"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "verdict": {
+            "const": "ADMIT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "error_tags": {
+            "maxItems": 0
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "error_tags": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

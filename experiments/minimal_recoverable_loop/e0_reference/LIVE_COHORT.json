@@ -1,0 +1,42 @@
+{
+  "historical_qids": [
+    "546",
+    "1094",
+    "228",
+    "637",
+    "843",
+    "971"
+  ],
+  "normal_and_perturbed_each": true,
+  "historical_trajectories": 12,
+  "fresh_qids": [
+    "413",
+    "1155",
+    "1176",
+    "93",
+    "1216",
+    "180",
+    "909",
+    "720",
+    "603",
+    "140"
+  ],
+  "fresh_trajectories": 10,
+  "max_acquisition_actions_per_trajectory": 8,
+  "max_closure_audits_per_trajectory": 2,
+  "max_total_acquisition_actions": 176,
+  "max_Search_calls": 176,
+  "max_closure_calls": 44,
+  "retrieval_k": 5,
+  "max_first_wave_preview_observations": 880,
+  "perturbations": {
+    "546": "first action forced to global SEARCH; historical route frozen before E4 calls",
+    "1094": "inject historical failed route in Trace, not C",
+    "228": "plausible historical wrong H candidate, not C",
+    "637": "historical candidate uncertainty in H, not C",
+    "843": "historical unproductive acquisition route in Trace",
+    "971": "historical book-only candidate belief in H without asserting later article"
+  },
+  "status": "DESIGN_AND_QIDS_FROZEN_ONLY; exact adaptive requests not known or authorized",
+  "authorization_constraint": "TASK47 requires exact payloads and fresh consent. Each dependent live wave must be materialized/committed/hashed and separately authorized; a budget ceiling alone does not authorize unknown future requests."
+}

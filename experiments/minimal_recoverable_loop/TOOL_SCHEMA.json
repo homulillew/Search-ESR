@@ -1,0 +1,84 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "search",
+      "description": "Search the local BC+ corpus for candidate documents. Returns stable D# document handles and short raw-text previews with W# window handles. A preview is not exhaustive document content.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "A standalone global search query, usually in English"
+          },
+          "k": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10,
+            "description": "Number of documents, default 5"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "find",
+      "description": "Locate a specific fact inside one previously discovered D# document using a local lexical query. Returns an exact raw-text W# window. Use a different find query for another fact in the same document.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "doc_ref": {
+            "type": "string",
+            "pattern": "^D[1-9][0-9]*$",
+            "description": "Stable document handle returned by search, for example D3"
+          },
+          "query": {
+            "type": "string",
+            "description": "Local query for the fact or passage to locate"
+          }
+        },
+        "required": [
+          "doc_ref",
+          "query"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "open",
+      "description": "Read adjacent raw text around an observed W# window. before/after read neighboring text; around expands the current span. Use find, not repeated open, to locate a different fact elsewhere.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "window_ref": {
+            "type": "string",
+            "pattern": "^W[1-9][0-9]*$",
+            "description": "Stable observed-window handle returned by search, find, or open"
+          },
+          "direction": {
+            "type": "string",
+            "enum": [
+              "before",
+              "after",
+              "around"
+            ]
+          }
+        },
+        "required": [
+          "window_ref",
+          "direction"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+]

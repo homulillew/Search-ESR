@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-09-27T17:52:04.434965+00:00",
+  "scope": "Offline tests/provenance/preparation only. No empirical gate assessed.",
+  "tests": {
+    "command": "python -m unittest experiments.minimal_recoverable_loop.test_contracts -v",
+    "returncode": 0,
+    "output": "test_actor_and_h_cannot_mutate_authoritative_inputs (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_actor_and_h_cannot_mutate_authoritative_inputs) ... ok\ntest_admission_requires_actual_excerpt_and_component_result (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_admission_requires_actual_excerpt_and_component_result) ... ok\ntest_cache_accounting_excludes_unknown_and_inconsistent_usage (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_cache_accounting_excludes_unknown_and_inconsistent_usage) ... ok\ntest_closure_authority_and_staleness (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_closure_authority_and_staleness) ... ok\ntest_excerpt_locality_not_full_claimset (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_excerpt_locality_not_full_claimset) ... ok\ntest_frozen_writer_excludes_h_and_hidden_labels (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_frozen_writer_excludes_h_and_hidden_labels) ... ok\ntest_h_dedup_and_transactional_capacity (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_h_dedup_and_transactional_capacity) ... ok\ntest_only_actual_tool_routes (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_only_actual_tool_routes) ... ok\ntest_parse_does_not_use_reasoning_or_repair_schema (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_parse_does_not_use_reasoning_or_repair_schema) ... ok\ntest_pending_source_gain_only_once (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_pending_source_gain_only_once) ... ok\ntest_renamed_query_does_not_reset_family (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_renamed_query_does_not_reset_family) ... ok\ntest_split_claim_recall_requires_complete_witness (experiments.minimal_recoverable_loop.test_contracts.Boundaries.test_split_claim_recall_requires_complete_witness) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.027s\n\nOK\n"
+  },
+  "audit": {
+    "status": "PASS",
+    "scope": "offline preparation and invariants; no empirical model gate result",
+    "checked_head": "1e5b426b037eda91395664b820ce64cd4f12c708",
+    "source_observations": 53,
+    "qid_count": 20,
+    "gold_semantic_atoms": 56,
+    "recall_slots": 112,
+    "actual_writer_requests": 106,
+    "fresh_qids": 10,
+    "history_files_unchanged": 22238,
+    "actual_API_calls": 0,
+    "actual_retrieval_calls": 0,
+    "all_sources_match_historical_bytes": true,
+    "all_reference_anchors_exact": true,
+    "all_QR_source_anchors_exact": true,
+    "base_task_prompts_verbatim": true,
+    "format_only_schema_appendix_disclosed": true,
+    "writer_inputs_exclude_H_and_gold": true,
+    "requests_recompile_identically": true,
+    "future_semantic_stage_labels_not_fabricated": true
+  },
+  "API_calls": 0,
+  "retrieval_calls": 0
+}

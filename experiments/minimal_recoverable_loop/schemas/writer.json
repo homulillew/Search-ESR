@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "properties": {
+    "candidate_claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "supporting_excerpt": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "statement",
+          "source_id",
+          "supporting_excerpt"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "followup_source_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "source_ref",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "candidate_claims",
+    "followup_source_refs"
+  ],
+  "additionalProperties": false
+}

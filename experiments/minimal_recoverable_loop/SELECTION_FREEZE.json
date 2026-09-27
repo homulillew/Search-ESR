@@ -1,0 +1,33 @@
+{
+  "base": "1e5b426b037eda91395664b820ce64cd4f12c708",
+  "prepared_utc": "2026-09-27T17:51:53.018317+00:00",
+  "files": {
+    "experiments/minimal_recoverable_loop/e0_reference/ADMISSION_SELECTION.json": "6a5035a8a1b21b26892202fef185c08ec7c60287c8747c63db37b331bb921d9e",
+    "experiments/minimal_recoverable_loop/e0_reference/ADMISSION_BANK.json": "33f6513cb01d42e75fccc8c5773576a5ef3ce406f45ba886324e45911e90772a",
+    "experiments/minimal_recoverable_loop/e0_reference/ADMISSION_REFERENCE.json": "7d3a43748a3285952186df9eb841753a055cc04f32ff0257f952515412494edf",
+    "experiments/minimal_recoverable_loop/e0_reference/QUESTION_SKELETONS.json": "c2a20bf51a087e3fa7420ad8f0b6f6d0ba3a8c6b18c4d3cb8563b1cd6360324f",
+    "experiments/minimal_recoverable_loop/e0_reference/EXPOSURE_AUDIT.json": "e428411f3ee0d04d0481c74865b765380e46aed8f845f7ca7de6bb8fc75bd8c1",
+    "experiments/minimal_recoverable_loop/e0_reference/FRESH_SELECTION.json": "5a33bfb9d8e8d9bf63460612f8c4e84bcb259bce8b3023851f6a1525467a06a2",
+    "experiments/minimal_recoverable_loop/e0_reference/FRESH_QUESTIONS.json": "2151a69381f6b5924f2acef6b1ec16696528529574d63684019b85cef275caed",
+    "experiments/minimal_recoverable_loop/e0_reference/RECOVERY_COHORT.json": "f56ca8fe9937022cc38e3030163588ea752cf318172ce6b3d5b91b80f8fc76c2",
+    "experiments/minimal_recoverable_loop/e0_reference/CLOSURE_COHORT.json": "67205d14802a3618ff096518a28501373f5441d9b781f96c74443bb0dfb409f9",
+    "experiments/minimal_recoverable_loop/e0_reference/LIVE_COHORT.json": "5b95dde946e459657891d98167e6e960beb5265b650c1329bb8cf011f3d80dfa"
+  },
+  "admission_observations": 53,
+  "admission_qids": 20,
+  "fresh_qids": [
+    "413",
+    "1155",
+    "1176",
+    "93",
+    "1216",
+    "180",
+    "909",
+    "720",
+    "603",
+    "140"
+  ],
+  "fresh_selection_rule": "All nonempty corpus questions with no repository experiment exposure; SHA256 canonical JSON [seed,qid] ascending, first10. No semantic/ease or gold filtering. Fewer than10 retained if shortfall.",
+  "replacement_policy": "No replacement based on model output, later evidence, ease or outcome.",
+  "later_gold_status": "E2 recovery grounding and E3 semantic labels pending prior gate PASS; source snapshot IDs frozen now. No later model calls before their Gold and exact requests are frozen."
+}

@@ -1,0 +1,119 @@
+{
+  "base": "1e5b426b037eda91395664b820ce64cd4f12c708",
+  "rule": "Take all44 legacy evidence_packet observations, collapse exact(qid,url,text) duplicates retaining first historical row; add the25 explicit recent source slots; do not inspect prior writer outcomes to select.",
+  "legacy_path": "experiments/evidence_fidelity_loop/evidence_packet/BANK.json",
+  "legacy_raw_count": 44,
+  "legacy_unique_observations": 28,
+  "recent_slots": {
+    "F07": [
+      "2_3",
+      "2_5",
+      "3_1"
+    ],
+    "F08": [
+      "1_2",
+      "1_3",
+      "1_4"
+    ],
+    "F10": [
+      "1_2",
+      "2_3",
+      "2_5"
+    ],
+    "F11": [
+      "2_2"
+    ],
+    "F13": [
+      "1_1",
+      "1_2",
+      "1_5",
+      "2_2",
+      "2_3"
+    ],
+    "F14": [
+      "2_1",
+      "2_2",
+      "2_3",
+      "2_4",
+      "3_1"
+    ],
+    "F15": [
+      "1_2",
+      "2_1",
+      "2_2"
+    ],
+    "F16": [
+      "1_4",
+      "3_1"
+    ]
+  },
+  "observations": 53,
+  "qids": 20,
+  "duplicates_removed": [
+    {
+      "omitted": "F1_T3_546",
+      "same_observation_as": "F1_T1_546"
+    },
+    {
+      "omitted": "F1_T2_517",
+      "same_observation_as": "F1_T1_517"
+    },
+    {
+      "omitted": "F1_T3_517",
+      "same_observation_as": "F1_T1_517"
+    },
+    {
+      "omitted": "F1_T3_435",
+      "same_observation_as": "F1_T1_435"
+    },
+    {
+      "omitted": "F1_T3_580",
+      "same_observation_as": "F1_T1_580"
+    },
+    {
+      "omitted": "F1_T2_177",
+      "same_observation_as": "F1_T1_177"
+    },
+    {
+      "omitted": "F1_T3_177",
+      "same_observation_as": "F1_T1_177"
+    },
+    {
+      "omitted": "F1_T2_1034",
+      "same_observation_as": "F1_T1_1034"
+    },
+    {
+      "omitted": "F1_T3_1034",
+      "same_observation_as": "F1_T1_1034"
+    },
+    {
+      "omitted": "F1_T3_387",
+      "same_observation_as": "F1_T1_387"
+    },
+    {
+      "omitted": "F1_T5_517",
+      "same_observation_as": "F1_T1_517"
+    },
+    {
+      "omitted": "F1_T6_546",
+      "same_observation_as": "F1_T1_546"
+    },
+    {
+      "omitted": "F1_T6_1094",
+      "same_observation_as": "F1_T3_1094"
+    },
+    {
+      "omitted": "F1_T6_435",
+      "same_observation_as": "F1_T1_435"
+    },
+    {
+      "omitted": "F1_T6_177",
+      "same_observation_as": "F1_T1_177"
+    },
+    {
+      "omitted": "F1_T7_186",
+      "same_observation_as": "F1_T5_186"
+    }
+  ],
+  "notes": "Real historical source text retained byte-for-byte at the selected historical observation boundary. Synthetic examples permitted only in offline invariant tests, never this bank."
+}

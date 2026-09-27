@@ -1,0 +1,38 @@
+{
+  "policy": "ALL clauses required; low recall alone remains FAIL unless the user prospectively amends this before calls. Conservative-but-inefficient is a descriptive label, not silent promotion.",
+  "E1": {
+    "precision_min": 0.97,
+    "recall_min": 0.75,
+    "high_risk_false_admissions_max": 0,
+    "relation_argument_corruption_rate_max": 0.02,
+    "temporal_modality_quantifier_expansion_rate_max": 0.02,
+    "exact_excerpt_validity_min": 1.0,
+    "writer_schema_min": 0.95,
+    "admission_schema_min": 0.95
+  },
+  "E2": {
+    "authority_violations_max": 0,
+    "H_as_fact_rate_max": 0.03,
+    "no_gain_strategy_shift_min": 0.9,
+    "repeat_family_after_two_no_gain_max": 0.1,
+    "promising_source_local_verification_min": 0.8,
+    "schema_min": 0.95
+  },
+  "E3": {
+    "false_READY_max": 0,
+    "open_requirement_recall_min": 0.95,
+    "complete_state_READY_recall_min": 0.8,
+    "relation_trap_false_closure_max": 0,
+    "schema_min": 0.95
+  },
+  "E4": {
+    "high_risk_false_admitted_claims_max": 0,
+    "H_to_C_leakage_max": 0,
+    "false_READY_max": 0,
+    "QR_unauthorized_mutation_max": 0,
+    "wrong_H_recovery_min": 0.75,
+    "NoGain_escape_min": 0.8
+  },
+  "null_denominator": "not estimable, cannot pass a required gate",
+  "downstream": "Any failed preceding gate stops later stages; each exact paid batch also needs fresh authorization"
+}

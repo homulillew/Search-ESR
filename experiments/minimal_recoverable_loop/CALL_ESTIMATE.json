@@ -1,0 +1,57 @@
+{
+  "status": "PREPARED_FOR_FRESH_AUTHORIZATION; no new paid or retrieval calls",
+  "batch": "E1A Writer only",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "observations": 53,
+  "qids": 20,
+  "replicates": 2,
+  "exact_planned_calls": 106,
+  "exact_request_file": "e1_admission/WRITER_REQUESTS.json",
+  "request_set_sha256": "2b54f44622fb501f53365d654e0a1a465b84f8a8dfae4c657e7ca96e5b40646c",
+  "max_retries": 0,
+  "maximum_concurrent_requests": 8,
+  "timeout_seconds": 240,
+  "timeout_semantics": "HTTP inactivity, not total elapsed time",
+  "actual_calls_so_far": 0,
+  "actual_retrieval_calls_so_far": 0,
+  "input": {
+    "exact_message_characters": 559288,
+    "exact_message_utf8_bytes": 559910,
+    "characters_per_request_min_max": [
+      4191,
+      6114
+    ],
+    "rough_token_scenarios": {
+      "five_characters_per_token": 111858,
+      "three_characters_per_token": 186430
+    },
+    "estimate_limitation": "Character heuristic only; excludes chat framing. Not a provider tokenizer, confidence interval or token ceiling."
+  },
+  "output_token_scenarios": {
+    "1000_per_call": 106000,
+    "4000_per_call": 424000,
+    "16000_per_call": 1696000
+  },
+  "output_limitation": "Scenarios only; includes reasoning within output. max_tokens is omitted, not an output-cost ceiling.",
+  "currency_estimate": null,
+  "currency_note": "No current price assumption or monetary ceiling. Exact request count is the authorized budget unit.",
+  "cache_primary_field": "ACCOUNTING.cache_hit_rate_reported_tokens",
+  "cache_definition": "sum(cache_hit_tokens)/sum(prompt_tokens), only complete consistent input/hit/miss counters; missing usage excluded and counted",
+  "E1B_Admission": {
+    "exact_calls": null,
+    "reason": "One call per valid exact-excerpt candidate from actual Writer outputs; no candidate cap or output-dependent selection. Requests not yet materialized.",
+    "authorized_by_this_batch": false,
+    "next": "Commit Writer results; freeze candidate semantic review and actual Admission payloads; separate fresh authorization."
+  },
+  "later_stages": {
+    "authorized_by_this_batch": false,
+    "require": "preceding gates PASS and separately frozen exact requests plus fresh authorization",
+    "E4_trajectories_planned": 22,
+    "E4_acquisition_upper_bound": 176,
+    "E4_search_upper_bound": 176,
+    "E4_closure_call_upper_bound": 44,
+    "E4_model_call_total": null,
+    "E4_estimate_note": "Adaptive Writer/Admission/H calls depend on actual observations and candidate counts; not a paid authorization."
+  }
+}

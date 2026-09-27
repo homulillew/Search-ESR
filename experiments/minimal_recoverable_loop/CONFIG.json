@@ -1,0 +1,26 @@
+{
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "temperature": 0,
+  "response_format": {
+    "type": "json_object"
+  },
+  "max_retries": 0,
+  "max_workers": 8,
+  "timeout_seconds": 240,
+  "timeout_semantics": "HTTP inactivity, not total wall clock",
+  "max_tokens": "omitted; no hidden truncation or repair",
+  "halt_http_statuses": [
+    400,
+    401,
+    402,
+    403,
+    404,
+    422
+  ],
+  "writer_replicates": 2,
+  "retrieval_backend": "Current SearchFindTools through experiments/deferred_recovery/tools.py restore, inherited from latest real acquisition; no E1/E2/E3 retrieval calls. Orthogonal is not silently substituted.",
+  "E4_max_acquisitions_per_trajectory": 8,
+  "E4_max_closure_audits_per_trajectory": 2
+}
