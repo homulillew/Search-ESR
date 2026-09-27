@@ -1,0 +1,2589 @@
+{
+  "reviewer": "single task-familiar Codex reviewer; unmasked after mechanical scoring; not independent or blind",
+  "review_material": "all96 content-only chain packets, including all35 actual auditor evidence subsets; provider reasoning excluded",
+  "rubric": "e1_gold_support/REVIEW_RUBRIC.md",
+  "rubric_sha256": "74f8f6a5c826a18d0cf837d3d1f5a3d2ee7cda4b8a1e3272147f6241bcad7089",
+  "primary_scoring_unchanged": true,
+  "coverage": {
+    "chains": 96,
+    "audited_chains": 35,
+    "verifier_open_chains": 61
+  },
+  "categories": {
+    "verifier_reject": 51,
+    "retained_true_support": 26,
+    "retained_false_support": 3,
+    "verifier_false_open": 10,
+    "audit_introduced_false_open": 6
+  },
+  "records": [
+    {
+      "verifier_id": "V_A01_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A01_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "74311468f7310d3196131ee67fc54a95eaa6254bbe30fed82e0d18d2975c43e4",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "- Two people wrote it.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "教授身份不证明两人共同署名；U1缺口成立。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A02_CAND1_r1",
+      "auditor_id": "A_A02_CAND1_r1",
+      "certificate_id": "A02_CAND1",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "14b8a163258bfdaaa4ebf1638a2145f99b1dd06c67ab5c4e3c95cb01ea1ecde8",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C2明确给出同一论文的两位作者，满足局部署名条件。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A02_CAND2_r1",
+      "auditor_id": "A_A02_CAND2_r1",
+      "certificate_id": "A02_CAND2",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "14b8a163258bfdaaa4ebf1638a2145f99b1dd06c67ab5c4e3c95cb01ea1ecde8",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C2已足够；Auditor收到的实际子集只有C2，没有借用未引用C1。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A02_CAND3_r1",
+      "auditor_id": null,
+      "certificate_id": "A02_CAND3",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "c51ba4558f09ecf2df1672fb75e5ee471b2cddc1c441d9ca6ee7ac2f21966d25",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "- Two people wrote it.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "主题分类及表格内容不提供作者数量。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A03_CAND1_r1",
+      "auditor_id": "A_A03_CAND1_r1",
+      "certificate_id": "A03_CAND1",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "05167fbcbbddebcf3b376ff8056754442007a9d502662e2f86c96ba2fa5d93d2",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "实际引用C4+C5建立该论文表格与13.53%的关联。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A03_CAND2_r1",
+      "auditor_id": "A_A03_CAND2_r1",
+      "certificate_id": "A03_CAND2",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "05167fbcbbddebcf3b376ff8056754442007a9d502662e2f86c96ba2fa5d93d2",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C4为C5的that paper提供可见前项，表格、情绪、比例共同成立。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A03_CAND3_r1",
+      "auditor_id": "A_A03_CAND3_r1",
+      "certificate_id": "A03_CAND3",
+      "replicate": 1,
+      "category": "retained_false_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "e603deef65334dc21cc121e7002f934b932f7e510149e5f70c574e87db60e27c",
+      "asserted_support_has_frozen_sufficient_witness": false,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "孤立C5的that paper没有可见前项；按冻结绑定政策为OPEN。两次审计均未标缺口。已预标参考歧义：存在性表格读法会宽于该政策。",
+      "precall_ambiguity": "AMBIGUOUS_REFERENCE: strict antecedent binding versus existential reading of the singleton that-paper claim; primary OPEN.",
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A04_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A04_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "34e639b1ec8ebf3523f5f5ee03a87e0e91759069ea318f34d2904a06020d10b6",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "whose online video games division released a video game",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "in a specific year between 2000 and 2010, both years inclusive,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U5",
+          "text": "which, at least until 2019, was considered one of the top-earning games of all time,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U7",
+          "text": "founded between 1930 and 1970, both years inclusive.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "创办公司及毕业院校未覆盖游戏发行部门/年份、最高营收及大学创立年份。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A05_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A05_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "249e92c20f756492d1f12b4a0c8ba9e1bf1a20c1bf1f272541fe97f53a5b5cf8",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "This person and their spouse,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "who, up to 2019,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "had no children from the marriage,",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "创办公司和学位没有婚姻、2019时点、无子女证据。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A06_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A06_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "79b457acee108174c5175e72fc57dc28bc6d7981ae8d9daef5216d29b13233a8",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "As of 2019,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "this building",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "was part of a specific university.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "人取得大学学位不能替代建筑属于大学的关系及2019时点。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A07_CAND1_r1",
+      "auditor_id": "A_A07_CAND1_r1",
+      "certificate_id": "A07_CAND1",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "b1f0188e209691499ae1e309c2d8290c096e33bda6583391e1c33030fb0884db",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C5明确说2019文章时已婚无子女；两次Verifier均接受，相同证据的Auditor r2却将U2时间框架列为缺口。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A07_CAND2_r1",
+      "auditor_id": null,
+      "certificate_id": "A07_CAND2",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "f87c4c6eb25b3d9315e983286597b77ce8260af0d6a6bf0c1333d68217345c7b",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "This person and their spouse,",
+          "assessment": "partial_spouse_evidence_but_target_time_unestablished"
+        },
+        {
+          "unit_id": "U2",
+          "text": "who, up to 2019,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "had no children from the marriage,",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "2025分居及两个孩子不建立2019婚姻无子女状态；不能从后来的状态倒推2019。r1额外标记U1，分居对曾有配偶有间接支持，但不解决目标时点。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A07_CAND3_r1",
+      "auditor_id": null,
+      "certificate_id": "A07_CAND3",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "37603e484fb653de23c90f47b405f91bd62cb3182882bce8e82d2d66d11c91d8",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U4",
+          "text": "made a foundational gift",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U5",
+          "text": "for the construction of a building",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U6",
+          "text": "that was part of a larger complex.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C5支持局部婚姻，未提供gift、建筑及complex；两次正确保留U4/U5/U6。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A08_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A08_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "8a8fc01d8652d0defb724255f14e7b3c20d69592954d7e1384b7043245bfd22b",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "As of 2019,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "this building",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "was scheduled to open sometime between 2018 and 2021, both years inclusive, and",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "was part of a specific university.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "创办人、个人学位及婚姻均未建立建筑身份、开放计划或所属大学。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A09_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A09_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "ffad080db7e2728f03d395fab3f9af645e33fedd523a9441da4bba91d3b4c893",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "shares their first name with part of a charity’s name.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "艺人身份已给出，但没有慈善机构名字及共享名字关系。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A10_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A10_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "2b46c3c8df9f94536439719088e8de57cf14d0b1c37945c29d40dc4599f4d400",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "20 to 30 miles (inclusive) away",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "from the site of that country’s deadliest aviation accident (as of 2023).",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "死亡城市已给出，缺少航空事故地点/最严重条件及20–30英里距离关系。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A11_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A11_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "6ad54536413803817c0f6fb9f0ebe72398513b69a9bbfff6bd7b4a3bb35ea76d",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "A musical artist",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "shares their first name with part of a charity’s name.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "伴侣与悼念引语不支持艺人身份和慈善机构名字关系的完整目标。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A12_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A12_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "98add7abb6bd1600d65f8f8001ea6da3411c361e63e76762c2d71153670b1a67",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "under the guidance of an Iranian professor",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "加拿大PhD经历有证据，但没有伊朗导师及指导关系。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A13_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A13_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "b897bd07fd85c51262f76f08e1ee7ccfdc56b8c4b023c062815f05e125e59252",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "then published a journal article",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "six years after",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C1只建立book出版；后续article和六年关系U1/U3均缺失。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A14_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A14_CAND1",
+      "replicate": 1,
+      "category": "verifier_false_open",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "abb6bc75b4fc2f18f8d6ade7ed48b2ecf12b1cc93c66f9b33ac494247098b04d",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "six years after",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C1+C3给出同作者book2016/article2022；冻结参考按出版年份接受。r1在Verifier、r2在Auditor均标U3六年间隔。精确到日的读法可产生争议，但JSON没有原因，不能确定内部解释。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A14_CAND2_r1",
+      "auditor_id": null,
+      "certificate_id": "A14_CAND2",
+      "replicate": 1,
+      "category": "verifier_false_open",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "abb6bc75b4fc2f18f8d6ade7ed48b2ecf12b1cc93c66f9b33ac494247098b04d",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "six years after",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "与A14_CAND1实际payload相同，U3被两条调用链拒绝；此证书在调用前预标出版年份/日期精度歧义。",
+      "precall_ambiguity": "AMBIGUOUS_REFERENCE: calendar publication years versus exact elapsed days; primary SUPPORTED under the year-level convention.",
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A14_CAND3_r1",
+      "auditor_id": "A_A14_CAND3_r1",
+      "certificate_id": "A14_CAND3",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "7a9e4c675bb33deda07bc8313230be23c8d284642ee6e9f391a2617d0662dd47",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "同作者book与article的数学/Vipassana主题均可见，局部主题关系不要求兄弟六年条件。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A14_CAND4_r1",
+      "auditor_id": null,
+      "certificate_id": "A14_CAND4",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "bf588c82aa3132c7f6c528965da7f165461e4977530de4948aa9846ea0918bb2",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "six years after",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "publishing the book.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "只有article，缺book及六年比较U4/U3；r2还将已由C3明确给出的U1文章发表列为缺口，属正确OPEN中的额外错误缺口。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A15_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A15_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "e375a4e5de363136cb35aca155d217aa1b14252167b025d5fde1b65eaa936240",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "Additionally, it references",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "and a well-known figure",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U6",
+          "text": "in a central European country,",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "传记不能建立书籍引用Euler的U1关系；没有可见well-known或中欧地理分类，不能调用外部知识补足。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A16_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A16_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "3f90803317d64ddc63de199bc1b58f52b38fef6ea72ff76e6f57ab57399612a5",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "In this case, the individual",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U5",
+          "text": "presented with",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U6",
+          "text": "a half-year history of pain in different parts of their body,",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "一般SPS症状不能证明具体病例有半年的病史。引用一般症状仍不构成病例支持。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A17_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A17_CAND1",
+      "replicate": 1,
+      "category": "verifier_false_open",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "cf14f68964a1b4626adc2a81969e3faf5876ca1ded40d6d89677dae5c330e240",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C7覆盖病史及症状，唯一返回缺口U1=The first case。按冻结候选分支政策是假OPEN；字面序数/角色绑定并未单独表示，仍有语义契约限制。country/history未出现在输入。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A17_CAND2_r1",
+      "auditor_id": null,
+      "certificate_id": "A17_CAND2",
+      "replicate": 1,
+      "category": "verifier_false_open",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "1c05201cfcee382d4042323ddd5cb77c1130be914fbb1fb84952ecba6731140c",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "局部半年病史已有C7；唯一缺口是first-case角色U1，非country/history。冻结候选分支政策与字面身份要求须区分。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A17_CAND3_r1",
+      "auditor_id": null,
+      "certificate_id": "A17_CAND3",
+      "replicate": 1,
+      "category": "verifier_false_open",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "40c0157e70b9b09e7c48ba0bd8137bfefa16c5645ec2eb6c89b37261e06f0d99",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "walking/shoulder及加重已有C7；U6只作痛感前项的context，模型未将其列为额外目标。唯一缺口U1角色，按冻结政策是假OPEN。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A17_CAND4_r1",
+      "auditor_id": null,
+      "certificate_id": "A17_CAND4",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "f634567fbf8b84fe870c67ee227a801269df7b6c59b1b0e3402ab2f678f95994",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "was reported in a country",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "that was the largest country of its dominant religion in the world at the time of its establishment.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "患者Pakistani国籍不建立报告地点国家及建国历史资格。r2未标U2报告国家缺口，属于正确OPEN但缺口列表不完整；U3仍实质未支持。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A17_CAND5_r1",
+      "auditor_id": null,
+      "certificate_id": "A17_CAND5",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "1276b275ea2e747e678d543b450bbd330a2b1d5f3dcda95527cf31c89ed6a643",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "In this case, the individual",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U5",
+          "text": "presented with",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U6",
+          "text": "a half-year history of pain in different parts of their body,",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "FOP分子机制和一般创伤风险不证明具体病例半年病史。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A18_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A18_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "9383cbbf78850e3c150f769fe28dbf295e457919f61a232ceea79cd79c2b5496",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "A pack of downloadable content",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "was released for",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "a strategy video game",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "over three years after its release.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "论文及导师背景没有DLC发行、策略类型和时间关系证据。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A19_CAND1_r1",
+      "auditor_id": "A_A19_CAND1_r1",
+      "certificate_id": "A19_CAND1",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "fd2c5a6b6acdbdaaadcb7527c62a86d9c911ef42ebc4a3d8363f59ef0a19fb85",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3+C5建立DLC/base-game与2016相对2013超过三年；两个2013日期版本均满足超过三年。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A19_CAND2_r1",
+      "auditor_id": "A_A19_CAND2_r1",
+      "certificate_id": "A19_CAND2",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "fd2c5a6b6acdbdaaadcb7527c62a86d9c911ef42ebc4a3d8363f59ef0a19fb85",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "与A19_CAND1实际payload相同；两出版/发行时点及DLC关系共同覆盖间隔。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A19_CAND3_r1",
+      "auditor_id": "A_A19_CAND3_r1",
+      "certificate_id": "A19_CAND3",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "8cb7608133c43852ac0f07ffdd8abf2810f967c50c29aef2663dbf9eb1d77e20",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3+C5共同覆盖DLC与策略游戏的关系，不需要兄弟三年间隔。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A19_CAND4_r1",
+      "auditor_id": null,
+      "certificate_id": "A19_CAND4",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "3ccf9e44c10a884e8ab765e896d36f2862fce181f1910e4c8f0ff8f0b776230c",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "a strategy video game",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "over three years after its release.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "只有DLC发行，不提供策略类型及base-game发行时间，U3/U4未支持。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND1_r1",
+      "auditor_id": "A_A20_CAND1_r1",
+      "certificate_id": "A20_CAND1",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "20180052b55ae32d4c5daf40c5693c2789b0e3cae4f532f050f61e05a4d32e59",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3建立Rights of Man–EU4，C4给技术及宗教机制变化；冻结参考接受。相同引用子集Auditor r2把U3 base-game列为缺口，r1接受。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND2_r1",
+      "auditor_id": null,
+      "certificate_id": "A20_CAND2",
+      "replicate": 1,
+      "category": "verifier_false_open",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "e7e60ab3ee2c5aca58227762ee2405c44e2c60ba3eb8f99a8296ccf70cb58735",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "made changes to the mechanics",
+          "assessment": "supported_under_frozen_reference"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3+C6建立DLC/game及技术重做，冻结参考接受；两次Verifier却只标U2 mechanics-change。nation/religion兄弟条件没有进入输入。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND3_r1",
+      "auditor_id": "A_A20_CAND3_r1",
+      "certificate_id": "A20_CAND3",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "b5e1e15ec8eb8120fbc54c7ed43e5a51733a23f230a10ae8edc9eb33dafe0e44",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3+C4足够且实际另引用C6，机制及DLC/game绑定均有材料，审计两次接受。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND4_r1",
+      "auditor_id": "A_A20_CAND4_r1",
+      "certificate_id": "A20_CAND4",
+      "replicate": 1,
+      "category": "audit_introduced_false_open",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "6c52c879d55c19a672e487debb48d80624d7bd20f32eb0c1eb8ff203aad8ce8c",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "of the base game",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3绑定DLC/game，C7给government/subjects改变，冻结参考接受一般mechanics。Auditor两次只标U3 base-game。参考已预标一般mechanics与列举子条件边界歧义。",
+      "precall_ambiguity": "AMBIGUOUS_REFERENCE: general mechanics predicate can be separated from enumerated particular changes; primary SUPPORTED under the task local-positive convention.",
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND5_r1",
+      "auditor_id": null,
+      "certificate_id": "A20_CAND5",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "46f2fde8d0abde776f94872592e80293f7a455c8e8dcb82f8cce544c78aa7b2f",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U8",
+          "text": "for a specific playable European nation.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "有机制变化但没有完整playable European nation资格；U8缺口成立。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND6_r1",
+      "auditor_id": null,
+      "certificate_id": "A20_CAND6",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "e3ed151c6716cf0549e04d55517201b7c2b139da851b012caa5f0c80f075e5a0",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U8",
+          "text": "for a specific playable European nation.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "整个目标仍缺U8 qualified nation；r2另标U3，按冻结DLC/game关联政策这是额外错误缺口，OPEN本身正确。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A21_CAND1_r1",
+      "auditor_id": "A_A21_CAND1_r1",
+      "certificate_id": "A21_CAND1",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "ad39ffb9419dddc9d44352dec40cb2cb991de47349453231c33a1ea43fcb97e8",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C1+C2联合建立澳大利亚程序员、团队成员与冠军；叙述者I discovered仅为context，没有被要求另证。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A21_CAND2_r1",
+      "auditor_id": "A_A21_CAND2_r1",
+      "certificate_id": "A21_CAND2",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "163aae3290cd4ae6b61212c295d6488432c810b5117c7b9530daebdc07a90b30",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C1+C2明确建立nationality、成员与championship关系。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A21_CAND3_r1",
+      "auditor_id": null,
+      "certificate_id": "A21_CAND3",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "cecf5f7870e92d208960a02d55b31101185ee39ad07e04886e133ec058af9997",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "a team featuring",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "won the championship.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "个人国籍和IOI奖牌未建立该团队及冠军成员关系，U2/U4缺失。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A22_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A22_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "31f6a511051890e3b8c88293d50c016f7bfdcce4c8737f0ee0a866dccc9e9b98",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "were from the same country.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C2给队友姓名但无两位队友同国证据；不能由姓名或Jerry国籍推断。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A23_CAND1_r1",
+      "auditor_id": null,
+      "certificate_id": "A23_CAND1",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "5c36194833f52bdc68fbbdbace4dfc0c8350a3131916822234fa178eeb07b6a4",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "roughly six months after",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "the author had come to power.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "备忘录传递日期不是信件写作与作者上台的六个月关系，尤其U2/U3缺失。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A24_CAND1_r1",
+      "auditor_id": "A_A24_CAND1_r1",
+      "certificate_id": "A24_CAND1",
+      "replicate": 1,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "dfd373ac67dd257d7147d09740bf6b33a76d86e9be5b2983b6a5d8fd556ac8dd",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C1的King Michael of Romania绑定作者国家，C3提供信中收回地区陈述；引用子集足够。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A24_CAND2_r1",
+      "auditor_id": null,
+      "certificate_id": "A24_CAND2",
+      "replicate": 1,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "6e9b957583d86b3348b1faf472fa29540a28331eb048e604f0a9131e8c5d4a85",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "their country having regained a region.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C2/C3不明示Romania是作者国家。r1正确标U3，r2只引用C3并被Auditor放行。调用前已改为OPEN并预标歧义，未借用未提供C1。",
+      "precall_ambiguity": "AMBIGUOUS_REFERENCE: letter author-country shorthand versus explicit binding; primary OPEN. Previous experiment label is preserved separately, not edited.",
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A01_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A01_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "74311468f7310d3196131ee67fc54a95eaa6254bbe30fed82e0d18d2975c43e4",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "- Two people wrote it.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "教授身份不证明两人共同署名；U1缺口成立。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A02_CAND1_r2",
+      "auditor_id": "A_A02_CAND1_r2",
+      "certificate_id": "A02_CAND1",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "14b8a163258bfdaaa4ebf1638a2145f99b1dd06c67ab5c4e3c95cb01ea1ecde8",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C2明确给出同一论文的两位作者，满足局部署名条件。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A02_CAND2_r2",
+      "auditor_id": "A_A02_CAND2_r2",
+      "certificate_id": "A02_CAND2",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "14b8a163258bfdaaa4ebf1638a2145f99b1dd06c67ab5c4e3c95cb01ea1ecde8",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C2已足够；Auditor收到的实际子集只有C2，没有借用未引用C1。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A02_CAND3_r2",
+      "auditor_id": null,
+      "certificate_id": "A02_CAND3",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "c51ba4558f09ecf2df1672fb75e5ee471b2cddc1c441d9ca6ee7ac2f21966d25",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "- Two people wrote it.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "主题分类及表格内容不提供作者数量。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A03_CAND1_r2",
+      "auditor_id": "A_A03_CAND1_r2",
+      "certificate_id": "A03_CAND1",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "05167fbcbbddebcf3b376ff8056754442007a9d502662e2f86c96ba2fa5d93d2",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "实际引用C4+C5建立该论文表格与13.53%的关联。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A03_CAND2_r2",
+      "auditor_id": "A_A03_CAND2_r2",
+      "certificate_id": "A03_CAND2",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "05167fbcbbddebcf3b376ff8056754442007a9d502662e2f86c96ba2fa5d93d2",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C4为C5的that paper提供可见前项，表格、情绪、比例共同成立。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A03_CAND3_r2",
+      "auditor_id": "A_A03_CAND3_r2",
+      "certificate_id": "A03_CAND3",
+      "replicate": 2,
+      "category": "retained_false_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "e603deef65334dc21cc121e7002f934b932f7e510149e5f70c574e87db60e27c",
+      "asserted_support_has_frozen_sufficient_witness": false,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "孤立C5的that paper没有可见前项；按冻结绑定政策为OPEN。两次审计均未标缺口。已预标参考歧义：存在性表格读法会宽于该政策。",
+      "precall_ambiguity": "AMBIGUOUS_REFERENCE: strict antecedent binding versus existential reading of the singleton that-paper claim; primary OPEN.",
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A04_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A04_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "34e639b1ec8ebf3523f5f5ee03a87e0e91759069ea318f34d2904a06020d10b6",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "whose online video games division released a video game",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "in a specific year between 2000 and 2010, both years inclusive,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U5",
+          "text": "which, at least until 2019, was considered one of the top-earning games of all time,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U7",
+          "text": "founded between 1930 and 1970, both years inclusive.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "创办公司及毕业院校未覆盖游戏发行部门/年份、最高营收及大学创立年份。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A05_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A05_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "249e92c20f756492d1f12b4a0c8ba9e1bf1a20c1bf1f272541fe97f53a5b5cf8",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "This person and their spouse,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "who, up to 2019,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "had no children from the marriage,",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "创办公司和学位没有婚姻、2019时点、无子女证据。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A06_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A06_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "79b457acee108174c5175e72fc57dc28bc6d7981ae8d9daef5216d29b13233a8",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "As of 2019,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "this building",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "was part of a specific university.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "人取得大学学位不能替代建筑属于大学的关系及2019时点。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A07_CAND1_r2",
+      "auditor_id": "A_A07_CAND1_r2",
+      "certificate_id": "A07_CAND1",
+      "replicate": 2,
+      "category": "audit_introduced_false_open",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "b1f0188e209691499ae1e309c2d8290c096e33bda6583391e1c33030fb0884db",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "who, up to 2019,",
+          "assessment": "supported_under_frozen_reference"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C5明确说2019文章时已婚无子女；两次Verifier均接受，相同证据的Auditor r2却将U2时间框架列为缺口。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A07_CAND2_r2",
+      "auditor_id": null,
+      "certificate_id": "A07_CAND2",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "f87c4c6eb25b3d9315e983286597b77ce8260af0d6a6bf0c1333d68217345c7b",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "who, up to 2019,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "had no children from the marriage,",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "2025分居及两个孩子不建立2019婚姻无子女状态；不能从后来的状态倒推2019。r1额外标记U1，分居对曾有配偶有间接支持，但不解决目标时点。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A07_CAND3_r2",
+      "auditor_id": null,
+      "certificate_id": "A07_CAND3",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "37603e484fb653de23c90f47b405f91bd62cb3182882bce8e82d2d66d11c91d8",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U4",
+          "text": "made a foundational gift",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U5",
+          "text": "for the construction of a building",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U6",
+          "text": "that was part of a larger complex.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C5支持局部婚姻，未提供gift、建筑及complex；两次正确保留U4/U5/U6。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A08_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A08_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "8a8fc01d8652d0defb724255f14e7b3c20d69592954d7e1384b7043245bfd22b",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "As of 2019,",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "this building",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "was scheduled to open sometime between 2018 and 2021, both years inclusive, and",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "was part of a specific university.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "创办人、个人学位及婚姻均未建立建筑身份、开放计划或所属大学。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A09_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A09_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "ffad080db7e2728f03d395fab3f9af645e33fedd523a9441da4bba91d3b4c893",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "shares their first name with part of a charity’s name.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "艺人身份已给出，但没有慈善机构名字及共享名字关系。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A10_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A10_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "2b46c3c8df9f94536439719088e8de57cf14d0b1c37945c29d40dc4599f4d400",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "20 to 30 miles (inclusive) away",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "from the site of that country’s deadliest aviation accident (as of 2023).",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "死亡城市已给出，缺少航空事故地点/最严重条件及20–30英里距离关系。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A11_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A11_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "6ad54536413803817c0f6fb9f0ebe72398513b69a9bbfff6bd7b4a3bb35ea76d",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "A musical artist",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "shares their first name with part of a charity’s name.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "伴侣与悼念引语不支持艺人身份和慈善机构名字关系的完整目标。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A12_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A12_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "98add7abb6bd1600d65f8f8001ea6da3411c361e63e76762c2d71153670b1a67",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "under the guidance of an Iranian professor",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "加拿大PhD经历有证据，但没有伊朗导师及指导关系。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A13_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A13_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "b897bd07fd85c51262f76f08e1ee7ccfdc56b8c4b023c062815f05e125e59252",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "then published a journal article",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "six years after",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C1只建立book出版；后续article和六年关系U1/U3均缺失。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A14_CAND1_r2",
+      "auditor_id": "A_A14_CAND1_r2",
+      "certificate_id": "A14_CAND1",
+      "replicate": 2,
+      "category": "audit_introduced_false_open",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "abb6bc75b4fc2f18f8d6ade7ed48b2ecf12b1cc93c66f9b33ac494247098b04d",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "six years after",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C1+C3给出同作者book2016/article2022；冻结参考按出版年份接受。r1在Verifier、r2在Auditor均标U3六年间隔。精确到日的读法可产生争议，但JSON没有原因，不能确定内部解释。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A14_CAND2_r2",
+      "auditor_id": "A_A14_CAND2_r2",
+      "certificate_id": "A14_CAND2",
+      "replicate": 2,
+      "category": "audit_introduced_false_open",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "abb6bc75b4fc2f18f8d6ade7ed48b2ecf12b1cc93c66f9b33ac494247098b04d",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "six years after",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "与A14_CAND1实际payload相同，U3被两条调用链拒绝；此证书在调用前预标出版年份/日期精度歧义。",
+      "precall_ambiguity": "AMBIGUOUS_REFERENCE: calendar publication years versus exact elapsed days; primary SUPPORTED under the year-level convention.",
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A14_CAND3_r2",
+      "auditor_id": "A_A14_CAND3_r2",
+      "certificate_id": "A14_CAND3",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "7a9e4c675bb33deda07bc8313230be23c8d284642ee6e9f391a2617d0662dd47",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "同作者book与article的数学/Vipassana主题均可见，局部主题关系不要求兄弟六年条件。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A14_CAND4_r2",
+      "auditor_id": null,
+      "certificate_id": "A14_CAND4",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "bf588c82aa3132c7f6c528965da7f165461e4977530de4948aa9846ea0918bb2",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "then published a journal article",
+          "assessment": "extra_gap_despite_support_under_frozen_reference"
+        },
+        {
+          "unit_id": "U3",
+          "text": "six years after",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "publishing the book.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "只有article，缺book及六年比较U4/U3；r2还将已由C3明确给出的U1文章发表列为缺口，属正确OPEN中的额外错误缺口。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A15_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A15_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "e375a4e5de363136cb35aca155d217aa1b14252167b025d5fde1b65eaa936240",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "Additionally, it references",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "and a well-known figure",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U6",
+          "text": "in a central European country,",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "传记不能建立书籍引用Euler的U1关系；没有可见well-known或中欧地理分类，不能调用外部知识补足。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A16_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A16_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "3f90803317d64ddc63de199bc1b58f52b38fef6ea72ff76e6f57ab57399612a5",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "In this case, the individual",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U5",
+          "text": "presented with",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U6",
+          "text": "a half-year history of pain in different parts of their body,",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "一般SPS症状不能证明具体病例有半年的病史。引用一般症状仍不构成病例支持。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A17_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A17_CAND1",
+      "replicate": 2,
+      "category": "verifier_false_open",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "cf14f68964a1b4626adc2a81969e3faf5876ca1ded40d6d89677dae5c330e240",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C7覆盖病史及症状，唯一返回缺口U1=The first case。按冻结候选分支政策是假OPEN；字面序数/角色绑定并未单独表示，仍有语义契约限制。country/history未出现在输入。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A17_CAND2_r2",
+      "auditor_id": null,
+      "certificate_id": "A17_CAND2",
+      "replicate": 2,
+      "category": "verifier_false_open",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "1c05201cfcee382d4042323ddd5cb77c1130be914fbb1fb84952ecba6731140c",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "局部半年病史已有C7；唯一缺口是first-case角色U1，非country/history。冻结候选分支政策与字面身份要求须区分。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A17_CAND3_r2",
+      "auditor_id": null,
+      "certificate_id": "A17_CAND3",
+      "replicate": 2,
+      "category": "verifier_false_open",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "40c0157e70b9b09e7c48ba0bd8137bfefa16c5645ec2eb6c89b37261e06f0d99",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "walking/shoulder及加重已有C7；U6只作痛感前项的context，模型未将其列为额外目标。唯一缺口U1角色，按冻结政策是假OPEN。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A17_CAND4_r2",
+      "auditor_id": null,
+      "certificate_id": "A17_CAND4",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "f634567fbf8b84fe870c67ee227a801269df7b6c59b1b0e3402ab2f678f95994",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "that was the largest country of its dominant religion in the world at the time of its establishment.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [
+        "U2: patient nationality does not establish report country"
+      ],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "患者Pakistani国籍不建立报告地点国家及建国历史资格。r2未标U2报告国家缺口，属于正确OPEN但缺口列表不完整；U3仍实质未支持。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A17_CAND5_r2",
+      "auditor_id": null,
+      "certificate_id": "A17_CAND5",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "1276b275ea2e747e678d543b450bbd330a2b1d5f3dcda95527cf31c89ed6a643",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "The first case",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "In this case, the individual",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U5",
+          "text": "presented with",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U6",
+          "text": "a half-year history of pain in different parts of their body,",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "FOP分子机制和一般创伤风险不证明具体病例半年病史。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A18_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A18_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "9383cbbf78850e3c150f769fe28dbf295e457919f61a232ceea79cd79c2b5496",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U1",
+          "text": "A pack of downloadable content",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U2",
+          "text": "was released for",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "a strategy video game",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "over three years after its release.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "论文及导师背景没有DLC发行、策略类型和时间关系证据。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A19_CAND1_r2",
+      "auditor_id": "A_A19_CAND1_r2",
+      "certificate_id": "A19_CAND1",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "fd2c5a6b6acdbdaaadcb7527c62a86d9c911ef42ebc4a3d8363f59ef0a19fb85",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3+C5建立DLC/base-game与2016相对2013超过三年；两个2013日期版本均满足超过三年。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A19_CAND2_r2",
+      "auditor_id": "A_A19_CAND2_r2",
+      "certificate_id": "A19_CAND2",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "fd2c5a6b6acdbdaaadcb7527c62a86d9c911ef42ebc4a3d8363f59ef0a19fb85",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "与A19_CAND1实际payload相同；两出版/发行时点及DLC关系共同覆盖间隔。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A19_CAND3_r2",
+      "auditor_id": "A_A19_CAND3_r2",
+      "certificate_id": "A19_CAND3",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "8cb7608133c43852ac0f07ffdd8abf2810f967c50c29aef2663dbf9eb1d77e20",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3+C5共同覆盖DLC与策略游戏的关系，不需要兄弟三年间隔。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A19_CAND4_r2",
+      "auditor_id": null,
+      "certificate_id": "A19_CAND4",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "3ccf9e44c10a884e8ab765e896d36f2862fce181f1910e4c8f0ff8f0b776230c",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "a strategy video game",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "over three years after its release.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "只有DLC发行，不提供策略类型及base-game发行时间，U3/U4未支持。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND1_r2",
+      "auditor_id": "A_A20_CAND1_r2",
+      "certificate_id": "A20_CAND1",
+      "replicate": 2,
+      "category": "audit_introduced_false_open",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "20180052b55ae32d4c5daf40c5693c2789b0e3cae4f532f050f61e05a4d32e59",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "of the base game",
+          "assessment": "supported_under_frozen_reference"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3建立Rights of Man–EU4，C4给技术及宗教机制变化；冻结参考接受。相同引用子集Auditor r2把U3 base-game列为缺口，r1接受。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND2_r2",
+      "auditor_id": null,
+      "certificate_id": "A20_CAND2",
+      "replicate": 2,
+      "category": "verifier_false_open",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "e7e60ab3ee2c5aca58227762ee2405c44e2c60ba3eb8f99a8296ccf70cb58735",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "made changes to the mechanics",
+          "assessment": "supported_under_frozen_reference"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3+C6建立DLC/game及技术重做，冻结参考接受；两次Verifier却只标U2 mechanics-change。nation/religion兄弟条件没有进入输入。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND3_r2",
+      "auditor_id": "A_A20_CAND3_r2",
+      "certificate_id": "A20_CAND3",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "b5e1e15ec8eb8120fbc54c7ed43e5a51733a23f230a10ae8edc9eb33dafe0e44",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3+C4足够且实际另引用C6，机制及DLC/game绑定均有材料，审计两次接受。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND4_r2",
+      "auditor_id": "A_A20_CAND4_r2",
+      "certificate_id": "A20_CAND4",
+      "replicate": 2,
+      "category": "audit_introduced_false_open",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "6c52c879d55c19a672e487debb48d80624d7bd20f32eb0c1eb8ff203aad8ce8c",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "of the base game",
+          "assessment": "reference_policy_disagreement"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C3绑定DLC/game，C7给government/subjects改变，冻结参考接受一般mechanics。Auditor两次只标U3 base-game。参考已预标一般mechanics与列举子条件边界歧义。",
+      "precall_ambiguity": "AMBIGUOUS_REFERENCE: general mechanics predicate can be separated from enumerated particular changes; primary SUPPORTED under the task local-positive convention.",
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND5_r2",
+      "auditor_id": null,
+      "certificate_id": "A20_CAND5",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "46f2fde8d0abde776f94872592e80293f7a455c8e8dcb82f8cce544c78aa7b2f",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U8",
+          "text": "for a specific playable European nation.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "有机制变化但没有完整playable European nation资格；U8缺口成立。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A20_CAND6_r2",
+      "auditor_id": null,
+      "certificate_id": "A20_CAND6",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "e3ed151c6716cf0549e04d55517201b7c2b139da851b012caa5f0c80f075e5a0",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U3",
+          "text": "of the base game",
+          "assessment": "extra_gap_despite_support_under_frozen_reference"
+        },
+        {
+          "unit_id": "U8",
+          "text": "for a specific playable European nation.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "整个目标仍缺U8 qualified nation；r2另标U3，按冻结DLC/game关联政策这是额外错误缺口，OPEN本身正确。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A21_CAND1_r2",
+      "auditor_id": "A_A21_CAND1_r2",
+      "certificate_id": "A21_CAND1",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "ad39ffb9419dddc9d44352dec40cb2cb991de47349453231c33a1ea43fcb97e8",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C1+C2联合建立澳大利亚程序员、团队成员与冠军；叙述者I discovered仅为context，没有被要求另证。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A21_CAND2_r2",
+      "auditor_id": "A_A21_CAND2_r2",
+      "certificate_id": "A21_CAND2",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "163aae3290cd4ae6b61212c295d6488432c810b5117c7b9530daebdc07a90b30",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C1+C2明确建立nationality、成员与championship关系。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A21_CAND3_r2",
+      "auditor_id": null,
+      "certificate_id": "A21_CAND3",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "cecf5f7870e92d208960a02d55b31101185ee39ad07e04886e133ec058af9997",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "a team featuring",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U4",
+          "text": "won the championship.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "个人国籍和IOI奖牌未建立该团队及冠军成员关系，U2/U4缺失。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A22_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A22_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "31f6a511051890e3b8c88293d50c016f7bfdcce4c8737f0ee0a866dccc9e9b98",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "were from the same country.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C2给队友姓名但无两位队友同国证据；不能由姓名或Jerry国籍推断。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A23_CAND1_r2",
+      "auditor_id": null,
+      "certificate_id": "A23_CAND1",
+      "replicate": 2,
+      "category": "verifier_reject",
+      "reviewed_call": "verifier",
+      "content_packet_sha256": "5c36194833f52bdc68fbbdbace4dfc0c8350a3131916822234fa178eeb07b6a4",
+      "asserted_support_has_frozen_sufficient_witness": null,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [
+        {
+          "unit_id": "U2",
+          "text": "roughly six months after",
+          "assessment": "material_not_established"
+        },
+        {
+          "unit_id": "U3",
+          "text": "the author had come to power.",
+          "assessment": "material_not_established"
+        }
+      ],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "备忘录传递日期不是信件写作与作者上台的六个月关系，尤其U2/U3缺失。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A24_CAND1_r2",
+      "auditor_id": "A_A24_CAND1_r2",
+      "certificate_id": "A24_CAND1",
+      "replicate": 2,
+      "category": "retained_true_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "dfd373ac67dd257d7147d09740bf6b33a76d86e9be5b2983b6a5d8fd556ac8dd",
+      "asserted_support_has_frozen_sufficient_witness": true,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C1的King Michael of Romania绑定作者国家，C3提供信中收回地区陈述；引用子集足够。",
+      "precall_ambiguity": null,
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    },
+    {
+      "verifier_id": "V_A24_CAND2_r2",
+      "auditor_id": "A_A24_CAND2_r2",
+      "certificate_id": "A24_CAND2",
+      "replicate": 2,
+      "category": "retained_false_support",
+      "reviewed_call": "auditor",
+      "content_packet_sha256": "ca3c16d29510cbdc0c3c6025f5a628b1a6a940979ca79521766098c35b061504",
+      "asserted_support_has_frozen_sufficient_witness": false,
+      "all_reported_gap_ids_are_real_target_ids": true,
+      "reported_context_ids_as_target_gaps": [],
+      "unit_gap_review": [],
+      "gap_omission_observed": [],
+      "missing_gap_list_not_required_exhaustive_by_schema": true,
+      "material_reason": "C2/C3不明示Romania是作者国家。r1正确标U3，r2只引用C3并被Auditor放行。调用前已改为OPEN并预标歧义，未借用未提供C1。",
+      "precall_ambiguity": "AMBIGUOUS_REFERENCE: letter author-country shorthand versus explicit binding; primary OPEN. Previous experiment label is preserved separately, not edited.",
+      "semantic_context_expansion_evidence": "none identifiable from content; absence of evidence is not proof of internal reasoning",
+      "primary_gold_changed": false
+    }
+  ]
+}

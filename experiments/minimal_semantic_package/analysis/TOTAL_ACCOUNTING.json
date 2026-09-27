@@ -1,0 +1,53 @@
+{
+  "planned": 131,
+  "attempted_or_send_intent": 131,
+  "reported_partial_totals": {
+    "input": 63576,
+    "output": 172808,
+    "reasoning": 169315,
+    "total": 236384,
+    "hit": 27644,
+    "miss": 35932
+  },
+  "usage_complete_calls": 131,
+  "accounting_complete": true,
+  "cache_reporting_calls": 131,
+  "cache_weighted_rate": 0.4348181703787593,
+  "cache_consistent_with_input": true,
+  "zero_fill_means_only_reported_partial_sum": true,
+  "currency": null,
+  "sent_or_send_intent": 131,
+  "returned": 131,
+  "HTTP_errors": 0,
+  "schema_errors": 0,
+  "failures": {},
+  "latency_seconds": {
+    "median": 2.69770579226315,
+    "p95": 19.266206251457334,
+    "max": 49.21053449623287
+  },
+  "latency_scope": "attempted requests with measured duration, including failures; no total wall deadline",
+  "valid_outputs": 131,
+  "cache_hit_rate_reported_tokens": {
+    "numerator": 27644,
+    "denominator": 63576,
+    "value": 0.4348181703787593
+  },
+  "cache_rate_eligible_calls": 131,
+  "cache_rate_excluded_attempts": 0,
+  "cache_rate_definition": "sum hit / sum prompt tokens on calls with complete consistent input/hit/miss counters; excludes unknown usage, not a whole-run spending estimate",
+  "phase_active_wall_seconds": {
+    "verifier": 76.36050723679364,
+    "auditor": 62.44562401622534
+  },
+  "sum_active_batch_wall_seconds": 138.80613125301898,
+  "wall_scope": "sum of the two actual batch active durations; excludes preparation and time awaiting user approval",
+  "peak_concurrency": 8,
+  "actual_verifier_calls": 96,
+  "actual_auditor_calls": 35,
+  "E2_calls": 0,
+  "E3_calls": 0,
+  "E4_calls": 0,
+  "retrieval_calls": 0,
+  "retries": 0
+}

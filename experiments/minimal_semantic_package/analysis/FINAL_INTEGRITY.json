@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "meaning": "artifact and replay integrity, not research gate success",
+  "research_gate": "FAIL",
+  "checked_head": "d490e7cab66e4400005705d52606e9cad38ef500",
+  "historical_files_unchanged": 21632,
+  "frozen_file_counts": {
+    "e0_reference/BOUNDARY_FREEZE.json": 11,
+    "e0_reference/SUPPORT_FREEZE.json": 6,
+    "e1_gold_support/VERIFIER_FREEZE.json": 39,
+    "e1_gold_support/AUDITOR_FREEZE.json": 439
+  },
+  "phases": {
+    "verifier": {
+      "schedule": 96,
+      "all_raw_responses_reparsed": true,
+      "actual_requests_match_frozen_schedule": true,
+      "accounting_replay_identical": true,
+      "authorized": true,
+      "send_head": "d5763a5a93bb18fc258a8fb9e3bcc803d70074c3"
+    },
+    "auditor": {
+      "schedule": 35,
+      "all_raw_responses_reparsed": true,
+      "actual_requests_match_frozen_schedule": true,
+      "accounting_replay_identical": true,
+      "authorized": true,
+      "send_head": "7da3ba3d9747330f64af04d7a18bf03b6247109b"
+    }
+  },
+  "score_replay_identical": true,
+  "combined_accounting_replay_identical": true,
+  "content_review_coverage": {
+    "chains": 96,
+    "audited_chains": 35,
+    "verifier_open_chains": 61
+  },
+  "downstream_metrics_null": true,
+  "verification_provider_calls": 0,
+  "no_retry_or_repair": true,
+  "schema_valid_calls": 131,
+  "score_sha256": "3c38fe46577ed7c6390f7b7087719539b619414bfbf758f872e64abb438ecd1d",
+  "content_review_sha256": "f6e1c41122533e920a1c82c96ac37cb56b8d07c27dba5c70aa329b35e233ccaa"
+}
