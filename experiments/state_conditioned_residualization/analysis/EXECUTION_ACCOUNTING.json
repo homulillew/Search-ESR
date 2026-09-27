@@ -1,0 +1,188 @@
+{
+  "stages": {
+    "e1_residualization": {
+      "planned": 114,
+      "attempted_or_send_intent": 114,
+      "reported_partial_totals": {
+        "input": 89380,
+        "output": 164768,
+        "reasoning": 157149,
+        "total": 254148,
+        "hit": 63611,
+        "miss": 25769
+      },
+      "usage_complete_calls": 114,
+      "accounting_complete": true,
+      "cache_reporting_calls": 114,
+      "cache_weighted_rate": 0.7116916536137838,
+      "cache_consistent_with_input": true,
+      "zero_fill_means_only_reported_partial_sum": true,
+      "currency": null,
+      "sent_or_send_intent": 114,
+      "returned": 114,
+      "HTTP_errors": 0,
+      "schema_errors": 3,
+      "failures": {
+        "output_contract": 3
+      },
+      "latency_seconds": {
+        "median": 5.693232242017984,
+        "p95": 19.43175980821252,
+        "max": 62.43797938898206
+      },
+      "latency_scope": "attempted requests with measured duration, including failures; no total wall deadline",
+      "valid_outputs": 111,
+      "wall_seconds": 169.71207115985453,
+      "peak_concurrency": 8,
+      "harness_error": null
+    },
+    "e2_bootstrap": {
+      "planned": 22,
+      "attempted_or_send_intent": 20,
+      "reported_partial_totals": {
+        "input": 8015,
+        "output": 21976,
+        "reasoning": 21462,
+        "total": 29991,
+        "hit": 2048,
+        "miss": 5967
+      },
+      "usage_complete_calls": 20,
+      "accounting_complete": true,
+      "cache_reporting_calls": 20,
+      "cache_weighted_rate": 0.25552089831565816,
+      "cache_consistent_with_input": true,
+      "zero_fill_means_only_reported_partial_sum": true,
+      "currency": null,
+      "sent_or_send_intent": 20,
+      "returned": 20,
+      "HTTP_errors": 0,
+      "schema_errors": 1,
+      "failures": {
+        "invalid_E1_R0_replicate1": 1,
+        "invalid_json": 1,
+        "nonprobe_E1_R0_replicate1": 1
+      },
+      "latency_seconds": {
+        "median": 3.604322743602097,
+        "p95": 21.43156487867236,
+        "max": 30.341133907437325
+      },
+      "latency_scope": "attempted requests with measured duration, including failures; no total wall deadline",
+      "valid_outputs": 19,
+      "wall_seconds": 33.70456023514271,
+      "peak_concurrency": 8
+    },
+    "e2b_escalation/probe_generation": {
+      "planned": 2,
+      "attempted_or_send_intent": 2,
+      "reported_partial_totals": {
+        "input": 1121,
+        "output": 2842,
+        "reasoning": 2723,
+        "total": 3963,
+        "hit": 0,
+        "miss": 1121
+      },
+      "usage_complete_calls": 2,
+      "accounting_complete": true,
+      "cache_reporting_calls": 2,
+      "cache_weighted_rate": 0.0,
+      "cache_consistent_with_input": true,
+      "zero_fill_means_only_reported_partial_sum": true,
+      "currency": null,
+      "sent_or_send_intent": 2,
+      "returned": 2,
+      "HTTP_errors": 0,
+      "schema_errors": 0,
+      "failures": {},
+      "latency_seconds": {
+        "median": 7.997981579974294,
+        "p95": 9.222047774121165,
+        "max": 9.222047774121165
+      },
+      "latency_scope": "attempted requests with measured duration, including failures; no total wall deadline",
+      "valid_outputs": 2,
+      "wall_seconds": 9.275455432012677,
+      "peak_concurrency": 2
+    },
+    "e2b_escalation": {
+      "planned": 2,
+      "attempted_or_send_intent": 2,
+      "reported_partial_totals": {
+        "input": 783,
+        "output": 1062,
+        "reasoning": 1010,
+        "total": 1845,
+        "hit": 384,
+        "miss": 399
+      },
+      "usage_complete_calls": 2,
+      "accounting_complete": true,
+      "cache_reporting_calls": 2,
+      "cache_weighted_rate": 0.4904214559386973,
+      "cache_consistent_with_input": true,
+      "zero_fill_means_only_reported_partial_sum": true,
+      "currency": null,
+      "sent_or_send_intent": 2,
+      "returned": 2,
+      "HTTP_errors": 0,
+      "schema_errors": 0,
+      "failures": {},
+      "latency_seconds": {
+        "median": 3.0649821711704135,
+        "p95": 3.8485770225524902,
+        "max": 3.8485770225524902
+      },
+      "latency_scope": "attempted requests with measured duration, including failures; no total wall deadline",
+      "valid_outputs": 2,
+      "wall_seconds": 3.9018226228654385,
+      "peak_concurrency": 2
+    }
+  },
+  "combined": {
+    "planned": 140,
+    "attempted_or_send_intent": 138,
+    "reported_partial_totals": {
+      "input": 99299,
+      "output": 190648,
+      "reasoning": 182344,
+      "total": 289947,
+      "hit": 66043,
+      "miss": 33256
+    },
+    "usage_complete_calls": 138,
+    "accounting_complete": true,
+    "cache_reporting_calls": 138,
+    "cache_weighted_rate": 0.6650922970019839,
+    "cache_consistent_with_input": true,
+    "zero_fill_means_only_reported_partial_sum": true,
+    "currency": null,
+    "sent_or_send_intent": 138,
+    "returned": 138,
+    "HTTP_errors": 0,
+    "schema_errors": 4,
+    "failures": {
+      "invalid_E1_R0_replicate1": 1,
+      "invalid_json": 1,
+      "nonprobe_E1_R0_replicate1": 1,
+      "output_contract": 3
+    },
+    "latency_seconds": {
+      "median": 5.308364116586745,
+      "p95": 21.074662616476417,
+      "max": 62.43797938898206
+    },
+    "latency_scope": "attempted requests with measured duration, including failures; no total wall deadline",
+    "valid_outputs": 134
+  },
+  "primary_searches": 21,
+  "oracle_searches": 2,
+  "oracle_known_document_previews": 2,
+  "find_open_calls": 0,
+  "writer_calls": 0,
+  "model_calls": 138,
+  "max_retries": 0,
+  "reasoning_included_in_completion": true,
+  "currency_cost": "Unavailable; no guessed price or double-counted reasoning tokens."
+}
