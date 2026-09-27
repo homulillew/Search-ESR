@@ -1,0 +1,53 @@
+{
+  "id": "R2__G01__R2",
+  "stage": "e1_residualization",
+  "case_id": "G01",
+  "state_id": "F07_S00",
+  "qid": "261",
+  "arm": "R2",
+  "replicate": 2,
+  "request_sha256": "27eb740a2bce57fad6e9f67e9825bc0d3a02065433fb2a5bcc6a8712c760ef10",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R2",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Establish whether the target research paper was written by exactly two authors."
+  },
+  "usage": {
+    "prompt_tokens": 734,
+    "completion_tokens": 1730,
+    "total_tokens": 2464,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1690
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 222
+  },
+  "started_utc": "2026-09-27T11:57:42.023862+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 8.40305938012898,
+  "completed_utc": "2026-09-27T11:57:50.426939+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 734,
+      "output": 1730,
+      "total": 2464,
+      "reasoning": 1690,
+      "hit": 512,
+      "miss": 222
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

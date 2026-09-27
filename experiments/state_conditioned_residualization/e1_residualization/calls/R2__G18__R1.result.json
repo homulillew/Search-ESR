@@ -1,0 +1,55 @@
+{
+  "id": "R2__G18__R1",
+  "stage": "e1_residualization",
+  "case_id": "G18",
+  "state_id": "F13_S06",
+  "qid": "637",
+  "arm": "R2",
+  "replicate": 1,
+  "request_sha256": "9f48a89d51f3f4b8f66cce6f2bf2e5c8646fa584316243fc0f9e34f5fc467448",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R3",
+    "mode": "residual",
+    "used_claims": [
+      "C7"
+    ],
+    "local_residual": "Establish whether the country in which the first case was reported was the largest country of its dominant religion in the world at the time of its establishment."
+  },
+  "usage": {
+    "prompt_tokens": 917,
+    "completion_tokens": 1690,
+    "total_tokens": 2607,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1626
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 149
+  },
+  "started_utc": "2026-09-27T11:57:20.060916+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 8.937798576429486,
+  "completed_utc": "2026-09-27T11:57:28.998735+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 917,
+      "output": 1690,
+      "total": 2607,
+      "reasoning": 1626,
+      "hit": 768,
+      "miss": 149
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

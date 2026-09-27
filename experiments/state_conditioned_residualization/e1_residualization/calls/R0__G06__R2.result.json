@@ -1,0 +1,56 @@
+{
+  "id": "R0__G06__R2",
+  "stage": "e1_residualization",
+  "case_id": "G06",
+  "state_id": "F08_S03",
+  "qid": "228",
+  "arm": "R0",
+  "replicate": 2,
+  "request_sha256": "5dad6185a873615b4cc6d00d4eeab94fc24f912c4730e4122203f7b9f7d1abef",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R2",
+    "mode": "residual",
+    "used_claims": [
+      "C4",
+      "C5"
+    ],
+    "local_residual": "Whether Ding Lei and his spouse made a foundational gift for the construction of a building that was part of a larger complex."
+  },
+  "usage": {
+    "prompt_tokens": 988,
+    "completion_tokens": 1157,
+    "total_tokens": 2145,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1100
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 604
+  },
+  "started_utc": "2026-09-27T11:57:00.679226+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 6.162800511345267,
+  "completed_utc": "2026-09-27T11:57:06.842048+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 988,
+      "output": 1157,
+      "total": 2145,
+      "reasoning": 1100,
+      "hit": 384,
+      "miss": 604
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

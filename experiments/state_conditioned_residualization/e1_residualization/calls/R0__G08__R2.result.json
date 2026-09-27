@@ -1,0 +1,55 @@
+{
+  "id": "R0__G08__R2",
+  "stage": "e1_residualization",
+  "case_id": "G08",
+  "state_id": "F09_S01",
+  "qid": "169",
+  "arm": "R0",
+  "replicate": 2,
+  "request_sha256": "fc71480329a3f3fba99fd0a59eab33d359f4896bbcdaddd73f85475250eb496f",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R3",
+    "mode": "residual",
+    "used_claims": [
+      "C1"
+    ],
+    "local_residual": "Whether a partner of the artist at the time of the artist's death gave an interview in which the partner said that, following the artist's death, the artist has become a direct reference to one of the artist's songs."
+  },
+  "usage": {
+    "prompt_tokens": 811,
+    "completion_tokens": 1104,
+    "total_tokens": 1915,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1029
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 171
+  },
+  "started_utc": "2026-09-27T11:57:34.521299+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 6.070318441838026,
+  "completed_utc": "2026-09-27T11:57:40.591639+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 811,
+      "output": 1104,
+      "total": 1915,
+      "reasoning": 1029,
+      "hit": 640,
+      "miss": 171
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "R0__G09__R2",
+  "stage": "e1_residualization",
+  "case_id": "G09",
+  "state_id": "F09_S03",
+  "qid": "169",
+  "arm": "R0",
+  "replicate": 2,
+  "request_sha256": "b926810d11ade2bfb55a39abf1e1a420dfab433f998352bc7e6257eba087ae21",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R3",
+    "mode": "residual",
+    "used_claims": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "local_residual": "Establish whether Evita Manji, as Sophie's partner at the time of Sophie's death, gave an interview in which she stated that after Sophie's death, Sophie has become a direct reference to one of Sophie's songs."
+  },
+  "usage": {
+    "prompt_tokens": 887,
+    "completion_tokens": 1927,
+    "total_tokens": 2814,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1839
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 247
+  },
+  "started_utc": "2026-09-27T11:57:05.234459+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 10.038814771920443,
+  "completed_utc": "2026-09-27T11:57:15.273294+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 887,
+      "output": 1927,
+      "total": 2814,
+      "reasoning": 1839,
+      "hit": 640,
+      "miss": 247
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

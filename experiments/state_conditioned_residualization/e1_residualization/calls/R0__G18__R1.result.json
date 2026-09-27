@@ -1,0 +1,55 @@
+{
+  "id": "R0__G18__R1",
+  "stage": "e1_residualization",
+  "case_id": "G18",
+  "state_id": "F13_S06",
+  "qid": "637",
+  "arm": "R0",
+  "replicate": 1,
+  "request_sha256": "6864d9d69ebe16f3bf80bacb474ddc8c829c9cb37cf9896f6e9b217c8c976d4e",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R3",
+    "mode": "residual",
+    "used_claims": [
+      "C7"
+    ],
+    "local_residual": "Establish that the first case (the case with the 6-month history of pain, gradual worsening, and difficulty walking/moving shoulders) was reported in a country that was the largest country of its dominant religion in the world at the time of its establishment."
+  },
+  "usage": {
+    "prompt_tokens": 1477,
+    "completion_tokens": 2876,
+    "total_tokens": 4353,
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2790
+    },
+    "prompt_cache_hit_tokens": 896,
+    "prompt_cache_miss_tokens": 581
+  },
+  "started_utc": "2026-09-27T11:57:44.536892+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 13.258040703833103,
+  "completed_utc": "2026-09-27T11:57:57.794957+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1477,
+      "output": 2876,
+      "total": 4353,
+      "reasoning": 2790,
+      "hit": 896,
+      "miss": 581
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

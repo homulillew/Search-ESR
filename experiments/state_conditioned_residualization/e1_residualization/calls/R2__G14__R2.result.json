@@ -1,0 +1,55 @@
+{
+  "id": "R2__G14__R2",
+  "stage": "e1_residualization",
+  "case_id": "G14",
+  "state_id": "F11_S01",
+  "qid": "538",
+  "arm": "R2",
+  "replicate": 2,
+  "request_sha256": "7294c7797bc14578c812acb4a9c9b2c99686ac827efc672e5d4f4479bc000fec",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R4",
+    "mode": "residual",
+    "used_claims": [
+      "C1"
+    ],
+    "local_residual": "Establish that the book references the well-known figure with initials L. E. born in the early 1700s in a central European country (identified by C1 as Leonhard Euler, born 15 April 1707 in Basel, Swiss Confederacy)."
+  },
+  "usage": {
+    "prompt_tokens": 791,
+    "completion_tokens": 16000,
+    "total_tokens": 16791,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 15913
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 151
+  },
+  "started_utc": "2026-09-27T11:58:21.502358+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 62.43797938898206,
+  "completed_utc": "2026-09-27T11:59:23.940360+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 791,
+      "output": 16000,
+      "total": 16791,
+      "reasoning": 15913,
+      "hit": 640,
+      "miss": 151
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

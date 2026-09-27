@@ -1,0 +1,53 @@
+{
+  "id": "R1__G26__R2",
+  "stage": "e1_residualization",
+  "case_id": "G26",
+  "state_id": "F16_S01",
+  "qid": "922",
+  "arm": "R1",
+  "replicate": 2,
+  "request_sha256": "766b68249321fd4b1bca9c7c9bfbd685ee5af508fe84eb7729757d9e4da3bdf2",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R2",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Establish the temporal relation between the letter's writing and the author's coming to power, specifically whether the letter was written approximately six months after the author assumed power."
+  },
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 314,
+    "total_tokens": 966,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 245
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 140
+  },
+  "started_utc": "2026-09-27T11:57:16.179821+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 2.324461665004492,
+  "completed_utc": "2026-09-27T11:57:18.504301+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 652,
+      "output": 314,
+      "total": 966,
+      "reasoning": 245,
+      "hit": 512,
+      "miss": 140
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

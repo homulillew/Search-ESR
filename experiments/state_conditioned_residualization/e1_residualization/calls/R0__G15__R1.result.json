@@ -1,0 +1,53 @@
+{
+  "id": "R0__G15__R1",
+  "stage": "e1_residualization",
+  "case_id": "G15",
+  "state_id": "F12_S00",
+  "qid": "122",
+  "arm": "R0",
+  "replicate": 1,
+  "request_sha256": "fa7db66efcc0a0705a36a6558dd7c2f387a5a4cefe745fed5d0c72824a3b834b",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R2",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Establish the demographic condition on the target person's birthplace: that the place of birth is reported by an official website of the country in which it is located to have had a population increase of 5.88% between 2010 and 2020."
+  },
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 1124,
+    "total_tokens": 1833,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1041
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 197
+  },
+  "started_utc": "2026-09-27T11:58:24.823130+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 5.767681008204818,
+  "completed_utc": "2026-09-27T11:58:30.590830+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 709,
+      "output": 1124,
+      "total": 1833,
+      "reasoning": 1041,
+      "hit": 512,
+      "miss": 197
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

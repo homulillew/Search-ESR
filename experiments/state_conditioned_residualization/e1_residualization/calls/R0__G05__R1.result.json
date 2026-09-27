@@ -1,0 +1,53 @@
+{
+  "id": "R0__G05__R1",
+  "stage": "e1_residualization",
+  "case_id": "G05",
+  "state_id": "F08_S01",
+  "qid": "228",
+  "arm": "R0",
+  "replicate": 1,
+  "request_sha256": "366572a0be223305b729276c45b85d8b8c0dbb2ad9c7df793303680d04f1922d",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R2",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Identify the spouse of the person referenced in R2 and establish whether, up to 2019, that spouse had no children from the marriage."
+  },
+  "usage": {
+    "prompt_tokens": 838,
+    "completion_tokens": 4672,
+    "total_tokens": 5510,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4616
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 198
+  },
+  "started_utc": "2026-09-27T11:57:57.795389+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 23.70648532360792,
+  "completed_utc": "2026-09-27T11:58:21.501893+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 838,
+      "output": 4672,
+      "total": 5510,
+      "reasoning": 4616,
+      "hit": 640,
+      "miss": 198
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

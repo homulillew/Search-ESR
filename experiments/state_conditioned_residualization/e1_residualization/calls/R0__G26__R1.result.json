@@ -1,0 +1,55 @@
+{
+  "id": "R0__G26__R1",
+  "stage": "e1_residualization",
+  "case_id": "G26",
+  "state_id": "F16_S01",
+  "qid": "922",
+  "arm": "R0",
+  "replicate": 1,
+  "request_sha256": "62f3f9aef1f872d2f20bef10a379aea8df383ee9627dd0f573be626ea1d9c757",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R2",
+    "mode": "residual",
+    "used_claims": [
+      "C1"
+    ],
+    "local_residual": "Establish the date when the author of the letter, identified in C1 as King Michael of Romania, came to power, so that it can be assessed against the requirement that the letter was written roughly six months after that accession."
+  },
+  "usage": {
+    "prompt_tokens": 760,
+    "completion_tokens": 3496,
+    "total_tokens": 4256,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3421
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 376
+  },
+  "started_utc": "2026-09-27T11:56:55.405264+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 17.862840108573437,
+  "completed_utc": "2026-09-27T11:57:13.268141+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 760,
+      "output": 3496,
+      "total": 4256,
+      "reasoning": 3421,
+      "hit": 384,
+      "miss": 376
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "R0__G11__R1",
+  "stage": "e1_residualization",
+  "case_id": "G11",
+  "state_id": "F10_S01",
+  "qid": "971",
+  "arm": "R0",
+  "replicate": 1,
+  "request_sha256": "4507098dcfd084c4ce502b7bd78eba282a890073115d190839edc9ec57610262",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R5",
+    "mode": "residual",
+    "used_claims": [
+      "C1"
+    ],
+    "local_residual": "Establish whether Alka Marwaha, the author of The Secret World of Vipassana and Mathematics, published a journal article on a topic similar to that book six years after the book's publication (i.e., around 2022), without yet fixing the article's title."
+  },
+  "usage": {
+    "prompt_tokens": 824,
+    "completion_tokens": 1144,
+    "total_tokens": 1968,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1052
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 440
+  },
+  "started_utc": "2026-09-27T11:56:55.403487+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 5.95144409686327,
+  "completed_utc": "2026-09-27T11:57:01.354961+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 824,
+      "output": 1144,
+      "total": 1968,
+      "reasoning": 1052,
+      "hit": 384,
+      "miss": 440
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

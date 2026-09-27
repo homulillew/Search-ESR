@@ -1,0 +1,53 @@
+{
+  "id": "R0__G13__R1",
+  "stage": "e1_residualization",
+  "case_id": "G13",
+  "state_id": "F11_S00",
+  "qid": "538",
+  "arm": "R0",
+  "replicate": 1,
+  "request_sha256": "45e0830ee41e2ab122c62018e8bda4982453758aebea84520ed74acd16a257f7",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R2",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Establish whether the book in question contains between 130 and 140 illustrations."
+  },
+  "usage": {
+    "prompt_tokens": 708,
+    "completion_tokens": 511,
+    "total_tokens": 1219,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 464
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 196
+  },
+  "started_utc": "2026-09-27T11:57:13.268636+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 2.9107067603617907,
+  "completed_utc": "2026-09-27T11:57:16.179362+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 708,
+      "output": 511,
+      "total": 1219,
+      "reasoning": 464,
+      "hit": 512,
+      "miss": 196
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

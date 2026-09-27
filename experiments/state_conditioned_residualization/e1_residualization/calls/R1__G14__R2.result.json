@@ -1,0 +1,53 @@
+{
+  "id": "R1__G14__R2",
+  "stage": "e1_residualization",
+  "case_id": "G14",
+  "state_id": "F11_S01",
+  "qid": "538",
+  "arm": "R1",
+  "replicate": 2,
+  "request_sha256": "3a13b9f6757abfb718a8d03d7cf5d935cee19b857908ba9a88ec8b6ffa5ecd23",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R4",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Verify that the target book references a mechanical engineer born in the early 1800s."
+  },
+  "usage": {
+    "prompt_tokens": 737,
+    "completion_tokens": 888,
+    "total_tokens": 1625,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 843
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 225
+  },
+  "started_utc": "2026-09-27T11:57:09.148398+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 4.436054831370711,
+  "completed_utc": "2026-09-27T11:57:13.584475+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 737,
+      "output": 888,
+      "total": 1625,
+      "reasoning": 843,
+      "hit": 512,
+      "miss": 225
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

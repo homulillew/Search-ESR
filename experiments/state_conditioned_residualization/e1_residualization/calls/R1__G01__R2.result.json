@@ -1,0 +1,54 @@
+{
+  "id": "R1__G01__R2",
+  "stage": "e1_residualization",
+  "case_id": "G01",
+  "state_id": "F07_S00",
+  "qid": "261",
+  "arm": "R1",
+  "replicate": 2,
+  "request_sha256": "d56e53367a22f9cf5df5e30a36f6f9fbdaeea72fbcaa43d186f210214dcbb8b7",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": false,
+  "output": {
+    "type": "json_object",
+    "parent_requirement_id": "R2",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Establish whether one of the authors of the target research paper also authored another research paper published in the Journal of Baltic Science Education between 2016 and 2023."
+  },
+  "usage": {
+    "prompt_tokens": 717,
+    "completion_tokens": 1341,
+    "total_tokens": 2058,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1269
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 205
+  },
+  "started_utc": "2026-09-27T11:57:13.585009+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": "output_contract",
+  "elapsed_seconds": 6.475406505167484,
+  "completed_utc": "2026-09-27T11:57:20.060439+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 717,
+      "output": 1341,
+      "total": 2058,
+      "reasoning": 1269,
+      "hit": 512,
+      "miss": 205
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

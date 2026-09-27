@@ -1,0 +1,53 @@
+{
+  "id": "R1__G07__R2",
+  "stage": "e1_residualization",
+  "case_id": "G07",
+  "state_id": "F09_S00",
+  "qid": "169",
+  "arm": "R1",
+  "replicate": 2,
+  "request_sha256": "30c88e754a053e5e5c4ac95d51cb4f1e0363a45f7fdb73d6e83e8fd264d99ecc",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R2",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Identify the deadliest aviation accident in the relevant country as of 2023, and establish the site/location of that accident, so that the distance condition in the Parent Requirement can later be evaluated."
+  },
+  "usage": {
+    "prompt_tokens": 780,
+    "completion_tokens": 1094,
+    "total_tokens": 1874,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1022
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 396
+  },
+  "started_utc": "2026-09-27T11:56:55.402854+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 6.116428356617689,
+  "completed_utc": "2026-09-27T11:57:01.519322+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 780,
+      "output": 1094,
+      "total": 1874,
+      "reasoning": 1022,
+      "hit": 384,
+      "miss": 396
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

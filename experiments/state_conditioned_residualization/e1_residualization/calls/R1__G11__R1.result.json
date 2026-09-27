@@ -1,0 +1,53 @@
+{
+  "id": "R1__G11__R1",
+  "stage": "e1_residualization",
+  "case_id": "G11",
+  "state_id": "F10_S01",
+  "qid": "971",
+  "arm": "R1",
+  "replicate": 1,
+  "request_sha256": "daf9c51a95abb161bf5ed1137809d2ea21a61003b7d0586d789bbc33a5e53aac",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R5",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Identify the journal article that the relevant author published six years after their book, where the article is on a topic similar to the book."
+  },
+  "usage": {
+    "prompt_tokens": 696,
+    "completion_tokens": 506,
+    "total_tokens": 1202,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 447
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 184
+  },
+  "started_utc": "2026-09-27T11:57:13.555274+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 2.953958922997117,
+  "completed_utc": "2026-09-27T11:57:16.509251+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 696,
+      "output": 506,
+      "total": 1202,
+      "reasoning": 447,
+      "hit": 512,
+      "miss": 184
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

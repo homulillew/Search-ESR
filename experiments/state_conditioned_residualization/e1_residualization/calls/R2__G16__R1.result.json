@@ -1,0 +1,53 @@
+{
+  "id": "R2__G16__R1",
+  "stage": "e1_residualization",
+  "case_id": "G16",
+  "state_id": "F13_S00",
+  "qid": "637",
+  "arm": "R2",
+  "replicate": 1,
+  "request_sha256": "b61bb3da42b5d74989e4a4350cc3f35c4e1f8a2154b9d549255b2cf45ee6bd2d",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R3",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Establish the initial clinical presentation of the first reported case, specifically whether the individual had a half-year history of pain in different parts of the body that gradually worsened and caused difficulty in walking and moving their shoulders."
+  },
+  "usage": {
+    "prompt_tokens": 826,
+    "completion_tokens": 983,
+    "total_tokens": 1809,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 910
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 442
+  },
+  "started_utc": "2026-09-27T11:56:55.407611+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 5.271057017147541,
+  "completed_utc": "2026-09-27T11:57:00.678705+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 826,
+      "output": 983,
+      "total": 1809,
+      "reasoning": 910,
+      "hit": 384,
+      "miss": 442
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

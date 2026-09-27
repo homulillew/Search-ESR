@@ -1,0 +1,54 @@
+{
+  "id": "R2__G10__R2",
+  "stage": "e1_residualization",
+  "case_id": "G10",
+  "state_id": "F10_S00",
+  "qid": "971",
+  "arm": "R2",
+  "replicate": 2,
+  "request_sha256": "cccca3fb28b77fcf5fa4fba44d4ea7a537f70fc2d43d792c67dff8674485a096",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": false,
+  "output": {
+    "type": "json_object",
+    "parent_requirement_id": "R1",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Establish whether there is an Indian author who was promoted from associate professor to professor in 2022."
+  },
+  "usage": {
+    "prompt_tokens": 727,
+    "completion_tokens": 1013,
+    "total_tokens": 1740,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 961
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 215
+  },
+  "started_utc": "2026-09-27T11:57:45.541270+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": "output_contract",
+  "elapsed_seconds": 5.3792396150529385,
+  "completed_utc": "2026-09-27T11:57:50.920533+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 727,
+      "output": 1013,
+      "total": 1740,
+      "reasoning": 961,
+      "hit": 512,
+      "miss": 215
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

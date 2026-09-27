@@ -1,0 +1,53 @@
+{
+  "id": "R1__G15__R1",
+  "stage": "e1_residualization",
+  "case_id": "G15",
+  "state_id": "F12_S00",
+  "qid": "122",
+  "arm": "R1",
+  "replicate": 1,
+  "request_sha256": "fa7db66efcc0a0705a36a6558dd7c2f387a5a4cefe745fed5d0c72824a3b834b",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R2",
+    "mode": "probe",
+    "used_claims": [],
+    "local_residual": "Identify a place whose population increased by 5.88% between 2010 and 2020 according to an official website of the country in which the place is located, as the birthplace condition specified for the target person."
+  },
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 781,
+    "total_tokens": 1490,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 704
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 197
+  },
+  "started_utc": "2026-09-27T11:57:34.618566+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 4.177382098510861,
+  "completed_utc": "2026-09-27T11:57:38.795970+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 709,
+      "output": 781,
+      "total": 1490,
+      "reasoning": 704,
+      "hit": 512,
+      "miss": 197
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

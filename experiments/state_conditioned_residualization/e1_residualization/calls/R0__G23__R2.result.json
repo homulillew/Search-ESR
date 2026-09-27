@@ -1,0 +1,56 @@
+{
+  "id": "R0__G23__R2",
+  "stage": "e1_residualization",
+  "case_id": "G23",
+  "state_id": "F15_S01",
+  "qid": "1259",
+  "arm": "R0",
+  "replicate": 2,
+  "request_sha256": "328a9889907f16c3f85584c859293a23fd2ea8a78d2ba2bf0786830026254d45",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R4",
+    "mode": "residual",
+    "used_claims": [
+      "C1",
+      "C2"
+    ],
+    "local_residual": "Whether Jerry Mao's other two teammates on MIT ZEROONE, Mingyang Deng and Xiao Mao, were from the same country (and whether that country is Australia, as Jerry Mao is Australian)."
+  },
+  "usage": {
+    "prompt_tokens": 813,
+    "completion_tokens": 1129,
+    "total_tokens": 1942,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1051
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 173
+  },
+  "started_utc": "2026-09-27T11:58:08.535922+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 6.339126750826836,
+  "completed_utc": "2026-09-27T11:58:14.875069+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 813,
+      "output": 1129,
+      "total": 1942,
+      "reasoning": 1051,
+      "hit": 640,
+      "miss": 173
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

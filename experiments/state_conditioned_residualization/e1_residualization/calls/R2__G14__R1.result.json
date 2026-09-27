@@ -1,0 +1,55 @@
+{
+  "id": "R2__G14__R1",
+  "stage": "e1_residualization",
+  "case_id": "G14",
+  "state_id": "F11_S01",
+  "qid": "538",
+  "arm": "R2",
+  "replicate": 1,
+  "request_sha256": "7294c7797bc14578c812acb4a9c9b2c99686ac827efc672e5d4f4479bc000fec",
+  "head": "e1db2dcde4a2fb8d41122c2f6a1f049d4e61b075",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "parent_requirement_id": "R4",
+    "mode": "residual",
+    "used_claims": [
+      "C1"
+    ],
+    "local_residual": "Establish the identity of the mechanical engineer born in the early 1800s who is referenced by the book, preserving that the engineer is referenced by the book."
+  },
+  "usage": {
+    "prompt_tokens": 791,
+    "completion_tokens": 619,
+    "total_tokens": 1410,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 552
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 151
+  },
+  "started_utc": "2026-09-27T11:58:03.131540+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 3.169287536293268,
+  "completed_utc": "2026-09-27T11:58:06.300847+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 791,
+      "output": 619,
+      "total": 1410,
+      "reasoning": 552,
+      "hit": 640,
+      "miss": 151
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}
