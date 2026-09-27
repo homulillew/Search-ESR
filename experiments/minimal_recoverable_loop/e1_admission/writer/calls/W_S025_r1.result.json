@@ -1,0 +1,100 @@
+{
+  "id": "W_S025_r1",
+  "phase": "writer",
+  "qid": "177",
+  "source_id": "S025",
+  "replicate": 1,
+  "request_sha256": "a0a1187bf949e44323bedeb7616b4072ec5d4db0b414dd85110d86e21dbdc8c8",
+  "head": "271edf62174657656c79e2178d134ebe1f626632",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "candidate_claims": [
+      {
+        "statement": "The table is for the Nigeria Professional Football League 2014.",
+        "source_id": "S025",
+        "supporting_excerpt": "Table Nigeria Professional Football League 2014"
+      },
+      {
+        "statement": "In the Nigeria Professional Football League 2014 table, the row for Lobi Stars contains the values: 6, 38, 19, 2, 17, 40:46, -6, 59.",
+        "source_id": "S025",
+        "supporting_excerpt": "| 6 | Lobi Stars | 38 | 19 | 2 | 17 | 40:46 | -6 | 59 |"
+      },
+      {
+        "statement": "In the Nigeria Professional Football League 2014 table, the row for Abia Warriors contains the values: 7, 38, 17, 7, 14, 51:40, 11, 58.",
+        "source_id": "S025",
+        "supporting_excerpt": "| 7 | Abia Warriors | 38 | 17 | 7 | 14 | 51:40 | 11 | 58 |"
+      },
+      {
+        "statement": "In the Nigeria Professional Football League 2014 table, the row for Enugu Rangers contains the values: 8, 38, 17, 7, 14, 45:37, 8, 58.",
+        "source_id": "S025",
+        "supporting_excerpt": "| 8 | Enugu Rangers | 38 | 17 | 7 | 14 | 45:37 | 8 | 58 |"
+      },
+      {
+        "statement": "In the Nigeria Professional Football League 2014 table, the row for Dolphin FC contains the values: 9, 38, 15, 10, 13, 45:34, 11, 55.",
+        "source_id": "S025",
+        "supporting_excerpt": "| 9 | Dolphin FC | 38 | 15 | 10 | 13 | 45:34 | 11 | 55 |"
+      },
+      {
+        "statement": "In the Nigeria Professional Football League 2014 table, the row for FC Heartland contains the values: 10, 38, 14, 13, 11, 36:27, 9, 55.",
+        "source_id": "S025",
+        "supporting_excerpt": "| 10 | FC Heartland | 38 | 14 | 13 | 11 | 36:27 | 9 | 55 |"
+      },
+      {
+        "statement": "In the Nigeria Professional Football League 2014 table, Nasarawa United and Lobi Stars both have the value 59 in the final column.",
+        "source_id": "S025",
+        "supporting_excerpt": "| 5 | Nasarawa United | 38 | 17 | 8 | 13 | 42:37 | 5 | 59 |\n\n| 6 | Lobi Stars | 38 | 19 | 2 | 17 | 40:46 | -6 | 59 |"
+      },
+      {
+        "statement": "In the Nigeria Professional Football League 2014 table, Abia Warriors and Enugu Rangers both have the value 58 in the final column.",
+        "source_id": "S025",
+        "supporting_excerpt": "| 7 | Abia Warriors | 38 | 17 | 7 | 14 | 51:40 | 11 | 58 |\n\n| 8 | Enugu Rangers | 38 | 17 | 7 | 14 | 45:37 | 8 | 58 |"
+      },
+      {
+        "statement": "In the Nigeria Professional Football League 2014 table, Dolphin FC and FC Heartland both have the value 55 in the final column.",
+        "source_id": "S025",
+        "supporting_excerpt": "| 9 | Dolphin FC | 38 | 15 | 10 | 13 | 45:34 | 11 | 55 |\n\n| 10 | FC Heartland | 38 | 14 | 13 | 11 | 36:27 | 9 | 55 |"
+      }
+    ],
+    "followup_source_refs": [
+      {
+        "source_ref": "https://www.transfermarkt.com/nigeria-professional-football-league/tabelle/wettbewerb/NPFL/saison_id/2013",
+        "reason": "To obtain the full table with column headers, which would confirm the meaning of each numeric column (e.g., position, points, goal difference)."
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1328,
+    "completion_tokens": 10015,
+    "total_tokens": 11343,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8976
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 688
+  },
+  "started_utc": "2026-09-27T17:55:54.932173+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 35.98044037260115,
+  "completed_utc": "2026-09-27T17:56:30.912633+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1328,
+      "output": 10015,
+      "total": 11343,
+      "reasoning": 8976,
+      "hit": 640,
+      "miss": 688
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

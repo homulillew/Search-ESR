@@ -1,0 +1,75 @@
+{
+  "id": "W_S050_r2",
+  "phase": "writer",
+  "qid": "1259",
+  "source_id": "S050",
+  "replicate": 2,
+  "request_sha256": "93f06410e7d2b980526eb8fafff90d6016d309f54911ffdce7630a1ee5eb3a50",
+  "head": "271edf62174657656c79e2178d134ebe1f626632",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "candidate_claims": [
+      {
+        "statement": "In this source, the World Finals host city is Dhaka.",
+        "source_id": "S050",
+        "supporting_excerpt": "About the World Finals Host City Dhaka is Bangladesh's capital and largest city."
+      },
+      {
+        "statement": "In this source, the World Finals host university is University of Asia Pacific (UAP).",
+        "source_id": "S050",
+        "supporting_excerpt": "About the World Finals Host University University of Asia Pacific (UAP) in 1996 by the UAP Foundation."
+      },
+      {
+        "statement": "The source URL includes 'world-finals-2021-factsheet.pdf'.",
+        "source_id": "S050",
+        "supporting_excerpt": "https://icpc.global/community/history/factsheet/world-finals-2021-factsheet.pdf"
+      },
+      {
+        "statement": "Dhaka is Bangladesh's capital and largest city.",
+        "source_id": "S050",
+        "supporting_excerpt": "Dhaka is Bangladesh's capital and largest city."
+      }
+    ],
+    "followup_source_refs": [
+      {
+        "source_ref": "https://icpc.global/community/history/factsheet/world-finals-2021-factsheet.pdf",
+        "reason": "The URL contains 'world-finals-2021-factsheet.pdf', which may help confirm the year 2021 for this World Finals factsheet; the text also identifies Dhaka as host city and University of Asia Pacific (UAP) as host university."
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1301,
+    "completion_tokens": 6152,
+    "total_tokens": 7453,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5863
+    },
+    "prompt_cache_hit_tokens": 1152,
+    "prompt_cache_miss_tokens": 149
+  },
+  "started_utc": "2026-09-27T17:57:42.347111+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 23.872159412130713,
+  "completed_utc": "2026-09-27T17:58:06.219290+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1301,
+      "output": 6152,
+      "total": 7453,
+      "reasoning": 5863,
+      "hit": 1152,
+      "miss": 149
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

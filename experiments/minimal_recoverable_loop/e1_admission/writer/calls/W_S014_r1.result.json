@@ -1,0 +1,75 @@
+{
+  "id": "W_S014_r1",
+  "phase": "writer",
+  "qid": "517",
+  "source_id": "S014",
+  "replicate": 1,
+  "request_sha256": "cbd64b32ba20ba0b02ef98670b90de3d18bd56c3b3b66e3996647352d893c91a",
+  "head": "271edf62174657656c79e2178d134ebe1f626632",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "candidate_claims": [
+      {
+        "statement": "Peter O'Toole died on December 14, 2013, in London, aged 81.",
+        "source_id": "S014",
+        "supporting_excerpt": "- December 14, 2013, London (aged 81)"
+      },
+      {
+        "statement": "Peter O'Toole was married to Siân Phillips from 1959 to 1979.",
+        "source_id": "S014",
+        "supporting_excerpt": "- Siân Phillips (1959–1979)"
+      },
+      {
+        "statement": "Peter O'Toole is listed as having acted in \"Venus\" (2006).",
+        "source_id": "S014",
+        "supporting_excerpt": "- \"Venus\" (2006)"
+      },
+      {
+        "statement": "Peter O'Toole is listed as having acted in \"Rosebud\" (1975).",
+        "source_id": "S014",
+        "supporting_excerpt": "- \"Rosebud\" (1975)"
+      }
+    ],
+    "followup_source_refs": [
+      {
+        "source_ref": "https://www.britannica.com/biography/PeterOToole",
+        "reason": "The observation is a Britannica biography page for Peter O'Toole whose filmography list does not include any 2005 or 2013 titles matching the described films; a fuller or updated filmography on this page could be checked for such titles."
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1323,
+    "completion_tokens": 884,
+    "total_tokens": 2207,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 554
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1323
+  },
+  "started_utc": "2026-09-27T17:54:23.792457+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 4.497736759483814,
+  "completed_utc": "2026-09-27T17:54:28.290234+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1323,
+      "output": 884,
+      "total": 2207,
+      "reasoning": 554,
+      "hit": 0,
+      "miss": 1323
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

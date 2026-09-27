@@ -1,0 +1,90 @@
+{
+  "id": "W_S051_r2",
+  "phase": "writer",
+  "qid": "1259",
+  "source_id": "S051",
+  "replicate": 2,
+  "request_sha256": "846a68d36d11c53dd09d2ee994dbb428daaad97fe78b0aaaf13bf703dd112622",
+  "head": "271edf62174657656c79e2178d134ebe1f626632",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "candidate_claims": [
+      {
+        "statement": "The source observation is titled 'Standings for ICPC 2021 World Finals Dhaka'.",
+        "source_id": "S051",
+        "supporting_excerpt": "title: Standings for ICPC 2021 World Finals Dhaka"
+      },
+      {
+        "statement": "The standings for ICPC 2021 World Finals Dhaka list Massachusetts Institute of Technology (MIT ZEROONE) at rank 1 with score 11 and penalty 1339.",
+        "source_id": "S051",
+        "supporting_excerpt": "| 1 | Massachusetts Institute of Technology\n\n(MIT ZEROONE):\n\n| 11 | 1339 | World Champion North America Champion $19800 | |"
+      },
+      {
+        "statement": "The standings for ICPC 2021 World Finals Dhaka list Massachusetts Institute of Technology (MIT ZEROONE) as World Champion.",
+        "source_id": "S051",
+        "supporting_excerpt": "| 1 | Massachusetts Institute of Technology\n\n(MIT ZEROONE):\n\n| 11 | 1339 | World Champion North America Champion $19800 | |"
+      },
+      {
+        "statement": "The date listed for ICPC 2021 World Finals Dhaka is Nov. 10, 2022.",
+        "source_id": "S051",
+        "supporting_excerpt": "| Date: | Nov. 10, 2022 |"
+      },
+      {
+        "statement": "The venue listed for ICPC 2021 World Finals Dhaka is International Convention City Bashundhara.",
+        "source_id": "S051",
+        "supporting_excerpt": "| Venue: | International Convention City Bashundhara |"
+      },
+      {
+        "statement": "The location listed is Dhaka, Bangladesh.",
+        "source_id": "S051",
+        "supporting_excerpt": "| Dhaka, Bangladesh | |"
+      },
+      {
+        "statement": "The series listed is ICPC World Finals.",
+        "source_id": "S051",
+        "supporting_excerpt": "| Series: | ICPC World Finals |"
+      }
+    ],
+    "followup_source_refs": [
+      {
+        "source_ref": "https://cphof.org/standings/icpc/2021",
+        "reason": "To check the full standings page for team member nationalities and any host university details not included in the excerpt."
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1331,
+    "completion_tokens": 6905,
+    "total_tokens": 8236,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6364
+    },
+    "prompt_cache_hit_tokens": 1152,
+    "prompt_cache_miss_tokens": 179
+  },
+  "started_utc": "2026-09-27T17:57:48.732555+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 26.043568598106503,
+  "completed_utc": "2026-09-27T17:58:14.776146+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1331,
+      "output": 6905,
+      "total": 8236,
+      "reasoning": 6364,
+      "hit": 1152,
+      "miss": 179
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

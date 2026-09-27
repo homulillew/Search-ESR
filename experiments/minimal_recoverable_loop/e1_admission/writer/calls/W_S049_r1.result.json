@@ -1,0 +1,138 @@
+{
+  "id": "W_S049_r1",
+  "phase": "writer",
+  "qid": "1259",
+  "source_id": "S049",
+  "replicate": 1,
+  "request_sha256": "4e4c31938c09d1f36ed84469ab4b0ddfcc6fb10d6cdb125fd3bf4eba31cccb0a",
+  "head": "271edf62174657656c79e2178d134ebe1f626632",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "candidate_claims": [
+      {
+        "statement": "Jerry Mao's country is listed as Australia.",
+        "source_id": "S049",
+        "supporting_excerpt": "Country:\n Australia"
+      },
+      {
+        "statement": "Jerry Mao's IOI 2015 result is listed as Bronze medal 92.",
+        "source_id": "S049",
+        "supporting_excerpt": "02 Aug 2015\tIOI 2015\t\nBronze medal 92"
+      },
+      {
+        "statement": "Jerry Mao's IOI 2016 result is listed as Silver medal 33 - 34.",
+        "source_id": "S049",
+        "supporting_excerpt": "19 Aug 2016\tIOI 2016\t\nSilver medal 33 - 34"
+      },
+      {
+        "statement": "Jerry Mao's IOI 2017 result is listed as Gold medal 22.",
+        "source_id": "S049",
+        "supporting_excerpt": "04 Aug 2017\tIOI 2017\t\nGold medal 22"
+      },
+      {
+        "statement": "Jerry Mao's IOI 2018 result is listed as Silver medal 31.",
+        "source_id": "S049",
+        "supporting_excerpt": "08 Sep 2018\tIOI 2018\t\nSilver medal 31"
+      },
+      {
+        "statement": "Jerry Mao's timeline lists an ICPC World Finals result of Gold medal 1.",
+        "source_id": "S049",
+        "supporting_excerpt": "ICPC World Finals\t\t\t\t\t\t\tGold medal 1"
+      },
+      {
+        "statement": "The team result for Jerry Mao is dated 10 Nov 2022 in the contest ICPC 2021 World Finals Dhaka.",
+        "source_id": "S049",
+        "supporting_excerpt": "10 Nov 2022\tICPC 2021 World Finals Dhaka"
+      },
+      {
+        "statement": "The team result row for ICPC 2021 World Finals Dhaka lists Massachusetts Institute of Technology (MIT ZEROONE) with members Jerry Mao, Mingyang Deng, and Xiao Mao.",
+        "source_id": "S049",
+        "supporting_excerpt": "ICPC 2021 World Finals Dhaka\t\nGold medal 1\nMassachusetts Institute of Technology (MIT ZEROONE):\nJerry Mao, Mingyang Deng, Xiao Mao"
+      },
+      {
+        "statement": "The team result row for ICPC 2021 World Finals Dhaka lists Gold medal 1.",
+        "source_id": "S049",
+        "supporting_excerpt": "ICPC 2021 World Finals Dhaka\t\nGold medal 1"
+      },
+      {
+        "statement": "The team result row for Jerry Mao, Mingyang Deng, and Xiao Mao lists World Champion as a prize.",
+        "source_id": "S049",
+        "supporting_excerpt": "Jerry Mao, Mingyang Deng, Xiao Mao\n11/12\t\nWorld Champion"
+      },
+      {
+        "statement": "The team result row lists North America Champion as a prize.",
+        "source_id": "S049",
+        "supporting_excerpt": "North America Champion"
+      },
+      {
+        "statement": "The team result row lists $19800 as prize money.",
+        "source_id": "S049",
+        "supporting_excerpt": "$19800"
+      },
+      {
+        "statement": "The team result row lists a score of 11/12.",
+        "source_id": "S049",
+        "supporting_excerpt": "11/12"
+      },
+      {
+        "statement": "Jerry Mao's prize money is listed as $6600.",
+        "source_id": "S049",
+        "supporting_excerpt": "Prize Money:\n$6600"
+      },
+      {
+        "statement": "Jerry Mao has a Topcoder profile listed as jerrym at Topcoder.",
+        "source_id": "S049",
+        "supporting_excerpt": "Topcoder profile jerrym at Topcoder"
+      }
+    ],
+    "followup_source_refs": [
+      {
+        "source_ref": "ICPC 2021 World Finals Dhaka",
+        "reason": "The source identifies this contest in Jerry Mao's team result but does not state the host university; follow-up is needed for the host university."
+      },
+      {
+        "source_ref": "Massachusetts Institute of Technology (MIT ZEROONE)",
+        "reason": "The source lists this team and its members but does not state the countries of Mingyang Deng and Xiao Mao; follow-up is needed to verify the requirement that the other two teammates were from the same country."
+      },
+      {
+        "source_ref": "https://cphof.org/profile/topcoder%3Ajerrym",
+        "reason": "The observed profile is the source of the timeline and team result; local follow-up could confirm the exact contest and team fields."
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1251,
+    "completion_tokens": 11683,
+    "total_tokens": 12934,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10795
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 611
+  },
+  "started_utc": "2026-09-27T17:56:46.814420+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 42.395016606897116,
+  "completed_utc": "2026-09-27T17:57:29.209456+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1251,
+      "output": 11683,
+      "total": 12934,
+      "reasoning": 10795,
+      "hit": 640,
+      "miss": 611
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}
