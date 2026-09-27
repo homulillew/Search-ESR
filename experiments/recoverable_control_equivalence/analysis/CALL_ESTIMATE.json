@@ -1,0 +1,26 @@
+{
+  "planned_calls": 108,
+  "arms": 2,
+  "states": 27,
+  "replicates": 2,
+  "input_tokens_proxy": 87022,
+  "input_per_call_range": [
+    665,
+    922
+  ],
+  "input_tokenizer": "cl100k_base + approximate chat overhead; not provider-exact",
+  "completion_scenarios": {
+    "historical_alignment_n": 108,
+    "historical_p50_per_call": 1601.0,
+    "historical_p95_per_call": 7917,
+    "historical_max_per_call": 10931,
+    "at_p50_total": 172908.0,
+    "at_p95_total": 855036,
+    "at_observed_max_total": 1180548
+  },
+  "scenario_limit": "Alignment completion distribution is only a budgeting proxy, not measured Selection behavior. Reasoning may dominate despite ID-only visible output. max_tokens omitted; no hard token/currency cap.",
+  "cache_hit_rate": null,
+  "cache_note": "Historical cache73.49% is not promised for this new prompt. Log actual hit/miss and weighted rate if authorized.",
+  "currency_estimate": null,
+  "currency_reason": "No current price lookup; no monetary claim."
+}

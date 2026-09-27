@@ -1,0 +1,2858 @@
+{
+  "status": "DESCRIPTIVE_NO_GATE_OVERRIDE",
+  "leave_one_qid_out": {
+    "A0": {
+      "122": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 305,
+            "denominator": 312,
+            "value": 0.9775641025641025
+          },
+          "three_way_node_accuracy": {
+            "numerator": 288,
+            "denominator": 312,
+            "value": 0.9230769230769231
+          },
+          "open_requirement_recall": {
+            "numerator": 261,
+            "denominator": 268,
+            "value": 0.9738805970149254
+          },
+          "open_requirement_precision": {
+            "numerator": 261,
+            "denominator": 261,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 44,
+            "denominator": 51,
+            "value": 0.8627450980392157
+          },
+          "false_close_rate": {
+            "numerator": 7,
+            "denominator": 268,
+            "value": 0.026119402985074626
+          },
+          "exact_binary_mask": {
+            "numerator": 45,
+            "denominator": 52,
+            "value": 0.8653846153846154
+          },
+          "exact_three_way_mask": {
+            "numerator": 36,
+            "denominator": 52,
+            "value": 0.6923076923076923
+          },
+          "schema_validity": {
+            "numerator": 52,
+            "denominator": 52,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 52,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 52,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.17307692307692313,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 52,
+            "nodes": 312,
+            "three_way_status_errors": 24,
+            "binary_control_errors": 7,
+            "U_P_errors_collapsed": 17,
+            "remaining_false_close_errors": 7,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 7,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_close_frontier_categories": {
+            "UNAVAILABLE_NO_FROZEN_A0_SELECTION_REFERENCE": 7
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 7,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 5,
+            "persistent_false_close": 2
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 2,
+          "maximum_consecutive_false_close_observed_states": 2,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": null
+      },
+      "1259": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 279,
+            "denominator": 286,
+            "value": 0.9755244755244755
+          },
+          "three_way_node_accuracy": {
+            "numerator": 262,
+            "denominator": 286,
+            "value": 0.916083916083916
+          },
+          "open_requirement_recall": {
+            "numerator": 249,
+            "denominator": 256,
+            "value": 0.97265625
+          },
+          "open_requirement_precision": {
+            "numerator": 249,
+            "denominator": 249,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 30,
+            "denominator": 37,
+            "value": 0.8108108108108109
+          },
+          "false_close_rate": {
+            "numerator": 7,
+            "denominator": 256,
+            "value": 0.02734375
+          },
+          "exact_binary_mask": {
+            "numerator": 41,
+            "denominator": 48,
+            "value": 0.8541666666666666
+          },
+          "exact_three_way_mask": {
+            "numerator": 32,
+            "denominator": 48,
+            "value": 0.6666666666666666
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.1875,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 286,
+            "three_way_status_errors": 24,
+            "binary_control_errors": 7,
+            "U_P_errors_collapsed": 17,
+            "remaining_false_close_errors": 7,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 7,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_close_frontier_categories": {
+            "UNAVAILABLE_NO_FROZEN_A0_SELECTION_REFERENCE": 7
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 7,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 5,
+            "persistent_false_close": 2
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 2,
+          "maximum_consecutive_false_close_observed_states": 2,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": null
+      },
+      "169": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 279,
+            "denominator": 286,
+            "value": 0.9755244755244755
+          },
+          "three_way_node_accuracy": {
+            "numerator": 264,
+            "denominator": 286,
+            "value": 0.9230769230769231
+          },
+          "open_requirement_recall": {
+            "numerator": 235,
+            "denominator": 242,
+            "value": 0.9710743801652892
+          },
+          "open_requirement_precision": {
+            "numerator": 235,
+            "denominator": 235,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 44,
+            "denominator": 51,
+            "value": 0.8627450980392157
+          },
+          "false_close_rate": {
+            "numerator": 7,
+            "denominator": 242,
+            "value": 0.028925619834710745
+          },
+          "exact_binary_mask": {
+            "numerator": 41,
+            "denominator": 48,
+            "value": 0.8541666666666666
+          },
+          "exact_three_way_mask": {
+            "numerator": 34,
+            "denominator": 48,
+            "value": 0.7083333333333334
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.14583333333333326,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 286,
+            "three_way_status_errors": 22,
+            "binary_control_errors": 7,
+            "U_P_errors_collapsed": 15,
+            "remaining_false_close_errors": 7,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 7,
+            "semantically_wrong_but_binary_exact": 7
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_close_frontier_categories": {
+            "UNAVAILABLE_NO_FROZEN_A0_SELECTION_REFERENCE": 7
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 7,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 5,
+            "persistent_false_close": 2
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 2,
+          "maximum_consecutive_false_close_observed_states": 2,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": null
+      },
+      "228": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 279,
+            "denominator": 286,
+            "value": 0.9755244755244755
+          },
+          "three_way_node_accuracy": {
+            "numerator": 262,
+            "denominator": 286,
+            "value": 0.916083916083916
+          },
+          "open_requirement_recall": {
+            "numerator": 237,
+            "denominator": 244,
+            "value": 0.9713114754098361
+          },
+          "open_requirement_precision": {
+            "numerator": 237,
+            "denominator": 237,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 42,
+            "denominator": 49,
+            "value": 0.8571428571428571
+          },
+          "false_close_rate": {
+            "numerator": 7,
+            "denominator": 244,
+            "value": 0.028688524590163935
+          },
+          "exact_binary_mask": {
+            "numerator": 41,
+            "denominator": 48,
+            "value": 0.8541666666666666
+          },
+          "exact_three_way_mask": {
+            "numerator": 32,
+            "denominator": 48,
+            "value": 0.6666666666666666
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.1875,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 286,
+            "three_way_status_errors": 24,
+            "binary_control_errors": 7,
+            "U_P_errors_collapsed": 17,
+            "remaining_false_close_errors": 7,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 7,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_close_frontier_categories": {
+            "UNAVAILABLE_NO_FROZEN_A0_SELECTION_REFERENCE": 7
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 7,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 5,
+            "persistent_false_close": 2
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 2,
+          "maximum_consecutive_false_close_observed_states": 2,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": null
+      },
+      "261": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 273,
+            "denominator": 280,
+            "value": 0.975
+          },
+          "three_way_node_accuracy": {
+            "numerator": 259,
+            "denominator": 280,
+            "value": 0.925
+          },
+          "open_requirement_recall": {
+            "numerator": 237,
+            "denominator": 244,
+            "value": 0.9713114754098361
+          },
+          "open_requirement_precision": {
+            "numerator": 237,
+            "denominator": 237,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 36,
+            "denominator": 43,
+            "value": 0.8372093023255814
+          },
+          "false_close_rate": {
+            "numerator": 7,
+            "denominator": 244,
+            "value": 0.028688524590163935
+          },
+          "exact_binary_mask": {
+            "numerator": 41,
+            "denominator": 48,
+            "value": 0.8541666666666666
+          },
+          "exact_three_way_mask": {
+            "numerator": 35,
+            "denominator": 48,
+            "value": 0.7291666666666666
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.125,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 280,
+            "three_way_status_errors": 21,
+            "binary_control_errors": 7,
+            "U_P_errors_collapsed": 14,
+            "remaining_false_close_errors": 7,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 7,
+            "semantically_wrong_but_binary_exact": 6
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_close_frontier_categories": {
+            "UNAVAILABLE_NO_FROZEN_A0_SELECTION_REFERENCE": 7
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 7,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 5,
+            "persistent_false_close": 2
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 2,
+          "maximum_consecutive_false_close_observed_states": 2,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": null
+      },
+      "538": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 291,
+            "denominator": 298,
+            "value": 0.9765100671140939
+          },
+          "three_way_node_accuracy": {
+            "numerator": 276,
+            "denominator": 298,
+            "value": 0.9261744966442953
+          },
+          "open_requirement_recall": {
+            "numerator": 247,
+            "denominator": 254,
+            "value": 0.9724409448818898
+          },
+          "open_requirement_precision": {
+            "numerator": 247,
+            "denominator": 247,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 44,
+            "denominator": 51,
+            "value": 0.8627450980392157
+          },
+          "false_close_rate": {
+            "numerator": 7,
+            "denominator": 254,
+            "value": 0.027559055118110236
+          },
+          "exact_binary_mask": {
+            "numerator": 43,
+            "denominator": 50,
+            "value": 0.86
+          },
+          "exact_three_way_mask": {
+            "numerator": 36,
+            "denominator": 50,
+            "value": 0.72
+          },
+          "schema_validity": {
+            "numerator": 50,
+            "denominator": 50,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 50,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 50,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.14,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 50,
+            "nodes": 298,
+            "three_way_status_errors": 22,
+            "binary_control_errors": 7,
+            "U_P_errors_collapsed": 15,
+            "remaining_false_close_errors": 7,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 7,
+            "semantically_wrong_but_binary_exact": 7
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_close_frontier_categories": {
+            "UNAVAILABLE_NO_FROZEN_A0_SELECTION_REFERENCE": 7
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 7,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 5,
+            "persistent_false_close": 2
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 2,
+          "maximum_consecutive_false_close_observed_states": 2,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": null
+      },
+      "637": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 275,
+            "denominator": 280,
+            "value": 0.9821428571428571
+          },
+          "three_way_node_accuracy": {
+            "numerator": 265,
+            "denominator": 280,
+            "value": 0.9464285714285714
+          },
+          "open_requirement_recall": {
+            "numerator": 239,
+            "denominator": 244,
+            "value": 0.9795081967213115
+          },
+          "open_requirement_precision": {
+            "numerator": 239,
+            "denominator": 239,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 36,
+            "denominator": 41,
+            "value": 0.8780487804878049
+          },
+          "false_close_rate": {
+            "numerator": 5,
+            "denominator": 244,
+            "value": 0.020491803278688523
+          },
+          "exact_binary_mask": {
+            "numerator": 43,
+            "denominator": 48,
+            "value": 0.8958333333333334
+          },
+          "exact_three_way_mask": {
+            "numerator": 36,
+            "denominator": 48,
+            "value": 0.75
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.14583333333333337,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 280,
+            "three_way_status_errors": 15,
+            "binary_control_errors": 5,
+            "U_P_errors_collapsed": 10,
+            "remaining_false_close_errors": 5,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 5,
+            "semantically_wrong_but_binary_exact": 7
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_close_frontier_categories": {
+            "UNAVAILABLE_NO_FROZEN_A0_SELECTION_REFERENCE": 5
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 5,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 3,
+            "persistent_false_close": 2
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 2,
+          "maximum_consecutive_false_close_observed_states": 2,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": null
+      },
+      "843": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 286,
+            "denominator": 292,
+            "value": 0.9794520547945206
+          },
+          "three_way_node_accuracy": {
+            "numerator": 269,
+            "denominator": 292,
+            "value": 0.9212328767123288
+          },
+          "open_requirement_recall": {
+            "numerator": 246,
+            "denominator": 252,
+            "value": 0.9761904761904762
+          },
+          "open_requirement_precision": {
+            "numerator": 246,
+            "denominator": 246,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 40,
+            "denominator": 46,
+            "value": 0.8695652173913043
+          },
+          "false_close_rate": {
+            "numerator": 6,
+            "denominator": 252,
+            "value": 0.023809523809523808
+          },
+          "exact_binary_mask": {
+            "numerator": 42,
+            "denominator": 48,
+            "value": 0.875
+          },
+          "exact_three_way_mask": {
+            "numerator": 33,
+            "denominator": 48,
+            "value": 0.6875
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.1875,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 292,
+            "three_way_status_errors": 23,
+            "binary_control_errors": 6,
+            "U_P_errors_collapsed": 17,
+            "remaining_false_close_errors": 6,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 6,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_close_frontier_categories": {
+            "UNAVAILABLE_NO_FROZEN_A0_SELECTION_REFERENCE": 6
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 6,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 4,
+            "persistent_false_close": 2
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 2,
+          "maximum_consecutive_false_close_observed_states": 2,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": null
+      },
+      "922": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 289,
+            "denominator": 292,
+            "value": 0.9897260273972602
+          },
+          "three_way_node_accuracy": {
+            "numerator": 275,
+            "denominator": 292,
+            "value": 0.9417808219178082
+          },
+          "open_requirement_recall": {
+            "numerator": 249,
+            "denominator": 252,
+            "value": 0.9880952380952381
+          },
+          "open_requirement_precision": {
+            "numerator": 249,
+            "denominator": 249,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 40,
+            "denominator": 43,
+            "value": 0.9302325581395349
+          },
+          "false_close_rate": {
+            "numerator": 3,
+            "denominator": 252,
+            "value": 0.011904761904761904
+          },
+          "exact_binary_mask": {
+            "numerator": 45,
+            "denominator": 48,
+            "value": 0.9375
+          },
+          "exact_three_way_mask": {
+            "numerator": 36,
+            "denominator": 48,
+            "value": 0.75
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.1875,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 292,
+            "three_way_status_errors": 17,
+            "binary_control_errors": 3,
+            "U_P_errors_collapsed": 14,
+            "remaining_false_close_errors": 3,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 3,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_close_frontier_categories": {
+            "UNAVAILABLE_NO_FROZEN_A0_SELECTION_REFERENCE": 3
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 3,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 3
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": null
+      },
+      "971": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 279,
+            "denominator": 286,
+            "value": 0.9755244755244755
+          },
+          "three_way_node_accuracy": {
+            "numerator": 262,
+            "denominator": 286,
+            "value": 0.916083916083916
+          },
+          "open_requirement_recall": {
+            "numerator": 239,
+            "denominator": 246,
+            "value": 0.9715447154471545
+          },
+          "open_requirement_precision": {
+            "numerator": 239,
+            "denominator": 239,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 40,
+            "denominator": 47,
+            "value": 0.851063829787234
+          },
+          "false_close_rate": {
+            "numerator": 7,
+            "denominator": 246,
+            "value": 0.028455284552845527
+          },
+          "exact_binary_mask": {
+            "numerator": 41,
+            "denominator": 48,
+            "value": 0.8541666666666666
+          },
+          "exact_three_way_mask": {
+            "numerator": 32,
+            "denominator": 48,
+            "value": 0.6666666666666666
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.1875,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 286,
+            "three_way_status_errors": 24,
+            "binary_control_errors": 7,
+            "U_P_errors_collapsed": 17,
+            "remaining_false_close_errors": 7,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 7,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "false_close_frontier_categories": {
+            "UNAVAILABLE_NO_FROZEN_A0_SELECTION_REFERENCE": 7
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 7,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 5,
+            "persistent_false_close": 2
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 2,
+            "value": 0.0
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 2,
+          "maximum_consecutive_false_close_observed_states": 2,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": null
+      }
+    },
+    "A1": {
+      "122": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 253,
+            "denominator": 256,
+            "value": 0.98828125
+          },
+          "three_way_node_accuracy": {
+            "numerator": 240,
+            "denominator": 256,
+            "value": 0.9375
+          },
+          "open_requirement_recall": {
+            "numerator": 217,
+            "denominator": 220,
+            "value": 0.9863636363636363
+          },
+          "open_requirement_precision": {
+            "numerator": 217,
+            "denominator": 217,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 36,
+            "denominator": 39,
+            "value": 0.9230769230769231
+          },
+          "false_close_rate": {
+            "numerator": 3,
+            "denominator": 220,
+            "value": 0.013636363636363636
+          },
+          "exact_binary_mask": {
+            "numerator": 49,
+            "denominator": 52,
+            "value": 0.9423076923076923
+          },
+          "exact_three_way_mask": {
+            "numerator": 40,
+            "denominator": 52,
+            "value": 0.7692307692307693
+          },
+          "schema_validity": {
+            "numerator": 52,
+            "denominator": 52,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 52,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 52,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.17307692307692302,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 52,
+            "nodes": 256,
+            "three_way_status_errors": 16,
+            "binary_control_errors": 3,
+            "U_P_errors_collapsed": 13,
+            "remaining_false_close_errors": 3,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 3,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "representation_addressability_limit": {
+            "numerator": 4,
+            "denominator": 52,
+            "value": 0.07692307692307693
+          },
+          "false_close_frontier_categories": {
+            "A_acceptable_frontier_remains": 3
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 3,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 3
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": {
+          "pass": true,
+          "checks": {
+            "binary_node_accuracy": {
+              "value": 0.98828125,
+              "operator": ">=",
+              "threshold": 0.95,
+              "pass": true
+            },
+            "open_requirement_recall": {
+              "value": 0.9863636363636363,
+              "operator": ">=",
+              "threshold": 0.97,
+              "pass": true
+            },
+            "closure_precision": {
+              "value": 0.9230769230769231,
+              "operator": ">=",
+              "threshold": 0.9,
+              "pass": true
+            },
+            "exact_binary_mask": {
+              "value": 0.9423076923076923,
+              "operator": ">=",
+              "threshold": 0.85,
+              "pass": true
+            },
+            "false_empty_open_set": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "false_stop_hazard": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "schema_validity": {
+              "value": 1.0,
+              "operator": ">=",
+              "threshold": 1,
+              "pass": true
+            },
+            "lost_all_acceptable_frontier": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0.1,
+              "pass": true
+            },
+            "safe_resolution_rate": {
+              "value": null,
+              "denominator": 0,
+              "required": false,
+              "threshold": 0.75,
+              "pass": true,
+              "status": "INSUFFICIENT_NATURAL_DENOMINATOR"
+            }
+          },
+          "primary_arm": "A1",
+          "A0": "diagnostic only; old joint failure unchanged"
+        }
+      },
+      "1259": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 225,
+            "denominator": 228,
+            "value": 0.9868421052631579
+          },
+          "three_way_node_accuracy": {
+            "numerator": 213,
+            "denominator": 228,
+            "value": 0.9342105263157895
+          },
+          "open_requirement_recall": {
+            "numerator": 203,
+            "denominator": 206,
+            "value": 0.9854368932038835
+          },
+          "open_requirement_precision": {
+            "numerator": 203,
+            "denominator": 203,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 22,
+            "denominator": 25,
+            "value": 0.88
+          },
+          "false_close_rate": {
+            "numerator": 3,
+            "denominator": 206,
+            "value": 0.014563106796116505
+          },
+          "exact_binary_mask": {
+            "numerator": 45,
+            "denominator": 48,
+            "value": 0.9375
+          },
+          "exact_three_way_mask": {
+            "numerator": 37,
+            "denominator": 48,
+            "value": 0.7708333333333334
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.16666666666666663,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 228,
+            "three_way_status_errors": 15,
+            "binary_control_errors": 3,
+            "U_P_errors_collapsed": 12,
+            "remaining_false_close_errors": 3,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 3,
+            "semantically_wrong_but_binary_exact": 8
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 44,
+            "value": 0.0
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "representation_addressability_limit": {
+            "numerator": 4,
+            "denominator": 48,
+            "value": 0.08333333333333333
+          },
+          "false_close_frontier_categories": {
+            "A_acceptable_frontier_remains": 3
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 3,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 3
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": {
+          "pass": false,
+          "checks": {
+            "binary_node_accuracy": {
+              "value": 0.9868421052631579,
+              "operator": ">=",
+              "threshold": 0.95,
+              "pass": true
+            },
+            "open_requirement_recall": {
+              "value": 0.9854368932038835,
+              "operator": ">=",
+              "threshold": 0.97,
+              "pass": true
+            },
+            "closure_precision": {
+              "value": 0.88,
+              "operator": ">=",
+              "threshold": 0.9,
+              "pass": false
+            },
+            "exact_binary_mask": {
+              "value": 0.9375,
+              "operator": ">=",
+              "threshold": 0.85,
+              "pass": true
+            },
+            "false_empty_open_set": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "false_stop_hazard": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "schema_validity": {
+              "value": 1.0,
+              "operator": ">=",
+              "threshold": 1,
+              "pass": true
+            },
+            "lost_all_acceptable_frontier": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0.1,
+              "pass": true
+            },
+            "safe_resolution_rate": {
+              "value": null,
+              "denominator": 0,
+              "required": false,
+              "threshold": 0.75,
+              "pass": true,
+              "status": "INSUFFICIENT_NATURAL_DENOMINATOR"
+            }
+          },
+          "primary_arm": "A1",
+          "A0": "diagnostic only; old joint failure unchanged"
+        }
+      },
+      "169": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 237,
+            "denominator": 240,
+            "value": 0.9875
+          },
+          "three_way_node_accuracy": {
+            "numerator": 226,
+            "denominator": 240,
+            "value": 0.9416666666666667
+          },
+          "open_requirement_recall": {
+            "numerator": 201,
+            "denominator": 204,
+            "value": 0.9852941176470589
+          },
+          "open_requirement_precision": {
+            "numerator": 201,
+            "denominator": 201,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 36,
+            "denominator": 39,
+            "value": 0.9230769230769231
+          },
+          "false_close_rate": {
+            "numerator": 3,
+            "denominator": 204,
+            "value": 0.014705882352941176
+          },
+          "exact_binary_mask": {
+            "numerator": 45,
+            "denominator": 48,
+            "value": 0.9375
+          },
+          "exact_three_way_mask": {
+            "numerator": 38,
+            "denominator": 48,
+            "value": 0.7916666666666666
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.14583333333333337,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 240,
+            "three_way_status_errors": 14,
+            "binary_control_errors": 3,
+            "U_P_errors_collapsed": 11,
+            "remaining_false_close_errors": 3,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 3,
+            "semantically_wrong_but_binary_exact": 7
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 44,
+            "value": 0.0
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "representation_addressability_limit": {
+            "numerator": 4,
+            "denominator": 48,
+            "value": 0.08333333333333333
+          },
+          "false_close_frontier_categories": {
+            "A_acceptable_frontier_remains": 3
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 3,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 3
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": {
+          "pass": true,
+          "checks": {
+            "binary_node_accuracy": {
+              "value": 0.9875,
+              "operator": ">=",
+              "threshold": 0.95,
+              "pass": true
+            },
+            "open_requirement_recall": {
+              "value": 0.9852941176470589,
+              "operator": ">=",
+              "threshold": 0.97,
+              "pass": true
+            },
+            "closure_precision": {
+              "value": 0.9230769230769231,
+              "operator": ">=",
+              "threshold": 0.9,
+              "pass": true
+            },
+            "exact_binary_mask": {
+              "value": 0.9375,
+              "operator": ">=",
+              "threshold": 0.85,
+              "pass": true
+            },
+            "false_empty_open_set": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "false_stop_hazard": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "schema_validity": {
+              "value": 1.0,
+              "operator": ">=",
+              "threshold": 1,
+              "pass": true
+            },
+            "lost_all_acceptable_frontier": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0.1,
+              "pass": true
+            },
+            "safe_resolution_rate": {
+              "value": null,
+              "denominator": 0,
+              "required": false,
+              "threshold": 0.75,
+              "pass": true,
+              "status": "INSUFFICIENT_NATURAL_DENOMINATOR"
+            }
+          },
+          "primary_arm": "A1",
+          "A0": "diagnostic only; old joint failure unchanged"
+        }
+      },
+      "228": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 237,
+            "denominator": 240,
+            "value": 0.9875
+          },
+          "three_way_node_accuracy": {
+            "numerator": 224,
+            "denominator": 240,
+            "value": 0.9333333333333333
+          },
+          "open_requirement_recall": {
+            "numerator": 201,
+            "denominator": 204,
+            "value": 0.9852941176470589
+          },
+          "open_requirement_precision": {
+            "numerator": 201,
+            "denominator": 201,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 36,
+            "denominator": 39,
+            "value": 0.9230769230769231
+          },
+          "false_close_rate": {
+            "numerator": 3,
+            "denominator": 204,
+            "value": 0.014705882352941176
+          },
+          "exact_binary_mask": {
+            "numerator": 45,
+            "denominator": 48,
+            "value": 0.9375
+          },
+          "exact_three_way_mask": {
+            "numerator": 36,
+            "denominator": 48,
+            "value": 0.75
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.1875,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 240,
+            "three_way_status_errors": 16,
+            "binary_control_errors": 3,
+            "U_P_errors_collapsed": 13,
+            "remaining_false_close_errors": 3,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 3,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "representation_addressability_limit": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_close_frontier_categories": {
+            "A_acceptable_frontier_remains": 3
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 3,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 3
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": {
+          "pass": true,
+          "checks": {
+            "binary_node_accuracy": {
+              "value": 0.9875,
+              "operator": ">=",
+              "threshold": 0.95,
+              "pass": true
+            },
+            "open_requirement_recall": {
+              "value": 0.9852941176470589,
+              "operator": ">=",
+              "threshold": 0.97,
+              "pass": true
+            },
+            "closure_precision": {
+              "value": 0.9230769230769231,
+              "operator": ">=",
+              "threshold": 0.9,
+              "pass": true
+            },
+            "exact_binary_mask": {
+              "value": 0.9375,
+              "operator": ">=",
+              "threshold": 0.85,
+              "pass": true
+            },
+            "false_empty_open_set": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "false_stop_hazard": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "schema_validity": {
+              "value": 1.0,
+              "operator": ">=",
+              "threshold": 1,
+              "pass": true
+            },
+            "lost_all_acceptable_frontier": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0.1,
+              "pass": true
+            },
+            "safe_resolution_rate": {
+              "value": null,
+              "denominator": 0,
+              "required": false,
+              "threshold": 0.75,
+              "pass": true,
+              "status": "INSUFFICIENT_NATURAL_DENOMINATOR"
+            }
+          },
+          "primary_arm": "A1",
+          "A0": "diagnostic only; old joint failure unchanged"
+        }
+      },
+      "261": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 225,
+            "denominator": 228,
+            "value": 0.9868421052631579
+          },
+          "three_way_node_accuracy": {
+            "numerator": 215,
+            "denominator": 228,
+            "value": 0.9429824561403509
+          },
+          "open_requirement_recall": {
+            "numerator": 195,
+            "denominator": 198,
+            "value": 0.9848484848484849
+          },
+          "open_requirement_precision": {
+            "numerator": 195,
+            "denominator": 195,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 30,
+            "denominator": 33,
+            "value": 0.9090909090909091
+          },
+          "false_close_rate": {
+            "numerator": 3,
+            "denominator": 198,
+            "value": 0.015151515151515152
+          },
+          "exact_binary_mask": {
+            "numerator": 45,
+            "denominator": 48,
+            "value": 0.9375
+          },
+          "exact_three_way_mask": {
+            "numerator": 39,
+            "denominator": 48,
+            "value": 0.8125
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.125,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 228,
+            "three_way_status_errors": 13,
+            "binary_control_errors": 3,
+            "U_P_errors_collapsed": 10,
+            "remaining_false_close_errors": 3,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 3,
+            "semantically_wrong_but_binary_exact": 6
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 44,
+            "value": 0.0
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "representation_addressability_limit": {
+            "numerator": 4,
+            "denominator": 48,
+            "value": 0.08333333333333333
+          },
+          "false_close_frontier_categories": {
+            "A_acceptable_frontier_remains": 3
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 3,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 3
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": {
+          "pass": true,
+          "checks": {
+            "binary_node_accuracy": {
+              "value": 0.9868421052631579,
+              "operator": ">=",
+              "threshold": 0.95,
+              "pass": true
+            },
+            "open_requirement_recall": {
+              "value": 0.9848484848484849,
+              "operator": ">=",
+              "threshold": 0.97,
+              "pass": true
+            },
+            "closure_precision": {
+              "value": 0.9090909090909091,
+              "operator": ">=",
+              "threshold": 0.9,
+              "pass": true
+            },
+            "exact_binary_mask": {
+              "value": 0.9375,
+              "operator": ">=",
+              "threshold": 0.85,
+              "pass": true
+            },
+            "false_empty_open_set": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "false_stop_hazard": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "schema_validity": {
+              "value": 1.0,
+              "operator": ">=",
+              "threshold": 1,
+              "pass": true
+            },
+            "lost_all_acceptable_frontier": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0.1,
+              "pass": true
+            },
+            "safe_resolution_rate": {
+              "value": null,
+              "denominator": 0,
+              "required": false,
+              "threshold": 0.75,
+              "pass": true,
+              "status": "INSUFFICIENT_NATURAL_DENOMINATOR"
+            }
+          },
+          "primary_arm": "A1",
+          "A0": "diagnostic only; old joint failure unchanged"
+        }
+      },
+      "538": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 245,
+            "denominator": 248,
+            "value": 0.9879032258064516
+          },
+          "three_way_node_accuracy": {
+            "numerator": 234,
+            "denominator": 248,
+            "value": 0.9435483870967742
+          },
+          "open_requirement_recall": {
+            "numerator": 209,
+            "denominator": 212,
+            "value": 0.9858490566037735
+          },
+          "open_requirement_precision": {
+            "numerator": 209,
+            "denominator": 209,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 36,
+            "denominator": 39,
+            "value": 0.9230769230769231
+          },
+          "false_close_rate": {
+            "numerator": 3,
+            "denominator": 212,
+            "value": 0.014150943396226415
+          },
+          "exact_binary_mask": {
+            "numerator": 47,
+            "denominator": 50,
+            "value": 0.94
+          },
+          "exact_three_way_mask": {
+            "numerator": 40,
+            "denominator": 50,
+            "value": 0.8
+          },
+          "schema_validity": {
+            "numerator": 50,
+            "denominator": 50,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 50,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 50,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.1399999999999999,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 50,
+            "nodes": 248,
+            "three_way_status_errors": 14,
+            "binary_control_errors": 3,
+            "U_P_errors_collapsed": 11,
+            "remaining_false_close_errors": 3,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 3,
+            "semantically_wrong_but_binary_exact": 7
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 46,
+            "value": 0.0
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "representation_addressability_limit": {
+            "numerator": 4,
+            "denominator": 50,
+            "value": 0.08
+          },
+          "false_close_frontier_categories": {
+            "A_acceptable_frontier_remains": 3
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 3,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 3
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": {
+          "pass": true,
+          "checks": {
+            "binary_node_accuracy": {
+              "value": 0.9879032258064516,
+              "operator": ">=",
+              "threshold": 0.95,
+              "pass": true
+            },
+            "open_requirement_recall": {
+              "value": 0.9858490566037735,
+              "operator": ">=",
+              "threshold": 0.97,
+              "pass": true
+            },
+            "closure_precision": {
+              "value": 0.9230769230769231,
+              "operator": ">=",
+              "threshold": 0.9,
+              "pass": true
+            },
+            "exact_binary_mask": {
+              "value": 0.94,
+              "operator": ">=",
+              "threshold": 0.85,
+              "pass": true
+            },
+            "false_empty_open_set": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "false_stop_hazard": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "schema_validity": {
+              "value": 1.0,
+              "operator": ">=",
+              "threshold": 1,
+              "pass": true
+            },
+            "lost_all_acceptable_frontier": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0.1,
+              "pass": true
+            },
+            "safe_resolution_rate": {
+              "value": null,
+              "denominator": 0,
+              "required": false,
+              "threshold": 0.75,
+              "pass": true,
+              "status": "INSUFFICIENT_NATURAL_DENOMINATOR"
+            }
+          },
+          "primary_arm": "A1",
+          "A0": "diagnostic only; old joint failure unchanged"
+        }
+      },
+      "637": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 233,
+            "denominator": 234,
+            "value": 0.9957264957264957
+          },
+          "three_way_node_accuracy": {
+            "numerator": 225,
+            "denominator": 234,
+            "value": 0.9615384615384616
+          },
+          "open_requirement_recall": {
+            "numerator": 201,
+            "denominator": 202,
+            "value": 0.995049504950495
+          },
+          "open_requirement_precision": {
+            "numerator": 201,
+            "denominator": 201,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 32,
+            "denominator": 33,
+            "value": 0.9696969696969697
+          },
+          "false_close_rate": {
+            "numerator": 1,
+            "denominator": 202,
+            "value": 0.0049504950495049506
+          },
+          "exact_binary_mask": {
+            "numerator": 47,
+            "denominator": 48,
+            "value": 0.9791666666666666
+          },
+          "exact_three_way_mask": {
+            "numerator": 39,
+            "denominator": 48,
+            "value": 0.8125
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.16666666666666663,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 234,
+            "three_way_status_errors": 9,
+            "binary_control_errors": 1,
+            "U_P_errors_collapsed": 8,
+            "remaining_false_close_errors": 1,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 1,
+            "semantically_wrong_but_binary_exact": 8
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 44,
+            "value": 0.0
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 1,
+            "denominator": 1,
+            "value": 1.0
+          },
+          "representation_addressability_limit": {
+            "numerator": 4,
+            "denominator": 48,
+            "value": 0.08333333333333333
+          },
+          "false_close_frontier_categories": {
+            "A_acceptable_frontier_remains": 1
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 1,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 1
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": {
+          "pass": true,
+          "checks": {
+            "binary_node_accuracy": {
+              "value": 0.9957264957264957,
+              "operator": ">=",
+              "threshold": 0.95,
+              "pass": true
+            },
+            "open_requirement_recall": {
+              "value": 0.995049504950495,
+              "operator": ">=",
+              "threshold": 0.97,
+              "pass": true
+            },
+            "closure_precision": {
+              "value": 0.9696969696969697,
+              "operator": ">=",
+              "threshold": 0.9,
+              "pass": true
+            },
+            "exact_binary_mask": {
+              "value": 0.9791666666666666,
+              "operator": ">=",
+              "threshold": 0.85,
+              "pass": true
+            },
+            "false_empty_open_set": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "false_stop_hazard": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "schema_validity": {
+              "value": 1.0,
+              "operator": ">=",
+              "threshold": 1,
+              "pass": true
+            },
+            "lost_all_acceptable_frontier": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0.1,
+              "pass": true
+            },
+            "safe_resolution_rate": {
+              "value": null,
+              "denominator": 0,
+              "required": false,
+              "threshold": 0.75,
+              "pass": true,
+              "status": "INSUFFICIENT_NATURAL_DENOMINATOR"
+            }
+          },
+          "primary_arm": "A1",
+          "A0": "diagnostic only; old joint failure unchanged"
+        }
+      },
+      "843": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 232,
+            "denominator": 234,
+            "value": 0.9914529914529915
+          },
+          "three_way_node_accuracy": {
+            "numerator": 219,
+            "denominator": 234,
+            "value": 0.9358974358974359
+          },
+          "open_requirement_recall": {
+            "numerator": 200,
+            "denominator": 202,
+            "value": 0.9900990099009901
+          },
+          "open_requirement_precision": {
+            "numerator": 200,
+            "denominator": 200,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 32,
+            "denominator": 34,
+            "value": 0.9411764705882353
+          },
+          "false_close_rate": {
+            "numerator": 2,
+            "denominator": 202,
+            "value": 0.009900990099009901
+          },
+          "exact_binary_mask": {
+            "numerator": 46,
+            "denominator": 48,
+            "value": 0.9583333333333334
+          },
+          "exact_three_way_mask": {
+            "numerator": 37,
+            "denominator": 48,
+            "value": 0.7708333333333334
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.1875,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 234,
+            "three_way_status_errors": 15,
+            "binary_control_errors": 2,
+            "U_P_errors_collapsed": 13,
+            "remaining_false_close_errors": 2,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 2,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 44,
+            "value": 0.0
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 2,
+            "denominator": 2,
+            "value": 1.0
+          },
+          "representation_addressability_limit": {
+            "numerator": 4,
+            "denominator": 48,
+            "value": 0.08333333333333333
+          },
+          "false_close_frontier_categories": {
+            "A_acceptable_frontier_remains": 2
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 2,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 2
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": {
+          "pass": true,
+          "checks": {
+            "binary_node_accuracy": {
+              "value": 0.9914529914529915,
+              "operator": ">=",
+              "threshold": 0.95,
+              "pass": true
+            },
+            "open_requirement_recall": {
+              "value": 0.9900990099009901,
+              "operator": ">=",
+              "threshold": 0.97,
+              "pass": true
+            },
+            "closure_precision": {
+              "value": 0.9411764705882353,
+              "operator": ">=",
+              "threshold": 0.9,
+              "pass": true
+            },
+            "exact_binary_mask": {
+              "value": 0.9583333333333334,
+              "operator": ">=",
+              "threshold": 0.85,
+              "pass": true
+            },
+            "false_empty_open_set": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "false_stop_hazard": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "schema_validity": {
+              "value": 1.0,
+              "operator": ">=",
+              "threshold": 1,
+              "pass": true
+            },
+            "lost_all_acceptable_frontier": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0.1,
+              "pass": true
+            },
+            "safe_resolution_rate": {
+              "value": null,
+              "denominator": 0,
+              "required": false,
+              "threshold": 0.75,
+              "pass": true,
+              "status": "INSUFFICIENT_NATURAL_DENOMINATOR"
+            }
+          },
+          "primary_arm": "A1",
+          "A0": "diagnostic only; old joint failure unchanged"
+        }
+      },
+      "922": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 237,
+            "denominator": 240,
+            "value": 0.9875
+          },
+          "three_way_node_accuracy": {
+            "numerator": 224,
+            "denominator": 240,
+            "value": 0.9333333333333333
+          },
+          "open_requirement_recall": {
+            "numerator": 205,
+            "denominator": 208,
+            "value": 0.9855769230769231
+          },
+          "open_requirement_precision": {
+            "numerator": 205,
+            "denominator": 205,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 32,
+            "denominator": 35,
+            "value": 0.9142857142857143
+          },
+          "false_close_rate": {
+            "numerator": 3,
+            "denominator": 208,
+            "value": 0.014423076923076924
+          },
+          "exact_binary_mask": {
+            "numerator": 45,
+            "denominator": 48,
+            "value": 0.9375
+          },
+          "exact_three_way_mask": {
+            "numerator": 36,
+            "denominator": 48,
+            "value": 0.75
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.1875,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 240,
+            "three_way_status_errors": 16,
+            "binary_control_errors": 3,
+            "U_P_errors_collapsed": 13,
+            "remaining_false_close_errors": 3,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 3,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 44,
+            "value": 0.0
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "representation_addressability_limit": {
+            "numerator": 4,
+            "denominator": 48,
+            "value": 0.08333333333333333
+          },
+          "false_close_frontier_categories": {
+            "A_acceptable_frontier_remains": 3
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 3,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 3
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": {
+          "pass": true,
+          "checks": {
+            "binary_node_accuracy": {
+              "value": 0.9875,
+              "operator": ">=",
+              "threshold": 0.95,
+              "pass": true
+            },
+            "open_requirement_recall": {
+              "value": 0.9855769230769231,
+              "operator": ">=",
+              "threshold": 0.97,
+              "pass": true
+            },
+            "closure_precision": {
+              "value": 0.9142857142857143,
+              "operator": ">=",
+              "threshold": 0.9,
+              "pass": true
+            },
+            "exact_binary_mask": {
+              "value": 0.9375,
+              "operator": ">=",
+              "threshold": 0.85,
+              "pass": true
+            },
+            "false_empty_open_set": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "false_stop_hazard": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "schema_validity": {
+              "value": 1.0,
+              "operator": ">=",
+              "threshold": 1,
+              "pass": true
+            },
+            "lost_all_acceptable_frontier": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0.1,
+              "pass": true
+            },
+            "safe_resolution_rate": {
+              "value": null,
+              "denominator": 0,
+              "required": false,
+              "threshold": 0.75,
+              "pass": true,
+              "status": "INSUFFICIENT_NATURAL_DENOMINATOR"
+            }
+          },
+          "primary_arm": "A1",
+          "A0": "diagnostic only; old joint failure unchanged"
+        }
+      },
+      "971": {
+        "metrics": {
+          "binary_node_accuracy": {
+            "numerator": 225,
+            "denominator": 228,
+            "value": 0.9868421052631579
+          },
+          "three_way_node_accuracy": {
+            "numerator": 212,
+            "denominator": 228,
+            "value": 0.9298245614035088
+          },
+          "open_requirement_recall": {
+            "numerator": 193,
+            "denominator": 196,
+            "value": 0.9846938775510204
+          },
+          "open_requirement_precision": {
+            "numerator": 193,
+            "denominator": 193,
+            "value": 1.0
+          },
+          "closure_precision": {
+            "numerator": 32,
+            "denominator": 35,
+            "value": 0.9142857142857143
+          },
+          "false_close_rate": {
+            "numerator": 3,
+            "denominator": 196,
+            "value": 0.015306122448979591
+          },
+          "exact_binary_mask": {
+            "numerator": 45,
+            "denominator": 48,
+            "value": 0.9375
+          },
+          "exact_three_way_mask": {
+            "numerator": 36,
+            "denominator": 48,
+            "value": 0.75
+          },
+          "schema_validity": {
+            "numerator": 48,
+            "denominator": 48,
+            "value": 1.0
+          },
+          "false_empty_open_set": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "false_stop_hazard": {
+            "numerator": 0,
+            "denominator": 48,
+            "value": 0.0
+          },
+          "control_equivalent_gain": {
+            "value": 0.1875,
+            "unit": "proportion_difference"
+          },
+          "counts": {
+            "responses": 48,
+            "nodes": 228,
+            "three_way_status_errors": 16,
+            "binary_control_errors": 3,
+            "U_P_errors_collapsed": 13,
+            "remaining_false_close_errors": 3,
+            "remaining_false_open_errors": 0,
+            "false_close_responses": 3,
+            "semantically_wrong_but_binary_exact": 9
+          },
+          "lost_all_acceptable_frontier": {
+            "numerator": 0,
+            "denominator": 44,
+            "value": 0.0
+          },
+          "still_has_recovery_frontier": {
+            "numerator": 3,
+            "denominator": 3,
+            "value": 1.0
+          },
+          "representation_addressability_limit": {
+            "numerator": 4,
+            "denominator": 48,
+            "value": 0.08333333333333333
+          },
+          "false_close_frontier_categories": {
+            "A_acceptable_frontier_remains": 3
+          },
+          "frontier_reference_scope": "A1 D2 only; A0 unavailable, never mapped by matching numeric IDs"
+        },
+        "recoverability": {
+          "natural_false_close_nodes": 3,
+          "outcome_counts": {
+            "right_censored_no_eligible_successor": 3
+          },
+          "safe_resolution_rate": {
+            "numerator": 0,
+            "denominator": 0,
+            "value": null
+          },
+          "recoverability_status": "INSUFFICIENT_NATURAL_DENOMINATOR",
+          "persistent_false_close_count": 0,
+          "maximum_consecutive_false_close_observed_states": 1,
+          "median_recovery_steps": null,
+          "median_safe_resolution_steps": null,
+          "censoring_note": "End-of-chain events are not successes or failures in safe-resolution denominator; max run is a lower bound. Events/replicates share qids."
+        },
+        "runtime_gate_if_A1": {
+          "pass": true,
+          "checks": {
+            "binary_node_accuracy": {
+              "value": 0.9868421052631579,
+              "operator": ">=",
+              "threshold": 0.95,
+              "pass": true
+            },
+            "open_requirement_recall": {
+              "value": 0.9846938775510204,
+              "operator": ">=",
+              "threshold": 0.97,
+              "pass": true
+            },
+            "closure_precision": {
+              "value": 0.9142857142857143,
+              "operator": ">=",
+              "threshold": 0.9,
+              "pass": true
+            },
+            "exact_binary_mask": {
+              "value": 0.9375,
+              "operator": ">=",
+              "threshold": 0.85,
+              "pass": true
+            },
+            "false_empty_open_set": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "false_stop_hazard": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0,
+              "pass": true
+            },
+            "schema_validity": {
+              "value": 1.0,
+              "operator": ">=",
+              "threshold": 1,
+              "pass": true
+            },
+            "lost_all_acceptable_frontier": {
+              "value": 0.0,
+              "operator": "<=",
+              "threshold": 0.1,
+              "pass": true
+            },
+            "safe_resolution_rate": {
+              "value": null,
+              "denominator": 0,
+              "required": false,
+              "threshold": 0.75,
+              "pass": true,
+              "status": "INSUFFICIENT_NATURAL_DENOMINATOR"
+            }
+          },
+          "primary_arm": "A1",
+          "A0": "diagnostic only; old joint failure unchanged"
+        }
+      }
+    }
+  }
+}

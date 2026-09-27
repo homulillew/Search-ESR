@@ -1,0 +1,158 @@
+{
+  "eligible_literal_claim_addition_pairs": 15,
+  "excluded_pairs": [
+    {
+      "qid": "228",
+      "from": "G05",
+      "to": "G06",
+      "literal_claim_addition": true,
+      "eligible": false,
+      "reason": "Candidate/role grounding refines from founder Kwon to an additional founder Ding, or generic SPS background to specific FOP records; exclude from no-refinement monotonic summary."
+    },
+    {
+      "qid": "637",
+      "from": "G17",
+      "to": "G18",
+      "literal_claim_addition": true,
+      "eligible": false,
+      "reason": "Candidate/role grounding refines from founder Kwon to an additional founder Ding, or generic SPS background to specific FOP records; exclude from no-refinement monotonic summary."
+    }
+  ],
+  "events": [
+    {
+      "id": "A0__G21__R2",
+      "arm": "A0",
+      "qid": "843",
+      "case_id": "G21",
+      "replicate": 2,
+      "requirement_id": "R2",
+      "next_eligible_state": null,
+      "outcome": "right_censored_no_eligible_successor",
+      "consecutive_false_close_observed_states": 1,
+      "safe_resolution_steps": null,
+      "recovered_open_steps": null
+    },
+    {
+      "id": "A1__G18__R1",
+      "arm": "A1",
+      "qid": "637",
+      "case_id": "G18",
+      "replicate": 1,
+      "requirement_id": "R4",
+      "next_eligible_state": null,
+      "outcome": "right_censored_no_eligible_successor",
+      "consecutive_false_close_observed_states": 1,
+      "safe_resolution_steps": null,
+      "recovered_open_steps": null
+    },
+    {
+      "id": "A0__G18__R2",
+      "arm": "A0",
+      "qid": "637",
+      "case_id": "G18",
+      "replicate": 2,
+      "requirement_id": "R6",
+      "next_eligible_state": null,
+      "outcome": "right_censored_no_eligible_successor",
+      "consecutive_false_close_observed_states": 1,
+      "safe_resolution_steps": null,
+      "recovered_open_steps": null
+    },
+    {
+      "id": "A0__G18__R1",
+      "arm": "A0",
+      "qid": "637",
+      "case_id": "G18",
+      "replicate": 1,
+      "requirement_id": "R6",
+      "next_eligible_state": null,
+      "outcome": "right_censored_no_eligible_successor",
+      "consecutive_false_close_observed_states": 1,
+      "safe_resolution_steps": null,
+      "recovered_open_steps": null
+    },
+    {
+      "id": "A0__G27__R1",
+      "arm": "A0",
+      "qid": "922",
+      "case_id": "G27",
+      "replicate": 1,
+      "requirement_id": "R1",
+      "next_eligible_state": null,
+      "outcome": "right_censored_no_eligible_successor",
+      "consecutive_false_close_observed_states": 1,
+      "safe_resolution_steps": null,
+      "recovered_open_steps": null
+    },
+    {
+      "id": "A1__G21__R2",
+      "arm": "A1",
+      "qid": "843",
+      "case_id": "G21",
+      "replicate": 2,
+      "requirement_id": "R2",
+      "next_eligible_state": null,
+      "outcome": "right_censored_no_eligible_successor",
+      "consecutive_false_close_observed_states": 1,
+      "safe_resolution_steps": null,
+      "recovered_open_steps": null
+    },
+    {
+      "id": "A1__G18__R2",
+      "arm": "A1",
+      "qid": "637",
+      "case_id": "G18",
+      "replicate": 2,
+      "requirement_id": "R4",
+      "next_eligible_state": null,
+      "outcome": "right_censored_no_eligible_successor",
+      "consecutive_false_close_observed_states": 1,
+      "safe_resolution_steps": null,
+      "recovered_open_steps": null
+    },
+    {
+      "id": "A0__G26__R1",
+      "arm": "A0",
+      "qid": "922",
+      "case_id": "G26",
+      "replicate": 1,
+      "requirement_id": "R1",
+      "next_eligible_state": "G27",
+      "outcome": "persistent_false_close",
+      "next_gold_control": "OPEN",
+      "next_predicted_control": "CLOSED",
+      "consecutive_false_close_observed_states": 2,
+      "safe_resolution_steps": null,
+      "recovered_open_steps": null
+    },
+    {
+      "id": "A0__G26__R2",
+      "arm": "A0",
+      "qid": "922",
+      "case_id": "G26",
+      "replicate": 2,
+      "requirement_id": "R1",
+      "next_eligible_state": "G27",
+      "outcome": "persistent_false_close",
+      "next_gold_control": "OPEN",
+      "next_predicted_control": "CLOSED",
+      "consecutive_false_close_observed_states": 2,
+      "safe_resolution_steps": null,
+      "recovered_open_steps": null
+    },
+    {
+      "id": "A0__G27__R2",
+      "arm": "A0",
+      "qid": "922",
+      "case_id": "G27",
+      "replicate": 2,
+      "requirement_id": "R1",
+      "next_eligible_state": null,
+      "outcome": "right_censored_no_eligible_successor",
+      "consecutive_false_close_observed_states": 1,
+      "safe_resolution_steps": null,
+      "recovered_open_steps": null
+    }
+  ],
+  "scope": "Historical independently sampled masks along observed Claims additions. No closed-loop counterfactual, no causal recovery claim."
+}

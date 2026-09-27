@@ -1,0 +1,3 @@
+# Descriptive interpretation audit
+
+1. No p-value or significance claim. 2. Report numerators/denominators and effect sizes. 3. No108-independent-sample assumption: only10qids. 4. No causal claim from historical trajectory. 5. Gate chosen by new user task on exposed data, no fresh-confirmatory claim. 6. Nonempty and qid strata included. 7. No post-hoc label edits. 8. Selection NOT_RUN has no fabricated zero outcome. 9. Recovery0/0 is undefined with censoring. 10. Available frontier is not observed corrective evidence. 11. Addressability, alignment, selection and actual STOP remain separate. These checks cover inferential, denominator, causality and selective-reporting risks without claiming an independent review.

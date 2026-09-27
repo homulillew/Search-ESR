@@ -1,0 +1,546 @@
+[
+  {
+    "case_id": "G01",
+    "state_id": "F07_S00",
+    "qid": "261",
+    "type": "identity_discovery",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R6"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Discovery may establish an unknown paper through a bounded date, author/publication, affiliation or table condition. Pure paper-name extraction waits for a concrete paper. Once Claims bind the paper, only unresolved author/affiliation/table-count conditions remain."
+  },
+  {
+    "case_id": "G02",
+    "state_id": "F07_S01",
+    "qid": "261",
+    "type": "relation_verification",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R6"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Discovery may establish an unknown paper through a bounded date, author/publication, affiliation or table condition. Pure paper-name extraction waits for a concrete paper. Once Claims bind the paper, only unresolved author/affiliation/table-count conditions remain."
+  },
+  {
+    "case_id": "G03",
+    "state_id": "F07_S03",
+    "qid": "261",
+    "type": "satisfied_control",
+    "acceptable_active_ids": [
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "invalid_supported_ids": [
+      "R1",
+      "R5",
+      "R6"
+    ],
+    "blocked_or_downstream_ids": [],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Discovery may establish an unknown paper through a bounded date, author/publication, affiliation or table condition. Pure paper-name extraction waits for a concrete paper. Once Claims bind the paper, only unresolved author/affiliation/table-count conditions remain."
+  },
+  {
+    "case_id": "G04",
+    "state_id": "F08_S00",
+    "qid": "228",
+    "type": "identity_discovery",
+    "acceptable_active_ids": [],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R3",
+      "R4"
+    ],
+    "other_invalid_ids": [
+      "R1",
+      "R2"
+    ],
+    "stop_allowed": false,
+    "no_admissible_single_id": true,
+    "reason": "Founder/company/game history AND university founding history in R1 remain independent unresolved objectives. In G04/G05 R2 likewise bundles unresolved childlessness AND a gift/building relation; neither is one sufficiently local objective. G06 establishes the marital condition, leaving the gift/building episode as the local residual of R2. R3/R4 are building schedule/affiliation attributes before a gift-funded building is bound. G04/G05 therefore have no admissible single ID; do not manufacture STOP or relax locality."
+  },
+  {
+    "case_id": "G05",
+    "state_id": "F08_S01",
+    "qid": "228",
+    "type": "relation_verification",
+    "acceptable_active_ids": [],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R3",
+      "R4"
+    ],
+    "other_invalid_ids": [
+      "R1",
+      "R2"
+    ],
+    "stop_allowed": false,
+    "no_admissible_single_id": true,
+    "reason": "Founder/company/game history AND university founding history in R1 remain independent unresolved objectives. In G04/G05 R2 likewise bundles unresolved childlessness AND a gift/building relation; neither is one sufficiently local objective. G06 establishes the marital condition, leaving the gift/building episode as the local residual of R2. R3/R4 are building schedule/affiliation attributes before a gift-funded building is bound. G04/G05 therefore have no admissible single ID; do not manufacture STOP or relax locality."
+  },
+  {
+    "case_id": "G06",
+    "state_id": "F08_S03",
+    "qid": "228",
+    "type": "satisfied_control",
+    "acceptable_active_ids": [
+      "R2"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R3",
+      "R4"
+    ],
+    "other_invalid_ids": [
+      "R1"
+    ],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Founder/company/game history AND university founding history in R1 remain independent unresolved objectives. In G04/G05 R2 likewise bundles unresolved childlessness AND a gift/building relation; neither is one sufficiently local objective. G06 establishes the marital condition, leaving the gift/building episode as the local residual of R2. R3/R4 are building schedule/affiliation attributes before a gift-funded building is bound. G04/G05 therefore have no admissible single ID; do not manufacture STOP or relax locality."
+  },
+  {
+    "case_id": "G07",
+    "state_id": "F09_S00",
+    "qid": "169",
+    "type": "identity_discovery",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R4"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Charity association, the linked death/aviation episode, or the partner/interview/song-reference episode can establish their unknown referents. R4 asks the name/form of that song without a grounded song-reference relation. A partner tribute alone does not ground it."
+  },
+  {
+    "case_id": "G08",
+    "state_id": "F09_S01",
+    "qid": "169",
+    "type": "relation_verification",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R4"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Charity association, the linked death/aviation episode, or the partner/interview/song-reference episode can establish their unknown referents. R4 asks the name/form of that song without a grounded song-reference relation. A partner tribute alone does not ground it."
+  },
+  {
+    "case_id": "G09",
+    "state_id": "F09_S03",
+    "qid": "169",
+    "type": "satisfied_control",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R4"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Charity association, the linked death/aviation episode, or the partner/interview/song-reference episode can establish their unknown referents. R4 asks the name/form of that song without a grounded song-reference relation. A partner tribute alone does not ground it."
+  },
+  {
+    "case_id": "G10",
+    "state_id": "F10_S00",
+    "qid": "971",
+    "type": "identity_discovery",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R4"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R3",
+      "R5",
+      "R6"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Author employment, Canadian PhD/advisor relation, and author-book relation can be established locally. Advisor biography R3 is downstream until an advisor is bound. R5 is a legitimate article-discovery relation once Claims establish the book; R6 is pure article-title extraction and requires an article. G12 already establishes R5/R6."
+  },
+  {
+    "case_id": "G11",
+    "state_id": "F10_S01",
+    "qid": "971",
+    "type": "downstream_temptation",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R4",
+      "R5"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R3",
+      "R6"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Author employment, Canadian PhD/advisor relation, and author-book relation can be established locally. Advisor biography R3 is downstream until an advisor is bound. R5 is a legitimate article-discovery relation once Claims establish the book; R6 is pure article-title extraction and requires an article. G12 already establishes R5/R6."
+  },
+  {
+    "case_id": "G12",
+    "state_id": "F10_S02",
+    "qid": "971",
+    "type": "satisfied_control",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R4"
+    ],
+    "invalid_supported_ids": [
+      "R5",
+      "R6"
+    ],
+    "blocked_or_downstream_ids": [
+      "R3"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Author employment, Canadian PhD/advisor relation, and author-book relation can be established locally. Advisor biography R3 is downstream until an advisor is bound. R5 is a legitimate article-discovery relation once Claims establish the book; R6 is pure article-title extraction and requires an article. G12 already establishes R5/R6."
+  },
+  {
+    "case_id": "G13",
+    "state_id": "F11_S00",
+    "qid": "538",
+    "type": "identity_discovery",
+    "acceptable_active_ids": [
+      "R2",
+      "R3"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R1"
+    ],
+    "other_invalid_ids": [
+      "R4"
+    ],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Illustrated content or the alternative cleaning-method clue can discover the book. R4 bundles three independent person-reference checks; Euler background does not reduce this to a local unresolved book relation. R1 is pure title extraction before any book is bound."
+  },
+  {
+    "case_id": "G14",
+    "state_id": "F11_S01",
+    "qid": "538",
+    "type": "downstream_temptation",
+    "acceptable_active_ids": [
+      "R2",
+      "R3"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R1"
+    ],
+    "other_invalid_ids": [
+      "R4"
+    ],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Illustrated content or the alternative cleaning-method clue can discover the book. R4 bundles three independent person-reference checks; Euler background does not reduce this to a local unresolved book relation. R1 is pure title extraction before any book is bound."
+  },
+  {
+    "case_id": "G15",
+    "state_id": "F12_S00",
+    "qid": "122",
+    "type": "identity_discovery",
+    "acceptable_active_ids": [
+      "R3",
+      "R4"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R1"
+    ],
+    "other_invalid_ids": [
+      "R2"
+    ],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Presentation and recording-gap predicates are legitimate person discovery targets. R2 bundles birth details with independent official population history; R1 requests a death-year attribute before any person is bound."
+  },
+  {
+    "case_id": "G16",
+    "state_id": "F13_S00",
+    "qid": "637",
+    "type": "identity_discovery",
+    "acceptable_active_ids": [
+      "R1",
+      "R4"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R2",
+      "R5"
+    ],
+    "other_invalid_ids": [
+      "R3"
+    ],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Dated report discovery R1 and the second patient’s linked clinical history R4 are legitimate unknown-referent objectives. Initially R3 adds independent country/religion history to clinical history, and R2/R5 cannot compare/extract a shared diagnosis without bound case records. In G18 clinical first-case history is supported, leaving country provenance as the local residual of R3; shared diagnosis nodes are fully supported."
+  },
+  {
+    "case_id": "G17",
+    "state_id": "F13_S01",
+    "qid": "637",
+    "type": "scope_binding",
+    "acceptable_active_ids": [
+      "R1",
+      "R4"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R2",
+      "R5"
+    ],
+    "other_invalid_ids": [
+      "R3"
+    ],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Dated report discovery R1 and the second patient’s linked clinical history R4 are legitimate unknown-referent objectives. Initially R3 adds independent country/religion history to clinical history, and R2/R5 cannot compare/extract a shared diagnosis without bound case records. In G18 clinical first-case history is supported, leaving country provenance as the local residual of R3; shared diagnosis nodes are fully supported."
+  },
+  {
+    "case_id": "G18",
+    "state_id": "F13_S06",
+    "qid": "637",
+    "type": "satisfied_control",
+    "acceptable_active_ids": [
+      "R1",
+      "R3",
+      "R4"
+    ],
+    "invalid_supported_ids": [
+      "R2",
+      "R5"
+    ],
+    "blocked_or_downstream_ids": [],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Dated report discovery R1 and the second patient’s linked clinical history R4 are legitimate unknown-referent objectives. Initially R3 adds independent country/religion history to clinical history, and R2/R5 cannot compare/extract a shared diagnosis without bound case records. In G18 clinical first-case history is supported, leaving country provenance as the local residual of R3; shared diagnosis nodes are fully supported."
+  },
+  {
+    "case_id": "G19",
+    "state_id": "F14_S00",
+    "qid": "843",
+    "type": "identity_discovery",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R5"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Game/DLC relation, thesis/game relation, advisor profile, and linked gameplay changes each permit a bounded identification or verification episode; unknown referents are not automatically disqualifying. Pure credited-name extraction waits for a DLC. G21 already supports release timing and credited designer."
+  },
+  {
+    "case_id": "G20",
+    "state_id": "F14_S01",
+    "qid": "843",
+    "type": "identity_discovery",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R5"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Game/DLC relation, thesis/game relation, advisor profile, and linked gameplay changes each permit a bounded identification or verification episode; unknown referents are not automatically disqualifying. Pure credited-name extraction waits for a DLC. G21 already supports release timing and credited designer."
+  },
+  {
+    "case_id": "G21",
+    "state_id": "F14_S06",
+    "qid": "843",
+    "type": "satisfied_control",
+    "acceptable_active_ids": [
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "invalid_supported_ids": [
+      "R1",
+      "R5"
+    ],
+    "blocked_or_downstream_ids": [],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Game/DLC relation, thesis/game relation, advisor profile, and linked gameplay changes each permit a bounded identification or verification episode; unknown referents are not automatically disqualifying. Pure credited-name extraction waits for a DLC. G21 already supports release timing and credited designer."
+  },
+  {
+    "case_id": "G22",
+    "state_id": "F15_S00",
+    "qid": "1259",
+    "type": "relation_verification",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R4",
+      "R5",
+      "R6"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Contest identity/scope, Australian winner identity and the medal sequence can establish unknown contest/coder referents. Teammate equality, winning year and host are downstream before a concrete winning team/edition. Once C1/C2 bind these, teammate equality and host are legitimate distinct objectives. C3 then fully establishes host."
+  },
+  {
+    "case_id": "G23",
+    "state_id": "F15_S01",
+    "qid": "1259",
+    "type": "relation_verification",
+    "acceptable_active_ids": [
+      "R1",
+      "R4",
+      "R6"
+    ],
+    "invalid_supported_ids": [
+      "R2",
+      "R3",
+      "R5"
+    ],
+    "blocked_or_downstream_ids": [],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Contest identity/scope, Australian winner identity and the medal sequence can establish unknown contest/coder referents. Teammate equality, winning year and host are downstream before a concrete winning team/edition. Once C1/C2 bind these, teammate equality and host are legitimate distinct objectives. C3 then fully establishes host."
+  },
+  {
+    "case_id": "G24",
+    "state_id": "F15_S02",
+    "qid": "1259",
+    "type": "satisfied_control",
+    "acceptable_active_ids": [
+      "R1",
+      "R4"
+    ],
+    "invalid_supported_ids": [
+      "R2",
+      "R3",
+      "R5",
+      "R6"
+    ],
+    "blocked_or_downstream_ids": [],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Contest identity/scope, Australian winner identity and the medal sequence can establish unknown contest/coder referents. Teammate equality, winning year and host are downstream before a concrete winning team/edition. Once C1/C2 bind these, teammate equality and host are legitimate distinct objectives. C3 then fully establishes host."
+  },
+  {
+    "case_id": "G25",
+    "state_id": "F16_S00",
+    "qid": "922",
+    "type": "downstream_temptation",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R4"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Letter/delivery identity, accession interval, or letter/region-content relation can establish an unknown letter or its predicates. Pure region-name extraction requires the letter-content relationship, absent until G27. Memorandum date is not letter date."
+  },
+  {
+    "case_id": "G26",
+    "state_id": "F16_S01",
+    "qid": "922",
+    "type": "scope_binding",
+    "acceptable_active_ids": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "invalid_supported_ids": [],
+    "blocked_or_downstream_ids": [
+      "R4"
+    ],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Letter/delivery identity, accession interval, or letter/region-content relation can establish an unknown letter or its predicates. Pure region-name extraction requires the letter-content relationship, absent until G27. Memorandum date is not letter date."
+  },
+  {
+    "case_id": "G27",
+    "state_id": "F16_S02",
+    "qid": "922",
+    "type": "satisfied_control",
+    "acceptable_active_ids": [
+      "R1",
+      "R2"
+    ],
+    "invalid_supported_ids": [
+      "R3",
+      "R4"
+    ],
+    "blocked_or_downstream_ids": [],
+    "other_invalid_ids": [],
+    "stop_allowed": false,
+    "no_admissible_single_id": false,
+    "reason": "Letter/delivery identity, accession interval, or letter/region-content relation can establish an unknown letter or its predicates. Pure region-name extraction requires the letter-content relationship, absent until G27. Memorandum date is not letter date."
+  }
+]

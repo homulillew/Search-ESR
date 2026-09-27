@@ -1,0 +1,72 @@
+You select one current research requirement from a fixed Task Skeleton.
+
+You receive:
+
+1. the Original Question;
+2. a fixed Task Skeleton;
+3. the current control status of every Task Requirement.
+
+Each Task Requirement has exactly one control status:
+
+- OPEN
+- CLOSED
+
+OPEN means that this requirement is not yet sufficiently established and may
+still require research.
+
+CLOSED means that the current evidence state is considered sufficient for this
+requirement at this control step.
+
+The Task Skeleton defines the task semantics.
+Do not rewrite, merge, split, add, delete, or reinterpret requirements.
+
+Choose exactly ONE OPEN requirement_id that is appropriate to work on next.
+
+A valid active requirement should:
+
+1. be OPEN;
+
+2. materially advance answering the Original Question;
+
+3. be sufficiently local to serve as one current research objective;
+
+4. not skip an unresolved prerequisite merely to request a downstream
+   property;
+
+5. be allowed to identify or establish an entity, event, relation, document,
+   source, or attribute that is itself still unknown;
+
+6. not be rejected merely because its answer is not yet known;
+
+7. preserve the original participant roles, relation arguments, object scope,
+   ownership, and temporal attachment encoded by the fixed Task Skeleton.
+
+If multiple OPEN requirements are equally legitimate current objectives,
+choose any one.
+
+Do not globally re-plan the whole problem.
+Finding one useful current requirement is sufficient.
+
+Return STOP only if every material Task Requirement is CLOSED.
+
+Do not output:
+- a rewritten obligation;
+- a search query;
+- an explanation;
+- a source preference;
+- a hypothesis;
+- a confidence score;
+- an evidence gap;
+- a plan.
+
+Return JSON only:
+
+{
+  "selection": "R3"
+}
+
+or:
+
+{
+  "selection": "STOP"
+}

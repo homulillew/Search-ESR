@@ -1,0 +1,34 @@
+{
+  "output": {
+    "type": "object",
+    "required": [
+      "selection"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "selection": {
+        "type": "string",
+        "allowed": "STOP or one requirement_id from the fixed input skeleton"
+      }
+    }
+  },
+  "input_keys": [
+    "Original Question",
+    "Task Skeleton",
+    "Control Mask"
+  ],
+  "review_error_codes": [
+    "invalid_schema",
+    "input_closed_selected",
+    "premature_stop_under_visible_mask",
+    "downstream_skip",
+    "coarse_nonlocal_node",
+    "other_visible_selection_error",
+    "no_response"
+  ],
+  "review_fields": [
+    "selection_appropriate_under_visible_mask",
+    "error_codes",
+    "reason"
+  ]
+}

@@ -1,0 +1,1730 @@
+{
+  "922": {
+    "errors": [
+      {
+        "id": "A0__G27__R1",
+        "qid": "922",
+        "case_id": "G27",
+        "arm": "A0",
+        "replicate": 1,
+        "requirement_id": "R1",
+        "gold_status": "partially_supported",
+        "predicted_status": "fully_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "CLOSED",
+        "supported_by": [
+          "C1"
+        ],
+        "gold_reason": "Letter author/recipient/transmission are supported; memorandum date does not establish letter writing period.",
+        "false_close": true,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": true,
+        "collapsed_U_P_error": false
+      },
+      {
+        "id": "A0__G27__R1",
+        "qid": "922",
+        "case_id": "G27",
+        "arm": "A0",
+        "replicate": 1,
+        "requirement_id": "R2",
+        "gold_status": "partially_supported",
+        "predicted_status": "unsupported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [],
+        "gold_reason": "Official transmission/handoff relationship is supported, but recipient-given body-part nickname is absent.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A0__G26__R1",
+        "qid": "922",
+        "case_id": "G26",
+        "arm": "A0",
+        "replicate": 1,
+        "requirement_id": "R1",
+        "gold_status": "partially_supported",
+        "predicted_status": "fully_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "CLOSED",
+        "supported_by": [
+          "C1",
+          "C2"
+        ],
+        "gold_reason": "Letter author/recipient/transmission are supported; memorandum date does not establish letter writing period.",
+        "false_close": true,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": true,
+        "collapsed_U_P_error": false
+      },
+      {
+        "id": "A0__G26__R1",
+        "qid": "922",
+        "case_id": "G26",
+        "arm": "A0",
+        "replicate": 1,
+        "requirement_id": "R2",
+        "gold_status": "partially_supported",
+        "predicted_status": "unsupported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [],
+        "gold_reason": "Official transmission/handoff relationship is supported, but recipient-given body-part nickname is absent.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A0__G26__R2",
+        "qid": "922",
+        "case_id": "G26",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R1",
+        "gold_status": "partially_supported",
+        "predicted_status": "fully_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "CLOSED",
+        "supported_by": [
+          "C1"
+        ],
+        "gold_reason": "Letter author/recipient/transmission are supported; memorandum date does not establish letter writing period.",
+        "false_close": true,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": true,
+        "collapsed_U_P_error": false
+      },
+      {
+        "id": "A0__G26__R2",
+        "qid": "922",
+        "case_id": "G26",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R2",
+        "gold_status": "partially_supported",
+        "predicted_status": "unsupported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [],
+        "gold_reason": "Official transmission/handoff relationship is supported, but recipient-given body-part nickname is absent.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A0__G27__R2",
+        "qid": "922",
+        "case_id": "G27",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R1",
+        "gold_status": "partially_supported",
+        "predicted_status": "fully_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "CLOSED",
+        "supported_by": [
+          "C1"
+        ],
+        "gold_reason": "Letter author/recipient/transmission are supported; memorandum date does not establish letter writing period.",
+        "false_close": true,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": true,
+        "collapsed_U_P_error": false
+      }
+    ],
+    "temporal_events": [
+      {
+        "id": "A0__G27__R1",
+        "arm": "A0",
+        "qid": "922",
+        "case_id": "G27",
+        "replicate": 1,
+        "requirement_id": "R1",
+        "next_eligible_state": null,
+        "outcome": "right_censored_no_eligible_successor",
+        "consecutive_false_close_observed_states": 1,
+        "safe_resolution_steps": null,
+        "recovered_open_steps": null
+      },
+      {
+        "id": "A0__G26__R1",
+        "arm": "A0",
+        "qid": "922",
+        "case_id": "G26",
+        "replicate": 1,
+        "requirement_id": "R1",
+        "next_eligible_state": "G27",
+        "outcome": "persistent_false_close",
+        "next_gold_control": "OPEN",
+        "next_predicted_control": "CLOSED",
+        "consecutive_false_close_observed_states": 2,
+        "safe_resolution_steps": null,
+        "recovered_open_steps": null
+      },
+      {
+        "id": "A0__G26__R2",
+        "arm": "A0",
+        "qid": "922",
+        "case_id": "G26",
+        "replicate": 2,
+        "requirement_id": "R1",
+        "next_eligible_state": "G27",
+        "outcome": "persistent_false_close",
+        "next_gold_control": "OPEN",
+        "next_predicted_control": "CLOSED",
+        "consecutive_false_close_observed_states": 2,
+        "safe_resolution_steps": null,
+        "recovered_open_steps": null
+      },
+      {
+        "id": "A0__G27__R2",
+        "arm": "A0",
+        "qid": "922",
+        "case_id": "G27",
+        "replicate": 2,
+        "requirement_id": "R1",
+        "next_eligible_state": null,
+        "outcome": "right_censored_no_eligible_successor",
+        "consecutive_false_close_observed_states": 1,
+        "safe_resolution_steps": null,
+        "recovered_open_steps": null
+      }
+    ],
+    "frontiers": [
+      {
+        "id": "A1__G25__R2",
+        "arm": "A1",
+        "case_id": "G25",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A1__G26__R2",
+        "arm": "A1",
+        "case_id": "G26",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A1__G27__R1",
+        "arm": "A1",
+        "case_id": "G27",
+        "predicted_open_ids": [
+          "R1",
+          "R2"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "id": "A1__G27__R2",
+        "arm": "A1",
+        "case_id": "G27",
+        "predicted_open_ids": [
+          "R1",
+          "R2"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "id": "A0__G25__R1",
+        "arm": "A0",
+        "case_id": "G25",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G26__R1",
+        "arm": "A1",
+        "case_id": "G26",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A0__G27__R1",
+        "arm": "A0",
+        "case_id": "G27",
+        "predicted_open_ids": [
+          "R2",
+          "R3"
+        ],
+        "false_close_ids": [
+          "R1"
+        ],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G25__R1",
+        "arm": "A1",
+        "case_id": "G25",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A0__G26__R1",
+        "arm": "A0",
+        "case_id": "G26",
+        "predicted_open_ids": [
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [
+          "R1"
+        ],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G26__R2",
+        "arm": "A0",
+        "case_id": "G26",
+        "predicted_open_ids": [
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [
+          "R1"
+        ],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G25__R2",
+        "arm": "A0",
+        "case_id": "G25",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G27__R2",
+        "arm": "A0",
+        "case_id": "G27",
+        "predicted_open_ids": [
+          "R2",
+          "R3"
+        ],
+        "false_close_ids": [
+          "R1"
+        ],
+        "remaining_acceptable_ids": null
+      }
+    ]
+  },
+  "637": {
+    "errors": [
+      {
+        "id": "A0__G17__R2",
+        "qid": "637",
+        "case_id": "G17",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R2",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1",
+          "C2"
+        ],
+        "gold_reason": "General stiff-person-syndrome symptoms are background, not reports of the two described patients. No case-specific predicate is supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A0__G17__R2",
+        "qid": "637",
+        "case_id": "G17",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R4",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1",
+          "C2"
+        ],
+        "gold_reason": "General stiff-person-syndrome symptoms are background, not reports of the two described patients. No case-specific predicate is supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A0__G17__R2",
+        "qid": "637",
+        "case_id": "G17",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R5",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C2"
+        ],
+        "gold_reason": "General stiff-person-syndrome symptoms are background, not reports of the two described patients. No case-specific predicate is supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A0__G17__R2",
+        "qid": "637",
+        "case_id": "G17",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R6",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C2"
+        ],
+        "gold_reason": "General stiff-person-syndrome symptoms are background, not reports of the two described patients. No case-specific predicate is supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A0__G17__R2",
+        "qid": "637",
+        "case_id": "G17",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R7",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1",
+          "C2"
+        ],
+        "gold_reason": "General stiff-person-syndrome symptoms are background, not reports of the two described patients. No case-specific predicate is supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A1__G18__R1",
+        "qid": "637",
+        "case_id": "G18",
+        "arm": "A1",
+        "replicate": 1,
+        "requirement_id": "R4",
+        "gold_status": "partially_supported",
+        "predicted_status": "fully_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "CLOSED",
+        "supported_by": [
+          "C9"
+        ],
+        "gold_reason": "Biopsy/upper-body/two-month episode and early stiffness are supported, but exact four-year-later swelling onset is not.",
+        "false_close": true,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": true,
+        "collapsed_U_P_error": false
+      },
+      {
+        "id": "A0__G18__R2",
+        "qid": "637",
+        "case_id": "G18",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R3",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C7"
+        ],
+        "gold_reason": "C7 and C9 explicitly describe different clinical case records matching the first and second histories. Treat these as two case records, without inventing publication years or report-country facts. Generic disease facts, anonymous mutation confirmation, and unlinked biopsy case cannot fill missing case-specific conditions. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A0__G18__R2",
+        "qid": "637",
+        "case_id": "G18",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R6",
+        "gold_status": "partially_supported",
+        "predicted_status": "fully_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "CLOSED",
+        "supported_by": [
+          "C9"
+        ],
+        "gold_reason": "Early stiffness and later swellings are supported; over the next4 years is not onset exactly four years later.",
+        "false_close": true,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": true,
+        "collapsed_U_P_error": false
+      },
+      {
+        "id": "A0__G18__R1",
+        "qid": "637",
+        "case_id": "G18",
+        "arm": "A0",
+        "replicate": 1,
+        "requirement_id": "R6",
+        "gold_status": "partially_supported",
+        "predicted_status": "fully_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "CLOSED",
+        "supported_by": [
+          "C9"
+        ],
+        "gold_reason": "Early stiffness and later swellings are supported; over the next4 years is not onset exactly four years later.",
+        "false_close": true,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": true,
+        "collapsed_U_P_error": false
+      },
+      {
+        "id": "A0__G17__R1",
+        "qid": "637",
+        "case_id": "G17",
+        "arm": "A0",
+        "replicate": 1,
+        "requirement_id": "R7",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1",
+          "C2"
+        ],
+        "gold_reason": "General stiff-person-syndrome symptoms are background, not reports of the two described patients. No case-specific predicate is supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A1__G17__R2",
+        "qid": "637",
+        "case_id": "G17",
+        "arm": "A1",
+        "replicate": 2,
+        "requirement_id": "R2",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1",
+          "C2"
+        ],
+        "gold_reason": "General stiff-person-syndrome symptoms are background, not reports of the two described patients. No case-specific predicate is supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A1__G17__R2",
+        "qid": "637",
+        "case_id": "G17",
+        "arm": "A1",
+        "replicate": 2,
+        "requirement_id": "R3",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1",
+          "C2"
+        ],
+        "gold_reason": "General stiff-person-syndrome symptoms are background, not reports of the two described patients. No case-specific predicate is supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A1__G17__R2",
+        "qid": "637",
+        "case_id": "G17",
+        "arm": "A1",
+        "replicate": 2,
+        "requirement_id": "R4",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1",
+          "C2"
+        ],
+        "gold_reason": "General stiff-person-syndrome symptoms are background, not reports of the two described patients. No case-specific predicate is supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A1__G17__R2",
+        "qid": "637",
+        "case_id": "G17",
+        "arm": "A1",
+        "replicate": 2,
+        "requirement_id": "R5",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1",
+          "C2"
+        ],
+        "gold_reason": "General stiff-person-syndrome symptoms are background, not reports of the two described patients. No case-specific predicate is supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A1__G18__R2",
+        "qid": "637",
+        "case_id": "G18",
+        "arm": "A1",
+        "replicate": 2,
+        "requirement_id": "R1",
+        "gold_status": "partially_supported",
+        "predicted_status": "unsupported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [],
+        "gold_reason": "Two described case records are present; different report years and2010s dates are absent.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A1__G18__R2",
+        "qid": "637",
+        "case_id": "G18",
+        "arm": "A1",
+        "replicate": 2,
+        "requirement_id": "R4",
+        "gold_status": "partially_supported",
+        "predicted_status": "fully_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "CLOSED",
+        "supported_by": [
+          "C9"
+        ],
+        "gold_reason": "Biopsy/upper-body/two-month episode and early stiffness are supported, but exact four-year-later swelling onset is not.",
+        "false_close": true,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": true,
+        "collapsed_U_P_error": false
+      }
+    ],
+    "temporal_events": [
+      {
+        "id": "A1__G18__R1",
+        "arm": "A1",
+        "qid": "637",
+        "case_id": "G18",
+        "replicate": 1,
+        "requirement_id": "R4",
+        "next_eligible_state": null,
+        "outcome": "right_censored_no_eligible_successor",
+        "consecutive_false_close_observed_states": 1,
+        "safe_resolution_steps": null,
+        "recovered_open_steps": null
+      },
+      {
+        "id": "A0__G18__R2",
+        "arm": "A0",
+        "qid": "637",
+        "case_id": "G18",
+        "replicate": 2,
+        "requirement_id": "R6",
+        "next_eligible_state": null,
+        "outcome": "right_censored_no_eligible_successor",
+        "consecutive_false_close_observed_states": 1,
+        "safe_resolution_steps": null,
+        "recovered_open_steps": null
+      },
+      {
+        "id": "A0__G18__R1",
+        "arm": "A0",
+        "qid": "637",
+        "case_id": "G18",
+        "replicate": 1,
+        "requirement_id": "R6",
+        "next_eligible_state": null,
+        "outcome": "right_censored_no_eligible_successor",
+        "consecutive_false_close_observed_states": 1,
+        "safe_resolution_steps": null,
+        "recovered_open_steps": null
+      },
+      {
+        "id": "A1__G18__R2",
+        "arm": "A1",
+        "qid": "637",
+        "case_id": "G18",
+        "replicate": 2,
+        "requirement_id": "R4",
+        "next_eligible_state": null,
+        "outcome": "right_censored_no_eligible_successor",
+        "consecutive_false_close_observed_states": 1,
+        "safe_resolution_steps": null,
+        "recovered_open_steps": null
+      }
+    ],
+    "frontiers": [
+      {
+        "id": "A1__G16__R2",
+        "arm": "A1",
+        "case_id": "G16",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R4"
+        ]
+      },
+      {
+        "id": "A0__G17__R2",
+        "arm": "A0",
+        "case_id": "G17",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6",
+          "R7"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G18__R1",
+        "arm": "A1",
+        "case_id": "G18",
+        "predicted_open_ids": [
+          "R1",
+          "R3"
+        ],
+        "false_close_ids": [
+          "R4"
+        ],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R3"
+        ]
+      },
+      {
+        "id": "A0__G16__R1",
+        "arm": "A0",
+        "case_id": "G16",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6",
+          "R7"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G16__R1",
+        "arm": "A1",
+        "case_id": "G16",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R4"
+        ]
+      },
+      {
+        "id": "A0__G18__R2",
+        "arm": "A0",
+        "case_id": "G18",
+        "predicted_open_ids": [
+          "R1",
+          "R3"
+        ],
+        "false_close_ids": [
+          "R6"
+        ],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G18__R1",
+        "arm": "A0",
+        "case_id": "G18",
+        "predicted_open_ids": [
+          "R1",
+          "R3"
+        ],
+        "false_close_ids": [
+          "R6"
+        ],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G17__R1",
+        "arm": "A0",
+        "case_id": "G17",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6",
+          "R7"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G17__R2",
+        "arm": "A1",
+        "case_id": "G17",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R4"
+        ]
+      },
+      {
+        "id": "A1__G18__R2",
+        "arm": "A1",
+        "case_id": "G18",
+        "predicted_open_ids": [
+          "R1",
+          "R3"
+        ],
+        "false_close_ids": [
+          "R4"
+        ],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R3"
+        ]
+      },
+      {
+        "id": "A1__G17__R1",
+        "arm": "A1",
+        "case_id": "G17",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R4"
+        ]
+      },
+      {
+        "id": "A0__G16__R2",
+        "arm": "A0",
+        "case_id": "G16",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6",
+          "R7"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      }
+    ]
+  },
+  "843": {
+    "errors": [
+      {
+        "id": "A0__G21__R2",
+        "qid": "843",
+        "case_id": "G21",
+        "arm": "A0",
+        "replicate": 2,
+        "requirement_id": "R2",
+        "gold_status": "partially_supported",
+        "predicted_status": "fully_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "CLOSED",
+        "supported_by": [
+          "C1"
+        ],
+        "gold_reason": "Master’s thesis, game, year and colonialism-related topic are stated; American-university condition is not in Claims.",
+        "false_close": true,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": true,
+        "collapsed_U_P_error": false
+      },
+      {
+        "id": "A1__G21__R2",
+        "qid": "843",
+        "case_id": "G21",
+        "arm": "A1",
+        "replicate": 2,
+        "requirement_id": "R2",
+        "gold_status": "partially_supported",
+        "predicted_status": "fully_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "CLOSED",
+        "supported_by": [
+          "C1"
+        ],
+        "gold_reason": "Master’s thesis, game, year and colonialism-related topic are stated; American-university condition is not in Claims.",
+        "false_close": true,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": true,
+        "collapsed_U_P_error": false
+      }
+    ],
+    "temporal_events": [
+      {
+        "id": "A0__G21__R2",
+        "arm": "A0",
+        "qid": "843",
+        "case_id": "G21",
+        "replicate": 2,
+        "requirement_id": "R2",
+        "next_eligible_state": null,
+        "outcome": "right_censored_no_eligible_successor",
+        "consecutive_false_close_observed_states": 1,
+        "safe_resolution_steps": null,
+        "recovered_open_steps": null
+      },
+      {
+        "id": "A1__G21__R2",
+        "arm": "A1",
+        "qid": "843",
+        "case_id": "G21",
+        "replicate": 2,
+        "requirement_id": "R2",
+        "next_eligible_state": null,
+        "outcome": "right_censored_no_eligible_successor",
+        "consecutive_false_close_observed_states": 1,
+        "safe_resolution_steps": null,
+        "recovered_open_steps": null
+      }
+    ],
+    "frontiers": [
+      {
+        "id": "A0__G20__R2",
+        "arm": "A0",
+        "case_id": "G20",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G21__R2",
+        "arm": "A0",
+        "case_id": "G21",
+        "predicted_open_ids": [
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [
+          "R2"
+        ],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G19__R1",
+        "arm": "A0",
+        "case_id": "G19",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G20__R1",
+        "arm": "A1",
+        "case_id": "G20",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "id": "A0__G19__R2",
+        "arm": "A0",
+        "case_id": "G19",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G20__R1",
+        "arm": "A0",
+        "case_id": "G20",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G21__R1",
+        "arm": "A0",
+        "case_id": "G21",
+        "predicted_open_ids": [
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G19__R1",
+        "arm": "A1",
+        "case_id": "G19",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "id": "A1__G21__R1",
+        "arm": "A1",
+        "case_id": "G21",
+        "predicted_open_ids": [
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R2",
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "id": "A1__G19__R2",
+        "arm": "A1",
+        "case_id": "G19",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "id": "A1__G20__R2",
+        "arm": "A1",
+        "case_id": "G20",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "id": "A1__G21__R2",
+        "arm": "A1",
+        "case_id": "G21",
+        "predicted_open_ids": [
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [
+          "R2"
+        ],
+        "remaining_acceptable_ids": [
+          "R3",
+          "R4"
+        ]
+      }
+    ]
+  },
+  "169": {
+    "errors": [
+      {
+        "id": "A1__G09__R2",
+        "qid": "169",
+        "case_id": "G09",
+        "arm": "A1",
+        "replicate": 2,
+        "requirement_id": "R1",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1"
+        ],
+        "gold_reason": "Partner relationship is substantive support for part of the interview requirement. Online tribute is not established as an interview, nor does its wording establish a song-reference relation or title. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A0__G08__R1",
+        "qid": "169",
+        "case_id": "G08",
+        "arm": "A0",
+        "replicate": 1,
+        "requirement_id": "R1",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1"
+        ],
+        "gold_reason": "C1 identifies musical-artist death, city and accidentality. Charity, aviation crash, interview and song are absent. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A1__G08__R2",
+        "qid": "169",
+        "case_id": "G08",
+        "arm": "A1",
+        "replicate": 2,
+        "requirement_id": "R1",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1"
+        ],
+        "gold_reason": "C1 identifies musical-artist death, city and accidentality. Charity, aviation crash, interview and song are absent. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      },
+      {
+        "id": "A0__G09__R1",
+        "qid": "169",
+        "case_id": "G09",
+        "arm": "A0",
+        "replicate": 1,
+        "requirement_id": "R1",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C1"
+        ],
+        "gold_reason": "Partner relationship is substantive support for part of the interview requirement. Online tribute is not established as an interview, nor does its wording establish a song-reference relation or title. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      }
+    ],
+    "temporal_events": [],
+    "frontiers": [
+      {
+        "id": "A1__G07__R2",
+        "arm": "A1",
+        "case_id": "G07",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A1__G09__R2",
+        "arm": "A1",
+        "case_id": "G09",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A0__G08__R1",
+        "arm": "A0",
+        "case_id": "G08",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G09__R1",
+        "arm": "A1",
+        "case_id": "G09",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A1__G07__R1",
+        "arm": "A1",
+        "case_id": "G07",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A0__G09__R2",
+        "arm": "A0",
+        "case_id": "G09",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G08__R1",
+        "arm": "A1",
+        "case_id": "G08",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A0__G08__R2",
+        "arm": "A0",
+        "case_id": "G08",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G08__R2",
+        "arm": "A1",
+        "case_id": "G08",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A0__G07__R1",
+        "arm": "A0",
+        "case_id": "G07",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G09__R1",
+        "arm": "A0",
+        "case_id": "G09",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G07__R2",
+        "arm": "A0",
+        "case_id": "G07",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      }
+    ]
+  },
+  "1259": {
+    "errors": [
+      {
+        "id": "A1__G24__R2",
+        "qid": "1259",
+        "case_id": "G24",
+        "arm": "A1",
+        "replicate": 2,
+        "requirement_id": "R4",
+        "gold_status": "unsupported",
+        "predicted_status": "partially_supported",
+        "gold_control": "OPEN",
+        "predicted_control": "OPEN",
+        "supported_by": [
+          "C2"
+        ],
+        "gold_reason": "C3 adds host of the already linked winning edition. Teammate nationality and annual/global-university contest conditions remain incompletely supported. No Claim establishes a substantive part of this node with the required role/relationship binding.",
+        "false_close": false,
+        "false_open": false,
+        "semantic_error": true,
+        "binary_error": false,
+        "collapsed_U_P_error": true
+      }
+    ],
+    "temporal_events": [],
+    "frontiers": [
+      {
+        "id": "A0__G23__R2",
+        "arm": "A0",
+        "case_id": "G23",
+        "predicted_open_ids": [
+          "R1",
+          "R4",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G24__R2",
+        "arm": "A0",
+        "case_id": "G24",
+        "predicted_open_ids": [
+          "R1",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G22__R2",
+        "arm": "A1",
+        "case_id": "G22",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A0__G23__R1",
+        "arm": "A0",
+        "case_id": "G23",
+        "predicted_open_ids": [
+          "R1",
+          "R4",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A0__G24__R1",
+        "arm": "A0",
+        "case_id": "G24",
+        "predicted_open_ids": [
+          "R1",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G24__R2",
+        "arm": "A1",
+        "case_id": "G24",
+        "predicted_open_ids": [
+          "R1",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R4"
+        ]
+      },
+      {
+        "id": "A1__G24__R1",
+        "arm": "A1",
+        "case_id": "G24",
+        "predicted_open_ids": [
+          "R1",
+          "R4"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R4"
+        ]
+      },
+      {
+        "id": "A1__G22__R1",
+        "arm": "A1",
+        "case_id": "G22",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "id": "A1__G23__R2",
+        "arm": "A1",
+        "case_id": "G23",
+        "predicted_open_ids": [
+          "R1",
+          "R4",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R4",
+          "R6"
+        ]
+      },
+      {
+        "id": "A0__G22__R1",
+        "arm": "A0",
+        "case_id": "G22",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      },
+      {
+        "id": "A1__G23__R1",
+        "arm": "A1",
+        "case_id": "G23",
+        "predicted_open_ids": [
+          "R1",
+          "R4",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": [
+          "R1",
+          "R4",
+          "R6"
+        ]
+      },
+      {
+        "id": "A0__G22__R2",
+        "arm": "A0",
+        "case_id": "G22",
+        "predicted_open_ids": [
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6"
+        ],
+        "false_close_ids": [],
+        "remaining_acceptable_ids": null
+      }
+    ]
+  }
+}
