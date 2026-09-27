@@ -1,0 +1,75 @@
+{
+  "id": "D0__Q169__R1",
+  "arm": "D0",
+  "qid": "169",
+  "replicate": 1,
+  "request_sha256": "9d042bb51855aabaf4c0ce09466a51d442ca807965f0cb2e60e38d167e71a676",
+  "head": "0ddd897eec963e374a26a367b8fa5a3d1e6e0fd6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement": "A musical artist's first name matches part of the name of a charity."
+      },
+      {
+        "requirement": "The charity is unrelated to the musical artist and was registered between 2000 and 2010 inclusive."
+      },
+      {
+        "requirement": "The musical artist died in a city."
+      },
+      {
+        "requirement": "The city where the musical artist died is in a country, and that city is 20 to 30 miles inclusive from the site of that country's deadliest aviation accident as of 2023."
+      },
+      {
+        "requirement": "The aviation accident occurred 15 years prior to the musical artist's accidental death."
+      },
+      {
+        "requirement": "The musical artist had a partner at the time of the musical artist's death."
+      },
+      {
+        "requirement": "That partner gave an interview in which the partner said that following the musical artist's death, the musical artist has become a direct reference to one of the musical artist's songs."
+      },
+      {
+        "requirement": "The title of the song referenced in the partner's statement is one word and an adjective."
+      },
+      {
+        "requirement": "The requested song title is the title of that song."
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 884,
+    "completion_tokens": 4735,
+    "total_tokens": 5619,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4513
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 628
+  },
+  "started_utc": "2026-09-27T07:15:22.299879+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 21.149900468066335,
+  "completed_utc": "2026-09-27T07:15:43.449795+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 884,
+      "output": 4735,
+      "total": 5619,
+      "reasoning": 4513,
+      "hit": 256,
+      "miss": 628
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

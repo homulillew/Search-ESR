@@ -1,0 +1,92 @@
+{
+  "id": "D2__Q169__R1",
+  "arm": "D2",
+  "qid": "169",
+  "replicate": 1,
+  "request_sha256": "9126ef8562ebacb1fdaed1ee815aa620108bf4669c2337e42ea1ff15630ecd6e",
+  "head": "0ddd897eec963e374a26a367b8fa5a3d1e6e0fd6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "A musical artist shares their first name with part of a charity’s name."
+          },
+          {
+            "unit": "Q2",
+            "text": "The charity is unrelated to the musical artist, and was registered between 2000 and 2010 (inclusive)."
+          }
+        ]
+      },
+      {
+        "source_spans": [
+          {
+            "unit": "Q3",
+            "text": "This musical artist died in a city that is 20 to 30 miles (inclusive) away from the site of that country’s deadliest aviation accident (as of 2023)."
+          },
+          {
+            "unit": "Q4",
+            "text": "The aviation accident occurred 15 years prior to the artist’s accidental death."
+          }
+        ]
+      },
+      {
+        "source_spans": [
+          {
+            "unit": "Q5",
+            "text": "The partner of the artist (at the time of their death) gave an interview where they said that following their death, the artist has become a direct reference to one of their songs."
+          }
+        ]
+      },
+      {
+        "source_spans": [
+          {
+            "unit": "Q6",
+            "text": "The title of the song is one word, an adjective."
+          },
+          {
+            "unit": "Q7",
+            "text": "What is the song title?"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 890,
+    "completion_tokens": 6313,
+    "total_tokens": 7203,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6075
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 250
+  },
+  "started_utc": "2026-09-27T07:16:36.147542+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 26.55494574084878,
+  "completed_utc": "2026-09-27T07:17:02.702504+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 890,
+      "output": 6313,
+      "total": 7203,
+      "reasoning": 6075,
+      "hit": 640,
+      "miss": 250
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

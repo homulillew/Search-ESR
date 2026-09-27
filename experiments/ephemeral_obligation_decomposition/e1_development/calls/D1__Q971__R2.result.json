@@ -1,0 +1,120 @@
+{
+  "id": "D1__Q971__R2",
+  "arm": "D1",
+  "qid": "971",
+  "replicate": 2,
+  "request_sha256": "42edcc2ae216c8ae6899f0dce6429df7019d793e04d8e234ae23f7efdecf9fbb",
+  "head": "0ddd897eec963e374a26a367b8fa5a3d1e6e0fd6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement": "There is an Indian author.",
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "There is an Indian author"
+          }
+        ]
+      },
+      {
+        "requirement": "The author got promoted from associate professor to professor in 2022 at the same university where they did their undergraduate and graduate degrees.",
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "who got promoted from associate professor to professor in 2022 at the same university where they did their undergraduate and graduate degrees"
+          }
+        ]
+      },
+      {
+        "requirement": "The author had pursued their PhD abroad at a Canadian university under the guidance of an Iranian professor.",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "They had pursued their PhD abroad at a Canadian university under the guidance of an Iranian professor"
+          }
+        ]
+      },
+      {
+        "requirement": "The Iranian professor dreamt of becoming a writer but switched to mathematics at the end of high school.",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "who dreamt of becoming a writer but switched to mathematics at the end of high school"
+          }
+        ]
+      },
+      {
+        "requirement": "The Iranian professor got their doctorate in Minnesota.",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "and got their doctorate in Minnesota"
+          }
+        ]
+      },
+      {
+        "requirement": "The author published a book connecting mathematics to an ancient technique for liberation 20 years after completing their PhD.",
+        "source_spans": [
+          {
+            "unit": "Q3",
+            "text": "The author published a book connecting mathematics to an ancient technique for liberation 20 years after completing their PhD"
+          }
+        ]
+      },
+      {
+        "requirement": "The author then published a journal article on a similar topic six years after publishing the book.",
+        "source_spans": [
+          {
+            "unit": "Q3",
+            "text": "then published a journal article on a similar topic six years after publishing the book"
+          }
+        ]
+      },
+      {
+        "requirement": "The requested attribute is the title of that article.",
+        "source_spans": [
+          {
+            "unit": "Q4",
+            "text": "What is the title of that article?"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 727,
+    "completion_tokens": 9372,
+    "total_tokens": 10099,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8826
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 471
+  },
+  "started_utc": "2026-09-27T07:14:28.821499+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 36.1319908760488,
+  "completed_utc": "2026-09-27T07:15:04.953506+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 727,
+      "output": 9372,
+      "total": 10099,
+      "reasoning": 8826,
+      "hit": 256,
+      "miss": 471
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

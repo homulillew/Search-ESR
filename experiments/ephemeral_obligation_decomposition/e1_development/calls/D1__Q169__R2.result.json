@@ -1,0 +1,120 @@
+{
+  "id": "D1__Q169__R2",
+  "arm": "D1",
+  "qid": "169",
+  "replicate": 2,
+  "request_sha256": "7dfd38ed74a086d496f2c264d4e1a5d77cab91fecf29f22529b886d42aeeb109",
+  "head": "0ddd897eec963e374a26a367b8fa5a3d1e6e0fd6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement": "A musical artist shares their first name with part of a charity’s name.",
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "A musical artist shares their first name with part of a charity’s name."
+          }
+        ]
+      },
+      {
+        "requirement": "The charity is unrelated to the musical artist.",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "The charity is unrelated to the musical artist, and was registered between 2000 and 2010 (inclusive)."
+          }
+        ]
+      },
+      {
+        "requirement": "The charity was registered between 2000 and 2010 (inclusive).",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "The charity is unrelated to the musical artist, and was registered between 2000 and 2010 (inclusive)."
+          }
+        ]
+      },
+      {
+        "requirement": "This musical artist died in a city that is 20 to 30 miles (inclusive) away from the site of that country’s deadliest aviation accident (as of 2023).",
+        "source_spans": [
+          {
+            "unit": "Q3",
+            "text": "This musical artist died in a city that is 20 to 30 miles (inclusive) away from the site of that country’s deadliest aviation accident (as of 2023)."
+          }
+        ]
+      },
+      {
+        "requirement": "The aviation accident occurred 15 years prior to the artist’s accidental death.",
+        "source_spans": [
+          {
+            "unit": "Q4",
+            "text": "The aviation accident occurred 15 years prior to the artist’s accidental death."
+          }
+        ]
+      },
+      {
+        "requirement": "The partner of the artist (at the time of their death) gave an interview where they said that following their death, the artist has become a direct reference to one of their songs.",
+        "source_spans": [
+          {
+            "unit": "Q5",
+            "text": "The partner of the artist (at the time of their death) gave an interview where they said that following their death, the artist has become a direct reference to one of their songs."
+          }
+        ]
+      },
+      {
+        "requirement": "The title of the song is one word, an adjective.",
+        "source_spans": [
+          {
+            "unit": "Q6",
+            "text": "The title of the song is one word, an adjective."
+          }
+        ]
+      },
+      {
+        "requirement": "The requested answer is the song title.",
+        "source_spans": [
+          {
+            "unit": "Q7",
+            "text": "What is the song title?"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 829,
+    "completion_tokens": 9038,
+    "total_tokens": 9867,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8408
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 189
+  },
+  "started_utc": "2026-09-27T07:15:37.002743+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 34.25390163436532,
+  "completed_utc": "2026-09-27T07:16:11.256661+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 829,
+      "output": 9038,
+      "total": 9867,
+      "reasoning": 8408,
+      "hit": 640,
+      "miss": 189
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

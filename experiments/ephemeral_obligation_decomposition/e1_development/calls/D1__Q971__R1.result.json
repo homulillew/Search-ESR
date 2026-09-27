@@ -1,0 +1,155 @@
+{
+  "id": "D1__Q971__R1",
+  "arm": "D1",
+  "qid": "971",
+  "replicate": 1,
+  "request_sha256": "42edcc2ae216c8ae6899f0dce6429df7019d793e04d8e234ae23f7efdecf9fbb",
+  "head": "0ddd897eec963e374a26a367b8fa5a3d1e6e0fd6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement": "The individual is an Indian author.",
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "There is an Indian author"
+          }
+        ]
+      },
+      {
+        "requirement": "The author got promoted from associate professor to professor in 2022.",
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "who got promoted from associate professor to professor in 2022"
+          }
+        ]
+      },
+      {
+        "requirement": "The promotion occurred at the same university where the author did their undergraduate and graduate degrees.",
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "who got promoted from associate professor to professor in 2022"
+          },
+          {
+            "unit": "Q1",
+            "text": "at the same university where they did their undergraduate and graduate degrees"
+          }
+        ]
+      },
+      {
+        "requirement": "The author had pursued their PhD abroad at a Canadian university.",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "They had pursued their PhD abroad at a Canadian university"
+          }
+        ]
+      },
+      {
+        "requirement": "The author pursued their PhD under the guidance of an Iranian professor.",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "They had pursued their PhD abroad at a Canadian university under the guidance of an Iranian professor"
+          }
+        ]
+      },
+      {
+        "requirement": "The Iranian professor dreamt of becoming a writer.",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "who dreamt of becoming a writer"
+          }
+        ]
+      },
+      {
+        "requirement": "The Iranian professor switched to mathematics at the end of high school.",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "but switched to mathematics at the end of high school"
+          }
+        ]
+      },
+      {
+        "requirement": "The Iranian professor got their doctorate in Minnesota.",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "and got their doctorate in Minnesota"
+          }
+        ]
+      },
+      {
+        "requirement": "The author published a book connecting mathematics to an ancient technique for liberation 20 years after completing their PhD.",
+        "source_spans": [
+          {
+            "unit": "Q3",
+            "text": "The author published a book connecting mathematics to an ancient technique for liberation 20 years after completing their PhD"
+          }
+        ]
+      },
+      {
+        "requirement": "The author then published a journal article on a similar topic six years after publishing the book.",
+        "source_spans": [
+          {
+            "unit": "Q3",
+            "text": "then published a journal article on a similar topic six years after publishing the book"
+          }
+        ]
+      },
+      {
+        "requirement": "The requested attribute is the title of the journal article on a similar topic.",
+        "source_spans": [
+          {
+            "unit": "Q3",
+            "text": "then published a journal article on a similar topic six years after publishing the book"
+          },
+          {
+            "unit": "Q4",
+            "text": "What is the title of that article?"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 727,
+    "completion_tokens": 11338,
+    "total_tokens": 12065,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10808
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 215
+  },
+  "started_utc": "2026-09-27T07:14:39.936050+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 42.36286372318864,
+  "completed_utc": "2026-09-27T07:15:22.298930+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 727,
+      "output": 11338,
+      "total": 12065,
+      "reasoning": 10808,
+      "hit": 512,
+      "miss": 215
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

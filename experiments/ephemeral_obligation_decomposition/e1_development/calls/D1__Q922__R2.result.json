@@ -1,0 +1,111 @@
+{
+  "id": "D1__Q922__R2",
+  "arm": "D1",
+  "qid": "922",
+  "replicate": 2,
+  "request_sha256": "34c58d5a9d2b8f42831ee12e7936a2dc3341d53445aa952de37707d4fb8072d3",
+  "head": "0ddd897eec963e374a26a367b8fa5a3d1e6e0fd6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement": "A letter was written in the first half of the twentieth century.",
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "A letter was written in the first half of the twentieth century"
+          }
+        ]
+      },
+      {
+        "requirement": "The letter was from a ruler of one country to another.",
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "from a ruler of one country to another"
+          }
+        ]
+      },
+      {
+        "requirement": "The letter was delivered by an official.",
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "delivered by an official"
+          }
+        ]
+      },
+      {
+        "requirement": "The official who delivered the letter was nicknamed after a body part by its recipient.",
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "delivered by an official who was nicknamed after a body part by its recipient"
+          }
+        ]
+      },
+      {
+        "requirement": "The letter was written roughly six months after the author had come to power.",
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "It was written roughly six months after the author had come to power."
+          }
+        ]
+      },
+      {
+        "requirement": "In the letter, the author refers to their country having regained a region.",
+        "source_spans": [
+          {
+            "unit": "Q3",
+            "text": "In it, the author refers to their country having regained a region."
+          }
+        ]
+      },
+      {
+        "requirement": "The requested attribute is the name of the region referred to.",
+        "source_spans": [
+          {
+            "unit": "Q4",
+            "text": "What is the name of the region referred to?"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 5050,
+    "total_tokens": 5693,
+    "prompt_tokens_details": {
+      "cached_tokens": 509
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4743
+    },
+    "prompt_cache_hit_tokens": 509,
+    "prompt_cache_miss_tokens": 134
+  },
+  "started_utc": "2026-09-27T07:16:01.594622+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 21.8882528077811,
+  "completed_utc": "2026-09-27T07:16:23.482891+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 643,
+      "output": 5050,
+      "total": 5693,
+      "reasoning": 4743,
+      "hit": 509,
+      "miss": 134
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}
