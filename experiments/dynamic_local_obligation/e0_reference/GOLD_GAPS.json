@@ -1,0 +1,687 @@
+[
+  {
+    "case_id": "G01",
+    "state_id": "F07_S00",
+    "type": "identity_discovery",
+    "gold_obligation": "Identify a research paper written between 2012 and 2022 by two authors that has a table reporting an emotion at 13.53 percent.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "The identity and existence of a two-author paper in the stated period with the 13.53-percent emotion table.",
+    "reference_evidence_needed": "A bibliographic record linked to the paper text or table establishing authors, date, and the emotion percentage.",
+    "required_support_groups": [],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite",
+      "downstream_jump"
+    ],
+    "ambiguity": "low",
+    "reason": ""
+  },
+  {
+    "case_id": "G02",
+    "state_id": "F07_S01",
+    "type": "relation_verification",
+    "gold_obligation": "Establish whether Mehmet Diyaddin Yaşar has a research paper in the Journal of Baltic Science Education published between 2016 and 2023.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "Whether Yaşar authored a paper in that journal during the specified period.",
+    "reference_evidence_needed": "A journal or bibliographic record identifying Yaşar as an author and giving the journal and publication year.",
+    "required_support_groups": [],
+    "optional_support": [
+      "C1"
+    ],
+    "binding_risk": [
+      "target_as_prerequisite"
+    ],
+    "ambiguity": "low",
+    "reason": "C1 may identify the candidate researcher but does not establish journal authorship; optional identity anchor only."
+  },
+  {
+    "case_id": "G03",
+    "state_id": "F07_S03",
+    "type": "satisfied_control",
+    "gold_obligation": "Identify the emotion reported at 13.53 percent in the 2022 paper Examination of Prospective Teachers' Creative Comparisons for the Concept of Science Education.",
+    "reference_status": "satisfied",
+    "reference_support": [
+      {
+        "claim_id": "C2",
+        "supports": "Names and dates the paper."
+      },
+      {
+        "claim_id": "C4",
+        "supports": "Locates its emotion table."
+      },
+      {
+        "claim_id": "C5",
+        "supports": "Identifies Happiness at 13.53 percent in that paper."
+      }
+    ],
+    "reference_missing": null,
+    "reference_evidence_needed": null,
+    "required_support_groups": [
+      [
+        "C5"
+      ]
+    ],
+    "optional_support": [
+      "C2",
+      "C4"
+    ],
+    "binding_risk": [
+      "none"
+    ],
+    "ambiguity": "low",
+    "reason": "Local table lookup is satisfied; no claim that every clue of Q is satisfied."
+  },
+  {
+    "case_id": "G04",
+    "state_id": "F08_S00",
+    "type": "identity_discovery",
+    "gold_obligation": "Identify a company founder whose company's online video games division released a game during 2000–2010 that remained one of the top-earning games of all time at least through 2019.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "A founder/company/game identification with the release period and commercial record established.",
+    "reference_evidence_needed": "Evidence linking a founder to the company and its online games division, a qualifying release date, and the game's earnings status through 2019.",
+    "required_support_groups": [],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite"
+    ],
+    "ambiguity": "low",
+    "reason": ""
+  },
+  {
+    "case_id": "G05",
+    "state_id": "F08_S01",
+    "type": "relation_verification",
+    "gold_obligation": "For Kwon Hyuk-bin, the Smilegate founder, establish whether he and his spouse made a foundational gift for a building that was part of a larger university complex.",
+    "reference_status": "partial",
+    "reference_support": [
+      {
+        "claim_id": "C1",
+        "supports": "Identifies Kwon as Smilegate founder."
+      }
+    ],
+    "reference_missing": "Whether Kwon and his spouse jointly made the described foundational gift, and its building/complex connection.",
+    "reference_evidence_needed": "A gift announcement or equivalent account linking Kwon and spouse jointly to a foundational contribution for a building within a university complex.",
+    "required_support_groups": [
+      [
+        "C1"
+      ]
+    ],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite",
+      "downstream_jump"
+    ],
+    "ambiguity": "low",
+    "reason": ""
+  },
+  {
+    "case_id": "G06",
+    "state_id": "F08_S03",
+    "type": "satisfied_control",
+    "gold_obligation": "Check whether candidate Ding Lei was married without children at the time of the 2019 account.",
+    "reference_status": "satisfied",
+    "reference_support": [
+      {
+        "claim_id": "C5",
+        "supports": "Directly states married without children at the time of the 2019 article."
+      }
+    ],
+    "reference_missing": null,
+    "reference_evidence_needed": null,
+    "required_support_groups": [
+      [
+        "C5"
+      ]
+    ],
+    "optional_support": [
+      "C4"
+    ],
+    "binding_risk": [
+      "none"
+    ],
+    "ambiguity": "low",
+    "reason": "Current C identifies this candidate and verifies the local family-status clue; C3 concerns Kwon in 2025, a different person/time."
+  },
+  {
+    "case_id": "G07",
+    "state_id": "F09_S00",
+    "type": "identity_discovery",
+    "gold_obligation": "Identify a musical artist whose accidental death occurred in a city 20–30 miles from the site of that country's deadliest aviation accident as of 2023, with the accident occurring 15 years before the artist's death.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "The artist and the linked death-city/aviation-accident identification meeting the distance and timing constraints.",
+    "reference_evidence_needed": "Linked evidence for an artist's accidental death location/date and the aviation accident's site, national deadliest status, date, and distance from that city.",
+    "required_support_groups": [],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite",
+      "downstream_jump"
+    ],
+    "ambiguity": "low",
+    "reason": ""
+  },
+  {
+    "case_id": "G08",
+    "state_id": "F09_S01",
+    "type": "relation_verification",
+    "gold_obligation": "Establish whether the partner of Sophie, who died accidentally in Athens in 2021, gave an interview saying that after her death she had become a direct reference to a song whose title is a one-word adjective.",
+    "reference_status": "partial",
+    "reference_support": [
+      {
+        "claim_id": "C1",
+        "supports": "Establishes Sophie's accidental death in Athens in 2021."
+      }
+    ],
+    "reference_missing": "The partner/interview event and its statement connecting Sophie after death to a one-word adjective song title have not been established.",
+    "reference_evidence_needed": "An interview transcript or faithful attributed account identifying her partner and the post-death statement, with enough information to establish the referenced song/title.",
+    "required_support_groups": [
+      [
+        "C1"
+      ]
+    ],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite",
+      "downstream_jump"
+    ],
+    "ambiguity": "low",
+    "reason": ""
+  },
+  {
+    "case_id": "G09",
+    "state_id": "F09_S03",
+    "type": "satisfied_control",
+    "gold_obligation": "Identify Sophie's partner associated with the post-death tribute.",
+    "reference_status": "satisfied",
+    "reference_support": [
+      {
+        "claim_id": "C2",
+        "supports": "Names Sophie's partner as Evita Manji."
+      },
+      {
+        "claim_id": "C3",
+        "supports": "Attributes the later tribute to partner Evita Manji."
+      }
+    ],
+    "reference_missing": null,
+    "reference_evidence_needed": null,
+    "required_support_groups": [
+      [
+        "C3"
+      ]
+    ],
+    "optional_support": [
+      "C1",
+      "C2"
+    ],
+    "binding_risk": [
+      "none"
+    ],
+    "ambiguity": "low",
+    "reason": "C3 alone binds person, partner role and tribute; C2 alone omits tribute association. Do not infer that the tribute was an interview."
+  },
+  {
+    "case_id": "G10",
+    "state_id": "F10_S00",
+    "type": "identity_discovery",
+    "gold_obligation": "Identify an Indian author who was promoted from associate professor to professor in 2022 at the same university where they completed both undergraduate and graduate degrees.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "An author and the linked 2022 promotion and same-university undergraduate/graduate education.",
+    "reference_evidence_needed": "A biographical or institutional record linking the author, promotion year/ranks and both degrees to the same university.",
+    "required_support_groups": [],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite"
+    ],
+    "ambiguity": "low",
+    "reason": ""
+  },
+  {
+    "case_id": "G11",
+    "state_id": "F10_S01",
+    "type": "downstream_temptation",
+    "gold_obligation": "Establish and identify a journal article by Alka Marwaha on a topic similar to her book The Secret World of Vipassana and Mathematics, published six years after that book, including whether such an article exists.",
+    "reference_status": "partial",
+    "reference_support": [
+      {
+        "claim_id": "C1",
+        "supports": "Establishes Marwaha's book, its Vipassana/mathematics topic and 2016 publication."
+      }
+    ],
+    "reference_missing": "Whether an identifiable Marwaha journal article on the similar topic was published six years after the 2016 book.",
+    "reference_evidence_needed": "A journal record or article text establishing authorship, article identity, date and topic, allowing comparison with the book.",
+    "required_support_groups": [
+      [
+        "C1"
+      ]
+    ],
+    "optional_support": [],
+    "binding_risk": [
+      "downstream_jump",
+      "target_as_prerequisite"
+    ],
+    "ambiguity": "low",
+    "reason": "Article existence/identification is the target; a title-only lookup assuming existence is too downstream. C2 is unrelated to this local obligation."
+  },
+  {
+    "case_id": "G12",
+    "state_id": "F10_S02",
+    "type": "satisfied_control",
+    "gold_obligation": "Establish and identify a journal article by Alka Marwaha on a topic similar to her book The Secret World of Vipassana and Mathematics, published six years after that book, including whether such an article exists.",
+    "reference_status": "satisfied",
+    "reference_support": [
+      {
+        "claim_id": "C1",
+        "supports": "2016 book and Vipassana/mathematics topic."
+      },
+      {
+        "claim_id": "C3",
+        "supports": "Named 2022 journal article with matching author/topic; six-year interval."
+      }
+    ],
+    "reference_missing": null,
+    "reference_evidence_needed": null,
+    "required_support_groups": [
+      [
+        "C1"
+      ],
+      [
+        "C3"
+      ]
+    ],
+    "optional_support": [],
+    "binding_risk": [
+      "none"
+    ],
+    "ambiguity": "low",
+    "reason": "No need to re-prove the entire author biography for this local article obligation."
+  },
+  {
+    "case_id": "G13",
+    "state_id": "F11_S00",
+    "type": "identity_discovery",
+    "gold_obligation": "Identify a book containing between 130 and 140 illustrations and descriptions of objects including the telephone and telegraph.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "The identity of a book with the specified illustration count and object coverage.",
+    "reference_evidence_needed": "A book record or text establishing its title, illustration count and coverage of telephone and telegraph.",
+    "required_support_groups": [],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite",
+      "downstream_jump"
+    ],
+    "ambiguity": "low",
+    "reason": ""
+  },
+  {
+    "case_id": "G14",
+    "state_id": "F11_S01",
+    "type": "downstream_temptation",
+    "gold_obligation": "Establish and identify a book containing 130–140 illustrations, descriptions of the telephone and telegraph, and a reference to the figure with initials L. E. born in the early 1700s in a central European country.",
+    "reference_status": "partial",
+    "reference_support": [
+      {
+        "claim_id": "C1",
+        "supports": "Provides Leonhard Euler as an initials/birth-period candidate, born in Basel in 1707; establishes no book relation."
+      }
+    ],
+    "reference_missing": "An identifiable book with the illustration/object profile and the stated biographical reference; the candidate's actual mention in such a book is unverified.",
+    "reference_evidence_needed": "Bibliographic and book-content evidence establishing identity, illustration count, object coverage and the matching referenced person.",
+    "required_support_groups": [
+      [
+        "C1"
+      ]
+    ],
+    "optional_support": [],
+    "binding_risk": [
+      "wrong_object_scope",
+      "downstream_jump"
+    ],
+    "ambiguity": "medium",
+    "reason": "C1 supports a candidate name/date/place, not a book or its citation; central-European classification is not explicitly in C and may remain to verify. Do not require Euler to be the only possible L. E."
+  },
+  {
+    "case_id": "G15",
+    "state_id": "F12_S00",
+    "type": "identity_discovery",
+    "gold_obligation": "Identify a person born between 1948 and 1952 who gave an important presentation in 1990 at a prominent cultural center in their country and recorded no material between 1986 and 1994.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "A person satisfying the birth-period, 1990 presentation and recording-hiatus profile.",
+    "reference_evidence_needed": "Biographical/performance/discographic evidence identifying the person and supporting those dated features.",
+    "required_support_groups": [],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite",
+      "downstream_jump"
+    ],
+    "ambiguity": "low",
+    "reason": ""
+  },
+  {
+    "case_id": "G16",
+    "state_id": "F13_S00",
+    "type": "identity_discovery",
+    "gold_obligation": "Identify the case report from the 2010s describing an individual with a six-month history of gradually worsening pain in different body parts, difficulty walking and restricted shoulder movement, including the reported disorder.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "The report/case identity and the disorder attributed to the described symptom history.",
+    "reference_evidence_needed": "A dated case report linking the six-month course and walking/shoulder symptoms to its stated diagnosis.",
+    "required_support_groups": [],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite",
+      "downstream_jump"
+    ],
+    "ambiguity": "low",
+    "reason": ""
+  },
+  {
+    "case_id": "G17",
+    "state_id": "F13_S01",
+    "type": "scope_binding",
+    "gold_obligation": "Establish whether stiff person syndrome is the reported disorder in the specific 2010s case involving six months of worsening multi-site body pain with difficulty walking and moving the shoulders.",
+    "reference_status": "partial",
+    "reference_support": [
+      {
+        "claim_id": "C1",
+        "supports": "Generic SPS time course could be compatible, without identifying a report."
+      },
+      {
+        "claim_id": "C2",
+        "supports": "Generic SPS pain/shoulder/walking symptoms overlap the description, without establishing a specific case diagnosis."
+      }
+    ],
+    "reference_missing": "A specific dated case report matching the six-month clinical history and linking that patient to SPS or another diagnosis; generic symptoms do not establish the report.",
+    "reference_evidence_needed": "The matching case report or a reliable case-specific account giving date, individual symptom history and diagnosis.",
+    "required_support_groups": [
+      [
+        "C2"
+      ]
+    ],
+    "optional_support": [
+      "C1"
+    ],
+    "binding_risk": [
+      "wrong_object_scope",
+      "target_as_prerequisite"
+    ],
+    "ambiguity": "low",
+    "reason": "Generic symptoms count only as partial compatibility, not positive identification or diagnosis of the described individual."
+  },
+  {
+    "case_id": "G18",
+    "state_id": "F13_S06",
+    "type": "satisfied_control",
+    "gold_obligation": "Identify the disorder reported in both the case of the 10-year-old Pakistani boy with six months of worsening body pain and impaired walking/shoulder movement and the case of the sixteen-year-old male with upper-back pain/swelling two months after biopsy and earlier stiffness followed by swellings over four years.",
+    "reference_status": "satisfied",
+    "reference_support": [
+      {
+        "claim_id": "C7",
+        "supports": "First profile directly linked to FOP."
+      },
+      {
+        "claim_id": "C9",
+        "supports": "Second profile directly linked to FOP."
+      }
+    ],
+    "reference_missing": null,
+    "reference_evidence_needed": null,
+    "required_support_groups": [
+      [
+        "C7"
+      ],
+      [
+        "C9"
+      ]
+    ],
+    "optional_support": [],
+    "binding_risk": [
+      "none"
+    ],
+    "ambiguity": "low",
+    "reason": "Only common reported disorder for the two described cases; publication-year/country-history clues and general disease mechanisms are outside this local obligation."
+  },
+  {
+    "case_id": "G19",
+    "state_id": "F14_S00",
+    "type": "identity_discovery",
+    "gold_obligation": "Identify a strategy video game that was the subject of a 2023 master's thesis at an American university on postcolonialism.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "The game and an identifiable 2023 American-university master's thesis on its postcolonialism theme.",
+    "reference_evidence_needed": "A thesis record or thesis text linking title/theme, game, university, degree and year.",
+    "required_support_groups": [],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite"
+    ],
+    "ambiguity": "low",
+    "reason": ""
+  },
+  {
+    "case_id": "G20",
+    "state_id": "F14_S01",
+    "type": "identity_discovery",
+    "gold_obligation": "Identify a downloadable content pack for Europa Universalis IV released more than three years after the base game that changed religion and technology mechanics and added mechanics for a specific playable European nation.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "An identifiable EU4 DLC and evidence of the release interval and religion/technology/nation mechanics profile.",
+    "reference_evidence_needed": "Release records for the game and DLC together with DLC descriptions or documentation establishing the specified mechanic changes and nation.",
+    "required_support_groups": [],
+    "optional_support": [
+      "C1",
+      "C2"
+    ],
+    "binding_risk": [
+      "target_as_prerequisite",
+      "downstream_jump"
+    ],
+    "ambiguity": "low",
+    "reason": "Thesis/game/advisor anchors may contextualize EU4 but establish no DLC profile; do not infer Rights of Man from another snapshot."
+  },
+  {
+    "case_id": "G21",
+    "state_id": "F14_S06",
+    "type": "satisfied_control",
+    "gold_obligation": "Identify the full name of the third content designer credited for the Europa Universalis IV Rights of Man downloadable content.",
+    "reference_status": "satisfied",
+    "reference_support": [
+      {
+        "claim_id": "C8",
+        "supports": "Ordered three-person content-designer credit list."
+      },
+      {
+        "claim_id": "C9",
+        "supports": "Explicitly states third credited content designer."
+      }
+    ],
+    "reference_missing": null,
+    "reference_evidence_needed": null,
+    "required_support_groups": [
+      [
+        "C8",
+        "C9"
+      ]
+    ],
+    "optional_support": [
+      "C3"
+    ],
+    "binding_risk": [
+      "none"
+    ],
+    "ambiguity": "low",
+    "reason": "Either ordered credits or explicit third-designer statement suffices; release/game identification optional. No need to prove unrelated thesis clues."
+  },
+  {
+    "case_id": "G22",
+    "state_id": "F15_S00",
+    "type": "relation_verification",
+    "gold_obligation": "Establish and identify a university-team programming world championship victory involving an Australian coder who earned IOI medals bronze, silver, gold and silver in four consecutive years.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "The coder's identity/medal sequence and a linked university-team championship victory have not been established.",
+    "reference_evidence_needed": "Competition records linking an Australian coder's consecutive IOI medals to membership on a winning university team in a specified world final.",
+    "required_support_groups": [],
+    "optional_support": [],
+    "binding_risk": [
+      "target_as_prerequisite",
+      "downstream_jump"
+    ],
+    "ambiguity": "low",
+    "reason": "Discover the winning event before extracting its host/title year; no candidate name supplied from future C."
+  },
+  {
+    "case_id": "G23",
+    "state_id": "F15_S01",
+    "type": "relation_verification",
+    "gold_obligation": "Establish whether Jerry Mao's university-team world championship victory involved two other teammates from the same country, with Jerry being the Australian coder with consecutive IOI medals bronze, silver, gold and silver.",
+    "reference_status": "partial",
+    "reference_support": [
+      {
+        "claim_id": "C1",
+        "supports": "Australian coder and consecutive IOI medal sequence."
+      },
+      {
+        "claim_id": "C2",
+        "supports": "Establishes Jerry's team, victory and names the two other teammates."
+      }
+    ],
+    "reference_missing": "Whether the two other teammates, Mingyang Deng and Xiao Mao, were from the same country.",
+    "reference_evidence_needed": "Team profiles or comparable records establishing the national origins of both named teammates for that winning team.",
+    "required_support_groups": [
+      [
+        "C1"
+      ],
+      [
+        "C2"
+      ]
+    ],
+    "optional_support": [],
+    "binding_risk": [
+      "wrong_object_scope"
+    ],
+    "ambiguity": "low",
+    "reason": "Shared team membership or similar names do not establish shared country; do not demand that Jerry share their country."
+  },
+  {
+    "case_id": "G24",
+    "state_id": "F15_S02",
+    "type": "satisfied_control",
+    "gold_obligation": "Identify the host university of the ICPC 2021 World Finals Dhaka won by Jerry Mao's MIT ZEROONE team.",
+    "reference_status": "satisfied",
+    "reference_support": [
+      {
+        "claim_id": "C2",
+        "supports": "Links the team and Jerry to the specific winning final."
+      },
+      {
+        "claim_id": "C3",
+        "supports": "Identifies the host university for that final."
+      }
+    ],
+    "reference_missing": null,
+    "reference_evidence_needed": null,
+    "required_support_groups": [
+      [
+        "C3"
+      ]
+    ],
+    "optional_support": [
+      "C2"
+    ],
+    "binding_risk": [
+      "none"
+    ],
+    "ambiguity": "low",
+    "reason": "Competition title-year 2021 and holding date in 2022 must not be conflated or treated as contradiction."
+  },
+  {
+    "case_id": "G25",
+    "state_id": "F16_S00",
+    "type": "downstream_temptation",
+    "gold_obligation": "Establish and identify a first-half-twentieth-century ruler-to-ruler letter written roughly six months after its author came to power and delivered by an official nicknamed after a body part by the recipient, including whether such a letter is evidenced.",
+    "reference_status": "unsupported",
+    "reference_support": [],
+    "reference_missing": "An identifiable letter and the author/recipient, timing and nicknamed-delivery-official relations.",
+    "reference_evidence_needed": "A letter or archival account linking its date and author's accession to the recipient, delivering official and recipient-given nickname.",
+    "required_support_groups": [],
+    "optional_support": [],
+    "binding_risk": [
+      "downstream_jump",
+      "target_as_prerequisite"
+    ],
+    "ambiguity": "low",
+    "reason": "The region cannot be extracted from a source that has not been identified."
+  },
+  {
+    "case_id": "G26",
+    "state_id": "F16_S01",
+    "type": "scope_binding",
+    "gold_obligation": "Establish the date on which the King Michael of Romania letter to the United States President was written, so its relation to the author's accession can subsequently be tested.",
+    "reference_status": "partial",
+    "reference_support": [
+      {
+        "claim_id": "C1",
+        "supports": "Identifies a letter and separately dates its covering memorandum."
+      },
+      {
+        "claim_id": "C2",
+        "supports": "Describes handoff of the same letter, without giving its writing date."
+      }
+    ],
+    "reference_missing": "The writing date of the letter itself; March 5, 1945 is the covering memorandum's date only.",
+    "reference_evidence_needed": "The letter's own dateline or an archival statement explicitly assigning a writing date to the letter itself.",
+    "required_support_groups": [
+      [
+        "C1"
+      ]
+    ],
+    "optional_support": [
+      "C2"
+    ],
+    "binding_risk": [
+      "wrong_object_scope"
+    ],
+    "ambiguity": "low",
+    "reason": "Accession comparison is stated as subsequent use, not a second required current fact. An unnamed handoff officer is not established as final courier."
+  },
+  {
+    "case_id": "G27",
+    "state_id": "F16_S02",
+    "type": "satisfied_control",
+    "gold_obligation": "Identify the regained region mentioned in King Michael of Romania's letter to the United States President.",
+    "reference_status": "satisfied",
+    "reference_support": [
+      {
+        "claim_id": "C1",
+        "supports": "Identifies the letter's sender and recipient."
+      },
+      {
+        "claim_id": "C3",
+        "supports": "Directly gives North Transylvania as the regained region in that letter."
+      }
+    ],
+    "reference_missing": null,
+    "reference_evidence_needed": null,
+    "required_support_groups": [
+      [
+        "C3"
+      ]
+    ],
+    "optional_support": [
+      "C1",
+      "C2"
+    ],
+    "binding_risk": [
+      "none"
+    ],
+    "ambiguity": "low",
+    "reason": "No letter-date qualification in O; H's March 5 label must not expand the obligation or transfer the memorandum date."
+  }
+]

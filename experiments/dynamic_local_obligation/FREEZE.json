@@ -1,0 +1,48 @@
+{
+  "base_commit": "fb61da13d3be2511f37da590429ebea7f706bd0d",
+  "preparation_head": "fb61da13d3be2511f37da590429ebea7f706bd0d",
+  "files": {
+    "experiments/dynamic_local_obligation/CONFIG.json": "1d43d6e40b9a3651cb0ba63ff9b27f05d0219d2b49f7417326874469eed37677",
+    "experiments/dynamic_local_obligation/HYPOTHESES.md": "ca6933aaf4ebf9460fde4bdc8dc609b93fa9638e82d5e319ea699e4de6bd97b5",
+    "experiments/dynamic_local_obligation/PRE_EXECUTION_AUDIT.md": "495898abad115b9759d459d20192f0f2b01294883ff7481fbe04d274805f979e",
+    "experiments/dynamic_local_obligation/PROTOCOL.md": "02d708d641567d1db3042935c0f308b81c1f9b8ea261d45ab4111731f3ddca96",
+    "experiments/dynamic_local_obligation/README.md": "3b58a0716375ca1a8ac345aa78c22b36d4525174caee34d435b70148a8e41642",
+    "experiments/dynamic_local_obligation/TASK.md": "b860ae2ae750daf778a9a7e65c2e71a6aecb69019e4983f4e327ab3d9d884a3e",
+    "experiments/dynamic_local_obligation/analysis/CALL_ESTIMATE.json": "d31863797e2bd0b627f7178a341633e9b4e23975a05ef71f578fdd3a8a42afc5",
+    "experiments/dynamic_local_obligation/analysis/DRY_RUN.json": "dad501f1d21d9fc00111b96dcb913329be22116a699e465e6ceb8205a9e1728f",
+    "experiments/dynamic_local_obligation/analysis/HISTORICAL_HASHES.json": "83684a99bc2bf3291fde45bf2f347c12a599a398907bc3e83197460e1676742d",
+    "experiments/dynamic_local_obligation/analysis/OFFLINE_TESTS.json": "c0383fb3a60fec9d541a896a2d48f898b64da134a3db6d46687e8ef7303f30d5",
+    "experiments/dynamic_local_obligation/analysis/PROVIDER_PREFLIGHT.json": "598d74e11db26740d1cf8242ea7b2f18c1afe89bd2774b19868bdc98161ec710",
+    "experiments/dynamic_local_obligation/analysis/REFERENCE_IDENTITY.json": "47cd38aa9d6c7a21c68ac3ec3c50c436aa73268c11f109ccab77040f965f2bc2",
+    "experiments/dynamic_local_obligation/common.py": "44f39662920753d5851bad976cb19b8ec6118e87534aee1c256c8a0929e10554",
+    "experiments/dynamic_local_obligation/e0_reference/CASES.json": "d525c93b0cc2b0c2143f550bb2584441f71d194e6dc8c0a3da984ea7ba7307b0",
+    "experiments/dynamic_local_obligation/e0_reference/GOLD_GAPS.json": "ee2b820dac3131830b5cb1875c23cda4124a9350c8fe3f2dbe63c08b221a41c2",
+    "experiments/dynamic_local_obligation/e0_reference/GOLD_OBLIGATIONS.json": "e6c95e5e74a609679d9b7a2b5365ae1a078a2022118f8a18c9e070a864713c0c",
+    "experiments/dynamic_local_obligation/e0_reference/REPORT.md": "555f3ba36204016bfbf934c7a6988a619bf35eee25b516df9de7c5441bd2127c",
+    "experiments/dynamic_local_obligation/e1_obligation/SCHEDULE.json": "622ce31df01b67acfca854d2fc8089908852f999fb12f85d655098b40a9a6752",
+    "experiments/dynamic_local_obligation/prepare.py": "002037bfaba3f21f37241c8f5e0fbc00a76041948f0059441dcc3ab6af5c5b34",
+    "experiments/dynamic_local_obligation/prompts/o0_no_h.txt": "58aebf0d8e1b14db0e682c9fbcffb563d440116471a6e4c371b3dd3b47a527f7",
+    "experiments/dynamic_local_obligation/prompts/o1_with_h.txt": "e33923d6444e25c42e4183f1c5615e54b9f9425a012c717e7f08ec78a0cbf69c",
+    "experiments/dynamic_local_obligation/run.py": "8eb48ebabd2d509c5a0c25d4b9606a01998f3dcc84bbdb9e128a820f01be5fd2",
+    "experiments/dynamic_local_obligation/score.py": "1702229f1c6a80b712b1ecd2442ec6c9433b988e27f2b07d9583742a8b318fb3",
+    "experiments/dynamic_local_obligation/test_contracts.py": "4589f9377ac99a58edb8ef65778f84eb15f3036a022f0cfede17202406321e1f"
+  },
+  "calls": 108,
+  "arms": [
+    "O0",
+    "O1"
+  ],
+  "replicates": 2,
+  "gates": {
+    "strict": 0.8,
+    "GoalGrounded": 0.9,
+    "Unresolved": 0.9,
+    "ScopeFaithful": 0.9,
+    "NonDownstream": 0.9,
+    "broadness_max": 0.1,
+    "wrong_relation_arguments_max": 0.05,
+    "schema": 0.95,
+    "stable_both_valid": 0.8
+  },
+  "failure_policy": "All scheduled slots remain denominator; no retry/resample/repair; stop batch on provider contract/access/billing errors; retain unknown usage. Stop on E1 failure; E1 pass alone permits separate E2 reference/schedule freeze. Stop after E2 regardless of outcome."
+}

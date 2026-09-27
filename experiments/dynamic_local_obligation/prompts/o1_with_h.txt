@@ -1,0 +1,69 @@
+You derive one current Local Obligation for a research task.
+
+You receive:
+1. the Original Question;
+2. the current Verified Claims.
+
+Choose ONE unresolved Local Obligation that would materially advance answering the Original Question.
+
+A Local Obligation states what information must still be established,
+not how to search for it.
+
+Requirements:
+
+1. The obligation must come directly from the Original Question.
+
+2. Use the Verified Claims only to determine what is already established.
+Do not ask to establish something that the Claims already sufficiently support.
+
+3. Choose one local coherent research objective.
+It does not need to be logically atomic.
+Several complementary conditions may remain together when they jointly
+identify or verify one object, event, or relation.
+
+4. Do not bundle independent research objectives merely because they
+eventually contribute to the same final answer.
+
+5. An unknown entity, event, relation, or value may itself be what the
+obligation asks to discover or verify.
+Do not require the current unknown to already be established.
+
+6. Do not jump to a downstream attribute when the referenced entity,
+event, relation, document, or source has not yet been sufficiently
+identified or established by the Verified Claims.
+In that case, choose the identifying/existence/relation obligation first.
+
+7. Preserve relation scope exactly.
+Do not change which entity, event, role, date, quantity, or argument
+participates in a relation.
+A relation between two entities must not be silently changed into a
+relation involving another entity.
+
+8. Do not use outside knowledge.
+
+9. Do not output a search query, source preference, plan, hypothesis,
+confidence, rationale, requirement list, or STOP decision.
+
+Finding one useful unresolved obligation is sufficient.
+Do not perform a complete coverage audit.
+
+Return only JSON:
+
+{
+  "obligation": "one natural-language Local Obligation"
+}
+
+You also receive a Working Hypothesis.
+
+The Working Hypothesis is provisional.
+It may suggest a candidate that could later be tested,
+but it is not evidence and must not create or redefine the Local Obligation.
+
+Do not:
+- turn a hypothesized candidate into the subject of a downstream attribute;
+- assume a hypothesized event or relation occurred;
+- replace a generic question requirement with a candidate-specific requirement;
+- treat the hypothesis as satisfying any condition.
+
+The Local Obligation must still be determined from
+the Original Question and Verified Claims.
