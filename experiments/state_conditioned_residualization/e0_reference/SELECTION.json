@@ -1,0 +1,130 @@
+{
+  "primary": [
+    "G01",
+    "G02",
+    "G04",
+    "G05",
+    "G06",
+    "G09",
+    "G14",
+    "G15",
+    "G16",
+    "G17",
+    "G26"
+  ],
+  "controls": [
+    "G07",
+    "G08",
+    "G10",
+    "G11",
+    "G13",
+    "G18",
+    "G20",
+    "G23"
+  ],
+  "control_matches": [
+    {
+      "control": "G18",
+      "reason": "TASK8/10 mandatory trajectory endpoint; parentR3 override, not old fully-supported R5."
+    },
+    {
+      "primary": "G01",
+      "control": "G07",
+      "rank": [
+        true,
+        false,
+        false,
+        "G07"
+      ],
+      "rule": "lexicographic mismatch(qid,type,Claims-empty), then case_id; without replacement"
+    },
+    {
+      "primary": "G02",
+      "control": "G08",
+      "rank": [
+        true,
+        false,
+        false,
+        "G08"
+      ],
+      "rule": "lexicographic mismatch(qid,type,Claims-empty), then case_id; without replacement"
+    },
+    {
+      "primary": "G04",
+      "control": "G10",
+      "rank": [
+        true,
+        false,
+        false,
+        "G10"
+      ],
+      "rule": "lexicographic mismatch(qid,type,Claims-empty), then case_id; without replacement"
+    },
+    {
+      "primary": "G05",
+      "control": "G23",
+      "rank": [
+        true,
+        false,
+        false,
+        "G23"
+      ],
+      "rule": "lexicographic mismatch(qid,type,Claims-empty), then case_id; without replacement"
+    },
+    {
+      "primary": "G06",
+      "control": "G11",
+      "rank": [
+        true,
+        true,
+        false,
+        "G11"
+      ],
+      "rule": "lexicographic mismatch(qid,type,Claims-empty), then case_id; without replacement"
+    },
+    {
+      "primary": "G09",
+      "control": "G20",
+      "rank": [
+        true,
+        true,
+        false,
+        "G20"
+      ],
+      "rule": "lexicographic mismatch(qid,type,Claims-empty), then case_id; without replacement"
+    },
+    {
+      "primary": "G14",
+      "control": "G13",
+      "rank": [
+        false,
+        true,
+        true,
+        "G13"
+      ],
+      "rule": "lexicographic mismatch(qid,type,Claims-empty), then case_id; without replacement"
+    }
+  ],
+  "excluded_control_candidates": [
+    {
+      "case_id": "G03",
+      "reason": "All historical addressable parent IDs fully supported. Prompt has no completed/STOP branch; exclude from control pool only."
+    },
+    {
+      "case_id": "G12",
+      "reason": "All historical addressable parent IDs fully supported. Prompt has no completed/STOP branch; exclude from control pool only."
+    },
+    {
+      "case_id": "G21",
+      "reason": "All historical addressable parent IDs fully supported. Prompt has no completed/STOP branch; exclude from control pool only."
+    },
+    {
+      "case_id": "G24",
+      "reason": "All historical addressable parent IDs fully supported. Prompt has no completed/STOP branch; exclude from control pool only."
+    },
+    {
+      "case_id": "G27",
+      "reason": "All historical addressable parent IDs fully supported. Prompt has no completed/STOP branch; exclude from control pool only."
+    }
+  ]
+}
