@@ -1,0 +1,931 @@
+{
+  "semantic_counterfactuals": {
+    "E1_accept_elliptical_recipient_R050": {
+      "arms": {
+        "D0": {
+          "n": 20,
+          "qids": 10,
+          "strict": 0.95,
+          "strict_count": 19,
+          "critical_coverage": 0.9875,
+          "critical_coverage_micro": 0.9852941176470589,
+          "material_coverage": 0.9888888888888889,
+          "material_coverage_micro": 0.989010989010989,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.05,
+          "invented": 0.05,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 0.9,
+          "both_strict_count": 9,
+          "stability": 0.9,
+          "stable_count": 9,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.05,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.05
+        },
+        "D1": {
+          "n": 20,
+          "qids": 10,
+          "strict": 1.0,
+          "strict_count": 20,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 1.0,
+          "both_strict_count": 10,
+          "stability": 1.0,
+          "stable_count": 10,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        },
+        "D2": {
+          "n": 20,
+          "qids": 10,
+          "strict": 1.0,
+          "strict_count": 20,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 1.0,
+          "both_strict_count": 10,
+          "stability": 1.0,
+          "stable_count": 10,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        }
+      },
+      "gate": {
+        "pass": true,
+        "checks": {
+          "strict_min": {
+            "value": 1.0,
+            "threshold": 0.8,
+            "pass": true
+          },
+          "critical_coverage_min": {
+            "value": 1.0,
+            "threshold": 1.0,
+            "pass": true
+          },
+          "material_coverage_min": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "structural_corruption_max": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "invented_max": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "dependency_min": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "severe_broad_max": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "mechanical_min": {
+            "value": 1.0,
+            "threshold": 0.95,
+            "pass": true
+          },
+          "both_strict_min": {
+            "value": 1.0,
+            "threshold": 0.7,
+            "pass": true
+          },
+          "comparison_corruption": {
+            "pass": true,
+            "D0": 0.05,
+            "D2": 0.0
+          },
+          "comparison_coverage": {
+            "pass": true,
+            "D0": 0.9888888888888889,
+            "D2": 1.0
+          }
+        }
+      },
+      "status": "post-hoc counterfactual only, primary labels unchanged"
+    },
+    "E1_reject_coarse_founder_group_R018": {
+      "arms": {
+        "D0": {
+          "n": 20,
+          "qids": 10,
+          "strict": 0.9,
+          "strict_count": 18,
+          "critical_coverage": 0.975,
+          "critical_coverage_micro": 0.9705882352941176,
+          "material_coverage": 0.9777777777777779,
+          "material_coverage_micro": 0.978021978021978,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.05,
+          "invented": 0.05,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 0.8,
+          "both_strict_count": 8,
+          "stability": 0.8,
+          "stable_count": 8,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.05,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.05
+        },
+        "D1": {
+          "n": 20,
+          "qids": 10,
+          "strict": 1.0,
+          "strict_count": 20,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 1.0,
+          "both_strict_count": 10,
+          "stability": 1.0,
+          "stable_count": 10,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        },
+        "D2": {
+          "n": 20,
+          "qids": 10,
+          "strict": 0.95,
+          "strict_count": 19,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.05,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 0.9,
+          "both_strict_count": 9,
+          "stability": 0.9,
+          "stable_count": 9,
+          "harmful_merge": 0.05,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        }
+      },
+      "gate": {
+        "pass": true,
+        "checks": {
+          "strict_min": {
+            "value": 0.95,
+            "threshold": 0.8,
+            "pass": true
+          },
+          "critical_coverage_min": {
+            "value": 1.0,
+            "threshold": 1.0,
+            "pass": true
+          },
+          "material_coverage_min": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "structural_corruption_max": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "invented_max": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "dependency_min": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "severe_broad_max": {
+            "value": 0.05,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "mechanical_min": {
+            "value": 1.0,
+            "threshold": 0.95,
+            "pass": true
+          },
+          "both_strict_min": {
+            "value": 0.9,
+            "threshold": 0.7,
+            "pass": true
+          },
+          "comparison_corruption": {
+            "pass": true,
+            "D0": 0.05,
+            "D2": 0.0
+          },
+          "comparison_coverage": {
+            "pass": true,
+            "D0": 0.9777777777777779,
+            "D2": 1.0
+          }
+        }
+      },
+      "status": "post-hoc counterfactual only, primary labels unchanged"
+    },
+    "E1_stricter_fragmentation_R048_R032": {
+      "arms": {
+        "D0": {
+          "n": 20,
+          "qids": 10,
+          "strict": 0.9,
+          "strict_count": 18,
+          "critical_coverage": 0.975,
+          "critical_coverage_micro": 0.9705882352941176,
+          "material_coverage": 0.9777777777777779,
+          "material_coverage_micro": 0.978021978021978,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.05,
+          "invented": 0.05,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 0.8,
+          "both_strict_count": 8,
+          "stability": 0.8,
+          "stable_count": 8,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.05,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.05
+        },
+        "D1": {
+          "n": 20,
+          "qids": 10,
+          "strict": 0.9,
+          "strict_count": 18,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.1,
+          "mechanical": 1.0,
+          "both_strict": 0.8,
+          "both_strict_count": 8,
+          "stability": 0.8,
+          "stable_count": 8,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.1,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        },
+        "D2": {
+          "n": 20,
+          "qids": 10,
+          "strict": 1.0,
+          "strict_count": 20,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 1.0,
+          "both_strict_count": 10,
+          "stability": 1.0,
+          "stable_count": 10,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        }
+      },
+      "gate": {
+        "pass": true,
+        "checks": {
+          "strict_min": {
+            "value": 1.0,
+            "threshold": 0.8,
+            "pass": true
+          },
+          "critical_coverage_min": {
+            "value": 1.0,
+            "threshold": 1.0,
+            "pass": true
+          },
+          "material_coverage_min": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "structural_corruption_max": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "invented_max": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "dependency_min": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "severe_broad_max": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "mechanical_min": {
+            "value": 1.0,
+            "threshold": 0.95,
+            "pass": true
+          },
+          "both_strict_min": {
+            "value": 1.0,
+            "threshold": 0.7,
+            "pass": true
+          },
+          "comparison_corruption": {
+            "pass": true,
+            "D0": 0.05,
+            "D2": 0.0
+          },
+          "comparison_coverage": {
+            "pass": true,
+            "D0": 0.9777777777777779,
+            "D2": 1.0
+          }
+        }
+      },
+      "status": "post-hoc counterfactual only, primary labels unchanged"
+    },
+    "E1_require_unresolved_song_possessive": {
+      "arms": {
+        "D0": {
+          "n": 20,
+          "qids": 10,
+          "strict": 0.8,
+          "strict_count": 16,
+          "critical_coverage": 0.9416666666666667,
+          "critical_coverage_micro": 0.9411764705882353,
+          "material_coverage": 0.9555555555555555,
+          "material_coverage_micro": 0.9560439560439561,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.15,
+          "invented": 0.05,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 0.7,
+          "both_strict_count": 7,
+          "stability": 0.7,
+          "stable_count": 7,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.05,
+            "role_identity": 0.1,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.15
+        },
+        "D1": {
+          "n": 20,
+          "qids": 10,
+          "strict": 1.0,
+          "strict_count": 20,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 1.0,
+          "both_strict_count": 10,
+          "stability": 1.0,
+          "stable_count": 10,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        },
+        "D2": {
+          "n": 20,
+          "qids": 10,
+          "strict": 1.0,
+          "strict_count": 20,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 1.0,
+          "both_strict_count": 10,
+          "stability": 1.0,
+          "stable_count": 10,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        }
+      },
+      "gate": {
+        "pass": true,
+        "checks": {
+          "strict_min": {
+            "value": 1.0,
+            "threshold": 0.8,
+            "pass": true
+          },
+          "critical_coverage_min": {
+            "value": 1.0,
+            "threshold": 1.0,
+            "pass": true
+          },
+          "material_coverage_min": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "structural_corruption_max": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "invented_max": {
+            "value": 0.0,
+            "threshold": 0.05,
+            "pass": true
+          },
+          "dependency_min": {
+            "value": 1.0,
+            "threshold": 0.9,
+            "pass": true
+          },
+          "severe_broad_max": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "mechanical_min": {
+            "value": 1.0,
+            "threshold": 0.95,
+            "pass": true
+          },
+          "both_strict_min": {
+            "value": 1.0,
+            "threshold": 0.7,
+            "pass": true
+          },
+          "comparison_corruption": {
+            "pass": true,
+            "D0": 0.15,
+            "D2": 0.0
+          },
+          "comparison_coverage": {
+            "pass": true,
+            "D0": 0.9555555555555555,
+            "D2": 1.0
+          }
+        }
+      },
+      "status": "post-hoc counterfactual only, primary labels unchanged"
+    },
+    "E2_require_unresolved_later_antecedent": {
+      "arms": {
+        "D0": {
+          "n": 24,
+          "qids": 12,
+          "strict": 0.9166666666666666,
+          "strict_count": 22,
+          "critical_coverage": 0.9791666666666666,
+          "critical_coverage_micro": 0.9761904761904762,
+          "material_coverage": 0.9814814814814815,
+          "material_coverage_micro": 0.9814814814814815,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.08333333333333333,
+          "invented": 0.08333333333333333,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 0.9166666666666666,
+          "both_strict_count": 11,
+          "stability": 0.9166666666666666,
+          "stable_count": 11,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.08333333333333333,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.08333333333333333
+        },
+        "D2": {
+          "n": 24,
+          "qids": 12,
+          "strict": 1.0,
+          "strict_count": 24,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 1.0,
+          "both_strict_count": 12,
+          "stability": 1.0,
+          "stable_count": 12,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        }
+      },
+      "gate": {
+        "pass": true,
+        "checks": {
+          "strict_min": {
+            "value": 1.0,
+            "threshold": 0.75,
+            "pass": true
+          },
+          "critical_coverage_min": {
+            "value": 1.0,
+            "threshold": 1.0,
+            "pass": true
+          },
+          "material_coverage_min": {
+            "value": 1.0,
+            "threshold": 0.85,
+            "pass": true
+          },
+          "structural_corruption_max": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "dependency_min": {
+            "value": 1.0,
+            "threshold": 0.85,
+            "pass": true
+          },
+          "severe_broad_max": {
+            "value": 0.0,
+            "threshold": 0.15,
+            "pass": true
+          },
+          "mechanical_min": {
+            "value": 1.0,
+            "threshold": 0.95,
+            "pass": true
+          },
+          "both_strict_min": {
+            "value": 1.0,
+            "threshold": 0.65,
+            "pass": true
+          },
+          "comparison_strict_direction": {
+            "pass": true,
+            "D0": 0.08333333333333333,
+            "D2": 0.0
+          }
+        }
+      },
+      "status": "post-hoc counterfactual only, primary labels unchanged"
+    },
+    "E2_reject_coarse_person_identity_R036": {
+      "arms": {
+        "D0": {
+          "n": 24,
+          "qids": 12,
+          "strict": 0.9583333333333334,
+          "strict_count": 23,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.041666666666666664,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 0.9166666666666666,
+          "both_strict_count": 11,
+          "stability": 0.9166666666666666,
+          "stable_count": 11,
+          "harmful_merge": 0.041666666666666664,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        },
+        "D2": {
+          "n": 24,
+          "qids": 12,
+          "strict": 1.0,
+          "strict_count": 24,
+          "critical_coverage": 1.0,
+          "critical_coverage_micro": 1.0,
+          "material_coverage": 1.0,
+          "material_coverage_micro": 1.0,
+          "dependency": 1.0,
+          "dependency_micro": 1.0,
+          "structural_corruption": 0.0,
+          "invented": 0.0,
+          "severe_broad": 0.0,
+          "severe_fragmentation": 0.0,
+          "mechanical": 1.0,
+          "both_strict": 1.0,
+          "both_strict_count": 12,
+          "stability": 1.0,
+          "stable_count": 12,
+          "harmful_merge": 0.0,
+          "harmful_split": 0.0,
+          "error_rates": {
+            "relation_argument": 0.0,
+            "role_identity": 0.0,
+            "temporal": 0.0,
+            "ownership": 0.0,
+            "numeric": 0.0
+          },
+          "relation_role_time_union": 0.0
+        }
+      },
+      "gate": {
+        "pass": false,
+        "checks": {
+          "strict_min": {
+            "value": 1.0,
+            "threshold": 0.75,
+            "pass": true
+          },
+          "critical_coverage_min": {
+            "value": 1.0,
+            "threshold": 1.0,
+            "pass": true
+          },
+          "material_coverage_min": {
+            "value": 1.0,
+            "threshold": 0.85,
+            "pass": true
+          },
+          "structural_corruption_max": {
+            "value": 0.0,
+            "threshold": 0.1,
+            "pass": true
+          },
+          "dependency_min": {
+            "value": 1.0,
+            "threshold": 0.85,
+            "pass": true
+          },
+          "severe_broad_max": {
+            "value": 0.0,
+            "threshold": 0.15,
+            "pass": true
+          },
+          "mechanical_min": {
+            "value": 1.0,
+            "threshold": 0.95,
+            "pass": true
+          },
+          "both_strict_min": {
+            "value": 1.0,
+            "threshold": 0.65,
+            "pass": true
+          },
+          "comparison_strict_direction": {
+            "pass": false,
+            "D0": 0.0,
+            "D2": 0.0
+          }
+        }
+      },
+      "status": "post-hoc counterfactual only, primary labels unchanged"
+    }
+  },
+  "grouping_definition": {
+    "e1_development": {
+      "D0": {
+        "pair_labels": {
+          "compatible_structure": 5,
+          "same_structure": 3,
+          "one_valid_one_invalid": 2
+        },
+        "same_structure_only": 0.3,
+        "registered_same_or_compatible_and_both_strict": 0.8,
+        "raw_both_strict": 0.8
+      },
+      "D1": {
+        "pair_labels": {
+          "compatible_structure": 7,
+          "same_structure": 3
+        },
+        "same_structure_only": 0.3,
+        "registered_same_or_compatible_and_both_strict": 1.0,
+        "raw_both_strict": 1.0
+      },
+      "D2": {
+        "pair_labels": {
+          "same_structure": 7,
+          "compatible_structure": 3
+        },
+        "same_structure_only": 0.7,
+        "registered_same_or_compatible_and_both_strict": 1.0,
+        "raw_both_strict": 1.0
+      }
+    },
+    "e2_fresh": {
+      "D0": {
+        "pair_labels": {
+          "compatible_structure": 9,
+          "same_structure": 3
+        },
+        "same_structure_only": 0.25,
+        "registered_same_or_compatible_and_both_strict": 1.0,
+        "raw_both_strict": 1.0
+      },
+      "D2": {
+        "pair_labels": {
+          "compatible_structure": 4,
+          "same_structure": 8
+        },
+        "same_structure_only": 0.6666666666666666,
+        "registered_same_or_compatible_and_both_strict": 1.0,
+        "raw_both_strict": 1.0
+      }
+    }
+  },
+  "denominator": "All registered primary metrics retain every planned slot; no case deletions or response replacement.",
+  "limitations": [
+    "Single familiar Codex reviewer; partial style-revealing masking, no inter-rater reliability estimate.",
+    "Q922 recipient ellipsis is a high-ambiguity coverage judgment, not established semantic corruption.",
+    "Q169 artist possessive is accepted as association rather than invented authorship; stricter reading shown separately.",
+    "Q548 later is accepted as local temporal anaphora to2021; rejecting that interpretation would change the E2 comparative verdict. Primary labels and FAIL remain unchanged.",
+    "Any E1 corruption advantage is supported by one question, not a large independent error sample.",
+    "E1 and E2 test canonicalization, not historical Dynamic-O selection or downstream state alignment."
+  ]
+}

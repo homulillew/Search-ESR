@@ -28,6 +28,9 @@ def main():
     out['E1_reject_coarse_founder_group_R018']=calculate(e1,{'R018':{'severe_broadness':True,'harmful_merge':True}})
     out['E1_stricter_fragmentation_R048_R032']=calculate(e1,{r:{'severe_fragmentation':True,'harmful_split':True} for r in ('R048','R032')})
     out['E1_require_unresolved_song_possessive']=calculate(e1,{r:{'critical_violations':[{'invariant':'I2','types':['role_identity'],'reason':'Counterfactual stricter possessive ambiguity interpretation.'}],'coverage':{'M4':False}} for r in ('R013','R020')})
+    if (P/STAGES[1]/'METRICS.json').exists():
+        out['E2_require_unresolved_later_antecedent']=calculate(STAGES[1],{r:{'critical_violations':[{'invariant':'I1','types':['temporal'],'reason':'Counterfactual: reject resolving later to immediately preceding 2021 as-of statement.'}],'coverage':{'M4':False},'invented_semantics':[{'reason':'Counterfactual binding hardening.'}]} for r in ('R012','R015')})
+        out['E2_reject_coarse_person_identity_R036']=calculate(STAGES[1],{'R036':{'severe_broadness':True,'harmful_merge':True}})
     grouping={}
     for stage in STAGES:
         if not (P/stage/'METRICS.json').exists():continue
@@ -37,5 +40,5 @@ def main():
           'registered_same_or_compatible_and_both_strict':v['stability'],'raw_both_strict':v['both_strict']} for a,v in m['arms'].items()}
     write(P/'analysis/SENSITIVITY.json',{'semantic_counterfactuals':out,'grouping_definition':grouping,
       'denominator':'All registered primary metrics retain every planned slot; no case deletions or response replacement.',
-      'limitations':['Single familiar Codex reviewer; partial style-revealing masking, no inter-rater reliability estimate.','Q922 recipient ellipsis is a high-ambiguity coverage judgment, not established semantic corruption.','Q169 artist possessive is accepted as association rather than invented authorship; stricter reading shown separately.','Any E1 corruption advantage is supported by one question, not a large independent error sample.','E1 and E2 test canonicalization, not historical Dynamic-O selection or downstream state alignment.']})
+      'limitations':['Single familiar Codex reviewer; partial style-revealing masking, no inter-rater reliability estimate.','Q922 recipient ellipsis is a high-ambiguity coverage judgment, not established semantic corruption.','Q169 artist possessive is accepted as association rather than invented authorship; stricter reading shown separately.','Q548 later is accepted as local temporal anaphora to2021; rejecting that interpretation would change the E2 comparative verdict. Primary labels and FAIL remain unchanged.','Any E1 corruption advantage is supported by one question, not a large independent error sample.','E1 and E2 test canonicalization, not historical Dynamic-O selection or downstream state alignment.']})
 if __name__=='__main__':main()
