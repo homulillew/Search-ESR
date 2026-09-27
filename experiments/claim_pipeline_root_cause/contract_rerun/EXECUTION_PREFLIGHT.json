@@ -1,0 +1,23 @@
+{
+  "base_head": "99fbe47b9a6fa1bcfe628cb801cbd8e1ebcb29c5",
+  "harness_head": "51522b7bf1a23884b664faea3e53c66881e8b8df",
+  "offline_tests_passed": 84,
+  "semantic_view_fields": [
+    "window_ref",
+    "doc_ref",
+    "title",
+    "url",
+    "text",
+    "date (only if originally present)"
+  ],
+  "ref_contract": "W-pattern + unique refs + request-specific enum + independent membership",
+  "private_records_preserved": true,
+  "prompts_bank_rubric_thresholds_unchanged": true,
+  "initial_concurrency": 72,
+  "max_concurrency": 72,
+  "timeout_and_failure_policy": "Original strict halt-unsent policy unchanged; no retry/backfill/repair/resume",
+  "review_order": "source-only labels frozen, then relevance/dedup labels frozen, then frozen-atom coverage; never display arm or alternatives",
+  "review_display_cache": "Exact Observation content may be displayed once and subsequently referenced by SHA and first opaque source-packet ID. No semantic dedup or annotation changes.",
+  "H_confirmation_calls": 0,
+  "E2_E3_authorized": false
+}
