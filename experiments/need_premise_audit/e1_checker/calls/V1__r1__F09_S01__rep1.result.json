@@ -1,0 +1,83 @@
+{
+  "id": "V1__r1__F09_S01__rep1",
+  "arm": "V1",
+  "candidate_id": "r1__F09_S01",
+  "qid": "169",
+  "state_id": "F09_S01",
+  "replicate": 1,
+  "request_sha256": "fbcdf963cfd6d1acb6f2cf7d27c5ac7fc6909411b78102281c901987a6035377",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether Athens is located 20 to 30 miles from the site of Greece's deadliest aviation accident as of 2023",
+    "subject": {
+      "description": "Athens, the city where Sophie died, and the site of Greece's deadliest aviation accident as of 2023",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Sophie died in Athens, Greece.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Athens is a city in Greece.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Greece has a deadliest aviation accident as of 2023.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "The site of Greece's deadliest aviation accident as of 2023 is a concrete location.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "discover_subject"
+  },
+  "usage": {
+    "prompt_tokens": 974,
+    "completion_tokens": 8377,
+    "total_tokens": 9351,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8177
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 206
+  },
+  "started_utc": "2026-09-27T02:25:54.752714+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 35.71392456814647,
+  "completed_utc": "2026-09-27T02:26:30.466655+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 974,
+      "output": 8377,
+      "total": 9351,
+      "reasoning": 8177,
+      "hit": 768,
+      "miss": 206
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

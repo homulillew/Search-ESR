@@ -1,0 +1,102 @@
+{
+  "id": "V1__r1__F13_S01__rep2",
+  "arm": "V1",
+  "candidate_id": "r1__F13_S01",
+  "qid": "637",
+  "state_id": "F13_S01",
+  "replicate": 2,
+  "request_sha256": "dc5bb8375d788bab47854c13583c9cc54c481b4d56904e0efa668df0ccdbae03",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether the disorder in the 2010s case report with a pre-presentation tissue biopsy, upper-body pain and swelling, and earlier stiffness followed by swelling is stiff person syndrome.",
+    "subject": {
+      "description": "The disorder in the 2010s case report where an individual had a tissue biopsy two months before presenting with upper-body pain and swelling and had earlier developed stiffness followed by swelling four years later.",
+      "status": "grounded",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "There were two cases in different years that were reported in the 2010s.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The two cases covered a particular disorder shared between two individuals.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "In one of the cases, the individual presented with complaints of pain and swelling in the upper part of the body.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "In that case, a procedure involving the collection of tissue samples to test for disease had been performed two months earlier.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "That individual, when younger, had developed stiffness, which was followed by swelling four years later.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "Stiff person syndrome is a condition or syndrome with characteristic symptoms.",
+        "status": "supported",
+        "basis_refs": [
+          "C1",
+          "C2"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 1030,
+    "completion_tokens": 4493,
+    "total_tokens": 5523,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4183
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 262
+  },
+  "started_utc": "2026-09-27T02:25:35.090805+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 19.661287523806095,
+  "completed_utc": "2026-09-27T02:25:54.752109+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1030,
+      "output": 4493,
+      "total": 5523,
+      "reasoning": 4183,
+      "hit": 768,
+      "miss": 262
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

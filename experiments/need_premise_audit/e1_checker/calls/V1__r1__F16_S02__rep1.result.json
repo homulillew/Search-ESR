@@ -1,0 +1,85 @@
+{
+  "id": "V1__r1__F16_S02__rep1",
+  "arm": "V1",
+  "candidate_id": "r1__F16_S02",
+  "qid": "922",
+  "state_id": "F16_S02",
+  "replicate": 1,
+  "request_sha256": "8922127068fe56d13467013ea17de0c1ab63934339b11cab92c9ed2be93c28c8",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether the OSS officer who delivered King Michael of Romania's letter to the President of the United States was nicknamed after a body part by the President.",
+    "subject": {
+      "description": "The OSS officer to whom King Michael of Romania handed the letter in Bucharest, if that same officer delivered it to the President.",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "King Michael of Romania wrote a letter to the President of the United States.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "King Michael handed the letter to an OSS officer in Bucharest.",
+        "status": "supported",
+        "basis_refs": [
+          "C2"
+        ]
+      },
+      {
+        "statement": "The OSS officer to whom King Michael handed the letter delivered it to the President of the United States.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "The President of the United States was the recipient of the letter.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      }
+    ],
+    "decision": "discover_subject"
+  },
+  "usage": {
+    "prompt_tokens": 968,
+    "completion_tokens": 8402,
+    "total_tokens": 9370,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8177
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 200
+  },
+  "started_utc": "2026-09-27T02:26:12.652281+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 35.91629748418927,
+  "completed_utc": "2026-09-27T02:26:48.568595+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 968,
+      "output": 8402,
+      "total": 9370,
+      "reasoning": 8177,
+      "hit": 768,
+      "miss": 200
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

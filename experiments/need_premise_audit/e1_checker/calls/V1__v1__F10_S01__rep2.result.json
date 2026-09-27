@@ -1,0 +1,74 @@
+{
+  "id": "V1__v1__F10_S01__rep2",
+  "arm": "V1",
+  "candidate_id": "v1__F10_S01",
+  "qid": "971",
+  "state_id": "F10_S01",
+  "replicate": 2,
+  "request_sha256": "89f25786211ae7124e7b7eabdf21a6283ccc6dc47fc98216e277b6a6a53b7a5a",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether Alka Marwaha was promoted from associate professor to professor in 2022 at Jesus and Mary College, University of Delhi.",
+    "subject": {
+      "description": "Alka Marwaha, specifically in relation to the alleged 2022 promotion at Jesus and Mary College, University of Delhi.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1",
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Alka Marwaha is an associate professor of Mathematics at Jesus and Mary College, University of Delhi.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Jesus and Mary College is associated with the University of Delhi.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 999,
+    "completion_tokens": 4072,
+    "total_tokens": 5071,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3916
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 231
+  },
+  "started_utc": "2026-09-27T02:26:01.655863+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 19.318985735997558,
+  "completed_utc": "2026-09-27T02:26:20.974865+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 999,
+      "output": 4072,
+      "total": 5071,
+      "reasoning": 3916,
+      "hit": 768,
+      "miss": 231
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "V1__r1__F16_S00__rep1",
+  "arm": "V1",
+  "candidate_id": "r1__F16_S00",
+  "qid": "922",
+  "state_id": "F16_S00",
+  "replicate": 1,
+  "request_sha256": "1da8b22631a3d13ddb248f23ab42050e318c8d4f9e16595917085bf314732295",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "the region that the ruler referred to as having been regained by their country",
+    "subject": {
+      "description": "The letter written by a ruler in the first half of the 20th century, as described in the Original Question",
+      "status": "grounded",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "A letter was written in the first half of the twentieth century.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The letter was written from a ruler of one country to another.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The letter was delivered by an official who was nicknamed after a body part by its recipient.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The letter was written roughly six months after the author had come to power.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "In the letter, the author refers to their country having regained a region.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 804,
+    "completion_tokens": 7480,
+    "total_tokens": 8284,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7188
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 292
+  },
+  "started_utc": "2026-09-27T02:24:22.991939+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 34.382720820605755,
+  "completed_utc": "2026-09-27T02:24:57.374676+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 804,
+      "output": 7480,
+      "total": 8284,
+      "reasoning": 7188,
+      "hit": 512,
+      "miss": 292
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

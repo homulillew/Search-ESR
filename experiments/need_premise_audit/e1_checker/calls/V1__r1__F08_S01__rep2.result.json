@@ -1,0 +1,73 @@
+{
+  "id": "V1__r1__F08_S01__rep2",
+  "arm": "V1",
+  "candidate_id": "r1__F08_S01",
+  "qid": "228",
+  "state_id": "F08_S01",
+  "replicate": 2,
+  "request_sha256": "ad1892a36cd1ea8fea05ca16f7f0d38be2609d0561ae70fe6f89f8741a1f87ff",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "whether Kwon Hyuk-bin and his spouse made a foundational gift for the construction of a building that was part of a larger complex",
+    "subject": {
+      "description": "Kwon Hyuk-bin and his spouse",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "C1",
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Kwon Hyuk-bin is an identifiable person.",
+        "status": "supported",
+        "basis_refs": [
+          "C1",
+          "C2"
+        ]
+      },
+      {
+        "statement": "Kwon Hyuk-bin has a spouse.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "discover_subject"
+  },
+  "usage": {
+    "prompt_tokens": 985,
+    "completion_tokens": 4401,
+    "total_tokens": 5386,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4270
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 985
+  },
+  "started_utc": "2026-09-27T02:24:22.409483+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 21.401177529245615,
+  "completed_utc": "2026-09-27T02:24:43.810697+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 985,
+      "output": 4401,
+      "total": 5386,
+      "reasoning": 4270,
+      "hit": 0,
+      "miss": 985
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "V1__v1__F14_S06__rep2",
+  "arm": "V1",
+  "candidate_id": "v1__F14_S06",
+  "qid": "843",
+  "state_id": "F14_S06",
+  "replicate": 2,
+  "request_sha256": "542efab699c84162cce579a70f6f25339c90442269457780bc326f532dd4a4cc",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "whether Amanda D. Phillips published a 2020 monograph on the subject of video games",
+    "subject": {
+      "description": "Amanda D. Phillips, the advisor of the 2023 Georgetown master's thesis on Europa Universalis IV",
+      "status": "grounded",
+      "basis_refs": [
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "The 2023 master's thesis on Europa Universalis IV exists.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Amanda D. Phillips was the advisor for that master's thesis.",
+        "status": "supported",
+        "basis_refs": [
+          "C2"
+        ]
+      },
+      {
+        "statement": "Amanda D. Phillips is an academic.",
+        "status": "supported",
+        "basis_refs": [
+          "C2"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 1314,
+    "completion_tokens": 2863,
+    "total_tokens": 4177,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2683
+    },
+    "prompt_cache_hit_tokens": 1152,
+    "prompt_cache_miss_tokens": 162
+  },
+  "started_utc": "2026-09-27T02:26:05.463756+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 12.89615972712636,
+  "completed_utc": "2026-09-27T02:26:18.359932+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1314,
+      "output": 2863,
+      "total": 4177,
+      "reasoning": 2683,
+      "hit": 1152,
+      "miss": 162
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "R067": {
+    "target_correct": true,
+    "subject_correct": true,
+    "background_matches": [
+      [
+        "B1"
+      ],
+      [],
+      [
+        "B2"
+      ],
+      [
+        "B2"
+      ]
+    ],
+    "legitimate_background": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "background_status_correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "binding_correct_by_slot": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "errors": [],
+    "reason": "Correctly identifies the unbound comparison site, with Athens/death grounded in C1. Existence/identity of the particular accident site remains unsupported, and distance is the target.",
+    "ambiguity": "medium"
+  },
+  "R068": {
+    "target_correct": true,
+    "subject_correct": true,
+    "background_matches": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [
+        "B1"
+      ],
+      [],
+      [],
+      [
+        "B2"
+      ]
+    ],
+    "legitimate_background": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "background_status_correct": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "binding_correct_by_slot": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "errors": [
+      "target_premise_confusion",
+      "false_premise"
+    ],
+    "reason": "Finds the unbound book and appropriate discovery operation. It additionally requires Euler to be proved well-known and central-European before testing the compound L.E.-reference target; those candidate-profile facets are part of the unresolved match, not prerequisites. The marked lack of explicit support is accurate.",
+    "ambiguity": "medium"
+  },
+  "R070": {
+    "unscorable": true,
+    "errors": [],
+    "reason": "Schema-invalid extra top-level type key. Preserve the parsed response but do not strip it, retry, or award semantic success.",
+    "ambiguity": "low"
+  },
+  "R071": {
+    "target_correct": true,
+    "subject_correct": false,
+    "background_matches": [
+      [],
+      [
+        "B1"
+      ],
+      [
+        "B2"
+      ],
+      []
+    ],
+    "legitimate_background": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "background_status_correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "binding_correct_by_slot": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "errors": [
+      "subject_error"
+    ],
+    "reason": "Finds the exact initial-handoff versus final-delivery gap. Binary detection is right, but it calls the already observed handoff officer unresolved and chooses discovery instead of lifting the unsupported delivery relation. Binding statements themselves are correct.",
+    "ambiguity": "medium"
+  },
+  "R072": {
+    "target_correct": true,
+    "subject_correct": true,
+    "background_matches": [
+      [],
+      [],
+      [],
+      [
+        "B2"
+      ]
+    ],
+    "legitimate_background": [
+      true,
+      true,
+      false,
+      true
+    ],
+    "background_status_correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "binding_correct_by_slot": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "errors": [
+      "false_premise"
+    ],
+    "reason": "Correctly lifts the unverified first SPS case. Requiring a shared SPS diagnosis in both original cases is broader than needed for the local first-case country test. Generic Q descriptions are not evidence for the SPS diagnosis, and the output correctly marks that diagnosis unsupported.",
+    "ambiguity": "medium"
+  },
+  "R073": {
+    "target_correct": true,
+    "subject_correct": false,
+    "background_matches": [
+      [],
+      [
+        "B1"
+      ],
+      [
+        "B2"
+      ],
+      []
+    ],
+    "legitimate_background": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "background_status_correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "binding_correct_by_slot": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "errors": [
+      "subject_error"
+    ],
+    "reason": "Correctly catches unsupported final delivery, but uses discover_subject instead of testing the relation around the observed OSS handoff officer. This is an operation/status error, not a missed critical premise.",
+    "ambiguity": "medium"
+  },
+  "R075": {
+    "target_correct": true,
+    "subject_correct": false,
+    "background_matches": [
+      [],
+      [],
+      [
+        "B2"
+      ],
+      []
+    ],
+    "legitimate_background": [
+      false,
+      true,
+      true,
+      false
+    ],
+    "background_status_correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "binding_correct_by_slot": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "errors": [
+      "target_premise_confusion",
+      "false_premise",
+      "subject_error"
+    ],
+    "reason": "Rejects a legal direct interview-event test by demanding full Q identity and an established Sophie partner first. The Q interview profile is correctly quoted as generic context; it does not justify requiring the candidate event components to be pre-proved.",
+    "ambiguity": "medium"
+  },
+  "R076": {
+    "target_correct": true,
+    "subject_correct": false,
+    "background_matches": [
+      [
+        "B1"
+      ],
+      [],
+      [
+        "B1"
+      ],
+      [
+        "B1"
+      ],
+      [],
+      [
+        "B3"
+      ]
+    ],
+    "legitimate_background": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "background_status_correct": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "binding_correct_by_slot": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "errors": [
+      "missed_premise",
+      "subject_error",
+      "wrong_anchor"
+    ],
+    "reason": "Q grounds a clinical description, not the actual report needed for the specific diagnosis attribution under the strict reference. All background descriptions/SPS identity are supported, but the unresolved source is falsely treated as grounded. This remains a medium-ambiguity reference case.",
+    "ambiguity": "medium"
+  },
+  "R078": {
+    "target_correct": true,
+    "subject_correct": true,
+    "background_matches": [
+      [],
+      []
+    ],
+    "legitimate_background": [
+      false,
+      false
+    ],
+    "background_status_correct": [
+      true,
+      true
+    ],
+    "binding_correct_by_slot": [
+      true,
+      true,
+      true
+    ],
+    "errors": [
+      "target_premise_confusion",
+      "false_premise"
+    ],
+    "reason": "Rejects the valid direct Pakistan condition test by requiring its founding/religion parameters to have already been established. These are unresolved components of the single historical-condition target; no precise date or religion is presumed in the Candidate.",
+    "ambiguity": "medium"
+  },
+  "R084": {
+    "target_correct": true,
+    "subject_correct": false,
+    "background_matches": [
+      []
+    ],
+    "legitimate_background": [
+      false
+    ],
+    "background_status_correct": [
+      true
+    ],
+    "binding_correct_by_slot": [
+      true,
+      true
+    ],
+    "errors": [
+      "target_premise_confusion",
+      "false_premise",
+      "subject_error"
+    ],
+    "reason": "Demands proof of a spouse before the existential joint-donation test and therefore rejects a valid control. Spouse participation belongs to the target relation; Kwon is already named and grounded.",
+    "ambiguity": "low"
+  },
+  "R088": {
+    "target_correct": true,
+    "subject_correct": false,
+    "background_matches": [
+      [],
+      [],
+      [],
+      []
+    ],
+    "legitimate_background": [
+      false,
+      false,
+      true,
+      true
+    ],
+    "background_status_correct": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "binding_correct_by_slot": [
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "errors": [
+      "target_premise_confusion",
+      "false_premise",
+      "subject_error",
+      "wrong_anchor"
+    ],
+    "reason": "Rejects an already well-formed DLC discovery Need because DLC identity is unresolved. It promotes the full Q game/release/feature description to established candidate-specific background; Q supplies descriptors to test rather than a verified concrete DLC.",
+    "ambiguity": "medium"
+  }
+}

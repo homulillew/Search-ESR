@@ -1,0 +1,95 @@
+{
+  "id": "V1__v1__F16_S02__rep1",
+  "arm": "V1",
+  "candidate_id": "v1__F16_S02",
+  "qid": "922",
+  "state_id": "F16_S02",
+  "replicate": 1,
+  "request_sha256": "01549cd3250386c25b925ba3d3b3242e87a0a00b2af1a058571ef65f6b437792",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether King Michael of Romania came to power about six months before the writing of the March 5, 1945 letter to the President of the United States",
+    "subject": {
+      "description": "King Michael of Romania and the March 5, 1945 letter from him to the President of the United States",
+      "status": "grounded",
+      "basis_refs": [
+        "C1",
+        "C3"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "A letter exists from King Michael of Romania to the President of the United States.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The letter was transmitted under cover of a memorandum dated March 5, 1945, from William J. Donovan, Director of the Office of Strategic Services.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "King Michael of Romania is the author of the letter.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "King Michael is a ruler of Romania.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The letter refers to Romania having regained North Transylvania.",
+        "status": "supported",
+        "basis_refs": [
+          "C3"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 962,
+    "completion_tokens": 7011,
+    "total_tokens": 7973,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6731
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 194
+  },
+  "started_utc": "2026-09-27T02:24:57.375212+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 31.572092037647963,
+  "completed_utc": "2026-09-27T02:25:28.947321+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 962,
+      "output": 7011,
+      "total": 7973,
+      "reasoning": 6731,
+      "hit": 768,
+      "miss": 194
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "V1__v1__F10_S01__rep1",
+  "arm": "V1",
+  "candidate_id": "v1__F10_S01",
+  "qid": "971",
+  "state_id": "F10_S01",
+  "replicate": 1,
+  "request_sha256": "89f25786211ae7124e7b7eabdf21a6283ccc6dc47fc98216e277b6a6a53b7a5a",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether Alka Marwaha was promoted from associate professor to professor in 2022 at Jesus and Mary College, University of Delhi",
+    "subject": {
+      "description": "Alka Marwaha, specifically as an academic at Jesus and Mary College, University of Delhi",
+      "status": "grounded",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Alka Marwaha is an associate professor at Jesus and Mary College, University of Delhi",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Jesus and Mary College is a college/institution associated with the University of Delhi",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 999,
+    "completion_tokens": 3439,
+    "total_tokens": 4438,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3294
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 231
+  },
+  "started_utc": "2026-09-27T02:25:09.381930+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 16.428062818944454,
+  "completed_utc": "2026-09-27T02:25:25.810009+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 999,
+      "output": 3439,
+      "total": 4438,
+      "reasoning": 3294,
+      "hit": 768,
+      "miss": 231
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

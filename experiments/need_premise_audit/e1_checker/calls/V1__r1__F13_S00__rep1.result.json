@@ -1,0 +1,80 @@
+{
+  "id": "V1__r1__F13_S00__rep1",
+  "arm": "V1",
+  "candidate_id": "r1__F13_S00",
+  "qid": "637",
+  "state_id": "F13_S00",
+  "replicate": 1,
+  "request_sha256": "467b1cfcc520c31245eda4b614bffa5e72260f7282c3437a1ff857832a999078",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "scientific name of the disorder associated with the described case presentation",
+    "subject": {
+      "description": "the 2010s case in which an individual presented with a half-year history of pain in different parts of the body that gradually worsened, causing difficulty in walking and moving their shoulders",
+      "status": "grounded",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "There was a case reported in the 2010s.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "In that case, the individual presented with a half-year history of pain in different parts of their body.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The pain gradually worsened and caused difficulty in walking and moving their shoulders.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 915,
+    "completion_tokens": 1228,
+    "total_tokens": 2143,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1054
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 147
+  },
+  "started_utc": "2026-09-27T02:25:31.842890+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 6.099136613309383,
+  "completed_utc": "2026-09-27T02:25:37.942043+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 915,
+      "output": 1228,
+      "total": 2143,
+      "reasoning": 1054,
+      "hit": 768,
+      "miss": 147
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

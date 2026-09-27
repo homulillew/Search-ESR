@@ -1,0 +1,78 @@
+{
+  "id": "V1__r1__F13_S06__rep2",
+  "arm": "V1",
+  "candidate_id": "r1__F13_S06",
+  "qid": "637",
+  "state_id": "F13_S06",
+  "replicate": 2,
+  "request_sha256": "0eab8421751c950daca23222364e0b2438c58e428596ca9c09cd291d8c5615cb",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether the two FOP case reports were published in different years during the 2010s.",
+    "subject": {
+      "description": "The two reported cases of fibrodysplasia ossificans progressiva (FOP) that correspond to the two case reports described in the Original Question and verified in C7 and C9.",
+      "status": "grounded",
+      "basis_refs": [
+        "Q",
+        "C7",
+        "C9"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "There are two reported cases of fibrodysplasia ossificans progressiva (FOP).",
+        "status": "supported",
+        "basis_refs": [
+          "C7",
+          "C9"
+        ]
+      },
+      {
+        "statement": "The two FOP case reports are the two cases described in the Original Question.",
+        "status": "supported",
+        "basis_refs": [
+          "Q",
+          "C7",
+          "C9"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 1588,
+    "completion_tokens": 10462,
+    "total_tokens": 12050,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10289
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1588
+  },
+  "started_utc": "2026-09-27T02:24:22.592084+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 44.84185385890305,
+  "completed_utc": "2026-09-27T02:25:07.433954+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1588,
+      "output": 10462,
+      "total": 12050,
+      "reasoning": 10289,
+      "hit": 0,
+      "miss": 1588
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

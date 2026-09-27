@@ -1,0 +1,83 @@
+{
+  "id": "V1__v1__F08_S01__rep1",
+  "arm": "V1",
+  "candidate_id": "v1__F08_S01",
+  "qid": "228",
+  "state_id": "F08_S01",
+  "replicate": 1,
+  "request_sha256": "75815115985d117499aeb6e916b9d1b62ceac1e84859cc4c06b993f1dd5b2c6d",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "whether Smilegate's online video games division released a video game between 2000 and 2010 that was considered one of the top-earning games of all time as of 2019",
+    "subject": {
+      "description": "Smilegate's online video games division, i.e., the online video games division of Kwon Hyuk-bin's company Smilegate",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Kwon Hyuk-bin founded Smilegate.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Smilegate is a company that makes video games.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Smilegate has an online video games division.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "The online video games division in question belongs to Smilegate.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "discover_subject"
+  },
+  "usage": {
+    "prompt_tokens": 1008,
+    "completion_tokens": 3012,
+    "total_tokens": 4020,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2799
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1008
+  },
+  "started_utc": "2026-09-27T02:24:22.405143+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 12.909501522779465,
+  "completed_utc": "2026-09-27T02:24:35.314676+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1008,
+      "output": 3012,
+      "total": 4020,
+      "reasoning": 2799,
+      "hit": 0,
+      "miss": 1008
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

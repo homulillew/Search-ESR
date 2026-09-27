@@ -1,0 +1,91 @@
+{
+  "id": "V1__v1__F13_S01__rep2",
+  "arm": "V1",
+  "candidate_id": "v1__F13_S01",
+  "qid": "637",
+  "state_id": "F13_S01",
+  "replicate": 2,
+  "request_sha256": "cad02f9c0d44291e96d1d6aa512eed75b1aa857342ce995f82ad8eb08b584946",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether the first 2010s case report of stiff person syndrome (SPS) originated from the country that was the largest country of its dominant religion in the world at the time of its establishment.",
+    "subject": {
+      "description": "the first 2010s case report of stiff person syndrome (SPS)",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "There were two cases in different years reported in the 2010s.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The first case was reported in a country that was the largest country of its dominant religion in the world at the time of its establishment.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The disorder shared by the two cases is stiff person syndrome (SPS).",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "There exists a first 2010s case report of stiff person syndrome (SPS).",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "Stiff person syndrome is a disorder.",
+        "status": "supported",
+        "basis_refs": [
+          "C1",
+          "C2"
+        ]
+      }
+    ],
+    "decision": "discover_subject"
+  },
+  "usage": {
+    "prompt_tokens": 1037,
+    "completion_tokens": 7429,
+    "total_tokens": 8466,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7142
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 269
+  },
+  "started_utc": "2026-09-27T02:24:48.065781+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 30.352863747626543,
+  "completed_utc": "2026-09-27T02:25:18.418661+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1037,
+      "output": 7429,
+      "total": 8466,
+      "reasoning": 7142,
+      "hit": 768,
+      "miss": 269
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

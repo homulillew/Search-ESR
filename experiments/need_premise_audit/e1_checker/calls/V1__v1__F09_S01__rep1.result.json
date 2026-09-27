@@ -1,0 +1,83 @@
+{
+  "id": "V1__v1__F09_S01__rep1",
+  "arm": "V1",
+  "candidate_id": "v1__F09_S01",
+  "qid": "169",
+  "state_id": "F09_S01",
+  "replicate": 1,
+  "request_sha256": "582baa97ba7dcf1b5c84fa2205df5616c00a705b802fb541dcbd0eab94af2715",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether Sophie's partner at the time of her death gave an interview in which they said that after her death Sophie became a direct reference to one of her songs.",
+    "subject": {
+      "description": "Sophie's partner at the time of her death",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Sophie is the musical artist described in the Original Question.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "The musical artist had a partner at the time of their death.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The musical artist's partner gave an interview saying that after the artist's death the artist became a direct reference to one of their songs.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "Sophie had a partner at the time of her death.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "discover_subject"
+  },
+  "usage": {
+    "prompt_tokens": 977,
+    "completion_tokens": 3031,
+    "total_tokens": 4008,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2825
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 977
+  },
+  "started_utc": "2026-09-27T02:24:22.412139+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 14.341117449104786,
+  "completed_utc": "2026-09-27T02:24:36.753288+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 977,
+      "output": 3031,
+      "total": 4008,
+      "reasoning": 2825,
+      "hit": 0,
+      "miss": 977
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

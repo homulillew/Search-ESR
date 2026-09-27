@@ -1,0 +1,78 @@
+{
+  "id": "V1__r1__F09_S01__rep2",
+  "arm": "V1",
+  "candidate_id": "r1__F09_S01",
+  "qid": "169",
+  "state_id": "F09_S01",
+  "replicate": 2,
+  "request_sha256": "fbcdf963cfd6d1acb6f2cf7d27c5ac7fc6909411b78102281c901987a6035377",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether Athens is 20 to 30 miles from the site of Greece's deadliest aviation accident as of 2023",
+    "subject": {
+      "description": "Athens (the city where Sophie died) and the site of Greece's deadliest aviation accident as of 2023",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Sophie died in Athens, Greece.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Athens is a city in Greece.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Greece has a deadliest aviation accident as of 2023 with a site.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "discover_subject"
+  },
+  "usage": {
+    "prompt_tokens": 974,
+    "completion_tokens": 9787,
+    "total_tokens": 10761,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9618
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 206
+  },
+  "started_utc": "2026-09-27T02:25:56.982713+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 43.44002125971019,
+  "completed_utc": "2026-09-27T02:26:40.422749+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 974,
+      "output": 9787,
+      "total": 10761,
+      "reasoning": 9618,
+      "hit": 768,
+      "miss": 206
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "V1__v1__F16_S01__rep1",
+  "arm": "V1",
+  "candidate_id": "v1__F16_S01",
+  "qid": "922",
+  "state_id": "F16_S01",
+  "replicate": 1,
+  "request_sha256": "44c9955b639638a21b9f2ae2ede9d0674451fb81edcf7f42951bedf8a397c4ea",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "The name of the region that King Michael of Romania refers to as having been regained by Romania in the specified letter.",
+    "subject": {
+      "description": "King Michael of Romania's letter to the President of the United States, transmitted under a memorandum dated March 5, 1945.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1",
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "A letter existed from King Michael of Romania to the President of the United States.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "King Michael of Romania was a ruler/head of state when the letter was written.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The letter was written in the first half of the twentieth century.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The letter was written roughly six months after King Michael came to power.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "The letter was delivered by an official who was nicknamed after a body part by its recipient.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "The letter contains a reference by King Michael to Romania having regained a region.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "lift_premise"
+  },
+  "usage": {
+    "prompt_tokens": 944,
+    "completion_tokens": 3532,
+    "total_tokens": 4476,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3177
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 176
+  },
+  "started_utc": "2026-09-27T02:25:13.581314+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 16.41406076401472,
+  "completed_utc": "2026-09-27T02:25:29.995390+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 944,
+      "output": 3532,
+      "total": 4476,
+      "reasoning": 3177,
+      "hit": 768,
+      "miss": 176
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

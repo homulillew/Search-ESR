@@ -1,0 +1,66 @@
+{
+  "id": "V1__v1__F14_S06__rep1",
+  "arm": "V1",
+  "candidate_id": "v1__F14_S06",
+  "qid": "843",
+  "state_id": "F14_S06",
+  "replicate": 1,
+  "request_sha256": "542efab699c84162cce579a70f6f25339c90442269457780bc326f532dd4a4cc",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether Amanda D. Phillips published a 2020 monograph on the subject of video games.",
+    "subject": {
+      "description": "Amanda D. Phillips, the advisor of the 2023 Georgetown University master's thesis on Europa Universalis IV.",
+      "status": "grounded",
+      "basis_refs": [
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Amanda D. Phillips was the advisor for the 2023 Georgetown University master's thesis on Europa Universalis IV.",
+        "status": "supported",
+        "basis_refs": [
+          "C2"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 1314,
+    "completion_tokens": 2445,
+    "total_tokens": 3759,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2328
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 674
+  },
+  "started_utc": "2026-09-27T02:25:23.354275+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 11.63923829421401,
+  "completed_utc": "2026-09-27T02:25:34.993530+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1314,
+      "output": 2445,
+      "total": 3759,
+      "reasoning": 2328,
+      "hit": 640,
+      "miss": 674
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

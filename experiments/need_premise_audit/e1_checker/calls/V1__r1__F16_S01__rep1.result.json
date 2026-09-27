@@ -1,0 +1,122 @@
+{
+  "id": "V1__r1__F16_S01__rep1",
+  "arm": "V1",
+  "candidate_id": "r1__F16_S01",
+  "qid": "922",
+  "state_id": "F16_S01",
+  "replicate": 1,
+  "request_sha256": "41519391cf64befd933bb715a6d147222245d4bf0074fff1a2849a2e058183d1",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "the name of the region that King Michael of Romania referred to as having been regained by Romania in the letter",
+    "subject": {
+      "description": "the letter from King Michael of Romania to the President of the United States, transmitted under cover of a memorandum dated March 5, 1945",
+      "status": "grounded",
+      "basis_refs": [
+        "C1",
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "King Michael of Romania wrote a letter to the President of the United States.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The letter was transmitted to the President under cover of a memorandum dated March 5, 1945.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The letter itself was dated March 5, 1945.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "The letter was written in the first half of the twentieth century.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The letter was from a ruler of one country to another.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The letter was delivered by an official who was nicknamed after a body part by its recipient.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "The letter was written roughly six months after the author had come to power.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "In the letter, the author refers to their country having regained a region.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "The author's country is Romania.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The recipient is the President of the United States.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      }
+    ],
+    "decision": "lift_premise"
+  },
+  "usage": {
+    "prompt_tokens": 944,
+    "completion_tokens": 6190,
+    "total_tokens": 7134,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5807
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 176
+  },
+  "started_utc": "2026-09-27T02:24:35.701295+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 26.640301963314414,
+  "completed_utc": "2026-09-27T02:25:02.341613+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 944,
+      "output": 6190,
+      "total": 7134,
+      "reasoning": 5807,
+      "hit": 768,
+      "miss": 176
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

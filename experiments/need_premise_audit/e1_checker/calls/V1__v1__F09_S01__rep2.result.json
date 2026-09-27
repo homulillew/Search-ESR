@@ -1,0 +1,76 @@
+{
+  "id": "V1__v1__F09_S01__rep2",
+  "arm": "V1",
+  "candidate_id": "v1__F09_S01",
+  "qid": "169",
+  "state_id": "F09_S01",
+  "replicate": 2,
+  "request_sha256": "582baa97ba7dcf1b5c84fa2205df5616c00a705b802fb541dcbd0eab94af2715",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "whether Sophie's partner at the time of her death gave an interview stating that after her death Sophie became a direct reference to one of her songs",
+    "subject": {
+      "description": "Sophie's partner at the time of her death (the person who allegedly gave the interview)",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Sophie is the musical artist referred to in the Original Question.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "Sophie died.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Sophie had a partner at the time of her death.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "discover_subject"
+  },
+  "usage": {
+    "prompt_tokens": 977,
+    "completion_tokens": 5816,
+    "total_tokens": 6793,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5654
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 209
+  },
+  "started_utc": "2026-09-27T02:26:09.873306+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 27.052490828558803,
+  "completed_utc": "2026-09-27T02:26:36.925813+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 977,
+      "output": 5816,
+      "total": 6793,
+      "reasoning": 5654,
+      "hit": 768,
+      "miss": 209
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

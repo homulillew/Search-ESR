@@ -1,0 +1,68 @@
+{
+  "id": "V1__r1__F13_S06__rep1",
+  "arm": "V1",
+  "candidate_id": "r1__F13_S06",
+  "qid": "637",
+  "state_id": "F13_S06",
+  "replicate": 1,
+  "request_sha256": "0eab8421751c950daca23222364e0b2438c58e428596ca9c09cd291d8c5615cb",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether the two FOP case reports were published in different years during the 2010s",
+    "subject": {
+      "description": "The two reported cases of fibrodysplasia ossificans progressiva (FOP)",
+      "status": "grounded",
+      "basis_refs": [
+        "C7",
+        "C9"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "There are two case reports of fibrodysplasia ossificans progressiva (FOP).",
+        "status": "supported",
+        "basis_refs": [
+          "C7",
+          "C9"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 1588,
+    "completion_tokens": 6184,
+    "total_tokens": 7772,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6039
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 180
+  },
+  "started_utc": "2026-09-27T02:25:29.995799+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 26.792437370866537,
+  "completed_utc": "2026-09-27T02:25:56.788248+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1588,
+      "output": 6184,
+      "total": 7772,
+      "reasoning": 6039,
+      "hit": 1408,
+      "miss": 180
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

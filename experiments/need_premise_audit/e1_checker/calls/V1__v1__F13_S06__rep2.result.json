@@ -1,0 +1,74 @@
+{
+  "id": "V1__v1__F13_S06__rep2",
+  "arm": "V1",
+  "candidate_id": "v1__F13_S06",
+  "qid": "637",
+  "state_id": "F13_S06",
+  "replicate": 2,
+  "request_sha256": "22afbe994d9ac915165f7044c3c049c199888743a4a0265d6e6d7685aa42078e",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "whether Pakistan was the largest country of its dominant religion in the world at the time of its establishment",
+    "subject": {
+      "description": "Pakistan",
+      "status": "grounded",
+      "basis_refs": [
+        "C7"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "The first case was reported in Pakistan.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "Pakistan has a dominant religion.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "Pakistan was established at a particular time.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "lift_premise"
+  },
+  "usage": {
+    "prompt_tokens": 1577,
+    "completion_tokens": 7457,
+    "total_tokens": 9034,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 7284
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 169
+  },
+  "started_utc": "2026-09-27T02:24:59.480201+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 32.361830815672874,
+  "completed_utc": "2026-09-27T02:25:31.842047+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1577,
+      "output": 7457,
+      "total": 9034,
+      "reasoning": 7284,
+      "hit": 1408,
+      "miss": 169
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

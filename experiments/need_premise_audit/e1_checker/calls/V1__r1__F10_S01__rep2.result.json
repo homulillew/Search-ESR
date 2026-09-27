@@ -1,0 +1,89 @@
+{
+  "id": "V1__r1__F10_S01__rep2",
+  "arm": "V1",
+  "candidate_id": "r1__F10_S01",
+  "qid": "971",
+  "state_id": "F10_S01",
+  "replicate": 2,
+  "request_sha256": "c0df2b492c6bb25e215de1f1adb2d3d381f76ffb0351f9379bb7577186a28b90",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "title of the journal article by Alka Marwaha published six years after The Secret World of Vipassana and Mathematics on a similar topic",
+    "subject": {
+      "description": "The journal article by Alka Marwaha published six years after The Secret World of Vipassana and Mathematics on a similar topic.",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "Q",
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Alka Marwaha authored The Secret World of Vipassana and Mathematics.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The Secret World of Vipassana and Mathematics was published in 2016.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Alka Marwaha is the Indian author described in the Original Question.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "Alka Marwaha published a journal article six years after The Secret World of Vipassana and Mathematics.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "That journal article is on a topic similar to The Secret World of Vipassana and Mathematics.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "lift_premise"
+  },
+  "usage": {
+    "prompt_tokens": 1005,
+    "completion_tokens": 6969,
+    "total_tokens": 7974,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6702
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 237
+  },
+  "started_utc": "2026-09-27T02:26:13.149192+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 30.65922643058002,
+  "completed_utc": "2026-09-27T02:26:43.808435+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1005,
+      "output": 6969,
+      "total": 7974,
+      "reasoning": 6702,
+      "hit": 768,
+      "miss": 237
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

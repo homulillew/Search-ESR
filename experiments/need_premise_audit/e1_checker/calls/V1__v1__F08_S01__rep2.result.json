@@ -1,0 +1,78 @@
+{
+  "id": "V1__v1__F08_S01__rep2",
+  "arm": "V1",
+  "candidate_id": "v1__F08_S01",
+  "qid": "228",
+  "state_id": "F08_S01",
+  "replicate": 2,
+  "request_sha256": "75815115985d117499aeb6e916b9d1b62ceac1e84859cc4c06b993f1dd5b2c6d",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether Smilegate, through its online video games division, released a video game between 2000 and 2010 that was considered one of the top-earning games of all time as of 2019",
+    "subject": {
+      "description": "Kwon Hyuk-bin's company Smilegate",
+      "status": "grounded",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Kwon Hyuk-bin founded Smilegate.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Smilegate is a company that makes video games.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "Smilegate has an online video games division.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "lift_premise"
+  },
+  "usage": {
+    "prompt_tokens": 1008,
+    "completion_tokens": 8315,
+    "total_tokens": 9323,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8148
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 240
+  },
+  "started_utc": "2026-09-27T02:25:25.888315+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 35.66210671514273,
+  "completed_utc": "2026-09-27T02:26:01.550437+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1008,
+      "output": 8315,
+      "total": 9323,
+      "reasoning": 8148,
+      "hit": 768,
+      "miss": 240
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

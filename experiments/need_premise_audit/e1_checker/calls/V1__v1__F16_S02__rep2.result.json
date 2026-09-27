@@ -1,0 +1,90 @@
+{
+  "id": "V1__v1__F16_S02__rep2",
+  "arm": "V1",
+  "candidate_id": "v1__F16_S02",
+  "qid": "922",
+  "state_id": "F16_S02",
+  "replicate": 2,
+  "request_sha256": "01549cd3250386c25b925ba3d3b3242e87a0a00b2af1a058571ef65f6b437792",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether King Michael of Romania came to power approximately six months before the date the letter was written.",
+    "subject": {
+      "description": "King Michael of Romania and the letter to the President of the United States transmitted under a memorandum dated March 5, 1945.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "A letter from King Michael of Romania to the President of the United States exists.",
+        "status": "supported",
+        "basis_refs": [
+          "C1",
+          "C2"
+        ]
+      },
+      {
+        "statement": "The letter was transmitted under a memorandum dated March 5, 1945.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The letter was written on or about March 5, 1945.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "King Michael of Romania had come to power at some point.",
+        "status": "supported",
+        "basis_refs": [
+          "Q",
+          "C1",
+          "C3"
+        ]
+      }
+    ],
+    "decision": "lift_premise"
+  },
+  "usage": {
+    "prompt_tokens": 962,
+    "completion_tokens": 8353,
+    "total_tokens": 9315,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8070
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 194
+  },
+  "started_utc": "2026-09-27T02:26:20.975383+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 36.38745618797839,
+  "completed_utc": "2026-09-27T02:26:57.362855+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 962,
+      "output": 8353,
+      "total": 9315,
+      "reasoning": 8070,
+      "hit": 768,
+      "miss": 194
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

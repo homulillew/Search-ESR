@@ -1,0 +1,83 @@
+{
+  "id": "V1__v1__F13_S01__rep1",
+  "arm": "V1",
+  "candidate_id": "v1__F13_S01",
+  "qid": "637",
+  "state_id": "F13_S01",
+  "replicate": 1,
+  "request_sha256": "cad02f9c0d44291e96d1d6aa512eed75b1aa857342ce995f82ad8eb08b584946",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether the first 2010s case report of stiff person syndrome (SPS) was reported from the country that was the largest country of its dominant religion in the world at the time of its establishment.",
+    "subject": {
+      "description": "the first 2010s case report of stiff person syndrome (SPS)",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "There were two case reports in different years in the 2010s.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The first case report was from a country that was the largest country of its dominant religion in the world at the time of its establishment.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The shared disorder in the two case reports is stiff person syndrome (SPS).",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "The first case in the 2010s is a case report of stiff person syndrome (SPS).",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "lift_premise"
+  },
+  "usage": {
+    "prompt_tokens": 1037,
+    "completion_tokens": 5224,
+    "total_tokens": 6261,
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4989
+    },
+    "prompt_cache_hit_tokens": 896,
+    "prompt_cache_miss_tokens": 141
+  },
+  "started_utc": "2026-09-27T02:25:29.272167+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 22.993033604696393,
+  "completed_utc": "2026-09-27T02:25:52.265216+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1037,
+      "output": 5224,
+      "total": 6261,
+      "reasoning": 4989,
+      "hit": 896,
+      "miss": 141
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

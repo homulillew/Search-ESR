@@ -1,0 +1,94 @@
+{
+  "id": "V1__r1__F10_S01__rep1",
+  "arm": "V1",
+  "candidate_id": "r1__F10_S01",
+  "qid": "971",
+  "state_id": "F10_S01",
+  "replicate": 1,
+  "request_sha256": "c0df2b492c6bb25e215de1f1adb2d3d381f76ffb0351f9379bb7577186a28b90",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": false,
+  "output": {
+    "type": "json_object",
+    "target": "title of the journal article published six years after The Secret World of Vipassana and Mathematics on a similar topic",
+    "subject": {
+      "description": "The journal article by Alka Marwaha, published six years after The Secret World of Vipassana and Mathematics on a similar topic",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "Alka Marwaha is the author of The Secret World of Vipassana and Mathematics.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The Secret World of Vipassana and Mathematics was published on November 15, 2016.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "The Secret World of Vipassana and Mathematics is the book described in the Original Question as connecting mathematics to an ancient technique for liberation.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "Alka Marwaha is the Indian author described in the Original Question.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "Alka Marwaha published a journal article on a topic similar to The Secret World of Vipassana and Mathematics.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "That journal article was published six years after The Secret World of Vipassana and Mathematics.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "lift_premise"
+  },
+  "usage": {
+    "prompt_tokens": 1005,
+    "completion_tokens": 4506,
+    "total_tokens": 5511,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4157
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1005
+  },
+  "started_utc": "2026-09-27T02:24:22.407727+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": "schema_or_ref_error",
+  "elapsed_seconds": 19.987289056181908,
+  "completed_utc": "2026-09-27T02:24:42.395047+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1005,
+      "output": 4506,
+      "total": 5511,
+      "reasoning": 4157,
+      "hit": 0,
+      "miss": 1005
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

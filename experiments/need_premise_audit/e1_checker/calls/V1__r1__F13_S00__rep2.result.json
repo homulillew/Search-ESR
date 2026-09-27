@@ -1,0 +1,87 @@
+{
+  "id": "V1__r1__F13_S00__rep2",
+  "arm": "V1",
+  "candidate_id": "r1__F13_S00",
+  "qid": "637",
+  "state_id": "F13_S00",
+  "replicate": 2,
+  "request_sha256": "467b1cfcc520c31245eda4b614bffa5e72260f7282c3437a1ff857832a999078",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "The disorder associated with the first 2010s case described, based on its clinical presentation.",
+    "subject": {
+      "description": "The first case described in the Original Question, reported in the 2010s, in which the individual had a half-year history of worsening pain in different body parts, causing difficulty walking and moving their shoulders.",
+      "status": "grounded",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "There was a case reported in the 2010s.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "In that case, the individual presented with a half-year history of pain in different parts of their body.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The pain gradually worsened, causing difficulty in walking and moving their shoulders.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The case was one of two cases reported to have a particular shared disorder.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 915,
+    "completion_tokens": 2239,
+    "total_tokens": 3154,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1999
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 275
+  },
+  "started_utc": "2026-09-27T02:25:02.342052+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 11.238742303103209,
+  "completed_utc": "2026-09-27T02:25:13.580807+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 915,
+      "output": 2239,
+      "total": 3154,
+      "reasoning": 1999,
+      "hit": 640,
+      "miss": 275
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

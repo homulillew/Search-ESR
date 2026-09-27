@@ -1,0 +1,84 @@
+{
+  "id": "V1__v1__F16_S01__rep2",
+  "arm": "V1",
+  "candidate_id": "v1__F16_S01",
+  "qid": "922",
+  "state_id": "F16_S01",
+  "replicate": 2,
+  "request_sha256": "44c9955b639638a21b9f2ae2ede9d0674451fb81edcf7f42951bedf8a397c4ea",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "The name of the region that King Michael of Romania refers to as having been regained by Romania in the letter to the President of the United States.",
+    "subject": {
+      "description": "The letter from King Michael of Romania to the President of the United States referenced in C1/C2.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1",
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "A letter from King Michael of Romania to the President of the United States exists and was transmitted to the President.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "statement": "King Michael handed that letter to an OSS officer in Bucharest for unofficial transmission to the President.",
+        "status": "supported",
+        "basis_refs": [
+          "C2"
+        ]
+      },
+      {
+        "statement": "The letter itself is dated March 5, 1945.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "statement": "In that letter, King Michael refers to Romania having regained a region.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "decision": "lift_premise"
+  },
+  "usage": {
+    "prompt_tokens": 944,
+    "completion_tokens": 5953,
+    "total_tokens": 6897,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5733
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 944
+  },
+  "started_utc": "2026-09-27T02:24:22.551299+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 28.78920098952949,
+  "completed_utc": "2026-09-27T02:24:51.340516+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 944,
+      "output": 5953,
+      "total": 6897,
+      "reasoning": 5733,
+      "hit": 0,
+      "miss": 944
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

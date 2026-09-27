@@ -1,0 +1,94 @@
+{
+  "id": "V1__r1__F13_S01__rep1",
+  "arm": "V1",
+  "candidate_id": "r1__F13_S01",
+  "qid": "637",
+  "state_id": "F13_S01",
+  "replicate": 1,
+  "request_sha256": "dc5bb8375d788bab47854c13583c9cc54c481b4d56904e0efa668df0ccdbae03",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Whether the disorder reported in the second case (patient with upper-body pain and swelling, and a tissue-sampling procedure two months earlier) is stiff person syndrome.",
+    "subject": {
+      "description": "The case report in the 2010s involving an individual who presented with upper-body pain and swelling, had a tissue-sampling procedure two months earlier, and earlier developed stiffness followed by swelling four years later.",
+      "status": "grounded",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "There were two cases in different years reported in the 2010s.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "One of the cases involved an individual who presented with complaints of pain and swelling in the upper part of the body.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "In that case, a procedure involving the collection of tissue samples to test for disease had been performed two months earlier.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "In that case, the individual had developed stiffness when younger, followed by swelling four years later.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "The two cases covered a particular disorder shared between two individuals.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      }
+    ],
+    "decision": "keep"
+  },
+  "usage": {
+    "prompt_tokens": 1030,
+    "completion_tokens": 4286,
+    "total_tokens": 5316,
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3942
+    },
+    "prompt_cache_hit_tokens": 896,
+    "prompt_cache_miss_tokens": 134
+  },
+  "started_utc": "2026-09-27T02:25:53.945528+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 18.60115053318441,
+  "completed_utc": "2026-09-27T02:26:12.546694+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1030,
+      "output": 4286,
+      "total": 5316,
+      "reasoning": 3942,
+      "hit": 896,
+      "miss": 134
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

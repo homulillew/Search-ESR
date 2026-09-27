@@ -1,0 +1,83 @@
+{
+  "id": "V1__r1__F14_S01__rep1",
+  "arm": "V1",
+  "candidate_id": "r1__F14_S01",
+  "qid": "843",
+  "state_id": "F14_S01",
+  "replicate": 1,
+  "request_sha256": "96f242dfa0517b85344f214fbe3f5f2e9a03ec615b68916e839cf091faeee3fc",
+  "head": "ee6ab821a20d2f1a87c7149816373d8924cbf1b2",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "target": "Identify the downloadable content pack for Europa Universalis IV that was released more than three years after the game's initial release.",
+    "subject": {
+      "description": "The downloadable content pack for Europa Universalis IV released more than three years after the game's initial release.",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "Q",
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "statement": "The strategy video game referred to in the Original Question is Europa Universalis IV.",
+        "status": "supported",
+        "basis_refs": [
+          "Q",
+          "C1",
+          "C2"
+        ]
+      },
+      {
+        "statement": "A downloadable content pack was released for that game more than three years after its initial release.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "statement": "Europa Universalis IV had an initial release.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      }
+    ],
+    "decision": "discover_subject"
+  },
+  "usage": {
+    "prompt_tokens": 943,
+    "completion_tokens": 4624,
+    "total_tokens": 5567,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4440
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 431
+  },
+  "started_utc": "2026-09-27T02:24:42.395578+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 20.60168219730258,
+  "completed_utc": "2026-09-27T02:25:02.997276+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 943,
+      "output": 4624,
+      "total": 5567,
+      "reasoning": 4440,
+      "hit": 512,
+      "miss": 431
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}
