@@ -1,0 +1,780 @@
+{
+  "R001": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "Discovery uses one bounded DLC mechanics profile from Q. Religion, technology and national mechanics are complementary release features, not separate biography/history goals.",
+    "premise_anchors": [
+      "Q: DLC mechanics profile"
+    ],
+    "objective_decomposition": [
+      "Identify DLC matching the stated mechanics profile"
+    ],
+    "ambiguity": "low"
+  },
+  "R002": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "Discovers the diagnosis from one Q-provided clinical presentation. It does not assert that the SPS candidate has a matching case.",
+    "premise_anchors": [
+      "Q: first clinical presentation and decade"
+    ],
+    "objective_decomposition": [
+      "Identify disorder from the first case clinical profile"
+    ],
+    "ambiguity": "low"
+  },
+  "R003": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": false,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "P"
+    ],
+    "reason": "C establishes Marwaha and her book, but no journal-article publication. Asking its title presupposes that she published the question-described later article.",
+    "premise_anchors": [
+      "C: Marwaha book and PhD",
+      "H: provisional author identity"
+    ],
+    "objective_decomposition": [
+      "Obtain title of a presumed later Marwaha article"
+    ],
+    "ambiguity": "low"
+  },
+  "R004": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": false,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "P"
+    ],
+    "reason": "The memorandum date is correctly attached to the memorandum, and the letter is observed. C has not yet established that this candidate letter refers to any regained region. Asking which region promotes that Q condition onto the candidate letter.",
+    "premise_anchors": [
+      "C: letter transmitted under March 5 memorandum",
+      "Q: sought letter mentions a regained region"
+    ],
+    "objective_decomposition": [
+      "Name region in an unverified candidate regained-region reference"
+    ],
+    "ambiguity": "medium"
+  },
+  "R005": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": false,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "A"
+    ],
+    "reason": "All descriptors come from Q, but the concrete letter remains unidentified. This asks a downstream region attribute of that unidentified source. Treat the bounded letter description as coherent; the binding failure alone makes it invalid.",
+    "premise_anchors": [
+      "Q: letter and courier description",
+      "C empty"
+    ],
+    "objective_decomposition": [
+      "Read region attribute from an unidentified letter"
+    ],
+    "ambiguity": "medium"
+  },
+  "R006": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "EU4 is grounded by the observed thesis, and discovery of a DLC satisfying one release-interval condition is unresolved. No specific DLC is asserted to satisfy it.",
+    "premise_anchors": [
+      "C: EU4 thesis",
+      "Q: more than three years interval"
+    ],
+    "objective_decomposition": [
+      "Discover EU4 DLC by release interval"
+    ],
+    "ambiguity": "low"
+  },
+  "R007": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "Book discovery from an illustration count plus telephone/telegraph content is the same coherent source profile accepted in E0.",
+    "premise_anchors": [
+      "Q: illustration count and object descriptions"
+    ],
+    "objective_decomposition": [
+      "Identify book matching the illustration/content profile"
+    ],
+    "ambiguity": "low"
+  },
+  "R008": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": false,
+      "Actionable": true
+    },
+    "codes": [
+      "W"
+    ],
+    "reason": "Professor career choice and Minnesota doctoral education are independently resolvable biographical objectives. Sharing the professor identity does not merge them under this rubric.",
+    "premise_anchors": [
+      "Q: professor career switch",
+      "Q: doctorate location"
+    ],
+    "objective_decomposition": [
+      "Identify professor by career switch",
+      "Verify doctoral location"
+    ],
+    "ambiguity": "medium"
+  },
+  "R009": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": false,
+      "PremiseClosed": true,
+      "Coherent": false,
+      "Actionable": true
+    },
+    "codes": [
+      "A",
+      "W"
+    ],
+    "reason": "The building is not identified, yet its university is requested. The full description also bundles donor business, education, marital history and donation/building questions.",
+    "premise_anchors": [
+      "Q only; no concrete donor or building in C"
+    ],
+    "objective_decomposition": [
+      "Identify building and university",
+      "Resolve donor company/game profile",
+      "Verify donor education",
+      "Verify childlessness and gift"
+    ],
+    "ambiguity": "low"
+  },
+  "R010": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "A founder is sought through one company/game commercial profile; all descriptors are in Q and no named candidate is treated as established. This is a bounded discovery profile, albeit with a relational chain.",
+    "premise_anchors": [
+      "Q: founder/company/game profile"
+    ],
+    "objective_decomposition": [
+      "Discover founder of the company associated with the specified game profile"
+    ],
+    "ambiguity": "medium"
+  },
+  "R011": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": false,
+      "Actionable": true
+    },
+    "codes": [
+      "W"
+    ],
+    "reason": "Promotion, undergraduate/graduate education, doctoral supervision and the supervisor career/degree history remain separate research judgments. One requested author identity does not close those objectives.",
+    "premise_anchors": [
+      "Q: promotion and education",
+      "Q: supervisor biography"
+    ],
+    "objective_decomposition": [
+      "Identify author via promotion",
+      "Verify university education",
+      "Resolve PhD supervision",
+      "Verify supervisor career and doctoral location"
+    ],
+    "ambiguity": "low"
+  },
+  "R012": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": false,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "S"
+    ],
+    "reason": "C already identifies Rights of Man, gives 2013/2016 release dates, technology changes, Coptic religion mechanics and Ottoman mechanics. Re-discovering a DLC by those covered features is stale; advisor education/monograph remain unresolved instead.",
+    "premise_anchors": [
+      "C: Rights of Man release and diary/manual feature statements"
+    ],
+    "objective_decomposition": [
+      "Re-identify already supported DLC feature/release profile"
+    ],
+    "ambiguity": "medium"
+  },
+  "R013": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "The diagnosis is sought through one specific clinical profile explicitly in Q; no SPS case is presumed. This is assessed as disorder discovery from symptoms/event sequence, not an attribute of a claimed SPS publication.",
+    "premise_anchors": [
+      "Q: second clinical case profile",
+      "C: only general SPS information"
+    ],
+    "objective_decomposition": [
+      "Discover diagnosis from second case clinical profile"
+    ],
+    "ambiguity": "medium"
+  },
+  "R014": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": false,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "A"
+    ],
+    "reason": "This asks whether SPS is the diagnosis in an as-yet unidentified particular report. Unlike an open disorder-discovery question, the yes/no attribution depends on binding that report; C only contains generic SPS symptoms. No diagnosis is presupposed, so this is A rather than P.",
+    "premise_anchors": [
+      "Q: second report description",
+      "C: generic SPS only",
+      "H: provisional SPS"
+    ],
+    "objective_decomposition": [
+      "Test candidate diagnosis against an unidentified report"
+    ],
+    "ambiguity": "medium"
+  },
+  "R015": {
+    "dimensions": {
+      "Relevant": null,
+      "Unresolved": null,
+      "Grounded": null,
+      "PremiseClosed": null,
+      "Coherent": null,
+      "Actionable": null
+    },
+    "codes": [
+      "X"
+    ],
+    "reason": "Provider returned finish_reason=length; no valid Need is available. Semantic dimensions remain unknown and this cell remains in the planned denominator.",
+    "premise_anchors": [],
+    "objective_decomposition": [],
+    "ambiguity": "low"
+  },
+  "R016": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": false,
+      "PremiseClosed": false,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "P",
+      "A"
+    ],
+    "reason": "Civilization VI is absent from Q/C/H and is asserted as the base game. The concrete DLC is also unidentified, yet its third credited designer is requested.",
+    "premise_anchors": [
+      "Q: unnamed strategy game",
+      "C/H empty"
+    ],
+    "objective_decomposition": [
+      "Obtain designer of unidentified DLC for an invented game binding"
+    ],
+    "ambiguity": "low"
+  },
+  "R017": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "Phillips is established as the thesis advisor. The 2020 video-game monograph condition is explicitly in Q and remains unverified; a direct yes/no test does not promote it.",
+    "premise_anchors": [
+      "C: Phillips advisor",
+      "Q: 2020 monograph condition"
+    ],
+    "objective_decomposition": [
+      "Test advisor monograph condition"
+    ],
+    "ambiguity": "low"
+  },
+  "R018": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": false,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "P"
+    ],
+    "reason": "C establishes Kwon as a founder and alumnus, not a donor. The Need presumes his joint foundational gift and requests a property of the resulting building.",
+    "premise_anchors": [
+      "C: Kwon founder and education",
+      "H: candidate donor only"
+    ],
+    "objective_decomposition": [
+      "Obtain university of a building from an unverified Kwon donation"
+    ],
+    "ambiguity": "low"
+  },
+  "R019": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": false,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "P"
+    ],
+    "reason": "C establishes Sophie and her death, not a partner interview. The Need presupposes that interview and song-reference statement before asking for the song.",
+    "premise_anchors": [
+      "C: Sophie death",
+      "H: candidate artist"
+    ],
+    "objective_decomposition": [
+      "Obtain song attribute of an unverified interview"
+    ],
+    "ambiguity": "low"
+  },
+  "R020": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": false,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "P"
+    ],
+    "reason": "The memorandum date is reassigned to the letter, and Roosevelt is named from outside Q/C. The officer handoff also does not establish direct final delivery by that officer.",
+    "premise_anchors": [
+      "C: memorandum dated March 5",
+      "C: handoff to an OSS officer",
+      "Q: unnamed recipient"
+    ],
+    "objective_decomposition": [
+      "Identify candidate letter courier and test nickname"
+    ],
+    "ambiguity": "low"
+  },
+  "R021": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": false,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "P"
+    ],
+    "reason": "No article by Marwaha is established. Computing 2022 from the book year does not establish the publication event or make its title a premise-closed target.",
+    "premise_anchors": [
+      "C: 2016 book",
+      "Q: six-year publication interval"
+    ],
+    "objective_decomposition": [
+      "Obtain title of presumed 2022 Marwaha article"
+    ],
+    "ambiguity": "low"
+  },
+  "R022": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "C contains both concrete FOP clinical cases. Their publication dates and different-year relation remain unresolved; checking the paired temporal condition is one coherent comparison.",
+    "premise_anchors": [
+      "C: two distinct FOP case descriptions",
+      "Q: distinct years in 2010s"
+    ],
+    "objective_decomposition": [
+      "Test paired case-publication timing"
+    ],
+    "ambiguity": "low"
+  },
+  "R023": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": false,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "A"
+    ],
+    "reason": "Athens is grounded, but the particular aviation accident and its site are not identified in C. The proposed distance test depends on binding that unobserved event first. This is a strict referent reading; a permissive event-discovery interpretation is a sensitivity.",
+    "premise_anchors": [
+      "C: Sophie died in Athens",
+      "Q: deadliest accident and distance"
+    ],
+    "objective_decomposition": [
+      "Measure distance to an unidentified accident site"
+    ],
+    "ambiguity": "medium"
+  },
+  "R024": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": false,
+      "Actionable": true
+    },
+    "codes": [
+      "W"
+    ],
+    "reason": "Paper table/content profile, one author staff affiliation, and another publication relationship are independent lines of research. Repeating every Q constraint as one title request does not select a current resolution objective.",
+    "premise_anchors": [
+      "Q: paper content",
+      "Q: author employment",
+      "Q: another paper"
+    ],
+    "objective_decomposition": [
+      "Identify paper by table profile",
+      "Resolve staff affiliation",
+      "Resolve second publication relationship"
+    ],
+    "ambiguity": "medium"
+  },
+  "R025": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "Directly tests whether the candidate joint donation event occurred, instead of assuming it and asking for its building attribute. The spouse role is part of that existential joint-gift test, with no invented partner name.",
+    "premise_anchors": [
+      "C: Kwon founder",
+      "Q: joint foundational gift"
+    ],
+    "objective_decomposition": [
+      "Test candidate joint foundational gift"
+    ],
+    "ambiguity": "low"
+  },
+  "R026": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": false,
+      "Actionable": true
+    },
+    "codes": [
+      "W"
+    ],
+    "reason": "Birthplace population, 1990 performance and recording hiatus are independently resolvable conditions. Their conjunction restates the whole identification task.",
+    "premise_anchors": [
+      "Q: birth/population",
+      "Q: performance",
+      "Q: recording hiatus"
+    ],
+    "objective_decomposition": [
+      "Identify person via birthplace/population",
+      "Verify performance",
+      "Verify recording hiatus"
+    ],
+    "ambiguity": "low"
+  },
+  "R027": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "EU4 is grounded; its unknown DLC is discovered through one bounded release/mechanics profile. Complementary product facets are legitimate multi-query content under E0.",
+    "premise_anchors": [
+      "C: EU4 thesis",
+      "Q: DLC date and mechanics"
+    ],
+    "objective_decomposition": [
+      "Discover DLC with the stated release/mechanics profile"
+    ],
+    "ambiguity": "low"
+  },
+  "R028": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": false,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "A"
+    ],
+    "reason": "The region is requested from an unidentified ruler letter. The question-provided existence of some such letter does not identify the concrete document to inspect for that attribute.",
+    "premise_anchors": [
+      "Q: unspecified ruler letter",
+      "C/H empty"
+    ],
+    "objective_decomposition": [
+      "Read region from an unidentified letter"
+    ],
+    "ambiguity": "medium"
+  },
+  "R029": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": false,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "P"
+    ],
+    "reason": "C says the King handed a letter to an OSS officer in Bucharest and the letter was transmitted under Donovan cover. It does not establish that this same officer delivered it to the President. The nickname test promotes that unverified courier role.",
+    "premise_anchors": [
+      "C: initial OSS handoff",
+      "C: transmission under Donovan memorandum"
+    ],
+    "objective_decomposition": [
+      "Test nickname of an assumed final-delivery officer"
+    ],
+    "ambiguity": "medium"
+  },
+  "R030": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": false,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "P"
+    ],
+    "reason": "C dates the covering memorandum, not the letter. It also has not yet established a regained-region reference in this candidate letter. Both are promoted in an attribute question.",
+    "premise_anchors": [
+      "C: dated memorandum and observed letter",
+      "H: incorrectly dated candidate letter"
+    ],
+    "objective_decomposition": [
+      "Name regained region in a wrongly dated candidate letter"
+    ],
+    "ambiguity": "low"
+  },
+  "R031": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "Discovers a paper from the Q-provided author-affiliation relation and publication range; it does not bind an unverified named author or ask an attribute of an unidentified paper.",
+    "premise_anchors": [
+      "Q: Harran affiliation and paper year range"
+    ],
+    "objective_decomposition": [
+      "Discover paper through author affiliation"
+    ],
+    "ambiguity": "low"
+  },
+  "R032": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": false,
+      "Actionable": true
+    },
+    "codes": [
+      "W"
+    ],
+    "reason": "Illustration/content profile, rust-removal instructions linked to song-derived substances, and referenced-person biographies require distinct resolution judgments. This exceeds the bounded illustration/telephone/telegraph profile accepted in E0. A generous all-book-content-profile reading is recorded as a sensitivity.",
+    "premise_anchors": [
+      "Q: illustration profile",
+      "Q: song-linked recipe",
+      "Q: biographical reference clues"
+    ],
+    "objective_decomposition": [
+      "Identify book by illustration/content profile",
+      "Resolve recipe and song-derived substances",
+      "Resolve referenced-person biographies"
+    ],
+    "ambiguity": "high"
+  },
+  "R033": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": false,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "S"
+    ],
+    "reason": "Both matching clinical cases are already explicitly identified as FOP in C. Asking again for their disorder ignores those verified diagnoses; publication years and country-history conditions remain unresolved.",
+    "premise_anchors": [
+      "C: Pakistani boy FOP case",
+      "C: sixteen-year-old FOP case"
+    ],
+    "objective_decomposition": [
+      "Repeat already supported shared diagnosis"
+    ],
+    "ambiguity": "low"
+  },
+  "R034": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": false,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [
+      "A"
+    ],
+    "reason": "Euler birth facts are grounded; the target book is still unidentified. Testing whether that unbound book references Euler requires source discovery first.",
+    "premise_anchors": [
+      "C: Euler birth only",
+      "H: provisional reference identity"
+    ],
+    "objective_decomposition": [
+      "Test Euler reference in unidentified book"
+    ],
+    "ambiguity": "low"
+  },
+  "R035": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": true,
+      "Coherent": true,
+      "Actionable": true
+    },
+    "codes": [],
+    "reason": "One Q-provided population-change relation is used to discover a place. No unverified candidate is asserted and no independent artist-history objectives are included.",
+    "premise_anchors": [
+      "Q: 5.88 percent population growth interval"
+    ],
+    "objective_decomposition": [
+      "Discover place by population-change fact"
+    ],
+    "ambiguity": "low"
+  },
+  "R036": {
+    "dimensions": {
+      "Relevant": true,
+      "Unresolved": true,
+      "Grounded": true,
+      "PremiseClosed": false,
+      "Coherent": false,
+      "Actionable": true
+    },
+    "codes": [
+      "P",
+      "W"
+    ],
+    "reason": "The Need changes country establishment to religion establishment, corrupting a Q premise. It also bundles two report discoveries with a separate national-history condition into a full-answer request.",
+    "premise_anchors": [
+      "Q: country establishment, not religion establishment",
+      "Q: two clinical profiles"
+    ],
+    "objective_decomposition": [
+      "Discover first clinical report",
+      "Resolve country/religion history",
+      "Discover second clinical report and shared diagnosis"
+    ],
+    "ambiguity": "medium"
+  }
+}
