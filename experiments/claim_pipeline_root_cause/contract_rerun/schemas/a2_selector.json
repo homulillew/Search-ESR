@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "selections": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "window_ref": {
+            "type": "string",
+            "pattern": "^W[1-9][0-9]*$"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "window_ref",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "selections"
+  ],
+  "additionalProperties": false
+}
