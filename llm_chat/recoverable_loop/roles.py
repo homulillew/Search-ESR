@@ -1,7 +1,7 @@
 """Semantic role contracts. No SDK, credentials, network transport or default model."""
 from dataclasses import dataclass
 from typing import Protocol, Any
-from .contracts import object_schema, TEXT, REFS, decision_schema
+from .contracts import object_schema, TEXT, REFS, WINDOW_REFS, DOCUMENT_REFS, HYPOTHESIS_REFS, decision_schema
 from .state import canonical, digest
 
 PROMPTS = {
@@ -49,8 +49,24 @@ H, newly observed evidence, new Claims and trace outcome. You may ADD a tentativ
 hypothesis, KEEP one, DEPRIORITIZE it, or REJECT it with observed basis refs.
 Never write Claims, change Q/R, declare a Requirement solved, or decide completion.
 Keep at most six active hypotheses; avoid semantic duplicates. No confidence scores.
-Q/R and H are not evidence. NoGain can justify deprioritization, not a factual negation.
-You may nominate a few newly discovered, uninspected D sources as useful opportunities.
+Q/R and H are not evidence. Question-inspired ADD may have basis_refs=[].
+basis_refs contains ONLY observed W# evidence-window references.
+Never put R#, C#, D#, or H# in basis_refs. If C3.evidence_refs=["W4"], cite W4,
+not C3. Do not invent W handles. A basis reference does not make H a grounded fact.
+REJECT only when observed evidence directly contradicts the H statement itself,
+with the relevant identity and relation bound. Same person born in 1975 directly
+contradicts born in 1970. NoGain, candidate-local mismatch, a competing candidate,
+indirect inconsistency, missing binding or a fruitless route permits DEPRIORITIZE,
+not REJECT. KEEP is appropriate when local evidence cannot resolve a global H.
+A local FOP diagnosis without binding that report to both target reports does not
+directly refute global SPS: KEEP or DEPRIORITIZE. Paper/inventor mentions do not
+establish a book's illustration/rust/reference conjunction. No new observation
+does not establish Tom Ford's full match sequence. Realignment-to-memo timing
+does not establish accession-to-letter timing. Preserve these relation boundaries.
+useful_source_refs contains ONLY D# document handles.
+Only nominate D# documents newly discovered by THIS acquisition and not inspected.
+Do not repeat previously pending/known source opportunities; TraceView retains them.
+Use eligible_source_refs supplied in this input. If none exist, return [].
 Only nominate sources whose observed contents plausibly help the original task.
 Do not label every new handle useful. Return only the supplied JSON schema.''',
 'closure': '''Audit whether Q can now be answered from C and the evidence supporting C.
@@ -76,16 +92,17 @@ Return answer and supporting claim_ids. Do not alter any research state.''',
 
 def schemas():
     updates = {'type': 'array', 'maxItems': 12, 'items': {'oneOf': [
-        object_schema({'operation': {'const': 'ADD'}, 'statement': TEXT, 'basis_refs': REFS}),
-        object_schema({'operation': {'const': 'KEEP'}, 'hypothesis_id': TEXT}),
-        object_schema({'operation': {'enum': ['DEPRIORITIZE', 'REJECT']}, 'hypothesis_id': TEXT, 'basis_refs': REFS}),
+        object_schema({'operation': {'const': 'ADD'}, 'statement': TEXT, 'basis_refs': WINDOW_REFS}),
+        object_schema({'operation': {'const': 'KEEP'}, 'hypothesis_id': HYPOTHESIS_REFS['items']}),
+        object_schema({'operation': {'const': 'DEPRIORITIZE'}, 'hypothesis_id': HYPOTHESIS_REFS['items'], 'basis_refs': WINDOW_REFS}),
+        object_schema({'operation': {'const': 'REJECT'}, 'hypothesis_id': HYPOTHESIS_REFS['items'], 'basis_refs': {**WINDOW_REFS, 'minItems': 1}}),
     ]}}
     return {
         'actor': decision_schema(),
         'reader': object_schema({'findings': {'type': 'array', 'maxItems': 3, 'items': object_schema({
             'statement': TEXT, 'evidence_refs': {**REFS, 'minItems': 1}})}}),
         'grounding': object_schema({'verdict': {'enum': ['supported', 'insufficient']}, 'reason': TEXT}),
-        'hypotheses': object_schema({'updates': updates, 'useful_source_refs': {**REFS, 'maxItems': 3}}),
+        'hypotheses': object_schema({'updates': updates, 'useful_source_refs': {**DOCUMENT_REFS, 'maxItems': 3}}),
         'closure': {'oneOf': [object_schema({'status': {'const': 'READY'}, 'reason': TEXT, 'claim_ids': {**REFS, 'minItems': 1}}),
                               object_schema({'status': {'const': 'CONTINUE'}, 'missing': {'type': 'array', 'minItems': 1,
                                 'items': object_schema({'requirement_id': TEXT, 'summary': TEXT})}})]},

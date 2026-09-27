@@ -1,0 +1,51 @@
+{
+  "method": "Human-specified rubric plus scripted ports; not a semantic classifier and not model accuracy evidence.",
+  "historical_source": "experiments/recoverable_loop_clean/micro_recovery/analysis/SEMANTIC_REVIEW.json",
+  "cases": [
+    {
+      "id": "q546_full_match",
+      "historical_trajectory": "R1_Q546__rep1",
+      "observation": null,
+      "hypothesis": "Tom Ford may satisfy the full requested match sequence.",
+      "allowed_operations": ["KEEP", "DEPRIORITIZE"],
+      "forbidden_inference": "No new Observation establishes the full Tom Ford sequence.",
+      "reason": "Question-inspired candidates may have empty bases but cannot become evidence or C. Production skips this empty-H no-novelty update."
+    },
+    {
+      "id": "euler_book_conjunction",
+      "historical_trajectory": "R3_Q538__rep2",
+      "observation": "A paper mentions Leonhard Euler; a separate source discusses an inventor.",
+      "hypothesis": "The candidate book may meet the illustration, rust and named-reference conditions.",
+      "allowed_operations": ["KEEP", "DEPRIORITIZE"],
+      "forbidden_inference": "Paper/inventor mentions establish the candidate book's complete conjunction.",
+      "reason": "Neither book binding nor the complete conjunction follows from these local mentions."
+    },
+    {
+      "id": "q637_local_fop_global_sps",
+      "historical_trajectory": "R2_Q637__rep1 / R2_Q637__rep2",
+      "observation": "This local case report diagnoses FOP. No identity binding to both target reports is supplied.",
+      "hypothesis": "The shared disorder in both target reports may be SPS.",
+      "allowed_operations": ["KEEP", "DEPRIORITIZE"],
+      "forbidden_inference": "The local FOP diagnosis directly refutes the global SPS hypothesis.",
+      "reason": "Candidate-local mismatch with missing target binding allows route deprioritization, not global factual rejection. A W-only REJECT can still be semantically wrong; no runtime semantic oracle was added."
+    },
+    {
+      "id": "memo_letter_timing",
+      "historical_trajectory": "R3_Q922__rep1",
+      "observation": "The memo has a date after the 1944 political realignment. The enclosed letter's date and accession interval are not given here.",
+      "hypothesis": "The accession-to-letter interval may satisfy the question.",
+      "allowed_operations": ["KEEP", "DEPRIORITIZE"],
+      "forbidden_inference": "Realignment-to-memo timing establishes accession-to-letter timing.",
+      "reason": "The source and relation endpoints must remain distinct."
+    },
+    {
+      "id": "direct_contradiction_positive_control",
+      "historical_trajectory": null,
+      "observation": "Person X was born in 1975.",
+      "hypothesis": "Person X was born in 1970.",
+      "allowed_operations": ["REJECT"],
+      "forbidden_inference": "A direct contradiction is only a fruitless route.",
+      "reason": "Identical bound person and birth relation with incompatible years directly contradict the hypothesis itself."
+    }
+  ]
+}

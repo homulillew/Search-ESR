@@ -17,6 +17,17 @@ TEXT = {'type': 'string', 'minLength': 1}
 REFS = {'type': 'array', 'items': TEXT, 'uniqueItems': True}
 
 
+def typed_refs(prefix):
+    return {'type': 'array', 'items': {'type': 'string', 'pattern': f'^{prefix}[1-9][0-9]*$'},
+            'uniqueItems': True}
+
+
+# Separate domains for new contracts; legacy non-H role schemas stay unchanged.
+WINDOW_REFS = typed_refs('W')
+DOCUMENT_REFS = typed_refs('D')
+HYPOTHESIS_REFS = typed_refs('H')
+
+
 def action_schema():
     return {'oneOf': [object_schema({'tool': {'const': t['function']['name']},
                                     'arguments': deepcopy(t['function']['parameters'])}) for t in SEARCH_FIND_TOOLS]}

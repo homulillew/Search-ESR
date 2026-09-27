@@ -95,7 +95,8 @@ def test_unsupported_fact_rejected_without_destroying_observation():
 def test_timeout_no_retry_and_partial_verified_claim_survives_later_failure():
     p=Script(('actor',acquire()),('reader',finding()),('grounding',SUPPORTED),('hypotheses',TimeoutError('offline injected timeout')))
     loop=RecoverableLoop(state(),bridge(),p);out=loop.step();p.done()
-    assert out['failure']['type']=='TimeoutError' and out['feedback']=='Gain'
+    assert 'failure' not in out and out['feedback']=='Gain'
+    assert out['auxiliary_failures'][0]['type']=='provider_failure'
     assert len(loop.state.C)==1 and not loop.state.H
     assert len([r for r in p.requests if r.role=='hypotheses'])==1
 
@@ -119,7 +120,8 @@ def test_duplicate_c_and_h_do_not_mask_nogain():
 def test_h_updates_are_atomic_bounded_and_low_authority(updates):
     s=replace(state(),H=(Hypothesis('H1','Alice might be born in 2000.','active',()),))
     p=Script(('actor',acquire()),('reader',EMPTY_READER),('hypotheses',{'updates':updates,'useful_source_refs':[]}))
-    loop=RecoverableLoop(s,bridge(),p);assert loop.step()['failure'];p.done()
+    loop=RecoverableLoop(s,bridge(),p);out=loop.step();p.done()
+    assert 'failure' not in out and out['auxiliary_failures']
     assert loop.state.H==s.H and loop.state.C==()
 
 
@@ -139,8 +141,8 @@ def test_two_nogain_attempts_feed_a_third_changed_route():
         assert tv['same_family_consecutive_nogain']==2
         return acquire('Inspect the existing source for a different relation.', action('find',doc_ref='D1',query='Alice'),strategy='VERIFY_RELATION')
     p=Script(('actor',acquire('Check premise one.')),('reader',EMPTY_READER),('hypotheses',EMPTY_H),
-             ('actor',acquire('Reword premise one.')),('reader',EMPTY_READER),('hypotheses',EMPTY_H),
-             ('actor',third),('reader',EMPTY_READER),('hypotheses',EMPTY_H))
+             ('actor',acquire('Reword premise one.')),('reader',EMPTY_READER),
+             ('actor',third),('reader',EMPTY_READER))
     loop=RecoverableLoop(state(),bridge(),p)
     assert [loop.step()['feedback'] for _ in range(3)]==['NoGain']*3;p.done()
     assert trace_view(loop.state)['same_family_consecutive_nogain']==1
@@ -150,7 +152,7 @@ def test_two_nogain_attempts_feed_a_third_changed_route():
 def test_new_handle_alone_not_gain_useful_opportunity_survives_until_inspection():
     p=Script(('actor',acquire()),('reader',EMPTY_READER),
              ('hypotheses',{'updates':[],'useful_source_refs':['D1']}),
-             ('actor',acquire(act=action('find',doc_ref='D1',query='zzzznomatch'))),('hypotheses',EMPTY_H))
+             ('actor',acquire(act=action('find',doc_ref='D1',query='zzzznomatch'))))
     loop=RecoverableLoop(state(),bridge(),p)
     assert loop.step()['feedback']=='Gain'
     assert trace_view(loop.state)['pending_source_opportunities'][0]['doc_ref']=='D1'

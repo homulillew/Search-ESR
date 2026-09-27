@@ -55,7 +55,7 @@ def test_historical_closure_veto_roundtrip_and_no_h_to_c(ident,tmp_path):
         assert len(x['C'])==len(s.C)  # Local facts preserved, not denied by CONTINUE.
         return feedback  # Scripted human expectation, NOT a semantic classifier.
     p=Script(('actor',{'decision':'request_closure'}),('closure',closure),('actor',actor),
-             ('reader',EMPTY_READER),('hypotheses',EMPTY_H))
+             ('reader',EMPTY_READER),*([('hypotheses',EMPTY_H)] if s.H else []))
     loop=RecoverableLoop(s,b,p,tmp_path/(ident+'.jsonl'))
     out=loop.step(); assert out['closure']['status']=='CONTINUE' and 'failure' not in out
     assert loop.state.Q==s.Q and loop.state.R==s.R and loop.state.C==s.C
@@ -89,7 +89,7 @@ def test_q546_pending_real_prefix_source_can_route_to_real_find():
     def actor(req):
         assert json.loads(req.input_json)['TraceView']['pending_source_opportunities'][0]['doc_ref']==dr
         return acquire(c['review']['acceptable_one_gap'],action('find',doc_ref=dr,query='Ding'))
-    p=Script(('actor',actor),('reader',EMPTY_READER),('hypotheses',EMPTY_H))
+    p=Script(('actor',actor),('reader',EMPTY_READER))
     loop=RecoverableLoop(s,b,p);assert 'failure' not in loop.step();p.done()
     assert not trace_view(loop.state)['pending_source_opportunities']
 
@@ -99,9 +99,9 @@ def test_q1094_repeated_search_no_gain_then_route_change():
     def third(req):
         assert json.loads(req.input_json)['TraceView']['same_family_consecutive_nogain']==2
         return acquire(c['review']['acceptable_one_gap'],action('find',doc_ref=next(iter(docs.values())),query='Messi'),strategy='VERIFY_RELATION')
-    p=Script(('actor',acquire(act=action(query='club discord'))),('hypotheses',EMPTY_H),
-             ('actor',acquire(act=action(query='club disagreement'))),('hypotheses',EMPTY_H),
-             ('actor',third),('reader',EMPTY_READER),('hypotheses',EMPTY_H))
+    p=Script(('actor',acquire(act=action(query='club discord'))),
+             ('actor',acquire(act=action(query='club disagreement'))),
+             ('actor',third),('reader',EMPTY_READER))
     loop=RecoverableLoop(s,b,p)
     assert [loop.step()['feedback'] for _ in range(3)]==['NoGain']*3;p.done()
     assert loop.state.C==s.C

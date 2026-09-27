@@ -13,11 +13,15 @@ def replay_log(path):
     with open(path, encoding='utf-8') as stream:
         rows = [json.loads(line) for line in stream]
     if not rows or rows[0].get('kind') != 'initial_state': raise ValueError('missing initial state')
-    state = state_from_dict(rows[0]['state'])
+    return replay_state(state_from_dict(rows[0]['state']), rows[0]['evidence'], rows[1:])
+
+
+def replay_state(state, initial_evidence, event_rows):
+    """Same replay checks for disk logs and live integrity boundaries."""
     initial_count = len(state.T)
-    events = replay_events([asdict(e) for e in state.T] + rows[1:])
+    events = replay_events([asdict(e) for e in state.T] + list(event_rows))
     evidence = EvidenceStore()
-    evidence.add(EvidenceWindow(**w) for w in rows[0]['evidence'])
+    evidence.add(EvidenceWindow(**w) for w in initial_evidence)
     for c in state.C: evidence.select(c.evidence_refs)
     for h in state.H: evidence.select(h.basis_refs)
     supported = {}

@@ -2,15 +2,25 @@
 from copy import deepcopy
 from dataclasses import asdict, replace
 import json
+import hashlib
+import re
 from pathlib import Path
 from .contracts import check, parse_json, validate_decision
 from .state import (Claim, Hypothesis, append_event, actor_view, fact_view, trace_view,
                     digest, canonical, family, next_id)
 from .roles import request, SemanticPort
 from .tools import ToolBridge
+from .integrity import IntegrityError, observed_evidence, validate_integrity
 
 
 def normalized_statement(text): return ' '.join(text.casefold().split())
+
+
+class HypothesisFailure(ValueError):
+    """Only a rejected H proposal or an exception from its semantic port."""
+    def __init__(self, error_type, message):
+        super().__init__(message)
+        self.error_type = error_type
 
 
 class RecoverableLoop:
@@ -19,6 +29,9 @@ class RecoverableLoop:
         self._ready = None; self._attempt = max((e.payload().get('attempt_id', 0) for e in state.T), default=0); self._log = None
         for c in state.C: bridge.evidence.select(c.evidence_refs)
         for h in state.H: bridge.evidence.select(h.basis_refs)
+        self._initial_state = state
+        self._initial_evidence = observed_evidence(bridge)
+        self._assert_integrity()
         if log_path is not None:
             self._log = Path(log_path).open('x', encoding='utf-8')
             observed = [w['window_ref'] for w in bridge.tools.handles.snapshot()['windows']]
@@ -31,6 +44,9 @@ class RecoverableLoop:
 
     def close(self):
         if self._log is not None: self._log.close(); self._log = None
+
+    def _assert_integrity(self):
+        validate_integrity(self._initial_state, self._initial_evidence, self._state, self.bridge)
 
     def _emit(self, kind, **payload):
         self._state = append_event(self._state, kind, payload)
@@ -45,11 +61,27 @@ class RecoverableLoop:
             raw = self.semantics.complete(req)
         except Exception as exc:
             self._emit('role_failure', attempt_id=self._attempt, role=role, error_type=type(exc).__name__, message=str(exc))
+            if role == 'hypotheses' and not isinstance(exc, IntegrityError):
+                raise HypothesisFailure('provider_failure', f'{type(exc).__name__}: {exc}') from exc
             raise
         # Archive before parsing/validation. No corrected response replaces raw.
         self._emit('role_response', attempt_id=self._attempt, role=role, output=raw)
-        value = parse_json(raw) if isinstance(raw, str) else deepcopy(raw)
-        check(value, json.loads(req.schema_json))
+        try:
+            value = parse_json(raw) if isinstance(raw, str) else deepcopy(raw)
+            # Specific diagnostic without coercing or mapping any references.
+            if role == 'hypotheses' and isinstance(value, dict):
+                updates = value.get('updates')
+                if isinstance(updates, list):
+                    for update in updates:
+                        basis = update.get('basis_refs') if isinstance(update, dict) else None
+                        if isinstance(basis, list) and any(isinstance(r, str) and not re.fullmatch(r'W[1-9][0-9]*', r) for r in basis):
+                            raise HypothesisFailure('invalid_basis_ref_namespace', 'basis_refs accepts observed W# only')
+            check(value, json.loads(req.schema_json))
+        except HypothesisFailure:
+            raise
+        except (ValueError, TypeError) as exc:
+            if role == 'hypotheses': raise HypothesisFailure('invalid_schema', str(exc)) from exc
+            raise
         return value
 
     def _evidence_for_claims(self):
@@ -79,44 +111,80 @@ class RecoverableLoop:
             self._state = replace(self._state, C=self._state.C+(c,)); self._ready = None
             self._emit('claim_committed', claim=asdict(c), evidence_hash=digest(evidence), grounding_payload_hash=digest(payload))
 
-    def _hypotheses(self, batch, new_claims):
+    def _propose_hypotheses(self, batch, new_claims):
         before = self._state.H
+        inspected = set(batch['inspected_sources'])
+        for event in self._state.T:
+            if event.kind == 'step_outcome': inspected.update(event.payload().get('inspected_sources', []))
+        eligible = sorted(set(batch['new_document_refs']) - inspected)
         proposal = self._call('hypotheses', {
             'Q': self._state.Q, 'R': [asdict(r) for r in self._state.R], 'H': [asdict(h) for h in before],
             'Observation': [asdict(w) for w in batch['windows']], 'new_Claims': [asdict(c) for c in new_claims],
+            'eligible_source_refs': eligible,
             'Trace_outcome': {'recent': trace_view(self._state), 'tool_status': batch['result'].get('status'),
                               'new_document_refs': batch['new_document_refs'], 'inspected_sources': batch['inspected_sources']}})
         hs = list(before); touched = set()
         for update in proposal['updates']:
             op = update['operation']
             basis = tuple(update.get('basis_refs', []))
-            self.bridge.evidence.select(basis)
+            if any(r not in self.bridge.evidence._windows for r in basis):
+                raise HypothesisFailure('unknown_basis_ref', 'basis must reference observed W#')
             if op == 'ADD':
-                if not update['statement'].strip(): raise ValueError('empty H')
+                if not update['statement'].strip(): raise HypothesisFailure('empty_hypothesis', 'empty H')
                 if normalized_statement(update['statement']) in {normalized_statement(h.statement) for h in hs}: continue
                 hs.append(Hypothesis(next_id(hs, 'hypothesis_id', 'H'), update['statement'], 'active', basis))
             else:
                 hid = update['hypothesis_id']
-                if hid in touched: raise ValueError('multiple updates for one H')
+                if hid in touched: raise HypothesisFailure('duplicate_operation', 'multiple updates for one H')
                 touched.add(hid)
                 index = next((i for i,h in enumerate(hs) if h.hypothesis_id == hid), None)
-                if index is None: raise ValueError('unknown H update')
-                if op == 'REJECT' and not basis: raise ValueError('rejection requires observed evidence')
+                if index is None: raise HypothesisFailure('unknown_hypothesis', 'unknown H update')
+                if op == 'REJECT' and not basis: raise HypothesisFailure('missing_rejection_basis', 'rejection requires observed evidence')
                 if op != 'KEEP':
                     hs[index] = replace(hs[index], status='rejected' if op == 'REJECT' else 'deprioritized', basis_refs=basis)
         opportunities = []
         for ref in proposal['useful_source_refs']:
-            if ref not in batch['new_document_refs'] or ref in batch['inspected_sources']:
-                raise ValueError('opportunity must be a newly discovered uninspected source')
+            if ref not in eligible:
+                raise HypothesisFailure('invalid_source_nomination', 'opportunity must be a newly discovered uninspected source')
             w = next(w for w in batch['windows'] if w.doc_ref == ref)
             opportunities.append({'doc_ref': ref, 'window_ref': w.window_ref, 'title': w.title,
                                   'preview': w.text, 'uninspected': True})
         # Atomic bounded H update: a malformed proposal cannot partially alter H.
-        updated = replace(self._state, H=tuple(hs))
-        self._state = updated
-        self._emit('hypotheses_updated', before=[asdict(h) for h in before], after=[asdict(h) for h in hs],
-                   proposed=proposal)
-        return opportunities
+        if sum(h.status == 'active' for h in hs) > 6:
+            raise HypothesisFailure('active_hypothesis_limit', 'too many active H')
+        return tuple(hs), proposal, opportunities
+
+    def _should_update_hypotheses(self, decision, batch, new_claims, new_windows):
+        return bool(any(h.status == 'active' for h in self._state.H)
+                    or decision['hypothesis_ids_under_test'] or new_claims
+                    or new_windows or batch['new_document_refs'])
+
+    def _hypotheses(self, batch, new_claims):
+        """Optional atomic transaction; only explicitly typed H failures are isolated."""
+        self._assert_integrity()
+        before = self._state.H
+        start = len(self._state.T)
+        try:
+            hs, proposal, opportunities = self._propose_hypotheses(batch, new_claims)
+        except HypothesisFailure as exc:
+            # Corruption discovered during a provider failure must still be fatal.
+            self._assert_integrity()
+            responses = [e.payload()['output'] for e in self._state.T[start:]
+                         if e.kind == 'role_response' and e.payload()['role'] == 'hypotheses']
+            raw = responses[-1] if responses else None
+            raw_hash = (hashlib.sha256((raw if isinstance(raw, str) else canonical(raw)).encode()).hexdigest()
+                        if responses else None)
+            failure = {'module': 'hypotheses', 'type': 'provider_failure' if exc.error_type == 'provider_failure' else 'contract_failure',
+                       'error_type': exc.error_type, 'message': str(exc), 'raw_output_hash': raw_hash,
+                       'H_unchanged': self._state.H == before}
+            self._emit('hypothesis_update_failed', attempt_id=self._attempt, **failure)
+            return [], [failure]
+        # Integrity and commit/logging errors sit OUTSIDE the auxiliary catch.
+        self._assert_integrity()
+        self._state = replace(self._state, H=hs)
+        self._emit('hypotheses_updated', before=[asdict(h) for h in before], after=[asdict(h) for h in hs], proposed=proposal)
+        self._assert_integrity()
+        return opportunities, []
 
     def _closure(self):
         payload = self._fact_snapshot()
@@ -149,9 +217,14 @@ class RecoverableLoop:
         return result
 
     def step(self):
+        # Fail closed before a corrupt Trace can be extended or another role called.
+        self._assert_integrity()
         self._attempt += 1; self._ready = None
         old_c, old_h = self._state.C, self._state.H
         decision = None; batch = None; opportunities = []; outcome = None; error = None
+        auxiliary_failures = []; hypothesis_outcome = 'not_applicable'
+        acquisition_outcome = 'not_attempted'; claim_outcome = 'not_attempted'
+        old_windows = set(self.bridge.evidence._windows)
         try:
             raw = self._call('actor', actor_view(self._state, self.bridge.source_handles()))
             decision = validate_decision(raw, self._state, self.bridge.tools.handles)
@@ -159,12 +232,27 @@ class RecoverableLoop:
                 outcome = {'decision': 'request_closure', 'closure': self._closure()}
             else:
                 self._emit('tool_attempt', attempt_id=self._attempt, action=decision['action'])
+                acquisition_outcome = 'attempted'
                 batch = self.bridge.execute(decision['action'])
                 self._emit('tool_observation', attempt_id=self._attempt, action=decision['action'],
                            result=batch['result'], windows=[asdict(w) for w in batch['windows']], audit=batch['audit'])
+                acquisition_outcome = batch['result'].get('status')
+                claim_outcome = 'attempted'
                 self._claim_chain(decision['one_gap'], batch['windows'])
-                opportunities = self._hypotheses(batch, self._state.C[len(old_c):])
+                claim_outcome = 'completed'
+                new_claims = self._state.C[len(old_c):]
+                new_windows = set(self.bridge.evidence._windows) - old_windows
+                self._assert_integrity()
+                if self._should_update_hypotheses(decision, batch, new_claims, new_windows):
+                    opportunities, auxiliary_failures = self._hypotheses(batch, new_claims)
+                    hypothesis_outcome = 'failed' if auxiliary_failures else 'completed'
+                else:
+                    hypothesis_outcome = 'skipped'
+                    self._emit('hypothesis_update_skipped', attempt_id=self._attempt,
+                               reason='no_active_or_tested_H_and_no_new_C_W_D', H_unchanged=True)
                 outcome = {'decision': 'acquire', 'tool_status': batch['result'].get('status')}
+        except IntegrityError:
+            raise  # Never relabel integrity corruption as an auxiliary role error.
         except Exception as exc:
             error = {'type': type(exc).__name__, 'message': str(exc)}
             self._emit('step_failure', attempt_id=self._attempt, error=error)
@@ -186,5 +274,10 @@ class RecoverableLoop:
                   'observed_handles': [w.window_ref for w in batch['windows']] if batch else [],
                   'inspected_sources': batch['inspected_sources'] if batch else [],
                   'new_source_opportunities': opportunities, 'failure': error}
+        record.update(acquisition_outcome=acquisition_outcome, claim_outcome=claim_outcome,
+                      hypothesis_outcome=hypothesis_outcome, auxiliary_failures=auxiliary_failures)
         self._emit('step_outcome', **record)
-        return {**outcome, 'feedback': record['feedback']}
+        self._assert_integrity()
+        return {**outcome, 'feedback': record['feedback'], 'claim_delta': record['claim_delta'],
+                'acquisition_outcome': acquisition_outcome, 'claim_outcome': claim_outcome,
+                'hypothesis_outcome': hypothesis_outcome, 'auxiliary_failures': auxiliary_failures}
