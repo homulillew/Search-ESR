@@ -141,6 +141,9 @@ def main():
         'note': 'Unmatched means the exact normalized citation URL was not observed as tool metadata; it does not by itself prove fabrication. This supersedes the first-pass regex count in RESULTS.json.'}
     write_json(HERE / 'CITATION_AUDIT.json', citation_summary)
     files = []
+    for path in (HERE / 'runs/BATCH_MANIFEST.json', HERE / 'runs/BATCH_END.json'):
+        files.append({'path': str(path.relative_to(ROOT)), 'bytes': path.stat().st_size,
+                      'sha256': sha(path)})
     for directory in (old_dir, batch):
         for path in sorted(directory.rglob('*')):
             if path.is_file():

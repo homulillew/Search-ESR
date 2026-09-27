@@ -1,0 +1,3 @@
+Based on the clues, the novel is most likely **Atiq Rahimi’s *The Patience Stone*** — originally published in French as ***Syngué sabour. Pierre de patience*** (2008) and banned in Afghanistan, the country whose society and wartime suffering it examines.
+
+I should add a caveat: the local corpus I searched did not return documents that directly confirm the full biographical chain (the failed university entrance exams, the five years in the parents’ field, the 1998 New York visit, or the statement about pain and writing), so this is an inference from the combination of clues rather than a fully corpus-verified answer.

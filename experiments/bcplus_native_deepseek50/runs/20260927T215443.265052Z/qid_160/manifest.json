@@ -1,0 +1,33 @@
+{
+  "batch_id": "20260927T215443.265052Z",
+  "qid": "160",
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "system_prompt": "你是一个可靠的助手。请用清晰、准确的语言回答问题。",
+  "request_options": {
+    "temperature": 0,
+    "extra_body": {
+      "thinking": {
+        "type": "enabled"
+      }
+    }
+  },
+  "timeout_seconds": 900,
+  "sdk_max_retries": 0,
+  "max_tool_rounds": 200,
+  "max_tool_calls_per_round": 8,
+  "run_config_sha256": "625a0bb40082f2d4446f580dbbea3975807d95c81bbef15fa364dcf9b6d1d449",
+  "source_sha256": {
+    "native_agent.py": "b42eaa3e8776c78fe88cd59c6d1bde0eb17b37bc1fd321127b83771b8d3aa5b0",
+    "native_client.py": "ab89b0350dbf5e873a4d3ad4b5b3eca4654f4cc5a90642b7d3ad2c6dcbc191d9",
+    "runner.py": "f1153ff565d73dd21e86ea0a42cc2b14fffa6aa81548d60545346f646c5c2246",
+    "evaluate.py": "b8ce9345cd41d004be53065d6341483ea3ca4d93286abd065de6a0fa50e84a48",
+    "test_preflight.py": "85bcd03c9546636041f034e8ce3a307043369cfbeb69178a4468ede991550706",
+    "freeze.py": "8075be8edb2850e02ce3ac3e3976c0c72d8ee54c8e3fb138dbbfa441c8cb268e",
+    "BASELINE_AUDIT.md": "a2454ec4bbac451bd05aabd2ae212c54ddf03e917a71841150864a540c7bf0e6",
+    "EVALUATION_PROTOCOL.md": "618be22304e8ef0568db2428fc88808fb134141d904a386e0c39b926235993be",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339"
+  },
+  "selection_freeze_sha256": "078a08a4a3537ff788b404007e733fca1456249336a2ba99e5e3d828149ccc0c",
+  "gold_supplied": false
+}

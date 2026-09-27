@@ -1,0 +1,10 @@
+I searched the local corpus fairly exhaustively — for the two‑name pair, for the "personal setback in the 1990s" wording, for "announced retirement 2020‑2023" lists, and for the unusual school clue ("named after the birthplace of one of the 3 founders") — and I was not able to locate documents that establish the answer.
+
+What I did find (and why it isn't enough):
+
+- I could confirm the general backdrop for the retirement clue: multiple sources list notable athletes who retired in the early 2020s (e.g., the 2022 and 2023 round‑ups), but none of them provide the cross‑industry name match or the mother's‑name detail (doc 59662, https://www.nbcsportsboston.com/news/a-look-back-at-the-notable-athletes-who-retired-in-2022/279833/ ; doc 84564, https://deadspin.com/tom-brady-bartolo-colon-megan-rapinoe-carmelo-anthony-1851118035/).
+- I found general "same‑name" and "born abroad / born‑outside‑the‑US" lists (doc 3364, https://www.buzzfeed.com/kristenharris1/famous-people-same-name ; doc 42613, https://www.buzzfeed.com/kristenharris1/american-celebs-who-were-born-in-other-countries), but none of the pairs in them lines up with the retirement‑2020s + 1990s‑setback combination described.
+- I found 1990s sports‑scandal/setback round‑ups (doc 79079, https://stacker.com/stories/sports/iconic-sports-moments-defined-90s), but nothing that ties a 1990s setback to a namesake who retired in the early 2020s.
+- The distinctive school clue ("a school attended by one of them was named after the birthplace of one of the 3 founders") never surfaced in the corpus in a form that identifies the person or the three founders; my searches for "named after the birthplace," "one of the three founders," etc. returned only unrelated school‑history and fraternity pages.
+
+So the corpus does not establish the shared name, and I don't want to invent an answer. If you can give me one extra anchor — e.g., the industry/sport of the person who retired, or the country the non‑US‑born person came from — I can run a much more targeted search and try to pin the pair down.
