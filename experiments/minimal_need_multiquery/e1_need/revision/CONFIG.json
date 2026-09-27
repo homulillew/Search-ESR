@@ -1,0 +1,27 @@
+{
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "credential_file": ".env.deepseek",
+  "credential_field": "DEEPSEEK_API_KEY",
+  "temperature": 0,
+  "response_format": {
+    "type": "json_object"
+  },
+  "stream": false,
+  "max_tokens_policy": "omit",
+  "max_retries": 0,
+  "semantic_retries": 0,
+  "max_workers": 8,
+  "timeout_seconds": 240,
+  "timeout_semantics": "HTTP connect/read/write/pool inactivity timeout, not an output-token cap or total wall timeout",
+  "auth_circuit_statuses": [
+    401,
+    403
+  ],
+  "stage": "E1 development sole bounded revision r1",
+  "horizon": 1,
+  "tools": [],
+  "samples_per_state_arm": 1,
+  "paid_calls_authorized": true
+}
