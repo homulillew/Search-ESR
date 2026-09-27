@@ -1,0 +1,3074 @@
+[
+  {
+    "id": "E1_A01_CAND1_Q0_r1",
+    "certificate_id": "A01_CAND1",
+    "cell_id": "A01",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "A professor identity does not establish paper coauthorship.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A01_CAND1_Q1_r1",
+    "certificate_id": "A01_CAND1",
+    "cell_id": "A01",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Professor identity does not establish exactly two paper authors.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A01_CAND1_Q1_r2",
+    "certificate_id": "A01_CAND1",
+    "cell_id": "A01",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Academic identity alone does not establish two-person authorship.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A01_CAND1_Q0_r2",
+    "certificate_id": "A01_CAND1",
+    "cell_id": "A01",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "A professor profile does not establish two authors of the paper.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND1_Q1_r1",
+    "certificate_id": "A02_CAND1",
+    "cell_id": "A02",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The two-author candidate-paper claim satisfies the frozen local reference. The response requires prior proof of final target identity.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND1_Q0_r1",
+    "certificate_id": "A02_CAND1",
+    "cell_id": "A02",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The observed two-author candidate paper satisfies this local authorship certificate, without declaring the entire question solved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND1_Q0_r2",
+    "certificate_id": "A02_CAND1",
+    "cell_id": "A02",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The observed two-author candidate paper satisfies this local authorship certificate, without declaring the entire question solved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND1_Q1_r2",
+    "certificate_id": "A02_CAND1",
+    "cell_id": "A02",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The supplied coauthor claim establishes the candidate paper authorship under the frozen branch-conditional policy. Requiring that it already be the final target is an additional global identification requirement.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND2_Q0_r1",
+    "certificate_id": "A02_CAND2",
+    "cell_id": "A02",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The named coauthors and paper establish candidate-local authorship; final target identification is not asserted.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND2_Q1_r1",
+    "certificate_id": "A02_CAND2",
+    "cell_id": "A02",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The observed two-author paper meets the candidate-local authorship reference. Requiring proof of final target identity causes a missed positive under that convention.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND2_Q1_r2",
+    "certificate_id": "A02_CAND2",
+    "cell_id": "A02",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Coauthor and profile evidence establishes candidate-local authorship. Requiring final target-paper identification exceeds the frozen partial-support convention.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND2_Q0_r2",
+    "certificate_id": "A02_CAND2",
+    "cell_id": "A02",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The named coauthors and paper establish candidate-local authorship; final target identification is not asserted.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND3_Q1_r1",
+    "certificate_id": "A02_CAND3",
+    "cell_id": "A02",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Content categories and table descriptions leave authorship unsupported.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND3_Q0_r1",
+    "certificate_id": "A02_CAND3",
+    "cell_id": "A02",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The category/table claims do not establish authorship count.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND3_Q0_r2",
+    "certificate_id": "A02_CAND3",
+    "cell_id": "A02",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Article content descriptions do not identify its two authors.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A02_CAND3_Q1_r2",
+    "certificate_id": "A02_CAND3",
+    "cell_id": "A02",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Article categories and tables do not establish the number of authors.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A03_CAND1_Q0_r1",
+    "certificate_id": "A03_CAND1",
+    "cell_id": "A03",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Named paper, table context, and table entry jointly establish the candidate table-emotion fact.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A03_CAND1_Q1_r1",
+    "certificate_id": "A03_CAND1",
+    "cell_id": "A03",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Under the frozen candidate-conditional policy the bound table fact qualifies. The response requires final-paper identity and cites the real five-versus-six-table discrepancy in Q; this is a disagreement over local versus global eligibility, not a fabricated discrepancy.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A03_CAND1_Q1_r2",
+    "certificate_id": "A03_CAND1",
+    "cell_id": "A03",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Named paper, table context, and table entry jointly establish the candidate table-emotion fact.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A03_CAND1_Q0_r2",
+    "certificate_id": "A03_CAND1",
+    "cell_id": "A03",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Named paper, table context, and table entry jointly establish the candidate table-emotion fact.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A03_CAND2_Q1_r1",
+    "certificate_id": "A03_CAND2",
+    "cell_id": "A03",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The frozen policy allows the D10-bound table fact on a candidate branch. The response instead requires final target-paper identification. Its observed five-versus-six-table objection is real at the full-question level; the disagreement concerns whether that prevents local conditional subtraction.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A03_CAND2_Q0_r1",
+    "certificate_id": "A03_CAND2",
+    "cell_id": "A03",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "D10 table binding and the emotion entry establish the candidate table fact.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A03_CAND2_Q0_r2",
+    "certificate_id": "A03_CAND2",
+    "cell_id": "A03",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "D10 table binding and the emotion entry establish the candidate table fact.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A03_CAND2_Q1_r2",
+    "certificate_id": "A03_CAND2",
+    "cell_id": "A03",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "D10 table binding and the emotion entry establish the candidate table fact.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A03_CAND3_Q0_r1",
+    "certificate_id": "A03_CAND3",
+    "cell_id": "A03",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The singleton that-paper table claim lacks its supplied antecedent under the strict frozen binding reference. Acceptance disagrees with that predeclared ambiguous anaphora convention.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A03_CAND3_Q1_r1",
+    "certificate_id": "A03_CAND3",
+    "cell_id": "A03",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The singleton that-paper table claim lacks its supplied antecedent under the strict frozen binding reference. Acceptance disagrees with that predeclared ambiguous anaphora convention.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A03_CAND3_Q1_r2",
+    "certificate_id": "A03_CAND3",
+    "cell_id": "A03",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The singleton that-paper table claim lacks its supplied antecedent under the strict frozen binding reference. Acceptance disagrees with that predeclared ambiguous anaphora convention.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A03_CAND3_Q0_r2",
+    "certificate_id": "A03_CAND3",
+    "cell_id": "A03",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The singleton that-paper table claim lacks its supplied antecedent under the strict frozen binding reference. Acceptance disagrees with that predeclared ambiguous anaphora convention.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A04_CAND1_Q1_r1",
+    "certificate_id": "A04_CAND1",
+    "cell_id": "A04",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The whole founder Parent lacks university founding date and required game release/ranking facts.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A04_CAND1_Q0_r1",
+    "certificate_id": "A04_CAND1",
+    "cell_id": "A04",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The full founder condition lacks division/release, earnings-ranking, and university-founding qualifiers.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A04_CAND1_Q0_r2",
+    "certificate_id": "A04_CAND1",
+    "cell_id": "A04",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Founder/education facts leave material game and university qualifiers unsupported.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A04_CAND1_Q1_r2",
+    "certificate_id": "A04_CAND1",
+    "cell_id": "A04",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The whole founder requirement lacks the game release/ranking qualifications.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A05_CAND1_Q0_r1",
+    "certificate_id": "A05_CAND1",
+    "cell_id": "A05",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Founder and education evidence has no marriage/childlessness information.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A05_CAND1_Q1_r1",
+    "certificate_id": "A05_CAND1",
+    "cell_id": "A05",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The supplied founder/degree claims provide no marriage/childlessness evidence.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A05_CAND1_Q1_r2",
+    "certificate_id": "A05_CAND1",
+    "cell_id": "A05",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "There is no supplied marriage/childlessness evidence for Kwon.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A05_CAND1_Q0_r2",
+    "certificate_id": "A05_CAND1",
+    "cell_id": "A05",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Founder and education facts do not establish the 2019 marriage/childlessness condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A06_CAND1_Q1_r1",
+    "certificate_id": "A06_CAND1",
+    "cell_id": "A06",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "A degree at Sogang does not establish a building-university affiliation.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A06_CAND1_Q0_r1",
+    "certificate_id": "A06_CAND1",
+    "cell_id": "A06",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The degree claim establishes a person-university relation, not the Parent building-university relation; accepting it substitutes roles.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A06_CAND1_Q0_r2",
+    "certificate_id": "A06_CAND1",
+    "cell_id": "A06",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The degree claim establishes a person-university relation, not the Parent building-university relation; accepting it substitutes roles.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A06_CAND1_Q1_r2",
+    "certificate_id": "A06_CAND1",
+    "cell_id": "A06",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "University attendance is not evidence that the building belongs to that university.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND1_Q0_r1",
+    "certificate_id": "A07_CAND1",
+    "cell_id": "A07",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Ding candidate binding plus contemporaneous marriage/childlessness evidence establishes this clause; gift and complex remain unresolved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND1_Q1_r1",
+    "certificate_id": "A07_CAND1",
+    "cell_id": "A07",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Ding candidate binding plus contemporaneous marriage/childlessness evidence establishes this clause; gift and complex remain unresolved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND1_Q1_r2",
+    "certificate_id": "A07_CAND1",
+    "cell_id": "A07",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Ding candidate binding plus contemporaneous marriage/childlessness evidence establishes this clause; gift and complex remain unresolved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND1_Q0_r2",
+    "certificate_id": "A07_CAND1",
+    "cell_id": "A07",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Ding candidate binding plus contemporaneous marriage/childlessness evidence establishes this clause; gift and complex remain unresolved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND2_Q1_r1",
+    "certificate_id": "A07_CAND2",
+    "cell_id": "A07",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Family status in 2025 does not prove the historical 2019 condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND2_Q0_r1",
+    "certificate_id": "A07_CAND2",
+    "cell_id": "A07",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Children recorded in 2025 cannot establish childlessness through 2019.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND2_Q0_r2",
+    "certificate_id": "A07_CAND2",
+    "cell_id": "A07",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "A 2025 family-status claim does not prove the 2019 condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND2_Q1_r2",
+    "certificate_id": "A07_CAND2",
+    "cell_id": "A07",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Founder/degree facts supply no 2019 marriage/childlessness evidence.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND3_Q0_r1",
+    "certificate_id": "A07_CAND3",
+    "cell_id": "A07",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Ding marriage/childlessness cannot establish the entire gift/building/complex condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND3_Q1_r1",
+    "certificate_id": "A07_CAND3",
+    "cell_id": "A07",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Marriage/childlessness is supported but the whole Parent additionally requires the gift/building/complex relation.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND3_Q1_r2",
+    "certificate_id": "A07_CAND3",
+    "cell_id": "A07",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Marriage/childlessness is supported but the whole Parent additionally requires the gift/building/complex relation.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A07_CAND3_Q0_r2",
+    "certificate_id": "A07_CAND3",
+    "cell_id": "A07",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Ding marriage information does not establish the gift/building/complex relation of the entire Parent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A08_CAND1_Q1_r1",
+    "certificate_id": "A08_CAND1",
+    "cell_id": "A08",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "No building, schedule or building-university relation is supplied.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A08_CAND1_Q0_r1",
+    "certificate_id": "A08_CAND1",
+    "cell_id": "A08",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "No building affiliation or opening schedule appears in the supplied Ding facts.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A08_CAND1_Q0_r2",
+    "certificate_id": "A08_CAND1",
+    "cell_id": "A08",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Ding biography does not establish the building/schedule/university condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A08_CAND1_Q1_r2",
+    "certificate_id": "A08_CAND1",
+    "cell_id": "A08",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Ding education/family facts do not establish the building, opening schedule, or university relation.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A09_CAND1_Q0_r1",
+    "certificate_id": "A09_CAND1",
+    "cell_id": "A09",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Artist identity alone does not establish a shared charity-name component.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A09_CAND1_Q1_r1",
+    "certificate_id": "A09_CAND1",
+    "cell_id": "A09",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The named artist claim lacks any charity-name relation.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A09_CAND1_Q1_r2",
+    "certificate_id": "A09_CAND1",
+    "cell_id": "A09",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "No charity-name relation is established; mentioning other absent charity conditions does not cure that primary gap.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A09_CAND1_Q0_r2",
+    "certificate_id": "A09_CAND1",
+    "cell_id": "A09",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Artist identity provides no charity or artist-charity name relation.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A10_CAND1_Q1_r1",
+    "certificate_id": "A10_CAND1",
+    "cell_id": "A10",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Athens identity does not establish the required distance to the specified aviation site.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A10_CAND1_Q0_r1",
+    "certificate_id": "A10_CAND1",
+    "cell_id": "A10",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "An Athens death does not establish a distance to the specified aviation site.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A10_CAND1_Q0_r2",
+    "certificate_id": "A10_CAND1",
+    "cell_id": "A10",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The death-city fact lacks a measured distance and the requisite aviation-site binding.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A10_CAND1_Q1_r2",
+    "certificate_id": "A10_CAND1",
+    "cell_id": "A10",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The death city alone supplies neither the specified aviation site nor its distance.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A11_CAND1_Q0_r1",
+    "certificate_id": "A11_CAND1",
+    "cell_id": "A11",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The partner/tribute claims lack the artist-charity name relation.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A11_CAND1_Q1_r1",
+    "certificate_id": "A11_CAND1",
+    "cell_id": "A11",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The partner and tribute do not identify a charity or its name relation to the artist.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A11_CAND1_Q1_r2",
+    "certificate_id": "A11_CAND1",
+    "cell_id": "A11",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The tribute gives no charity-name relation; the other charity qualifications also remain unresolved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A11_CAND1_Q0_r2",
+    "certificate_id": "A11_CAND1",
+    "cell_id": "A11",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Partner/tribute evidence does not establish the charity-name condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A12_CAND1_Q1_r1",
+    "certificate_id": "A12_CAND1",
+    "cell_id": "A12",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "No supplied claim establishes supervision by an Iranian professor.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A12_CAND1_Q0_r1",
+    "certificate_id": "A12_CAND1",
+    "cell_id": "A12",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "A Canadian doctorate does not establish an Iranian supervisor.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A12_CAND1_Q0_r2",
+    "certificate_id": "A12_CAND1",
+    "cell_id": "A12",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "No Iranian-supervisor relation is supplied.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A12_CAND1_Q1_r2",
+    "certificate_id": "A12_CAND1",
+    "cell_id": "A12",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The doctorate claim lacks supervisor identity/nationality.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A13_CAND1_Q0_r1",
+    "certificate_id": "A13_CAND1",
+    "cell_id": "A13",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Book publication alone lacks the later-article operand and comparison required by the Parent. Accepting the isolated publication fragment cuts that governing relation.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A13_CAND1_Q1_r1",
+    "certificate_id": "A13_CAND1",
+    "cell_id": "A13",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Correct rejection of book-only evidence, but the explanation demands author/PhD/target identification rather than naming the crucial missing later-article operand. Additional global premises are not generally required for every local fact under the frozen policy.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "partly_faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A13_CAND1_Q1_r2",
+    "certificate_id": "A13_CAND1",
+    "cell_id": "A13",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Book publication alone lacks the later-article operand and comparison required by the Parent. Accepting the isolated publication fragment cuts that governing relation.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A13_CAND1_Q0_r2",
+    "certificate_id": "A13_CAND1",
+    "cell_id": "A13",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Book publication alone lacks the later-article operand and comparison required by the Parent. Accepting the isolated publication fragment cuts that governing relation.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND1_Q1_r1",
+    "certificate_id": "A14_CAND1",
+    "cell_id": "A14",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Same-author book and later article jointly supply both operands, aligned topic and publication years for the Parent context.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND1_Q0_r1",
+    "certificate_id": "A14_CAND1",
+    "cell_id": "A14",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Same-author book and later article jointly supply both operands, aligned topic and publication years for the Parent context.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND1_Q0_r2",
+    "certificate_id": "A14_CAND1",
+    "cell_id": "A14",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Same-author book and later article jointly supply both operands, aligned topic and publication years for the Parent context.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND1_Q1_r2",
+    "certificate_id": "A14_CAND1",
+    "cell_id": "A14",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Same-author book and later article jointly supply both operands, aligned topic and publication years for the Parent context.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND2_Q0_r1",
+    "certificate_id": "A14_CAND2",
+    "cell_id": "A14",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The 2016 and 2022 publication years meet the frozen six-year convention; exact elapsed-day equivalence remains a predeclared ambiguity.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A14_CAND2_Q1_r1",
+    "certificate_id": "A14_CAND2",
+    "cell_id": "A14",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Both publication years establish the six-year comparison under the frozen year-level convention. The response reasonably notes missing exact elapsed-day information, but that stricter interpretation is not this reference. Predeclared ambiguity.",
+      "diagnostic": "qualifier_or_scope_missing",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A14_CAND2_Q1_r2",
+    "certificate_id": "A14_CAND2",
+    "cell_id": "A14",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The 2016 and 2022 publication years meet the frozen six-year convention; exact elapsed-day equivalence remains a predeclared ambiguity.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A14_CAND2_Q0_r2",
+    "certificate_id": "A14_CAND2",
+    "cell_id": "A14",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The 2016 and 2022 publication years meet the frozen six-year convention; exact elapsed-day equivalence remains a predeclared ambiguity.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A14_CAND3_Q1_r1",
+    "certificate_id": "A14_CAND3",
+    "cell_id": "A14",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Both same-author publications supply comparable mathematics/Vipassana subjects.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND3_Q0_r1",
+    "certificate_id": "A14_CAND3",
+    "cell_id": "A14",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Both same-author publications supply comparable mathematics/Vipassana subjects.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND3_Q0_r2",
+    "certificate_id": "A14_CAND3",
+    "cell_id": "A14",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Both same-author publications supply comparable mathematics/Vipassana subjects.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND3_Q1_r2",
+    "certificate_id": "A14_CAND3",
+    "cell_id": "A14",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Both same-author publications supply comparable mathematics/Vipassana subjects.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND4_Q0_r1",
+    "certificate_id": "A14_CAND4",
+    "cell_id": "A14",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Article-only evidence does not supply the book or required interval.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND4_Q1_r1",
+    "certificate_id": "A14_CAND4",
+    "cell_id": "A14",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Article date alone lacks the book operand/date of the six-year relation.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND4_Q1_r2",
+    "certificate_id": "A14_CAND4",
+    "cell_id": "A14",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "A 2022 article without a book date does not establish the six-year comparison.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A14_CAND4_Q0_r2",
+    "certificate_id": "A14_CAND4",
+    "cell_id": "A14",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The article claim lacks a book publication date and comparison.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A15_CAND1_Q1_r1",
+    "certificate_id": "A15_CAND1",
+    "cell_id": "A15",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Correctly identifies the missing target-book reference relation despite true Euler birth attributes.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A15_CAND1_Q0_r1",
+    "certificate_id": "A15_CAND1",
+    "cell_id": "A15",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Euler birth attributes are locally true, but the target-book reference relation is absent; this acceptance cuts the governing relation.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A15_CAND1_Q0_r2",
+    "certificate_id": "A15_CAND1",
+    "cell_id": "A15",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Euler birth attributes are locally true, but the target-book reference relation is absent; this acceptance cuts the governing relation.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A15_CAND1_Q1_r2",
+    "certificate_id": "A15_CAND1",
+    "cell_id": "A15",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Rejection is correct. The explanation points to unsupported well-known/central-European attributes but does not identify the central missing book-to-Euler reference edge; explanatory fidelity is partial.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "partly_faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A16_CAND1_Q0_r1",
+    "certificate_id": "A16_CAND1",
+    "cell_id": "A16",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The half-year duration for a particular case is missing from generic SPS information; generic pain descriptions are not themselves proof about that individual.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A16_CAND1_Q1_r1",
+    "certificate_id": "A16_CAND1",
+    "cell_id": "A16",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Generic SPS progression supplies no case-specific half-year history.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A16_CAND1_Q1_r2",
+    "certificate_id": "A16_CAND1",
+    "cell_id": "A16",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "General SPS symptoms do not establish the specific case history.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A16_CAND1_Q0_r2",
+    "certificate_id": "A16_CAND1",
+    "cell_id": "A16",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "General SPS progression does not establish the individual six-month history.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND1_Q1_r1",
+    "certificate_id": "A17_CAND1",
+    "cell_id": "A17",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The specific C7 case directly establishes the clinical-history condition explicitly designated positive in the task. Requiring the separate country/history clause first rejects that allowed partial support.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND1_Q0_r1",
+    "certificate_id": "A17_CAND1",
+    "cell_id": "A17",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The actual case claim establishes the clinical-history sentence; this does not close the country/history Parent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND1_Q0_r2",
+    "certificate_id": "A17_CAND1",
+    "cell_id": "A17",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The actual case claim establishes the clinical-history sentence; this does not close the country/history Parent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND1_Q1_r2",
+    "certificate_id": "A17_CAND1",
+    "cell_id": "A17",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The actual case claim establishes the clinical-history sentence; this does not close the country/history Parent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND2_Q0_r1",
+    "certificate_id": "A17_CAND2",
+    "cell_id": "A17",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The specific clinical case directly establishes six-month multisite pain.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND2_Q1_r1",
+    "certificate_id": "A17_CAND2",
+    "cell_id": "A17",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The specific clinical case directly establishes six-month multisite pain.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND2_Q1_r2",
+    "certificate_id": "A17_CAND2",
+    "cell_id": "A17",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The specific clinical case directly establishes six-month multisite pain.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND2_Q0_r2",
+    "certificate_id": "A17_CAND2",
+    "cell_id": "A17",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The specific clinical case directly establishes six-month multisite pain.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND3_Q1_r1",
+    "certificate_id": "A17_CAND3",
+    "cell_id": "A17",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The individual case directly establishes walking and shoulder difficulty.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND3_Q0_r1",
+    "certificate_id": "A17_CAND3",
+    "cell_id": "A17",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The individual case directly establishes walking and shoulder difficulty.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND3_Q0_r2",
+    "certificate_id": "A17_CAND3",
+    "cell_id": "A17",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The individual case directly establishes walking and shoulder difficulty.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND3_Q1_r2",
+    "certificate_id": "A17_CAND3",
+    "cell_id": "A17",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "C7 directly supports walking/shoulder difficulty for the observed clinical case. Requiring the separate first-case country/history clause rejects task-specified partial support.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND4_Q0_r1",
+    "certificate_id": "A17_CAND4",
+    "cell_id": "A17",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The country-history condition is genuinely missing. Mention of a Pakistani patient still does not establish report-country attribution.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND4_Q1_r1",
+    "certificate_id": "A17_CAND4",
+    "cell_id": "A17",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Patient nationality is not report-country evidence, and the historical country qualification is also absent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND4_Q1_r2",
+    "certificate_id": "A17_CAND4",
+    "cell_id": "A17",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The clinical case does not establish the required report-country/history condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND4_Q0_r2",
+    "certificate_id": "A17_CAND4",
+    "cell_id": "A17",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Patient nationality supplies neither report-country attribution nor the country-history condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND5_Q1_r1",
+    "certificate_id": "A17_CAND5",
+    "cell_id": "A17",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Generic FOP facts do not supply this individual clinical presentation.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND5_Q0_r1",
+    "certificate_id": "A17_CAND5",
+    "cell_id": "A17",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "General FOP information does not establish the specific individual history.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND5_Q0_r2",
+    "certificate_id": "A17_CAND5",
+    "cell_id": "A17",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "FOP background is not case-specific half-year pain-history evidence.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A17_CAND5_Q1_r2",
+    "certificate_id": "A17_CAND5",
+    "cell_id": "A17",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "General FOP genetics/trauma facts do not establish the individual half-year pain history.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A18_CAND1_Q0_r1",
+    "certificate_id": "A18_CAND1",
+    "cell_id": "A18",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Thesis/advisor facts do not establish a qualifying DLC release interval.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A18_CAND1_Q1_r1",
+    "certificate_id": "A18_CAND1",
+    "cell_id": "A18",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "A thesis and advisor do not establish DLC release timing.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A18_CAND1_Q1_r2",
+    "certificate_id": "A18_CAND1",
+    "cell_id": "A18",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Thesis/advisor facts do not establish the DLC release condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A18_CAND1_Q0_r2",
+    "certificate_id": "A18_CAND1",
+    "cell_id": "A18",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The thesis/advisor claims do not establish a DLC release or its timing relative to the base game.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND1_Q1_r1",
+    "certificate_id": "A19_CAND1",
+    "cell_id": "A19",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The DLC and base-game dated releases, genre and identity jointly establish the complete release Parent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND1_Q0_r1",
+    "certificate_id": "A19_CAND1",
+    "cell_id": "A19",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The DLC and base-game dated releases, genre and identity jointly establish the complete release Parent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND1_Q0_r2",
+    "certificate_id": "A19_CAND1",
+    "cell_id": "A19",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The DLC and base-game dated releases, genre and identity jointly establish the complete release Parent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND1_Q1_r2",
+    "certificate_id": "A19_CAND1",
+    "cell_id": "A19",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The DLC and base-game dated releases, genre and identity jointly establish the complete release Parent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND2_Q0_r1",
+    "certificate_id": "A19_CAND2",
+    "cell_id": "A19",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Both dated releases jointly establish the over-three-years interval.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND2_Q1_r1",
+    "certificate_id": "A19_CAND2",
+    "cell_id": "A19",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Both dated releases jointly establish the over-three-years interval.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND2_Q1_r2",
+    "certificate_id": "A19_CAND2",
+    "cell_id": "A19",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Both dated releases jointly establish the over-three-years interval.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND2_Q0_r2",
+    "certificate_id": "A19_CAND2",
+    "cell_id": "A19",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Both dated releases jointly establish the over-three-years interval.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND3_Q1_r1",
+    "certificate_id": "A19_CAND3",
+    "cell_id": "A19",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The DLC/game binding, strategy genre, and both release dates are supplied jointly.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND3_Q0_r1",
+    "certificate_id": "A19_CAND3",
+    "cell_id": "A19",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The DLC/game binding, strategy genre, and both release dates are supplied jointly.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND3_Q0_r2",
+    "certificate_id": "A19_CAND3",
+    "cell_id": "A19",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The DLC/game binding, strategy genre, and both release dates are supplied jointly.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND3_Q1_r2",
+    "certificate_id": "A19_CAND3",
+    "cell_id": "A19",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The DLC/game binding, strategy genre, and both release dates are supplied jointly.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND4_Q0_r1",
+    "certificate_id": "A19_CAND4",
+    "cell_id": "A19",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "DLC date alone leaves the base-game genre/date and required release interval unsupported.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND4_Q1_r1",
+    "certificate_id": "A19_CAND4",
+    "cell_id": "A19",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The base-game release-date operand is missing.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND4_Q1_r2",
+    "certificate_id": "A19_CAND4",
+    "cell_id": "A19",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "DLC date without base release date/genre cannot establish the complete release Parent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A19_CAND4_Q0_r2",
+    "certificate_id": "A19_CAND4",
+    "cell_id": "A19",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The DLC date alone cannot establish the required interval from the base-game release.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND1_Q1_r1",
+    "certificate_id": "A20_CAND1",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package identity and the technology/Coptic-system diary establish the local religion/technology condition; nation qualifications remain unresolved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND1_Q0_r1",
+    "certificate_id": "A20_CAND1",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package identity and the technology/Coptic-system diary establish the local religion/technology condition; nation qualifications remain unresolved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND1_Q0_r2",
+    "certificate_id": "A20_CAND1",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package identity and the technology/Coptic-system diary establish the local religion/technology condition; nation qualifications remain unresolved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND1_Q1_r2",
+    "certificate_id": "A20_CAND1",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package identity and the technology/Coptic-system diary establish the local religion/technology condition; nation qualifications remain unresolved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND2_Q0_r1",
+    "certificate_id": "A20_CAND2",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package binding and the manual establish the technology change.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND2_Q1_r1",
+    "certificate_id": "A20_CAND2",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package binding and the manual establish the technology change.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND2_Q1_r2",
+    "certificate_id": "A20_CAND2",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package binding and the manual establish the technology change.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND2_Q0_r2",
+    "certificate_id": "A20_CAND2",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package binding and the manual establish the technology change.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND3_Q1_r1",
+    "certificate_id": "A20_CAND3",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package binding, development diaries and manual jointly establish religion/technology mechanics; no claim is made that the qualified nation condition is solved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND3_Q0_r1",
+    "certificate_id": "A20_CAND3",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package binding, development diaries and manual jointly establish religion/technology mechanics; no claim is made that the qualified nation condition is solved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND3_Q0_r2",
+    "certificate_id": "A20_CAND3",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package binding, development diaries and manual jointly establish religion/technology mechanics; no claim is made that the qualified nation condition is solved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND3_Q1_r2",
+    "certificate_id": "A20_CAND3",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Package binding, development diaries and manual jointly establish religion/technology mechanics; no claim is made that the qualified nation condition is solved.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND4_Q0_r1",
+    "certificate_id": "A20_CAND4",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Observed government/subject changes support the general mechanics predicate under the frozen scope policy; particular religion/technology/nation constraints remain separate. Predeclared ambiguity.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A20_CAND4_Q1_r1",
+    "certificate_id": "A20_CAND4",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The frozen general mechanics predicate is supported by government/subject changes; the response additionally requires religion, technology, and the nation condition. This scope boundary was predeclared ambiguous.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A20_CAND4_Q1_r2",
+    "certificate_id": "A20_CAND4",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The response requires religion/technology before accepting the general mechanics predicate. Government/subject changes suffice under the frozen partial-scope convention, whose ambiguity was declared.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "unfaithful",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A20_CAND4_Q0_r2",
+    "certificate_id": "A20_CAND4",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Observed government/subject changes support the general mechanics predicate under the frozen scope policy; particular religion/technology/nation constraints remain separate. Predeclared ambiguity.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A20_CAND5_Q1_r1",
+    "certificate_id": "A20_CAND5",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Ottoman flavor/details do not establish a specific playable European nation receiving new mechanics.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND5_Q0_r1",
+    "certificate_id": "A20_CAND5",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The evidence lacks playability/European status and the required new-mechanics attribution.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND5_Q0_r2",
+    "certificate_id": "A20_CAND5",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The supplied DLC claims do not establish the fully qualified nation/new-mechanics condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND5_Q1_r2",
+    "certificate_id": "A20_CAND5",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Ottoman flavor/details do not establish the full playable-European-nation qualification.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND6_Q0_r1",
+    "certificate_id": "A20_CAND6",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "DLC evidence leaves the playable-European-nation new-mechanics condition unestablished.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND6_Q1_r1",
+    "certificate_id": "A20_CAND6",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The whole Parent lacks the specific playable-European-nation new-mechanics condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND6_Q1_r2",
+    "certificate_id": "A20_CAND6",
+    "cell_id": "A20",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The entire DLC Parent lacks its qualified nation-mechanics condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A20_CAND6_Q0_r2",
+    "certificate_id": "A20_CAND6",
+    "cell_id": "A20",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The whole DLC condition lacks a supported specific playable European nation and its new mechanics.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND1_Q1_r1",
+    "certificate_id": "A21_CAND1",
+    "cell_id": "A21",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Nationality, coder identity, team membership and championship are jointly established.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND1_Q0_r1",
+    "certificate_id": "A21_CAND1",
+    "cell_id": "A21",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Nationality, coder identity, team membership and championship are jointly established.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND1_Q0_r2",
+    "certificate_id": "A21_CAND1",
+    "cell_id": "A21",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Nationality, coder identity, team membership and championship are jointly established.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND1_Q1_r2",
+    "certificate_id": "A21_CAND1",
+    "cell_id": "A21",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Nationality, coder identity, team membership and championship are jointly established.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND2_Q0_r1",
+    "certificate_id": "A21_CAND2",
+    "cell_id": "A21",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Nationality and championship-team membership jointly bind the Australian coder condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND2_Q1_r1",
+    "certificate_id": "A21_CAND2",
+    "cell_id": "A21",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Nationality and championship-team membership jointly bind the Australian coder condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND2_Q1_r2",
+    "certificate_id": "A21_CAND2",
+    "cell_id": "A21",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Nationality and championship-team membership jointly bind the Australian coder condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND2_Q0_r2",
+    "certificate_id": "A21_CAND2",
+    "cell_id": "A21",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Nationality and championship-team membership jointly bind the Australian coder condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND3_Q1_r1",
+    "certificate_id": "A21_CAND3",
+    "cell_id": "A21",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Jerry nationality alone lacks the championship-team membership relation governing this locator.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND3_Q0_r1",
+    "certificate_id": "A21_CAND3",
+    "cell_id": "A21",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Nationality without the championship-team relation is insufficient in the full Parent even though the standalone fragment is locally true.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND3_Q0_r2",
+    "certificate_id": "A21_CAND3",
+    "cell_id": "A21",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Nationality without the championship-team relation is insufficient in the full Parent even though the standalone fragment is locally true.",
+      "diagnostic": "semantic_binding_missing",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A21_CAND3_Q1_r2",
+    "certificate_id": "A21_CAND3",
+    "cell_id": "A21",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Jerry nationality alone does not establish membership in the winning championship team.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A22_CAND1_Q0_r1",
+    "certificate_id": "A22_CAND1",
+    "cell_id": "A22",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Neither teammate country is supplied; Jerry nationality does not establish their same-country relation.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A22_CAND1_Q1_r1",
+    "certificate_id": "A22_CAND1",
+    "cell_id": "A22",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Correctly notes missing countries of the other two teammates. The alternative as-Jerry comparison is not required by the Parent; the relevant relation is with each other.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "partly_faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A22_CAND1_Q1_r2",
+    "certificate_id": "A22_CAND1",
+    "cell_id": "A22",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Teammate names do not establish their countries or equality of countries.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A22_CAND1_Q0_r2",
+    "certificate_id": "A22_CAND1",
+    "cell_id": "A22",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Jerry nationality and teammate names do not establish that the other two teammates share a country.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A23_CAND1_Q1_r1",
+    "certificate_id": "A23_CAND1",
+    "cell_id": "A23",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The accession-date operand is absent, precluding the required temporal comparison.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A23_CAND1_Q0_r1",
+    "certificate_id": "A23_CAND1",
+    "cell_id": "A23",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Neither a letter-writing date nor an accession date is established by a transmission memorandum.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A23_CAND1_Q0_r2",
+    "certificate_id": "A23_CAND1",
+    "cell_id": "A23",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "A transmission-memo date is not a letter-writing date, and accession timing is absent.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A23_CAND1_Q1_r2",
+    "certificate_id": "A23_CAND1",
+    "cell_id": "A23",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "NOT_SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The accession date is missing, so the required letter/accession interval cannot be established.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "faithful",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A24_CAND1_Q0_r1",
+    "certificate_id": "A24_CAND1",
+    "cell_id": "A24",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Letter/author binding and the letter-content claim jointly establish the region-reference condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A24_CAND1_Q1_r1",
+    "certificate_id": "A24_CAND1",
+    "cell_id": "A24",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Letter/author binding and the letter-content claim jointly establish the region-reference condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A24_CAND1_Q1_r2",
+    "certificate_id": "A24_CAND1",
+    "cell_id": "A24",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Letter/author binding and the letter-content claim jointly establish the region-reference condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A24_CAND1_Q0_r2",
+    "certificate_id": "A24_CAND1",
+    "cell_id": "A24",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Letter/author binding and the letter-content claim jointly establish the region-reference condition.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": false
+    }
+  },
+  {
+    "id": "E1_A24_CAND2_Q1_r1",
+    "certificate_id": "A24_CAND2",
+    "cell_id": "A24",
+    "arm": "Q1",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Accepted under the frozen bound-letter reference. A post-review stricter reading notes that this selected pair does not explicitly bind King Michael as ruler of Romania; the ambiguity is disclosed without relabeling.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A24_CAND2_Q0_r1",
+    "certificate_id": "A24_CAND2",
+    "cell_id": "A24",
+    "arm": "Q0",
+    "replicate": 1,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Accepted under the frozen bound-letter reference. A post-review stricter reading notes that this selected pair does not explicitly bind King Michael as ruler of Romania; the ambiguity is disclosed without relabeling.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A24_CAND2_Q0_r2",
+    "certificate_id": "A24_CAND2",
+    "cell_id": "A24",
+    "arm": "Q0",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "Accepted under the frozen bound-letter reference. A post-review stricter reading notes that this selected pair does not explicitly bind King Michael as ruler of Romania; the ambiguity is disclosed without relabeling.",
+      "diagnostic": "consistent",
+      "missing_semantics_fidelity": "not_applicable",
+      "ambiguity": true
+    }
+  },
+  {
+    "id": "E1_A24_CAND2_Q1_r2",
+    "certificate_id": "A24_CAND2",
+    "cell_id": "A24",
+    "arm": "Q1",
+    "replicate": 2,
+    "gold": "SUBTRACTABLE",
+    "predicted": "NOT_SUBTRACTABLE",
+    "failure": null,
+    "judgment": {
+      "reason": "The frozen reference accepts handover/content as the bound letter case. The response identifies a genuine literal gap: these two selected claims do not explicitly say King Michael rules Romania. This is a post-review reference-boundary concern, not a Gold change; the strict referent reading is defensible.",
+      "diagnostic": "other",
+      "missing_semantics_fidelity": "partly_faithful",
+      "ambiguity": true
+    }
+  }
+]
