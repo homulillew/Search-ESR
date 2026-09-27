@@ -1,0 +1,65 @@
+{
+  "method": "post-outcome descriptive mechanism trace; frozen Candidate labels and inventory labels unchanged",
+  "cases": {
+    "E2_7da9dd0481c347fbad316074": {
+      "classification": "rescue",
+      "reason": "G0 infers date binding from adjacency. G1 rejects while its inventory omits the entire undated 67-album count; this does not isolate improved temporal reasoning."
+    },
+    "E2_b50747a23a1e1241121dcbf6": {
+      "classification": "rescue",
+      "reason": "Same shared inventory and omitted album count. Not an independent replication of the other q435 rescue."
+    },
+    "E2_33f27d75741158ec83d47f3a": {
+      "classification": "negative_correct_both",
+      "reason": "G0 explicitly distinguishes retrospective count from interview date; G1 lacks the count entirely."
+    },
+    "E2_a70bcd07cc6335cbc50a0552": {
+      "classification": "persistent_false_admission",
+      "reason": "Clipped quoted account becomes an unqualified proof claim in both G0 and candidate-free Inventory fact 2. G1 accepts a near-exact inventory match."
+    },
+    "E2_c22ee54659098f8110a7edbf": {
+      "classification": "persistent_false_admission",
+      "reason": "Same source-relative attribution error in candidate-free Inventory fact 1; coverage faithfully accepts an already-strengthened commitment."
+    },
+    "E2_09149c6df1f784327ee0b23d": {
+      "classification": "binding_and_paraphrase_dispute",
+      "reason": "The raw relative clause links symptoms to biopsy site; inventory splits presentation/biopsy into facts 13 and 14. G1 also objects to progressively limited versus subsequently limited. The frozen positive label is not re-adjudicated; this is not established as pure inventory omission."
+    },
+    "E2_2e3014187300c550b95fda68": {
+      "classification": "over_literal_title_interpretation",
+      "reason": "Full title, diagnosis and case facts remain in inventory. Coverage treats titled as FOP as a claim of an exact short title, which the candidate does not explicitly say."
+    },
+    "E2_3f347d007fd0efdb0dff1837": {
+      "classification": "over_literal_reporting_scope",
+      "reason": "Inventory correctly says a source footnote states the transmission. G1 demands that generic documentary attribution remain in the candidate, rejecting a frozen source-supported factual paraphrase."
+    },
+    "E2_0a9eef0ced556c1afc232745": {
+      "classification": "inventory_relation_omission",
+      "reason": "Credits (DOS version) source header is dropped; separate DOS release and credit rows do not retain the header relation."
+    },
+    "E2_32be0a67c2290eff7cb28a05": {
+      "classification": "inventory_relation_omission",
+      "reason": "Same shared inventory and dropped DOS-credit scope; two candidate variants are dependent."
+    },
+    "E2_0ccffa661c9984aeae22b28d": {
+      "classification": "inventory_source_binding_omission",
+      "reason": "D10 was present in public Evidence metadata but absent from inventory. G1 agrees remaining bibliographic facts are supported."
+    },
+    "E2_2192a5553cf12ac22afa3abb": {
+      "classification": "inventory_source_binding_omission",
+      "reason": "Same missing D10 binding; title fact itself is in the inventory."
+    },
+    "E2_3fe70c3ae06d7659fb7dbd99": {
+      "classification": "inventory_source_binding_omission",
+      "reason": "Same missing D10 binding; title and author facts themselves are in inventory."
+    }
+  },
+  "recall_harm_decomposition": {
+    "source_binding_omission": 3,
+    "DOS_credits_relation_omission": 2,
+    "over_literal_title_or_reporting_scope": 2,
+    "binding_and_paraphrase_dispute": 1
+  },
+  "rescue_caveat": "Both rescues share one Inventory missing the whole album count; no clean retained-premise temporal rescue.",
+  "psychological_anchoring_identified": false
+}

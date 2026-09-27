@@ -1,0 +1,45 @@
+{
+  "provenance": "Post-outcome case audit, performed after frozen source-only inventory review and G0/G1 inspection. Does not replace source-only labels or Candidate truth.",
+  "source_only_review_sha256": "2c48e630e698e1d6767f9633100e05598cdf89686d873c48e529f2f6f9fd72d8",
+  "corrections": [
+    {
+      "inventory_review_id": "I_5a61e879046ea0fe33abb509",
+      "finding": "The visible Credits (DOS version) header scopes the nine credit rows. Inventory facts 23–31 retain the roles and names but omit the DOS-version scope. Fact 2 only records a DOS release, not the credits-to-version relation.",
+      "type": "material relation/scope omission",
+      "prior_review_limitation": "The initial source-only review incorrectly reported all substantive commitments preserved; that frozen report remains unchanged.",
+      "affected_harm_pairs": [
+        "E2_0a9eef0ced556c1afc232745",
+        "E2_32be0a67c2290eff7cb28a05"
+      ]
+    },
+    {
+      "inventory_review_id": "I_53a6fb409834b6fa141f7944",
+      "finding": "The public Evidence metadata explicitly binds this W12 source to D10; none of the inventory facts preserve D10. Title/byline/citation survive.",
+      "type": "material source-handle binding omission",
+      "prior_review_limitation": "Initial review recorded later-text omissions but did not flag this metadata binding loss.",
+      "affected_harm_pairs": [
+        "E2_0ccffa661c9984aeae22b28d",
+        "E2_2192a5553cf12ac22afa3abb",
+        "E2_3fe70c3ae06d7659fb7dbd99"
+      ]
+    }
+  ],
+  "counts": {
+    "frozen_any_omission_inventories": 5,
+    "material_inventories_among_frozen_omissions": 4,
+    "material_definition": "Lost factual commitment or evidence scope/binding; excludes promotional slogans and contact/layout details.",
+    "frozen_material_ids": [
+      "I_8a8ca9fa4c7dc401a7872d8b",
+      "I_53a6fb409834b6fa141f7944",
+      "I_ae41bd4baddad58b562e4486",
+      "I_95fe1f1bbdd8baf474dff691"
+    ],
+    "post_outcome_new_material_inventory_ids": [
+      "I_5a61e879046ea0fe33abb509"
+    ],
+    "union_material_inventory_count": 5,
+    "union_any_omission_inventory_count": 6,
+    "unsupported_fact_count_unchanged": 3
+  },
+  "boundary": "Additional findings are outcome-informed and must not be reported as part of the earlier source-only review. No gate thresholds or truth labels changed."
+}
