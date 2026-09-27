@@ -110,11 +110,15 @@ class Preflight(unittest.TestCase):
     def test_freeze_integrity(self):
         selection = read_json('SELECTION_FREEZE.json')
         online = read_json('ONLINE_INPUTS.json')
+        model = read_json('MODEL_FREEZE.json')
         self.assertEqual(sha(HERE / 'ONLINE_INPUTS.json'), selection['selected_questions_sha256'])
         self.assertEqual(sha(ROOT / 'BCPlus/data/bcplus/qa.jsonl'), selection['dataset_sha256'])
         self.assertEqual([x['qid'] for x in online], selection['selected_qids'])
         self.assertEqual(len(online), 50)
         self.assertTrue(all(x['question'].strip() and set(x) == {'qid', 'question'} for x in online))
+        self.assertTrue(model['thinking'])
+        self.assertEqual(model['thinking_extra_body'], {'thinking': {'type': 'enabled'}})
+        self.assertEqual(self.config.request_options()['extra_body'], model['thinking_extra_body'])
 
 
 if __name__ == '__main__':

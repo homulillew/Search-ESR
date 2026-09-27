@@ -25,12 +25,12 @@ class Config:
             raise ValueError('DEEPSEEK_API_KEY unavailable')
         if model != 'deepseek-flash' or base_url != 'https://api.deepseek.com':
             raise ValueError('Provider does not match model freeze')
-        return cls(key, base_url, model, cls.system_prompt, 900, False)
+        return cls(key, base_url, model, cls.system_prompt, 900, True)
 
     def request_options(self):
         # DeepSeek's OpenAI-compatible API uses `thinking`, not DashScope's
-        # `enable_thinking`. This experiment freezes non-thinking mode.
-        return {'temperature': 0, 'extra_body': {'thinking': {'type': 'disabled'}}}
+        # `enable_thinking`. Thinking mode is explicit in this freeze.
+        return {'temperature': 0, 'extra_body': {'thinking': {'type': 'enabled'}}}
 
 class ChatSession:
     def __init__(self, config: Config, client=None):

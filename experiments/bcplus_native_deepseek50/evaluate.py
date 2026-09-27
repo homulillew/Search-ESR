@@ -143,7 +143,7 @@ def main():
                if (r := json.loads(line))}
     rows = []
     adjudication = []
-    all_events = []
+    adjudication_row_positions = []
     concurrency_points = []
     for qid in selection['selected_qids']:
         directory = dirs[qid]
@@ -151,7 +151,6 @@ def main():
         answer = (directory / 'answer.md').read_text(encoding='utf-8').strip()
         summary = json.loads((directory / 'summary.json').read_text(encoding='utf-8'))
         events = [json.loads(x) for x in (directory / 'events.jsonl').open(encoding='utf-8')]
-        all_events.extend(events)
         concurrency_points.extend(api_concurrency_points(events))
         correct = primary_correct(summary['status'], answer, item['answer'])
         diag = diagnostic(events, item['answer'], answer)
@@ -159,14 +158,40 @@ def main():
             # No trajectory, arm, or qid appears in reviewer cards.
             adjudication.append({'question': item['query'], 'gold_answer': item['answer'],
                                  'model_final_answer': answer, 'decision': None})
+            adjudication_row_positions.append(len(rows))
         rows.append({'qid': qid, 'question': item['query'], 'gold_answer': item['answer'],
                      'model_final_answer': answer, 'correct_deterministic': correct,
                      'status': summary['status'], 'summary': summary, 'diagnostic': diag,
                      'cost': estimate_cost(events)})
+    queue_path = HERE / 'MANUAL_ADJUDICATION_QUEUE.json'
+    if queue_path.exists():
+        existing = json.loads(queue_path.read_text(encoding='utf-8'))
+        if len(existing) != len(adjudication):
+            raise ValueError('Adjudication card count changed')
+        for expected, actual in zip(adjudication, existing):
+            if {k: actual.get(k) for k in ('question', 'gold_answer', 'model_final_answer')} != {
+                    k: expected[k] for k in ('question', 'gold_answer', 'model_final_answer')}:
+                raise ValueError('Adjudication card changed')
+            if actual.get('decision') not in (None, 'correct', 'incorrect', 'ambiguous'):
+                raise ValueError('Invalid adjudication decision')
+        adjudication = existing
+    else:
+        write_json(queue_path, adjudication)
+    for pos, card in zip(adjudication_row_positions, adjudication):
+        rows[pos]['manual_adjudication'] = card['decision']
+    if any(card['decision'] is None for card in adjudication):
+        write_json(HERE / 'EVALUATION_PENDING.json', {
+            'cards_total': len(adjudication),
+            'cards_undecided': sum(card['decision'] is None for card in adjudication),
+            'deterministic_correct': sum(r['correct_deterministic'] for r in rows),
+            'status': 'awaiting blinded investigator review'})
+        print('Blinded investigator adjudication required before final reports')
+        return
+    for row in rows:
+        row['correct_primary'] = row['correct_deterministic'] or row.get('manual_adjudication') == 'correct'
     write_json(HERE / 'PER_QUESTION.json', rows)
-    write_json(HERE / 'MANUAL_ADJUDICATION_QUEUE.json', adjudication)
     n = len(rows)
-    correct = sum(r['correct_deterministic'] for r in rows)
+    correct = sum(r['correct_primary'] for r in rows)
     statuses = Counter(r['status'] for r in rows)
     fields = ['search_calls', 'get_document_calls', 'total_tool_calls', 'unique_docids',
               'unique_search_queries', 'exact_duplicate_queries', 'repeated_document_reads',
@@ -186,15 +211,15 @@ def main():
         'benchmark': 'BrowseComp-Plus', 'model': 'deepseek-flash',
         'baseline_policy': 'native v000 Search + GetDocument with documented transport changes',
         'selection_seed': selection['seed'], 'sample_size': n,
-        'score_kind': 'conservative project deterministic exact/entity score; not official Qwen3-32B judge',
+        'score_kind': 'deterministic comparison plus blinded investigator adjudication; no Qwen3-32B judge',
         'correct': correct, 'accuracy': correct / n, 'wilson_95': wilson(correct, n),
         'statuses': statuses, 'distributions': dist, 'api_latency_seconds': api_latency,
         'peak_api_concurrency': peak,
         'insufficient_evidence_answers': sum(insufficient_evidence_answer(r['model_final_answer']) for r in rows),
-        'natural_answer_accuracy': {'correct': sum(r['correct_deterministic'] for r in natural), 'denominator': len(natural)},
-        'completed_run_accuracy': {'correct': sum(r['correct_deterministic'] for r in natural + forced),
+        'natural_answer_accuracy': {'correct': sum(r['correct_primary'] for r in natural), 'denominator': len(natural)},
+        'completed_run_accuracy': {'correct': sum(r['correct_primary'] for r in natural + forced),
                                    'denominator': len(natural) + len(forced)},
-        'emergency_cap_forced_accuracy': {'correct': sum(r['correct_deterministic'] for r in forced),
+        'emergency_cap_forced_accuracy': {'correct': sum(r['correct_primary'] for r in forced),
                                           'denominator': len(forced)},
         'get_document_adoption': sum(r['summary']['get_document_calls'] >= 1 for r in rows),
         'search_only_answers': sum(bool(r['model_final_answer']) and r['summary']['get_document_calls'] == 0 for r in rows),
@@ -204,7 +229,7 @@ def main():
         'rounds_gt_50': sum(r['summary']['tool_round_count'] > 50 for r in rows),
         'rounds_gt_100': sum(r['summary']['tool_round_count'] > 100 for r in rows),
         'gold_string_observed_count': len(observed),
-        'correct_given_gold_string_observed': sum(r['correct_deterministic'] for r in observed),
+        'correct_given_gold_string_observed': sum(r['correct_primary'] for r in observed),
         'answers_with_citation': sum(r['diagnostic']['answer_contains_citation'] for r in rows),
         'answers_with_invented_url': sum(bool(r['diagnostic']['invented_urls']) for r in rows),
         'answers_with_invented_explicit_docid': sum(bool(r['diagnostic']['invented_explicit_docids']) for r in rows),
@@ -215,6 +240,8 @@ def main():
         'cost_unpriced_responses': sum(r['cost']['unpriced_responses'] for r in rows),
         'billed_amount_known': False,
         'adjudication_queue_count': len(adjudication),
+        'adjudication_correct_count': sum(card['decision'] == 'correct' for card in adjudication),
+        'adjudication_ambiguous_count': sum(card['decision'] == 'ambiguous' for card in adjudication),
         'sample_replacement': False, 'sdk_retries': 0}
     summary['cache_hit_rate'] = (summary['cache_hit_tokens'] / summary['cache_input_tokens']
                                  if summary['cache_input_tokens'] else None)
@@ -235,7 +262,7 @@ Baseline policy: native v000 Search + GetDocument
 Sampling: random frozen 50; seed = {selection['seed']}
 
 Correct: {correct} / 50
-Accuracy: {100*correct/n:.1f}% (conservative project score; official judge unavailable)
+Accuracy: {100*correct/n:.1f}% (deterministic plus blinded investigator review; no Qwen judge)
 95% Wilson CI: [{100*ci[0]:.1f}%, {100*ci[1]:.1f}%]
 
 Natural answers: {statuses['natural_answer']} / 50
@@ -267,13 +294,13 @@ The 50 qids are now the BC+ Random50 Comparison Set and are no longer fresh. Lat
     (HERE / 'COST_AND_LATENCY.md').write_text('# Cost and latency\n\n' + json.dumps({**{k: dist[k] for k in fields[8:]}, 'api_latency_seconds': api_latency}, indent=2) + '\n\nTotal wall-clock seconds: ' + str(summary['total_wall_clock_seconds']) + '\nEstimated cost CNY: ' + str(summary['estimated_cost_cny']) + '\n', encoding='utf-8')
     failure_labels = {
         'run_or_api_failure': statuses['RUN_FAILED'],
-        'gold_string_not_observed_heuristic': sum(not r['diagnostic']['gold_answer_string_observed'] and not r['correct_deterministic'] for r in rows),
-        'gold_string_observed_but_answer_wrong': sum(r['diagnostic']['gold_answer_string_observed'] and not r['correct_deterministic'] for r in rows),
-        'search_repetition': sum(r['summary']['exact_duplicate_queries'] > 0 and not r['correct_deterministic'] for r in rows),
-        'document_not_read': sum(r['summary']['get_document_calls'] == 0 and not r['correct_deterministic'] for r in rows),
-        'very_long_trajectory_gt_50_rounds': sum(r['summary']['tool_round_count'] > 50 and not r['correct_deterministic'] for r in rows),
-        'emergency_cap_reached': sum(r['status'] == 'emergency_cap_forced_answer' and not r['correct_deterministic'] for r in rows),
-        'explicit_insufficient_evidence': sum(insufficient_evidence_answer(r['model_final_answer']) and not r['correct_deterministic'] for r in rows),
+        'gold_string_not_observed_heuristic': sum(not r['diagnostic']['gold_answer_string_observed'] and not r['correct_primary'] for r in rows),
+        'gold_string_observed_but_answer_wrong': sum(r['diagnostic']['gold_answer_string_observed'] and not r['correct_primary'] for r in rows),
+        'search_repetition': sum(r['summary']['exact_duplicate_queries'] > 0 and not r['correct_primary'] for r in rows),
+        'document_not_read': sum(r['summary']['get_document_calls'] == 0 and not r['correct_primary'] for r in rows),
+        'very_long_trajectory_gt_50_rounds': sum(r['summary']['tool_round_count'] > 50 and not r['correct_primary'] for r in rows),
+        'emergency_cap_reached': sum(r['status'] == 'emergency_cap_forced_answer' and not r['correct_primary'] for r in rows),
+        'explicit_insufficient_evidence': sum(insufficient_evidence_answer(r['model_final_answer']) and not r['correct_primary'] for r in rows),
     }
     (HERE / 'FAILURE_BREAKDOWN.md').write_text('# Failure breakdown\n\nMechanically identifiable, overlapping post-hoc labels:\n\n' + json.dumps(failure_labels, indent=2) + '\n\nCandidate fixation, premature answer, conflicting evidence, and other causal labels require separate qualitative review. These labels do not change accuracy.\n', encoding='utf-8')
 

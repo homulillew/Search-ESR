@@ -113,8 +113,9 @@ def main():
     save('MODEL_FREEZE.json', {
         'provider': 'DeepSeek', 'base_url': 'https://api.deepseek.com',
         'model': 'deepseek-flash', 'model_version_from_official_pricing_page': 'DeepSeek-V4.1-Flash',
-        'temperature': 0, 'thinking': False,
-        'thinking_extra_body': {'thinking': {'type': 'disabled'}},
+        'temperature': 0, 'thinking': True,
+        'temperature_effective': False,
+        'thinking_extra_body': {'thinking': {'type': 'enabled'}},
         'timeout_seconds': 900, 'sdk': 'openai', 'sdk_version': openai.__version__,
         'max_retries': 0, 'max_tool_rounds': 200, 'max_tool_calls_per_round': 8,
         'credential_source': '.env.deepseek:DEEPSEEK_API_KEY or process environment',
@@ -130,7 +131,7 @@ def main():
         'official_qwen_judge_sha256': digest(ROOT / 'BCPlus/upstream/scripts_evaluation/evaluate_run.py'),
         'official_openai_judge': 'BCPlus/upstream/scripts_evaluation/evaluate_with_openai.py',
         'official_openai_judge_sha256': digest(ROOT / 'BCPlus/upstream/scripts_evaluation/evaluate_with_openai.py'),
-        'selected_primary': 'conservative project deterministic score; official Qwen3-32B unavailable locally'})
+        'selected_primary': 'deterministic exact/entity comparison plus blinded investigator adjudication; no Qwen3-32B judge'})
     sources = ['native_agent.py', 'native_client.py', 'runner.py', 'evaluate.py',
                'test_preflight.py', 'freeze.py', 'BASELINE_AUDIT.md', 'EVALUATION_PROTOCOL.md',
                'BCPlus/scripts/search_bcplus.py']
