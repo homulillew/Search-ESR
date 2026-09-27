@@ -1,0 +1,548 @@
+{
+  "source_head": "343b5a3d2ff4e05ec04302be9eb35534b71b86a1",
+  "source_inputs": {
+    "experiments/claim_pipeline_root_cause/contract_rerun/review/REVIEWED.json": "e5ad6d7499e7841d939f739ac6a85784ffec5fda7a61b14319af2d21270311ce",
+    "experiments/claim_pipeline_root_cause/bank/historical_candidates.json": "740820b9d949e54df5d96598348074a6ed8ae0af900123a2697db829273c6460"
+  },
+  "selector": {
+    "file": "experiments/claim_pipeline_root_cause/harness.py",
+    "sha256": "a8cc256f3f786c6a8a5b703fa3888ac13d2365719c01e608c2fa3447eefa7977",
+    "function": "freeze_e2_candidates"
+  },
+  "bank_sha256": "8bed5220ff8d4b7e2a76ea68a73d9803a6aa634e6bdb04ab7c0838091780c1e3",
+  "counts": {
+    "D": {
+      "positive": 15,
+      "negative": 3
+    },
+    "H_diagnostic": {
+      "positive": 15,
+      "negative": 2
+    }
+  },
+  "pairs": [
+    {
+      "pair_id": "E2_03272dda1d5273b6d984ed41",
+      "pair_sha256": "3e9f6f13136b350837ba98a9ad1f916c5f1afd85ebbb44c73b6c88b71495fb8d",
+      "candidate_sha256": "d3c0bc175595b287c8cb19848ca809237f2054929d0e4206f7ca77ebdf390c41",
+      "Evidence_sha256": "84433c8e40e4ce6c3386b50b8008baa7d28e9f44668ae118338db141c3004458",
+      "qid": "922",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "attribution_modality"
+    },
+    {
+      "pair_id": "E2_09149c6df1f784327ee0b23d",
+      "pair_sha256": "a960ab919962635643663a85d4bf1dd768c8571cd327c33853a5d1205c2d4123",
+      "candidate_sha256": "5f47779d4d374d68097030f70c300ed15c22c3efc24b44959c27d1946589172b",
+      "Evidence_sha256": "fbb57eb56aafe627bd84d6637f9699fc0c92ab98e624c6f9af1a627c8fe9f813",
+      "qid": "637",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_0f2079ce13780c1ec06546dc",
+      "pair_sha256": "bc9f5ef54a9f3bc1c117ae048857d43f25ce741260a7f294ebc0e365714901d4",
+      "candidate_sha256": "d61b529754c80f491909aa626bece3ce7085175ba7dd42d91ee38d1ff49e1e96",
+      "Evidence_sha256": "84433c8e40e4ce6c3386b50b8008baa7d28e9f44668ae118338db141c3004458",
+      "qid": "922",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "attribution_modality"
+    },
+    {
+      "pair_id": "E2_1efc9a91ed835b4ad5328de2",
+      "pair_sha256": "4372ddc2a0c6bb75fe5da4e4c01e422b8bbf3c6a50f42278f57786423432e9be",
+      "candidate_sha256": "cf14260042497fd084d15de6a9d081810347545141bf12bf649d6b754ea9bec1",
+      "Evidence_sha256": "7b11ef6581183e766b3954354e1d92bad72c0fae3cc55515e5f90cedeb89ee59",
+      "qid": "546",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "conjunction_sequence"
+    },
+    {
+      "pair_id": "E2_202f72b76904b5f0181028bc",
+      "pair_sha256": "3d56b48597d50b267a5b33143d2acfbc2f3e0a0f3d710bfce06cf559aaa6cba0",
+      "candidate_sha256": "967d816591c5212c433be65b5745602bcb2e68d57580999dd71962c20ea05768",
+      "Evidence_sha256": "f1d4d89c5e2a97fb47ec10da0a2e185599cfd51c5a6315f7a6f145243f2870f8",
+      "qid": "435",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "temporal"
+    },
+    {
+      "pair_id": "E2_25d10df2f0c41c318eeed6d6",
+      "pair_sha256": "6b2c74e09111b9e9fa9b6fbc9d5b357f68c34b9cbeb14cd3d33fce5aa892ec9b",
+      "candidate_sha256": "6318bd6f099d19dc8969de4ada82d08d6376bc973f5a4bdbceafb240043289f0",
+      "Evidence_sha256": "fbb57eb56aafe627bd84d6637f9699fc0c92ab98e624c6f9af1a627c8fe9f813",
+      "qid": "637",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_2e3014187300c550b95fda68",
+      "pair_sha256": "275db4d203cc01c5feaa584c47e5b4006a803a9f05a07039b797917539c662a1",
+      "candidate_sha256": "ef1f32daa91c100197fd361a7fd29e997841202aa92cf2fddfd20389e9665236",
+      "Evidence_sha256": "fbb57eb56aafe627bd84d6637f9699fc0c92ab98e624c6f9af1a627c8fe9f813",
+      "qid": "637",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_2eeb6975f2eb6148e43e6250",
+      "pair_sha256": "da5bf7ffd0af8b1e6f9b4dbae71ec9017b5a6c0d265f4606b410e14a7cafdf0f",
+      "candidate_sha256": "10d3eee472c808f37e100a86a1c096539205d62bfdd743dd878ee2c715da5943",
+      "Evidence_sha256": "2e0402faec6baa02585edbc72634b1b31f511357a17a7c98e6fece607f6763e7",
+      "qid": "517",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "role"
+    },
+    {
+      "pair_id": "E2_34f73341d8c1c280401c3f7f",
+      "pair_sha256": "f80c1b0770d47b93033a9382329eeb0098f8e6fb2476f1887ec654cd40c5672a",
+      "candidate_sha256": "c3f06627ebe40a8b5913de3a2d1b25569d69b3b7c774da12dddbff1c85fdcee0",
+      "Evidence_sha256": "7a176d9c015e527c86deed83e3e6066fb3f90bd66201baf0362b8f72192c9450",
+      "qid": "435",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "temporal"
+    },
+    {
+      "pair_id": "E2_36b7f1e04b28d62c0e76b11c",
+      "pair_sha256": "923302c2f1d126b529721dde3f74924f686494d79784a4cdd6ee469eb4f85d68",
+      "candidate_sha256": "e9a19d09f4e170af54e667c8baf8576052c507d7f85cd739e94d0127b2ded7df",
+      "Evidence_sha256": "897147b9fb612f99b9587647d6af5fd4c2ec94a01a35b7ef7c12490b3c30de59",
+      "qid": "1094",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "cross_entity"
+    },
+    {
+      "pair_id": "E2_3a8c9527709078036935b725",
+      "pair_sha256": "2c511e66122a7b9b2d374ac4e2e732013bc688f4184971b5993e4a1f29c4f70c",
+      "candidate_sha256": "ec46515a0e81c3e0a53f8515627ea7197c7085362c0cf296d7e7e2d07689c85c",
+      "Evidence_sha256": "84433c8e40e4ce6c3386b50b8008baa7d28e9f44668ae118338db141c3004458",
+      "qid": "922",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "attribution_modality"
+    },
+    {
+      "pair_id": "E2_3b6136ffb45acb5dde89819b",
+      "pair_sha256": "e2ad6a07229c246d1a66b2679dbd2abde6d05908814cb225815516efa8ca67f8",
+      "candidate_sha256": "76b7f5d567bf40811cdc79258f48b713b73076124ba71d24779fcc3887ae14f2",
+      "Evidence_sha256": "84433c8e40e4ce6c3386b50b8008baa7d28e9f44668ae118338db141c3004458",
+      "qid": "922",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "attribution_modality"
+    },
+    {
+      "pair_id": "E2_3e952704c05a216352a9da06",
+      "pair_sha256": "d04c14f121de0483da8f51960273eb36a265b5459e0353f852e2e8a30339c577",
+      "candidate_sha256": "de4253e46112e9437c5e4aa8a1bfb497edb5e261dbbb41215b2fba9118d36151",
+      "Evidence_sha256": "84433c8e40e4ce6c3386b50b8008baa7d28e9f44668ae118338db141c3004458",
+      "qid": "922",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "attribution_modality"
+    },
+    {
+      "pair_id": "E2_3f347d007fd0efdb0dff1837",
+      "pair_sha256": "72e9e253a36a5994962b231697b714c26d14e60ebd21c48e4e674324e1885311",
+      "candidate_sha256": "b43a9dcc262c77ba7ed87733cc663f78bc109bb69c5d696baafa1c8c9e3db350",
+      "Evidence_sha256": "84433c8e40e4ce6c3386b50b8008baa7d28e9f44668ae118338db141c3004458",
+      "qid": "922",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "attribution_modality"
+    },
+    {
+      "pair_id": "E2_4d87de9fe739454ac01de0db",
+      "pair_sha256": "84d4fc32105ae44532c7ebd26fd766ffe4735abd60121945292cf4803df27697",
+      "candidate_sha256": "5c324d332cc562c270ef5481fe782050d56c87bda9e86f66ceae9327df9d6618",
+      "Evidence_sha256": "fbb57eb56aafe627bd84d6637f9699fc0c92ab98e624c6f9af1a627c8fe9f813",
+      "qid": "637",
+      "split": "D",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_33f27d75741158ec83d47f3a",
+      "pair_sha256": "a05891f0a854ac74ced9373e09a0582279d96dd5774639c0d454ed1d0786c21b",
+      "candidate_sha256": "5548752779520ab9ae8e8cee0f6a323a0685c6fc2e444bbac92dfffadcc614ac",
+      "Evidence_sha256": "7a176d9c015e527c86deed83e3e6066fb3f90bd66201baf0362b8f72192c9450",
+      "qid": "435",
+      "split": "D",
+      "label": {
+        "source_supported": false,
+        "semantic_strengthening": true,
+        "ambiguous_relation": true
+      },
+      "family_prestratum": "temporal"
+    },
+    {
+      "pair_id": "E2_7da9dd0481c347fbad316074",
+      "pair_sha256": "0b3e5936f2c9b8fe9ab3f0965c39acc8006997d1c383f0620e1d319bbec0c863",
+      "candidate_sha256": "30279acf0ca1739e57eead46c17f558634536212774c4f9f78e8b4d344985939",
+      "Evidence_sha256": "7a176d9c015e527c86deed83e3e6066fb3f90bd66201baf0362b8f72192c9450",
+      "qid": "435",
+      "split": "D",
+      "label": {
+        "source_supported": false,
+        "semantic_strengthening": true,
+        "ambiguous_relation": true
+      },
+      "family_prestratum": "temporal"
+    },
+    {
+      "pair_id": "E2_b50747a23a1e1241121dcbf6",
+      "pair_sha256": "b2e3586540f5cac4747024e57965acf3bf83cec22d5b5cfd4dfc32a8a8c51468",
+      "candidate_sha256": "96918b6845cbdf0f54ba39515a5d3375ac7698d82ba2621e22648bc13ae9e023",
+      "Evidence_sha256": "7a176d9c015e527c86deed83e3e6066fb3f90bd66201baf0362b8f72192c9450",
+      "qid": "435",
+      "split": "D",
+      "label": {
+        "source_supported": false,
+        "semantic_strengthening": true,
+        "ambiguous_relation": true
+      },
+      "family_prestratum": "temporal"
+    },
+    {
+      "pair_id": "E2_0310f74c7fe317ca395521e5",
+      "pair_sha256": "7b17bcdfd982879d53232d0a9f67501e6d39ae8fa1d435dd8fbaa30b1cada67a",
+      "candidate_sha256": "5b91af48585c72ecd1f450a3dea3367f72fc6bfba8c81dee057f6f49cd1c8efd",
+      "Evidence_sha256": "5f24bc2855656bc642b27de9d8daf9913d9fb8ab08dafb9bf73385d6592f2985",
+      "qid": "673",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "attribution_modality"
+    },
+    {
+      "pair_id": "E2_0a9eef0ced556c1afc232745",
+      "pair_sha256": "22f8fbc012ae4121165bf3f82b1e09b92ce8b6899d08f5882224b04e92e94f79",
+      "candidate_sha256": "b4cf05b787ffa1463f765f882b17e39a21e37e0f9e5e9b4413275cdd0c097ae4",
+      "Evidence_sha256": "cf0471086d96339b3994e6bd76db2956c4e7302b63ec19cc13f22254ce9d4f9c",
+      "qid": "186",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "role"
+    },
+    {
+      "pair_id": "E2_0ccffa661c9984aeae22b28d",
+      "pair_sha256": "37817838b6213860ae11aac1229cd31697322e304f66f8ad2710197e4b190d8f",
+      "candidate_sha256": "13614408b1f2d5920e07b30d38909c6bee1b2b7807b38161152eeb4796831675",
+      "Evidence_sha256": "4f2fc43e8ee660298a85e390e24a67481e9e781c7ee3f0219c47a4f490a3741c",
+      "qid": "261",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_0dd68602db566a3d0ecfbf0f",
+      "pair_sha256": "9b1313223fefb89f4e91251c5b46a5cf15f14dc85eb10298f53219e4222ece45",
+      "candidate_sha256": "a60a683bb6a6cf415e86a79c4a57226c7ea2798e625f1d8ec72817208b8978fc",
+      "Evidence_sha256": "3677db47ff0768684f2460afd2f3c9d8d2687a17e28b1c2abc340801f5c1da16",
+      "qid": "177",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_101d78f08f5d4b7d64cdc02c",
+      "pair_sha256": "3752b9f037f4b3a0ac6c7cd8540f7b5f6a54aa1cd3950977b94e837ce267b124",
+      "candidate_sha256": "1cf0862f172766f4cb29e4043febdb7abbbbeaa3747592d51878394bd808d84b",
+      "Evidence_sha256": "9ef5fca2558ce31c2e0cb3e2d7ac792a1098b676a0e0a2d650125fcd2586c358",
+      "qid": "177",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_120a02cc4c44715f5c626e19",
+      "pair_sha256": "6b356b0563d4cdd88b47abdb1a7f5d607693a1e46ed53be62462994a495bde51",
+      "candidate_sha256": "b7164942ea93b8eb974bd6c053213c727fe270e3bc774c8cb783ded1191f1c0e",
+      "Evidence_sha256": "05b970d810bf180003e0fb8b128e8fea420e4e049a527f753a2830816019fbab",
+      "qid": "633",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_14de8b587d55a0926ae720ae",
+      "pair_sha256": "44a9651da47f028cf05ee3934145a0d3abdfa85fa86cb52003e5cb5b2f0b4010",
+      "candidate_sha256": "2a3fcc22f2e339ababec3a3c1ac3d961afa98b0f11758ff87a2adaa9ce51827f",
+      "Evidence_sha256": "cf0471086d96339b3994e6bd76db2956c4e7302b63ec19cc13f22254ce9d4f9c",
+      "qid": "186",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "role"
+    },
+    {
+      "pair_id": "E2_1fb8df36cf4f1e9e0c4ac552",
+      "pair_sha256": "f4ae61d7413097a14aa4eaf2c5c1fb6d4402d9cb3dc099114de4e2146f08d939",
+      "candidate_sha256": "9baf8476fcd53207b06db1e35a96305685e84e2a1953b12a723c83ee219074ca",
+      "Evidence_sha256": "05b970d810bf180003e0fb8b128e8fea420e4e049a527f753a2830816019fbab",
+      "qid": "633",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_2192a5553cf12ac22afa3abb",
+      "pair_sha256": "383405c523cdc71ad80bd2730faac2aa492a2cc473f1a1a32068ee7eb366da4d",
+      "candidate_sha256": "9dcd6bf63e2731a9c634e99ea1b02f9e14564f4ba604350e1783f7c4481991a2",
+      "Evidence_sha256": "4f2fc43e8ee660298a85e390e24a67481e9e781c7ee3f0219c47a4f490a3741c",
+      "qid": "261",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_22368be828a02ccc28eb1fcf",
+      "pair_sha256": "9cf46bb41187dbbfa0bdff1deddc175194ad79157a15bc557ceecae0e54ee7b9",
+      "candidate_sha256": "4f3078848ecdceeddcc692b2377a4c455bbc9ab244440b6584ab4e131fcdbd9e",
+      "Evidence_sha256": "5f24bc2855656bc642b27de9d8daf9913d9fb8ab08dafb9bf73385d6592f2985",
+      "qid": "673",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "attribution_modality"
+    },
+    {
+      "pair_id": "E2_241bd758d19a77cff878a224",
+      "pair_sha256": "f996e6670f9a5686520789ba1ec627420d8229bfdf717e5fd10f413fd0a25b48",
+      "candidate_sha256": "4c179f0b2b56f47a6cf84ce6b8736f34b5c4ca94175d6d9761264ab08e748e72",
+      "Evidence_sha256": "cf0471086d96339b3994e6bd76db2956c4e7302b63ec19cc13f22254ce9d4f9c",
+      "qid": "186",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "role"
+    },
+    {
+      "pair_id": "E2_32be0a67c2290eff7cb28a05",
+      "pair_sha256": "537f5fffa29cd5f5eb35f078dfb1d68a6a943bfec98287d7241ed6ece8c3e20f",
+      "candidate_sha256": "a05581cae3f6dc624da81b9312119811d5bdf687f0cdc8487549fa12b3e957e7",
+      "Evidence_sha256": "cf0471086d96339b3994e6bd76db2956c4e7302b63ec19cc13f22254ce9d4f9c",
+      "qid": "186",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "role"
+    },
+    {
+      "pair_id": "E2_3b9a9acb10c2bf789409cbd1",
+      "pair_sha256": "bded18e0621cf0002aeb27b0819b52445e2e7c66e11f8530c9e4853c0e529f0f",
+      "candidate_sha256": "50ebcaf3ab88667ece4e2b7621786972f0e8aef518ec710eb636aaf55b9028ae",
+      "Evidence_sha256": "01f149c92e3bb8c047ea43db4c23f73a7a86973d5b958eca682e6774fa644421",
+      "qid": "673",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "attribution_modality"
+    },
+    {
+      "pair_id": "E2_3ee2ed23707d043a20ec84d0",
+      "pair_sha256": "e0a1c89b44c9267e7603224f2ca15e0fdb6c40d76ea319cb3276542a664745c2",
+      "candidate_sha256": "564946f869e37af91336e837d7f569e8ee09ea3c110142082912e8bc3e84f5b5",
+      "Evidence_sha256": "6bb717c4020c45a115cf4eb0dab3c9060453c5c6fc07fb00da5329a518d6c402",
+      "qid": "601",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "role"
+    },
+    {
+      "pair_id": "E2_3fe70c3ae06d7659fb7dbd99",
+      "pair_sha256": "b6b5959a6a793e7250631fe1d2f17fdb36b02147f5d90495a42d1361c7dae8c0",
+      "candidate_sha256": "b9e959578862bcc65513c205ebfcac9bd4f4daaecea143f71d105868cc0dd140",
+      "Evidence_sha256": "4f2fc43e8ee660298a85e390e24a67481e9e781c7ee3f0219c47a4f490a3741c",
+      "qid": "261",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": true,
+        "semantic_strengthening": false,
+        "ambiguous_relation": false
+      },
+      "family_prestratum": "qualifier_quantifier"
+    },
+    {
+      "pair_id": "E2_a70bcd07cc6335cbc50a0552",
+      "pair_sha256": "d86b8f1816749e3e20a78139a362a4ddec3eea595a799167fe7bb751bea3f9a3",
+      "candidate_sha256": "dc65816575a54010c1330101356acddd0488553ac7aa331db35c146a02a9ebeb",
+      "Evidence_sha256": "01f149c92e3bb8c047ea43db4c23f73a7a86973d5b958eca682e6774fa644421",
+      "qid": "673",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": false,
+        "semantic_strengthening": true,
+        "ambiguous_relation": true
+      },
+      "family_prestratum": "attribution_modality"
+    },
+    {
+      "pair_id": "E2_c22ee54659098f8110a7edbf",
+      "pair_sha256": "3b24fe15eee958eaeb748581d4632deaa75af554d13422fed3d9810d12028dec",
+      "candidate_sha256": "34ba253f3fdf606e997caabb5ac93a45a4a53ce5d8d8e47f55a328617898a6af",
+      "Evidence_sha256": "01f149c92e3bb8c047ea43db4c23f73a7a86973d5b958eca682e6774fa644421",
+      "qid": "673",
+      "split": "H_diagnostic",
+      "label": {
+        "source_supported": false,
+        "semantic_strengthening": true,
+        "ambiguous_relation": true
+      },
+      "family_prestratum": "attribution_modality"
+    }
+  ],
+  "distinct_inventories": 15,
+  "exact_call_count": 85,
+  "prompts": {
+    "g0_current_grounding": "76190fa99ceb2095f29fdf885adf3f2fb15262d7ba4d8a0c03fafe613b3ae937",
+    "g1_evidence_inventory": "99d205e3400a8561703aed1090bb069eda5277cb3ae189ff085b5fd448ee4805",
+    "g1_candidate_coverage": "f97dbece21335ed9357753fb7c5192c5b3e805d63fc2aefdfe5319a61d0130ed"
+  },
+  "schemas": {
+    "g0_current_grounding": "748548b64c21e8e60b0fe023aabdb1f8b0037927ba6750b2fba55a4c9ac62b92",
+    "g1_evidence_inventory": "f0ec438225c828504eac2f06b3ccc490f37f6fec9763e92dc4862cfb7cfa421f",
+    "g1_candidate_coverage": "748548b64c21e8e60b0fe023aabdb1f8b0037927ba6750b2fba55a4c9ac62b92"
+  },
+  "config_sha256": "5e1958d0068d3b76f0e6fdfdc5fca4f27fe676ae3573f969c82fe1e1ab1e7c7e",
+  "truth": "Frozen source-relative support/strengthening/ambiguity only; relevance is not truth.",
+  "H3": {
+    "pooled_relative_FAR_reduction_min": 0.5,
+    "G1_TPR_min": 0.85,
+    "paired_negative_delta": "<0",
+    "equal_weight_negative_qid_delta": "<0",
+    "H_diagnostic": "strict FAR reduction and TPR >= .85; paired and qid delta <0",
+    "zero_baseline_FAR": "H3_INCONCLUSIVE_NO_BASELINE_FALSE_ADMISSION",
+    "missingness": "H3_INCONCLUSIVE",
+    "severe_inventory_unreliability": "Report gate separately; final H3 not pass/inconclusive if verdicts uninterpretable"
+  },
+  "authorization": {
+    "source": "TASK.md sections 4,20,41",
+    "task_sha256": "3c6e4d40ba0c24120d0852e98679192a41cd82f8136b3134dbcf2148776c7a52",
+    "ceiling": 85,
+    "stages": [
+      "E2"
+    ],
+    "STOP_AFTER_E2": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "thinking": {
+    "type": "enabled"
+  },
+  "reasoning_effort": "high",
+  "max_tokens": 32768,
+  "response_format": {
+    "type": "json_object"
+  },
+  "stream": false,
+  "max_retries": 0,
+  "timeouts_seconds": {
+    "connect": 30,
+    "read": 900,
+    "write": 60,
+    "pool": 30
+  },
+  "total_timeout_seconds": 1200,
+  "user_id": "OMITTED, unchanged from historical calls",
+  "concurrency_cap": 50,
+  "account_budget_ceiling": 2400,
+  "stage_independent_requests": {
+    "E2": 50
+  },
+  "stage_call_ceiling": {
+    "E2": 85
+  },
+  "replicates": 1,
+  "new_retrieval_calls": 0,
+  "authorization": "E2 TASK section 4; new explicit user authorization, <=85 calls; STOP_AFTER_E2.",
+  "failure_policy": "Any transport/schema/ref/model/finish/parse/inventory contract failure halts unsent, completes inflight; zero retry/replacement/repair/resume.",
+  "credential_source": "DEEPSEEK_API_KEY environment; never archived",
+  "connection_pool_max": 70,
+  "maximum_active_concurrency": 50,
+  "concurrency_policy": "Fixed active cap 50, pool 70. Initial 35 G0 + 15 inventory. Coverage becomes ready only after its on-disk inventory freeze. Any failure sets dispatch cap to 0; no escalation needed for 85-call DAG."
+}
