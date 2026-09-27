@@ -1,0 +1,36 @@
+{
+  "provider": "deepseek",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "max_retries": 0,
+  "max_workers": 8,
+  "replicates": 2,
+  "max_tokens_policy": "omit",
+  "response_format": {
+    "type": "json_object"
+  },
+  "timeout_seconds": 240,
+  "timeout_semantics": "HTTP inactivity per connect/read/write/pool; not total wall timeout",
+  "halt_http_statuses": [
+    400,
+    401,
+    402,
+    403,
+    404,
+    422
+  ],
+  "credential_source": "DEEPSEEK_API_KEY environment or .env.deepseek; never archived",
+  "tool_calls": 0,
+  "horizon": 1,
+  "cache_metric": "sum prompt_cache_hit_tokens / sum prompt_tokens; report hit/miss and missing-usage counts, never assume missing usage means zero cost",
+  "resumption_policy": "No overwrite, retry, automatic resume or replacement. Incomplete attempts remain failures.",
+  "authorization_policy": "TASK33: each concrete paid batch requires new explicit user authorization after committed requests and hash freeze; no previous authorization reused.",
+  "planned_verifier_calls": 96,
+  "possible_conditional_auditor_calls": [
+    0,
+    96
+  ],
+  "phase_boundary": "E1V first. Then materialize only valid SUPPORTED auditor requests, commit/hash and request fresh exact-count authorization for E1A. E1 gate cannot pass before required audits finish."
+}

@@ -1,0 +1,39 @@
+{
+  "E1": {
+    "support_precision_min": 0.97,
+    "support_recall_min": 0.9,
+    "Euler_false_support_count_max": 0,
+    "book_only_false_support_count_max": 0,
+    "false_full_risk_count_max": 0,
+    "q637_clinical_recall_min": 0.9,
+    "Ding_marriage_recall_min": 1.0,
+    "schema_validity_min": 0.95
+  },
+  "E2_B1": {
+    "target_under_inheritance_max": 0.03,
+    "safe_package_min": 0.9,
+    "exact_target_set_min": 0.8,
+    "sibling_over_inheritance_max": 0.1,
+    "unitization_insufficient_max": 0.1,
+    "schema_validity_min": 0.95
+  },
+  "E3": {
+    "support_precision_min": 0.95,
+    "support_recall_min": 0.85,
+    "gold_minus_predicted_precision_max": 0.05,
+    "gold_minus_predicted_recall_max": 0.1,
+    "Euler_false_support_count_max": 0,
+    "false_full_risk_count_max": 0
+  },
+  "E4": {
+    "false_shrink_max": 0.03,
+    "false_FULLY_SUPPORTED_count_max": 0,
+    "residual_recall_min": 0.9,
+    "governing_relation_retention_min": 0.95,
+    "state_discrimination_min": 0.85,
+    "schema_validity_min": 0.95
+  },
+  "sequencing": "Every preceding gate must pass. Every paid batch additionally requires new explicit authorization. Stop after E4 even if all pass.",
+  "null_denominator": "not estimable and cannot pass a required metric",
+  "primary_scope": "all48 fixed certificates, both replicates; ambiguity exclusions descriptive only"
+}

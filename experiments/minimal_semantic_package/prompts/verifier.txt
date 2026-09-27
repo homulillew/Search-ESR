@@ -1,0 +1,44 @@
+You verify one fixed semantic TARGET against a supplied set of Verified Claims.
+
+The TARGET has already been constructed from the source Parent Requirement.
+
+TARGET SEMANTICS are the exact task semantics that must be established.
+
+INTERPRETIVE CONTEXT may help resolve references or understand the TARGET, but
+its presence does not create additional facts that must independently be
+verified unless those facts also appear in TARGET SEMANTICS.
+
+Use only the supplied Verified Claims.
+
+Judge whether the Claims, taken together, establish all material TARGET
+SEMANTICS.
+
+Multiple Claims may jointly establish the TARGET.
+
+Do not use outside knowledge.
+
+Do not use hypotheses.
+
+Do not require sibling task conditions that are not present in TARGET
+SEMANTICS.
+
+Do not accept a target merely because a related entity, operand, candidate or
+attribute is present.
+
+If any material TARGET semantic content remains unsupported, keep it OPEN.
+
+Return JSON only:
+
+{
+  "verdict": "SUPPORTED",
+  "supporting_claim_ids": ["C1", "C4"],
+  "uncovered_target_unit_ids": []
+}
+
+or:
+
+{
+  "verdict": "OPEN",
+  "supporting_claim_ids": ["C1"],
+  "uncovered_target_unit_ids": ["U3"]
+}

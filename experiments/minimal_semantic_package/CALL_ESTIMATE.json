@@ -1,0 +1,30 @@
+{
+  "first_paid_batch": "E1V",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "actual_verifier_requests": 96,
+  "certificates": 48,
+  "replicates": 2,
+  "message_characters": 188692,
+  "rough_input_token_range_by_characters": [
+    37738,
+    62897
+  ],
+  "estimate_limit": "Character heuristic only; output tokens and money not known. max_tokens omitted as in the inherited backend config.",
+  "auditor_requests_materialized": 0,
+  "conditional_auditor_range": [
+    0,
+    96
+  ],
+  "E1_total_possible_calls": [
+    96,
+    192
+  ],
+  "auditor_exact_count_rule": "One request per schema-valid SUPPORTED verifier response, using only its cited Claims. Count known after E1V, before E1A authorization.",
+  "current_authorized_calls": 0,
+  "current_actual_calls": 0,
+  "currency": null,
+  "later_stage_requests_materialized": 0,
+  "maximum_concurrency": 8,
+  "retries": 0
+}
