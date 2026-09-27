@@ -1,0 +1,664 @@
+{
+  "status": "POST_UNMASK_DIAGNOSTIC_PRIMARY_UNCHANGED",
+  "transitions": {
+    "A0": {
+      "unsupported -> partially_supported": 12,
+      "partially_supported -> fully_supported": 7,
+      "partially_supported -> unsupported": 5
+    },
+    "A1": {
+      "unsupported -> partially_supported": 10,
+      "partially_supported -> fully_supported": 3,
+      "partially_supported -> unsupported": 3
+    }
+  },
+  "node_status_errors": [
+    {
+      "id": "A1__G09__R2",
+      "case_id": "G09",
+      "state_id": "F09_S03",
+      "qid": "169",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R1",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "C1 contains no charity predicate; P promotes candidate mention into relational support."
+    },
+    {
+      "id": "A0__G14__R1",
+      "case_id": "G14",
+      "state_id": "F11_S01",
+      "qid": "538",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R5",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "C1 gives a plausible L.E. candidate biography, not the material book-references-figure relation."
+    },
+    {
+      "id": "A0__G08__R1",
+      "case_id": "G08",
+      "state_id": "F09_S01",
+      "qid": "169",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R1",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "Artist identity alone is not substantive evidence for the charity/name relation."
+    },
+    {
+      "id": "A0__G14__R2",
+      "case_id": "G14",
+      "state_id": "F11_S01",
+      "qid": "538",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R5",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "C1 gives a plausible L.E. candidate biography, not the material book-references-figure relation."
+    },
+    {
+      "id": "A1__G02__R1",
+      "case_id": "G02",
+      "state_id": "F07_S01",
+      "qid": "261",
+      "arm": "A1",
+      "replicate": 1,
+      "requirement_id": "R3",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "The professor-to-target-writer role binding is missing; a related Harran profile alone is not P."
+    },
+    {
+      "id": "A0__G21__R2",
+      "case_id": "G21",
+      "state_id": "F14_S06",
+      "qid": "843",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R2",
+      "gold": "partially_supported",
+      "predicted": "fully_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "C1 never states the American-university condition. F requires importing an unprovided geography fact; visible output cannot distinguish memory from question-premise promotion."
+    },
+    {
+      "id": "A0__G17__R2",
+      "case_id": "G17",
+      "state_id": "F13_S01",
+      "qid": "637",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R2",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1",
+        "C2"
+      ],
+      "blind_reason": "The cited general syndrome Claims do not establish this predicate for the requested clinical records; the patient/report binding is missing."
+    },
+    {
+      "id": "A0__G17__R2",
+      "case_id": "G17",
+      "state_id": "F13_S01",
+      "qid": "637",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R4",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1",
+        "C2"
+      ],
+      "blind_reason": "The cited general syndrome Claims do not establish this predicate for the requested clinical records; the patient/report binding is missing."
+    },
+    {
+      "id": "A0__G17__R2",
+      "case_id": "G17",
+      "state_id": "F13_S01",
+      "qid": "637",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R5",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C2"
+      ],
+      "blind_reason": "The cited general syndrome Claims do not establish this predicate for the requested clinical records; the patient/report binding is missing."
+    },
+    {
+      "id": "A0__G17__R2",
+      "case_id": "G17",
+      "state_id": "F13_S01",
+      "qid": "637",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R6",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C2"
+      ],
+      "blind_reason": "The cited general syndrome Claims do not establish this predicate for the requested clinical records; the patient/report binding is missing."
+    },
+    {
+      "id": "A0__G17__R2",
+      "case_id": "G17",
+      "state_id": "F13_S01",
+      "qid": "637",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R7",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1",
+        "C2"
+      ],
+      "blind_reason": "The cited general syndrome Claims do not establish this predicate for the requested clinical records; the patient/report binding is missing."
+    },
+    {
+      "id": "A1__G14__R2",
+      "case_id": "G14",
+      "state_id": "F11_S01",
+      "qid": "538",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R4",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "Matching a possible L.E. biography does not establish that the target book references this figure. The required source-to-person binding is absent."
+    },
+    {
+      "id": "A0__G02__R2",
+      "case_id": "G02",
+      "state_id": "F07_S01",
+      "qid": "261",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R4",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "C1 does not establish that this professor wrote the target paper. Candidate affiliation alone cannot supply P for that bound writer relation."
+    },
+    {
+      "id": "A1__G14__R1",
+      "case_id": "G14",
+      "state_id": "F11_S01",
+      "qid": "538",
+      "arm": "A1",
+      "replicate": 1,
+      "requirement_id": "R4",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "Matching a possible L.E. biography does not establish that the target book references this figure. The required source-to-person binding is absent."
+    },
+    {
+      "id": "A0__G03__R1",
+      "case_id": "G03",
+      "state_id": "F07_S03",
+      "qid": "261",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R5",
+      "gold": "partially_supported",
+      "predicted": "unsupported",
+      "supported_by": [],
+      "blind_reason": "Some substantive table/content predicates are supported by C4; the unestablished six-table total should leave P under this reading, rather than erase that support."
+    },
+    {
+      "id": "A1__G18__R1",
+      "case_id": "G18",
+      "state_id": "F13_S06",
+      "qid": "637",
+      "arm": "A1",
+      "replicate": 1,
+      "requirement_id": "R4",
+      "gold": "partially_supported",
+      "predicted": "fully_supported",
+      "supported_by": [
+        "C9"
+      ],
+      "blind_reason": "The exact onset interval is unsupported; C9 warrants P, not F."
+    },
+    {
+      "id": "A1__G03__R2",
+      "case_id": "G03",
+      "state_id": "F07_S03",
+      "qid": "261",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R4",
+      "gold": "partially_supported",
+      "predicted": "unsupported",
+      "supported_by": [],
+      "blind_reason": "The paper-specific tables/content in C4 provide substantive partial support despite the five/six count mismatch. U discards that part. This P/U boundary is semantically ambiguous and not equivalent to a false-full error."
+    },
+    {
+      "id": "A1__G03__R1",
+      "case_id": "G03",
+      "state_id": "F07_S03",
+      "qid": "261",
+      "arm": "A1",
+      "replicate": 1,
+      "requirement_id": "R4",
+      "gold": "partially_supported",
+      "predicted": "unsupported",
+      "supported_by": [],
+      "blind_reason": "The paper-specific tables/content in C4 provide substantive partial support despite the five/six count mismatch. U discards that part. This P/U boundary is semantically ambiguous and not equivalent to a false-full error."
+    },
+    {
+      "id": "A1__G08__R2",
+      "case_id": "G08",
+      "state_id": "F09_S01",
+      "qid": "169",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R1",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "An artist mention alone does not establish any substantive charity predicate."
+    },
+    {
+      "id": "A0__G03__R2",
+      "case_id": "G03",
+      "state_id": "F07_S03",
+      "qid": "261",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R5",
+      "gold": "partially_supported",
+      "predicted": "unsupported",
+      "supported_by": [],
+      "blind_reason": "Some substantive table/content predicates are supported by C4; the unestablished six-table total should leave P under this reading, rather than erase that support."
+    },
+    {
+      "id": "A1__G24__R2",
+      "case_id": "G24",
+      "state_id": "F15_S02",
+      "qid": "1259",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R4",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C2"
+      ],
+      "blind_reason": "Known teammate identities are not substantive support for their same-country relation."
+    },
+    {
+      "id": "A0__G18__R2",
+      "case_id": "G18",
+      "state_id": "F13_S06",
+      "qid": "637",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R3",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C7"
+      ],
+      "blind_reason": "Patient nationality is a different relation from report country; C7 does not materially establish this country-history node."
+    },
+    {
+      "id": "A0__G18__R2",
+      "case_id": "G18",
+      "state_id": "F13_S06",
+      "qid": "637",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R6",
+      "gold": "partially_supported",
+      "predicted": "fully_supported",
+      "supported_by": [
+        "C9"
+      ],
+      "blind_reason": "C9 does not establish the exact four-year-later onset."
+    },
+    {
+      "id": "A0__G18__R1",
+      "case_id": "G18",
+      "state_id": "F13_S06",
+      "qid": "637",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R6",
+      "gold": "partially_supported",
+      "predicted": "fully_supported",
+      "supported_by": [
+        "C9"
+      ],
+      "blind_reason": "The four-year course is weaker than the required onset timing. C9 warrants P, not F."
+    },
+    {
+      "id": "A0__G17__R1",
+      "case_id": "G17",
+      "state_id": "F13_S01",
+      "qid": "637",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R7",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1",
+        "C2"
+      ],
+      "blind_reason": "A generic disease name is not the scientific diagnosis shared by the two target cases."
+    },
+    {
+      "id": "A1__G17__R2",
+      "case_id": "G17",
+      "state_id": "F13_S01",
+      "qid": "637",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R2",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1",
+        "C2"
+      ],
+      "blind_reason": "Generic syndrome descriptions do not establish a diagnosis shared by two particular individuals."
+    },
+    {
+      "id": "A1__G17__R2",
+      "case_id": "G17",
+      "state_id": "F13_S01",
+      "qid": "637",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R3",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1",
+        "C2"
+      ],
+      "blind_reason": "General symptom progression is not evidence about the first reported patient’s six-month course or country."
+    },
+    {
+      "id": "A1__G17__R2",
+      "case_id": "G17",
+      "state_id": "F13_S01",
+      "qid": "637",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R4",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1",
+        "C2"
+      ],
+      "blind_reason": "Generic symptoms do not establish the second patient’s biopsy or childhood trajectory."
+    },
+    {
+      "id": "A1__G17__R2",
+      "case_id": "G17",
+      "state_id": "F13_S01",
+      "qid": "637",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R5",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1",
+        "C2"
+      ],
+      "blind_reason": "A disease name in background Claims is not the scientific diagnosis shared by the two requested reports."
+    },
+    {
+      "id": "A0__G27__R1",
+      "case_id": "G27",
+      "state_id": "F16_S02",
+      "qid": "922",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R1",
+      "gold": "partially_supported",
+      "predicted": "fully_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "C1 dates the covering memorandum, not the enclosed letter. F moves a date across document roles."
+    },
+    {
+      "id": "A0__G27__R1",
+      "case_id": "G27",
+      "state_id": "F16_S02",
+      "qid": "922",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R2",
+      "gold": "partially_supported",
+      "predicted": "unsupported",
+      "supported_by": [],
+      "blind_reason": "C1/C2 already establish official delivery/transmission. Missing nickname leaves P rather than U."
+    },
+    {
+      "id": "A0__G09__R1",
+      "case_id": "G09",
+      "state_id": "F09_S03",
+      "qid": "169",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R1",
+      "gold": "unsupported",
+      "predicted": "partially_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "C1 mentions the artist but establishes no charity relation. Mere candidate mention cannot be P."
+    },
+    {
+      "id": "A1__G21__R2",
+      "case_id": "G21",
+      "state_id": "F14_S06",
+      "qid": "843",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R2",
+      "gold": "partially_supported",
+      "predicted": "fully_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "C1 does not state that Georgetown is American. F requires an unprovided geographic condition. Output alone cannot distinguish recalled world knowledge from importing the question premise."
+    },
+    {
+      "id": "A1__G18__R2",
+      "case_id": "G18",
+      "state_id": "F13_S06",
+      "qid": "637",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R1",
+      "gold": "partially_supported",
+      "predicted": "unsupported",
+      "supported_by": [],
+      "blind_reason": "Two cases are substantively present in C7/C9. Missing dates justify P, not U."
+    },
+    {
+      "id": "A1__G18__R2",
+      "case_id": "G18",
+      "state_id": "F13_S06",
+      "qid": "637",
+      "arm": "A1",
+      "replicate": 2,
+      "requirement_id": "R4",
+      "gold": "partially_supported",
+      "predicted": "fully_supported",
+      "supported_by": [
+        "C9"
+      ],
+      "blind_reason": "C9 supports a four-year course, not the required four-year-later onset. The citation is insufficient for F."
+    },
+    {
+      "id": "A0__G26__R1",
+      "case_id": "G26",
+      "state_id": "F16_S01",
+      "qid": "922",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R1",
+      "gold": "partially_supported",
+      "predicted": "fully_supported",
+      "supported_by": [
+        "C1",
+        "C2"
+      ],
+      "blind_reason": "Neither C1 nor C2 dates authorship of the letter; F transfers the covering memorandum date to another document."
+    },
+    {
+      "id": "A0__G26__R1",
+      "case_id": "G26",
+      "state_id": "F16_S01",
+      "qid": "922",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R2",
+      "gold": "partially_supported",
+      "predicted": "unsupported",
+      "supported_by": [],
+      "blind_reason": "C1/C2 explicitly supply official transmission/handoff. U discards that substantive partial support."
+    },
+    {
+      "id": "A0__G26__R2",
+      "case_id": "G26",
+      "state_id": "F16_S01",
+      "qid": "922",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R1",
+      "gold": "partially_supported",
+      "predicted": "fully_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "Neither C1 nor C2 dates authorship of the letter; F transfers the covering memorandum date to another document."
+    },
+    {
+      "id": "A0__G26__R2",
+      "case_id": "G26",
+      "state_id": "F16_S01",
+      "qid": "922",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R2",
+      "gold": "partially_supported",
+      "predicted": "unsupported",
+      "supported_by": [],
+      "blind_reason": "C1/C2 explicitly supply official transmission/handoff. U discards that substantive partial support."
+    },
+    {
+      "id": "A0__G27__R2",
+      "case_id": "G27",
+      "state_id": "F16_S02",
+      "qid": "922",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R1",
+      "gold": "partially_supported",
+      "predicted": "fully_supported",
+      "supported_by": [
+        "C1"
+      ],
+      "blind_reason": "The writing period is not established by the covering memorandum date; C1 cannot fully prove this node."
+    }
+  ],
+  "citation_contribution_disagreements": [
+    {
+      "id": "A0__G24__R2",
+      "case_id": "G24",
+      "state_id": "F15_S02",
+      "qid": "1259",
+      "arm": "A0",
+      "replicate": 2,
+      "requirement_id": "R6",
+      "extra_by_frozen_reference": [
+        "C2"
+      ],
+      "blind_reason": "C2 binds the explicit winning-year condition and C3 supplies its host university. Both citations contribute to the node as phrased, although C3 is sufficient with current context."
+    },
+    {
+      "id": "A1__G20__R1",
+      "case_id": "G20",
+      "state_id": "F14_S01",
+      "qid": "843",
+      "arm": "A1",
+      "replicate": 1,
+      "requirement_id": "R2",
+      "extra_by_frozen_reference": [
+        "C2"
+      ],
+      "blind_reason": "C1 establishes thesis topic/game/year; C2 also expressly repeats2023 master’s thesis, Georgetown and EU4, so both are substantive citations for P. Neither establishes university country."
+    },
+    {
+      "id": "A0__G24__R1",
+      "case_id": "G24",
+      "state_id": "F15_S02",
+      "qid": "1259",
+      "arm": "A0",
+      "replicate": 1,
+      "requirement_id": "R6",
+      "extra_by_frozen_reference": [
+        "C2"
+      ],
+      "blind_reason": "C2 binds the explicit winning-year condition and C3 supplies its host university. Both citations contribute to the node as phrased, although C3 is sufficient with current context."
+    },
+    {
+      "id": "A1__G24__R1",
+      "case_id": "G24",
+      "state_id": "F15_S02",
+      "qid": "1259",
+      "arm": "A1",
+      "replicate": 1,
+      "requirement_id": "R6",
+      "extra_by_frozen_reference": [
+        "C2"
+      ],
+      "blind_reason": "C3 names the host for the bound edition. C2 additionally establishes the explicit winning-year relationship in this node; C2+C3 or contextual C3 alone is acceptable."
+    }
+  ]
+}

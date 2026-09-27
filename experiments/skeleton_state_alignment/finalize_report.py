@@ -1,4 +1,58 @@
-# Skeleton–Claims Alignment：最终结论
+"""Post-unmask reporting only. Never changes frozen inputs, labels or metrics."""
+from collections import Counter
+from .common import *
+
+def update_unfrozen(path,value,archive=None):
+    assert rel(path) not in read(P/'FREEZE.json')['files']
+    if archive is not None and path.exists():write(archive,read(path))
+    path.write_text(value if isinstance(value,str) else json.dumps(value,ensure_ascii=False,indent=2)+'\n')
+
+def main():
+    metrics=read(P/'e1_alignment/METRICS.json');assert not metrics['joint_gate_pass']
+    assert not metrics['arms']['A0']['gate']['pass'] and metrics['arms']['A1']['gate']['pass']
+    assert not (P/'e2_selection/calls').exists() and not (P/'e2_selection/EXECUTION_SCHEDULE.json').exists()
+    account=read(P/'e1_alignment/ACCOUNTING.json');audit=read(P/'analysis/e1_alignment_INTEGRITY.json')
+    errors=read(P/'analysis/ERROR_LEDGER.json');seal=read(P/'e1_alignment/review/REVIEW_SEAL.json')
+    write(P/'e2_selection/OUTCOME.json',{'status':'NOT_RUN_E1_A0_GATE_FAILED','conditional_planned_slots':108,'activated_slots':0,'sent':0,
+      'prerequisite':'A0 PASS AND A1 PASS','observed_A0':'FAIL','observed_A1':'PASS','reason':'A0 support_precision, full_support_sufficiency and exact_state_mask fail frozen thresholds.',
+      'selection_metrics':None,'no_new_api_calls':True,'no_replica_substitution_or_gate_relaxation':True})
+    write(P/'e2_selection/REPORT.md','''# E2 — Not run
+
+E1 A0 FAIL / A1 PASS does not satisfy the frozen conjunctive entry gate.
+The108 conditional slots were not activated: zero sends, zero observations,
+no S1 materialization and no selection metrics. This is not108 failed selector
+responses. No requirement selection, Gap, Search/Find/Open, Writer or rollout ran.
+
+The pre-call STATUS.json/SCHEDULE.json remain immutable preparation snapshots.
+OUTCOME.json records the actual final stage status. No natural positive STOP
+controls in the frozen bank; neither false nor missed STOP was evaluated here.
+''')
+    write(P/'STATUS.json',{'status':'COMPLETE_STOPPED_AT_E1_GATE','E1':'A0_FAIL_A1_PASS','E2':'NOT_RUN_E1_A0_GATE_FAILED',
+      'paid_calls_authorized_maximum':216,'paid_calls_sent':108,'conditional_calls_not_activated':108,
+      'current_report':'analysis/FINAL_CONCLUSION.md','preparation_snapshots':'README.md, e2_selection/STATUS.json, PRE_EXECUTION_AUDIT.md and FREEZE.json are preserved as frozen pre-call records.'})
+    update_unfrozen(P/'analysis/EXECUTION_ACCOUNTING.json',{'status':'COMPLETE_STOPPED_AT_E1_GATE','E1':account,
+      'E2':{'conditional_planned':108,'activated':0,'sent':0,'returned':0,'model_metrics':None,'cache_weighted_rate':None,'latency_seconds':None,'peak_concurrency':0,'reason':'E1 A0 gate failed'},
+      'actual_calls':108,'actual_total_tokens':account['reported_partial_totals']['total'],'weighted_cache_hit_rate':account['cache_weighted_rate'],
+      'reasoning_is_subset_of_completion':True,'currency_cost':None,'price_verified':False},P/'analysis/PREPARED_EXECUTION_ACCOUNTING.json')
+    citation_extra={a:sum(len(r['extra_by_frozen_reference']) for r in errors['citation_contribution_disagreements'] if r['arm']==a) for a in ('A0','A1')}
+    contribution_sensitivity={a:{'primary':metrics['arms'][a]['metrics']['support_precision'],
+      'blind_judged_additional_contributions':citation_extra[a],
+      'descriptive_precision_if_accepted':(metrics['arms'][a]['metrics']['support_precision']['numerator']+citation_extra[a])/metrics['arms'][a]['metrics']['support_precision']['denominator']} for a in ('A0','A1')}
+    write(P/'analysis/REFERENCE_DISAGREEMENT.json',{'scope':'Post-unmask citation-reference audit, not preregistered gate modification',
+      'blind_judgment_commit':seal['judgment_commit'],'status_disagreements':audit['blind_reference_status_disagreements'],
+      'citation_contribution_disagreements':errors['citation_contribution_disagreements'],'descriptive_sensitivity':contribution_sensitivity,
+      'primary_references_and_metrics_unchanged':True,'joint_gate_decision_unchanged':True,
+      'interpretation':'The frozen contributing-Claim lists may be under-inclusive: C2 explicitly contributes the winning-year relation in host nodes (three responses) and actual thesis/game/year content in one thesis node. Even accepting all four leaves A0 below90% support precision; full-support and exact-mask failures are unaffected.'})
+    ms={a:v['metrics'] for a,v in metrics['arms'].items()}
+    def fmt(a,k):
+        v=ms[a][k];return f"{v['numerator']}/{v['denominator']} ({v['value']:.2%})"
+    table='| 指标 | A0 Oracle | A1 Runtime D2 |\n|---|---:|---:|\n'
+    for k,label in [('node_status_accuracy','Node Status Accuracy'),('false_supported_rate','False-Supported Rate'),
+       ('residual_recall','Residual Recall'),('residual_precision','Residual Precision'),('support_precision','Support Precision'),
+       ('full_support_sufficiency','Full-Support Sufficiency'),('partial_support_validity','Partial-Support Validity'),
+       ('exact_state_mask','Exact State Mask'),('both_replicates_exact','两次均 Exact 的状态'),('schema_validity','Schema Validity')]:
+        table+=f'| {label} | {fmt("A0",k)} | {fmt("A1",k)} |\n'
+    final='''# Skeleton–Claims Alignment：最终结论
 
 ## 结论与执行边界
 
@@ -13,19 +67,7 @@ supported 节点都被识别，空 Claims 也没有直接被问题前提填满�
 
 ## Primary metrics（全部 planned slots 留在分母）
 
-| 指标 | A0 Oracle | A1 Runtime D2 |
-|---|---:|---:|
-| Node Status Accuracy | 298/322 (92.55%) | 248/264 (93.94%) |
-| False-Supported Rate | 7/278 (2.52%) | 3/228 (1.32%) |
-| Residual Recall | 271/278 (97.48%) | 225/228 (98.68%) |
-| Residual Precision | 271/271 (100.00%) | 225/225 (100.00%) |
-| Support Precision | 129/149 (86.58%) | 120/137 (87.59%) |
-| Full-Support Sufficiency | 44/51 (86.27%) | 36/39 (92.31%) |
-| Partial-Support Validity | 48/60 (80.00%) | 48/58 (82.76%) |
-| Exact State Mask | 38/54 (70.37%) | 42/54 (77.78%) |
-| 两次均 Exact 的状态 | 17/27 (62.96%) | 18/27 (66.67%) |
-| Schema Validity | 54/54 (100.00%) | 54/54 (100.00%) |
-
+'''+table+'''
 A0 未通过三项：Support Precision 86.58% <90%；Full-Support Sufficiency
 86.27% <90%；Exact State Mask 70.37% <80%。其余 A0 门槛通过。
 A1 达到自身较低的绝对门槛及相对损失门槛，但不能替代 A0 的进入条件。
@@ -181,3 +223,40 @@ E2条件预算108次未激活，实际调用为0；不是108个失败 selector �
 Q/Skeleton 保持 episode-stable，Claims 是持久证据；Mask、Residual、ActiveID
 仍应是根据当前 Claims 重算的临时计算。最终目标是正确对齐与可靠控制，
 不是在没有资格证据时持续推动后续阶段。
+'''
+    update_unfrozen(P/'analysis/FINAL_CONCLUSION.md',final)
+    write(P/'RESULTS.md','''# Completed: E1 A0 FAIL / A1 PASS
+
+E2 was not run because its frozen A0 AND A1 entry gate failed.108 real requests,
+all returned, no retries or mechanical failures. Weighted cache hit rate73.49%.
+
+| Metric | A0 | A1 |
+|---|---:|---:|
+| Node accuracy | 92.55% | 93.94% |
+| Exact state mask | 70.37% | 77.78% |
+| Support precision | 86.58% | 87.59% |
+| Full-support sufficiency | 86.27% | 92.31% |
+| Residual recall | 97.48% | 98.68% |
+
+See [final conclusion and20 answers](analysis/FINAL_CONCLUSION.md),
+[E1 gates](e1_alignment/REPORT.md), [E2 stopped outcome](e2_selection/REPORT.md),
+[error ledger](analysis/ERROR_LEDGER.json), and [actual accounting](analysis/EXECUTION_ACCOUNTING.json).
+
+README.md and e2_selection/STATUS.json are immutable pre-call preparation
+snapshots covered by FREEZE.json. STATUS.json and this file record current status.
+No frozen reference, prompt, schedule, scorer or historical experiment was edited.
+''')
+    paths=[p for p in (P/'e1_alignment').rglob('*') if p.is_file() and '__pycache__' not in p.parts]
+    write(P/'analysis/EXECUTED_FILES.json',{'stage':'e1_alignment','files':{rel(p):sha(p) for p in sorted(paths)},
+      'review_commit':seal['judgment_commit'],'freeze_sha256':sha(P/'FREEZE.json')})
+    update_unfrozen(P/'analysis/INTEGRITY.json',{'status':'COMPLETE_PASS','source_head':read(P/'FREEZE.json')['source_head'],
+      'run_head':read(P/'e1_alignment/RUN.json')['head'],'review_commit':seal['judgment_commit'],
+      'manifest_sha256':sha(P/'FREEZE.json'),'frozen_files_unchanged':True,'historical_files_unchanged':18598,
+      'raw_requests_responses_metrics_accounting_replayed':True,'first_pass_before_unmask':True,
+      'provider_reasoning_read_for_review':False,'actual_model_calls':108,'E2_calls':0,'zero_retries':True,
+      'primary_gate':'A0_FAIL_A1_PASS_JOINT_FAIL','primary_references_unchanged':True,
+      'single_familiar_reviewer':True,'status_disagreements':0,'citation_contribution_disagreements':4,
+      'detail':'e1_alignment_INTEGRITY.json','executed_files_manifest':'EXECUTED_FILES.json'},P/'analysis/PREPARED_INTEGRITY.json')
+    print('Final report written; E2 not activated; all frozen model/scoring inputs untouched.')
+
+if __name__=='__main__':main()

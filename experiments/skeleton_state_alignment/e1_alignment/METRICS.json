@@ -1,0 +1,4541 @@
+{
+  "stage": "e1_alignment",
+  "planned_slots": 108,
+  "arms": {
+    "A0": {
+      "metrics": {
+        "node_status_accuracy": {
+          "numerator": 298,
+          "denominator": 322,
+          "value": 0.9254658385093167
+        },
+        "fully_supported_precision": {
+          "numerator": 44,
+          "denominator": 51,
+          "value": 0.8627450980392157
+        },
+        "false_supported_rate": {
+          "numerator": 7,
+          "denominator": 278,
+          "value": 0.025179856115107913
+        },
+        "false_unresolved_rate": {
+          "numerator": 0,
+          "denominator": 44,
+          "value": 0.0
+        },
+        "residual_recall": {
+          "numerator": 271,
+          "denominator": 278,
+          "value": 0.9748201438848921
+        },
+        "residual_precision": {
+          "numerator": 271,
+          "denominator": 271,
+          "value": 1.0
+        },
+        "support_precision": {
+          "numerator": 129,
+          "denominator": 149,
+          "value": 0.8657718120805369
+        },
+        "full_support_sufficiency": {
+          "numerator": 44,
+          "denominator": 51,
+          "value": 0.8627450980392157
+        },
+        "partial_support_validity": {
+          "numerator": 48,
+          "denominator": 60,
+          "value": 0.8
+        },
+        "exact_state_mask": {
+          "numerator": 38,
+          "denominator": 54,
+          "value": 0.7037037037037037
+        },
+        "schema_validity": {
+          "numerator": 54,
+          "denominator": 54,
+          "value": 1.0
+        },
+        "residual_f1": {
+          "value": 0.9872495446265938
+        },
+        "macro_state_node_accuracy": {
+          "value": 0.926278659611993
+        },
+        "both_replicates_exact": {
+          "numerator": 17,
+          "denominator": 27,
+          "value": 0.6296296296296297
+        },
+        "counts": {
+          "states": 54,
+          "schema_valid": 54,
+          "nodes": 322,
+          "status_correct": 298,
+          "gold_residual": 278,
+          "pred_residual": 271,
+          "residual_tp": 271,
+          "exact_mask": 38,
+          "cited": 149,
+          "pred_partial": 60,
+          "gold_full": 44,
+          "pred_full": 51,
+          "true_full": 44,
+          "contributing_cited": 129,
+          "full_sufficient": 44,
+          "partial_valid": 48,
+          "false_supported": 7
+        }
+      },
+      "strata": {
+        "qid": {
+          "122": {
+            "node_status_accuracy": {
+              "numerator": 10,
+              "denominator": 10,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 10,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 10,
+              "denominator": 10,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 10,
+              "denominator": 10,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "exact_state_mask": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 2,
+              "schema_valid": 2,
+              "nodes": 10,
+              "status_correct": 10,
+              "gold_residual": 10,
+              "pred_residual": 10,
+              "residual_tp": 10,
+              "exact_mask": 2
+            }
+          },
+          "1259": {
+            "node_status_accuracy": {
+              "numerator": 36,
+              "denominator": 36,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 14,
+              "denominator": 14,
+              "value": 1.0
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 22,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 14,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 22,
+              "denominator": 22,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 22,
+              "denominator": 22,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 22,
+              "denominator": 24,
+              "value": 0.9166666666666666
+            },
+            "full_support_sufficiency": {
+              "numerator": 14,
+              "denominator": 14,
+              "value": 1.0
+            },
+            "partial_support_validity": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 36,
+              "status_correct": 36,
+              "gold_residual": 22,
+              "gold_full": 14,
+              "pred_residual": 22,
+              "residual_tp": 22,
+              "pred_full": 14,
+              "true_full": 14,
+              "cited": 24,
+              "contributing_cited": 22,
+              "full_sufficient": 14,
+              "pred_partial": 4,
+              "partial_valid": 4,
+              "exact_mask": 6
+            }
+          },
+          "169": {
+            "node_status_accuracy": {
+              "numerator": 34,
+              "denominator": 36,
+              "value": 0.9444444444444444
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 36,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 36,
+              "denominator": 36,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 36,
+              "denominator": 36,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 12,
+              "denominator": 15,
+              "value": 0.8
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "exact_state_mask": {
+              "numerator": 4,
+              "denominator": 6,
+              "value": 0.6666666666666666
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9444444444444445
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333333333333333
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 36,
+              "status_correct": 34,
+              "gold_residual": 36,
+              "pred_residual": 36,
+              "residual_tp": 36,
+              "cited": 15,
+              "contributing_cited": 12,
+              "pred_partial": 12,
+              "partial_valid": 10,
+              "exact_mask": 4
+            }
+          },
+          "228": {
+            "node_status_accuracy": {
+              "numerator": 36,
+              "denominator": 36,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 34,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 34,
+              "denominator": 34,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 34,
+              "denominator": 34,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 14,
+              "denominator": 14,
+              "value": 1.0
+            },
+            "full_support_sufficiency": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "partial_support_validity": {
+              "numerator": 8,
+              "denominator": 8,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 36,
+              "status_correct": 36,
+              "gold_residual": 34,
+              "gold_full": 2,
+              "pred_residual": 34,
+              "residual_tp": 34,
+              "pred_full": 2,
+              "true_full": 2,
+              "cited": 14,
+              "contributing_cited": 14,
+              "full_sufficient": 2,
+              "pred_partial": 8,
+              "partial_valid": 8,
+              "exact_mask": 6
+            }
+          },
+          "261": {
+            "node_status_accuracy": {
+              "numerator": 39,
+              "denominator": 42,
+              "value": 0.9285714285714286
+            },
+            "fully_supported_precision": {
+              "numerator": 8,
+              "denominator": 8,
+              "value": 1.0
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 34,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 8,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 34,
+              "denominator": 34,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 34,
+              "denominator": 34,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 12,
+              "denominator": 13,
+              "value": 0.9230769230769231
+            },
+            "full_support_sufficiency": {
+              "numerator": 8,
+              "denominator": 8,
+              "value": 1.0
+            },
+            "partial_support_validity": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6666666666666666
+            },
+            "exact_state_mask": {
+              "numerator": 3,
+              "denominator": 6,
+              "value": 0.5
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9285714285714285
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333333333333333
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 42,
+              "status_correct": 39,
+              "gold_residual": 34,
+              "pred_residual": 34,
+              "residual_tp": 34,
+              "exact_mask": 3,
+              "cited": 13,
+              "pred_partial": 3,
+              "gold_full": 8,
+              "pred_full": 8,
+              "true_full": 8,
+              "contributing_cited": 12,
+              "full_sufficient": 8,
+              "partial_valid": 2
+            }
+          },
+          "538": {
+            "node_status_accuracy": {
+              "numerator": 22,
+              "denominator": 24,
+              "value": 0.9166666666666666
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 24,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 24,
+              "denominator": 24,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 24,
+              "denominator": 24,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "exact_state_mask": {
+              "numerator": 2,
+              "denominator": 4,
+              "value": 0.5
+            },
+            "schema_validity": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9166666666666667
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 2,
+              "value": 0.5
+            },
+            "counts": {
+              "states": 4,
+              "schema_valid": 4,
+              "nodes": 24,
+              "status_correct": 22,
+              "gold_residual": 24,
+              "pred_residual": 24,
+              "residual_tp": 24,
+              "exact_mask": 2,
+              "cited": 2,
+              "pred_partial": 2
+            }
+          },
+          "637": {
+            "node_status_accuracy": {
+              "numerator": 33,
+              "denominator": 42,
+              "value": 0.7857142857142857
+            },
+            "fully_supported_precision": {
+              "numerator": 8,
+              "denominator": 10,
+              "value": 0.8
+            },
+            "false_supported_rate": {
+              "numerator": 2,
+              "denominator": 34,
+              "value": 0.058823529411764705
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 8,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 32,
+              "denominator": 34,
+              "value": 0.9411764705882353
+            },
+            "residual_precision": {
+              "numerator": 32,
+              "denominator": 32,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 18,
+              "denominator": 29,
+              "value": 0.6206896551724138
+            },
+            "full_support_sufficiency": {
+              "numerator": 8,
+              "denominator": 10,
+              "value": 0.8
+            },
+            "partial_support_validity": {
+              "numerator": 2,
+              "denominator": 9,
+              "value": 0.2222222222222222
+            },
+            "exact_state_mask": {
+              "numerator": 2,
+              "denominator": 6,
+              "value": 0.3333333333333333
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9696969696969697
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.7857142857142857
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333333333333333
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 42,
+              "status_correct": 33,
+              "gold_residual": 34,
+              "pred_residual": 32,
+              "residual_tp": 32,
+              "cited": 29,
+              "pred_partial": 9,
+              "exact_mask": 2,
+              "gold_full": 8,
+              "false_supported": 2,
+              "pred_full": 10,
+              "true_full": 8,
+              "contributing_cited": 18,
+              "full_sufficient": 8,
+              "partial_valid": 2
+            }
+          },
+          "843": {
+            "node_status_accuracy": {
+              "numerator": 29,
+              "denominator": 30,
+              "value": 0.9666666666666667
+            },
+            "fully_supported_precision": {
+              "numerator": 4,
+              "denominator": 5,
+              "value": 0.8
+            },
+            "false_supported_rate": {
+              "numerator": 1,
+              "denominator": 26,
+              "value": 0.038461538461538464
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 4,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 25,
+              "denominator": 26,
+              "value": 0.9615384615384616
+            },
+            "residual_precision": {
+              "numerator": 25,
+              "denominator": 25,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 22,
+              "denominator": 22,
+              "value": 1.0
+            },
+            "full_support_sufficiency": {
+              "numerator": 4,
+              "denominator": 5,
+              "value": 0.8
+            },
+            "partial_support_validity": {
+              "numerator": 9,
+              "denominator": 9,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 5,
+              "denominator": 6,
+              "value": 0.8333333333333334
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9803921568627451
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9666666666666667
+            },
+            "both_replicates_exact": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6666666666666666
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 30,
+              "status_correct": 29,
+              "gold_residual": 26,
+              "pred_residual": 25,
+              "residual_tp": 25,
+              "cited": 22,
+              "contributing_cited": 22,
+              "pred_partial": 9,
+              "partial_valid": 9,
+              "exact_mask": 5,
+              "gold_full": 4,
+              "false_supported": 1,
+              "pred_full": 5,
+              "true_full": 4,
+              "full_sufficient": 4
+            }
+          },
+          "922": {
+            "node_status_accuracy": {
+              "numerator": 23,
+              "denominator": 30,
+              "value": 0.7666666666666667
+            },
+            "fully_supported_precision": {
+              "numerator": 4,
+              "denominator": 8,
+              "value": 0.5
+            },
+            "false_supported_rate": {
+              "numerator": 4,
+              "denominator": 26,
+              "value": 0.15384615384615385
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 4,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 22,
+              "denominator": 26,
+              "value": 0.8461538461538461
+            },
+            "residual_precision": {
+              "numerator": 22,
+              "denominator": 22,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 11,
+              "denominator": 11,
+              "value": 1.0
+            },
+            "full_support_sufficiency": {
+              "numerator": 4,
+              "denominator": 8,
+              "value": 0.5
+            },
+            "partial_support_validity": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 2,
+              "denominator": 6,
+              "value": 0.3333333333333333
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9166666666666666
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.7666666666666666
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333333333333333
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 30,
+              "status_correct": 23,
+              "gold_residual": 26,
+              "pred_residual": 22,
+              "residual_tp": 22,
+              "exact_mask": 2,
+              "gold_full": 4,
+              "false_supported": 4,
+              "pred_full": 8,
+              "true_full": 4,
+              "cited": 11,
+              "contributing_cited": 11,
+              "full_sufficient": 4,
+              "pred_partial": 1,
+              "partial_valid": 1
+            }
+          },
+          "971": {
+            "node_status_accuracy": {
+              "numerator": 36,
+              "denominator": 36,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 32,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 4,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 32,
+              "denominator": 32,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 32,
+              "denominator": 32,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 18,
+              "denominator": 19,
+              "value": 0.9473684210526315
+            },
+            "full_support_sufficiency": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "partial_support_validity": {
+              "numerator": 12,
+              "denominator": 12,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 36,
+              "status_correct": 36,
+              "gold_residual": 32,
+              "gold_full": 4,
+              "pred_residual": 32,
+              "residual_tp": 32,
+              "pred_full": 4,
+              "true_full": 4,
+              "cited": 19,
+              "contributing_cited": 18,
+              "full_sufficient": 4,
+              "pred_partial": 12,
+              "partial_valid": 12,
+              "exact_mask": 6
+            }
+          }
+        },
+        "historical_type": {
+          "downstream_temptation": {
+            "node_status_accuracy": {
+              "numerator": 32,
+              "denominator": 34,
+              "value": 0.9411764705882353
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 34,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 34,
+              "denominator": 34,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 34,
+              "denominator": 34,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 6,
+              "denominator": 8,
+              "value": 0.75
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 6,
+              "denominator": 8,
+              "value": 0.75
+            },
+            "exact_state_mask": {
+              "numerator": 4,
+              "denominator": 6,
+              "value": 0.6666666666666666
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9444444444444445
+            },
+            "both_replicates_exact": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6666666666666666
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 34,
+              "status_correct": 32,
+              "gold_residual": 34,
+              "pred_residual": 34,
+              "residual_tp": 34,
+              "cited": 8,
+              "pred_partial": 8,
+              "contributing_cited": 6,
+              "partial_valid": 6,
+              "exact_mask": 4
+            }
+          },
+          "identity_discovery": {
+            "node_status_accuracy": {
+              "numerator": 106,
+              "denominator": 106,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 106,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 106,
+              "denominator": 106,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 106,
+              "denominator": 106,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 18,
+              "denominator": 18,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 18,
+              "denominator": 18,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 9,
+              "denominator": 9,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 18,
+              "schema_valid": 18,
+              "nodes": 106,
+              "status_correct": 106,
+              "gold_residual": 106,
+              "pred_residual": 106,
+              "residual_tp": 106,
+              "exact_mask": 18,
+              "cited": 4,
+              "contributing_cited": 4,
+              "pred_partial": 4,
+              "partial_valid": 4
+            }
+          },
+          "relation_verification": {
+            "node_status_accuracy": {
+              "numerator": 60,
+              "denominator": 62,
+              "value": 0.967741935483871
+            },
+            "fully_supported_precision": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 56,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 6,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 56,
+              "denominator": 56,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 56,
+              "denominator": 56,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 18,
+              "denominator": 20,
+              "value": 0.9
+            },
+            "full_support_sufficiency": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "partial_support_validity": {
+              "numerator": 10,
+              "denominator": 12,
+              "value": 0.8333333333333334
+            },
+            "exact_state_mask": {
+              "numerator": 8,
+              "denominator": 10,
+              "value": 0.8
+            },
+            "schema_validity": {
+              "numerator": 10,
+              "denominator": 10,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9690476190476189
+            },
+            "both_replicates_exact": {
+              "numerator": 3,
+              "denominator": 5,
+              "value": 0.6
+            },
+            "counts": {
+              "states": 10,
+              "schema_valid": 10,
+              "nodes": 62,
+              "status_correct": 60,
+              "gold_residual": 56,
+              "gold_full": 6,
+              "pred_residual": 56,
+              "residual_tp": 56,
+              "pred_full": 6,
+              "true_full": 6,
+              "cited": 20,
+              "contributing_cited": 18,
+              "full_sufficient": 6,
+              "pred_partial": 12,
+              "partial_valid": 10,
+              "exact_mask": 8
+            }
+          },
+          "satisfied_control": {
+            "node_status_accuracy": {
+              "numerator": 86,
+              "denominator": 96,
+              "value": 0.8958333333333334
+            },
+            "fully_supported_precision": {
+              "numerator": 38,
+              "denominator": 43,
+              "value": 0.8837209302325582
+            },
+            "false_supported_rate": {
+              "numerator": 5,
+              "denominator": 58,
+              "value": 0.08620689655172414
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 38,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 53,
+              "denominator": 58,
+              "value": 0.9137931034482759
+            },
+            "residual_precision": {
+              "numerator": 53,
+              "denominator": 53,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 98,
+              "denominator": 104,
+              "value": 0.9423076923076923
+            },
+            "full_support_sufficiency": {
+              "numerator": 38,
+              "denominator": 43,
+              "value": 0.8837209302325582
+            },
+            "partial_support_validity": {
+              "numerator": 28,
+              "denominator": 30,
+              "value": 0.9333333333333333
+            },
+            "exact_state_mask": {
+              "numerator": 8,
+              "denominator": 16,
+              "value": 0.5
+            },
+            "schema_validity": {
+              "numerator": 16,
+              "denominator": 16,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9549549549549551
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.8949404761904762
+            },
+            "both_replicates_exact": {
+              "numerator": 3,
+              "denominator": 8,
+              "value": 0.375
+            },
+            "counts": {
+              "states": 16,
+              "schema_valid": 16,
+              "nodes": 96,
+              "status_correct": 86,
+              "gold_residual": 58,
+              "gold_full": 38,
+              "pred_residual": 53,
+              "residual_tp": 53,
+              "pred_full": 43,
+              "true_full": 38,
+              "cited": 104,
+              "contributing_cited": 98,
+              "full_sufficient": 38,
+              "pred_partial": 30,
+              "partial_valid": 28,
+              "exact_mask": 8,
+              "false_supported": 5
+            }
+          },
+          "scope_binding": {
+            "node_status_accuracy": {
+              "numerator": 14,
+              "denominator": 24,
+              "value": 0.5833333333333334
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "false_supported_rate": {
+              "numerator": 2,
+              "denominator": 24,
+              "value": 0.08333333333333333
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 22,
+              "denominator": 24,
+              "value": 0.9166666666666666
+            },
+            "residual_precision": {
+              "numerator": 22,
+              "denominator": 22,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 3,
+              "denominator": 13,
+              "value": 0.23076923076923078
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "partial_support_validity": {
+              "numerator": 0,
+              "denominator": 6,
+              "value": 0.0
+            },
+            "exact_state_mask": {
+              "numerator": 0,
+              "denominator": 4,
+              "value": 0.0
+            },
+            "schema_validity": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9565217391304348
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.5857142857142856
+            },
+            "both_replicates_exact": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "counts": {
+              "states": 4,
+              "schema_valid": 4,
+              "nodes": 24,
+              "status_correct": 14,
+              "gold_residual": 24,
+              "pred_residual": 22,
+              "residual_tp": 22,
+              "cited": 13,
+              "pred_partial": 6,
+              "false_supported": 2,
+              "pred_full": 2,
+              "contributing_cited": 3
+            }
+          }
+        },
+        "claims_empty": {
+          "False": {
+            "node_status_accuracy": {
+              "numerator": 180,
+              "denominator": 204,
+              "value": 0.8823529411764706
+            },
+            "fully_supported_precision": {
+              "numerator": 44,
+              "denominator": 51,
+              "value": 0.8627450980392157
+            },
+            "false_supported_rate": {
+              "numerator": 7,
+              "denominator": 160,
+              "value": 0.04375
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 44,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 153,
+              "denominator": 160,
+              "value": 0.95625
+            },
+            "residual_precision": {
+              "numerator": 153,
+              "denominator": 153,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 129,
+              "denominator": 149,
+              "value": 0.8657718120805369
+            },
+            "full_support_sufficiency": {
+              "numerator": 44,
+              "denominator": 51,
+              "value": 0.8627450980392157
+            },
+            "partial_support_validity": {
+              "numerator": 48,
+              "denominator": 60,
+              "value": 0.8
+            },
+            "exact_state_mask": {
+              "numerator": 18,
+              "denominator": 34,
+              "value": 0.5294117647058824
+            },
+            "schema_validity": {
+              "numerator": 34,
+              "denominator": 34,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9776357827476039
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.8829131652661064
+            },
+            "both_replicates_exact": {
+              "numerator": 7,
+              "denominator": 17,
+              "value": 0.4117647058823529
+            },
+            "counts": {
+              "states": 34,
+              "schema_valid": 34,
+              "nodes": 204,
+              "status_correct": 180,
+              "gold_residual": 160,
+              "pred_residual": 153,
+              "residual_tp": 153,
+              "cited": 149,
+              "pred_partial": 60,
+              "gold_full": 44,
+              "pred_full": 51,
+              "true_full": 44,
+              "contributing_cited": 129,
+              "full_sufficient": 44,
+              "partial_valid": 48,
+              "exact_mask": 18,
+              "false_supported": 7
+            }
+          },
+          "True": {
+            "node_status_accuracy": {
+              "numerator": 118,
+              "denominator": 118,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 118,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 118,
+              "denominator": 118,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 118,
+              "denominator": 118,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "exact_state_mask": {
+              "numerator": 20,
+              "denominator": 20,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 20,
+              "denominator": 20,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 10,
+              "denominator": 10,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 20,
+              "schema_valid": 20,
+              "nodes": 118,
+              "status_correct": 118,
+              "gold_residual": 118,
+              "pred_residual": 118,
+              "residual_tp": 118,
+              "exact_mask": 20
+            }
+          }
+        },
+        "replicate": {
+          "1": {
+            "node_status_accuracy": {
+              "numerator": 151,
+              "denominator": 161,
+              "value": 0.937888198757764
+            },
+            "fully_supported_precision": {
+              "numerator": 22,
+              "denominator": 25,
+              "value": 0.88
+            },
+            "false_supported_rate": {
+              "numerator": 3,
+              "denominator": 139,
+              "value": 0.02158273381294964
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 22,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 136,
+              "denominator": 139,
+              "value": 0.9784172661870504
+            },
+            "residual_precision": {
+              "numerator": 136,
+              "denominator": 136,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 64,
+              "denominator": 71,
+              "value": 0.9014084507042254
+            },
+            "full_support_sufficiency": {
+              "numerator": 22,
+              "denominator": 25,
+              "value": 0.88
+            },
+            "partial_support_validity": {
+              "numerator": 24,
+              "denominator": 28,
+              "value": 0.8571428571428571
+            },
+            "exact_state_mask": {
+              "numerator": 19,
+              "denominator": 27,
+              "value": 0.7037037037037037
+            },
+            "schema_validity": {
+              "numerator": 27,
+              "denominator": 27,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.989090909090909
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.935978835978836
+            },
+            "both_replicates_exact": {
+              "numerator": 0,
+              "denominator": 27,
+              "value": 0.0
+            },
+            "counts": {
+              "states": 27,
+              "schema_valid": 27,
+              "nodes": 161,
+              "status_correct": 151,
+              "gold_residual": 139,
+              "pred_residual": 136,
+              "residual_tp": 136,
+              "exact_mask": 19,
+              "cited": 71,
+              "pred_partial": 28,
+              "gold_full": 22,
+              "pred_full": 25,
+              "true_full": 22,
+              "contributing_cited": 64,
+              "full_sufficient": 22,
+              "partial_valid": 24,
+              "false_supported": 3
+            }
+          },
+          "2": {
+            "node_status_accuracy": {
+              "numerator": 147,
+              "denominator": 161,
+              "value": 0.9130434782608695
+            },
+            "fully_supported_precision": {
+              "numerator": 22,
+              "denominator": 26,
+              "value": 0.8461538461538461
+            },
+            "false_supported_rate": {
+              "numerator": 4,
+              "denominator": 139,
+              "value": 0.02877697841726619
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 22,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 135,
+              "denominator": 139,
+              "value": 0.9712230215827338
+            },
+            "residual_precision": {
+              "numerator": 135,
+              "denominator": 135,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 65,
+              "denominator": 78,
+              "value": 0.8333333333333334
+            },
+            "full_support_sufficiency": {
+              "numerator": 22,
+              "denominator": 26,
+              "value": 0.8461538461538461
+            },
+            "partial_support_validity": {
+              "numerator": 24,
+              "denominator": 32,
+              "value": 0.75
+            },
+            "exact_state_mask": {
+              "numerator": 19,
+              "denominator": 27,
+              "value": 0.7037037037037037
+            },
+            "schema_validity": {
+              "numerator": 27,
+              "denominator": 27,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9854014598540146
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9165784832451499
+            },
+            "both_replicates_exact": {
+              "numerator": 0,
+              "denominator": 27,
+              "value": 0.0
+            },
+            "counts": {
+              "states": 27,
+              "schema_valid": 27,
+              "nodes": 161,
+              "status_correct": 147,
+              "gold_residual": 139,
+              "gold_full": 22,
+              "pred_residual": 135,
+              "residual_tp": 135,
+              "pred_full": 26,
+              "true_full": 22,
+              "cited": 78,
+              "contributing_cited": 65,
+              "full_sufficient": 22,
+              "pred_partial": 32,
+              "partial_valid": 24,
+              "exact_mask": 19,
+              "false_supported": 4
+            }
+          }
+        }
+      },
+      "gate": {
+        "pass": false,
+        "checks": {
+          "node_status_accuracy": {
+            "value": 0.9254658385093167,
+            "operator": ">=",
+            "threshold": 0.9,
+            "pass": true
+          },
+          "false_supported_rate": {
+            "value": 0.025179856115107913,
+            "operator": "<=",
+            "threshold": 0.05,
+            "pass": true
+          },
+          "residual_recall": {
+            "value": 0.9748201438848921,
+            "operator": ">=",
+            "threshold": 0.95,
+            "pass": true
+          },
+          "support_precision": {
+            "value": 0.8657718120805369,
+            "operator": ">=",
+            "threshold": 0.9,
+            "pass": false
+          },
+          "full_support_sufficiency": {
+            "value": 0.8627450980392157,
+            "operator": ">=",
+            "threshold": 0.9,
+            "pass": false
+          },
+          "exact_state_mask": {
+            "value": 0.7037037037037037,
+            "operator": ">=",
+            "threshold": 0.8,
+            "pass": false
+          },
+          "schema_validity": {
+            "value": 1.0,
+            "operator": ">=",
+            "threshold": 0.95,
+            "pass": true
+          }
+        }
+      }
+    },
+    "A1": {
+      "metrics": {
+        "node_status_accuracy": {
+          "numerator": 248,
+          "denominator": 264,
+          "value": 0.9393939393939394
+        },
+        "fully_supported_precision": {
+          "numerator": 36,
+          "denominator": 39,
+          "value": 0.9230769230769231
+        },
+        "false_supported_rate": {
+          "numerator": 3,
+          "denominator": 228,
+          "value": 0.013157894736842105
+        },
+        "false_unresolved_rate": {
+          "numerator": 0,
+          "denominator": 36,
+          "value": 0.0
+        },
+        "residual_recall": {
+          "numerator": 225,
+          "denominator": 228,
+          "value": 0.9868421052631579
+        },
+        "residual_precision": {
+          "numerator": 225,
+          "denominator": 225,
+          "value": 1.0
+        },
+        "support_precision": {
+          "numerator": 120,
+          "denominator": 137,
+          "value": 0.8759124087591241
+        },
+        "full_support_sufficiency": {
+          "numerator": 36,
+          "denominator": 39,
+          "value": 0.9230769230769231
+        },
+        "partial_support_validity": {
+          "numerator": 48,
+          "denominator": 58,
+          "value": 0.8275862068965517
+        },
+        "exact_state_mask": {
+          "numerator": 42,
+          "denominator": 54,
+          "value": 0.7777777777777778
+        },
+        "schema_validity": {
+          "numerator": 54,
+          "denominator": 54,
+          "value": 1.0
+        },
+        "residual_f1": {
+          "value": 0.9933774834437086
+        },
+        "macro_state_node_accuracy": {
+          "value": 0.9395061728395062
+        },
+        "both_replicates_exact": {
+          "numerator": 18,
+          "denominator": 27,
+          "value": 0.6666666666666666
+        },
+        "counts": {
+          "states": 54,
+          "schema_valid": 54,
+          "nodes": 264,
+          "status_correct": 248,
+          "gold_residual": 228,
+          "pred_residual": 225,
+          "residual_tp": 225,
+          "exact_mask": 42,
+          "cited": 137,
+          "contributing_cited": 120,
+          "pred_partial": 58,
+          "partial_valid": 48,
+          "gold_full": 36,
+          "pred_full": 39,
+          "true_full": 36,
+          "full_sufficient": 36,
+          "false_supported": 3
+        }
+      },
+      "strata": {
+        "qid": {
+          "122": {
+            "node_status_accuracy": {
+              "numerator": 8,
+              "denominator": 8,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 8,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 8,
+              "denominator": 8,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 8,
+              "denominator": 8,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "exact_state_mask": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 2,
+              "denominator": 2,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 1,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 2,
+              "schema_valid": 2,
+              "nodes": 8,
+              "status_correct": 8,
+              "gold_residual": 8,
+              "pred_residual": 8,
+              "residual_tp": 8,
+              "exact_mask": 2
+            }
+          },
+          "1259": {
+            "node_status_accuracy": {
+              "numerator": 35,
+              "denominator": 36,
+              "value": 0.9722222222222222
+            },
+            "fully_supported_precision": {
+              "numerator": 14,
+              "denominator": 14,
+              "value": 1.0
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 22,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 14,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 22,
+              "denominator": 22,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 22,
+              "denominator": 22,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 22,
+              "denominator": 24,
+              "value": 0.9166666666666666
+            },
+            "full_support_sufficiency": {
+              "numerator": 14,
+              "denominator": 14,
+              "value": 1.0
+            },
+            "partial_support_validity": {
+              "numerator": 4,
+              "denominator": 5,
+              "value": 0.8
+            },
+            "exact_state_mask": {
+              "numerator": 5,
+              "denominator": 6,
+              "value": 0.8333333333333334
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9722222222222222
+            },
+            "both_replicates_exact": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6666666666666666
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 36,
+              "status_correct": 35,
+              "gold_residual": 22,
+              "pred_residual": 22,
+              "residual_tp": 22,
+              "exact_mask": 5,
+              "gold_full": 14,
+              "pred_full": 14,
+              "true_full": 14,
+              "cited": 24,
+              "contributing_cited": 22,
+              "full_sufficient": 14,
+              "pred_partial": 5,
+              "partial_valid": 4
+            }
+          },
+          "169": {
+            "node_status_accuracy": {
+              "numerator": 22,
+              "denominator": 24,
+              "value": 0.9166666666666666
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 24,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 24,
+              "denominator": 24,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 24,
+              "denominator": 24,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 8,
+              "denominator": 10,
+              "value": 0.8
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 6,
+              "denominator": 8,
+              "value": 0.75
+            },
+            "exact_state_mask": {
+              "numerator": 4,
+              "denominator": 6,
+              "value": 0.6666666666666666
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9166666666666666
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333333333333333
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 24,
+              "status_correct": 22,
+              "gold_residual": 24,
+              "pred_residual": 24,
+              "residual_tp": 24,
+              "exact_mask": 4,
+              "cited": 10,
+              "contributing_cited": 8,
+              "pred_partial": 8,
+              "partial_valid": 6
+            }
+          },
+          "228": {
+            "node_status_accuracy": {
+              "numerator": 24,
+              "denominator": 24,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 24,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 24,
+              "denominator": 24,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 24,
+              "denominator": 24,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 12,
+              "denominator": 12,
+              "value": 1.0
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 24,
+              "status_correct": 24,
+              "gold_residual": 24,
+              "pred_residual": 24,
+              "residual_tp": 24,
+              "cited": 12,
+              "contributing_cited": 12,
+              "pred_partial": 6,
+              "partial_valid": 6,
+              "exact_mask": 6
+            }
+          },
+          "261": {
+            "node_status_accuracy": {
+              "numerator": 33,
+              "denominator": 36,
+              "value": 0.9166666666666666
+            },
+            "fully_supported_precision": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 30,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 6,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 30,
+              "denominator": 30,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 30,
+              "denominator": 30,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 12,
+              "denominator": 13,
+              "value": 0.9230769230769231
+            },
+            "full_support_sufficiency": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "partial_support_validity": {
+              "numerator": 4,
+              "denominator": 5,
+              "value": 0.8
+            },
+            "exact_state_mask": {
+              "numerator": 3,
+              "denominator": 6,
+              "value": 0.5
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9166666666666666
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333333333333333
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 36,
+              "status_correct": 33,
+              "gold_residual": 30,
+              "pred_residual": 30,
+              "residual_tp": 30,
+              "exact_mask": 3,
+              "cited": 13,
+              "pred_partial": 5,
+              "gold_full": 6,
+              "pred_full": 6,
+              "true_full": 6,
+              "contributing_cited": 12,
+              "full_sufficient": 6,
+              "partial_valid": 4
+            }
+          },
+          "538": {
+            "node_status_accuracy": {
+              "numerator": 14,
+              "denominator": 16,
+              "value": 0.875
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 16,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 16,
+              "denominator": 16,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 16,
+              "denominator": 16,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 0,
+              "denominator": 2,
+              "value": 0.0
+            },
+            "exact_state_mask": {
+              "numerator": 2,
+              "denominator": 4,
+              "value": 0.5
+            },
+            "schema_validity": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.875
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 2,
+              "value": 0.5
+            },
+            "counts": {
+              "states": 4,
+              "schema_valid": 4,
+              "nodes": 16,
+              "status_correct": 14,
+              "gold_residual": 16,
+              "pred_residual": 16,
+              "residual_tp": 16,
+              "cited": 2,
+              "pred_partial": 2,
+              "exact_mask": 2
+            }
+          },
+          "637": {
+            "node_status_accuracy": {
+              "numerator": 23,
+              "denominator": 30,
+              "value": 0.7666666666666667
+            },
+            "fully_supported_precision": {
+              "numerator": 4,
+              "denominator": 6,
+              "value": 0.6666666666666666
+            },
+            "false_supported_rate": {
+              "numerator": 2,
+              "denominator": 26,
+              "value": 0.07692307692307693
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 4,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 24,
+              "denominator": 26,
+              "value": 0.9230769230769231
+            },
+            "residual_precision": {
+              "numerator": 24,
+              "denominator": 24,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 14,
+              "denominator": 22,
+              "value": 0.6363636363636364
+            },
+            "full_support_sufficiency": {
+              "numerator": 4,
+              "denominator": 6,
+              "value": 0.6666666666666666
+            },
+            "partial_support_validity": {
+              "numerator": 3,
+              "denominator": 7,
+              "value": 0.42857142857142855
+            },
+            "exact_state_mask": {
+              "numerator": 3,
+              "denominator": 6,
+              "value": 0.5
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9600000000000001
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.7666666666666666
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 3,
+              "value": 0.3333333333333333
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 30,
+              "status_correct": 23,
+              "gold_residual": 26,
+              "pred_residual": 24,
+              "residual_tp": 24,
+              "exact_mask": 3,
+              "gold_full": 4,
+              "false_supported": 2,
+              "pred_full": 6,
+              "true_full": 4,
+              "cited": 22,
+              "contributing_cited": 14,
+              "full_sufficient": 4,
+              "pred_partial": 7,
+              "partial_valid": 3
+            }
+          },
+          "843": {
+            "node_status_accuracy": {
+              "numerator": 29,
+              "denominator": 30,
+              "value": 0.9666666666666667
+            },
+            "fully_supported_precision": {
+              "numerator": 4,
+              "denominator": 5,
+              "value": 0.8
+            },
+            "false_supported_rate": {
+              "numerator": 1,
+              "denominator": 26,
+              "value": 0.038461538461538464
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 4,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 25,
+              "denominator": 26,
+              "value": 0.9615384615384616
+            },
+            "residual_precision": {
+              "numerator": 25,
+              "denominator": 25,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 22,
+              "denominator": 24,
+              "value": 0.9166666666666666
+            },
+            "full_support_sufficiency": {
+              "numerator": 4,
+              "denominator": 5,
+              "value": 0.8
+            },
+            "partial_support_validity": {
+              "numerator": 9,
+              "denominator": 9,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 5,
+              "denominator": 6,
+              "value": 0.8333333333333334
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9803921568627451
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9666666666666667
+            },
+            "both_replicates_exact": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6666666666666666
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 30,
+              "status_correct": 29,
+              "gold_residual": 26,
+              "pred_residual": 25,
+              "residual_tp": 25,
+              "cited": 24,
+              "contributing_cited": 22,
+              "pred_partial": 9,
+              "partial_valid": 9,
+              "exact_mask": 5,
+              "gold_full": 4,
+              "pred_full": 5,
+              "true_full": 4,
+              "full_sufficient": 4,
+              "false_supported": 1
+            }
+          },
+          "922": {
+            "node_status_accuracy": {
+              "numerator": 24,
+              "denominator": 24,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 20,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 4,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 20,
+              "denominator": 20,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 20,
+              "denominator": 20,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 12,
+              "denominator": 12,
+              "value": 1.0
+            },
+            "full_support_sufficiency": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "partial_support_validity": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 24,
+              "status_correct": 24,
+              "gold_residual": 20,
+              "pred_residual": 20,
+              "residual_tp": 20,
+              "exact_mask": 6,
+              "cited": 12,
+              "contributing_cited": 12,
+              "pred_partial": 4,
+              "partial_valid": 4,
+              "gold_full": 4,
+              "pred_full": 4,
+              "true_full": 4,
+              "full_sufficient": 4
+            }
+          },
+          "971": {
+            "node_status_accuracy": {
+              "numerator": 36,
+              "denominator": 36,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 32,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 4,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 32,
+              "denominator": 32,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 32,
+              "denominator": 32,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 18,
+              "denominator": 18,
+              "value": 1.0
+            },
+            "full_support_sufficiency": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "partial_support_validity": {
+              "numerator": 12,
+              "denominator": 12,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 3,
+              "denominator": 3,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 36,
+              "status_correct": 36,
+              "gold_residual": 32,
+              "gold_full": 4,
+              "pred_residual": 32,
+              "residual_tp": 32,
+              "pred_full": 4,
+              "true_full": 4,
+              "cited": 18,
+              "contributing_cited": 18,
+              "full_sufficient": 4,
+              "pred_partial": 12,
+              "partial_valid": 12,
+              "exact_mask": 6
+            }
+          }
+        },
+        "historical_type": {
+          "downstream_temptation": {
+            "node_status_accuracy": {
+              "numerator": 26,
+              "denominator": 28,
+              "value": 0.9285714285714286
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 28,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 28,
+              "denominator": 28,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 28,
+              "denominator": 28,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 6,
+              "denominator": 8,
+              "value": 0.75
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 6,
+              "denominator": 8,
+              "value": 0.75
+            },
+            "exact_state_mask": {
+              "numerator": 4,
+              "denominator": 6,
+              "value": 0.6666666666666666
+            },
+            "schema_validity": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9166666666666666
+            },
+            "both_replicates_exact": {
+              "numerator": 2,
+              "denominator": 3,
+              "value": 0.6666666666666666
+            },
+            "counts": {
+              "states": 6,
+              "schema_valid": 6,
+              "nodes": 28,
+              "status_correct": 26,
+              "gold_residual": 28,
+              "pred_residual": 28,
+              "residual_tp": 28,
+              "exact_mask": 4,
+              "cited": 8,
+              "pred_partial": 8,
+              "contributing_cited": 6,
+              "partial_valid": 6
+            }
+          },
+          "identity_discovery": {
+            "node_status_accuracy": {
+              "numerator": 86,
+              "denominator": 86,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 86,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 86,
+              "denominator": 86,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 86,
+              "denominator": 86,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 4,
+              "denominator": 5,
+              "value": 0.8
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "exact_state_mask": {
+              "numerator": 18,
+              "denominator": 18,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 18,
+              "denominator": 18,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 9,
+              "denominator": 9,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 18,
+              "schema_valid": 18,
+              "nodes": 86,
+              "status_correct": 86,
+              "gold_residual": 86,
+              "pred_residual": 86,
+              "residual_tp": 86,
+              "exact_mask": 18,
+              "cited": 5,
+              "contributing_cited": 4,
+              "pred_partial": 4,
+              "partial_valid": 4
+            }
+          },
+          "relation_verification": {
+            "node_status_accuracy": {
+              "numerator": 50,
+              "denominator": 52,
+              "value": 0.9615384615384616
+            },
+            "fully_supported_precision": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 46,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 6,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 46,
+              "denominator": 46,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 46,
+              "denominator": 46,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 16,
+              "denominator": 18,
+              "value": 0.8888888888888888
+            },
+            "full_support_sufficiency": {
+              "numerator": 6,
+              "denominator": 6,
+              "value": 1.0
+            },
+            "partial_support_validity": {
+              "numerator": 6,
+              "denominator": 8,
+              "value": 0.75
+            },
+            "exact_state_mask": {
+              "numerator": 8,
+              "denominator": 10,
+              "value": 0.8
+            },
+            "schema_validity": {
+              "numerator": 10,
+              "denominator": 10,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9583333333333334
+            },
+            "both_replicates_exact": {
+              "numerator": 3,
+              "denominator": 5,
+              "value": 0.6
+            },
+            "counts": {
+              "states": 10,
+              "schema_valid": 10,
+              "nodes": 52,
+              "status_correct": 50,
+              "gold_residual": 46,
+              "pred_residual": 46,
+              "residual_tp": 46,
+              "cited": 18,
+              "pred_partial": 8,
+              "contributing_cited": 16,
+              "partial_valid": 6,
+              "exact_mask": 8,
+              "gold_full": 6,
+              "pred_full": 6,
+              "true_full": 6,
+              "full_sufficient": 6
+            }
+          },
+          "satisfied_control": {
+            "node_status_accuracy": {
+              "numerator": 72,
+              "denominator": 80,
+              "value": 0.9
+            },
+            "fully_supported_precision": {
+              "numerator": 30,
+              "denominator": 33,
+              "value": 0.9090909090909091
+            },
+            "false_supported_rate": {
+              "numerator": 3,
+              "denominator": 50,
+              "value": 0.06
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 30,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 47,
+              "denominator": 50,
+              "value": 0.94
+            },
+            "residual_precision": {
+              "numerator": 47,
+              "denominator": 47,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 90,
+              "denominator": 94,
+              "value": 0.9574468085106383
+            },
+            "full_support_sufficiency": {
+              "numerator": 30,
+              "denominator": 33,
+              "value": 0.9090909090909091
+            },
+            "partial_support_validity": {
+              "numerator": 30,
+              "denominator": 32,
+              "value": 0.9375
+            },
+            "exact_state_mask": {
+              "numerator": 9,
+              "denominator": 16,
+              "value": 0.5625
+            },
+            "schema_validity": {
+              "numerator": 16,
+              "denominator": 16,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9690721649484536
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.903125
+            },
+            "both_replicates_exact": {
+              "numerator": 3,
+              "denominator": 8,
+              "value": 0.375
+            },
+            "counts": {
+              "states": 16,
+              "schema_valid": 16,
+              "nodes": 80,
+              "status_correct": 72,
+              "gold_residual": 50,
+              "pred_residual": 47,
+              "residual_tp": 47,
+              "cited": 94,
+              "contributing_cited": 90,
+              "pred_partial": 32,
+              "partial_valid": 30,
+              "gold_full": 30,
+              "pred_full": 33,
+              "true_full": 30,
+              "full_sufficient": 30,
+              "exact_mask": 9,
+              "false_supported": 3
+            }
+          },
+          "scope_binding": {
+            "node_status_accuracy": {
+              "numerator": 14,
+              "denominator": 18,
+              "value": 0.7777777777777778
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 18,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 18,
+              "denominator": 18,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 18,
+              "denominator": 18,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 4,
+              "denominator": 12,
+              "value": 0.3333333333333333
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 2,
+              "denominator": 6,
+              "value": 0.3333333333333333
+            },
+            "exact_state_mask": {
+              "numerator": 3,
+              "denominator": 4,
+              "value": 0.75
+            },
+            "schema_validity": {
+              "numerator": 4,
+              "denominator": 4,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.8
+            },
+            "both_replicates_exact": {
+              "numerator": 1,
+              "denominator": 2,
+              "value": 0.5
+            },
+            "counts": {
+              "states": 4,
+              "schema_valid": 4,
+              "nodes": 18,
+              "status_correct": 14,
+              "gold_residual": 18,
+              "pred_residual": 18,
+              "residual_tp": 18,
+              "cited": 12,
+              "contributing_cited": 4,
+              "pred_partial": 6,
+              "partial_valid": 2,
+              "exact_mask": 3
+            }
+          }
+        },
+        "claims_empty": {
+          "False": {
+            "node_status_accuracy": {
+              "numerator": 152,
+              "denominator": 168,
+              "value": 0.9047619047619048
+            },
+            "fully_supported_precision": {
+              "numerator": 36,
+              "denominator": 39,
+              "value": 0.9230769230769231
+            },
+            "false_supported_rate": {
+              "numerator": 3,
+              "denominator": 132,
+              "value": 0.022727272727272728
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 36,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 129,
+              "denominator": 132,
+              "value": 0.9772727272727273
+            },
+            "residual_precision": {
+              "numerator": 129,
+              "denominator": 129,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 120,
+              "denominator": 137,
+              "value": 0.8759124087591241
+            },
+            "full_support_sufficiency": {
+              "numerator": 36,
+              "denominator": 39,
+              "value": 0.9230769230769231
+            },
+            "partial_support_validity": {
+              "numerator": 48,
+              "denominator": 58,
+              "value": 0.8275862068965517
+            },
+            "exact_state_mask": {
+              "numerator": 22,
+              "denominator": 34,
+              "value": 0.6470588235294118
+            },
+            "schema_validity": {
+              "numerator": 34,
+              "denominator": 34,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9885057471264368
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.903921568627451
+            },
+            "both_replicates_exact": {
+              "numerator": 8,
+              "denominator": 17,
+              "value": 0.47058823529411764
+            },
+            "counts": {
+              "states": 34,
+              "schema_valid": 34,
+              "nodes": 168,
+              "status_correct": 152,
+              "gold_residual": 132,
+              "pred_residual": 129,
+              "residual_tp": 129,
+              "cited": 137,
+              "contributing_cited": 120,
+              "pred_partial": 58,
+              "partial_valid": 48,
+              "gold_full": 36,
+              "pred_full": 39,
+              "true_full": 36,
+              "full_sufficient": 36,
+              "exact_mask": 22,
+              "false_supported": 3
+            }
+          },
+          "True": {
+            "node_status_accuracy": {
+              "numerator": 96,
+              "denominator": 96,
+              "value": 1.0
+            },
+            "fully_supported_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "false_supported_rate": {
+              "numerator": 0,
+              "denominator": 96,
+              "value": 0.0
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "residual_recall": {
+              "numerator": 96,
+              "denominator": 96,
+              "value": 1.0
+            },
+            "residual_precision": {
+              "numerator": 96,
+              "denominator": 96,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "full_support_sufficiency": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "partial_support_validity": {
+              "numerator": 0,
+              "denominator": 0,
+              "value": null
+            },
+            "exact_state_mask": {
+              "numerator": 20,
+              "denominator": 20,
+              "value": 1.0
+            },
+            "schema_validity": {
+              "numerator": 20,
+              "denominator": 20,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 1.0
+            },
+            "macro_state_node_accuracy": {
+              "value": 1.0
+            },
+            "both_replicates_exact": {
+              "numerator": 10,
+              "denominator": 10,
+              "value": 1.0
+            },
+            "counts": {
+              "states": 20,
+              "schema_valid": 20,
+              "nodes": 96,
+              "status_correct": 96,
+              "gold_residual": 96,
+              "pred_residual": 96,
+              "residual_tp": 96,
+              "exact_mask": 20
+            }
+          }
+        },
+        "replicate": {
+          "1": {
+            "node_status_accuracy": {
+              "numerator": 128,
+              "denominator": 132,
+              "value": 0.9696969696969697
+            },
+            "fully_supported_precision": {
+              "numerator": 18,
+              "denominator": 19,
+              "value": 0.9473684210526315
+            },
+            "false_supported_rate": {
+              "numerator": 1,
+              "denominator": 114,
+              "value": 0.008771929824561403
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 18,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 113,
+              "denominator": 114,
+              "value": 0.9912280701754386
+            },
+            "residual_precision": {
+              "numerator": 113,
+              "denominator": 113,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 60,
+              "denominator": 64,
+              "value": 0.9375
+            },
+            "full_support_sufficiency": {
+              "numerator": 18,
+              "denominator": 19,
+              "value": 0.9473684210526315
+            },
+            "partial_support_validity": {
+              "numerator": 25,
+              "denominator": 27,
+              "value": 0.9259259259259259
+            },
+            "exact_state_mask": {
+              "numerator": 23,
+              "denominator": 27,
+              "value": 0.8518518518518519
+            },
+            "schema_validity": {
+              "numerator": 27,
+              "denominator": 27,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9955947136563876
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9709876543209878
+            },
+            "both_replicates_exact": {
+              "numerator": 0,
+              "denominator": 27,
+              "value": 0.0
+            },
+            "counts": {
+              "states": 27,
+              "schema_valid": 27,
+              "nodes": 132,
+              "status_correct": 128,
+              "gold_residual": 114,
+              "pred_residual": 113,
+              "residual_tp": 113,
+              "cited": 64,
+              "pred_partial": 27,
+              "contributing_cited": 60,
+              "partial_valid": 25,
+              "exact_mask": 23,
+              "gold_full": 18,
+              "false_supported": 1,
+              "pred_full": 19,
+              "true_full": 18,
+              "full_sufficient": 18
+            }
+          },
+          "2": {
+            "node_status_accuracy": {
+              "numerator": 120,
+              "denominator": 132,
+              "value": 0.9090909090909091
+            },
+            "fully_supported_precision": {
+              "numerator": 18,
+              "denominator": 20,
+              "value": 0.9
+            },
+            "false_supported_rate": {
+              "numerator": 2,
+              "denominator": 114,
+              "value": 0.017543859649122806
+            },
+            "false_unresolved_rate": {
+              "numerator": 0,
+              "denominator": 18,
+              "value": 0.0
+            },
+            "residual_recall": {
+              "numerator": 112,
+              "denominator": 114,
+              "value": 0.9824561403508771
+            },
+            "residual_precision": {
+              "numerator": 112,
+              "denominator": 112,
+              "value": 1.0
+            },
+            "support_precision": {
+              "numerator": 60,
+              "denominator": 73,
+              "value": 0.821917808219178
+            },
+            "full_support_sufficiency": {
+              "numerator": 18,
+              "denominator": 20,
+              "value": 0.9
+            },
+            "partial_support_validity": {
+              "numerator": 23,
+              "denominator": 31,
+              "value": 0.7419354838709677
+            },
+            "exact_state_mask": {
+              "numerator": 19,
+              "denominator": 27,
+              "value": 0.7037037037037037
+            },
+            "schema_validity": {
+              "numerator": 27,
+              "denominator": 27,
+              "value": 1.0
+            },
+            "residual_f1": {
+              "value": 0.9911504424778761
+            },
+            "macro_state_node_accuracy": {
+              "value": 0.9080246913580247
+            },
+            "both_replicates_exact": {
+              "numerator": 0,
+              "denominator": 27,
+              "value": 0.0
+            },
+            "counts": {
+              "states": 27,
+              "schema_valid": 27,
+              "nodes": 132,
+              "status_correct": 120,
+              "gold_residual": 114,
+              "pred_residual": 112,
+              "residual_tp": 112,
+              "exact_mask": 19,
+              "cited": 73,
+              "contributing_cited": 60,
+              "pred_partial": 31,
+              "partial_valid": 23,
+              "gold_full": 18,
+              "pred_full": 20,
+              "true_full": 18,
+              "full_sufficient": 18,
+              "false_supported": 2
+            }
+          }
+        }
+      },
+      "gate": {
+        "pass": true,
+        "checks": {
+          "node_status_accuracy": {
+            "value": 0.9393939393939394,
+            "operator": ">=",
+            "threshold": 0.85,
+            "pass": true
+          },
+          "false_supported_rate": {
+            "value": 0.013157894736842105,
+            "operator": "<=",
+            "threshold": 0.075,
+            "pass": true
+          },
+          "residual_recall": {
+            "value": 0.9868421052631579,
+            "operator": ">=",
+            "threshold": 0.9,
+            "pass": true
+          },
+          "support_precision": {
+            "value": 0.8759124087591241,
+            "operator": ">=",
+            "threshold": 0.85,
+            "pass": true
+          },
+          "exact_state_mask": {
+            "value": 0.7777777777777778,
+            "operator": ">=",
+            "threshold": 0.7,
+            "pass": true
+          },
+          "schema_validity": {
+            "value": 1.0,
+            "operator": ">=",
+            "threshold": 0.95,
+            "pass": true
+          },
+          "alignment_loss": {
+            "value": -0.07407407407407407,
+            "operator": "<=",
+            "threshold": 0.1,
+            "pass": true
+          },
+          "node_accuracy_loss": {
+            "value": -0.013928100884622707,
+            "operator": "<=",
+            "threshold": 0.1,
+            "pass": true
+          }
+        }
+      }
+    }
+  },
+  "losses": {
+    "alignment_loss": -0.07407407407407407,
+    "node_accuracy_loss": -0.013928100884622707
+  },
+  "monotonic_progress": {
+    "descriptive_only": true,
+    "frozen_eligible_pairs": 15,
+    "events": [
+      {
+        "qid": "1259",
+        "from": "G22",
+        "to": "G23",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R3",
+          "R5"
+        ]
+      },
+      {
+        "qid": "1259",
+        "from": "G22",
+        "to": "G23",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R3",
+          "R5"
+        ]
+      },
+      {
+        "qid": "1259",
+        "from": "G22",
+        "to": "G23",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R3",
+          "R5"
+        ]
+      },
+      {
+        "qid": "1259",
+        "from": "G22",
+        "to": "G23",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R3",
+          "R5"
+        ]
+      },
+      {
+        "qid": "1259",
+        "from": "G23",
+        "to": "G24",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R6"
+        ]
+      },
+      {
+        "qid": "1259",
+        "from": "G23",
+        "to": "G24",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R6"
+        ]
+      },
+      {
+        "qid": "1259",
+        "from": "G23",
+        "to": "G24",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R6"
+        ]
+      },
+      {
+        "qid": "1259",
+        "from": "G23",
+        "to": "G24",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R4",
+          "R6"
+        ]
+      },
+      {
+        "qid": "169",
+        "from": "G07",
+        "to": "G08",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "qid": "169",
+        "from": "G07",
+        "to": "G08",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "qid": "169",
+        "from": "G07",
+        "to": "G08",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R2"
+        ]
+      },
+      {
+        "qid": "169",
+        "from": "G07",
+        "to": "G08",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "qid": "169",
+        "from": "G08",
+        "to": "G09",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R4"
+        ]
+      },
+      {
+        "qid": "169",
+        "from": "G08",
+        "to": "G09",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R4"
+        ]
+      },
+      {
+        "qid": "169",
+        "from": "G08",
+        "to": "G09",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R3"
+        ]
+      },
+      {
+        "qid": "169",
+        "from": "G08",
+        "to": "G09",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R3"
+        ]
+      },
+      {
+        "qid": "228",
+        "from": "G04",
+        "to": "G05",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "qid": "228",
+        "from": "G04",
+        "to": "G05",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2"
+        ]
+      },
+      {
+        "qid": "228",
+        "from": "G04",
+        "to": "G05",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1"
+        ]
+      },
+      {
+        "qid": "228",
+        "from": "G04",
+        "to": "G05",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1"
+        ]
+      },
+      {
+        "qid": "261",
+        "from": "G01",
+        "to": "G02",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": []
+      },
+      {
+        "qid": "261",
+        "from": "G01",
+        "to": "G02",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R4"
+        ]
+      },
+      {
+        "qid": "261",
+        "from": "G01",
+        "to": "G02",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R3"
+        ]
+      },
+      {
+        "qid": "261",
+        "from": "G01",
+        "to": "G02",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": []
+      },
+      {
+        "qid": "261",
+        "from": "G02",
+        "to": "G03",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R4",
+          "R6",
+          "R7"
+        ]
+      },
+      {
+        "qid": "261",
+        "from": "G02",
+        "to": "G03",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R6",
+          "R7"
+        ]
+      },
+      {
+        "qid": "261",
+        "from": "G02",
+        "to": "G03",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R5",
+          "R6"
+        ]
+      },
+      {
+        "qid": "261",
+        "from": "G02",
+        "to": "G03",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R3",
+          "R5",
+          "R6"
+        ]
+      },
+      {
+        "qid": "538",
+        "from": "G13",
+        "to": "G14",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R5"
+        ]
+      },
+      {
+        "qid": "538",
+        "from": "G13",
+        "to": "G14",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R5"
+        ]
+      },
+      {
+        "qid": "538",
+        "from": "G13",
+        "to": "G14",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R4"
+        ]
+      },
+      {
+        "qid": "538",
+        "from": "G13",
+        "to": "G14",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R4"
+        ]
+      },
+      {
+        "qid": "637",
+        "from": "G16",
+        "to": "G17",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R7"
+        ]
+      },
+      {
+        "qid": "637",
+        "from": "G16",
+        "to": "G17",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R2",
+          "R4",
+          "R5",
+          "R6",
+          "R7"
+        ]
+      },
+      {
+        "qid": "637",
+        "from": "G16",
+        "to": "G17",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": []
+      },
+      {
+        "qid": "637",
+        "from": "G16",
+        "to": "G17",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R2",
+          "R3",
+          "R4",
+          "R5"
+        ]
+      },
+      {
+        "qid": "843",
+        "from": "G19",
+        "to": "G20",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "qid": "843",
+        "from": "G19",
+        "to": "G20",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "qid": "843",
+        "from": "G19",
+        "to": "G20",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "qid": "843",
+        "from": "G19",
+        "to": "G20",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R2",
+          "R3"
+        ]
+      },
+      {
+        "qid": "843",
+        "from": "G20",
+        "to": "G21",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R4",
+          "R5"
+        ]
+      },
+      {
+        "qid": "843",
+        "from": "G20",
+        "to": "G21",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R4",
+          "R5"
+        ]
+      },
+      {
+        "qid": "843",
+        "from": "G20",
+        "to": "G21",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R4",
+          "R5"
+        ]
+      },
+      {
+        "qid": "843",
+        "from": "G20",
+        "to": "G21",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R4",
+          "R5"
+        ]
+      },
+      {
+        "qid": "922",
+        "from": "G25",
+        "to": "G26",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1"
+        ]
+      },
+      {
+        "qid": "922",
+        "from": "G25",
+        "to": "G26",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1"
+        ]
+      },
+      {
+        "qid": "922",
+        "from": "G25",
+        "to": "G26",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1"
+        ]
+      },
+      {
+        "qid": "922",
+        "from": "G25",
+        "to": "G26",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1"
+        ]
+      },
+      {
+        "qid": "922",
+        "from": "G26",
+        "to": "G27",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R4",
+          "R5"
+        ]
+      },
+      {
+        "qid": "922",
+        "from": "G26",
+        "to": "G27",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R2",
+          "R4",
+          "R5"
+        ]
+      },
+      {
+        "qid": "922",
+        "from": "G26",
+        "to": "G27",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "qid": "922",
+        "from": "G26",
+        "to": "G27",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R3",
+          "R4"
+        ]
+      },
+      {
+        "qid": "971",
+        "from": "G10",
+        "to": "G11",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R4"
+        ]
+      },
+      {
+        "qid": "971",
+        "from": "G10",
+        "to": "G11",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R4"
+        ]
+      },
+      {
+        "qid": "971",
+        "from": "G10",
+        "to": "G11",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R4"
+        ]
+      },
+      {
+        "qid": "971",
+        "from": "G10",
+        "to": "G11",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R1",
+          "R2",
+          "R4"
+        ]
+      },
+      {
+        "qid": "971",
+        "from": "G11",
+        "to": "G12",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R5",
+          "R6"
+        ]
+      },
+      {
+        "qid": "971",
+        "from": "G11",
+        "to": "G12",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A0",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R5",
+          "R6"
+        ]
+      },
+      {
+        "qid": "971",
+        "from": "G11",
+        "to": "G12",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 1,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R5",
+          "R6"
+        ]
+      },
+      {
+        "qid": "971",
+        "from": "G11",
+        "to": "G12",
+        "literal_claim_addition": true,
+        "eligible": true,
+        "reason": "Literal preserved Claims plus added Claims, with no explicit refutation identified in the current prefix pair.",
+        "arm": "A1",
+        "replicate": 2,
+        "evaluable": true,
+        "full_to_unsupported": [],
+        "any_regression": [],
+        "any_progress": [
+          "R5",
+          "R6"
+        ]
+      }
+    ]
+  },
+  "joint_gate_pass": false
+}

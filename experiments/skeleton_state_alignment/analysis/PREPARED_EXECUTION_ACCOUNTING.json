@@ -1,0 +1,46 @@
+{
+  "status": "PREPARED_FOR_EXECUTION",
+  "stages": {
+    "e1_alignment": {
+      "planned": 108,
+      "sent": 0,
+      "returned": 0,
+      "HTTP_errors": 0,
+      "schema_errors": 0,
+      "reported_input_tokens": 0,
+      "reported_completion_tokens": 0,
+      "reported_reasoning_tokens": 0,
+      "reported_total_tokens": 0,
+      "cache_hit": 0,
+      "cache_miss": 0,
+      "weighted_cache_hit_rate": null,
+      "latency_median": null,
+      "latency_p95": null,
+      "latency_max": null,
+      "peak_concurrency": 0,
+      "condition": "new applicable paid authorization"
+    },
+    "e2_selection": {
+      "planned": 108,
+      "sent": 0,
+      "returned": 0,
+      "HTTP_errors": 0,
+      "schema_errors": 0,
+      "reported_input_tokens": 0,
+      "reported_completion_tokens": 0,
+      "reported_reasoning_tokens": 0,
+      "reported_total_tokens": 0,
+      "cache_hit": 0,
+      "cache_miss": 0,
+      "weighted_cache_hit_rate": null,
+      "latency_median": null,
+      "latency_p95": null,
+      "latency_max": null,
+      "peak_concurrency": 0,
+      "condition": "new applicable paid authorization AND E1 A0/A1 PASS"
+    }
+  },
+  "scope": "Preparation snapshot, not model evaluation. Actual future stage accounting is written under each stage; zero sent calls implies no new usage observations.",
+  "maximum_planned_calls": 216,
+  "currency_cost": null
+}
