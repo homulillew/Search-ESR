@@ -1,0 +1,26 @@
+{
+  "version": "coherent_premise_closed_v1",
+  "dimensions": ["Relevant", "Unresolved", "Grounded", "PremiseClosed", "Coherent", "Actionable"],
+  "strict": "All six dimensions true AND valid output; every scheduled cell remains in the denominator.",
+  "codes": {"P": "unsupported presupposition", "A": "ungrounded referent", "W": "independent research objectives bundled", "Q": "query-like keywords instead of an information objective", "S": "already supported or stale", "R": "unrelated or invented target", "X": "execution failure or uncompleted scheduled cell"},
+  "coherence": [
+    "Count resolution objectives, not atomic facts, answer nouns or question marks.",
+    "A bounded event, source, product feature profile or a comparison such as same-university education can constitute one judgment with complementary facets.",
+    "Sharing a candidate name or contributing to the final answer alone is insufficient: donation plus marital history, or promotion plus education, are separable objectives.",
+    "Discovery may ask which entity fits a bounded description present in Q. This does not assert that a candidate already satisfies it.",
+    "A candidate in C/H may be tested. H does not license an event/identity/date as an established premise. Asking an attribute of an unverified relation fails P; asking about an unbound unnamed referent fails A when identity must first be resolved.",
+    "Independent lexical queries may be generated without other results; candidate-specific dependent queries must await evidence. Hypothetical query feasibility is not observed retrieval success."
+  ],
+  "review": "Single Codex reviewer, QCH and returned Need only; no future trajectory, gold or full-document audit. Mask arms in first-pass packets. Prior E0 familiarity prevents a claim of perfect blinding. Record dimension reasons, premise anchors, objective decomposition and ambiguity offline, never in model payload.",
+  "failure_semantics": "Failed/blocked/incomplete output is strict=false, code X, semantic dimensions null. No fictitious P/A/W judgment for absent output.",
+  "diagnostic_reporting": ["all-state ITT", "valid-output conditional", "No-H", "per-qid", "paired gains and regressions", "P/A union and P+A sum", "W_independent separately from legitimate multiquery"],
+  "development_mechanism_reference": {
+    "B1": "P/A union count drops by at least 2 versus concurrent B0; W changes by at most 1 cell",
+    "B2": "W count drops by at least 1 versus concurrent B0; P/A union changes by at most 1 cell",
+    "B3": "P/A union drops by at least 2, W drops by at least 1; strict-valid improves by at least 2 cells",
+    "execution": "All arms must return valid output for at least 90% of scheduled states",
+    "otherwise": "Pause for mechanism analysis; at most one separately frozen bounded revision, no automatic fresh execution. Zero baseline errors are floor effects, not evidence of improvement."
+  },
+  "fresh_gate": {"strict_valid_min": 0.8, "p_plus_a_sum_rate_max": 0.05, "w_rate_max": 0.1, "strict_improvement_pp_min": 15, "qid_min": 12, "qid_max": 15, "natural_state_min": 30, "natural_state_max": 40},
+  "fresh_gate_notes": "P+A uses the conservative sum, double-counting a cell with both; also report the union. All gates conjunctive, no rounding before comparison. No-H reported separately. Freshness/support/provenance and the prespecified size checks are mandatory. These are engineering thresholds, not significance tests."
+}

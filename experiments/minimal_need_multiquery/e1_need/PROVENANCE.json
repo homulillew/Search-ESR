@@ -1,0 +1,1473 @@
+[
+  {
+    "state_id": "F07_S00",
+    "qid": "261",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F07/S00.json",
+    "snapshot_sha256": "3b1d4f96da8d4cdf79a66af30e4a8764c505af6342a38f5b5e378b42c3784c91",
+    "claims": [],
+    "hypothesis": "",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F07/S00.json",
+      "sha256": "3b1d4f96da8d4cdf79a66af30e4a8764c505af6342a38f5b5e378b42c3784c91",
+      "transition": "initial"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F07_S00.request.json",
+    "old_request_sha256": "657696f9596461379653f2bd677ca7d985bcb0fbfd9e8909d7242d4c44569776"
+  },
+  {
+    "state_id": "F08_S00",
+    "qid": "228",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F08/S00.json",
+    "snapshot_sha256": "6aae05f6196afa975af974069943b6f2933d75a7fb1f6c1290ba16a435f50116",
+    "claims": [],
+    "hypothesis": "",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F08/S00.json",
+      "sha256": "6aae05f6196afa975af974069943b6f2933d75a7fb1f6c1290ba16a435f50116",
+      "transition": "initial"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F08_S00.request.json",
+    "old_request_sha256": "2daae88975d6c8c4b40247c313a920500aff1d7740fd38d67b4a8d4bfac827c1"
+  },
+  {
+    "state_id": "F08_S01",
+    "qid": "228",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F08/S01.json",
+    "snapshot_sha256": "226e259afa64a6f29e90a7060e965f9d064fee0ec06341dca3e4b4b8cdd0a302",
+    "claims": [
+      {
+        "claim_record": {
+          "statement": "Kwon Hyuk-bin founded Smilegate in 2002; Smilegate is the maker of Crossfire, Lost Ark, and other games.",
+          "support_refs": [
+            "W2"
+          ],
+          "source_text_hashes": [
+            "2f2193e9825d080954934a4978dcef0754bda31a5d563ea5b9ce56ed4da1fe7f"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F08/decision1_tool.json",
+          "source_observation_index": 1,
+          "writer_request_id": "writer_1_2",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "228",
+            "case_id": "F08",
+            "statement": "Kwon Hyuk-bin founded Smilegate in 2002; Smilegate is the maker of Crossfire, Lost Ark, and other games.",
+            "statement_hash": "4988804a386e1851bcee899b1ff8ca06642f9b06190805ad0784e7685ac5daa4",
+            "observation_hash": "2f2193e9825d080954934a4978dcef0754bda31a5d563ea5b9ce56ed4da1fe7f",
+            "writer_id": "writer_1_2",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F08/calls/writer_1_2.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Body gives foundation year and named games.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Kwon Hyuk-bin holds an electrical engineering degree from Sogang University.",
+          "support_refs": [
+            "W2"
+          ],
+          "source_text_hashes": [
+            "2f2193e9825d080954934a4978dcef0754bda31a5d563ea5b9ce56ed4da1fe7f"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F08/decision1_tool.json",
+          "source_observation_index": 1,
+          "writer_request_id": "writer_1_2",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "228",
+            "case_id": "F08",
+            "statement": "Kwon Hyuk-bin holds an electrical engineering degree from Sogang University.",
+            "statement_hash": "f68d4bb1721eca8e85296b80929d2bae659c5d7ab3edf02710d03936d181b2b3",
+            "observation_hash": "2f2193e9825d080954934a4978dcef0754bda31a5d563ea5b9ce56ed4da1fe7f",
+            "writer_id": "writer_1_2",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F08/calls/writer_1_2.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Education paragraph states degree and Sogang.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      }
+    ],
+    "hypothesis": "Kwon Hyuk-bin, founder of Smilegate, may be the person referenced in the question.",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F08/S01.json",
+      "sha256": "226e259afa64a6f29e90a7060e965f9d064fee0ec06341dca3e4b4b8cdd0a302",
+      "transition": "update_1_2"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F08_S01.request.json",
+    "old_request_sha256": "38437f26a2232078714989a700e9e4c9fc40179509a1164aaeaf9b9ffbf0ccad"
+  },
+  {
+    "state_id": "F09_S01",
+    "qid": "169",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F09/S01.json",
+    "snapshot_sha256": "d88b2d3cd6f1584bcde023f0424dcec3222591d2d8c113dc07ae82ab08ab8735",
+    "claims": [
+      {
+        "claim_record": {
+          "statement": "Sophie (Sophie Xeon), a Scottish DJ and producer, died aged 34 on 30 January 2021 after an accidental fall while watching the full moon; the accident was reported to have taken place in Athens, Greece.",
+          "support_refs": [
+            "W6"
+          ],
+          "source_text_hashes": [
+            "7c2df9261d2f6077a91a3428bfedbccfdfc05af1ced4ae3572e25e335a68e4ac"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F09/decision2_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_2_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "169",
+            "case_id": "F09",
+            "statement": "Sophie (Sophie Xeon), a Scottish DJ and producer, died aged 34 on 30 January 2021 after an accidental fall while watching the full moon; the accident was reported to have taken place in Athens, Greece.",
+            "statement_hash": "369c8c91f7f573609aa2e724eb40f2dc637bc84918f2e1be1446b6e5665d67f6",
+            "observation_hash": "7c2df9261d2f6077a91a3428bfedbccfdfc05af1ced4ae3572e25e335a68e4ac",
+            "writer_id": "writer_2_1",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F09/calls/writer_2_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Dated news report gives same-day death, age, fall and reported Athens location.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      }
+    ],
+    "hypothesis": "The musical artist may be Sophie (Sophie Xeon), a Scottish DJ/producer who died accidentally in Athens, Greece in 2021.",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F09/S01.json",
+      "sha256": "d88b2d3cd6f1584bcde023f0424dcec3222591d2d8c113dc07ae82ab08ab8735",
+      "transition": "update_2_1"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F09_S01.request.json",
+    "old_request_sha256": "951b2845fa5104ad8b6d8ad4799645d92ef482bdf8bc2641d3b530d484e885b9"
+  },
+  {
+    "state_id": "F10_S00",
+    "qid": "971",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F10/S00.json",
+    "snapshot_sha256": "bae2ddf4ec4da85cd4b37af4e33e72b20eae84cb6db98d25253ec334e99fcb84",
+    "claims": [],
+    "hypothesis": "",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F10/S00.json",
+      "sha256": "bae2ddf4ec4da85cd4b37af4e33e72b20eae84cb6db98d25253ec334e99fcb84",
+      "transition": "initial"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F10_S00.request.json",
+    "old_request_sha256": "db33df302a97a47a037a887e0c6b166e8c3b5c745ce78a6c281ab736f579fb20"
+  },
+  {
+    "state_id": "F10_S01",
+    "qid": "971",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F10/S01.json",
+    "snapshot_sha256": "f1086971ffc19d01fee2ade4d7404f4413c00c7bb2966f0211575b9c3a13ca41",
+    "claims": [
+      {
+        "claim_record": {
+          "statement": "Alka Marwaha is an associate professor of Mathematics at Jesus and Mary College, University of Delhi, India, and the author of The Secret World of Vipassana and Mathematics (Wisdom Tree Publishers, November 15, 2016), a book exploring the singularity between Vipassana and Mathematics.",
+          "support_refs": [
+            "W2"
+          ],
+          "source_text_hashes": [
+            "edaee6b82e15f37558baece9c8d5879865000988a9f616519b25ff5bd2416589"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F10/decision1_tool.json",
+          "source_observation_index": 1,
+          "writer_request_id": "writer_1_2",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "971",
+            "case_id": "F10",
+            "statement": "Alka Marwaha is an associate professor of Mathematics at Jesus and Mary College, University of Delhi, India, and the author of The Secret World of Vipassana and Mathematics (Wisdom Tree Publishers, November 15, 2016), a book exploring the singularity between Vipassana and Mathematics.",
+            "statement_hash": "1ea6c19487e5805f940dc22d2e5fbd0ccad4309356d7c0fccf8aaf6804da2ea9",
+            "observation_hash": "edaee6b82e15f37558baece9c8d5879865000988a9f616519b25ff5bd2416589",
+            "writer_id": "writer_1_2",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F10/calls/writer_1_2.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Observed product title/date/publisher and author biography give all components.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Alka Marwaha was awarded the Commonwealth Scholarship to pursue a PhD in Mathematics at Dalhousie University, Canada, where she also received the Izaak Walton Killam Scholarship.",
+          "support_refs": [
+            "W2"
+          ],
+          "source_text_hashes": [
+            "edaee6b82e15f37558baece9c8d5879865000988a9f616519b25ff5bd2416589"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F10/decision1_tool.json",
+          "source_observation_index": 1,
+          "writer_request_id": "writer_1_2",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "971",
+            "case_id": "F10",
+            "statement": "Alka Marwaha was awarded the Commonwealth Scholarship to pursue a PhD in Mathematics at Dalhousie University, Canada, where she also received the Izaak Walton Killam Scholarship.",
+            "statement_hash": "0fd77440118068a83bc7e36ba9c2b8fb257008be1ad838260d849c0c4cb42f51",
+            "observation_hash": "edaee6b82e15f37558baece9c8d5879865000988a9f616519b25ff5bd2416589",
+            "writer_id": "writer_1_2",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F10/calls/writer_1_2.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Biography explicitly gives both scholarships and Dalhousie.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      }
+    ],
+    "hypothesis": "The Indian author may be Alka Marwaha, and the book may be The Secret World of Vipassana and Mathematics.",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F10/S01.json",
+      "sha256": "f1086971ffc19d01fee2ade4d7404f4413c00c7bb2966f0211575b9c3a13ca41",
+      "transition": "update_1_2"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F10_S01.request.json",
+    "old_request_sha256": "8113e28f6357b6d1f875ca9a5f3186ec9f0948aef9bdfbfa8d6b03f123dbace5"
+  },
+  {
+    "state_id": "F11_S00",
+    "qid": "538",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F11/S00.json",
+    "snapshot_sha256": "879dd0b517c7bb3ded38a5e3dd181dcfd03e7d96648caafbaac3f853475419ca",
+    "claims": [],
+    "hypothesis": "",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F11/S00.json",
+      "sha256": "879dd0b517c7bb3ded38a5e3dd181dcfd03e7d96648caafbaac3f853475419ca",
+      "transition": "initial"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F11_S00.request.json",
+    "old_request_sha256": "49325165758ae6963043fb89468dd7a1fc0e596b9b6eff0d06f3690df329a00b"
+  },
+  {
+    "state_id": "F11_S01",
+    "qid": "538",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F11/S01.json",
+    "snapshot_sha256": "a87877acd73c75a3f2db4eb75160b57a55fe45ba4137fdb9c50326c7c72fdb88",
+    "claims": [
+      {
+        "claim_record": {
+          "statement": "Leonhard Euler was born on 15 April 1707 in Basel, Swiss Confederacy.",
+          "support_refs": [
+            "W7"
+          ],
+          "source_text_hashes": [
+            "278ff2243d688f9a36126d156fec5f3bacd70819c4fb3e14550dc18685dd17d9"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F11/decision2_tool.json",
+          "source_observation_index": 1,
+          "writer_request_id": "writer_2_2",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "538",
+            "case_id": "F11",
+            "statement": "Leonhard Euler was born on 15 April 1707 in Basel, Swiss Confederacy.",
+            "statement_hash": "7d74f4668f2c9d09832be022b62cbfbfff48e6a6077d4c37358f608a64a1ab70",
+            "observation_hash": "278ff2243d688f9a36126d156fec5f3bacd70819c4fb3e14550dc18685dd17d9",
+            "writer_id": "writer_2_2",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F11/calls/writer_2_2.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Infobox gives exact birthday and Basel/Swiss Confederacy.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      }
+    ],
+    "hypothesis": "Leonhard Euler may be the well-known figure with initials L. E. born in the early 1700s in a central European country referenced by the target book.",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F11/S01.json",
+      "sha256": "a87877acd73c75a3f2db4eb75160b57a55fe45ba4137fdb9c50326c7c72fdb88",
+      "transition": "update_2_2"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F11_S01.request.json",
+    "old_request_sha256": "8b31c8189dc2f14d52c441daa6be728e3a1fa8db9114227cf66ef5fd7829d58c"
+  },
+  {
+    "state_id": "F12_S00",
+    "qid": "122",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F12/S00.json",
+    "snapshot_sha256": "b668d2951e23d10e2e2ca10bb7bda724d50eabdb241692ccc41842e8086dbde9",
+    "claims": [],
+    "hypothesis": "",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F12/S00.json",
+      "sha256": "b668d2951e23d10e2e2ca10bb7bda724d50eabdb241692ccc41842e8086dbde9",
+      "transition": "initial"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F12_S00.request.json",
+    "old_request_sha256": "bfd470ed9036d9657b7351bb8b2628f5be7ba37cfe55f3bcdf83f2476d2ce379"
+  },
+  {
+    "state_id": "F13_S00",
+    "qid": "637",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/S00.json",
+    "snapshot_sha256": "dcebd6f7987cbabc8ff35e98bab0051989aa258442e02235f49208b3669f66f3",
+    "claims": [],
+    "hypothesis": "",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/S00.json",
+      "sha256": "dcebd6f7987cbabc8ff35e98bab0051989aa258442e02235f49208b3669f66f3",
+      "transition": "initial"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F13_S00.request.json",
+    "old_request_sha256": "ad81f73a6bf7c1d8896b9f7ee3009ab62401c92ed6da5a74cdf2fad45e083157"
+  },
+  {
+    "state_id": "F13_S01",
+    "qid": "637",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/S01.json",
+    "snapshot_sha256": "22b8a395bd8cefbec0b41c16abaa71c3a9f791c2ad351e7b3bf574b3a4201f33",
+    "claims": [
+      {
+        "claim_record": {
+          "statement": "Stiff person syndrome symptoms usually develop over months to years and may remain stable for many years or slowly worsen.",
+          "support_refs": [
+            "W1"
+          ],
+          "source_text_hashes": [
+            "eb7a3f57852993f6f371cec44fd4f87ab87c81e774e1e262595755a4e74633d1"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision1_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_1_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "Stiff person syndrome symptoms usually develop over months to years and may remain stable for many years or slowly worsen.",
+            "statement_hash": "6745bb7de83022f41baf6198f39d8db73f0831e16f8c45e7a18d1b3ad1d287f2",
+            "observation_hash": "eb7a3f57852993f6f371cec44fd4f87ab87c81e774e1e262595755a4e74633d1",
+            "writer_id": "writer_1_1",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_1_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "NORD paragraph gives time course and stability/worsening.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Stiff person syndrome may initially cause aching discomfort, stiffness, or pain, especially in the lower back, hips, and/or legs; it may also affect the shoulders, arms, and/or neck, and progressive leg stiffness can lead to a slow, stiff manner of walking.",
+          "support_refs": [
+            "W1"
+          ],
+          "source_text_hashes": [
+            "eb7a3f57852993f6f371cec44fd4f87ab87c81e774e1e262595755a4e74633d1"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision1_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_1_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "Stiff person syndrome may initially cause aching discomfort, stiffness, or pain, especially in the lower back, hips, and/or legs; it may also affect the shoulders, arms, and/or neck, and progressive leg stiffness can lead to a slow, stiff manner of walking.",
+            "statement_hash": "ebce2bb91330d95f2fdd9ce3f221bd1a2de515aa8e0a200b7cb8cf1c8e261124",
+            "observation_hash": "eb7a3f57852993f6f371cec44fd4f87ab87c81e774e1e262595755a4e74633d1",
+            "writer_id": "writer_1_1",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_1_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "NORD paragraph gives all named symptoms and regions.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      }
+    ],
+    "hypothesis": "The shared disorder in the two 2010s case reports may be stiff person syndrome (SPS).",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/S01.json",
+      "sha256": "22b8a395bd8cefbec0b41c16abaa71c3a9f791c2ad351e7b3bf574b3a4201f33",
+      "transition": "update_1_1"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F13_S01.request.json",
+    "old_request_sha256": "e4ce45748a7c5ceebb0260474b125d677dc6541a7d782e020b035f5bc6e925e7"
+  },
+  {
+    "state_id": "F13_S06",
+    "qid": "637",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/S06.json",
+    "snapshot_sha256": "b80cbc86ce398a5b8fdff27cbe041120573c84e54de51d40f843cfd289f06c29",
+    "claims": [
+      {
+        "claim_record": {
+          "statement": "Stiff person syndrome symptoms usually develop over months to years and may remain stable for many years or slowly worsen.",
+          "support_refs": [
+            "W1"
+          ],
+          "source_text_hashes": [
+            "eb7a3f57852993f6f371cec44fd4f87ab87c81e774e1e262595755a4e74633d1"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision1_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_1_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "Stiff person syndrome symptoms usually develop over months to years and may remain stable for many years or slowly worsen.",
+            "statement_hash": "6745bb7de83022f41baf6198f39d8db73f0831e16f8c45e7a18d1b3ad1d287f2",
+            "observation_hash": "eb7a3f57852993f6f371cec44fd4f87ab87c81e774e1e262595755a4e74633d1",
+            "writer_id": "writer_1_1",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_1_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "NORD paragraph gives time course and stability/worsening.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Stiff person syndrome may initially cause aching discomfort, stiffness, or pain, especially in the lower back, hips, and/or legs; it may also affect the shoulders, arms, and/or neck, and progressive leg stiffness can lead to a slow, stiff manner of walking.",
+          "support_refs": [
+            "W1"
+          ],
+          "source_text_hashes": [
+            "eb7a3f57852993f6f371cec44fd4f87ab87c81e774e1e262595755a4e74633d1"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision1_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_1_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "Stiff person syndrome may initially cause aching discomfort, stiffness, or pain, especially in the lower back, hips, and/or legs; it may also affect the shoulders, arms, and/or neck, and progressive leg stiffness can lead to a slow, stiff manner of walking.",
+            "statement_hash": "ebce2bb91330d95f2fdd9ce3f221bd1a2de515aa8e0a200b7cb8cf1c8e261124",
+            "observation_hash": "eb7a3f57852993f6f371cec44fd4f87ab87c81e774e1e262595755a4e74633d1",
+            "writer_id": "writer_1_1",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_1_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "NORD paragraph gives all named symptoms and regions.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Stiff-person syndrome (SPS) is thought to be an autoimmune condition.",
+          "support_refs": [
+            "W2"
+          ],
+          "source_text_hashes": [
+            "0d757758524ad1ed17a97cc9da125c82ea40ed32059b8bcb3224a9ae6a687fcb"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision1_tool.json",
+          "source_observation_index": 1,
+          "writer_request_id": "writer_1_2",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "Stiff-person syndrome (SPS) is thought to be an autoimmune condition.",
+            "statement_hash": "cc2efaf2576e0b31ad39e6518853e52203188d44fe98721610ef3742757ab780",
+            "observation_hash": "0d757758524ad1ed17a97cc9da125c82ea40ed32059b8bcb3224a9ae6a687fcb",
+            "writer_id": "writer_1_2",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_1_2.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "NINDS explicitly says thought autoimmune.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "One type of stiff-person syndrome (SPS) is paraneoplastic syndrome, which occurs when the immune system reacts to a cancerous tumor and may cause symptoms such as difficulty walking or swallowing, loss of muscle tone, slurred speech, and memory loss before a tumor is found.",
+          "support_refs": [
+            "W2"
+          ],
+          "source_text_hashes": [
+            "0d757758524ad1ed17a97cc9da125c82ea40ed32059b8bcb3224a9ae6a687fcb"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision1_tool.json",
+          "source_observation_index": 1,
+          "writer_request_id": "writer_1_2",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "One type of stiff-person syndrome (SPS) is paraneoplastic syndrome, which occurs when the immune system reacts to a cancerous tumor and may cause symptoms such as difficulty walking or swallowing, loss of muscle tone, slurred speech, and memory loss before a tumor is found.",
+            "statement_hash": "764799887322fa1eb7c41482566a2452514281378db75371a154c53939d5ae89",
+            "observation_hash": "0d757758524ad1ed17a97cc9da125c82ea40ed32059b8bcb3224a9ae6a687fcb",
+            "writer_id": "writer_1_2",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_1_2.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "NINDS explicitly describes this type and symptom list; source-relative extraction only.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Fibrodysplasia ossificans progressiva (FOP) was confirmed in a patient by detection of the canonical ACVR1/ALK2 c.617G>A (p.R206H) mutation.",
+          "support_refs": [
+            "W4"
+          ],
+          "source_text_hashes": [
+            "8147a47521197f998dcd3e8bcf89a9b20e2240ee0ded356f4749335e8f2f4ca6"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision1_tool.json",
+          "source_observation_index": 3,
+          "writer_request_id": "writer_1_4",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "Fibrodysplasia ossificans progressiva (FOP) was confirmed in a patient by detection of the canonical ACVR1/ALK2 c.617G>A (p.R206H) mutation.",
+            "statement_hash": "dad8265192105bc4d3883a101b80a2e9a2f7a4e0c7cbfcc15a6d2b86ab702834",
+            "observation_hash": "8147a47521197f998dcd3e8bcf89a9b20e2240ee0ded356f4749335e8f2f4ca6",
+            "writer_id": "writer_1_4",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_1_4.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Case report explicitly confirms FOP with canonical mutation.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "In a reported case of confirmed fibrodysplasia ossificans progressiva (FOP), the patient experienced pain and swelling at a biopsy site and was advised to avoid trauma.",
+          "support_refs": [
+            "W4"
+          ],
+          "source_text_hashes": [
+            "8147a47521197f998dcd3e8bcf89a9b20e2240ee0ded356f4749335e8f2f4ca6"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision1_tool.json",
+          "source_observation_index": 3,
+          "writer_request_id": "writer_1_4",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "In a reported case of confirmed fibrodysplasia ossificans progressiva (FOP), the patient experienced pain and swelling at a biopsy site and was advised to avoid trauma.",
+            "statement_hash": "78409ffca25154e951e2c882c7b762bdcbf45a227f99343a8795611795a83aad",
+            "observation_hash": "8147a47521197f998dcd3e8bcf89a9b20e2240ee0ded356f4749335e8f2f4ca6",
+            "writer_id": "writer_1_4",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_1_4.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Same report describes biopsy-site swelling and advice to avoid trauma.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "A case report of fibrodysplasia ossificans progressiva (FOP) described a 10-year-old Pakistani boy who presented with a 6-month history of pain and tender masses on the back, left arm, and left hip; the pain was insidious, gradually worsened, and caused difficulty walking and decreased range of motion of the shoulders and hips.",
+          "support_refs": [
+            "W5"
+          ],
+          "source_text_hashes": [
+            "0a55f559af89e320994a367100f2a03e2991487f6cb6c2cf6defd4c9a875ede1"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision1_tool.json",
+          "source_observation_index": 4,
+          "writer_request_id": "writer_1_5",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "A case report of fibrodysplasia ossificans progressiva (FOP) described a 10-year-old Pakistani boy who presented with a 6-month history of pain and tender masses on the back, left arm, and left hip; the pain was insidious, gradually worsened, and caused difficulty walking and decreased range of motion of the shoulders and hips.",
+            "statement_hash": "a1954a6f6b024324a65d6b0b41b6caeb67a2037f9f3d15920b65439d3f59d440",
+            "observation_hash": "0a55f559af89e320994a367100f2a03e2991487f6cb6c2cf6defd4c9a875ede1",
+            "writer_id": "writer_1_5",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_1_5.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Case presentation gives country, age, six-month history and affected body parts.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Fibrodysplasia ossificans progressiva (FOP) is often misdiagnosed, leading to unnecessary biopsies and surgeries that exacerbate the disease.",
+          "support_refs": [
+            "W5"
+          ],
+          "source_text_hashes": [
+            "0a55f559af89e320994a367100f2a03e2991487f6cb6c2cf6defd4c9a875ede1"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision1_tool.json",
+          "source_observation_index": 4,
+          "writer_request_id": "writer_1_5",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "Fibrodysplasia ossificans progressiva (FOP) is often misdiagnosed, leading to unnecessary biopsies and surgeries that exacerbate the disease.",
+            "statement_hash": "171d1c67e918b5ec44d802b9552ba6330b66efc484d8af368422f3f8e0abaacc",
+            "observation_hash": "0a55f559af89e320994a367100f2a03e2991487f6cb6c2cf6defd4c9a875ede1",
+            "writer_id": "writer_1_5",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_1_5.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Opening paragraph explicitly links misdiagnosis, procedures and exacerbation.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "A case report of fibrodysplasia ossificans progressiva (FOP) described a sixteen-year-old male patient who presented with complaints of pain and swelling in his upper back, where a biopsy had been performed two months before; at age 9, he developed tender stiffness of his shoulders and neck, and over the next 4 years experienced multiple similar swellings on the upper back, with limited movement of the shoulders and neck and progressive masses.",
+          "support_refs": [
+            "W6"
+          ],
+          "source_text_hashes": [
+            "c5384e1874eb6a4132115e063e6817cdd8fd37d03826b95e0e2bb2d4f62cb245"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision2_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_2_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "A case report of fibrodysplasia ossificans progressiva (FOP) described a sixteen-year-old male patient who presented with complaints of pain and swelling in his upper back, where a biopsy had been performed two months before; at age 9, he developed tender stiffness of his shoulders and neck, and over the next 4 years experienced multiple similar swellings on the upper back, with limited movement of the shoulders and neck and progressive masses.",
+            "statement_hash": "db44eea6a2fbbb05389b8e59ac3491fe1938c7e9667bb8250af2c63e99d20cd8",
+            "observation_hash": "c5384e1874eb6a4132115e063e6817cdd8fd37d03826b95e0e2bb2d4f62cb245",
+            "writer_id": "writer_2_1",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_2_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Case presentation gives age16, biopsy two months earlier, stiffness at9 and swellings over next4years. Does not independently establish publication date.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "FOP is caused by heterozygous activating mutations in activin A receptor, type I/activin-like kinase 2 (ACVR1/ALK2), and DNA sequence analysis of ACVR1/ALK2 can confirm the diagnosis of FOP.",
+          "support_refs": [
+            "W6"
+          ],
+          "source_text_hashes": [
+            "c5384e1874eb6a4132115e063e6817cdd8fd37d03826b95e0e2bb2d4f62cb245"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision2_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_2_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "FOP is caused by heterozygous activating mutations in activin A receptor, type I/activin-like kinase 2 (ACVR1/ALK2), and DNA sequence analysis of ACVR1/ALK2 can confirm the diagnosis of FOP.",
+            "statement_hash": "42bbee026c4400a64ef7a3b8cc82d53a46dd68c090334faa28a212f1fee40ff7",
+            "observation_hash": "c5384e1874eb6a4132115e063e6817cdd8fd37d03826b95e0e2bb2d4f62cb245",
+            "writer_id": "writer_2_1",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_2_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Introduction explicitly links mutations and diagnostic sequencing.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "In individuals with fibrodysplasia ossificans progressiva (FOP), trauma to the muscles, such as a fall or invasive medical procedures, may trigger episodes of muscle swelling and inflammation (myositis) followed by more rapid ossification in the injured area.",
+          "support_refs": [
+            "W8"
+          ],
+          "source_text_hashes": [
+            "fb2054ca5841e2a9ad6b5ab9e99bdda9e29e093c1b60971acff32efbdb89d109"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/decision2_tool.json",
+          "source_observation_index": 2,
+          "writer_request_id": "writer_2_3",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "637",
+            "case_id": "F13",
+            "statement": "In individuals with fibrodysplasia ossificans progressiva (FOP), trauma to the muscles, such as a fall or invasive medical procedures, may trigger episodes of muscle swelling and inflammation (myositis) followed by more rapid ossification in the injured area.",
+            "statement_hash": "f1811a9079380a81ff11b094d7aabc6f8e3e5c5b3e864801fff2686ce9bcefbe",
+            "observation_hash": "fb2054ca5841e2a9ad6b5ab9e99bdda9e29e093c1b60971acff32efbdb89d109",
+            "writer_id": "writer_2_3",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/calls/writer_2_3.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "MedlinePlus explicitly describes trauma-triggered swelling followed by ossification.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      }
+    ],
+    "hypothesis": "The shared disorder in the two 2010s case reports is fibrodysplasia ossificans progressiva (FOP).",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F13/S05.json",
+      "sha256": "f10ed736af5f288f3cd77f91f6b8e5519a662c3516d2442a9a0b8627c8da24bd",
+      "transition": "update_2_1"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F13_S06.request.json",
+    "old_request_sha256": "f522cdbbce262cd8661185402737eeb86cb907d9b640303ee7887c405e70fedf"
+  },
+  {
+    "state_id": "F14_S00",
+    "qid": "843",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/S00.json",
+    "snapshot_sha256": "ee4f7cfc163aa0b5f6fc5ca29ff45bab36c4d7fb46642dd42761875fc9b20033",
+    "claims": [],
+    "hypothesis": "",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/S00.json",
+      "sha256": "ee4f7cfc163aa0b5f6fc5ca29ff45bab36c4d7fb46642dd42761875fc9b20033",
+      "transition": "initial"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F14_S00.request.json",
+    "old_request_sha256": "8be2c36e5ca76d282da3afc76b7db08d8da0d4ee9f0e2a9f627e195fb5ee63c7"
+  },
+  {
+    "state_id": "F14_S01",
+    "qid": "843",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/S01.json",
+    "snapshot_sha256": "8f8c7554a63197eee997a57dad0cbad5912623208e4286c7bdca5098975662a4",
+    "claims": [
+      {
+        "claim_record": {
+          "statement": "The 2023 master's thesis '\"Is EU4 Only About Map Painting?\": Settler Colonial Ideology in Europa Universalis IV' was written by Mitchell Losito at Georgetown University.",
+          "support_refs": [
+            "W1"
+          ],
+          "source_text_hashes": [
+            "32bfb9f61c27c44754a318360514504d7fe0b348f18c36c5de0ff7d04ccc2ff7"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision1_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_1_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "The 2023 master's thesis '\"Is EU4 Only About Map Painting?\": Settler Colonial Ideology in Europa Universalis IV' was written by Mitchell Losito at Georgetown University.",
+            "statement_hash": "b3afc8dd522ae8096527f869737d0ac082d11adb3bfa317d9a8498983c5cf16d",
+            "observation_hash": "32bfb9f61c27c44754a318360514504d7fe0b348f18c36c5de0ff7d04ccc2ff7",
+            "writer_id": "writer_1_1",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_1_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Repository metadata explicitly gives author, title, MA, Georgetown and2023.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Amanda D. Phillips was the advisor for the 2023 Georgetown University master's thesis on Europa Universalis IV.",
+          "support_refs": [
+            "W1"
+          ],
+          "source_text_hashes": [
+            "32bfb9f61c27c44754a318360514504d7fe0b348f18c36c5de0ff7d04ccc2ff7"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision1_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_1_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "Amanda D. Phillips was the advisor for the 2023 Georgetown University master's thesis on Europa Universalis IV.",
+            "statement_hash": "e867a0958736c8f9625e30cba21bd43c308f19ebb8b147f8fb7edbfd38d7309d",
+            "observation_hash": "32bfb9f61c27c44754a318360514504d7fe0b348f18c36c5de0ff7d04ccc2ff7",
+            "writer_id": "writer_1_1",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_1_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Same metadata names advisor.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      }
+    ],
+    "hypothesis": "The strategy video game in the Original Question is Europa Universalis IV.",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/S01.json",
+      "sha256": "8f8c7554a63197eee997a57dad0cbad5912623208e4286c7bdca5098975662a4",
+      "transition": "update_1_1"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F14_S01.request.json",
+    "old_request_sha256": "d0bc82a1caa833d5c6bb9793572293fa403a68e1d7e263e7c94bc892fe8451f2"
+  },
+  {
+    "state_id": "F14_S06",
+    "qid": "843",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/S06.json",
+    "snapshot_sha256": "d493b331a0b16895915ff2580b72e17d2e3e0d1621c2e6221ceed31b95d8fa23",
+    "claims": [
+      {
+        "claim_record": {
+          "statement": "The 2023 master's thesis '\"Is EU4 Only About Map Painting?\": Settler Colonial Ideology in Europa Universalis IV' was written by Mitchell Losito at Georgetown University.",
+          "support_refs": [
+            "W1"
+          ],
+          "source_text_hashes": [
+            "32bfb9f61c27c44754a318360514504d7fe0b348f18c36c5de0ff7d04ccc2ff7"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision1_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_1_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "The 2023 master's thesis '\"Is EU4 Only About Map Painting?\": Settler Colonial Ideology in Europa Universalis IV' was written by Mitchell Losito at Georgetown University.",
+            "statement_hash": "b3afc8dd522ae8096527f869737d0ac082d11adb3bfa317d9a8498983c5cf16d",
+            "observation_hash": "32bfb9f61c27c44754a318360514504d7fe0b348f18c36c5de0ff7d04ccc2ff7",
+            "writer_id": "writer_1_1",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_1_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Repository metadata explicitly gives author, title, MA, Georgetown and2023.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Amanda D. Phillips was the advisor for the 2023 Georgetown University master's thesis on Europa Universalis IV.",
+          "support_refs": [
+            "W1"
+          ],
+          "source_text_hashes": [
+            "32bfb9f61c27c44754a318360514504d7fe0b348f18c36c5de0ff7d04ccc2ff7"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision1_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_1_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "Amanda D. Phillips was the advisor for the 2023 Georgetown University master's thesis on Europa Universalis IV.",
+            "statement_hash": "e867a0958736c8f9625e30cba21bd43c308f19ebb8b147f8fb7edbfd38d7309d",
+            "observation_hash": "32bfb9f61c27c44754a318360514504d7fe0b348f18c36c5de0ff7d04ccc2ff7",
+            "writer_id": "writer_1_1",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_1_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Same metadata names advisor.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.",
+          "support_refs": [
+            "W6"
+          ],
+          "source_text_hashes": [
+            "4f6cf914064b368152fe1851333c7e62be2ed5f6cba65ae7626b9b8c71a0f639"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision2_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_2_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.",
+            "statement_hash": "98c323e986586482f8079fa5e255db299a7d4fe08b5e9e62363d52ceb739451f",
+            "observation_hash": "4f6cf914064b368152fe1851333c7e62be2ed5f6cba65ae7626b9b8c71a0f639",
+            "writer_id": "writer_2_1",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_2_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Steam observed product metadata gives title and release11Oct2016.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "The Rights of Man wiki page lists development diary 3 (2016-05-26) 'Technology Groups' on changes to technology groups and technological development, development diary 7 (2016-06-23) 'The Ottoman Sultanate' on the Ottomans getting unique flavor, and development diary 9 (2016-08-04) 'Coptic Holy Sites' on a new blessings and holy cities system for Coptics.",
+          "support_refs": [
+            "W7"
+          ],
+          "source_text_hashes": [
+            "8b8d859cd0dcb32536039698c437e4ffb5f3b4bb61c6c041d4b5d4025125840b"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision2_tool.json",
+          "source_observation_index": 1,
+          "writer_request_id": "writer_2_2",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "The Rights of Man wiki page lists development diary 3 (2016-05-26) 'Technology Groups' on changes to technology groups and technological development, development diary 7 (2016-06-23) 'The Ottoman Sultanate' on the Ottomans getting unique flavor, and development diary 9 (2016-08-04) 'Coptic Holy Sites' on a new blessings and holy cities system for Coptics.",
+            "statement_hash": "bcd3c39890f29b452bdda6c908442b4f6788c6eeb791d8ca670872ecb6acc403",
+            "observation_hash": "8b8d859cd0dcb32536039698c437e4ffb5f3b4bb61c6c041d4b5d4025125840b",
+            "writer_id": "writer_2_2",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_2_2.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Visible diary table supplies all three dates/topics.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Europa Universalis IV is a 2013 grand strategy video game; the Wikipedia article body states it was released on 25 August 2013 for Windows, OS X, and Linux, while the infobox lists 13 August 2013.",
+          "support_refs": [
+            "W8"
+          ],
+          "source_text_hashes": [
+            "60a0c953e317f5ff5d4294726854f5b915071fd31a034d9a59bcfee3c03e135d"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision2_tool.json",
+          "source_observation_index": 2,
+          "writer_request_id": "writer_2_3",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "Europa Universalis IV is a 2013 grand strategy video game; the Wikipedia article body states it was released on 25 August 2013 for Windows, OS X, and Linux, while the infobox lists 13 August 2013.",
+            "statement_hash": "5e9aaaaa5ba86153ad2b9e79f5217aa367eab55b05b5a5f703b8314b734a5e20",
+            "observation_hash": "60a0c953e317f5ff5d4294726854f5b915071fd31a034d9a59bcfee3c03e135d",
+            "writer_id": "writer_2_3",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_2_3.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Claim correctly retains conflicting infobox/body dates instead of silently selecting one.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "The Rights of Man manual states that technology in Europa Universalis IV was completely redone, casting aside the old location-based system.",
+          "support_refs": [
+            "W9"
+          ],
+          "source_text_hashes": [
+            "6a0712463cac54ee9bfd58b068ce5766073813ab518f83664d18821728d23a1f"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision2_tool.json",
+          "source_observation_index": 3,
+          "writer_request_id": "writer_2_4",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "The Rights of Man manual states that technology in Europa Universalis IV was completely redone, casting aside the old location-based system.",
+            "statement_hash": "7f8b4d311e595df722bb1eaf659b545f3129d41cf62741a6c815052f25bc11e7",
+            "observation_hash": "6a0712463cac54ee9bfd58b068ce5766073813ab518f83664d18821728d23a1f",
+            "writer_id": "writer_2_4",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_2_4.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Manual opening explicitly states technology change.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "The Rights of Man manual states that Rights of Man includes changes to governments and subjects, including new details for Revolutionary Republics and the Ottoman Empire.",
+          "support_refs": [
+            "W9"
+          ],
+          "source_text_hashes": [
+            "6a0712463cac54ee9bfd58b068ce5766073813ab518f83664d18821728d23a1f"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision2_tool.json",
+          "source_observation_index": 3,
+          "writer_request_id": "writer_2_4",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "The Rights of Man manual states that Rights of Man includes changes to governments and subjects, including new details for Revolutionary Republics and the Ottoman Empire.",
+            "statement_hash": "edb890beb131f1a70fc7c44bb8fb6d90be9c8887bb1266ae55c5be2fa989b778",
+            "observation_hash": "6a0712463cac54ee9bfd58b068ce5766073813ab518f83664d18821728d23a1f",
+            "writer_id": "writer_2_4",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_2_4.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Same paragraph names government/subject changes and both examples.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "The Rights of Man manual credits the content designers, in listed order, as Henrik Lohmander, Milla Isaksson, and Mathilda Bjarnehed.",
+          "support_refs": [
+            "W11"
+          ],
+          "source_text_hashes": [
+            "e46d9f64f3c158b39badd96e3569057e933b42eca184a69afcf81142f9b74fb9"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision3_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_3_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "The Rights of Man manual credits the content designers, in listed order, as Henrik Lohmander, Milla Isaksson, and Mathilda Bjarnehed.",
+            "statement_hash": "043d6af7778967439e949a59275229bd77262196d79926ee8b32034235c28937",
+            "observation_hash": "e46d9f64f3c158b39badd96e3569057e933b42eca184a69afcf81142f9b74fb9",
+            "writer_id": "writer_3_1",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_3_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Manual credits list content designers in this order.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "Mathilda Bjarnehed is the third content designer credited for the Rights of Man downloadable content.",
+          "support_refs": [
+            "W11"
+          ],
+          "source_text_hashes": [
+            "e46d9f64f3c158b39badd96e3569057e933b42eca184a69afcf81142f9b74fb9"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/decision3_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_3_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "843",
+            "case_id": "F14",
+            "statement": "Mathilda Bjarnehed is the third content designer credited for the Rights of Man downloadable content.",
+            "statement_hash": "8aeb05853fe10c3d0042e5795269aeb7b0599ed83b7d5fb3d2fa98f7a36e1dc5",
+            "observation_hash": "e46d9f64f3c158b39badd96e3569057e933b42eca184a69afcf81142f9b74fb9",
+            "writer_id": "writer_3_1",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/calls/writer_3_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Direct ordinal inference from three-name credit list.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      }
+    ],
+    "hypothesis": "The strategy video game is Europa Universalis IV, and the DLC in question may be its Rights of Man expansion.",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F14/S02.json",
+      "sha256": "a44491df7aa2438d2bdeda29ef1ca9f72b86748d5f6514ed9d57ba13edf6ca2c",
+      "transition": "update_2_1"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F14_S06.request.json",
+    "old_request_sha256": "ebe499e339b08438fbde2ea4f1ce93b750e70dfcc2d00dab73c2f5309771dfb9"
+  },
+  {
+    "state_id": "F16_S00",
+    "qid": "922",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/S00.json",
+    "snapshot_sha256": "93c7f489e67917dfa8723feebc5b4b57d05ce4cdd13a34d9fd2246ef752bd35a",
+    "claims": [],
+    "hypothesis": "",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/S00.json",
+      "sha256": "93c7f489e67917dfa8723feebc5b4b57d05ce4cdd13a34d9fd2246ef752bd35a",
+      "transition": "initial"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F16_S00.request.json",
+    "old_request_sha256": "f105d9693c5904270787249da0067dd8592d5dbe56df55c20d069d424240bd5f"
+  },
+  {
+    "state_id": "F16_S01",
+    "qid": "922",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/S01.json",
+    "snapshot_sha256": "40e0a7930c07926021e74ac44ecaab57e29bbe866e704c99460b878700131066",
+    "claims": [
+      {
+        "claim_record": {
+          "statement": "A letter from King Michael of Romania to the President of the United States was transmitted to the President under cover of a memorandum dated March 5, 1945, from William J. Donovan, Director of the Office of Strategic Services.",
+          "support_refs": [
+            "W4"
+          ],
+          "source_text_hashes": [
+            "e6d65bf35a2e0a495834904f909928309b5d1c001a45cb559bca1ba3ae0ecd1e"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/decision1_tool.json",
+          "source_observation_index": 3,
+          "writer_request_id": "writer_1_4",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "922",
+            "case_id": "F16",
+            "statement": "A letter from King Michael of Romania to the President of the United States was transmitted to the President under cover of a memorandum dated March 5, 1945, from William J. Donovan, Director of the Office of Strategic Services.",
+            "statement_hash": "83ff9fc3b3c2744d1594c85b6cd8c0ca3350e028612740dd287eb1f4134d6116",
+            "observation_hash": "e6d65bf35a2e0a495834904f909928309b5d1c001a45cb559bca1ba3ae0ecd1e",
+            "writer_id": "writer_1_4",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/calls/writer_1_4.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Footnote explicitly gives letter, transmission memorandum date and Donovan’s position.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "King Michael handed the letter to an OSS officer in Bucharest with the statement that he was pleased to have an opportunity to transmit his views to the President unofficially.",
+          "support_refs": [
+            "W4"
+          ],
+          "source_text_hashes": [
+            "e6d65bf35a2e0a495834904f909928309b5d1c001a45cb559bca1ba3ae0ecd1e"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/decision1_tool.json",
+          "source_observation_index": 3,
+          "writer_request_id": "writer_1_4",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "922",
+            "case_id": "F16",
+            "statement": "King Michael handed the letter to an OSS officer in Bucharest with the statement that he was pleased to have an opportunity to transmit his views to the President unofficially.",
+            "statement_hash": "fdb802c4e8a52524a3c2dcfa6bea02c92e681881fdf0d711b98c86370d727bd3",
+            "observation_hash": "e6d65bf35a2e0a495834904f909928309b5d1c001a45cb559bca1ba3ae0ecd1e",
+            "writer_id": "writer_1_4",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/calls/writer_1_4.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Footnote directly quotes unofficial delivery by OSS officer.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      }
+    ],
+    "hypothesis": "The described letter may be the March 5, 1945 letter from King Michael of Romania to the President of the United States.",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/S01.json",
+      "sha256": "40e0a7930c07926021e74ac44ecaab57e29bbe866e704c99460b878700131066",
+      "transition": "update_1_4"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F16_S01.request.json",
+    "old_request_sha256": "d756ab1246a090f941a750a7ae56fd46d1b95d5375427592c5e3d4c7f034cead"
+  },
+  {
+    "state_id": "F16_S02",
+    "qid": "922",
+    "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/S02.json",
+    "snapshot_sha256": "82904e93ca33d5fc16f0eecc4e57aabc98f8fc31f002544175e38285a2f5e1cb",
+    "claims": [
+      {
+        "claim_record": {
+          "statement": "A letter from King Michael of Romania to the President of the United States was transmitted to the President under cover of a memorandum dated March 5, 1945, from William J. Donovan, Director of the Office of Strategic Services.",
+          "support_refs": [
+            "W4"
+          ],
+          "source_text_hashes": [
+            "e6d65bf35a2e0a495834904f909928309b5d1c001a45cb559bca1ba3ae0ecd1e"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/decision1_tool.json",
+          "source_observation_index": 3,
+          "writer_request_id": "writer_1_4",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "922",
+            "case_id": "F16",
+            "statement": "A letter from King Michael of Romania to the President of the United States was transmitted to the President under cover of a memorandum dated March 5, 1945, from William J. Donovan, Director of the Office of Strategic Services.",
+            "statement_hash": "83ff9fc3b3c2744d1594c85b6cd8c0ca3350e028612740dd287eb1f4134d6116",
+            "observation_hash": "e6d65bf35a2e0a495834904f909928309b5d1c001a45cb559bca1ba3ae0ecd1e",
+            "writer_id": "writer_1_4",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/calls/writer_1_4.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Footnote explicitly gives letter, transmission memorandum date and Donovan’s position.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "King Michael handed the letter to an OSS officer in Bucharest with the statement that he was pleased to have an opportunity to transmit his views to the President unofficially.",
+          "support_refs": [
+            "W4"
+          ],
+          "source_text_hashes": [
+            "e6d65bf35a2e0a495834904f909928309b5d1c001a45cb559bca1ba3ae0ecd1e"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/decision1_tool.json",
+          "source_observation_index": 3,
+          "writer_request_id": "writer_1_4",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "922",
+            "case_id": "F16",
+            "statement": "King Michael handed the letter to an OSS officer in Bucharest with the statement that he was pleased to have an opportunity to transmit his views to the President unofficially.",
+            "statement_hash": "fdb802c4e8a52524a3c2dcfa6bea02c92e681881fdf0d711b98c86370d727bd3",
+            "observation_hash": "e6d65bf35a2e0a495834904f909928309b5d1c001a45cb559bca1ba3ae0ecd1e",
+            "writer_id": "writer_1_4",
+            "claim_index": 1,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/calls/writer_1_4.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Footnote directly quotes unofficial delivery by OSS officer.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      },
+      {
+        "claim_record": {
+          "statement": "In the letter, King Michael refers to Romania having regained North Transylvania.",
+          "support_refs": [
+            "W10"
+          ],
+          "source_text_hashes": [
+            "cece0694a0781c2a79fb0d545a656a4c4b4130d19e5ba9dc9626b02714081292"
+          ],
+          "source_observation_path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/decision3_tool.json",
+          "source_observation_index": 0,
+          "writer_request_id": "writer_3_1",
+          "admission": "unrepaired frozen U1; offline support review required"
+        },
+        "inherited_source_support": [
+          {
+            "qid": "922",
+            "case_id": "F16",
+            "statement": "In the letter, King Michael refers to Romania having regained North Transylvania.",
+            "statement_hash": "43c21ca42530f4f777f287871c5e70ff44a2452744451dc9a5d74d89df22d8e1",
+            "observation_hash": "cece0694a0781c2a79fb0d545a656a4c4b4130d19e5ba9dc9626b02714081292",
+            "writer_id": "writer_3_1",
+            "claim_index": 0,
+            "writer_response": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/calls/writer_3_1.response.json",
+            "review": {
+              "status": "supported",
+              "reason": "Letter explicitly thanks Red Army for regaining North Transylvania.",
+              "reviewer": "Codex single reviewer; source-relative",
+              "not_global_truth_audit": true
+            }
+          }
+        ]
+      }
+    ],
+    "hypothesis": "The described letter may be the March 5, 1945 letter from King Michael of Romania to the President of the United States.",
+    "h_first_equal_snapshot": {
+      "snapshot": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F16/S01.json",
+      "sha256": "40e0a7930c07926021e74ac44ecaab57e29bbe866e704c99460b878700131066",
+      "transition": "update_1_4"
+    },
+    "h_status": "provisional; no factual authority",
+    "support_scope": "Inherited source-relative review plus mechanical identity check, not new global truth audit",
+    "old_need_request": "experiments/belief_need_budget_locality_repair/need/confirmation/calls/B5__F16_S02.request.json",
+    "old_request_sha256": "685d85995127923274f565bbfb0b6fb6035a87ceff54662db3f0d090aa1f1a85"
+  }
+]

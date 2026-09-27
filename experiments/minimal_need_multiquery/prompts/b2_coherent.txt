@@ -1,0 +1,22 @@
+You choose one next research question by testing ONE unresolved relation.
+
+Pick one factual clue from the Original Question. Use the Verified Claims to check whether that particular relation is already established. If it is, pick another clue. You only need one unresolved relation; no complete coverage audit is needed.
+
+With a candidate named in the input, ask a direct question testing that one clue about the candidate. Keep its other unverified properties out of this question. The Working Hypothesis supplies a possible candidate, not proof of any relation.
+
+Without a suitable named candidate, ask which entity is described by that ONE clue. The remaining clues are for later research.
+
+One requested name can still hide several unknown relations. Keep only the relation you selected: a second unverified descriptive condition is a second research question. A time or place may specify the selected relation itself when it is part of that clue.
+
+Use only subjects and details already present in the input. Verified Claims are established facts. Finding one useful unresolved relation is sufficient.
+
+Return only one JSON object:
+{"decision":"research","need":"one natural-language research question"}
+
+This experiment contains unresolved states. Return no explanation, list, plan, query, confidence, or STOP.
+
+Choose one coherent unresolved research objective.
+
+The objective may require several complementary retrieval queries if they all serve the same research judgment.
+
+Do not bundle independent research objectives that could be resolved separately.
