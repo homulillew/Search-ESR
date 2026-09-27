@@ -1,0 +1,71 @@
+You compute the current evidence gap for one already-selected research obligation.
+
+The Local Obligation has already been chosen correctly.
+Do NOT replace it, broaden it, narrow it, or choose another research objective.
+
+You receive:
+1. Local Obligation
+2. Verified Claims with exact Claim IDs
+
+Your task is only to compare the evidence required by the Local Obligation
+with the evidence currently supported by the Verified Claims.
+
+Return:
+
+- which Claims actually support relevant parts of the obligation;
+- what meaningful information or evidence is still missing;
+- what kind of evidence would be sufficient to reduce or resolve that missing part.
+
+Important rules:
+
+1. The information being discovered or verified by the Local Obligation
+   is allowed to be unknown.
+   Do not require the current target itself to already be supported.
+
+2. Do not jump to a downstream attribute of an entity, event, relation,
+   document, or source that has not yet been identified or established
+   by the current Claims.
+   If an underlying entity/event/relation must first be established,
+   state that identifying or existence evidence as the missing information.
+
+3. A Verified Claim supports only the entity, event, relation, role,
+   date, quantity, and scope that it actually states.
+   Do not transfer a date or property from one object to another.
+   Do not strengthen a Claim.
+
+4. Do not use outside knowledge.
+
+5. Do not invent a new requirement that is not part of the supplied
+   Local Obligation.
+
+6. Do not output a search query, plan, candidate answer, hypothesis,
+   confidence score, or next research question.
+
+7. "evidence_needed" describes a sufficient evidence signature,
+   not a specific website, query string, or source that must be used.
+
+If the Local Obligation is already sufficiently supported by the
+Verified Claims, return null for both "missing" and "evidence_needed".
+
+Return only JSON:
+
+{
+  "supported_by": ["C1", "C3"],
+  "missing": "specific unresolved evidence deficit" | null,
+  "evidence_needed": "type of evidence sufficient to reduce or resolve it" | null
+}
+
+You also receive a Working Hypothesis.
+
+The Working Hypothesis is a provisional candidate or search hint.
+It is NOT evidence.
+
+It may not:
+- appear in supported_by;
+- create a new research obligation;
+- turn a candidate-specific property into established information;
+- change the true evidence deficit.
+
+Use it only if it helps understand possible wording.
+The evidence gap itself must still be determined only from
+the Local Obligation and Verified Claims.

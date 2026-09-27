@@ -1,0 +1,48 @@
+{
+  "base_commit": "a37a1bd1afbd366dc35bc1e0c951aa5c2befbd96",
+  "preparation_head": "a37a1bd1afbd366dc35bc1e0c951aa5c2befbd96",
+  "files": {
+    "experiments/evidence_gap_gold_obligation/CONFIG.json": "99dc73c579fd2f563a43b0e033900044c1284026d0489f9b169768d71bcb2cda",
+    "experiments/evidence_gap_gold_obligation/HYPOTHESES.md": "f4a5d1ae5a78255a00db100aa3d138d60fc5db8498a8d917c384e36ef7c5fa81",
+    "experiments/evidence_gap_gold_obligation/PRE_EXECUTION_AUDIT.md": "2787418302e1e3c46015bb95a5ba911bb2fe0b138d94b728d166be303812caa8",
+    "experiments/evidence_gap_gold_obligation/PROTOCOL.md": "96a9211d998332d8a7f0b7f3eeb6b07f61a44e1fd4364272f2b34844c2e44780",
+    "experiments/evidence_gap_gold_obligation/README.md": "95f0705b2990c5ee2e46890bd38cb68f27a663d4d9b4545523622ecc02654221",
+    "experiments/evidence_gap_gold_obligation/TASK.md": "5feb6b4fc01ac571bf8e9d9812e5ec1883870b359c43a36b69d089cb74b60503",
+    "experiments/evidence_gap_gold_obligation/analysis/CALL_ESTIMATE.json": "86c2a4f4a96d5695d000eaa9e43ae7ade0e6025b7a2f09e26a0af337497a599d",
+    "experiments/evidence_gap_gold_obligation/analysis/DRY_RUN.json": "dad501f1d21d9fc00111b96dcb913329be22116a699e465e6ceb8205a9e1728f",
+    "experiments/evidence_gap_gold_obligation/analysis/HISTORICAL_HASHES.json": "b9db38124d9ac472a0512fe0d1dc0879613ced50dcf07496df259a51ba39164a",
+    "experiments/evidence_gap_gold_obligation/analysis/OFFLINE_TESTS.json": "5ad682e068787992e939ae15b566be15462d8b60a943a060445d35456f4abbe1",
+    "experiments/evidence_gap_gold_obligation/analysis/PROVIDER_PREFLIGHT.json": "598d74e11db26740d1cf8242ea7b2f18c1afe89bd2774b19868bdc98161ec710",
+    "experiments/evidence_gap_gold_obligation/common.py": "6e473179cf8a3ffa4e65ef52a4171522a787b64dffa622fa9b761db638538ffd",
+    "experiments/evidence_gap_gold_obligation/e0_reference/CASES.json": "d525c93b0cc2b0c2143f550bb2584441f71d194e6dc8c0a3da984ea7ba7307b0",
+    "experiments/evidence_gap_gold_obligation/e0_reference/GOLD_GAPS.json": "ee2b820dac3131830b5cb1875c23cda4124a9350c8fe3f2dbe63c08b221a41c2",
+    "experiments/evidence_gap_gold_obligation/e0_reference/GOLD_OBLIGATIONS.json": "e6c95e5e74a609679d9b7a2b5365ae1a078a2022118f8a18c9e070a864713c0c",
+    "experiments/evidence_gap_gold_obligation/e0_reference/REPORT.md": "3d789758bd1a5675d040924a38c79c2cd6b798f9d8b050cc8931f1f66c33d569",
+    "experiments/evidence_gap_gold_obligation/e0_reference/SELECTION.json": "63c3335d7e44ebe59425ba36ee68dd84a4379306ebf3601d015b13d6a7730b8a",
+    "experiments/evidence_gap_gold_obligation/e0_reference/build_reference.py": "ca87ff468525d28d027b109de1a8a608246bb2eebb3d5ea5d701eaaac1f5ec44",
+    "experiments/evidence_gap_gold_obligation/e1_gap/SCHEDULE.json": "e1df0cea9c472d928e591970316d3910f52d619d7ec5385bf07546e96bf67a71",
+    "experiments/evidence_gap_gold_obligation/prepare.py": "dc2d9a73795c089d779b696813a594560bdd5aefadb74739cede643f8c10f08a",
+    "experiments/evidence_gap_gold_obligation/prompts/g0_gap_no_h.txt": "660cbdcee2f39ce293d4f988c13d4cf7ea3c528d4725150f5a4e3fbab7e941c6",
+    "experiments/evidence_gap_gold_obligation/prompts/g1_gap_with_h.txt": "1cf22647ee7f5fd845bd6a7dca5e53bb3fb856c83d9fe42024bcec495072ef45",
+    "experiments/evidence_gap_gold_obligation/run.py": "5bd994348f617ed73733fe6d89437561097c2fefb5fb66d9d45673a1c52a839d",
+    "experiments/evidence_gap_gold_obligation/score.py": "74915a242fba5bf7b6a59784c18b5109e6da3e483341ccae9cda9f7e1ec607c1",
+    "experiments/evidence_gap_gold_obligation/test_contracts.py": "b0bbcba86abefe4d66ba7bdb2fecc02c0e1e2537f788cf975cb313447554931e"
+  },
+  "calls": 108,
+  "arms": [
+    "G0",
+    "G1"
+  ],
+  "replicates": 2,
+  "gates": {
+    "strict": 0.8,
+    "missing": 0.85,
+    "support": 0.85,
+    "satisfied_specificity": 0.85,
+    "downstream_max": 0.1,
+    "target_prerequisite_max": 0.1,
+    "schema": 0.95,
+    "replicate_semantic": 0.8
+  },
+  "failure_policy": "All scheduled slots remain denominator; no retry/resample/repair; stop batch on provider contract/access/billing errors; retain unknown usage. Stop study after E1 regardless of gate."
+}
