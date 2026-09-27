@@ -1,0 +1,21 @@
+{
+  "head": "7da3ba3d9747330f64af04d7a18bf03b6247109b",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"a team featuring\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"an Australian coder\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"won the championship.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Jerry Mao is an Australian competitive programmer who won a bronze medal at IOI 2015, a silver medal at IOI 2016, a gold medal at IOI 2017, and a silver medal at IOI 2018.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Jerry Mao was a member of the Massachusetts Institute of Technology team MIT ZEROONE (with Mingyang Deng and Xiao Mao), which won the ICPC 2021 World Finals Dhaka (held on 10 November 2022) as World Champion.\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "69a00eaf87e17c26dbf7afb37400eb4ca5fb7eb1caeff6f3557b686276706810"
+}

@@ -1,0 +1,21 @@
+{
+  "head": "7da3ba3d9747330f64af04d7a18bf03b6247109b",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In one of the tables,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"one of the emotions\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"is at 13.53 percent.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"In Table 2 of that paper, the positive emotion \\\"Happiness\\\" is reported at 13.53 percent (33 participants).\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "264540b9fab6ad4a8033b369890cf0cab01db8fe9568f8abd519284b8cf1d250"
+}

@@ -1,0 +1,21 @@
+{
+  "head": "7da3ba3d9747330f64af04d7a18bf03b6247109b",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"This person and their spouse,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"who, up to 2019,\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"had no children from the marriage,\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"Ding Lei, also known as William Ding, founded NetEase in June 1997 and is its founder/CEO; NetEase is an online and mobile games business, and Ding's fortune came largely from video games including Fantasy Westward Journey.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"Ding Lei earned a degree in communication technology from the University of Electronic Science and Technology of China; at the time of the 2019 article, he was married but without children.\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "7520d2fc93490c738e6b7b552811e6af454197323052ad41c6c9fe757129be89"
+}

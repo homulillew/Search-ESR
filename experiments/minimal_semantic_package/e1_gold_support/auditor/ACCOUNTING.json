@@ -1,0 +1,42 @@
+{
+  "planned": 35,
+  "attempted_or_send_intent": 35,
+  "reported_partial_totals": {
+    "input": 12020,
+    "output": 72884,
+    "reasoning": 72516,
+    "total": 84904,
+    "hit": 3456,
+    "miss": 8564
+  },
+  "usage_complete_calls": 35,
+  "accounting_complete": true,
+  "cache_reporting_calls": 35,
+  "cache_weighted_rate": 0.2875207986688852,
+  "cache_consistent_with_input": true,
+  "zero_fill_means_only_reported_partial_sum": true,
+  "currency": null,
+  "sent_or_send_intent": 35,
+  "returned": 35,
+  "HTTP_errors": 0,
+  "schema_errors": 0,
+  "failures": {},
+  "latency_seconds": {
+    "median": 5.321751657873392,
+    "p95": 47.45346410013735,
+    "max": 49.21053449623287
+  },
+  "latency_scope": "attempted requests with measured duration, including failures; no total wall deadline",
+  "valid_outputs": 35,
+  "cache_hit_rate_reported_tokens": {
+    "numerator": 3456,
+    "denominator": 12020,
+    "value": 0.2875207986688852
+  },
+  "cache_rate_eligible_calls": 35,
+  "cache_rate_excluded_attempts": 0,
+  "cache_rate_definition": "sum hit / sum prompt tokens on calls with complete consistent input/hit/miss counters; excludes unknown usage, not a whole-run spending estimate",
+  "wall_seconds": 62.44562401622534,
+  "peak_concurrency": 8,
+  "harness_error": null
+}

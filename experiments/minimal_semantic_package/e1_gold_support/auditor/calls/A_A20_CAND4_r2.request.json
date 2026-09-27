@@ -1,0 +1,21 @@
+{
+  "head": "7da3ba3d9747330f64af04d7a18bf03b6247109b",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"The downloadable content in question\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"made changes to the mechanics\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"of the base game\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"statement\": \"The Rights of Man manual states that Rights of Man includes changes to governments and subjects, including new details for Revolutionary Republics and the Ottoman Empire.\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "4ac5c1e7a76e1cf12e47557cce0518dba9cac71f5316ef7d27aa4d30618f8077"
+}

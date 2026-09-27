@@ -1,0 +1,21 @@
+{
+  "head": "7da3ba3d9747330f64af04d7a18bf03b6247109b",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"then published a journal article\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"six years after\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"publishing the book.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Alka Marwaha is an associate professor of Mathematics at Jesus and Mary College, University of Delhi, India, and the author of The Secret World of Vipassana and Mathematics (Wisdom Tree Publishers, November 15, 2016), a book exploring the singularity between Vipassana and Mathematics.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"Alka Marwaha authored the article \\\"Finding the mathematical overlaps of the axiom of choice in Vipassana meditation,\\\" published in the International Journal of Statistics and Applied Mathematics in 2022 (vol. 7, issue 3, pp. 110-114).\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "1bad4ff1fd7e4cef66b7cce2c9c2431bff15130c2e541e5a96dc4f0ab8ff8f9b"
+}

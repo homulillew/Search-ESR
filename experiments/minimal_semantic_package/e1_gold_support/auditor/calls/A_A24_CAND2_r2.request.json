@@ -1,0 +1,21 @@
+{
+  "head": "7da3ba3d9747330f64af04d7a18bf03b6247109b",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In it,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"the author refers to\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"their country having regained a region.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"In the letter, King Michael refers to Romania having regained North Transylvania.\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "1d0a5252f7dcc4e772fd6533b087eb44b808881f596aaf15e00afe8851c4c553"
+}
