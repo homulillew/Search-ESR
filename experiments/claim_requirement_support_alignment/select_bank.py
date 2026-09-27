@@ -1,0 +1,20 @@
+"""Select fixed natural parent-state cells by task coverage and old references only."""
+from .common import *
+NEG=[('G02','R2'),('G05','R2'),('G05','R3'),('G06','R3'),('G08','R1'),('G09','R1'),('G11','R5'),('G14','R4'),('G17','R3'),('G20','R1'),('G23','R4'),('G26','R2')]
+POS=[('G03','R2'),('G03','R5'),('G05','R1'),('G06','R2'),('G08','R2'),('G11','R2'),('G12','R5'),('G18','R3'),('G21','R1'),('G21','R4'),('G23','R2'),('G27','R3')]
+def main():
+ ss=read(OLD/'e0_reference/STATES.json');states={s['case_id']:s for s in ss};sks=read(OLD/'e0_addressability/RUNTIME_SKELETON_D2.json');gold={g['case_id']:g for g in read(OLD/'e1_alignment/GOLD_MASKS.json') if g['skeleton_arm']=='A1'}
+ source={s['case_id']:s for s in read(ROOT/'experiments/dynamic_local_obligation/e0_reference/CASES.json')};out=[];parents=[];inherited=[]
+ for i,(cid,rid) in enumerate(sorted(NEG+POS),1):
+  s=states[cid];assert s['claims'];parent=next(r for r in sks[s['qid']]['requirements'] if r['requirement_id']==rid);g=gold[cid]['requirements'][rid]
+  assert (g['status']=='unsupported')==((cid,rid) in NEG)
+  cell=f'A{i:02}';out.append({**s,'cell_id':cell,'parent_requirement_id':rid,'selection_group':'hard_negative' if (cid,rid) in NEG else 'true_support_control','historical_support_stratum':{'unsupported':'Z','partially_supported':'P','fully_supported':'F'}[g['status']],'natural_snapshot':source[cid]['snapshot'],'natural_snapshot_sha256':source[cid]['snapshot_sha256']})
+  parents.append({'cell_id':cell,'case_id':cid,'qid':s['qid'],'parent':parent,'source_skeleton':rel(OLD/'e0_addressability/RUNTIME_SKELETON_D2.json'),'question_sha256':digest(s['question'])})
+  inherited.append({'cell_id':cell,'case_id':cid,'parent_requirement_id':rid,'historical_reference':g})
+ write(P/'e0_reference/STATES.json',out);write(P/'e0_reference/PARENTS.json',parents);write(P/'e0_reference/HISTORICAL_REFERENCE.json',inherited)
+ write(P/'e0_reference/SELECTION_RULE.md','''# Fixed selection rule\n\nTask-directed coverage sampling of the existing natural D2 bank; all nonempty Claims are copied whole, never synthesized or altered. Select the12 specified zero-support cells in select_bank.py to cover Euler/reference, SPS/case, memorandum/letter, alma-mater/building, coder/teammates, artist/charity, author/book/article and Kwon/Ding branches. Include both mandatory residual transitions G05R2→G06R2 and G17R3→G18R3. Add12 explicitly listed positive parent-state controls, spanning available qids and both partial/full support. Historical human reference statuses guide selection, never old model successes/failures. These are coverage samples, not random or fresh generalization validation.\n\n24 parent-state cells,16 unique natural snapshots,9 qids. The supplied three historical studies share the same underlying natural bank:27 snapshots/10 qids, only17 snapshots/9 qids have nonempty Claims. q122 has no eligible nonempty-Claims state. Do not invent a tenth qid or regenerate a D2 skeleton. Nine-qid coverage is a disclosed shortfall relative to target>=10, accepted under TASK7 actual-bank rule.\n\nNegative/positive parent-state balance12:12, with inherited P7/F5. Individual Claims still have unequal role frequencies. Reused states/parents/qids and two replicates are correlated; report clustered strata, no independent-trial or fresh-generalization claims. G05R3 and G06R3 preserve alma-mater-vs-building across the natural candidate change. G08R1 and G09R1 preserve artist-vs-charity across partner evidence. Selection is not optimized after model outputs.\n''')
+ tracked=git('ls-files','experiments').splitlines();history={n:sha(ROOT/n) for n in tracked if not n.startswith(rel(P)+'/') and (ROOT/n).is_file()};write(P/'analysis/HISTORICAL_HASHES.json',history)
+ deps=[P/'TASK.md',P/'select_bank.py',P/'common.py',*sorted((P/'e0_reference').glob('*'))]
+ write(P/'SELECTION_FREEZE.json',{'base_head':BASE,'head_before_selection_commit':git('rev-parse','HEAD'),'files':{rel(p):sha(p) for p in deps},'historical_protected_files':len(history),'model_calls':0})
+ print('24 cells /16 snapshots /9 qids,12 Z/7 P/5 F')
+if __name__=='__main__':main()
