@@ -1,0 +1,22 @@
+{
+  "head": "386019952e2220a36e0fef0377540ec37bba0ad1",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You decide whether ONE candidate Claim may enter trusted epistemic state.\n\nThe only evidence is the supplied exact source excerpt.\n\nDo not use the Question.\n\nDo not use Requirements.\n\nDo not use hypotheses.\n\nDo not use outside knowledge.\n\nADMIT only if the source excerpt directly entails the entire Claim.\n\nReject the Claim if it:\n\n- introduces a relation not established by the excerpt;\n- strengthens temporal scope;\n- strengthens modality or certainty;\n- strengthens a quantifier;\n- changes subject, object or participant role;\n- resolves an ambiguous identity not established in the excerpt;\n- generalizes from one case to a population;\n- converts correlation or sequence into causation;\n- combines evidence that is not present in this excerpt;\n- states more than the excerpt supports.\n\nA paraphrase is allowed only when its meaning is no stronger than the source.\n\nIf uncertain, REJECT.\n\nReturn JSON only:\n\n{\n  \"verdict\": \"ADMIT\",\n  \"error_tags\": []\n}\n\n\nOutput contract (format only; no additional keys):\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"verdict\": {\n      \"enum\": [\n        \"ADMIT\",\n        \"REJECT\"\n      ]\n    },\n    \"error_tags\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"enum\": [\n          \"argument_change\",\n          \"conditional_scope_expansion\",\n          \"cross_source_composition\",\n          \"entity_binding_unproven\",\n          \"excerpt_mismatch\",\n          \"modality_expansion\",\n          \"other\",\n          \"quantifier_expansion\",\n          \"relation_change\",\n          \"temporal_scope_expansion\",\n          \"unsupported_inference\"\n        ]\n      },\n      \"uniqueItems\": true\n    }\n  },\n  \"required\": [\n    \"verdict\",\n    \"error_tags\"\n  ],\n  \"additionalProperties\": false,\n  \"allOf\": [\n    {\n      \"if\": {\n        \"properties\": {\n          \"verdict\": {\n            \"const\": \"ADMIT\"\n          }\n        }\n      },\n      \"then\": {\n        \"properties\": {\n          \"error_tags\": {\n            \"maxItems\": 0\n          }\n        }\n      },\n      \"else\": {\n        \"properties\": {\n          \"error_tags\": {\n            \"minItems\": 1\n          }\n        }\n      }\n    }\n  ]\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\"candidate_claim\": \"As of the 2019-12-11 article, Ding Lei was 47 years old, married but without children.\", \"exact_supporting_excerpt\": \"But the 47-year-old, who is married but without children, had to slowly work his way up to the top by working hard and smart.\", \"source_metadata\": {\"source_id\": \"S034\", \"observed_title\": \"\", \"observed_url\": \"https://www.scmp.com/magazines/style/celebrity/article/3030092/how-internet-billionaire-ding-lei-brought-marvel-comics\", \"observation_sha256\": \"b366d97ac3bdc8137cb80cc69cbf9a3998ab4fe9b9ff07d977e1ff49672ce6d9\"}}"
+      }
+    ],
+    "temperature": 0,
+    "stream": false,
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "4f54cc5fb42d1479707aa08afee90fde869fb5331077a51ff9a33fe33a5c85b0"
+}

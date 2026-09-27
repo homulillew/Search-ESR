@@ -1,0 +1,22 @@
+{
+  "head": "386019952e2220a36e0fef0377540ec37bba0ad1",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You decide whether ONE candidate Claim may enter trusted epistemic state.\n\nThe only evidence is the supplied exact source excerpt.\n\nDo not use the Question.\n\nDo not use Requirements.\n\nDo not use hypotheses.\n\nDo not use outside knowledge.\n\nADMIT only if the source excerpt directly entails the entire Claim.\n\nReject the Claim if it:\n\n- introduces a relation not established by the excerpt;\n- strengthens temporal scope;\n- strengthens modality or certainty;\n- strengthens a quantifier;\n- changes subject, object or participant role;\n- resolves an ambiguous identity not established in the excerpt;\n- generalizes from one case to a population;\n- converts correlation or sequence into causation;\n- combines evidence that is not present in this excerpt;\n- states more than the excerpt supports.\n\nA paraphrase is allowed only when its meaning is no stronger than the source.\n\nIf uncertain, REJECT.\n\nReturn JSON only:\n\n{\n  \"verdict\": \"ADMIT\",\n  \"error_tags\": []\n}\n\n\nOutput contract (format only; no additional keys):\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"verdict\": {\n      \"enum\": [\n        \"ADMIT\",\n        \"REJECT\"\n      ]\n    },\n    \"error_tags\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"enum\": [\n          \"argument_change\",\n          \"conditional_scope_expansion\",\n          \"cross_source_composition\",\n          \"entity_binding_unproven\",\n          \"excerpt_mismatch\",\n          \"modality_expansion\",\n          \"other\",\n          \"quantifier_expansion\",\n          \"relation_change\",\n          \"temporal_scope_expansion\",\n          \"unsupported_inference\"\n        ]\n      },\n      \"uniqueItems\": true\n    }\n  },\n  \"required\": [\n    \"verdict\",\n    \"error_tags\"\n  ],\n  \"additionalProperties\": false,\n  \"allOf\": [\n    {\n      \"if\": {\n        \"properties\": {\n          \"verdict\": {\n            \"const\": \"ADMIT\"\n          }\n        }\n      },\n      \"then\": {\n        \"properties\": {\n          \"error_tags\": {\n            \"maxItems\": 0\n          }\n        }\n      },\n      \"else\": {\n        \"properties\": {\n          \"error_tags\": {\n            \"minItems\": 1\n          }\n        }\n      }\n    }\n  ]\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\"candidate_claim\": \"Alka Marwaha received the prestigious Izaak Walton Killam Scholarship for meritorious performance.\", \"exact_supporting_excerpt\": \"With a consistent meritorious academic record, she was awarded the Commonwealth Scholarship to pursue a PhD in Mathematics at Dalhousie University, Canada, where she also received the prestigious Izaak Walton Killam Scholarship for meritorious performance.\", \"source_metadata\": {\"source_id\": \"S035\", \"observed_title\": \"The Secret World of Vipassana and Mathematics Paperback – November 15, 2016\", \"observed_url\": \"https://www.amazon.com/Secret-World-Vipassana-Mathematics/dp/8183283888\", \"observation_sha256\": \"edaee6b82e15f37558baece9c8d5879865000988a9f616519b25ff5bd2416589\"}}"
+      }
+    ],
+    "temperature": 0,
+    "stream": false,
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "81ca0544c47a3b6c585f68164bd063f33c214d63829b449cd804392037cd1794"
+}

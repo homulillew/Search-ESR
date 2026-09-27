@@ -1,0 +1,53 @@
+{
+  "id": "A_W_S005_r2_C7",
+  "phase": "admission",
+  "writer_id": "W_S005_r2",
+  "candidate_id": "W_S005_r2_C7",
+  "source_id": "S005",
+  "qid": "435",
+  "replicate": 2,
+  "request_sha256": "8993610bbd8d1c0fa8d5631d95865301048267180ffcb4de768c8e1eb6a51661",
+  "head": "386019952e2220a36e0fef0377540ec37bba0ad1",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "verdict": "REJECT",
+    "error_tags": [
+      "entity_binding_unproven"
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 690,
+    "completion_tokens": 1742,
+    "total_tokens": 2432,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1722
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 306
+  },
+  "started_utc": "2026-09-27T18:12:01.113771+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 8.00667991489172,
+  "completed_utc": "2026-09-27T18:12:09.120470+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 690,
+      "output": 1742,
+      "total": 2432,
+      "reasoning": 1722,
+      "hit": 384,
+      "miss": 306
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

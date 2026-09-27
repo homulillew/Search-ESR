@@ -1,0 +1,22 @@
+{
+  "head": "386019952e2220a36e0fef0377540ec37bba0ad1",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You decide whether ONE candidate Claim may enter trusted epistemic state.\n\nThe only evidence is the supplied exact source excerpt.\n\nDo not use the Question.\n\nDo not use Requirements.\n\nDo not use hypotheses.\n\nDo not use outside knowledge.\n\nADMIT only if the source excerpt directly entails the entire Claim.\n\nReject the Claim if it:\n\n- introduces a relation not established by the excerpt;\n- strengthens temporal scope;\n- strengthens modality or certainty;\n- strengthens a quantifier;\n- changes subject, object or participant role;\n- resolves an ambiguous identity not established in the excerpt;\n- generalizes from one case to a population;\n- converts correlation or sequence into causation;\n- combines evidence that is not present in this excerpt;\n- states more than the excerpt supports.\n\nA paraphrase is allowed only when its meaning is no stronger than the source.\n\nIf uncertain, REJECT.\n\nReturn JSON only:\n\n{\n  \"verdict\": \"ADMIT\",\n  \"error_tags\": []\n}\n\n\nOutput contract (format only; no additional keys):\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"verdict\": {\n      \"enum\": [\n        \"ADMIT\",\n        \"REJECT\"\n      ]\n    },\n    \"error_tags\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"enum\": [\n          \"argument_change\",\n          \"conditional_scope_expansion\",\n          \"cross_source_composition\",\n          \"entity_binding_unproven\",\n          \"excerpt_mismatch\",\n          \"modality_expansion\",\n          \"other\",\n          \"quantifier_expansion\",\n          \"relation_change\",\n          \"temporal_scope_expansion\",\n          \"unsupported_inference\"\n        ]\n      },\n      \"uniqueItems\": true\n    }\n  },\n  \"required\": [\n    \"verdict\",\n    \"error_tags\"\n  ],\n  \"additionalProperties\": false,\n  \"allOf\": [\n    {\n      \"if\": {\n        \"properties\": {\n          \"verdict\": {\n            \"const\": \"ADMIT\"\n          }\n        }\n      },\n      \"then\": {\n        \"properties\": {\n          \"error_tags\": {\n            \"maxItems\": 0\n          }\n        }\n      },\n      \"else\": {\n        \"properties\": {\n          \"error_tags\": {\n            \"minItems\": 1\n          }\n        }\n      }\n    }\n  ]\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\"candidate_claim\": \"Mtukudzi got his first recording deal in 1975.\", \"exact_supporting_excerpt\": \"It was his impressive performance during the radio interview that resulted in Mtukudzi getting his first recording deal in 1975, never to look back again.\", \"source_metadata\": {\"source_id\": \"S024\", \"observed_title\": \"Oliver Mtukudzi: The Art of Protest\", \"observed_url\": \"https://www.theelephant.info/analysis/2019/02/07/oliver-mtukudzi-the-art-of-protest/\", \"observation_sha256\": \"e9bb83aeacf96239019175563623d216d229e38b4f8edbac60eddd8d2369558a\"}}"
+      }
+    ],
+    "temperature": 0,
+    "stream": false,
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "5f4d13128c35727f4d234274703ce49023c3a9d5520943538d2c4120a908234f"
+}

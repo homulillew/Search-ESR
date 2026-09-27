@@ -1,0 +1,22 @@
+{
+  "head": "386019952e2220a36e0fef0377540ec37bba0ad1",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You decide whether ONE candidate Claim may enter trusted epistemic state.\n\nThe only evidence is the supplied exact source excerpt.\n\nDo not use the Question.\n\nDo not use Requirements.\n\nDo not use hypotheses.\n\nDo not use outside knowledge.\n\nADMIT only if the source excerpt directly entails the entire Claim.\n\nReject the Claim if it:\n\n- introduces a relation not established by the excerpt;\n- strengthens temporal scope;\n- strengthens modality or certainty;\n- strengthens a quantifier;\n- changes subject, object or participant role;\n- resolves an ambiguous identity not established in the excerpt;\n- generalizes from one case to a population;\n- converts correlation or sequence into causation;\n- combines evidence that is not present in this excerpt;\n- states more than the excerpt supports.\n\nA paraphrase is allowed only when its meaning is no stronger than the source.\n\nIf uncertain, REJECT.\n\nReturn JSON only:\n\n{\n  \"verdict\": \"ADMIT\",\n  \"error_tags\": []\n}\n\n\nOutput contract (format only; no additional keys):\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"verdict\": {\n      \"enum\": [\n        \"ADMIT\",\n        \"REJECT\"\n      ]\n    },\n    \"error_tags\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"enum\": [\n          \"argument_change\",\n          \"conditional_scope_expansion\",\n          \"cross_source_composition\",\n          \"entity_binding_unproven\",\n          \"excerpt_mismatch\",\n          \"modality_expansion\",\n          \"other\",\n          \"quantifier_expansion\",\n          \"relation_change\",\n          \"temporal_scope_expansion\",\n          \"unsupported_inference\"\n        ]\n      },\n      \"uniqueItems\": true\n    }\n  },\n  \"required\": [\n    \"verdict\",\n    \"error_tags\"\n  ],\n  \"additionalProperties\": false,\n  \"allOf\": [\n    {\n      \"if\": {\n        \"properties\": {\n          \"verdict\": {\n            \"const\": \"ADMIT\"\n          }\n        }\n      },\n      \"then\": {\n        \"properties\": {\n          \"error_tags\": {\n            \"maxItems\": 0\n          }\n        }\n      },\n      \"else\": {\n        \"properties\": {\n          \"error_tags\": {\n            \"minItems\": 1\n          }\n        }\n      }\n    }\n  ]\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\"candidate_claim\": \"The letter refers to the President of the Great United States of America.\", \"exact_supporting_excerpt\": \"I am hoping that in the future Romania can faithfully wait for the happy effects and beneficial influences of a just judgment by the President of the Great United States of America.\", \"source_metadata\": {\"source_id\": \"S052\", \"observed_title\": \"Foreign Relations of the United States: Diplomatic Papers, 1945, Europe, Volume V\", \"observed_url\": \"https://history.state.gov/historicaldocuments/frus1945v05/d339\", \"observation_sha256\": \"e6d65bf35a2e0a495834904f909928309b5d1c001a45cb559bca1ba3ae0ecd1e\"}}"
+      }
+    ],
+    "temperature": 0,
+    "stream": false,
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "b73e874a12797671bde2ab792c9611f05a593a2d2e72b2ac88fd0207e7584e2d"
+}

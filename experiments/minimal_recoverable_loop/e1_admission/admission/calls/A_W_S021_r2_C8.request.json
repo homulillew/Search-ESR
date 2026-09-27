@@ -1,0 +1,22 @@
+{
+  "head": "386019952e2220a36e0fef0377540ec37bba0ad1",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You decide whether ONE candidate Claim may enter trusted epistemic state.\n\nThe only evidence is the supplied exact source excerpt.\n\nDo not use the Question.\n\nDo not use Requirements.\n\nDo not use hypotheses.\n\nDo not use outside knowledge.\n\nADMIT only if the source excerpt directly entails the entire Claim.\n\nReject the Claim if it:\n\n- introduces a relation not established by the excerpt;\n- strengthens temporal scope;\n- strengthens modality or certainty;\n- strengthens a quantifier;\n- changes subject, object or participant role;\n- resolves an ambiguous identity not established in the excerpt;\n- generalizes from one case to a population;\n- converts correlation or sequence into causation;\n- combines evidence that is not present in this excerpt;\n- states more than the excerpt supports.\n\nA paraphrase is allowed only when its meaning is no stronger than the source.\n\nIf uncertain, REJECT.\n\nReturn JSON only:\n\n{\n  \"verdict\": \"ADMIT\",\n  \"error_tags\": []\n}\n\n\nOutput contract (format only; no additional keys):\n{\n  \"type\": \"object\",\n  \"properties\": {\n    \"verdict\": {\n      \"enum\": [\n        \"ADMIT\",\n        \"REJECT\"\n      ]\n    },\n    \"error_tags\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"enum\": [\n          \"argument_change\",\n          \"conditional_scope_expansion\",\n          \"cross_source_composition\",\n          \"entity_binding_unproven\",\n          \"excerpt_mismatch\",\n          \"modality_expansion\",\n          \"other\",\n          \"quantifier_expansion\",\n          \"relation_change\",\n          \"temporal_scope_expansion\",\n          \"unsupported_inference\"\n        ]\n      },\n      \"uniqueItems\": true\n    }\n  },\n  \"required\": [\n    \"verdict\",\n    \"error_tags\"\n  ],\n  \"additionalProperties\": false,\n  \"allOf\": [\n    {\n      \"if\": {\n        \"properties\": {\n          \"verdict\": {\n            \"const\": \"ADMIT\"\n          }\n        }\n      },\n      \"then\": {\n        \"properties\": {\n          \"error_tags\": {\n            \"maxItems\": 0\n          }\n        }\n      },\n      \"else\": {\n        \"properties\": {\n          \"error_tags\": {\n            \"minItems\": 1\n          }\n        }\n      }\n    }\n  ]\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\"candidate_claim\": \"Rocco Caputo is credited for Testing, Inspiration, and Ideas in the credits for Galacta: The Battle for Saturn.\", \"exact_supporting_excerpt\": \"Testing\\tRocco Caputo\\nInspiration\\tRocco Caputo\\nIdeas\\tRocco Caputo\", \"source_metadata\": {\"source_id\": \"S021\", \"observed_title\": \"Galacta: The Battle for Saturn\", \"observed_url\": \"https://www.mobygames.com/game/12738/galacta-the-battle-for-saturn/\", \"observation_sha256\": \"71f8a0acf233c6f6a3494a6bfd711a69e351d907f15900c54074ac7e9514be3d\"}}"
+      }
+    ],
+    "temperature": 0,
+    "stream": false,
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "request_sha256": "0f157bf6ef9703f3a0ed63879a0250ad0d04ba90fdc6ee06e0a95961a48cd887"
+}
