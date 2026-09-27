@@ -1,0 +1,59 @@
+{
+  "kind": "offline_engineering_validation",
+  "git_head_before_uncommitted_implementation": "ea2ce2fda34f2fc8537637877c7ceeb2555dc224",
+  "command": [
+    "/home/user/anaconda3/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/recoverable_loop_clean",
+    "tests/test_search_find_v3b.py",
+    "--junitxml=/data/WSH/Search-ESR/experiments/recoverable_loop_clean/offline_validation/run001/junit.xml"
+  ],
+  "counts": {
+    "passed": 76
+  },
+  "exit_code": 0,
+  "elapsed_seconds": 1.1747096441686153,
+  "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:50:58) [GCC 12.3.0]",
+  "dependencies": {
+    "pytest": "8.3.5",
+    "jsonschema": "4.26.0"
+  },
+  "paid_api_requests": 0,
+  "live_bcplus_rollouts": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cache_hit_rate": null,
+  "cache_note": "No requests; cache rate is undefined, not 0%.",
+  "source_sha256": {
+    "llm_chat/recoverable_loop/__init__.py": "16525a9d329d400f157d1989ea8897374943b53755eb1ea48779178176735989",
+    "llm_chat/recoverable_loop/contracts.py": "1c4a0335ee3bbefeeae891c8eba1c824cfb3f65d2cda8cb4f8590a69a6d64bcd",
+    "llm_chat/recoverable_loop/engine.py": "3c8fb966979ec8660a8f8461069a1118cb78495e0e50d02529fe6e45ba8576ce",
+    "llm_chat/recoverable_loop/replay.py": "ab4db2098a0ac3923de8584e90cb93b85ad5668f74d06c4e0afd928a269f0b5a",
+    "llm_chat/recoverable_loop/roles.py": "634bff4c2358bf34fe4001a9ae4bf2a4e8fc1470224102339ace9595feeb30c7",
+    "llm_chat/recoverable_loop/state.py": "a75f6fc0b6c5aef373e489724422f184a456db7a537c9bf9b7c5345bdfacfce9",
+    "llm_chat/recoverable_loop/tools.py": "1326b3e4d2d663889cfb0a92201c3a576645bf3996bdcbdb4ae9af815200b2bc",
+    "tests/recoverable_loop_clean/conftest.py": "642374f6aaecbd7a0c5355bab7e4229bb24311ac1ba3defdc2f84c714cece267",
+    "tests/recoverable_loop_clean/test_a_tools.py": "0e9b5c0b944926631270354360bf9cecc5858f795d5700f32abc7a9b02c8864b",
+    "tests/recoverable_loop_clean/test_b_f_loop.py": "e6aa2503e1073c4cb7ad3b84a51a9f2a4faac7a639f687332991b0db99b258f0",
+    "tests/recoverable_loop_clean/test_historical.py": "3d0ae1e1c7ed21346e8ceb6fc6f0f4029b1a96d03e7756c76baafbeec54e5474",
+    "tests/recoverable_loop_clean/test_plan_budget.py": "389489ec65c811ba8151b71fea874acb8e7822ef61919a3b76c6bf935e7c41ff"
+  },
+  "trace_sha256": {
+    "traces/test_historical_closure_veto_r0__book_article.jsonl": "25655f32034f51f892ac7fa75f8cdc70c917294dde658ec5e81148f6343a5e7f",
+    "traces/test_historical_closure_veto_r1__ding2019.jsonl": "ce723bd2592b88ed8c20ce2bfd63d97f4fcaea590b98780b838e0949dcc4c41b",
+    "traces/test_historical_closure_veto_r2__dlc.jsonl": "1aace499971db2dbaf0f890149ba1cb5d5066903e1b17f1486cab40242b6dc49",
+    "traces/test_historical_closure_veto_r3__euler.jsonl": "e25d3858512a99a7c6973a28822fa508bc7c79aa9e376ff61f3b37d2651a683f",
+    "traces/test_historical_closure_veto_r4__memo_letter.jsonl": "8483403ee0f25c4c9244795ceb71280dd97eee10dac860e0f325ae4bcd0f3319",
+    "traces/test_historical_closure_veto_r5__patient_country.jsonl": "4ddf6559418b145a847c48205b9b2b41eb2ce98e98bbb600d197f80bd357f659",
+    "traces/test_historical_closure_veto_r6__q1094.jsonl": "980e93d4d482d4408f8b32d4c033b06aa1d18612eb14e2232c08badbdd3cb866",
+    "traces/test_historical_closure_veto_r7__q546.jsonl": "70aae0c5121700ff66ec15443df22c7585617820234de93b236716e2dabfe980",
+    "traces/test_historical_closure_veto_r8__q637_local_global.jsonl": "79158014152e1882bdee16e76925831bbfac03d212a8ea416377c6de1e964c32",
+    "traces/test_historical_closure_veto_r9__teammates.jsonl": "b2982048c94e410904ba53b7dbba726d66ac71032eeb2ef6316c37e9abb51685",
+    "traces/test_only_current_ready_allows0__ready.jsonl": "c78201b021e0600869114614923649610cdafa0d40bf649ce7b93c1fe34b0eaa",
+    "traces/test_selective_claim_grounding0__trace.jsonl": "0311729d20252233568153946c3139516192735dc70a5ef4d997199f3d06266f"
+  },
+  "semantic_accuracy_measured": false,
+  "limits": "Scripted semantic judgments; network/Config.load denied in new tests, fake corpus and tokenizer, unchanged real executors."
+}
