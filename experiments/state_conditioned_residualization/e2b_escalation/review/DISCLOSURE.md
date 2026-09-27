@@ -1,0 +1,1 @@
+Single familiar reviewer; both query packets and all 10 visible excerpts read before aggregate. Distinguish parent-scoped rescue from the adjacent-Q advisor candidate in E001. The latter is retained as a sensitivity rather than silently treating an unverified supervision link as established. No full source or Oracle material used to repair primary output.
