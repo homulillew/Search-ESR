@@ -1,0 +1,4043 @@
+{
+  "primary": {
+    "S0": {
+      "planned_outputs": 48,
+      "valid_outputs": 48,
+      "invalid_or_missing_outputs": 0,
+      "support_precision": {
+        "numerator": 27,
+        "denominator": 27,
+        "value": 1.0
+      },
+      "support_recall": {
+        "numerator": 27,
+        "denominator": 36,
+        "value": 0.75
+      },
+      "hard_negative_false_promotion": {
+        "numerator": 0,
+        "denominator": 128,
+        "value": 0.0
+      },
+      "Z_only_false_promotion": {
+        "numerator": 0,
+        "denominator": 50,
+        "value": 0.0
+      },
+      "exact_state_support_set": {
+        "numerator": 41,
+        "denominator": 48,
+        "value": 0.8541666666666666
+      },
+      "schema_validity": {
+        "numerator": 48,
+        "denominator": 48,
+        "value": 1.0
+      },
+      "relation_argument_corruption": {
+        "numerator": 0,
+        "denominator": 48,
+        "value": 0.0
+      },
+      "candidate_branch_mixing": {
+        "numerator": 0,
+        "denominator": 48,
+        "value": 0.0
+      },
+      "false_full_support_hazard_count": null,
+      "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+      "automatic_claim_error_counts": {
+        "missed_true_support": 9
+      },
+      "semantic_output_error_tags": {
+        "missed_true_support": 7
+      }
+    },
+    "S1": {
+      "planned_outputs": 48,
+      "valid_outputs": 48,
+      "invalid_or_missing_outputs": 0,
+      "support_precision": {
+        "numerator": 35,
+        "denominator": 38,
+        "value": 0.9210526315789473
+      },
+      "support_recall": {
+        "numerator": 35,
+        "denominator": 36,
+        "value": 0.9722222222222222
+      },
+      "hard_negative_false_promotion": {
+        "numerator": 3,
+        "denominator": 128,
+        "value": 0.0234375
+      },
+      "Z_only_false_promotion": {
+        "numerator": 3,
+        "denominator": 50,
+        "value": 0.06
+      },
+      "exact_state_support_set": {
+        "numerator": 44,
+        "denominator": 48,
+        "value": 0.9166666666666666
+      },
+      "schema_validity": {
+        "numerator": 48,
+        "denominator": 48,
+        "value": 1.0
+      },
+      "relation_argument_corruption": {
+        "numerator": 3,
+        "denominator": 48,
+        "value": 0.0625
+      },
+      "candidate_branch_mixing": {
+        "numerator": 0,
+        "denominator": 48,
+        "value": 0.0
+      },
+      "false_full_support_hazard_count": 2,
+      "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+      "automatic_claim_error_counts": {
+        "binding_context_promoted_to_support": 3,
+        "missed_true_support": 1
+      },
+      "semantic_output_error_tags": {
+        "binding_context_promoted_to_support": 3,
+        "false_full_support": 2,
+        "false_support_entity_overlap": 2,
+        "false_support_wrong_relation": 3,
+        "missed_true_support": 1,
+        "support_scope_overreach": 2
+      },
+      "support_scope_correctness": {
+        "numerator": 32,
+        "denominator": 35,
+        "value": 0.9142857142857143
+      },
+      "exact_fragment_validity": {
+        "numerator": 56,
+        "denominator": 56,
+        "value": 1.0
+      },
+      "role_accuracy": {
+        "numerator": 109,
+        "denominator": 164,
+        "value": 0.6646341463414634
+      },
+      "binding_context_recall": {
+        "numerator": 45,
+        "denominator": 56,
+        "value": 0.8035714285714286
+      },
+      "background_accuracy": {
+        "numerator": 28,
+        "denominator": 66,
+        "value": 0.42424242424242425
+      },
+      "role_confusion": {
+        "SUBSTANTIVE_SUPPORT": {
+          "SUBSTANTIVE_SUPPORT": 35,
+          "BINDING_CONTEXT": 1,
+          "BACKGROUND": 0,
+          "IRRELEVANT": 0,
+          "INVALID_OR_MISSING": 0
+        },
+        "BINDING_CONTEXT": {
+          "SUBSTANTIVE_SUPPORT": 3,
+          "BINDING_CONTEXT": 45,
+          "BACKGROUND": 2,
+          "IRRELEVANT": 6,
+          "INVALID_OR_MISSING": 0
+        },
+        "BACKGROUND": {
+          "SUBSTANTIVE_SUPPORT": 0,
+          "BINDING_CONTEXT": 22,
+          "BACKGROUND": 28,
+          "IRRELEVANT": 16,
+          "INVALID_OR_MISSING": 0
+        },
+        "IRRELEVANT": {
+          "SUBSTANTIVE_SUPPORT": 0,
+          "BINDING_CONTEXT": 3,
+          "BACKGROUND": 2,
+          "IRRELEVANT": 1,
+          "INVALID_OR_MISSING": 0
+        }
+      }
+    }
+  },
+  "gate": {
+    "absolute_checks": {
+      "support_precision_min": false,
+      "support_recall_min": true,
+      "hard_negative_false_promotion_max": true,
+      "support_scope_correctness_min": true,
+      "relation_argument_corruption_max": false,
+      "candidate_branch_mixing_max": true,
+      "false_full_support_hazard_count_max": false,
+      "schema_validity_min": true
+    },
+    "S1_absolute_pass": false,
+    "comparative_pass": false,
+    "S1_primary_pass": false,
+    "E2_safety_entry_pass": false,
+    "E2_authorized": false
+  },
+  "by_qid": {
+    "1259": {
+      "S0": {
+        "planned_outputs": 4,
+        "valid_outputs": 4,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {}
+      },
+      "S1": {
+        "planned_outputs": 4,
+        "valid_outputs": 4,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "schema_validity": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 0,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "missed_true_support": 1
+        },
+        "semantic_output_error_tags": {
+          "missed_true_support": 1
+        },
+        "support_scope_correctness": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "exact_fragment_validity": {
+          "numerator": 5,
+          "denominator": 5,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 7,
+          "denominator": 8,
+          "value": 0.875
+        },
+        "binding_context_recall": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "background_accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 3,
+            "BINDING_CONTEXT": 1,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 4,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "169": {
+      "S0": {
+        "planned_outputs": 6,
+        "valid_outputs": 6,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "support_recall": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 8,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 8,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 4,
+          "denominator": 6,
+          "value": 0.6666666666666666
+        },
+        "schema_validity": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "missed_true_support": 2
+        },
+        "semantic_output_error_tags": {
+          "missed_true_support": 2
+        }
+      },
+      "S1": {
+        "planned_outputs": 6,
+        "valid_outputs": 6,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 8,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 8,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 0,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {},
+        "support_scope_correctness": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "exact_fragment_validity": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 8,
+          "denominator": 10,
+          "value": 0.8
+        },
+        "binding_context_recall": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "background_accuracy": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 2,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 4,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 2,
+            "IRRELEVANT": 2,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "228": {
+      "S0": {
+        "planned_outputs": 10,
+        "valid_outputs": 10,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 2,
+          "denominator": 6,
+          "value": 0.3333333333333333
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 26,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 18,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 8,
+          "denominator": 10,
+          "value": 0.8
+        },
+        "schema_validity": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 10,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 10,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "missed_true_support": 4
+        },
+        "semantic_output_error_tags": {
+          "missed_true_support": 2
+        }
+      },
+      "S1": {
+        "planned_outputs": 10,
+        "valid_outputs": 10,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 26,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 18,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 10,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 10,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 0,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {},
+        "support_scope_correctness": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "exact_fragment_validity": {
+          "numerator": 7,
+          "denominator": 7,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 17,
+          "denominator": 32,
+          "value": 0.53125
+        },
+        "binding_context_recall": {
+          "numerator": 10,
+          "denominator": 12,
+          "value": 0.8333333333333334
+        },
+        "background_accuracy": {
+          "numerator": 1,
+          "denominator": 14,
+          "value": 0.07142857142857142
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 6,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 10,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 1,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 11,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 2,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "261": {
+      "S0": {
+        "planned_outputs": 6,
+        "valid_outputs": 6,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 18,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 5,
+          "denominator": 6,
+          "value": 0.8333333333333334
+        },
+        "schema_validity": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "missed_true_support": 1
+        },
+        "semantic_output_error_tags": {
+          "missed_true_support": 1
+        }
+      },
+      "S1": {
+        "planned_outputs": 6,
+        "valid_outputs": 6,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 18,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 0,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {},
+        "support_scope_correctness": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "exact_fragment_validity": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 13,
+          "denominator": 22,
+          "value": 0.5909090909090909
+        },
+        "binding_context_recall": {
+          "numerator": 6,
+          "denominator": 8,
+          "value": 0.75
+        },
+        "background_accuracy": {
+          "numerator": 3,
+          "denominator": 8,
+          "value": 0.375
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 4,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 6,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 2,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 2,
+            "BACKGROUND": 3,
+            "IRRELEVANT": 3,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 2,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "538": {
+      "S0": {
+        "planned_outputs": 2,
+        "valid_outputs": 2,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "support_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {}
+      },
+      "S1": {
+        "planned_outputs": 2,
+        "valid_outputs": 2,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "support_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "exact_state_support_set": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "schema_validity": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 0,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "binding_context_promoted_to_support": 2
+        },
+        "semantic_output_error_tags": {
+          "binding_context_promoted_to_support": 2,
+          "false_support_entity_overlap": 2,
+          "false_support_wrong_relation": 2
+        },
+        "support_scope_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_fragment_validity": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "binding_context_recall": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "background_accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 2,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "637": {
+      "S0": {
+        "planned_outputs": 4,
+        "valid_outputs": 4,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {}
+      },
+      "S1": {
+        "planned_outputs": 4,
+        "valid_outputs": 4,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 0,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {},
+        "support_scope_correctness": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "exact_fragment_validity": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 22,
+          "denominator": 26,
+          "value": 0.8461538461538461
+        },
+        "binding_context_recall": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "background_accuracy": {
+          "numerator": 20,
+          "denominator": 22,
+          "value": 0.9090909090909091
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 2,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 2,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 20,
+            "IRRELEVANT": 2,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "843": {
+      "S0": {
+        "planned_outputs": 6,
+        "valid_outputs": 6,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 8,
+          "denominator": 10,
+          "value": 0.8
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 30,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 4,
+          "denominator": 6,
+          "value": 0.6666666666666666
+        },
+        "schema_validity": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "missed_true_support": 2
+        },
+        "semantic_output_error_tags": {
+          "missed_true_support": 2
+        }
+      },
+      "S1": {
+        "planned_outputs": 6,
+        "valid_outputs": 6,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 30,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 2,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {
+          "false_full_support": 2,
+          "support_scope_overreach": 2
+        },
+        "support_scope_correctness": {
+          "numerator": 7,
+          "denominator": 10,
+          "value": 0.7
+        },
+        "exact_fragment_validity": {
+          "numerator": 17,
+          "denominator": 17,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 23,
+          "denominator": 40,
+          "value": 0.575
+        },
+        "binding_context_recall": {
+          "numerator": 10,
+          "denominator": 12,
+          "value": 0.8333333333333334
+        },
+        "background_accuracy": {
+          "numerator": 2,
+          "denominator": 14,
+          "value": 0.14285714285714285
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 10,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 10,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 1,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 6,
+            "BACKGROUND": 2,
+            "IRRELEVANT": 6,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 1,
+            "BACKGROUND": 2,
+            "IRRELEVANT": 1,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "922": {
+      "S0": {
+        "planned_outputs": 4,
+        "valid_outputs": 4,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 8,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {}
+      },
+      "S1": {
+        "planned_outputs": 4,
+        "valid_outputs": 4,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 8,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 4,
+          "denominator": 4,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 0,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {},
+        "support_scope_correctness": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "exact_fragment_validity": {
+          "numerator": 2,
+          "denominator": 2,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "binding_context_recall": {
+          "numerator": 8,
+          "denominator": 8,
+          "value": 1.0
+        },
+        "background_accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 2,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 8,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "971": {
+      "S0": {
+        "planned_outputs": 6,
+        "valid_outputs": 6,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 8,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {}
+      },
+      "S1": {
+        "planned_outputs": 6,
+        "valid_outputs": 6,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 6,
+          "denominator": 7,
+          "value": 0.8571428571428571
+        },
+        "support_recall": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 1,
+          "denominator": 8,
+          "value": 0.125
+        },
+        "Z_only_false_promotion": {
+          "numerator": 1,
+          "denominator": 4,
+          "value": 0.25
+        },
+        "exact_state_support_set": {
+          "numerator": 5,
+          "denominator": 6,
+          "value": 0.8333333333333334
+        },
+        "schema_validity": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 1,
+          "denominator": 6,
+          "value": 0.16666666666666666
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 6,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 0,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "binding_context_promoted_to_support": 1
+        },
+        "semantic_output_error_tags": {
+          "binding_context_promoted_to_support": 1,
+          "false_support_wrong_relation": 1
+        },
+        "support_scope_correctness": {
+          "numerator": 6,
+          "denominator": 6,
+          "value": 1.0
+        },
+        "exact_fragment_validity": {
+          "numerator": 9,
+          "denominator": 9,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 9,
+          "denominator": 14,
+          "value": 0.6428571428571429
+        },
+        "binding_context_recall": {
+          "numerator": 3,
+          "denominator": 4,
+          "value": 0.75
+        },
+        "background_accuracy": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 6,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 1,
+            "BINDING_CONTEXT": 3,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 3,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 1,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    }
+  },
+  "by_stratum": {
+    "Z": {
+      "S0": {
+        "planned_outputs": 24,
+        "valid_outputs": 24,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "support_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 50,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 50,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 24,
+          "denominator": 24,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 24,
+          "denominator": 24,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {}
+      },
+      "S1": {
+        "planned_outputs": 24,
+        "valid_outputs": 24,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 0,
+          "denominator": 3,
+          "value": 0.0
+        },
+        "support_recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 3,
+          "denominator": 50,
+          "value": 0.06
+        },
+        "Z_only_false_promotion": {
+          "numerator": 3,
+          "denominator": 50,
+          "value": 0.06
+        },
+        "exact_state_support_set": {
+          "numerator": 21,
+          "denominator": 24,
+          "value": 0.875
+        },
+        "schema_validity": {
+          "numerator": 24,
+          "denominator": 24,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 3,
+          "denominator": 24,
+          "value": 0.125
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 0,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "binding_context_promoted_to_support": 3
+        },
+        "semantic_output_error_tags": {
+          "binding_context_promoted_to_support": 3,
+          "false_support_entity_overlap": 2,
+          "false_support_wrong_relation": 3
+        },
+        "support_scope_correctness": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_fragment_validity": {
+          "numerator": 3,
+          "denominator": 3,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 31,
+          "denominator": 50,
+          "value": 0.62
+        },
+        "binding_context_recall": {
+          "numerator": 23,
+          "denominator": 28,
+          "value": 0.8214285714285714
+        },
+        "background_accuracy": {
+          "numerator": 8,
+          "denominator": 22,
+          "value": 0.36363636363636365
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 3,
+            "BINDING_CONTEXT": 23,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 2,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 9,
+            "BACKGROUND": 8,
+            "IRRELEVANT": 5,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "P": {
+      "S0": {
+        "planned_outputs": 14,
+        "valid_outputs": 14,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 11,
+          "denominator": 11,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 11,
+          "denominator": 20,
+          "value": 0.55
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 50,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_state_support_set": {
+          "numerator": 7,
+          "denominator": 14,
+          "value": 0.5
+        },
+        "schema_validity": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 14,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 14,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "missed_true_support": 9
+        },
+        "semantic_output_error_tags": {
+          "missed_true_support": 7
+        }
+      },
+      "S1": {
+        "planned_outputs": 14,
+        "valid_outputs": 14,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 20,
+          "denominator": 20,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 20,
+          "denominator": 20,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 50,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_state_support_set": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 14,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 14,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 2,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {
+          "false_full_support": 2,
+          "support_scope_overreach": 2
+        },
+        "support_scope_correctness": {
+          "numerator": 17,
+          "denominator": 20,
+          "value": 0.85
+        },
+        "exact_fragment_validity": {
+          "numerator": 30,
+          "denominator": 30,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 53,
+          "denominator": 70,
+          "value": 0.7571428571428571
+        },
+        "binding_context_recall": {
+          "numerator": 12,
+          "denominator": 16,
+          "value": 0.75
+        },
+        "background_accuracy": {
+          "numerator": 20,
+          "denominator": 32,
+          "value": 0.625
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 20,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 12,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 3,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 5,
+            "BACKGROUND": 20,
+            "IRRELEVANT": 7,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 1,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "F": {
+      "S0": {
+        "planned_outputs": 10,
+        "valid_outputs": 10,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 16,
+          "denominator": 16,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 16,
+          "denominator": 16,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 28,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_state_support_set": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "schema_validity": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 10,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 10,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {},
+        "semantic_output_error_tags": {}
+      },
+      "S1": {
+        "planned_outputs": 10,
+        "valid_outputs": 10,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 15,
+          "denominator": 15,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 15,
+          "denominator": 16,
+          "value": 0.9375
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 28,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "exact_state_support_set": {
+          "numerator": 9,
+          "denominator": 10,
+          "value": 0.9
+        },
+        "schema_validity": {
+          "numerator": 10,
+          "denominator": 10,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 10,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 10,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 0,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "missed_true_support": 1
+        },
+        "semantic_output_error_tags": {
+          "missed_true_support": 1
+        },
+        "support_scope_correctness": {
+          "numerator": 15,
+          "denominator": 15,
+          "value": 1.0
+        },
+        "exact_fragment_validity": {
+          "numerator": 23,
+          "denominator": 23,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 25,
+          "denominator": 44,
+          "value": 0.5681818181818182
+        },
+        "binding_context_recall": {
+          "numerator": 10,
+          "denominator": 12,
+          "value": 0.8333333333333334
+        },
+        "background_accuracy": {
+          "numerator": 0,
+          "denominator": 12,
+          "value": 0.0
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 15,
+            "BINDING_CONTEXT": 1,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 10,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 1,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 8,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 4,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 3,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    }
+  },
+  "by_replicate": {
+    "1": {
+      "S0": {
+        "planned_outputs": 24,
+        "valid_outputs": 24,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 14,
+          "denominator": 14,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 14,
+          "denominator": 18,
+          "value": 0.7777777777777778
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 64,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 25,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 21,
+          "denominator": 24,
+          "value": 0.875
+        },
+        "schema_validity": {
+          "numerator": 24,
+          "denominator": 24,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "missed_true_support": 4
+        },
+        "semantic_output_error_tags": {
+          "missed_true_support": 3
+        }
+      },
+      "S1": {
+        "planned_outputs": 24,
+        "valid_outputs": 24,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 18,
+          "denominator": 19,
+          "value": 0.9473684210526315
+        },
+        "support_recall": {
+          "numerator": 18,
+          "denominator": 18,
+          "value": 1.0
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 1,
+          "denominator": 64,
+          "value": 0.015625
+        },
+        "Z_only_false_promotion": {
+          "numerator": 1,
+          "denominator": 25,
+          "value": 0.04
+        },
+        "exact_state_support_set": {
+          "numerator": 23,
+          "denominator": 24,
+          "value": 0.9583333333333334
+        },
+        "schema_validity": {
+          "numerator": 24,
+          "denominator": 24,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 1,
+          "denominator": 24,
+          "value": 0.041666666666666664
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 1,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "binding_context_promoted_to_support": 1
+        },
+        "semantic_output_error_tags": {
+          "binding_context_promoted_to_support": 1,
+          "false_full_support": 1,
+          "false_support_entity_overlap": 1,
+          "false_support_wrong_relation": 1,
+          "support_scope_overreach": 1
+        },
+        "support_scope_correctness": {
+          "numerator": 17,
+          "denominator": 18,
+          "value": 0.9444444444444444
+        },
+        "exact_fragment_validity": {
+          "numerator": 28,
+          "denominator": 28,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 54,
+          "denominator": 82,
+          "value": 0.6585365853658537
+        },
+        "binding_context_recall": {
+          "numerator": 24,
+          "denominator": 28,
+          "value": 0.8571428571428571
+        },
+        "background_accuracy": {
+          "numerator": 12,
+          "denominator": 33,
+          "value": 0.36363636363636365
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 18,
+            "BINDING_CONTEXT": 0,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 1,
+            "BINDING_CONTEXT": 24,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 2,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 14,
+            "BACKGROUND": 12,
+            "IRRELEVANT": 7,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 2,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    },
+    "2": {
+      "S0": {
+        "planned_outputs": 24,
+        "valid_outputs": 24,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 13,
+          "denominator": 13,
+          "value": 1.0
+        },
+        "support_recall": {
+          "numerator": 13,
+          "denominator": 18,
+          "value": 0.7222222222222222
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 0,
+          "denominator": 64,
+          "value": 0.0
+        },
+        "Z_only_false_promotion": {
+          "numerator": 0,
+          "denominator": 25,
+          "value": 0.0
+        },
+        "exact_state_support_set": {
+          "numerator": 20,
+          "denominator": 24,
+          "value": 0.8333333333333334
+        },
+        "schema_validity": {
+          "numerator": 24,
+          "denominator": 24,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": null,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "missed_true_support": 5
+        },
+        "semantic_output_error_tags": {
+          "missed_true_support": 4
+        }
+      },
+      "S1": {
+        "planned_outputs": 24,
+        "valid_outputs": 24,
+        "invalid_or_missing_outputs": 0,
+        "support_precision": {
+          "numerator": 17,
+          "denominator": 19,
+          "value": 0.8947368421052632
+        },
+        "support_recall": {
+          "numerator": 17,
+          "denominator": 18,
+          "value": 0.9444444444444444
+        },
+        "hard_negative_false_promotion": {
+          "numerator": 2,
+          "denominator": 64,
+          "value": 0.03125
+        },
+        "Z_only_false_promotion": {
+          "numerator": 2,
+          "denominator": 25,
+          "value": 0.08
+        },
+        "exact_state_support_set": {
+          "numerator": 21,
+          "denominator": 24,
+          "value": 0.875
+        },
+        "schema_validity": {
+          "numerator": 24,
+          "denominator": 24,
+          "value": 1.0
+        },
+        "relation_argument_corruption": {
+          "numerator": 2,
+          "denominator": 24,
+          "value": 0.08333333333333333
+        },
+        "candidate_branch_mixing": {
+          "numerator": 0,
+          "denominator": 24,
+          "value": 0.0
+        },
+        "false_full_support_hazard_count": 1,
+        "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+        "automatic_claim_error_counts": {
+          "binding_context_promoted_to_support": 2,
+          "missed_true_support": 1
+        },
+        "semantic_output_error_tags": {
+          "binding_context_promoted_to_support": 2,
+          "false_full_support": 1,
+          "false_support_entity_overlap": 1,
+          "false_support_wrong_relation": 2,
+          "missed_true_support": 1,
+          "support_scope_overreach": 1
+        },
+        "support_scope_correctness": {
+          "numerator": 15,
+          "denominator": 17,
+          "value": 0.8823529411764706
+        },
+        "exact_fragment_validity": {
+          "numerator": 28,
+          "denominator": 28,
+          "value": 1.0
+        },
+        "role_accuracy": {
+          "numerator": 55,
+          "denominator": 82,
+          "value": 0.6707317073170732
+        },
+        "binding_context_recall": {
+          "numerator": 21,
+          "denominator": 28,
+          "value": 0.75
+        },
+        "background_accuracy": {
+          "numerator": 16,
+          "denominator": 33,
+          "value": 0.48484848484848486
+        },
+        "role_confusion": {
+          "SUBSTANTIVE_SUPPORT": {
+            "SUBSTANTIVE_SUPPORT": 17,
+            "BINDING_CONTEXT": 1,
+            "BACKGROUND": 0,
+            "IRRELEVANT": 0,
+            "INVALID_OR_MISSING": 0
+          },
+          "BINDING_CONTEXT": {
+            "SUBSTANTIVE_SUPPORT": 2,
+            "BINDING_CONTEXT": 21,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 4,
+            "INVALID_OR_MISSING": 0
+          },
+          "BACKGROUND": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 8,
+            "BACKGROUND": 16,
+            "IRRELEVANT": 9,
+            "INVALID_OR_MISSING": 0
+          },
+          "IRRELEVANT": {
+            "SUBSTANTIVE_SUPPORT": 0,
+            "BINDING_CONTEXT": 1,
+            "BACKGROUND": 1,
+            "IRRELEVANT": 1,
+            "INVALID_OR_MISSING": 0
+          }
+        }
+      }
+    }
+  },
+  "nonambiguous_sensitivity": {
+    "S0": {
+      "planned_outputs": 36,
+      "valid_outputs": 36,
+      "invalid_or_missing_outputs": 0,
+      "support_precision": {
+        "numerator": 15,
+        "denominator": 15,
+        "value": 1.0
+      },
+      "support_recall": {
+        "numerator": 15,
+        "denominator": 22,
+        "value": 0.6818181818181818
+      },
+      "hard_negative_false_promotion": {
+        "numerator": 0,
+        "denominator": 82,
+        "value": 0.0
+      },
+      "Z_only_false_promotion": {
+        "numerator": 0,
+        "denominator": 32,
+        "value": 0.0
+      },
+      "exact_state_support_set": {
+        "numerator": 31,
+        "denominator": 36,
+        "value": 0.8611111111111112
+      },
+      "schema_validity": {
+        "numerator": 36,
+        "denominator": 36,
+        "value": 1.0
+      },
+      "relation_argument_corruption": {
+        "numerator": 0,
+        "denominator": 36,
+        "value": 0.0
+      },
+      "candidate_branch_mixing": {
+        "numerator": 0,
+        "denominator": 36,
+        "value": 0.0
+      },
+      "false_full_support_hazard_count": null,
+      "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+      "automatic_claim_error_counts": {
+        "missed_true_support": 7
+      },
+      "semantic_output_error_tags": {
+        "missed_true_support": 5
+      }
+    },
+    "S1": {
+      "planned_outputs": 36,
+      "valid_outputs": 36,
+      "invalid_or_missing_outputs": 0,
+      "support_precision": {
+        "numerator": 21,
+        "denominator": 23,
+        "value": 0.9130434782608695
+      },
+      "support_recall": {
+        "numerator": 21,
+        "denominator": 22,
+        "value": 0.9545454545454546
+      },
+      "hard_negative_false_promotion": {
+        "numerator": 2,
+        "denominator": 82,
+        "value": 0.024390243902439025
+      },
+      "Z_only_false_promotion": {
+        "numerator": 2,
+        "denominator": 32,
+        "value": 0.0625
+      },
+      "exact_state_support_set": {
+        "numerator": 33,
+        "denominator": 36,
+        "value": 0.9166666666666666
+      },
+      "schema_validity": {
+        "numerator": 36,
+        "denominator": 36,
+        "value": 1.0
+      },
+      "relation_argument_corruption": {
+        "numerator": 2,
+        "denominator": 36,
+        "value": 0.05555555555555555
+      },
+      "candidate_branch_mixing": {
+        "numerator": 0,
+        "denominator": 36,
+        "value": 0.0
+      },
+      "false_full_support_hazard_count": 0,
+      "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+      "automatic_claim_error_counts": {
+        "binding_context_promoted_to_support": 2,
+        "missed_true_support": 1
+      },
+      "semantic_output_error_tags": {
+        "binding_context_promoted_to_support": 2,
+        "false_support_entity_overlap": 2,
+        "false_support_wrong_relation": 2,
+        "missed_true_support": 1
+      },
+      "support_scope_correctness": {
+        "numerator": 21,
+        "denominator": 21,
+        "value": 1.0
+      },
+      "exact_fragment_validity": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "role_accuracy": {
+        "numerator": 80,
+        "denominator": 104,
+        "value": 0.7692307692307693
+      },
+      "binding_context_recall": {
+        "numerator": 31,
+        "denominator": 38,
+        "value": 0.8157894736842105
+      },
+      "background_accuracy": {
+        "numerator": 28,
+        "denominator": 42,
+        "value": 0.6666666666666666
+      },
+      "role_confusion": {
+        "SUBSTANTIVE_SUPPORT": {
+          "SUBSTANTIVE_SUPPORT": 21,
+          "BINDING_CONTEXT": 1,
+          "BACKGROUND": 0,
+          "IRRELEVANT": 0,
+          "INVALID_OR_MISSING": 0
+        },
+        "BINDING_CONTEXT": {
+          "SUBSTANTIVE_SUPPORT": 2,
+          "BINDING_CONTEXT": 31,
+          "BACKGROUND": 1,
+          "IRRELEVANT": 4,
+          "INVALID_OR_MISSING": 0
+        },
+        "BACKGROUND": {
+          "SUBSTANTIVE_SUPPORT": 0,
+          "BINDING_CONTEXT": 7,
+          "BACKGROUND": 28,
+          "IRRELEVANT": 7,
+          "INVALID_OR_MISSING": 0
+        },
+        "IRRELEVANT": {
+          "SUBSTANTIVE_SUPPORT": 0,
+          "BINDING_CONTEXT": 2,
+          "BACKGROUND": 0,
+          "IRRELEVANT": 0,
+          "INVALID_OR_MISSING": 0
+        }
+      }
+    }
+  },
+  "error_ledger": [
+    {
+      "id": "E1_A01_S0_r1",
+      "cell_id": "A01",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "A Harran professor identity does not establish target-paper coauthors or another article. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A01_S1_r1",
+      "cell_id": "A01",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Harran professor identifies a possible author but does not establish two coauthors or a Baltic-paper relation. Correct binding-only role.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A01_S1_r2",
+      "cell_id": "A01",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "No author-count/Baltic-paper support is promoted. Harran professor identity is labeled irrelevant rather than candidate-binding; secondary-role omission only.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A01_S0_r2",
+      "cell_id": "A01",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "A Harran professor identity does not establish target-paper coauthors or another article. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A02_S1_r1",
+      "cell_id": "A02",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C2"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C2 two-author clause is supported and appropriately bounded. Other same-paper/Harran facts are demoted to irrelevant relative to reference; no false promotion.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A02_S0_r1",
+      "cell_id": "A02",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C2 supplies the two-author component. No evidence establishes the Baltic publication condition. Correct partial support selection.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A02_S0_r2",
+      "cell_id": "A02",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [
+          "missed_true_support"
+        ],
+        "reason": "Over-conservative empty selection misses C2, which directly establishes the candidate paper having two coauthors. The unverified Baltic paper does not erase that partial support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A02_S1_r2",
+      "cell_id": "A02",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C2"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Only two-author clause is claimed for C2; the separate Baltic paper stays unresolved. Roles and scope align with the reference.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A03_S0_r1",
+      "cell_id": "A03",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C5 directly establishes the emotion percentage in the identified table. Correct support selection; paper/author context is not promoted.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A03_S1_r1",
+      "cell_id": "A03",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C5"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C5 emotion percentage and table locator spans are supported. Other clues are over-labeled binding relative to reference, but none promoted to substantive support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A03_S1_r2",
+      "cell_id": "A03",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C5"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C5 emotion percentage and table locator spans are supported. Other clues are over-labeled binding relative to reference, but none promoted to substantive support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A03_S0_r2",
+      "cell_id": "A03",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C5 directly establishes the emotion percentage in the identified table. Correct support selection; paper/author context is not promoted.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A04_S1_r1",
+      "cell_id": "A04",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Founder and graduation substrings are both directly supported. No unsupported release date, game ranking or university founding date is included.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A04_S0_r1",
+      "cell_id": "A04",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [
+          "missed_true_support"
+        ],
+        "reason": "Empty selection misses both established founder and graduation components. Remaining game-release/earning/university-date qualifiers do not negate those true partial facts.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A04_S0_r2",
+      "cell_id": "A04",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [
+          "missed_true_support"
+        ],
+        "reason": "Empty selection misses both established founder and graduation components. Remaining game-release/earning/university-date qualifiers do not negate those true partial facts.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A04_S1_r2",
+      "cell_id": "A04",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Founder and university graduation spans are limited to the facts in C1/C2; no company-founding-to-game-release date transfer or university-founding inference.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A05_S0_r1",
+      "cell_id": "A05",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Kwon founder and degree do not establish spouse childlessness, gift or a building relation. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A05_S1_r1",
+      "cell_id": "A05",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Founder and degree are treated as candidate context, with no false marriage/gift support. Degree binding rather than background is a secondary role disagreement.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A05_S1_r2",
+      "cell_id": "A05",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Founder and degree are treated as candidate context, with no false marriage/gift support. Degree binding rather than background is a secondary role disagreement.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A05_S0_r2",
+      "cell_id": "A05",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Kwon founder and degree do not establish spouse childlessness, gift or a building relation. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A06_S1_r1",
+      "cell_id": "A06",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "No affiliation/opening support is promoted. Sogang education is binding in output but background in frozen reference; no established building relation follows under either interpretation. Frozen role ambiguity retained.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A06_S0_r1",
+      "cell_id": "A06",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Founder and alma mater supply no building affiliation or opening date. Correct empty support, with the frozen role-boundary ambiguity irrelevant to the binary selection.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A06_S0_r2",
+      "cell_id": "A06",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Founder and alma mater supply no building affiliation or opening date. Correct empty support, with the frozen role-boundary ambiguity irrelevant to the binary selection.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A06_S1_r2",
+      "cell_id": "A06",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "No affiliation/opening support is promoted. Sogang education is binding in output but background in frozen reference; no established building relation follows under either interpretation. Frozen role ambiguity retained.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A07_S0_r1",
+      "cell_id": "A07",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Only Ding marriage/2019 childlessness C5 selected; Kwon and Ding are not merged. Gift and complex relation remain unproved.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A07_S1_r1",
+      "cell_id": "A07",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C5"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C5 childlessness-from-marriage span is correct on Ding branch. C4 remains context; C3 is not used as 2019 marital evidence and branches are not combined.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A07_S1_r2",
+      "cell_id": "A07",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C5"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C5 scope correctly limits support to Ding marriage/2019 childlessness. Founder contexts are not promoted, the 2025 Kwon family fact is not transferred to Ding or 2019, and no gift is claimed. Several secondary background/binding roles differ from reference.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A07_S0_r2",
+      "cell_id": "A07",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Only Ding marriage/2019 childlessness C5 selected; Kwon and Ding are not merged. Gift and complex relation remain unproved.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A08_S1_r1",
+      "cell_id": "A08",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "No support promoted for an unidentified building. Educational and 2025 family facts are labeled binding rather than background; frozen secondary-role ambiguity, without a false-subtraction assignment.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A08_S0_r1",
+      "cell_id": "A08",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "No Claim establishes a concrete building affiliation or opening, despite two founder branches and university names. Correct empty selection; frozen secondary-role ambiguity.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A08_S0_r2",
+      "cell_id": "A08",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "No Claim establishes a concrete building affiliation or opening, despite two founder branches and university names. Correct empty selection; frozen secondary-role ambiguity.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A08_S1_r2",
+      "cell_id": "A08",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "No building support is promoted. Kwon candidate/context is discarded and Ding education/marriage are labeled binding; these are secondary reference-role differences, not observed cross-candidate mixing. Frozen background/binding ambiguity applies.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A09_S0_r1",
+      "cell_id": "A09",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "No observed charity relation; correct empty support for artist-only evidence.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A09_S1_r1",
+      "cell_id": "A09",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Sophie is candidate-binding only; no observed charity or name-sharing/registration relation. Correct empty support and binding role.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A09_S1_r2",
+      "cell_id": "A09",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Sophie is candidate-binding only; no observed charity or name-sharing/registration relation. Correct empty support and binding role.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A09_S0_r2",
+      "cell_id": "A09",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "No observed charity relation; correct empty support for artist-only evidence.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A10_S1_r1",
+      "cell_id": "A10",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C1"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Death city and accidental death are exactly the observed material portions. No aviation distance, deadliest status or fifteen-year relation is claimed.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A10_S0_r1",
+      "cell_id": "A10",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [
+          "missed_true_support"
+        ],
+        "reason": "Empty output misses genuine partial support: artist death city and accidentality are explicitly observed even though the aviation relation remains unverified.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A10_S0_r2",
+      "cell_id": "A10",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [
+          "missed_true_support"
+        ],
+        "reason": "Empty output misses genuine partial support: artist death city and accidentality are explicitly observed even though the aviation relation remains unverified.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A10_S1_r2",
+      "cell_id": "A10",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C1"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Death city and accidentality substrings are supported; none of the absent aviation conditions is promoted.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A11_S0_r1",
+      "cell_id": "A11",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Partner and song tribute do not establish any charity/name/registration condition. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A11_S1_r1",
+      "cell_id": "A11",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "No charity support. Partner facts are irrelevant in output versus background in reference; secondary role disagreement only.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A11_S1_r2",
+      "cell_id": "A11",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Sophie identity binds the artist; partner identity and tribute remain background. No charity relation is invented.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A11_S0_r2",
+      "cell_id": "A11",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Partner and song tribute do not establish any charity/name/registration condition. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A12_S1_r1",
+      "cell_id": "A12",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C2"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C2 Canadian PhD-study span is supported; Iranian advisor clause remains unresolved. Correct selected support and scope.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A12_S0_r1",
+      "cell_id": "A12",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C2 directly supplies Canadian PhD study; C1 author/book identity does not supply Iranian-advisor support. Correct selected support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A12_S0_r2",
+      "cell_id": "A12",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C2 directly supplies Canadian PhD study; C1 author/book identity does not supply Iranian-advisor support. Correct selected support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A12_S1_r2",
+      "cell_id": "A12",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C2"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C2 Canadian PhD-study span is supported; Iranian advisor clause remains unresolved. Correct selected support and scope.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A13_S0_r1",
+      "cell_id": "A13",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Book-only C1 is binding under the frozen reference; no article exists in current Claims to support the comparison. Correct empty set; reference joint-support boundary is explicitly ambiguous.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A13_S1_r1",
+      "cell_id": "A13",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Book-only C1 remains binding, not article support. C2 is labeled irrelevant instead of background; no safety error. Frozen book-anchor ambiguity retained.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A13_S1_r2",
+      "cell_id": "A13",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": true,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [
+          "false_support_wrong_relation",
+          "binding_context_promoted_to_support"
+        ],
+        "reason": "Book-only C1 is promoted from its frozen binding role despite absence of any journal-article operand. The book fact is true, but treating it as article-relation support drops the required event/relation binding. False support and relation-binding corruption under primary frozen labels. This is a predeclared ambiguous reference; report its sensitivity without changing the label. No claim of full comparison coverage.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A13_S0_r2",
+      "cell_id": "A13",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Book-only C1 is binding under the frozen reference; no article exists in current Claims to support the comparison. Correct empty set; reference joint-support boundary is explicitly ambiguous.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A14_S1_r1",
+      "cell_id": "A14",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Book-publication and article-publication spans are genuine material contributions under the declared joint support group. Output does not claim the six-year comparison; narrower scope is sound precision, not evidence of complete scope recall. C2 scholarship labeled binding instead of background. Frozen joint-reference ambiguity retained.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A14_S0_r1",
+      "cell_id": "A14",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C1 book and C3 article are the same-author, aligned-topic, 2016/2022 operands of the frozen joint support group. Both selected; no unsupported Claim selected. Joint-support reference ambiguity remains.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A14_S0_r2",
+      "cell_id": "A14",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C1 book and C3 article are the same-author, aligned-topic, 2016/2022 operands of the frozen joint support group. Both selected; no unsupported Claim selected. Joint-support reference ambiguity remains.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A14_S1_r2",
+      "cell_id": "A14",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Book/article publication and topical similarity are grounded jointly in C1+C3 as preregistered. Both selected. C2 scholarship is secondary binding/background disagreement. Interval is not explicitly claimed; no scope overreach. Frozen joint-reference ambiguity retained.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A15_S0_r1",
+      "cell_id": "A15",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Euler biography remains non-support: no observed book-to-Euler citation relation. Correct empty selection.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A15_S1_r1",
+      "cell_id": "A15",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": true,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [
+          "false_support_entity_overlap",
+          "false_support_wrong_relation",
+          "binding_context_promoted_to_support"
+        ],
+        "reason": "Euler birth/identity is promoted to a material requirement fragment without the required book-reference relation. This drops the governing source/relation binding: false entity-overlap support and binding-to-support promotion, counted as relation-binding corruption. The other referenced people and overall book relation remain unclaimed, so no false-full hazard.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A15_S1_r2",
+      "cell_id": "A15",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": true,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [
+          "false_support_entity_overlap",
+          "false_support_wrong_relation",
+          "binding_context_promoted_to_support"
+        ],
+        "reason": "Euler biography is promoted to the cited-figure fragment without any observed book-to-person reference relation. Governing source/relation binding is dropped; entity relevance and binding context become false support. Entire multi-person Parent is not claimed covered, so no false-full hazard.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A15_S0_r2",
+      "cell_id": "A15",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Euler biography remains non-support: no observed book-to-Euler citation relation. Correct empty selection.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A16_S1_r1",
+      "cell_id": "A16",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Population-level SPS course and symptoms remain generic background; no case-specific or geographic support is created.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A16_S0_r1",
+      "cell_id": "A16",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Generic SPS facts do not establish a target case history. Correct empty selection.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A16_S0_r2",
+      "cell_id": "A16",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Generic SPS facts do not establish a target case history. Correct empty selection.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A16_S1_r2",
+      "cell_id": "A16",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Population-level SPS course and symptoms remain generic background; no case-specific or geographic support is created.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A17_S0_r1",
+      "cell_id": "A17",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C7 alone establishes the specific first-case clinical history. Correct support ID selection. ID-only output has no report-country scope assertion to evaluate.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A17_S1_r1",
+      "cell_id": "A17",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C7"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C7 spans correctly cover only the six-month clinical course and movement limitations. No transfer of Pakistani nationality into report-country/history. C9 separate-case context is labeled irrelevant instead of binding; C6 background is also demoted, with no support promotion.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A17_S1_r2",
+      "cell_id": "A17",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C7"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C7 exact clinical-history span is supported; no report-country or national-history scope is copied. The second-case context is discarded rather than merged into the first. Secondary role differences only.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A17_S0_r2",
+      "cell_id": "A17",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C7 alone establishes the specific first-case clinical history. Correct support ID selection. ID-only output has no report-country scope assertion to evaluate.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A18_S1_r1",
+      "cell_id": "A18",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Thesis identifies the candidate base game; neither thesis nor advisor establishes DLC release or interval. Empty support is correct.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A18_S0_r1",
+      "cell_id": "A18",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Game-related thesis and advisor do not establish a downloadable-content release relation. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A18_S0_r2",
+      "cell_id": "A18",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Game-related thesis and advisor do not establish a downloadable-content release relation. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A18_S1_r2",
+      "cell_id": "A18",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Thesis identifies the candidate base game; neither thesis nor advisor establishes DLC release or interval. Empty support is correct.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A19_S0_r1",
+      "cell_id": "A19",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C3+C5 establish DLC/base release relation and >3-year interval, even with either reported August day. Correct joint support set, with frozen joint-reference ambiguity.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A19_S1_r1",
+      "cell_id": "A19",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C3",
+          "C5"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C3 and C5 are correct release/genre operands; C3 strategy-game phrase is grounded through the declared C3+C5 joint support. C5 spans are supported but the >3-year comparison is not explicitly covered. Many adjacent facts are labeled binding rather than background/irrelevant; no false substantive support. Frozen joint ambiguity retained.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A19_S1_r2",
+      "cell_id": "A19",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C3",
+          "C5"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C3 release of the DLC and C5 game genre/base release are supported operands. The fragments do not claim the >3-year comparison; this limits scope coverage but does not overreach. Date disagreement within August2013 does not change the frozen joint interval. Secondary role differences and frozen joint ambiguity retained.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A19_S0_r2",
+      "cell_id": "A19",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C3+C5 establish DLC/base release relation and >3-year interval, even with either reported August day. Correct joint support set, with frozen joint-reference ambiguity.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A20_S1_r1",
+      "cell_id": "A20",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C6",
+          "C7"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": true,
+        "error_tags": [
+          "support_scope_overreach",
+          "false_full_support"
+        ],
+        "reason": "C4 supplies technology/Coptic changes and Ottoman flavor, but no supplied Claim establishes European/playable. Copying that complete qualifier overreaches; together the listed spans cover the Parent despite the unresolved qualifier, hence a false-full hazard. C6 technology and C7 general mechanics-change spans are supported. This is unsupported qualification, not a transfer of an observed fact to a different argument. Frozen mechanics-scope ambiguity retained.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A20_S0_r1",
+      "cell_id": "A20",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [
+          "missed_true_support"
+        ],
+        "reason": "C4 and C6 are valid support. C7 is missed under the frozen mechanics reference; its new government/subject details count as a material mechanics contribution. The reference boundary was marked ambiguous before calls.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A20_S0_r2",
+      "cell_id": "A20",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [
+          "missed_true_support"
+        ],
+        "reason": "C4 and C6 are valid support. C7 is missed under the frozen mechanics reference; its new government/subject details count as a material mechanics contribution. The reference boundary was marked ambiguous before calls.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A20_S1_r2",
+      "cell_id": "A20",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C6"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": true,
+        "error_tags": [
+          "support_scope_overreach",
+          "false_full_support"
+        ],
+        "reason": "C4 and C7 spans improperly include the whole playable-European-nation qualifier. Claims state Ottoman flavor/new details, without those required properties. C6 technology scope is correct. The union purports to cover every material condition, a false-full hazard on the frozen partial parent. Mechanics interpretation was flagged ambiguous before calls.",
+        "ambiguous_reference": true
+      }
+    },
+    {
+      "id": "E1_A21_S0_r1",
+      "cell_id": "A21",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C1 nationality and C2 champion membership are both selected and join on Jerry. Correct full support set; title year and held year are not reassigned.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A21_S1_r1",
+      "cell_id": "A21",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C1 nationality and C2 team-membership/championship spans preserve the distinct material contributions. Correct support set and scope; no teammate-country inference.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A21_S1_r2",
+      "cell_id": "A21",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C2"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [
+          "missed_true_support"
+        ],
+        "reason": "C2 correctly establishes champion membership/year. Its Australian span is grounded only jointly with the observed C1 under the frozen joint-support convention, so scope is accepted on the complete Claims. However C1 itself establishes the nationality material condition and is incorrectly demoted to binding. This is missed true support and creates a possible typed-packet inconsistency; no invented nationality or actual false-full on this Gold-F parent.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A21_S0_r2",
+      "cell_id": "A21",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C1 nationality and C2 champion membership are both selected and join on Jerry. Correct full support set; title year and held year are not reassigned.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A22_S1_r1",
+      "cell_id": "A22",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Jerry identity and the two named teammates are correctly treated as binding. No transfer of Jerry nationality to the other teammates.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A22_S0_r1",
+      "cell_id": "A22",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Names and Jerry nationality do not establish that the other two teammates share a country. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A22_S0_r2",
+      "cell_id": "A22",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Names and Jerry nationality do not establish that the other two teammates share a country. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A22_S1_r2",
+      "cell_id": "A22",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Jerry identity and the two named teammates are correctly treated as binding. No transfer of Jerry nationality to the other teammates.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A23_S0_r1",
+      "cell_id": "A23",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Neither covering memorandum nor handover gives the letter-writing/accession interval. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A23_S1_r1",
+      "cell_id": "A23",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Cover-memorandum date and handover identify the letter but do not establish its composition date or ruler accession interval. Both remain binding; no temporal/object transfer.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A23_S1_r2",
+      "cell_id": "A23",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "Cover-memorandum date and handover identify the letter but do not establish its composition date or ruler accession interval. Both remain binding; no temporal/object transfer.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A23_S0_r2",
+      "cell_id": "A23",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "Neither covering memorandum nor handover gives the letter-writing/accession interval. Correct empty support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A24_S1_r1",
+      "cell_id": "A24",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C3"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C3 directly establishes the complete letter-content/region relation. C1/C2 supply letter binding and do not contribute dates as support.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A24_S0_r1",
+      "cell_id": "A24",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C3 states the letter refers to Romania regaining a region. Correct single support Claim; transmission facts alone are not substantive for this Parent.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A24_S0_r2",
+      "cell_id": "A24",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": null,
+        "error_tags": [],
+        "reason": "C3 states the letter refers to Romania regaining a region. Correct single support Claim; transmission facts alone are not substantive for this Parent.",
+        "ambiguous_reference": false
+      }
+    },
+    {
+      "id": "E1_A24_S1_r2",
+      "cell_id": "A24",
+      "failure": null,
+      "judgment": {
+        "scope_correct_claim_ids": [
+          "C3"
+        ],
+        "relation_argument_corruption": false,
+        "candidate_branch_mixing": false,
+        "false_full_support_hazard": false,
+        "error_tags": [],
+        "reason": "C3 copied span states the letter-content/author/country/region relation actually given. C1/C2 bind the same letter. Correct scope without introducing a letter date.",
+        "ambiguous_reference": false
+      }
+    }
+  ]
+}

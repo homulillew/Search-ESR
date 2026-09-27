@@ -1,0 +1,170 @@
+{
+  "primary_unchanged": true,
+  "nonambiguous": {
+    "S0": {
+      "planned_outputs": 36,
+      "valid_outputs": 36,
+      "invalid_or_missing_outputs": 0,
+      "support_precision": {
+        "numerator": 15,
+        "denominator": 15,
+        "value": 1.0
+      },
+      "support_recall": {
+        "numerator": 15,
+        "denominator": 22,
+        "value": 0.6818181818181818
+      },
+      "hard_negative_false_promotion": {
+        "numerator": 0,
+        "denominator": 82,
+        "value": 0.0
+      },
+      "Z_only_false_promotion": {
+        "numerator": 0,
+        "denominator": 32,
+        "value": 0.0
+      },
+      "exact_state_support_set": {
+        "numerator": 31,
+        "denominator": 36,
+        "value": 0.8611111111111112
+      },
+      "schema_validity": {
+        "numerator": 36,
+        "denominator": 36,
+        "value": 1.0
+      },
+      "relation_argument_corruption": {
+        "numerator": 0,
+        "denominator": 36,
+        "value": 0.0
+      },
+      "candidate_branch_mixing": {
+        "numerator": 0,
+        "denominator": 36,
+        "value": 0.0
+      },
+      "false_full_support_hazard_count": null,
+      "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+      "automatic_claim_error_counts": {
+        "missed_true_support": 7
+      },
+      "semantic_output_error_tags": {
+        "missed_true_support": 5
+      }
+    },
+    "S1": {
+      "planned_outputs": 36,
+      "valid_outputs": 36,
+      "invalid_or_missing_outputs": 0,
+      "support_precision": {
+        "numerator": 21,
+        "denominator": 23,
+        "value": 0.9130434782608695
+      },
+      "support_recall": {
+        "numerator": 21,
+        "denominator": 22,
+        "value": 0.9545454545454546
+      },
+      "hard_negative_false_promotion": {
+        "numerator": 2,
+        "denominator": 82,
+        "value": 0.024390243902439025
+      },
+      "Z_only_false_promotion": {
+        "numerator": 2,
+        "denominator": 32,
+        "value": 0.0625
+      },
+      "exact_state_support_set": {
+        "numerator": 33,
+        "denominator": 36,
+        "value": 0.9166666666666666
+      },
+      "schema_validity": {
+        "numerator": 36,
+        "denominator": 36,
+        "value": 1.0
+      },
+      "relation_argument_corruption": {
+        "numerator": 2,
+        "denominator": 36,
+        "value": 0.05555555555555555
+      },
+      "candidate_branch_mixing": {
+        "numerator": 0,
+        "denominator": 36,
+        "value": 0.0
+      },
+      "false_full_support_hazard_count": 0,
+      "false_full_support_hazard_identifiability": "S1 semantic coverage of unresolved Parent; S0 ID-only assignment does not expose a claimed support scope/closure",
+      "automatic_claim_error_counts": {
+        "binding_context_promoted_to_support": 2,
+        "missed_true_support": 1
+      },
+      "semantic_output_error_tags": {
+        "binding_context_promoted_to_support": 2,
+        "false_support_entity_overlap": 2,
+        "false_support_wrong_relation": 2,
+        "missed_true_support": 1
+      },
+      "support_scope_correctness": {
+        "numerator": 21,
+        "denominator": 21,
+        "value": 1.0
+      },
+      "exact_fragment_validity": {
+        "numerator": 32,
+        "denominator": 32,
+        "value": 1.0
+      },
+      "role_accuracy": {
+        "numerator": 80,
+        "denominator": 104,
+        "value": 0.7692307692307693
+      },
+      "binding_context_recall": {
+        "numerator": 31,
+        "denominator": 38,
+        "value": 0.8157894736842105
+      },
+      "background_accuracy": {
+        "numerator": 28,
+        "denominator": 42,
+        "value": 0.6666666666666666
+      },
+      "role_confusion": {
+        "SUBSTANTIVE_SUPPORT": {
+          "SUBSTANTIVE_SUPPORT": 21,
+          "BINDING_CONTEXT": 1,
+          "BACKGROUND": 0,
+          "IRRELEVANT": 0,
+          "INVALID_OR_MISSING": 0
+        },
+        "BINDING_CONTEXT": {
+          "SUBSTANTIVE_SUPPORT": 2,
+          "BINDING_CONTEXT": 31,
+          "BACKGROUND": 1,
+          "IRRELEVANT": 4,
+          "INVALID_OR_MISSING": 0
+        },
+        "BACKGROUND": {
+          "SUBSTANTIVE_SUPPORT": 0,
+          "BINDING_CONTEXT": 7,
+          "BACKGROUND": 28,
+          "IRRELEVANT": 7,
+          "INVALID_OR_MISSING": 0
+        },
+        "IRRELEVANT": {
+          "SUBSTANTIVE_SUPPORT": 0,
+          "BINDING_CONTEXT": 2,
+          "BACKGROUND": 0,
+          "IRRELEVANT": 0,
+          "INVALID_OR_MISSING": 0
+        }
+      }
+    }
+  }
+}
