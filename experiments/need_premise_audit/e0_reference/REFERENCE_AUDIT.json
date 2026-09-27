@@ -1,0 +1,735 @@
+[
+  {
+    "candidate_id": "r1__F08_S01",
+    "candidate_need": "Did Kwon Hyuk-bin and his spouse make a foundational gift for the construction of a building that was part of a larger complex?",
+    "target": {
+      "description": "Whether a joint foundational gift by Kwon and his spouse for a building in a complex occurred."
+    },
+    "subject": {
+      "description": "Kwon and the proposed joint-gift event.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Kwon Hyuk-bin is a named founder of Smilegate.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "low",
+    "reason": "The spouse participation and donation are parts of the direct existential target. Rejecting because no donation claim exists would confuse target with background."
+  },
+  {
+    "candidate_id": "r1__F09_S01",
+    "candidate_need": "Was Athens, the city where Sophie died, located 20 to 30 miles from the site of Greece's deadliest aviation accident as of 2023?",
+    "target": {
+      "description": "Whether Athens is 20–30 miles from the relevant accident site."
+    },
+    "subject": {
+      "description": "Athens and the still unidentified deadliest aviation accident in Greece.",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "Q",
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Sophie died in Athens, Greece.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "The specific accident/site needed for the distance measurement has been identified.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "reference_decision": "discover_subject",
+    "repair_target": "Identify the site of Greece's deadliest aviation accident as of 2023 before testing its distance from Athens.",
+    "ambiguity": "medium",
+    "reason": "Athens is grounded, but the comparison site is not. Q describes the event sought, not an identified site. A permissive interpretation that treats the distance question as event discovery is reported separately."
+  },
+  {
+    "candidate_id": "r1__F10_S01",
+    "candidate_need": "What is the title of the journal article Alka Marwaha published six years after The Secret World of Vipassana and Mathematics on a similar topic?",
+    "target": {
+      "description": "The title of a presumed later Marwaha journal article."
+    },
+    "subject": {
+      "description": "Alka Marwaha and an alleged later journal-article event.",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Marwaha authored The Secret World of Vipassana and Mathematics, published in 2016.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "Marwaha published a journal article on a similar topic six years after that book.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "reference_decision": "lift_premise",
+    "repair_target": "Test whether Marwaha published the stated later journal article, without assuming that publication.",
+    "ambiguity": "low",
+    "reason": "The book and author are grounded; the article event is not. Q gives a condition for the sought author, not evidence that the candidate satisfies it. A date calculation cannot establish an event."
+  },
+  {
+    "candidate_id": "r1__F11_S01",
+    "candidate_need": "Is Leonhard Euler the well-known figure with initials L. E., born in the early 1700s in a central European country, that is referenced by the target book?",
+    "target": {
+      "description": "Whether the Q-described book references Euler as its L. E. figure."
+    },
+    "subject": {
+      "description": "The unidentified target book; Euler himself is named and grounded.",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Euler was born in 1707 in Basel.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "The concrete book whose references can be checked has been identified.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "reference_decision": "discover_subject",
+    "repair_target": "Discover the book from a minimal Q-provided source description, such as its illustration/telephone/telegraph content profile.",
+    "ambiguity": "low",
+    "reason": "Euler identity may be tested, but C only grounds Euler and no book. Whether the book cites Euler is the unknown target, not itself a premise that requires prior proof. Do not discover Euler again or assume his reference is already in the book."
+  },
+  {
+    "candidate_id": "r1__F13_S00",
+    "candidate_need": "Which disorder is described by a 2010s case in which an individual presented with a half-year history of pain in different parts of their body that gradually worsened, causing difficulty in walking and moving their shoulders?",
+    "target": {
+      "description": "Discover the disorder from one Q-described clinical presentation."
+    },
+    "subject": {
+      "description": "A generic clinical case profile directly described in Q.",
+      "status": "grounded",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Q describes a 2010s report with six-month worsening pain, walking difficulty and shoulder limitation.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "medium",
+    "reason": "The entity sought is the disorder and no named candidate diagnosis is presupposed. This is an open discovery question from a clinical profile. It differs from attributing a named diagnosis to an unbound specific report; that boundary remains ambiguous."
+  },
+  {
+    "candidate_id": "r1__F13_S01",
+    "candidate_need": "Is the disorder in the 2010s case report in which the patient had a tissue biopsy two months before presenting with upper-body pain and swelling stiff person syndrome?",
+    "target": {
+      "description": "Whether SPS is the diagnosis in the second Q-described clinical report."
+    },
+    "subject": {
+      "description": "The particular unidentified report about upper-body symptoms following a biopsy.",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Q describes a 2010s case with upper-body pain/swelling and a biopsy two months earlier.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "The concrete report to which this diagnosis attribution is being made has been identified.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "id": "B3",
+        "statement": "SPS is a grounded disorder candidate.",
+        "status": "supported",
+        "basis_refs": [
+          "C1",
+          "C2"
+        ]
+      }
+    ],
+    "reference_decision": "discover_subject",
+    "repair_target": "Discover the clinical report from its biopsy/symptom profile, without assuming an SPS diagnosis.",
+    "ambiguity": "medium",
+    "reason": "Primary follows the frozen specific-report binding rule. The diagnosis is the target, not an established background claim. Treating this as a direct disease-discovery question is plausible and is explicitly included in ambiguity sensitivity."
+  },
+  {
+    "candidate_id": "r1__F13_S06",
+    "candidate_need": "Were the two reported cases of fibrodysplasia ossificans progressiva (FOP) published in different years during the 2010s?",
+    "target": {
+      "description": "Whether two observed FOP reports were published in distinct years within the 2010s."
+    },
+    "subject": {
+      "description": "The two concrete FOP clinical reports in C7 and C9.",
+      "status": "grounded",
+      "basis_refs": [
+        "C7",
+        "C9"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "C describes the Pakistani-boy FOP case.",
+        "status": "supported",
+        "basis_refs": [
+          "C7"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "C describes the sixteen-year-old FOP case.",
+        "status": "supported",
+        "basis_refs": [
+          "C9"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "low",
+    "reason": "Their publication times and distinct-year relation are the target. C grounds both reports through distinct clinical descriptions; report titles need not be present when the concrete cases are observed."
+  },
+  {
+    "candidate_id": "r1__F14_S01",
+    "candidate_need": "Which downloadable content pack for Europa Universalis IV was released more than three years after the game's initial release?",
+    "target": {
+      "description": "Discover an EU4 DLC released more than three years after the game."
+    },
+    "subject": {
+      "description": "EU4 and an unnamed DLC sought by the Q release interval.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1",
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "EU4 is named as the game in the observed thesis.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "low",
+    "reason": "Discovery may use a Q descriptor without first identifying the DLC. Exact dates remain to be investigated rather than presumed."
+  },
+  {
+    "candidate_id": "r1__F14_S06",
+    "candidate_need": "Did Amanda D. Phillips publish a 2020 monograph on the subject of video games?",
+    "target": {
+      "description": "Whether Phillips published a video-game monograph in 2020."
+    },
+    "subject": {
+      "description": "Amanda D. Phillips, an observed thesis advisor.",
+      "status": "grounded",
+      "basis_refs": [
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Phillips is the advisor of the observed thesis.",
+        "status": "supported",
+        "basis_refs": [
+          "C2"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "low",
+    "reason": "Publication is being tested directly. The given advisor identity is enough to select this candidate test; no publication fact is presumed."
+  },
+  {
+    "candidate_id": "r1__F16_S00",
+    "candidate_need": "Which region did a ruler refer to as having been regained by their country in a letter written in the first half of the twentieth century?",
+    "target": {
+      "description": "The region named in a ruler letter."
+    },
+    "subject": {
+      "description": "An unnamed ruler letter in the first half of the twentieth century.",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Q describes a ruler letter referring to a regained region in that period.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "The concrete letter to inspect for its region reference has been identified.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "reference_decision": "discover_subject",
+    "repair_target": "Discover the ruler letter using a minimum local description from Q, before naming its region.",
+    "ambiguity": "medium",
+    "reason": "The region is an attribute of an as-yet unbound document. Q supports the description, not a concrete source identity. The alternative broad region-discovery reading is retained as a sensitivity."
+  },
+  {
+    "candidate_id": "r1__F16_S01",
+    "candidate_need": "Which region did King Michael of Romania refer to as having been regained by Romania in his March 5, 1945 letter to the President of the United States?",
+    "target": {
+      "description": "Name the region mentioned as regained in the candidate letter."
+    },
+    "subject": {
+      "description": "Observed King Michael letter to the U.S. President, with a claimed March 5 date.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "A letter from King Michael to the U.S. President is observed.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "That letter itself was written on March 5, 1945.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "id": "B3",
+        "statement": "That candidate letter contains a reference to Romania regaining a region.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "reference_decision": "lift_premise",
+    "repair_target": "First verify whether the observed letter contains a regained-region reference; do not assert its date.",
+    "ambiguity": "medium",
+    "reason": "C1 dates the covering memorandum, not the letter; C2 records handoff only. Q establishes the sought letter description, not that this candidate meets it. A narrow repair may check the candidate reference or resolve its date; either must remove both unsupported assumptions from the final Need."
+  },
+  {
+    "candidate_id": "r1__F16_S02",
+    "candidate_need": "Was the OSS officer who delivered King Michael of Romania's letter to the President of the United States nicknamed after a body part by the President?",
+    "target": {
+      "description": "Whether the final letter-delivery officer had a body-part nickname given by the President."
+    },
+    "subject": {
+      "description": "The OSS officer observed receiving the letter in Bucharest, asserted to be its final courier.",
+      "status": "grounded",
+      "basis_refs": [
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "The King handed the letter to an OSS officer in Bucharest.",
+        "status": "supported",
+        "basis_refs": [
+          "C2"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "That same officer delivered the letter to the President.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "reference_decision": "lift_premise",
+    "repair_target": "Test whether the officer who received the letter in Bucharest was also its final courier to the President.",
+    "ambiguity": "medium",
+    "reason": "The physical handoff and transmission under Donovan cover do not establish the same officer as the final courier. The nickname remains the target and is not rejected merely for lacking a claim. A permissive transmission-as-delivery reading is a preregistered sensitivity, not primary truth."
+  },
+  {
+    "candidate_id": "v1__F08_S01",
+    "candidate_need": "Did Kwon Hyuk-bin's company Smilegate, through its online video games division, release a video game between 2000 and 2010 that was considered one of the top-earning games of all time as of 2019?",
+    "target": {
+      "description": "Whether Smilegate via its online-games division released a qualifying top-earning game in 2000–2010."
+    },
+    "subject": {
+      "description": "Smilegate, the company founded by Kwon.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Kwon founded Smilegate, maker of named games.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "medium",
+    "reason": "Division, release timing and commercial success are inside the proposed company/game relation. The wording is assessed as one direct existential profile, not an assertion of an already established division followed by a downstream attribute question."
+  },
+  {
+    "candidate_id": "v1__F09_S01",
+    "candidate_need": "Did Sophie's partner at the time of her death give an interview in which they said that, after her death, Sophie has become a direct reference to one of her songs?",
+    "target": {
+      "description": "Whether an interview with Sophie's then-partner containing the song-reference statement occurred."
+    },
+    "subject": {
+      "description": "Sophie and the proposed partner-interview relation.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Sophie is a named artist who died accidentally.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "Q provides a partner-interview/song-reference relation to test.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "low",
+    "reason": "Interview occurrence and the partner role are inside an existential event test; they are not assumed in order to ask a song attribute. The artist identity relative to the whole Q may remain provisional."
+  },
+  {
+    "candidate_id": "v1__F10_S01",
+    "candidate_need": "Was Alka Marwaha promoted from associate professor to professor in 2022 at Jesus and Mary College, University of Delhi?",
+    "target": {
+      "description": "Whether Marwaha was promoted from associate professor to professor in 2022 at the named institution."
+    },
+    "subject": {
+      "description": "Alka Marwaha at Jesus and Mary College, University of Delhi.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Marwaha is described as an associate professor at that institution.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "Q provides the promotion/year condition to test.",
+        "status": "supported",
+        "basis_refs": [
+          "Q"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "low",
+    "reason": "Promotion is the direct unknown target. The question does not assume that Marwaha is the final author or that she already met every other clue."
+  },
+  {
+    "candidate_id": "v1__F11_S01",
+    "candidate_need": "Does the target book reference Leonhard Euler as the well-known figure with initials L. E. born in the early 1700s in a central European country?",
+    "target": {
+      "description": "Whether the Q-described book references Euler as its L. E. figure."
+    },
+    "subject": {
+      "description": "The unidentified target book; Euler himself is named and grounded.",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Euler was born in 1707 in Basel.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "The concrete book whose references can be checked has been identified.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "reference_decision": "discover_subject",
+    "repair_target": "Discover the book from a minimal Q-provided source description, such as its illustration/telephone/telegraph content profile.",
+    "ambiguity": "low",
+    "reason": "Euler identity may be tested, but C only grounds Euler and no book. Whether the book cites Euler is the unknown target, not itself a premise that requires prior proof. Do not discover Euler again or assume his reference is already in the book."
+  },
+  {
+    "candidate_id": "v1__F13_S01",
+    "candidate_need": "Was the first 2010s case report of stiff person syndrome (SPS) reported from the country that was the largest country of its dominant religion in the world at the time of its establishment?",
+    "target": {
+      "description": "Whether the candidate first case has the Q-described country/history condition."
+    },
+    "subject": {
+      "description": "A putative first 2010s SPS case report corresponding to the question.",
+      "status": "unresolved_referent",
+      "basis_refs": [
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "SPS is a described disorder candidate.",
+        "status": "supported",
+        "basis_refs": [
+          "C1",
+          "C2"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "SPS was the diagnosis in a 2010s report corresponding to the first clinical case in Q.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "reference_decision": "lift_premise",
+    "repair_target": "Test whether SPS was reported in a case matching the first Q clinical presentation before investigating its country.",
+    "ambiguity": "low",
+    "reason": "Generic symptoms do not establish an SPS report with this role/date. The country-history condition is the target, not something that must already be supported."
+  },
+  {
+    "candidate_id": "v1__F13_S06",
+    "candidate_need": "Was Pakistan the largest country of its dominant religion in the world at the time of its establishment?",
+    "target": {
+      "description": "Whether Pakistan met the largest-country-of-dominant-religion condition at founding."
+    },
+    "subject": {
+      "description": "Pakistan, the country attached to the observed Pakistani case.",
+      "status": "grounded",
+      "basis_refs": [
+        "C7"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "C identifies the first matching case as a Pakistani boy.",
+        "status": "supported",
+        "basis_refs": [
+          "C7"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "low",
+    "reason": "The national-history relation is the target. It must not be listed as a required background fact or assumed from common knowledge."
+  },
+  {
+    "candidate_id": "v1__F14_S01",
+    "candidate_need": "Which Europa Universalis IV downloadable content made changes to the base game's religion and technology mechanics and added new mechanics for a specific playable European nation?",
+    "target": {
+      "description": "Identify a DLC matching the religion/technology/national-mechanics profile."
+    },
+    "subject": {
+      "description": "EU4 and a sought DLC described by a feature profile.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1",
+        "Q"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "EU4 is named as the game in the observed 2023 thesis.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "low",
+    "reason": "DLC identity is exactly the discovery target. It need not already be identified. The question does not assert that a named DLC satisfies the profile."
+  },
+  {
+    "candidate_id": "v1__F14_S06",
+    "candidate_need": "Did Amanda D. Phillips publish a 2020 monograph on the subject of video games?",
+    "target": {
+      "description": "Whether Phillips published a video-game monograph in 2020."
+    },
+    "subject": {
+      "description": "Amanda D. Phillips, an observed thesis advisor.",
+      "status": "grounded",
+      "basis_refs": [
+        "C2"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "Phillips is the advisor of the observed thesis.",
+        "status": "supported",
+        "basis_refs": [
+          "C2"
+        ]
+      }
+    ],
+    "reference_decision": "keep",
+    "repair_target": null,
+    "ambiguity": "low",
+    "reason": "Publication is being tested directly. The given advisor identity is enough to select this candidate test; no publication fact is presumed."
+  },
+  {
+    "candidate_id": "v1__F16_S01",
+    "candidate_need": "What region does King Michael of Romania refer to as having been regained by Romania in his March 5, 1945 letter to the President of the United States?",
+    "target": {
+      "description": "Name the region mentioned as regained in the candidate letter."
+    },
+    "subject": {
+      "description": "Observed King Michael letter to the U.S. President, with a claimed March 5 date.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "A letter from King Michael to the U.S. President is observed.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "That letter itself was written on March 5, 1945.",
+        "status": "unsupported",
+        "basis_refs": []
+      },
+      {
+        "id": "B3",
+        "statement": "That candidate letter contains a reference to Romania regaining a region.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "reference_decision": "lift_premise",
+    "repair_target": "First verify whether the observed letter contains a regained-region reference; do not assert its date.",
+    "ambiguity": "medium",
+    "reason": "C1 dates the covering memorandum, not the letter; C2 records handoff only. Q establishes the sought letter description, not that this candidate meets it. A narrow repair may check the candidate reference or resolve its date; either must remove both unsupported assumptions from the final Need."
+  },
+  {
+    "candidate_id": "v1__F16_S02",
+    "candidate_need": "Did King Michael of Romania come to power about six months before the March 5, 1945 letter was written?",
+    "target": {
+      "description": "Whether the ruler accession precedes the letter by roughly six months."
+    },
+    "subject": {
+      "description": "King Michael and the observed letter, whose exact date is claimed.",
+      "status": "grounded",
+      "basis_refs": [
+        "C1",
+        "C3"
+      ]
+    },
+    "required_background": [
+      {
+        "id": "B1",
+        "statement": "A King Michael letter to the U.S. President exists.",
+        "status": "supported",
+        "basis_refs": [
+          "C1"
+        ]
+      },
+      {
+        "id": "B2",
+        "statement": "The letter was written on March 5, 1945.",
+        "status": "unsupported",
+        "basis_refs": []
+      }
+    ],
+    "reference_decision": "lift_premise",
+    "repair_target": "Determine the date of the observed letter or test whether it was written on March 5, 1945.",
+    "ambiguity": "low",
+    "reason": "The accession interval is the target and need not already be verified. Only the letter date is an unsupported background binding. H cannot transfer the covering memorandum date to the letter."
+  }
+]

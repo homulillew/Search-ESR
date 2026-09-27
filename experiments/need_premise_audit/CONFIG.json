@@ -1,0 +1,18 @@
+{
+  "provider": "deepseek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "response_format": {"type": "json_object"},
+  "max_tokens_policy": "omit",
+  "max_retries": 0,
+  "max_workers": 8,
+  "replicates": 2,
+  "timeout_seconds": 240,
+  "timeout_semantics": "HTTP connect/read/write/pool inactivity, not total request wall time",
+  "halt_http_statuses": [401, 402, 403],
+  "credential_source": "DEEPSEEK_API_KEY environment or .env.deepseek; never archived",
+  "paid_authorization": "User TASK section40 explicitly authorizes this bounded experiment",
+  "tool_calls": 0,
+  "horizon": 1
+}

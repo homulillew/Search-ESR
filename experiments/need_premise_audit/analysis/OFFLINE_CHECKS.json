@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "task_prompts_exact": true,
+  "candidate_exact_outputs": 22,
+  "reference_coverage": 22,
+  "reference_decisions": {
+    "keep": 11,
+    "lift_premise": 6,
+    "discover_subject": 5
+  },
+  "tests": {
+    "command": "python -m unittest experiments.need_premise_audit.test_contracts -v",
+    "passed": 7,
+    "failed": 0,
+    "network": "MockTransport; real socket connections forbidden in transport test"
+  },
+  "actual_model_calls": 0,
+  "tools": 0,
+  "credentials_loaded": false,
+  "history_count": 15799
+}

@@ -1,0 +1,60 @@
+You are repairing one already-selected Candidate Need.
+
+Do NOT choose a new research direction.
+Do NOT reconsider the whole Original Question.
+Do NOT add independent clues or requirements.
+Do NOT plan queries or tools.
+
+You receive:
+- Original Question
+- Verified Claims
+- Working Hypothesis
+- Candidate Need
+- A Premise Audit of that Candidate Need
+
+Apply exactly one of the following operations.
+
+1. KEEP
+
+If the audit decision is "keep":
+return the Candidate Need unchanged.
+
+2. LIFT
+
+If the audit decision is "lift_premise":
+the Candidate Need asks a downstream attribute or consequence of an unsupported relation/event.
+
+Replace the downstream question with a direct question asking whether that unsupported relation/event holds.
+
+Preserve the same local research focus.
+Do not add other Original Question conditions.
+
+Abstract transformation:
+
+"What is Attribute(R)?" 
+→
+"Does R hold?"
+
+3. DISCOVER
+
+If the audit decision is "discover_subject":
+the Candidate Need requires a concrete subject/source/event that has not yet been identified.
+
+Ask a discovery question for that subject using only the minimum identifying description already available in Q or Verified Claims.
+
+Do not ask any downstream property until the subject is identified.
+
+IMPORTANT:
+
+- The Working Hypothesis is not evidence.
+- Do not add names, dates, places or relations not supported by Q/Claims.
+- Do not broaden the Need into the whole Original Question.
+- Do not add a second independent research objective.
+- Preserve the Candidate Need's local objective as much as possible.
+
+Return only:
+
+{
+  "operation": "keep" | "lift" | "discover",
+  "need": "one natural-language research question"
+}

@@ -1,0 +1,28 @@
+You are checking a proposed next research question.
+
+The input contains:
+- Original Question
+- Verified Claims, each with an ID
+- Working Hypothesis
+- Candidate Need
+
+Judge only whether the Candidate Need is safe and well-grounded relative to this input.
+
+A Candidate Need is not invalid merely because the relation it asks about is unresolved. The point of research is to investigate unresolved relations.
+
+It is invalid when it treats an unsupported identity, event, relationship, date, role, or concrete referent as already established background in order to ask a downstream question.
+
+The Working Hypothesis is provisional and cannot establish a fact.
+
+Do not choose a different research direction. Do not plan searches. Do not answer the Original Question.
+
+Return only:
+
+{
+  "decision": "keep" | "revise",
+  "issue": "short description or null",
+  "basis_refs": ["Q", "C1", "..."]
+}
+
+basis_refs may contain only Q or existing Verified Claim IDs.
+If the problem is precisely that no Q/Claim supports the assumption, use an empty list.

@@ -1,0 +1,172 @@
+{
+  "rule": "All historical B0 P/A cells from v1/r1; equal strict-valid controls, exactly H/No-H matched; within stratum ascending SHA256(UTF8(state_id + run_id)).",
+  "frozen_before_any_call": true,
+  "pool_instances": 36,
+  "errors": 11,
+  "controls": 11,
+  "candidate_instances": 22,
+  "unique_states": 12,
+  "unique_qids": 7,
+  "strata": {
+    "H": {
+      "errors": 10,
+      "available_controls": 10,
+      "selected_controls": 10
+    },
+    "No-H": {
+      "errors": 1,
+      "available_controls": 14,
+      "selected_controls": 1
+    }
+  },
+  "excluded_pure_broadness": [
+    "r1__F10_S00"
+  ],
+  "selected_ids": [
+    "r1__F08_S01",
+    "r1__F09_S01",
+    "r1__F10_S01",
+    "r1__F11_S01",
+    "r1__F13_S00",
+    "r1__F13_S01",
+    "r1__F13_S06",
+    "r1__F14_S01",
+    "r1__F14_S06",
+    "r1__F16_S00",
+    "r1__F16_S01",
+    "r1__F16_S02",
+    "v1__F08_S01",
+    "v1__F09_S01",
+    "v1__F10_S01",
+    "v1__F11_S01",
+    "v1__F13_S01",
+    "v1__F13_S06",
+    "v1__F14_S01",
+    "v1__F14_S06",
+    "v1__F16_S01",
+    "v1__F16_S02"
+  ],
+  "control_hash_ranking": [
+    {
+      "candidate_id": "r1__F13_S00",
+      "no_h": true,
+      "hash": "0138c4cd83fde8fe3a6e9ca5deaa1a1e7c5c7f14494d9aa1277523a404381d64"
+    },
+    {
+      "candidate_id": "v1__F07_S00",
+      "no_h": true,
+      "hash": "03932a6b712473bd46b2135b9b71da635438282e719507c1d863491be5bf7b2d"
+    },
+    {
+      "candidate_id": "v1__F09_S01",
+      "no_h": false,
+      "hash": "26fc091c29d9f5f8b694283e1554ce24d9d44fee3adca3ce21a291042addb9f1"
+    },
+    {
+      "candidate_id": "v1__F14_S01",
+      "no_h": false,
+      "hash": "38e4c38f3a3e6c5041a2db98e55ff1930df99171f26a0e1b08c9b776bd46da5d"
+    },
+    {
+      "candidate_id": "r1__F13_S06",
+      "no_h": false,
+      "hash": "3f42309bf0e38b3de488508c494727686d98724536ea687b66827563a685d49d"
+    },
+    {
+      "candidate_id": "r1__F08_S01",
+      "no_h": false,
+      "hash": "462edab4651d43792254ec5b5ec14ffa2bbdfc3a30534cd3fb4bebb6d4709a7e"
+    },
+    {
+      "candidate_id": "v1__F08_S00",
+      "no_h": true,
+      "hash": "53f1e35d5a008540b506179a949834cac2a5c30ccca7f86fef88e6035fae5802"
+    },
+    {
+      "candidate_id": "v1__F10_S01",
+      "no_h": false,
+      "hash": "6c44d5ca42eb3aacc29fed7ba45c133ee883049cc2c373fa9efc091b7202262f"
+    },
+    {
+      "candidate_id": "v1__F14_S06",
+      "no_h": false,
+      "hash": "6e6b97e258cefd56568589ff2f0c155fc6e1bbd944b7ebe7e6d9e92685abf1c2"
+    },
+    {
+      "candidate_id": "v1__F16_S00",
+      "no_h": true,
+      "hash": "7d184928cf46366dfbfd83394cd249ff21628ac868fa5537779349bc36f8e439"
+    },
+    {
+      "candidate_id": "r1__F12_S00",
+      "no_h": true,
+      "hash": "7d57688b79246060694e722e23838057d147b4055939470f5ae05738da75d636"
+    },
+    {
+      "candidate_id": "v1__F13_S00",
+      "no_h": true,
+      "hash": "81d493e33a3ff14e49418cbb1960d6badb6d4d024d46140d6dbbd7d3a75fb0e8"
+    },
+    {
+      "candidate_id": "v1__F14_S00",
+      "no_h": true,
+      "hash": "93469a757d47dc69169e777a6c82d0216be57e4de34bcfe0c8dd355fe50a1508"
+    },
+    {
+      "candidate_id": "r1__F07_S00",
+      "no_h": true,
+      "hash": "9827d06bbac1aee9422e45cd8ef403a52916eb55169d04c4416b4bfcc34cedc1"
+    },
+    {
+      "candidate_id": "r1__F08_S00",
+      "no_h": true,
+      "hash": "99569fecc6f539464727a41cc9cc2cfd450f89c56ef9ebbaa5a81afed8a10a60"
+    },
+    {
+      "candidate_id": "r1__F11_S00",
+      "no_h": true,
+      "hash": "9af51a17e2757d0e7d0403a2cc30fb73b48efdd4258d1325d83f66eaeb346f15"
+    },
+    {
+      "candidate_id": "r1__F14_S00",
+      "no_h": true,
+      "hash": "af95b60c9a06c383ea9fda01e9421a36697caabdd2ab09582deef401a90ba7a5"
+    },
+    {
+      "candidate_id": "v1__F08_S01",
+      "no_h": false,
+      "hash": "b8aadd8ad7bed2560b87b71dea41101439438d677639efd1d676fd6f44f97217"
+    },
+    {
+      "candidate_id": "r1__F14_S06",
+      "no_h": false,
+      "hash": "be73c08f577e3213471419d4bc8f657f69c6fe133bc7775e8344ba21e9f85815"
+    },
+    {
+      "candidate_id": "v1__F13_S06",
+      "no_h": false,
+      "hash": "c675562740dcb6b82f60a42521668109a533321ee4a7e4a0aca9d5a8ec21d55a"
+    },
+    {
+      "candidate_id": "v1__F10_S00",
+      "no_h": true,
+      "hash": "df1f2dca6168308b2b1be74cf3b9224db5c0596dcf59433e483ec2acdaec2661"
+    },
+    {
+      "candidate_id": "v1__F11_S00",
+      "no_h": true,
+      "hash": "e678cc6be2c625b14936ea11ea2ca4266e369ecf45c736202b13574b774b662f"
+    },
+    {
+      "candidate_id": "v1__F12_S00",
+      "no_h": true,
+      "hash": "e7c012f1b4b5f1c5d87fc4f6c9c543de96bc7eba8481fe2438c689d48a8e1794"
+    },
+    {
+      "candidate_id": "r1__F14_S01",
+      "no_h": false,
+      "hash": "fb7cbd0c48ab550ce401d56222f51ddcb070f65fa8b5c37b426a64cf751b62c0"
+    }
+  ],
+  "duplicates": "Two historic runs may share state or exact Need. Candidate instances, states and qids are separately reported; no independent-qid interpretation."
+}
