@@ -1,0 +1,24 @@
+{
+  "requests": 87,
+  "evidence_field_sets": {
+    "date,doc_ref,text,title,url,window_ref": 21,
+    "doc_ref,text,title,url,window_ref": 66
+  },
+  "evidence_alias_fields_exposed": 0,
+  "output_contract_failures": 0,
+  "historical_C_private_ref_occurrences": [
+    {
+      "packet_id": "P_61caf5fa7eaa43c6",
+      "role": "a0_current_reader",
+      "claim_id": "C1",
+      "ref": "w_d10a873c7f9c87b1d58df6eb"
+    },
+    {
+      "packet_id": "P_61caf5fa7eaa43c6",
+      "role": "a2_selector",
+      "claim_id": "C1",
+      "ref": "w_d10a873c7f9c87b1d58df6eb"
+    }
+  ],
+  "interpretation": "Evidence W/private alias pairs are removed. Frozen C remains verbatim and one historical C item retains a private ref in two requests. Therefore whole-payload absence of private handles is NOT established. No runtime acceptance or posthoc alias mapping uses it."
+}
