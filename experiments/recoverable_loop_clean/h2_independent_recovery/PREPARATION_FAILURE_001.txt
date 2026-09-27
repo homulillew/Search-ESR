@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/data/WSH/Search-ESR/experiments/recoverable_loop_clean/h2_independent_recovery/prepare.py", line 107, in <module>
+    if __name__ == '__main__': prepare()
+                               ^^^^^^^^^
+  File "/data/WSH/Search-ESR/experiments/recoverable_loop_clean/h2_independent_recovery/prepare.py", line 77, in prepare
+    s = append_event(s, 'archived_prefix_conversion', source=cell['path'], source_checkpoint=cell.get('checkpoint_id', 'S01'),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: append_event() got an unexpected keyword argument 'source'

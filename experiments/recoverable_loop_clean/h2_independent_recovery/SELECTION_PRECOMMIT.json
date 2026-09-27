@@ -1,0 +1,212 @@
+{
+  "stage": "H2_PENDING_H1_GATE",
+  "selection_rule": "Exclude all repair fixture/H1 qids. Acquisition pool: existing S01 snapshots, ascending numeric qid. Frontier pool: G5_<qid>:L0_START, ascending numeric qid. R1 first4 acquisition; R2 first4 frontier; R3 next2 acquisition plus next2 frontier. No future-result/gold field used. Missing/invalid seed or source fails eligibility; report shortage without backfill.",
+  "excluded_qids": [
+    "228",
+    "538",
+    "546",
+    "637",
+    "843",
+    "922",
+    "971",
+    "1094",
+    "1259"
+  ],
+  "acquisition_pool": [
+    {
+      "qid": "169",
+      "case_id": "F09",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F09/S01.json",
+      "source": "acquisition_S01"
+    },
+    {
+      "qid": "261",
+      "case_id": "F07",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F07/S01.json",
+      "source": "acquisition_S01"
+    },
+    {
+      "qid": "264",
+      "case_id": "F05",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F05/S01.json",
+      "source": "acquisition_S01"
+    },
+    {
+      "qid": "601",
+      "case_id": "F03",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F03/S01.json",
+      "source": "acquisition_S01"
+    },
+    {
+      "qid": "633",
+      "case_id": "F04",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F04/S01.json",
+      "source": "acquisition_S01"
+    },
+    {
+      "qid": "673",
+      "case_id": "F02",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F02/S01.json",
+      "source": "acquisition_S01"
+    }
+  ],
+  "frontier_pool": [
+    {
+      "qid": "177",
+      "checkpoint_id": "G5_177:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START"
+    },
+    {
+      "qid": "186",
+      "checkpoint_id": "G5_186:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START"
+    },
+    {
+      "qid": "311",
+      "checkpoint_id": "G5_311:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START"
+    },
+    {
+      "qid": "387",
+      "checkpoint_id": "G5_387:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START"
+    },
+    {
+      "qid": "435",
+      "checkpoint_id": "G5_435:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START"
+    },
+    {
+      "qid": "517",
+      "checkpoint_id": "G5_517:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START"
+    },
+    {
+      "qid": "580",
+      "checkpoint_id": "G5_580:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START"
+    },
+    {
+      "qid": "1034",
+      "checkpoint_id": "G5_1034:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START"
+    }
+  ],
+  "selected_before_semantic_review": [
+    {
+      "qid": "169",
+      "case_id": "F09",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F09/S01.json",
+      "source": "acquisition_S01",
+      "family": "R1",
+      "cell_id": "R1_Q169"
+    },
+    {
+      "qid": "261",
+      "case_id": "F07",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F07/S01.json",
+      "source": "acquisition_S01",
+      "family": "R1",
+      "cell_id": "R1_Q261"
+    },
+    {
+      "qid": "264",
+      "case_id": "F05",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F05/S01.json",
+      "source": "acquisition_S01",
+      "family": "R1",
+      "cell_id": "R1_Q264"
+    },
+    {
+      "qid": "601",
+      "case_id": "F03",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F03/S01.json",
+      "source": "acquisition_S01",
+      "family": "R1",
+      "cell_id": "R1_Q601"
+    },
+    {
+      "qid": "177",
+      "checkpoint_id": "G5_177:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START",
+      "family": "R2",
+      "cell_id": "R2_Q177"
+    },
+    {
+      "qid": "186",
+      "checkpoint_id": "G5_186:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START",
+      "family": "R2",
+      "cell_id": "R2_Q186"
+    },
+    {
+      "qid": "311",
+      "checkpoint_id": "G5_311:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START",
+      "family": "R2",
+      "cell_id": "R2_Q311"
+    },
+    {
+      "qid": "387",
+      "checkpoint_id": "G5_387:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START",
+      "family": "R2",
+      "cell_id": "R2_Q387"
+    },
+    {
+      "qid": "633",
+      "case_id": "F04",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F04/S01.json",
+      "source": "acquisition_S01",
+      "family": "R3",
+      "cell_id": "R3_Q633"
+    },
+    {
+      "qid": "673",
+      "case_id": "F02",
+      "path": "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F02/S01.json",
+      "source": "acquisition_S01",
+      "family": "R3",
+      "cell_id": "R3_Q673"
+    },
+    {
+      "qid": "435",
+      "checkpoint_id": "G5_435:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START",
+      "family": "R3",
+      "cell_id": "R3_Q435"
+    },
+    {
+      "qid": "517",
+      "checkpoint_id": "G5_517:L0_START",
+      "path": "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json",
+      "source": "frontier_G5_L0_START",
+      "family": "R3",
+      "cell_id": "R3_Q517"
+    }
+  ],
+  "source_files_sha256": {
+    "experiments/belief_need_budget_locality_repair/acquisition/QUESTIONS.json": "59e928960a492173960969fb719f49ff51365e19c2fd7dba61a9663fa895cc8f",
+    "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F02/S01.json": "3144df99d32ba3d99351ace0b7f02c93d00c894a27a414ee3ecb320766c6efdd",
+    "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F03/S01.json": "8181c9dd0e37a98dcaf5fcf205eb43c2f1f170a292a91e8e04641f947232f5c1",
+    "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F04/S01.json": "bb440a9298114668d239110815cb206397fda297e50c1775c4ab3fad82086e28",
+    "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F05/S01.json": "fdc97e2a5f306426e5538462702a20ebcdc41e1744ab0efeeb8b6a35b65094b2",
+    "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F07/S01.json": "e19ccfb7a6e1f669c71162d5e7909e09d04ab2f7fda197372313bd4fb730b652",
+    "experiments/belief_need_budget_locality_repair/acquisition/trajectories/F09/S01.json": "d88b2d3cd6f1584bcde023f0424dcec3222591d2d8c113dc07ae82ab08ab8735",
+    "experiments/frontier_generation/bank/CHECKPOINT_INVENTORY.json": "8ad6c79cbba02cd27b297bc19a27bc000c500344b94792fd3ca1cb71f4d657ee"
+  },
+  "paid_calls": 0
+}
