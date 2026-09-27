@@ -111,6 +111,8 @@ class Preflight(unittest.TestCase):
         selection = read_json('SELECTION_FREEZE.json')
         online = read_json('ONLINE_INPUTS.json')
         model = read_json('MODEL_FREEZE.json')
+        run = read_json('RUN_CONFIG.json')
+        restart = read_json('RESTART_FREEZE.json')
         self.assertEqual(sha(HERE / 'ONLINE_INPUTS.json'), selection['selected_questions_sha256'])
         self.assertEqual(sha(ROOT / 'BCPlus/data/bcplus/qa.jsonl'), selection['dataset_sha256'])
         self.assertEqual([x['qid'] for x in online], selection['selected_qids'])
@@ -119,6 +121,11 @@ class Preflight(unittest.TestCase):
         self.assertTrue(model['thinking'])
         self.assertEqual(model['thinking_extra_body'], {'thinking': {'type': 'enabled'}})
         self.assertEqual(self.config.request_options()['extra_body'], model['thinking_extra_body'])
+        self.assertEqual(run['workers'], 50)
+        self.assertEqual(run['initial_api_concurrency'], 50)
+        self.assertEqual(run['retrieval_worker_count'], 1)
+        self.assertEqual(sha(HERE / 'RESTART_FREEZE.json'), run['restart_freeze_sha256'])
+        self.assertEqual(restart['selected_qids'], selection['selected_qids'])
 
 
 if __name__ == '__main__':

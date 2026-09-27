@@ -140,10 +140,12 @@ def main():
         p = (ROOT / name) if name.startswith('BCPlus/') else (HERE / name)
         hashes[name] = digest(p)
     save('RUN_CONFIG.json', {
-        'sample_size': 50, 'replicates': 1, 'workers': 6,
-        'initial_api_concurrency': 6, 'max_api_concurrency': 6,
+        'sample_size': 50, 'replicates': 1, 'workers': 50,
+        'initial_api_concurrency': 50, 'max_api_concurrency': 50,
         'concurrency_change_rule': 'fixed for this frozen batch; no dynamic increase or decrease',
         'retrieval_worker_count': 1, 'retrieval_mode': 'serialized local GPU worker',
+        'user_directed_full_restart_after_aborted_six_worker_batch': True,
+        'restart_freeze_sha256': digest(HERE / 'RESTART_FREEZE.json'),
         'http_max_connections_per_client': 2, 'http_max_keepalive_connections_per_client': 1,
         'timeout_seconds': 900, 'sdk_max_retries': 0, 'semantic_retries': 0,
         'max_tool_rounds': 200, 'max_tool_calls_per_round': 8,

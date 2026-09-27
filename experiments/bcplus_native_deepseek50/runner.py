@@ -212,6 +212,8 @@ def main():
     online = read_json('ONLINE_INPUTS.json')
     run_config = read_json('RUN_CONFIG.json')
     model = read_json('MODEL_FREEZE.json')
+    if sha(HERE / 'RESTART_FREEZE.json') != run_config['restart_freeze_sha256']:
+        raise ValueError('Restart freeze changed')
     if sha(HERE / 'ONLINE_INPUTS.json') != selection['selected_questions_sha256']:
         raise ValueError('Online inputs differ from selection freeze')
     if [x['qid'] for x in online] != selection['selected_qids'] or len(online) != 50:
@@ -223,7 +225,14 @@ def main():
     if model['model'] != 'deepseek-flash' or model['max_retries'] != 0:
         raise ValueError('Model freeze mismatch')
     if RUNS.exists() and any(RUNS.iterdir()):
-        raise ValueError('Frozen baseline has already started; never rerun a qid')
+        restart = read_json('RESTART_FREEZE.json')
+        existing = [p for p in RUNS.iterdir() if p.is_dir()]
+        if (len(existing) != 1 or existing[0].name != restart['aborted_batch_id']
+                or not (existing[0] / 'ABORTED.json').exists()
+                or (RUNS / 'BATCH_MANIFEST.json').exists()
+                or (RUNS / 'BATCH_END.json').exists()
+                or run_config['workers'] != 50):
+            raise ValueError('Only the user-directed 50-worker restart is permitted')
     config = Config.load()
     if (config.model != model['model'] or config.base_url != model['base_url']
             or config.timeout != model['timeout_seconds']

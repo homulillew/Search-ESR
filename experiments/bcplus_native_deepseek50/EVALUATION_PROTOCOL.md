@@ -1,6 +1,6 @@
 # Offline evaluation protocol
 
-Evaluation starts only after `runs/BATCH_END.json` and all 50 per-question summaries/events exist. The online runner imports `ONLINE_INPUTS.json`, never the dataset JSONL or any gold/earlier answer. Each frozen qid stays in the denominator regardless of failure, empty answer, or emergency cap.
+Evaluation starts only after the restarted 50-worker batch's `runs/BATCH_END.json` and all 50 per-question summaries/events exist. The user-aborted six-worker attempt is retained separately and excluded from primary accuracy, with its requests and token usage disclosed. The online runner imports `ONLINE_INPUTS.json`, never the dataset JSONL or any gold/earlier answer. Each frozen qid stays in the restarted batch's denominator regardless of failure, empty answer, or emergency cap.
 
 The upstream BrowseComp-Plus repository contains `BCPlus/upstream/scripts_evaluation/evaluate_run.py`, a Qwen3-32B LLM judge with a published answer-equivalence prompt, and `evaluate_with_openai.py`, a GPT-4.1 variant. The upstream `docs/llm_as_judge.md` identifies Qwen3-32B as the submission judge. These sources are audited and their SHA256 is frozen below. **Per the user's instruction, this experiment will not use Qwen3-32B.** The investigator will evaluate the results. The reported score is a project score, not an official BC+ leaderboard score.
 
