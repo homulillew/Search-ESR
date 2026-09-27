@@ -1,0 +1,88 @@
+{
+  "E0_A1": {
+    "binary_node_accuracy": [
+      ">=",
+      0.95
+    ],
+    "open_requirement_recall": [
+      ">=",
+      0.97
+    ],
+    "closure_precision": [
+      ">=",
+      0.9
+    ],
+    "exact_binary_mask": [
+      ">=",
+      0.85
+    ],
+    "false_empty_open_set": [
+      "<=",
+      0
+    ],
+    "false_stop_hazard": [
+      "<=",
+      0
+    ],
+    "schema_validity": [
+      ">=",
+      1
+    ],
+    "lost_all_acceptable_frontier": [
+      "<=",
+      0.1
+    ]
+  },
+  "E0_conditional_recoverability": {
+    "minimum_evaluable_prior_false_closes": 4,
+    "safe_resolution_rate_minimum": 0.75
+  },
+  "S0": {
+    "valid_selection": [
+      ">=",
+      0.85
+    ],
+    "selected_closed": [
+      "<=",
+      0.05
+    ],
+    "downstream_selection": [
+      "<=",
+      0.1
+    ],
+    "false_stop": [
+      "<=",
+      0.05
+    ],
+    "schema_validity": [
+      ">=",
+      0.95
+    ]
+  },
+  "S1": {
+    "valid_selection": [
+      ">=",
+      0.8
+    ],
+    "selected_closed": [
+      "<=",
+      0.075
+    ],
+    "downstream_selection": [
+      "<=",
+      0.1
+    ],
+    "false_stop": [
+      "<=",
+      0.075
+    ],
+    "schema_validity": [
+      ">=",
+      0.95
+    ],
+    "selection_loss": [
+      "<=",
+      0.1
+    ]
+  }
+}
