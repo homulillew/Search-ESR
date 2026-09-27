@@ -1,0 +1,800 @@
+[
+  {
+    "case_id": "G01",
+    "state_id": "F07_S00",
+    "qid": "261",
+    "type": "identity_discovery",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify a research paper written between 2012 and 2022 by two authors that has a table reporting an emotion at 13.53 percent.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R2",
+      "R3",
+      "R8"
+    ],
+    "reason": "Publication interval, coauthorship and distinctive table value jointly identify one paper.",
+    "critical": true
+  },
+  {
+    "case_id": "G01",
+    "state_id": "F07_S00",
+    "qid": "261",
+    "type": "identity_discovery",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify a research paper written between 2012 and 2022 by two authors that has a table reporting an emotion at 13.53 percent.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R5"
+    ],
+    "reason": "R2 also requires a separate JBSE publication, outside this initial discovery objective.",
+    "critical": true
+  },
+  {
+    "case_id": "G02",
+    "state_id": "F07_S01",
+    "qid": "261",
+    "type": "relation_verification",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Establish whether Mehmet Diyaddin Yaşar has a research paper in the Journal of Baltic Science Education published between 2016 and 2023.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R4"
+    ],
+    "reason": "One author’s other JBSE paper and date interval are one relation target.",
+    "critical": true
+  },
+  {
+    "case_id": "G02",
+    "state_id": "F07_S01",
+    "qid": "261",
+    "type": "relation_verification",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Establish whether Mehmet Diyaddin Yaşar has a research paper in the Journal of Baltic Science Education published between 2016 and 2023.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R2"
+    ],
+    "reason": "The same node also requires establishing the target paper’s complete two-author condition.",
+    "critical": true
+  },
+  {
+    "case_id": "G03",
+    "state_id": "F07_S03",
+    "qid": "261",
+    "type": "satisfied_control",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify the emotion reported at 13.53 percent in the 2022 paper Examination of Prospective Teachers' Creative Comparisons for the Concept of Science Education.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R8"
+    ],
+    "reason": "The percentage-emotion table relation supplies this local value.",
+    "critical": true
+  },
+  {
+    "case_id": "G03",
+    "state_id": "F07_S03",
+    "qid": "261",
+    "type": "satisfied_control",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify the emotion reported at 13.53 percent in the 2022 paper Examination of Prospective Teachers' Creative Comparisons for the Concept of Science Education.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R5"
+    ],
+    "reason": "Single percentage-emotion table target; paper identity is supplied by current context.",
+    "critical": true
+  },
+  {
+    "case_id": "G04",
+    "state_id": "F08_S00",
+    "qid": "228",
+    "type": "identity_discovery",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify a company founder whose company's online video games division released a game during 2000–2010 that remained one of the top-earning games of all time at least through 2019.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "reason": "The founder/company/division/game chain is a coherent candidate discovery episode.",
+    "critical": true
+  },
+  {
+    "case_id": "G04",
+    "state_id": "F08_S00",
+    "qid": "228",
+    "type": "identity_discovery",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify a company founder whose company's online video games division released a game during 2000–2010 that remained one of the top-earning games of all time at least through 2019.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R1"
+    ],
+    "reason": "The node additionally requires education and university founding history, independent of the game/company chain.",
+    "critical": true
+  },
+  {
+    "case_id": "G05",
+    "state_id": "F08_S01",
+    "qid": "228",
+    "type": "relation_verification",
+    "skeleton_arm": "D1",
+    "gold_obligation": "For Kwon Hyuk-bin, the Smilegate founder, establish whether he and his spouse made a foundational gift for a building that was part of a larger university complex.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R8",
+      "R9"
+    ],
+    "reason": "Gift-funded building and its larger complex form one donation/building episode.",
+    "critical": true
+  },
+  {
+    "case_id": "G05",
+    "state_id": "F08_S01",
+    "qid": "228",
+    "type": "relation_verification",
+    "skeleton_arm": "D2",
+    "gold_obligation": "For Kwon Hyuk-bin, the Smilegate founder, establish whether he and his spouse made a foundational gift for a building that was part of a larger university complex.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R2"
+    ],
+    "reason": "Childlessness through2019 is additionally bundled with the gift/building relation.",
+    "critical": true
+  },
+  {
+    "case_id": "G06",
+    "state_id": "F08_S03",
+    "qid": "228",
+    "type": "satisfied_control",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Check whether candidate Ding Lei was married without children at the time of the 2019 account.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R6",
+      "R7"
+    ],
+    "reason": "Spouse and childlessness at the stated time express the marital condition.",
+    "critical": true
+  },
+  {
+    "case_id": "G06",
+    "state_id": "F08_S03",
+    "qid": "228",
+    "type": "satisfied_control",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Check whether candidate Ding Lei was married without children at the time of the 2019 account.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R2"
+    ],
+    "reason": "The node additionally asks for a foundational building gift and larger complex.",
+    "critical": true
+  },
+  {
+    "case_id": "G07",
+    "state_id": "F09_S00",
+    "qid": "169",
+    "type": "identity_discovery",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify a musical artist whose accidental death occurred in a city 20–30 miles from the site of that country's deadliest aviation accident as of 2023, with the accident occurring 15 years before the artist's death.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R4",
+      "R5",
+      "R6",
+      "R7"
+    ],
+    "reason": "Death city, accidental death, aviation event and temporal/spatial links form the same identification chain.",
+    "critical": true
+  },
+  {
+    "case_id": "G07",
+    "state_id": "F09_S00",
+    "qid": "169",
+    "type": "identity_discovery",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify a musical artist whose accidental death occurred in a city 20–30 miles from the site of that country's deadliest aviation accident as of 2023, with the accident occurring 15 years before the artist's death.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R2"
+    ],
+    "reason": "The full death/aviation spatial-temporal chain matches this discovery target.",
+    "critical": true
+  },
+  {
+    "case_id": "G08",
+    "state_id": "F09_S01",
+    "qid": "169",
+    "type": "relation_verification",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Establish whether the partner of Sophie, who died accidentally in Athens in 2021, gave an interview saying that after her death she had become a direct reference to a song whose title is a one-word adjective.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R8",
+      "R9",
+      "R10"
+    ],
+    "reason": "Interview, song-reference statement and title form comprise one interview/song episode.",
+    "critical": true
+  },
+  {
+    "case_id": "G08",
+    "state_id": "F09_S01",
+    "qid": "169",
+    "type": "relation_verification",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Establish whether the partner of Sophie, who died accidentally in Athens in 2021, gave an interview saying that after her death she had become a direct reference to a song whose title is a one-word adjective.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R3",
+      "R4"
+    ],
+    "reason": "Interview and the referent song/title-form nodes jointly carry this bounded relation inquiry; naming that song is coherent with identifying the reference.",
+    "critical": true
+  },
+  {
+    "case_id": "G09",
+    "state_id": "F09_S03",
+    "qid": "169",
+    "type": "satisfied_control",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify Sophie's partner associated with the post-death tribute.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R8"
+    ],
+    "reason": "Partner identification is a subrelation; the node additionally asserts an interview rather than merely a tribute.",
+    "critical": true
+  },
+  {
+    "case_id": "G09",
+    "state_id": "F09_S03",
+    "qid": "169",
+    "type": "satisfied_control",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify Sophie's partner associated with the post-death tribute.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R3"
+    ],
+    "reason": "Partner identification is embedded in an unestablished interview/song relation.",
+    "critical": true
+  },
+  {
+    "case_id": "G10",
+    "state_id": "F10_S00",
+    "qid": "971",
+    "type": "identity_discovery",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify an Indian author who was promoted from associate professor to professor in 2022 at the same university where they completed both undergraduate and graduate degrees.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "reason": "Nationality, promotion and same-university degrees jointly identify one author.",
+    "critical": true
+  },
+  {
+    "case_id": "G10",
+    "state_id": "F10_S00",
+    "qid": "971",
+    "type": "identity_discovery",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify an Indian author who was promoted from associate professor to professor in 2022 at the same university where they completed both undergraduate and graduate degrees.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R1"
+    ],
+    "reason": "One node directly expresses the author/promotion/university condition.",
+    "critical": true
+  },
+  {
+    "case_id": "G11",
+    "state_id": "F10_S01",
+    "qid": "971",
+    "type": "downstream_temptation",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Establish and identify a journal article by Alka Marwaha on a topic similar to her book The Secret World of Vipassana and Mathematics, published six years after that book, including whether such an article exists.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R10"
+    ],
+    "reason": "The node establishes existence and identity of the later related article, not merely its title.",
+    "critical": true
+  },
+  {
+    "case_id": "G11",
+    "state_id": "F10_S01",
+    "qid": "971",
+    "type": "downstream_temptation",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Establish and identify a journal article by Alka Marwaha on a topic similar to her book The Secret World of Vipassana and Mathematics, published six years after that book, including whether such an article exists.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R5"
+    ],
+    "reason": "Later same-topic article six years after the book is the node’s relational objective.",
+    "critical": true
+  },
+  {
+    "case_id": "G12",
+    "state_id": "F10_S02",
+    "qid": "971",
+    "type": "satisfied_control",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Establish and identify a journal article by Alka Marwaha on a topic similar to her book The Secret World of Vipassana and Mathematics, published six years after that book, including whether such an article exists.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R10"
+    ],
+    "reason": "The objective remains structurally addressable even when current Claims already establish it.",
+    "critical": true
+  },
+  {
+    "case_id": "G12",
+    "state_id": "F10_S02",
+    "qid": "971",
+    "type": "satisfied_control",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Establish and identify a journal article by Alka Marwaha on a topic similar to her book The Secret World of Vipassana and Mathematics, published six years after that book, including whether such an article exists.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R5"
+    ],
+    "reason": "Satisfied-control designation does not change addressability or create STOP.",
+    "critical": true
+  },
+  {
+    "case_id": "G13",
+    "state_id": "F11_S00",
+    "qid": "538",
+    "type": "identity_discovery",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify a book containing between 130 and 140 illustrations and descriptions of objects including the telephone and telegraph.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R2",
+      "R3"
+    ],
+    "reason": "Illustration count and named objects jointly identify one book.",
+    "critical": true
+  },
+  {
+    "case_id": "G13",
+    "state_id": "F11_S00",
+    "qid": "538",
+    "type": "identity_discovery",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify a book containing between 130 and 140 illustrations and descriptions of objects including the telephone and telegraph.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R2"
+    ],
+    "reason": "One book-content node matches the count and telephone/telegraph discovery target.",
+    "critical": true
+  },
+  {
+    "case_id": "G14",
+    "state_id": "F11_S01",
+    "qid": "538",
+    "type": "downstream_temptation",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Establish and identify a book containing 130–140 illustrations, descriptions of the telephone and telegraph, and a reference to the figure with initials L. E. born in the early 1700s in a central European country.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R2",
+      "R3",
+      "R7"
+    ],
+    "reason": "Book content and the L.E. reference are a coherent book identification episode.",
+    "critical": true
+  },
+  {
+    "case_id": "G14",
+    "state_id": "F11_S01",
+    "qid": "538",
+    "type": "downstream_temptation",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Establish and identify a book containing 130–140 illustrations, descriptions of the telephone and telegraph, and a reference to the figure with initials L. E. born in the early 1700s in a central European country.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R2",
+      "R4"
+    ],
+    "reason": "R4 also adds two independent referenced people beyond the L.E. condition.",
+    "critical": true
+  },
+  {
+    "case_id": "G15",
+    "state_id": "F12_S00",
+    "qid": "122",
+    "type": "identity_discovery",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify a person born between 1948 and 1952 who gave an important presentation in 1990 at a prominent cultural center in their country and recorded no material between 1986 and 1994.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R2",
+      "R5",
+      "R6"
+    ],
+    "reason": "Birth interval, presentation and recording gap jointly identify one person.",
+    "critical": true
+  },
+  {
+    "case_id": "G15",
+    "state_id": "F12_S00",
+    "qid": "122",
+    "type": "identity_discovery",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify a person born between 1948 and 1952 who gave an important presentation in 1990 at a prominent cultural center in their country and recorded no material between 1986 and 1994.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "reason": "Birth interval is bundled with separate official demographic history in R2.",
+    "critical": true
+  },
+  {
+    "case_id": "G16",
+    "state_id": "F13_S00",
+    "qid": "637",
+    "type": "identity_discovery",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify the case report from the 2010s describing an individual with a six-month history of gradually worsening pain in different body parts, difficulty walking and restricted shoulder movement, including the reported disorder.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R1",
+      "R4",
+      "R7"
+    ],
+    "reason": "Clinical first-case node is local, but report-decade node and disorder answer node bind both reports; the requested single-case dating/diagnosis is a subproblem.",
+    "critical": true
+  },
+  {
+    "case_id": "G16",
+    "state_id": "F13_S00",
+    "qid": "637",
+    "type": "identity_discovery",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify the case report from the 2010s describing an individual with a six-month history of gradually worsening pain in different body parts, difficulty walking and restricted shoulder movement, including the reported disorder.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R1",
+      "R3",
+      "R5"
+    ],
+    "reason": "First-case history is bundled with country/religious history; report dating and diagnosis nodes also cover both cases.",
+    "critical": true
+  },
+  {
+    "case_id": "G17",
+    "state_id": "F13_S01",
+    "qid": "637",
+    "type": "scope_binding",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Establish whether stiff person syndrome is the reported disorder in the specific 2010s case involving six months of worsening multi-site body pain with difficulty walking and moving the shoulders.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R1",
+      "R4",
+      "R7"
+    ],
+    "reason": "The specific first-case diagnosis/date inquiry cannot be expressed without extra second-case report/diagnosis scope.",
+    "critical": true
+  },
+  {
+    "case_id": "G17",
+    "state_id": "F13_S01",
+    "qid": "637",
+    "type": "scope_binding",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Establish whether stiff person syndrome is the reported disorder in the specific 2010s case involving six months of worsening multi-site body pain with difficulty walking and moving the shoulders.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R1",
+      "R3",
+      "R5"
+    ],
+    "reason": "The first-case syndrome binding is narrower than the country/history and shared-disorder groups.",
+    "critical": true
+  },
+  {
+    "case_id": "G18",
+    "state_id": "F13_S06",
+    "qid": "637",
+    "type": "satisfied_control",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify the disorder reported in both the case of the 10-year-old Pakistani boy with six months of worsening body pain and impaired walking/shoulder movement and the case of the sixteen-year-old male with upper-back pain/swelling two months after biopsy and earlier stiffness followed by swellings over four years.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R7"
+    ],
+    "reason": "Both clinical records are bound in current Claims; the shared scientific diagnosis is one node.",
+    "critical": true
+  },
+  {
+    "case_id": "G18",
+    "state_id": "F13_S06",
+    "qid": "637",
+    "type": "satisfied_control",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify the disorder reported in both the case of the 10-year-old Pakistani boy with six months of worsening body pain and impaired walking/shoulder movement and the case of the sixteen-year-old male with upper-back pain/swelling two months after biopsy and earlier stiffness followed by swellings over four years.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R5"
+    ],
+    "reason": "Shared scientific name for the two bound records is directly addressable.",
+    "critical": true
+  },
+  {
+    "case_id": "G19",
+    "state_id": "F14_S00",
+    "qid": "843",
+    "type": "identity_discovery",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify a strategy video game that was the subject of a 2023 master's thesis at an American university on postcolonialism.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R2"
+    ],
+    "reason": "The game/master’s-thesis relation, topic, year and university scope are one node.",
+    "critical": true
+  },
+  {
+    "case_id": "G19",
+    "state_id": "F14_S00",
+    "qid": "843",
+    "type": "identity_discovery",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify a strategy video game that was the subject of a 2023 master's thesis at an American university on postcolonialism.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R2"
+    ],
+    "reason": "The source-span thesis/game node has exactly this discovery scope.",
+    "critical": true
+  },
+  {
+    "case_id": "G20",
+    "state_id": "F14_S01",
+    "qid": "843",
+    "type": "identity_discovery",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify a downloadable content pack for Europa Universalis IV released more than three years after the base game that changed religion and technology mechanics and added mechanics for a specific playable European nation.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R1",
+      "R6",
+      "R7"
+    ],
+    "reason": "DLC release timing and its gameplay changes describe one DLC discovery episode.",
+    "critical": true
+  },
+  {
+    "case_id": "G20",
+    "state_id": "F14_S01",
+    "qid": "843",
+    "type": "identity_discovery",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify a downloadable content pack for Europa Universalis IV released more than three years after the base game that changed religion and technology mechanics and added mechanics for a specific playable European nation.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R1",
+      "R4"
+    ],
+    "reason": "Timing and gameplay changes coherently identify one DLC; no unrelated advisor biography is added.",
+    "critical": true
+  },
+  {
+    "case_id": "G21",
+    "state_id": "F14_S06",
+    "qid": "843",
+    "type": "satisfied_control",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify the full name of the third content designer credited for the Europa Universalis IV Rights of Man downloadable content.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R8"
+    ],
+    "reason": "The third content-designer full name is directly represented.",
+    "critical": true
+  },
+  {
+    "case_id": "G21",
+    "state_id": "F14_S06",
+    "qid": "843",
+    "type": "satisfied_control",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify the full name of the third content designer credited for the Europa Universalis IV Rights of Man downloadable content.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R5"
+    ],
+    "reason": "The third content-designer full name is directly represented.",
+    "critical": true
+  },
+  {
+    "case_id": "G22",
+    "state_id": "F15_S00",
+    "qid": "1259",
+    "type": "relation_verification",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Establish and identify a university-team programming world championship victory involving an Australian coder who earned IOI medals bronze, silver, gold and silver in four consecutive years.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R2",
+      "R3"
+    ],
+    "reason": "Winning Australian coder and consecutive medal pattern identify one championship victory.",
+    "critical": true
+  },
+  {
+    "case_id": "G22",
+    "state_id": "F15_S00",
+    "qid": "1259",
+    "type": "relation_verification",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Establish and identify a university-team programming world championship victory involving an Australian coder who earned IOI medals bronze, silver, gold and silver in four consecutive years.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R2",
+      "R3"
+    ],
+    "reason": "Winning-team relation and distinctive coder history form one victory discovery chain.",
+    "critical": true
+  },
+  {
+    "case_id": "G23",
+    "state_id": "F15_S01",
+    "qid": "1259",
+    "type": "relation_verification",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Establish whether Jerry Mao's university-team world championship victory involved two other teammates from the same country, with Jerry being the Australian coder with consecutive IOI medals bronze, silver, gold and silver.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R4"
+    ],
+    "reason": "The country equality is between the two other teammates, not between them and the Australian coder.",
+    "critical": true
+  },
+  {
+    "case_id": "G23",
+    "state_id": "F15_S01",
+    "qid": "1259",
+    "type": "relation_verification",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Establish whether Jerry Mao's university-team world championship victory involved two other teammates from the same country, with Jerry being the Australian coder with consecutive IOI medals bronze, silver, gold and silver.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R4"
+    ],
+    "reason": "The same-country teammate relation is explicitly a single node.",
+    "critical": true
+  },
+  {
+    "case_id": "G24",
+    "state_id": "F15_S02",
+    "qid": "1259",
+    "type": "satisfied_control",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify the host university of the ICPC 2021 World Finals Dhaka won by Jerry Mao's MIT ZEROONE team.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R6"
+    ],
+    "reason": "Host university of the already bound winning edition is directly represented.",
+    "critical": true
+  },
+  {
+    "case_id": "G24",
+    "state_id": "F15_S02",
+    "qid": "1259",
+    "type": "satisfied_control",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify the host university of the ICPC 2021 World Finals Dhaka won by Jerry Mao's MIT ZEROONE team.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R6"
+    ],
+    "reason": "Host university of the already bound winning edition is directly represented.",
+    "critical": true
+  },
+  {
+    "case_id": "G25",
+    "state_id": "F16_S00",
+    "qid": "922",
+    "type": "downstream_temptation",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Establish and identify a first-half-twentieth-century ruler-to-ruler letter written roughly six months after its author came to power and delivered by an official nicknamed after a body part by the recipient, including whether such a letter is evidenced.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "reason": "Letter period, ruler roles, courier nickname and accession interval coherently identify one letter.",
+    "critical": true
+  },
+  {
+    "case_id": "G25",
+    "state_id": "F16_S00",
+    "qid": "922",
+    "type": "downstream_temptation",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Establish and identify a first-half-twentieth-century ruler-to-ruler letter written roughly six months after its author came to power and delivered by an official nicknamed after a body part by the recipient, including whether such a letter is evidenced.",
+    "status": "coherently_multi_addressable",
+    "requirement_ids": [
+      "R1",
+      "R2"
+    ],
+    "reason": "Letter identity/delivery and accession interval form the intended letter discovery episode.",
+    "critical": true
+  },
+  {
+    "case_id": "G26",
+    "state_id": "F16_S01",
+    "qid": "922",
+    "type": "scope_binding",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Establish the date on which the King Michael of Romania letter to the United States President was written, so its relation to the author's accession can subsequently be tested.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R4"
+    ],
+    "reason": "Letter writing date is an input to the accession-interval relation; the interval node adds an independent accession-date requirement.",
+    "critical": true
+  },
+  {
+    "case_id": "G26",
+    "state_id": "F16_S01",
+    "qid": "922",
+    "type": "scope_binding",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Establish the date on which the King Michael of Romania letter to the United States President was written, so its relation to the author's accession can subsequently be tested.",
+    "status": "subnode_only",
+    "requirement_ids": [
+      "R2"
+    ],
+    "reason": "Exact letter writing date is only one operand of the accession interval; R1 additionally bundles delivery/nickname.",
+    "critical": true
+  },
+  {
+    "case_id": "G27",
+    "state_id": "F16_S02",
+    "qid": "922",
+    "type": "satisfied_control",
+    "skeleton_arm": "D1",
+    "gold_obligation": "Identify the regained region mentioned in King Michael of Romania's letter to the United States President.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R6"
+    ],
+    "reason": "The region name in the already bound letter is directly addressable.",
+    "critical": true
+  },
+  {
+    "case_id": "G27",
+    "state_id": "F16_S02",
+    "qid": "922",
+    "type": "satisfied_control",
+    "skeleton_arm": "D2",
+    "gold_obligation": "Identify the regained region mentioned in King Michael of Romania's letter to the United States President.",
+    "status": "directly_addressable",
+    "requirement_ids": [
+      "R4"
+    ],
+    "reason": "The region name in the already bound letter is directly addressable.",
+    "critical": true
+  }
+]

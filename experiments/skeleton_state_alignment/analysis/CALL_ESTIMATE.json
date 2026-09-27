@@ -1,0 +1,40 @@
+{
+  "stages": {
+    "e1_alignment": {
+      "planned_calls": 108,
+      "estimated_input_tokens": 113968,
+      "input_estimate_scope": "All108 frozen request texts",
+      "prompt_range_per_request": [
+        769,
+        1797
+      ],
+      "completion_tokens_at_previous_median": 488916,
+      "completion_tokens_at_previous_p95": 1134972,
+      "completion_tokens_at_observed_65535_tail": 7077780
+    },
+    "e2_selection": {
+      "planned_calls": 108,
+      "estimated_input_tokens": 84224,
+      "input_estimate_scope": "E2 S1 uses S0-length proxy; actual model masks not yet known",
+      "prompt_range_per_request": [
+        630,
+        900
+      ],
+      "completion_tokens_at_previous_median": 488916,
+      "completion_tokens_at_previous_p95": 1134972,
+      "completion_tokens_at_observed_65535_tail": 7077780
+    }
+  },
+  "maximum_requests": 216,
+  "max_concurrency": 8,
+  "tokenizer": "cl100k_base proxy; not provider-exact",
+  "historical_sample_n": 108,
+  "historical_completion_quantiles": {
+    "p50": 4527,
+    "p95": 10509,
+    "max": 12379
+  },
+  "tail_note": "Scenarios only, not token or currency ceilings; max_tokens omitted. Reasoning is included in completion.",
+  "currency_cost": null,
+  "currency_note": "No price verification; no monetary estimate."
+}

@@ -1,0 +1,100 @@
+{
+  "E1_output": {
+    "type": "object",
+    "required": [
+      "requirements"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "requirements": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "requirement_id",
+            "status",
+            "supported_by"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "requirement_id": {
+              "type": "string"
+            },
+            "status": {
+              "enum": [
+                "fully_supported",
+                "partially_supported",
+                "unsupported"
+              ]
+            },
+            "supported_by": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "E2_output": {
+    "type": "object",
+    "required": [
+      "selection"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "selection": {
+        "type": "string"
+      }
+    }
+  },
+  "additional_mechanical_checks": [
+    "Every input requirement ID exactly once; no unknown IDs",
+    "Citations exist in current Claims, no duplicate citations",
+    "F/P nonempty citations; U empty citations",
+    "E2 one existing D2 ID or literal STOP",
+    "Exact response model and finish_reason=stop"
+  ],
+  "E1_input_keys": [
+    "Original Question",
+    "Task Skeleton",
+    "Verified Claims"
+  ],
+  "E2_input_keys": [
+    "Original Question",
+    "Task Skeleton",
+    "Coverage Mask"
+  ],
+  "E2_mask_fields": [
+    "requirement_id",
+    "status"
+  ],
+  "error_taxonomy": {
+    "e1_alignment": [
+      "false_supported",
+      "false_unresolved",
+      "partial_as_full",
+      "partial_as_none",
+      "wrong_support_claim",
+      "insufficient_support_group",
+      "entity_overlap_as_support",
+      "task_requirement_as_fact",
+      "outside_knowledge",
+      "output_contract",
+      "mechanical_failure"
+    ],
+    "e2_selection": [
+      "selected_supported",
+      "downstream_selection",
+      "low_value_selection",
+      "false_stop",
+      "missed_stop",
+      "invalid_requirement_id",
+      "output_contract",
+      "mechanical_failure"
+    ]
+  }
+}

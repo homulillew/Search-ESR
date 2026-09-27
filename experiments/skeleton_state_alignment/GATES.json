@@ -1,0 +1,114 @@
+{
+  "A0": {
+    "node_status_accuracy": [
+      ">=",
+      0.9
+    ],
+    "false_supported_rate": [
+      "<=",
+      0.05
+    ],
+    "residual_recall": [
+      ">=",
+      0.95
+    ],
+    "support_precision": [
+      ">=",
+      0.9
+    ],
+    "full_support_sufficiency": [
+      ">=",
+      0.9
+    ],
+    "exact_state_mask": [
+      ">=",
+      0.8
+    ],
+    "schema_validity": [
+      ">=",
+      0.95
+    ]
+  },
+  "A1": {
+    "node_status_accuracy": [
+      ">=",
+      0.85
+    ],
+    "false_supported_rate": [
+      "<=",
+      0.075
+    ],
+    "residual_recall": [
+      ">=",
+      0.9
+    ],
+    "support_precision": [
+      ">=",
+      0.85
+    ],
+    "exact_state_mask": [
+      ">=",
+      0.7
+    ],
+    "schema_validity": [
+      ">=",
+      0.95
+    ],
+    "alignment_loss": [
+      "<=",
+      0.1
+    ],
+    "node_accuracy_loss": [
+      "<=",
+      0.1
+    ]
+  },
+  "S0": {
+    "valid_selection": [
+      ">=",
+      0.85
+    ],
+    "selected_supported": [
+      "<=",
+      0.05
+    ],
+    "downstream_selection": [
+      "<=",
+      0.1
+    ],
+    "false_stop": [
+      "<=",
+      0.05
+    ],
+    "schema_validity": [
+      ">=",
+      0.95
+    ]
+  },
+  "S1": {
+    "valid_selection": [
+      ">=",
+      0.8
+    ],
+    "selected_supported": [
+      "<=",
+      0.075
+    ],
+    "downstream_selection": [
+      "<=",
+      0.1
+    ],
+    "false_stop": [
+      "<=",
+      0.075
+    ],
+    "schema_validity": [
+      ">=",
+      0.95
+    ],
+    "selection_loss": [
+      "<=",
+      0.1
+    ]
+  }
+}

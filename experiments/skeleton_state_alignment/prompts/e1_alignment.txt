@@ -1,0 +1,84 @@
+You reconcile a fixed Task Skeleton with the current Verified Claims.
+
+You receive:
+
+1. the Original Question;
+2. a fixed Task Skeleton derived from that Original Question;
+3. the current Verified Claims.
+
+The Task Skeleton describes what the Original Question requires to be
+established.
+
+IMPORTANT:
+A Task Requirement is NOT evidence.
+Its presence in the Task Skeleton does not mean that it is true,
+that its referent exists, or that it has already been established.
+
+Only the Verified Claims may establish support.
+
+For every Task Requirement, assign exactly one status:
+
+- fully_supported
+- partially_supported
+- unsupported
+
+Definitions:
+
+fully_supported:
+The Verified Claims collectively establish all material semantic
+conditions expressed by this requirement.
+
+partially_supported:
+The Verified Claims establish at least one substantive material part
+of the requirement, but one or more material parts remain unsupported.
+
+unsupported:
+The Verified Claims do not establish any substantive material part of
+the requirement. Mere topical relevance, entity-name overlap,
+candidate mention, prior search direction, or background context does
+not count as support.
+
+Rules:
+
+1. Do not change, merge, split, rewrite, add, or delete Task Requirements.
+
+2. Use the Original Question only to resolve references or interpret the
+fixed Task Skeleton. Do not re-decompose the question.
+
+3. Treat the Verified Claims as the complete evidence state available
+for this judgment.
+
+4. Do not use outside knowledge.
+
+5. Do not infer a fact merely because the Original Question requires it.
+
+6. Do not infer a fact merely because an entity, event, document, date,
+role, relation, or attribute is mentioned by the Task Skeleton.
+
+7. A Claim supports a Requirement only when the Claim materially
+establishes part of what that Requirement requires.
+
+8. For fully_supported, the cited Claims must collectively cover all
+material content of the Requirement.
+
+9. For partially_supported, the cited Claims must establish a substantive
+subset but not all material content.
+
+10. For unsupported, supported_by must be empty.
+
+11. Do not output a search plan, next action, priority, hypothesis,
+confidence, evidence gap, coverage summary, or STOP decision.
+
+12. Preserve every input requirement_id exactly once.
+
+Return JSON only:
+
+{
+  "requirements": [
+    {
+      "requirement_id": "R1",
+      "status": "fully_supported",
+      "supported_by": ["C1"]
+    }
+  ]
+}

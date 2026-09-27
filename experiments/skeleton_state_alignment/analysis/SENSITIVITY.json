@@ -1,0 +1,106 @@
+{
+  "status": "PREREGISTERED_NOT_EVALUATED",
+  "primary_gates_unchanged": true,
+  "analyses": [
+    {
+      "name": "low_ambiguity_nodes",
+      "rule": "Recompute E1 node and support metrics on only Gold nodes marked ambiguity=low; do not report all-state exactness for a partial node subset."
+    },
+    {
+      "name": "strict_citation_context",
+      "rule": "For contextual full proofs require cited group UNION reference_binding_context. Report full-support sufficiency only; primary contextual sufficiency remains unchanged."
+    },
+    {
+      "name": "unqualified_author_list",
+      "overrides": [
+        {
+          "case_id": "G03",
+          "arm": "A0",
+          "id": "R2",
+          "status": "partially_supported"
+        }
+      ],
+      "reason": "Conservative alternative: an unqualified two-coauthor bibliographic Claim may not certify no additional authors."
+    },
+    {
+      "name": "writing_vs_publication",
+      "overrides": [
+        {
+          "case_id": "G03",
+          "arm": "A0",
+          "id": "R1",
+          "status": "partially_supported"
+        },
+        {
+          "case_id": "G03",
+          "arm": "A1",
+          "id": "R1",
+          "status": "partially_supported"
+        }
+      ],
+      "reason": "Conservative alternative refuses to equate bibliographic publication year with writing year."
+    },
+    {
+      "name": "tribute_partner_scope",
+      "overrides": [
+        {
+          "case_id": "G09",
+          "arm": "A0",
+          "id": "R4",
+          "status": "unsupported"
+        },
+        {
+          "case_id": "G09",
+          "arm": "A1",
+          "id": "R3",
+          "status": "unsupported"
+        }
+      ],
+      "reason": "Alternative stricter relation-binding requires an evidenced interview before partnership can count as partial interview support."
+    },
+    {
+      "name": "relaxed_selection_locality",
+      "add_acceptable": {
+        "G04": [
+          "R2"
+        ],
+        "G05": [
+          "R2"
+        ]
+      },
+      "reason": "Descriptive alternative treats the full childless-couple/donation group as one discovery episode; never changes primary no-admissible-ID labels."
+    },
+    {
+      "name": "strict_selection_locality",
+      "remove_acceptable_by_qid": {
+        "261": [
+          "R2"
+        ],
+        "169": [
+          "R2"
+        ],
+        "637": [
+          "R4"
+        ],
+        "843": [
+          "R3",
+          "R4"
+        ],
+        "922": [
+          "R1"
+        ]
+      },
+      "reason": "Narrower interpretation of multi-clue identification episodes; report dependence on whole-node locality conventions."
+    },
+    {
+      "name": "leave_one_qid_out",
+      "rule": "Recompute descriptive gates excluding each of10 qids, without changing primary stage progression."
+    }
+  ],
+  "limitations": [
+    "One familiar reviewer, exposed bank, correlated state/replicate samples",
+    "No new labels or masks based on model outputs",
+    "No outside facts imported in any sensitivity",
+    "No all-task same-candidate closure certificate from pointwise masks"
+  ]
+}
