@@ -1,0 +1,90 @@
+{
+  "id": "A1__G21__R1",
+  "stage": "e1_alignment",
+  "case_id": "G21",
+  "state_id": "F14_S06",
+  "qid": "843",
+  "arm": "A1",
+  "replicate": 1,
+  "request_sha256": "5e4fc7a5d6a8288f60bd48fb6e5b682e4b78c403c7f424460fee35a383296073",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "fully_supported",
+        "supported_by": [
+          "C3",
+          "C5"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "partially_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R3",
+        "status": "partially_supported",
+        "supported_by": [
+          "C2"
+        ]
+      },
+      {
+        "requirement_id": "R4",
+        "status": "partially_supported",
+        "supported_by": [
+          "C4",
+          "C6",
+          "C7"
+        ]
+      },
+      {
+        "requirement_id": "R5",
+        "status": "fully_supported",
+        "supported_by": [
+          "C8",
+          "C9"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1413,
+    "completion_tokens": 9503,
+    "total_tokens": 10916,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9377
+    },
+    "prompt_cache_hit_tokens": 1024,
+    "prompt_cache_miss_tokens": 389
+  },
+  "started_utc": "2026-09-27T09:14:01.140909+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 40.74617884866893,
+  "completed_utc": "2026-09-27T09:14:41.887108+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1413,
+      "output": 9503,
+      "total": 10916,
+      "reasoning": 9377,
+      "hit": 1024,
+      "miss": 389
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "A1__G08__R2",
+  "stage": "e1_alignment",
+  "case_id": "G08",
+  "state_id": "F09_S01",
+  "qid": "169",
+  "arm": "A1",
+  "replicate": 2,
+  "request_sha256": "c5e27005315bcfea7066b923cb7f165285de5ed2a615a0a6d25661d10dbf9900",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "partially_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "partially_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R3",
+        "status": "unsupported",
+        "supported_by": []
+      },
+      {
+        "requirement_id": "R4",
+        "status": "unsupported",
+        "supported_by": []
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1087,
+    "completion_tokens": 1825,
+    "total_tokens": 2912,
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1741
+    },
+    "prompt_cache_hit_tokens": 896,
+    "prompt_cache_miss_tokens": 191
+  },
+  "started_utc": "2026-09-27T09:13:28.018761+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 8.388379780575633,
+  "completed_utc": "2026-09-27T09:13:36.407160+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1087,
+      "output": 1825,
+      "total": 2912,
+      "reasoning": 1741,
+      "hit": 896,
+      "miss": 191
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

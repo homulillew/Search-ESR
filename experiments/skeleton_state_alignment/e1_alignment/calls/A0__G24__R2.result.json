@@ -1,0 +1,93 @@
+{
+  "id": "A0__G24__R2",
+  "stage": "e1_alignment",
+  "case_id": "G24",
+  "state_id": "F15_S02",
+  "qid": "1259",
+  "arm": "A0",
+  "replicate": 2,
+  "request_sha256": "cdc5bab38f375a8a026594a28957558f9d5d92fc5d3cbe2be76318557c0dd79a",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "partially_supported",
+        "supported_by": [
+          "C2"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "fully_supported",
+        "supported_by": [
+          "C1",
+          "C2"
+        ]
+      },
+      {
+        "requirement_id": "R3",
+        "status": "fully_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R4",
+        "status": "unsupported",
+        "supported_by": []
+      },
+      {
+        "requirement_id": "R5",
+        "status": "fully_supported",
+        "supported_by": [
+          "C2"
+        ]
+      },
+      {
+        "requirement_id": "R6",
+        "status": "fully_supported",
+        "supported_by": [
+          "C2",
+          "C3"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1192,
+    "completion_tokens": 2495,
+    "total_tokens": 3687,
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2360
+    },
+    "prompt_cache_hit_tokens": 896,
+    "prompt_cache_miss_tokens": 296
+  },
+  "started_utc": "2026-09-27T09:12:43.642387+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 11.541436668485403,
+  "completed_utc": "2026-09-27T09:12:55.183843+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1192,
+      "output": 2495,
+      "total": 3687,
+      "reasoning": 2360,
+      "hit": 896,
+      "miss": 296
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

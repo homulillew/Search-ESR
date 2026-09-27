@@ -1,0 +1,92 @@
+{
+  "id": "A0__G12__R1",
+  "stage": "e1_alignment",
+  "case_id": "G12",
+  "state_id": "F10_S02",
+  "qid": "971",
+  "arm": "A0",
+  "replicate": 1,
+  "request_sha256": "06699c6879cf43217ac265753df2cb2ad9028107c80177daf6315c0b6bca0e63",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "partially_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "partially_supported",
+        "supported_by": [
+          "C2"
+        ]
+      },
+      {
+        "requirement_id": "R3",
+        "status": "unsupported",
+        "supported_by": []
+      },
+      {
+        "requirement_id": "R4",
+        "status": "partially_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R5",
+        "status": "fully_supported",
+        "supported_by": [
+          "C1",
+          "C3"
+        ]
+      },
+      {
+        "requirement_id": "R6",
+        "status": "fully_supported",
+        "supported_by": [
+          "C3"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1234,
+    "completion_tokens": 1736,
+    "total_tokens": 2970,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1602
+    },
+    "prompt_cache_hit_tokens": 1024,
+    "prompt_cache_miss_tokens": 210
+  },
+  "started_utc": "2026-09-27T09:14:17.965701+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 7.829769227653742,
+  "completed_utc": "2026-09-27T09:14:25.795492+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1234,
+      "output": 1736,
+      "total": 2970,
+      "reasoning": 1602,
+      "hit": 1024,
+      "miss": 210
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

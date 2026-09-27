@@ -1,0 +1,103 @@
+{
+  "id": "A0__G18__R2",
+  "stage": "e1_alignment",
+  "case_id": "G18",
+  "state_id": "F13_S06",
+  "qid": "637",
+  "arm": "A0",
+  "replicate": 2,
+  "request_sha256": "deb608667c6ef178216bd4039613b742e793de37e1e6fb5948282ec3cf327a23",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "partially_supported",
+        "supported_by": [
+          "C7",
+          "C9"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "fully_supported",
+        "supported_by": [
+          "C7",
+          "C9"
+        ]
+      },
+      {
+        "requirement_id": "R3",
+        "status": "partially_supported",
+        "supported_by": [
+          "C7"
+        ]
+      },
+      {
+        "requirement_id": "R4",
+        "status": "fully_supported",
+        "supported_by": [
+          "C7"
+        ]
+      },
+      {
+        "requirement_id": "R5",
+        "status": "fully_supported",
+        "supported_by": [
+          "C9"
+        ]
+      },
+      {
+        "requirement_id": "R6",
+        "status": "fully_supported",
+        "supported_by": [
+          "C9"
+        ]
+      },
+      {
+        "requirement_id": "R7",
+        "status": "fully_supported",
+        "supported_by": [
+          "C7",
+          "C9"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1848,
+    "completion_tokens": 5278,
+    "total_tokens": 7126,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5114
+    },
+    "prompt_cache_hit_tokens": 1152,
+    "prompt_cache_miss_tokens": 696
+  },
+  "started_utc": "2026-09-27T09:13:36.407661+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 23.73513530381024,
+  "completed_utc": "2026-09-27T09:14:00.142818+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1848,
+      "output": 5278,
+      "total": 7126,
+      "reasoning": 5114,
+      "hit": 1152,
+      "miss": 696
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

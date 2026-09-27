@@ -1,0 +1,82 @@
+{
+  "id": "A0__G27__R1",
+  "stage": "e1_alignment",
+  "case_id": "G27",
+  "state_id": "F16_S02",
+  "qid": "922",
+  "arm": "A0",
+  "replicate": 1,
+  "request_sha256": "24d1e85bb7db000d0ea4cb9122b7ecceb4f4eb15003afce622488996834e12b0",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "fully_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "unsupported",
+        "supported_by": []
+      },
+      {
+        "requirement_id": "R3",
+        "status": "unsupported",
+        "supported_by": []
+      },
+      {
+        "requirement_id": "R4",
+        "status": "fully_supported",
+        "supported_by": [
+          "C3"
+        ]
+      },
+      {
+        "requirement_id": "R5",
+        "status": "fully_supported",
+        "supported_by": [
+          "C3"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1056,
+    "completion_tokens": 674,
+    "total_tokens": 1730,
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 571
+    },
+    "prompt_cache_hit_tokens": 896,
+    "prompt_cache_miss_tokens": 160
+  },
+  "started_utc": "2026-09-27T09:14:02.795709+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 3.3877967186272144,
+  "completed_utc": "2026-09-27T09:14:06.183528+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1056,
+      "output": 674,
+      "total": 1730,
+      "reasoning": 571,
+      "hit": 896,
+      "miss": 160
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

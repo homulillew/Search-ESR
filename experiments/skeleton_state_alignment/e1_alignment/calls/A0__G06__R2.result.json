@@ -1,0 +1,89 @@
+{
+  "id": "A0__G06__R2",
+  "stage": "e1_alignment",
+  "case_id": "G06",
+  "state_id": "F08_S03",
+  "qid": "228",
+  "arm": "A0",
+  "replicate": 2,
+  "request_sha256": "68a2854d82156523543e5bf2c0cac99c530d6d849f852ca6e5c11fd02cd0777a",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "partially_supported",
+        "supported_by": [
+          "C1",
+          "C4"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "partially_supported",
+        "supported_by": [
+          "C2",
+          "C5"
+        ]
+      },
+      {
+        "requirement_id": "R3",
+        "status": "fully_supported",
+        "supported_by": [
+          "C5"
+        ]
+      },
+      {
+        "requirement_id": "R4",
+        "status": "unsupported",
+        "supported_by": []
+      },
+      {
+        "requirement_id": "R5",
+        "status": "unsupported",
+        "supported_by": []
+      },
+      {
+        "requirement_id": "R6",
+        "status": "unsupported",
+        "supported_by": []
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1370,
+    "completion_tokens": 3971,
+    "total_tokens": 5341,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3843
+    },
+    "prompt_cache_hit_tokens": 1152,
+    "prompt_cache_miss_tokens": 218
+  },
+  "started_utc": "2026-09-27T09:14:08.439350+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 18.082028014585376,
+  "completed_utc": "2026-09-27T09:14:26.521395+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1370,
+      "output": 3971,
+      "total": 5341,
+      "reasoning": 3843,
+      "hit": 1152,
+      "miss": 218
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

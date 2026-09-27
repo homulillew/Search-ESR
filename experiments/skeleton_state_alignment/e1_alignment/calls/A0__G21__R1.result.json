@@ -1,0 +1,90 @@
+{
+  "id": "A0__G21__R1",
+  "stage": "e1_alignment",
+  "case_id": "G21",
+  "state_id": "F14_S06",
+  "qid": "843",
+  "arm": "A0",
+  "replicate": 1,
+  "request_sha256": "b3531bda015207de6e18989204d3042b92fd80a29c70e0862c70b63fe2c6a2e0",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "fully_supported",
+        "supported_by": [
+          "C3",
+          "C5"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "partially_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R3",
+        "status": "partially_supported",
+        "supported_by": [
+          "C2"
+        ]
+      },
+      {
+        "requirement_id": "R4",
+        "status": "partially_supported",
+        "supported_by": [
+          "C4",
+          "C6",
+          "C7"
+        ]
+      },
+      {
+        "requirement_id": "R5",
+        "status": "fully_supported",
+        "supported_by": [
+          "C8",
+          "C9"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1462,
+    "completion_tokens": 10476,
+    "total_tokens": 11938,
+    "prompt_tokens_details": {
+      "cached_tokens": 1280
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 10350
+    },
+    "prompt_cache_hit_tokens": 1280,
+    "prompt_cache_miss_tokens": 182
+  },
+  "started_utc": "2026-09-27T09:13:20.549814+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 46.98669932410121,
+  "completed_utc": "2026-09-27T09:14:07.536534+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1462,
+      "output": 10476,
+      "total": 11938,
+      "reasoning": 10350,
+      "hit": 1280,
+      "miss": 182
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

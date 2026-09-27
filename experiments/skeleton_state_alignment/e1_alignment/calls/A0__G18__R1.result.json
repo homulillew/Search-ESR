@@ -1,0 +1,101 @@
+{
+  "id": "A0__G18__R1",
+  "stage": "e1_alignment",
+  "case_id": "G18",
+  "state_id": "F13_S06",
+  "qid": "637",
+  "arm": "A0",
+  "replicate": 1,
+  "request_sha256": "deb608667c6ef178216bd4039613b742e793de37e1e6fb5948282ec3cf327a23",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "partially_supported",
+        "supported_by": [
+          "C7",
+          "C9"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "fully_supported",
+        "supported_by": [
+          "C7",
+          "C9"
+        ]
+      },
+      {
+        "requirement_id": "R3",
+        "status": "unsupported",
+        "supported_by": []
+      },
+      {
+        "requirement_id": "R4",
+        "status": "fully_supported",
+        "supported_by": [
+          "C7"
+        ]
+      },
+      {
+        "requirement_id": "R5",
+        "status": "fully_supported",
+        "supported_by": [
+          "C9"
+        ]
+      },
+      {
+        "requirement_id": "R6",
+        "status": "fully_supported",
+        "supported_by": [
+          "C9"
+        ]
+      },
+      {
+        "requirement_id": "R7",
+        "status": "fully_supported",
+        "supported_by": [
+          "C7",
+          "C9"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1848,
+    "completion_tokens": 3608,
+    "total_tokens": 5456,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3449
+    },
+    "prompt_cache_hit_tokens": 1664,
+    "prompt_cache_miss_tokens": 184
+  },
+  "started_utc": "2026-09-27T09:13:44.685559+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 15.675214877352118,
+  "completed_utc": "2026-09-27T09:14:00.360794+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1848,
+      "output": 3608,
+      "total": 5456,
+      "reasoning": 3449,
+      "hit": 1664,
+      "miss": 184
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

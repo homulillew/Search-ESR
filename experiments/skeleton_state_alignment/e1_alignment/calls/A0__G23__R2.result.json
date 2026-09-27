@@ -1,0 +1,90 @@
+{
+  "id": "A0__G23__R2",
+  "stage": "e1_alignment",
+  "case_id": "G23",
+  "state_id": "F15_S01",
+  "qid": "1259",
+  "arm": "A0",
+  "replicate": 2,
+  "request_sha256": "649f0205a34c53f39cb17ba35cfcdea885419dada67ea052b4bd37f859baba7a",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "partially_supported",
+        "supported_by": [
+          "C2"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "fully_supported",
+        "supported_by": [
+          "C1",
+          "C2"
+        ]
+      },
+      {
+        "requirement_id": "R3",
+        "status": "fully_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R4",
+        "status": "unsupported",
+        "supported_by": []
+      },
+      {
+        "requirement_id": "R5",
+        "status": "fully_supported",
+        "supported_by": [
+          "C2"
+        ]
+      },
+      {
+        "requirement_id": "R6",
+        "status": "unsupported",
+        "supported_by": []
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1154,
+    "completion_tokens": 2249,
+    "total_tokens": 3403,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2121
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 770
+  },
+  "started_utc": "2026-09-27T09:12:24.960350+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 10.185932075604796,
+  "completed_utc": "2026-09-27T09:12:35.146314+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1154,
+      "output": 2249,
+      "total": 3403,
+      "reasoning": 2121,
+      "hit": 384,
+      "miss": 770
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

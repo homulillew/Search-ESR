@@ -1,0 +1,92 @@
+{
+  "id": "A1__G12__R1",
+  "stage": "e1_alignment",
+  "case_id": "G12",
+  "state_id": "F10_S02",
+  "qid": "971",
+  "arm": "A1",
+  "replicate": 1,
+  "request_sha256": "7939c785556b4019ee8205dd888a17ee05ccfdaac325a79b1035a7faf1d821a4",
+  "head": "89800081fcdcbb0b42c8265e33a0325abc9ad5ed",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement_id": "R1",
+        "status": "partially_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R2",
+        "status": "partially_supported",
+        "supported_by": [
+          "C2"
+        ]
+      },
+      {
+        "requirement_id": "R3",
+        "status": "unsupported",
+        "supported_by": []
+      },
+      {
+        "requirement_id": "R4",
+        "status": "partially_supported",
+        "supported_by": [
+          "C1"
+        ]
+      },
+      {
+        "requirement_id": "R5",
+        "status": "fully_supported",
+        "supported_by": [
+          "C1",
+          "C3"
+        ]
+      },
+      {
+        "requirement_id": "R6",
+        "status": "fully_supported",
+        "supported_by": [
+          "C3"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1178,
+    "completion_tokens": 3855,
+    "total_tokens": 5033,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3721
+    },
+    "prompt_cache_hit_tokens": 1024,
+    "prompt_cache_miss_tokens": 154
+  },
+  "started_utc": "2026-09-27T09:14:27.934138+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 16.104424284771085,
+  "completed_utc": "2026-09-27T09:14:44.038582+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 1178,
+      "output": 3855,
+      "total": 5033,
+      "reasoning": 3721,
+      "hit": 1024,
+      "miss": 154
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}
