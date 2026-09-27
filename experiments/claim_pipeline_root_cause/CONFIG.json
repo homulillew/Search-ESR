@@ -1,0 +1,40 @@
+{
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "thinking": {
+    "type": "enabled"
+  },
+  "reasoning_effort": "high",
+  "max_tokens": 32768,
+  "response_format": {
+    "type": "json_object"
+  },
+  "stream": false,
+  "max_retries": 0,
+  "timeouts_seconds": {
+    "connect": 30,
+    "read": 900,
+    "write": 60,
+    "pool": 30
+  },
+  "total_timeout_seconds": 1200,
+  "user_id": "OMITTED, unchanged from historical calls",
+  "concurrency_cap": 256,
+  "account_budget_ceiling": 2400,
+  "stage_independent_requests": {
+    "E1": 72,
+    "E2": 83,
+    "E3": 24
+  },
+  "stage_call_ceiling": {
+    "E1": 96,
+    "E2": 143,
+    "E3": 120
+  },
+  "replicates": 1,
+  "new_retrieval_calls": 0,
+  "authorization": "TASK section50: new authorization required; NOT AUTHORIZED",
+  "failure_policy": "Any schema/transport/finish/reference/model failure halts unsent requests and affected gate; preserve all inflight outputs; no retry/backfill/resume.",
+  "credential_source": "DEEPSEEK_API_KEY or worktree .env.deepseek, read only after new authorization."
+}
