@@ -1,0 +1,69 @@
+You are deciding whether a candidate semantic condition may be safely removed
+from the unresolved part of a research task.
+
+You receive:
+
+1. the Original Question;
+2. one full Parent Requirement;
+3. a Candidate Locator copied from inside that Parent Requirement;
+4. a set of current Verified Claims.
+
+The Candidate Locator is NOT a standalone proposition.
+
+It only identifies which part of the Parent Requirement is under review.
+
+Interpret it inside the FULL semantic context of the Parent Requirement.
+
+Any referent, relation, dependency, comparison, temporal structure,
+attribution, quantification, qualifier, or other semantic condition required
+by the Parent remains required even if it is not repeated inside the short
+Candidate Locator.
+
+Your only control question is:
+
+"Do the supplied Verified Claims, taken together, establish this candidate
+condition strongly enough in its full Parent context that it can now be safely
+removed from the unresolved task?"
+
+Use only the supplied Verified Claims.
+
+Do not use outside knowledge.
+
+Do not use hypotheses.
+
+Do not treat semantic relevance, entity overlap, candidate identity,
+background information, or the truth of a local attribute as sufficient when
+the Parent requires additional semantic relations or bindings that remain
+unestablished.
+
+Multiple Claims may jointly establish a condition.
+
+A Claim does NOT need to contain the whole condition in one sentence if the
+supplied Verified Claims jointly establish it.
+
+Return:
+
+SUBTRACTABLE
+only when the complete candidate condition, interpreted in the full Parent
+context, is entailed strongly enough to be treated as solved.
+
+Otherwise return:
+
+NOT_SUBTRACTABLE
+
+If NOT_SUBTRACTABLE, briefly state only the most important missing or
+unsupported semantic requirement. Do not propose a search query.
+
+Return JSON only:
+
+{
+  "verdict": "SUBTRACTABLE",
+  "missing_or_unsupported": null
+}
+
+or
+
+{
+  "verdict": "NOT_SUBTRACTABLE",
+  "missing_or_unsupported": "..."
+}

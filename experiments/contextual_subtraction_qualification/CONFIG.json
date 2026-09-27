@@ -1,0 +1,37 @@
+{
+  "provider": "deepseek",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "max_retries": 0,
+  "max_workers": 8,
+  "replicates": 2,
+  "max_tokens_policy": "omit",
+  "response_format": {
+    "type": "json_object"
+  },
+  "timeout_seconds": 240,
+  "timeout_semantics": "HTTP inactivity per connect/read/write/pool; not total wall timeout",
+  "halt_http_statuses": [
+    400,
+    401,
+    402,
+    403,
+    404,
+    422
+  ],
+  "credential_source": "DEEPSEEK_API_KEY environment or .env.deepseek; never archived",
+  "tool_calls": 0,
+  "horizon": 1,
+  "cache_metric": "sum prompt_cache_hit_tokens / sum prompt_tokens; report hit/miss and missing-usage counts, never assume missing usage means zero cost",
+  "resumption_policy": "No overwrite, retry, automatic resume or replacement. Incomplete attempts remain failures.",
+  "planned_E1": 192,
+  "E1_replicates": {
+    "Q0": 2,
+    "Q1": 2
+  },
+  "E1_authorization_basis": "Current user TASK directs E1 mechanism test and calls; no new E1 confirmation gate. Prior96-call authorization is not reused.",
+  "E2_authorization": "New separate authorization only after E1 PASS per current TASK21.",
+  "E3": "Conditional on E2 PASS; no E3 execution in E1 authorization."
+}

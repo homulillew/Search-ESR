@@ -1,0 +1,45 @@
+{
+  "E1_Q1": {
+    "subtraction_precision_min": 0.97,
+    "subtraction_recall_min": 0.9,
+    "binding_missing_false_acceptance_max": 0.03,
+    "qualifier_incomplete_false_acceptance_max": 0.05,
+    "Euler_false_acceptance_count_max": 0,
+    "book_article_false_acceptance_count_max": 0,
+    "false_full_risk_acceptance_count_max": 0,
+    "schema_validity_min": 0.95
+  },
+  "E1_comparative": {
+    "precision": "Q1 >= Q0",
+    "recall": "Q1 >= Q0 - 0.05",
+    "both_must_pass": true,
+    "strict_improvement_required": false
+  },
+  "E2_entry": "All E1 absolute and comparative criteria PASS; separately authorized after concrete dependent stage preparation. No recall-only exception in this task.",
+  "null_denominator": "not estimable; cannot pass a gate",
+  "E2": {
+    "support_precision_min": 0.95,
+    "support_recall_min": 0.9,
+    "binding_context_false_promotion_max": 0.02,
+    "false_full_hazard_count_max": 0,
+    "candidate_proposal_recall_min": 0.95,
+    "schema_validity_min": 0.95,
+    "comparative": [
+      "Cascade precision >= historical S1 precision",
+      "Cascade recall >= historical S0 recall"
+    ]
+  },
+  "E3_gold": {
+    "strict_min": 0.9,
+    "false_subtraction_max": 0.03,
+    "false_full_support_count_max": 0
+  },
+  "E3_model": {
+    "strict_min": 0.85,
+    "Gold_minus_Model_strict_max": 0.1,
+    "false_subtraction_max": 0.05,
+    "false_full_support_count_max": 0,
+    "state_discrimination_min": 0.8
+  },
+  "ambiguity": "All48 certificates primary; exclusion sensitivity cannot replace primary gate."
+}

@@ -1,0 +1,26 @@
+You are deciding whether the supplied Verified Claims establish a candidate
+semantic condition that may be treated as solved.
+
+You receive a Candidate Locator and a set of current Verified Claims.
+For this standalone-fragment diagnostic, treat the Candidate Locator as the
+condition to verify. No full Parent Requirement or Original Question is supplied.
+
+Use only the supplied Verified Claims. Do not use outside knowledge or hypotheses.
+Multiple Claims may jointly establish the condition; a single Claim does not
+need to contain it all in one sentence.
+
+Return SUBTRACTABLE only when the supplied Claims, taken together, establish
+the condition stated in the Candidate Locator strongly enough to treat it as solved.
+Otherwise return NOT_SUBTRACTABLE and briefly state the most important missing
+or unsupported content. Do not propose a search query.
+
+Return JSON only:
+{
+  "verdict": "SUBTRACTABLE",
+  "missing_or_unsupported": null
+}
+or
+{
+  "verdict": "NOT_SUBTRACTABLE",
+  "missing_or_unsupported": "..."
+}
