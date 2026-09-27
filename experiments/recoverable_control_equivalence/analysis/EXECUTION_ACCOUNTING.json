@@ -1,14 +1,45 @@
 {
-  "new_model_calls": 0,
-  "new_paid_calls": 0,
-  "E0": "108 historical outputs reused, no new charge",
+  "new_model_calls": 108,
+  "new_paid_calls": 108,
+  "E0_new_calls": 0,
   "E1": {
     "planned": 108,
-    "sent": 0,
-    "returned": 0,
-    "retries": 0,
-    "cache_hit_rate": null,
-    "status": "PREPARED_FOR_E1_EXECUTION"
+    "attempted_or_send_intent": 108,
+    "reported_partial_totals": {
+      "input": 93656,
+      "output": 695973,
+      "reasoning": 695223,
+      "total": 789629,
+      "hit": 66944,
+      "miss": 26712
+    },
+    "usage_complete_calls": 108,
+    "accounting_complete": true,
+    "cache_reporting_calls": 108,
+    "cache_weighted_rate": 0.714786025454856,
+    "cache_consistent_with_input": true,
+    "zero_fill_means_only_reported_partial_sum": true,
+    "currency": null,
+    "sent_or_send_intent": 108,
+    "returned": 108,
+    "HTTP_errors": 0,
+    "schema_errors": 0,
+    "failures": {
+      "length": 4
+    },
+    "latency_seconds": {
+      "median": 6.802866163663566,
+      "p95": 177.10266076400876,
+      "max": 261.4027169626206
+    },
+    "latency_scope": "attempted requests with measured duration, including failures; no total wall deadline",
+    "valid_outputs": 104,
+    "wall_seconds": 471.2866131849587,
+    "peak_concurrency": 8,
+    "harness_error": null
   },
-  "historical_usage": "Read-only prior artifacts; never counted as new experiment spending."
+  "max_retries": 0,
+  "Search_Find_Open_Writer_Gap_calls": 0,
+  "currency_estimate": null,
+  "reasoning_note": "Reasoning tokens already included in completion, never added twice."
 }

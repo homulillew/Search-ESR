@@ -1,9 +1,17 @@
 {
-  "status": "PREPARED_FOR_E1_EXECUTION",
-  "e0_gate": "PASS",
-  "planned": 108,
-  "sent": 0,
-  "blocker": "TASK46 requires new applicable paid-call authorization",
-  "prompt_source": "TASK section27 verbatim",
-  "mask_source": "historical A1 replicate1"
+  "status": "COMPLETE_STOPPED_AT_E1_GATE",
+  "E0": "PASS",
+  "S0": "FAIL",
+  "S1": "FAIL",
+  "E1_joint": "FAIL",
+  "interpretation_case": "B",
+  "reason": "Gold OpenSet selection already below frozen85% threshold; Model below80%.",
+  "paid_calls": 108,
+  "valid_outputs": 104,
+  "failures": {
+    "length": 4
+  },
+  "retries": 0,
+  "next_rollout": "NOT_RUN_NOT_QUALIFIED",
+  "next_gap_tool_writer_calls": 0
 }

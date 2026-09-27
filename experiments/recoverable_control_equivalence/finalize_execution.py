@@ -1,4 +1,107 @@
-# FINAL_CONCLUSION — E0 PASS；E1 S0/S1 FAIL
+"""Reporting only after sealed review, frozen scoring, and raw-result replay."""
+from collections import Counter
+from .common import *
+from .score import assert_review
+from .run import load_rows
+
+def fmt(metric):
+    return 'N/A' if metric['value'] is None else f"{metric['numerator']}/{metric['denominator']} ({metric['value']*100:.2f}%)"
+def metric_table(m):
+    rows=[('valid_selection','Valid Selection'),('selected_closed','Selected Gold CLOSED'),('selected_input_closed','Selected Input CLOSED'),
+      ('downstream_selection','Downstream Selection'),('false_stop','False STOP'),('input_mask_false_stop','Input-Mask False STOP'),('schema_validity','Valid schema/completion')]
+    return '| 指标 | S0 Gold Control Mask | S1 Model Control Mask |\n|---|---:|---:|\n'+''.join(f'| {label} | {fmt(m["arms"]["S0"]["metrics"][key])} | {fmt(m["arms"]["S1"]["metrics"][key])} |\n' for key,label in rows)
+def main():
+    assert_review();m=read(P/'e1_selection/METRICS.json');acc=read(P/'e1_selection/ACCOUNTING.json')
+    integrity=read(P/'analysis/E1_INTEGRITY.json');assert integrity['status']=='PASS' and not m['joint_gate_pass']
+    assert m['arms']['S0']['metrics']['valid_selection']['numerator']==41 and m['arms']['S1']['metrics']['valid_selection']['numerator']==40
+    outcome={'status':'COMPLETE_STOPPED_AT_E1_GATE','E0':'PASS','S0':'FAIL','S1':'FAIL','E1_joint':'FAIL','interpretation_case':'B',
+      'reason':'Gold OpenSet selection already below frozen85% threshold; Model below80%.',
+      'paid_calls':108,'valid_outputs':104,'failures':{'length':4},'retries':0,
+      'next_rollout':'NOT_RUN_NOT_QUALIFIED','next_gap_tool_writer_calls':0}
+    write(P/'e1_selection/OUTCOME.json',outcome)
+    # Preserve the prior mutable preparation snapshots before lifecycle updates.
+    write(P/'analysis/PRE_EXECUTION_ACCOUNTING.json',(P/'analysis/EXECUTION_ACCOUNTING.json').read_text())
+    write(P/'analysis/PRE_EXECUTION_INTEGRITY.json',(P/'analysis/INTEGRITY.json').read_text())
+    def replace(path,value):path.write_text(value if isinstance(value,str) else json.dumps(value,ensure_ascii=False,indent=2)+'\n')
+    replace(P/'STATUS.json',outcome);replace(P/'e1_selection/STATUS.json',outcome)
+    replace(P/'analysis/EXECUTION_ACCOUNTING.json',{'new_model_calls':108,'new_paid_calls':108,'E0_new_calls':0,'E1':acc,
+      'max_retries':0,'Search_Find_Open_Writer_Gap_calls':0,'currency_estimate':None,'reasoning_note':'Reasoning tokens already included in completion, never added twice.'})
+    replace(P/'analysis/INTEGRITY.json',{'status':'PASS','phase':'COMPLETE_STOPPED_AT_E1_GATE','execution':integrity,
+      'authorization_sha256':sha(P/'AUTHORIZATION.json'),'freeze_sha256':sha(P/'FREEZE.json'),
+      'source_history_unchanged':19111,'blind_review_commit':read(P/'e1_selection/review/REVIEW_SEAL.json')['judgment_commit'],
+      'new_paid_calls':108,'remaining_authorized_calls':0})
+    report='''# E1 Active Requirement ID Selection — FAIL
+
+## Material Passport
+
+108 frozen calls =27 states×S0/S1×2，DeepSeek deepseek-flash。所有尝试保留，单次完成要求，零重试；仅Q/Skeleton/二分类Mask输入。单个熟悉历史bank的Codex reviewer，18种可见输入分组，108份独立记录的first-pass judgments（非108独立评审）；提交后揭盲。主评分完全继承旧冻结selection reference。
+
+'''+metric_table(m)+'''
+S0有效选择75.93%<85%；S1有效选择74.07%<80%。其它门槛均过。SelectionLoss=S0−S1=1/54=**1.85个百分点**，低于10pp限制，但不能替代两个绝对门槛。**E1 Joint FAIL，停止。**
+
+零违规动作率包含所有54planned slots；4次length（每臂2次）仍计入总分母，是没有可用动作，不是合法选择。仅看完成响应，S0 41/52=78.85%、S1 40/52=76.92%，也不足以解释为长度失败单独造成主失败；这些条件率仅描述，主门槛不变。没有Gold合法STOP正控，因此未测正确停止能力。
+
+## 失败分解（不删任何case）
+
+| 来源 | S0失败数 | S1失败数 | 说明 |
+|---|---:|---:|---|
+| q228 G04/G05 | 4 | 4 | 冻结D2表示无合法单ID；选择R1。继续保留分母。 |
+| q228 G06 | 2 | 2 | 有合法R2但仍选复合R1。 |
+| q637 G16/G17 | 4 | 4 | 选R3，把国家/宗教历史与临床史合成当前目标。 |
+| q122 G15 | 1 | 2 | 选R2，把出生人物条件与城镇人口条件捆在一起；S0另一rep选择合法R3。 |
+| q169 G07/G08/G09 length | 2 | 2 | 每次completion65536；无可用selection。 |
+| 合计 | 13 | 14 | 全部保留，未补样、未repair。 |
+
+## Addressability strata
+
+| 历史D2地址能力 | S0 valid | S1 valid |
+|---|---:|---:|
+'''
+    for label in ('directly_addressable','coherently_multi_addressable','subnode_only'):
+        report+=f"| {label} | {fmt(m['arms']['S0']['strata']['addressability'][label]['metrics']['valid_selection'])} | {fmt(m['arms']['S1']['strata']['addressability'][label]['metrics']['valid_selection'])} |\n"
+    report+='''
+合并direct+coherent为62/64（96.88%）；subnode-only为19/44（43.18%）。**23个有合法JSON但不合法的ID选择，全部处于subnode-only状态**。27个总体失败中25个落在subnode-only（另2个为其它stratum中的length）。这是有力的描述性集中，不是随机操纵表示粒度后的因果比较；历史addressability标签针对旧GoldO而非对所有可能ID逐一评分。
+
+## 稳定性
+
+| 类别（27 state pairs） | S0 | S1 |
+|---|---:|---:|
+| same valid ID | 14 | 15 |
+| different but both valid | 5 | 5 |
+| one valid / one invalid | 3 | 0 |
+| both invalid | 5 | 7 |
+
+不同但都valid不判失败；相同但都invalid也不因一致性获益。S0 replicate1/2分别21/27、20/27；S1均20/27。非空Claims状态S0 27/34、S1 26/34；空Claims均14/20。qid、replicate、empty和addressability完整指标见METRICS.json。
+
+## 真正Mask差异与重复输入
+
+S1严格固定旧A1 replicate1，只G18与S0 Mask不同：R4被误关；另外26/27 states输入完全相同。G18两臂四次均选择R3，冻结reference均判valid，展示一次“某节点误关，但另一个可用目标仍被选择”的局部实例；未执行工具或获取纠错证据，不能视为恢复证明。
+
+整体1.85pp loss全部来自输入完全相同的q122：S0一次选R3而S1两次选R2。不能将这1.85pp解释成Alignment误差的因果影响；固定错误Mask的实质对照只有一个状态。
+
+## 盲审与冻结参考分歧
+
+4个分歧全部是G18 R3。仅见二分类Mask的reviewer认为该ID仍捆绑国家条件与临床条件，缺少局部残差信息；冻结参考使用旧Claims知道临床部分已成立，仅国家条件残留，所以记valid。保留全部首轮判断并按冻结reference计分，无调分。分歧说明两个评估口径信息量不同，也暴露二分类Mask不显示“复合节点哪部分仍未解决”；不是独立复审证明。
+
+两个输入碰撞：G04/G05/G06输入完全相同，但acceptable集合分别空/空/{R2}；G10/G11输入相同，G11新增可选R5，仍共享R1/R2/R4。前者包含两例本来不可表示状态，不应外推为所有可表示状态都无解。它说明二分类变化并不总能表达局部残差的变化。
+
+## 执行账目
+
+108/108发送并返回（HTTP200）；104有效、4length；timeout/transport/HTTP errors0，零重试，峰值并发8。4个失败各65536completion tokens，合计262144，约占总completion的37.67%。保留raw响应和usage，未读reasoning解释模型内因。
+
+输入93,656；completion695,973（其中reasoning695,223，已包含）；total789,629。缓存hit66,944、miss26,712，加权命中率**71.48%**。usage108/108完整，hit+miss=input。
+
+壁钟471.29秒；请求latency median6.80秒、P95 177.10秒、max261.40秒。配置240秒是HTTP inactivity timeout，非总wall deadline；不存在把261.4秒完成误记为未遵守总超时的问题。没有新价格核验或货币成本声称。
+
+## 判断与停止
+
+Case B：control-equivalent Alignment通过最低门槛，但正确OpenSet下的Current Frontier Selection仍失败。瓶颈主要与复合D2节点的局部可选性有关；不是多Search/少Find问题，也不是只补一个closure checker可以解决的证据。
+
+下一独立实验可考虑任务书提出的D1-like局部控制节点+D2 source-span authority，并保留相同cases以区分表示粒度与Selector能力；本轮不实现、不调prompt、不新增State。禁止进入Gap/工具/Writer/rollout。
+'''
+    # Frozen scorer REPORT.md is an executed summary; detailed report is appended separately.
+    write(P/'e1_selection/DETAILED_REPORT.md',report)
+    conclusion='''# FINAL_CONCLUSION — E0 PASS；E1 S0/S1 FAIL
 
 ## Material Passport / provenance
 
@@ -27,16 +130,7 @@ A1所有3个False Close都缺少eligible后续状态，**恢复分母0，不能�
 
 ## E1正式结果
 
-| 指标 | S0 Gold Control Mask | S1 Model Control Mask |
-|---|---:|---:|
-| Valid Selection | 41/54 (75.93%) | 40/54 (74.07%) |
-| Selected Gold CLOSED | 0/54 (0.00%) | 0/54 (0.00%) |
-| Selected Input CLOSED | 0/54 (0.00%) | 0/54 (0.00%) |
-| Downstream Selection | 0/54 (0.00%) | 0/54 (0.00%) |
-| False STOP | 0/54 (0.00%) | 0/54 (0.00%) |
-| Input-Mask False STOP | 0/54 (0.00%) | 0/54 (0.00%) |
-| Valid schema/completion | 52/54 (96.30%) | 52/54 (96.30%) |
-
+'''+metric_table(m)+'''
 S0 **75.93%<85%：FAIL**；S1 **74.07%<80%：FAIL**。Joint FAIL。SelectionLoss=1.85pp通过其限制，但绝对有效选择率未过门槛。4次length（每臂2次）不删除；schema/completion validity每臂96.30%，仍过95%门槛。全部其它动作约束指标通过。
 
 ### 错误集中于局部地址能力
@@ -115,3 +209,15 @@ S0/S1仅G18的Mask不同；两臂四次都选冻结参考允许的R3。可以说
 Persistent boundary不变：Q/Skeleton稳定；Verified Claims/Hypothesis持续保存；Workspace/Trace机械记录；Control Mask/OpenSet/ActiveID/Gap每轮重算。CLOSED不能永久写进task semantics。
 
 最终状态：`COMPLETE_STOPPED_AT_E1_GATE`。用户授权的108次调用已用完；本轮按冻结停止规则完成。准备阶段的PREPARED_CONCLUSION、E0 REPORT和FREEZE中的待授权说明是历史快照；当前状态以本报告、STATUS和e1_selection/OUTCOME为准。
+'''
+    replace(P/'analysis/FINAL_CONCLUSION.md',conclusion)
+    write(P/'RESULTS.md','''# Results
+
+E0 Runtime A1 PASS. E1 S0 FAIL (41/54,75.93%<85%); S1 FAIL (40/54,74.07%<80%). SelectionLoss1.85pp. Stop at E1; no rollout.
+
+108 calls,104 valid outputs,4 length failures,0 retries. Cache weighted71.48%. All frozen/historical inputs retained.
+
+See analysis/FINAL_CONCLUSION.md and e1_selection/DETAILED_REPORT.md. Source E0 and preparation reports are immutable chronological snapshots; current STATUS.json supersedes prepared lifecycle status.
+''')
+    print('Final report and lifecycle accounting written; no new requests.')
+if __name__=='__main__':main()
