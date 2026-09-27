@@ -1,0 +1,51 @@
+{
+  "packet_id": "P_20050c6f95515dde",
+  "qid": "673",
+  "split": "H_diagnostic",
+  "arm": "A2",
+  "stage": "E1",
+  "source_hashes": [
+    "12d9f9996e4ea9b47bf75800ffb488c20e68b006048ad4c88cadaa7e2f9b9ac4"
+  ],
+  "request_id": "E1_P_20050c6f95515dde_A2_2",
+  "role": "a2_evidence_formulator",
+  "attempted": true,
+  "error": {
+    "type": "ValueError",
+    "message": "invalid factual refs/statement"
+  },
+  "usage": {
+    "prompt_tokens": 1621,
+    "completion_tokens": 5229,
+    "total_tokens": 6850,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4868
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 1493
+  },
+  "request_hash": "a79f8d40498b4a608e4517b1ba7da8ee39401ea28f8d626b604058fa2c714014",
+  "http_status": 200,
+  "offline_mock": false,
+  "response_model": "deepseek-flash",
+  "provider_id": "cc642a58-d75b-4acf-aa3a-5cb863d9ce60",
+  "finish_reason": "stop",
+  "latency_seconds": 21.28546752780676,
+  "completed_utc": "2026-09-27T22:34:32.790655+00:00",
+  "response_bytes": 22644,
+  "accounting": {
+    "complete": true,
+    "issues": [],
+    "tokens": {
+      "input": 1621,
+      "output": 5229,
+      "total": 6850,
+      "hit": 128,
+      "miss": 1493,
+      "reasoning": 4868
+    }
+  }
+}

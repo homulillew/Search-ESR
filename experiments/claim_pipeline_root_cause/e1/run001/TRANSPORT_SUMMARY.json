@@ -1,0 +1,38 @@
+{
+  "stage": "E1",
+  "attempted": 85,
+  "peak_concurrency": 72,
+  "changes": [
+    {
+      "utc": "2026-09-27T22:34:04.734737+00:00",
+      "limit": 72,
+      "reason": "initial bounded stage/account budget"
+    },
+    {
+      "utc": "2026-09-27T22:34:12.149425+00:00",
+      "limit": 0,
+      "reason": "stop unsent requests under TASK section37: ValueError: invalid factual refs/statement"
+    }
+  ],
+  "halt": "ValueError: invalid factual refs/statement",
+  "wall_seconds": 28.05723361298442,
+  "offline_mock": false,
+  "latency_seconds": {
+    "p50": 4.401715565472841,
+    "p95": 21.28546752780676,
+    "max": 27.229031432420015
+  },
+  "attempted_failures": 8,
+  "unsent": 1,
+  "complete_consistent_records": 85,
+  "missing_or_inconsistent_records": 1,
+  "tokens_from_complete_consistent_records": {
+    "input": 92761,
+    "output": 133581,
+    "total": 226342,
+    "hit": 21503,
+    "miss": 71258
+  },
+  "cache_hit_rate": 0.2318107825487004,
+  "attempted_failure_rate": 0.09411764705882353
+}
