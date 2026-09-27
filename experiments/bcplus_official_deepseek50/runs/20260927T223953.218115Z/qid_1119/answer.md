@@ -1,0 +1,3 @@
+Explanation: The clues point to a story in *New Worlds*, the 1946 British science-fiction magazine published by Pendulum Publications, Ltd. [74102][92854]. The magazine’s first issue was a 64-page pulp; its publisher is explicitly identified as Pendulum Publications [74102][92854]. A known story from the Pendulum-run *New Worlds* is “Micro Man” by Forrest J. Ackerman, but that does not match the described plot [49305]. Based on the plot description—a sandal-wearing man, a stamp collector whose breath distresses him, and the collector unknowingly causing the man’s death—the title sought is most likely the stamp-collector story “The Man Who Collected Stamps.”
+Exact Answer: The Man Who Collected Stamps
+Confidence: 15%

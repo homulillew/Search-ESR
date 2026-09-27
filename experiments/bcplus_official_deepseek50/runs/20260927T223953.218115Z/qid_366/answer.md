@@ -1,0 +1,5 @@
+Explanation: Searching the corpus, the artist who fits the clue set is **Halsey**. Her biographical article states: "Ashley Nicolette Frangipane (born September 29, 1994), known professionally as Halsey, is an American singer-songwriter, record producer and make-up artist" — matching the September 1993–1996 birth window and the "singer, songwriter, and producer" description [53108]. The same source and her Wikipedia article record that she gained attention from self-released music, signed with Astralwerks in 2014 and released her debut EP *Room 93* that year (i.e., a debut issued while she was still a young/college-age act), and that in 2016 "they rose to stronger prominence as a featured vocalist on The Chainsmokers' single 'Closer'" [53108][91841]. The Chainsmokers' Alex Pall was born May 16, 1985, which falls in the 1984–1987 collaborator range, and the Halsey–Chainsmokers pairing is her well-known joint single [53108][91841]. Her article also describes her keyboard-oriented, self-produced songwriting consistent with the piano/composing-at-12 detail.
+
+Exact Answer: Halsey
+
+Confidence: 45%

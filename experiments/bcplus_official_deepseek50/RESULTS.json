@@ -1,0 +1,79 @@
+{
+  "batch_id": "20260927T223953.218115Z",
+  "primary_judge": "Qwen3-32B primary judge using official BrowseComp-Plus prompt and parser, hosted OpenAI-compatible runtime",
+  "correct": 34,
+  "denominator": 50,
+  "accuracy": 0.68,
+  "wilson_95": [
+    0.5418970269185592,
+    0.7924178373934316
+  ],
+  "judge_skipped_no_agent_answer_qids": [
+    "283"
+  ],
+  "judge_actual_parse_or_api_error_qids": [],
+  "status_counts": {
+    "natural_answer": 49,
+    "RUN_FAILED": 1
+  },
+  "search_calls": {
+    "total": 3176,
+    "mean": 63.52,
+    "median": 54.0,
+    "p25": 19.75,
+    "p75": 91.0,
+    "p90": 137.10000000000002,
+    "p95": 158.39999999999998,
+    "max": 219
+  },
+  "tool_rounds": {
+    "total": 2431,
+    "mean": 48.62,
+    "median": 38.0,
+    "p25": 14.75,
+    "p75": 77.75,
+    "p90": 103.00000000000001,
+    "p95": 117.55,
+    "max": 147
+  },
+  "api_requests": {
+    "total": 2481,
+    "mean": 49.62,
+    "median": 39.0,
+    "p25": 15.75,
+    "p75": 78.75,
+    "p90": 104.00000000000001,
+    "p95": 118.55,
+    "max": 148
+  },
+  "elapsed_seconds": {
+    "total": 20289.347772499546,
+    "mean": 405.78695544999096,
+    "median": 392.65698423143476,
+    "p25": 183.40502556879073,
+    "p75": 617.882913113106,
+    "p90": 759.4856382623316,
+    "p95": 793.0441079560667,
+    "max": 875.6978008672595
+  },
+  "prompt_tokens": 344290253,
+  "completion_tokens": 1219076,
+  "peak_api_concurrency": 50,
+  "tool_error_count": 0,
+  "tool_latency_median_seconds": 3.8986321073025465,
+  "tool_latency_p95_seconds": 6.815704230684787,
+  "evidence_recall_mean": 0.8311457431457432,
+  "evidence_recall_qids": 50,
+  "cache_hit_rate_on_consistent_usage": 0.9748518788302729,
+  "cache_usage_missing_or_inconsistent_records": 0,
+  "deepseek_cost_estimate": {
+    "estimated_cny": 20.24719699999999,
+    "priced_responses": 2481,
+    "unpriced_responses": 0,
+    "billed_amount_known": false
+  },
+  "judge_prompt_tokens": 32434,
+  "judge_completion_tokens": 4811,
+  "agent_batch_wall_seconds": 877.504289412871,
+  "comparison_old_run": "46/50 by deterministic plus investigator review under different Search/GetDocument conditions; not a paired judge-only comparison"
+}

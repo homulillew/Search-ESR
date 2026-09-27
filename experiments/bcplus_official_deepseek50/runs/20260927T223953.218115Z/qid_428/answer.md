@@ -1,0 +1,3 @@
+Explanation: The clues identify Matt Wytock: his CMU dissertation is *Optimizing Optimization: Scalable Convex Programming with Proximal Operators* (CMU-ML-16-100, March 2016), and its front matter includes the acknowledgment/dedication name “For Audra” [48230]. Wytock also matches the supporting facts: CMU PhD candidate, 2016 Siebel Scholar, and University of San Diego bachelor’s degree recipient [40561], plus co-author of the arXiv paper “Convex programming with fast proximal and linear operators” submitted in November 2015 [69978]. The child’s first name is therefore Audra.
+Exact Answer: Audra
+Confidence: 80%
