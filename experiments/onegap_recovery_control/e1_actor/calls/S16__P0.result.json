@@ -1,0 +1,41 @@
+{
+  "id": "S16__P0",
+  "state_id": "S16",
+  "condition": "P0",
+  "state_sha256": "9444ab44b484b1cd95a7bde23c6f3f3f7bf30bb5071cfadc51fa73f074f7d6f1",
+  "request_sha256": "2bccd2648c89c850257b0de1ec3e25324d9394c4b4b036255a6d16a7fa544399",
+  "attempted": true,
+  "started_utc": "2026-09-27T19:31:00.661079+00:00",
+  "valid_output": false,
+  "output": {
+    "focus_requirement_id": "R4",
+    "one_gap": "Verify whether the locally un-inspected source W38/D34 confirms that the 95th-minute free-kick in PSG vs Lille was taken by Lionel Messi, rather than relying on the search-result snippet.",
+    "strategy": "VERIFY_RELATION",
+    "hypothesis_ids_under_test": [],
+    "action": {
+      "type": "OPEN",
+      "query": null,
+      "source_ref": "W38",
+      "pattern": "Messi"
+    }
+  },
+  "usage": {
+    "prompt_tokens": 1430,
+    "completion_tokens": 1775,
+    "total_tokens": 3205,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1650
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1430
+  },
+  "failure": "output_contract_or_incomplete",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "completed_utc": "2026-09-27T19:31:09.222270+00:00",
+  "elapsed_seconds": 8.560912355780602
+}

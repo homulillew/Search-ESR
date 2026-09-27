@@ -1,0 +1,41 @@
+{
+  "id": "S06__P2",
+  "state_id": "S06",
+  "condition": "P2",
+  "state_sha256": "23954dcac62f943ba60297872b98af3dbf58c98139e486cf496eacea0e9aea70",
+  "request_sha256": "cc77011c3887619942cb20b5fd6944a0a6fbaf16d3fbf0c6f70979729c0e889f",
+  "attempted": true,
+  "started_utc": "2026-09-27T19:31:00.682350+00:00",
+  "valid_output": true,
+  "output": {
+    "focus_requirement_id": "R2",
+    "one_gap": "Determine which book contains between 130 and 140 illustrations and descriptions of various objects, including the telephone and telegraph.",
+    "strategy": "LOCATE_SOURCE",
+    "hypothesis_ids_under_test": [],
+    "action": {
+      "type": "SEARCH",
+      "query": "\"130 illustrations\" \"telephone\" \"telegraph\" book",
+      "source_ref": null,
+      "pattern": null
+    }
+  },
+  "usage": {
+    "prompt_tokens": 2016,
+    "completion_tokens": 11466,
+    "total_tokens": 13482,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 11353
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2016
+  },
+  "failure": null,
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "completed_utc": "2026-09-27T19:31:57.832232+00:00",
+  "elapsed_seconds": 57.149575639516115
+}

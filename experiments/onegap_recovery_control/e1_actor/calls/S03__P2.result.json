@@ -1,0 +1,43 @@
+{
+  "id": "S03__P2",
+  "state_id": "S03",
+  "condition": "P2",
+  "state_sha256": "84fd7fc93b2535129c7f26f77787bf7246d03313efe1bca1f74146156a7d465c",
+  "request_sha256": "62c24ed7fd40b82a21ea5d76a3b92cf1b92500376cd99ccd1c4af6cc4a9d0202",
+  "attempted": true,
+  "started_utc": "2026-09-27T19:31:00.671225+00:00",
+  "valid_output": false,
+  "output": {
+    "focus_requirement_id": "R2",
+    "one_gap": "Verify whether Ding Lei and his spouse made a foundational gift for construction of a building, and capture any building/university details mentioned in the SCMP source W4.",
+    "strategy": "VERIFY_RELATION",
+    "hypothesis_ids_under_test": [
+      "H1"
+    ],
+    "action": {
+      "type": "OPEN",
+      "query": null,
+      "source_ref": "W4",
+      "pattern": "gift|donat|building|university|foundation|wife|children"
+    }
+  },
+  "usage": {
+    "prompt_tokens": 2096,
+    "completion_tokens": 3761,
+    "total_tokens": 5857,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3654
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2096
+  },
+  "failure": "output_contract_or_incomplete",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "completed_utc": "2026-09-27T19:31:18.891564+00:00",
+  "elapsed_seconds": 18.220052590593696
+}

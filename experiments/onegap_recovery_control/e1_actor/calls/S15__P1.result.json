@@ -1,0 +1,43 @@
+{
+  "id": "S15__P1",
+  "state_id": "S15",
+  "condition": "P1",
+  "state_sha256": "6ca8ef2b30e1d013aadb402cc7525de10d710c77864243e1e97a03a13ff89dad",
+  "request_sha256": "2ee54a6ae43cf91873f356e80cf5d08f89887a1380595412268e89e655e4631c",
+  "attempted": true,
+  "started_utc": "2026-09-27T19:31:00.675425+00:00",
+  "valid_output": true,
+  "output": {
+    "focus_requirement_id": "R3",
+    "one_gap": "Verify whether Ding Junhui's 2023 English Open run matches the described sequence: after beating Ma Hailong 4-3, did he then win two matches 4-3 and 4-0, then lose to a player with more than 400 centuries as of 30 January 2025?",
+    "strategy": "VERIFY_RELATION",
+    "hypothesis_ids_under_test": [
+      "H1"
+    ],
+    "action": {
+      "type": "FIND",
+      "query": null,
+      "source_ref": "D17",
+      "pattern": "2023 English Open"
+    }
+  },
+  "usage": {
+    "prompt_tokens": 1490,
+    "completion_tokens": 6482,
+    "total_tokens": 7972,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6330
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1490
+  },
+  "failure": null,
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "completed_utc": "2026-09-27T19:31:29.806112+00:00",
+  "elapsed_seconds": 29.130416164174676
+}

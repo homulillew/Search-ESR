@@ -1,0 +1,43 @@
+{
+  "id": "S07__P0",
+  "state_id": "S07",
+  "condition": "P0",
+  "state_sha256": "2fd5c336a61daae4f56c72559a137d2b247ee82064f413eb252a9b0956170bfd",
+  "request_sha256": "82aeaa7deaa0d244d9a9c8c32960e4de95b120dc22db41734aae4438dbc5126a",
+  "attempted": true,
+  "started_utc": "2026-09-27T19:31:00.669662+00:00",
+  "valid_output": false,
+  "output": {
+    "focus_requirement_id": "R4",
+    "one_gap": "Determine whether the D5 case report (Fibrodysplasia ossificans progressiva (stone man syndrome): a case report) matches the second case described in R4—pain and swelling in the upper body, biopsy two months earlier, and childhood stiffness followed by swelling four years later—and thereby supports fibrodysplasia ossificans progressiva rather than stiff person syndrome.",
+    "strategy": "VERIFY_RELATION",
+    "hypothesis_ids_under_test": [
+      "H1"
+    ],
+    "action": {
+      "type": "OPEN",
+      "query": null,
+      "source_ref": "W5",
+      "pattern": "biopsy"
+    }
+  },
+  "usage": {
+    "prompt_tokens": 1788,
+    "completion_tokens": 6291,
+    "total_tokens": 8079,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 6144
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1788
+  },
+  "failure": "output_contract_or_incomplete",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "completed_utc": "2026-09-27T19:31:30.672347+00:00",
+  "elapsed_seconds": 30.00241492316127
+}

@@ -1,0 +1,43 @@
+{
+  "id": "S07__P1",
+  "state_id": "S07",
+  "condition": "P1",
+  "state_sha256": "e1df502f37ccb32fa3c68569aeab328d028231595df5c11a0a3f6155db603077",
+  "request_sha256": "b3e82e3a67bae3bd8518fda83d4219abc84b9bae814146cdb84e0806e78801e9",
+  "attempted": true,
+  "started_utc": "2026-09-27T19:31:00.664789+00:00",
+  "valid_output": false,
+  "output": {
+    "focus_requirement_id": "R4",
+    "one_gap": "Determine whether the fibrodysplasia ossificans progressiva case report in W5 contains the described second-case features (pain and swelling in the upper body, prior biopsy, childhood stiffness followed by swelling four years later), which would test H2 against the shared-disorder requirement.",
+    "strategy": "VERIFY_RELATION",
+    "hypothesis_ids_under_test": [
+      "H2"
+    ],
+    "action": {
+      "type": "OPEN",
+      "query": null,
+      "source_ref": "W5",
+      "pattern": "swelling"
+    }
+  },
+  "usage": {
+    "prompt_tokens": 1829,
+    "completion_tokens": 3730,
+    "total_tokens": 5559,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3603
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1829
+  },
+  "failure": "output_contract_or_incomplete",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "completed_utc": "2026-09-27T19:31:18.953685+00:00",
+  "elapsed_seconds": 18.288615630939603
+}

@@ -1,0 +1,43 @@
+{
+  "id": "S13__P2",
+  "state_id": "S13",
+  "condition": "P2",
+  "state_sha256": "0cd17f1fc95f547ee20659b7c42101bfb6bab76c22cebed86b16ecc8cdfd8067",
+  "request_sha256": "6d37daa201181d93dcf1e0164ef821d1f33a60445a22e2bcb18a5b6633cca78e",
+  "attempted": true,
+  "started_utc": "2026-09-27T19:31:00.666948+00:00",
+  "valid_output": true,
+  "output": {
+    "focus_requirement_id": "R3",
+    "one_gap": "Verify whether the March 5, 1945 letter from King Michael of Romania in FRUS 1945 Europe V (D4) contains a reference to Romania having regained a region, and identify the exact region named.",
+    "strategy": "LOCALIZE_IN_SOURCE",
+    "hypothesis_ids_under_test": [
+      "H1"
+    ],
+    "action": {
+      "type": "FIND",
+      "query": null,
+      "source_ref": "D4",
+      "pattern": "Transylvania"
+    }
+  },
+  "usage": {
+    "prompt_tokens": 1822,
+    "completion_tokens": 2094,
+    "total_tokens": 3916,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1963
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1822
+  },
+  "failure": null,
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "completed_utc": "2026-09-27T19:31:11.557001+00:00",
+  "elapsed_seconds": 10.889768227934837
+}

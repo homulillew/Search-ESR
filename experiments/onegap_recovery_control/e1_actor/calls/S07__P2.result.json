@@ -1,0 +1,43 @@
+{
+  "id": "S07__P2",
+  "state_id": "S07",
+  "condition": "P2",
+  "state_sha256": "b7915ff730416aed58550f844d180dc59f56ea73f3216c1492a987dbd9094131",
+  "request_sha256": "baa82e77224b427615656f5721e3e02f183d17909caa2739231665a24b57f854",
+  "attempted": true,
+  "started_utc": "2026-09-27T19:31:00.675919+00:00",
+  "valid_output": false,
+  "output": {
+    "focus_requirement_id": "R4",
+    "one_gap": "Check whether the FOP case report in W4 describes the second case's distinguishing features (upper-body pain/swelling, a biopsy two months earlier, and childhood stiffness followed by swelling four years later) and whether it identifies fibrodysplasia ossificans progressiva rather than stiff person syndrome.",
+    "strategy": "LOCALIZE_IN_SOURCE",
+    "hypothesis_ids_under_test": [
+      "H1"
+    ],
+    "action": {
+      "type": "OPEN",
+      "query": null,
+      "source_ref": "W4",
+      "pattern": "biopsy"
+    }
+  },
+  "usage": {
+    "prompt_tokens": 2017,
+    "completion_tokens": 3680,
+    "total_tokens": 5697,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3549
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2017
+  },
+  "failure": "output_contract_or_incomplete",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "completed_utc": "2026-09-27T19:31:18.515555+00:00",
+  "elapsed_seconds": 17.83927083387971
+}

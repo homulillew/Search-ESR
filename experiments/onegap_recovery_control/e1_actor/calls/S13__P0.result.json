@@ -1,0 +1,43 @@
+{
+  "id": "S13__P0",
+  "state_id": "S13",
+  "condition": "P0",
+  "state_sha256": "e3f0a7fc42e9929325e2848c191cdc36a01024703dccf18bcc5ea36de091fc9d",
+  "request_sha256": "f37352bab7caa08360e14e866d02644a46e14884a02354674b742988de1942bd",
+  "attempted": true,
+  "started_utc": "2026-09-27T19:31:00.668630+00:00",
+  "valid_output": false,
+  "output": {
+    "focus_requirement_id": "R3",
+    "one_gap": "Determine whether the King Michael letter in W4 refers to Romania regaining a region, and identify the region named (e.g., Transylvania).",
+    "strategy": "LOCALIZE_IN_SOURCE",
+    "hypothesis_ids_under_test": [
+      "H1"
+    ],
+    "action": {
+      "type": "OPEN",
+      "query": null,
+      "source_ref": "W4",
+      "pattern": "Transylvania"
+    }
+  },
+  "usage": {
+    "prompt_tokens": 1581,
+    "completion_tokens": 8131,
+    "total_tokens": 9712,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 8016
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1581
+  },
+  "failure": "output_contract_or_incomplete",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "completed_utc": "2026-09-27T19:31:39.821075+00:00",
+  "elapsed_seconds": 39.15217325091362
+}

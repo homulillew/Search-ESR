@@ -1,0 +1,43 @@
+{
+  "id": "S05__P2",
+  "state_id": "S05",
+  "condition": "P2",
+  "state_sha256": "ddb68ed73bf4a350a39d219299c29e6998946012d6b3917e3c2b3bd0e71d56de",
+  "request_sha256": "696077f3b2706a8edabc0c72eaad868348f158df3925a364254e27d18a4ac8c2",
+  "attempted": true,
+  "started_utc": "2026-09-27T19:31:00.665298+00:00",
+  "valid_output": false,
+  "output": {
+    "focus_requirement_id": "R2",
+    "one_gap": "Determine whether Alka Marwaha's PhD at Dalhousie University was supervised by an Iranian professor who matches the Minnesota doctorate and writer-dream description in R2/R3.",
+    "strategy": "VERIFY_RELATION",
+    "hypothesis_ids_under_test": [
+      "H1"
+    ],
+    "action": {
+      "type": "OPEN",
+      "query": null,
+      "source_ref": "W7",
+      "pattern": "Dalhousie"
+    }
+  },
+  "usage": {
+    "prompt_tokens": 2220,
+    "completion_tokens": 3428,
+    "total_tokens": 5648,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3318
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 2220
+  },
+  "failure": "output_contract_or_incomplete",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "completed_utc": "2026-09-27T19:31:17.754887+00:00",
+  "elapsed_seconds": 17.089210703969
+}

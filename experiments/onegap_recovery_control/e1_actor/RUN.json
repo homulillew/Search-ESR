@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "calls": 42,
+  "states": 16,
+  "qids": 10,
+  "head": "eed0e3dbeb078842c70d874ae50437956daa3564",
+  "historical_experiment_diff": [],
+  "source_hashes_checked": 37,
+  "started_utc": "2026-09-27T19:31:00.612463+00:00",
+  "freeze_sha256": "aa75b198c7fe3e652539d100175336f141a4f0646dbf0155488dd497338302c8",
+  "authorization_sha256": "b910d42ddf6b7e3087b3bfb9b77a203324367bd6056c314cd0795dbe2ea35804",
+  "config": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "max_retries": 0,
+    "replicates": 1,
+    "max_concurrency": 42,
+    "account_budget": 2400,
+    "http_max_connections": 42,
+    "connect_timeout_seconds": 30,
+    "read_timeout_seconds": 660,
+    "write_timeout_seconds": 60,
+    "pool_timeout_seconds": 60,
+    "wall_timeout_seconds": 900,
+    "halt_http_statuses": [
+      400,
+      401,
+      402,
+      403,
+      404,
+      422
+    ],
+    "failure_policy": "One attempt per slot; preserve all responses/failures, no repairs/replacements/retries. No tool execution.",
+    "concurrency_policy": "min(42 ready independent jobs, 256 default starting cap, available account budget); no ramp needed. Queue concurrency halves on 429/503/transport timeout for unsent jobs only; no retry.",
+    "tools": []
+  }
+}
