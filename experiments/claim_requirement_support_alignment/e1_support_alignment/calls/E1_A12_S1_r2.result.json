@@ -1,0 +1,63 @@
+{
+  "id": "E1_A12_S1_r2",
+  "stage": "E1",
+  "case_id": "G11",
+  "cell_id": "A12",
+  "qid": "971",
+  "arm": "S1",
+  "replicate": 2,
+  "request_sha256": "5b45d7cfceb0cd3ced2d0c0fbbdeb6a018f59289200c8b5165579cbeaf5cfa86",
+  "head": "acf43ea2983cba6031c3de321065fd5a01e53bb6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "claims": [
+      {
+        "claim_id": "C1",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C2",
+        "role": "SUBSTANTIVE_SUPPORT",
+        "supported_requirement_fragments": [
+          "pursued their PhD abroad at a Canadian university"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 821,
+    "completion_tokens": 1215,
+    "total_tokens": 2036,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1149
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 181
+  },
+  "started_utc": "2026-09-27T13:49:02.670486+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 5.771589990705252,
+  "completed_utc": "2026-09-27T13:49:08.442097+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 821,
+      "output": 1215,
+      "total": 2036,
+      "reasoning": 1149,
+      "hit": 640,
+      "miss": 181
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

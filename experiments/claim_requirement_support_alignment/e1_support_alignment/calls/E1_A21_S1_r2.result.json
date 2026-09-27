@@ -1,0 +1,64 @@
+{
+  "id": "E1_A21_S1_r2",
+  "stage": "E1",
+  "case_id": "G23",
+  "cell_id": "A21",
+  "qid": "1259",
+  "arm": "S1",
+  "replicate": 2,
+  "request_sha256": "179ee04adf77f7ea6862d387a1fb84148368f52607abe12f583fe1b0fb272fc6",
+  "head": "acf43ea2983cba6031c3de321065fd5a01e53bb6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "claims": [
+      {
+        "claim_id": "C1",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C2",
+        "role": "SUBSTANTIVE_SUPPORT",
+        "supported_requirement_fragments": [
+          "In one particular year",
+          "a team featuring an Australian coder won the championship"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 817,
+    "completion_tokens": 2032,
+    "total_tokens": 2849,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1961
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 177
+  },
+  "started_utc": "2026-09-27T13:50:02.509393+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 8.666469976305962,
+  "completed_utc": "2026-09-27T13:50:11.175882+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 817,
+      "output": 2032,
+      "total": 2849,
+      "reasoning": 1961,
+      "hit": 640,
+      "miss": 177
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

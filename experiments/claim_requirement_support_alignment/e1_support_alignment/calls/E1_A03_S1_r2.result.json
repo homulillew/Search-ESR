@@ -1,0 +1,79 @@
+{
+  "id": "E1_A03_S1_r2",
+  "stage": "E1",
+  "case_id": "G03",
+  "cell_id": "A03",
+  "qid": "261",
+  "arm": "S1",
+  "replicate": 2,
+  "request_sha256": "34a57f02799c2a3db2bd2f93119c59225fef5279d3fa5c76746bd8aea118adcb",
+  "head": "acf43ea2983cba6031c3de321065fd5a01e53bb6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "claims": [
+      {
+        "claim_id": "C1",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C2",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C3",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C4",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C5",
+        "role": "SUBSTANTIVE_SUPPORT",
+        "supported_requirement_fragments": [
+          "In one of the tables",
+          "one of the emotions is at 13.53 percent"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 973,
+    "completion_tokens": 1979,
+    "total_tokens": 2952,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1834
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 333
+  },
+  "started_utc": "2026-09-27T13:48:17.416808+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 8.203048722818494,
+  "completed_utc": "2026-09-27T13:48:25.619877+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 973,
+      "output": 1979,
+      "total": 2952,
+      "reasoning": 1834,
+      "hit": 640,
+      "miss": 333
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

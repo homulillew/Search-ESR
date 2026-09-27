@@ -1,0 +1,63 @@
+{
+  "id": "E1_A13_S1_r2",
+  "stage": "E1",
+  "case_id": "G11",
+  "cell_id": "A13",
+  "qid": "971",
+  "arm": "S1",
+  "replicate": 2,
+  "request_sha256": "cf8a02570978119aa4f698963e80ebbeae679eb56bf10ce27c987c152a02325d",
+  "head": "acf43ea2983cba6031c3de321065fd5a01e53bb6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "claims": [
+      {
+        "claim_id": "C1",
+        "role": "SUBSTANTIVE_SUPPORT",
+        "supported_requirement_fragments": [
+          "publishing the book"
+        ]
+      },
+      {
+        "claim_id": "C2",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 819,
+    "completion_tokens": 3917,
+    "total_tokens": 4736,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3827
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 307
+  },
+  "started_utc": "2026-09-27T13:49:07.109107+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 17.550449937582016,
+  "completed_utc": "2026-09-27T13:49:24.659579+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 819,
+      "output": 3917,
+      "total": 4736,
+      "reasoning": 3827,
+      "hit": 512,
+      "miss": 307
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

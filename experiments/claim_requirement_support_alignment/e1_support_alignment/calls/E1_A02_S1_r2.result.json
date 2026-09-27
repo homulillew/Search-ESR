@@ -1,0 +1,78 @@
+{
+  "id": "E1_A02_S1_r2",
+  "stage": "E1",
+  "case_id": "G03",
+  "cell_id": "A02",
+  "qid": "261",
+  "arm": "S1",
+  "replicate": 2,
+  "request_sha256": "41b7f85981ef8895847c4a4506d578cc2f06c56e76980bb5180af5d01adda32e",
+  "head": "acf43ea2983cba6031c3de321065fd5a01e53bb6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "claims": [
+      {
+        "claim_id": "C1",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C2",
+        "role": "SUBSTANTIVE_SUPPORT",
+        "supported_requirement_fragments": [
+          "Two people wrote it."
+        ]
+      },
+      {
+        "claim_id": "C3",
+        "role": "BACKGROUND",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C4",
+        "role": "BACKGROUND",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C5",
+        "role": "BACKGROUND",
+        "supported_requirement_fragments": []
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 982,
+    "completion_tokens": 2645,
+    "total_tokens": 3627,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2462
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 982
+  },
+  "started_utc": "2026-09-27T13:48:15.737630+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 12.063508095219731,
+  "completed_utc": "2026-09-27T13:48:27.801156+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 982,
+      "output": 2645,
+      "total": 3627,
+      "reasoning": 2462,
+      "hit": 0,
+      "miss": 982
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "E1_A10_S1_r2",
+  "stage": "E1",
+  "case_id": "G08",
+  "cell_id": "A10",
+  "qid": "169",
+  "arm": "S1",
+  "replicate": 2,
+  "request_sha256": "5abc644e674bab1da9d6e730f3cfa7d02dc03c7e75438da293c22b56f604e973",
+  "head": "acf43ea2983cba6031c3de321065fd5a01e53bb6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "claims": [
+      {
+        "claim_id": "C1",
+        "role": "SUBSTANTIVE_SUPPORT",
+        "supported_requirement_fragments": [
+          "This musical artist died in a city",
+          "artist’s accidental death"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 821,
+    "completion_tokens": 1391,
+    "total_tokens": 2212,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1346
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 181
+  },
+  "started_utc": "2026-09-27T13:48:53.646477+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 6.961380694061518,
+  "completed_utc": "2026-09-27T13:49:00.607877+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 821,
+      "output": 1391,
+      "total": 2212,
+      "reasoning": 1346,
+      "hit": 640,
+      "miss": 181
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

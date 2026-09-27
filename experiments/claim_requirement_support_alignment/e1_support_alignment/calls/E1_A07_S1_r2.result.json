@@ -1,0 +1,79 @@
+{
+  "id": "E1_A07_S1_r2",
+  "stage": "E1",
+  "case_id": "G06",
+  "cell_id": "A07",
+  "qid": "228",
+  "arm": "S1",
+  "replicate": 2,
+  "request_sha256": "0afa82a53469caef0a8ffd2e8bc6f32cec4c0b421ce77f8e50aa8b7d107958e4",
+  "head": "acf43ea2983cba6031c3de321065fd5a01e53bb6",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "claims": [
+      {
+        "claim_id": "C1",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C2",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C3",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C4",
+        "role": "BINDING_CONTEXT",
+        "supported_requirement_fragments": []
+      },
+      {
+        "claim_id": "C5",
+        "role": "SUBSTANTIVE_SUPPORT",
+        "supported_requirement_fragments": [
+          "This person and their spouse",
+          "who, up to 2019, had no children from the marriage"
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 998,
+    "completion_tokens": 5475,
+    "total_tokens": 6473,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5262
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 230
+  },
+  "started_utc": "2026-09-27T13:48:37.409063+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 23.080363212153316,
+  "completed_utc": "2026-09-27T13:49:00.489446+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 998,
+      "output": 5475,
+      "total": 6473,
+      "reasoning": 5262,
+      "hit": 768,
+      "miss": 230
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}
