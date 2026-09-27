@@ -1,0 +1,34 @@
+{
+  "status": "E1_FAIL_DOWNSTREAM_STOPPED",
+  "recorded_utc": "2026-09-27T18:15:40.518901+00:00",
+  "study_branch": "experiment/minimal-recoverable-loop",
+  "gate": {
+    "status": "FAIL",
+    "checks": {
+      "precision_min": false,
+      "recall_min": false,
+      "high_risk_false_admissions_max": false,
+      "relation_argument_corruption_rate_max": true,
+      "temporal_modality_quantifier_expansion_rate_max": true,
+      "exact_excerpt_validity_min": true,
+      "writer_schema_min": true,
+      "admission_schema_min": true
+    },
+    "later_stage_authorization": false
+  },
+  "gate_decision_not_authorization_block": true,
+  "standing_API_authorization": true,
+  "authorization_sha256": "0c70680bea78165743d4c3bdcf6e0f2ec0854c3d1e3d801500e33a7dc6e90826",
+  "planned_and_actual_API_calls": 1085,
+  "writer_calls": 106,
+  "admission_calls": 979,
+  "actual_retrieval_calls": 0,
+  "retries": 0,
+  "E2": "NOT_RUN_E1_GATE_FAILED",
+  "E3": "NOT_RUN_E1_GATE_FAILED",
+  "E4": "NOT_RUN_E1_GATE_FAILED",
+  "final_report": "FINAL_CONCLUSION.md",
+  "frozen_preparation_files": "README.md, CURRENT_STATUS.json and FROZEN_STATE.md retain their pre-call snapshots because they are hash-sealed. This file records the final state.",
+  "fresh_qids_preserved_unrun": 10,
+  "history_files_protected": 22238
+}

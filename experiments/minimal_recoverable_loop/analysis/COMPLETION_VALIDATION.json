@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "scope": "Artifact integrity and deterministic reproduction; empirical E1 gate remains FAIL",
+  "checked_utc": "2026-09-27T18:17:00.524748+00:00",
+  "checked_head": "ca28741ba05e3bad8e1bac339bd0cef60538e062",
+  "phase_freeze_audits": {
+    "writer": {
+      "status": "PASS",
+      "head": "ca28741ba05e3bad8e1bac339bd0cef60538e062",
+      "phase": "writer",
+      "planned": 106,
+      "historical_files_unchanged": 22238,
+      "freeze_sha256": "56f111eaddb2d417df7279f39f86a5f62ff825a49bc165a76ff2f9293d61f101",
+      "paid_calls_authorized": true
+    },
+    "admission": {
+      "status": "PASS",
+      "head": "ca28741ba05e3bad8e1bac339bd0cef60538e062",
+      "phase": "admission",
+      "planned": 979,
+      "historical_files_unchanged": 22238,
+      "freeze_sha256": "0dccbc1908377ed3c17676ab1e9c6e373ab7a9e0bfdcfaf656079c09bebb4f36",
+      "paid_calls_authorized": true
+    }
+  },
+  "all1085_responses_reparse_identically": true,
+  "accounting_recomputes_identically": true,
+  "frozen_primary_scoring_recomputes_identically": true,
+  "diagnostics_recomputes_identically": true,
+  "comparison_format": "Canonical JSON SHA256; normalizes Python tuple representation of reference slots to persisted JSON arrays",
+  "request_counts": {
+    "writer": 106,
+    "admission": 979
+  },
+  "max_actual_concurrency": 8,
+  "retries": 0,
+  "all_candidate_labels_in_admission_freeze": true,
+  "history_files_unchanged": 22238,
+  "E2_E3_E4_not_executed": true,
+  "actual_retrieval_calls": 0,
+  "API_authorization_policy": "Standing explicit user consent; experimental gates retained"
+}
