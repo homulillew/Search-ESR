@@ -1,0 +1,63 @@
+{
+  "trajectory_id": "R2_Q637__rep2",
+  "cell_id": "R2_Q637",
+  "family": "R2",
+  "replicate": 2,
+  "status": "horizon_exhausted",
+  "error": null,
+  "outcomes": [
+    {
+      "slot": 1,
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "Gain",
+      "claim_delta": [
+        "C3",
+        "C4"
+      ],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    },
+    {
+      "slot": 2,
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "Gain",
+      "claim_delta": [
+        "C5",
+        "C6"
+      ],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    },
+    {
+      "slot": 3,
+      "decision": "request_closure",
+      "closure": {
+        "status": "CONTINUE",
+        "missing": [
+          {
+            "requirement_id": "R1",
+            "summary": "C and the cited evidence do not explicitly provide the case-report publication years, so it is not established that the two reports appeared in different years during the 2010s."
+          },
+          {
+            "requirement_id": "R3",
+            "summary": "C5 states the first patient was Pakistani and presented in Pakistan, but C/evidence do not establish the additional qualifier that this country was the largest country of its dominant religion in the world at the time of its establishment."
+          }
+        ]
+      },
+      "feedback": "NoGain",
+      "claim_delta": [],
+      "acquisition_outcome": "not_attempted",
+      "claim_outcome": "not_attempted",
+      "hypothesis_outcome": "not_applicable",
+      "auxiliary_failures": []
+    }
+  ],
+  "elapsed_seconds": 125.00358297303319,
+  "completed_utc": "2026-09-27T21:12:54.419154+00:00"
+}

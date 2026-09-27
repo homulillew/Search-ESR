@@ -1,0 +1,1920 @@
+{
+  "reviewer": "Codex single reviewer, unblinded, no paid reviewer",
+  "scope": "Every acquisition, every new Claim, every H proposal and every accepted Closure; source-relative prefix/Observation only, no gold/full-source audit.",
+  "actions": [
+    {
+      "trajectory_id": "R1_Q1094__rep1",
+      "slot": 1,
+      "forced": true,
+      "decision": {
+        "action": {
+          "arguments": {
+            "query": "\"identity evolved\" OR \"evolved through several iterations\" club football"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Which of the clubs in the PSG–Lille 4–3 fixture satisfies the split-founded history clue, and does the other satisfy the identity-evolution clue?",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Frozen repeated Search returns existing-source metadata only; no new W/C and H correctly skipped.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R1_Q1094__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "Inter Milan 4-3 AC Milan 2006 Kaka free kick 90+4"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Whether the described match is Inter Milan vs AC Milan (rather than PSG–Lille) and, if so, which player took the 95th-minute free-kick.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W63",
+        "W64",
+        "W65",
+        "W66",
+        "W67"
+      ],
+      "reason": "Tests a different fixture, but returned previews identify alternative Liverpool–Milan material rather than the queried Inter–Milan 2006/free-kick relation.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R1_Q1094__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D52",
+            "query": "95th minute free-kick taken by player"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1",
+          "H2"
+        ],
+        "one_gap": "Which match the described clues identify (the 2005 UCL Final Liverpool 3-3 AC Milan, with Milan's goals early and Liverpool's later, versus the PSG–Lille fixture tied to C1/C2), and who is recorded as taking the free-kick in the 95th minute of that match.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": true,
+      "one_gap_usable": false,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W68"
+      ],
+      "reason": "Match commentary is a reasonable inspection source and supplies opening-goal detail; it does not identify the 95th-minute taker. OneGap asserts the whole early/late scoring pattern before C establishes it.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R1_Q1094__rep2",
+      "slot": 1,
+      "forced": true,
+      "decision": {
+        "action": {
+          "arguments": {
+            "query": "\"identity evolved\" OR \"evolved through several iterations\" club football"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Which of the clubs in the PSG–Lille 4–3 fixture satisfies the split-founded history clue, and does the other satisfy the identity-evolution clue?",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Frozen repeated Search returns existing-source metadata only; no new W/C and H correctly skipped.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R1_Q1094__rep2",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 10,
+            "query": "born out of discord among two parties football club"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Which club in the relevant early-21st-century match was born out of discord among two parties, which opponent had an identity that evolved through several iterations, and who took the 95th-minute free-kick?",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W63",
+        "W64",
+        "W65"
+      ],
+      "reason": "New Soweto-derby preview supports a split-origin candidate; it does not establish a specific match/free-kick or the opponent identity condition.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R1_Q546__rep1",
+      "slot": 1,
+      "forced": true,
+      "decision": {
+        "action": {
+          "arguments": {
+            "query": "snooker \"less than 250 centuries\" 2023"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "What were Ding Junhui's subsequent 2023 English Open results after the opening 4–3 win, and did they follow the required 4–3, 4–0, loss order?",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Frozen repeated Search returns existing-source metadata only; no new W/C and H correctly skipped.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R1_Q546__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "after",
+            "window_ref": "W13"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Need to verify whether Ding's 2023 English Open run after the 4–3 opening win against Ma Hailong included subsequent 4–3 and 4–0 wins and then a loss to an opponent with over 400 centuries.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": false,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Already-complete opening-round news article lacks later rounds; Open after returns document_boundary and old W13.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R1_Q546__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 10,
+            "query": "2023 English Open Ding Junhui results bracket"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Whether Ding Junhui's 2023 English Open run after his opening 4-3 win over Ma Hailong included a subsequent 4-3 win, a 4-0 win, and then a loss to an opponent with over 400 centuries as of 30 January 2025.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W32",
+        "W33"
+      ],
+      "reason": "Bracket-oriented Search changes access strategy after two NoGain steps, but new previews concern 2025 snooker and darts, not the requested 2023 sequence.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R1_Q546__rep2",
+      "slot": 1,
+      "forced": true,
+      "decision": {
+        "action": {
+          "arguments": {
+            "query": "snooker \"less than 250 centuries\" 2023"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "What were Ding Junhui's subsequent 2023 English Open results after the opening 4–3 win, and did they follow the required 4–3, 4–0, loss order?",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Frozen repeated Search returns existing-source metadata only; no new W/C and H correctly skipped.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R1_Q546__rep2",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D17",
+            "query": "2023 English Open Ding Junhui match results 4–3 4–0 loss"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Confirm Ding Junhui's full 2023 English Open match sequence, opponents, and scores after the opening 4–3 win, including whether he then won 4–3 and 4–0 before losing to a player with over 400 centuries as of 30 January 2025.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W32"
+      ],
+      "reason": "D17 biography is a plausible candidate source; Find localizes to 2007–2009, not the 2023 match sequence.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R1_Q546__rep2",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "around",
+            "window_ref": "W32"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Confirm Ding Junhui's full 2023 English Open match sequence — after beating Ma Hailong 4–3, did he then win 4–3 and 4–0 before losing to a player with over 400 centuries (which would make him the described candidate)?",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W33"
+      ],
+      "reason": "Same plausible biography, but expanding the already visibly wrong-year window retains 2006–2009 material. Tested H1 is Shaun Murphy while the OneGap/source concern Ding.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 1,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D2",
+            "query": "spouse children donation gift Sogang University building"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Whether Kwon Hyuk-bin and his spouse, as of 2019 childless, made a foundational gift for the construction of a building that was part of a university.",
+        "strategy": "VERIFY_RELATION"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": true,
+      "one_gap_usable": false,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W6"
+      ],
+      "reason": "Kwon biography plausibly supports philanthropy research but does not show spouse/childlessness/building binding. OneGap asserts Kwon childlessness without C support; returned philanthropy largely repeats prefix information.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D4",
+            "query": "spouse children marriage donation gift building university"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H2"
+        ],
+        "one_gap": "Whether Ding Lei (NetEase founder) and his spouse, as of 2019 childless, made a foundational gift for a university building.",
+        "strategy": "VERIFY_RELATION"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": true,
+      "one_gap_usable": false,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Ding article is appropriate and old W4 supports new childlessness C; OneGap states that premise before its C commit and labels a Kim Jung-ju H as under test.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 10,
+            "query": "Ding Lei NetEase founder wife donation university building construction gift"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H3"
+        ],
+        "one_gap": "Whether Ding Lei and his spouse made a foundational gift for the construction of a building that was part of a university, and if so which building and university.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W10",
+        "W11",
+        "W12",
+        "W13",
+        "W14",
+        "W15",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "reason": "Search tests the outstanding gift relation, but returned previews do not establish the named Ding/spouse/building relation. Other philanthropists remain alternative candidates.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R2_Q228__rep2",
+      "slot": 1,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "around",
+            "window_ref": "W4"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Whether Ding Lei and his spouse had no children as of 2019 and made a foundational gift for a building, which would distinguish him from Kwon Hyuk-bin as the person described.",
+        "strategy": "DISCRIMINATE_CANDIDATES"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Open uses the right existing article; returns old W4 and newly commits source-supported childlessness C.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R2_Q228__rep2",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "Ding Lei wife foundational gift building university construction NetEase Fantasy Westward Journey"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H2"
+        ],
+        "one_gap": "Whether Ding Lei and his spouse made a foundational gift for construction of a building, and which university that building was part of as of 2023.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W6",
+        "W7",
+        "W8"
+      ],
+      "reason": "Search remains on the missing gift relation. Game revenue/release metadata can help the broader task but is not new support for that gift relation.",
+      "new_useful_raw_evidence_for_broader_question_only": true
+    },
+    {
+      "trajectory_id": "R2_Q228__rep2",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 6,
+            "query": "William Ding Ding Lei NetEase founder donated gift building university construction campus scheduled to open"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H2"
+        ],
+        "one_gap": "Whether Ding Lei and his spouse made a foundational gift for the construction of a building (part of a larger complex, scheduled to open 2018-2021) and which university that building belongs to as of 2023, since C3 only supports the childless-marriage part of R2.",
+        "strategy": "VERIFY_RELATION"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W10",
+        "W11",
+        "W9"
+      ],
+      "reason": "Gift-focused Search surfaces a founder/spouse building example with a 2025 opening date, enabling exclusion on the requested timeline; not evidence of Ding or a successful target match.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 1,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D5",
+            "query": "six-month history of pain difficulty walking moving shoulders"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R5",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Whether the two 2010s case reports are the FOP case reports in D4/D5, which would identify the shared scientific name as fibrodysplasia ossificans progressiva rather than SPS.",
+        "strategy": "DISCRIMINATE_CANDIDATES"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "D5 is appropriate; old W5 supports matching first-case symptoms and FOP. New C extraction, not new raw evidence.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D4",
+            "query": "pain and swelling upper body biopsy two months earlier childhood stiffness followed by swelling four years later fibrodysplasia ossificans progressiva"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R5",
+        "hypothesis_ids_under_test": [
+          "H2"
+        ],
+        "one_gap": "Whether D4 describes the second 2010s case report—upper-body pain/swelling after a biopsy two months earlier, with childhood stiffness followed by swelling four years later—and attributes it to fibrodysplasia ossificans progressiva, confirming the shared scientific name with D5.",
+        "strategy": "VERIFY_RELATION"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W6"
+      ],
+      "reason": "D4 inspection yields new W6 supporting biopsy two months earlier, childhood onset and FOP; still lacks publication-year/country qualifiers.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 1,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D4",
+            "query": "case presentation six-month history of pain difficulty walking difficulty moving shoulders"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Whether the case report in D4 corresponds to the first 2010s case described in Q4 (half-year history of pain in multiple body parts that worsened and caused difficulty walking and moving the shoulders), which would identify the shared disorder as fibrodysplasia ossificans progressiva and disconfirm the H1 stiff-person-syndrome hypothesis.",
+        "strategy": "VERIFY_ATTRIBUTE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W6"
+      ],
+      "reason": "D4 is reasonable to test, but its different clinical course helps distinguish it from the first case and supports local FOP facts.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D5",
+            "query": "six-month history of pain difficulty walking difficulty moving shoulders"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H2"
+        ],
+        "one_gap": "Whether the D5 case report describes the first 2010s case (half-year history of pain that worsened, causing difficulty walking and moving the shoulders) and identifies the disorder as fibrodysplasia ossificans progressiva, thereby confirming that both cases share FOP.",
+        "strategy": "VERIFY_RELATION"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "D5 old W5 supplies the first clinical pattern and diagnosis; supports new C without new raw window content.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 10,
+            "query": "book 130 illustrations descriptions telephone telegraph clean rust kerosene wine whiskey"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "No source connects the book's rust-cleaning method (possibly kerosene or a Three Dog Night song substance) and its telephone/telegraph illustrations to a specific book title.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W11",
+        "W12",
+        "W13",
+        "W14",
+        "W15",
+        "W16",
+        "W17"
+      ],
+      "reason": "Discovery query is reasonable but all returned snippets fail to establish the book conjunction. Bibliographic catalog remains a plausible inspection opportunity.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D14",
+            "query": "telephone telegraph illustrations"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H5"
+        ],
+        "one_gap": "No source yet identifies a specific book title that contains 130–140 illustrations and descriptions of objects including the telephone and telegraph.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "A book catalog is a plausible title source; Find returns the same off-target catalog W15, no new useful evidence.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "around",
+            "window_ref": "W4"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R3",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "The content of the enclosed King Michael letter (its own date and any reference to Romania having regained a region) is not yet in evidence; only the covering memorandum's date and transmission facts are established.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W6"
+      ],
+      "reason": "Opening around cover/letter tail reaches letter W6 and the region; the handwritten date remains absent.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "around",
+            "window_ref": "W6"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R2",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "The actual date of the enclosed King Michael letter, as distinct from the March 5, 1945 covering memorandum, is not established; W6 and adjacent text may contain the letter's dateline or date context.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Date question is appropriate and keeps memo separate from letter; document-complete Open returns old W6 without dateline.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R3_Q922__rep2",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D4",
+            "query": "handed the letter to an OSS officer in Bucharest"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "The identity of the OSS officer who received King Michael's letter in Bucharest and whether President Roosevelt nicknamed him after a body part.",
+        "strategy": "VERIFY_RELATION"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Correct document for the OSS handoff, but old W4 keeps the officer unnamed and supplies no nickname.",
+      "new_useful_raw_evidence_for_broader_question_only": false
+    },
+    {
+      "trajectory_id": "R3_Q922__rep2",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "around",
+            "window_ref": "W4"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H3"
+        ],
+        "one_gap": "The name and role of the OSS officer in Bucharest who received/transmitted King Michael's letter, and whether the recipient President nicknamed that official after a body part.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W6"
+      ],
+      "reason": "New full-letter W6 adds the region for the broader Q, but not the current officer/name/nickname Need; Reader correctly commits no unrelated region C.",
+      "new_useful_raw_evidence_for_broader_question_only": true
+    }
+  ],
+  "claims": [
+    {
+      "trajectory_id": "R1_Q1094__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W68"
+        ],
+        "statement": "The source title records the match as Liverpool 3 - 3 AC Milan.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "d736ac4e146f7432c0edb7cd73987881b1048679f1c9100488d5c89f30385b4e"
+      ]
+    },
+    {
+      "trajectory_id": "R1_Q1094__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C4",
+        "evidence_refs": [
+          "W68"
+        ],
+        "statement": "AC Milan took a 1-0 lead against Liverpool after 50 seconds when Paolo Maldini scored a 12-yard volley from a Pirlo free-kick taken from the right of the Liverpool box.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "d736ac4e146f7432c0edb7cd73987881b1048679f1c9100488d5c89f30385b4e"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W4"
+        ],
+        "statement": "As of 2019, Ding Lei was married but had no children.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": false,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "b366d97ac3bdc8137cb80cc69cbf9a3998ab4fe9b9ff07d977e1ff49672ce6d9"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q228__rep2",
+      "slot": 1,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W4"
+        ],
+        "statement": "As of a 2019-12-11 article, Ding Lei (William Ding), founder and CEO of NetEase, was married but without children.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": false,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "b366d97ac3bdc8137cb80cc69cbf9a3998ab4fe9b9ff07d977e1ff49672ce6d9"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 1,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W5"
+        ],
+        "statement": "D5 is a case report of fibrodysplasia ossificans progressiva (stone man syndrome), as indicated by its title and case presentation of a 10-year-old Pakistani boy with a 6-month history of pain and tender masses on the back, left arm, and left hip.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": false,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "0a55f559af89e320994a367100f2a03e2991487f6cb6c2cf6defd4c9a875ede1"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C4",
+        "evidence_refs": [
+          "W6"
+        ],
+        "statement": "D4 is a case report titled as fibrodysplasia ossificans progressiva and describes a sixteen-year-old male patient with classic features of FOP, who was brought to the emergency room with pain and swelling in the upper back after a biopsy had been performed two months earlier.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "c5384e1874eb6a4132115e063e6817cdd8fd37d03826b95e0e2bb2d4f62cb245"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C5",
+        "evidence_refs": [
+          "W6"
+        ],
+        "statement": "In D4, the patient developed tender stiffness of the shoulders and neck at age 9; over the next 4 years he experienced multiple similar swellings on the upper back, and subsequently the movement of the shoulders and neck was limited and masses grew progressively.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "c5384e1874eb6a4132115e063e6817cdd8fd37d03826b95e0e2bb2d4f62cb245"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 1,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W6"
+        ],
+        "statement": "The case report in D4 describes a sixteen-year-old male patient with classic features of fibrodysplasia ossificans progressiva (FOP).",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "2ad67def388793d17c3e31fee2d604e1da9b9748af1fba5348712e167bad48cb"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 1,
+      "claim": {
+        "claim_id": "C4",
+        "evidence_refs": [
+          "W6"
+        ],
+        "statement": "In D4, the patient developed tender stiffness of his shoulders and neck at age 9, and over the next 4 years he experienced multiple similar swellings on the upper back with progressive masses and limited movement of the shoulders and neck.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "2ad67def388793d17c3e31fee2d604e1da9b9748af1fba5348712e167bad48cb"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C5",
+        "evidence_refs": [
+          "W5"
+        ],
+        "statement": "The D5 case report describes a 10-year-old Pakistani boy who presented with a 6-month history of pain and tender masses on the back, left arm, and left hip; the pain was insidious in onset and gradually worsened, causing difficulty in walking and decreased range of motion of the shoulders and hips.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": false,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "0a55f559af89e320994a367100f2a03e2991487f6cb6c2cf6defd4c9a875ede1"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C6",
+        "evidence_refs": [
+          "W5"
+        ],
+        "statement": "The D5 document is titled 'Fibrodysplasia ossificans progressiva (stone man syndrome): a case report', identifying the case report as concerning fibrodysplasia ossificans progressiva (stone man syndrome).",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": false,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "0a55f559af89e320994a367100f2a03e2991487f6cb6c2cf6defd4c9a875ede1"
+      ]
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W6"
+        ],
+        "statement": "In the enclosed letter to President Roosevelt, King Michael expressed thanks to the \"glorious Red Army\" for the help given Romania in regaining North Transylvania, which he described as always dear to the hearts of all true Romanians.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "reason": "Exact observed source text/title supports this local statement; no claim of satisfying all global Q conditions.",
+      "evidence_text_sha256": [
+        "c7cfe1b08b68bc55c33d42ab01074398bfcfdc8ed7fd4de30ebcfafe8f52fd67"
+      ]
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C4",
+        "evidence_refs": [
+          "W6"
+        ],
+        "statement": "In the letter, King Michael stated that on August 23, 1944, with the help of God, he was able to bring Romania back on the right way, the way leading to the triumph of justice, liberty of nations, and respect for human dignity along with her natural and traditional allies.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": false,
+      "uses_new_raw_window": true,
+      "reason": "Literal letter statements are supported but realignment/anxiety do not establish the asked region or actual dateline.",
+      "evidence_text_sha256": [
+        "c7cfe1b08b68bc55c33d42ab01074398bfcfdc8ed7fd4de30ebcfafe8f52fd67"
+      ]
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C5",
+        "evidence_refs": [
+          "W6"
+        ],
+        "statement": "In the letter, King Michael stated that he was held by painful and serious anxiety as to Romania's future, having observed the attitude of various representatives of the U.R.S.S. in Romania, who in many cases had not at all understood Romania's problems.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "gap_useful": false,
+      "uses_new_raw_window": true,
+      "reason": "Literal letter statements are supported but realignment/anxiety do not establish the asked region or actual dateline.",
+      "evidence_text_sha256": [
+        "c7cfe1b08b68bc55c33d42ab01074398bfcfdc8ed7fd4de30ebcfafe8f52fd67"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "trajectory_id": "R1_Q1094__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "ADD",
+            "statement": "The match in question is the 2005 UEFA Champions League Final between Liverpool and AC Milan, which ended 3–3.",
+            "basis_refs": [
+              "W65"
+            ]
+          },
+          {
+            "operation": "ADD",
+            "statement": "The 95th-minute free-kick was taken by Andrea Pirlo.",
+            "basis_refs": []
+          },
+          {
+            "operation": "ADD",
+            "statement": "The team 'born out of discord among two parties' is Liverpool F.C., founded after a dispute between the Everton committee and John Houlding.",
+            "basis_refs": []
+          },
+          {
+            "operation": "ADD",
+            "statement": "The team whose identity evolved through several iterations is AC Milan, which underwent name changes such as Milan Cricket and Football Club, Milan Football Club, and AC Milan.",
+            "basis_refs": []
+          }
+        ],
+        "useful_source_refs": [
+          "D52"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "overcommitted_candidate",
+      "reason": "W65 supports a match title/lineups, not the complete Q identity or a 95th-minute Pirlo kick. Empty-base guesses are permitted H, not verified facts.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q1094__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H3"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H4"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "unsupported_candidate_retained",
+      "reason": "KEEP retains unverified match/taker hypotheses; opening-minute free-kick evidence does not directly refute a later free-kick, but does not verify it.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q1094__rep2",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "ADD",
+            "statement": "The team in the Q match that was born out of discord among two parties is Kaizer Chiefs, formed after Kaizer Motaung returned from the Atlanta Chiefs and found infighting among the Orlando Pirates hierarchy.",
+            "basis_refs": [
+              "W63"
+            ]
+          },
+          {
+            "operation": "ADD",
+            "statement": "The Q match may be a Soweto Derby between Kaizer Chiefs and Orlando Pirates, since W63 describes their rivalry and Kaizer Chiefs' split origin from Orlando Pirates.",
+            "basis_refs": [
+              "W63"
+            ]
+          },
+          {
+            "operation": "ADD",
+            "statement": "The opponent in the Q match whose identity evolved through several iterations may be Orlando Pirates, but W63 does not show that identity evolution.",
+            "basis_refs": []
+          },
+          {
+            "operation": "ADD",
+            "statement": "An alternative candidate for the Q match is the Milan derby, with Inter Milan as the club born out of discord among AC Milan and AC Milan as the club whose identity evolved through several iterations (Milan Cricket and Football Club to Milan Football Club to AC Milan).",
+            "basis_refs": []
+          }
+        ],
+        "useful_source_refs": [
+          "D50"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "overcommitted_candidate",
+      "reason": "Split-origin snippet supports Kaizer Chiefs locally. A declarative Q identity overstates that binding; other alternatives explicitly remain unverified.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q546__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "ADD",
+            "statement": "The target player is Ding Junhui.",
+            "basis_refs": []
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "candidate_churn",
+      "reason": "Bare Ding target ADD produces runtime Gain despite no new sequence evidence.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q546__rep2",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "ADD",
+            "statement": "The player described is Shaun Murphy.",
+            "basis_refs": []
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "candidate_churn",
+      "reason": "Shaun Murphy ADD has empty basis and no new supporting observation; allowed conjecture, not demonstrated progress.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q546__rep2",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "target_test_mismatch",
+      "reason": "KEEP Shaun Murphy while Actor tests Ding; H ID/Need routing mismatch remains.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 1,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "ADD",
+            "statement": "The person may instead be a different South Korean online video-game company founder whose 2000–2010 title was a top earner and who graduated from a Korean university founded between 1930 and 1970 (for example Nexon's Kim Jung-ju; MapleStory 2003 / Dungeon Fighter Online 2005; Seoul National University, founded 1946), because the question's distinctive spouse/no-children/foundational-gift/building cues are entirely absent from Kwon Hyuk-bin's inspected profile.",
+            "basis_refs": []
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "candidate_churn",
+      "reason": "A detailed Kim Jung-ju alternative is empty-base speculation; absence of Kwon profile details is not factual rejection.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "ADD",
+            "statement": "Ding Lei (William Ding), founder of NetEase, may be the person referenced in the question, because as of 2019 he was married but without children, NetEase's online video games division released Fantasy Westward Journey (a top-earning game) in the 2000–2010 period, and he graduated from the University of Electronic Science and Technology of China (founded 1956).",
+            "basis_refs": [
+              "W4"
+            ]
+          },
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H1",
+            "basis_refs": [
+              "W4"
+            ]
+          },
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H2",
+            "basis_refs": [
+              "W4"
+            ]
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "unsupported_rationale",
+      "reason": "Ding childlessness/education are in W4, but W4 does not establish the game release year or university founding year used in the H rationale. Downgrading alternatives is allowed, not global REJECT.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H3"
+          }
+        ],
+        "useful_source_refs": [
+          "D6"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "reasonable_keep",
+      "reason": "No stronger gift evidence; keeps tentative Ding and nominates new uninspected profile.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q228__rep2",
+      "slot": 1,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H1",
+            "basis_refs": [
+              "W4"
+            ]
+          },
+          {
+            "operation": "ADD",
+            "statement": "Ding Lei (William Ding), founder of NetEase, may be the person referenced in the question.",
+            "basis_refs": [
+              "W4"
+            ]
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "appropriate_deprioritization",
+      "reason": "Competing locally supported Ding candidate justifies deprioritizing Kwon, not rejecting him as a fact.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q228__rep2",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          }
+        ],
+        "useful_source_refs": [
+          "D6",
+          "D7"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "reasonable_keep",
+      "reason": "Keeps tentative Ding. D6/D7 are new task-relevant profile/game sources though not demonstrated gift evidence.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q228__rep2",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          },
+          {
+            "operation": "ADD",
+            "statement": "Jen-Hsun Huang, founder and CEO of NVIDIA, who with his spouse Lori Huang gave a gift toward the Jen-Hsun and Lori Huang Collaborative Innovation Complex at Oregon State University, may be the person referenced, since this matches the founder-plus-spouse foundational-gift-to-a-building-at-a-university structure (though no online-games-division tie is shown).",
+            "basis_refs": [
+              "W11"
+            ]
+          },
+          {
+            "operation": "ADD",
+            "statement": "Charles Chen Yidan, co-founder of Tencent Holdings Limited (which operates an online games division) and an education philanthropist, may be the person referenced.",
+            "basis_refs": [
+              "W9"
+            ]
+          }
+        ],
+        "useful_source_refs": [
+          "D9",
+          "D11"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "missed_constraint_on_candidate",
+      "reason": "Huang is only a partial gift-structure match: W11 explicitly opens in 2025 versus Q 2018–2021. H acknowledges missing games tie but misses this timing conflict. Chen remains tentative.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 1,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "ADD",
+            "statement": "The shared disorder in the two 2010s case reports is fibrodysplasia ossificans progressiva (FOP), also called stone man syndrome.",
+            "basis_refs": [
+              "W5"
+            ]
+          },
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H1",
+            "basis_refs": [
+              "W5"
+            ]
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "appropriate_deprioritization_with_overcommitment",
+      "reason": "Local FOP candidate supports SPS deprioritization. Global FOP is phrased categorically before both report/year/country bindings exist, but remains H only.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H1",
+            "basis_refs": [
+              "W6"
+            ]
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "appropriate_deprioritization",
+      "reason": "Second report supplies matching local symptoms/FOP. No global REJECT; year/country still left to Closure.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 1,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H1",
+            "basis_refs": [
+              "W6"
+            ]
+          },
+          {
+            "operation": "ADD",
+            "statement": "The shared disorder in the two 2010s case reports may be fibrodysplasia ossificans progressiva (FOP).",
+            "basis_refs": [
+              "W6"
+            ]
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "appropriate_deprioritization",
+      "reason": "Local alternative diagnostic evidence leads to DEPRIORITIZE SPS and tentative FOP, not global REJECT.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H1",
+            "basis_refs": [
+              "W5"
+            ]
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          },
+          {
+            "operation": "ADD",
+            "statement": "The D5 case report may correspond to the first 2010s case described in the question, involving a 10-year-old boy with a 6-month history of pain and tender masses, difficulty walking, and decreased shoulder motion.",
+            "basis_refs": [
+              "W5"
+            ]
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "appropriate_deprioritization",
+      "reason": "Retains tentative FOP and adds a scoped D5/first-case hypothesis; no claim that publication/country qualifiers are solved.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "ADD",
+            "statement": "The mechanical engineer born in the early 1800s referenced by the target book may be John Ericsson.",
+            "basis_refs": []
+          },
+          {
+            "operation": "ADD",
+            "statement": "The scientist whose father was a poet referenced by the target book may be Christiaan Huygens.",
+            "basis_refs": []
+          },
+          {
+            "operation": "ADD",
+            "statement": "The target book's method for cleaning rusted objects may use wine, a substance mentioned in Three Dog Night's song 'Joy to the World', or an oil whose name appears in a country song.",
+            "basis_refs": []
+          },
+          {
+            "operation": "ADD",
+            "statement": "The target book may be an illustrated reference work of objects/inventions containing about 130–140 illustrations, including descriptions of the telephone and telegraph.",
+            "basis_refs": []
+          }
+        ],
+        "useful_source_refs": [
+          "D14"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "question_restatement_and_speculation",
+      "reason": "Empty-base engineer/scientist/substance guesses remain hypotheses. H5 restates Q rather than discovering a concrete book; new H count inflates Gain.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H3"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H4"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H5"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "reasonable_keep",
+      "reason": "No new evidence resolves these tentative candidates; KEEP is allowed but gives no progress.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "ADD",
+            "statement": "The region referred to is North Transylvania.",
+            "basis_refs": [
+              "W6"
+            ]
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "local_fact_repeated_as_h",
+      "reason": "Region repeats grounded local C while global letter identity/timing stays unverified. It adds no separate evidence.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "stale_date_hypothesis",
+      "reason": "Old March5-letter H remains despite only memo date support; Actor correctly asks for the actual date. KEEP is not proof of that date.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q922__rep2",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "ADD",
+            "statement": "The region referred to in the described letter may be Transylvania (possibly Northern Transylvania).",
+            "basis_refs": []
+          },
+          {
+            "operation": "ADD",
+            "statement": "The OSS officer who received/delivered the King Michael letter may be the official nicknamed after a body part by the President.",
+            "basis_refs": [
+              "W4"
+            ]
+          },
+          {
+            "operation": "ADD",
+            "statement": "The described letter may have been written roughly six months after King Michael's August 1944 coup d'état rather than his 1940 accession.",
+            "basis_refs": []
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "relation_substitution_risk",
+      "reason": "Empty-base coup-to-letter timing alternative substitutes endpoints for accession-to-letter. Guesses remain low-authority; global identity is unverified.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q922__rep2",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          },
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H3",
+            "basis_refs": [
+              "W6"
+            ]
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H4"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "appropriate_deprioritization",
+      "reason": "Full letter adds no officer binding; DEPRIORITIZE the speculative officer/nickname link, not factual rejection.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    }
+  ],
+  "closures": [
+    {
+      "trajectory_id": "R1_Q1094__rep2",
+      "slot": 2,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "false_READY": false,
+      "reason": "Visible local C does not bind all requested identity/time/country/book/gift conditions; missing-feedback content is appropriate.",
+      "next_actor_acquisition": true
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 3,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "false_READY": false,
+      "reason": "Visible local C does not bind all requested identity/time/country/book/gift conditions; missing-feedback content is appropriate.",
+      "next_actor_acquisition": false
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 3,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "false_READY": false,
+      "reason": "Visible local C does not bind all requested identity/time/country/book/gift conditions; missing-feedback content is appropriate.",
+      "next_actor_acquisition": false
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "false_READY": false,
+      "reason": "Visible local C does not bind all requested identity/time/country/book/gift conditions; missing-feedback content is appropriate.",
+      "next_actor_acquisition": true
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "false_READY": false,
+      "reason": "Visible local C does not bind all requested identity/time/country/book/gift conditions; missing-feedback content is appropriate.",
+      "next_actor_acquisition": true
+    },
+    {
+      "trajectory_id": "R3_Q922__rep2",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "false_READY": false,
+      "reason": "Visible local C does not bind all requested identity/time/country/book/gift conditions; missing-feedback content is appropriate.",
+      "next_actor_acquisition": true
+    }
+  ],
+  "metrics": {
+    "trajectories": 12,
+    "horizon_completed": 11,
+    "H_calls": 22,
+    "H_invalid_namespace": 0,
+    "H_invalid_nominations": 0,
+    "H_skipped": 5,
+    "H_failures": 0,
+    "live_H_failure_continuation_opportunities": 0,
+    "live_H_failure_isolation_rate": null,
+    "new_C": 14,
+    "supported_new_C": 14,
+    "gap_useful_C": 12,
+    "false_C": 0,
+    "false_READY": 0,
+    "READY": 0,
+    "accepted_CONTINUE": 6,
+    "closure_contract_failures": 1,
+    "R1_forced_NoGain_next_Actor": {
+      "numerator": 4,
+      "denominator": 4
+    },
+    "R1_immediate_next_acquisition": 3,
+    "R1_immediate_closure_request": 1,
+    "R1_immediate_changed_tool_scope": 2,
+    "R1_immediate_changed_fixture_search": 1,
+    "R1_new_supported_C_by_horizon": {
+      "trajectories": 1,
+      "denominator": 4
+    },
+    "R3_CONTINUE_then_acquisition": {
+      "numerator": 3,
+      "valid_CONTINUE_denominator": 3,
+      "all_forced_denominator": 4
+    },
+    "R3_new_gap_useful_C_by_horizon": {
+      "trajectories": 1,
+      "denominator": 4
+    },
+    "R2_SPS_deprioritized_not_rejected": {
+      "numerator": 2,
+      "denominator": 2
+    },
+    "new_H_REJECT_operations": 0,
+    "inspection_compatibility": {
+      "numerator": 15,
+      "denominator": 16
+    },
+    "inspection_new_raw_evidence_yield_for_current_need": {
+      "numerator": 4,
+      "denominator": 16
+    },
+    "actor_premise_hardening": {
+      "numerator": 3,
+      "denominator": 23
+    },
+    "Gain_steps_without_new_C": 11,
+    "Gain_steps": 19,
+    "integrity_failures": 0,
+    "interpretation": "Result-informed six-cell diagnostic; no causal or independent recovery claim."
+  },
+  "limitations": "H conjectures may be false and valid refs do not imply entailment. Semantic risk labels are not automatic state-integrity failures. Two true but low-utility letter Claims are not counted as useful to the current Need.",
+  "packets_sha256": {
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R1_Q1094__rep1.json": "5c3331f516c163100bc52e88f9980325d2960c5778c5770a03cd0d8c112a930b",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R1_Q1094__rep2.json": "abb9e049be82219b1bfa13a92251f0f670d9416b29764c60b31258a08f06c787",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R1_Q546__rep1.json": "481aad025aa0cf7f4c6ddf8fa49ea150b38674bb2817d5625c8aa62f056fadef",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R1_Q546__rep2.json": "50956d3e9499679464aaca89b27e43befcd3996448ec271f478415149910f636",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R2_Q228__rep1.json": "7af12928f054e4a17fb6dd1d5d7eb32857410f98ef7e666fdede0eb3c4197e32",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R2_Q228__rep2.json": "e0573c7427bd2de7ac1390cec2502e0dc6cb48f5e92aadb53b2556d02e410d22",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R2_Q637__rep1.json": "28d5884bbc3a9b8f9113529ac1c0f0b4be75b0f722d296b2c8c3afb9ba30c138",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R2_Q637__rep2.json": "589f4181369c54d83521912a74f1eb63155fc63d9aa4d616a620f63a5bc26d49",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R3_Q538__rep1.json": "1121b577757dcdf6695ef73677b6ef5a406f8c379be332beb1f02db32bd76a77",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R3_Q538__rep2.json": "c0496e3ac1779251696b18a25941f20e8e2cecc7430f32fbd4c09cd969d5ec59",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R3_Q922__rep1.json": "0d3bbbf7ac6ae4f6520bff524410a648c6dac7b1d12f86fe0be7f23636321890",
+    "experiments/recoverable_loop_clean/h1_contract_continuation/analysis/review_packets/R3_Q922__rep2.json": "f486b29bb1989920388c30c784cffd2dd47f528ee20b3181b016d455dd08244a"
+  }
+}

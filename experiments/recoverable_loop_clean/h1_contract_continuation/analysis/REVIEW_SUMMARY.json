@@ -1,0 +1,1785 @@
+[
+  {
+    "trajectory_id": "R1_Q1094__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "query": "\"identity evolved\" OR \"evolved through several iterations\" club football"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Which of the clubs in the PSG–Lille 4–3 fixture satisfies the split-founded history clue, and does the other satisfy the identity-evolution clue?",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "skipped",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "Inter Milan 4-3 AC Milan 2006 Kaka free kick 90+4"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Whether the described match is Inter Milan vs AC Milan (rather than PSG–Lille) and, if so, which player took the 95th-minute free-kick.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W65"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "The match in question is the 2005 UEFA Champions League Final between Liverpool and AC Milan, which ended 3–3.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H2",
+            "statement": "The 95th-minute free-kick was taken by Andrea Pirlo.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H3",
+            "statement": "The team 'born out of discord among two parties' is Liverpool F.C., founded after a dispute between the Everton committee and John Houlding.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H4",
+            "statement": "The team whose identity evolved through several iterations is AC Milan, which underwent name changes such as Milan Cricket and Football Club, Milan Football Club, and AC Milan.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D52",
+            "preview": "For Liverpool, there's just one surprise: the under-achieving charlatan that is Harry Kewell has somehow managed to worm his way into the starting line-up and will play behind lone frontman Milan Baros. Didi Hamann and Djibril Cisse miss out and will be cooling their heels on the bench.\n\nMeanwhile on ITV1, fledgling pundit Steve McManaman is hoping to see a few goals and a little bit of class tonight. God loves an optimist, but let's face it - it's not as if Macca would recognise either after the season he's just had.\n\nThe teams\n\nAC Milan: 1-Dida; 2-Cafu, 31-Jaap Stam, 13-Alessandro Nesta, 3-Paolo Maldini; 8-Gennaro Gattuso, 21-Andrea Pirlo, 20-Clarence Seedorf; 22-Kaka; 11-Hernan Crespo, 7-Andriy Shevchenko.\n\nLiverpool: 1-Jerzy Dudek; 3-Steve Finnan, 23-Jamie Carragher, 4-Sami Hyypia, 21-Djimi Traore; 10-Luis Garcia, 8-Steven Gerrard, 14-Xabi Alonso, 6-John Arne Riise; 7-Harry Kewell; 5-Milan Baros.\n\nReferee: Manuel Enrique Mejuto Gonzalez (Spain).\n\nPre-match sniping\n\n\"Even before the kick-off the Italians are 1-0 up,\" writes Ben Fitzpatrick. \"The Milan team arrive in Turkey immaculately dressed in designer suits, the Liverpool team arrive in suspiciously shiny tracksuits.\"\n",
+            "title": "Liverpool 3 - 3 AC Milan | Football",
+            "uninspected": true,
+            "window_ref": "W65"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D52",
+              "query": "95th minute free-kick taken by player"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1",
+            "H2"
+          ],
+          "one_gap": "Which match the described clues identify (the 2005 UCL Final Liverpool 3-3 AC Milan, with Milan's goals early and Liverpool's later, versus the PSG–Lille fixture tied to C1/C2), and who is recorded as taking the free-kick in the 95th minute of that match.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W68"
+            ],
+            "statement": "The source title records the match as Liverpool 3 - 3 AC Milan.",
+            "version": 1
+          },
+          {
+            "claim_id": "C4",
+            "evidence_refs": [
+              "W68"
+            ],
+            "statement": "AC Milan took a 1-0 lead against Liverpool after 50 seconds when Paolo Maldini scored a 12-yard volley from a Pirlo free-kick taken from the right of the Liverpool box.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W65"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "The match in question is the 2005 UEFA Champions League Final between Liverpool and AC Milan, which ended 3–3.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H2",
+            "statement": "The 95th-minute free-kick was taken by Andrea Pirlo.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H3",
+            "statement": "The team 'born out of discord among two parties' is Liverpool F.C., founded after a dispute between the Everton committee and John Houlding.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H4",
+            "statement": "The team whose identity evolved through several iterations is AC Milan, which underwent name changes such as Milan Cricket and Football Club, Milan Football Club, and AC Milan.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R1_Q1094__rep2",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "query": "\"identity evolved\" OR \"evolved through several iterations\" club football"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Which of the clubs in the PSG–Lille 4–3 fixture satisfies the split-founded history clue, and does the other satisfy the identity-evolution clue?",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "skipped",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "C1/C2 and W38 establish only that a 95th-minute free-kick was taken by Lionel Messi in PSG's 2023 home match vs Lille. They do not establish Q's material match-identity and timing conditions: an early-21st-century match, one team born out of discord among two parties, the opponent's identity evolving through several iterations, and the scoring pattern in which the first team scored all its goals early while the other scored later. The 2023 date may also conflict with the early-21st-century qualifier. Thus the grounded evidence is insufficient to confirm that the Q match is this PSG-Lille match."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 10,
+              "query": "born out of discord among two parties football club"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Which club in the relevant early-21st-century match was born out of discord among two parties, which opponent had an identity that evolved through several iterations, and who took the 95th-minute free-kick?",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W63"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "The team in the Q match that was born out of discord among two parties is Kaizer Chiefs, formed after Kaizer Motaung returned from the Atlanta Chiefs and found infighting among the Orlando Pirates hierarchy.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W63"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The Q match may be a Soweto Derby between Kaizer Chiefs and Orlando Pirates, since W63 describes their rivalry and Kaizer Chiefs' split origin from Orlando Pirates.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H3",
+            "statement": "The opponent in the Q match whose identity evolved through several iterations may be Orlando Pirates, but W63 does not show that identity evolution.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H4",
+            "statement": "An alternative candidate for the Q match is the Milan derby, with Inter Milan as the club born out of discord among AC Milan and AC Milan as the club whose identity evolved through several iterations (Milan Cricket and Football Club to Milan Football Club to AC Milan).",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D50",
+            "preview": "nextmeeting: TBA\nteams involved: * Kaizer Chiefs * Orlando Pirates\nmost player appearances: Happy Jele (33)\nmostrecent: Kaizer Chiefs 2-1 Orlando Pirates (10 May 2025) Nedbank Cup\nstadiums: FNB Stadium (Chiefs) Orlando Stadium (Pirates)\ntop scorer: Patrick Ntsoelengoe (19)\ntotal: 106\nseries: Chiefs: 37 Draw: 19 Pirates: 50\nmost wins: Orlando Pirates (50)\nlargestvictory: Pirates 51 Chiefs (1998)\ncurrentstreak: Kaizer Chief 6 - 3 Orlando Pirates\n\nThe Soweto Derby is a football rivalry between Premiership teams Kaizer Chiefs and Orlando Pirates in South Africa. It was first contested on 24 January 1970. Matches between the two rivals attract a large fanbase. The rivalry is recognised as one of the biggest derbies in Africa.\n\nThe Soweto Derby is different to the Original Soweto Derby, which is contested between Pirates and Moroka Swallows.\n\nBased in Soweto, Johannesburg, the rivalry stems from the fact that Kaizer Chiefs was formed by a former Orlando Pirates star Kaizer Motaung. Motaung had left Orlando Pirates to go play professional soccer in the now defunct North American Soccer League for a team called the Atlanta Chiefs. Upon returning home, he found a lot of infighting among the hierarchy at Pirates. He decided to form a Kaizer XI, which initially played friendly matches with various clubs in South Africa and then this entity evolved to the Kaizer Chiefs.\n\nOverall record\n\n**Table 1**\n\n| Team | League | Nedbank Cup | Telkom bvbCup | MTN 8 | Total |\n|---|---|---|---|---|---|\n",
+            "title": "Soweto derby - Wikipedia",
+            "uninspected": true,
+            "window_ref": "W63"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R1_Q546__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "query": "snooker \"less than 250 centuries\" 2023"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "What were Ding Junhui's subsequent 2023 English Open results after the opening 4–3 win, and did they follow the required 4–3, 4–0, loss order?",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "skipped",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "after",
+              "window_ref": "W13"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Need to verify whether Ding's 2023 English Open run after the 4–3 opening win against Ma Hailong included subsequent 4–3 and 4–0 wins and then a loss to an opponent with over 400 centuries.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "skipped",
+        "acquisition_outcome": "document_boundary",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 10,
+              "query": "2023 English Open Ding Junhui results bracket"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Whether Ding Junhui's 2023 English Open run after his opening 4-3 win over Ma Hailong included a subsequent 4-3 win, a 4-0 win, and then a loss to an opponent with over 400 centuries as of 30 January 2025.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The target player is Ding Junhui.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R1_Q546__rep2",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "query": "snooker \"less than 250 centuries\" 2023"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "What were Ding Junhui's subsequent 2023 English Open results after the opening 4–3 win, and did they follow the required 4–3, 4–0, loss order?",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "skipped",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D17",
+              "query": "2023 English Open Ding Junhui match results 4–3 4–0 loss"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Confirm Ding Junhui's full 2023 English Open match sequence, opponents, and scores after the opening 4–3 win, including whether he then won 4–3 and 4–0 before losing to a player with over 400 centuries as of 30 January 2025.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The player described is Shaun Murphy.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W32"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Confirm Ding Junhui's full 2023 English Open match sequence — after beating Ma Hailong 4–3, did he then win 4–3 and 4–0 before losing to a player with over 400 centuries (which would make him the described candidate)?",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The player described is Shaun Murphy.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q228__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D2",
+              "query": "spouse children donation gift Sogang University building"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Whether Kwon Hyuk-bin and his spouse, as of 2019 childless, made a foundational gift for the construction of a building that was part of a university.",
+          "strategy": "VERIFY_RELATION"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Kwon Hyuk-bin, founder of Smilegate, may be the person referenced in the question.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H2",
+            "statement": "The person may instead be a different South Korean online video-game company founder whose 2000–2010 title was a top earner and who graduated from a Korean university founded between 1930 and 1970 (for example Nexon's Kim Jung-ju; MapleStory 2003 / Dungeon Fighter Online 2005; Seoul National University, founded 1946), because the question's distinctive spouse/no-children/foundational-gift/building cues are entirely absent from Kwon Hyuk-bin's inspected profile.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D4",
+              "query": "spouse children marriage donation gift building university"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H2"
+          ],
+          "one_gap": "Whether Ding Lei (NetEase founder) and his spouse, as of 2019 childless, made a foundational gift for a university building.",
+          "strategy": "VERIFY_RELATION"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis",
+          "active_hypothesis_downgraded"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W4"
+            ],
+            "statement": "As of 2019, Ding Lei was married but had no children.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "Kwon Hyuk-bin, founder of Smilegate, may be the person referenced in the question.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The person may instead be a different South Korean online video-game company founder whose 2000–2010 title was a top earner and who graduated from a Korean university founded between 1930 and 1970 (for example Nexon's Kim Jung-ju; MapleStory 2003 / Dungeon Fighter Online 2005; Seoul National University, founded 1946), because the question's distinctive spouse/no-children/foundational-gift/building cues are entirely absent from Kwon Hyuk-bin's inspected profile.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H3",
+            "statement": "Ding Lei (William Ding), founder of NetEase, may be the person referenced in the question, because as of 2019 he was married but without children, NetEase's online video games division released Fantasy Westward Journey (a top-earning game) in the 2000–2010 period, and he graduated from the University of Electronic Science and Technology of China (founded 1956).",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 10,
+              "query": "Ding Lei NetEase founder wife donation university building construction gift"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H3"
+          ],
+          "one_gap": "Whether Ding Lei and his spouse made a foundational gift for the construction of a building that was part of a university, and if so which building and university.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "Kwon Hyuk-bin, founder of Smilegate, may be the person referenced in the question.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The person may instead be a different South Korean online video-game company founder whose 2000–2010 title was a top earner and who graduated from a Korean university founded between 1930 and 1970 (for example Nexon's Kim Jung-ju; MapleStory 2003 / Dungeon Fighter Online 2005; Seoul National University, founded 1946), because the question's distinctive spouse/no-children/foundational-gift/building cues are entirely absent from Kwon Hyuk-bin's inspected profile.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H3",
+            "statement": "Ding Lei (William Ding), founder of NetEase, may be the person referenced in the question, because as of 2019 he was married but without children, NetEase's online video games division released Fantasy Westward Journey (a top-earning game) in the 2000–2010 period, and he graduated from the University of Electronic Science and Technology of China (founded 1956).",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D6",
+            "preview": "Wealth History\n\nHOVER TO REVEAL NET WORTH BY YEAR\n\nPersonal Stats\n\n- Age\n\n- 53\n\n- Source of Wealth\n\n- Online games, Self Made\n\n- Residence\n\n- Hangzhou, China\n\n- Citizenship\n\n- China\n\n- Education\n\n- Bachelor of Arts/Science, University of Electronic Science and Technology of China\n\nRelated People & Companies\n\nFeb 22, 2025\n\nThe founder and CEO of NetEase, William Ding, almost cancelled Marvel Rivals entirely, according to a new report\n\nApr 10, 2024\n\nChinese gaming giant NetEase is renewing its games distribution partnership with Microsoft's Blizzard Entertainment more than a year after the companies had a fallout ...\n\nDec 22, 2023\n\nChinese regulators are planning sweeping curbs on online games, spooking investors and causing two of its most prominent gaming tycoons to lose a combined $10.2 billion in paper wealth in a single day.\n\nNov 8, 2023\n\nAfter launching new games, one with generative AI-powered responses, Ding's NetEase eyes expansion overseas.\n\nJul 11, 2023\n\nThe 51-year-old founder of NetEase, China's largest game company after Tencent, now boasts a net worth of $31 billion.\n\nFeb 19, 2017\n\nNetEase's William Ding is now worth $17 billion\n\nFeb 25, 2015\n\nChina Internet company NetEase was an ambitious three-year-old pioneer when it eyed foreign shores and went public in the U.S. back in 2000. Now, NetEase hopes that it is still relatively early in targeting the American market for growth in its now far more developed web business. NetEase, one of China's largest homegrown [...]\n\nAug 19, 2013\n",
+            "title": "William Ding",
+            "uninspected": true,
+            "window_ref": "W7"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q228__rep2",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W4"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Whether Ding Lei and his spouse had no children as of 2019 and made a foundational gift for a building, which would distinguish him from Kwon Hyuk-bin as the person described.",
+          "strategy": "DISCRIMINATE_CANDIDATES"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis",
+          "active_hypothesis_downgraded"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W4"
+            ],
+            "statement": "As of a 2019-12-11 article, Ding Lei (William Ding), founder and CEO of NetEase, was married but without children.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "Kwon Hyuk-bin, founder of Smilegate, may be the person referenced in the question.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "Ding Lei (William Ding), founder of NetEase, may be the person referenced in the question.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "document_complete",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "Ding Lei wife foundational gift building university construction NetEase Fantasy Westward Journey"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H2"
+          ],
+          "one_gap": "Whether Ding Lei and his spouse made a foundational gift for construction of a building, and which university that building was part of as of 2023.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "Kwon Hyuk-bin, founder of Smilegate, may be the person referenced in the question.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "Ding Lei (William Ding), founder of NetEase, may be the person referenced in the question.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D6",
+            "preview": "- Best Home Security Companies\n\n- Best Home Security Systems\n\n- Home Security System Cost\n\n- Cheapest Home Security Systems\n\n- Best Wireless Home Security Systems\n\n- Best Internet Providers\n\n- Cheapest Internet Plans\n\n- Fastest High Speed Internet Providers\n\n- Best Internet Only Plans\n\n- Best Fiber Internet Providers\n\n- Newsletters\n\n- More From Forbes\n\n© 2025 Forbes Media LLC. All Rights Reserved.\n\nPROFILE\n\n$41B\n\nas of 6/15/25\n\n#36 in the world todayReflects change since 5 pm ET of prior trading day.\n\nPhoto by NetEase\n\nFrom the Editor\n\n- William Ding is the founder and CEO of NetEase, one of the world's largest online games companies.\n\n- In addition to legacy titles such as Fantasy Westward Journey, the company's portfolio also includes casual game Eggy Party and battle game Justice Mobile, which uses AI to generate story lines.\n\n- Facing tough competition in games from rival Tencent, NetEase has expanded into movies, e-commerce and online music.\n\n- Ding was China's richest man and its first internet and gaming billionaire back in 2003.\n\n- The mogul also has an interest in sustainable agriculture, with NetEase's e-commerce arm Yanxuan selling pork sourced from its own farms.\n\nWealth History\n\nHOVER TO REVEAL NET WORTH BY YEAR\n\nPersonal Stats\n\n- Age\n\n- 53\n\n- Source of Wealth\n\n- Online games, Self Made\n\n- Residence\n\n- Hangzhou, China\n\n- Citizenship\n\n- China\n\n- Education\n\n- Bachelor of Arts/Science, University of Electronic Science and Technology of China\n\nRelated People & Companies\n\nFeb 22, 2025\n\nThe founder and CEO of NetEase, William Ding, almost cancelled Marvel Rivals entirely, according to a new report\n\nApr 10, 2024\n",
+            "title": "William Ding",
+            "uninspected": true,
+            "window_ref": "W6"
+          },
+          {
+            "doc_ref": "D7",
+            "preview": "---\ntitle: Fantasy Westward Journey - Wikipedia\ndate: 2007-06-02\n---\nFantasy Westward Journey () is a massively multiplayer online role-playing game (MMORPG) developed and operated by the Chinese company NetEase. It was released for the Microsoft Windows platform in December 2001. The game is the most popular online game in China as of May 2007 by peak concurrent users (PCU), with a peak count of 1.5 million. Registered users reached 25 million by April 2005,Xinhua. \"夢幻西遊\"搭車\"動感地帶\" 網遊結盟中移動. Apr 6, 2005. with 576,000 peak concurrent players on 198 game servers, which was considered the fastest-growing online game in China at the time. Average concurrent users were reported in August 2006 to be around 400,000.\n\nThe game uses the same engine as Westward Journey II, albeit with a distinctively different graphical style. Both games are inspired by the 16th-century Chinese novel Journey to the West. Together with Westward Journey II, it is one of the highest-grossing video games of all time, having earned an estimated $6.5 billion in lifetime revenue as of 2019 and having 400 million users as of 2015.\n\nHistory\n\nIn July 2006, administrators at NetEase dissolved a 700-member in-game anti-Japanese guild and locked the account of its founder for having an anti-Japanese username. ",
+            "title": "Fantasy Westward Journey - Wikipedia",
+            "uninspected": true,
+            "window_ref": "W7"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 6,
+              "query": "William Ding Ding Lei NetEase founder donated gift building university construction campus scheduled to open"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H2"
+          ],
+          "one_gap": "Whether Ding Lei and his spouse made a foundational gift for the construction of a building (part of a larger complex, scheduled to open 2018-2021) and which university that building belongs to as of 2023, since C3 only supports the childless-marriage part of R2.",
+          "strategy": "VERIFY_RELATION"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "Kwon Hyuk-bin, founder of Smilegate, may be the person referenced in the question.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "Ding Lei (William Ding), founder of NetEase, may be the person referenced in the question.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W11"
+            ],
+            "hypothesis_id": "H3",
+            "statement": "Jen-Hsun Huang, founder and CEO of NVIDIA, who with his spouse Lori Huang gave a gift toward the Jen-Hsun and Lori Huang Collaborative Innovation Complex at Oregon State University, may be the person referenced, since this matches the founder-plus-spouse foundational-gift-to-a-building-at-a-university structure (though no online-games-division tie is shown).",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W9"
+            ],
+            "hypothesis_id": "H4",
+            "statement": "Charles Chen Yidan, co-founder of Tencent Holdings Limited (which operates an online games division) and an education philanthropist, may be the person referenced.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D9",
+            "preview": "Charles Chen Yidan, the core founder of Tencent Holdings Limited. The Prize aims to recognize and support changemakers for their most\n\nThrough a series of initiatives, including this conference, the Prize serves to provide a platform that allows the global community to engage in conversations around education and to play a role in education philanthropy.\n\nFor more information, please visit \n\nYidan Prize Conference Series\n\nSince the establishment of the Prize, the Yidan Foundation has sponsored conferences at universities around the world, with other conferences held at the University of Cambridge and Harvard University.\n\nIn 2018, Larry Hedges, Board of Trustees Professor of Statistics at Northwestern University, and Dr. Anant Agarwal, Founder & CEO of edX, were awarded the Yidan Prize.\n\nThis conference highlighted new directions for research and development inspired by the work of the 2018 Yidan Prize Laureates, including the role that evidence plays in addressing inequities and improving practice in education.\n\nAbout the Founder\n\nDr. Charles Chen Yidan established the Yidan Prize in 2016 with a mission to make the world a better place through education.\n\nCharles is recognized as China's Internet philanthropy pioneer. He co-founded Chinese Internet giant Tencent in 1998. In 2007, he launched the Chinese Internet industry's first charity foundation with his partners – the Tencent Charity Foundation – of which he remains honorary chairman.\n\nApart from his charity work with the Tencent network, Charles undertakes other education philanthropy. Since 2009, he has been supporting the Wuhan College, a private non-profit university in China. He topped the Forbes China Charity List in 2017.\n\nCharles holds a Bachelor's degree in Applied Chemistry from Shenzhen University and a Master's degree in Economic Law from Nanjing University. ",
+            "title": "About the Yidan Prize: Yidan Prize Conference 2019",
+            "uninspected": true,
+            "window_ref": "W9"
+          },
+          {
+            "doc_ref": "D11",
+            "preview": "---\ntitle: $50 Million Gift by NVIDIA Founder and Spouse Helps Launch Oregon State University Research Center\ndate: 2022-10-14\n---\nCORVALLIS, Ore. – Oregon State University today announced $100 million in gifts to launch a $200 million research and education center that will harness one of the nation's most powerful supercomputers and team-based research in artificial intelligence, materials science and robotics to solve global challenges in areas such as climate science, oceanography, sustainability and water resources.\n\nThe complex also will underpin OSU's research and teaching supporting the semiconductor and broader technology industry in Oregon and beyond.\n\nThe center will be named the Jen-Hsun and Lori Huang Collaborative Innovation Complex following a gift of $50 million to the OSU Foundation from Jen-Hsun Huang, founder and CEO of NVIDIA, and his wife Lori, both of whom are Oregon State University graduates.\n\n\"We are thrilled by this extraordinary philanthropy and commitment to advancing research discovery and problem-solving,\" said OSU President Jayathi Murthy.\n\n\"The Jen-Hsun and Lori Huang Collaborative Innovation Complex at Oregon State University will be much more than a building. It will serve as a university-wide promise and as a hub for advancing groundbreaking solutions for the betterment of humanity, the environment and the economy.\n\n\"The center will be a dynamic place where creative, driven faculty, students and partners from business and other universities come together to solve critical challenges facing the state, nation and world.\"\n\nMurthy said the three-story, 150,000 square-foot center is being designed and is anticipated to open in 2025. It will be built in the northwest corner of OSU's Corvallis campus along Southwest Memorial Place and Monroe Avenue, near the intersection with Monroe and Southwest 23rd Street.\n",
+            "title": "$50 Million Gift by NVIDIA Founder and Spouse Helps Launch Oregon State University Research Center",
+            "uninspected": true,
+            "window_ref": "W11"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q637__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D5",
+              "query": "six-month history of pain difficulty walking moving shoulders"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R5",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Whether the two 2010s case reports are the FOP case reports in D4/D5, which would identify the shared scientific name as fibrodysplasia ossificans progressiva rather than SPS.",
+          "strategy": "DISCRIMINATE_CANDIDATES"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis",
+          "active_hypothesis_downgraded"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W5"
+            ],
+            "statement": "D5 is a case report of fibrodysplasia ossificans progressiva (stone man syndrome), as indicated by its title and case presentation of a 10-year-old Pakistani boy with a 6-month history of pain and tender masses on the back, left arm, and left hip.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W5"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "The shared disorder in the two 2010s case reports may be stiff person syndrome (SPS).",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W5"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The shared disorder in the two 2010s case reports is fibrodysplasia ossificans progressiva (FOP), also called stone man syndrome.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D4",
+              "query": "pain and swelling upper body biopsy two months earlier childhood stiffness followed by swelling four years later fibrodysplasia ossificans progressiva"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R5",
+          "hypothesis_ids_under_test": [
+            "H2"
+          ],
+          "one_gap": "Whether D4 describes the second 2010s case report—upper-body pain/swelling after a biopsy two months earlier, with childhood stiffness followed by swelling four years later—and attributes it to fibrodysplasia ossificans progressiva, confirming the shared scientific name with D5.",
+          "strategy": "VERIFY_RELATION"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C4",
+            "evidence_refs": [
+              "W6"
+            ],
+            "statement": "D4 is a case report titled as fibrodysplasia ossificans progressiva and describes a sixteen-year-old male patient with classic features of FOP, who was brought to the emergency room with pain and swelling in the upper back after a biopsy had been performed two months earlier.",
+            "version": 1
+          },
+          {
+            "claim_id": "C5",
+            "evidence_refs": [
+              "W6"
+            ],
+            "statement": "In D4, the patient developed tender stiffness of the shoulders and neck at age 9; over the next 4 years he experienced multiple similar swellings on the upper back, and subsequently the movement of the shoulders and neck was limited and masses grew progressively.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W6"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "The shared disorder in the two 2010s case reports may be stiff person syndrome (SPS).",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W5"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The shared disorder in the two 2010s case reports is fibrodysplasia ossificans progressiva (FOP), also called stone man syndrome.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "C3/C4 identify two case reports with matching clinical details, but neither the claims nor the evidence snippets provide publication years or dates, so the reports cannot be confirmed as being from different years in the 2010s."
+              },
+              {
+                "requirement_id": "R3",
+                "summary": "C3 locates the first case in Pakistan and gives the half-year pain history, but no evidence establishes that Pakistan was the largest country of its dominant religion in the world at the time of its establishment."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q637__rep2",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D4",
+              "query": "case presentation six-month history of pain difficulty walking difficulty moving shoulders"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Whether the case report in D4 corresponds to the first 2010s case described in Q4 (half-year history of pain in multiple body parts that worsened and caused difficulty walking and moving the shoulders), which would identify the shared disorder as fibrodysplasia ossificans progressiva and disconfirm the H1 stiff-person-syndrome hypothesis.",
+          "strategy": "VERIFY_ATTRIBUTE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis",
+          "active_hypothesis_downgraded"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W6"
+            ],
+            "statement": "The case report in D4 describes a sixteen-year-old male patient with classic features of fibrodysplasia ossificans progressiva (FOP).",
+            "version": 1
+          },
+          {
+            "claim_id": "C4",
+            "evidence_refs": [
+              "W6"
+            ],
+            "statement": "In D4, the patient developed tender stiffness of his shoulders and neck at age 9, and over the next 4 years he experienced multiple similar swellings on the upper back with progressive masses and limited movement of the shoulders and neck.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W6"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "The shared disorder in the two 2010s case reports may be stiff person syndrome (SPS).",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W6"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The shared disorder in the two 2010s case reports may be fibrodysplasia ossificans progressiva (FOP).",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D5",
+              "query": "six-month history of pain difficulty walking difficulty moving shoulders"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H2"
+          ],
+          "one_gap": "Whether the D5 case report describes the first 2010s case (half-year history of pain that worsened, causing difficulty walking and moving the shoulders) and identifies the disorder as fibrodysplasia ossificans progressiva, thereby confirming that both cases share FOP.",
+          "strategy": "VERIFY_RELATION"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C5",
+            "evidence_refs": [
+              "W5"
+            ],
+            "statement": "The D5 case report describes a 10-year-old Pakistani boy who presented with a 6-month history of pain and tender masses on the back, left arm, and left hip; the pain was insidious in onset and gradually worsened, causing difficulty in walking and decreased range of motion of the shoulders and hips.",
+            "version": 1
+          },
+          {
+            "claim_id": "C6",
+            "evidence_refs": [
+              "W5"
+            ],
+            "statement": "The D5 document is titled 'Fibrodysplasia ossificans progressiva (stone man syndrome): a case report', identifying the case report as concerning fibrodysplasia ossificans progressiva (stone man syndrome).",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W5"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "The shared disorder in the two 2010s case reports may be stiff person syndrome (SPS).",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W6"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The shared disorder in the two 2010s case reports may be fibrodysplasia ossificans progressiva (FOP).",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W5"
+            ],
+            "hypothesis_id": "H3",
+            "statement": "The D5 case report may correspond to the first 2010s case described in the question, involving a 10-year-old boy with a 6-month history of pain and tender masses, difficulty walking, and decreased shoulder motion.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "C and the cited evidence do not explicitly provide the case-report publication years, so it is not established that the two reports appeared in different years during the 2010s."
+              },
+              {
+                "requirement_id": "R3",
+                "summary": "C5 states the first patient was Pakistani and presented in Pakistan, but C/evidence do not establish the additional qualifier that this country was the largest country of its dominant religion in the world at the time of its establishment."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q538__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "No evidence establishes the title of the book as of December 2023."
+              },
+              {
+                "requirement_id": "R2",
+                "summary": "No evidence establishes that any book contains 130–140 illustrations/descriptions of objects including the telephone and telegraph."
+              },
+              {
+                "requirement_id": "R3",
+                "summary": "No evidence establishes the rust-cleaning method, the substance mentioned in a Three Dog Night song, or the country-song oil name."
+              },
+              {
+                "requirement_id": "R4",
+                "summary": "C1 only supports Euler's birth date/place; it does not show that the target book references Euler, nor does it identify the early-1800s mechanical engineer or the scientist whose father was a poet, or link these clues to a book title."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 10,
+              "query": "book 130 illustrations descriptions telephone telegraph clean rust kerosene wine whiskey"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "No source connects the book's rust-cleaning method (possibly kerosene or a Three Dog Night song substance) and its telephone/telegraph illustrations to a specific book title.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Leonhard Euler may be the well-known figure with initials L. E. born in the early 1700s in a central European country referenced by the target book.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H2",
+            "statement": "The mechanical engineer born in the early 1800s referenced by the target book may be John Ericsson.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H3",
+            "statement": "The scientist whose father was a poet referenced by the target book may be Christiaan Huygens.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H4",
+            "statement": "The target book's method for cleaning rusted objects may use wine, a substance mentioned in Three Dog Night's song 'Joy to the World', or an oil whose name appears in a country song.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H5",
+            "statement": "The target book may be an illustrated reference work of objects/inventions containing about 130–140 illustrations, including descriptions of the telephone and telegraph.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D14",
+            "preview": "D. Jkrrold Kbllbt, n.S.N., and 34 Full- page Water«olcnr Dravrings by Frvd S. Cozzins, representing every type of U.S. Fighting Ship from 1773 and every ship of the present American Navy. With over 100 Text Illustrations. Oblong 4to. price 8 guineas. Phelps (Eliaabeth Btnart)— The Story of Jesus Christ : an Interpretation. With many Illustra- tions. Crown 8vo. 6«. Posselt CE, A.)— Textile Calculations : being a Guide to Calculations relating to the Con*truotion of an kinds of Yams and Fabrics, the Analyses of Cloth, Speed. Power, and Belt Calculations, for the rve of Students, Operatives, Overseers, uid Manufacturers. Numerous Illustrations. Cloth, ir«.6(f. Posselt (E. A.) — Becent Improvements in Textile Machinery relating to Weaving. Giving Des- criptive Dlustrations of the Construction and Opera- tion of the most modem makes of Looms, Jacquards, Spoolers, Winders, Dressers, Ac. Ac ; also illustrating and explaining the latest improvements in Shuttles, Temples, Pickers, Reeds, Heddles, Harnesses, &c. For the IJse of Manufacturers, Mill Managers, Designers, Overseers, Loomflxers, Students and Inventors. With over 600 Illustrationi. Cloth small 4to. lb*, net. Btenhens (W. P.) — Supplement to ' Small Yachts,* containing Examples of Yachts and small Craft, built in America and England between 1890 and 1896. ",
+            "title": "Full text of \"The English catalogue of books [annual] ..\"",
+            "uninspected": true,
+            "window_ref": "W15"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D14",
+              "query": "telephone telegraph illustrations"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H5"
+          ],
+          "one_gap": "No source yet identifies a specific book title that contains 130–140 illustrations and descriptions of objects including the telephone and telegraph.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Leonhard Euler may be the well-known figure with initials L. E. born in the early 1700s in a central European country referenced by the target book.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H2",
+            "statement": "The mechanical engineer born in the early 1800s referenced by the target book may be John Ericsson.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H3",
+            "statement": "The scientist whose father was a poet referenced by the target book may be Christiaan Huygens.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H4",
+            "statement": "The target book's method for cleaning rusted objects may use wine, a substance mentioned in Three Dog Night's song 'Joy to the World', or an oil whose name appears in a country song.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H5",
+            "statement": "The target book may be an illustrated reference work of objects/inventions containing about 130–140 illustrations, including descriptions of the telephone and telegraph.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q538__rep2",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": {
+          "message": "schema: {'oneOf': [{'status': 'CONTINUE', 'missing': [{'requirement_id': 'R1', 'summary': 'No evidence identifies the title of the book asked for as of December 2023.'}, {'requirement_id': 'R2', 'summary': 'No evidence shows a book containing between 130 and 140 illustrations and descriptions of objects including the telephone and telegraph.'}, {'requirement_id': 'R3', 'summary': 'No evidence links the book to a rust-cleaning method using either a Three Dog Night song substance or a country-song-named oil.'}, {'requirement_id': 'R4', 'summary': 'C1 only partially supports the L.E. figure (Leonhard Euler, born 1707); evidence is missing for the mechanical engineer born in the early 1800s and the scientist whose father was a poet, and no evidence connects any of these figures to the target book.'}]}]} is not valid under any of the given schemas",
+          "type": "ValueError"
+        },
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q922__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "C1/C2 support a letter from King Michael of Romania to the U.S. President and OSS transmission, but do not establish that the delivering official was nicknamed after a body part by the recipient. The OSS officer in C2 is unnamed, and Donovan in C1 is not shown to have that nickname or to be the delivering official."
+              },
+              {
+                "requirement_id": "R2",
+                "summary": "The evidence gives a March 5, 1945 memorandum date, not the letter date, and gives no date for King Michael coming to power. Thus it does not establish that the letter was written roughly six months after the author came to power."
+              },
+              {
+                "requirement_id": "R3",
+                "summary": "The provided excerpt and C1/C2 do not show the author referring to his country having regained a region; the referenced enclosed note is not in evidence."
+              },
+              {
+                "requirement_id": "R4",
+                "summary": "Because the region reference under R3 is not established, the name of the region cannot be grounded from the available C/evidence."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W4"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R3",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "The content of the enclosed King Michael letter (its own date and any reference to Romania having regained a region) is not yet in evidence; only the covering memorandum's date and transmission facts are established.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W6"
+            ],
+            "statement": "In the enclosed letter to President Roosevelt, King Michael expressed thanks to the \"glorious Red Army\" for the help given Romania in regaining North Transylvania, which he described as always dear to the hearts of all true Romanians.",
+            "version": 1
+          },
+          {
+            "claim_id": "C4",
+            "evidence_refs": [
+              "W6"
+            ],
+            "statement": "In the letter, King Michael stated that on August 23, 1944, with the help of God, he was able to bring Romania back on the right way, the way leading to the triumph of justice, liberty of nations, and respect for human dignity along with her natural and traditional allies.",
+            "version": 1
+          },
+          {
+            "claim_id": "C5",
+            "evidence_refs": [
+              "W6"
+            ],
+            "statement": "In the letter, King Michael stated that he was held by painful and serious anxiety as to Romania's future, having observed the attitude of various representatives of the U.R.S.S. in Romania, who in many cases had not at all understood Romania's problems.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The described letter may be the March 5, 1945 letter from King Michael of Romania to the President of the United States.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W6"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The region referred to is North Transylvania.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W6"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "The actual date of the enclosed King Michael letter, as distinct from the March 5, 1945 covering memorandum, is not established; W6 and adjacent text may contain the letter's dateline or date context.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The described letter may be the March 5, 1945 letter from King Michael of Romania to the President of the United States.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W6"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The region referred to is North Transylvania.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "document_complete",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q922__rep2",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "Evidence supports a 1945 letter from King Michael of Romania to the U.S. President and an OSS transmission, but it does not name the delivering official or establish that the recipient nicknamed him after a body part."
+              },
+              {
+                "requirement_id": "R2",
+                "summary": "No evidence establishes when King Michael came to power or that the letter was written roughly six months after that accession."
+              },
+              {
+                "requirement_id": "R3",
+                "summary": "The available letter excerpt does not state that Romania had regained a region; the enclosed 36-page note is not printed."
+              },
+              {
+                "requirement_id": "R4",
+                "summary": "Because no evidence identifies the region referred to, the requested region name cannot be determined from the provided evidence."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D4",
+              "query": "handed the letter to an OSS officer in Bucharest"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "The identity of the OSS officer who received King Michael's letter in Bucharest and whether President Roosevelt nicknamed him after a body part.",
+          "strategy": "VERIFY_RELATION"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The described letter may be the March 5, 1945 letter from King Michael of Romania to the President of the United States.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H2",
+            "statement": "The region referred to in the described letter may be Transylvania (possibly Northern Transylvania).",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H3",
+            "statement": "The OSS officer who received/delivered the King Michael letter may be the official nicknamed after a body part by the President.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H4",
+            "statement": "The described letter may have been written roughly six months after King Michael's August 1944 coup d'état rather than his 1940 accession.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W4"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H3"
+          ],
+          "one_gap": "The name and role of the OSS officer in Bucharest who received/transmitted King Michael's letter, and whether the recipient President nicknamed that official after a body part.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "active_hypothesis_downgraded"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The described letter may be the March 5, 1945 letter from King Michael of Romania to the President of the United States.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H2",
+            "statement": "The region referred to in the described letter may be Transylvania (possibly Northern Transylvania).",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W6"
+            ],
+            "hypothesis_id": "H3",
+            "statement": "The OSS officer who received/delivered the King Michael letter may be the official nicknamed after a body part by the President.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H4",
+            "statement": "The described letter may have been written roughly six months after King Michael's August 1944 coup d'état rather than his 1940 accession.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "trajectory_id": "R3_Q922__rep1",
+  "cell_id": "R3_Q922",
+  "family": "R3",
+  "replicate": 1,
+  "status": "horizon_exhausted",
+  "error": null,
+  "outcomes": [
+    {
+      "slot": 1,
+      "decision": "request_closure",
+      "closure": {
+        "status": "CONTINUE",
+        "missing": [
+          {
+            "requirement_id": "R1",
+            "summary": "C1/C2 support a letter from King Michael of Romania to the U.S. President and OSS transmission, but do not establish that the delivering official was nicknamed after a body part by the recipient. The OSS officer in C2 is unnamed, and Donovan in C1 is not shown to have that nickname or to be the delivering official."
+          },
+          {
+            "requirement_id": "R2",
+            "summary": "The evidence gives a March 5, 1945 memorandum date, not the letter date, and gives no date for King Michael coming to power. Thus it does not establish that the letter was written roughly six months after the author came to power."
+          },
+          {
+            "requirement_id": "R3",
+            "summary": "The provided excerpt and C1/C2 do not show the author referring to his country having regained a region; the referenced enclosed note is not in evidence."
+          },
+          {
+            "requirement_id": "R4",
+            "summary": "Because the region reference under R3 is not established, the name of the region cannot be grounded from the available C/evidence."
+          }
+        ]
+      },
+      "feedback": "NoGain",
+      "claim_delta": [],
+      "acquisition_outcome": "not_attempted",
+      "claim_outcome": "not_attempted",
+      "hypothesis_outcome": "not_applicable",
+      "auxiliary_failures": []
+    },
+    {
+      "slot": 2,
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "Gain",
+      "claim_delta": [
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    },
+    {
+      "slot": 3,
+      "decision": "acquire",
+      "tool_status": "document_complete",
+      "feedback": "NoGain",
+      "claim_delta": [],
+      "acquisition_outcome": "document_complete",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    }
+  ],
+  "elapsed_seconds": 143.13006494008005,
+  "completed_utc": "2026-09-27T21:13:12.494090+00:00"
+}

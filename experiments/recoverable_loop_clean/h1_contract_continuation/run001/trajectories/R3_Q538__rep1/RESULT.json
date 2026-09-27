@@ -1,0 +1,65 @@
+{
+  "trajectory_id": "R3_Q538__rep1",
+  "cell_id": "R3_Q538",
+  "family": "R3",
+  "replicate": 1,
+  "status": "horizon_exhausted",
+  "error": null,
+  "outcomes": [
+    {
+      "slot": 1,
+      "decision": "request_closure",
+      "closure": {
+        "status": "CONTINUE",
+        "missing": [
+          {
+            "requirement_id": "R1",
+            "summary": "No evidence establishes the title of the book as of December 2023."
+          },
+          {
+            "requirement_id": "R2",
+            "summary": "No evidence establishes that any book contains 130–140 illustrations/descriptions of objects including the telephone and telegraph."
+          },
+          {
+            "requirement_id": "R3",
+            "summary": "No evidence establishes the rust-cleaning method, the substance mentioned in a Three Dog Night song, or the country-song oil name."
+          },
+          {
+            "requirement_id": "R4",
+            "summary": "C1 only supports Euler's birth date/place; it does not show that the target book references Euler, nor does it identify the early-1800s mechanical engineer or the scientist whose father was a poet, or link these clues to a book title."
+          }
+        ]
+      },
+      "feedback": "NoGain",
+      "claim_delta": [],
+      "acquisition_outcome": "not_attempted",
+      "claim_outcome": "not_attempted",
+      "hypothesis_outcome": "not_applicable",
+      "auxiliary_failures": []
+    },
+    {
+      "slot": 2,
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "Gain",
+      "claim_delta": [],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    },
+    {
+      "slot": 3,
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "NoGain",
+      "claim_delta": [],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    }
+  ],
+  "elapsed_seconds": 128.8493459429592,
+  "completed_utc": "2026-09-27T21:12:58.089501+00:00"
+}

@@ -1,0 +1,39 @@
+{
+  "utc": "2026-09-27T21:10:37.445844+00:00",
+  "head": "5e545651b4d69c2bf75ce317e562d507b2062712",
+  "config": {
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "max_retries": 0,
+    "concurrency": 12,
+    "max_paid_requests": 192,
+    "max_acquisitions": 32,
+    "horizon": 3,
+    "replicates": 2,
+    "retrieval_concurrency": 1,
+    "gpu": "cuda:0",
+    "timeouts_seconds": {
+      "connect": 30,
+      "read": 900,
+      "write": 60,
+      "pool": 30
+    },
+    "total_timeout_seconds": 1200,
+    "http_connections": 12,
+    "user_id": "OMITTED, unchanged from historical calls",
+    "credential_source": "DEEPSEEK_API_KEY environment or .env.deepseek; never stored in requests/artifacts",
+    "authorization": "User: 授权，后续你自己直接调用就行了不用我授权. H1 192 requests/32 acquisitions; H2 conditional separate frozen stage, <=192 requests, no old-budget reuse.",
+    "failure_policy": "H role/output failures isolated by engine; high-authority or integrity failures remain fatal; timeout/429/503 halve unsent concurrency; no retry or replacements.",
+    "independent_confirmation": false
+  }
+}

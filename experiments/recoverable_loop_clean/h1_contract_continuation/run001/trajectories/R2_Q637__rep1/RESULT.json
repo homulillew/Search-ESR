@@ -1,0 +1,62 @@
+{
+  "trajectory_id": "R2_Q637__rep1",
+  "cell_id": "R2_Q637",
+  "family": "R2",
+  "replicate": 1,
+  "status": "horizon_exhausted",
+  "error": null,
+  "outcomes": [
+    {
+      "slot": 1,
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "Gain",
+      "claim_delta": [
+        "C3"
+      ],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    },
+    {
+      "slot": 2,
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "Gain",
+      "claim_delta": [
+        "C4",
+        "C5"
+      ],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    },
+    {
+      "slot": 3,
+      "decision": "request_closure",
+      "closure": {
+        "status": "CONTINUE",
+        "missing": [
+          {
+            "requirement_id": "R1",
+            "summary": "C3/C4 identify two case reports with matching clinical details, but neither the claims nor the evidence snippets provide publication years or dates, so the reports cannot be confirmed as being from different years in the 2010s."
+          },
+          {
+            "requirement_id": "R3",
+            "summary": "C3 locates the first case in Pakistan and gives the half-year pain history, but no evidence establishes that Pakistan was the largest country of its dominant religion in the world at the time of its establishment."
+          }
+        ]
+      },
+      "feedback": "NoGain",
+      "claim_delta": [],
+      "acquisition_outcome": "not_attempted",
+      "claim_outcome": "not_attempted",
+      "hypothesis_outcome": "not_applicable",
+      "auxiliary_failures": []
+    }
+  ],
+  "elapsed_seconds": 128.75053834542632,
+  "completed_utc": "2026-09-27T21:12:57.953890+00:00"
+}

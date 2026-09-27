@@ -1,0 +1,69 @@
+{
+  "H1_interface_gate": "PASS_WITH_RECORDED_NON_H_MODEL_OUTPUT_FAILURE",
+  "new_authoritative_corruption": false,
+  "evidence": {
+    "trajectories": 12,
+    "horizon_completed": 11,
+    "H_calls": 22,
+    "H_invalid_namespace": 0,
+    "H_invalid_nominations": 0,
+    "H_skipped": 5,
+    "H_failures": 0,
+    "live_H_failure_continuation_opportunities": 0,
+    "live_H_failure_isolation_rate": null,
+    "new_C": 14,
+    "supported_new_C": 14,
+    "gap_useful_C": 12,
+    "false_C": 0,
+    "false_READY": 0,
+    "READY": 0,
+    "accepted_CONTINUE": 6,
+    "closure_contract_failures": 1,
+    "R1_forced_NoGain_next_Actor": {
+      "numerator": 4,
+      "denominator": 4
+    },
+    "R1_immediate_next_acquisition": 3,
+    "R1_immediate_closure_request": 1,
+    "R1_immediate_changed_tool_scope": 2,
+    "R1_immediate_changed_fixture_search": 1,
+    "R1_new_supported_C_by_horizon": {
+      "trajectories": 1,
+      "denominator": 4
+    },
+    "R3_CONTINUE_then_acquisition": {
+      "numerator": 3,
+      "valid_CONTINUE_denominator": 3,
+      "all_forced_denominator": 4
+    },
+    "R3_new_gap_useful_C_by_horizon": {
+      "trajectories": 1,
+      "denominator": 4
+    },
+    "R2_SPS_deprioritized_not_rejected": {
+      "numerator": 2,
+      "denominator": 2
+    },
+    "new_H_REJECT_operations": 0,
+    "inspection_compatibility": {
+      "numerator": 15,
+      "denominator": 16
+    },
+    "inspection_new_raw_evidence_yield_for_current_need": {
+      "numerator": 4,
+      "denominator": 16
+    },
+    "actor_premise_hardening": {
+      "numerator": 3,
+      "denominator": 23
+    },
+    "Gain_steps_without_new_C": 11,
+    "Gain_steps": 19,
+    "integrity_failures": 0,
+    "interpretation": "Result-informed six-cell diagnostic; no causal or independent recovery claim."
+  },
+  "closure_failure_diagnosis": "One model output echoed the JSON-schema oneOf wrapper. Correct schema remains unchanged; output rejected, no C/READY mutation, no retry. This is an isolated model contract error, not a repaired-H interface or authoritative integrity failure.",
+  "H2_allowed": true,
+  "H2_scope": "Independent-from-H-repair archived prefixes, frozen eligibility/review/count before calls; no replacements; no claim H semantic reliability has been established.",
+  "no_gate_requiring_perfect_model_accuracy": "Frozen H1 gate requires executable repaired interfaces and no authoritative corruption; it does not require zero retained model-output failures."
+}
