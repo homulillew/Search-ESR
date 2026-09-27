@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "phase": "PREPARED_FOR_E1_EXECUTION",
+  "commit_bound_preflight": {
+    "status": "PASS",
+    "head": "c35a8c03407ec2d478a5e0dca92bee720075efca",
+    "freeze_sha256": "4bc8033fe658e552417438741f5b412c78d490f196bcade0c87c38cb87dba098",
+    "planned": 108,
+    "network_calls": 0,
+    "source_files_verified": 125,
+    "historical_files_unchanged": 19111
+  },
+  "offline_verification": {
+    "status": "PASS",
+    "source_files_verified": 125,
+    "historical_files_unchanged": 19111,
+    "raw_responses_reparsed": 108,
+    "raw_independent_counts": {
+      "A0": {
+        "nodes": 322,
+        "semantic_errors": 24,
+        "binary_errors": 7,
+        "pred_closed": 51,
+        "true_closed": 44,
+        "exact3": 38,
+        "exact2": 47
+      },
+      "A1": {
+        "nodes": 264,
+        "semantic_errors": 16,
+        "binary_errors": 3,
+        "pred_closed": 39,
+        "true_closed": 36,
+        "exact3": 42,
+        "exact2": 51
+      }
+    },
+    "E0_metrics_reproduced": true,
+    "E1_exact_requests_rebuilt": 108,
+    "prompt_exact_from_task": true,
+    "selection_reference_byte_identical": true,
+    "symmetric_inputs_except_mask": true,
+    "S0_S1_different_mask_cases": [
+      "G18"
+    ],
+    "S1_uses_replicate": 1,
+    "no_new_paid_calls": true,
+    "new_authorization_required": true
+  },
+  "paid_calls": 0,
+  "freeze_sha256": "4bc8033fe658e552417438741f5b412c78d490f196bcade0c87c38cb87dba098",
+  "authorization_missing_by_design": true
+}
