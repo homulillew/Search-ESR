@@ -1,0 +1,21 @@
+{
+  "head": "68fc2f1393441b49fcc50b90e76cfad8a19b97f0",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are deciding whether the supplied Verified Claims establish a candidate\nsemantic condition that may be treated as solved.\n\nYou receive a Candidate Locator and a set of current Verified Claims.\nFor this standalone-fragment diagnostic, treat the Candidate Locator as the\ncondition to verify. No full Parent Requirement or Original Question is supplied.\n\nUse only the supplied Verified Claims. Do not use outside knowledge or hypotheses.\nMultiple Claims may jointly establish the condition; a single Claim does not\nneed to contain it all in one sentence.\n\nReturn SUBTRACTABLE only when the supplied Claims, taken together, establish\nthe condition stated in the Candidate Locator strongly enough to treat it as solved.\nOtherwise return NOT_SUBTRACTABLE and briefly state the most important missing\nor unsupported content. Do not propose a search query.\n\nReturn JSON only:\n{\n  \"verdict\": \"SUBTRACTABLE\",\n  \"missing_or_unsupported\": null\n}\nor\n{\n  \"verdict\": \"NOT_SUBTRACTABLE\",\n  \"missing_or_unsupported\": \"...\"\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"candidate_locator\": \"The downloadable content in question made changes to the mechanics of the base game including religion and technology, and new mechanics for a specific playable European nation.\",\n  \"candidate_verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"The Rights of Man wiki page lists development diary 3 (2016-05-26) 'Technology Groups' on changes to technology groups and technological development, development diary 7 (2016-06-23) 'The Ottoman Sultanate' on the Ottomans getting unique flavor, and development diary 9 (2016-08-04) 'Coptic Holy Sites' on a new blessings and holy cities system for Coptics.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"statement\": \"The Rights of Man manual states that Rights of Man includes changes to governments and subjects, including new details for Revolutionary Republics and the Ottoman Empire.\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "3feaa6241abe1679345bda94e5295541dc00c8a2aa94e9f549a9091ef4c51800"
+}

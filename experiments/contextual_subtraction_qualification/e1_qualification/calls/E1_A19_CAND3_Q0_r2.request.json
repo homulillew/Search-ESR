@@ -1,0 +1,21 @@
+{
+  "head": "68fc2f1393441b49fcc50b90e76cfad8a19b97f0",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are deciding whether the supplied Verified Claims establish a candidate\nsemantic condition that may be treated as solved.\n\nYou receive a Candidate Locator and a set of current Verified Claims.\nFor this standalone-fragment diagnostic, treat the Candidate Locator as the\ncondition to verify. No full Parent Requirement or Original Question is supplied.\n\nUse only the supplied Verified Claims. Do not use outside knowledge or hypotheses.\nMultiple Claims may jointly establish the condition; a single Claim does not\nneed to contain it all in one sentence.\n\nReturn SUBTRACTABLE only when the supplied Claims, taken together, establish\nthe condition stated in the Candidate Locator strongly enough to treat it as solved.\nOtherwise return NOT_SUBTRACTABLE and briefly state the most important missing\nor unsupported content. Do not propose a search query.\n\nReturn JSON only:\n{\n  \"verdict\": \"SUBTRACTABLE\",\n  \"missing_or_unsupported\": null\n}\nor\n{\n  \"verdict\": \"NOT_SUBTRACTABLE\",\n  \"missing_or_unsupported\": \"...\"\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"candidate_locator\": \"a strategy video game\",\n  \"candidate_verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"Europa Universalis IV is a 2013 grand strategy video game; the Wikipedia article body states it was released on 25 August 2013 for Windows, OS X, and Linux, while the infobox lists 13 August 2013.\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "84a07ac01a238234ff75ea67f409e3968fa05bae9b65e7d31db2f476170634b9"
+}

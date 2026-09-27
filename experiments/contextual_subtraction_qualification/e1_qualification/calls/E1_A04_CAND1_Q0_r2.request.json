@@ -1,0 +1,21 @@
+{
+  "head": "68fc2f1393441b49fcc50b90e76cfad8a19b97f0",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are deciding whether the supplied Verified Claims establish a candidate\nsemantic condition that may be treated as solved.\n\nYou receive a Candidate Locator and a set of current Verified Claims.\nFor this standalone-fragment diagnostic, treat the Candidate Locator as the\ncondition to verify. No full Parent Requirement or Original Question is supplied.\n\nUse only the supplied Verified Claims. Do not use outside knowledge or hypotheses.\nMultiple Claims may jointly establish the condition; a single Claim does not\nneed to contain it all in one sentence.\n\nReturn SUBTRACTABLE only when the supplied Claims, taken together, establish\nthe condition stated in the Candidate Locator strongly enough to treat it as solved.\nOtherwise return NOT_SUBTRACTABLE and briefly state the most important missing\nor unsupported content. Do not propose a search query.\n\nReturn JSON only:\n{\n  \"verdict\": \"SUBTRACTABLE\",\n  \"missing_or_unsupported\": null\n}\nor\n{\n  \"verdict\": \"NOT_SUBTRACTABLE\",\n  \"missing_or_unsupported\": \"...\"\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"candidate_locator\": \"A specific person who is the founder of a company whose online video games division released a video game in a specific year between 2000 and 2010, both years inclusive, which, at least until 2019, was considered one of the top-earning games of all time, graduated from a university founded between 1930 and 1970, both years inclusive.\",\n  \"candidate_verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Kwon Hyuk-bin founded Smilegate in 2002; Smilegate is the maker of Crossfire, Lost Ark, and other games.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Kwon Hyuk-bin holds an electrical engineering degree from Sogang University.\"\n    }\n  ]\n}"
+      }
+    ]
+  },
+  "request_sha256": "01d057899d1fe02033285b02c196819d7ec6bb9817ad6a357ca907395207551b"
+}
