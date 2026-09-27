@@ -1,0 +1,26 @@
+{
+  "status": "AWAITING_FRESH_E1_AUTHORIZATION",
+  "E1": {
+    "parent_state_cells": 24,
+    "unique_qids": 9,
+    "arms": 2,
+    "replicates": 2,
+    "actual_requests": 96,
+    "message_characters": 339192,
+    "input_tokens_rough_range": [
+      67838,
+      113064
+    ],
+    "token_estimate_method": "English character heuristic only, excludes framing; provider tokenizer unknown; no preflight API call",
+    "completion_limit": "max_tokens omitted as requested; completion consumption not bounded by this estimate",
+    "paid_attempt_limit": 96
+  },
+  "E2": {
+    "conditional_request_maximum": 192,
+    "actual_requests_frozen": 0,
+    "authorization": "separate after E1 scored/sealed and entry gate passed"
+  },
+  "monetary_estimate": null,
+  "monetary_note": "No current provider price was assumed. This is a call-count estimate, not a spending cap.",
+  "calls_made": 0
+}

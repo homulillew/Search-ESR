@@ -1,0 +1,41 @@
+{
+  "E1_S1": {
+    "support_precision_min": 0.95,
+    "support_recall_min": 0.9,
+    "hard_negative_false_promotion_max": 0.05,
+    "support_scope_correctness_min": 0.9,
+    "relation_argument_corruption_max": 0.03,
+    "candidate_branch_mixing_max": 0.02,
+    "false_full_support_hazard_count_max": 0,
+    "schema_validity_min": 0.95
+  },
+  "comparative": {
+    "metric": "hard_negative_false_promotion",
+    "near_zero_both_max": 0.05,
+    "near_zero_rule": "S1 <= S0",
+    "otherwise_rule": "S1 < S0",
+    "S0_required_to_pass": false
+  },
+  "E2_entry": {
+    "required": "All E1_S1 thresholds except support_recall_min; sealed complete review and deterministic replay; fresh separate authorization. Comparative result does not override absolute safety.",
+    "recall_only_failure": "Diagnostic E2 allowed under TASK24 Case C and TASK25, not declared S1 PASS.",
+    "unsafe_failure": "STOP; no E2 calls."
+  },
+  "E2_D3": {
+    "strict_min": 0.9,
+    "false_subtraction_max": 0.03,
+    "false_full_support_count_max": 0
+  },
+  "E2_D2": {
+    "strict_min": 0.85,
+    "D3_minus_D2_strict_max": 0.1,
+    "false_subtraction_max": 0.05,
+    "false_full_support_count_max": 0,
+    "supported_content_leakage_max": 0.05,
+    "state_discrimination_min": 0.8,
+    "schema_validity_min": 0.95
+  },
+  "empty_denominator": "null; cannot satisfy a gate",
+  "ambiguity": "all cells primary, nonambiguous sensitivity cannot replace primary gate",
+  "stop_after_E2": true
+}

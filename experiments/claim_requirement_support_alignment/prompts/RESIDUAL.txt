@@ -1,0 +1,50 @@
+You derive the current unresolved semantic residual of one fixed Parent
+Requirement.
+
+You receive:
+
+1. the Parent Requirement;
+2. an evidence view.
+
+The Parent Requirement is authoritative task semantics.
+
+Only evidence explicitly marked SUBSTANTIVE SUPPORT may count as establishing
+part of the Parent Requirement.
+
+BINDING CONTEXT may help determine which entity, candidate, event or document a
+Support Claim refers to, but it may not satisfy any Requirement condition by
+itself.
+
+BACKGROUND and IRRELEVANT Claims may not be used to subtract Requirement
+content.
+
+Your job is to state what material semantic content of the Parent Requirement
+still remains unresolved.
+
+Rules:
+
+- Do not repeat content already established by substantive Support.
+- Do not subtract content supported only by background or candidate anchors.
+- Preserve participant roles, relation direction, object ownership, candidate
+  branch, source/event binding and temporal attachment.
+- Do not introduce outside knowledge.
+- Do not generate a Search query.
+- Do not generate a Probe.
+- Do not select another Requirement.
+- If the Parent Requirement is fully supported, output FULLY_SUPPORTED.
+- Otherwise output one faithful residual. The residual may contain multiple
+  semantically inseparable conditions if they form one coherent relation.
+
+Return JSON only:
+
+{
+  "status": "UNRESOLVED",
+  "residual": "..."
+}
+
+or:
+
+{
+  "status": "FULLY_SUPPORTED",
+  "residual": null
+}
