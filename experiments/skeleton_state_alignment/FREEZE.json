@@ -1,0 +1,214 @@
+{
+  "experiment": "skeleton-state-alignment",
+  "source_head": "7fdb048e856545facd4acfb590e8cf28c46f1013",
+  "preparation_head": "2f3bdbddefdeae5bf55424a917a706a0bd7de412",
+  "oracle_commit": "81caa52c6895aa59a9133c2e98189dea39a4d68a",
+  "gold_mask_commit": "4b8e9d89f56e61ea62b1e2b269e2c9a67d9ef805",
+  "files": {
+    "experiments/skeleton_state_alignment/CONFIG.json": "2ff4de16725a54711572224c1c6399dc5ea7c6ab0bce3a7f2d7147736cc57bdb",
+    "experiments/skeleton_state_alignment/GATES.json": "abe48ce59f4fea612aba9921287ed54b443a7596ad8998c9b086cb6805244f21",
+    "experiments/skeleton_state_alignment/HYPOTHESES.md": "cbcc5dad347b73d1bebb9b231517e558ed44fe3e4d2db4f8f74aea8e95065125",
+    "experiments/skeleton_state_alignment/PRE_EXECUTION_AUDIT.md": "1cc600c51d00c78f603e9b4dcb82cb5bc1d7860ec1d90b2b5f21adddb55daf16",
+    "experiments/skeleton_state_alignment/PROTOCOL.md": "db29590ebf4b16690d00009f3c21d267e2213dec4a87af5e9375f32dafb28fc2",
+    "experiments/skeleton_state_alignment/README.md": "4e9b2d4e0ff1769935e361ba8956620f94f2324f0750199df177eb68d19637d6",
+    "experiments/skeleton_state_alignment/REVIEW_RUBRIC.md": "400a74eb847c6e2338fc22efd48cfd82d1e5bcd6f1d0a2bcf2f5305495a889a1",
+    "experiments/skeleton_state_alignment/SCHEMAS.json": "e780601069fc6a5f2f6a725da156be668f334cb31a460b61f1a00eb95465caa3",
+    "experiments/skeleton_state_alignment/TASK.md": "9de54cb527ed1ec5633508f1b5e79d06fe2f639639d8b8393f3addcc5161e645",
+    "experiments/skeleton_state_alignment/analysis/CALL_ESTIMATE.json": "8d82cd3c0cd5d7308bc575ccc7c8b4fbcce316d901b45dae8b9eee85a07c7672",
+    "experiments/skeleton_state_alignment/analysis/HISTORICAL_HASHES.json": "e615e09fbcd1e23662341ea492e8df311e24bd20349d030ea0dc0f75954ce42d",
+    "experiments/skeleton_state_alignment/analysis/MONOTONIC_PAIRS.json": "3768c3b2a404e850a8059eea2d4088217df6b1d273543ccd54e9c9a91ae17914",
+    "experiments/skeleton_state_alignment/analysis/OFFLINE_AUDIT.json": "2c352fa69dca5976a326fa8d5ae83a64bf5aecd9381bffeca5bba6b6828df231",
+    "experiments/skeleton_state_alignment/analysis/OFFLINE_TESTS.json": "460b13f57bbee75a7018f0ae8fc4a5b3e6dc718832370b7628b1360384eb538f",
+    "experiments/skeleton_state_alignment/analysis/OFFLINE_TESTS_INITIAL_28.json": "bbfed2aee150475d812284a174a56379e5c54a72aa78074502a2805b517b45fa",
+    "experiments/skeleton_state_alignment/analysis/PREPARED_CONCLUSION.md": "33de051bb3b2bbafd3cf4b36bb39e9bc73fccd9b85fc60feb863f94dea4eb2c5",
+    "experiments/skeleton_state_alignment/analysis/PROVIDER_PREFLIGHT.json": "5bfe2f8c35612c32858b9eb7e23c8b03ec279dc110fc07bbb431c6490378dd35",
+    "experiments/skeleton_state_alignment/analysis/SENSITIVITY.json": "f73d0652a49ac664db46e034241dd900bd6b1219728157742be65fb912bd6f6d",
+    "experiments/skeleton_state_alignment/analyze.py": "f4c6b3c0913cb68279f4199a40d2de9c20e30ea96e35aa16612162aab2a754d5",
+    "experiments/skeleton_state_alignment/common.py": "b48282b2901b523ed19eb84712682e28d146013720b7943439d994738286de18",
+    "experiments/skeleton_state_alignment/contracts.py": "945ae9a71984fa0fda6c6f17f898ea31fbb1ed7e73313772f335f82a512383b8",
+    "experiments/skeleton_state_alignment/e0_addressability/ADDRESSABILITY.json": "6e6864f1d944cbdb9f137fe3acfc92967297a164954df1bd6ef7485a286f2608",
+    "experiments/skeleton_state_alignment/e0_addressability/METRICS.json": "3593a9b1257b799c078d52c46ce5727d174f0efbb868bc6e7b8ef1cd41ac1b1c",
+    "experiments/skeleton_state_alignment/e0_addressability/ORACLE_CONSTRUCTION.md": "2ef909b0f8d914a195f6afa689d7d3755727ee3fd9f1c9d9639a245dee4f66a5",
+    "experiments/skeleton_state_alignment/e0_addressability/ORACLE_RUNTIME_SKELETON.json": "ae0e1833099277956ac9208cdf74e38a2847b849096207bca62f8f29b57d64bc",
+    "experiments/skeleton_state_alignment/e0_addressability/REPORT.md": "a43127f6312e13bd13b886da22907b60b4bc401867568b10c4e54f7af3cad72f",
+    "experiments/skeleton_state_alignment/e0_addressability/RUNTIME_SKELETON_D1.json": "7342d285880d5c1da31bdb7d6c5c41ab7f64ee5d6b8c73ab7ea46a9f6479a15d",
+    "experiments/skeleton_state_alignment/e0_addressability/RUNTIME_SKELETON_D2.json": "ebc4307e32e721b68a9dafc07e712ba65713d22d72f2a5d86c79c0d0dad17b88",
+    "experiments/skeleton_state_alignment/e0_addressability/SKELETON_FREEZE.json": "f483b59e60aebe06d2370f3da29f07881bb45668de34ed72f0f14d91ca0ecc5b",
+    "experiments/skeleton_state_alignment/e0_reference/QUESTIONS.json": "d43b534f2e0e53ef1672de113d69f258a05d2f7e50007246aa6ac57bf5988905",
+    "experiments/skeleton_state_alignment/e0_reference/STATES.json": "ac037ca778a93546761faf7d50992a393631d49ca2f003d421aa2d33aaaa33c7",
+    "experiments/skeleton_state_alignment/e0_reference/STATE_SOURCE.json": "34ad07c20d25b989511dd46fbf96ed1c2660699e739502ec09aca96bda251a06",
+    "experiments/skeleton_state_alignment/e1_alignment/GOLD_CONSTRUCTION.md": "2d6a9007f10a65b29d47229ee2c8003ddac0266983a9450cd6673474858aa5b6",
+    "experiments/skeleton_state_alignment/e1_alignment/GOLD_MASKS.json": "5519de8d75d90304ce2476b9e623eda77e7d6c763bfd306c7ac79c7ee93b1729",
+    "experiments/skeleton_state_alignment/e1_alignment/SCHEDULE.json": "226916fd5f608cc64100dd9c93559ec6de93c8a0244622e4401ab70ed9d4411b",
+    "experiments/skeleton_state_alignment/e2_selection/REFERENCE_NOTES.md": "4341bdcdfdf7c60abf22d9e8d6e558d5d698350038c62cd8172b7ca2ed7a94b1",
+    "experiments/skeleton_state_alignment/e2_selection/SCHEDULE.json": "e0e008348c724d409141bfd4ca08c610dc3b70f0d339459be1681e04015efb6c",
+    "experiments/skeleton_state_alignment/e2_selection/SELECTION_REFERENCE.json": "7960d9a2cfb048ade5942c67c27565f4bc8a261b7456efd54b33797b92f571be",
+    "experiments/skeleton_state_alignment/e2_selection/STATUS.json": "d72f03ad036cd1c3148e04d0d4cdb03e91aac564ad1afe3dd27f56ecd0bf1c02",
+    "experiments/skeleton_state_alignment/gold_masks.py": "fa322e70df724d270a6f141a2fb1f4ae21f89bb4f3898989775a6f2be12f0498",
+    "experiments/skeleton_state_alignment/inputs.py": "49ad18bf6f327d405fc98841c21597a47e9162537aed6b02e7a2db5dacefe8fd",
+    "experiments/skeleton_state_alignment/offline_audit.py": "3bbac24db86fe08d289c25ec1ab539a2f37adfa30f62b1e3dadd1376fd50042e",
+    "experiments/skeleton_state_alignment/prepare.py": "5eef8c105cbb501671dd39559c4e195fa91982cc4a28c91b49700839134be9e0",
+    "experiments/skeleton_state_alignment/prepare_controls.py": "a556b2a9edcf8627187edfe3351970faa346d906fb19644d3506e9138f39eafc",
+    "experiments/skeleton_state_alignment/prepare_metadata.py": "49a0133949b21b9f34d27bdd5b211e81bf9067631023e7ac35cbb8b57d1d81ff",
+    "experiments/skeleton_state_alignment/prepare_skeletons.py": "1de0ef69c244a5457140891a3eb9bd32352177c6239b15bfbebf003a45301e76",
+    "experiments/skeleton_state_alignment/prepare_states.py": "624695d83a85e38d8d65bf17c0c78da9eaf9df672f4e11ed772e9ad8a8b74fd9",
+    "experiments/skeleton_state_alignment/prompts/e1_alignment.txt": "96666110e4ca7a2e7a4f893749506477ec355c96f6c6bd18a4ae09c19ba9999d",
+    "experiments/skeleton_state_alignment/prompts/e2_selection.txt": "bfabfd4a1663aee401224a020336d6b830567999fdcad3f273d720060f606878",
+    "experiments/skeleton_state_alignment/run.py": "c4a70ba2b7de83a30c8965dec968dd41cd5970adb206dab4dc456f78ecfe8ad7",
+    "experiments/skeleton_state_alignment/score.py": "57b28415fcbd2883798325c3099f74ccc79d19f4b4d37d8ab2a60438f2f1a7d8",
+    "experiments/skeleton_state_alignment/test_contracts.py": "5e9f68d56f0743087f781f285e39b4f484e07101c8f9ff4bb0e011c559106cd1"
+  },
+  "provider": {
+    "provider": "deepseek",
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "max_retries": 0,
+    "max_workers": 8,
+    "replicates": 2,
+    "max_tokens_policy": "omit",
+    "response_format": {
+      "type": "json_object"
+    },
+    "timeout_seconds": 240,
+    "timeout_semantics": "HTTP inactivity per connect/read/write/pool; not total wall timeout",
+    "halt_http_statuses": [
+      400,
+      401,
+      402,
+      403,
+      404,
+      422
+    ],
+    "credential_source": "DEEPSEEK_API_KEY environment or .env.deepseek; never archived",
+    "tool_calls": 0,
+    "horizon": 1,
+    "planned_calls": 108,
+    "maximum_total_calls_if_E1_pass": 216,
+    "planned_E1": 108,
+    "conditional_E2": 108,
+    "authorization_policy": "TASK section70: new experiment budget requires explicitly applicable user authorization; no inherited authorization.",
+    "paid_authorization_artifact": "AUTHORIZATION.json",
+    "selection_mask_projection": "requirement_id/status only, identical for Gold and predicted masks"
+  },
+  "gates": {
+    "A0": {
+      "node_status_accuracy": [
+        ">=",
+        0.9
+      ],
+      "false_supported_rate": [
+        "<=",
+        0.05
+      ],
+      "residual_recall": [
+        ">=",
+        0.95
+      ],
+      "support_precision": [
+        ">=",
+        0.9
+      ],
+      "full_support_sufficiency": [
+        ">=",
+        0.9
+      ],
+      "exact_state_mask": [
+        ">=",
+        0.8
+      ],
+      "schema_validity": [
+        ">=",
+        0.95
+      ]
+    },
+    "A1": {
+      "node_status_accuracy": [
+        ">=",
+        0.85
+      ],
+      "false_supported_rate": [
+        "<=",
+        0.075
+      ],
+      "residual_recall": [
+        ">=",
+        0.9
+      ],
+      "support_precision": [
+        ">=",
+        0.85
+      ],
+      "exact_state_mask": [
+        ">=",
+        0.7
+      ],
+      "schema_validity": [
+        ">=",
+        0.95
+      ],
+      "alignment_loss": [
+        "<=",
+        0.1
+      ],
+      "node_accuracy_loss": [
+        "<=",
+        0.1
+      ]
+    },
+    "S0": {
+      "valid_selection": [
+        ">=",
+        0.85
+      ],
+      "selected_supported": [
+        "<=",
+        0.05
+      ],
+      "downstream_selection": [
+        "<=",
+        0.1
+      ],
+      "false_stop": [
+        "<=",
+        0.05
+      ],
+      "schema_validity": [
+        ">=",
+        0.95
+      ]
+    },
+    "S1": {
+      "valid_selection": [
+        ">=",
+        0.8
+      ],
+      "selected_supported": [
+        "<=",
+        0.075
+      ],
+      "downstream_selection": [
+        "<=",
+        0.1
+      ],
+      "false_stop": [
+        "<=",
+        0.075
+      ],
+      "schema_validity": [
+        ">=",
+        0.95
+      ],
+      "selection_loss": [
+        "<=",
+        0.1
+      ]
+    }
+  },
+  "planned_E1": 108,
+  "conditional_E2": 108,
+  "stage1_inputs": "Actual108 payloads committed now",
+  "stage2_inputs": "Logical108 schedule and S0 payloads frozen now; actual S1 payloads require successful E1 and separate committed EXECUTION_FREEZE before E2 calls.",
+  "authorization": "Pending under TASK section70; preparation is not paid authorization."
+}
