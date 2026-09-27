@@ -38,3 +38,16 @@ python -m experiments.minimal_need_multiquery.score
 ```
 
 `score` requires a complete semantic review. It never upgrades parse success to strict validity or opens E2 from development results. Fresh confirmation and later stages require separate freezes; their status files state what remains unmeasured.
+
+---
+
+## Latest: authorized execution completed through the failed E1 gate
+
+The preparation status above is historical. **STOP_E1_NO_MORE_REVISIONS**:72 v1 calls +36 sole-revision calls;107 valid outputs and1 retained length failure. Revision B0 strict10/18 versus B3 strict2/18. Fresh confirmation and E2–E4 were not run. Cache weighted hit rate51.32%; zero retries or tool calls.
+
+- [Current execution conclusion](EXECUTION_CONCLUSION.md) and [combined accounting](analysis/EXECUTION_ACCOUNTING.json).
+- [V1 results](e1_need/development_run/REPORT.md), [revision results](e1_need/revision/run/REPORT.md), [sensitivity](e1_need/revision/run/SENSITIVITY.json).
+- [E2 status](e2_query/EXECUTION_STATUS.md), [E3 status](e3_closure/EXECUTION_STATUS.md), [E4 status](e4_loop/EXECUTION_STATUS.md).
+- [Design-only failure-driven next step](analysis/FAILURE_DRIVEN_NEXT_STEP.md); no additional calls are scheduled.
+
+Do not rerun execute/prepare/export/score commands against these completed append-only outputs. Read-only request/freeze audits remain available.

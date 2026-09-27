@@ -45,3 +45,29 @@ E1 已准备 **18 个自然状态 / 9 个 qid / 8 个 No-H，四臂共 72 次调
 ## 工程建议
 
 授权后先运行已冻结 E1 开发批次，做完整语义审阅并检查机制分离；满足条件才另行冻结新 qid 的确认实验。E2–E4 目前仅保留阶段协议，没有伪造输入、raw outputs 或成功指标。持久语义继续只有 Q + Verified Claims + provisional H。
+
+---
+
+# 授权后执行更新（当前结论）
+
+上述 PREPARED 部分保留授权前历史。本轮已执行108次真实API调用。E1 v1及唯一修订均未通过；修订同期B0为10/18，B3为2/18，按任务Gate停止。Fresh confirmation与E2–E4均未运行。缓存加权命中率51.32%，保留1个length failure且零重试。完整执行结论与证据见 [EXECUTION_CONCLUSION.md](EXECUTION_CONCLUSION.md)。
+
+## 执行后的十五项回答
+
+| # | 研究问题 | 当前回答 |
+|---:|---|---|
+|1|旧W有多少是合法multi-query？|**3/5**，来自2个qid；单人离线复审，保留歧义。|
+|2|Premise Closure定向减少P/A？|**没有**。v1 B1的P+A为5，B0为4；修订B3仍有多个明确的候选事件偷渡。|
+|3|Coherence定向减少真正W？|**没有证据支持**。v1 B0为0、B2为1；修订B3为6。地板效应阻止原预期效应的识别。|
+|4|组合策略在完全fresh QCH复制？|**未测**。开发门槛未过，没有采集或调用fresh样本。|
+|5|Need能否只用一个自然语言字段？|**输出接口可行，稳定语义可靠性未成立**。107/108输出符合原双键信封，唯一可变语义字段仍是need；这不等于strict有效。|
+|6|等预算多Query提高useful evidence？|**未测**，E2未运行。|
+|7|多Query增加漂移或重复？|**未测**，本轮没有生成或执行Query。|
+|8|需要Probe/NeedSpec/ResolutionCriterion？|**没有足够证据证明必要**；本轮失败发生在QCH→Need，尚未隔离Need→Action。|
+|9|需要persistent dependency graph？|**没有**。局部前提失败不足以支持持久图结构。|
+|10|Q+C+H能重新激活deferred约束？|**未测E3**。两个stale Need说明存在选择问题，但不能据此证明状态表达不足。|
+|11|强H仍造成premature closure？|**本轮未测closure**；固定research输出没有STOP。No-H修订也失败，不能把全部问题归因于H。|
+|12|Strict Closure在fresh near-closure工作？|**未测**。|
+|13|完全held-out最小闭环能运行？|**未测**，E4没有启动。|
+|14|失败发生在哪层？|**主要是QCH→Need选择/前提绑定/目标范围/未解决性**；另有1次provider length failure。没有本轮Retrieval/Writer/Closure归因证据。|
+|15|哪些额外结构被failure evidence要求？|**没有结构被证明为必需**。证据支持下一次诊断短暂premise extraction及小型临时分解的合理性；不支持persistent Frontier、Requirement Map或Dependency Graph。|
