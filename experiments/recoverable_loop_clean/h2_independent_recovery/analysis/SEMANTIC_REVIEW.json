@@ -1,0 +1,1721 @@
+{
+  "reviewer": "Codex single reviewer, unblinded, prefix-relative and source-relative, no gold/future-source adjudication; not an independent panel",
+  "actions": [
+    {
+      "trajectory_id": "R1_Q169__rep1",
+      "slot": 1,
+      "forced": true,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "SOPHIE musician died Athens Greece partner interview song reference"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Check the relation expressed by the last observed Search query: SOPHIE musician died Athens Greece partner interview song reference",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Forced repeat returns no new observation; an empty-basis song hypothesis alone creates Gain."
+    },
+    {
+      "trajectory_id": "R1_Q169__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 10,
+            "query": "Evita Manji interview SOPHIE immaterial direct reference after death song"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1",
+          "H2"
+        ],
+        "one_gap": "Locate and verify the partner interview stating that after SOPHIE's death she became a direct reference to a one-word adjective song, likely 'Immaterial'.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W11",
+        "W12",
+        "W13",
+        "W14",
+        "W15",
+        "W16",
+        "W17"
+      ],
+      "reason": "Search tests the partner/interview/song link. New song/album pages do not verify the interview; Immaterial being a song is insufficient for that relation."
+    },
+    {
+      "trajectory_id": "R1_Q169__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D7",
+            "query": "Evita Manji Immaterial direct reference interview"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H3"
+        ],
+        "one_gap": "Verify whether Sophie's partner Evita Manji gave an interview stating that after Sophie's death she became a direct reference to one of her songs, and identify the one-word adjective song title.",
+        "strategy": "VERIFY_RELATION"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W18"
+      ],
+      "reason": "Biography is a reasonable place to seek the partner interview, but W18 repeats the partner/bio already in prefix W7 and never supplies that interview."
+    },
+    {
+      "trajectory_id": "R1_Q261__rep1",
+      "slot": 1,
+      "forced": true,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "Harran University Journal of Baltic Science Education emotions 13.53"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Check the relation expressed by the last observed Search query: Harran University Journal of Baltic Science Education emotions 13.53",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Frozen repeat returns no new observation; H KEEP leaves NoGain."
+    },
+    {
+      "trajectory_id": "R1_Q261__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D8",
+            "query": "publications list research articles co-authors"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Identify the specific 2012–2022 two-author research paper associated with Mehmet Diyaddin Yaşar (Harran University) that reports an emotion at 13.53% across six tables.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W11"
+      ],
+      "reason": "Official publication list is reasonable, but localization remains on 2023/2024 entries rather than the asked 2012–2022 emotion paper."
+    },
+    {
+      "trajectory_id": "R1_Q261__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "around",
+            "window_ref": "W10"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Check whether the dergipark article file D10 is the target paper by inspecting its content for six tables and an emotion value of 13.53%, and identify its title and authors.",
+        "strategy": "VERIFY_ATTRIBUTE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W12"
+      ],
+      "reason": "Appropriate PDF; expanded W12 repeats the title/authors already visible in initial W10. New useful C, but no new support for six tables or 13.53 and no new title information."
+    },
+    {
+      "trajectory_id": "R1_Q264__rep1",
+      "slot": 1,
+      "forced": true,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "practical method to detect cosmic neutrino background 2023"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Check the relation expressed by the last observed Search query: practical method to detect cosmic neutrino background 2023",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Frozen repeat returns no new observation; H KEEP leaves NoGain."
+    },
+    {
+      "trajectory_id": "R1_Q264__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D4",
+            "query": "authors second author"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Identify the authors of arXiv:2311.01667, especially its second author, to test H1 and continue the author chain toward article 2 and article 1.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W6"
+      ],
+      "reason": "Correct candidate PDF, but generic author query localizes to detector simulations instead of the author list."
+    },
+    {
+      "trajectory_id": "R1_Q264__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "around",
+            "window_ref": "W6"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Identify the author list of arXiv:2311.01667, especially its second author, to test whether it can serve as article 3 and continue the author chain.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W7"
+      ],
+      "reason": "Open around known detector-simulation text remains far from the author list; source-compatible, unproductive local navigation."
+    },
+    {
+      "trajectory_id": "R1_Q601__rep1",
+      "slot": 1,
+      "forced": true,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "footballer \"chartered surveyor\" \"number 27\" Premier League academy"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Check the relation expressed by the last observed Search query: footballer \"chartered surveyor\" \"number 27\" Premier League academy",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Frozen repeat returns no new observation; empty H mechanically skipped."
+    },
+    {
+      "trajectory_id": "R1_Q601__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D1",
+            "query": "surveyor"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Identify the former Blackpool player in D1 who became a chartered surveyor and check whether he matches the 1980s birth, number 27, Premier League academy, and <48 appearances criteria.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": true,
+      "one_gap_usable": false,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Career-retrospective source is plausible; prefix D1 has no surveyor statement, yet OneGap presupposes a former Blackpool surveyor. Find returns no windows."
+    },
+    {
+      "trajectory_id": "R1_Q601__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 10,
+            "query": "\"chartered surveyor\" footballer \"set up his own business\" partnership"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [],
+        "one_gap": "Identify a footballer who was born in the 1980s, came through a Premier League youth academy, wore number 27, made fewer than 48 appearances for any one club, retired and became a chartered surveyor, and set up a business partnership in the early 2010s.",
+        "strategy": "IDENTIFY_CANDIDATE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W10",
+        "W11",
+        "W12",
+        "W13",
+        "W14",
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "reason": "Changes from unsuccessful local inspection to business-partnership discovery; W7 supplies a new former-footballer/October2012 partnership relation."
+    },
+    {
+      "trajectory_id": "R2_Q177__rep1",
+      "slot": 1,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D1",
+            "query": "Rangers founded year country fifteen trophies"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Need the club's founding year and country (and confirmation that the 2023 article ties the fifteen-trophy claim and 13 signings to that same club) rather than only the already-verified 2022/23 signing fact.",
+        "strategy": "VERIFY_ATTRIBUTE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Relevant 13-signing article is reasonable to inspect, but Find returns complete old W1 without founding/fifteen-trophy binding."
+    },
+    {
+      "trajectory_id": "R2_Q177__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "around",
+            "window_ref": "W1"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Need to verify within the 2023 article whether Rangers is stated to have won fifteen trophies and whether it gives the club's founding year and country, rather than relying only on the confirmed 13-signing fact.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": true,
+      "one_gap_usable": false,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [],
+      "reason": "Already-complete W1 is reopened with no new content. OneGap calls it the 2023 article although visible header is 2025 and only season2022/23 was verified."
+    },
+    {
+      "trajectory_id": "R2_Q177__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "Rangers International F.C. Enugu founded 1970 Nigeria fifteen trophies"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Need the founding year and country of the club, and to verify whether the 2023 article's fifteen-trophy claim matches Rangers rather than only the confirmed 13-signing/7-title facts.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W2",
+        "W3",
+        "W4",
+        "W5"
+      ],
+      "reason": "Search changes access and yields a local founding-year/country statement. League-title totals still do not establish fifteen trophies or the target season/capital."
+    },
+    {
+      "trajectory_id": "R2_Q186__rep1",
+      "slot": 1,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "Albino Frog Software company formerly known as Galacta The Battle for Saturn"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Whether the amphibian-named company behind Galacta (Albino Frog Software) was previously known by a different name in the early 1990s, as the question's 'different name' condition may require.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W2",
+        "W3",
+        "W4",
+        "W5"
+      ],
+      "reason": "Search directly resolves the company former-name relation and supplies developed-by/no-multiplayer evidence for the same candidate."
+    },
+    {
+      "trajectory_id": "R3_Q435__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "around",
+            "window_ref": "W2"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "The exact date/month of the Forbes Africa feature in the 2010s and the number of albums Mtukudzi had by that feature are not established.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W3"
+      ],
+      "reason": "Retrospective is a plausible route to the quoted interview. New context does not time-bind 67 to2016; the key sentence was already in W2. The committed C5 overinterprets it."
+    },
+    {
+      "trajectory_id": "R3_Q435__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "Forbes Africa May 2016 Oliver Mtukudzi interview 67 albums"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H2"
+        ],
+        "one_gap": "Whether the Forbes Africa feature involving Oliver Mtukudzi appeared in May during the 2010s, and what album count was reported by that feature.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W4",
+        "W5",
+        "W6",
+        "W7"
+      ],
+      "reason": "Search obtains new W7 with an explicitly attributed May2017 Forbes listing and65-album statement, a useful alternative temporal lead. No final global identity proof."
+    },
+    {
+      "trajectory_id": "R3_Q517__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D1",
+            "query": "The Constant Gardener role policeman"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "The observed biography does not yet establish which role Peter King played in the 2005 film The Constant Gardener (specifically whether it was a policeman), nor the director's Iracema inspiration; this role is required to confirm the identity link.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W2"
+      ],
+      "reason": "Biography filmography now explicitly supplies Policeman1 for the2005 film, filling a named Closure gap."
+    },
+    {
+      "trajectory_id": "R3_Q517__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "Peter Nzioki The Fifth Estate 2013 Bill Condon Kinsey"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H2"
+        ],
+        "one_gap": "Whether Peter Nzioki appeared in the 2013 dramatic thriller The Fifth Estate and whether that film was directed by Bill Condon, best known for directing/writing Kinsey.",
+        "strategy": "VERIFY_RELATION"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W3",
+        "W4",
+        "W5",
+        "W6"
+      ],
+      "reason": "New windows support Condon directing and writing Kinsey, one component of the current Need. They do not establish his Fifth Estate connection."
+    },
+    {
+      "trajectory_id": "R3_Q633__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 5,
+            "query": "Wilhelmina Queen of the Netherlands biography academic publisher February 2010 300 pages"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "No evidence yet identifies a book about a non-English queen regnant matching the >300-page, academic-publisher, February post-2010 publication details, nor the author's PhD-since-2000-in-North-America and pre-2019 co-authored e-course book credentials.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "reason": "Query remains Wilhelmina-focused and returns an unrelated2009/200-page Maria book plus general history/publisher results. No matching book binding."
+    },
+    {
+      "trajectory_id": "R3_Q633__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "k": 10,
+            "query": "book biography queen regnant multilingual only female monarch academic publisher February 300 pages"
+          },
+          "tool": "search"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1",
+          "H2"
+        ],
+        "one_gap": "The specific book (about a non-English, multilingual queen regnant who was the only such ruler in her era/home country) matching >300 pages, an academic publisher, and February post-2010 publication—plus its author's PhD-since-2000-in-North-America and pre-2019 co-authored e-course book credentials—remains unidentified, so the author's name cannot be grounded.",
+        "strategy": "LOCATE_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": null,
+      "new_useful_raw_evidence_for_current_need": true,
+      "new_raw_refs": [
+        "W10",
+        "W11",
+        "W12",
+        "W13"
+      ],
+      "reason": "Broadens away from Wilhelmina to defining attributes; new publisher window gives Nwando Achebe/book/February2011/multilingual female king facts."
+    },
+    {
+      "trajectory_id": "R3_Q673__rep1",
+      "slot": 2,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "doc_ref": "D9",
+            "query": "Arinimaal birth year date husband poet beauty-named poetess"
+          },
+          "tool": "find"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Whether Arinimaal was born between 1720 and 1764, lived centuries after a renowned poetess named for her immense beauty, and had a husband who was also a poet.",
+        "strategy": "VERIFY_ATTRIBUTE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W11"
+      ],
+      "reason": "Appropriate biography/critical article; Find localizes to disputed poem attribution rather than birth/husband/beauty-name relations."
+    },
+    {
+      "trajectory_id": "R3_Q673__rep1",
+      "slot": 3,
+      "forced": false,
+      "decision": {
+        "action": {
+          "arguments": {
+            "direction": "around",
+            "window_ref": "W11"
+          },
+          "tool": "open"
+        },
+        "decision": "acquire",
+        "focus_requirement_id": "R1",
+        "hypothesis_ids_under_test": [
+          "H1"
+        ],
+        "one_gap": "Whether Arinimaal was born between 1720 and 1764 and had a husband who was also a poet, and whether she lived centuries after a renowned poetess known by a name derived from her immense beauty.",
+        "strategy": "LOCALIZE_IN_SOURCE"
+      },
+      "action_valid": true,
+      "execution_success": true,
+      "premise_hardening": false,
+      "one_gap_usable": true,
+      "source_compatible": true,
+      "new_useful_raw_evidence_for_current_need": false,
+      "new_raw_refs": [
+        "W12"
+      ],
+      "reason": "Expanded window remains on attribution debate. New C repeats Kaul material already in prefix W9; it does not resolve the stated biographical conditions."
+    }
+  ],
+  "claims": [
+    {
+      "trajectory_id": "R1_Q261__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C2",
+        "evidence_refs": [
+          "W12"
+        ],
+        "statement": "The D10 article has the title \"Examination of Prospective Teachers' Creative Comparisons for the Concept of 'Science Education'\" and lists its authors as Zeynel Abidin Yılmaz and Mehmet Diyaddin Yaşar.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": false,
+      "reason": "W12 gives exact title and two authors, already visible in prefix W10. Useful new C extracted from previously available semantic evidence.",
+      "evidence_text_sha256": [
+        "d25be7c7141830a3e52b12338fa6cfa51d7832bdb7a90b721515f9df02ba4e36"
+      ]
+    },
+    {
+      "trajectory_id": "R1_Q601__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W7"
+        ],
+        "statement": "Alexis Nicolas, a former professional footballer with Chelsea FC and Brighton & Hove Albion, started Springer Nicolas with Ryan in October 2012.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": true,
+      "reason": "W7 explicitly states professional Chelsea/Brighton career and starting Springer Nicolas with Ryan in October2012; no academy inference in C.",
+      "evidence_text_sha256": [
+        "03e16658e4706642b1b0a9f7084b6d1dddfcc594a2a05f6779d19a3d75c0ca1c"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q177__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C2",
+        "evidence_refs": [
+          "W1"
+        ],
+        "statement": "Rangers are described as seven-time NPFL champions.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": false,
+      "uses_new_raw_window": false,
+      "new_semantic_support_vs_prefix": false,
+      "reason": "Old W1 says seven-time NPFL champions; this neither verifies fifteen total trophies nor founding year/country.",
+      "evidence_text_sha256": [
+        "d613dc12908da35924fa596d511adae447db521a8c33d35d98937c938e83cc1c"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q177__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W2"
+        ],
+        "statement": "Rangers International Football Club is a Nigerian professional association football team founded in 1970.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": true,
+      "reason": "W2 explicitly gives Nigerian club founded1970. Local fact; target identity unproven.",
+      "evidence_text_sha256": [
+        "9ea2e410955b8dbf8624005f8f1f5372fec7d915b0f04924ea1cd29b0948dcb9"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q177__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C4",
+        "evidence_refs": [
+          "W5"
+        ],
+        "statement": "Rangers International (Enugu) has won 8 Nigeria Premier Football League championships, with title years 1974, 1975, 1977, 1981, 1982, 1984, 2016, and 2023–24.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": false,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": true,
+      "reason": "W5 table supports eight league titles and listed years, including2023–24. Broader historical success clue is helped, but current fifteentrophies/founding gap is not resolved by a differently scoped total.",
+      "evidence_text_sha256": [
+        "93f8469761d183a62f18b011493e940fda4f52026ccec09e376d49962f5f2e62"
+      ]
+    },
+    {
+      "trajectory_id": "R2_Q186__rep1",
+      "slot": 1,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W2",
+          "W3"
+        ],
+        "statement": "Albino Frog Software, Inc. was formerly Night Sky, with Night Sky used from 1992 to 1993-10; after using the Night Sky name, the company was officially established in Florida, USA in October 1993.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": true,
+      "reason": "W2/W3 explicitly support NightSky former name,1992–October1993 period, and officialFloridaOctober1993 establishment.",
+      "evidence_text_sha256": [
+        "5d693dabf6353344984c49e5d631ae0bc5b3f3f50193fcef40f8a8b6fa0d518a",
+        "b12cf8e033ef925ca591df482bdb69552e3f8711f05e19b2c7e1d4a2f8278db7"
+      ]
+    },
+    {
+      "trajectory_id": "R3_Q435__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C5",
+        "evidence_refs": [
+          "W3"
+        ],
+        "statement": "Oliver Mtukudzi had 67 albums by the time of his Forbes Africa interview in 2016.",
+        "version": 1
+      },
+      "source_supported": false,
+      "false_C": true,
+      "false_evidence_promotion": true,
+      "gap_useful": false,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": false,
+      "reason": "Temporal binding unsupported: retrospective67-album narration adjoins a2016 quotation, but does not establish the count at that interview. W3 adds no binding beyond old W2. Frozen seed review and earlier Closure identified this same gap; not a gold-answer judgment.",
+      "evidence_text_sha256": [
+        "d8edc1f64fa6c054181bc4e79ed9fd31b7092f91319f8fdb5931fd2d20a1ff4f"
+      ]
+    },
+    {
+      "trajectory_id": "R3_Q435__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C6",
+        "evidence_refs": [
+          "W7"
+        ],
+        "statement": "A 2017-06-11 article states that Forbes listed Oliver Mtukudzi as one of Africa's top richest musicians in its May 2017 release, and that he had produced 65 albums.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": true,
+      "reason": "W7 datedJune11,2017 separately reports May2017 Forbes listing and65albums. C retains attribution and does not equate June count with a verified final May feature answer.",
+      "evidence_text_sha256": [
+        "1b13cbeb4fd3bc5ef09b0afdbbc0aee83e099fd1ffa24a449b6b3d4ef0fdcf20"
+      ]
+    },
+    {
+      "trajectory_id": "R3_Q517__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C4",
+        "evidence_refs": [
+          "W2"
+        ],
+        "statement": "In the filmography for Peter Nzioki, the 2005 film The Constant Gardener is listed with the role \"Policeman 1.\"",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": true,
+      "reason": "W2 filmography explicitly assigns Policeman1 to PeterNzioki in2005ConstantGardener.",
+      "evidence_text_sha256": [
+        "8eed30fb65493977acafaaf2b2979bd5079385913a69dc07d0f7dfdcae33dd07"
+      ]
+    },
+    {
+      "trajectory_id": "R3_Q633__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W12"
+        ],
+        "statement": "Nwando Achebe authored The Female King of Colonial Nigeria, which was published in February 2011.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": true,
+      "reason": "Observed publisher metadata title/author plus PublishedFebruary2011 support the statement.",
+      "evidence_text_sha256": [
+        "72db47436f73e6967d01ffd4103f2afbd567760056408858c01523f8a5569938"
+      ]
+    },
+    {
+      "trajectory_id": "R3_Q633__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C4",
+        "evidence_refs": [
+          "W12"
+        ],
+        "statement": "The Female King of Colonial Nigeria concerns Ahebi Ugbabe, an Igbo woman who became king in colonial Nigeria; she was exiled from Igboland, traveled widely, learned to speak many languages, and became a close companion of Nigerian Igala kings and British officers who supported her claim to the offices of headman, warrant chief, and later king.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": true,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": true,
+      "reason": "W12 explicitly states AhebiUgbabe, Igbo woman king, exile, languages, and support by Igala kings/British officers for the successive offices. No only-one-in-era inference enters C.",
+      "evidence_text_sha256": [
+        "72db47436f73e6967d01ffd4103f2afbd567760056408858c01523f8a5569938"
+      ]
+    },
+    {
+      "trajectory_id": "R3_Q673__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C2",
+        "evidence_refs": [
+          "W12"
+        ],
+        "statement": "T.N. Kaul stated that some critics wrongly attributed one of Arinimaal's most pathetic ditties, 'åríní rang gom shràvan híyè', to her contemporary Mahmud Gami (1765–1855).",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_C": false,
+      "false_evidence_promotion": false,
+      "gap_useful": false,
+      "uses_new_raw_window": true,
+      "new_semantic_support_vs_prefix": false,
+      "reason": "Literal attributed Kaul statement in W12 already existed in prefix W9. It concerns poem attribution/contemporaryGami, not the asked birth range, poet spouse or earlier beauty-named poetess.",
+      "evidence_text_sha256": [
+        "892feb700180e01279087d25be7e0f058c5ed1b82a40118d0423b9b20826f44d"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "trajectory_id": "R1_Q169__rep1",
+      "slot": 1,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "ADD",
+            "statement": "The song title may be 'Immaterial', the one-word adjective track by Sophie, matching the partner's reported interview statement that Sophie became a direct reference to one of her songs after death.",
+            "basis_refs": []
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "question_inspired_speculation",
+      "reason": "Empty-basis Immaterial guess allowed in H; no evidence Gain.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q169__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          },
+          {
+            "operation": "ADD",
+            "statement": "Sophie's partner at the time of her death (Evita Manji) gave a posthumous interview that may contain the statement that Sophie has become a direct reference to one of her songs, plausibly 'Immaterial'.",
+            "basis_refs": []
+          }
+        ],
+        "useful_source_refs": [
+          "D11"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "speculative_interview_retained",
+      "reason": "Partner was visible in prefix W7, but the posthumous interview/song link remains a guess. D11 song page is a weak route to an interview.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q169__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H3"
+          },
+          {
+            "operation": "ADD",
+            "statement": "The country's deadliest aviation accident (as of 2023) referenced by the question may be Helios Airways Flight 522, which crashed in 2005 near Grammatiko, roughly 20–30 miles from Athens, the city where Sophie died accidentally in 2021 — the remaining unverified links being the matching charity name and the fatal-vs-accident year gap.",
+            "basis_refs": []
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "speculative_timeline",
+      "reason": "Empty-basis Helios2005 speculation remains tentative and explicitly leaves the year gap unverified; it must not satisfy the15-year condition.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q261__rep1",
+      "slot": 1,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "reasonable_keep",
+      "reason": "No new observation to overturn tentative author.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q261__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "reasonable_keep",
+      "reason": "Unproductive list window is not a contradiction.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q261__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "ADD",
+            "statement": "The target research paper may be the D10 article titled \"Examination of Prospective Teachers' Creative Comparisons for the Concept of 'Science Education'\" by Zeynel Abidin Yılmaz and Mehmet Diyaddin Yaşar (2022).",
+            "basis_refs": [
+              "W12"
+            ]
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "scoped_candidate",
+      "reason": "Actual title/authors/date support a tentative paper candidate; no assertion that13.53/six tables are verified.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q264__rep1",
+      "slot": 1,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "reasonable_keep",
+      "reason": "No new observation to contradict the tentative paper.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q264__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "reasonable_keep",
+      "reason": "Wrong local window leaves the candidate undecided.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q264__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H1",
+            "basis_refs": [
+              "W7"
+            ]
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "route_based_deprioritization",
+      "reason": "Two poor localizations justify lower route priority, not rejection of the paper; no evidence proves H false.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R1_Q601__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "ADD",
+            "statement": "Tentative hypothesis: Alexis Nicolas is the target player. W7 shows he had a professional football career with Chelsea and Brighton before starting Springer Nicolas with Ryan in October 2012, which matches a Premier League youth/academy background and an early-2010s business partnership; chartered-surveyor status, 1980s birth, less-than-48 club appearances, and number 27 remain unverified.",
+            "basis_refs": [
+              "W7"
+            ]
+          }
+        ],
+        "useful_source_refs": [
+          "D7"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "false_evidence_promotion_in_H",
+      "reason": "W7 supports professional Chelsea/Brighton career and business partnership, not Premier League youth/academy membership as H says it matches. Other unverified conditions are correctly retained as missing.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q177__rep1",
+      "slot": 1,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "reasonable_keep",
+      "reason": "Lack of founding details is not a global candidate contradiction.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q177__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "weak_candidate_retained",
+      "reason": "Seven league titles neither verify nor disprove fifteen total trophies. Candidate remains unbound; no global REJECT.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q177__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          }
+        ],
+        "useful_source_refs": [
+          "D2",
+          "D3",
+          "D5"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "weak_candidate_retained",
+      "reason": "New local founding fact is real; no evidence yet binds target season/capital/2023article. KEEP is not confirmation.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R2_Q186__rep1",
+      "slot": 1,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "ADD",
+            "statement": "The target game may also be known as 'Galacta' and released as shareware in 1993, developed by Sean Puckett.",
+            "basis_refs": [
+              "W4"
+            ]
+          }
+        ],
+        "useful_source_refs": [
+          "D2",
+          "D3",
+          "D4"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "source_discrepancy_retained",
+      "reason": "Alternative W4 says1993 versus C1/W1 November1992; tentative H preserves this discrepancy without overwriting C. Independent compatible sources support the main1992 claim.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q435__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "ADD",
+            "statement": "The 2016 Forbes Africa interview mentioned in W3 is a plausible candidate for the Q's May 2010s Forbes Africa feature, so the album count reported in connection with that interview may be the requested number.",
+            "basis_refs": [
+              "W3"
+            ]
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "tentative_interview_lead",
+      "reason": "H keeps the2016 interview as a plausible May feature. The authoritative error is in C5; H explicitly remains tentative.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q435__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H2",
+            "basis_refs": [
+              "W7"
+            ]
+          },
+          {
+            "operation": "ADD",
+            "statement": "The May 2017 Forbes release mentioned in W7 is a plausible candidate for the Q's Forbes Africa May 2010s feature, so the 65 albums reported in connection with Oliver Mtukudzi there may be the requested number.",
+            "basis_refs": [
+              "W7"
+            ]
+          }
+        ],
+        "useful_source_refs": [
+          "D4",
+          "D5",
+          "D6"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "appropriate_alternative_deprioritization",
+      "reason": "May2017/65 W7 justifies downgrading2016 route and introducing a tentative alternative. This H update does not retract unsupported C5.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q517__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H1",
+            "basis_refs": [
+              "W2"
+            ]
+          },
+          {
+            "operation": "ADD",
+            "statement": "Peter Nzioki may be the actor described in the question; W2 lists him in The Constant Gardener (2005) as Policeman 1 and in The Fifth Estate (2013).",
+            "basis_refs": [
+              "W2"
+            ]
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "alias_churn",
+      "reason": "DEPRIORITIZE Peter King and ADD Peter Nzioki changes H ID for the same person already equated in seed C1; not wrong-candidate recovery.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q517__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          },
+          {
+            "operation": "ADD",
+            "statement": "Bill Condon, credited as director and screenwriter of Kinsey, may be the director of the 2013 dramatic thriller referenced in the question; W3, W4, W5, and W6 all identify Bill Condon as Kinsey's director/screenwriter.",
+            "basis_refs": [
+              "W3",
+              "W4",
+              "W5",
+              "W6"
+            ]
+          }
+        ],
+        "useful_source_refs": [
+          "D2",
+          "D3",
+          "D4"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "partial_support_with_overbroad_ref_summary",
+      "reason": "Condon/Kinsey relation is supported in W3/W4/W6; W5 explicitly gives director but does not separately establish screenwriter. Film-chain inference remains tentative.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q633__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          },
+          {
+            "operation": "ADD",
+            "statement": "Maria I of Portugal may be the non-English queen regnant described in the Original Question.",
+            "basis_refs": [
+              "W6"
+            ]
+          }
+        ],
+        "useful_source_refs": [
+          "D6",
+          "D7"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "mismatched_source_nomination",
+      "reason": "W6 supplies Maria/book candidate but explicitly2009/200pages conflicts with target book conditions; D6 nomination is weak. Another book about Maria is not logically excluded.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q633__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "ADD",
+            "statement": "Nwando Achebe's 'The Female King of Colonial Nigeria' (academic publisher, February 2011) recounts Ahebi Ugbabe, an Igbo woman who became king in colonial Nigeria, traveled widely and learned to speak many languages, making her the only one of her kind in her era — a plausible match for the non-English multilingual queen/king regnant target book, with Nwando Achebe as the author's name.",
+            "basis_refs": [
+              "W12"
+            ]
+          },
+          {
+            "operation": "DEPRIORITIZE",
+            "hypothesis_id": "H1",
+            "basis_refs": [
+              "W12"
+            ]
+          },
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H2"
+          }
+        ],
+        "useful_source_refs": [
+          "D12"
+        ]
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "false_evidence_promotion_in_H",
+      "reason": "New book supports a better candidate, so Wilhelmina DEPRIORITIZE is reasonable. W12 does not establish only-one-in-era; H strengthens that condition beyond the observation.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q673__rep1",
+      "slot": 2,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "reasonable_keep",
+      "reason": "Attribution debate does not directly refute the initial poetess hypothesis.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    },
+    {
+      "trajectory_id": "R3_Q673__rep1",
+      "slot": 3,
+      "proposal": {
+        "updates": [
+          {
+            "operation": "KEEP",
+            "hypothesis_id": "H1"
+          }
+        ],
+        "useful_source_refs": []
+      },
+      "invalid_basis_refs": [],
+      "invalid_source_nominations": [],
+      "committed": true,
+      "semantic_label": "reasonable_keep",
+      "reason": "Extra attribution content is no resolution of the birth/spouse relation; keeping H is not progress.",
+      "semantic_verification_not_implied_by_valid_refs": true
+    }
+  ],
+  "closures": [
+    {
+      "trajectory_id": "R2_Q186__rep1",
+      "slot": 2,
+      "status": "READY",
+      "correct_veto": null,
+      "source_supported_READY": true,
+      "false_READY": false,
+      "reason": "C1/W1 binds November1992DOS/shareware/oneplayer; C2/W1 names threecredits/twoPucketts; C3/W2/W3 binds formerNightSky company history; W2 explicitly developed-byAlbinoFrog and no-multiplayer. No H input. Source-supported final, not gold-scored accuracy.",
+      "next_actor_acquisition": false
+    },
+    {
+      "trajectory_id": "R3_Q435__rep1",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "source_supported_READY": null,
+      "false_READY": false,
+      "reason": "Missing feedback correctly preserves unbound book/identity/time/role/biography conditions in this incomplete prefix.",
+      "next_actor_acquisition": true
+    },
+    {
+      "trajectory_id": "R3_Q517__rep1",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "source_supported_READY": null,
+      "false_READY": false,
+      "reason": "Missing feedback correctly preserves unbound book/identity/time/role/biography conditions in this incomplete prefix.",
+      "next_actor_acquisition": true
+    },
+    {
+      "trajectory_id": "R3_Q633__rep1",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "source_supported_READY": null,
+      "false_READY": false,
+      "reason": "Missing feedback correctly preserves unbound book/identity/time/role/biography conditions in this incomplete prefix.",
+      "next_actor_acquisition": true
+    },
+    {
+      "trajectory_id": "R3_Q673__rep1",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "source_supported_READY": null,
+      "false_READY": false,
+      "reason": "Missing feedback correctly preserves unbound book/identity/time/role/biography conditions in this incomplete prefix.",
+      "next_actor_acquisition": true
+    }
+  ],
+  "failures": [
+    {
+      "trajectory_id": "R2_Q387__rep1",
+      "slot": 1,
+      "failure": {
+        "message": "schema: {'oneOf': [{'decision': 'acquire', 'focus_requirement_id': 'R1', 'one_gap': \"Whether Dean Dodrill is the person behind Game B's intro and ending animations (likely Jazz Jackrabbit 2).\", 'strategy': 'VERIFY_RELATION', 'hypothesis_ids_under_test': ['H1'], 'action': {'tool': 'search', 'arguments': {'query': 'Dean Dodrill Jazz Jackrabbit 2 intro ending animation', 'k': 5}}}]} is not valid under any of the given schemas",
+        "type": "ValueError"
+      },
+      "classification": "non_H_actor_schema_wrapper",
+      "no_retry_or_repair": true
+    }
+  ],
+  "metrics": {
+    "trajectories": 11,
+    "family_counts": {
+      "R1": 4,
+      "R2": 3,
+      "R3": 4
+    },
+    "statuses": {
+      "horizon_exhausted": 9,
+      "ready_finalized": 1,
+      "step_failure": 1
+    },
+    "completed_horizon_or_ready": 10,
+    "H_calls": 22,
+    "H_contract_failures": 0,
+    "H_skips": 2,
+    "live_H_failure_continuation_opportunities": 0,
+    "live_H_failure_isolation_rate": null,
+    "new_C": 12,
+    "source_supported_C": 11,
+    "false_or_unsupported_C": 1,
+    "gap_useful_C": 8,
+    "accepted_CONTINUE": 4,
+    "READY": 1,
+    "false_READY": 0,
+    "supported_final_answer": 1,
+    "gold_accuracy": "not measured",
+    "R1_realized_initial_NoGain": {
+      "numerator": 3,
+      "forced_repeats": 4
+    },
+    "R1_NoGain_next_Actor_acquisition": {
+      "numerator": 3,
+      "denominator": 3
+    },
+    "R1_NoGain_immediate_scope_change": {
+      "numerator": 3,
+      "denominator": 3
+    },
+    "R1_NoGain_then_gap_useful_C_by_horizon": {
+      "numerator": 2,
+      "denominator": 3
+    },
+    "R1_all_forced_then_gap_useful_C": {
+      "numerator": 2,
+      "denominator": 4
+    },
+    "R2_confirmed_wrong_seed_H": 0,
+    "R2_evaluable_wrong_H_recovery_opportunities": 0,
+    "R2_wrong_H_recovery": "inconclusive; weak candidate confirmation1, unresolved1, actor format failure1",
+    "R3_correct_veto_then_gap_addressing_acquisition": {
+      "numerator": 4,
+      "denominator": 4
+    },
+    "R3_gap_useful_C_by_horizon": {
+      "numerator": 3,
+      "denominator": 4
+    },
+    "R3_trajectories_with_authoritative_false_promotion": 1,
+    "inspection_compatibility": {
+      "numerator": 12,
+      "denominator": 12
+    },
+    "inspection_new_raw_evidence_yield": {
+      "numerator": 1,
+      "denominator": 12
+    },
+    "premise_hardening_free_acquisitions": {
+      "numerator": 2,
+      "denominator": 20
+    },
+    "Gain_steps": 16,
+    "Gain_without_any_new_C": 6,
+    "Gain_without_gap_useful_supported_C": 9,
+    "mechanical_replay_failures": 0,
+    "semantic_integrity_failures": 1,
+    "H_REJECT_operations": 0
+  }
+}

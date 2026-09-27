@@ -1,0 +1,56 @@
+{
+  "trajectory_id": "R3_Q633__rep1",
+  "cell_id": "R3_Q633",
+  "family": "R3",
+  "replicate": 1,
+  "status": "horizon_exhausted",
+  "error": null,
+  "outcomes": [
+    {
+      "slot": 1,
+      "decision": "request_closure",
+      "closure": {
+        "status": "CONTINUE",
+        "missing": [
+          {
+            "requirement_id": "R1",
+            "summary": "Evidence only supports C1/C2 about Queen Wilhelmina’s reign and longevity; it does not establish the target book about a non-English queen regnant, her multilingual status, her being the only such queen in her era/home country, the book’s >300 pages/academic publisher/February post-2010 publication, or the author’s PhD since 2000 in North America and pre-2019 co-authored e-course book. Thus the author’s name cannot be grounded from C and its evidence."
+          }
+        ]
+      },
+      "feedback": "NoGain",
+      "claim_delta": [],
+      "acquisition_outcome": "not_attempted",
+      "claim_outcome": "not_attempted",
+      "hypothesis_outcome": "not_applicable",
+      "auxiliary_failures": []
+    },
+    {
+      "slot": 2,
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "Gain",
+      "claim_delta": [],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    },
+    {
+      "slot": 3,
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "Gain",
+      "claim_delta": [
+        "C3",
+        "C4"
+      ],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    }
+  ],
+  "elapsed_seconds": 115.22818789444864,
+  "completed_utc": "2026-09-27T21:25:49.684883+00:00"
+}

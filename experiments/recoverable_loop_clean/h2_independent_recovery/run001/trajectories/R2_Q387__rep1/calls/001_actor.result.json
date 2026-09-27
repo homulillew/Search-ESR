@@ -1,0 +1,43 @@
+{
+  "id": "001_actor",
+  "role": "actor",
+  "attempted": true,
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 1523,
+    "completion_tokens": 4550,
+    "total_tokens": 6073,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4451
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 883
+  },
+  "error": {
+    "type": "ValueError",
+    "message": "schema: {'oneOf': [{'decision': 'acquire', 'focus_requirement_id': 'R1', 'one_gap': \"Whether Dean Dodrill is the person behind Game B's intro and ending animations (likely Jazz Jackrabbit 2).\", 'strategy': 'VERIFY_RELATION', 'hypothesis_ids_under_test': ['H1'], 'action': {'tool': 'search', 'arguments': {'query': 'Dean Dodrill Jazz Jackrabbit 2 intro ending animation', 'k': 5}}}]} is not valid under any of the given schemas"
+  },
+  "request_hash": "f4c5a845a6b68a9b20444f596ae532030cb5cc36a625df51dfe28add3f9517e6",
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "started_utc": "2026-09-27T21:24:06.851338+00:00",
+  "provider_id": "fb749f85-f9b6-41d5-8383-7a1e856d420d",
+  "elapsed_seconds": 21.978854866698384,
+  "completed_utc": "2026-09-27T21:24:28.830180+00:00",
+  "accounting": {
+    "complete": true,
+    "issues": [],
+    "tokens": {
+      "input": 1523,
+      "output": 4550,
+      "total": 6073,
+      "hit": 640,
+      "miss": 883,
+      "reasoning": 4451
+    }
+  },
+  "response_bytes": 19317
+}

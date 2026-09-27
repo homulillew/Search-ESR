@@ -1,0 +1,1538 @@
+[
+  {
+    "trajectory_id": "R1_Q169__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "SOPHIE musician died Athens Greece partner interview song reference"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Check the relation expressed by the last observed Search query: SOPHIE musician died Athens Greece partner interview song reference",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The musical artist may be Sophie (Sophie Xeon), a Scottish DJ/producer who died accidentally in Athens, Greece in 2021.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H2",
+            "statement": "The song title may be 'Immaterial', the one-word adjective track by Sophie, matching the partner's reported interview statement that Sophie became a direct reference to one of her songs after death.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 10,
+              "query": "Evita Manji interview SOPHIE immaterial direct reference after death song"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1",
+            "H2"
+          ],
+          "one_gap": "Locate and verify the partner interview stating that after SOPHIE's death she became a direct reference to a one-word adjective song, likely 'Immaterial'.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The musical artist may be Sophie (Sophie Xeon), a Scottish DJ/producer who died accidentally in Athens, Greece in 2021.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H2",
+            "statement": "The song title may be 'Immaterial', the one-word adjective track by Sophie, matching the partner's reported interview statement that Sophie became a direct reference to one of her songs after death.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H3",
+            "statement": "Sophie's partner at the time of her death (Evita Manji) gave a posthumous interview that may contain the statement that Sophie has become a direct reference to one of her songs, plausibly 'Immaterial'.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D11",
+            "preview": "album: Oil of Every Pearl's Un-Insides\nreleased: 15 06 2018\ngenre: Hyperpop\nlength: 3:53\nlabel: * MSMSMSM, * Future Classic, * Transgressive\nwriter: * Sophie Xeon, * Cecile Believe\nproducer: Sophie Xeon\n\n\"Immaterial\" is a song recorded by the British musician Sophie. It is the eighth track from her debut studio album, Oil of Every Pearl's Un-Insides, released on 15 June 2018.\n\nBackground and composition\n\n\"Immaterial\" features lead vocals from Cecile Believe, who co-wrote it with Sophie. Sophie felt that it was the most mainstream of all Oil of Every Pearl's Un-Insides tracks. The track was described as hyperpop. Sources described \"Immaterial\" as a reference to the Madonna song \"Material Girl\"; Sophie had initially titled it \"Immaterial Girl\" for a direct reference.\n\nReception\n\n\"Immaterial\" was named one of the best songs of 2018 by The Fader, Noisey (Vice), PopMatters, Tiny Mix Tapes, Dazed, Mixmag, NME, Resident Advisor, The 405, and Jenesaispop. It was featured as one of Sophie's best or most essential songs in lists published by Billboard, The Fader, Junkee, The New York Times, and NME. Rolling Stone Australia ranked it as the 40th greatest dance song of all time. The Forty-Five Sophie Walker named it the best hyperpop song of all time.\n\nReferences\n\nCategory:2018 songs\nCategory:Song recordings produced by Sophie (musician)\nCategory:Songs written by Sophie (musician)\nCategory:Sophie (musician) songs\nCategory:Transgender-related songs\nCategory:Hyperpop songs",
+            "title": "Immaterial (song) - Wikipedia",
+            "uninspected": true,
+            "window_ref": "W11"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D7",
+              "query": "Evita Manji Immaterial direct reference interview"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H3"
+          ],
+          "one_gap": "Verify whether Sophie's partner Evita Manji gave an interview stating that after Sophie's death she became a direct reference to one of her songs, and identify the one-word adjective song title.",
+          "strategy": "VERIFY_RELATION"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The musical artist may be Sophie (Sophie Xeon), a Scottish DJ/producer who died accidentally in Athens, Greece in 2021.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H2",
+            "statement": "The song title may be 'Immaterial', the one-word adjective track by Sophie, matching the partner's reported interview statement that Sophie became a direct reference to one of her songs after death.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H3",
+            "statement": "Sophie's partner at the time of her death (Evita Manji) gave a posthumous interview that may contain the statement that Sophie has become a direct reference to one of her songs, plausibly 'Immaterial'.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H4",
+            "statement": "The country's deadliest aviation accident (as of 2023) referenced by the question may be Helios Airways Flight 522, which crashed in 2005 near Grammatiko, roughly 20–30 miles from Athens, the city where Sophie died accidentally in 2021 — the remaining unverified links being the matching charity name and the fatal-vs-accident year gap.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R1_Q261__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "Harran University Journal of Baltic Science Education emotions 13.53"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Check the relation expressed by the last observed Search query: Harran University Journal of Baltic Science Education emotions 13.53",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Mehmet Diyaddin Yaşar may be one of the two authors of the target research paper.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D8",
+              "query": "publications list research articles co-authors"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Identify the specific 2012–2022 two-author research paper associated with Mehmet Diyaddin Yaşar (Harran University) that reports an emotion at 13.53% across six tables.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Mehmet Diyaddin Yaşar may be one of the two authors of the target research paper.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W10"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Check whether the dergipark article file D10 is the target paper by inspecting its content for six tables and an emotion value of 13.53%, and identify its title and authors.",
+          "strategy": "VERIFY_ATTRIBUTE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C2",
+            "evidence_refs": [
+              "W12"
+            ],
+            "statement": "The D10 article has the title \"Examination of Prospective Teachers' Creative Comparisons for the Concept of 'Science Education'\" and lists its authors as Zeynel Abidin Yılmaz and Mehmet Diyaddin Yaşar.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Mehmet Diyaddin Yaşar may be one of the two authors of the target research paper.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W12"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The target research paper may be the D10 article titled \"Examination of Prospective Teachers' Creative Comparisons for the Concept of 'Science Education'\" by Zeynel Abidin Yılmaz and Mehmet Diyaddin Yaşar (2022).",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R1_Q264__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "practical method to detect cosmic neutrino background 2023"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Check the relation expressed by the last observed Search query: practical method to detect cosmic neutrino background 2023",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The paper at arXiv:2311.01667 is article 3, the 2023 paper that proposes a practical method to detect atmospheric tau neutrino appearance.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D4",
+              "query": "authors second author"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Identify the authors of arXiv:2311.01667, especially its second author, to test H1 and continue the author chain toward article 2 and article 1.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "The paper at arXiv:2311.01667 is article 3, the 2023 paper that proposes a practical method to detect atmospheric tau neutrino appearance.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W6"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Identify the author list of arXiv:2311.01667, especially its second author, to test whether it can serve as article 3 and continue the author chain.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "active_hypothesis_downgraded"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W7"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "The paper at arXiv:2311.01667 is article 3, the 2023 paper that proposes a practical method to detect atmospheric tau neutrino appearance.",
+            "status": "deprioritized"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R1_Q601__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "footballer \"chartered surveyor\" \"number 27\" Premier League academy"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Check the relation expressed by the last observed Search query: footballer \"chartered surveyor\" \"number 27\" Premier League academy",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "skipped",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D1",
+              "query": "surveyor"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Identify the former Blackpool player in D1 who became a chartered surveyor and check whether he matches the 1980s birth, number 27, Premier League academy, and <48 appearances criteria.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "skipped",
+        "acquisition_outcome": "no_match",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 10,
+              "query": "\"chartered surveyor\" footballer \"set up his own business\" partnership"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Identify a footballer who was born in the 1980s, came through a Premier League youth academy, wore number 27, made fewer than 48 appearances for any one club, retired and became a chartered surveyor, and set up a business partnership in the early 2010s.",
+          "strategy": "IDENTIFY_CANDIDATE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W7"
+            ],
+            "statement": "Alexis Nicolas, a former professional footballer with Chelsea FC and Brighton & Hove Albion, started Springer Nicolas with Ryan in October 2012.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W7"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "Tentative hypothesis: Alexis Nicolas is the target player. W7 shows he had a professional football career with Chelsea and Brighton before starting Springer Nicolas with Ryan in October 2012, which matches a Premier League youth/academy background and an early-2010s business partnership; chartered-surveyor status, 1980s birth, less-than-48 club appearances, and number 27 remain unverified.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D7",
+            "preview": "---\ntitle: Alexis Nicolas\ndate: 2025-01-01\n---\nAlexis Nicolas\n\nPartner, SN1982 Ltd\n\nLondon, W1U 1EZ\n\nPhone +44 20 3667 5050\n\nProperty Types\n\nIndustrial, Office, Retail\n\nMarkets\n\nLondon, Kent\n\nBio\n\nFollowing a successful professional football career with Chelsea FC and Brighton & Hove Albion, Alexis worked briefly at niche agency Ereira Mendoza before joining leading niche investment agency Franc Warwick in 2007. Alexis started Springer Nicolas with Ryan in October 2012.\n\nAlexis specialises in both sales and acquisitions throughout the UK in a number of varied sectors and has been particularly active within the Central London area and national retail markets.\n\nAlexis advises a loyal client base which includes a variety of UK institutions, property companies and overseas investors.",
+            "title": "Alexis Nicolas",
+            "uninspected": true,
+            "window_ref": "W7"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q177__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D1",
+              "query": "Rangers founded year country fifteen trophies"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Need the club's founding year and country (and confirmation that the 2023 article ties the fifteen-trophy claim and 13 signings to that same club) rather than only the already-verified 2022/23 signing fact.",
+          "strategy": "VERIFY_ATTRIBUTE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Rangers may be the club described in the question.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W1"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Need to verify within the 2023 article whether Rangers is stated to have won fifteen trophies and whether it gives the club's founding year and country, rather than relying only on the confirmed 13-signing fact.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C2",
+            "evidence_refs": [
+              "W1"
+            ],
+            "statement": "Rangers are described as seven-time NPFL champions.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Rangers may be the club described in the question.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "document_complete",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "Rangers International F.C. Enugu founded 1970 Nigeria fifteen trophies"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Need the founding year and country of the club, and to verify whether the 2023 article's fifteen-trophy claim matches Rangers rather than only the confirmed 13-signing/7-title facts.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W2"
+            ],
+            "statement": "Rangers International Football Club is a Nigerian professional association football team founded in 1970.",
+            "version": 1
+          },
+          {
+            "claim_id": "C4",
+            "evidence_refs": [
+              "W5"
+            ],
+            "statement": "Rangers International (Enugu) has won 8 Nigeria Premier Football League championships, with title years 1974, 1975, 1977, 1981, 1982, 1984, 2016, and 2023–24.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Rangers may be the club described in the question.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D2",
+            "preview": "---\ntitle: Rangers International F.C. - Wikipedia\nauthor: Authority control databases International VIAF National United States\ndate: 2004-09-19\n---\nfullname: Rangers International Football Club\nnickname: Flying Antelopes allafrica.com 30 September 2004 Nigeria: This Rangers Team Will Be Like 70s Squad – Okala\nfounded: 1970 copy nm.onlinenigeria.com 14 January 2022 21 July 2011\nground: Nnamdi Azikiwe StadiumEnugu, Enugu State, Nigeria\ncapacity: 22, 000\nchairman: Amobi Ezeaku\ncoach: Fidelis Ilechukwu6 July 2023 Rangers unveil 'Working One' Ilechukwu\nleague: Nigeria Professional Football League\nseason: 2024–25\nposition: Nigeria Professional Football League, 10th of 20\npattern_ra1: leftarm1=FFFFFF\nbody1: FFFFFF\nrightarm1: FFFFFF\nshorts1: FFFFFF\nsocks1: FFFFFF\nleftarm2: FF0000\nbody2: FF0000\nrightarm2: FF0000\nshorts2: FF0000\nsocks2: FF0000\nclubname: Rangers International FC\n\nRangers International Football Club, commonly known as Enugu Rangers, is a Nigerian professional association football team founded in 1970. Based in Enugu, the Rangers play their home games at the Nnamdi Azikiwe Stadium. ",
+            "title": "Rangers International F.C. - Wikipedia",
+            "uninspected": true,
+            "window_ref": "W2"
+          },
+          {
+            "doc_ref": "D3",
+            "preview": "---\ntitle: 2016 Nigeria Professional Football League - Wikipedia\ndate: 2016-02-21\n---\ncompetition: Nigeria Premier League\nseason: 2016\nwinners: Enugu RangersGUI\nrelegated: Giwa Heartland Ikorodu United Warri Wolves\ncontinentalcup1: Champions League\ncontinentalcup1 qualifiers: Enugu Rangers Rivers United\ncontinentalcup2: Confederation Cup\ncontinentalcup2 qualifiers: Wikki Tourist\nmatches: 342\ntotal goals: 734\nleague topscorer: Godwin Obaje (18)\nbiggest home win: Kano Pillars 6-0 Shooting Stars (24 April 2016)\nbiggest away win: El Kanemi Warriors 1-3 Akwa United (30 March 2016)\nhighest scoring: 3 matches, Kano Pillars 6-0 Shooting Stars (24 April 2016), Akwa United 3-3 Sunshine Stars (8 June 2016), Nasarawa United 4-2 Ifeanyi Uba (12 June 2016)\nlongest wins: Plateau United Wikki Tourist (4)\nlongest unbeaten: Abia Warriors (10)\nlongest winless: Ikorodu United (10)\nlongest losses: Ikorodu United (5)\nhighest attendance: 40, 000 El Kanemi at Rangers International\naverage attendance: 8, 600\nprevseason: 2015\nnextseason: 2017\nAll statistics correct as of 2 October 2016.\n",
+            "title": "2016 Nigeria Professional Football League - Wikipedia",
+            "uninspected": true,
+            "window_ref": "W3"
+          },
+          {
+            "doc_ref": "D5",
+            "preview": "| 2015 | Enyimba FC (7) |\n| 2016 | Rangers International F.C. (7) |\n| 2017 | Plateau United FC (1) |\n| 2018 | Championship canceled |\n| 2019 | Enyimba FC (8) |\n| 2019–20 | Championship canceled due to Covid-19 |\n| 2020–21 | Akwa United FC (1) |\n| 2021–22 | Rivers United (4) |\n| 2022–23 | Enyimba FC (9) |\n| 2023–24 | Rangers International F.C. (8) |\n| 2024–25 | Remo Stars (1) |\n\nMost titles won\n\n**Table 4**\n\n| Clubs | Championship | Years |\n|---|---|---|\n| Enyimba (Aba) | 9 | 2001, 2002, 2003, 2005, 2007, 2010, 2015, 2019, 2022–23 |\n| Rangers International (Enugu) | 8 | 1974, 1975, 1977, 1981, 1982, 1984, 2016, 2023–24 |\n| Shooting Stars (Ibadan) | 5 | 1976, 1980, 1983, 1995, 1998 |\n",
+            "title": "Nigeria Premier Football League - Wikipedia",
+            "uninspected": true,
+            "window_ref": "W5"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q186__rep1",
+    "status": "ready_finalized",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "Albino Frog Software company formerly known as Galacta The Battle for Saturn"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Whether the amphibian-named company behind Galacta (Albino Frog Software) was previously known by a different name in the early 1990s, as the question's 'different name' condition may require.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W2",
+              "W3"
+            ],
+            "statement": "Albino Frog Software, Inc. was formerly Night Sky, with Night Sky used from 1992 to 1993-10; after using the Night Sky name, the company was officially established in Florida, USA in October 1993.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Galacta: The Battle for Saturn may be the game described in the question.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W4"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The target game may also be known as 'Galacta' and released as shareware in 1993, developed by Sean Puckett.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D2",
+            "preview": "---\ntitle: Galacta: The Battle for Saturn\n---\nDeveloped by:\n\nAlbino Frog Software, Inc.\n\nAlbino Frog Software, Inc. (formerly Night Sky) is a game development studio of which Sean M. Puckett is the sole employee. After using the name Night Sky, the company was officially established in Florida, USA in October 1993.\n\nMultiplayer:\n\nNo Multiplayer\n\nPlatform:\n\nRated:\n\n1 x\n\nCurrent rating:\n\nUploaded by:\n\nAnonymous\n\nYour rating:\n\nNot rated -\n\nlogin\n\n- and rate\n\nGalacta: The Battle for Saturn is an action game that was published by Albino\n\nFrog Software Inc. It was released for DOS platforms in 1992 and is played from a top-down\n\nperspective.\n\nThe gameplay of the shooter game is similar to Galaga and Galaxian. Galacta: The Battle for Saturn provides you with a top-down space shooter similar to other arcade games.\n\nIn the game, the player moves frontwards and backward at the bottom of the screen to avoid attacks from the enemy ships. The player escapes the attacks from the enemies by moving on the screen and can even attack the enemy. When an enemy ship swoops at the player or the enemy attacks him, he dies. The enemies can attack the player in numerous pre-specified patterns. Staying out of the way of the enemies is the biggest challenge for the player.\n\nThe player needs to be careful when the ships fly down at him and they bounce back from the bottom of the screen and fly up again. The game features numerous powerups and shields to help him survive the attacks from the enemies. When the player manages the make it through the wave of enemies without getting killed, he receives a bonus to his score.\n\nGalacta: The Battle for Saturn is a single-player game that can be played using an analog joystick. ",
+            "title": "Galacta: The Battle for Saturn",
+            "uninspected": true,
+            "window_ref": "W2"
+          },
+          {
+            "doc_ref": "D3",
+            "preview": "---\ntitle: Albino Frog Software, Inc.\ndate: 2025-06-12\n---\nAlbino Frog Software, Inc.\n\nMoby ID: 4592\n\n- Night Sky (from 1992 to 1993-10)\n\nOverview edit · view history\n\nAlbino Frog Software, Inc. (formerly Night Sky) is a game development studio of which Sean M. Puckett is the sole employee. After using the name Night Sky, the company was officially established in Florida, USA in October 1993.\n\nCredited on 8 Games from 1992 to 2013\n\n| Trichrome (2013 on Macintosh, Windows, Linux...) |\n\n| Pulse (1996 on DOS) |\n\n| Helious (1993 on DOS) |\n\n| Helious II (1993 on DOS) |\n\n| Galacta: The Battle for Saturn (1992 on DOS) |\n\n| Connex (1992 on DOS) |\n\n| Barbie (1991 on DOS, NES) |\n\n| Tom & Jerry (1991 on DOS, NES) |\n\nHistory +\n\n- October 1993\n\nCompany founded.\n\nTrivia +\n\nMailing Address (1996):\n\nAlbino Frog Software P.O. Box 578 Port Salerno, FL 34992 U.S.A.\n\nRelated Web Sites +\n\n- Albino Frog Software, Inc.\n\nofficial site\n\nFrequent Collaborators\n\nCompanies- 2 games with Hi-Tech Expressions, Inc.\n\n- 1 game with Imagineering Inc.\n\n- 1 game with Apple Inc.\n\n- 1 game with DBolical Pty Ltd.\n\n- 1 game with Canonical Ltd.\n\n- 1 game with Unity Technologies ApS\n",
+            "title": "Albino Frog Software, Inc.",
+            "uninspected": true,
+            "window_ref": "W3"
+          },
+          {
+            "doc_ref": "D4",
+            "preview": "---\ntitle: Share on Mastodon\ndate: 2013-01-01\n---\nGalacta\n\nAlbino Frog Software, 1993- Publisher:\n\n- Albino Frog Software\n\n- Developer:\n\n- Sean Puckett\n\n- Release year:\n\n- 1993\n\n- Category:\n\n- Shoot 'em up\n\n- License:\n\n- Shareware\n\n- Language:\n\n- English\n\nGalacta is a Shareware Shoot 'em up game published by Albino Frog Software in 1993.\n\nFiles:\n\nRating & comments:\n\nNot rated yet",
+            "title": "Share on Mastodon",
+            "uninspected": true,
+            "window_ref": "W4"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_ready",
+            "result": {
+              "claim_ids": [
+                "C1",
+                "C2",
+                "C3"
+              ],
+              "reason": "Grounded C1-C3 cover the requested release date/platform, shareware and single-player/offline-player attributes, the three credited people with two sharing a surname, and the company history of being formerly Night Sky before the amphibian-named company. W2 additionally supports the developed-by relation. All material Q conditions are bound to the same candidate.",
+              "status": "READY"
+            },
+            "snapshot_hash": "343baff086721d0f1ca4938cab4ba45736c447b8bc923288fd731f31445610c3"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q387__rep1",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {},
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": {
+          "message": "schema: {'oneOf': [{'decision': 'acquire', 'focus_requirement_id': 'R1', 'one_gap': \"Whether Dean Dodrill is the person behind Game B's intro and ending animations (likely Jazz Jackrabbit 2).\", 'strategy': 'VERIFY_RELATION', 'hypothesis_ids_under_test': ['H1'], 'action': {'tool': 'search', 'arguments': {'query': 'Dean Dodrill Jazz Jackrabbit 2 intro ending animation', 'k': 5}}}]} is not valid under any of the given schemas",
+          "type": "ValueError"
+        },
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q435__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "No evidence in C establishes the Q condition that the musician released a first album in the 1970s; W2 only mentions a first recording deal in 1975 and joining Wagon Wheel in 1977."
+              },
+              {
+                "requirement_id": "R1",
+                "summary": "No evidence in C establishes the early-2000s song urging a sitting president to retire."
+              },
+              {
+                "requirement_id": "R1",
+                "summary": "No evidence in C establishes the 2010s interview question 'Why do we sing, why is there art?'"
+              },
+              {
+                "requirement_id": "R1",
+                "summary": "No evidence in C establishes that the musician was a human rights activist."
+              },
+              {
+                "requirement_id": "R1",
+                "summary": "No evidence in C establishes that the Forbes Africa feature occurred in May during the 2010s; C4 only says Forbes Africa in 2016."
+              },
+              {
+                "requirement_id": "R1",
+                "summary": "No evidence in C establishes that the '67 albums' count was the number by the time of the Forbes Africa feature; C3's '67 albums later' appears in a retrospective context and is not explicitly tied to that feature date."
+              },
+              {
+                "requirement_id": "R1",
+                "summary": "The Q target identity is not fully established from C because several Q attributes are absent; matching death age and 67-album reference to Oliver Mtukudzi does not by itself cover all identity conditions."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W2"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "The exact date/month of the Forbes Africa feature in the 2010s and the number of albums Mtukudzi had by that feature are not established.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C5",
+            "evidence_refs": [
+              "W3"
+            ],
+            "statement": "Oliver Mtukudzi had 67 albums by the time of his Forbes Africa interview in 2016.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Oliver Mtukudzi remains the candidate being investigated.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W3"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The 2016 Forbes Africa interview mentioned in W3 is a plausible candidate for the Q's May 2010s Forbes Africa feature, so the album count reported in connection with that interview may be the requested number.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "Forbes Africa May 2016 Oliver Mtukudzi interview 67 albums"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H2"
+          ],
+          "one_gap": "Whether the Forbes Africa feature involving Oliver Mtukudzi appeared in May during the 2010s, and what album count was reported by that feature.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis",
+          "active_hypothesis_downgraded",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C6",
+            "evidence_refs": [
+              "W7"
+            ],
+            "statement": "A 2017-06-11 article states that Forbes listed Oliver Mtukudzi as one of Africa's top richest musicians in its May 2017 release, and that he had produced 65 albums.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Oliver Mtukudzi remains the candidate being investigated.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W7"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "The 2016 Forbes Africa interview mentioned in W3 is a plausible candidate for the Q's May 2010s Forbes Africa feature, so the album count reported in connection with that interview may be the requested number.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W7"
+            ],
+            "hypothesis_id": "H3",
+            "statement": "The May 2017 Forbes release mentioned in W7 is a plausible candidate for the Q's Forbes Africa May 2010s feature, so the 65 albums reported in connection with Oliver Mtukudzi there may be the requested number.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D4",
+            "preview": "---\ntitle: Latest Headlines\ndate: 2019-01-23\n---\nZimbabwe's most successful and internationally renowned musician Oliver Mtukudzi died on Wednesday after suffering from diabetes, ending a career that spanned four decades and 67 albums.\n\nThe 66-year-old singer, affectionately known as \"Tuku,\" died at a local clinic on Wednesday afternoon, the Minister of Information Monica Mutsvangwa said.\n\nAs news of his death filtered out, government ministers, lawmakers and ordinary Zimbabweans set aside the country's political troubles to pay tribute to the most recognized artist to emerge from Zimbabwe onto the international scene.\n\nRelated: Koite, Boxoum and Mtukudzi Release 'Acoustic Africa in Concert'\n\nMtukudzi began performing in 1977 with Thomas Mapfumo, another successful artist whose protest music remains popular.\n\nWith his husky voice, Mtukudzi earned a devoted following across Africa and beyond. He largely steered clear of politics in his songs, which touched on people's everyday life struggles.\n\nBut in 2001, his song Wasakara, loosely translated as \"you are old\" from the chart-topping album Bvuma/Tolerance, was interpreted by many to refer to Robert Mugabe, then Zimbabwe's 77-year-old president, whose party won a violent and disputed vote the year before.\n\nIn March 2003 Mtukudzi made it to the cover of Time magazine titled \"The People's Voice,\" a story about how the country's musicians were singing for change.\n\nRelated: Oliver 'Tuku' Mtukudzi is Left Alone on New Album, 'Sarawoga'\n\n\"If anyone ever made me proud to be #Zimbabwean it was you. Thank you for making us happy for so long, especially during the darkest days,\" opposition senator David Coltart posted on Twitter.\n",
+            "title": "Latest Headlines",
+            "uninspected": true,
+            "window_ref": "W5"
+          },
+          {
+            "doc_ref": "D5",
+            "preview": "*2004 Mtukudzi Collection 1984–1991\n*2005 Nhava\n*2006 Wonai\n*2007 Tsimba Itsoka\n*2008 Dairai (Believe)\n*2010 Rudaviro\n*2010 Kutsi Kwemoyo (compilation)\n*2011 Rudaviro\n*2011 Abi'angu (\"Duets of My Time\")\n*2012 Sarawoga — Sarawoga laments the losses that the legend has had to endure in his life, not least the loss of life. Thus he has been left 'alone' in a sense, hence the title Sarawoga (left alone).\n*2014 Mukombe Wemvura\n*2016 God Bless You – The Gospel Collection\n*2016 Eheka! Nhai Yahwe\n*2018 hany'a (\"Concern\")\n\nContributing artist\n\n# 1996 The Rough Guide to the Music of Zimbabwe (World Music Network)\n# 1999 Unwired: Acoustic Music from Around the World (World Music Network)\n# 2000 Unwired: Africa (World Music Network)\n\nFilmography\n\n* Jit (dir. Michael Raeburn, 1990)\n*Neria (dir. Goodwin Mawuru, written by Tsitsi Dangarembga, 1993). Mtukudzi starred in the movie and made the soundtrack.\n* Shanda (dir. John and Louise Riber, 2002, rev. 2004)Review of Shanda movie at Dandamutande\n",
+            "title": "Oliver Mtukudzi - Wikipedia",
+            "uninspected": true,
+            "window_ref": "W6"
+          },
+          {
+            "doc_ref": "D6",
+            "preview": "---\ntitle: 10 Richest African Musicians\ndate: 2017-06-11\n---\n10 Richest African Musicians\n\nAfrican musicians continue to make a name for themselves on the global scene. They enjoy immense popularity and have accrued substantial financial wealth from selling thousands of records and endorsement deals\n\n10 Richest Musicians from Africa\n\nHere is a list of the ten richest African musicians, a list compiled by Forbes Magazine on the basis of sales, social media influence, YouTube views and charitable deeds.\n\nRelated: Best African Rappers\n\n#10 – Oliver Mtukudzi (Zimbabwe)\n\nThe year 2017 makes forty years since Oliver Mtukudzi emerged on the Zimbabwe music scene. His smoky voice and unique style of music made him popular on the African continent and gained him mass recognition globally.\n\nThroughout his years as a musician, he has produced 65 albums, traveled all over the world on tours, and has been the recipient of many awards.\n\nHis long and industrious musical career has brought him immense wealth. Forbes listed him as one of Africa's top richest musicians in its May 2017 release.\n\n#9 – Sarkodie (Ghana)\n\nSarkodie is a hip hop artist that hails from Tema, Ghana. His single Baby cemented his spot on the Ghanaian music scene. He went on to produce three more albums and a number of singles that gained him recognition as one of Africa's most popular hip hop artists.\n\nAn artist possessing sound business acumen, he launched the Obidi Chief headphones in 2012 and Sark by Yas clothing line in 2013. Samsung Electronics enlisted him as its ambassador in 2012. In its May 2017 release, Forbes listed him as the 9th richest African musician in its.\n\n#8 – Davido (Nigeria)\n",
+            "title": "10 Richest African Musicians",
+            "uninspected": true,
+            "window_ref": "W7"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q517__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "Evidence does not establish the Chinese zodiac sign is a goat (C1 gives birth date 25 May 1978, but no zodiac source is provided). Evidence does not establish the person acted as a policeman in the 2005 film (C3 says he appeared in The Constant Gardener but not the exact role). Evidence does not establish that the 2005 film's director decided to become a filmmaker after watching Iracema. Evidence does not establish that the person appeared in a 2013 dramatic thriller directed by the Kinsey director (C3 mentions The Fifth Estate but not its year, genre, director, or Kinsey connection)."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D1",
+              "query": "The Constant Gardener role policeman"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "The observed biography does not yet establish which role Peter King played in the 2005 film The Constant Gardener (specifically whether it was a policeman), nor the director's Iracema inspiration; this role is required to confirm the identity link.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis",
+          "active_hypothesis_downgraded"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C4",
+            "evidence_refs": [
+              "W2"
+            ],
+            "statement": "In the filmography for Peter Nzioki, the 2005 film The Constant Gardener is listed with the role \"Policeman 1.\"",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W2"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "Peter King may be the actor described in the question.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W2"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "Peter Nzioki may be the actor described in the question; W2 lists him in The Constant Gardener (2005) as Policeman 1 and in The Fifth Estate (2013).",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "Peter Nzioki The Fifth Estate 2013 Bill Condon Kinsey"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H2"
+          ],
+          "one_gap": "Whether Peter Nzioki appeared in the 2013 dramatic thriller The Fifth Estate and whether that film was directed by Bill Condon, best known for directing/writing Kinsey.",
+          "strategy": "VERIFY_RELATION"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W2"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "Peter King may be the actor described in the question.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W2"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "Peter Nzioki may be the actor described in the question; W2 lists him in The Constant Gardener (2005) as Policeman 1 and in The Fifth Estate (2013).",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W3",
+              "W4",
+              "W5",
+              "W6"
+            ],
+            "hypothesis_id": "H3",
+            "statement": "Bill Condon, credited as director and screenwriter of Kinsey, may be the director of the 2013 dramatic thriller referenced in the question; W3, W4, W5, and W6 all identify Bill Condon as Kinsey's director/screenwriter.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D2",
+            "preview": "---\ntitle: The Man Behind 'Kinsey': Filmmaker Bill Condon\nauthor: Heard\ndate: 2004-11-30\n---\nThe Man Behind 'Kinsey': Filmmaker Bill Condon\n\nThe new biopic Kinsey takes on the story of scientist Alfred Kinsey, who pioneered research in human sexuality in the 1940s and 1950s. For the project, director Bill Condon -- who also wrote the script -- interviewed many of the scientist's colleagues.\n\nThe film stars Liam Neeson and Laura Linney as Alfred Kinsey and his wife, Clara McMillen, along with Peter Sarsgaard and John Lithgow. The researcher's life -- and American society -- were forever changed by his 1948 book, Sexual Behavior in the Human Male.\n\nCondon wrote the screenplay for the 2003 Academy Award-winning film Chicago. He also directed the 1998 film Gods and Monsters, about filmmaker James Whale. The film was named Best Picture by the National Board of Review and earned Condon an Oscar for Best Adapted Screenplay.",
+            "title": "The Man Behind 'Kinsey': Filmmaker Bill Condon",
+            "uninspected": true,
+            "window_ref": "W3"
+          },
+          {
+            "doc_ref": "D3",
+            "preview": "---\ntitle: Kinsey\ndate: 2012-09-10\n---\nKinsey\n\nTime Out says\n\nBill Condon's biopic plays up that breach between the doctor's less than dispassionate interest in his subject – he encouraged partner-swapping among his research team, and vexed his funders by documenting on film various forms of sex in his own attic – and his lab-coated aloofness from its emotional cargo, adhering to a 'just the physiognomy, ma'am' line of enquiry. It's rich material, and of far from merely historical interest, particularly as the Christian right continues to mobilise. The shame is that the film doesn't convey more mess or danger; its sex and its politics are almost entirely dinner-table-friendly. Leading man Liam Neeson, Laura Linney as Kinsey's faithful missus and the rest of the cast are all eminently charismatic, but only Peter Sarsgaard ever communicates any uncontained pain. Condon's script, especially, is airlessly neat with pointers, contrasts and parallels; it never breaks out of the box.\n\nRelease Details\n\n- Rated:15\n\n- Release date:Friday 4 March 2005\n\n- Duration:118 mins\n\nCast and crew\n\n- Director:Bill Condon\n\n- Screenwriter:Bill Condon\n\n- Cast:\n\n- Liam Neeson\n\n- Lynn Redgrave\n\n- Dagmara Dominczyk\n\n- Julianne Nicholson\n\n- Peter Sarsgaard\n\n- Chris O'Donnell\n\n- Dylan Baker\n\n- Heather Goldenhersh\n\n- John Lithgow\n\n- Timothy Hutton\n\n- Oliver Platt\n\n- Tim Curry\n\n- William Sadler\n\n- Laura Linney\n\nDiscover Time Out original video",
+            "title": "Kinsey",
+            "uninspected": true,
+            "window_ref": "W4"
+          },
+          {
+            "doc_ref": "D4",
+            "preview": "---\ntitle: Kinsey\nauthor: Chlotrudis Independent Film Society\ndate: 2025-03-18\n---\nBy Chlotrudis Independent Film Society\n\nRating: 3.375\n\nDirector: Bill Condon\n\nStarring: Laura Linney | Liam Neeson | Peter Sarsgaard\n\nCountry: united_states\n\nYear: 2004\n\nRunning time: 118\n\nIMDB: \n\nDiane says: \"Uncontroversial movie about a controversial subject. In quality very much like SEABISCUIT. 1 cat.\"\n\nChris replies: \"Which is good news, I guess, if you liked SEABISCUIT…\n\n\"Liam Neeson is fine as the good doctor (if only Ian McKellen was a little younger to play the part), Laura Linney is insightful and game as his wife, but the revelation is Peter Sarsgaard as Kinsey's primary assistant. Sensitive and softer that I've ever seen him before, yet not a caricature, he broadens his already impressive range KINSEY: Biopic of sex-researcher Alfred Kinsey, as directed by Bill Condon. Liam Neeson is fine as the good doctor (if only Ian McKellen was a little younger to play the part), Laura Linney is insightful and game as his wife, but the revelation is Peter Sarsgaard as Kinsey's primary assistant. Sensitive and softer that I've ever seen him before, yet not a caricature, he broadens his already impressive range with this well-executed role.\n\n\"Condon says he wanted to make something that resembled a Hollywood film from the time this is set (mainly the '30s through the '50s). While that's not a bad idea, he often ends up playing to those conventions rather than subverting them. ",
+            "title": "Kinsey",
+            "uninspected": true,
+            "window_ref": "W5"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q633__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "Evidence only supports C1/C2 about Queen Wilhelmina’s reign and longevity; it does not establish the target book about a non-English queen regnant, her multilingual status, her being the only such queen in her era/home country, the book’s >300 pages/academic publisher/February post-2010 publication, or the author’s PhD since 2000 in North America and pre-2019 co-authored e-course book. Thus the author’s name cannot be grounded from C and its evidence."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "Wilhelmina Queen of the Netherlands biography academic publisher February 2010 300 pages"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "No evidence yet identifies a book about a non-English queen regnant matching the >300-page, academic-publisher, February post-2010 publication details, nor the author's PhD-since-2000-in-North-America and pre-2019 co-authored e-course book credentials.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_nonduplicate_hypothesis",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Queen Wilhelmina of the Netherlands may be the non-English queen regnant described in the Original Question.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W6"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "Maria I of Portugal may be the non-English queen regnant described in the Original Question.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D6",
+            "preview": "---\ntitle: The Madness of Queen Maria: The Remarkable Life of Maria I of Portugal Paperback – January 1, 2009\nauthor: Jenifer Roberts\ndate: 2009-01-01\n---\nDownload the free Kindle app and start reading Kindle books instantly on your smartphone, tablet, or computer - no Kindle device required.\n\nRead instantly on your browser with Kindle for Web.\n\nUsing your mobile phone camera - scan the code below and download the Kindle app.\n\nFollow the author\n\nOK\n\nThe Madness of Queen Maria: The Remarkable Life of Maria I of Portugal Paperback – January 1, 2009\n\n- Print length200 pages\n\n- LanguageEnglish\n\n- PublisherTempleton Press\n\n- Publication dateJanuary 1, 2009\n\n- Dimensions5.43 x 0.59 x 8.5 inches\n\n- ISBN-10095455891X\n\n- ISBN-13978-0954558918\n\nBook recommendations, author interviews, editors' picks, and more. Read it now.\n\nProduct details\n\n- Publisher : Templeton Press\n\n- Publication date : January 1, 2009\n\n- Edition : 0\n\n- Language : English\n\n- Print length : 200 pages\n\n- ISBN-10 : 095455891X\n\n- ISBN-13 : 978-0954558918\n\n- Item Weight : 9.3 ounces\n\n- Dimensions : 5.43 x 0.59 x 8.5 inches\n",
+            "title": "The Madness of Queen Maria: The Remarkable Life of Maria I of Portugal Paperback – January 1, 2009",
+            "uninspected": true,
+            "window_ref": "W6"
+          },
+          {
+            "doc_ref": "D7",
+            "preview": "The Emperor sent in an army and the Netherlands became part of the French Empire until November 1813, when Napoleon was defeated in the Battle of Leipzig.\n\nWilliam Frederick, son of the last stadtholder, returned to the Netherlands in 1813 and proclaimed himself Sovereign Prince. Two years later, the Congress of Vienna added the southern Netherlands to the north to create a strong country on the northern border of France. William Frederick raised this United Netherlands to the status of a kingdom and proclaimed himself as King William I in 1815. William became hereditary Grand Duke of Luxembourg in exchange for his German possessions. However, the Southern Netherlands had been culturally separate from the north since 1581, and rebelled. The south gained independence in 1830 as Belgium (recognised by the Northern Netherlands in 1839 as the Kingdom of the Netherlands was created by decree), while the personal union between Luxembourg and the Netherlands was severed in 1890, when William III died with no surviving male heirs. Ascendancy laws prevented his daughter Queen Wilhelmina from becoming the next Grand Duchess.\n\nThe Belgian Revolution and the Java War in the Dutch East Indies brought the Netherlands to the brink of bankruptcy. However, the Cultivation System was introduced in 1830; in the Dutch East Indies, 20% of village land had to be devoted to government crops for export. The policy brought the Dutch enormous wealth and made the colony self-sufficient. The Netherlands abolished slavery in its colonies in 1863.Finkelman and Miller, Macmillan Encyclopedia of World Slavery 2:637 Enslaved people in Suriname would be fully free only in 1873.\n\nWorld wars and beyond (1890–present)\n",
+            "title": "Netherlands - Wikipedia",
+            "uninspected": true,
+            "window_ref": "W7"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 10,
+              "query": "book biography queen regnant multilingual only female monarch academic publisher February 300 pages"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1",
+            "H2"
+          ],
+          "one_gap": "The specific book (about a non-English, multilingual queen regnant who was the only such ruler in her era/home country) matching >300 pages, an academic publisher, and February post-2010 publication—plus its author's PhD-since-2000-in-North-America and pre-2019 co-authored e-course book credentials—remains unidentified, so the author's name cannot be grounded.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim",
+          "new_nonduplicate_hypothesis",
+          "active_hypothesis_downgraded",
+          "new_uninspected_useful_source"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W12"
+            ],
+            "statement": "Nwando Achebe authored The Female King of Colonial Nigeria, which was published in February 2011.",
+            "version": 1
+          },
+          {
+            "claim_id": "C4",
+            "evidence_refs": [
+              "W12"
+            ],
+            "statement": "The Female King of Colonial Nigeria concerns Ahebi Ugbabe, an Igbo woman who became king in colonial Nigeria; she was exiled from Igboland, traveled widely, learned to speak many languages, and became a close companion of Nigerian Igala kings and British officers who supported her claim to the offices of headman, warrant chief, and later king.",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [
+              "W12"
+            ],
+            "hypothesis_id": "H1",
+            "statement": "Queen Wilhelmina of the Netherlands may be the non-English queen regnant described in the Original Question.",
+            "status": "deprioritized"
+          },
+          {
+            "basis_refs": [
+              "W6"
+            ],
+            "hypothesis_id": "H2",
+            "statement": "Maria I of Portugal may be the non-English queen regnant described in the Original Question.",
+            "status": "active"
+          },
+          {
+            "basis_refs": [
+              "W12"
+            ],
+            "hypothesis_id": "H3",
+            "statement": "Nwando Achebe's 'The Female King of Colonial Nigeria' (academic publisher, February 2011) recounts Ahebi Ugbabe, an Igbo woman who became king in colonial Nigeria, traveled widely and learned to speak many languages, making her the only one of her kind in her era — a plausible match for the non-English multilingual queen/king regnant target book, with Nwando Achebe as the author's name.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [
+          {
+            "doc_ref": "D12",
+            "preview": "---\ntitle: The Female King of Colonial Nigeria\nauthor: Nwando Achebe\ndate: 2011-02-21\n---\nPublished: February 2011\n\nDescription\n\nNwando Achebe presents the fascinating history of an Igbo woman, Ahebi Ugbabe, who became king in colonial Nigeria. Ugbabe was exiled from Igboland, became a prostitute, traveled widely, and learned to speak many languages. She became a close companion of Nigerian Igala kings and the British officers who supported her claim to the office of headman, warrant chief, and later, king. In this unique biography, Achebe traces the roots of Ugbabe's rise to fame and fortune. While providing critical perspectives on women, gender, sex and sexuality, and the colonial encounter, she also considers how it was possible for this woman to take on the office and responsibilities of a traditionally male role.",
+            "title": "The Female King of Colonial Nigeria",
+            "uninspected": true,
+            "window_ref": "W12"
+          }
+        ],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q673__rep1",
+    "status": "horizon_exhausted",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "C1/W9 supports that Arinimaal's poems were deposited in a dry well after her death, but it does not establish the additional material conditions in Q: that she was born between 1720 and 1764, that she lived centuries after a renowned poetess whose name came from her immense beauty, or that her husband was also a poet."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "not_applicable",
+        "acquisition_outcome": "not_attempted",
+        "claim_outcome": "not_attempted"
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D9",
+              "query": "Arinimaal birth year date husband poet beauty-named poetess"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Whether Arinimaal was born between 1720 and 1764, lived centuries after a renowned poetess named for her immense beauty, and had a husband who was also a poet.",
+          "strategy": "VERIFY_ATTRIBUTE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Arinimaal may be the poetess whose recorded poems were deposited in a dry well after her death.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W11"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Whether Arinimaal was born between 1720 and 1764 and had a husband who was also a poet, and whether she lived centuries after a renowned poetess known by a name derived from her immense beauty.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim"
+        ],
+        "failure": null,
+        "claims": [
+          {
+            "claim_id": "C2",
+            "evidence_refs": [
+              "W12"
+            ],
+            "statement": "T.N. Kaul stated that some critics wrongly attributed one of Arinimaal's most pathetic ditties, 'åríní rang gom shràvan híyè', to her contemporary Mahmud Gami (1765–1855).",
+            "version": 1
+          }
+        ],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Arinimaal may be the poetess whose recorded poems were deposited in a dry well after her death.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": [],
+        "auxiliary_failures": [],
+        "hypothesis_outcome": "completed",
+        "acquisition_outcome": "ok",
+        "claim_outcome": "completed"
+      }
+    ]
+  }
+]

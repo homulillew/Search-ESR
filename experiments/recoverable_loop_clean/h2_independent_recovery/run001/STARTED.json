@@ -1,0 +1,39 @@
+{
+  "utc": "2026-09-27T21:23:42.694796+00:00",
+  "head": "1c8d189ff5a4d8eecdfe928a19e19d945ff591eb",
+  "config": {
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "response_format": {
+      "type": "json_object"
+    },
+    "stream": false,
+    "max_retries": 0,
+    "concurrency": 11,
+    "max_paid_requests": 174,
+    "max_acquisitions": 29,
+    "horizon": 3,
+    "replicates": 1,
+    "retrieval_concurrency": 1,
+    "gpu": "cuda:0",
+    "timeouts_seconds": {
+      "connect": 30,
+      "read": 900,
+      "write": 60,
+      "pool": 30
+    },
+    "total_timeout_seconds": 1200,
+    "http_connections": 11,
+    "user_id": "OMITTED, unchanged from historical calls",
+    "credential_source": "DEEPSEEK_API_KEY environment or .env.deepseek; never stored in requests/artifacts",
+    "authorization": "User standing authorization; H1 gate passed; H2 11 eligible of 12 preselected, <=174 requests, <=29 acquisitions; no backfill.",
+    "failure_policy": "H role/output failures isolated by engine; high-authority or integrity failures remain fatal; timeout/429/503 halve unsent concurrency; no retry or replacements.",
+    "independent_confirmation": "Disjoint questions from H repair/H1; archived bank, not globally unseen. Weak-H, not necessarily wrong-H."
+  }
+}

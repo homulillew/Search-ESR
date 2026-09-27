@@ -1,0 +1,64 @@
+{
+  "calls_attempted": 81,
+  "calls_not_sent": 0,
+  "failed_requests": 1,
+  "roles": {
+    "hypotheses": 22,
+    "actor": 22,
+    "reader": 19,
+    "grounding": 12,
+    "closure": 5,
+    "final": 1
+  },
+  "tokens_complete_records": {
+    "input": 185076,
+    "output": 179815,
+    "total": 364891,
+    "hit": 42112,
+    "miss": 142964
+  },
+  "reasoning_tokens_reported": 173797,
+  "cache_hit_rate": 0.22753895696902893,
+  "usage_complete_records": 81,
+  "usage_missing_or_inconsistent": 0,
+  "usage_issues": [],
+  "latency_seconds": {
+    "min": 1.0564030222594738,
+    "p50": 7.881984878331423,
+    "p90": 23.18913196027279,
+    "p95": 29.520267441868782,
+    "max": 42.14492298103869
+  },
+  "transport": {
+    "count": 81,
+    "peak": 11,
+    "final_limit": 11,
+    "changes": [
+      {
+        "utc": "2026-09-27T21:23:54.406158+00:00",
+        "limit": 11,
+        "reason": "initial"
+      }
+    ],
+    "halt": null
+  },
+  "completion": {
+    "utc": "2026-09-27T21:25:56.303984+00:00",
+    "head": "1c8d189ff5a4d8eecdfe928a19e19d945ff591eb",
+    "wall_seconds": 133.6125561837107,
+    "trajectories": 11
+  },
+  "runtime_counts_unreviewed": {
+    "Gain": 16,
+    "decision_acquire": 24,
+    "tool_search": 12,
+    "tool_find": 7,
+    "NoGain": 14,
+    "new_C": 12,
+    "tool_open": 5,
+    "hypothesis_update_skipped": 2,
+    "decision_request_closure": 5,
+    "decision_None": 1
+  },
+  "model_quality_scores": "Pending separate semantic review. Gain != useful evidence."
+}
