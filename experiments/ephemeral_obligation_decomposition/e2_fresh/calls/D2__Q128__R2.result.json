@@ -1,0 +1,80 @@
+{
+  "id": "D2__Q128__R2",
+  "arm": "D2",
+  "qid": "128",
+  "replicate": 2,
+  "request_sha256": "c7a1df5da989413c545608804fb1ea38805347d0fb9e75f1e75dfc5747292ec5",
+  "head": "338a6bee85f0df5dea5bba6fa8295754146afb16",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "An article was published in November of 2019, by a media company founded in the 1960s, discussing different scoring methods for various types of the same sport."
+          },
+          {
+            "unit": "Q2",
+            "text": "The article references only one professional athlete by name throughout the entire article."
+          }
+        ]
+      },
+      {
+        "source_spans": [
+          {
+            "unit": "Q3",
+            "text": "In January of 2020, a media company that originated in the 1950s published an article about that athlete."
+          },
+          {
+            "unit": "Q4",
+            "text": "The article has excerpts from an interview the athlete had done."
+          }
+        ]
+      },
+      {
+        "source_spans": [
+          {
+            "unit": "Q5",
+            "text": "According to that 2020 article, what is the hometown of this athlete?"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 770,
+    "completion_tokens": 1605,
+    "total_tokens": 2375,
+    "prompt_tokens_details": {
+      "cached_tokens": 636
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1439
+    },
+    "prompt_cache_hit_tokens": 636,
+    "prompt_cache_miss_tokens": 134
+  },
+  "started_utc": "2026-09-27T07:24:14.088913+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 6.863546220585704,
+  "completed_utc": "2026-09-27T07:24:20.952471+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 770,
+      "output": 1605,
+      "total": 2375,
+      "reasoning": 1439,
+      "hit": 636,
+      "miss": 134
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

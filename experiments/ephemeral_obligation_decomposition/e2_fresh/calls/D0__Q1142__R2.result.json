@@ -1,0 +1,69 @@
+{
+  "id": "D0__Q1142__R2",
+  "arm": "D0",
+  "qid": "1142",
+  "replicate": 2,
+  "request_sha256": "ad2da2af62c200bc0e7fa61b4ab1b0ac05cc68b926ac447c49cc23b2485cc028",
+  "head": "338a6bee85f0df5dea5bba6fa8295754146afb16",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement": "Identify the press release issued in a year before 2023, dated between December 1 and December 15 inclusive, reporting that as of December 5 of that month a country had received a total of 16,201,670 vaccine doses with 7,583,134 administered, and identify that country and the year."
+      },
+      {
+        "requirement": "Identify the company whose annual report for that same year stated that its nearly 2.2 million members and supporters contributed over $49 million, with 12% of total revenue coming from contributed services."
+      },
+      {
+        "requirement": "Identify the annual report of the following year that stated the organization played a role in rescinding a previous administration’s plan to open most of the 22 million acres of the National Petroleum Reserve in Alaska to oil and gas drilling and that contributed services decreased by 2% to 10%."
+      },
+      {
+        "requirement": "Determine whether the company whose annual report is described for the same year and the organization whose annual report is described for the following year are the same entity as presented in the question, and identify the relevant organization/company."
+      },
+      {
+        "requirement": "Resolve the referent of 'that year' in the final question, i.e. the year for which the emeritus board member is sought, through the temporal sequence linking the press-release year, the same-year annual report, and the following-year annual report."
+      },
+      {
+        "requirement": "Identify the person who was an emeritus board member of the relevant organization/company in the year referred to by 'that year'."
+      },
+      {
+        "requirement": "Provide only the identified person’s name, without titles."
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 909,
+    "completion_tokens": 5622,
+    "total_tokens": 6531,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 5240
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 653
+  },
+  "started_utc": "2026-09-27T07:23:23.754174+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 24.565413212403655,
+  "completed_utc": "2026-09-27T07:23:48.319601+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 909,
+      "output": 5622,
+      "total": 6531,
+      "reasoning": 5240,
+      "hit": 256,
+      "miss": 653
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

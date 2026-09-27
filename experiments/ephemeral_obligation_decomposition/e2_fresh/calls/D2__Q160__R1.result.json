@@ -1,0 +1,100 @@
+{
+  "id": "D2__Q160__R1",
+  "arm": "D2",
+  "qid": "160",
+  "replicate": 1,
+  "request_sha256": "c3dffa5b9bf2991bd801733e02f685dfcf534700a43463abd0de55fc3e10a9c0",
+  "head": "338a6bee85f0df5dea5bba6fa8295754146afb16",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "source_spans": [
+          {
+            "unit": "Q1",
+            "text": "There's a poem that's from a specific book, which is a poetry collection."
+          }
+        ]
+      },
+      {
+        "source_spans": [
+          {
+            "unit": "Q2",
+            "text": "Find the name of the poem and the book based on the given clues:"
+          }
+        ]
+      },
+      {
+        "source_spans": [
+          {
+            "unit": "Q3",
+            "text": "- The title of the poem is one word in a language other than English."
+          }
+        ]
+      },
+      {
+        "source_spans": [
+          {
+            "unit": "Q4",
+            "text": "- The poem’s last line contains exactly two words, and those two words are identical to the title of the book."
+          }
+        ]
+      },
+      {
+        "source_spans": [
+          {
+            "unit": "Q5",
+            "text": "- The book is the fourth book of poetry by the author."
+          }
+        ]
+      },
+      {
+        "source_spans": [
+          {
+            "unit": "Q6",
+            "text": "- The book won an award between 2010 and 2020, inclusive, from an independent literary press."
+          },
+          {
+            "unit": "Q7",
+            "text": "- That award nomination came from another well-known author born in the mid-1900s with a PhD in folklore."
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 851,
+    "completion_tokens": 2731,
+    "total_tokens": 3582,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2500
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 595
+  },
+  "started_utc": "2026-09-27T07:23:48.325958+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 12.448389271274209,
+  "completed_utc": "2026-09-27T07:24:00.774374+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 851,
+      "output": 2731,
+      "total": 3582,
+      "reasoning": 2500,
+      "hit": 256,
+      "miss": 595
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}

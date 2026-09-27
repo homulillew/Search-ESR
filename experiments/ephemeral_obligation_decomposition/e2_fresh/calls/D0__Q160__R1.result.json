@@ -1,0 +1,66 @@
+{
+  "id": "D0__Q160__R1",
+  "arm": "D0",
+  "qid": "160",
+  "replicate": 1,
+  "request_sha256": "2a603ca8f75072310f90b823563cbcf615833c43f52ba228b582d21600d4ebb1",
+  "head": "338a6bee85f0df5dea5bba6fa8295754146afb16",
+  "attempted": true,
+  "valid_json": true,
+  "valid_output": true,
+  "output": {
+    "requirements": [
+      {
+        "requirement": "Identify a poem and the poetry collection book that contains it; the poem's name and the book's name are the requested outputs."
+      },
+      {
+        "requirement": "The poem's title is a single word in a language other than English."
+      },
+      {
+        "requirement": "The poem's last line consists of exactly two words, and those two words are identical to the title of the book."
+      },
+      {
+        "requirement": "The book is the fourth book of poetry by its author."
+      },
+      {
+        "requirement": "The book won an award between 2010 and 2020, inclusive, from an independent literary press."
+      },
+      {
+        "requirement": "The nomination for that award came from another well-known author born in the mid-1900s with a PhD in folklore."
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 845,
+    "completion_tokens": 2471,
+    "total_tokens": 3316,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2317
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 589
+  },
+  "started_utc": "2026-09-27T07:23:52.685165+00:00",
+  "http_status": 200,
+  "response_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "failure": null,
+  "elapsed_seconds": 11.109818279743195,
+  "completed_utc": "2026-09-27T07:24:03.795000+00:00",
+  "accounting": {
+    "tokens": {
+      "input": 845,
+      "output": 2471,
+      "total": 3316,
+      "reasoning": 2317,
+      "hit": 256,
+      "miss": 589
+    },
+    "missing": [],
+    "inconsistent": [],
+    "complete": true
+  }
+}
