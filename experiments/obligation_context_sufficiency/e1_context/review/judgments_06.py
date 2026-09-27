@@ -1,0 +1,17 @@
+from .record_review import record
+J={}
+def add(ids,reason,fails=(),errors=(),ambiguity='low'):
+ for n in ids:J[n]={'fails':list(fails),'errors':list(errors),'reason':reason,'ambiguity':ambiguity}
+add([6,110,137,181], 'Only Sophies death is established. The output presupposes a particular partner interview/song-reference utterance and extracts its final song title before the partner/source/relation is identified.', ['ScopeFaithful','NonDownstream'],['relation_strengthening','downstream_obligation','unresolved_referent'],'medium')
+add([161], 'Identifies the unknown partner and corresponding interview source for the C-grounded artist, using the Q-described reference as an identifying condition. A bounded partner/source discovery objective is allowed.',ambiguity='medium')
+add([170], 'Combines identifying the still-unknown interview with extracting the final song title from it. The source-identification objective is legitimate, but adding its downstream answer bundles the next dependency.', ['Local','NonDownstream'],['bundled_objectives','downstream_obligation','unresolved_referent'],'medium')
+add([172], 'Assumes an available identified partner interview as the source from which to establish the song reference and title. C provides only the death, so the source/utterance relation is strengthened and its dependency skipped.', ['ScopeFaithful','NonDownstream'],['relation_strengthening','downstream_obligation','unresolved_referent'],'medium')
+add([204], 'Uses the verified Athens/Greece death and date to identify/check the question accident site and its distance/time relation. This is one coherent unresolved event comparison.')
+add([19,39,62,115,141,164,168,207], 'Identifies the unknown letter from a bounded date/delivery/participant profile, optionally including its generic regained-region subject. It does not ask to extract the final region name before identifying the letter. These complementary source-identifying conditions are allowed.',ambiguity='medium')
+add([17,166,203], 'Restates the complete paper problem and assigns both Harran affiliation and JBSE publication to the same author, although Q leaves that role mapping open.', ['Local','ScopeFaithful'],['whole_question_restatement','wrong_relation_arguments'])
+add([74,165,175,190], 'Keeps the author-role assignment open but restates the complete paper-content and authors other-publication/employment problem instead of selecting a local branch.', ['Local'],['whole_question_restatement'],'medium')
+add([30], 'Discovers the Harran-affiliated co-author through one bounded affiliation/publication profile. It is a meaningful identity obligation, not an isolated low-value atom.',ambiguity='medium')
+add([78,84,205], 'Repeats essentially every book clue and promotes the Euler birth candidate to a verified referent of the books L.E. reference. C provides his biography but no book-to-Euler association.', ['Local','ScopeFaithful'],['whole_question_restatement','relation_strengthening'])
+add([96,120,183,200], 'Restates all independent illustration, rust-cleaning/music and biographical-reference clues. Keeping L.E. unnamed avoids Euler hardening but does not select a local obligation.', ['Local'],['whole_question_restatement'],'medium')
+add([80], 'Provider terminated with length and no final obligation. Mechanical failure receives zero success dimensions, without invented semantic diagnoses.',errors=['mechanical_failure'])
+record('06',J)
