@@ -1,0 +1,404 @@
+{
+  "R0": {
+    "metric": {
+      "numerator": 4,
+      "denominator": 6,
+      "value": 0.6666666666666666
+    },
+    "events": [
+      {
+        "from": "G05",
+        "to": "G06",
+        "parent_requirement_id": "R2",
+        "removed_classes": [
+          "marital_childlessness"
+        ],
+        "retained_classes": [
+          "gift_building"
+        ],
+        "reason": "C5 establishes Ding marital condition; gift remains.",
+        "replicate": 1,
+        "from_class": "marital_childlessness",
+        "to_class": "gift_building",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": true,
+        "valid_transition": true,
+        "kind": "correct_required_switch"
+      },
+      {
+        "from": "G05",
+        "to": "G06",
+        "parent_requirement_id": "R2",
+        "removed_classes": [
+          "marital_childlessness"
+        ],
+        "retained_classes": [
+          "gift_building"
+        ],
+        "reason": "C5 establishes Ding marital condition; gift remains.",
+        "replicate": 2,
+        "from_class": "gift_building",
+        "to_class": "gift_building",
+        "from_strict": false,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": false,
+        "kind": "failed_pair"
+      },
+      {
+        "from": "G08",
+        "to": "G09",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "partner_identity"
+        ],
+        "retained_classes": [
+          "partner_interview_song"
+        ],
+        "reason": "C2/C3 establish partner/tribute, interview/song relation remains.",
+        "replicate": 1,
+        "from_class": "partner_interview_song",
+        "to_class": "tribute_song_link",
+        "from_strict": false,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": false,
+        "kind": "failed_pair"
+      },
+      {
+        "from": "G08",
+        "to": "G09",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "partner_identity"
+        ],
+        "retained_classes": [
+          "partner_interview_song"
+        ],
+        "reason": "C2/C3 establish partner/tribute, interview/song relation remains.",
+        "replicate": 2,
+        "from_class": "partner_interview_song",
+        "to_class": "partner_interview_song",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G17",
+        "to": "G18",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "first_case_clinical"
+        ],
+        "retained_classes": [
+          "report_country_history"
+        ],
+        "reason": "C7 establishes specific clinical history; report-country/history still unresolved.",
+        "replicate": 1,
+        "from_class": "report_country_history",
+        "to_class": "report_country_history",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G17",
+        "to": "G18",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "first_case_clinical"
+        ],
+        "retained_classes": [
+          "report_country_history"
+        ],
+        "reason": "C7 establishes specific clinical history; report-country/history still unresolved.",
+        "replicate": 2,
+        "from_class": "report_country_history",
+        "to_class": "report_country_history",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      }
+    ],
+    "required_change_subset": {
+      "numerator": 1,
+      "denominator": 1,
+      "value": 1.0
+    }
+  },
+  "R1": {
+    "metric": {
+      "numerator": 6,
+      "denominator": 6,
+      "value": 1.0
+    },
+    "events": [
+      {
+        "from": "G05",
+        "to": "G06",
+        "parent_requirement_id": "R2",
+        "removed_classes": [
+          "marital_childlessness"
+        ],
+        "retained_classes": [
+          "gift_building"
+        ],
+        "reason": "C5 establishes Ding marital condition; gift remains.",
+        "replicate": 1,
+        "from_class": "gift_building",
+        "to_class": "gift_building",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G05",
+        "to": "G06",
+        "parent_requirement_id": "R2",
+        "removed_classes": [
+          "marital_childlessness"
+        ],
+        "retained_classes": [
+          "gift_building"
+        ],
+        "reason": "C5 establishes Ding marital condition; gift remains.",
+        "replicate": 2,
+        "from_class": "gift_building",
+        "to_class": "gift_building",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G08",
+        "to": "G09",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "partner_identity"
+        ],
+        "retained_classes": [
+          "partner_interview_song"
+        ],
+        "reason": "C2/C3 establish partner/tribute, interview/song relation remains.",
+        "replicate": 1,
+        "from_class": "partner_interview_song",
+        "to_class": "partner_interview_song",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G08",
+        "to": "G09",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "partner_identity"
+        ],
+        "retained_classes": [
+          "partner_interview_song"
+        ],
+        "reason": "C2/C3 establish partner/tribute, interview/song relation remains.",
+        "replicate": 2,
+        "from_class": "partner_interview_song",
+        "to_class": "partner_interview_song",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G17",
+        "to": "G18",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "first_case_clinical"
+        ],
+        "retained_classes": [
+          "report_country_history"
+        ],
+        "reason": "C7 establishes specific clinical history; report-country/history still unresolved.",
+        "replicate": 1,
+        "from_class": "report_country_history",
+        "to_class": "report_country_history",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G17",
+        "to": "G18",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "first_case_clinical"
+        ],
+        "retained_classes": [
+          "report_country_history"
+        ],
+        "reason": "C7 establishes specific clinical history; report-country/history still unresolved.",
+        "replicate": 2,
+        "from_class": "report_country_history",
+        "to_class": "report_country_history",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      }
+    ],
+    "required_change_subset": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    }
+  },
+  "R2": {
+    "metric": {
+      "numerator": 6,
+      "denominator": 6,
+      "value": 1.0
+    },
+    "events": [
+      {
+        "from": "G05",
+        "to": "G06",
+        "parent_requirement_id": "R2",
+        "removed_classes": [
+          "marital_childlessness"
+        ],
+        "retained_classes": [
+          "gift_building"
+        ],
+        "reason": "C5 establishes Ding marital condition; gift remains.",
+        "replicate": 1,
+        "from_class": "gift_building",
+        "to_class": "gift_building",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G05",
+        "to": "G06",
+        "parent_requirement_id": "R2",
+        "removed_classes": [
+          "marital_childlessness"
+        ],
+        "retained_classes": [
+          "gift_building"
+        ],
+        "reason": "C5 establishes Ding marital condition; gift remains.",
+        "replicate": 2,
+        "from_class": "gift_building",
+        "to_class": "gift_building",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G08",
+        "to": "G09",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "partner_identity"
+        ],
+        "retained_classes": [
+          "partner_interview_song"
+        ],
+        "reason": "C2/C3 establish partner/tribute, interview/song relation remains.",
+        "replicate": 1,
+        "from_class": "partner_interview_song",
+        "to_class": "partner_interview_song",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G08",
+        "to": "G09",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "partner_identity"
+        ],
+        "retained_classes": [
+          "partner_interview_song"
+        ],
+        "reason": "C2/C3 establish partner/tribute, interview/song relation remains.",
+        "replicate": 2,
+        "from_class": "partner_interview_song",
+        "to_class": "partner_interview_song",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      },
+      {
+        "from": "G17",
+        "to": "G18",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "first_case_clinical"
+        ],
+        "retained_classes": [
+          "report_country_history"
+        ],
+        "reason": "C7 establishes specific clinical history; report-country/history still unresolved.",
+        "replicate": 1,
+        "from_class": "first_case_clinical",
+        "to_class": "report_country_history",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": true,
+        "valid_transition": true,
+        "kind": "correct_required_switch"
+      },
+      {
+        "from": "G17",
+        "to": "G18",
+        "parent_requirement_id": "R3",
+        "removed_classes": [
+          "first_case_clinical"
+        ],
+        "retained_classes": [
+          "report_country_history"
+        ],
+        "reason": "C7 establishes specific clinical history; report-country/history still unresolved.",
+        "replicate": 2,
+        "from_class": "report_country_history",
+        "to_class": "report_country_history",
+        "from_strict": true,
+        "to_strict": true,
+        "requires_target_change": false,
+        "valid_transition": true,
+        "kind": "compatible_persistence_or_other_valid_switch"
+      }
+    ],
+    "required_change_subset": {
+      "numerator": 1,
+      "denominator": 1,
+      "value": 1.0
+    }
+  }
+}
