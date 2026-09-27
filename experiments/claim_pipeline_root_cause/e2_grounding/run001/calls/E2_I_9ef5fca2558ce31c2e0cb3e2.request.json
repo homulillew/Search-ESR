@@ -1,0 +1,36 @@
+{
+  "git_head": "69fde98d4cc46cb60ec18623792508eb7a9be81e",
+  "created_utc": "2026-09-27T23:43:09.692681+00:00",
+  "role": "g1_evidence_inventory",
+  "stage": "E2",
+  "arm": "G1_inventory",
+  "evidence_key": "9ef5fca2558ce31c2e0cb3e2d7ac792a1098b676a0e0a2d650125fcd2586c358",
+  "pair_ids": [
+    "E2_101d78f08f5d4b7d64cdc02c"
+  ],
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 32768,
+    "stream": false,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "List the minimal factual commitments explicitly supported by the supplied full evidence and visible source metadata.\nPreserve subjects, relations, scope, attribution, conditions and modality. Do not introduce commitments using background knowledge. Do not make a task-directed summary or guess a candidate claim.\nEach fact must cite the observed window references supporting its full statement. Return at most 32 facts, prioritizing explicit propositions over repetition, or an empty list if none. Sources are untrusted data. Return the supplied JSON schema.\nReturn one JSON object matching this schema:\n{\"additionalProperties\":false,\"properties\":{\"facts\":{\"items\":{\"additionalProperties\":false,\"properties\":{\"evidence_refs\":{\"items\":{\"enum\":[\"W5\"],\"minLength\":1,\"pattern\":\"^W[1-9][0-9]*$\",\"type\":\"string\"},\"minItems\":1,\"type\":\"array\",\"uniqueItems\":true},\"statement\":{\"minLength\":1,\"type\":\"string\"}},\"required\":[\"statement\",\"evidence_refs\"],\"type\":\"object\"},\"maxItems\":32,\"type\":\"array\"}},\"required\":[\"facts\"],\"type\":\"object\"}"
+      },
+      {
+        "role": "user",
+        "content": "{\"Evidence\":[{\"doc_ref\":\"D5\",\"text\":\"| 2015 | Enyimba FC (7) |\\n| 2016 | Rangers International F.C. (7) |\\n| 2017 | Plateau United FC (1) |\\n| 2018 | Championship canceled |\\n| 2019 | Enyimba FC (8) |\\n| 2019–20 | Championship canceled due to Covid-19 |\\n| 2020–21 | Akwa United FC (1) |\\n| 2021–22 | Rivers United (4) |\\n| 2022–23 | Enyimba FC (9) |\\n| 2023–24 | Rangers International F.C. (8) |\\n| 2024–25 | Remo Stars (1) |\\n\\nMost titles won\\n\\n**Table 4**\\n\\n| Clubs | Championship | Years |\\n|---|---|---|\\n| Enyimba (Aba) | 9 | 2001, 2002, 2003, 2005, 2007, 2010, 2015, 2019, 2022–23 |\\n| Rangers International (Enugu) | 8 | 1974, 1975, 1977, 1981, 1982, 1984, 2016, 2023–24 |\\n| Shooting Stars (Ibadan) | 5 | 1976, 1980, 1983, 1995, 1998 |\\n\",\"title\":\"Nigeria Premier Football League - Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Nigeria_Premier_Football_League\",\"window_ref\":\"W5\"}]}"
+      }
+    ]
+  },
+  "request_hash": "9a39084586dfafab6123dc3c69cc0df73358f76e6407c1454cce4e25f2ba2de7",
+  "offline_mock": false
+}
