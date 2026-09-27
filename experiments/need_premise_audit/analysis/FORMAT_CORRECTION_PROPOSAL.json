@@ -1,0 +1,19 @@
+{
+  "status": "OFFLINE_ONLY_NOT_EXECUTED",
+  "cause": "All44 V0 HTTP400 responses state that JSON mode requires json in message text. The supplied V0 prompt lacked that literal, and pre-call tests did not check this provider requirement.",
+  "responsibility": "Experiment integration/preflight omission by Codex; not model failure or user error.",
+  "minimal_proposed_delta": {
+    "from": "Return only:",
+    "to": "Return only JSON:"
+  },
+  "preserves": "All task semantics, output schema, inputs and decomposition-free V0 instructions.",
+  "new_prompt_proposal": "You are checking a proposed next research question.\n\nThe input contains:\n- Original Question\n- Verified Claims, each with an ID\n- Working Hypothesis\n- Candidate Need\n\nJudge only whether the Candidate Need is safe and well-grounded relative to this input.\n\nA Candidate Need is not invalid merely because the relation it asks about is unresolved. The point of research is to investigate unresolved relations.\n\nIt is invalid when it treats an unsupported identity, event, relationship, date, role, or concrete referent as already established background in order to ask a downstream question.\n\nThe Working Hypothesis is provisional and cannot establish a fact.\n\nDo not choose a different research direction. Do not plan searches. Do not answer the Original Question.\n\nReturn only JSON:\n\n{\n  \"decision\": \"keep\" | \"revise\",\n  \"issue\": \"short description or null\",\n  \"basis_refs\": [\"Q\", \"C1\", \"...\"]\n}\n\nbasis_refs may contain only Q or existing Verified Claim IDs.\nIf the problem is precisely that no Q/Claim supports the assumption, use an empty list.\n",
+  "offline_precheck": {
+    "original_V0_rejected": 44,
+    "original_V1_accepted": 44,
+    "proposed_payloads_accepted": 88
+  },
+  "no_new_calls": true,
+  "no_frozen_files_changed": true,
+  "execution_policy": "Do not rewrite or replace original calls. E1 V1 absolute gates independently fail, so do not execute an extra control batch or continue E2/E3. Any future separately frozen run must integrate this guard before network."
+}
