@@ -1,0 +1,669 @@
+[
+  {
+    "trajectory_id": "R1_Q1094__rep1",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "query": "\"identity evolved\" OR \"evolved through several iterations\" club football"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Which of the clubs in the PSG–Lille 4–3 fixture satisfies the split-founded history clue, and does the other satisfy the identity-evolution clue?",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R1_Q1094__rep2",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "query": "\"identity evolved\" OR \"evolved through several iterations\" club football"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Which of the clubs in the PSG–Lille 4–3 fixture satisfies the split-founded history clue, and does the other satisfy the identity-evolution clue?",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R1_Q546__rep1",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "query": "snooker \"less than 250 centuries\" 2023"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "What were Ding Junhui's subsequent 2023 English Open results after the opening 4–3 win, and did they follow the required 4–3, 4–0, loss order?",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R1_Q546__rep2",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "query": "snooker \"less than 250 centuries\" 2023"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "What were Ding Junhui's subsequent 2023 English Open results after the opening 4–3 win, and did they follow the required 4–3, 4–0, loss order?",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q228__rep1",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "Ding Lei wife no children donation Cornell Tech building scheduled to open"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Whether Ding Lei and his spouse had no children up to 2019 and made a foundational gift for the construction of a building that was part of a university complex.",
+          "strategy": "VERIFY_ATTRIBUTE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Kwon Hyuk-bin, founder of Smilegate, may be the person referenced in the question.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": []
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D4",
+              "query": "wife children marriage no children"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "Whether Ding Lei and his spouse had no children up to 2019, and whether they made a foundational gift for the construction of a building.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim"
+        ],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W4"
+            ],
+            "statement": "As of 2019, Ding Lei was married but had no children.",
+            "version": 1
+          }
+        ],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q228__rep2",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D2",
+              "query": "wife spouse children no children donation gift building university construction foundation"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R2",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Whether Kwon Hyuk-bin and his spouse (who had no children from the marriage as of 2019) made a foundational gift for the construction of a building at a university, and what building/university that was",
+          "strategy": "VERIFY_RELATION"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q637__rep1",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D4",
+              "query": "six-month history of pain difficulty walking moving shoulders"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R5",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "The scientific name of the disorder shared by both 2010s case reports is unresolved; H1 proposes SPS, but D4 may be the first case report and may instead match fibrodysplasia ossificans progressiva.",
+          "strategy": "VERIFY_RELATION"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim"
+        ],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W4"
+            ],
+            "statement": "The patient in the case report had a de novo heterozygous ACVR1/ALK2 mutation (c.617G>A; p.R206H) that was not detected in his parents, and the diagnosis of fibrodysplasia ossificans progressiva (FOP) was confirmed when this canonical mutation was detected.",
+            "version": 1
+          }
+        ],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R2_Q637__rep2",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D4",
+              "query": "six-month history of pain difficulty walking shoulder"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R5",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Whether D4's case report matches the first case's half-year pain, progressive walking difficulty, and shoulder-movement difficulty, and what disorder it identifies, so the shared disorder can be discriminated beyond the current SPS hypothesis.",
+          "strategy": "DISCRIMINATE_CANDIDATES"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim"
+        ],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W4"
+            ],
+            "statement": "The D4 case was diagnosed with fibrodysplasia ossificans progressiva (FOP) after a de novo heterozygous ACVR1/ALK2 c.617G>A (p.R206H) mutation was detected in the patient but not in his parents.",
+            "version": 1
+          }
+        ],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q538__rep1",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "No evidence identifies the title of the book as of December 2023; C1 only concerns Leonhard Euler's birth."
+              },
+              {
+                "requirement_id": "R2",
+                "summary": "No evidence shows any book containing 130–140 illustrations and descriptions of objects such as the telephone and telegraph."
+              },
+              {
+                "requirement_id": "R3",
+                "summary": "No evidence provides the rust-cleaning method or links it to a substance from a Three Dog Night song or an oil sharing a name with a country song."
+              },
+              {
+                "requirement_id": "R4",
+                "summary": "C1 only gives Euler's birth details; it does not show a book referencing him, a mechanical engineer born in the early 1800s, or a scientist whose father was a poet."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": []
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W8"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [],
+          "one_gap": "No evidence yet identifies the book's title; need to inspect the essay in D8 for a book with 130–140 illustrations and descriptions including the telephone and telegraph.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [
+          {
+            "basis_refs": [],
+            "hypothesis_id": "H1",
+            "statement": "Leonhard Euler may be the well-known figure with initials L. E. born in the early 1700s in a central European country referenced by the target book.",
+            "status": "active"
+          }
+        ],
+        "closure": [],
+        "opportunities": []
+      },
+      {
+        "slot": 3,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 5,
+              "query": "The Boy's Book of Inventions"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R1",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "No evidence yet identifies the book's title; need to locate a source that names a book with 130–140 illustrations including the telephone and telegraph.",
+          "strategy": "LOCATE_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim"
+        ],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [
+          {
+            "claim_id": "C2",
+            "evidence_refs": [
+              "W13"
+            ],
+            "statement": "The book 'PRACTICAL MECHANICS FOR BOYS' includes a section (XIV) titled 'Simplicity of Great Inventions and of Nature's Manifestation' that covers the Telegraph and Telephone.",
+            "version": 1
+          }
+        ],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q538__rep2",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "No evidence identifies the title of the book as of December 2023."
+              },
+              {
+                "requirement_id": "R2",
+                "summary": "No evidence shows the book contains between 130 and 140 illustrations or descriptions, including the telephone and telegraph."
+              },
+              {
+                "requirement_id": "R3",
+                "summary": "No evidence provides the book's rust-cleaning method involving a substance mentioned in a Three Dog Night song or an oil sharing its name with a country song."
+              },
+              {
+                "requirement_id": "R4",
+                "summary": "Evidence only supports Leonhard Euler's birth details; it does not establish that the book references Euler, the mechanical engineer born in the early 1800s, or the scientist whose father was a poet."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": []
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "k": 10,
+              "query": "\"John Ericsson\" \"Christiaan Huygens\" \"Leonhard Euler\" telephone telegraph book illustrations"
+            },
+            "tool": "search"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R4",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "Whether a single book references John Ericsson, Christiaan Huygens, and Leonhard Euler together, which could identify the target book title and test H1's Euler suggestion.",
+          "strategy": "IDENTIFY_CANDIDATE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q922__rep1",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "C1/C2 support a letter from King Michael to the U.S. President delivered via an OSS officer, but they do not name the delivering official or show the recipient nicknamed him after a body part."
+              },
+              {
+                "requirement_id": "R2",
+                "summary": "C1 gives a memorandum date of March 5, 1945, not the letter's date, and the evidence does not establish when the author came to power or that the letter was written roughly six months afterward."
+              },
+              {
+                "requirement_id": "R3",
+                "summary": "W4 does not contain a statement that the author's country had regained a region; the enclosed note that may contain it is not reproduced in the provided evidence."
+              },
+              {
+                "requirement_id": "R4",
+                "summary": "The region name sought by Q is absent from the grounded evidence, so the answer cannot be determined."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": []
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "direction": "around",
+              "window_ref": "W4"
+            },
+            "tool": "open"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R3",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "W4 currently shows the Donovan cover memorandum context but not the enclosed letter's date or the passage in which the author refers to a regained region.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "Gain",
+        "gain_reasons": [
+          "new_useful_verified_claim"
+        ],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [
+          {
+            "claim_id": "C3",
+            "evidence_refs": [
+              "W6"
+            ],
+            "statement": "In his letter to President Roosevelt, King Michael of Rumania wrote that he had expressed thanks to the glorious Red Army for the help given in regaining North Transylvania, which has always been so dear to the hearts of all true Romanians.",
+            "version": 1
+          }
+        ],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  },
+  {
+    "trajectory_id": "R3_Q922__rep2",
+    "status": "step_failure",
+    "steps": [
+      {
+        "slot": 1,
+        "decision": {
+          "decision": "request_closure"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": null,
+        "claims": [],
+        "H_after": [],
+        "closure": [
+          {
+            "kind": "closure_feedback",
+            "missing": [
+              {
+                "requirement_id": "R1",
+                "summary": "Evidence identifies a March 5, 1945 letter from King Michael of Romania to the U.S. President and mentions transmission via William J. Donovan/OSS, but it does not establish that the delivering official was nicknamed after a body part by the recipient; the OSS officer is unnamed and no such nickname is given."
+              },
+              {
+                "requirement_id": "R2",
+                "summary": "Evidence does not establish when King Michael came to power or that the letter was written roughly six months after he came to power."
+              },
+              {
+                "requirement_id": "R3",
+                "summary": "The provided letter excerpt does not mention Romania having regained a region; the enclosed note is not printed, and no regained-region reference is evidenced."
+              },
+              {
+                "requirement_id": "R4",
+                "summary": "The name of the region referred to is not present in the available evidence."
+              }
+            ],
+            "status": "CONTINUE"
+          }
+        ],
+        "opportunities": []
+      },
+      {
+        "slot": 2,
+        "decision": {
+          "action": {
+            "arguments": {
+              "doc_ref": "D4",
+              "query": "regained region Transylvania King Michael letter"
+            },
+            "tool": "find"
+          },
+          "decision": "acquire",
+          "focus_requirement_id": "R3",
+          "hypothesis_ids_under_test": [
+            "H1"
+          ],
+          "one_gap": "The letter text may name a region Romania regained, but the specific region is not yet established from the available excerpt.",
+          "strategy": "LOCALIZE_IN_SOURCE"
+        },
+        "feedback": "NoGain",
+        "gain_reasons": [],
+        "failure": {
+          "message": "evidence reference not observed",
+          "type": "ValueError"
+        },
+        "claims": [],
+        "H_after": [],
+        "closure": [],
+        "opportunities": []
+      }
+    ]
+  }
+]

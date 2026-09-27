@@ -1,0 +1,899 @@
+{
+  "reviewer": "Codex single reviewer, no paid evaluator",
+  "scope": "all18 decisions, all5 accepted claims, all4 closures, all14 H proposals; exact source-relative windows read",
+  "packets_sha256": {
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R1_Q1094__rep1.json": "52d747c7d9f7e54562d04c1109c94ea181cad402feb1839f98700a68eedb1df5",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R1_Q1094__rep2.json": "dd9ce13fe9138ce1d9624472d1b445c76c8f6fe223f2ce338b6f031b28a9ed69",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R1_Q546__rep1.json": "33e0ed7b482c2b46dfc940309f5d43b6d3d8fbb2bb904ae76b7b5eb9bbe7a94f",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R1_Q546__rep2.json": "0f3ec097cf6d44996917ea7aa45b81f5341dce25a644e3fa96f26f89af9c00be",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R2_Q228__rep1.json": "3d363b053b05580fb608cbbea46fea4742e698773ca41bdd6b286f2f42ca3f92",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R2_Q228__rep2.json": "1b8e0a387fa4bbbc1162824b6e4e40f9b3cdef15f8a16cd3e9a5b83f293e5adc",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R2_Q637__rep1.json": "47c19d90a1b902881d117d9650282c3c737653554359fc594695ef86e3149cb7",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R2_Q637__rep2.json": "0c8c73f305e5518299518cb2c60c14567760c99f39abade2fdbef7cb6884589b",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R3_Q538__rep1.json": "19bed1acd65355c624b93b68a141bd39d67156f3ba0137403ce0513b469c39c1",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R3_Q538__rep2.json": "ebdef72813b72857acd0b433d420176eb07cb03ec661de0dffa4064536f02e8a",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R3_Q922__rep1.json": "3bcaa2bb56fcbd2f6d39b73828fb9eb8730bac4c9e6c10e24cfb636eca817f10",
+    "experiments/recoverable_loop_clean/micro_recovery/analysis/review_packets/R3_Q922__rep2.json": "a2af9410b1dfc7755b8643dff1058d46ec83de8010d361891159d2f3f78724ab"
+  },
+  "claims": [
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W4"
+        ],
+        "statement": "As of 2019, Ding Lei was married but had no children.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_high_risk_claim": false,
+      "gap_useful": true,
+      "global_task_complete": false,
+      "uses_new_raw_window": false,
+      "support_reason": "The dated 2019-12-11 raw window explicitly says Ding is married but without children.",
+      "scope_reason": "Useful local attribute; does not bind him to the university/gift."
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 1,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W4"
+        ],
+        "statement": "The patient in the case report had a de novo heterozygous ACVR1/ALK2 mutation (c.617G>A; p.R206H) that was not detected in his parents, and the diagnosis of fibrodysplasia ossificans progressiva (FOP) was confirmed when this canonical mutation was detected.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_high_risk_claim": false,
+      "gap_useful": true,
+      "global_task_complete": false,
+      "uses_new_raw_window": false,
+      "support_reason": "W4 explicitly states the mutation, absent in parents, and FOP diagnosis.",
+      "scope_reason": "Useful candidate-local diagnosis; no matching of both report conditions."
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 1,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W4"
+        ],
+        "statement": "The D4 case was diagnosed with fibrodysplasia ossificans progressiva (FOP) after a de novo heterozygous ACVR1/ALK2 c.617G>A (p.R206H) mutation was detected in the patient but not in his parents.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_high_risk_claim": false,
+      "gap_useful": true,
+      "global_task_complete": false,
+      "uses_new_raw_window": false,
+      "support_reason": "W4 explicitly confirms the D4 patient’s mutation and FOP diagnosis.",
+      "scope_reason": "Useful candidate-local diagnosis; no matching of both report conditions."
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 3,
+      "claim": {
+        "claim_id": "C2",
+        "evidence_refs": [
+          "W13"
+        ],
+        "statement": "The book 'PRACTICAL MECHANICS FOR BOYS' includes a section (XIV) titled 'Simplicity of Great Inventions and of Nature's Manifestation' that covers the Telegraph and Telephone.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_high_risk_claim": false,
+      "gap_useful": true,
+      "global_task_complete": false,
+      "uses_new_raw_window": true,
+      "support_reason": "Actual source title binds the table of contents to Practical Mechanics for Boys; XIV lists Telegraph and Telephone.",
+      "scope_reason": "Useful book candidate/contents evidence; illustration count and reference constraints remain open."
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 2,
+      "claim": {
+        "claim_id": "C3",
+        "evidence_refs": [
+          "W6"
+        ],
+        "statement": "In his letter to President Roosevelt, King Michael of Rumania wrote that he had expressed thanks to the glorious Red Army for the help given in regaining North Transylvania, which has always been so dear to the hearts of all true Romanians.",
+        "version": 1
+      },
+      "source_supported": true,
+      "false_high_risk_claim": false,
+      "gap_useful": true,
+      "global_task_complete": false,
+      "uses_new_raw_window": true,
+      "support_reason": "Expanded W6 identifies the author/recipient and explicitly mentions regaining North Transylvania.",
+      "scope_reason": "Direct local support for the asked region, while date/accession/nickname binding remains unresolved."
+    }
+  ],
+  "actions": [
+    {
+      "trajectory_id": "R1_Q1094__rep1",
+      "slot": 1,
+      "forced_intervention": true,
+      "action": {
+        "arguments": {
+          "query": "\"identity evolved\" OR \"evolved through several iterations\" club football"
+        },
+        "tool": "search"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "frozen_suboptimal_repeat",
+      "source_compatible": null,
+      "new_raw_window_refs": [],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": false,
+      "reason": "Repeated prefix Search returns existing-document metadata only; no next Actor after H failure."
+    },
+    {
+      "trajectory_id": "R1_Q1094__rep2",
+      "slot": 1,
+      "forced_intervention": true,
+      "action": {
+        "arguments": {
+          "query": "\"identity evolved\" OR \"evolved through several iterations\" club football"
+        },
+        "tool": "search"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "frozen_suboptimal_repeat",
+      "source_compatible": null,
+      "new_raw_window_refs": [],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": false,
+      "reason": "Repeated prefix Search returns existing-document metadata only; no next Actor after H failure."
+    },
+    {
+      "trajectory_id": "R1_Q546__rep1",
+      "slot": 1,
+      "forced_intervention": true,
+      "action": {
+        "arguments": {
+          "query": "snooker \"less than 250 centuries\" 2023"
+        },
+        "tool": "search"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "frozen_suboptimal_repeat",
+      "source_compatible": null,
+      "new_raw_window_refs": [],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": false,
+      "reason": "Repeated prefix Search returns existing-document metadata only; no next Actor after H failure."
+    },
+    {
+      "trajectory_id": "R1_Q546__rep2",
+      "slot": 1,
+      "forced_intervention": true,
+      "action": {
+        "arguments": {
+          "query": "snooker \"less than 250 centuries\" 2023"
+        },
+        "tool": "search"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "frozen_suboptimal_repeat",
+      "source_compatible": null,
+      "new_raw_window_refs": [],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": false,
+      "reason": "Repeated prefix Search returns existing-document metadata only; no next Actor after H failure."
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 1,
+      "forced_intervention": false,
+      "action": {
+        "arguments": {
+          "k": 5,
+          "query": "Ding Lei wife no children donation Cornell Tech building scheduled to open"
+        },
+        "tool": "search"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "reasonable_test",
+      "source_compatible": null,
+      "new_raw_window_refs": [
+        "W6",
+        "W7",
+        "W8",
+        "W9"
+      ],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": false,
+      "reason": "Tentatively tests Ding. Global search returned new unrelated previews, no direct new Ding support."
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 2,
+      "forced_intervention": false,
+      "action": {
+        "arguments": {
+          "doc_ref": "D4",
+          "query": "wife children marriage no children"
+        },
+        "tool": "find"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "reasonable_test",
+      "source_compatible": true,
+      "new_raw_window_refs": [],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": true,
+      "reason": "Find in the already discovered Ding article fits family-status verification; returns old W4, newly converted into C."
+    },
+    {
+      "trajectory_id": "R2_Q228__rep2",
+      "slot": 1,
+      "forced_intervention": false,
+      "action": {
+        "arguments": {
+          "doc_ref": "D2",
+          "query": "wife spouse children no children donation gift building university construction foundation"
+        },
+        "tool": "find"
+      },
+      "one_gap_usable": false,
+      "premise_hardening": true,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "reasonable_source_with_bad_premise",
+      "source_compatible": true,
+      "new_raw_window_refs": [],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": false,
+      "reason": "The relative clause asserts Kwon had no children by2019 without C support. D2 profile is a reasonable place to check philanthropy; returned old W2 does not verify that premise."
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 1,
+      "forced_intervention": false,
+      "action": {
+        "arguments": {
+          "doc_ref": "D4",
+          "query": "six-month history of pain difficulty walking moving shoulders"
+        },
+        "tool": "find"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "reasonable_test",
+      "source_compatible": true,
+      "new_raw_window_refs": [],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": true,
+      "reason": "Tentative alternative case report is suitable to investigate; local diagnosis appears, but queried half-year symptom binding is absent in returned old W4."
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 1,
+      "forced_intervention": false,
+      "action": {
+        "arguments": {
+          "doc_ref": "D4",
+          "query": "six-month history of pain difficulty walking shoulder"
+        },
+        "tool": "find"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "reasonable_test",
+      "source_compatible": true,
+      "new_raw_window_refs": [],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": true,
+      "reason": "Candidate report inspection is appropriate; old W4 establishes diagnosis, not all first-case qualifiers."
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 2,
+      "forced_intervention": false,
+      "action": {
+        "arguments": {
+          "direction": "around",
+          "window_ref": "W8"
+        },
+        "tool": "open"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "weak_source_choice",
+      "source_compatible": false,
+      "new_raw_window_refs": [
+        "W11"
+      ],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": false,
+      "reason": "Gap targets missing book identity, but D8 concerns seventeenth-century scientific imaging, not the required telephone/telegraph book."
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 3,
+      "forced_intervention": false,
+      "action": {
+        "arguments": {
+          "k": 5,
+          "query": "The Boy's Book of Inventions"
+        },
+        "tool": "search"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "reasonable_exploration",
+      "source_compatible": null,
+      "new_raw_window_refs": [
+        "W12",
+        "W13",
+        "W14",
+        "W15",
+        "W16"
+      ],
+      "new_useful_raw_evidence": true,
+      "new_useful_claim": true,
+      "reason": "Moves from the irrelevant essay to discovery. Named book query is a hypothesis; returned W13 supports a useful new book candidate."
+    },
+    {
+      "trajectory_id": "R3_Q538__rep2",
+      "slot": 2,
+      "forced_intervention": false,
+      "action": {
+        "arguments": {
+          "k": 10,
+          "query": "\"John Ericsson\" \"Christiaan Huygens\" \"Leonhard Euler\" telephone telegraph book illustrations"
+        },
+        "tool": "search"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "reasonable_exploration",
+      "source_compatible": null,
+      "new_raw_window_refs": [
+        "W11",
+        "W12",
+        "W13",
+        "W14",
+        "W15"
+      ],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": false,
+      "reason": "Tests an explicit possible conjunction of named references, rather than asserting it; returned previews do not establish the book relation."
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 2,
+      "forced_intervention": false,
+      "action": {
+        "arguments": {
+          "direction": "around",
+          "window_ref": "W4"
+        },
+        "tool": "open"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "reasonable_test",
+      "source_compatible": true,
+      "new_raw_window_refs": [
+        "W6"
+      ],
+      "new_useful_raw_evidence": true,
+      "new_useful_claim": true,
+      "reason": "Opening adjacent text around the cover/letter tail reaches the actual letter and its region statement."
+    },
+    {
+      "trajectory_id": "R3_Q922__rep2",
+      "slot": 2,
+      "forced_intervention": false,
+      "action": {
+        "arguments": {
+          "doc_ref": "D4",
+          "query": "regained region Transylvania King Michael letter"
+        },
+        "tool": "find"
+      },
+      "one_gap_usable": true,
+      "premise_hardening": false,
+      "action_valid": true,
+      "execution_success": true,
+      "semantic_suitability": "reasonable_test",
+      "source_compatible": true,
+      "new_raw_window_refs": [],
+      "new_useful_raw_evidence": false,
+      "new_useful_claim": false,
+      "reason": "Correct document type and relation query, but Find returns old W4 tail/footnotes, omitting the region. Local window failure, not unsupported C."
+    }
+  ],
+  "closures": [
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "false_ready": false,
+      "reason": "Seed evidence supports only local biography/memo facts; listed material book/letter conditions are still unsupported. Local C is retained.",
+      "next_actor_acquired": true
+    },
+    {
+      "trajectory_id": "R3_Q538__rep2",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "false_ready": false,
+      "reason": "Seed evidence supports only local biography/memo facts; listed material book/letter conditions are still unsupported. Local C is retained.",
+      "next_actor_acquired": true
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "false_ready": false,
+      "reason": "Seed evidence supports only local biography/memo facts; listed material book/letter conditions are still unsupported. Local C is retained.",
+      "next_actor_acquired": true
+    },
+    {
+      "trajectory_id": "R3_Q922__rep2",
+      "slot": 1,
+      "status": "CONTINUE",
+      "correct_veto": true,
+      "false_ready": false,
+      "reason": "Seed evidence supports only local biography/memo facts; listed material book/letter conditions are still unsupported. Local C is retained.",
+      "next_actor_acquired": true
+    }
+  ],
+  "H_contract_audit": [
+    {
+      "trajectory_id": "R1_Q1094__rep1",
+      "slot": 1,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "R1",
+          "category": "known_requirement_id"
+        },
+        {
+          "ref": "R1",
+          "category": "known_requirement_id"
+        },
+        {
+          "ref": "R1",
+          "category": "known_requirement_id"
+        }
+      ],
+      "source_nomination_not_new": [],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R1_Q1094__rep2",
+      "slot": 1,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "R1",
+          "category": "known_requirement_id"
+        },
+        {
+          "ref": "R1",
+          "category": "known_requirement_id"
+        },
+        {
+          "ref": "R1",
+          "category": "known_requirement_id"
+        }
+      ],
+      "source_nomination_not_new": [],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R1_Q546__rep1",
+      "slot": 1,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "D17",
+          "category": "known_document_id"
+        }
+      ],
+      "source_nomination_not_new": [
+        "D17"
+      ],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R1_Q546__rep2",
+      "slot": 1,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "D17",
+          "category": "known_document_id"
+        }
+      ],
+      "source_nomination_not_new": [
+        "D17"
+      ],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 1,
+      "basis_namespace_invalid": false,
+      "invalid_refs": [],
+      "source_nomination_not_new": [],
+      "committed": true,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "slot": 2,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "C3",
+          "category": "known_claim_id"
+        }
+      ],
+      "source_nomination_not_new": [],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R2_Q228__rep2",
+      "slot": 1,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "D2",
+          "category": "known_document_id"
+        }
+      ],
+      "source_nomination_not_new": [],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "slot": 1,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "C3",
+          "category": "known_claim_id"
+        },
+        {
+          "ref": "D4",
+          "category": "known_document_id"
+        },
+        {
+          "ref": "C3",
+          "category": "known_claim_id"
+        },
+        {
+          "ref": "D4",
+          "category": "known_document_id"
+        }
+      ],
+      "source_nomination_not_new": [],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "slot": 1,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "D4",
+          "category": "known_document_id"
+        },
+        {
+          "ref": "D4",
+          "category": "known_document_id"
+        }
+      ],
+      "source_nomination_not_new": [],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 2,
+      "basis_namespace_invalid": false,
+      "invalid_refs": [],
+      "source_nomination_not_new": [],
+      "committed": true,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "slot": 3,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "C2",
+          "category": "known_claim_id"
+        },
+        {
+          "ref": "D11",
+          "category": "known_document_id"
+        },
+        {
+          "ref": "D10",
+          "category": "known_document_id"
+        },
+        {
+          "ref": "D11",
+          "category": "known_document_id"
+        }
+      ],
+      "source_nomination_not_new": [],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R3_Q538__rep2",
+      "slot": 2,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "D12",
+          "category": "known_document_id"
+        },
+        {
+          "ref": "D14",
+          "category": "known_document_id"
+        }
+      ],
+      "source_nomination_not_new": [],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "slot": 2,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "C3",
+          "category": "known_claim_id"
+        }
+      ],
+      "source_nomination_not_new": [],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    },
+    {
+      "trajectory_id": "R3_Q922__rep2",
+      "slot": 2,
+      "basis_namespace_invalid": true,
+      "invalid_refs": [
+        {
+          "ref": "D4",
+          "category": "known_document_id"
+        },
+        {
+          "ref": "D4",
+          "category": "known_document_id"
+        }
+      ],
+      "source_nomination_not_new": [],
+      "committed": false,
+      "reason": "Runtime accepts only observed W evidence refs; schema uses generic strings and exposes C/R/D elsewhere. No mapping/repair applied."
+    }
+  ],
+  "trajectories": [
+    {
+      "trajectory_id": "R1_Q1094__rep1",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [],
+      "new_useful_raw_evidence": false,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R1_Q1094__rep2",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [],
+      "new_useful_raw_evidence": false,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R1_Q546__rep1",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [],
+      "new_useful_raw_evidence": false,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R1_Q546__rep2",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [],
+      "new_useful_raw_evidence": false,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R2_Q228__rep1",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [
+        "C3"
+      ],
+      "new_useful_raw_evidence": false,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R2_Q228__rep2",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [],
+      "new_useful_raw_evidence": false,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R2_Q637__rep1",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [
+        "C3"
+      ],
+      "new_useful_raw_evidence": false,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R2_Q637__rep2",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [
+        "C3"
+      ],
+      "new_useful_raw_evidence": false,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R3_Q538__rep1",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [
+        "C2"
+      ],
+      "new_useful_raw_evidence": true,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R3_Q538__rep2",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [],
+      "new_useful_raw_evidence": false,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R3_Q922__rep1",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [
+        "C3"
+      ],
+      "new_useful_raw_evidence": true,
+      "complete_recovery_demonstrated": false
+    },
+    {
+      "trajectory_id": "R3_Q922__rep2",
+      "outcome": "truncated_by_H_reference_contract",
+      "new_claims": [],
+      "new_useful_raw_evidence": false,
+      "complete_recovery_demonstrated": false
+    }
+  ],
+  "metrics": {
+    "trajectories": 12,
+    "truncated_by_H_contract": 12,
+    "max_horizon_completed_without_failure": 0,
+    "model_acquisition_valid": {
+      "numerator": 10,
+      "denominator": 10
+    },
+    "forced_acquisitions_valid": {
+      "numerator": 4,
+      "denominator": 4
+    },
+    "one_gap_explicit_premise_hardening": {
+      "numerator": 1,
+      "denominator": 10
+    },
+    "new_claims_supported": {
+      "numerator": 5,
+      "denominator": 5
+    },
+    "new_claims_from_previously_observed_window": 3,
+    "new_claims_from_new_window": 2,
+    "closure_veto_and_next_actor": {
+      "numerator": 4,
+      "denominator": 4
+    },
+    "R3_some_new_useful_evidence_within_horizon": {
+      "numerator": 2,
+      "denominator": 4
+    },
+    "false_C_observed": 0,
+    "false_READY_observed": 0,
+    "READY_decisions": 0,
+    "final_answers": 0,
+    "H_proposals_namespace_invalid": {
+      "numerator": 12,
+      "denominator": 14
+    },
+    "H_proposals_bad_new_source_nominations": 2,
+    "H_committed_semantic_changes": 0,
+    "R1_after_intervention_actor_opportunities": 0,
+    "two_consecutive_acquisition_NoGain_followed_by_Actor_opportunities": 0,
+    "single_acquisition_NoGain_followed_by_Actor": {
+      "opportunities": 2,
+      "changed_tool_scope": 2,
+      "not_two_NoGain_recovery_test": true
+    },
+    "inspection_compatibility_descriptive": {
+      "numerator": 6,
+      "denominator": 7
+    },
+    "inspection_new_useful_raw_evidence_descriptive": {
+      "numerator": 1,
+      "denominator": 7
+    },
+    "warning": "All are descriptive, unblinded single-reviewer labels on six paired-replicate cells. Interface truncation prevents a mechanism pass/fail inference."
+  },
+  "additional_semantic_risks": [
+    {
+      "trajectory": "R1_Q546__rep1",
+      "kind": "uncommitted_H_full_match_invention",
+      "reason": "No new observation, yet Tom Ford is presented with the complete desired sequence. Basis is empty; this is not an established fact."
+    },
+    {
+      "trajectory": "R3_Q538__rep2",
+      "kind": "uncommitted_H_overinterpretation",
+      "reason": "Observed D12 Euler-paper/D14 inventor material does not establish the proposed American Boy’s Handy Book illustration/rust/reference conjunction."
+    },
+    {
+      "trajectory": "R2_Q637__rep1/rep2",
+      "kind": "premature_global_H_rejection_proposal",
+      "reason": "D4 has FOP diagnosis, but returned window does not bind it to both question reports; rejecting global SPS is stronger than the verified local C."
+    },
+    {
+      "trajectory": "R3_Q922__rep1",
+      "kind": "uncommitted_timing_relation_substitution",
+      "reason": "The H proposal maps the accession-to-letter timing condition onto1944 realignment-to-memo timing. Neither relation substitution is established."
+    }
+  ]
+}

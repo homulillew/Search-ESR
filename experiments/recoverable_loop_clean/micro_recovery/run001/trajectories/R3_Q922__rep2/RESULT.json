@@ -1,0 +1,47 @@
+{
+  "trajectory_id": "R3_Q922__rep2",
+  "cell_id": "R3_Q922",
+  "family": "R3",
+  "replicate": 2,
+  "status": "step_failure",
+  "error": null,
+  "outcomes": [
+    {
+      "slot": 1,
+      "decision": "request_closure",
+      "closure": {
+        "status": "CONTINUE",
+        "missing": [
+          {
+            "requirement_id": "R1",
+            "summary": "Evidence identifies a March 5, 1945 letter from King Michael of Romania to the U.S. President and mentions transmission via William J. Donovan/OSS, but it does not establish that the delivering official was nicknamed after a body part by the recipient; the OSS officer is unnamed and no such nickname is given."
+          },
+          {
+            "requirement_id": "R2",
+            "summary": "Evidence does not establish when King Michael came to power or that the letter was written roughly six months after he came to power."
+          },
+          {
+            "requirement_id": "R3",
+            "summary": "The provided letter excerpt does not mention Romania having regained a region; the enclosed note is not printed, and no regained-region reference is evidenced."
+          },
+          {
+            "requirement_id": "R4",
+            "summary": "The name of the region referred to is not present in the available evidence."
+          }
+        ]
+      },
+      "feedback": "NoGain"
+    },
+    {
+      "slot": 2,
+      "decision": "acquire",
+      "failure": {
+        "type": "ValueError",
+        "message": "evidence reference not observed"
+      },
+      "feedback": "NoGain"
+    }
+  ],
+  "elapsed_seconds": 154.93658231571317,
+  "completed_utc": "2026-09-27T20:24:09.646003+00:00"
+}
