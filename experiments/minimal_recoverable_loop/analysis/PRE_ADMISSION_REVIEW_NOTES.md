@@ -1,0 +1,21 @@
+# Admission前语义评审披露
+
+全部989候选及112个参考槽均在首次Admission请求之前评审；单一、熟悉历史的Codex，不声称独立评审。只读取Writer的content解析结果及原Observation，不读取provider reasoning。第二次重复中154个与第一次同source/statement/excerpt完全相同的候选复用语义判断，332个新payload单独审阅。没有择优保留重复。
+
+## 两个不同判断
+
+1. `claim_entailed_by_observation`：完整原Observation中的支持。
+2. `claim_entailed_by_excerpt`：依调用前冻结rubric，实际单条摘录足以支持整句；另要求不以截短摘录掩盖完整Observation中的冲突。
+
+很多有名实体、时间、表头或section归属在完整Observation存在，但在选中摘录不存在。此类错误必须与完整来源也不支持的错误分开报告。严格摘录门槛失败不能被表述为所有这些Claim都是来源中不存在的事实。保留源相对的he/the source等未解决指代不等于偷偷绑定具体姓名；其后Actor是否正确使用仍未测试。
+
+名字的常见简称、同一观察中的作者citation首字母、标准citation/field语法可按语义识别，不要求Gold原字匹配。数值列含义不能在缺失表头时凭熟悉的领域格式补出。多个同源窄Claim可通过调用前冻结的充分集合联合覆盖参考项。没有覆盖到完整reference atom的部分事实仍可算precision真例。
+
+## 显式局限
+
+- S025只有无表头数据行；replicate2把数值提升为积分/净胜球/最终名次，超出本轮冻结证据。
+- S045 reference使用了宽松的diary描述，而实际可见window只有编号标题/内容/日期，没有dev-diary标题。reference原文不改。replicate1仅复述entries，能保留内容；replicate2加dev diary类型，被保守标注为不支持。最终报告须单独列出这10条边界类型判断，并给出排除它们的描述性敏感性结果，不能靠该组单独宣称架构失败。
+- S046同时出现13August和25August2013。两次Writer均有孤立摘录逐字支持25August的Claim，但没有保留全Observation冲突。frozen rubric把这种取舍算不合格；Admission看不到未提供的冲突段，不能把这一结果简单解释为不理解给定摘录。
+- 文章/表格元数据归属与摘录局部性包含语义判断空间；主要门槛仍按冻结规则计算，额外完整来源fidelity仅为描述性诊断，不能替换Gate。
+
+本文件在Admission前写定，以上分析不是对Admission输出的后验解释。Gate失败后停止E2–E4，不修Prompt重新采样。持续API授权不修改实验门槛。

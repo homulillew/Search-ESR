@@ -1,0 +1,69 @@
+{
+  "reviewer": "single task-familiar Codex; content-only, before Admission outcomes",
+  "writer_result_sha256": "aadc7f78b8efbf88259a02cd6d02da47f7609ee2e652f782a44632dc3d0f129f",
+  "records": [
+    {
+      "candidate_id": "W_S027_r1_C1",
+      "claim_entailed_by_observation": true,
+      "claim_entailed_by_excerpt": true,
+      "error_tags": [],
+      "high_risk": false,
+      "candidate_hardening": false,
+      "useful": true,
+      "matched_atom_ids": [
+        "S027_F1"
+      ],
+      "reason": "Manually checked the quoted text and complete observed source: this narrow statement is directly supported; no additional identity, relation or scope was supplied."
+    },
+    {
+      "candidate_id": "W_S027_r1_C2",
+      "claim_entailed_by_observation": true,
+      "claim_entailed_by_excerpt": true,
+      "error_tags": [],
+      "high_risk": false,
+      "candidate_hardening": false,
+      "useful": false,
+      "matched_atom_ids": [],
+      "reason": "Manually checked the quoted text and complete observed source: this narrow statement is directly supported; no additional identity, relation or scope was supplied."
+    },
+    {
+      "candidate_id": "W_S027_r1_C3",
+      "claim_entailed_by_observation": true,
+      "claim_entailed_by_excerpt": true,
+      "error_tags": [],
+      "high_risk": false,
+      "candidate_hardening": false,
+      "useful": true,
+      "matched_atom_ids": [],
+      "reason": "Manually checked the quoted text and complete observed source: this narrow statement is directly supported; no additional identity, relation or scope was supplied."
+    },
+    {
+      "candidate_id": "W_S027_r1_C4",
+      "claim_entailed_by_observation": true,
+      "claim_entailed_by_excerpt": false,
+      "error_tags": [
+        "unsupported_inference"
+      ],
+      "high_risk": true,
+      "candidate_hardening": false,
+      "useful": true,
+      "matched_atom_ids": [
+        "S027_F1"
+      ],
+      "reason": "The quote supports the date invitation but omits the S1,E2 scope attached to the Claim; that scope is present elsewhere in the observation."
+    }
+  ],
+  "atom_support_sets": [
+    {
+      "atom_id": "S027_F1",
+      "replicate": 1,
+      "sufficient_candidate_sets": [],
+      "observation_sufficient_candidate_sets": [
+        [
+          "W_S027_r1_C1",
+          "W_S027_r1_C4"
+        ]
+      ]
+    }
+  ]
+}
