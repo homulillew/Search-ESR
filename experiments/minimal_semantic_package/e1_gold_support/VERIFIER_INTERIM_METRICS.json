@@ -1,0 +1,3146 @@
+{
+  "status": "E1V_COMPLETE_E1A_NOT_RUN",
+  "primary": {
+    "planned": 96,
+    "positive_slots": 42,
+    "negative_slots": 54,
+    "verifier_only_witness_precision": {
+      "numerator": 32,
+      "denominator": 35,
+      "value": 0.9142857142857143
+    },
+    "verifier_only_witness_recall": {
+      "numerator": 32,
+      "denominator": 42,
+      "value": 0.7619047619047619
+    },
+    "verifier_only_verdict_precision": {
+      "numerator": 32,
+      "denominator": 35,
+      "value": 0.9142857142857143
+    },
+    "verifier_only_verdict_recall": {
+      "numerator": 32,
+      "denominator": 42,
+      "value": 0.7619047619047619
+    },
+    "raw_unsafe_support_count": 3,
+    "required_audits": 35,
+    "TP": 32,
+    "FP": 3,
+    "missed_positive": 10,
+    "schema_validity": {
+      "numerator": 96,
+      "denominator": 96,
+      "value": 1.0
+    },
+    "verdict_counts": {
+      "OPEN": 61,
+      "SUPPORTED": 35
+    },
+    "raw_verdict_replicate_stability": {
+      "numerator": 45,
+      "denominator": 48,
+      "value": 0.9375
+    }
+  },
+  "E1_final_gate_status": "PENDING_REQUIRED_AUDITOR_OUTCOMES",
+  "E1_PASS": null,
+  "E2_authorized": false,
+  "gate_reachability": {
+    "can_meet_frozen_recall_gate": false,
+    "maximum_final_recall": {
+      "numerator": 32,
+      "denominator": 42,
+      "value": 0.7619047619047619
+    },
+    "maximum_final_clinical_recall": {
+      "numerator": 0,
+      "denominator": 6,
+      "value": 0.0
+    },
+    "proof": "Frozen auditor is rejection-only. It cannot resurrect any Verifier OPEN or change its cited witness. Final TP is a subset of the32 existing true supports; six clinical slots are all OPEN.",
+    "not_a_completed_auditor_result": true
+  },
+  "critical_cases": {
+    "Euler": {
+      "planned": 2,
+      "positive_slots": 0,
+      "negative_slots": 2,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    },
+    "book_only": {
+      "planned": 2,
+      "positive_slots": 0,
+      "negative_slots": 2,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    },
+    "clinical": {
+      "planned": 6,
+      "positive_slots": 6,
+      "negative_slots": 0,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 6,
+      "schema_validity": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 6
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 3,
+        "denominator": 3,
+        "value": 1.0
+      }
+    },
+    "Ding_marriage": {
+      "planned": 2,
+      "positive_slots": 2,
+      "negative_slots": 0,
+      "verifier_only_witness_precision": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 2,
+      "TP": 2,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "SUPPORTED": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    },
+    "DLC_nation": {
+      "planned": 4,
+      "positive_slots": 0,
+      "negative_slots": 4,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 4
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      }
+    },
+    "DLC_technology": {
+      "planned": 2,
+      "positive_slots": 2,
+      "negative_slots": 0,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 2,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    },
+    "generic_SPS": {
+      "planned": 2,
+      "positive_slots": 0,
+      "negative_slots": 2,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    },
+    "nationality_report_country": {
+      "planned": 2,
+      "positive_slots": 0,
+      "negative_slots": 2,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    },
+    "memo_letter": {
+      "planned": 2,
+      "positive_slots": 0,
+      "negative_slots": 2,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    },
+    "teammates": {
+      "planned": 2,
+      "positive_slots": 0,
+      "negative_slots": 2,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    },
+    "alma_mater_building": {
+      "planned": 2,
+      "positive_slots": 0,
+      "negative_slots": 2,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    },
+    "champion_binding": {
+      "planned": 2,
+      "positive_slots": 0,
+      "negative_slots": 2,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    }
+  },
+  "by_replicate": {
+    "1": {
+      "planned": 48,
+      "positive_slots": 21,
+      "negative_slots": 27,
+      "verifier_only_witness_precision": {
+        "numerator": 15,
+        "denominator": 16,
+        "value": 0.9375
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 15,
+        "denominator": 21,
+        "value": 0.7142857142857143
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 15,
+        "denominator": 16,
+        "value": 0.9375
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 15,
+        "denominator": 21,
+        "value": 0.7142857142857143
+      },
+      "raw_unsafe_support_count": 1,
+      "required_audits": 16,
+      "TP": 15,
+      "FP": 1,
+      "missed_positive": 6,
+      "schema_validity": {
+        "numerator": 48,
+        "denominator": 48,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 32,
+        "SUPPORTED": 16
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    },
+    "2": {
+      "planned": 48,
+      "positive_slots": 21,
+      "negative_slots": 27,
+      "verifier_only_witness_precision": {
+        "numerator": 17,
+        "denominator": 19,
+        "value": 0.8947368421052632
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 17,
+        "denominator": 21,
+        "value": 0.8095238095238095
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 17,
+        "denominator": 19,
+        "value": 0.8947368421052632
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 17,
+        "denominator": 21,
+        "value": 0.8095238095238095
+      },
+      "raw_unsafe_support_count": 2,
+      "required_audits": 19,
+      "TP": 17,
+      "FP": 2,
+      "missed_positive": 4,
+      "schema_validity": {
+        "numerator": 48,
+        "denominator": 48,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 29,
+        "SUPPORTED": 19
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    }
+  },
+  "by_qid": {
+    "1259": {
+      "planned": 8,
+      "positive_slots": 4,
+      "negative_slots": 4,
+      "verifier_only_witness_precision": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 4,
+      "TP": 4,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "SUPPORTED": 4,
+        "OPEN": 4
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      }
+    },
+    "169": {
+      "planned": 6,
+      "positive_slots": 0,
+      "negative_slots": 6,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 6
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 3,
+        "denominator": 3,
+        "value": 1.0
+      }
+    },
+    "228": {
+      "planned": 14,
+      "positive_slots": 2,
+      "negative_slots": 12,
+      "verifier_only_witness_precision": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 2,
+      "TP": 2,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 14,
+        "denominator": 14,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 12,
+        "SUPPORTED": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 7,
+        "denominator": 7,
+        "value": 1.0
+      }
+    },
+    "261": {
+      "planned": 14,
+      "positive_slots": 8,
+      "negative_slots": 6,
+      "verifier_only_witness_precision": {
+        "numerator": 8,
+        "denominator": 10,
+        "value": 0.8
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 8,
+        "denominator": 10,
+        "value": 0.8
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 8,
+        "denominator": 8,
+        "value": 1.0
+      },
+      "raw_unsafe_support_count": 2,
+      "required_audits": 10,
+      "TP": 8,
+      "FP": 2,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 14,
+        "denominator": 14,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 4,
+        "SUPPORTED": 10
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 7,
+        "denominator": 7,
+        "value": 1.0
+      }
+    },
+    "538": {
+      "planned": 2,
+      "positive_slots": 0,
+      "negative_slots": 2,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 2
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      }
+    },
+    "637": {
+      "planned": 12,
+      "positive_slots": 6,
+      "negative_slots": 6,
+      "verifier_only_witness_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 0,
+        "denominator": 6,
+        "value": 0.0
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 0,
+      "TP": 0,
+      "FP": 0,
+      "missed_positive": 6,
+      "schema_validity": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 12
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      }
+    },
+    "843": {
+      "planned": 22,
+      "positive_slots": 14,
+      "negative_slots": 8,
+      "verifier_only_witness_precision": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 12,
+        "denominator": 14,
+        "value": 0.8571428571428571
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 12,
+        "denominator": 14,
+        "value": 0.8571428571428571
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 12,
+      "TP": 12,
+      "FP": 0,
+      "missed_positive": 2,
+      "schema_validity": {
+        "numerator": 22,
+        "denominator": 22,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 10,
+        "SUPPORTED": 12
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 11,
+        "denominator": 11,
+        "value": 1.0
+      }
+    },
+    "922": {
+      "planned": 6,
+      "positive_slots": 2,
+      "negative_slots": 4,
+      "verifier_only_witness_precision": {
+        "numerator": 2,
+        "denominator": 3,
+        "value": 0.6666666666666666
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 2,
+        "denominator": 3,
+        "value": 0.6666666666666666
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "raw_unsafe_support_count": 1,
+      "required_audits": 3,
+      "TP": 2,
+      "FP": 1,
+      "missed_positive": 0,
+      "schema_validity": {
+        "numerator": 6,
+        "denominator": 6,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 3,
+        "SUPPORTED": 3
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 2,
+        "denominator": 3,
+        "value": 0.6666666666666666
+      }
+    },
+    "971": {
+      "planned": 12,
+      "positive_slots": 6,
+      "negative_slots": 6,
+      "verifier_only_witness_precision": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "verifier_only_witness_recall": {
+        "numerator": 4,
+        "denominator": 6,
+        "value": 0.6666666666666666
+      },
+      "verifier_only_verdict_precision": {
+        "numerator": 4,
+        "denominator": 4,
+        "value": 1.0
+      },
+      "verifier_only_verdict_recall": {
+        "numerator": 4,
+        "denominator": 6,
+        "value": 0.6666666666666666
+      },
+      "raw_unsafe_support_count": 0,
+      "required_audits": 4,
+      "TP": 4,
+      "FP": 0,
+      "missed_positive": 2,
+      "schema_validity": {
+        "numerator": 12,
+        "denominator": 12,
+        "value": 1.0
+      },
+      "verdict_counts": {
+        "OPEN": 8,
+        "SUPPORTED": 4
+      },
+      "raw_verdict_replicate_stability": {
+        "numerator": 4,
+        "denominator": 6,
+        "value": 0.6666666666666666
+      }
+    }
+  },
+  "predeclared_ambiguous_exclusion_descriptive": {
+    "planned": 88,
+    "positive_slots": 38,
+    "negative_slots": 50,
+    "verifier_only_witness_precision": {
+      "numerator": 29,
+      "denominator": 29,
+      "value": 1.0
+    },
+    "verifier_only_witness_recall": {
+      "numerator": 29,
+      "denominator": 38,
+      "value": 0.7631578947368421
+    },
+    "verifier_only_verdict_precision": {
+      "numerator": 29,
+      "denominator": 29,
+      "value": 1.0
+    },
+    "verifier_only_verdict_recall": {
+      "numerator": 29,
+      "denominator": 38,
+      "value": 0.7631578947368421
+    },
+    "raw_unsafe_support_count": 0,
+    "required_audits": 29,
+    "TP": 29,
+    "FP": 0,
+    "missed_positive": 9,
+    "schema_validity": {
+      "numerator": 88,
+      "denominator": 88,
+      "value": 1.0
+    },
+    "verdict_counts": {
+      "OPEN": 59,
+      "SUPPORTED": 29
+    },
+    "raw_verdict_replicate_stability": {
+      "numerator": 43,
+      "denominator": 44,
+      "value": 0.9772727272727273
+    }
+  },
+  "actual_distinct_verifier_payloads": 46,
+  "auditor_requests": 35,
+  "auditor_actual_calls": 0,
+  "auditor_rescue": null,
+  "auditor_introduced_false_open": null,
+  "qualified_support_precision": null,
+  "qualified_support_recall": null,
+  "false_full_risk_after_audit": null,
+  "ledger": [
+    {
+      "id": "V_A01_CAND1_r1",
+      "certificate_id": "A01_CAND1",
+      "qid": "261",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A02_CAND1_r1",
+      "certificate_id": "A02_CAND1",
+      "qid": "261",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C2"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A02_CAND2_r1",
+      "certificate_id": "A02_CAND2",
+      "qid": "261",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C2"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A02_CAND3_r1",
+      "certificate_id": "A02_CAND3",
+      "qid": "261",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A03_CAND1_r1",
+      "certificate_id": "A03_CAND1",
+      "qid": "261",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C4",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A03_CAND2_r1",
+      "certificate_id": "A03_CAND2",
+      "qid": "261",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C4",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A03_CAND3_r1",
+      "certificate_id": "A03_CAND3",
+      "qid": "261",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": true,
+      "false_open": false,
+      "ambiguity_reason": "AMBIGUOUS_REFERENCE: strict antecedent binding versus existential reading of the singleton that-paper claim; primary OPEN."
+    },
+    {
+      "id": "V_A04_CAND1_r1",
+      "certificate_id": "A04_CAND1",
+      "qid": "228",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3",
+          "U4",
+          "U5",
+          "U7"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A05_CAND1_r1",
+      "certificate_id": "A05_CAND1",
+      "qid": "228",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A06_CAND1_r1",
+      "certificate_id": "A06_CAND1",
+      "qid": "228",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A07_CAND1_r1",
+      "certificate_id": "A07_CAND1",
+      "qid": "228",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C4",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A07_CAND2_r1",
+      "certificate_id": "A07_CAND2",
+      "qid": "228",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A07_CAND3_r1",
+      "certificate_id": "A07_CAND3",
+      "qid": "228",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C5"
+        ],
+        "uncovered_target_unit_ids": [
+          "U4",
+          "U5",
+          "U6"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A08_CAND1_r1",
+      "certificate_id": "A08_CAND1",
+      "qid": "228",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2",
+          "U3",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A09_CAND1_r1",
+      "certificate_id": "A09_CAND1",
+      "qid": "169",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A10_CAND1_r1",
+      "certificate_id": "A10_CAND1",
+      "qid": "169",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A11_CAND1_r1",
+      "certificate_id": "A11_CAND1",
+      "qid": "169",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A12_CAND1_r1",
+      "certificate_id": "A12_CAND1",
+      "qid": "971",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C2"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A13_CAND1_r1",
+      "certificate_id": "A13_CAND1",
+      "qid": "971",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A14_CAND1_r1",
+      "certificate_id": "A14_CAND1",
+      "qid": "971",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": true,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A14_CAND2_r1",
+      "certificate_id": "A14_CAND2",
+      "qid": "971",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": true,
+      "ambiguity_reason": "AMBIGUOUS_REFERENCE: calendar publication years versus exact elapsed days; primary SUPPORTED under the year-level convention."
+    },
+    {
+      "id": "V_A14_CAND3_r1",
+      "certificate_id": "A14_CAND3",
+      "qid": "971",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A14_CAND4_r1",
+      "certificate_id": "A14_CAND4",
+      "qid": "971",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C3"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A15_CAND1_r1",
+      "certificate_id": "A15_CAND1",
+      "qid": "538",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U4",
+          "U6"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A16_CAND1_r1",
+      "certificate_id": "A16_CAND1",
+      "qid": "637",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U4",
+          "U5",
+          "U6"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A17_CAND1_r1",
+      "certificate_id": "A17_CAND1",
+      "qid": "637",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": true,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A17_CAND2_r1",
+      "certificate_id": "A17_CAND2",
+      "qid": "637",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": true,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A17_CAND3_r1",
+      "certificate_id": "A17_CAND3",
+      "qid": "637",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": true,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A17_CAND4_r1",
+      "certificate_id": "A17_CAND4",
+      "qid": "637",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A17_CAND5_r1",
+      "certificate_id": "A17_CAND5",
+      "qid": "637",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U4",
+          "U5",
+          "U6"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A18_CAND1_r1",
+      "certificate_id": "A18_CAND1",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2",
+          "U3",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A19_CAND1_r1",
+      "certificate_id": "A19_CAND1",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A19_CAND2_r1",
+      "certificate_id": "A19_CAND2",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A19_CAND3_r1",
+      "certificate_id": "A19_CAND3",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A19_CAND4_r1",
+      "certificate_id": "A19_CAND4",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C3"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A20_CAND1_r1",
+      "certificate_id": "A20_CAND1",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C4"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A20_CAND2_r1",
+      "certificate_id": "A20_CAND2",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C3",
+          "C6"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": true,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A20_CAND3_r1",
+      "certificate_id": "A20_CAND3",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C4",
+          "C6"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A20_CAND4_r1",
+      "certificate_id": "A20_CAND4",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C7"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": "AMBIGUOUS_REFERENCE: general mechanics predicate can be separated from enumerated particular changes; primary SUPPORTED under the task local-positive convention."
+    },
+    {
+      "id": "V_A20_CAND5_r1",
+      "certificate_id": "A20_CAND5",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C3",
+          "C4",
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U8"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A20_CAND6_r1",
+      "certificate_id": "A20_CAND6",
+      "qid": "843",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C3",
+          "C4",
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U8"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A21_CAND1_r1",
+      "certificate_id": "A21_CAND1",
+      "qid": "1259",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A21_CAND2_r1",
+      "certificate_id": "A21_CAND2",
+      "qid": "1259",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A21_CAND3_r1",
+      "certificate_id": "A21_CAND3",
+      "qid": "1259",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A22_CAND1_r1",
+      "certificate_id": "A22_CAND1",
+      "qid": "1259",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C2"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A23_CAND1_r1",
+      "certificate_id": "A23_CAND1",
+      "qid": "922",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A24_CAND1_r1",
+      "certificate_id": "A24_CAND1",
+      "qid": "922",
+      "replicate": 1,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A24_CAND2_r1",
+      "certificate_id": "A24_CAND2",
+      "qid": "922",
+      "replicate": 1,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C2",
+          "C3"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": "AMBIGUOUS_REFERENCE: letter author-country shorthand versus explicit binding; primary OPEN. Previous experiment label is preserved separately, not edited."
+    },
+    {
+      "id": "V_A01_CAND1_r2",
+      "certificate_id": "A01_CAND1",
+      "qid": "261",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A02_CAND1_r2",
+      "certificate_id": "A02_CAND1",
+      "qid": "261",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C2"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A02_CAND2_r2",
+      "certificate_id": "A02_CAND2",
+      "qid": "261",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C2"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A02_CAND3_r2",
+      "certificate_id": "A02_CAND3",
+      "qid": "261",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A03_CAND1_r2",
+      "certificate_id": "A03_CAND1",
+      "qid": "261",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C4",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A03_CAND2_r2",
+      "certificate_id": "A03_CAND2",
+      "qid": "261",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C4",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A03_CAND3_r2",
+      "certificate_id": "A03_CAND3",
+      "qid": "261",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": true,
+      "false_open": false,
+      "ambiguity_reason": "AMBIGUOUS_REFERENCE: strict antecedent binding versus existential reading of the singleton that-paper claim; primary OPEN."
+    },
+    {
+      "id": "V_A04_CAND1_r2",
+      "certificate_id": "A04_CAND1",
+      "qid": "228",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3",
+          "U4",
+          "U5",
+          "U7"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A05_CAND1_r2",
+      "certificate_id": "A05_CAND1",
+      "qid": "228",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A06_CAND1_r2",
+      "certificate_id": "A06_CAND1",
+      "qid": "228",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A07_CAND1_r2",
+      "certificate_id": "A07_CAND1",
+      "qid": "228",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C4",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A07_CAND2_r2",
+      "certificate_id": "A07_CAND2",
+      "qid": "228",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A07_CAND3_r2",
+      "certificate_id": "A07_CAND3",
+      "qid": "228",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C4",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": [
+          "U4",
+          "U5",
+          "U6"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A08_CAND1_r2",
+      "certificate_id": "A08_CAND1",
+      "qid": "228",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2",
+          "U3",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A09_CAND1_r2",
+      "certificate_id": "A09_CAND1",
+      "qid": "169",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A10_CAND1_r2",
+      "certificate_id": "A10_CAND1",
+      "qid": "169",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A11_CAND1_r2",
+      "certificate_id": "A11_CAND1",
+      "qid": "169",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A12_CAND1_r2",
+      "certificate_id": "A12_CAND1",
+      "qid": "971",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C2"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A13_CAND1_r2",
+      "certificate_id": "A13_CAND1",
+      "qid": "971",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A14_CAND1_r2",
+      "certificate_id": "A14_CAND1",
+      "qid": "971",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A14_CAND2_r2",
+      "certificate_id": "A14_CAND2",
+      "qid": "971",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": "AMBIGUOUS_REFERENCE: calendar publication years versus exact elapsed days; primary SUPPORTED under the year-level convention."
+    },
+    {
+      "id": "V_A14_CAND3_r2",
+      "certificate_id": "A14_CAND3",
+      "qid": "971",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A14_CAND4_r2",
+      "certificate_id": "A14_CAND4",
+      "qid": "971",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C3"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U3",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A15_CAND1_r2",
+      "certificate_id": "A15_CAND1",
+      "qid": "538",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U4",
+          "U6"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A16_CAND1_r2",
+      "certificate_id": "A16_CAND1",
+      "qid": "637",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C2"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U4",
+          "U5",
+          "U6"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A17_CAND1_r2",
+      "certificate_id": "A17_CAND1",
+      "qid": "637",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": true,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A17_CAND2_r2",
+      "certificate_id": "A17_CAND2",
+      "qid": "637",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": true,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A17_CAND3_r2",
+      "certificate_id": "A17_CAND3",
+      "qid": "637",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": true,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A17_CAND4_r2",
+      "certificate_id": "A17_CAND4",
+      "qid": "637",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A17_CAND5_r2",
+      "certificate_id": "A17_CAND5",
+      "qid": "637",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U4",
+          "U5",
+          "U6"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A18_CAND1_r2",
+      "certificate_id": "A18_CAND1",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [],
+        "uncovered_target_unit_ids": [
+          "U1",
+          "U2",
+          "U3",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A19_CAND1_r2",
+      "certificate_id": "A19_CAND1",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A19_CAND2_r2",
+      "certificate_id": "A19_CAND2",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A19_CAND3_r2",
+      "certificate_id": "A19_CAND3",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C5"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A19_CAND4_r2",
+      "certificate_id": "A19_CAND4",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C3"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A20_CAND1_r2",
+      "certificate_id": "A20_CAND1",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C4"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A20_CAND2_r2",
+      "certificate_id": "A20_CAND2",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C3",
+          "C6"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": true,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A20_CAND3_r2",
+      "certificate_id": "A20_CAND3",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C4",
+          "C6"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A20_CAND4_r2",
+      "certificate_id": "A20_CAND4",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3",
+          "C7"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": "AMBIGUOUS_REFERENCE: general mechanics predicate can be separated from enumerated particular changes; primary SUPPORTED under the task local-positive convention."
+    },
+    {
+      "id": "V_A20_CAND5_r2",
+      "certificate_id": "A20_CAND5",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C3",
+          "C4",
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U8"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A20_CAND6_r2",
+      "certificate_id": "A20_CAND6",
+      "qid": "843",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C3",
+          "C4",
+          "C7"
+        ],
+        "uncovered_target_unit_ids": [
+          "U3",
+          "U8"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A21_CAND1_r2",
+      "certificate_id": "A21_CAND1",
+      "qid": "1259",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A21_CAND2_r2",
+      "certificate_id": "A21_CAND2",
+      "qid": "1259",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A21_CAND3_r2",
+      "certificate_id": "A21_CAND3",
+      "qid": "1259",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2",
+          "U4"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A22_CAND1_r2",
+      "certificate_id": "A22_CAND1",
+      "qid": "1259",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C2"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A23_CAND1_r2",
+      "certificate_id": "A23_CAND1",
+      "qid": "922",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "OPEN",
+        "supporting_claim_ids": [
+          "C1"
+        ],
+        "uncovered_target_unit_ids": [
+          "U2",
+          "U3"
+        ]
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A24_CAND1_r2",
+      "certificate_id": "A24_CAND1",
+      "qid": "922",
+      "replicate": 2,
+      "gold": "SUPPORTED",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C1",
+          "C3"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": true,
+      "false_support": false,
+      "false_open": false,
+      "ambiguity_reason": null
+    },
+    {
+      "id": "V_A24_CAND2_r2",
+      "certificate_id": "A24_CAND2",
+      "qid": "922",
+      "replicate": 2,
+      "gold": "OPEN",
+      "verifier_output": {
+        "verdict": "SUPPORTED",
+        "supporting_claim_ids": [
+          "C3"
+        ],
+        "uncovered_target_unit_ids": []
+      },
+      "valid_output": true,
+      "correct_supported_witness": false,
+      "false_support": true,
+      "false_open": false,
+      "ambiguity_reason": "AMBIGUOUS_REFERENCE: letter author-country shorthand versus explicit binding; primary OPEN. Previous experiment label is preserved separately, not edited."
+    }
+  ]
+}

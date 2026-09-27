@@ -1,0 +1,1087 @@
+[
+  {
+    "certificate_id": "A02_CAND1",
+    "cell_id": "A02",
+    "case_id": "G03",
+    "qid": "261",
+    "package_id": "M01",
+    "replicate": 1,
+    "id": "A_A02_CAND1_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A02_CAND1_r1",
+    "parent_result_sha256": "d6dbc2c2829a54ceb328a65c6160705f24a85dc8242e428e07b6d04f15fc16c7",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"- Two people wrote it.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Zeynel Abidin Yılmaz and Mehmet Diyaddin Yaşar co-authored the 2022 article \\\"Examination of Prospective Teachers' Creative Comparisons for the Concept of 'Science Education'\\\", published in International Journal of Scholars in Education, 5(2), 101-116.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "56bbb900fb360c6850a573e0e701659a6f9df0126af6c00fcb548217f1e32b01"
+  },
+  {
+    "certificate_id": "A02_CAND2",
+    "cell_id": "A02",
+    "case_id": "G03",
+    "qid": "261",
+    "package_id": "M01",
+    "replicate": 1,
+    "id": "A_A02_CAND2_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A02_CAND2_r1",
+    "parent_result_sha256": "81e2a396589f82190f97639838d7a99127167f45eed44ead17c0a73f9c2631ff",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"- Two people wrote it.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Zeynel Abidin Yılmaz and Mehmet Diyaddin Yaşar co-authored the 2022 article \\\"Examination of Prospective Teachers' Creative Comparisons for the Concept of 'Science Education'\\\", published in International Journal of Scholars in Education, 5(2), 101-116.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "56bbb900fb360c6850a573e0e701659a6f9df0126af6c00fcb548217f1e32b01"
+  },
+  {
+    "certificate_id": "A03_CAND1",
+    "cell_id": "A03",
+    "case_id": "G03",
+    "qid": "261",
+    "package_id": "M02",
+    "replicate": 1,
+    "id": "A_A03_CAND1_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A03_CAND1_r1",
+    "parent_result_sha256": "3e60a92322f19fda9efb9bf358e5844da88bbdc774ff52539836f15169f96f19",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In one of the tables,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"one of the emotions\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"is at 13.53 percent.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"The paper (D10) states that the data were organized in 5 tables, with Table 2 presenting prospective teachers' metaphoric perceptions of science education as an \\\"Emotion\\\".\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"In Table 2 of that paper, the positive emotion \\\"Happiness\\\" is reported at 13.53 percent (33 participants).\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "4662565c6d72674458244acf35848c8acd6674b9c19dc3d039d1638fe629a491"
+  },
+  {
+    "certificate_id": "A03_CAND2",
+    "cell_id": "A03",
+    "case_id": "G03",
+    "qid": "261",
+    "package_id": "M02",
+    "replicate": 1,
+    "id": "A_A03_CAND2_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A03_CAND2_r1",
+    "parent_result_sha256": "1b8995221ebf9103dd259a093fa14a22907645339acc26bb04f177648cb64392",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In one of the tables,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"one of the emotions\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"is at 13.53 percent.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"The paper (D10) states that the data were organized in 5 tables, with Table 2 presenting prospective teachers' metaphoric perceptions of science education as an \\\"Emotion\\\".\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"In Table 2 of that paper, the positive emotion \\\"Happiness\\\" is reported at 13.53 percent (33 participants).\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "4662565c6d72674458244acf35848c8acd6674b9c19dc3d039d1638fe629a491"
+  },
+  {
+    "certificate_id": "A03_CAND3",
+    "cell_id": "A03",
+    "case_id": "G03",
+    "qid": "261",
+    "package_id": "M02",
+    "replicate": 1,
+    "id": "A_A03_CAND3_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A03_CAND3_r1",
+    "parent_result_sha256": "87e7d9750c7f7a82496656058559f1213bb8d5437440bf98db4afb77ecd5af30",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In one of the tables,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"one of the emotions\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"is at 13.53 percent.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"In Table 2 of that paper, the positive emotion \\\"Happiness\\\" is reported at 13.53 percent (33 participants).\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "264540b9fab6ad4a8033b369890cf0cab01db8fe9568f8abd519284b8cf1d250"
+  },
+  {
+    "certificate_id": "A07_CAND1",
+    "cell_id": "A07",
+    "case_id": "G06",
+    "qid": "228",
+    "package_id": "M05",
+    "replicate": 1,
+    "id": "A_A07_CAND1_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A07_CAND1_r1",
+    "parent_result_sha256": "6a89c8a8ed740e10d0a6e887a0067fbd390c5286081c08cfc9d6f09cb9023e5b",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"This person and their spouse,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"who, up to 2019,\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"had no children from the marriage,\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"Ding Lei, also known as William Ding, founded NetEase in June 1997 and is its founder/CEO; NetEase is an online and mobile games business, and Ding's fortune came largely from video games including Fantasy Westward Journey.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"Ding Lei earned a degree in communication technology from the University of Electronic Science and Technology of China; at the time of the 2019 article, he was married but without children.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "7520d2fc93490c738e6b7b552811e6af454197323052ad41c6c9fe757129be89"
+  },
+  {
+    "certificate_id": "A14_CAND3",
+    "cell_id": "A14",
+    "case_id": "G12",
+    "qid": "971",
+    "package_id": "M14",
+    "replicate": 1,
+    "id": "A_A14_CAND3_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A14_CAND3_r1",
+    "parent_result_sha256": "93ab5d7fe14ce2340e86792e0d13e5a414e54c0d5c3943aee410f1cf6ca61e69",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"then published a journal article\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"on a similar topic\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"publishing the book.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Alka Marwaha is an associate professor of Mathematics at Jesus and Mary College, University of Delhi, India, and the author of The Secret World of Vipassana and Mathematics (Wisdom Tree Publishers, November 15, 2016), a book exploring the singularity between Vipassana and Mathematics.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"Alka Marwaha authored the article \\\"Finding the mathematical overlaps of the axiom of choice in Vipassana meditation,\\\" published in the International Journal of Statistics and Applied Mathematics in 2022 (vol. 7, issue 3, pp. 110-114).\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "3ed3f94b401871199434e3c598ecf588e6f2e17166bdcf2c17cc1ec44d742ac2"
+  },
+  {
+    "certificate_id": "A19_CAND1",
+    "cell_id": "A19",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M20",
+    "replicate": 1,
+    "id": "A_A19_CAND1_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A19_CAND1_r1",
+    "parent_result_sha256": "84dd8a3b00d01964ad6498f467a0c226db2a37785d64b03b1fe55b35af18e2cb",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"A pack of downloadable content\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"was released for\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"a strategy video game\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"over three years after its release.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"Europa Universalis IV is a 2013 grand strategy video game; the Wikipedia article body states it was released on 25 August 2013 for Windows, OS X, and Linux, while the infobox lists 13 August 2013.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "68ccaf32b7ee7575a908abfe38a61cdf8ca5c39073efb8d7e012535c27fef8a1"
+  },
+  {
+    "certificate_id": "A19_CAND2",
+    "cell_id": "A19",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M21",
+    "replicate": 1,
+    "id": "A_A19_CAND2_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A19_CAND2_r1",
+    "parent_result_sha256": "6140d5eabb4e234531a7ca07c4e3c1c4eda8cb154adc91ff46cb111ab7671476",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"A pack of downloadable content\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"was released for\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"a strategy video game\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"over three years after its release.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"Europa Universalis IV is a 2013 grand strategy video game; the Wikipedia article body states it was released on 25 August 2013 for Windows, OS X, and Linux, while the infobox lists 13 August 2013.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "68ccaf32b7ee7575a908abfe38a61cdf8ca5c39073efb8d7e012535c27fef8a1"
+  },
+  {
+    "certificate_id": "A19_CAND3",
+    "cell_id": "A19",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M22",
+    "replicate": 1,
+    "id": "A_A19_CAND3_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A19_CAND3_r1",
+    "parent_result_sha256": "fdca116e2042991a6200dbbc02ad821cba082e621dc10ade42c5e5c72fff29ba",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"A pack of downloadable content\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"was released for\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"a strategy video game\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"Europa Universalis IV is a 2013 grand strategy video game; the Wikipedia article body states it was released on 25 August 2013 for Windows, OS X, and Linux, while the infobox lists 13 August 2013.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "1dbac62d1593523569ecc4858680acd488abe70b0d8e83da08410c5838220967"
+  },
+  {
+    "certificate_id": "A20_CAND1",
+    "cell_id": "A20",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M23",
+    "replicate": 1,
+    "id": "A_A20_CAND1_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A20_CAND1_r1",
+    "parent_result_sha256": "399333065ced025459079fcf252077a71dc1f7a28b899631df7b777c995f4e99",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"The downloadable content in question\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"made changes to the mechanics\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"of the base game\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"including\"\n    },\n    {\n      \"unit_id\": \"U5\",\n      \"text\": \"religion\"\n    },\n    {\n      \"unit_id\": \"U6\",\n      \"text\": \"and technology,\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"The Rights of Man wiki page lists development diary 3 (2016-05-26) 'Technology Groups' on changes to technology groups and technological development, development diary 7 (2016-06-23) 'The Ottoman Sultanate' on the Ottomans getting unique flavor, and development diary 9 (2016-08-04) 'Coptic Holy Sites' on a new blessings and holy cities system for Coptics.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "979ac67f368e3b7362ab17a0c9f8ca63ff8a56a155bea39bacde0f4de002de8d"
+  },
+  {
+    "certificate_id": "A20_CAND3",
+    "cell_id": "A20",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M25",
+    "replicate": 1,
+    "id": "A_A20_CAND3_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A20_CAND3_r1",
+    "parent_result_sha256": "87798240eac9258088d7bf05ffe21b7b8fde7aa4d1b28c183b53d4b63bc69e3f",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"The downloadable content in question\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"made changes to the mechanics\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"of the base game\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"including\"\n    },\n    {\n      \"unit_id\": \"U5\",\n      \"text\": \"religion\"\n    },\n    {\n      \"unit_id\": \"U6\",\n      \"text\": \"and technology,\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"The Rights of Man wiki page lists development diary 3 (2016-05-26) 'Technology Groups' on changes to technology groups and technological development, development diary 7 (2016-06-23) 'The Ottoman Sultanate' on the Ottomans getting unique flavor, and development diary 9 (2016-08-04) 'Coptic Holy Sites' on a new blessings and holy cities system for Coptics.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"statement\": \"The Rights of Man manual states that technology in Europa Universalis IV was completely redone, casting aside the old location-based system.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "5717c5292753463107bf3291930a7cd50867d8b02cb6f2ac8ddf1aaa22ad9035"
+  },
+  {
+    "certificate_id": "A20_CAND4",
+    "cell_id": "A20",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M26",
+    "replicate": 1,
+    "id": "A_A20_CAND4_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A20_CAND4_r1",
+    "parent_result_sha256": "bb28d0eeffa8555fa86fde014c275bd7cdbaec57ca2ccc3cfbef537ca680cd77",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"The downloadable content in question\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"made changes to the mechanics\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"of the base game\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"statement\": \"The Rights of Man manual states that Rights of Man includes changes to governments and subjects, including new details for Revolutionary Republics and the Ottoman Empire.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "4ac5c1e7a76e1cf12e47557cce0518dba9cac71f5316ef7d27aa4d30618f8077"
+  },
+  {
+    "certificate_id": "A21_CAND1",
+    "cell_id": "A21",
+    "case_id": "G23",
+    "qid": "1259",
+    "package_id": "M29",
+    "replicate": 1,
+    "id": "A_A21_CAND1_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A21_CAND1_r1",
+    "parent_result_sha256": "06fea2830e6171336980ef8bf78da4461faa5800fc6b6eb71b00acaa157ec89c",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"a team featuring\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"an Australian coder\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"won the championship.\"\n    }\n  ],\n  \"interpretive_context\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In one particular year, I discovered that\"\n    }\n  ],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Jerry Mao is an Australian competitive programmer who won a bronze medal at IOI 2015, a silver medal at IOI 2016, a gold medal at IOI 2017, and a silver medal at IOI 2018.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Jerry Mao was a member of the Massachusetts Institute of Technology team MIT ZEROONE (with Mingyang Deng and Xiao Mao), which won the ICPC 2021 World Finals Dhaka (held on 10 November 2022) as World Champion.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "b9a7eb51ad390e4e98a6633f0a7e14b291ba6015c95e6b76cbd678edaf307288"
+  },
+  {
+    "certificate_id": "A21_CAND2",
+    "cell_id": "A21",
+    "case_id": "G23",
+    "qid": "1259",
+    "package_id": "M30",
+    "replicate": 1,
+    "id": "A_A21_CAND2_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A21_CAND2_r1",
+    "parent_result_sha256": "0cebd41b90e3f5ee1cde919af4572ae07e2ecfe40dca41576df22fd0229af2a8",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"a team featuring\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"an Australian coder\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"won the championship.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Jerry Mao is an Australian competitive programmer who won a bronze medal at IOI 2015, a silver medal at IOI 2016, a gold medal at IOI 2017, and a silver medal at IOI 2018.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Jerry Mao was a member of the Massachusetts Institute of Technology team MIT ZEROONE (with Mingyang Deng and Xiao Mao), which won the ICPC 2021 World Finals Dhaka (held on 10 November 2022) as World Champion.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "69a00eaf87e17c26dbf7afb37400eb4ca5fb7eb1caeff6f3557b686276706810"
+  },
+  {
+    "certificate_id": "A24_CAND1",
+    "cell_id": "A24",
+    "case_id": "G27",
+    "qid": "922",
+    "package_id": "M33",
+    "replicate": 1,
+    "id": "A_A24_CAND1_r1",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A24_CAND1_r1",
+    "parent_result_sha256": "8b3d7d8a91a1f8caba072229e05131eb8215daf3fdd4b9c34112837da87d2bbe",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In it,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"the author refers to\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"their country having regained a region.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"A letter from King Michael of Romania to the President of the United States was transmitted to the President under cover of a memorandum dated March 5, 1945, from William J. Donovan, Director of the Office of Strategic Services.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"In the letter, King Michael refers to Romania having regained North Transylvania.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "e1c852b8e20b36419831717a367595cd0f607d4e221cf4a18d59f06b807f382f"
+  },
+  {
+    "certificate_id": "A02_CAND1",
+    "cell_id": "A02",
+    "case_id": "G03",
+    "qid": "261",
+    "package_id": "M01",
+    "replicate": 2,
+    "id": "A_A02_CAND1_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A02_CAND1_r2",
+    "parent_result_sha256": "96bf865e5fb5ecbd9447a8dc6933f6990bf04b3448b104ff2edb9d2842c806a6",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"- Two people wrote it.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Zeynel Abidin Yılmaz and Mehmet Diyaddin Yaşar co-authored the 2022 article \\\"Examination of Prospective Teachers' Creative Comparisons for the Concept of 'Science Education'\\\", published in International Journal of Scholars in Education, 5(2), 101-116.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "56bbb900fb360c6850a573e0e701659a6f9df0126af6c00fcb548217f1e32b01"
+  },
+  {
+    "certificate_id": "A02_CAND2",
+    "cell_id": "A02",
+    "case_id": "G03",
+    "qid": "261",
+    "package_id": "M01",
+    "replicate": 2,
+    "id": "A_A02_CAND2_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A02_CAND2_r2",
+    "parent_result_sha256": "e9b09c11ce1e4d862101df814c14934d48f5ce37f72939c071a5ffd9a5ea531a",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"- Two people wrote it.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Zeynel Abidin Yılmaz and Mehmet Diyaddin Yaşar co-authored the 2022 article \\\"Examination of Prospective Teachers' Creative Comparisons for the Concept of 'Science Education'\\\", published in International Journal of Scholars in Education, 5(2), 101-116.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "56bbb900fb360c6850a573e0e701659a6f9df0126af6c00fcb548217f1e32b01"
+  },
+  {
+    "certificate_id": "A03_CAND1",
+    "cell_id": "A03",
+    "case_id": "G03",
+    "qid": "261",
+    "package_id": "M02",
+    "replicate": 2,
+    "id": "A_A03_CAND1_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A03_CAND1_r2",
+    "parent_result_sha256": "be10cd4677e3a677c2933d1b9a1255171fbd7edffafaeabf48cba9a0b7684b19",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In one of the tables,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"one of the emotions\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"is at 13.53 percent.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"The paper (D10) states that the data were organized in 5 tables, with Table 2 presenting prospective teachers' metaphoric perceptions of science education as an \\\"Emotion\\\".\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"In Table 2 of that paper, the positive emotion \\\"Happiness\\\" is reported at 13.53 percent (33 participants).\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "4662565c6d72674458244acf35848c8acd6674b9c19dc3d039d1638fe629a491"
+  },
+  {
+    "certificate_id": "A03_CAND2",
+    "cell_id": "A03",
+    "case_id": "G03",
+    "qid": "261",
+    "package_id": "M02",
+    "replicate": 2,
+    "id": "A_A03_CAND2_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A03_CAND2_r2",
+    "parent_result_sha256": "ed06ca84a778594f8589a0661f12c6fd28b64cf1837233fed702839a0902e341",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In one of the tables,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"one of the emotions\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"is at 13.53 percent.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"The paper (D10) states that the data were organized in 5 tables, with Table 2 presenting prospective teachers' metaphoric perceptions of science education as an \\\"Emotion\\\".\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"In Table 2 of that paper, the positive emotion \\\"Happiness\\\" is reported at 13.53 percent (33 participants).\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "4662565c6d72674458244acf35848c8acd6674b9c19dc3d039d1638fe629a491"
+  },
+  {
+    "certificate_id": "A03_CAND3",
+    "cell_id": "A03",
+    "case_id": "G03",
+    "qid": "261",
+    "package_id": "M02",
+    "replicate": 2,
+    "id": "A_A03_CAND3_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A03_CAND3_r2",
+    "parent_result_sha256": "85f6289ee3fe216d9637c9364a0679c6ea48322743ad88534a06237c49690d23",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In one of the tables,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"one of the emotions\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"is at 13.53 percent.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"In Table 2 of that paper, the positive emotion \\\"Happiness\\\" is reported at 13.53 percent (33 participants).\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "264540b9fab6ad4a8033b369890cf0cab01db8fe9568f8abd519284b8cf1d250"
+  },
+  {
+    "certificate_id": "A07_CAND1",
+    "cell_id": "A07",
+    "case_id": "G06",
+    "qid": "228",
+    "package_id": "M05",
+    "replicate": 2,
+    "id": "A_A07_CAND1_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A07_CAND1_r2",
+    "parent_result_sha256": "3734705372bbcf52c8cdd2e88eca98d2ba6c8e64caacaa7fee431fb74e9f5746",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"This person and their spouse,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"who, up to 2019,\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"had no children from the marriage,\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"Ding Lei, also known as William Ding, founded NetEase in June 1997 and is its founder/CEO; NetEase is an online and mobile games business, and Ding's fortune came largely from video games including Fantasy Westward Journey.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"Ding Lei earned a degree in communication technology from the University of Electronic Science and Technology of China; at the time of the 2019 article, he was married but without children.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "7520d2fc93490c738e6b7b552811e6af454197323052ad41c6c9fe757129be89"
+  },
+  {
+    "certificate_id": "A14_CAND1",
+    "cell_id": "A14",
+    "case_id": "G12",
+    "qid": "971",
+    "package_id": "M12",
+    "replicate": 2,
+    "id": "A_A14_CAND1_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A14_CAND1_r2",
+    "parent_result_sha256": "b5319bacba9e1026ad7cfb3b14d04c8e8ece112d536023b5c00fb37483a2cded",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"then published a journal article\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"six years after\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"publishing the book.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Alka Marwaha is an associate professor of Mathematics at Jesus and Mary College, University of Delhi, India, and the author of The Secret World of Vipassana and Mathematics (Wisdom Tree Publishers, November 15, 2016), a book exploring the singularity between Vipassana and Mathematics.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"Alka Marwaha authored the article \\\"Finding the mathematical overlaps of the axiom of choice in Vipassana meditation,\\\" published in the International Journal of Statistics and Applied Mathematics in 2022 (vol. 7, issue 3, pp. 110-114).\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "1bad4ff1fd7e4cef66b7cce2c9c2431bff15130c2e541e5a96dc4f0ab8ff8f9b"
+  },
+  {
+    "certificate_id": "A14_CAND2",
+    "cell_id": "A14",
+    "case_id": "G12",
+    "qid": "971",
+    "package_id": "M13",
+    "replicate": 2,
+    "id": "A_A14_CAND2_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A14_CAND2_r2",
+    "parent_result_sha256": "bc6f752b88566ecf936670e5050c306159982e43b3a13b7a0708ac75599dab56",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"then published a journal article\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"six years after\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"publishing the book.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Alka Marwaha is an associate professor of Mathematics at Jesus and Mary College, University of Delhi, India, and the author of The Secret World of Vipassana and Mathematics (Wisdom Tree Publishers, November 15, 2016), a book exploring the singularity between Vipassana and Mathematics.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"Alka Marwaha authored the article \\\"Finding the mathematical overlaps of the axiom of choice in Vipassana meditation,\\\" published in the International Journal of Statistics and Applied Mathematics in 2022 (vol. 7, issue 3, pp. 110-114).\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "1bad4ff1fd7e4cef66b7cce2c9c2431bff15130c2e541e5a96dc4f0ab8ff8f9b"
+  },
+  {
+    "certificate_id": "A14_CAND3",
+    "cell_id": "A14",
+    "case_id": "G12",
+    "qid": "971",
+    "package_id": "M14",
+    "replicate": 2,
+    "id": "A_A14_CAND3_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A14_CAND3_r2",
+    "parent_result_sha256": "e1dd6d5638beb88216ca9a095b82a93585622b7ff209e20def84989ea2af053e",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"then published a journal article\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"on a similar topic\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"publishing the book.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Alka Marwaha is an associate professor of Mathematics at Jesus and Mary College, University of Delhi, India, and the author of The Secret World of Vipassana and Mathematics (Wisdom Tree Publishers, November 15, 2016), a book exploring the singularity between Vipassana and Mathematics.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"Alka Marwaha authored the article \\\"Finding the mathematical overlaps of the axiom of choice in Vipassana meditation,\\\" published in the International Journal of Statistics and Applied Mathematics in 2022 (vol. 7, issue 3, pp. 110-114).\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "3ed3f94b401871199434e3c598ecf588e6f2e17166bdcf2c17cc1ec44d742ac2"
+  },
+  {
+    "certificate_id": "A19_CAND1",
+    "cell_id": "A19",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M20",
+    "replicate": 2,
+    "id": "A_A19_CAND1_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A19_CAND1_r2",
+    "parent_result_sha256": "13ad2d7fbcaabaee2bc9db31ed027128ad514c258dc7398f9a11c280e9d21316",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"A pack of downloadable content\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"was released for\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"a strategy video game\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"over three years after its release.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"Europa Universalis IV is a 2013 grand strategy video game; the Wikipedia article body states it was released on 25 August 2013 for Windows, OS X, and Linux, while the infobox lists 13 August 2013.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "68ccaf32b7ee7575a908abfe38a61cdf8ca5c39073efb8d7e012535c27fef8a1"
+  },
+  {
+    "certificate_id": "A19_CAND2",
+    "cell_id": "A19",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M21",
+    "replicate": 2,
+    "id": "A_A19_CAND2_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A19_CAND2_r2",
+    "parent_result_sha256": "c05b1076429cdf827ebce725c26a8d1b2548e0116bab7a24d423df4b85f3eb30",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"A pack of downloadable content\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"was released for\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"a strategy video game\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"over three years after its release.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"Europa Universalis IV is a 2013 grand strategy video game; the Wikipedia article body states it was released on 25 August 2013 for Windows, OS X, and Linux, while the infobox lists 13 August 2013.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "68ccaf32b7ee7575a908abfe38a61cdf8ca5c39073efb8d7e012535c27fef8a1"
+  },
+  {
+    "certificate_id": "A19_CAND3",
+    "cell_id": "A19",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M22",
+    "replicate": 2,
+    "id": "A_A19_CAND3_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A19_CAND3_r2",
+    "parent_result_sha256": "a2553ecbe22779f11c0f3489a868a5aa1b1fad994494706ff29d401fe5aa5602",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"A pack of downloadable content\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"was released for\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"a strategy video game\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C5\",\n      \"statement\": \"Europa Universalis IV is a 2013 grand strategy video game; the Wikipedia article body states it was released on 25 August 2013 for Windows, OS X, and Linux, while the infobox lists 13 August 2013.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "1dbac62d1593523569ecc4858680acd488abe70b0d8e83da08410c5838220967"
+  },
+  {
+    "certificate_id": "A20_CAND1",
+    "cell_id": "A20",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M23",
+    "replicate": 2,
+    "id": "A_A20_CAND1_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A20_CAND1_r2",
+    "parent_result_sha256": "633d42526c2eff91e3ec913e1ab60d54bcc9f62a9fe317955e004b75f9ed0203",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"The downloadable content in question\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"made changes to the mechanics\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"of the base game\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"including\"\n    },\n    {\n      \"unit_id\": \"U5\",\n      \"text\": \"religion\"\n    },\n    {\n      \"unit_id\": \"U6\",\n      \"text\": \"and technology,\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"The Rights of Man wiki page lists development diary 3 (2016-05-26) 'Technology Groups' on changes to technology groups and technological development, development diary 7 (2016-06-23) 'The Ottoman Sultanate' on the Ottomans getting unique flavor, and development diary 9 (2016-08-04) 'Coptic Holy Sites' on a new blessings and holy cities system for Coptics.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "979ac67f368e3b7362ab17a0c9f8ca63ff8a56a155bea39bacde0f4de002de8d"
+  },
+  {
+    "certificate_id": "A20_CAND3",
+    "cell_id": "A20",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M25",
+    "replicate": 2,
+    "id": "A_A20_CAND3_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A20_CAND3_r2",
+    "parent_result_sha256": "27e748df6ed0eeeb9d45e936d033e0b8cb73e8343ca13abdeca4d97624323bc2",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"The downloadable content in question\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"made changes to the mechanics\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"of the base game\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"including\"\n    },\n    {\n      \"unit_id\": \"U5\",\n      \"text\": \"religion\"\n    },\n    {\n      \"unit_id\": \"U6\",\n      \"text\": \"and technology,\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C4\",\n      \"statement\": \"The Rights of Man wiki page lists development diary 3 (2016-05-26) 'Technology Groups' on changes to technology groups and technological development, development diary 7 (2016-06-23) 'The Ottoman Sultanate' on the Ottomans getting unique flavor, and development diary 9 (2016-08-04) 'Coptic Holy Sites' on a new blessings and holy cities system for Coptics.\"\n    },\n    {\n      \"claim_id\": \"C6\",\n      \"statement\": \"The Rights of Man manual states that technology in Europa Universalis IV was completely redone, casting aside the old location-based system.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "5717c5292753463107bf3291930a7cd50867d8b02cb6f2ac8ddf1aaa22ad9035"
+  },
+  {
+    "certificate_id": "A20_CAND4",
+    "cell_id": "A20",
+    "case_id": "G21",
+    "qid": "843",
+    "package_id": "M26",
+    "replicate": 2,
+    "id": "A_A20_CAND4_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A20_CAND4_r2",
+    "parent_result_sha256": "df008ddbe54b6395990d897e8600b58f03856f9d43f30f23fb3dcafd2bfbd977",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"The downloadable content in question\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"made changes to the mechanics\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"of the base game\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"The downloadable content 'Expansion - Europa Universalis IV: Rights of Man' for Europa Universalis IV was released on 11 October 2016.\"\n    },\n    {\n      \"claim_id\": \"C7\",\n      \"statement\": \"The Rights of Man manual states that Rights of Man includes changes to governments and subjects, including new details for Revolutionary Republics and the Ottoman Empire.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "4ac5c1e7a76e1cf12e47557cce0518dba9cac71f5316ef7d27aa4d30618f8077"
+  },
+  {
+    "certificate_id": "A21_CAND1",
+    "cell_id": "A21",
+    "case_id": "G23",
+    "qid": "1259",
+    "package_id": "M29",
+    "replicate": 2,
+    "id": "A_A21_CAND1_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A21_CAND1_r2",
+    "parent_result_sha256": "a48f9173b3cbb9d309718e734a8694b981b97045d6274cd2772ea63cf829333b",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"a team featuring\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"an Australian coder\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"won the championship.\"\n    }\n  ],\n  \"interpretive_context\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In one particular year, I discovered that\"\n    }\n  ],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Jerry Mao is an Australian competitive programmer who won a bronze medal at IOI 2015, a silver medal at IOI 2016, a gold medal at IOI 2017, and a silver medal at IOI 2018.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Jerry Mao was a member of the Massachusetts Institute of Technology team MIT ZEROONE (with Mingyang Deng and Xiao Mao), which won the ICPC 2021 World Finals Dhaka (held on 10 November 2022) as World Champion.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "b9a7eb51ad390e4e98a6633f0a7e14b291ba6015c95e6b76cbd678edaf307288"
+  },
+  {
+    "certificate_id": "A21_CAND2",
+    "cell_id": "A21",
+    "case_id": "G23",
+    "qid": "1259",
+    "package_id": "M30",
+    "replicate": 2,
+    "id": "A_A21_CAND2_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A21_CAND2_r2",
+    "parent_result_sha256": "4c80c79a2b61b4ae99422d69e307dceaf0a963f8f368540b2d925d1210d50245",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"a team featuring\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"an Australian coder\"\n    },\n    {\n      \"unit_id\": \"U4\",\n      \"text\": \"won the championship.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"Jerry Mao is an Australian competitive programmer who won a bronze medal at IOI 2015, a silver medal at IOI 2016, a gold medal at IOI 2017, and a silver medal at IOI 2018.\"\n    },\n    {\n      \"claim_id\": \"C2\",\n      \"statement\": \"Jerry Mao was a member of the Massachusetts Institute of Technology team MIT ZEROONE (with Mingyang Deng and Xiao Mao), which won the ICPC 2021 World Finals Dhaka (held on 10 November 2022) as World Champion.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "69a00eaf87e17c26dbf7afb37400eb4ca5fb7eb1caeff6f3557b686276706810"
+  },
+  {
+    "certificate_id": "A24_CAND1",
+    "cell_id": "A24",
+    "case_id": "G27",
+    "qid": "922",
+    "package_id": "M33",
+    "replicate": 2,
+    "id": "A_A24_CAND1_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A24_CAND1_r2",
+    "parent_result_sha256": "27f7f9d6d3bd14cce9afec1c7cc4eaaf366a7dd766600a3bdae53560c3b59b26",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In it,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"the author refers to\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"their country having regained a region.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C1\",\n      \"statement\": \"A letter from King Michael of Romania to the President of the United States was transmitted to the President under cover of a memorandum dated March 5, 1945, from William J. Donovan, Director of the Office of Strategic Services.\"\n    },\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"In the letter, King Michael refers to Romania having regained North Transylvania.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "e1c852b8e20b36419831717a367595cd0f607d4e221cf4a18d59f06b807f382f"
+  },
+  {
+    "certificate_id": "A24_CAND2",
+    "cell_id": "A24",
+    "case_id": "G27",
+    "qid": "922",
+    "package_id": "M34",
+    "replicate": 2,
+    "id": "A_A24_CAND2_r2",
+    "stage": "E1A",
+    "phase": "auditor",
+    "parent_verifier_id": "V_A24_CAND2_r2",
+    "parent_result_sha256": "c674c69be01c5bd2c88495571bfb965f641da5ed19b53bf32a4d5f1d16596114",
+    "request": {
+      "model": "deepseek-flash",
+      "temperature": 0,
+      "response_format": {
+        "type": "json_object"
+      },
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are auditing a claim that the supplied Verified Claims fully establish a\nfixed TARGET.\n\nYour only task is to find material TARGET semantics that are NOT established by\nthe supplied Claims.\n\nDo not judge sibling conditions outside the TARGET.\n\nDo not add new requirements.\n\nReturn JSON only:\n\n{\n  \"uncovered_target_unit_ids\": []\n}\n"
+        },
+        {
+          "role": "user",
+          "content": "{\n  \"target_semantics\": [\n    {\n      \"unit_id\": \"U1\",\n      \"text\": \"In it,\"\n    },\n    {\n      \"unit_id\": \"U2\",\n      \"text\": \"the author refers to\"\n    },\n    {\n      \"unit_id\": \"U3\",\n      \"text\": \"their country having regained a region.\"\n    }\n  ],\n  \"interpretive_context\": [],\n  \"verified_claims\": [\n    {\n      \"claim_id\": \"C3\",\n      \"statement\": \"In the letter, King Michael refers to Romania having regained North Transylvania.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "request_sha256": "1d0a5252f7dcc4e772fd6533b087eb44b808881f596aaf15e00afe8851c4c553"
+  }
+]
