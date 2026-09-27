@@ -1,0 +1,167 @@
+{
+  "scope": "Post-score descriptive decomposition; no relabeling, repair or gate substitution",
+  "http_statuses": {
+    "200": 42
+  },
+  "parseable_json_outputs": 42,
+  "proposed_actions_all_including_invalid": {
+    "SEARCH": 14,
+    "OPEN": 11,
+    "REQUEST_CLOSURE_AUDIT": 10,
+    "FIND": 7
+  },
+  "open_contract_errors": [
+    {
+      "id": "S16__P0",
+      "source_ref": "W38",
+      "pattern": "Messi",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    },
+    {
+      "id": "S01__P2",
+      "source_ref": "W8",
+      "pattern": "Baltic",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    },
+    {
+      "id": "S16__P2",
+      "source_ref": "W38",
+      "pattern": "95th",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    },
+    {
+      "id": "S07__P1",
+      "source_ref": "W5",
+      "pattern": "swelling",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    },
+    {
+      "id": "S05__P2",
+      "source_ref": "W7",
+      "pattern": "Dalhousie",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    },
+    {
+      "id": "S15__P2",
+      "source_ref": "W31",
+      "pattern": "English Open",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    },
+    {
+      "id": "S13__P0",
+      "source_ref": "W4",
+      "pattern": "Transylvania",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    },
+    {
+      "id": "S07__P0",
+      "source_ref": "W5",
+      "pattern": "biopsy",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    },
+    {
+      "id": "S03__P0",
+      "source_ref": "W2",
+      "pattern": "donat",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    },
+    {
+      "id": "S03__P2",
+      "source_ref": "W4",
+      "pattern": "gift|donat|building|university|foundation|wife|children",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    },
+    {
+      "id": "S07__P2",
+      "source_ref": "W4",
+      "pattern": "biopsy",
+      "ref_visible": true,
+      "error": "OPEN expects before/after; keyword is not silently interpreted as FIND"
+    }
+  ],
+  "closure_requests": [
+    "S08__P0",
+    "S08__P2",
+    "S10__P0",
+    "S08__P1",
+    "S05__P0",
+    "S14__P0",
+    "S12__P0",
+    "S14__P2",
+    "S16__P1",
+    "S10__P2"
+  ],
+  "closure_requests_after_two_nogain": [
+    "S08__P2",
+    "S14__P2",
+    "S10__P2"
+  ],
+  "semantically_changed_route_proposals_P2": {
+    "ids": [
+      "S09__P2",
+      "S01__P2",
+      "S16__P2",
+      "S05__P2",
+      "S15__P2",
+      "S13__P2",
+      "S04__P2",
+      "S03__P2",
+      "S12__P2",
+      "S02__P2",
+      "S11__P2",
+      "S07__P2",
+      "S06__P2"
+    ],
+    "numerator": 13,
+    "denominator": 16
+  },
+  "changed_but_invalid_P2": [
+    "S01__P2",
+    "S16__P2",
+    "S05__P2",
+    "S15__P2",
+    "S03__P2",
+    "S07__P2"
+  ],
+  "failure_taxonomy": {
+    "action_serialization": 11,
+    "unsupported_premise": [
+      "S13__P2",
+      "S02__P1",
+      "S16__P3",
+      "S04__P0",
+      "S09__P0"
+    ],
+    "premature_closure_request": [
+      "S08__P0",
+      "S08__P2",
+      "S10__P0",
+      "S08__P1",
+      "S05__P0",
+      "S14__P0",
+      "S12__P0",
+      "S14__P2",
+      "S16__P1",
+      "S10__P2"
+    ],
+    "already_solved_recollection": [
+      "S16__P0",
+      "S16__P2"
+    ],
+    "observed_same_route_after_nogain": [],
+    "query_only_paraphrase": []
+  },
+  "ambiguity_sensitivity": "Even if S02P1 reported-childlessness and S04P0 University-of-Minnesota narrowing were adjudicated leniently, unchanged schema31/42 and valid NoGain escape7/10 still fail. Primary labels are untouched.",
+  "cache_interpretation": "All42 complete consistent usage counters report hit0. Shared new-prefix concurrent cold requests are a plausible explanation, not an identified cause; no serialized/cache-warm control was run.",
+  "causal_limit": "P2 normal-to-perturbed pairs do not constitute actual multi-turn recovery; P3 changes preview packaging as well as source salience."
+}
