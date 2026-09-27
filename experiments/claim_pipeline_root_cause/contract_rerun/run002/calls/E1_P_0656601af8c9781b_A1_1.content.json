@@ -1,0 +1,4 @@
+{
+  "reasoning_content": "We need answer JSON only. Need extract 0-3 new factual findings across acquisition only when observations directly support full statement, materially advance OneGap, add facts not already in C. OneGap: In which year was actor Peter King Nzioki born? Observation W1 gives born 25 May 1978. Need findings. Existing C not supplied? Actually prompt says Existing C? It says existing C helps avoid duplicates, but no C provided. So we can add finding. Need statement directly supports birth year. Maybe \"Peter King Nzioki Mwania was born on 25 May 1978.\" Evidence W1. That's it. Could include birth year only. Return schema. Ensure JSON object.",
+  "content": "{\"findings\":[{\"statement\":\"Peter King Nzioki Mwania was born on 25 May 1978.\",\"evidence_refs\":[\"W1\"]}]}"
+}
