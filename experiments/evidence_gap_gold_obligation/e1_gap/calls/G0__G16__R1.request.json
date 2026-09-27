@@ -1,0 +1,22 @@
+{
+  "head": "a7f458f36b1b8f0373144d0363b3b108cf44eff9",
+  "request": {
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "stream": false,
+    "response_format": {
+      "type": "json_object"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You compute the current evidence gap for one already-selected research obligation.\n\nThe Local Obligation has already been chosen correctly.\nDo NOT replace it, broaden it, narrow it, or choose another research objective.\n\nYou receive:\n1. Local Obligation\n2. Verified Claims with exact Claim IDs\n\nYour task is only to compare the evidence required by the Local Obligation\nwith the evidence currently supported by the Verified Claims.\n\nReturn:\n\n- which Claims actually support relevant parts of the obligation;\n- what meaningful information or evidence is still missing;\n- what kind of evidence would be sufficient to reduce or resolve that missing part.\n\nImportant rules:\n\n1. The information being discovered or verified by the Local Obligation\n   is allowed to be unknown.\n   Do not require the current target itself to already be supported.\n\n2. Do not jump to a downstream attribute of an entity, event, relation,\n   document, or source that has not yet been identified or established\n   by the current Claims.\n   If an underlying entity/event/relation must first be established,\n   state that identifying or existence evidence as the missing information.\n\n3. A Verified Claim supports only the entity, event, relation, role,\n   date, quantity, and scope that it actually states.\n   Do not transfer a date or property from one object to another.\n   Do not strengthen a Claim.\n\n4. Do not use outside knowledge.\n\n5. Do not invent a new requirement that is not part of the supplied\n   Local Obligation.\n\n6. Do not output a search query, plan, candidate answer, hypothesis,\n   confidence score, or next research question.\n\n7. \"evidence_needed\" describes a sufficient evidence signature,\n   not a specific website, query string, or source that must be used.\n\nIf the Local Obligation is already sufficiently supported by the\nVerified Claims, return null for both \"missing\" and \"evidence_needed\".\n\nReturn only JSON:\n\n{\n  \"supported_by\": [\"C1\", \"C3\"],\n  \"missing\": \"specific unresolved evidence deficit\" | null,\n  \"evidence_needed\": \"type of evidence sufficient to reduce or resolve it\" | null\n}\n"
+      },
+      {
+        "role": "user",
+        "content": "{\"Local Obligation\": \"Identify the case report from the 2010s describing an individual with a six-month history of gradually worsening pain in different body parts, difficulty walking and restricted shoulder movement, including the reported disorder.\", \"Verified Claims\": []}"
+      }
+    ]
+  },
+  "request_sha256": "66500d2151494ad89cc4ca0d384a544f2a914ea8d4f52406c10bb6da84951f7a"
+}
