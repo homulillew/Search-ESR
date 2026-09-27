@@ -1,0 +1,643 @@
+{
+  "status": "POST_HOC_DIAGNOSTIC_ONLY",
+  "primary_unchanged": true,
+  "motivation": "Overall Delta threshold depends on five stable-pair gains and a single reviewer; baseline alone has two mechanical failures.",
+  "pair_perturbation": {
+    "hypothetical_change": "C0 G12: different_but_valid -> compatible_obligation; primary classification is retained because supervisor identity and broader author academic profile have distinct targets, but one includes part of the other.",
+    "overall_baseline_stable": {
+      "n": 7,
+      "d": 27,
+      "rate": 0.25925925925925924
+    },
+    "overall_delta_stable_gain_pp": 14.814814814814813,
+    "overall_delta_mechanism": false,
+    "eligible_mechanism_after_perturbation": {
+      "CDELTA": true,
+      "C1": true,
+      "C2": true
+    }
+  },
+  "schema_conditional_strict": {
+    "C0": {
+      "n": 25,
+      "d": 52,
+      "rate": 0.4807692307692308
+    },
+    "CDELTA": {
+      "n": 23,
+      "d": 54,
+      "rate": 0.42592592592592593
+    },
+    "C1": {
+      "n": 26,
+      "d": 54,
+      "rate": 0.48148148148148145
+    },
+    "C2": {
+      "n": 26,
+      "d": 54,
+      "rate": 0.48148148148148145
+    }
+  },
+  "common_complete_case_subset": {
+    "excluded_case_ids": [
+      "G07",
+      "G14"
+    ],
+    "all_arms_matched": true,
+    "metrics": {
+      "C0": {
+        "strict": {
+          "n": 25,
+          "d": 50,
+          "rate": 0.5
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 47,
+            "d": 50,
+            "rate": 0.94
+          },
+          "Material": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 39,
+            "d": 50,
+            "rate": 0.78
+          },
+          "Coherent": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 39,
+            "d": 50,
+            "rate": 0.78
+          },
+          "NonDownstream": {
+            "n": 40,
+            "d": 50,
+            "rate": 0.8
+          },
+          "EvidenceResolvable": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 50,
+          "d": 50,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 10,
+            "d": 50,
+            "rate": 0.2
+          },
+          "already_supported": {
+            "n": 3,
+            "d": 50,
+            "rate": 0.06
+          },
+          "whole_question_restatement": {
+            "n": 6,
+            "d": 50,
+            "rate": 0.12
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 2,
+            "d": 50,
+            "rate": 0.04
+          },
+          "relation_strengthening": {
+            "n": 8,
+            "d": 50,
+            "rate": 0.16
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 10,
+            "d": 50,
+            "rate": 0.2
+          },
+          "bundled_objectives": {
+            "n": 5,
+            "d": 50,
+            "rate": 0.1
+          },
+          "outside_knowledge": {
+            "n": 2,
+            "d": 50,
+            "rate": 0.04
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 11,
+          "d": 50,
+          "rate": 0.22
+        },
+        "pair_categories": {
+          "one_valid_one_invalid": 7,
+          "different_but_valid": 3,
+          "both_invalid": 9,
+          "same_obligation": 4,
+          "compatible_obligation": 2
+        },
+        "stable_both_valid": {
+          "n": 6,
+          "d": 25,
+          "rate": 0.24
+        },
+        "raw_both_valid": {
+          "n": 9,
+          "d": 25,
+          "rate": 0.36
+        }
+      },
+      "CDELTA": {
+        "strict": {
+          "n": 23,
+          "d": 50,
+          "rate": 0.46
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 49,
+            "d": 50,
+            "rate": 0.98
+          },
+          "Material": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 34,
+            "d": 50,
+            "rate": 0.68
+          },
+          "Coherent": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 40,
+            "d": 50,
+            "rate": 0.8
+          },
+          "NonDownstream": {
+            "n": 36,
+            "d": 50,
+            "rate": 0.72
+          },
+          "EvidenceResolvable": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 50,
+          "d": 50,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 14,
+            "d": 50,
+            "rate": 0.28
+          },
+          "already_supported": {
+            "n": 1,
+            "d": 50,
+            "rate": 0.02
+          },
+          "whole_question_restatement": {
+            "n": 11,
+            "d": 50,
+            "rate": 0.22
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 3,
+            "d": 50,
+            "rate": 0.06
+          },
+          "relation_strengthening": {
+            "n": 7,
+            "d": 50,
+            "rate": 0.14
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 14,
+            "d": 50,
+            "rate": 0.28
+          },
+          "bundled_objectives": {
+            "n": 5,
+            "d": 50,
+            "rate": 0.1
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 16,
+          "d": 50,
+          "rate": 0.32
+        },
+        "pair_categories": {
+          "both_invalid": 13,
+          "compatible_obligation": 3,
+          "same_obligation": 8,
+          "one_valid_one_invalid": 1
+        },
+        "stable_both_valid": {
+          "n": 11,
+          "d": 25,
+          "rate": 0.44
+        },
+        "raw_both_valid": {
+          "n": 11,
+          "d": 25,
+          "rate": 0.44
+        }
+      },
+      "C1": {
+        "strict": {
+          "n": 26,
+          "d": 50,
+          "rate": 0.52
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 49,
+            "d": 50,
+            "rate": 0.98
+          },
+          "Material": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 40,
+            "d": 50,
+            "rate": 0.8
+          },
+          "Coherent": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 39,
+            "d": 50,
+            "rate": 0.78
+          },
+          "NonDownstream": {
+            "n": 37,
+            "d": 50,
+            "rate": 0.74
+          },
+          "EvidenceResolvable": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 50,
+          "d": 50,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 13,
+            "d": 50,
+            "rate": 0.26
+          },
+          "already_supported": {
+            "n": 1,
+            "d": 50,
+            "rate": 0.02
+          },
+          "whole_question_restatement": {
+            "n": 8,
+            "d": 50,
+            "rate": 0.16
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 2,
+            "d": 50,
+            "rate": 0.04
+          },
+          "wrong_relation_arguments": {
+            "n": 1,
+            "d": 50,
+            "rate": 0.02
+          },
+          "relation_strengthening": {
+            "n": 8,
+            "d": 50,
+            "rate": 0.16
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 13,
+            "d": 50,
+            "rate": 0.26
+          },
+          "bundled_objectives": {
+            "n": 2,
+            "d": 50,
+            "rate": 0.04
+          },
+          "outside_knowledge": {
+            "n": 1,
+            "d": 50,
+            "rate": 0.02
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 10,
+          "d": 50,
+          "rate": 0.2
+        },
+        "pair_categories": {
+          "both_invalid": 10,
+          "same_obligation": 7,
+          "different_but_valid": 2,
+          "one_valid_one_invalid": 4,
+          "compatible_obligation": 2
+        },
+        "stable_both_valid": {
+          "n": 9,
+          "d": 25,
+          "rate": 0.36
+        },
+        "raw_both_valid": {
+          "n": 11,
+          "d": 25,
+          "rate": 0.44
+        }
+      },
+      "C2": {
+        "strict": {
+          "n": 25,
+          "d": 50,
+          "rate": 0.5
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "Material": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 35,
+            "d": 50,
+            "rate": 0.7
+          },
+          "Coherent": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 38,
+            "d": 50,
+            "rate": 0.76
+          },
+          "NonDownstream": {
+            "n": 36,
+            "d": 50,
+            "rate": 0.72
+          },
+          "EvidenceResolvable": {
+            "n": 50,
+            "d": 50,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 50,
+          "d": 50,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 14,
+            "d": 50,
+            "rate": 0.28
+          },
+          "already_supported": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "whole_question_restatement": {
+            "n": 12,
+            "d": 50,
+            "rate": 0.24
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 3,
+            "d": 50,
+            "rate": 0.06
+          },
+          "relation_strengthening": {
+            "n": 9,
+            "d": 50,
+            "rate": 0.18
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 14,
+            "d": 50,
+            "rate": 0.28
+          },
+          "bundled_objectives": {
+            "n": 3,
+            "d": 50,
+            "rate": 0.06
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 50,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 15,
+          "d": 50,
+          "rate": 0.3
+        },
+        "pair_categories": {
+          "both_invalid": 11,
+          "compatible_obligation": 3,
+          "one_valid_one_invalid": 3,
+          "different_but_valid": 1,
+          "same_obligation": 7
+        },
+        "stable_both_valid": {
+          "n": 10,
+          "d": 25,
+          "rate": 0.4
+        },
+        "raw_both_valid": {
+          "n": 11,
+          "d": 25,
+          "rate": 0.44
+        }
+      }
+    }
+  },
+  "caution": "Output-conditioned fractions and post-hoc exclusions are sensitivity descriptions, never a replacement for frozen planned denominators or a new gate."
+}

@@ -1,0 +1,3559 @@
+{
+  "overall": {
+    "cases": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15",
+      "G16",
+      "G17",
+      "G18",
+      "G19",
+      "G20",
+      "G21",
+      "G22",
+      "G23",
+      "G24",
+      "G25",
+      "G26",
+      "G27"
+    ],
+    "metrics": {
+      "C0": {
+        "strict": {
+          "n": 25,
+          "d": 54,
+          "rate": 0.46296296296296297
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 52,
+            "d": 54,
+            "rate": 0.9629629629629629
+          },
+          "Unresolved": {
+            "n": 49,
+            "d": 54,
+            "rate": 0.9074074074074074
+          },
+          "Material": {
+            "n": 52,
+            "d": 54,
+            "rate": 0.9629629629629629
+          },
+          "Local": {
+            "n": 39,
+            "d": 54,
+            "rate": 0.7222222222222222
+          },
+          "Coherent": {
+            "n": 52,
+            "d": 54,
+            "rate": 0.9629629629629629
+          },
+          "ScopeFaithful": {
+            "n": 40,
+            "d": 54,
+            "rate": 0.7407407407407407
+          },
+          "NonDownstream": {
+            "n": 42,
+            "d": 54,
+            "rate": 0.7777777777777778
+          },
+          "EvidenceResolvable": {
+            "n": 52,
+            "d": 54,
+            "rate": 0.9629629629629629
+          }
+        },
+        "schema": {
+          "n": 52,
+          "d": 54,
+          "rate": 0.9629629629629629
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 10,
+            "d": 54,
+            "rate": 0.18518518518518517
+          },
+          "already_supported": {
+            "n": 3,
+            "d": 54,
+            "rate": 0.05555555555555555
+          },
+          "whole_question_restatement": {
+            "n": 7,
+            "d": 54,
+            "rate": 0.12962962962962962
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 2,
+            "d": 54,
+            "rate": 0.037037037037037035
+          },
+          "relation_strengthening": {
+            "n": 9,
+            "d": 54,
+            "rate": 0.16666666666666666
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 10,
+            "d": 54,
+            "rate": 0.18518518518518517
+          },
+          "bundled_objectives": {
+            "n": 6,
+            "d": 54,
+            "rate": 0.1111111111111111
+          },
+          "outside_knowledge": {
+            "n": 2,
+            "d": 54,
+            "rate": 0.037037037037037035
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 2,
+            "d": 54,
+            "rate": 0.037037037037037035
+          }
+        },
+        "broadness": {
+          "n": 13,
+          "d": 54,
+          "rate": 0.24074074074074073
+        },
+        "pair_categories": {
+          "one_valid_one_invalid": 7,
+          "different_but_valid": 3,
+          "both_invalid": 11,
+          "same_obligation": 4,
+          "compatible_obligation": 2
+        },
+        "stable_both_valid": {
+          "n": 6,
+          "d": 27,
+          "rate": 0.2222222222222222
+        },
+        "raw_both_valid": {
+          "n": 9,
+          "d": 27,
+          "rate": 0.3333333333333333
+        }
+      },
+      "CDELTA": {
+        "strict": {
+          "n": 23,
+          "d": 54,
+          "rate": 0.42592592592592593
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 53,
+            "d": 54,
+            "rate": 0.9814814814814815
+          },
+          "Material": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 34,
+            "d": 54,
+            "rate": 0.6296296296296297
+          },
+          "Coherent": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 43,
+            "d": 54,
+            "rate": 0.7962962962962963
+          },
+          "NonDownstream": {
+            "n": 40,
+            "d": 54,
+            "rate": 0.7407407407407407
+          },
+          "EvidenceResolvable": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 54,
+          "d": 54,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 14,
+            "d": 54,
+            "rate": 0.25925925925925924
+          },
+          "already_supported": {
+            "n": 1,
+            "d": 54,
+            "rate": 0.018518518518518517
+          },
+          "whole_question_restatement": {
+            "n": 14,
+            "d": 54,
+            "rate": 0.25925925925925924
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 3,
+            "d": 54,
+            "rate": 0.05555555555555555
+          },
+          "relation_strengthening": {
+            "n": 8,
+            "d": 54,
+            "rate": 0.14814814814814814
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 14,
+            "d": 54,
+            "rate": 0.25925925925925924
+          },
+          "bundled_objectives": {
+            "n": 6,
+            "d": 54,
+            "rate": 0.1111111111111111
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 20,
+          "d": 54,
+          "rate": 0.37037037037037035
+        },
+        "pair_categories": {
+          "both_invalid": 15,
+          "compatible_obligation": 3,
+          "same_obligation": 8,
+          "one_valid_one_invalid": 1
+        },
+        "stable_both_valid": {
+          "n": 11,
+          "d": 27,
+          "rate": 0.4074074074074074
+        },
+        "raw_both_valid": {
+          "n": 11,
+          "d": 27,
+          "rate": 0.4074074074074074
+        }
+      },
+      "C1": {
+        "strict": {
+          "n": 26,
+          "d": 54,
+          "rate": 0.48148148148148145
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 53,
+            "d": 54,
+            "rate": 0.9814814814814815
+          },
+          "Material": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 40,
+            "d": 54,
+            "rate": 0.7407407407407407
+          },
+          "Coherent": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 42,
+            "d": 54,
+            "rate": 0.7777777777777778
+          },
+          "NonDownstream": {
+            "n": 41,
+            "d": 54,
+            "rate": 0.7592592592592593
+          },
+          "EvidenceResolvable": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 54,
+          "d": 54,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 13,
+            "d": 54,
+            "rate": 0.24074074074074073
+          },
+          "already_supported": {
+            "n": 1,
+            "d": 54,
+            "rate": 0.018518518518518517
+          },
+          "whole_question_restatement": {
+            "n": 11,
+            "d": 54,
+            "rate": 0.2037037037037037
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 2,
+            "d": 54,
+            "rate": 0.037037037037037035
+          },
+          "wrong_relation_arguments": {
+            "n": 1,
+            "d": 54,
+            "rate": 0.018518518518518517
+          },
+          "relation_strengthening": {
+            "n": 9,
+            "d": 54,
+            "rate": 0.16666666666666666
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 13,
+            "d": 54,
+            "rate": 0.24074074074074073
+          },
+          "bundled_objectives": {
+            "n": 3,
+            "d": 54,
+            "rate": 0.05555555555555555
+          },
+          "outside_knowledge": {
+            "n": 1,
+            "d": 54,
+            "rate": 0.018518518518518517
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 14,
+          "d": 54,
+          "rate": 0.25925925925925924
+        },
+        "pair_categories": {
+          "both_invalid": 12,
+          "same_obligation": 7,
+          "different_but_valid": 2,
+          "one_valid_one_invalid": 4,
+          "compatible_obligation": 2
+        },
+        "stable_both_valid": {
+          "n": 9,
+          "d": 27,
+          "rate": 0.3333333333333333
+        },
+        "raw_both_valid": {
+          "n": 11,
+          "d": 27,
+          "rate": 0.4074074074074074
+        }
+      },
+      "C2": {
+        "strict": {
+          "n": 26,
+          "d": 54,
+          "rate": 0.48148148148148145
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          },
+          "Material": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 36,
+            "d": 54,
+            "rate": 0.6666666666666666
+          },
+          "Coherent": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 42,
+            "d": 54,
+            "rate": 0.7777777777777778
+          },
+          "NonDownstream": {
+            "n": 40,
+            "d": 54,
+            "rate": 0.7407407407407407
+          },
+          "EvidenceResolvable": {
+            "n": 54,
+            "d": 54,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 54,
+          "d": 54,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 14,
+            "d": 54,
+            "rate": 0.25925925925925924
+          },
+          "already_supported": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "whole_question_restatement": {
+            "n": 14,
+            "d": 54,
+            "rate": 0.25925925925925924
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 3,
+            "d": 54,
+            "rate": 0.05555555555555555
+          },
+          "relation_strengthening": {
+            "n": 9,
+            "d": 54,
+            "rate": 0.16666666666666666
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 14,
+            "d": 54,
+            "rate": 0.25925925925925924
+          },
+          "bundled_objectives": {
+            "n": 4,
+            "d": 54,
+            "rate": 0.07407407407407407
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 54,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 18,
+          "d": 54,
+          "rate": 0.3333333333333333
+        },
+        "pair_categories": {
+          "both_invalid": 12,
+          "compatible_obligation": 3,
+          "one_valid_one_invalid": 4,
+          "different_but_valid": 1,
+          "same_obligation": 7
+        },
+        "stable_both_valid": {
+          "n": 10,
+          "d": 27,
+          "rate": 0.37037037037037035
+        },
+        "raw_both_valid": {
+          "n": 11,
+          "d": 27,
+          "rate": 0.4074074074074074
+        }
+      }
+    },
+    "delta_vs_C0_pp": {
+      "CDELTA": {
+        "strict": -3.7037037037037033,
+        "broadness": 12.962962962962962,
+        "downstream": 7.4074074074074066,
+        "relation_arg": 1.8518518518518516,
+        "stable": 18.51851851851852,
+        "scope": 5.555555555555558
+      },
+      "C1": {
+        "strict": 1.851851851851849,
+        "broadness": 1.8518518518518516,
+        "downstream": 5.555555555555555,
+        "relation_arg": -1.8518518518518516,
+        "stable": 11.11111111111111,
+        "scope": 3.703703703703709
+      },
+      "C2": {
+        "strict": 1.851851851851849,
+        "broadness": 9.25925925925926,
+        "downstream": 7.4074074074074066,
+        "relation_arg": 1.8518518518518516,
+        "stable": 14.814814814814813,
+        "scope": 3.703703703703709
+      }
+    },
+    "incremental_pp": {
+      "C1-CDELTA": {
+        "strict": 5.555555555555553,
+        "broadness": -11.11111111111111,
+        "downstream": -1.8518518518518516,
+        "relation_arg": -3.7037037037037033,
+        "stable": -7.4074074074074066,
+        "scope": -1.851851851851849
+      },
+      "C2-C1": {
+        "strict": 0.0,
+        "broadness": 7.4074074074074066,
+        "downstream": 1.8518518518518516,
+        "relation_arg": 3.7037037037037033,
+        "stable": 3.7037037037037033,
+        "scope": 0.0
+      }
+    },
+    "mechanism_vs_C0": {
+      "CDELTA": true,
+      "C1": false,
+      "C2": false
+    },
+    "incremental_mechanism": {
+      "C1-CDELTA": true,
+      "C2-C1": false
+    },
+    "viability": {
+      "C0": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "CDELTA": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "C1": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "C2": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      }
+    }
+  },
+  "delta_eligible": {
+    "cases": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G09",
+      "G11",
+      "G12",
+      "G14",
+      "G17",
+      "G18",
+      "G20",
+      "G21",
+      "G23",
+      "G24",
+      "G26",
+      "G27"
+    ],
+    "metrics": {
+      "C0": {
+        "strict": {
+          "n": 16,
+          "d": 34,
+          "rate": 0.47058823529411764
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          },
+          "Unresolved": {
+            "n": 30,
+            "d": 34,
+            "rate": 0.8823529411764706
+          },
+          "Material": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          },
+          "Local": {
+            "n": 27,
+            "d": 34,
+            "rate": 0.7941176470588235
+          },
+          "Coherent": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          },
+          "ScopeFaithful": {
+            "n": 23,
+            "d": 34,
+            "rate": 0.6764705882352942
+          },
+          "NonDownstream": {
+            "n": 25,
+            "d": 34,
+            "rate": 0.7352941176470589
+          },
+          "EvidenceResolvable": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          }
+        },
+        "schema": {
+          "n": 33,
+          "d": 34,
+          "rate": 0.9705882352941176
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 8,
+            "d": 34,
+            "rate": 0.23529411764705882
+          },
+          "already_supported": {
+            "n": 3,
+            "d": 34,
+            "rate": 0.08823529411764706
+          },
+          "whole_question_restatement": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "relation_strengthening": {
+            "n": 9,
+            "d": 34,
+            "rate": 0.2647058823529412
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 8,
+            "d": 34,
+            "rate": 0.23529411764705882
+          },
+          "bundled_objectives": {
+            "n": 5,
+            "d": 34,
+            "rate": 0.14705882352941177
+          },
+          "outside_knowledge": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          }
+        },
+        "broadness": {
+          "n": 6,
+          "d": 34,
+          "rate": 0.17647058823529413
+        },
+        "pair_categories": {
+          "one_valid_one_invalid": 4,
+          "different_but_valid": 3,
+          "both_invalid": 7,
+          "same_obligation": 3
+        },
+        "stable_both_valid": {
+          "n": 3,
+          "d": 17,
+          "rate": 0.17647058823529413
+        },
+        "raw_both_valid": {
+          "n": 6,
+          "d": 17,
+          "rate": 0.35294117647058826
+        }
+      },
+      "CDELTA": {
+        "strict": {
+          "n": 18,
+          "d": 34,
+          "rate": 0.5294117647058824
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          },
+          "Material": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 25,
+            "d": 34,
+            "rate": 0.7352941176470589
+          },
+          "Coherent": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 24,
+            "d": 34,
+            "rate": 0.7058823529411765
+          },
+          "NonDownstream": {
+            "n": 24,
+            "d": 34,
+            "rate": 0.7058823529411765
+          },
+          "EvidenceResolvable": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 34,
+          "d": 34,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 10,
+            "d": 34,
+            "rate": 0.29411764705882354
+          },
+          "already_supported": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "whole_question_restatement": {
+            "n": 5,
+            "d": 34,
+            "rate": 0.14705882352941177
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 2,
+            "d": 34,
+            "rate": 0.058823529411764705
+          },
+          "relation_strengthening": {
+            "n": 8,
+            "d": 34,
+            "rate": 0.23529411764705882
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 10,
+            "d": 34,
+            "rate": 0.29411764705882354
+          },
+          "bundled_objectives": {
+            "n": 4,
+            "d": 34,
+            "rate": 0.11764705882352941
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 9,
+          "d": 34,
+          "rate": 0.2647058823529412
+        },
+        "pair_categories": {
+          "both_invalid": 8,
+          "same_obligation": 8,
+          "compatible_obligation": 1
+        },
+        "stable_both_valid": {
+          "n": 9,
+          "d": 17,
+          "rate": 0.5294117647058824
+        },
+        "raw_both_valid": {
+          "n": 9,
+          "d": 17,
+          "rate": 0.5294117647058824
+        }
+      },
+      "C1": {
+        "strict": {
+          "n": 19,
+          "d": 34,
+          "rate": 0.5588235294117647
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          },
+          "Material": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 28,
+            "d": 34,
+            "rate": 0.8235294117647058
+          },
+          "Coherent": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 25,
+            "d": 34,
+            "rate": 0.7352941176470589
+          },
+          "NonDownstream": {
+            "n": 25,
+            "d": 34,
+            "rate": 0.7352941176470589
+          },
+          "EvidenceResolvable": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 34,
+          "d": 34,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 9,
+            "d": 34,
+            "rate": 0.2647058823529412
+          },
+          "already_supported": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "whole_question_restatement": {
+            "n": 4,
+            "d": 34,
+            "rate": 0.11764705882352941
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "wrong_relation_arguments": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "relation_strengthening": {
+            "n": 8,
+            "d": 34,
+            "rate": 0.23529411764705882
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 9,
+            "d": 34,
+            "rate": 0.2647058823529412
+          },
+          "bundled_objectives": {
+            "n": 2,
+            "d": 34,
+            "rate": 0.058823529411764705
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 6,
+          "d": 34,
+          "rate": 0.17647058823529413
+        },
+        "pair_categories": {
+          "both_invalid": 6,
+          "same_obligation": 6,
+          "one_valid_one_invalid": 3,
+          "compatible_obligation": 1,
+          "different_but_valid": 1
+        },
+        "stable_both_valid": {
+          "n": 7,
+          "d": 17,
+          "rate": 0.4117647058823529
+        },
+        "raw_both_valid": {
+          "n": 8,
+          "d": 17,
+          "rate": 0.47058823529411764
+        }
+      },
+      "C2": {
+        "strict": {
+          "n": 19,
+          "d": 34,
+          "rate": 0.5588235294117647
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Material": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 27,
+            "d": 34,
+            "rate": 0.7941176470588235
+          },
+          "Coherent": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 23,
+            "d": 34,
+            "rate": 0.6764705882352942
+          },
+          "NonDownstream": {
+            "n": 24,
+            "d": 34,
+            "rate": 0.7058823529411765
+          },
+          "EvidenceResolvable": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 34,
+          "d": 34,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 10,
+            "d": 34,
+            "rate": 0.29411764705882354
+          },
+          "already_supported": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "whole_question_restatement": {
+            "n": 4,
+            "d": 34,
+            "rate": 0.11764705882352941
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 2,
+            "d": 34,
+            "rate": 0.058823529411764705
+          },
+          "relation_strengthening": {
+            "n": 9,
+            "d": 34,
+            "rate": 0.2647058823529412
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 10,
+            "d": 34,
+            "rate": 0.29411764705882354
+          },
+          "bundled_objectives": {
+            "n": 3,
+            "d": 34,
+            "rate": 0.08823529411764706
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 7,
+          "d": 34,
+          "rate": 0.20588235294117646
+        },
+        "pair_categories": {
+          "both_invalid": 7,
+          "compatible_obligation": 2,
+          "one_valid_one_invalid": 1,
+          "different_but_valid": 1,
+          "same_obligation": 6
+        },
+        "stable_both_valid": {
+          "n": 8,
+          "d": 17,
+          "rate": 0.47058823529411764
+        },
+        "raw_both_valid": {
+          "n": 9,
+          "d": 17,
+          "rate": 0.5294117647058824
+        }
+      }
+    },
+    "delta_vs_C0_pp": {
+      "CDELTA": {
+        "strict": 5.882352941176472,
+        "broadness": 8.823529411764705,
+        "downstream": 5.882352941176472,
+        "relation_arg": 2.941176470588235,
+        "stable": 35.29411764705882,
+        "scope": 2.941176470588236
+      },
+      "C1": {
+        "strict": 8.823529411764708,
+        "broadness": 0.0,
+        "downstream": 2.941176470588236,
+        "relation_arg": -2.941176470588235,
+        "stable": 23.52941176470588,
+        "scope": 5.882352941176472
+      },
+      "C2": {
+        "strict": 8.823529411764708,
+        "broadness": 2.9411764705882333,
+        "downstream": 5.882352941176472,
+        "relation_arg": 2.941176470588235,
+        "stable": 29.411764705882348,
+        "scope": 0.0
+      }
+    },
+    "incremental_pp": {
+      "C1-CDELTA": {
+        "strict": 2.941176470588236,
+        "broadness": -8.823529411764705,
+        "downstream": -2.941176470588236,
+        "relation_arg": -5.88235294117647,
+        "stable": -11.764705882352944,
+        "scope": 2.941176470588236
+      },
+      "C2-C1": {
+        "strict": 0.0,
+        "broadness": 2.9411764705882333,
+        "downstream": 2.941176470588236,
+        "relation_arg": 5.88235294117647,
+        "stable": 5.882352941176472,
+        "scope": -5.882352941176472
+      }
+    },
+    "mechanism_vs_C0": {
+      "CDELTA": true,
+      "C1": true,
+      "C2": true
+    },
+    "incremental_mechanism": {
+      "C1-CDELTA": false,
+      "C2-C1": false
+    },
+    "viability": {
+      "C0": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "CDELTA": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "C1": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "C2": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      }
+    }
+  },
+  "path_eligible": {
+    "cases": [
+      "G02",
+      "G03",
+      "G05",
+      "G06",
+      "G08",
+      "G09",
+      "G11",
+      "G12",
+      "G14",
+      "G17",
+      "G18",
+      "G20",
+      "G21",
+      "G23",
+      "G24",
+      "G26",
+      "G27"
+    ],
+    "metrics": {
+      "C0": {
+        "strict": {
+          "n": 16,
+          "d": 34,
+          "rate": 0.47058823529411764
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          },
+          "Unresolved": {
+            "n": 30,
+            "d": 34,
+            "rate": 0.8823529411764706
+          },
+          "Material": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          },
+          "Local": {
+            "n": 27,
+            "d": 34,
+            "rate": 0.7941176470588235
+          },
+          "Coherent": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          },
+          "ScopeFaithful": {
+            "n": 23,
+            "d": 34,
+            "rate": 0.6764705882352942
+          },
+          "NonDownstream": {
+            "n": 25,
+            "d": 34,
+            "rate": 0.7352941176470589
+          },
+          "EvidenceResolvable": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          }
+        },
+        "schema": {
+          "n": 33,
+          "d": 34,
+          "rate": 0.9705882352941176
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 8,
+            "d": 34,
+            "rate": 0.23529411764705882
+          },
+          "already_supported": {
+            "n": 3,
+            "d": 34,
+            "rate": 0.08823529411764706
+          },
+          "whole_question_restatement": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "relation_strengthening": {
+            "n": 9,
+            "d": 34,
+            "rate": 0.2647058823529412
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 8,
+            "d": 34,
+            "rate": 0.23529411764705882
+          },
+          "bundled_objectives": {
+            "n": 5,
+            "d": 34,
+            "rate": 0.14705882352941177
+          },
+          "outside_knowledge": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          }
+        },
+        "broadness": {
+          "n": 6,
+          "d": 34,
+          "rate": 0.17647058823529413
+        },
+        "pair_categories": {
+          "one_valid_one_invalid": 4,
+          "different_but_valid": 3,
+          "both_invalid": 7,
+          "same_obligation": 3
+        },
+        "stable_both_valid": {
+          "n": 3,
+          "d": 17,
+          "rate": 0.17647058823529413
+        },
+        "raw_both_valid": {
+          "n": 6,
+          "d": 17,
+          "rate": 0.35294117647058826
+        }
+      },
+      "CDELTA": {
+        "strict": {
+          "n": 18,
+          "d": 34,
+          "rate": 0.5294117647058824
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          },
+          "Material": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 25,
+            "d": 34,
+            "rate": 0.7352941176470589
+          },
+          "Coherent": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 24,
+            "d": 34,
+            "rate": 0.7058823529411765
+          },
+          "NonDownstream": {
+            "n": 24,
+            "d": 34,
+            "rate": 0.7058823529411765
+          },
+          "EvidenceResolvable": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 34,
+          "d": 34,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 10,
+            "d": 34,
+            "rate": 0.29411764705882354
+          },
+          "already_supported": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "whole_question_restatement": {
+            "n": 5,
+            "d": 34,
+            "rate": 0.14705882352941177
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 2,
+            "d": 34,
+            "rate": 0.058823529411764705
+          },
+          "relation_strengthening": {
+            "n": 8,
+            "d": 34,
+            "rate": 0.23529411764705882
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 10,
+            "d": 34,
+            "rate": 0.29411764705882354
+          },
+          "bundled_objectives": {
+            "n": 4,
+            "d": 34,
+            "rate": 0.11764705882352941
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 9,
+          "d": 34,
+          "rate": 0.2647058823529412
+        },
+        "pair_categories": {
+          "both_invalid": 8,
+          "same_obligation": 8,
+          "compatible_obligation": 1
+        },
+        "stable_both_valid": {
+          "n": 9,
+          "d": 17,
+          "rate": 0.5294117647058824
+        },
+        "raw_both_valid": {
+          "n": 9,
+          "d": 17,
+          "rate": 0.5294117647058824
+        }
+      },
+      "C1": {
+        "strict": {
+          "n": 19,
+          "d": 34,
+          "rate": 0.5588235294117647
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 33,
+            "d": 34,
+            "rate": 0.9705882352941176
+          },
+          "Material": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 28,
+            "d": 34,
+            "rate": 0.8235294117647058
+          },
+          "Coherent": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 25,
+            "d": 34,
+            "rate": 0.7352941176470589
+          },
+          "NonDownstream": {
+            "n": 25,
+            "d": 34,
+            "rate": 0.7352941176470589
+          },
+          "EvidenceResolvable": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 34,
+          "d": 34,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 9,
+            "d": 34,
+            "rate": 0.2647058823529412
+          },
+          "already_supported": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "whole_question_restatement": {
+            "n": 4,
+            "d": 34,
+            "rate": 0.11764705882352941
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 1,
+            "d": 34,
+            "rate": 0.029411764705882353
+          },
+          "wrong_relation_arguments": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "relation_strengthening": {
+            "n": 8,
+            "d": 34,
+            "rate": 0.23529411764705882
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 9,
+            "d": 34,
+            "rate": 0.2647058823529412
+          },
+          "bundled_objectives": {
+            "n": 2,
+            "d": 34,
+            "rate": 0.058823529411764705
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 6,
+          "d": 34,
+          "rate": 0.17647058823529413
+        },
+        "pair_categories": {
+          "both_invalid": 6,
+          "same_obligation": 6,
+          "one_valid_one_invalid": 3,
+          "compatible_obligation": 1,
+          "different_but_valid": 1
+        },
+        "stable_both_valid": {
+          "n": 7,
+          "d": 17,
+          "rate": 0.4117647058823529
+        },
+        "raw_both_valid": {
+          "n": 8,
+          "d": 17,
+          "rate": 0.47058823529411764
+        }
+      },
+      "C2": {
+        "strict": {
+          "n": 19,
+          "d": 34,
+          "rate": 0.5588235294117647
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Material": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 27,
+            "d": 34,
+            "rate": 0.7941176470588235
+          },
+          "Coherent": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 23,
+            "d": 34,
+            "rate": 0.6764705882352942
+          },
+          "NonDownstream": {
+            "n": 24,
+            "d": 34,
+            "rate": 0.7058823529411765
+          },
+          "EvidenceResolvable": {
+            "n": 34,
+            "d": 34,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 34,
+          "d": 34,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 10,
+            "d": 34,
+            "rate": 0.29411764705882354
+          },
+          "already_supported": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "whole_question_restatement": {
+            "n": 4,
+            "d": 34,
+            "rate": 0.11764705882352941
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 2,
+            "d": 34,
+            "rate": 0.058823529411764705
+          },
+          "relation_strengthening": {
+            "n": 9,
+            "d": 34,
+            "rate": 0.2647058823529412
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 10,
+            "d": 34,
+            "rate": 0.29411764705882354
+          },
+          "bundled_objectives": {
+            "n": 3,
+            "d": 34,
+            "rate": 0.08823529411764706
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 34,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 7,
+          "d": 34,
+          "rate": 0.20588235294117646
+        },
+        "pair_categories": {
+          "both_invalid": 7,
+          "compatible_obligation": 2,
+          "one_valid_one_invalid": 1,
+          "different_but_valid": 1,
+          "same_obligation": 6
+        },
+        "stable_both_valid": {
+          "n": 8,
+          "d": 17,
+          "rate": 0.47058823529411764
+        },
+        "raw_both_valid": {
+          "n": 9,
+          "d": 17,
+          "rate": 0.5294117647058824
+        }
+      }
+    },
+    "delta_vs_C0_pp": {
+      "CDELTA": {
+        "strict": 5.882352941176472,
+        "broadness": 8.823529411764705,
+        "downstream": 5.882352941176472,
+        "relation_arg": 2.941176470588235,
+        "stable": 35.29411764705882,
+        "scope": 2.941176470588236
+      },
+      "C1": {
+        "strict": 8.823529411764708,
+        "broadness": 0.0,
+        "downstream": 2.941176470588236,
+        "relation_arg": -2.941176470588235,
+        "stable": 23.52941176470588,
+        "scope": 5.882352941176472
+      },
+      "C2": {
+        "strict": 8.823529411764708,
+        "broadness": 2.9411764705882333,
+        "downstream": 5.882352941176472,
+        "relation_arg": 2.941176470588235,
+        "stable": 29.411764705882348,
+        "scope": 0.0
+      }
+    },
+    "incremental_pp": {
+      "C1-CDELTA": {
+        "strict": 2.941176470588236,
+        "broadness": -8.823529411764705,
+        "downstream": -2.941176470588236,
+        "relation_arg": -5.88235294117647,
+        "stable": -11.764705882352944,
+        "scope": 2.941176470588236
+      },
+      "C2-C1": {
+        "strict": 0.0,
+        "broadness": 2.9411764705882333,
+        "downstream": 2.941176470588236,
+        "relation_arg": 5.88235294117647,
+        "stable": 5.882352941176472,
+        "scope": -5.882352941176472
+      }
+    },
+    "mechanism_vs_C0": {
+      "CDELTA": true,
+      "C1": true,
+      "C2": true
+    },
+    "incremental_mechanism": {
+      "C1-CDELTA": false,
+      "C2-C1": false
+    },
+    "viability": {
+      "C0": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "CDELTA": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "C1": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "C2": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      }
+    }
+  },
+  "observation_eligible": {
+    "cases": [
+      "G02",
+      "G03",
+      "G05",
+      "G08",
+      "G09",
+      "G11",
+      "G12",
+      "G14",
+      "G17",
+      "G18",
+      "G20",
+      "G21",
+      "G23",
+      "G24",
+      "G27"
+    ],
+    "metrics": {
+      "C0": {
+        "strict": {
+          "n": 15,
+          "d": 30,
+          "rate": 0.5
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 29,
+            "d": 30,
+            "rate": 0.9666666666666667
+          },
+          "Unresolved": {
+            "n": 26,
+            "d": 30,
+            "rate": 0.8666666666666667
+          },
+          "Material": {
+            "n": 29,
+            "d": 30,
+            "rate": 0.9666666666666667
+          },
+          "Local": {
+            "n": 25,
+            "d": 30,
+            "rate": 0.8333333333333334
+          },
+          "Coherent": {
+            "n": 29,
+            "d": 30,
+            "rate": 0.9666666666666667
+          },
+          "ScopeFaithful": {
+            "n": 21,
+            "d": 30,
+            "rate": 0.7
+          },
+          "NonDownstream": {
+            "n": 23,
+            "d": 30,
+            "rate": 0.7666666666666667
+          },
+          "EvidenceResolvable": {
+            "n": 29,
+            "d": 30,
+            "rate": 0.9666666666666667
+          }
+        },
+        "schema": {
+          "n": 29,
+          "d": 30,
+          "rate": 0.9666666666666667
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 6,
+            "d": 30,
+            "rate": 0.2
+          },
+          "already_supported": {
+            "n": 3,
+            "d": 30,
+            "rate": 0.1
+          },
+          "whole_question_restatement": {
+            "n": 1,
+            "d": 30,
+            "rate": 0.03333333333333333
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 1,
+            "d": 30,
+            "rate": 0.03333333333333333
+          },
+          "relation_strengthening": {
+            "n": 7,
+            "d": 30,
+            "rate": 0.23333333333333334
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 6,
+            "d": 30,
+            "rate": 0.2
+          },
+          "bundled_objectives": {
+            "n": 3,
+            "d": 30,
+            "rate": 0.1
+          },
+          "outside_knowledge": {
+            "n": 1,
+            "d": 30,
+            "rate": 0.03333333333333333
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 1,
+            "d": 30,
+            "rate": 0.03333333333333333
+          }
+        },
+        "broadness": {
+          "n": 4,
+          "d": 30,
+          "rate": 0.13333333333333333
+        },
+        "pair_categories": {
+          "one_valid_one_invalid": 3,
+          "different_but_valid": 3,
+          "both_invalid": 6,
+          "same_obligation": 3
+        },
+        "stable_both_valid": {
+          "n": 3,
+          "d": 15,
+          "rate": 0.2
+        },
+        "raw_both_valid": {
+          "n": 6,
+          "d": 15,
+          "rate": 0.4
+        }
+      },
+      "CDELTA": {
+        "strict": {
+          "n": 16,
+          "d": 30,
+          "rate": 0.5333333333333333
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 29,
+            "d": 30,
+            "rate": 0.9666666666666667
+          },
+          "Material": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 22,
+            "d": 30,
+            "rate": 0.7333333333333333
+          },
+          "Coherent": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 22,
+            "d": 30,
+            "rate": 0.7333333333333333
+          },
+          "NonDownstream": {
+            "n": 22,
+            "d": 30,
+            "rate": 0.7333333333333333
+          },
+          "EvidenceResolvable": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 30,
+          "d": 30,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 8,
+            "d": 30,
+            "rate": 0.26666666666666666
+          },
+          "already_supported": {
+            "n": 1,
+            "d": 30,
+            "rate": 0.03333333333333333
+          },
+          "whole_question_restatement": {
+            "n": 5,
+            "d": 30,
+            "rate": 0.16666666666666666
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 2,
+            "d": 30,
+            "rate": 0.06666666666666667
+          },
+          "relation_strengthening": {
+            "n": 6,
+            "d": 30,
+            "rate": 0.2
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 8,
+            "d": 30,
+            "rate": 0.26666666666666666
+          },
+          "bundled_objectives": {
+            "n": 3,
+            "d": 30,
+            "rate": 0.1
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 8,
+          "d": 30,
+          "rate": 0.26666666666666666
+        },
+        "pair_categories": {
+          "both_invalid": 7,
+          "same_obligation": 7,
+          "compatible_obligation": 1
+        },
+        "stable_both_valid": {
+          "n": 8,
+          "d": 15,
+          "rate": 0.5333333333333333
+        },
+        "raw_both_valid": {
+          "n": 8,
+          "d": 15,
+          "rate": 0.5333333333333333
+        }
+      },
+      "C1": {
+        "strict": {
+          "n": 18,
+          "d": 30,
+          "rate": 0.6
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 29,
+            "d": 30,
+            "rate": 0.9666666666666667
+          },
+          "Material": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 25,
+            "d": 30,
+            "rate": 0.8333333333333334
+          },
+          "Coherent": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 24,
+            "d": 30,
+            "rate": 0.8
+          },
+          "NonDownstream": {
+            "n": 23,
+            "d": 30,
+            "rate": 0.7666666666666667
+          },
+          "EvidenceResolvable": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 30,
+          "d": 30,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 7,
+            "d": 30,
+            "rate": 0.23333333333333334
+          },
+          "already_supported": {
+            "n": 1,
+            "d": 30,
+            "rate": 0.03333333333333333
+          },
+          "whole_question_restatement": {
+            "n": 4,
+            "d": 30,
+            "rate": 0.13333333333333333
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "relation_strengthening": {
+            "n": 6,
+            "d": 30,
+            "rate": 0.2
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 7,
+            "d": 30,
+            "rate": 0.23333333333333334
+          },
+          "bundled_objectives": {
+            "n": 1,
+            "d": 30,
+            "rate": 0.03333333333333333
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 5,
+          "d": 30,
+          "rate": 0.16666666666666666
+        },
+        "pair_categories": {
+          "both_invalid": 5,
+          "same_obligation": 6,
+          "one_valid_one_invalid": 2,
+          "compatible_obligation": 1,
+          "different_but_valid": 1
+        },
+        "stable_both_valid": {
+          "n": 7,
+          "d": 15,
+          "rate": 0.4666666666666667
+        },
+        "raw_both_valid": {
+          "n": 8,
+          "d": 15,
+          "rate": 0.5333333333333333
+        }
+      },
+      "C2": {
+        "strict": {
+          "n": 17,
+          "d": 30,
+          "rate": 0.5666666666666667
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          },
+          "Material": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 24,
+            "d": 30,
+            "rate": 0.8
+          },
+          "Coherent": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 21,
+            "d": 30,
+            "rate": 0.7
+          },
+          "NonDownstream": {
+            "n": 22,
+            "d": 30,
+            "rate": 0.7333333333333333
+          },
+          "EvidenceResolvable": {
+            "n": 30,
+            "d": 30,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 30,
+          "d": 30,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 8,
+            "d": 30,
+            "rate": 0.26666666666666666
+          },
+          "already_supported": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "whole_question_restatement": {
+            "n": 4,
+            "d": 30,
+            "rate": 0.13333333333333333
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 2,
+            "d": 30,
+            "rate": 0.06666666666666667
+          },
+          "relation_strengthening": {
+            "n": 7,
+            "d": 30,
+            "rate": 0.23333333333333334
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 8,
+            "d": 30,
+            "rate": 0.26666666666666666
+          },
+          "bundled_objectives": {
+            "n": 2,
+            "d": 30,
+            "rate": 0.06666666666666667
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 30,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 6,
+          "d": 30,
+          "rate": 0.2
+        },
+        "pair_categories": {
+          "both_invalid": 6,
+          "compatible_obligation": 2,
+          "one_valid_one_invalid": 1,
+          "different_but_valid": 1,
+          "same_obligation": 5
+        },
+        "stable_both_valid": {
+          "n": 7,
+          "d": 15,
+          "rate": 0.4666666666666667
+        },
+        "raw_both_valid": {
+          "n": 8,
+          "d": 15,
+          "rate": 0.5333333333333333
+        }
+      }
+    },
+    "delta_vs_C0_pp": {
+      "CDELTA": {
+        "strict": 3.3333333333333326,
+        "broadness": 13.333333333333334,
+        "downstream": 6.666666666666665,
+        "relation_arg": 3.3333333333333335,
+        "stable": 33.33333333333333,
+        "scope": 3.3333333333333326
+      },
+      "C1": {
+        "strict": 9.999999999999998,
+        "broadness": 3.3333333333333326,
+        "downstream": 3.3333333333333326,
+        "relation_arg": -3.3333333333333335,
+        "stable": 26.666666666666668,
+        "scope": 10.000000000000009
+      },
+      "C2": {
+        "strict": 6.666666666666665,
+        "broadness": 6.666666666666668,
+        "downstream": 6.666666666666665,
+        "relation_arg": 3.3333333333333335,
+        "stable": 26.666666666666668,
+        "scope": 0.0
+      }
+    },
+    "incremental_pp": {
+      "C1-CDELTA": {
+        "strict": 6.666666666666665,
+        "broadness": -10.0,
+        "downstream": -3.3333333333333326,
+        "relation_arg": -6.666666666666667,
+        "stable": -6.666666666666665,
+        "scope": 6.666666666666677
+      },
+      "C2-C1": {
+        "strict": -3.3333333333333326,
+        "broadness": 3.3333333333333353,
+        "downstream": 3.3333333333333326,
+        "relation_arg": 6.666666666666667,
+        "stable": 0.0,
+        "scope": -10.000000000000009
+      }
+    },
+    "mechanism_vs_C0": {
+      "CDELTA": true,
+      "C1": true,
+      "C2": true
+    },
+    "incremental_mechanism": {
+      "C1-CDELTA": true,
+      "C2-C1": false
+    },
+    "viability": {
+      "C0": {
+        "checks": {
+          "strict": false,
+          "broadness": true,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "CDELTA": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "C1": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "C2": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": false,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      }
+    }
+  },
+  "empty_context": {
+    "cases": [
+      "G01",
+      "G04",
+      "G07",
+      "G10",
+      "G13",
+      "G15",
+      "G16",
+      "G19",
+      "G22",
+      "G25"
+    ],
+    "metrics": {
+      "C0": {
+        "strict": {
+          "n": 9,
+          "d": 20,
+          "rate": 0.45
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 19,
+            "d": 20,
+            "rate": 0.95
+          },
+          "Unresolved": {
+            "n": 19,
+            "d": 20,
+            "rate": 0.95
+          },
+          "Material": {
+            "n": 19,
+            "d": 20,
+            "rate": 0.95
+          },
+          "Local": {
+            "n": 12,
+            "d": 20,
+            "rate": 0.6
+          },
+          "Coherent": {
+            "n": 19,
+            "d": 20,
+            "rate": 0.95
+          },
+          "ScopeFaithful": {
+            "n": 17,
+            "d": 20,
+            "rate": 0.85
+          },
+          "NonDownstream": {
+            "n": 17,
+            "d": 20,
+            "rate": 0.85
+          },
+          "EvidenceResolvable": {
+            "n": 19,
+            "d": 20,
+            "rate": 0.95
+          }
+        },
+        "schema": {
+          "n": 19,
+          "d": 20,
+          "rate": 0.95
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 2,
+            "d": 20,
+            "rate": 0.1
+          },
+          "already_supported": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "whole_question_restatement": {
+            "n": 6,
+            "d": 20,
+            "rate": 0.3
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "relation_strengthening": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 2,
+            "d": 20,
+            "rate": 0.1
+          },
+          "bundled_objectives": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "outside_knowledge": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          }
+        },
+        "broadness": {
+          "n": 7,
+          "d": 20,
+          "rate": 0.35
+        },
+        "pair_categories": {
+          "one_valid_one_invalid": 3,
+          "both_invalid": 4,
+          "same_obligation": 1,
+          "compatible_obligation": 2
+        },
+        "stable_both_valid": {
+          "n": 3,
+          "d": 10,
+          "rate": 0.3
+        },
+        "raw_both_valid": {
+          "n": 3,
+          "d": 10,
+          "rate": 0.3
+        }
+      },
+      "CDELTA": {
+        "strict": {
+          "n": 5,
+          "d": 20,
+          "rate": 0.25
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "Material": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 9,
+            "d": 20,
+            "rate": 0.45
+          },
+          "Coherent": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 19,
+            "d": 20,
+            "rate": 0.95
+          },
+          "NonDownstream": {
+            "n": 16,
+            "d": 20,
+            "rate": 0.8
+          },
+          "EvidenceResolvable": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 20,
+          "d": 20,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 4,
+            "d": 20,
+            "rate": 0.2
+          },
+          "already_supported": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "whole_question_restatement": {
+            "n": 9,
+            "d": 20,
+            "rate": 0.45
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "relation_strengthening": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 4,
+            "d": 20,
+            "rate": 0.2
+          },
+          "bundled_objectives": {
+            "n": 2,
+            "d": 20,
+            "rate": 0.1
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 11,
+          "d": 20,
+          "rate": 0.55
+        },
+        "pair_categories": {
+          "both_invalid": 7,
+          "compatible_obligation": 2,
+          "one_valid_one_invalid": 1
+        },
+        "stable_both_valid": {
+          "n": 2,
+          "d": 10,
+          "rate": 0.2
+        },
+        "raw_both_valid": {
+          "n": 2,
+          "d": 10,
+          "rate": 0.2
+        }
+      },
+      "C1": {
+        "strict": {
+          "n": 7,
+          "d": 20,
+          "rate": 0.35
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "Material": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 12,
+            "d": 20,
+            "rate": 0.6
+          },
+          "Coherent": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 17,
+            "d": 20,
+            "rate": 0.85
+          },
+          "NonDownstream": {
+            "n": 16,
+            "d": 20,
+            "rate": 0.8
+          },
+          "EvidenceResolvable": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 20,
+          "d": 20,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 4,
+            "d": 20,
+            "rate": 0.2
+          },
+          "already_supported": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "whole_question_restatement": {
+            "n": 7,
+            "d": 20,
+            "rate": 0.35
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "wrong_relation_arguments": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "relation_strengthening": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 4,
+            "d": 20,
+            "rate": 0.2
+          },
+          "bundled_objectives": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "outside_knowledge": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 8,
+          "d": 20,
+          "rate": 0.4
+        },
+        "pair_categories": {
+          "both_invalid": 6,
+          "different_but_valid": 1,
+          "same_obligation": 1,
+          "one_valid_one_invalid": 1,
+          "compatible_obligation": 1
+        },
+        "stable_both_valid": {
+          "n": 2,
+          "d": 10,
+          "rate": 0.2
+        },
+        "raw_both_valid": {
+          "n": 3,
+          "d": 10,
+          "rate": 0.3
+        }
+      },
+      "C2": {
+        "strict": {
+          "n": 7,
+          "d": 20,
+          "rate": 0.35
+        },
+        "dimensions": {
+          "GoalGrounded": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "Unresolved": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "Material": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "Local": {
+            "n": 9,
+            "d": 20,
+            "rate": 0.45
+          },
+          "Coherent": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          },
+          "ScopeFaithful": {
+            "n": 19,
+            "d": 20,
+            "rate": 0.95
+          },
+          "NonDownstream": {
+            "n": 16,
+            "d": 20,
+            "rate": 0.8
+          },
+          "EvidenceResolvable": {
+            "n": 20,
+            "d": 20,
+            "rate": 1.0
+          }
+        },
+        "schema": {
+          "n": 20,
+          "d": 20,
+          "rate": 1.0
+        },
+        "errors": {
+          "downstream_obligation": {
+            "n": 4,
+            "d": 20,
+            "rate": 0.2
+          },
+          "already_supported": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "whole_question_restatement": {
+            "n": 10,
+            "d": 20,
+            "rate": 0.5
+          },
+          "over_atomic": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "invented_requirement": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "wrong_object_scope": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "wrong_relation_arguments": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "relation_strengthening": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "irrelevant_low_value": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "unresolved_referent": {
+            "n": 4,
+            "d": 20,
+            "rate": 0.2
+          },
+          "bundled_objectives": {
+            "n": 1,
+            "d": 20,
+            "rate": 0.05
+          },
+          "outside_knowledge": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "output_contract": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          },
+          "mechanical_failure": {
+            "n": 0,
+            "d": 20,
+            "rate": 0.0
+          }
+        },
+        "broadness": {
+          "n": 11,
+          "d": 20,
+          "rate": 0.55
+        },
+        "pair_categories": {
+          "both_invalid": 5,
+          "one_valid_one_invalid": 3,
+          "compatible_obligation": 1,
+          "same_obligation": 1
+        },
+        "stable_both_valid": {
+          "n": 2,
+          "d": 10,
+          "rate": 0.2
+        },
+        "raw_both_valid": {
+          "n": 2,
+          "d": 10,
+          "rate": 0.2
+        }
+      }
+    },
+    "delta_vs_C0_pp": {
+      "CDELTA": {
+        "strict": -20.0,
+        "broadness": 20.000000000000007,
+        "downstream": 10.0,
+        "relation_arg": 0.0,
+        "stable": -9.999999999999998,
+        "scope": 9.999999999999998
+      },
+      "C1": {
+        "strict": -10.000000000000004,
+        "broadness": 5.000000000000004,
+        "downstream": 10.0,
+        "relation_arg": 0.0,
+        "stable": -9.999999999999998,
+        "scope": 0.0
+      },
+      "C2": {
+        "strict": -10.000000000000004,
+        "broadness": 20.000000000000007,
+        "downstream": 10.0,
+        "relation_arg": 0.0,
+        "stable": -9.999999999999998,
+        "scope": 9.999999999999998
+      }
+    },
+    "incremental_pp": {
+      "C1-CDELTA": {
+        "strict": 9.999999999999998,
+        "broadness": -15.000000000000002,
+        "downstream": 0.0,
+        "relation_arg": 0.0,
+        "stable": 0.0,
+        "scope": -9.999999999999998
+      },
+      "C2-C1": {
+        "strict": 0.0,
+        "broadness": 15.000000000000002,
+        "downstream": 0.0,
+        "relation_arg": 0.0,
+        "stable": 0.0,
+        "scope": 9.999999999999998
+      }
+    },
+    "mechanism_vs_C0": {
+      "CDELTA": false,
+      "C1": false,
+      "C2": false
+    },
+    "incremental_mechanism": {
+      "C1-CDELTA": true,
+      "C2-C1": false
+    },
+    "viability": {
+      "C0": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": true,
+          "scope": true,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "CDELTA": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": true,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "C1": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": true,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      },
+      "C2": {
+        "checks": {
+          "strict": false,
+          "broadness": false,
+          "downstream": false,
+          "scope": true,
+          "stable": false,
+          "relation_arg": true
+        },
+        "signal": false
+      }
+    }
+  }
+}
