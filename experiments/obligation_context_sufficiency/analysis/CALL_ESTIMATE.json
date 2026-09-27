@@ -1,0 +1,30 @@
+{
+  "planned_calls": 216,
+  "cases": 27,
+  "arms": 4,
+  "replicates": 2,
+  "peak_concurrency": 8,
+  "estimated_prompt_tokens": 214482,
+  "prompt_range": [
+    631,
+    2513
+  ],
+  "prompt_tokens_by_arm": {
+    "C0": 42918,
+    "CDELTA": 45476,
+    "C1": 52392,
+    "C2": 73696
+  },
+  "tokenizer": "cl100k_base proxy; actual DeepSeek tokens can differ",
+  "historical_observed_usage_responses": 368,
+  "completion_quantiles": {
+    "p50": 1800,
+    "p90": 8377,
+    "p95": 10192,
+    "max": 65535
+  },
+  "completion_exposure_at_historical_median": 388800,
+  "completion_exposure_at_observed_65535_tail": 14155560,
+  "tail_caveat": "Observed historical tail is a scenario, not a hard maximum with max_tokens omitted.",
+  "currency_cost": "Not estimated: no price verification."
+}
