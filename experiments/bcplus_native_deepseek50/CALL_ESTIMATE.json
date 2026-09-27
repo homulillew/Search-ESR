@@ -1,0 +1,39 @@
+{
+  "questions": 50,
+  "emergency_max_tool_rounds": 200,
+  "absolute_max_model_requests_per_qid": 201,
+  "absolute_max_model_requests_total": 10050,
+  "absolute_max_local_tool_calls_per_qid": 1600,
+  "absolute_max_local_tool_calls_total": 80000,
+  "semantic_retries": 0,
+  "sdk_retries": 0,
+  "sample_replacement": false,
+  "historical_v000_run_count": 19,
+  "historical_unique_qid_count": 7,
+  "historical_stats": {
+    "api_responses": {
+      "mean": 11.368421052631579,
+      "median": 11,
+      "p75": 13.0,
+      "p90": 19.0,
+      "max": 20
+    },
+    "api_requests": {
+      "mean": 11.368421052631579,
+      "median": 11,
+      "p75": 13.0,
+      "p90": 19.0,
+      "max": 20
+    },
+    "tool_rounds": {
+      "mean": 10.368421052631579,
+      "median": 10,
+      "p75": 12.0,
+      "p90": 18.0,
+      "max": 19
+    }
+  },
+  "expected_model_requests_per_qid": "roughly 11-20, extrapolated from historical median through max; exploratory only",
+  "expected_model_requests_total": "roughly 550-1000; heavy tails possible with 200-round cap",
+  "caveat": "Historical v000 used Qwen3.7-Flash and a mix of 12/64 round caps, so these are not a DeepSeek forecast."
+}

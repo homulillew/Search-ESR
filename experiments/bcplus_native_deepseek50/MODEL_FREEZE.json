@@ -1,0 +1,35 @@
+{
+  "provider": "DeepSeek",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "model_version_from_official_pricing_page": "DeepSeek-V4.1-Flash",
+  "temperature": 0,
+  "thinking": false,
+  "thinking_extra_body": {
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "timeout_seconds": 900,
+  "sdk": "openai",
+  "sdk_version": "1.109.1",
+  "max_retries": 0,
+  "max_tool_rounds": 200,
+  "max_tool_calls_per_round": 8,
+  "credential_source": ".env.deepseek:DEEPSEEK_API_KEY or process environment",
+  "official_model_and_pricing_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+  "official_thinking_url": "https://api-docs.deepseek.com/zh-cn/guides/thinking_mode/",
+  "price_cny_per_million_tokens": {
+    "peak": {
+      "cache_hit_input": 0.04,
+      "cache_miss_input": 2.0,
+      "output": 8.0
+    },
+    "off_peak": {
+      "cache_hit_input": 0.02,
+      "cache_miss_input": 1.0,
+      "output": 4.0
+    }
+  },
+  "price_checked_date": "2026-09-28"
+}

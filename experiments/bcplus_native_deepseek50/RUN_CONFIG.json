@@ -1,0 +1,30 @@
+{
+  "sample_size": 50,
+  "replicates": 1,
+  "workers": 6,
+  "initial_api_concurrency": 6,
+  "max_api_concurrency": 6,
+  "concurrency_change_rule": "fixed for this frozen batch; no dynamic increase or decrease",
+  "retrieval_worker_count": 1,
+  "retrieval_mode": "serialized local GPU worker",
+  "http_max_connections_per_client": 2,
+  "http_max_keepalive_connections_per_client": 1,
+  "timeout_seconds": 900,
+  "sdk_max_retries": 0,
+  "semantic_retries": 0,
+  "max_tool_rounds": 200,
+  "max_tool_calls_per_round": 8,
+  "source_sha256": {
+    "native_agent.py": "b42eaa3e8776c78fe88cd59c6d1bde0eb17b37bc1fd321127b83771b8d3aa5b0",
+    "native_client.py": "adc615d59e1582154f09ccb3e23d6f18be9c364be3ed7169c51104fd4c3a840f",
+    "runner.py": "0b1812553bbc43f9fc9bc6c325f847c760738abc09ec2ace918393c24cfe4535",
+    "evaluate.py": "66575d9836758ddbe1f5fdac73ec5bc3312f5b01376a4b521067e9c640b3f0b5",
+    "test_preflight.py": "bf4a6c564f0bb31d83e18e5b877162ed619a3ae1e81d344dd3acfa0365a457bb",
+    "freeze.py": "baa42757fa0656df45eedaafd369a178d8859bbdab89217c17dcf9a585551d15",
+    "BASELINE_AUDIT.md": "a160004561a45a5cb647582a5ae91ca2e166987b73110e8096bd3d4090e4242c",
+    "EVALUATION_PROTOCOL.md": "0e380c545da5a51f687b22ba2526007febfee446cbe34a9fd4ced08f6c9c7c51",
+    "BCPlus/scripts/search_bcplus.py": "b8c27504231b094ce16d8329828f64610169f3fa678e3e21b14c711a72b50339"
+  },
+  "retrieval_metadata_sha256": "e925cada747e94ac5879ca54dde0244aa593491118819e30edaa01c0740676cd",
+  "created_at_utc": "2026-09-27T21:46:42.842509+00:00"
+}
