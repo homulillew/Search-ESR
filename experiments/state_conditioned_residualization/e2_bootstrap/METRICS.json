@@ -1,0 +1,891 @@
+{
+  "arms": {
+    "P0": {
+      "new_material": {
+        "numerator": 3,
+        "denominator": 11,
+        "value": 0.2727272727272727
+      },
+      "binding": {
+        "numerator": 3,
+        "denominator": 11,
+        "value": 0.2727272727272727
+      },
+      "direct": {
+        "numerator": 3,
+        "denominator": 11,
+        "value": 0.2727272727272727
+      },
+      "bridge": {
+        "numerator": 0,
+        "denominator": 11,
+        "value": 0.0
+      },
+      "real_no_gain": {
+        "numerator": 7,
+        "denominator": 11,
+        "value": 0.6363636363636364
+      },
+      "query_drift": {
+        "numerator": 0,
+        "denominator": 11,
+        "value": 0.0
+      },
+      "candidate_commitment": {
+        "numerator": 0,
+        "denominator": 11,
+        "value": 0.0
+      },
+      "objective_only_rule_violation": {
+        "numerator": 2,
+        "denominator": 11,
+        "value": 0.18181818181818182
+      },
+      "retrieval_valid": {
+        "numerator": 10,
+        "denominator": 11,
+        "value": 0.9090909090909091
+      },
+      "repeated_document_rate": {
+        "numerator": 9,
+        "denominator": 50,
+        "value": 0.18
+      },
+      "query_failures": 1
+    },
+    "P1": {
+      "new_material": {
+        "numerator": 7,
+        "denominator": 11,
+        "value": 0.6363636363636364
+      },
+      "binding": {
+        "numerator": 7,
+        "denominator": 11,
+        "value": 0.6363636363636364
+      },
+      "direct": {
+        "numerator": 3,
+        "denominator": 11,
+        "value": 0.2727272727272727
+      },
+      "bridge": {
+        "numerator": 4,
+        "denominator": 11,
+        "value": 0.36363636363636365
+      },
+      "real_no_gain": {
+        "numerator": 2,
+        "denominator": 11,
+        "value": 0.18181818181818182
+      },
+      "query_drift": {
+        "numerator": 0,
+        "denominator": 11,
+        "value": 0.0
+      },
+      "candidate_commitment": {
+        "numerator": 0,
+        "denominator": 11,
+        "value": 0.0
+      },
+      "objective_only_rule_violation": {
+        "numerator": 5,
+        "denominator": 11,
+        "value": 0.45454545454545453
+      },
+      "retrieval_valid": {
+        "numerator": 9,
+        "denominator": 11,
+        "value": 0.8181818181818182
+      },
+      "repeated_document_rate": {
+        "numerator": 12,
+        "denominator": 45,
+        "value": 0.26666666666666666
+      },
+      "query_failures": 2
+    }
+  },
+  "rows": [
+    {
+      "id": "P1__G10__R1",
+      "case_id": "G10",
+      "qid": "971",
+      "arm": "P1",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E006",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "Returned academic-rank rules, faculty lists and awards do not identify a relevant 2022 associate-to-full promotion. A random faculty name is not a binding.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": true,
+      "docids": [
+        "1824",
+        "47732",
+        "11091",
+        "20723",
+        "31020"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P0__G10__R1",
+      "case_id": "G10",
+      "qid": "971",
+      "arm": "P0",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E001",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "General rank rules and unrelated faculty careers do not establish a concrete 2022 promotion candidate for this author. Ghatak promotion dates differ; the honorary/emeritus events are not the requested transition.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": true,
+      "docids": [
+        "1824",
+        "20723",
+        "11091",
+        "60371",
+        "31020"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P1__G07__R1",
+      "case_id": "G07",
+      "qid": "169",
+      "arm": "P1",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E017",
+      "new_material": true,
+      "binding": true,
+      "direct": false,
+      "bridge": true,
+      "support_refs": [
+        "W5"
+      ],
+      "reason": "W5 names/date-locates the globally deadliest accidental aviation event in Tenerife, Spain (1977). Global maximum entails a national maximum and gives a concrete country/event/date anchor for the unknown-country facet. No artist, 15-year link, or distance is established. Musician plane-crash lists alone are not the gain.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "medium",
+      "retrieval_valid": true,
+      "real_no_gain": false,
+      "docids": [
+        "46519",
+        "71884",
+        "85533",
+        "9926",
+        "87937"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P1__G04__R1",
+      "case_id": "G04",
+      "qid": "228",
+      "arm": "P1",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E016",
+      "new_material": true,
+      "binding": true,
+      "direct": false,
+      "bridge": true,
+      "support_refs": [
+        "W3"
+      ],
+      "reason": "W3 identifies a gaming-company founder with donations for building schools and to his alma mater. This is a concrete donor/construction bridge, not proof of spouse participation, the particular building/complex, or childlessness. Count the new philanthropy anchor only.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": true,
+      "objective_only_reason": "gaming founder/university from Q beyond gift objective",
+      "ambiguity": "medium",
+      "retrieval_valid": true,
+      "real_no_gain": false,
+      "docids": [
+        "81813",
+        "16817",
+        "14494",
+        "20520",
+        "14588"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P0__G20__R1",
+      "case_id": "G20",
+      "qid": "843",
+      "arm": "P0",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E008",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "DLC definitions and generic expansion lists do not establish a strategy-game DLC with the stated interval. Cuphead announcement-to-launch is not base-game-to-DLC; Final Fantasy shows exactly three years, not over three.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": true,
+      "docids": [
+        "15628",
+        "76185",
+        "52529",
+        "49877",
+        "60140"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P1__G17__R1",
+      "case_id": "G17",
+      "qid": "637",
+      "arm": "P1",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E015",
+      "new_material": true,
+      "binding": true,
+      "direct": true,
+      "bridge": false,
+      "support_refs": [
+        "W5"
+      ],
+      "reason": "W5 explicitly says clinic in Pakistan and provides the discriminative six-month clinical history. New report/country binding is supported; do not infer the historical largest-religion condition from generic Islam pages.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": true,
+      "objective_only_reason": "2010s and clinical history from Q beyond country objective",
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": false,
+      "docids": [
+        "59922",
+        "21010",
+        "97888",
+        "4198",
+        "28375"
+      ],
+      "repeat_count": 3
+    },
+    {
+      "id": "P1__G08__R1",
+      "case_id": "G08",
+      "qid": "169",
+      "arm": "P1",
+      "failure": "invalid_E1_R0_replicate1",
+      "valid_output": false,
+      "review_id": "E005",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "No executable query; dependent source contract failure remains in the denominator.",
+      "query_drift": null,
+      "candidate_commitment": null,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": false,
+      "real_no_gain": false,
+      "docids": [],
+      "repeat_count": 0
+    },
+    {
+      "id": "P0__G11__R1",
+      "case_id": "G11",
+      "qid": "971",
+      "arm": "P0",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E022",
+      "new_material": true,
+      "binding": true,
+      "direct": true,
+      "bridge": false,
+      "support_refs": [
+        "W8"
+      ],
+      "reason": "W8 bibliography names a Marwaha 2022 journal article comparing Buddha ephemerality and Heisenberg uncertainty, and the 2016 Vipassana/mathematics book. This is a new article/topic/date opportunity relative to C1/C2. The excerpt does not establish the containing paper title and that title is not imported from future/full source.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": true,
+      "objective_only_reason": "book topic from Q absent from pronoun-only parent objective",
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": false,
+      "docids": [
+        "62998",
+        "48472",
+        "95857",
+        "67175",
+        "83392"
+      ],
+      "repeat_count": 2
+    },
+    {
+      "id": "P0__G02__R1",
+      "case_id": "G02",
+      "qid": "261",
+      "arm": "P0",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E010",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "Existing journal directories recur; other-journal bibliographies and conference bios do not establish the requested author/paper relation or a concrete bridge to it.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": true,
+      "docids": [
+        "89791",
+        "34263",
+        "33457",
+        "27768",
+        "77561"
+      ],
+      "repeat_count": 2
+    },
+    {
+      "id": "P1__G11__R1",
+      "case_id": "G11",
+      "qid": "971",
+      "arm": "P1",
+      "failure": "nonprobe_E1_R0_replicate1",
+      "valid_output": false,
+      "review_id": "E019",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "No executable query; R0 source mode was not probe. Kept as a dependent-source failure, not a Search NoGain.",
+      "query_drift": null,
+      "candidate_commitment": null,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": false,
+      "real_no_gain": false,
+      "docids": [],
+      "repeat_count": 0
+    },
+    {
+      "id": "P0__G04__R1",
+      "case_id": "G04",
+      "qid": "228",
+      "arm": "P0",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E011",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "All five visible excerpts concern tax/estate gifts, not a concrete donor couple and building-construction gift.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": true,
+      "docids": [
+        "96881",
+        "12851",
+        "38292",
+        "78381",
+        "81046"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P0__G17__R1",
+      "case_id": "G17",
+      "qid": "637",
+      "arm": "P0",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E007",
+      "new_material": true,
+      "binding": true,
+      "direct": true,
+      "bridge": false,
+      "support_refs": [
+        "W5"
+      ],
+      "reason": "W5 explicitly supplies the concrete half-year clinical history and clinic country, new relative to generic SPS Claims. General SPS and shoulder-pain material is not the progress.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": true,
+      "objective_only_reason": "2010s from Q, absent from objective",
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": false,
+      "docids": [
+        "4198",
+        "21010",
+        "59922",
+        "84593",
+        "73993"
+      ],
+      "repeat_count": 5
+    },
+    {
+      "id": "P1__G01__R1",
+      "case_id": "G01",
+      "qid": "261",
+      "arm": "P1",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E004",
+      "new_material": true,
+      "binding": true,
+      "direct": false,
+      "bridge": true,
+      "support_refs": [
+        "W4"
+      ],
+      "reason": "The named professor profile W4 lists a concrete science-education paper, a document/author bridge for the Harran-author clue. It does not show two authors or the additional Baltic publication. Count only the source anchor, not those missing relations.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": true,
+      "objective_only_reason": "Harran University from Q, absent from objective",
+      "ambiguity": "medium",
+      "retrieval_valid": true,
+      "real_no_gain": false,
+      "docids": [
+        "89791",
+        "34263",
+        "83012",
+        "88698",
+        "27768"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P1__G05__R1",
+      "case_id": "G05",
+      "qid": "228",
+      "arm": "P1",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E012",
+      "new_material": true,
+      "binding": true,
+      "direct": true,
+      "bridge": false,
+      "support_refs": [
+        "W4"
+      ],
+      "reason": "W4 is dated 2019 and explicitly describes Ding as married without children, a new candidate-specific parent fact relative to Kwon-only Claims. It does not certify Ding as the final donor. 2025 Kwon child count cannot decide the 2019 condition.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": true,
+      "objective_only_reason": "founder/gaming/gift/building context from Q beyond spouse objective",
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": false,
+      "docids": [
+        "74021",
+        "81813",
+        "75121",
+        "18845",
+        "14494"
+      ],
+      "repeat_count": 5
+    },
+    {
+      "id": "P0__G08__R1",
+      "case_id": "G08",
+      "qid": "169",
+      "arm": "P0",
+      "failure": "invalid_json",
+      "valid_output": false,
+      "review_id": "E021",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "No valid query output, no Search; retained failure, ineligible for real-NoGain escalation.",
+      "query_drift": null,
+      "candidate_commitment": null,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": false,
+      "real_no_gain": false,
+      "docids": [],
+      "repeat_count": 0
+    },
+    {
+      "id": "P0__G16__R1",
+      "case_id": "G16",
+      "qid": "637",
+      "arm": "P0",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E002",
+      "new_material": true,
+      "binding": true,
+      "direct": true,
+      "bridge": false,
+      "support_refs": [
+        "W4"
+      ],
+      "reason": "W4 explicitly reports the 10-year-old case, six-month history, worsening walking/shoulder symptoms and clinic in Pakistan. These facts directly instantiate the parent clinical facet. W3 is a different case and is not substituted for it.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": false,
+      "docids": [
+        "21010",
+        "84593",
+        "4198",
+        "59922",
+        "62294"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P1__G20__R1",
+      "case_id": "G20",
+      "qid": "843",
+      "arm": "P1",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E013",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "The Borderlands excerpt supplies a seven-year DLC interval but does not establish the required strategy-game role; it cannot bind this game to the parent. Age of Empires cosmetics lack the over-three-year interval; generic strategy expansions lack the temporal link. Conservative NoGain; plausible partial-candidate alternative is disclosed.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "medium",
+      "retrieval_valid": true,
+      "real_no_gain": true,
+      "docids": [
+        "15628",
+        "59669",
+        "51459",
+        "49877",
+        "76185"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P1__G02__R1",
+      "case_id": "G02",
+      "qid": "261",
+      "arm": "P1",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E018",
+      "new_material": true,
+      "binding": true,
+      "direct": false,
+      "bridge": true,
+      "support_refs": [
+        "W8"
+      ],
+      "reason": "W8 lists a new specific science-education publication on the already known professor profile. It yields a document bridge beyond C1 affiliation, without establishing two authors or the Baltic journal relation.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": true,
+      "objective_only_reason": "Harran academic-staff context from Q absent from objective",
+      "ambiguity": "medium",
+      "retrieval_valid": true,
+      "real_no_gain": false,
+      "docids": [
+        "89791",
+        "83012",
+        "34263",
+        "88698",
+        "91251"
+      ],
+      "repeat_count": 4
+    },
+    {
+      "id": "P0__G01__R1",
+      "case_id": "G01",
+      "qid": "261",
+      "arm": "P0",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E003",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "Journal directories/metrics and other STEM references name no target-linked author, two-author paper, or qualifying Baltic publication. A journal already named in Q is not a new binding.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": true,
+      "docids": [
+        "89791",
+        "34263",
+        "11710",
+        "48498",
+        "9679"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P0__G05__R1",
+      "case_id": "G05",
+      "qid": "228",
+      "arm": "P0",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E014",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "Hospital philanthropists, a 2024 softball field and government architectural gifts do not establish the donor couple/building relation for the games-founder context. Visible family/daughter references and unrelated dates further prevent a credible new parent binding.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": true,
+      "docids": [
+        "28823",
+        "60177",
+        "121",
+        "30960",
+        "64780"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P1__G16__R1",
+      "case_id": "G16",
+      "qid": "637",
+      "arm": "P1",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E009",
+      "new_material": true,
+      "binding": true,
+      "direct": true,
+      "bridge": false,
+      "support_refs": [
+        "W3"
+      ],
+      "reason": "W3 supplies the concrete six-month clinical case, walking and shoulder impairment, and explicit clinic location. Other diagnoses remain background.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": false,
+      "docids": [
+        "21010",
+        "84593",
+        "59922",
+        "4198",
+        "7568"
+      ],
+      "repeat_count": 0
+    },
+    {
+      "id": "P0__G07__R1",
+      "case_id": "G07",
+      "qid": "169",
+      "arm": "P0",
+      "failure": null,
+      "valid_output": true,
+      "review_id": "E020",
+      "new_material": false,
+      "binding": false,
+      "direct": false,
+      "bridge": false,
+      "support_refs": [],
+      "reason": "Musicians who died in plane crashes do not supply the separate country-deadliest event, 15-year interval, or distance relation. No discriminative connection among the two events appears.",
+      "query_drift": false,
+      "candidate_commitment": false,
+      "objective_only_rule_violation": false,
+      "objective_only_reason": null,
+      "ambiguity": "low",
+      "retrieval_valid": true,
+      "real_no_gain": true,
+      "docids": [
+        "46519",
+        "71884",
+        "85533",
+        "55701",
+        "9926"
+      ],
+      "repeat_count": 0
+    }
+  ],
+  "scope": "all planned accessible-state slots; opportunity review, no Writer",
+  "paired": [
+    {
+      "case_id": "G01",
+      "P0": false,
+      "P1": true,
+      "outcome": "P1_win",
+      "doc_overlap": 2
+    },
+    {
+      "case_id": "G02",
+      "P0": false,
+      "P1": true,
+      "outcome": "P1_win",
+      "doc_overlap": 2
+    },
+    {
+      "case_id": "G04",
+      "P0": false,
+      "P1": true,
+      "outcome": "P1_win",
+      "doc_overlap": 0
+    },
+    {
+      "case_id": "G05",
+      "P0": false,
+      "P1": true,
+      "outcome": "P1_win",
+      "doc_overlap": 0
+    },
+    {
+      "case_id": "G07",
+      "P0": false,
+      "P1": true,
+      "outcome": "P1_win",
+      "doc_overlap": 4
+    },
+    {
+      "case_id": "G08",
+      "P0": false,
+      "P1": false,
+      "outcome": "tie",
+      "doc_overlap": 0
+    },
+    {
+      "case_id": "G10",
+      "P0": false,
+      "P1": false,
+      "outcome": "tie",
+      "doc_overlap": 4
+    },
+    {
+      "case_id": "G11",
+      "P0": true,
+      "P1": false,
+      "outcome": "P0_win",
+      "doc_overlap": 0
+    },
+    {
+      "case_id": "G16",
+      "P0": true,
+      "P1": true,
+      "outcome": "tie",
+      "doc_overlap": 4
+    },
+    {
+      "case_id": "G17",
+      "P0": true,
+      "P1": true,
+      "outcome": "tie",
+      "doc_overlap": 3
+    },
+    {
+      "case_id": "G20",
+      "P0": false,
+      "P1": false,
+      "outcome": "tie",
+      "doc_overlap": 3
+    }
+  ],
+  "P1_minus_P0_material": 0.36363636363636365,
+  "gate_checks": {
+    "minimum_states": true,
+    "minimum_qids": true,
+    "material": true,
+    "binding": true,
+    "drift": true,
+    "commitment": true,
+    "improvement": true
+  },
+  "gate_pass": true,
+  "sensitivities": {
+    "P0": {
+      "remove_medium_ambiguity_gains": {
+        "numerator": 3,
+        "denominator": 11,
+        "value": 0.2727272727272727
+      },
+      "require_objective_only_query_compliance": {
+        "numerator": 1,
+        "denominator": 11,
+        "value": 0.09090909090909091
+      }
+    },
+    "P1": {
+      "remove_medium_ambiguity_gains": {
+        "numerator": 3,
+        "denominator": 11,
+        "value": 0.2727272727272727
+      },
+      "require_objective_only_query_compliance": {
+        "numerator": 2,
+        "denominator": 11,
+        "value": 0.18181818181818182
+      }
+    }
+  }
+}
