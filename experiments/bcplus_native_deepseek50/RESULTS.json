@@ -1,0 +1,216 @@
+{
+  "branch": "experiment/bcplus-native-deepseek50-baseline",
+  "benchmark": "BrowseComp-Plus",
+  "model": "deepseek-flash",
+  "baseline_policy": "native v000 Search + GetDocument with documented transport changes",
+  "selection_seed": 20260928,
+  "sample_size": 50,
+  "score_kind": "deterministic comparison plus blinded investigator adjudication; no Qwen3-32B judge",
+  "correct": 46,
+  "accuracy": 0.92,
+  "wilson_95": [
+    0.8116175308165717,
+    0.968450485911407
+  ],
+  "statuses": {
+    "natural_answer": 50
+  },
+  "distributions": {
+    "search_calls": {
+      "total": 1203,
+      "mean": 24.06,
+      "median": 15.0,
+      "p25": 7.0,
+      "p75": 28.0,
+      "p90": 45.100000000000016,
+      "p95": 82.64999999999993,
+      "max": 117
+    },
+    "get_document_calls": {
+      "total": 151,
+      "mean": 3.02,
+      "median": 3.0,
+      "p25": 2.0,
+      "p75": 4.0,
+      "p90": 5.100000000000001,
+      "p95": 7.0,
+      "max": 9
+    },
+    "total_tool_calls": {
+      "total": 1354,
+      "mean": 27.08,
+      "median": 19.0,
+      "p25": 9.5,
+      "p75": 31.75,
+      "p90": 47.800000000000026,
+      "p95": 87.39999999999992,
+      "max": 118
+    },
+    "unique_docids": {
+      "total": 4466,
+      "mean": 89.32,
+      "median": 66.5,
+      "p25": 38.25,
+      "p75": 97.5,
+      "p90": 167.90000000000003,
+      "p95": 299.34999999999997,
+      "max": 372
+    },
+    "unique_search_queries": {
+      "total": 1202,
+      "mean": 24.04,
+      "median": 15.0,
+      "p25": 7.0,
+      "p75": 28.0,
+      "p90": 45.100000000000016,
+      "p95": 82.64999999999993,
+      "max": 117
+    },
+    "exact_duplicate_queries": {
+      "total": 1,
+      "mean": 0.02,
+      "median": 0.0,
+      "p25": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "p95": 0.0,
+      "max": 1
+    },
+    "repeated_document_reads": {
+      "total": 3,
+      "mean": 0.06,
+      "median": 0.0,
+      "p25": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "p95": 0.5499999999999972,
+      "max": 1
+    },
+    "tool_round_count": {
+      "total": 591,
+      "mean": 11.82,
+      "median": 7.5,
+      "p25": 4.0,
+      "p75": 14.0,
+      "p90": 21.80000000000001,
+      "p95": 36.949999999999974,
+      "max": 56
+    },
+    "model_response_count": {
+      "total": 641,
+      "mean": 12.82,
+      "median": 8.5,
+      "p25": 5.0,
+      "p75": 15.0,
+      "p90": 22.80000000000001,
+      "p95": 37.949999999999974,
+      "max": 57
+    },
+    "api_requests": {
+      "total": 641,
+      "mean": 12.82,
+      "median": 8.5,
+      "p25": 5.0,
+      "p75": 15.0,
+      "p90": 22.80000000000001,
+      "p95": 37.949999999999974,
+      "max": 57
+    },
+    "prompt_tokens": {
+      "total": 78191456,
+      "mean": 1563829.12,
+      "median": 384882.0,
+      "p25": 95903.75,
+      "p75": 1477885.75,
+      "p90": 2824642.800000001,
+      "p95": 8867261.449999979,
+      "max": 14776375
+    },
+    "completion_tokens": {
+      "total": 1180545,
+      "mean": 23610.9,
+      "median": 10078.0,
+      "p25": 4238.5,
+      "p75": 29995.0,
+      "p90": 56829.40000000002,
+      "p95": 79637.44999999998,
+      "max": 151549
+    },
+    "total_tokens": {
+      "total": 79372001,
+      "mean": 1587440.02,
+      "median": 416879.0,
+      "p25": 99649.5,
+      "p75": 1518743.5,
+      "p90": 2907017.100000001,
+      "p95": 8900247.99999998,
+      "max": 14815077
+    },
+    "elapsed_seconds": {
+      "total": 6317.627848185599,
+      "mean": 126.35255696371198,
+      "median": 73.17617100197822,
+      "p25": 40.54792803898454,
+      "p75": 161.78718567686155,
+      "p90": 287.38767979089175,
+      "p95": 426.6384112713854,
+      "max": 603.9256082363427
+    }
+  },
+  "api_latency_seconds": {
+    "total": 5599.642511855811,
+    "mean": 8.735791750165072,
+    "median": 4.154993271455169,
+    "p25": 2.1770490035414696,
+    "p75": 9.751256169751287,
+    "p90": 18.8330856282264,
+    "p95": 27.109006380662322,
+    "max": 210.8547667618841
+  },
+  "peak_api_concurrency": 50,
+  "insufficient_evidence_answers": 4,
+  "natural_answer_accuracy": {
+    "correct": 46,
+    "denominator": 50
+  },
+  "completed_run_accuracy": {
+    "correct": 46,
+    "denominator": 50
+  },
+  "emergency_cap_forced_accuracy": {
+    "correct": 0,
+    "denominator": 0
+  },
+  "get_document_adoption": 50,
+  "search_only_answers": 0,
+  "repeated_search_trajectories": 1,
+  "rounds_gt_12": 16,
+  "rounds_gt_25": 5,
+  "rounds_gt_50": 2,
+  "rounds_gt_100": 0,
+  "gold_string_observed_count": 40,
+  "correct_given_gold_string_observed": 39,
+  "answers_with_citation": 49,
+  "answers_with_invented_explicit_docid": 0,
+  "cache_hit_tokens": 72710016,
+  "cache_input_tokens": 78191456,
+  "cache_usage_missing_or_inconsistent_records": 0,
+  "estimated_cost_cny": 11.65782032,
+  "cost_unpriced_responses": 0,
+  "billed_amount_known": false,
+  "adjudication_queue_count": 45,
+  "adjudication_correct_count": 41,
+  "adjudication_ambiguous_count": 0,
+  "sample_replacement": false,
+  "sdk_retries": 0,
+  "cache_hit_rate": 0.9298972000214448,
+  "total_wall_clock_seconds": 604.457742,
+  "first_pass_url_regex_unmatched_trajectory_count": 9,
+  "citation_audit_answers_with_unmatched_url": 3,
+  "citation_audit_unmatched_url_count": 5,
+  "citation_audit_method": "CITATION_AUDIT.json supersedes the first-pass URL regex; unmatched exact URL does not prove invention",
+  "thinking_mode": true,
+  "workers": 50,
+  "retrieval_workers": 1,
+  "aborted_prior_attempt_excluded": true
+}

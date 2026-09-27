@@ -1,0 +1,36 @@
+{
+  "method": "Extract full visible HTTP(S) URLs, trim enclosing Markdown punctuation, compare normalized host and decoded path to observed tool-result URL metadata. Exact query/fragment not required.",
+  "formal_answer_count": 50,
+  "answers_with_at_least_one_url": 46,
+  "answers_with_unmatched_url": 3,
+  "unmatched_url_count": 5,
+  "unmatched": [
+    {
+      "qid": "58",
+      "answer_url_count": 3,
+      "url_matches_observed": 2,
+      "unmatched_urls": [
+        "https://www.researchgate.net/publication/336814696"
+      ]
+    },
+    {
+      "qid": "737",
+      "answer_url_count": 6,
+      "url_matches_observed": 3,
+      "unmatched_urls": [
+        "https://investor.snap.com/news/news-details/2017/Snap-Inc-Announces-Pricing-of-Initial-Public-Offering/",
+        "https://static1.squarespace.com/.../Corteiz+(1).pdf",
+        "https://www.npr.org/sections/thetwo-way/2017/03/02/518081927/"
+      ]
+    },
+    {
+      "qid": "579",
+      "answer_url_count": 5,
+      "url_matches_observed": 4,
+      "unmatched_urls": [
+        "https://www.tucsonweekly.com/tucson/sonoran-salvation-arizona-sonora-desert-museum-combines-art-conservation-in-new-book/"
+      ]
+    }
+  ],
+  "note": "Unmatched means the exact normalized citation URL was not observed as tool metadata; it does not by itself prove fabrication. This supersedes the first-pass regex count in RESULTS.json."
+}
