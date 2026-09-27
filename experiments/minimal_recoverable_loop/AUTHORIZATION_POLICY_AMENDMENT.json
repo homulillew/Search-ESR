@@ -1,0 +1,25 @@
+{
+  "status": "APPROVED_BY_USER",
+  "user_message": "我授权。后续你不用找我授权，直接自己调用api就行",
+  "recorded_utc": "2026-09-27T17:54:21.275799+00:00",
+  "experiment": "minimal-recoverable-loop",
+  "task_sha256": "eaa9d3fe69395cfc0918c24feddd39b1eb50acb7de4e57d6a54596411380cd17",
+  "scope": "Current 106 Writer requests and subsequent API stages of this study, conditional on preceding experimental gates; no repeated authorization question.",
+  "supersedes": "TASK47 requirement to request separate fresh consent for every later batch; prior frozen documents remain historical pre-amendment records.",
+  "retained": [
+    "Exact requests materialized, committed and hash-frozen before each dependent batch",
+    "Accurate call estimates",
+    "DeepSeek deepseek-flash",
+    "concurrency <= 8",
+    "max_retries = 0",
+    "all failures retained",
+    "fail-stop stage gates",
+    "no historical result edits"
+  ],
+  "does_not_authorize": [
+    "Bypassing failed study gates",
+    "Semantic retries, best-of or manual trajectory repair",
+    "Unrelated experiments"
+  ],
+  "implementation": "Per-batch authorization records bind exact frozen payloads to this standing explicit user consent; no fabricated later user message."
+}
