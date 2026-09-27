@@ -1,0 +1,65 @@
+{
+  "status": "PROPOSED_ONLY_REQUIRES_NEW_AUTHORIZATION_UNDER_TASK_SECTION_34",
+  "current_task_paid_calls": 0,
+  "current_task_live_retrieval_calls": 0,
+  "current_task_cache_hit_rate": null,
+  "cache_note": "No model usage records exist for this offline repair. Mock transport records are not paid usage.",
+  "old_unused_budget_reused": false,
+  "provider_proposed": "https://api.deepseek.com",
+  "model_proposed": "deepseek-flash",
+  "stages": [
+    {
+      "stage": "H1",
+      "purpose": "Result-informed contract continuation diagnostic; not independent confirmation",
+      "cells": 6,
+      "replicates": 2,
+      "trajectories": 12,
+      "decision_slots_per_trajectory": 3,
+      "families": {
+        "R1_forced_first_acquisition": 4,
+        "R2_free_actor": 4,
+        "R3_forced_first_closure": 4
+      },
+      "conservative_joint_semantic_request_ceiling": 192,
+      "conservative_actual_acquisition_ceiling": 32
+    },
+    {
+      "stage": "H2",
+      "purpose": "Independent recovery evidence from new held-out prefixes, conditional on executable H1",
+      "cells_proposed": 12,
+      "replicates": 1,
+      "trajectories": 12,
+      "decision_slots_per_trajectory": 3,
+      "families": {
+        "R1_forced_first_acquisition": 4,
+        "R2_free_actor": 4,
+        "R3_forced_first_closure": 4
+      },
+      "conservative_joint_semantic_request_ceiling": 192,
+      "conservative_actual_acquisition_ceiling": 32,
+      "selection_frozen": false
+    }
+  ],
+  "ceiling_derivation_per_stage": "4*(5+6+6) + 4*(6+6+6) + 4*(1+6+6) = 192. Acquisition includes <=1 Actor +1 Reader +3 Grounding +1 optional H; forced Actor costs 0. Closure/Finalizer replace acquisition slots. R1 empty repeated Search and optional H skips lower actual usage; the ceiling is conservative.",
+  "future_combined_ceiling_if_both_separately_authorized": 384,
+  "max_retries": 0,
+  "replacement_samples": 0,
+  "initial_concurrency_per_stage": "min(12 independent trajectories, 256 project default, available shared-account capacity)",
+  "maximum_concurrency_per_stage": 12,
+  "http_connection_capacity": "match frozen effective concurrency",
+  "account_budget_max": 2400,
+  "in_batch_increase": "none; at most 12 independent next requests exist",
+  "decrease_policy": "Halve unsent-request concurrency on timeout/429/503 or local congestion, minimum1; no retries; log changes",
+  "retrieval_initial_concurrency": 1,
+  "timeouts_seconds_proposed": {
+    "connect": 30,
+    "read": 900,
+    "write": 60,
+    "pool": 30,
+    "total": 1200
+  },
+  "currency_estimate": null,
+  "expected_token_usage": null,
+  "freeze_required_before_any_live_request": true,
+  "paid_calls": 0
+}

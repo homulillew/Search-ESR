@@ -1,0 +1,35 @@
+{
+  "trajectory": "R1_Q546__rep2",
+  "mode": "fault_injection",
+  "r1_h_schedule_forced": true,
+  "historical_response_body": "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R1_Q546__rep2/calls/001_hypotheses.response.body",
+  "body_sha256": "c3768f622f2e63d82ad4f43064a5bc674e541271a8dfd722852b9085679c6551",
+  "raw_content_sha256": "f03d1501d9465b15b04763e6326218b73363d4a17b5a725daab479fd3cff1178",
+  "historical_steps": [
+    {
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "NoGain",
+      "claim_delta": [],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "failed",
+      "auxiliary_failures": [
+        {
+          "module": "hypotheses",
+          "type": "contract_failure",
+          "error_type": "invalid_basis_ref_namespace",
+          "message": "basis_refs accepts observed W# only",
+          "raw_output_hash": "f03d1501d9465b15b04763e6326218b73363d4a17b5a725daab479fd3cff1178",
+          "H_unchanged": true
+        }
+      ]
+    }
+  ],
+  "historical_claims_retained": [],
+  "H_unchanged": true,
+  "next_scripted_actor_reached": true,
+  "new_and_historical_trace_replay_identical": true,
+  "paid_calls": 0,
+  "interpretation": "Execution-path diagnostic only; no model recovery or semantic accuracy claim."
+}

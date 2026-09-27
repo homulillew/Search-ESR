@@ -1,0 +1,49 @@
+{
+  "trajectory": "R2_Q228__rep1",
+  "mode": "fault_injection",
+  "r1_h_schedule_forced": false,
+  "historical_response_body": "experiments/recoverable_loop_clean/micro_recovery/run001/trajectories/R2_Q228__rep1/calls/007_hypotheses.response.body",
+  "body_sha256": "e4642d6099e994d8c3e356687210d3168a8b8bc7522a121b57bc0914db1e19ac",
+  "raw_content_sha256": "978b03390391dfe85586c86c3ef1e0e88ab9756d94a1b78c997ddd3955c548f9",
+  "historical_steps": [
+    {
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "NoGain",
+      "claim_delta": [],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "completed",
+      "auxiliary_failures": []
+    },
+    {
+      "decision": "acquire",
+      "tool_status": "ok",
+      "feedback": "Gain",
+      "claim_delta": [
+        "C3"
+      ],
+      "acquisition_outcome": "ok",
+      "claim_outcome": "completed",
+      "hypothesis_outcome": "failed",
+      "auxiliary_failures": [
+        {
+          "module": "hypotheses",
+          "type": "contract_failure",
+          "error_type": "invalid_basis_ref_namespace",
+          "message": "basis_refs accepts observed W# only",
+          "raw_output_hash": "978b03390391dfe85586c86c3ef1e0e88ab9756d94a1b78c997ddd3955c548f9",
+          "H_unchanged": true
+        }
+      ]
+    }
+  ],
+  "historical_claims_retained": [
+    "C3"
+  ],
+  "H_unchanged": true,
+  "next_scripted_actor_reached": true,
+  "new_and_historical_trace_replay_identical": true,
+  "paid_calls": 0,
+  "interpretation": "Execution-path diagnostic only; no model recovery or semantic accuracy claim."
+}
