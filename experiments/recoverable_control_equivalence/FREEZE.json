@@ -1,0 +1,185 @@
+{
+  "experiment": "recoverable-control-equivalence",
+  "source_head": "dd442dd62082e5923c98bd553b38fc4de3ad309d",
+  "preparation_head": "8b976527c0c549268f27aadf3a2dab7073f7a587",
+  "e0_freeze_sha256": "61db9a9911bfd57b16d8ab4e62e2182bc1cf85dfe643c8011968186a55b2ed87",
+  "files": {
+    "experiments/recoverable_control_equivalence/CONFIG.json": "946dfb8c5c467fa509a8387725b02ca076a2d7e0052fbf001cfb27def2800dba",
+    "experiments/recoverable_control_equivalence/E0_FREEZE.json": "61db9a9911bfd57b16d8ab4e62e2182bc1cf85dfe643c8011968186a55b2ed87",
+    "experiments/recoverable_control_equivalence/GATES.json": "3061a9e66351700771dff953735004b6f8b18fe1efaefd7fc381f4b7e841261a",
+    "experiments/recoverable_control_equivalence/HYPOTHESES.md": "87a0989967101a558be1d90666d0720f008b34df57a65a4936a7351d2ded582a",
+    "experiments/recoverable_control_equivalence/PRE_EXECUTION_AUDIT.md": "01514809e259b592bcc716c26b74d678d39a80e6647ed4127b008b76a725d332",
+    "experiments/recoverable_control_equivalence/PROTOCOL.md": "a4d3f4e17ec7cdd195dfac0a6cecd60cceb2f2edad4bace36ef2c5d406f97d97",
+    "experiments/recoverable_control_equivalence/README.md": "4bec2c6387455b4e135cd581e503eb21b53a5cf504450488b2d5dc65a0b35e5a",
+    "experiments/recoverable_control_equivalence/REVIEW_RUBRIC.md": "6d57e7313e398a98798fc39b2ca718204097e2c08a743624aaa45521c04fc132",
+    "experiments/recoverable_control_equivalence/SCHEMAS.json": "5644cbe7d330650acb6708326ebc0a920ae210d414498ad0a8d2dd466c6b18e5",
+    "experiments/recoverable_control_equivalence/TASK.md": "a859e4e699796cff477c5b46bcd433afc3b0eb06709f6428bdd0b82341ecb395",
+    "experiments/recoverable_control_equivalence/analysis/CALL_ESTIMATE.json": "2e7d9232db15577225ef4a80f84e34441897451f9e18a2a1ff48ccc39667048d",
+    "experiments/recoverable_control_equivalence/analysis/ERROR_LEDGER.json": "a74e756a8bcacf0fd673f9cf5dad6fc4616414dce17affbddef0f42d86f4da55",
+    "experiments/recoverable_control_equivalence/analysis/HISTORICAL_HASHES.json": "e2c357e37393debb04129a0e15e4c04190bf5cf84c1a5bb42ee55fbe69df8cff",
+    "experiments/recoverable_control_equivalence/analysis/INPUT_CONTRAST.json": "a578e6c4952d94b6fc5749847b1aa26138a4828897aa49b650259475be5f153d",
+    "experiments/recoverable_control_equivalence/analysis/INTERPRETATION_AUDIT.md": "fedfff8e0b73744e743447d237f68e0c2d8da9982b60f124d0244e2a683b822d",
+    "experiments/recoverable_control_equivalence/analysis/KNOWN_BAD_CASES.json": "6d5ebe67870958155790d20217ec5121c193b710480ddb966100c9a021d85a2f",
+    "experiments/recoverable_control_equivalence/analysis/OFFLINE_TESTS.json": "f5b3008134514018ec9efb2fd3a4f3325254ed8ea72dac029cb4be28228d7d02",
+    "experiments/recoverable_control_equivalence/analysis/PREPARED_CONCLUSION.md": "e4d82eb819e3b4bdab214bea50a0fea62a5fd65c1ccd84c05f83e40aca6b7f24",
+    "experiments/recoverable_control_equivalence/analysis/PREPARED_INTEGRITY.json": "648912df0f2b903e4bfe76abe4e42524190b4f74ed595a1b09ba0603b9490304",
+    "experiments/recoverable_control_equivalence/analysis/PROVIDER_PREFLIGHT.json": "b8d3e128b6ddacd25937d46a9df46994ef974d1b79f6d470e8d7e34548fb6d09",
+    "experiments/recoverable_control_equivalence/analysis/SENSITIVITY.json": "2adf9e8b3dd411bbc38bdf462a768c47768df3c001fc96be206d909d26bfb557",
+    "experiments/recoverable_control_equivalence/common.py": "2218a0ae477aacf434b8476152a1d1a78aa1c134b3890812d7779aee09361359",
+    "experiments/recoverable_control_equivalence/e0.py": "46e2c1a75c9cd542f678194a5bdb7e37ba9f39b64c1ea19fb9ca05938a736a61",
+    "experiments/recoverable_control_equivalence/e0_control_equivalence/ABSORBING_ERROR_AUDIT.json": "c5495b51cb0f8099e66e26c1c9e4b75d0c75a2e1373dd35f525b766f17787de7",
+    "experiments/recoverable_control_equivalence/e0_control_equivalence/CONTROL_EQUIVALENT_MASKS.json": "7f9b579c410b6967597585098aa354b8a243367c4dd2d1fcdf9daebdda720987",
+    "experiments/recoverable_control_equivalence/e0_control_equivalence/EXECUTION.json": "4d7cf6da7a821b8456e1c34ec2b5b112d019b1f735dc9881df73f5731339d90e",
+    "experiments/recoverable_control_equivalence/e0_control_equivalence/METRICS.json": "b6fa1887350a315d0cb592caf4f31b88df7b3dbe53a204f8dbeab22c68434e00",
+    "experiments/recoverable_control_equivalence/e0_control_equivalence/RECOVERABILITY.json": "78176b1e4f3264492f0d46d117caf1e7b9d470b551ddf3995b45cf959705f0a3",
+    "experiments/recoverable_control_equivalence/e0_control_equivalence/REPORT.md": "738dc5af7f8023b8bfdd942567ccce076ca1326b684bc9c1f3bf37830e97e05f",
+    "experiments/recoverable_control_equivalence/e0_control_equivalence/SOURCE_MANIFEST.json": "e016169bae6f8ed5f12ecffe2501361ff22ef46c7242ef43afa0e88680d6e159",
+    "experiments/recoverable_control_equivalence/e1_selection/SCHEDULE.json": "25488c2e4fd8ffee193a90e9c4839fe465efd17775c1d76008231e5910e37aab",
+    "experiments/recoverable_control_equivalence/e1_selection/SELECTION_REFERENCE.json": "7960d9a2cfb048ade5942c67c27565f4bc8a261b7456efd54b33797b92f571be",
+    "experiments/recoverable_control_equivalence/prepare_e0.py": "212ad8f3cdd11444d8f6ecfa902b28d5428ff48ba4429a4556d9646046684981",
+    "experiments/recoverable_control_equivalence/prepare_e1.py": "a9d71feb6a549bc0fbca1e45f518c3a3fe4e50a8f24123a880017272ce8ba006",
+    "experiments/recoverable_control_equivalence/prompts/selection.txt": "5eb7e041eafe2c5c9217e7126fb00088cb8521ea3650c9a85dc97690577971c4",
+    "experiments/recoverable_control_equivalence/report.py": "34554ec656f60e9afaca39d1428f68b34ab201fee264dce66467b55e667d8577",
+    "experiments/recoverable_control_equivalence/run.py": "ca1c029a771e2db8917f54bbda9b71a478b9f25ad96ba50a16b310e873cfb2b3",
+    "experiments/recoverable_control_equivalence/score.py": "6cfb655cac7c3367703b7378d6dd3a0427de26991bb175a1b84fcc3c7cebc762",
+    "experiments/recoverable_control_equivalence/selection.py": "288b413f7861248ca769ef1ff9582e64aa0aae0f33d47404bd8532579dd6e146",
+    "experiments/recoverable_control_equivalence/test_offline.py": "062058a84cbe791baaa7640438fa09f5e105234801910c1a0d31df4be0becbdb",
+    "experiments/recoverable_control_equivalence/test_selection.py": "e76a33fe9612733d30e7890bc24b4c6dbaf2fceb763f8febef972748b55f67b1",
+    "experiments/recoverable_control_equivalence/verify.py": "bd1456c94fadf44f4b3d35a6e5dcfaa3549bf08c5a0dff91a13f8ec30d0159c4"
+  },
+  "provider": {
+    "provider": "deepseek",
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "max_retries": 0,
+    "max_workers": 8,
+    "replicates": 2,
+    "max_tokens_policy": "omit",
+    "response_format": {
+      "type": "json_object"
+    },
+    "timeout_seconds": 240,
+    "timeout_semantics": "HTTP inactivity per connect/read/write/pool; not total wall timeout",
+    "halt_http_statuses": [
+      400,
+      401,
+      402,
+      403,
+      404,
+      422
+    ],
+    "credential_source": "DEEPSEEK_API_KEY environment or .env.deepseek; never archived",
+    "tool_calls": 0,
+    "horizon": 1,
+    "planned_calls": 108,
+    "maximum_calls": 108,
+    "authorization_policy": "TASK46: approval must explicitly apply to this new experiment; old authorization not inherited.",
+    "mask_policy": "S0 frozen Gold; S1 old A1 replicate1, binary only, no fallback",
+    "paid_authorization_artifact": "AUTHORIZATION.json"
+  },
+  "gates": {
+    "E0_A1": {
+      "binary_node_accuracy": [
+        ">=",
+        0.95
+      ],
+      "open_requirement_recall": [
+        ">=",
+        0.97
+      ],
+      "closure_precision": [
+        ">=",
+        0.9
+      ],
+      "exact_binary_mask": [
+        ">=",
+        0.85
+      ],
+      "false_empty_open_set": [
+        "<=",
+        0
+      ],
+      "false_stop_hazard": [
+        "<=",
+        0
+      ],
+      "schema_validity": [
+        ">=",
+        1
+      ],
+      "lost_all_acceptable_frontier": [
+        "<=",
+        0.1
+      ]
+    },
+    "E0_conditional_recoverability": {
+      "minimum_evaluable_prior_false_closes": 4,
+      "safe_resolution_rate_minimum": 0.75
+    },
+    "S0": {
+      "valid_selection": [
+        ">=",
+        0.85
+      ],
+      "selected_closed": [
+        "<=",
+        0.05
+      ],
+      "downstream_selection": [
+        "<=",
+        0.1
+      ],
+      "false_stop": [
+        "<=",
+        0.05
+      ],
+      "schema_validity": [
+        ">=",
+        0.95
+      ]
+    },
+    "S1": {
+      "valid_selection": [
+        ">=",
+        0.8
+      ],
+      "selected_closed": [
+        "<=",
+        0.075
+      ],
+      "downstream_selection": [
+        "<=",
+        0.1
+      ],
+      "false_stop": [
+        "<=",
+        0.075
+      ],
+      "schema_validity": [
+        ">=",
+        0.95
+      ],
+      "selection_loss": [
+        "<=",
+        0.1
+      ]
+    }
+  },
+  "sample_count": 108,
+  "horizon": 1,
+  "S1_source_replicate": 1,
+  "tools": [],
+  "failure_policy": "zero retries/repair/replacement; preserve all planned slots and failures",
+  "authorization": "TASK46 new applicable user approval required; currently missing",
+  "mutable_lifecycle_files": [
+    "AUTHORIZATION.json",
+    "STATUS.json",
+    "analysis/EXECUTION_ACCOUNTING.json",
+    "analysis/FINAL_CONCLUSION.md",
+    "analysis/INTEGRITY.json",
+    "e1_selection/STATUS.json"
+  ],
+  "old_experiment_result": "A0 FAIL / A1 PASS / Joint FAIL / E2 NOT RUN"
+}
