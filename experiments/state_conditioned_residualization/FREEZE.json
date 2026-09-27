@@ -1,0 +1,190 @@
+{
+  "experiment": "state-conditioned-residualization",
+  "base_head": "1f5536d54bc963e27583368dbed1d8356e012ee9",
+  "preparation_head": "33fbd95caf328d4960d45071cd1ee9422c49cf0b",
+  "files": {
+    "experiments/state_conditioned_residualization/TASK.md": "4be26c8026735db650c479a2ed58bfc46f1eae4e13876557b5fce180bece0ca7",
+    "experiments/state_conditioned_residualization/select_bank.py": "3b35bac79e835e164183b03be4f3acda35e79cb17abb53b823e54fc780ba64a3",
+    "experiments/state_conditioned_residualization/build_references.py": "3bfa281c7a09ecea67999e51a0d78c2f8fc74c2d16bb648779e19675fa71ab5c",
+    "experiments/state_conditioned_residualization/CONFIG.json": "f0779ab2cab24588a2d6f971b5a851584b5ff5ca62a88742ded43c285eeab069",
+    "experiments/state_conditioned_residualization/PROTOCOL.md": "16ea1e85c047bf9c1d8683f1b738f6fe98c1d0e49ae92b549d4e790997b92dfb",
+    "experiments/state_conditioned_residualization/AUTHORIZATION.json": "3edbe46113509ea3c16d19dec7bb57be2050af9bcc93740b0f7d5bf833148b97",
+    "experiments/state_conditioned_residualization/PRE_EXECUTION_AUDIT.md": "749574dca9c0689e0dcdfacb6e37716449c47043cb40ed3578c26ca7e81970bc",
+    "experiments/state_conditioned_residualization/REVIEW_RUBRIC.md": "6396d12cc73fdb5236d8c3cdca51752cd3a1d1215b0d21645d2396acb423b76e",
+    "experiments/state_conditioned_residualization/prepare.py": "b2db17d3bdfc120a2cc3843a95b1d37a57ec5bf80caea7266cfd0af461fcd967",
+    "experiments/state_conditioned_residualization/score.py": "7c375a3a336f72de37cbd9e50eb74ec291e383fd370168fd350ba3cbac42547e",
+    "experiments/state_conditioned_residualization/README.md": "b3f0fbbef9d1c70636008e080b2778a4bb8197c221152f2d08cdd85e690313bb",
+    "experiments/state_conditioned_residualization/common.py": "56ea77aca1d683ea7fb16f7152bb1e3ec00fd7bc6efff3b4f22ebad76e930724",
+    "experiments/state_conditioned_residualization/REFERENCE_FREEZE.json": "f4fadd99b15b230a410fb8017b497106703ad124c79375e44d959e9961ac5ed7",
+    "experiments/state_conditioned_residualization/run.py": "63e94b03ef2a49fba33db0d9ae29f3c736f3f6726a2c18b6ed2b2edd8b7b7959",
+    "experiments/state_conditioned_residualization/SELECTION_FREEZE.json": "ed6c72e19f167e0010da1a86ea77bbd4e0cfa8f0e74d2d1165acd594f1791e88",
+    "experiments/state_conditioned_residualization/inputs.py": "029349a24009128c1ddcef5e3f3ff60e531663e84691d881e3b6b0358cf4c167",
+    "experiments/state_conditioned_residualization/GATES.json": "9916369256a3d97460ca028c9ecce8d798b9a772e0d1a4dea8ef10f8bf05054b",
+    "experiments/state_conditioned_residualization/HYPOTHESES.md": "bea29a643e301b0d1b1cd25f7207ffd6101105d31ec585a56ba8b5d14738a727",
+    "experiments/state_conditioned_residualization/test_contracts.py": "020fe92e2a3c4527879150e2601a49fd1094ebb8be7a2d8e6787d650eb209e52",
+    "experiments/state_conditioned_residualization/prompts/residualizer_base_from_task.txt": "7e65e90cf8229c01aa54276a3d810e7019c2cdd33c60e481baac83387efb41b1",
+    "experiments/state_conditioned_residualization/prompts/query_generator.txt": "c7ab09442567deac80dc6dbb61c60a5bc27a83469a4b313dd969a120ea307eda",
+    "experiments/state_conditioned_residualization/prompts/orthogonal_probe.txt": "88a551e9ee41a7b7e6e06c4c68d67ad2ad1bf076810992ee9d1c3a61d4b3c41d",
+    "experiments/state_conditioned_residualization/prompts/residualizer.txt": "50341311ede1dbf04863a5b6d92b39ba8beabb12b2f9d2654ac2fe2ab38283cb",
+    "experiments/state_conditioned_residualization/prompts/MODE_FORMAT_NOTE.md": "2131e761783bb481145cc6ae850453f7a366b2323b1544b55151f5f7e7eaab72",
+    "experiments/state_conditioned_residualization/e0_reference/SELECTION.json": "0e4854bc80d02b54349310be706c12b429cbfa1ec97bab32b229d69935d022da",
+    "experiments/state_conditioned_residualization/e0_reference/PARENT_REQUIREMENTS.json": "63eeda18819c2b75c69030269c03e0689e623801ccdfd7801a6ea87ad3fe07c9",
+    "experiments/state_conditioned_residualization/e0_reference/REFERENCE_CONSTRUCTION.md": "09ccd58e2438df8ba021cca5705e839de940536a41d7a6366a3051df654eaae9",
+    "experiments/state_conditioned_residualization/e0_reference/SUPPORT_REFERENCE.json": "06c736f92c8265df0225367b7e2cdb9bbbcd848e01d6402496a6979058f2f675",
+    "experiments/state_conditioned_residualization/e0_reference/STATES.json": "4cc469230f242574d2a54fcbdededa7b927ed80228f6725de54c45b0737cb7c0",
+    "experiments/state_conditioned_residualization/e0_reference/SELECTION_RULE.md": "93e9b482827e90a683d9a6ee3ab9a7867ca34b6a7104fdd354d1fe6adc89ed93",
+    "experiments/state_conditioned_residualization/e0_reference/RESIDUAL_REFERENCE.json": "c4d9abb154dfe47bf1cefd19721d49d13c2994fcb2cb52abeeb759fb708ac4ad",
+    "experiments/state_conditioned_residualization/analysis/HISTORICAL_HASHES.json": "5516a9945cf56280facf1a3149bb7dea9a0755953611df1f6e60a946f121dfb2",
+    "experiments/state_conditioned_residualization/analysis/PROVIDER_PREFLIGHT.json": "a2096495f66e869158eeda4f072a04292ce881de46aa4701722bf40f36d69ef2",
+    "experiments/state_conditioned_residualization/analysis/STATE_DISCRIMINATION_REFERENCE.json": "fb7d30578fe1d7f53629c00ae0b497e135dc8bdac10f7d5f364ad57f26fd1430",
+    "experiments/state_conditioned_residualization/analysis/OFFLINE_TESTS.json": "98a9652d671679c9df96f991442230a19f865370ffe6583db646ae9bdd50519d",
+    "experiments/state_conditioned_residualization/analysis/CALL_ESTIMATE.json": "12301a3add61b39639a1bf4d1b2dca9802e8c4836b0590518be77d93600e26ee",
+    "experiments/state_conditioned_residualization/e1_residualization/SCHEDULE.json": "ef57dee43b617dd14bc2c9c001e3d1ada9c686697cfb20bde6b61e09a109b09b"
+  },
+  "planned_E1": 114,
+  "provider": {
+    "provider": "deepseek",
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "temperature": 0,
+    "max_retries": 0,
+    "max_workers": 8,
+    "replicates": 2,
+    "max_tokens_policy": "omit",
+    "response_format": {
+      "type": "json_object"
+    },
+    "timeout_seconds": 240,
+    "timeout_semantics": "HTTP inactivity per connect/read/write/pool; not total wall timeout",
+    "halt_http_statuses": [
+      400,
+      401,
+      402,
+      403,
+      404,
+      422
+    ],
+    "credential_source": "DEEPSEEK_API_KEY environment or .env.deepseek; never archived",
+    "tool_calls": 0,
+    "horizon": 1,
+    "planned_E1": 114,
+    "conditional_E2_maximum_query_calls": 32,
+    "conditional_E2B_maximum_model_calls": 32,
+    "maximum_model_calls_all_stages": 178,
+    "E2_P1_source": "E1 R0 replicate1, no best-of/repair/fallback",
+    "E2_replicates": 1,
+    "E2_comparison_rule": "P1-P0 NewMaterialEvidence rate >=0.10, not wins-minus-losses alternative",
+    "E2B_maximum_attempts": "one additional probe+query only per eligible P1 NoGain state",
+    "permission": "Current TASK explicitly requests these model/retrieval stages; no new-approval requirement in this task. Prior scoped approval is not reused."
+  },
+  "gates": {
+    "R0": {
+      "strict_validity": [
+        ">=",
+        0.85
+      ],
+      "residual_addressability": [
+        ">=",
+        0.85
+      ],
+      "supported_content_leakage": [
+        "<=",
+        0.05
+      ],
+      "broad_residual": [
+        "<=",
+        0.1
+      ],
+      "downstream": [
+        "<=",
+        0.05
+      ],
+      "relation_object_temporal_corruption": [
+        "<=",
+        0.05
+      ],
+      "state_discrimination": [
+        ">=",
+        0.8
+      ],
+      "control_over_decomposition": [
+        "<=",
+        0.1
+      ],
+      "schema": [
+        ">=",
+        0.95
+      ]
+    },
+    "R1": {
+      "strict_validity": [
+        ">=",
+        0.9
+      ]
+    },
+    "R2": {
+      "strict_validity": [
+        ">=",
+        0.8
+      ],
+      "strict_loss_R0_minus_R2": [
+        "<=",
+        0.1
+      ]
+    },
+    "P_gate_R0": {
+      "strict_validity": [
+        ">=",
+        0.85
+      ],
+      "residual_addressability": [
+        ">=",
+        0.85
+      ],
+      "supported_content_leakage": [
+        "<=",
+        0.05
+      ],
+      "broad_residual": [
+        "<=",
+        0.1
+      ],
+      "downstream": [
+        "<=",
+        0.05
+      ],
+      "relation_object_temporal_corruption": [
+        "<=",
+        0.05
+      ],
+      "control_over_decomposition": [
+        "<=",
+        0.1
+      ],
+      "schema": [
+        ">=",
+        0.95
+      ]
+    },
+    "P_gate_R1": {
+      "strict_validity": [
+        ">=",
+        0.9
+      ]
+    },
+    "E2": {
+      "minimum_accessible_states": 8,
+      "minimum_qids": 4,
+      "P1_new_material": 0.6,
+      "P1_binding": 0.5,
+      "candidate_commitment_max": 0.05,
+      "drift_max": 0.05,
+      "P1_minus_P0_material_min": 0.1
+    }
+  },
+  "selection_sha256": "ed6c72e19f167e0010da1a86ea77bbd4e0cfa8f0e74d2d1165acd594f1791e88",
+  "reference_sha256": "f4fadd99b15b230a410fb8017b497106703ad124c79375e44d959e9961ac5ed7",
+  "E2_requires": "Pgatepass and separateaccessibility/backend/schedule/executionfreeze beforecalls",
+  "max_retries": 0
+}

@@ -1,0 +1,1 @@
+The system prompt includes TASK18 exact English block plus a literal English rendering of TASK18 required no-substantive-support mode=probe/used_claims=[] alternative. No added semantic strategy, examples, or prompt iteration. Both return branches reach the model.

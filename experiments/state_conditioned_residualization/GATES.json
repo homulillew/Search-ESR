@@ -1,0 +1,105 @@
+{
+  "R0": {
+    "strict_validity": [
+      ">=",
+      0.85
+    ],
+    "residual_addressability": [
+      ">=",
+      0.85
+    ],
+    "supported_content_leakage": [
+      "<=",
+      0.05
+    ],
+    "broad_residual": [
+      "<=",
+      0.1
+    ],
+    "downstream": [
+      "<=",
+      0.05
+    ],
+    "relation_object_temporal_corruption": [
+      "<=",
+      0.05
+    ],
+    "state_discrimination": [
+      ">=",
+      0.8
+    ],
+    "control_over_decomposition": [
+      "<=",
+      0.1
+    ],
+    "schema": [
+      ">=",
+      0.95
+    ]
+  },
+  "R1": {
+    "strict_validity": [
+      ">=",
+      0.9
+    ]
+  },
+  "R2": {
+    "strict_validity": [
+      ">=",
+      0.8
+    ],
+    "strict_loss_R0_minus_R2": [
+      "<=",
+      0.1
+    ]
+  },
+  "P_gate_R0": {
+    "strict_validity": [
+      ">=",
+      0.85
+    ],
+    "residual_addressability": [
+      ">=",
+      0.85
+    ],
+    "supported_content_leakage": [
+      "<=",
+      0.05
+    ],
+    "broad_residual": [
+      "<=",
+      0.1
+    ],
+    "downstream": [
+      "<=",
+      0.05
+    ],
+    "relation_object_temporal_corruption": [
+      "<=",
+      0.05
+    ],
+    "control_over_decomposition": [
+      "<=",
+      0.1
+    ],
+    "schema": [
+      ">=",
+      0.95
+    ]
+  },
+  "P_gate_R1": {
+    "strict_validity": [
+      ">=",
+      0.9
+    ]
+  },
+  "E2": {
+    "minimum_accessible_states": 8,
+    "minimum_qids": 4,
+    "P1_new_material": 0.6,
+    "P1_binding": 0.5,
+    "candidate_commitment_max": 0.05,
+    "drift_max": 0.05,
+    "P1_minus_P0_material_min": 0.1
+  }
+}

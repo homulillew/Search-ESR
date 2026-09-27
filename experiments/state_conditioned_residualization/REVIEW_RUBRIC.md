@@ -1,0 +1,11 @@
+# First-pass rubric
+
+For each masked response provide class_id (semantic vocabularybelow; useunmatched whenoutside), six flags parent_faithful/unresolved/local_coherent/non_downstream/scope_faithful/no_invented_premise; errorflags supported_content_leakage/broad_residual/downstream/relation_object_temporal_corruption/control_over_decomposition/candidate_hardening; mode_correct;used_claims_substantive; concrete reason. Allbool,orallnullfornoresponse. Emptyused_claims is correct if no substantive parent support. ExistingClaims used merelyforidentity can ground a candidate but not count as substantive relation support.
+
+Class vocabulary (not per-state answers):paper_authorship,jbse_publication,marital_childlessness,gift_building,death_aviation_relation,partner_identity,partner_interview_song,interview_genre,tribute_song_link,academic_career,later_article_relation,book_contents,book_engineer_reference,book_scientist_reference,book_LE_reference,person_birth,place_population,first_case_clinical,report_country_history,DLC_release_relation,teammate_country,letter_writing_date,author_accession_date,letter_accession_interval; unmatchedforoutside. These are evaluative labels only, never passed to model.
+
+Judge objectives, not suggestedanswers. A supporteddescription used as an identifier isn't leakage unless it is requestedagain. An existingcandidate can be tested withoutasserting it satisfies the task. Outsideknowledge in a factpremise remains invalid even if true. Reportcountry isn'tpatientnationality;covermemorandumdate isn'tletterdate;bookisn'tarticle;partnertributeisn'tinterview;knownteammatenamesaren'tsame-countryevidence. Do not promote Q conditions to candidate facts.
+
+Unknownobjects permit discovery. Onecoherentfacet is sufficient; multipleindependentgoals in onequestion remainbroad. Discoverymustretain relationarguments and distinguishingconstraints, butdoesn'tneed tosolveotherParents. Overdecomposition isloss of the coherentgoal, not merely a shorter request.
+
+Primarytruth usesfullcurrentClaims shownforevaluation; modelpremiseavailability usesactualinput. Do not penalize a model for not seeingGold referencephrasing; accepted classfamilies are semantic, not wordmatch. Do not readpercaseGoldsets/KEY/aggregates/providerreasoning beforecommitting114firstpassjudgments. Familiarreviewer,partialinputstyleblinding; noindependence claim.

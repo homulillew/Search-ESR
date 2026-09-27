@@ -1,0 +1,36 @@
+{
+  "provider": "deepseek",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "temperature": 0,
+  "max_retries": 0,
+  "max_workers": 8,
+  "replicates": 2,
+  "max_tokens_policy": "omit",
+  "response_format": {
+    "type": "json_object"
+  },
+  "timeout_seconds": 240,
+  "timeout_semantics": "HTTP inactivity per connect/read/write/pool; not total wall timeout",
+  "halt_http_statuses": [
+    400,
+    401,
+    402,
+    403,
+    404,
+    422
+  ],
+  "credential_source": "DEEPSEEK_API_KEY environment or .env.deepseek; never archived",
+  "tool_calls": 0,
+  "horizon": 1,
+  "planned_E1": 114,
+  "conditional_E2_maximum_query_calls": 32,
+  "conditional_E2B_maximum_model_calls": 32,
+  "maximum_model_calls_all_stages": 178,
+  "E2_P1_source": "E1 R0 replicate1, no best-of/repair/fallback",
+  "E2_replicates": 1,
+  "E2_comparison_rule": "P1-P0 NewMaterialEvidence rate >=0.10, not wins-minus-losses alternative",
+  "E2B_maximum_attempts": "one additional probe+query only per eligible P1 NoGain state",
+  "permission": "Current TASK explicitly requests these model/retrieval stages; no new-approval requirement in this task. Prior scoped approval is not reused."
+}

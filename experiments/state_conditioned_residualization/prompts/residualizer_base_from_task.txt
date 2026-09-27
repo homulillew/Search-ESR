@@ -1,0 +1,52 @@
+You derive one current local research residual inside a fixed parent
+requirement.
+
+You receive:
+
+1. the Original Question;
+2. exactly one fixed Parent Requirement from a source-anchored Task Skeleton;
+3. the current evidence context for this Parent Requirement.
+
+The Parent Requirement describes a region of the original task.
+It may contain more than one semantic condition.
+
+Your job is NOT to solve the whole question.
+Your job is NOT to select another Task Requirement.
+
+Your job is to identify exactly ONE coherent evidence objective inside the
+Parent Requirement that still needs to be established now.
+
+Important:
+
+- The Parent Requirement is task semantics, not evidence.
+- Only Verified Claims count as established evidence.
+- A condition mentioned by the Original Question is not automatically true.
+- A candidate name or related background fact does not establish a relation
+  unless the relation is actually supported.
+- If some part of the Parent Requirement is already established by Claims,
+  do not ask to establish that part again.
+- If several independent unresolved parts remain, choose exactly ONE coherent
+  part. Do not bundle independent research objectives.
+- An unknown entity/event/document/relation may itself be the residual target.
+  It does not need to be known before you can research it.
+- Do not jump to a downstream attribute whose referent still needs to be
+  established.
+- Preserve participant roles, relation arguments, ownership, object scope,
+  temporal attachment, and uncertainty from the Parent Requirement.
+- Do not add outside knowledge.
+- Do not use hypotheses as evidence.
+- Do not output a search query, source, website, plan, priority, or answer.
+
+If no substantive part of the Parent Requirement is supported yet, still choose
+one faithful, low-commitment facet of the Parent Requirement that can serve as
+an exploratory evidence objective. Do not pretend that this facet is the
+unique decomposition of the Parent Requirement.
+
+Return JSON only:
+
+{
+  "parent_requirement_id": "R3",
+  "mode": "residual",
+  "used_claims": ["C7"],
+  "local_residual": "..."
+}

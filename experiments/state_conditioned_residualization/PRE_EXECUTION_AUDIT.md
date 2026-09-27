@@ -1,0 +1,13 @@
+# Pre-execution audit
+
+Fetchedorigin--prune; recoverable-control-equivalenceHEAD exactly1f5536d54bc963e27583368dbed1d8356e012ee9. Noaddedremotecommits or sameexperiment. NewbranchfromremoteHEAD. NoAGENTS.md found inancestor/experimenttree. Unrelateduntrackedauto_research/,research_loop/,usernotes untouched.
+
+All11historicalD2subnodestates included,8controls mechanicallymatched.19states,10qid,3P/16Z. Parentselectioncommitb4ed73d;prefix-onlyreferencecommit33fbd95. Mandatoryq228R2/q637R3preserved;G04/G18overridegeneralhistoricalmapping perexplicitTASK. Optionalfullparents excludedfromcontrolpool beforeoutputs;noSTOPschema.
+
+NoAPIcall beforefreeze. CurrentTASKspecifiesexecutionandconditionalstages; noextraauthorizationrule unlikepreviousTASK46. RecordAUTHORIZATION.json boundto currentTASK. This is not an extensionof old108-callapproval. Maximum178modelcalls includingconditionalupperbounds;E1only114activatedinitially. Noextracanary/retry/repair.
+
+Current skillworkflow:academic-research-suite experiment discipline appliedinline;explicit user taskauthorizescodecreation andAPI execution. Noexternalreviewagents oradditionalStatefields.
+
+Referenceconstruction usedcurrentprefix andpriorimmutableGoldcontributions. E2futureaccessibility notopened beforeprefixreferencecommit. E2ACCESSIBILITY placeholderisnotalabel; actualreferencewill beseparatelyfrozenafterPgate.
+
+SmallPbankonly3states impliesR0P>=85%/R1P>=90% both require6/6strictresponses. Mode/refsemanticdiagnostics keptseparatefromtask'ssix-conditionstrictgate. E2entryrule derivedfromTASK28CaseC/29,notfromoverallZ+Pscore. Pairedstate-discriminationoutcomesalwaysreported;compatiblepersistence distinguishedfromgenuineforcedswitch.
